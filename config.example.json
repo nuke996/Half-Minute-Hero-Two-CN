@@ -1,0 +1,7 @@
+{
+    "build_dir":  "build",
+    "dist_dir":  "dist",
+    "game_dir":  "E:\\SteamLibrary\\steamapps\\common\\Half Minute Hero Two",
+    "locale":  "zh-CN",
+    "font_path":  "assets/fonts/WenQuanYi Bitmap Song 13px.ttf"
+}

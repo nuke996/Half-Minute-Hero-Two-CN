@@ -1,0 +1,61 @@
+{
+  "_comment": "v2.51 说明文槽位级放行。规则按 (blob, stride, pos) 精确圈定『说明文字段』——这些字段是纯显示文本，引擎只输出、不参与按名比对，因此可以翻译；同一张表里的【名字】字段一律不在规则内，保持原文。",
+  "_how_to_disable": "整组关总开关 enabled=false；只想关掉机制表内的几组，把对应 rule 的 enabled 改成 false（或用 汉化-说明文放行-开关.bat）。改完必须重装才生效。",
+  "enabled": true,
+  "rules": [
+    {
+      "name": "道具/武器/装备/技能书 说明",
+      "enabled": true,
+      "blobs": [
+        147,
+        357,
+        736,
+        998
+      ],
+      "stride": 268,
+      "pos": 44,
+      "note": "shop/装备菜单里物品的说明文；stride268 全库只有这 4 个 blob。也是唯一有『实机已在跑』证据的一组。"
+    },
+    {
+      "name": "技能说明（技能链表）",
+      "enabled": true,
+      "blobs": [
+        666
+      ],
+      "stride": 376,
+      "pos": 32,
+      "note": "技能列表里技能的说明文；同表 pos0/pos292 是技能名，不放行"
+    },
+    {
+      "name": "技能发动率",
+      "enabled": true,
+      "blobs": [
+        666
+      ],
+      "stride": 376,
+      "pos": 160,
+      "note": "『思いつき率　10分の1』→『发动率　1/10』；数字已写死在串里，属显示文本"
+    },
+    {
+      "name": "职业说明",
+      "enabled": true,
+      "blobs": [
+        128
+      ],
+      "stride": 212,
+      "pos": 84,
+      "note": "职业选择界面说明文；同表 pos4 是职业名，不放行"
+    },
+    {
+      "name": "阵形说明",
+      "enabled": true,
+      "blobs": [
+        136
+      ],
+      "stride": 272,
+      "pos": 64,
+      "note": "阵形选择界面说明文；同表 pos0 是阵形名，不放行"
+    }
+  ],
+  "exclude_contains": []
+}

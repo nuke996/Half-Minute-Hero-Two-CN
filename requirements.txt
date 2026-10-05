@@ -1,0 +1,4 @@
+# Python dependencies for the localization build toolchain.
+# Install: python -m pip install -r requirements.txt
+pillow>=10.0
+

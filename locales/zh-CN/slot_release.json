@@ -1,0 +1,15 @@
+{
+  "_note": "TODO-2C 第二步：说话人名【槽位级放行】。命中 collide 白名单的槽，若落在下面 rules 指定的 (stride, pos) 上，则照常翻译；其它表的同名副本一律不动（零连带）。enabled=false 或删除本文件即退回旧行为（整文件重装即生效）。",
+  "enabled": true,
+  "rules": [
+    {
+      "stride": 292,
+      "pos": 96,
+      "_what": "对话表(stride 292) 第96字节起的字段 = 说话人名/旁白署名（纯显示，引擎原样输出）"
+    }
+  ],
+  "exclude_contains": [
+    "<"
+  ],
+  "_exclude_reason": "含 '<' 的是引擎引用记号（<YUSHA_NAME> / <EVO_NAME__> / <ナナコ> / <レバン> / <ADH1P_NAME>が！ 等），必须原样保留。"
+}

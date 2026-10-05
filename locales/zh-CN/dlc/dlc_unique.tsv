@@ -1,0 +1,1707 @@
+n	cat	maxcn	ja	en	zh_auto
+66	0	31	トクガのニンジャ	Tokuga's Ninja	
+51	0	83	まきもどす	Reset	
+44	0	31	武将トクガ	Commander Tokuga	
+30	0	65	３０号「<RGN_NAME__>　オミゴトデス」	No. 30: Well done, <RGN_NAME__>!	
+27	0	31	兵長	Corporal	
+20	0	97	城のおたからゲット！	Obtained castle treasure!	
+17	0	31	ガイドっ子	Guide Girl	
+15	0	15	５万ゴールドわたす	Give 50,000 Gold	
+14	0	31	オールドミス	Old Maid	
+12	0	33	大砲をおく	Place Cannon	
+10	0	65	伝令兵「異常ありません！」	Messenger: All clear!	
+10	0	31	海男	Man at Sea	
+10	0	97	築城を止めた！	Construction stopped!	
+9	0	97	魔軍の船を破壊した！	Evil Army ship destroyed!	
+8	0	31	パック屋	Pack Vendor	
+8	0	15	○：ふねをよぶ	○: Call Ship	
+7	0	65	「<RGN_NAME__>殿！」	<RGN_NAME__>!	
+6	0	31	男性	Man	
+6	0	31	ネイラー	Nail Artist	
+6	0	31	水着屋	Swimsuit Vendor	
+6	0	65	「なんだ？　やる気か！？」	Who's there? What do you want!?	
+6	0	31	「お待ちくだされ	Please wait a moment…	
+6	0	33	　せっしゃはトクガのニンジャでござる」	I am one of Tokuga's ninjas.	
+6	0	31	「<RGN_NAME__>殿の手に入れた	You have obtained a scroll	
+6	0	33	　文字の入った巻物であるが」	with some letters on it, <RGN_NAME__>.	
+6	0	65	「それについて説明しにまいった」	I have come to tell you more about it.	
+6	0	65	「巻物には　ようかいの力が封じられておる」	Ghostly powers are sealed in these scrolls…	
+6	0	31	「その力が使えれば	Using these powers,	
+6	0	33	　城内のワナも簡単に防げるのである」	you can easily protect yourself against castle traps.	
+6	0	65	「それで？」	And?	
+6	0	65	「日の本には二種類の巻物がある」	Zapan has two types of scrolls…	
+6	0	31	「<巻物一種類>につき	<Each type of scroll>	
+6	0	33	　<三つ集める>ことで力が使えるようになる」	can be used if <three are gathered>.	
+6	0	65	「じゃあ巻物はどこにあるんだ？」	So where are these scrolls?	
+6	0	31	「先ほどと同様	As you saw earlier,	
+6	0	33	　魔軍の城にあるでござる」	they are in the Evil Army's castles.	
+6	0	31	「城内の<ワナが同じ城>には	<Similar scrolls> will be found	
+6	0	33	　<同じ種類の巻物>があるはずである」	in <castles with similar traps>.	
+6	0	31	「先に巻物を一種類そろえれば	Gathering scrolls of one type	
+6	0	33	　巻物が力をかしてくれ　落城も楽になろう」	will make taking castles much easier!	
+6	0	65	「そうか　ありがとよ」	I see, thank you!	
+6	0	65	「では　せっしゃはこれにて・・・」	With that, I shall take my leave…	
+6	0	65	「どろんっ！」	Poof!	
+5	0	31	おばちゃま	Sweet Old Lady	
+5	0	31	獣人っ子	Beastchild	
+5	0	31	ばあや	Grandma	
+5	0	15	○：ポーズ	○: Pose	
+5	0	31	武将の右ウデ	Right Hand Man	
+5	0	31	武将の左ウデ	Left Hand Man	
+4	0	149	トクガ城	Tokuga Castle	
+4	0	15	戦定食	War Rations	
+4	0	65	おっちゃん「ハラがへっては戦はできねえ　だろっ？」	Uncle: You know what they say, you can't fight on an empty stomach!	
+4	0	15	○：ダイナマイト！	○: Dynamite!	
+4	0	83	村を出た！	Exited village!	
+4	0	31	伝令兵	Messenger	
+4	0	31	おおじい	Grandfather	
+3	0	15	たこやき	Takoyaki	
+3	0	65	おっちゃん「でっけーたこ入ってるぜ！」	Uncle: Plenty of octopus!	
+3	0	65	じいちゃん「やくそう買ってくれんかのう？」	Old Man: Have you come to buy some Herbs?	
+3	0	15	さつまあげ	Fried Fish Paste	
+3	0	65	おっちゃん「ひとつどうだい？」	Uncle: How about you have one?	
+3	0	31	「ねえ　ナナコ	Hey, Nanako!	
+3	0	97	ダッシュでスカートをめくれ！	Lift skirts by dashing!	
+3	0	15	りんご	Apple	
+3	0	65	おやじ「かわごとかぶりつけっ！」	Old Man: Eat skin and all!	
+3	0	15	めんたいこごはん	Fish Roe Rice	
+3	0	65	おっちゃん「うめ～ぞ～　ばくばく食ったれ！」	Uncle: It's great! Eat it up!	
+3	0	65	武士の子「おとっちゃーーーん」	Samurai Child: Daaaaad!	
+3	0	65	村長のダンナ「ワーカナイ村へようこそ」	Village Chief's Husband: Welcome to Waakanai Village!	
+3	0	15	いくらしょうゆづけどん	Salmon Roe Bowl	
+3	0	65	おっちゃん「おう！　どんはかきこめ！」	Uncle: Oh! This bowl is packed!	
+3	0	15	たまこんにゃく	Yam Cake	
+3	0	65	おっちゃん「らっしゃ～い　よくしみてるよ～」	Uncle: Welcome! It's well stewed!	
+3	0	15	たきたておこめ	Cooked Rice	
+3	0	65	おっちゃん「こめで勝負だぜ！」	Uncle: Rice will give you strength!	
+3	0	15	じゃがいも	Potato	
+3	0	65	おっちゃん「ほっくほくだよ～！」	Uncle: Get 'em while they're hot!	
+3	0	15	○：ひろう	○: Pick up	
+3	0	67	<EVO_NAME__>「何のスイッチでしょう？」	<EVO_NAME__>: What's this switch for?	
+3	0	15	生かき	Raw Oyster	
+3	0	65	おっちゃん「しんせんだよ～　らっしゃ～い」	Uncle: Welcome! They're fresh!	
+3	0	65	こども商人「やくちょう！　買ってくらはい！」	Child Clerk: Herbsh! Pleesh buy shome!	
+3	0	67	トクガ城に入った！	Entered Tokuga Castle!	
+3	0	65	おんばあ「せがれの作るかもねぎ！　うまいぞ～」	Woman: My son made this Leek and Duck! It's delicious!	
+3	0	15	かもねぎ	Leek and Duck	
+3	0	65	おにいさん「かもねぎは早い者勝ちだよ～　うりきれるかもよ～」	Teen: The early bird gets the duck! Don't duck or we'll sell out!	
+3	0	15	みかん	Mikan	
+3	0	65	おっちゃん「あまいよ！　手がきいろになっちまうけどな」	Uncle: Very sweet! Your hands might turn yellow, though…	
+3	0	97	築城が完了した！	Construction complete!	
+3	0	97	落城なり！	Castle destroyed!	
+2	0	65	おばあ「エロいおじいさんにはこまりますねえ」	Woman: That dirty old man! Such a pain…	
+2	0	65	ようきな武士「よう！」	Cheerful Samurai: Yo!	
+2	0	65	ばあちゃん「戦ばかりじゃのう　ゆっくりしていくがええ」	Woman: So much fighting, why don't you take a break!	
+2	0	65	ませた子「女の子はおぱんちゅできまるのよ！」	Girl: With girls, it's all about the undies!	
+2	0	15	チチシボリ	Frothy Milk	
+2	0	65	３０号「<RGN_NAME__>　ノコリ時間にきをつけてクダサイ」	No. 30: <RGN_NAME__> watch out for the remaining time!	
+2	0	65	武士「どうぞ　お気をつけくだされ！」	Samurai: Please, be careful!	
+2	0	31	「ハート山壊れましたわっ	Heart Mountain is destroyed…	
+2	0	33	　それにいかにもな宝箱も！」	As well as the treasure chest, of course!	
+2	0	33	　今までずっとセクシーだったり・・・」	Up until now, it's been sexy this and…	
+2	0	31	「ただの下品だったりすることばかりでしたのに	You mean, so far it's been all about lewdness,	
+2	0	33	　なんで急に爆発なんでしょう？」	So why the sudden explosions?	
+2	0	65	「いい質問ね　それはたぶん・・・」	Good question, it's probably because…	
+2	0	31	「はあ・・・わたくしにはよくわからないですけど	Aah… Well I don't quite understand,	
+2	0	33	　わかる人にはわかるのかしら？」	but I guess some people will get it?	
+2	0	31	「ダイナマイト成功ですわっ	The dynamite is a success!	
+2	0	33	　これでハート山の中に入れますわ！」	Now to put it in Heart Mountain!	
+2	0	31	女性たち	Women	
+2	0	33	　ハンパないことになってるわ！」	has become a real powerhouse!	
+2	0	149	いんず港	Innz Port	
+2	0	15	アワビ	Abalone	
+2	0	65	おやじ「アワビだよ！　安いよ安いよ～」	Old Man: It's abalone! Going cheap～	
+2	0	65	めしや「ちくわ作ってみました！」	Clerk: I tried making fish cake rolls!	
+2	0	31	やってみますわ！	I'll try it!	
+2	0	33	やめておきますわ	No thanks!	
+2	0	33	　ご自分のペースで」	so go at your own pace…	
+2	0	97	ダンススタート♪	Start Dancing! ♪	
+2	0	31	「わかりました　実は自分のセクシーダンスを	I understand, actually, I wanted to show off	
+2	0	33	　おひろめしたくもありましたが・・・」	my sexy dance too, but…	
+2	0	31	「もし　セクシーダンスをマスターしたくなったら	If you feel like mastering the sexy dance,	
+2	0	33	　またここに来てください」	please come here again!	
+2	0	15	ボンキュッどん	Curvy Stew	
+2	0	65	３０号「ずいぶん遠くまでキマシタネ」	No. 30: We've come pretty far, haven't we?	
+2	0	65	元気な子「こんにちは！　こんにちは！！」	Child: Hello! Hello!!	
+2	0	65	明るい子「わー！　外から人が来たーっ！」	Child: Waa! Someone's come from outside!	
+2	0	65	村長で商人「おお　商売なんてひさしぶりじゃの」	Village Chief: Hmm… Been a while since I've had any business.	
+2	0	15	とろとろドリンク	Gooey Drink	
+2	0	65	めしや「トロトロっていうか　ドロドロでおいしいよっ」	Clerk: It's gooey, but delicious!	
+2	0	65	兵長「この城を守るためのお金は　まだでござるか！？」	Corporal: Do we not have enough money to protect this castle yet!?	
+2	0	65	兵長「大砲をおいたゆえ　もうこの城は安全でござる」	Corporal: We've set up cannons, this castle is safe!	
+2	0	31	「しばらく見ない間に・・・	It's been a while…	
+2	0	31	悪ガキ	Brat	
+2	0	65	「ふっふっふ・・・」	Heh heh heh…	
+2	0	33	　ぐっはっはっはっはっはっは！」	Gwa ha ha ha ha ha ha!	
+2	0	33	　大砲が発射されるヨウデス」	will be fired on, it seems…	
+2	0	65	３０号「<RGN_NAME__>　ようかいとは何デスカ？」	No. 30: <RGN_NAME__>, what's a 'ghost'?	
+2	0	65	女の子「ようかいって知ってる？　おじいちゃんに教えてもらったの」		
+2	0	65	村長「ぬりかべを知っておるか？　人が進めなくなるカベのようかいじゃ」		
+2	0	65	３０号「よりみちデスカ？」	No. 30: Is it on the way?	
+2	0	65	ガイドっ子「ハート山のことはわかった？」	Guide Girl: Do you know about the Heart Mountain?	
+2	0	15	ハジライス	Shyrice	
+2	0	65	身がるな武士「あまり戦は好きではないのだ」	Carefree Samurai: I don't really like war…	
+2	0	65	おつかれ武士「何か楽に移動できる手はないものか・・・」	Tired Samurai: Isn't there an easier way to get around?	
+2	0	65	「デハ　状況を確認しマス」	Alright, let's ascertain the situation.	
+2	0	97	サムライが仲間になった！	Samurai joined!	
+2	0	97	ニンジャが仲間になった！	Ninja joined!	
+2	0	97	城をうばった！	Castle taken!	
+2	0	65	「旅の方！　どうかお助けください」	Traveler! Please help us, I beg you!	
+2	0	65	「あん？　変なカッコウだな」	Huh? What a strange outfit…	
+2	0	65	「せっしゃは　武将トクガでござる」	I am Commander Tokuga.	
+2	0	31	「悪名高き戦国大名ヒデーヨ！	The notorious Warlord Hideo!	
+2	0	33	　あやつから我が国を守っておったのだが」	We have protected our country from that villain…	
+2	0	31	「せっしゃたちの力では	But our hands are full with	
+2	0	33	　魔軍の兵から城を守るのでせいいっぱい」	defending the castle from the Evil Army!	
+2	0	31	「こうなってしまっては・・・	I'm afraid…	
+2	0	33	　大砲をまぬがれることができん！」	we won't be able to avoid the cannons!	
+2	0	65	「そこで！　旅の方！」	And so, traveler!	
+2	0	65	「そなたはウデが立つとお見受けした」	I see that you have great power…	
+2	0	31	「どうか・・・どうか・・・	Will you… will you…	
+2	0	33	　トクガ国を共に守ってはくれぬか？」	stand with us to protect our country?	
+2	0	31	「あんなやつに	The world cannot	
+2	0	33	　天下をくれてやることはねえ！」	fall into the hands of that villain!	
+2	0	65	「戦国大名が王様か」	So a warlord is a king…	
+2	0	31	「だが戦国大名ヒデーヨってのは	But Warlord Hideo, I don't like him	
+2	0	33	　神みたいに気にいらねえ王様だな」	as much as I dislike the Gods.	
+2	0	65	「いけすかねえ城はぶっ壊す！」	Destroy the disgusting castles!	
+2	0	31	「それじゃヒデーヨが	That means that	
+2	0	33	　何人もいることになるじゃねーかっ！」	there must be more than one Hideo!	
+2	0	31	「何者かの魔力によって	It appears that Hideo has	
+2	0	65	「そんなのありかよ！」	Is that possible?	
+2	0	65	「そんなもん　完成する前にぶっ壊す！」	I'll destroy them before they are completed!	
+2	0	31	「作業している人がいなくなれば	If the builders are taken out,	
+2	0	31	「城の中のやつをぶっとばすか	So, I thrash the guy in the castle,	
+2	0	33	　城をつくっているやつをぶっとばす！」	or I thrash the guys building the castle!	
+2	0	65	「なんだ　簡単じゃねーか」	Come on, that's too easy!	
+2	0	65	「<RGN_NAME__>殿ーーーーっ！」	<RGN_NAME__>!	
+2	0	31	「助かったでござる！	You've saved us!	
+2	0	33	　おかげで我が国は守られた」	Our country is safe, thanks to you!	
+2	0	31	「それだけでなく	That's not all!	
+2	0	33	　日の本の国が一つになりもうした」	The countries of Zapan are now one!	
+2	0	65	「これからはともに日の本を・・・」	Will you stand with me and rule…	
+2	0	31	「あー　そういうのパス！	Uh, I'll pass on that, thanks!	
+2	0	33	　やんなきゃなんねーことがあるから」	There are other things I have to do…	
+2	0	65	「ずっとここにはいられねえよ」	I can't stay here forever.	
+2	0	31	「そうであるか・・・	I see…	
+2	0	33	　ではまたぜひ足を運んでくだされ」	In that case, please come back someday!	
+2	0	31	「この国はもう	This country	
+2	0	33	　<RGN_NAME__>殿の国でもあるのだ」	is also your country now, <RGN_NAME__>!	
+2	0	31	「いつでも	You will	
+2	0	33	　国をあげてかんげいするでござるよ」	always be welcome here!	
+2	0	65	「ああ　またよらせてもらうぜ！」	I'll be back, count on it!	
+1	0	65	おじい「水門のスイッチはあちこちの島にあるんじゃ」	Old-Timer: The switches for the Watergate are out on the islands.	
+1	0	65	テントマン「テントの中でエッチなことはしてないよ！！」	Tentman: I wasn't doing anything funny in that tent!!	
+1	0	65	おしゃれ武士「大砲とは　おしゃれな戦じゃないな」	Stylish Samurai: Cannons are not a stylish way to wage war…	
+1	0	65	おおじい「大変じゃ　大砲じゃ　おそろしい・・・」	Grandfather: This can't be! Cannons… how terrible…	
+1	0	65	おおじい「まいぞう金を手に入れたじゃと！？　おみごとじゃ～～！」	Grandfather: You found the buried treasure!? Well done!	
+1	0	149	アーオモリ村	Owmori Village	
+1	0	65	３０号「リンゴが　おいしいらしいデス」	No. 30: The apples look delicious!	
+1	0	149	カッゴシマ城	Kaggoshma Castle	
+1	0	65	ケガ武士「ケガがなおらないでござる」	Wounded Samurai: It's not getting better…	
+1	0	65	ハタ好き武士「青いハタ好きだけど　実は赤も・・・」	Flag Loving Samurai: I like blue flags… okay, red ones too…	
+1	0	149	エス村	S Town	
+1	0	65	アテナ「ワタクシ　あなたの国の人たちヘンだと思うわ！」	Athena: I feel that all the people in your country are nuts!	
+1	0	65	武将の右ウデ「敵の城をすべて落城してくれ！」	Right Hand Man: Destroy all the enemy's castles!	
+1	0	65	武将トクガ「ハタを見るのだ！　さすれば何の城かわかるぞ！」		
+1	0	65	武将の左ウデ「同じ種類の城には　同じ種類の巻物があると聞く」		
+1	0	31	「も～う▼　あんまりアタシを待たせるなんて	Oh come on～ ▼ You're really making me wait!	
+1	0	33	　やるじゃない？　気持ちよくなっちゃったわん▼」	Aren't you gonna do it? I'm starting to enjoy it now!! ▼	
+1	0	31	「そ・れ・じゃ・あ　約束通り	Okay, as promised…	
+1	0	33	　男の使い方を教えてあげるわ～ん▼」	I'll teach you how to make use of men! ▼	
+1	0	65	「ん？　レバンったら　どうしたの？」	Huh? Levan, what happened to you?	
+1	0	65	「ナイトさんも・・・」	Sir Knight too…	
+1	0	65	「！！・・・おじさままで　まさか」	!! … Even Geezer, really now?!	
+1	0	31	「なんかピンクくなって	They've turned pink	
+1	0	33	　どこかに行ってしまいましたわ！！？？」	and run off somewhere!!??	
+1	0	65	「わかったかな～あ▼　これが男の使い方よん」	Do you see now? ▼ This is how you use men!	
+1	0	31	「アタシにみりょうされちゃったアナタの	Having fallen for my charms, your allies	
+1	0	33	　仲間こそがアナタの敵になるのよん▼」	are now your enemies! ▼	
+1	0	31	「くやしい？　それとも気持ちい～い？▼	Distraught? Or perhaps, delighted? ▼	
+1	0	33	　いつでもアタシをたおしにきてもいいのよ～お▼」	You can come defeat me any time, okay～ ▼	
+1	0	31	「アタシのカラダをいじめて	Please, torment my body!	
+1	0	33	　どんどん鎧を壊すといいわ～ん▼」	And break my armor, go on～ ▼	
+1	0	31	「鎧がはだければはだけるほど	The more you shatter my armor…	
+1	0	33	　アタシ気持ちよくなって　強くなっちゃうわ～ん▼」	The better I'll feel, the stronger I'll become～ ▼	
+1	0	31	「<はじらい>はどうした？　なんて言っちゃだめよ▼	Have I no <shame>? Don't bother asking! ▼	
+1	0	33	　そんなものとっくの昔に<すてた>んだから▼」	I <disposed> of that a long, long time ago! ▼	
+1	0	65	「ピンクの呪文はじめるわ～ん▼」	I'll start the Spell of Pink, okay～ ▼	
+1	0	65	「ペコンッ・・・ですわ」	Oh dear… *slump*	
+1	0	31	「あらあら　そんなにヘコまないで<EVO_NAME__>ちゃん	Now now, dear <EVO_NAME__>, no need to look so glum!	
+1	0	33	　も～　男はこれだからダメなのよね～」	These men are totally worthless, right～	
+1	0	31	「そうねっ　せっかくだから	Yes, since it's come to this,	
+1	0	33	　裏切り者たちでレベルアップしちゃいましょ★」	let's level up with these traitors, shall we? ★	
+1	0	31	「仲間を取り戻すには	To restore your allies…	
+1	0	33	　あの魔王をたおすしかなさそうなんだけど」	You'll have to defeat that Evil Lord, it seems!	
+1	0	31	「たぶんあの魔王・・・おマゾさんだと思うのよね	That Evil Lord… she seems like a masochist…	
+1	0	33	　普通にたたかっても下手したらよろこんじゃうかも」	Fighting normally might only please her!	
+1	0	31	「なんとかして　あの魔王に<はじらい>を	If only we could make that Evil Lord	
+1	0	33	　取り戻させることさえできれば・・・」	regain her sense of <shame>…	
+1	0	31	「くよくよヘコんでても仕方ないわ！	We won't get anywhere by moping!	
+1	0	33	　リベンジの手段をさがしましょ★」	Let's find a way to get our revenge! ★	
+1	0	97	30秒で魔王をたおせ！	Defeat the Evil Lord in 30 Seconds!	
+1	0	97	はじらう心が完成！	Sense of shame complete!	
+1	0	129	全めくり	It was the Breeze	
+1	0	33	　本当にテツは自爆しても大丈夫ですの？」	Is it really ok for Tetsu to detonate himself?	
+1	0	31	「いい質問ね　たぶん大丈夫	Good question, it'll probably be fine	
+1	0	33	　・・・今日が初実験だけど」	… this is the first attempt, however!	
+1	0	31	「いいのよこんなヤツ　あたしという生みの親がいながら	Screw Tetsu, even though I created him,	
+1	0	33	　ロボットのくせに浮気だなんてっ」	that stupid robot still has the nerve to have an affair!!	
+1	0	31	「・・・フォローできないですわ	… I don't quite follow…	
+1	0	33	　がんばってくださいね　テツ！」	but please do your best, Tetsu!	
+1	0	31	「セクシーダイナマイツなのに	We forgot to put the dynamite	
+1	0	33	　ダイナマイツな部分を忘れてたからよ！」	in the Sexy Dynamite!	
+1	0	65	「あ！　テツ発見ですわ！」	Ah! I see Tetsu!	
+1	0	65	「オイコラッ　よくも裏切ったわねっ」	Oy, you betrayed us too, eh!	
+1	0	65	「まあまあ・・・ですわ」	That's ok, I guess…	
+1	0	65	「ツイ　セクシーナホウニ　ツイテシマイマシタ」	I couldn't help it, I just went for the sexiness…	
+1	0	65	「ロボットが「つい」で裏切んなー！！」	Robots don't get to use that excuse!!	
+1	0	31	「まあいいわ　この裏切りのうめあわせとして	That's ok, to make up for this betrayal,	
+1	0	33	　テツには自爆してもらうわ」	Tetsu will have to detonate himself for us!	
+1	0	65	「ナナコ　やりすぎやりすぎっ」	Nanako, that's going overboard!!	
+1	0	31	「ダイジョブダイジョブッ	Don't worry…	
+1	0	33	　大丈夫な自爆だから♪」	The explosion will be fine! ♪	
+1	0	65	「大丈夫な自爆って・・・」	The explosion will be fine?…	
+1	0	65	「だから　この山とか・・・」	But, with this mountain, say…	
+1	0	31	「あの山とか・・・テツをダイナマイトとしてセットして	Or that mountain… using Tetsu as dynamite,	
+1	0	33	　山の一部くらい壊すこともできるかもよ」	we could blow up a part of it.	
+1	0	97	テツでダイナマイト！	Tetsu as dynamite!	
+1	0	97	メス鳥がついてきた！	Female Bird has arrived!	
+1	0	97	オス鳥が風を起こした！	Male Bird created a gust of wind!	
+1	0	31	「きゃっ　いや～ん▼　なにこの風	Kyaa, oh nooo! ▼ What is with this wind??	
+1	0	33	　スカートがめくれちゃうん▼」	It's lifting up our skirts!! ▼	
+1	0	31	「なんなの急に！？　まるで	This sudden wind!? It's as if	
+1	0	33	　スカートをピンポイントでねらったような風が！？」	the wind was aimed directly at our skirts!?	
+1	0	31	「さあ今よっ　<EVO_NAME__>ちゃん！	Go now, little <EVO_NAME__>!	
+1	0	33	　強風吹くいまこそスカートのめくりどき▼」	Make use of the wind to lift those skirts! ▼	
+1	0	31	「<ダッシュ>したまま　○<で村に入れば>	While <dashing>, <enter villages using>○	
+1	0	33	　<スカートめくりモードの村>に入れるようになったわ★」	and you'll enter the <village in skirt-lifting mode>! ★	
+1	0	31	「あとは　さっそうと村の女性たちの前を	After that, you'll just have to dash past	
+1	0	33	　ダッシュで通りすぎるだけで・・・」	all the women in the village…	
+1	0	65	「どんどんはじらう心を集めることができるはずよ！」	And I'm sure you'll collect lots of feelings of shame!	
+1	0	31	「はじらう心は一人からひとつずつしか	Since you can only get one portion of shame	
+1	0	33	　ゲットできないから・・・」	per person…	
+1	0	65	「全女性のスカートをめくる意気込みで行くのよ！」	Go and lift the skirts of every single woman!	
+1	0	31	「<ダッシュしたまま村に入る>	<Enter villages while dashing>.	
+1	0	33	　これを忘れちゃダメよーー」	Don't forget that!	
+1	0	65	「クエーーッ　クエクエッ！」	Caaaw, cacaaaw!	
+1	0	31	「きゃあっ　何ですの	Kyaaa! What the heck?	
+1	0	33	　なんでこの鳥　服をぬがそうとしてきますの？」	Why is this bird trying to remove my clothes?	
+1	0	31	「そうとう　うえた<オス鳥さん>ですわ	This <male bird> must be quite deprived…	
+1	0	33	　メス鳥さんでも紹介したら落ち着くのかしら」	Perhaps a female bird will calm him down!	
+1	0	31	「とりあえず　今はこのオス鳥さんに	In any case, I have no business with	
+1	0	33	　用はありませんわ　近づかないでおきましょう」	this male bird for now, so I'll keep away!	
+1	0	65	「姫おねえちゃんっ　聞いて聞いて」	Princess, listen listen…	
+1	0	31	「あたちね　このへんにたくさんあるハートの形をした	I can guide you around the many heart-shaped	
+1	0	33	　<ハート山>のガイドができるようになったんだよ★」	<Heart Mountains> in this area! ★	
+1	0	31	「だからね　あたちが	And so, I will be your guide	
+1	0	33	　姫おねえちゃんにハート山のガイドしてあげる」	for the Heart Mountains, Princess!	
+1	0	65	「それじゃあ・・・」	In that case…	
+1	0	31	おねがいしますわ	Yes, please	
+1	0	33	えんりょしますわ	No, thanks	
+1	0	31	「やったー♪　それじゃお外に出て	Hurrah! ♪ I'll head outside	
+1	0	33	　しっかりガイドしてあげるー♪」	and be the best guide ever. ♪	
+1	0	31	「ハートの形した山は全部で3つあって	There are three heart-shaped mountains.	
+1	0	33	　サイズで言うとS・M・Lって感じなの」	Size-wise, you could say they're S, M, and L.	
+1	0	65	「まずは<南西>にある<ハート山S>！」	First, <Heart Mountain S> in the <southwest>!!	
+1	0	31	「この山には昔　キレイな女の人が<心の一部>をかくして	Legend is that a beautiful woman once hid <part of her heart>	
+1	0	33	　魔王になったっていう伝説があるの」	in this mountain and became an Evil Lord.	
+1	0	31	「なにか・・・	Somehow…	
+1	0	33	　聞いたことのあるお話のような気がしますわ」	I feel as if I've heard that story before…	
+1	0	31	「山のどこに何がかくされてるかは知らないのー	I don't know what is hidden where in the mountain…	
+1	0	33	　ごめんね　姫おねえちゃん」	Sorry, Princess.	
+1	0	65	「次は<南>にある<ハート山M>！」	Next, <Heart Mountain M> in the <south>!!	
+1	0	31	「この山にはと～ってもキレイな<メスの鳥さん>が	People have reported seeing a really beautiful	
+1	0	33	　目撃されたことがあるらしいの」	<female bird> on this mountain!	
+1	0	31	「でも　山にかこまれてて見ることもできないんだけど	But she's blocked from view by the mountain…	
+1	0	33	　なんとか<山壊したり>とかできないのかなぁ」	Wonder if it's possible to <destroy the mountain>!	
+1	0	65	「最後が<北東>の<ハート山L>！」	Last is <Heart Mountain L> in the <northeast>!!	
+1	0	31	「ここにはすんごい風を起こす	A really scary <male bird> lives here.	
+1	0	33	　コワい<オスの鳥さん>がいるの」	He creates really strong winds!	
+1	0	31	「その風がね<スカートめくれそう>になるから	This wind <might lift up women's skirts>,	
+1	0	33	　きっとエッチな鳥さんだと思うの！」	so the bird must be quite a pervert!	
+1	0	31	「もし　この鳥さんに会いたいんなら	If you want to meet this bird,	
+1	0	33	　<北のどうくつ>から行けるんだよ」	use the <north cave>!	
+1	0	31	「はいっ　いじょーでハート山ガイドは終わりっ	Okay, that's all from me about the Heart Mountains!	
+1	0	33	　姫おねえちゃん　バイバーイ♪」	Goodbye, princess! ♪	
+1	0	31	「そっか～　それじゃあ聞きたくなったときは	I see, well when you feel like hearing about them,	
+1	0	33	　また話しかけてね」	come talk to me, okay?	
+1	0	31	「あら　<EVO_NAME__>ちゃんじゃないのっ	Oh, if it isn't little <EVO_NAME__>!	
+1	0	33	　ちょっと聞いてよ　最近なやんでるのよぉ」	Let me tell you what's been going on!	
+1	0	31	「<北東>にあるハート型の山にいる鳥がね	The bird on the mountain to the northeast…	
+1	0	33	　たまに強風を吹かせてくるのよぉ」	Sometimes, it creates strong winds!	
+1	0	31	「そんなにあたしのスカートをめくりたいのかしらねぇ	Does it really want to lift my skirt so badly, I wonder…	
+1	0	33	　まあ<風だけ>じゃあ　<スカートはめくらせない>けどねぇ」	But <my skirt won't be lifted> by <wind alone>, of course!	
+1	0	65	「きっとあの鳥　うえてるだけだと思うのよねぇ」	That bird must be really deprived!	
+1	0	31	「<かわいいメス鳥ちゃんでも紹介>したら	If you <introduce a cute female bird> to him,	
+1	0	33	　何でも<言うこと聞いてくれる>と思うのよねぇ」	I'm sure he will <listen to whatever you say>!	
+1	0	31	（なるほどですわ・・・じゃあ逆に	(Of course… and it also follows	
+1	0	33	　強い風を起こしてもらうこともできそうですわね）	that I can make him create strong winds).	
+1	0	65	「あっ　姫さま　ごぞんじですか？」	Ah, Princess, have you heard?	
+1	0	31	「<北の小屋>で<山くらい吹き飛ばせそうな>	The <north hut> sells <dynamite>	
+1	0	33	　<ダイナマイト>売っているそうなんです」	that can apparently <blow up mountains>!	
+1	0	65	「ただ　ダイナマイツな値段だそうな」	But the price is also dynamite, it seems.	
+1	0	31	「そういえば姫さまのおさななじみの<ナナコ>さんなら	Then again, your childhood friend <Nanako>	
+1	0	33	　ダイナマイトくらい作れちゃいそうですが」	could probably make some dynamite…	
+1	0	31	（ナナコなら・・・といっても	(Nanako could… but I'm sure	
+1	0	33	　さすがに時間がありませんわね）	we don't have the time for that.)	
+1	0	31	（ナナコが<作ったモノ>で	(Among Nanako's <creations>,	
+1	0	33	　何かいいものはなかったかしら？）	isn't there anything we can use?)	
+1	0	31	「ニャッ　獣人村から旅行で来たニャ	Meow, we're here for a holiday!	
+1	0	33	　まさか魔王に巻き込まれるだニャんてっ」	Never thought we'd get involved with meow Evil Lord!	
+1	0	65	「それにしても魔王は変態ニャ！」	What's worse, she's such a pervy meow!	
+1	0	31	「ダメージをあたえれば<鎧を壊せる>んニャが	Dameowging her <breaks her armor>, but that only	
+1	0	33	　逆に<露出度がアップしてパワーもアップする>ニャ！」	<exposes her meowre, increasing her power>!	
+1	0	31	「獣人はケがフサフサだからいいけど	Us beastmen have fur to keep us warm,	
+1	0	33	　魔王はあんなカッコでさむくニャいのかニャ」	but doesn't the Evil Lord get cold dressed like that?	
+1	0	65	「実は獣人くらいケブカイのかニャ？」	Meowbe she's as furry as a beastman?	
+1	0	31	「そんなーですわ	Oh good Heavens!	
+1	0	33	　ダメージで強くなるだなんてどうすれば？」	If damage makes her stronger, what shall I do?	
+1	0	31	「あやや　<EVO_NAME__>ねえちゃんに	Oh yay, it's <EVO_NAME__>	
+1	0	33	　ナナコねえちゃんだーー★」	and Nanakooo! ★	
+1	0	65	「<EVO_NAME__>ねえちゃんはあいかわらず・・・」	<EVO_NAME__> still looks the same…	
+1	0	31	「見たところ大人の女性への道のりは	From what I can see, you're just as far off	
+1	0	33	　まだわたしと同じくらい遠いようね」	from womanhood as I am.	
+1	0	65	（わたくし　どれだけこどもっぽいんですの！？）	(Exactly how underdeveloped am I!?)	
+1	0	31	「ナナコねえちゃんもあいかわらず	And Nanako, are you still	
+1	0	33	　発明ひとすじ？」	focused on inventing?	
+1	0	65	「あやや？　そういえばさっき・・・」	Oh oh oh? Actually, just now…	
+1	0	31	「<西の砂浜>にナナコねえちゃんが好きそうな	I saw a robot that you'd probably like, Nanako,	
+1	0	33	　ロボットを見たよー」	at the <west beach>.	
+1	0	31	「なんですと！？　まさかテツじゃないでしょうね！！	What!? Don't tell me that's Tetsu!!	
+1	0	33	　あんのエロロボットめぇ～～！」	That sex-crazed robot～～!	
+1	0	31	「<EVO_NAME__>さまではございませんか！	Oh, it's lady <EVO_NAME__>!	
+1	0	33	　魔王とたたかうほどにごりっぱになられて」	How grand you've become, battling Evil Lords and all!	
+1	0	31	「魔王と関係あるかわかりませんが	I don't know if this is related to the Evil Lord,	
+1	0	33	　昔話をお聞かせしましょう」	but let me tell you a story…	
+1	0	31	「昔　一人の女がセクシーになりたいがために	A long time ago, in order to be sexy, a woman	
+1	0	33	　自身のはじらう心をすてて魔王になったそうな」	discarded her shame and became an Evil Lord.	
+1	0	31	「その魔王がはじらう心をすてたというのが	That Evil Lord's discarded shame is said to be	
+1	0	33	　<南>にあるハートの形をした山なのです」	in the heart-shaped mountain in the <south>!	
+1	0	31	「山をほるなり　<爆破>するなりすれば	Digging there, or <blowing up> the mountain	
+1	0	33	　はじらう心とやらも手に入るかもしれませんな」	might let you obtain her shameful heart!	
+1	0	31	「ついに手に入れたわね<EVO_NAME__>ちゃん！	At last, you've got it, my dear <EVO_NAME__>!	
+1	0	33	　それこそが魔王をたおすカギ<はじらう心>よ★」	This <shame> is the key to defeating the Evil Lord! ★	
+1	0	65	「きっとあの魔王が昔すててしまったのね」	That Evil Lord must have discarded this.	
+1	0	65	「なつかしいわぁ　わたしも昔持ってたのよー★」	Ah, I too had one like this, a long time ago. ★	
+1	0	65	「・・・女神さまもすててしまいましたの？」	… Did you discard yours too, Goddess?	
+1	0	31	「ウソよ　ウソウソ★　わたしはちゃんと	Oh no, just kidding! ★ I am a first-class lady	
+1	0	33	　はじらいも品格もかねそなえた一流のレディよ！」	possessing both decorum and sophistication!	
+1	0	31	「それでねっ　魔王があんなイヤラシイ服を着て	Also, this is why the Evil Lord dresses that way	
+1	0	33	　露出度が上がると　さらに強くなるのもこのせいね」	and becomes stronger the more she exposes.	
+1	0	31	「だから　このはじらう心を	And so, all you have to do is	
+1	0	33	　あのイヤラシ魔王に使ってやればいいんだけど・・・」	use this shame on that lewd Evil Lord, but…	
+1	0	31	「それはまだ　はじらう心の器にすぎないのよ	This is just a vessel of shame.	
+1	0	33	　はじらう心が空っぽじゃあ　意味ないのよ」	And an empty vessel makes no sense!	
+1	0	31	「よって　これからその器に	Therefore, you must fill up	
+1	0	33	　はじらう心をためるのよ！！」	the vessel with shame!!	
+1	0	31	「はじらう心をためる！？	Fill it with shame!?	
+1	0	33	　そんなこと可能なんですの？」	Is that even possible?	
+1	0	31	「女の人がはずかしがるようなことを	All you have to do is get women to	
+1	0	33	　すればいいのよ★　さあ　はずかしめてやりなさい！」	feel embarrassed! ★ Go on, outrage their modesty!	
+1	0	65	「はずかしめてって・・・」	Outrage, modesty…	
+1	0	31	「もうっ　しょうがないなぁ　女性をはずかしがらせる	Ugh, can't be helped, listen now, while there are	
+1	0	33	　方法はたっくさんあるんだけど・・・」	many ways to embarrass a woman…	
+1	0	31	「一番ハードル低い方法を教えてあげましょー	Here's the easiest one.	
+1	0	33	　だれもが一度は経験する・・・それは」	I'm sure everyone has experienced it…	
+1	0	65	「<スカートめくり>よお！！！」	<Skirt lifting>!!!	
+1	0	31	「！！　だれもが経験したことがあるんですの！？	!! Everyone has experienced this!?	
+1	0	33	　少なくともわたくし経験したことないですわ・・・」	At least I haven't, not once…	
+1	0	31	「さいわい　このへんの村って女性が多いから	Fortunately, there are many women in these villages!	
+1	0	33	　さりげなく<女性の前をダッシュで通りすぎる>の！」	Just <dash past the women>, nonchalantly!	
+1	0	31	「そしたらみんな「きゃう～ん▼」ってなって	And then everyone will go 'Kyaaa～ ▼'	
+1	0	33	　はずかしがって　はじらう心もたまるわけよ」	and you'll be able to collect their shame!	
+1	0	31	「いやしかしっ　ダッシュが巻き起こす風だけでは	But wait, the wind from dashing alone might not	
+1	0	33	　おそらく足りないでしょうね・・・」	be enough for the job…	
+1	0	31	「きっとどこかに　<強風>を起こすようなものがあるはず	There must be something nearby that can create <strong winds>…	
+1	0	33	　とにかく情報を集めるのよ！」	Go gather information!	
+1	0	31	「<強風>と<ダッシュ>この２つがあって	When you have both <Strong winds> and <dashing>	
+1	0	33	　はじめてスカートめくりが完成するのよ！」	you can finally lift skirts!	
+1	0	31	「・・・もうまったく勇者らしくありませんわ	… there's nothing heroic about this at all…	
+1	0	33	　ただのイタズラッ子のレベルですわ」	This is just prankster-level stuff!	
+1	0	31	「よぉっし　ダイナマイトしかけたわよ	Alright, the dynamite has been set…	
+1	0	33	　はなれてー」	Get away!	
+1	0	31	「セクシーダイナマイトなのに	We forgot to put the dynamite	
+1	0	33	　ダイナマイトな部分を忘れてたからよ！」	in the Sexy Dynamite!	
+1	0	65	「ま　まさかそれって・・・」	I-is that…	
+1	0	65	「アタシが昔すてたはずのはじらう心！？」	The shame that I discarded long ago!?	
+1	0	31	「そんなもの持って来られたら	Now that you've brought that here,	
+1	0	33	　アタシが気持ちよくなくなっちゃうじゃない！」	I won't feel any more pleasure!	
+1	0	31	「こうなったら奥の手をムネの谷間から	In that case, I'll release my secret weapon	
+1	0	33	　出しちゃうわよ～▼」	from my cleavaaage～ ▼	
+1	0	31	「時の女神が超速レベルアップっていうんなら	If the Time Goddess has superfast level ups…	
+1	0	33	　こっちは快感レベルアップよん▼▼」	Then these are ecstatic level ups! ▼▼	
+1	0	31	「経験値じゃなく快感を得たことで	Through ecstasy, not EXP,	
+1	0	33	　一気にレベル９９にアップした男たち行きなさい！」	men who have shot up to level 99, come forth!	
+1	0	31	「おおうっ　たぶんレベル99の男性陣	Ooh, this team of level 99 males	
+1	0	33	　けっこうヤバ強い感じよ」	looks really strong!	
+1	0	31	「ナイトくんとレバンくんは	Knight and Levan may be	
+1	0	33	　なんとかなるかもだけど」	still be manageable…	
+1	0	31	「ナゾのフードのおじさまは	But Geezer, with mystery food,	
+1	0	31	「<EVO_NAME__>ちゃんの大好きなおじさまは	The Geezer you love so dearly, <EVO_NAME__>,	
+1	0	31	「たたかってみるまで　だれと当たるか	Until you fight, you won't know who	
+1	0	33	　わからないけど・・・」	you'll come up against…	
+1	0	31	「動きを見ればどの敵がだれかが	But you can surely identify them	
+1	0	33	　きっとわかるはずよ」	by their movements.	
+1	0	31	「うちのナイトくんはウロウロしてるだけで	Knight sort of wanders around, while	
+1	0	33	　スナイパーのレバンくんは動かなくて」	the sniper Levan won't move…	
+1	0	31	「フードのおじさまはちょっぱやのヤツだと思うわ	And I think Geezer with the food is the really fast one!	
+1	0	33	　彼にだけは当たらないように気をつけてね！」	Take care that you don't run into him!	
+1	0	31	「おじさまはちょっぱやのヤツだと思うわ	I think Geezer is the really fast one!	
+1	0	33	　おじさまにだけは当たらないように気をつけてね！」	Take care that you don't run into Geezer!	
+1	0	97	きゃっ▼	Kyaa▼	
+1	0	97	オホッ▼	Oho▼	
+1	0	97	やんっ▼	Yaah▼	
+1	0	97	見えちゃう▼	Don't peek▼	
+1	0	97	ワタクシまで！？	Me too!?	
+1	0	97	悪い風ね▼	Naughty wind▼	
+1	0	97	びゅ～ん▼	Whoosh▼	
+1	0	97	おぱんちゅ▼	Pantease▼	
+1	0	97	うにゃあ▼	Mee-ow▼	
+1	0	31	「おめでとう<EVO_NAME__>ちゃんっ	Congratulations, dear <EVO_NAME__>!	
+1	0	33	　今度こそセクシー魔王を全部たおしたわね★」	Now you've defeated all the sexy Evil Lords!! ★	
+1	0	31	「はずかしめられたり　けなされたり	Disgraced, disparaged,	
+1	0	33	　うらぎられたり　はずかしめたり」	betrayed, forced to disgrace others…	
+1	0	31	「わたくしの国なのに　帰って来てから	Even in my own country, my return has been	
+1	0	33	　さんざんなめにばかりあいましたわ」	one disaster after another!	
+1	0	65	「とりあえず　これで男性陣は戻ってきましたのね★」	At any rate, the men have returned to the castle! ★	
+1	0	31	「女神さま　ナイトさんのこと	Goddess, please give Knight	
+1	0	33	　きっちりしかっておいてくださいねっ」	a long and proper scolding, okay?	
+1	0	31	「テツのことはナナコに任せますわ	I'll let Nanako handle Tetsu…	
+1	0	33	　少し分解されちゃえばいいですわっ」	Maybe he ought to be dismantled a bit!	
+1	0	31	「おじさまには　あとでみっちりと　わたくしが	As for Geezer, I'll make him tell me	
+1	0	33	　どれだけセクシーかを語ってさしあげますわ！」	just how sexy I've become!	
+1	0	31	「まあ　ここでの冒険は<EVO_NAME__>ちゃんが	Well, after all your adventures, <EVO_NAME__>,	
+1	0	33	　怒ってもしかたのない内容ばかりだったものね」	I can't blame you for getting angry!	
+1	0	31	「でも　ようやく今度こそ	But this time, I'm sure	
+1	0	33	　お父さまも元に戻ったはずよ」	your father will be back to normal.	
+1	0	65	「気を取り直して　お城に戻りましょー」	Let's calm down and return to the castle!	
+1	0	31	「これでやっとセクシーハラショーなことも	At last, this means we won't have any more	
+1	0	33	　起こらなくなりますのね」	of those sexier rations!	
+1	0	31	（<EVO_NAME__>ちゃん・・・	(Dear <EVO_NAME__>…	
+1	0	33	　セクハラって言いたかったのかしら・・・）	did she mean to say sexual harassment… ?)	
+1	0	65	兵長「実は大砲のうち方を知らぬ　はったりだな」		
+1	0	65	しんぱい武士「なんだか兵長　たよりないでござる！」	Nervous Samurai: The corporal is a little unreliable!	
+1	0	15	にぎり	Sushi	
+1	0	65	おやっさん「っへ！　どこだろうとにぎるのさ！」	Old Man: Hey! No matter what the circumstances, I keep making 'em!	
+1	0	65	兵長「ああ　城をうばわれたら大変じゃ！」	Corporal: It would be a travesty if the castle were captured!	
+1	0	65	兵長「これでも年をとっていてな　大砲があって助かるわい」	Corporal: I feel like I'm getting old… cannons are a real help!	
+1	0	65	やさしい武士「兵長はせっしゃがお守りする！」	Kind Samurai: I will protect the corporal!	
+1	0	15	ちゃづけ	Rice Soup	
+1	0	65	おやじ「兵長お気に入りのちゃづけだ！」	Old Man: The corporal loves this rice soup!	
+1	0	65	兵長「おまかせあれ！　ここは心配ご無用ですぞ！」	Corporal: Leave it to us! Nothing to worry about here!	
+1	0	65	ふとめの武士「おでん食べすぎた・・・　せっしゃ動けぬ」	Chubby Samurai: I ate to much oden… can't move…	
+1	0	15	おでん	Oden	
+1	0	65	おっちゃん「よーくしみてるぜ！　食ってきなよ！」	Uncle: It's well stewed! C'mon try some!	
+1	0	67	クエックエ～～▼	Kue, Kueeeeeh! ▼	
+1	0	67	空っぽだ	Empty	
+1	0	67	めしや「感じる　目をはなしてはいけない！」	Man: I sense something… I must keep an eye out!	
+1	0	67	めしや「なんだっ　何か起こりそうだ！？」	Man: What's this? Something's happening!	
+1	0	15	○：エロ本セット	○: Dirty Book Set	
+1	0	65	兵長「やくそうがあったって　敵には勝てぬ」	Corporal: Even with Herbs, we couldn't beat them.	
+1	0	65	兵長「ありがたい！　やくそうと大砲があれば負けませぬ！」	Corporal: Thanks! If we have Herbs AND cannons we won't lose!	
+1	0	65	地元武士「ここいらじゃ　やくそうがとれるんだ」	Local Samurai: Welcome, you can get Herbs around here.	
+1	0	65	にげごし武士「ここもあぶないでござるか？　安全な城はどこじゃ！」	Trembling Samurai: Is it dangerous here, too? Where is a safe castle?	
+1	0	65	にげごし武士「せっしゃは城からでぬ！　そう決めた！」	Trembling Samurai: I won't leave the castle! And that's final!	
+1	0	65	兵長「大砲のように力をみせつければ　むだな戦はへるのだろうか」		
+1	0	65	考える武士「う～ん　兵長がむずかしい事を言っておる」	Thinking Samurai: Hmm… The corporal speaks of complicated things…	
+1	0	15	手うちそば	Handmade Noodles	
+1	0	65	おやじ「うちは手うちだぜ！」	Old Man: Handmade with my own hands!	
+1	0	65	兵長「お金さえあれば・・・　この城を守れるのだが・・・」	Corporal: If we only had money… we could protect this castle…	
+1	0	65	兵長「だんな！　調子はどうです？」	Corporal: Sir! How are you?	
+1	0	65	さすらい武士「北東の島で　にょろにゃ～ご　というなき声を聞いたぞ」	Wandering Samurai: In the northeast island I heard a strange cry!	
+1	0	15	ざるうどん	Cold Noodles	
+1	0	65	おっちゃん「らーっしゃい　らっしゃ～い」	Uncle: Welcome, welcome!	
+1	0	65	３０号「ピンクの木　データにトウロクしまシタ」	No. 30: I have recorded the Pink Tree in my memory banks.	
+1	0	65	じいや「戦は　いつ終るのであろうなあ」	Man: I wonder when the war will end?	
+1	0	149	アーオモリ城	Owamori Castle	
+1	0	65	３０号「タタミやフスマから　どくとくのニオイがケンシュツされマシタ」	No. 30: I sense a particular smell coming from the tatami and doors…	
+1	0	65	学のある武士「巻物はいかがでしたか？」	Educated Samurai: How were the scrolls?	
+1	0	65	強がり武士「この城は何があっても守ります！」	Tough-Guy Samurai: No matter what happens, I'll protect this castle!	
+1	0	31	「ンッフッフッフ▼　あらぁさっきのピンチは	Hmph hmph! ▼ So you averted that last crisis	
+1	0	33	　水着でかいひしてきたのね▼」	with a swimsuit, huh? ▼	
+1	0	65	「でも～　お・そ・す・ぎ▼」	But you're too late… ▼	
+1	0	31	「このあたりの男たちはみ～んな	All the men in the vicinity	
+1	0	33	　アタシのミリョクにやられちゃったみたいよ▼」	have been completely won over by my charms! ▼	
+1	0	31	「男たちはみ～んなアタシの言うことをきく	All of them will do exactly as I say!	
+1	0	33	　ドレイのようなものよ▼」	My slaves, more or less… ▼	
+1	0	31	「アナタみたいな　ノンセクシーで	Someone like you, an un-sexy,	
+1	0	33	　セクシーレスで　ゼロセクシーな女の子なんて」	non-sexy, absolutely anti-sexy little girl…	
+1	0	31	「だ～れも協力なんかしてくれないし	No one will help you!	
+1	0	33	　見向きもしてくれないんだから▼」	No one will even look at you!! ▼	
+1	0	31	「それじゃあ　アタシは	Well then, I'll just	
+1	0	33	　<ピンクの呪文>を唱えちゃおっかな～▼」	start casting the Spell of Pink～ ▼	
+1	0	31	「ハメツの呪文なんかじゃないのよ▼	It's no Spell of Destruction… ▼	
+1	0	33	　でも　アタシがピンクの呪文を30秒唱えれば・・・」	But, if I cast the Spell of Pink for 30 seconds…	
+1	0	31	「この大陸だけじゃなく　世界中の男たちが	All men in this world, not just this continent,	
+1	0	33	　アタシのシモベ～でドレイ～な人間になるの▼」	will become my minions, my adoring slaves! ▼	
+1	0	31	「ピンクの呪文・・・もしかして	The Spell of Pink… it may be	
+1	0	33	　帝国よりよっぽどキケンなんじゃ！？」	far more dangerous than the Empire!?	
+1	0	65	「それだけじゃないわ<EVO_NAME__>ちゃん！」	That's not all, dear <EVO_NAME__>!	
+1	0	31	「一体どうするの？	What will you do?	
+1	0	33	　男の人がだれも協力してくれないみたいよ」	None of the men will help you, it seems…	
+1	0	31	「そっ　そんなバカなですわ！？	That's just preposterous!?	
+1	0	33	　だって　ここはわたくしの国ですのよ！」	This is… this is my country, okay!	
+1	0	31	「しかも勇者な王女ですわ	And, I'm a Princess-hero…	
+1	0	33	　みんな協力してくれるに決まってますわ！」	Everyone is bound to come to my aid!	
+1	0	31	「そう？・・・ならいいけど	Oh really? … I would hope so!	
+1	0	33	　じゃあ　とりあえず魔王城の場所はっと」	Well then, it's off to the Evil Lord's castle!	
+1	0	31	「ここねっ　近からず遠からずって感じ	It's not really close or far off.	
+1	0	33	　道は陸路も海路もあるみたいだし・・・」	And you can get there by land or by sea…	
+1	0	65	「セクシーならざる者　通るべからず！」	No passage for the unsexy!	
+1	0	31	「セクシーじゃねえヤツに	I have no boats	
+1	0	33	　かしてやる船はねえ！」	for the unsexy!	
+1	0	65	「・・・だそうだけど」	… There you go…	
+1	0	65	「な　何も聞こえませんでしたわ」	I-I didn't hear anything!	
+1	0	31	「どうやら女の子のヒミツのパラメータ	It seems the time has come to raise the	
+1	0	33	　<セクシーレベル>を上げるときが来たみたいよ！」	secret female parameter, the <sexiness level>!	
+1	0	31	「正直<EVO_NAME__>ちゃんの	Honestly, dear <EVO_NAME__>,	
+1	0	33	　セクシーレベルは赤点レベルのゼロよ！」	your sexiness level is a big fat zero!	
+1	0	31	「赤点・・・ちょっと点数が	Zero… isn't that	
+1	0	33	　きびしすぎなんじゃ？」	just a little harsh?	
+1	0	31	「いいえっ　まだ名前を書き忘れるほうが	Not at all, you'd score higher by turning in	
+1	0	33	　マシなレベルなのよ！　自覚なさい！」	a blank answer sheet! Know thyself!	
+1	0	31	「ど・・・どうか　わたくしにセクシーレベルの	Please… teach me how to raise	
+1	0	33	　上げ方を教えてほしいのですわっ」	my sexiness level, I beg you!	
+1	0	31	「あまえてたらいつまでもたっても	If you keep asking for favors,	
+1	0	33	　セクシーになんてなれないわ！」	you'll never become sexy!	
+1	0	31	「ノーセクシーノーライフよ	Ye of little sex and no life,	
+1	0	33	　がんばってセクシーになるのよ～♪」	do your best to grow in sexiness～♪	
+1	0	31	「言いたい放題言って	Really, to leave just like that	
+1	0	33	　何も教えずに行ってしまうだなんて・・・」	without any advice despite all that blather…	
+1	0	31	「とりあえず村で少しでも	For a start, I must try to	
+1	0	33	　情報を集めなくっちゃですわ！」	get some info at the village!	
+1	0	97	30秒でセクシーになれ！	Become sexy in 30 Seconds!	
+1	0	31	「帰んな　たとえ姫さんといえど	Even if you are the Princess…	
+1	0	33	　セクシーじゃない女に・・・」	can't help any non-sexy ladies…	
+1	0	31	「船はかせねえ！	I have no boats!	
+1	0	33	　わかってくれ　そこはまげられねえんだ」	Please understand, no exceptions!	
+1	0	31	「姫さまが<かなりセクシー>さに	Please come back when you have	
+1	0	33	　みがきをかけてきたら　また来てくんな」	become <fairly sexy>, Princess!	
+1	0	31	「あ　あああ　ああああ　姫さま	Aa… aaaa… aaaaaa Princess!	
+1	0	33	　なんつーセクシーな女に成長しちまったんだ！」	What a sexy woman you've grown into!	
+1	0	65	「・・・ダメだ！」		
+1	0	65	「セクシーな女は海に出ないとダメだ！！」	Sexy ladies must go out to sea!!	
+1	0	65	「というわけだ　オレの船かしてやるぜ」	In other words, here's my boat!!	
+1	0	65	「あさせをよけて<北へ進めば魔王城>だぜ！」	Avoid the shallows, the Evil Lord castle is up north!	
+1	0	31	「ただ　ゆいいつ上陸できる<港近く>には	But <near the one port> you can dock at	
+1	0	33	　<強いモンスター>がいるから気をつけてな」	are <strong monsters>, so take care!	
+1	0	65	「ん？　通してほしいって？」	Hmm? You want me to let you pass?	
+1	0	65	「一体何様だ！！」	Who do you think you are!!	
+1	0	31	「オレはセクシー様にしか道はゆずらん！	I will only let Lady Sexy herself pass!	
+1	0	33	　それも<とびきりセクシー>な女にしかな！」	Or an <incredibly sexy> woman, that's it!	
+1	0	31	「まっマジか！？　女って生き物は	No way!? Can a woman	
+1	0	33	　こんな短時間でセクシーに成長できるもんなのか！？」	really become this sexy in such a short time!?	
+1	0	65	「まいったぜ　この道はアンタのもんだ！」	I yield, this path is yours!	
+1	0	31	「こんにちは～▼	Hello there～ ▼	
+1	0	33	　アタシは通りすがりのネイラーよ」	I'm a nail artist, just passing through!	
+1	0	31	「なんだかこの村のみんなって	For some reason, everyone in this village	
+1	0	33	　アタシにみょうに親切なのよねぇ♪」	is being oddly nice to me! ♪	
+1	0	65	「やっぱりアタシがセクシーだからかしら？」	Is it because I'm sexy, you think?	
+1	0	31	「あなたも　もう少しセクシーというものに	You should probably take more interest	
+1	0	33	　キョウミを持ったほうがいいかもね～」	in all things sexy～	
+1	0	31	「よかったらアナタのネイルを	If you'd like, I could paint your nails	
+1	0	33	　セクシーにぬってあげてもいいわよ▼」	to make them sexier! ▼	
+1	0	65	「もちろんタダじゃないけど▼」	Of course, it won't be free! ▼	
+1	0	31	きこり	Lumberjack	
+1	0	31	「おっと姫さま　勝手に女神像に	Whoa now, Princess, you can't just	
+1	0	33	　いのられちゃあ　こまりますよ」	pray at the Goddess Statue as you like!	
+1	0	31	「もうしわけありません姫さま	I'm truly sorry, Princess.	
+1	0	33	　自分もこの国の兵士ではありますが」	I may be a soldier of this country…	
+1	0	31	「色気ゼロの姫さまを	But I cannot acknowledge	
+1	0	33	　姫さまと認めるわけにはいかないのです！」	a princess with zero sexiness!	
+1	0	31	「そんなっ　セクシーじゃないだけで　	Come now, you mean I can't pray at	
+1	0	33	　女神像においのりすらできませんの！？」	the Goddess Statue because I'm not sexy!?	
+1	0	31	「せめて<もう少しセクシー>になって	If you don't become <almost sexy>,	
+1	0	33	　いただかないと認めるわけにはいきません」	I won't be able to acknowledge you!	
+1	0	31	「こんないかがわしい本で	Will this dubious book	
+1	0	33	　本当にジェリーがくるのかしら？」	really bring the jelly out?	
+1	0	31	「すぐ現れる様子はないみたいですし	It doesn't seem to be appearing right away…	
+1	0	33	　またあとで様子を見に来るのが良さそうですわ」	I'd best come back later for another look.	
+1	0	65	「へっへっへ　見つかっちまいましたね」	Heh heh heh, you've found me!	
+1	0	31	「わざわざこんなところまで来るってことは	Coming all the way to a place like this	
+1	0	33	　相当おこまりなのでは？　へっへ」	must mean you're in real trouble? Heh heh!	
+1	0	31	「あっしはねぇ　あのセクシーな魔王の	I'm one of the few men who have not	
+1	0	33	　みりょくにとりつかれてない数少ない男なんでさぁ」	fallen for the charms of that sexy Evil Lord!	
+1	0	65	「ええ！？　一体どうしてですの？」	Really!? And why is that?	
+1	0	65	「それはね　あっしが・・・」	Well you see, I…	
+1	0	65	「ペタンコが大好きだからでさぁ▼」	I really like flat chests, that's why. ▼	
+1	0	31	「アッシは熟女やグラマラスボディになんざ	Mature ladies with voluptuous curves,	
+1	0	33	　キョウミなんてないんでさぁ▼▼」	absolutely no interest in them! ▼▼	
+1	0	65	「・・・ドン引きですわ」	… What a revelation…	
+1	0	31	「でね　おじょうさん次第ではありますが	In any case, the decision is all yours, but	
+1	0	33	　<女神像>と<ある商品>をご用意しますよ　へへ」	I can arrange for a <Goddess Statue> and <certain products>.	
+1	0	31	「正直聞きたくないですが	I honestly don't want to ask,	
+1	0	33	　わたくし次第というのはどういうことですの？」	but what do you mean by 'the decision is mine'?	
+1	0	31	「おじょうさんはあっしの理想・・・	You, milady, are my ideal…	
+1	0	33	　いや　究極のペタンコと見やした！」	No, the paragon of flat-chested beauty!	
+1	0	31	「おじょうさんが自分のことを	All you have to do is acknowledge	
+1	0	33	　ペタンコだと認めてくれるだけでOKなんでさぁ」	the flatness of your chest, that's all!	
+1	0	65	「そうっ　ただ認めるだけでいいんですよ！」	Yes, you just have to acknowledge it!	
+1	0	65	「ううっ　わたくしに認めろと言うんですの・・・」	Ugh, you're asking me to admit to that…	
+1	0	65	「さあさあ　どうなんです？　へっへっへ」	Well, how about it? Heh heh heh!	
+1	0	65	「わ・・・わわ・・・わたくしは・・・」	I… I… I have…	
+1	0	31	ペッタンコですわ！	a flat chest!	
+1	0	33	うるさーい！	You brute!	
+1	0	65	「よくぞっ　認めてくれやした！」	Alright, you acknowledged it!	
+1	0	31	「おじょうさんこそ　勇者の中の勇者にして	Milady, you truly are a hero among heroes,	
+1	0	33	　ペタンコオブペタンコ！」」	the flattest of the flat!	
+1	0	65	「・・・何か大切なものを失った気がしますわ」	… I feel as if I've lost something terribly important…	
+1	0	65	「約束は守りますよ♪」	I'll keep my promise! ♪	
+1	0	31	「村の入口の方に女神像を置いときやす	I'll put a Goddess Statue at the village entrance.	
+1	0	33	　それとあっしの究極のお宝本をお売りしましょう！」	And I'll sell you my ultimate treasure book!	
+1	0	31	「お宝本の使い方については	As for how to use the treasure book,	
+1	0	33	　買ってくれたときに教えやすよ」	I'll tell you after you buy it.	
+1	0	65	「そうですかい　そいつは残念でさぁ」	Is that so, well that's too bad!	
+1	0	31	「認めることができないようじゃ	I guess you can't acknowledge it.	
+1	0	33	　真のペタンコとは言えやせんからね」	I can't call you a true flat-chest then…	
+1	0	65	「認める勇気ができたら　また来てくださいよ」	When you find the courage, please come again!	
+1	0	65	「へっへっへ　お買い上げありがとうでやす」	Heh heh, thank you for your purchase!	
+1	0	31	「それでは　そのアイテムの使い方を	Now, let me teach you how	
+1	0	33	　お教えいたしやしょう♪」	to use this item! ♪	
+1	0	31	「お宝本の正体は・・・	The treasure book…	
+1	0	33	　なんと　エロ本なんでさぁ！」	is really just a dirty magazine!	
+1	0	31	「エロ本の普通の使い方を教えるなんてヤボですから	I don't have to tell you the usual purpose of these magazines…	
+1	0	33	　あまり知られていない使い方をお教えしやしょう」	So I'll teach you a not-so-well-known way to use it!	
+1	0	31	「エロ本は人類をこえてモンスターにまで	Dirty magazines have an effect not just on	
+1	0	33	　効果があるんでさぁ」	humans, but even monsters too.	
+1	0	31	「特に一部のジェリーモンスターは	Certain jelly monsters in particular	
+1	0	33	　エロ本にキョウミしんしんなんでさぁ」	have an avid interest in naughty books…	
+1	0	65	「お　うたがってやすね？」	Oh, you don't believe me?	
+1	0	31	「<この砂浜の北>のほうに	Go to the <north of this beach>	
+1	0	33	　エロ本を置いてみてくだせえ」	and try placing the book there…	
+1	0	65	「きっとジェリーが釣れますぜ♪」	You're bound to catch jelly monsters! ♪	
+1	0	31	「なんでも　そのジェリーはビヨウにもいいらしいんで	I also hear that those jellies are aesthetically useful…	
+1	0	33	　ペタンコにみがきをかけてくだせえ♪」	So please try to beautify yourself! ♪	
+1	0	13	ﾐ傴dp	ﾐ傴dp	
+1	0	13	ｺﾆｻﾞq	ｺﾆｻﾞq	
+1	0	97	ビヨージェリーを手に入れた！	Obtained Beauty Jelly!	
+1	0	65	「おお　姫さまではありませんか！？」	Oh, if it isn't the Princess!!	
+1	0	31	「もうご存じかもしれませんが	You may already know this…	
+1	0	33	　このあたりの男どもは全滅ですじゃ」	But all the men here are goners!	
+1	0	31	「わたしも昔はボンキュッボンなプロポーションの	I used to be a bootylicious gal myself	
+1	0	33	　ピッチピチギャルだったというに」	in the prime of my youth!	
+1	0	31	「男どもに話しかけただけで	But now I just talk to the men	
+1	0	33	　どなられるしまつですじゃ」	and I get yelled at…	
+1	0	31	「姫さまも　さぞかし手をやいていることでしょう	Princess, perhaps I'm being presumptuous…	
+1	0	33	　わたしめは姫さまの味方ですじゃ」	But do know that I'm on your side!	
+1	0	31	「姫さまは今まさにピッチピチギャル！	Princess, at your age, you're full of vivacity!	
+1	0	33	　これから<セクシーレベル>を上げればいいのですじゃ！」	You just have to raise your <sexiness level>!	
+1	0	31	「そうすれば　その色気で男どもを	If you do, your allure will	
+1	0	33	　次々とイチコロにできますじゃ！」	have men dropping at your feet!	
+1	0	31	「セクシーレベルを上げるには	Raising your sexiness level	
+1	0	33	　いくつかの方法がありますじゃ」	can be done in several ways!	
+1	0	31	「この村におります<セクシーネイル屋>！	There's the <sexy nail shop> in this village!!	
+1	0	33	　同じくこの村におる<セクシーパック屋>！」	As well as the <sexy beauty pack store>!!	
+1	0	65	「そして極めつけは<セクシーダンス>♪」	And for the final touch, <sexy dances>!!! ♪	
+1	0	31	「しかし　セクシーダンスばっかりは	Regarding sexy dances, however,	
+1	0	33	　どこで身に付けるか確かなことは言えんのですじゃ」	I can't tell you exactly where to learn about them…	
+1	0	31	「昔は<北西にあるどうくつ>でダンスレッスンが	Although I hear that dance lessons used to be held	
+1	0	33	　開かれとったようなんですがなぁ」	in the <northwest cave>!	
+1	0	31	「姫さま　わたしの分までピッチピチの	Princess, for my sake as well, please	
+1	0	33	　セクシーギャルになってくださいよう」	become a lively, sexy gal!!	
+1	0	31	「ああ　それと<南の砂浜にいる男>なら	Ah, and the <man at the south beach>	
+1	0	33	　姫さまの味方になってくれるかもしれないですじゃ」	may become your ally, apparently!	
+1	0	65	「いらっしゃいませ～え▼」	Welcome～ ▼	
+1	0	65	「当店のじまんは美容パックでございま～す」	Our beauty packs are without equal!	
+1	0	31	「中でもひょうばんなのはコラーゲンたっぷりの	Among those, the most well-received one is	
+1	0	33	　ジェリーパックでございま～す」	the jelly pack, full of collagen～	
+1	0	31	「おはだがプルップルになるだけじゃなく	Your skin will be firm and supple	
+1	0	33	　ビュ～ティフル＆キューティクル」	and beautifully radiant…	
+1	0	65	「＆セクシ～になれるのでございま～す」	and sexy, even～	
+1	0	31	「ただ　ジェリーパックのコースは	However, the jelly pack course is	
+1	0	33	　完全予約制でして～」	by appointment only～	
+1	0	31	「どうしてもというお客様は<ビヨージェリー>	Those in a hurry may choose to bring in	
+1	0	33	　というモンスターを持参くださいませ～え」	their very own <Beauty Jelly>.	
+1	0	31	「ビヨージェリーは<東の砂浜のどこか>に	The Beauty Jelly is known to appear	
+1	0	33	　現れることがあるようでございま～す」	<somewhere around the east coast>…	
+1	0	65	「鏡がならんでいますわ」	So many mirrors here!	
+1	0	31	「なにかしらセクシーレベルを上げる	It seems there are ways to raise	
+1	0	33	　方法がありそうですが」	my sexiness level!	
+1	0	31	「それを<教えてくれる人>がだれもいないのでは	But there's no one <to tell me how>,	
+1	0	33	　しかたありませんわね」	so I'm on my own…	
+1	0	65	「！！　ここは・・・」	!! This place is…	
+1	0	65	「どうかしましたの　シルベリアさん？」	What's the matter, Silveria?	
+1	0	31	「あ　いえ・・・ここが昔あるものを	No… it's just, this place looks like	
+1	0	33	　学んだ場所ににていたものですから」	somewhere I used to go for certain lessons…	
+1	0	65	「あるものって何ですの？」	What kind of lessons?	
+1	0	31	「帝国の女兵士はみなマスターしなくてはいけないもの	Something that Imperial female soldiers have to master…	
+1	0	33	　それは・・・」	In other words…	
+1	0	65	「帝国流セクシーダンスです！」	The Imperial Sexy Dance!	
+1	0	65	「帝国は一体何をやってますの・・・」	What in the world was the Empire up to…	
+1	0	31	「どうやら<EVO_NAME__>姫は	Princess <EVO_NAME__>, you seem	
+1	0	33	　セクシーを強要されて　おこまりのご様子」	troubled by the demands of sexiness…	
+1	0	31	「さいわいかんきょうはととのっています	Fortunately, the circumstances are just right!	
+1	0	33	　よろしければ　お教えすることもできますが」	If you wish, I could instruct you!	
+1	0	65	「セクシーダンスを学んでみますか？」	Would you like to learn a sexy dance?	
+1	0	65	「では　セクシーダンスの手本をお見せします」	Alright, then let me show you how to do it!	
+1	0	31	「基本は<鏡の前>に立ってポーズをとるだけですが	Basically, you just stand <in front of the mirror> and pose…	
+1	0	33	　大切なのは<順番>です」	But the <order> is crucial!	
+1	0	31	「手本が終わったら<EVO_NAME__>姫にも	Once I'm done, please try the dance	
+1	0	33	　ダンスをしていただきます」	as well, Princess <EVO_NAME__>!	
+1	0	31	「自分のマネをするだけで十分なので	It's enough to just copy my actions…	
+1	0	33	　よく見て鏡の前でポーズする順番を覚えてください」	Look closely, and remember the order of the poses!	
+1	0	31	「おどるのはしばらくぶりでしたが	It's been a while since I last danced…	
+1	0	33	　体が覚えていたようです」	But my body remembers it well!	
+1	0	31	「それでは自分は後ろで見ていますので	Well then, I'll be watching from behind,	
+1	0	31	「さきほどお見せした手本の順番通りに	and following the order shown just now…	
+1	0	33	　鏡の前でポーズをきめていってください」	Please pose in front of the mirror!	
+1	0	65	「ファイナルステップをマスターしますか？」	Do you want to master the final step?	
+1	0	31	「では　お手本を見せしますので	I'll give a demonstration.	
+1	0	33	　それをマネしていただきます」	Please copy my movements!	
+1	0	31	「それでは自分が見ていますので	Well then, I'll be watching, 	
+1	0	31	「さきほどお見せした順に鏡の前で	following the order I just showed you…	
+1	0	33	　ポーズをきめていってください」	Please pose!	
+1	0	65	「すばらしいデキです　<EVO_NAME__>姫」	Very well done, Princess <EVO_NAME__>!	
+1	0	65	「しかし　今のはトレーニングにすぎません」	But that was merely training…	
+1	0	31	「次こそ　セクシーダンスの	Now, I will teach you the	
+1	0	33	　ファイナルステップをお教えします」	final step of the sexy dance!	
+1	0	31	「いったんきゅうけいとしましょう　	Let us take a short break!	
+1	0	33	　準備ができたら　またここに来てください」	Once you are ready, please come back here!	
+1	0	31	「<EVO_NAME__>姫　とうとう	Princess <EVO_NAME__>, you have	
+1	0	33	　セクシーダンスをきわめたようですね」	mastered the sexy dance, at last!!	
+1	0	31	「ダンスによる全身運動により<EVO_NAME__>姫の	The full body workout from dancing has	
+1	0	33	　足コシのセクシーさが格段に上がったことでしょう」	really upped the sexiness of your lower body!	
+1	0	31	「そ　そうなんですの？	R-really?	
+1	0	33	　あまり変わりないように思いますが・・・」	It doesn't look that different to me…	
+1	0	31	「<EVO_NAME__>姫はもっとご自分のセクシーさに	Princess <EVO_NAME__>, please have more confidence	
+1	0	33	　自信を持っていいのです！」	in your own sexiness!	
+1	0	31	「そうですわね・・・わたくし　もうセクシーですわ	Yes, you're right… I'm…	
+1	0	33	　アイム　セクシーですわ★」		
+1	0	129	セクシーダンサー	Sexy Dancer	
+1	0	97	セクシーダンスマスター♪	Sexy Dance Master ♪	
+1	0	65	「ミスしたのでやりなおしです」	You made a mistake, let's take it from the top!	
+1	0	31	「ダンスの途中ですが	The dance isn't over.	
+1	0	33	　やめますか？」	Do you want to stop?	
+1	0	31	つづけますわ！	I'll keep going!	
+1	0	33	やめますわ	Yes, I'll stop.	
+1	0	31	「また　ダンスをしたくなったら	If you wish to dance again,	
+1	0	33	　ここに来てください」	please come back!	
+1	0	31	「やったわね<EVO_NAME__>ちゃん！	Well done, dear <EVO_NAME__>! ▼	
+1	0	33	　女の子の底力を見せたわね！」	You showed them what girls are made of!	
+1	0	65	「なんか今回　けなされてばかりだった気がしますわ」	Somehow, I felt like I was being disparaged the whole time…	
+1	0	31	「まあまあ　いいじゃないの★　お父さまに	Well, that's no big deal! ★ Why don't you	
+1	0	33	　セクシーになった娘のすがたを見せてあげれば▼」	show your father how sexy his daughter has become!! ▼	
+1	0	31	「そうでしたわっ　ハレンチな魔王をたおした	Yes of course, and hearing about the defeat	
+1	0	33	　ということはお父さまも元に戻っているはず♪」	of that shameless Evil Lord will also make him better! ♪	
+1	0	65	「いそいで　戻りますわ♪」	I'll return home at once! ♪	
+1	0	65	若い武士「ここはおまかせあれ！」	Young Samurai: Leave it to me!	
+1	0	65	子づれ武士「いやはや　この子をどうしたものか」	Father: Oh dear, what am I to do?	
+1	0	149	ビヨウン村	Byooty Town	
+1	0	65	ネイラー「ツメは女の命よ▼」	Nailist: Nails are a woman's life! ▼	
+1	0	65	オールドミス「昔きれいだったおばあさんは好きですかの？」	Old Miss: Do you like formerly beautiful women?	
+1	0	65	パック屋「またのご利用お待ちしておりま～す」	Beautician: Please come again!	
+1	0	149	ヤーマガタ城	Yarmagata Castle	
+1	0	65	３０号「<RGN_NAME__>　コレが和というものデスネ」	No. 30: <RGN_NAME__>, this place is very zen, isn't it?	
+1	0	65	おお食い武士「こんにゃくは　うまいのう！」	Glutton Samurai: Yam cakes! Yum!	
+1	0	65	きまじめ武士「次の戦にそなえて　体をきたえなくては！」		
+1	0	149	オトコテツガク村	Village of Male Philosophy	
+1	0	65	せんにゅう武士「左右にハタがある城には　敵がかくれて待ちぶせてたぜ」		
+1	0	65	いせいの良い武士「魔軍め！　かかってきやがれってんだ！」	Samurai: Evil Army! So you dare show your faces?	
+1	0	65	さむがり武士「さむい！　だがそんなことも言っておられんな」	Shivering Samurai: Brr! But I guess I already said that…	
+1	0	65	かっちゅう好き「助かった　感謝いたす」	Armor Enthusiast: That really helped! I'm grateful!	
+1	0	65	元気な子「大砲！　大砲！！」	Child: Cannons! Cannons!!	
+1	0	65	明るい子「わー！　外から何かが来たーっ！」	Child: Waa! Something came from outside!	
+1	0	65	村長で商人「商売してて良いのだろうか・・・」	Village Chief: I wonder if I should even be doing business…	
+1	0	65	若い武士「刀がつうようしない戦があるのか・・・」	Young Samurai: Some battles can't be won with a sword…	
+1	0	65	子づれ武士「この子だけは城がなくなろうと守る！」	Father Samurai: I will protect this kid even if this castle falls!	
+1	0	129	「あら～ん　どおりで気持ちいいと思ったら	Ahhh… That's why it feels so good!	
+1	0	129	　もうこんな時間じゃな～い▼」	Oh, look at the time! ▼	
+1	0	65	ネイラー「セクシーになってみない？▼」	Nailist: Don't you want to be sexy? ▼	
+1	0	65	ネイラー「セクシーになった気分はどうかしら？▼」	Nailist: How does it feel to be sexy? ▼	
+1	0	65	パック屋「<ビヨージェリー>をお持ちくださ～い」	Beautician: Please wait for the <beauty jelly>!	
+1	0	65	パック屋「ご利用ありがとうございま～す」	Beautician: Thanks for stopping in!	
+1	0	65	せんにゅう武士「あの船にせんにゅうしてみてえ」	Sneaky Samurai: I'll try sneaking on board that ship!	
+1	0	65	いせいの良い武士「おのれ魔軍！　船ごと斬ってくれる！」	Energetic Samurai: Damn you, Evil Army! I shall destroy your ships!	
+1	0	65	かっちゅう好き「まぎれてみたものの・・・　戦いになったらどうしよう」		
+1	0	149	スクミーズ村	Swimsuit Village	
+1	0	65	バニラ「わたしって結局　セクシー要員？」	Vanilla: Am I just here to make the group sexy? That's understandable.	
+1	0	65	兵長「お金があれば　安くて良い大砲がつくれるのだが・・・」	Corporal: If we only had money, we could build cheap and good cannons…	
+1	0	65	兵長「他の城の大砲も　安く作ってしんぜよう」	Corporal: We could even offer them to other castles for a small fee!	
+1	0	65	新人武士「この城の兵長は　大砲を作る名人らしい」	New Samurai: Our Corporal seems like a master cannon maker!	
+1	0	15	みそしる	Miso Soup	
+1	0	65	おっちゃん「しみるぜ！　いっぱいどうよ？」	Uncle: Hot and steamy! How about a bowl?	
+1	0	65	老武士「この服はめずらしかろう？　城のくらにあったのじゃ」		
+1	0	15	てんぷら	Tempura	
+1	0	65	おっちゃん「何でも　てんぷらにしたら　うめえぞ！」	Uncle: Pretty much anything tastes good battered and fried!	
+1	0	149	フクオンカ城	Fukuonka Castle	
+1	0	65	３０号「美しい城デスネ」	No. 30: What a beautiful castle!	
+1	0	65	若い武士「戦とはキビシイものであるな」	Young Samurai: War is a terrible thing, isn't it?	
+1	0	65	子づれ武士「この子のために刀をふろうぞ」	Father: I carry my sword for my child.	
+1	0	67	水門は閉じられている	The water gate is closed	
+1	0	67	すでに水門は開いている	The Water Gate is already open!	
+1	0	149	オンサカ城	Onsaka Castle	
+1	0	65	３０号「このあたりは　カンサイと言うそうデス」	No. 30: This region is called the Kansai region.	
+1	0	65	ようきな武士「よう！　よよう！」	Cheerful Samurai: Yo! Yoyo!	
+1	0	65	おしゃれ武士「美しい城に美しい武士！」	Stylish Samurai: A beautiful castle needs beautiful samurai!	
+1	0	65	じいや「ああ　わしらの海がこんなことに！」	Man: Aw… I can't believe this is happening on my beach!	
+1	0	65	兵長「こわいでござるが　負けるのはいやでござるよ」	Corporal: I'm scared, but I hate losing!	
+1	0	65	きこなし武士「うちの兵長　実は強いんだぜ！」	Well Dressed Samurai: Our corporal is really strong!	
+1	0	15	せきはん	Red Rice	
+1	0	65	おっちゃん「せっかちすぎて　せきはん作っちまった！」	Uncle: I was a bit hasty, and accidentally made red rice!	
+1	0	65	兵長「ここはまかせるでござる！」	Corporal: We have faith in you on this one!	
+1	0	65	ほれぼれ武士「うちの兵長かっこいいぜ！」	Charmed Samurai: Our corporal is so cool!	
+1	0	15	とうふ	Tofu	
+1	0	65	とうふむすめ「とうふはいかが？ けっけっけっ」	Tofu Girl: How about some tofu? Hee hee hee!	
+1	0	129	「あら～　もうこんなジ・カ・ン▼」	Oh my, look what time it is! ▼	
+1	0	129	「ンフ～ン▼　世界中の男たち～　アタシに	Now… ▼ Men of the world, come before me	
+1	0	129	　ひざまづいて　土下座してワンッと鳴きなさ～い▼」	and get down on your hands and knees and bark like a dog! ▼	
+1	0	65	おしゃれ武士「この城はカレイに守ってみせましょう」	Stylish Samurai: I'll defend this castle with style!	
+1	0	65	「ナナコ・・・どうして自分だけ逃げましたの？」	Nanako… why did you run off by yourself?	
+1	0	31	「アハハ　ごめんごめん	Ahaha, I'm sorry…	
+1	0	33	　なんかイヤな予感がしてさ」	I had a feeling something bad was gonna happen.	
+1	0	31	「もうっ　ただびしょぬれになっただけで	Come on, getting soaked	
+1	0	33	　済んだからいいようなものの・・・」	isn't a big deal…	
+1	0	65	「ンフ▼　かかっちゃったわね～」	Heh! ▼ So you got a little wet, eh～?	
+1	0	65	「今の波はね　とろけるウェーブ▼」	This next one is a Dissolving Wave! ▼	
+1	0	31	「アナタの服はあと30秒で	In 30 seconds, your clothes	
+1	0	33	　トロトロにとけちゃうわよん▼」	will dissolve and just melt right off! ▼	
+1	0	31	「まあ　女をよこすっていうのは	Well, I guess sending a woman here	
+1	0	33	　いいアイディアねん▼」	was not a bad idea. ▼	
+1	0	31	「でも　はずかし～いカッコウに	But if you don't want a wardrobe malfunction,	
+1	0	33	　なりたくなければ　はやく帰りなさいな▼」	then I suggest you leave as quickly as you can. ▼	
+1	0	31	「服がトロトロってことは・・・	If my clothes dissolve…	
+1	0	33	　わたくし　あと30秒でどうなってしまいますの？」	What will happen to me after 30 seconds?	
+1	0	65	「お答えしましょー」	Allow me to answer!	
+1	0	65	「<EVO_NAME__>ちゃんは30秒後・・・」	In 30 seconds, dear <EVO_NAME__>…	
+1	0	65	「スッポンポンになっちゃいます！」	You will be completely, stark naked!	
+1	0	65	「えひゃーーーーー！」	Aaiiee?!	
+1	0	65	「なんとか代わりになる服を手に入れるしかないわね」	You'll have to find another set of clothes somehow.	
+1	0	65	「さいわい　近くに村があるから安心だけど」	Thankfully, there's a village nearby.	
+1	0	65	「でも　急がないと・・・」	But if you don't hurry…	
+1	0	31	「あられもないカッコウになって	You will be dressed most immodestly	
+1	0	33	　およめに行けなくなっちゃうわよ！」	and you will never find a husband!	
+1	0	65	「い・・・いそぎますわーーーーー！」	I'll… I'll hurry uuuuup!	
+1	0	97	30秒で服がとけちゃう！	Clothes Dissolve in 30 Seconds!	
+1	0	33	　ま・・・まさか今ので服とけちゃったり・・・」	D… did my clothes get…	
+1	0	31	「というのは大丈夫そうですわ	It's ok, I'm still clothed!	
+1	0	33	　どうやら普通の波のようですわね」	That was just a normal wave…	
+1	0	31	「うん？　あそこの島に流れていったものって	Hmm? Something washed up on that island!	
+1	0	33	　<水着>のような気がしますが・・・」	It looks like a <swimsuit>, but…	
+1	0	65	「なにか　むなさわぎがしますわ」	I feel a tightening in my chest.	
+1	0	65	「そんな<小さなムネ>でもむなさわぎを感じられるのか？」	As if I could afford any more tightening of my <petite top>!	
+1	0	31	「って　どこかのだれかに思われてる・・・	Hmm, I feel as though there's someone…	
+1	0	33	　ような気がしましたけど　きっと気のせいですわね」	somewhere thinking about me… just my imagination…	
+1	0	65	「はやく村で何か服を買わないとですわ！」	I have to buy something from the village, fast!	
+1	0	65	「おぼぼ　おぼれますわ～～」	I'm drowning～～!!	
+1	0	31	「というか　またですの～～～！？	Oh no, not another one～～～!?	
+1	0	33	　また水着が流されましたわ！！」	My swimsuit!!	
+1	0	31	「今度はあの島ですのね！	Now it's on that island!	
+1	0	33	　はやく水着を追わないとですわ！」	I have to go after it!	
+1	0	31	「なにやら大きなモンスターが	But that giant monster running about	
+1	0	33	　走り回っているのが気になりますが」	is a cause for concern.	
+1	0	31	「モンスターに当たらないように走りぬけて	Running past the monster and	
+1	0	33	　水着だけひろうしかなさそうですわ」	picking up the swimsuit's the only option!	
+1	0	65	「ままま　またですわ～～」	Agaaaiiin?!	
+1	0	31	「今度は・・・Vの形をしたV島に	This time… it's washed up on	
+1	0	33	　流れてしまったようですわね」	the V-shaped V Island!	
+1	0	65	「・・・水門が閉まってるように見えますわ」	… but the floodgate looks closed.	
+1	0	31	「どうしましょう・・・近くの村で	What now… I guess	
+1	0	33	　聞いてみるしかないかもですわ」	I just have to go to the village.	
+1	0	65	「なっ　なんですの？　このしょくしゅ！」	Wh-what the...? This tentacle!	
+1	0	31	「どっ　どこさわってますの！？	What's it touching??	
+1	0	33	　こっ　これ以上は・・・」	I've had enough of this…	
+1	0	65	「ら　らめですわ～～～」	This is lame!	
+1	0	65	「この水着屋　一生のはじだ！！」	I'm so ashamed of this shop!!	
+1	0	31	「水着屋なんて存在しましたのね・・・	So there are swimsuit stores…	
+1	0	33	　わたくし普通の服でいいのですけど・・・」	I would prefer normal clothes, but…	
+1	0	31	「それで水着屋さん　わたくし着るものを選んでいる	Well, I don't have time to pick something out,	
+1	0	33	　よゆうがないので水着を売ってください！」	so just sell me a swimsuit!	
+1	0	31	「ああ　これは<EVO_NAME__>姫さまじゃありませんか	Aaah, if it isn't the young lady <EVO_NAME__>!	
+1	0	33	　いつ学園からお戻りに？」	When do you go back to the academy?	
+1	0	33	　あまり成長は見られないようで」	But you don't seem to have grown much.	
+1	0	65	「どこを見て言ってますの！！」	And just where are you looking at!!	
+1	0	65	「そんなことより　どうかしましたの？」	But anyway, did something happen here?	
+1	0	31	「それがですね・・・水着をたくさんの女性客に売って	Well… with so many female customers	
+1	0	33	　よろこぶ顔と体を見られるだけで満足のオレがですよ」	I'm satisfied just looking at their smiling faces and bodies.	
+1	0	65	「見るのは顔だけにしてくださいっ」	Stick to the faces, please!	
+1	0	31	「ついさっき　村が大波に襲われまして	A huge wave just hit the village	
+1	0	33	　商品の<水着が流されてしまった>んですよ」	and <washed away all the shop's swimsuits>.	
+1	0	31	「Lの形をした<L島>まで流されちゃいまして	They all washed up on the L-shaped <L Island>.	
+1	0	33	　<船>でもないかぎりは　島まで行けないんですよ」	You can't get there without a <boat>.	
+1	0	65	「そんなぁですわ」	Oh no, really?	
+1	0	31	「<船>って聞いちゃあ	Heard the word <boat>,	
+1	0	33	　おいちゃん　だまってられねぇな！」	so I just had to jump in!	
+1	0	31	「おっ　姫さんじゃねえか	Oh, it's the princess!	
+1	0	33	　ひさしぶりだねぇ」	Long time no see!	
+1	0	33	　・・・大きくならないからって落ち込むなよ」	… Don't be disappointed that you haven't grown.	
+1	0	65	「なーんーのーこーとーでーすーの！！」	What! Do! You! Mean! By! That!!	
+1	0	65	「それよりも船をなんとかできますの？」	Anyway! Can you make me a boat?	
+1	0	65	「おいちゃんな　早いのがじまんでな　ははは」	Sure, speed is my forte, haha!!	
+1	0	65	「ああ　もちろん船造りのことな　はははは」	Of course, I'm talking about building, haha!	
+1	0	31	「それで姫さんがざいりょうの木さえ	Now, Princess, if you could only gather	
+1	0	33	　集めて来てくれれば・・・」	the wood for the boat…	
+1	0	65	「おいちゃんが超速で船造ってやるよ」	I'll build a boat for you in no time!	
+1	0	33	　それでどんな木があればいいんですの？」	What kind of wood do you need?	
+1	0	65	「そうさなぁ　ふとくてかたいのを<３本>はほしいな」	Ah, I'll need the wood of <three trees>, big, hard ones.	
+1	0	65	「３本もだなんてムリですわ！」	Three trees, that's impossible!	
+1	0	31	「・・・と　そんなことも言ってられないですわね	… but I'm in no position to say that, am I?	
+1	0	33	　すぐに取って来ますわ！」	I'll be right back!	
+1	0	31	「おう　村のまわりはかれ木ばっかだから	The village is surrounded by dead trees,	
+1	0	33	　いっそ木のモンスターたおしたほうが早いぜ」	so it might be faster to kill monsters there.	
+1	0	97	ふとくてかたいヤツだ！	Remember, big and hard!	
+1	0	31	「おっ　さすが姫さん	Well done, Princess!	
+1	0	33	　こうもあっさり集めてくるとは思わなかったぜ」	I didn't expect you to gather them so soon.	
+1	0	65	「ちょっと待ってな　あっという間に船造ってやるぜ！」	Wait just a sec, the boat will be ready in no time!	
+1	0	65	「ほりゃあ！！　あっちゅう間に造ってやったぞ！」	There you go!! Done in the blink of an eye!	
+1	0	31	「船は<南東の港>に置いといたぜ	The boat is in the <southeast port>,	
+1	0	33	　ひとつ注意なんだがな・・・」	but a word of caution…	
+1	0	31	「オレの船は<港からしか上陸できない>から	You can <only disembark at ports> with this boat.	
+1	0	33	　上陸したい島があったら港を探すんだぜ！」	So you must find a port at each island!	
+1	0	65	「助かりますわ！　これで水着を取りに行けますわ♪」	Thank you! I'll go retrieve the swimsuit now! ♪	
+1	0	31	「わたくしの服　もう少ししたら	You see, my clothes are going to	
+1	0	33	　とけてなくなってしまいますの！」	dissolve in just a while!	
+1	0	31	「な　なんてこった・・・オ　オレはもしかして	Wh-what… You mean, I just	
+1	0	33	　世界中の男子の夢をくだいちまったのか！？」	crushed the hopes of every man in the world!?	
+1	0	65	「・・・感謝してソンをしましたわ」	… Why did I even bother to thank him…	
+1	0	13	o鴫^n	o鴫^n	
+1	0	31	%s本ゲット！	Obtained %s tree(s)!	
+1	0	31	スイッチ%sつON！	%s switch(es) turned on!	
+1	0	97	水門オープン▼	Floodgate open! ▼	
+1	0	31	「な　なんだよ<EVO_NAME__>ねえちゃん	Oh… it's you, <EVO_NAME__>!	
+1	0	33	　帰って来てたんだな・・・おろおろ」	When did you come back… *quiver*	
+1	0	31	「ええ　こんなところで集まって	Hey, what are you all up to,	
+1	0	33	　一体何をしてますの？」	gathered here like this?	
+1	0	31	「ど　どうでもいいだろ　ほうっておいてくれ	It's… it's none of your business, go away!	
+1	0	33	　もうオレたちは悪ガキをそつぎょうしたんだ」	We're not bad kids any more!	
+1	0	65	（何かかくしてるのかしら？）	(What are they hiding?)	
+1	0	65	「わあ　く　くるなーー」	Hey, go away!	
+1	0	65	「そうだ　くるなくるなーー！」	I said, go away, GO AWAY!	
+1	0	31	「オレたちは<EVO_NAME__>ねえちゃんの	We just wanted to see	
+1	0	33	　エッチなすがたが見たいだけなんだ！！」	the naughty side of you, <EVO_NAME__>!!	
+1	0	65	「・・・けちらしてもいいですわよね」	… I'm going to kick this away now, okay?	
+1	0	31	「おじいさんの言っていた	The old man mentioned	
+1	0	33	　いくつかの島にあるスイッチというのは・・・」	switches on several islands…	
+1	0	31	「おそらく　この3つのスイッチのことですわね	Perhaps he was talking about these three switches.	
+1	0	33	　それで　一発で水門が開くスイッチというのが・・・」	Then there's the switch that opens the floodgate…	
+1	0	31	「山のむこうと言っていたので	He said it was on the other side	
+1	0	33	　きっと　このスイッチですわね」	of the mountain, so this must be it.	
+1	0	31	「・・・でも　ここにたむろしているのは	… but those brats who are always up to	
+1	0	33	　昔っから悪さばかりするこどもたちのような・・・」	no good seem to be camped out here…	
+1	0	65	「なんじゃね　V島の水門を開けたいのかね」	Oh, you want to open V Island's floodgate?	
+1	0	31	「あの水門を開けるとのう	If you open that floodgate,	
+1	0	33	　あふれちゃうんじゃ！！」	it'll overflow!!	
+1	0	65	「アレのソレがあふれちゃうんじゃよ！！」	That thing's going to overflow with that other thing!!	
+1	0	31	「何があふれると思うかね？	What will overflow, you ask?	
+1	0	33	　このおじいに言ってみんさいっ　さあさあさあ！」	Try saying that to this old-timer, go on!	
+1	0	31	「ちょっ　ちょっとおじいさま	Hold on, old sir,	
+1	0	33	　何でコウフンしているのかわかりませんわ！」	I have no idea what you're so excited about!	
+1	0	31	おばあ	Old Woman	
+1	0	31	「おじいさんや　そろそろマジメに話さんと	If you don't get serious with the young lady	
+1	0	33	　おじいさんのエロ本全部海にしずめますよ」	all your naughty books will be washed away!	
+1	0	65	「ひぃぃぃぃぃぃ」	Aieeeee!	
+1	0	31	「あのV島にはのう　なんやエロそうなバケモノが	There's this pervy monster that often appears	
+1	0	33	　海からよく出現してあぶなっかしいもんで」	from the sea at V Island, real dangerous!	
+1	0	31	「水門をつけたんじゃよ	So the floodgate was built.	
+1	0	33	　水門を開けるには２つの方法があってな」	There are two ways to open the floodgate.	
+1	0	31	「１つ目は　<L島>と<E島>　それと<この村近くの>	First, you can <turn on all the switches> at <L Island>,	
+1	0	33	　<スイッチ全部をON>にするのじゃ」	<E Island>, and <near this village>.	
+1	0	31	「もう１つは　この島の山の向こうにあるスイッチじゃ	Or you can turn on the switch on the other side of that	
+1	0	33	　こっちのスイッチはなんと<一発でオープン>じゃ」	mountain on this island, this one <opens it right away>.	
+1	0	31	「じゃが　さっき王国一と呼ばれる悪ガキ集団が	But, I saw the infamous brat pack over there,	
+1	0	33	　集まっとるのを見たから気をつけるんじゃよ」	so please take care of yourself.	
+1	0	129	えっちいのダメ	Nothing Dirty	
+1	0	65	「はっ　早く水着を着ないとですわ！！」	I'd better put on that swimsuit, now!!	
+1	0	65	「<EVO_NAME__>ちゃん　大丈夫だったようね★」	My dear <EVO_NAME__>, it seems all is well! ★	
+1	0	31	「一時はポロリもカクゴしてたけど	For a moment, I feared a paparazzi moment	
+1	0	33	　安心したわ★」	but now it's over. ★	
+1	0	65	「それに水着もにあってるわよ▼」	And that swimsuit looks good on you! ▼	
+1	0	31	「正直　水着のままたたかうのは	To be honest, fighting in this	
+1	0	33	　はずかしすぎますわ・・・」	is just too embarrassing…	
+1	0	65	「ダメよ　<EVO_NAME__>ちゃん　そんなことじゃあ」	No, my dear <EVO_NAME__>, we'll have none of that!	
+1	0	31	「次こそ　セクシー魔王セクシウスとの	Because next up is your sexy showdown	
+1	0	33	　セクシー対決が幕を開けるわ★」	with the sexy Evil Lord Sexius. ★	
+1	0	31	「それに言うでしょ？	How does the saying go?	
+1	0	33	　目には目を　セクシーにはセクシーを！って」	An eye for an eye, sexiness for sexiness!	
+1	0	31	「女神さま　わたくしが世間知らずだからって	Goddess, are you taking advantage of my innocence	
+1	0	33	　適当なこと言ってません？」	and just spewing nonsense?	
+1	0	31	「<EVO_NAME__>ちゃんがアイツに勝つには	<EVO_NAME__> dear, to win,	
+1	0	33	　相当セクシーレベルを上げなくてはダメなのよ」	you'll need to really boost your sexiness level.	
+1	0	65	「・・・なんですのセクシーレベルって」	… What do you mean by sexiness level?	
+1	0	31	「グローバルレベルとはまたちがう	It's different from global level,	
+1	0	33	　女子だけのレベルのことよ▼」	something only girls have! ▼	
+1	0	31	「まあ　言っててもはじまらないわ	Talking about it won't help!	
+1	0	33	　セクシー対決が北の地で待ってるわよ♪」	The sexy showdown awaits you in the north. ♪	
+1	0	65	「もう時間！？　服がとろけちゃうですわ！！」	Already!? But my clothes will melt!!	
+1	0	31	「女神さまっ　これはアウトですわ！	Goddess, this is unacceptable!	
+1	0	33	　時間巻き戻してですわ～～～！！」	Reset time, now～～～!!	
+1	0	143	鹹ﾙnq	鹹ﾙnq	
+1	0	65	武士「馬はせっしゃがそだてました　どうかよしなに」	Samurai: I raised this horse… Please take good care of it!	
+1	0	65	武将の右ウデ「ん？　お金のことなら武将に聞くがよい」	Right Hand Man: Hm? You should ask the Commander about money.	
+1	0	65	武将トクガ「信じているぞ！　<RGN_NAME__>」	Commander Tokuga: I believe in you, <RGN_NAME__>!	
+1	0	65	武将の左ウデ「おう！　武将にもあいさつしていってくれ」	Left Hand Man: Oh! Please go speak to the Commander too!	
+1	0	65	武将の左ウデ「城を守り　びょうぐを多くもらうのだ」	Left Hand Man: Protect the castle and earn lots of tribute!	
+1	0	65	３０号「この村はねらわれなかったようデス」	No. 30: I don't think this is the village we were looking for…	
+1	0	65	大工武士「築城をとめるってことは　うばえる城がへるってことだ！」		
+1	0	65	巻物好き武士「築城したばかりの城には　巻物も無さそうだな・・・」		
+1	0	31	「闇夜にまぎれて	Under the darkness of night,	
+1	0	33	　日の本をかこんでやったぞ！」	I have had Zapan surrounded!	
+1	0	65	「さすがに海に浮かぶ船は攻撃できまい！」	Surely you cannot attack ships at sea!	
+1	0	31	「船から撃つ大砲で	Using the ships' cannons,	
+1	0	33	　邪魔な城を壊してくれようぞ！」	I will obliterate all castles in my way!	
+1	0	65	「そしてさらに！」	And furthermore!	
+1	0	65	「戦国超大名様からさずかった暗黒船！」	A gift from the Great Warlord, the Black Ship!	
+1	0	31	「暗黒船がもつ魔大砲を撃てば	With the Black Ship's magic cannon,	
+1	0	33	　日の本など更地になろう！」	I shall lay waste to all of Zapan!	
+1	0	65	「あと３０秒近づければ・・・」	After 30 seconds…	
+1	0	31	「暗黒船の魔大砲が	The Black Ship's magic cannon	
+1	0	33	　日の本にとどくようになる！！」	will be in range of Zapan!!	
+1	0	31	「邪魔者のいなくなった日の本で	With all obstructions gone,	
+1	0	33	　我らの城を築城する！！」	I will cover Zapan with castles!!	
+1	0	31	「これで日の本は魔軍のものだー！	And Zapan will fall to the Evil Army!	
+1	0	65	「この大陸が魔軍にかこまれてイマス」	The continent is surrounded by the Evil Army!	
+1	0	31	「あんだけたおしたのに　またヒデーヨかよ	After defeating all those Hideos, there he is again…	
+1	0	33	　また分身したってか？」	Is it another copy?	
+1	0	31	「ったく	This guy	
+1	0	33	　あきらめの悪いヤツだな」	just doesn't know when to give up!	
+1	0	31	「しかし　これはかなりキケンデス	But this time, we are in rather grave danger!	
+1	0	33	　データによると・・・」	According to the data…	
+1	0	31	「魔大砲なるものは	The magic cannon is	
+1	0	33	　魔力のこもったおそろしい大砲ナリ」	a fearsome weapon filled with dark power!	
+1	0	31	「ひとたび魔大砲を撃つと	Should the magic cannon fire	
+1	0	33	　それは必ずやねらい通りに的中シ」	it will definitely hit its target!	
+1	0	31	「どのような大陸であろうと	And any land, no matter what size,	
+1	0	33	　火の海と化すでアロウ」	will turn into a sea of fire!	
+1	0	65	「とデータにアリマス」	So says the data…	
+1	0	65	「魔大砲を撃たれれば　そこで負けデス」	If the magic cannon fires, it's game over!	
+1	0	31	「その前に海を泳いでいって	Then I should just swim there	
+1	0	33	　船ごとぶっ壊せばいいじゃねーか」	and demolish the ship before that happens!	
+1	0	65	「それでは間に合いマセン」	You won't make it!!	
+1	0	65	「しかたないデスネ　とっておきを使いマス」	We have no choice, I'll use the last resort…	
+1	0	65	「ん？　とっておきって何だよ？」	Huh? What last resort?	
+1	0	31	「<メガミューン>というものデス	It's called <Megamune>…	
+1	0	33	　１００％暗黒船を破壊できマス」	Destroys Ships of Darkness, absolutely!	
+1	0	65	「なんだそりゃ！」	What!	
+1	0	31	「メガミューンには大量のエネルギーが必要なため	Since Megamune requires a great deal of energy,	
+1	0	33	　かなりの大金が必要にナリマス」	we'll need a lot of gold…	
+1	0	31	「わかったよ　金を集めりゃいいんだろ	Got it, so I just have to gather gold…	
+1	0	33	　いくらだ？」	How much?	
+1	0	65	「<５万ゴールド>デス」	<50,000 gold>.	
+1	0	65	「５万！？　そんなにいるのか！？」	50,000!? Who has that much gold!?	
+1	0	65	「それしか方法がアリマセン」	I can think of only one way!	
+1	0	65	「おいおい　マジかよ」	Hey, you're not serious!	
+1	0	65	「何か多くのお金を得る良い方法が必要デス」	We need a good way to get lots of gold!	
+1	0	31	「大金があれば	With a lot of gold,	
+1	0	33	　魔軍をどうにかできるのであるか？」	can you do something about the Evil Army?	
+1	0	65	「ああ　かなりの大金だがな」	Yes, but it's a very large amount…	
+1	0	65	「ならばせっしゃに良案がありまする」	If so, I have a suggestion to make.	
+1	0	31	「<ねんぐ>ならぬ<びょうぐ>を集めれば	Instead of <yearly tribute>… <tribute per second>.	
+1	0	33	　大金を得ることもできよう」	You'll surely collect a tidy sum!	
+1	0	31	「しかし　びょうぐで<大金を得る>ためには	However, in order to <earn lots of gold> from tribute,	
+1	0	33	　<各地の城を守る>必要がありまする」	you need to <defend castles throughout the land>!	
+1	0	31	「くわしくは城で話しますゆえ	Let us talk further in the castle…	
+1	0	33	　城に一度寄っていってくだされ！」	Please come by!	
+1	0	31	「そうだ　馬も使ってくだされ	Of course, please ride this horse!	
+1	0	33	　日の本は広いゆえ　きっと役に立つであろう」	It will serve you well, given Zapan's size!	
+1	0	65	「では！　せっしゃはこれにて！」	Now then! I will remain here!	
+1	0	65	「とりあえず　城を大砲から守ればいいんだな」	So, I just have to defend castles from cannon fire…	
+1	0	31	「解析の結果・・・	Analysis shows…	
+1	0	33	　魔軍は２回にわけて大砲を撃ってキマス」	The Evil Army will fire their cannons twice.	
+1	0	31	「まずは　東部の城　４城に向けて	First, four castles in the east	
+1	0	31	「つづいて　西部の城　５城に向けて	Next, five castles in the west	
+1	0	31	「とりあえず　大砲は	For now, I'll return	
+1	0	33	　オレ様が全部うちかえす！」	all their cannon shots!	
+1	0	65	「ついでに船もしずめてやるぜ！」	And I'll sink their ships at the same time!	
+1	0	65	「このような隊形の船から　大砲を撃ってキマス」	Cannons will be fired from ships in this formation.	
+1	0	31	「城は一撃で崩れてしまうデショウ	Castles will be destroyed in one blow…	
+1	0	33	　命中する前にうちかえしてクダサイ」	Please return the shot before it hits!	
+1	0	31	「デハ　ワタシは大金を待ちマス	I'll be waiting for the gold!	
+1	0	33	　村か城でワタシに５万ゴールド渡してクダサイ」	Please hand me 50,000 gold at any village or castle!	
+1	0	97	３０秒で５万ゴールドためろ！	Collect 50,000 gold in 30 Seconds!	
+1	0	65	「大砲が撃たれたのを確認しまシタ」	Cannon fire confirmed!	
+1	0	65	「あれか！」	Over there!	
+1	0	31	「城に当たる前に	Before it hits the castle,	
+1	0	33	　ちょくせつぶっとばしてクダサイ」	please destroy it directly!	
+1	0	31	「その他の船も	Other ships	
+1	0	33	　大砲を城に向けて撃とうとしてイマス」	are also about to fire on the castle!	
+1	0	31	「<ねらわれている城はミニマップ上で>	<Targeted castles> will show up in <red>	
+1	0	33	　<赤>にして知らせマスノデ　確認してクダサイ」	<on the mini-map>, so please check it!	
+1	0	65	「あ？　ミニマップって何だ？」	Huh? What's a mini-map?	
+1	0	65	「トニカク・・・サンコウにしてクダサイ」	In any case… please use it as a reference.	
+1	0	97	東部があぶない！	East side in danger!	
+1	0	97	西部があぶない！	West side in danger!	
+1	0	65	「<RGN_NAME__>・・・お金が足りマセン」	<RGN_NAME__>… there's not enough gold!	
+1	0	97	５万ゴールド渡した！	Handed over 50,000 gold!	
+1	0	65	「タシカニ　５万ゴールド受け取りマシタ」	Confirmed receipt of 50,000 gold!	
+1	0	97	城を守れなかった！	Could not defend castle!	
+1	0	97	びょうぐを手に入れた！	Obtained tribute per second!	
+1	0	97	まいぞう金をゲット！	Obtained buried gold!	
+1	0	129	返り討ちぞ	Turn the Tables	
+1	0	31	「おお　<RGN_NAME__>殿！	Hail, <RGN_NAME__>!	
+1	0	33	　くわしく説明いたそう」	Allow me to explain…	
+1	0	31	「<びょうぐ>というのはな	<Tribute per second> is	
+1	0	33	　決まった時間ごとに各城からおさめられるお金だ」	gold which you receive from castles at fixed times…	
+1	0	33	　<残り１５秒>と<残り５秒>時におさめられる」	collected at <15 seconds> and <5 seconds> left.	
+1	0	31	「先の日に　この国を守ってくれたのだ	Since you saved this country once before,	
+1	0	33	　えんりょせずに受け取ってくれ」	do accept the gold, without hesitation!	
+1	0	31	「びょうぐがおさめられたら	When the tribute is paid,	
+1	0	33	　城の者にとどけさせよう」	it will be sent to the castle.	
+1	0	31	「しかし　お金が足りている時は	But, if you have enough gold,	
+1	0	33	　びょうぐも　お渡ししかねる」	the tribute shall not be handed over!	
+1	0	31	「国のためのお金であるのでな	The gold is meant for the country…	
+1	0	33	　そこはわかっていただきたい」	I hope you understand!	
+1	0	65	「頼みましたぞ！　<RGN_NAME__>殿！」	We're counting on you! <RGN_NAME__>!	
+1	0	97	びょうぐがもらえる！	Tribute per second available!	
+1	0	31	「味方の城は[%s城]であります！」	[%s] allied castles!	
+1	0	31	「お金と言えばな	Talking about gold…	
+1	0	33	　まいぞう金のウワサを聞いたぞ」	I've heard a rumor about buried gold!	
+1	0	31	「どこかにあるかは存ぜぬが	I don't know where it is, but	
+1	0	33	　もののけが守っているらしい」	seems it's protected by spirits.	
+1	0	65	「ウワサを聞いたのはどこの城であったか・・・」	Now which castle did I hear the rumor from…	
+1	0	65	「すまぬ　思いだせん」	Sorry, don't remember.	
+1	0	31	「しかし	But,	
+1	0	33	　どこかの城で聞いたのは確かである」	I'm sure I heard it from one of the castles!	
+1	0	97	まいぞう金をさがせ！	Look for the Buried Gold!	
+1	0	65	「びょうぐについてだが　よく聞いてくれ」	About the tribute per second, listen up!	
+1	0	31	「<城が減れば>　当然	If you <lose castles>, of course,	
+1	0	33	　びょうぐで<おさめられるお金も減る>」	you'll <get less gold> from the tribute.	
+1	0	31	「城を守れれば　それだけお金も	Defend the castles, and you'll get	
+1	0	33	　多く手に入れることができるってことだ」	a proportionate amount of gold.	
+1	0	31	「びょうぐでおさめられたお金は	Gold from the tribute per second	
+1	0	33	　<RGN_NAME__>殿にしかととどけよう」	will be given to you alone, <RGN_NAME__>.	
+1	0	65	「城を頼むぞ！　<RGN_NAME__>殿」	It's up to you now! <RGN_NAME__>!	
+1	0	97	城を守れ！	Defend the castles!	
+1	0	31	「まいぞう金じゃと？	Buried gold, what?	
+1	0	33	　まいぞう金・・・　まいぞう金・・・」	Buried gold… buried gold…	
+1	0	65	「ああ！　それなら知っておるぞ」	Ah! I know something about that…	
+1	0	31	「この大陸に一つだけ　ちゃ色の山がある	There is a single brown mountain in this land.	
+1	0	33	　その横のサクラの木をしらべてみるがいい」	Check the cherry blossom tree next to it…	
+1	0	31	「だが　気をつけるのじゃぞ	But watch out,	
+1	0	33	　まいぞう金を守るもののけたちがおるでな」	there are spirits protecting the buried gold.	
+1	0	97	まいぞう金を手に入れろ！	Obtain the Buried Gold!	
+1	0	65	「イッテキマス」	I'll be back!	
+1	0	65	「な！　何をする気だ！？」	What! What are you up to!?	
+1	0	31	「い・・・いやな予感がする！	I… I have a bad feeling about this!	
+1	0	33	　や！　やめろーー！」	Stop! Stop, I say!	
+1	0	65	「メガミューン　チャージ中・・・」	Megamune charging…	
+1	0	65	「レイキャクモード・・・」	Cooling mode…	
+1	0	65	「ぐあああああああああ！」	Gwaaaaaaaa!	
+1	0	65	「完了しまシタ」	Mission complete!	
+1	0	65	「オイシイとこ全部もっていきやがって！」	No kidding, you got to do the fun part!	
+1	0	31	「勝てたのは　<RGN_NAME__>が	We won because of the	
+1	0	33	　お金を集めてくれたおかげデス」	gold you assembled, <RGN_NAME__>!	
+1	0	31	「よく言うぜ	Yeah right!	
+1	0	33	　でもまあ　そういうことにしとくかっ！」	But maybe that should be the official story anyway!	
+1	0	97	城が元に戻った！	Castle restored!	
+1	0	97	城が破壊された！	Castle destroyed!	
+1	0	31	「魔軍本船より魔大砲準備よし！	The magic cannon is ready!	
+1	0	33	　さあ！　魔大砲のいりょく！！」	Now! See the cannon's power!!	
+1	0	31	「その身をもって	Taste defeat	
+1	0	33	　味わうがいいぃぃ！！」	with your souls!!	
+1	0	65	女の子「カオのついた黒いものが空を飛んでいったー！」	Little Girl: A big black thing with a face just flew through the sky!	
+1	0	65	村長「なぬ！　カオのついたまるいものが空を・・・ようかいじゃ！」		
+1	0	65	ケガ武士「ケガで動けんかったのだ　助かった」	Wounded Samurai: I couldn't move with this injury, you really helped me!	
+1	0	65	ハタ好き武士「大砲はきらいである！」	Flag Loving Samurai: I hate cannons!	
+1	0	149	シンマネ村	Shinmane Village	
+1	0	65	女の子「しゃべるカラクリー！　すごーい！」	Little Girl: A talking machine! Wow!	
+1	0	65	村長「動くカラクリとは・・・　まさか！　ようかいか！？」	Village Chief: A walking machine… well I never! Is it a ghost!?	
+1	0	67	<RGN_NAME__>「カネのにおいがする・・・？」	<RGN_NAME__>: Smells like… metal?	
+1	0	65	兵長「まあここは何とかする　他をたのむぞ！」	Corporal: Well, we'll do what we can here, please help out elsewhere!	
+1	0	65	ちいさな武士「<RGN_NAME__>とやら　信じておりますぞ！」	Small Samurai: <RGN_NAME__> I believe in you!	
+1	0	15	いしやきいも	Baked Potato	
+1	0	65	おっちゃん「ほっくほくだよ～　おいしいよ～」	Uncle: Get 'em while they're hot! They're great!	
+1	0	65	兵長「この城は問題なかろう　他の城をおねがいもうす」	Soldier: This castle is fine, help the other castles please!	
+1	0	65	武士「この調子ですぞ！　<RGN_NAME__>殿」	Samurai: That's the spirit, <RGN_NAME__>!	
+1	0	15	戦にぎり	Battle Sushi	
+1	0	65	おっちゃん「こめはいっぱいあるんだ！　くいねえ！」	Uncle: We got lots of rice! Eat up!	
+1	0	149	ヒロシーマ城	Herosheema Castle	
+1	0	65	３０号「ホソナガイ大陸デスネ」	No. 30: It's a long and narrow land, isn't it?	
+1	0	65	大工武士「城をたてなおしておいたぜ！」	Carpenter Samurai: The castle's remade!	
+1	0	65	巻物好き武士「巻物をそろえたことがあると？　うらやましい」		
+1	0	65	兵長「大砲こしらえるためのお金　うばわれてしまった・・・」	Corporal: The money for making cannons! We've lost it!	
+1	0	65	兵長「<RGN_NAME__>殿！　たっしゃでな！」	Corporal: <RGN_NAME__>! Stay well!	
+1	0	65	物知り武士「この近くに　めずらしいもののけがいるぞ」	Erudite Samurai: There are rare spirits around here…	
+1	0	15	たくあん	Pickled Radish	
+1	0	65	おっちゃん「たくあんだけなんだ・・・　めんぼくねえ」	Uncle: It's simple fare… but I am honored to serve them to you…	
+1	0	149	ウッタエ村	Lawsuit Village	
+1	0	149	ニーガータ村	Kneegata Village	
+1	0	65	村長「かまいたちを　みたことあるかの？」	Village Chief: Have you seen a Kamaitachi?	
+1	0	65	兵長「もとより大砲がある城ゆえ　敵もよりつきませぬ」		
+1	0	65	おさなきおなご「城の中にかくれておりました　助かりました」	Young Lady: I was hiding in the castle, you saved me!	
+1	0	15	三色だんご	Three Color Dumpling	
+1	0	65	おっちゃん「こうみえても　あまいの好きなんだぜ！」	Uncle: If you like sweets, you'll love this!	
+1	0	149	イー村	Nyce Village	
+1	0	65	おばちゃま「ハレンチなのは罪じゃないわよね」	Sweet Old Lady: It's no crime to be scandalous!	
+1	0	65	女性「どうしてダイナマイトセクシーじゃダメなのかしら？」	Girl: How could it be wrong to be dynamite sexy?	
+1	0	65	兵長「大砲が無いと　ちときびしいのう」	Corporal: Without cannons, it'll be tough.	
+1	0	65	兵長「その子は好きに使ってくだされ」	Corporal: Please, let this kid help you.	
+1	0	65	影武士「ううむ　やはりしょうぞくが着たい」	Shadow Samurai: Hmm… I want to wear an outfit.	
+1	0	15	にくだんご	Meatball	
+1	0	65	おやじ「らっしゃーい　うんめーぞ！」	Old Man: Welcome! They're delicious!	
+1	0	149	エーヒメ城	Ehimay Castle	
+1	0	65	３０号「島があつまってデキタような大陸デスネ」		
+1	0	65	学のある武士「大砲は　まっすぐ撃ってきますぞ」	Educated Samurai: Cannons shoot straight!	
+1	0	65	強がり武士「この城は自分が何とかします！」	Tough-Guy Samurai: I'll figure out what to do!	
+1	0	65	身がるな武士「あのような船　みたこともない」	Agile Samurai: I've never seen a ship like that!	
+1	0	65	おつかれ武士「ひやひやいたしたぞ」	Tired Samurai: I'm starting to feel a bit chilly…	
+1	0	31	「ヒデーヨたちを一度ならず二度も討ち	Defeated the Hideos not once but twice,	
+1	0	33	　ことごとく我の邪魔をしおって・・・」	and interfered with all my plans…	
+1	0	65	「我が名は戦国超大名ノブロング」	I am the Great Warlord Noblong.	
+1	0	31	「この世の天下をとるため	In order to rule this world,	
+1	0	33	　人間をすて　魔におちた者よ」	I gave up my humanity and turned to the darkness.	
+1	0	65	「先の戦ではよくもやってくれたのう　トクガ国よ」	You did well in the last battle, land of Tokuga.	
+1	0	31	「ヒデーヨだけに任せたのがぬかりであった	Entrusting everything to Hideo was a mistake.	
+1	0	33	　となれば　こちらも全力でやらせてもらおう」	And now, allow me to correct it, with full force.	
+1	0	31	「大自然の力を得た	Bearers of nature's power.	
+1	0	33	　火　水　土　風　の大名たち！」	Warlords of Fire, Water, Earth, Wind!	
+1	0	31	「そして我と同じく人間をすてた	And those who gave up their humanity too.	
+1	0	33	　４人の四天大名たち！！」	The Heavenly Warlords!!	
+1	0	65	「どれも強者ばかりよ」	Powerful foes, all of them.	
+1	0	31	「我の影武者とヒデーヨの一族にも	My Shadow Warrior and the Hideo Tribe	
+1	0	33	　魔軍の城を守らせよう」	will also protect my castles.	
+1	0	31	「超大名城ある限り	The Great Warlord Castle	
+1	0	33	　何度もこやつらをよみがえらせ」	will revive them continually.	
+1	0	31	「我は城から力を得	My castles give me power.	
+1	0	33	　だれにも負けることの無い存在となる」	I am invincible.	
+1	0	31	「日の本は我が生まれた大陸・・・	Zapan, land of my birth…	
+1	0	33	　残しておきたかったがやむを得ぬ」	I wanted to preserve you, but too bad.	
+1	0	31	「ハメツの舞で消し去ってくれよう！	I'll erase you with the Dance of Destruction!	
+1	0	33	　我こそが真の天下をとろうぞ！」	I am the true ruler of this world!	
+1	0	65	「とうとう魔軍の大将　超大名が出てきたようデス」	At last, the Evil Army general, the Great Warlord has appeared.	
+1	0	33	　日の本が小さくなってるぞ！」	Zapan is getting smaller!	
+1	0	65	「・・・・・・気のせいデス」	…… That can't be.	
+1	0	31	「今度は魔軍の城の数も広さも	This time, there are more castles	
+1	0	33	　これまで以上デス」	over a wider space.	
+1	0	31	「魔軍の城　１３城	13 Evil Army castles	
+1	0	33	　築城中の城　７城　デス」	and 7 castles under construction.	
+1	0	31	「ここが戦国超大名ノブロングのいる	This is where Great Warlord Noblong resides,	
+1	0	33	　超大名城デス」	the Great Warlord Castle.	
+1	0	31	「ちけーじゃねえか！	It's so close!	
+1	0	33	　すぐにぶっとばしてやる！」	I'll walk right over and smash it!	
+1	0	31	「それはムズカシイようデス	That won't be easy.	
+1	0	33	　ハタにチュウモクしてクダサイ」	Observe the flags carefully.	
+1	0	31	「ここにある<魔軍のハタ>は	The <Evil Army flags> indicate	
+1	0	33	　魔軍の<城の数>をあらわしてイマス」	the <number of Evil Army castles>.	
+1	0	31	「そしてノブロングは	And Noblong draws power	
+1	0	33	　魔軍の城から力を得ているようデス」	from the Evil Army castles, it seems.	
+1	0	31	「つまり　ここに<魔軍のハタが多い>ほど	In short, the more <Evil Army flags> there are,	
+1	0	33	　<ノブロングは強い>ようデス」	the stronger Noblong is.	
+1	0	31	「魔軍の<城をできるだけうばい>	You must <take as many castles as possible>	
+1	0	33	　超大名を<弱める>必要がありマス」	and <weaken> the Great Warlord.	
+1	0	31	「魔軍の城デス	An Evil Army castle.	
+1	0	33	　城内の大名をたおせば城をうばえマス」	Defeat the lord inside, and the castle's yours.	
+1	0	65	「シカシ　魔軍も今回は本気デス」	But, the Evil Army is serious this time.	
+1	0	31	「城をうばった後に	After you take a castle,	
+1	0	33	　うばいかえしにくると考えられマス」	expect them to try and take it back.	
+1	0	65	「返り討ちにすりゃいいじゃねーか」	Well, then I'll just have to take it back again.	
+1	0	31	「それもそうデスガ・・・	That is true…	
+1	0	33	　すべての城を守れるカクリツは低いデス」	But it's unlikely that you can defend all of them.	
+1	0	31	「城の者にお金をはらって<大砲を設置し>	I recommend paying gold to <set up cannons>	
+1	0	33	　大砲で<守らせる>ことをオススメシマス」	to <protect the castles>.	
+1	0	31	「すでに大砲が設置されている城も	There are some castles that already	
+1	0	33	　あるようデスネ」	have cannons in place.	
+1	0	31	「このような城ナラバ	You won't have to worry	
+1	0	33	　うばいかえされる心配もないデショウ」	about these castles being retaken.	
+1	0	65	「デハ　がんばってクダサイ」	Well then, please do your best.	
+1	0	65	「日の本はオレ様が守ってやるぜ！」	I'll protect Zapan!	
+1	0	97	３0秒で超大名をたおせ！	Defeat the Great Warlord in 30 Seconds!	
+1	0	129	座標	Coordinates	
+1	0	97	船が来た！	Boat arrived!	
+1	0	65	「<RGN_NAME__>　タイヘンデス」	<RGN_NAME__>, there's a problem.	
+1	0	65	「なんだ？」	What is it?	
+1	0	31	「魔軍が城を	The Evil Army	
+1	0	33	　うばいかえしに来るようデス」	has come to retake the castle.	
+1	0	31	「この影が城にまで来ると	When this shadow reaches	
+1	0	33	　城はうばいかえされてしまいマス」	the castle, it'll be retaken.	
+1	0	65	「影をたおすか　大砲を設置してクダサイ」	Please defeat the shadow, or set up a cannon.	
+1	0	65	「どこの城にくるのか　わからねえのか！？」	Which castle is it coming for, I can't tell!?	
+1	0	31	「わからないノデ　気をつけてクダサイ	No one knows, so please pay attention.	
+1	0	33	　次々と出てくる可能性がアリマス」	They may appear in quick succession.	
+1	0	65	「戦況の報告であります！」	Battle status report!	
+1	0	31	「敵の城は<%s城>！	The enemy has <%s castles>!!	
+1	0	31	　味方の城は[%s城]！　以上であります！！」	We have [%s castles]! End of report!!	
+1	0	31	「おお！　かたじけない！	Oh! I'm in your debt!	
+1	0	33	　これでこの城も安全じゃ！」	This castle is safe now!	
+1	0	31	「戦はまだ終らぬゆえ	The war is not yet over.	
+1	0	33	　ここの城の者を一人連れていったらどうだ」	Why don't you bring along one of our men?	
+1	0	65	「手だれのサムライだ　役に立つであろう」	A veteran samurai, he'll serve you well.	
+1	0	31	「いや～　よかったよかった	Oh, that's great.	
+1	0	33	　これで大砲がこしらえられる」	Now we can set up a cannon.	
+1	0	31	「礼と言ってはなんだが	In return, let me tell you,	
+1	0	33	　ここの城にウデの立つやつがおる」	we have skilled fighters here.	
+1	0	31	「そいつを連れて行ってくれ	Take this one with you.	
+1	0	33	　仲間は多い方がよいだろう」	The more the merrier, right?	
+1	0	31	「これはこれは！　ありがたい！	Excellent! This'll help!	
+1	0	33	　必ずやこの城は守ってみせます」	We'll protect this castle, absolutely.	
+1	0	31	「お礼に・・・　ここの城に仕えているニンジャを	By way of thanks… please take one of the	
+1	0	33	　おともとして連れてっておくんなせい」	castle's ninjas with you.	
+1	0	65	「こいつはいい仕事しますぜ　だんな！」	This one does his job really well!	
+1	0	31	「なんとっ！	Oh my!	
+1	0	33	　このような大金をどこで！？」	Where did you find all this gold!?	
+1	0	31	「いやいや　多くは聞きますまい	Okay, I won't pry further.	
+1	0	33	　礼として我が教え子を連れて行くとよい」	In return, here's my disciple, take him with you.	
+1	0	65	「ふふふ　多くは聞きなさんな」	Heh heh, ask him anything you want.	
+1	0	31	「良い大砲を安く！	Good, cheap cannons!	
+1	0	33	　それがそれがしの信念なのだが・・・」	Someone had that idea, but…	
+1	0	31	「そもそもお金がなくてな	But without any money,	
+1	0	33	　作ることができん」	we can't make one.	
+1	0	31	「この城の大砲さえできれば	If this castle had a cannon,	
+1	0	33	　他の城の大砲も作りに行けるかもしれぬ」	we could go make cannons in other castles.	
+1	0	31	「大砲をぶっぱなしてえ！	I really want to fire a cannon,	
+1	0	33	　でもこの城に大砲がねえんだ！！」	but this castle doesn't have one!!	
+1	0	65	「ちくしょうべらぼうめっ！」	Darn it!	
+1	0	31	「大砲がありゃあ	If I had a cannon.	
+1	0	33	　超大名に一泡吹かせてやんのに！！」	I'd blow the Great Warlord into tiny bits!!	
+1	0	31	「おお！	Oh!	
+1	0	33	　これだけあればいい大砲が作れるぞ」	With this, we can make a fine cannon.	
+1	0	65	「助かった！　この城を守れる！」	Thank you! We'll defend this castle!	
+1	0	31	「お礼に他の城の大砲も	In return, someone will go	
+1	0	33	　それがしが作ってしんぜよう」	build cannons in other castles.	
+1	0	31	「兵長たちには大砲が安くなったと	We'll let the other corporals know that	
+1	0	33	　こちらから伝えておく」	cannons are now cheaper.	
+1	0	97	大砲が安くなった！	Cannons became cheaper!	
+1	0	31	「ありがてえ！	That's great!	
+1	0	33	　ふふふ　これで大砲ぶっぱなせるぜ！」	Heh heh, now I can fire my cannon all day!	
+1	0	31	「あっしは元々大砲が得意でして	I used to be an expert cannoneer.	
+1	0	33	　やつらに一発ぶちかましたかったわけよ」	I really wanted to blast them to pieces.	
+1	0	31	「案じなさんな	Don't worry.	
+1	0	33	　あんたに当てたりはしねえよ」	I won't hit you.	
+1	0	65	「あっしの　かれいなる大砲！」	Look, my gorgeous cannon!	
+1	0	31	「あっ！　とくとごらんに	Hey ma!	
+1	0	33	　い～れ～ま～しょ～うっ！」	Look what I can do!	
+1	0	97	大砲でうってもらえる！	Cannons can be fired!	
+1	0	129	天下討ち取り！	Ruler of the World!	
+1	0	65	「やりマシタネ　<RGN_NAME__>」	Well done, <RGN_NAME__>.	
+1	0	31	「神だろうと大名だろうと・・・	Gods, Warlords…	
+1	0	33	　オレ様にかかればこんなもんよ！」	they all meet the same fate at my hands!	
+1	0	31	「コレデ超大名の魔の手は	This will put an end	
+1	0	33	　二度とのびることはないでショウ」	to the Great Warlord's evil plans, I trust.	
+1	0	31	「シカシ	However,	
+1	0	33	　またもや天下を取ってしまいマシタガ」	you've become world ruler again, it seems.	
+1	0	65	「どうするのデスカ？」	What will you do?	
+1	0	31	「どうするもこうするもなかろうが！	No question about it!	
+1	0	33	　すべて武将トクガに任せればよい」	Leave everything to Commander Tokuga.	
+1	0	65	「っと　しゃべりがうつってきたぜ」	Damnit… that accent is infectious…	
+1	0	65	「このような大陸も悪くないデスネ」	This continent is not bad, isn't it.	
+1	0	65	「武将トクガもなかなかイキな男だったしな！」	And the Commander's a dashing guy too!	
+1	0	65	「イキ・・・ですか」	Dashing… is he?	
+1	0	31	「イキを知らねーのか！？	You don't know what that means!?	
+1	0	33	　イキってのはな・・・感じるもんだ！」	Dashing is… a quality you just have to feel!	
+1	0	65	「ワカリマセン」	Does not compute.	
+1	0	31	「世界一イキなオレ様と旅してんだから	You're traveling with the world's most dashing guy,	
+1	0	33	　３０号もそのうちわかるんじゃねーの」	so you'll understand in time, No. 30.	
+1	0	31	「そうデスカ	Is that so?	
+1	0	33	　イキを分析しておきマス」	I'll be sure to analyze this 'dashing'.	
+1	0	65	「それでは　<RGN_NAME__>　次へ進みマセウ」	Let us press onward, <RGN_NAME__>.	
+1	0	31	戦国大名ヒデーヨ？	Warlord Hideo?	
+1	0	129	「来おったな！　<RGN_NAME__>！	There you are! <RGN_NAME__>!!	
+1	0	129	　ヒデーヨ三男が相手だ！」	You face the third son of Hideo!	
+1	0	129	「戦国超大名様がいる限り	As long as the Great Warlord remains,	
+1	0	129	　なんどでも立ちはだかってやるわ！」	I will keep standing in your way!	
+1	0	129	「<RGN_NAME__>ー！	<RGN_NAME__>?!	
+1	0	129	　我の分身が世話になったようだな！！」	Seems you've taken care of my copies!!	
+1	0	129	「このヒデーヨが直々におまえを討ち！	Now I shall personally destroy you!	
+1	0	129	　戦国超大名様にほうびをもらうのだー！！」	And be rewarded by the Great Warlord!!	
+1	0	129	「ぬう！　<RGN_NAME__>！	You there! <RGN_NAME__>!!	
+1	0	129	　我が子の分身のカタキめ！」	Foe of my son's copies!	
+1	0	129	「ここでカタキは取らせてもらおう・・・	Let me avenge them all here…	
+1	0	129	　さあここまで来い！　そして果てろ！」	Come! And meet your end!	
+1	0	129	「たとえ分身だとしても・・・	Even though they were just copies…	
+1	0	129	　かわいい我が子を痛めつけたうらみ！」	the pain you caused my darling son… !	
+1	0	129	「ここでうらみはらさでおくべきか！	Let me show you a mother's rage!	
+1	0	129	　うらめしい！　斬りすててやる！！」	Hateful man! I will cut you down!!	
+1	0	129	「<RGN_NAME__>！　家族だけでなく・・・	<RGN_NAME__>!! First, my family…	
+1	0	129	　戦国超大名様にあだなす者よ」	Then you cross the Great Warlord	
+1	0	129	「ふとどき千万っ！	Incorrigible!	
+1	0	129	　ここまで来い！　討ち取ってやる！！」	Come here! And die!!	
+1	0	129	「来たか・・・この怒り・・・にくしみっ！	You've come… this anger… this loathing!	
+1	0	129	　長男である我がおぬしをしとめる！」	As firstborn, I will slay you!	
+1	0	129	「負けるわけにはいかぬのだ！	I shall not lose!	
+1	0	129	　おとなしく討ち取られるがいい！！」	Be prepared to meet your end!!	
+1	0	129	「我は主に仕えし影武者	I, as a shadow warrior, serve my master!	
+1	0	129	　この城をわたすわけにはいかん」	This castle will not fall to you!	
+1	0	129	「どうしてもというのなら	If you must take it,	
+1	0	129	　我を討ち取ってみせよ・・・」	then you'll have to defeat me…	
+1	0	129	「ゴラァァ！！　四天大名ゾゾラノスケってのは	Gaaaa!! Heavenly Warlord Zozoranosuke,	
+1	0	129	　このおれのことよ！　すっとこどっこいが！」	That's me! Ya dingus!	
+1	0	129	「<RGN_NAME__>ってのはてめーかっ！	So you're <RGN_NAME__>, huh!	
+1	0	129	　日の本までぶっとばしてやる！」	I'll crush you, and Zapan too!	
+1	0	129	「クハハハハッ　クハハハハッ	Gwahahaha gwa ha ha ha!!	
+1	0	129	　我は四天大名タイラエモンなり」	I am the Heavenly Warlord Tairaemon!	
+1	0	129	「超大名様にそむくおろか者よ	Fools who resist the Great Warlord	
+1	0	129	　ここで力つきるが良い」	should just surrender here!!	
+1	0	129	「我　火を司りし大名	I am the Warlord of Fire!	
+1	0	129	　その名も　バゼラゾウなり」	My name is Bazerazo!	
+1	0	129	「引かぬなら　燃やしてしまおう	Leave now, or be incinerated!!	
+1	0	129	　武者<RGN_NAME__>！！」	Warrior <RGN_NAME__>!!!	
+1	0	129	「我　水を司りし大名	I am the Warlord of Water.	
+1	0	129	　その名も　カイシンタなり」	My name is Kaishin!	
+1	0	129	「なぜさからう　何をほっしている	Why are you fighting us? What do you want?	
+1	0	129	　身のほどを　知るがいい・・・」	I advise you to know your limits…	
+1	0	129	「アハッ▼　アハハッ▼	Aha! ▼ Ahaha! ▼	
+1	0	129	　あたいは四天大名ヴェトランコ▼」	I am the Heavenly Warlord Vetranko. ▼	
+1	0	129	「男にほれて人をすてたあわれな女	A poor woman who loved and lost humanity.	
+1	0	129	　そなたもあわれな男・・・　消えな」	You there, you poor man… disappear!	
+1	0	129	「おぬしが<RGN_NAME__>か！	So you are <RGN_NAME__>!	
+1	0	129	　我はヒデーヨの知人だ！！」	I'm an acquaintance of Hideo's!!	
+1	0	129	「ただの知人が城を守るを定めとするならば	If a mere acquaintance must protect the castle,	
+1	0	129	　おぬしがただの知人に負けるのも定めだ！！」	then you must lose to this mere acquaintance!!	
+1	0	129	「ヒデーヨの敵というのはおぬしかっ！	So you're Hideo's enemy!	
+1	0	129	　親友の敵は我の敵っ！！」	My buddy's enemy is my enemy!!	
+1	0	129	「友のために刀をふるおう・・・	I wield this sword for my friend…	
+1	0	129	　おぬしはこの城で討ち取らせてもらう！」	and you shall die here in this castle!	
+1	0	129	「ギャッギャッギャッギャッギャ！	Gya gya gya gya gya!	
+1	0	129	　我　四天大名ジャアブロウなり」	I am the Heavenly Warlord Jabro.	
+1	0	129	「いいところへ来た	You've come at a good time…	
+1	0	129	　ひまだ　遊んでやろう！！」	I'm bored, come play!!	
+1	0	129	「我　風を司りし大名	I am the Warlord of Wind.	
+1	0	129	　その名も　キュラマサなり」	My name is Curamasa.	
+1	0	129	「世の風は　そなたに吹いていない	No wind shall blow at your back	
+1	0	129	　超大名様にこそ　吹いておるのだ」	because they all serve the Great Warlord!	
+1	0	129	「まったく・・・ヒデーヨもこまったものだ	Oh… so you're the one bothering Hideo!	
+1	0	129	　ハトコとは言えだまって見ているわけにもいかん」	Second cousin I may be, but I have to help him!	
+1	0	129	「これ以上は家の名をけがさせぬぞ	I won't let you sully our name anymore!	
+1	0	129	　さあ来い！！」	En garde!!	
+1	0	129	「我はヒデーヨのイトコである！	I am Hideo's cousin!	
+1	0	129	　おぬしが<RGN_NAME__>か！！」	So you're <RGN_NAME__>!!	
+1	0	129	「分家の代表として参った！	I represent my branch of the family!	
+1	0	129	　おぬしの所業もここまでよ！！」	Your mischief ends here!!	
+1	0	129	「影なりて	Hidden in the shadows	
+1	0	129	　城守る者　ここにあり」	are castle defenders.	
+1	0	129	「来たる者ども	Those who approach	
+1	0	129	　いざ討ち消さん！！」	will be slain!!	
+1	0	129	「我　土を司りし大名	I am the Warlord of Earth.	
+1	0	129	　その名も　タリアンジョウなり」	My name is Talianjo.	
+1	0	129	「戦はよごれるゆえ好かぬ	I dislike the dirt of battle,	
+1	0	129	　すぐに終らせようぞ　さあ来なさい」	so let's make this short. Come on then!	
+1	0	97	城がとられた！	Castle lost!	
+1	0	97	大砲をおいた！	Cannon set up!	
+1	0	65	村長「かまいたちはの　何でも斬ってしまうようかいじゃ」	Village Chief: The Kamaitachi is a ghost that can cut anything.	
+1	0	65	おお食い武士「こんにゃくのためにも　この城は我がお守りもうす！」		
+1	0	65	きまじめ武士「上下にハタがある城すべてに　トゲのワナがあったぞ」		
+1	0	65	「我は戦国大名ヒデーヨ！」	I am the Warlord Hideo!	
+1	0	31	「日の本の多くの国は我がものとなり	The many countries of Zapan are mine	
+1	0	33	　各地に魔軍の城ができた！」	and Evil Army castles have been built in every one!	
+1	0	31	「まだ　築城中の城もあるが	Some castles are still being built	
+1	0	33	　１５秒もすれば完成する」	but they'll be complete in 15 seconds!	
+1	0	65	「残るは武将トクガのいる国のみっ！」	All that's left is Commander Tokuga's country!	
+1	0	31	「トクガめ！	Damn you, Tokuga!	
+1	0	33	　ことごとく魔軍にはんこうしおって！」	How dare you resist the Evil Army!	
+1	0	65	「手に入らぬ国は破壊するのみ！！」	What I cannot own, I will destroy!!	
+1	0	65	「大砲の準備が終るまで　<あと３０秒>」	<30 seconds left> until the cannons are ready!!	
+1	0	31	「一つの城の大砲でも事足りるが	A single castle's cannon will do the job…	
+1	0	33	　すべての城から撃ちこんでくれるわ！」	But I'll fire from every single castle!	
+1	0	65	「せいぜい３０秒もがくがいい！」	You need only despair for another 30 seconds!	
+1	0	31	「これで天下は我のものだー！	Then the whole world will be mine!	
+1	0	31	「一つの城を集中攻撃とは	Focused fire on a single castle…	
+1	0	33	　あの馬に乗ったやつ　いけすかねえな」	The guy on that horse is really despicable!	
+1	0	31	「言われなくても赤い城は	Even if you hadn't asked,	
+1	0	33	　オレ様が全部落としてやるよ！」	I would gladly destroy all the red castles!	
+1	0	31	「な・・・　なんとゴウカイな！	Wh… What audacity!	
+1	0	33	　かたじけない！　せっしゃは城を守ろうぞ！」	I'm in your debt! Let us defend the castle!	
+1	0	65	「そういうことなら　わたしの仕事ね▼」	In that case, my job will be to… ▼	
+1	0	31	「おい女神　その前に	Hey, Goddess	
+1	0	33	　そもそも戦国大名ってのは何だ？」	what is a warlord anyway?	
+1	0	31	「そこ聞いちゃう？	You're asking me?	
+1	0	33	　そうね～　エライ人かしら・・・」	Well～ he's some big shot, I think…	
+1	0	65	「ま！　王様みたいなものね」	In short… Something like a king!	
+1	0	31	「赤い城が各地にたくさんあるわ	There are many red castles everywhere…	
+1	0	33	　これが魔軍の城ね」	Evil Army castles, I guess.	
+1	0	31	「いや～　いくら<RGN_NAME__>でも	Oh come on, <RGN_NAME__>, surely even you	
+1	0	33	　城は壊せないんじゃない？」	couldn't destroy a castle!	
+1	0	31	「すべての城内のおくには	It seems there's a Warlord Hideo	
+1	0	33	　戦国大名ヒデーヨがいるみたいよ」	within every single castle.	
+1	0	65	「ヒデーヨをたおせば　城をうばえるかも！」	Defeat him, and the castle may fall!	
+1	0	65	「おいちょっとまて！」	Just wait a minute!	
+1	0	65	「う～ん　そうねえ・・・」	Yes, indeed it does…	
+1	0	33	　ヒデーヨの分身がつくられているみたいなの」	made copies of himself using some kind of power.	
+1	0	65	「築城中の城もあるわね」	Some castles are unfinished…	
+1	0	33	　城の完成を止められると思うわよ」	then the castles will never be finished.	
+1	0	31	「ところどころに穴があって	I see holes here and there…	
+1	0	33	　どこかへつながってるみたい」	They must lead somewhere!	
+1	0	31	「でも中からモンスターの気配がするわ！	But I sense monsters within them!	
+1	0	33	　気をつけてね」	Take care!	
+1	0	31	「でも　敵の城も多いし	But there are a lot of castles,	
+1	0	33	　ここはかなり広いから気をつけて！」	and the land is huge, so watch out!	
+1	0	31	「トクガ国は３０秒後には壊されちゃうわ	Tokuga's country will be destroyed in 30 seconds!	
+1	0	33	　残り時間にも気をつけてね」	Pay attention to the time left!!	
+1	0	65	「それじゃ！　がんばってね～★」	Well then! Do your best～ ★	
+1	0	65	「戦に巻き込まれたようデスネ」	Got caught up in a war, eh?	
+1	0	31	「おい３０号	Hey, No. 30.	
+1	0	33	　戦国大名ってのはどういう意味だ？」	What does the title warlord mean?	
+1	0	65	「それぞれの土地の王様のような存在デス」	He's like a king of various territories.	
+1	0	31	「・・・・・・		
+1	0	33	　どうしマスカ　<RGN_NAME__>」	What will you do, <RGN_NAME__>?	
+1	0	65	「気に入らねえから　やつの城全部落としてやるか！」	I don't like him, so I'll destroy all of his castles!	
+1	0	65	「言われなくてもやってやるよ！」	I'll do it, even if you hadn't asked!	
+1	0	65	「かたじけない！　せっしゃは城を守ろうぞ！」	I'm in your debt! Let us defend the castle!	
+1	0	65	「赤い魔軍の城が各地に多数ありマス」	There are many red Evil Army castles in each area…	
+1	0	31	「いくら<RGN_NAME__>でも	<RGN_NAME__>, even you	
+1	0	33	　城は壊せまセン」	can't destroy a castle!	
+1	0	31	「すべての城内の奥には	It seems there is a Warlord Hideo	
+1	0	33	　戦国大名ヒデーヨがいるようデス」	within all of the castles…	
+1	0	31	「ヒデーヨをたおせば	Defeating the Hideo	
+1	0	33	　城をうばえるかもしれまセン」	may allow you to take the castle!	
+1	0	65	「おいちょっと待て！」	Oy, hold on!	
+1	0	65	「解析中・・・」	Analyzing…	
+1	0	33	　ヒデーヨの分身がつくられているようデス」	made copies of himself via some kind of power.	
+1	0	31	「築城中の城もあるようデス	Some castles are under construction…	
+1	0	33	　作業している人が見えマス」	I see builders in them!	
+1	0	33	　城の完成を止められマス」	then you can stop the construction!	
+1	0	31	「ところどころに穴もあるようデス	There appear to be holes in places…	
+1	0	33	　どこかへつながってイマス」	They probably lead somewhere!	
+1	0	31	「しかし　モンスターがいるようデス	But there are monsters inside, it seems…	
+1	0	33	　気をつけてクダサイ」	Please be careful!	
+1	0	65	「しかし　城の数は多く　場所も広いデス」	But there are many castles, and the place is huge!	
+1	0	31	「トクガ国の城は３０秒後に破壊されるデショウ	Tokuga's castle will be destroyed in 30 seconds!	
+1	0	33	　残り時間に気をつけてクダサイ」	Please take note of the time left!!	
+1	0	65	「デハ　<RGN_NAME__>　がんばってクダサイ」	Well then, <RGN_NAME__>, please do your best!	
+1	0	97	３0秒で城をすべて落とせ！	Destroy all castles in 30 Seconds!	
+1	0	97	巻物「かまいたち」！	Kamaitachi Scroll!	
+1	0	97	トゲがなくなった！	Thorns disappeared!	
+1	0	97	巻物「ぬりかべ」！	Nurikabe Scroll!	
+1	0	97	土のカベができた！	Earth wall created!	
+1	0	129	築城させぬ	Construction Stopper	
+1	0	31	　敵の城はあと<%s城>です！」	<%s> enemy castles left!	
+1	0	31	「<RGN_NAME__>殿！	<RGN_NAME__>!	
+1	0	13	熈6ﾁｧ	熈6ﾁｧ	
+1	0	31	「すごーい！	Amazing!	
+1	0	33	　本当に全部の城を落としちゃった！」	You actually destroyed all the castles!	
+1	0	65	「楽勝だなっ！」	Too easy!	
+1	0	31	「結果的に<RGN_NAME__>が	In the end, it seems	
+1	0	33	　日の本の天下を取っちゃったわね♪」	you have taken control of Zapan, <RGN_NAME__>! ♪	
+1	0	31	「ということは・・・	Which means…	
+1	0	33	　日の本は<RGN_NAME__>のものでー」	Zapan is yours, <RGN_NAME__>!	
+1	0	31	「日の本のお金は	And all of Zapan's gold	
+1	0	33	　わたしのものってことかしら▼」	is mine, perhaps! ▼	
+1	0	31	「まあここにはいられねえがな	Well I can't stay here,	
+1	0	33	　オレ様はそんなもん必要ねえ！」	so I have no use for such things!	
+1	0	31	「ちょっと待って待って！	Just hold on a second!	
+1	0	33	　それは考え直さない<RGN_NAME__>？」	<RGN_NAME__>, are you sure about this??	
+1	0	31	「だってだって	You know,	
+1	0	33	　ねんぐとかもらってお金ザクザクよ！？」	with tribute and all, that's a lot of gold!?	
+1	0	31	「神をたおさなきゃいけねーんだぞ！	I have to continue defeating the Gods!	
+1	0	33	　ここにいたってしょーがねーじゃねえか！」	I can't do that if I stay here now, can I?!	
+1	0	31	「じゃあじゃあ	OK, in that case…	
+1	0	33	　わたしが日の本のことはやるから」	I'll take care of Zapan!	
+1	0	31	「オレ様と神をたおすんだろうが！	You have to defeat Gods with me!	
+1	0	33	　日の本は武将トクガにでもまかせりゃいいだろ！」	We can leave Zapan to Commander Tokuga, surely!	
+1	0	31	「わかったわ・・・	All right…	
+1	0	33	　そこまで言うならあきらめるわよ・・・」	If that's how you feel, then I'll give up…	
+1	0	65	「じゃあ・・・　次もがんばってね・・・」	Well then… keep up the good work…	
+1	0	65	「やっぱり考え直さない？」	So you're not changing your mind?	
+1	0	65	「しつけえっ！！」	Stop asking!!	
+1	0	65	「<RGN_NAME__>　オミゴトデス！」	Well done, <RGN_NAME__>!	
+1	0	65	「楽勝だな！」	Too easy!	
+1	0	65	「コレは　ケッカとして・・・」	In effect…	
+1	0	31	「<RGN_NAME__>が	You, <RGN_NAME__>,	
+1	0	33	　日の本の天下を取りましたネ」	have taken control of Zapan.	
+1	0	65	「まー　そうなるか」	Well, I guess so…	
+1	0	31	「ここにいすわるわけには	But there's no way I can	
+1	0	33	　いかねーがな」	stay here!	
+1	0	31	「・・・ソウデスネ	… Yes, that's true.	
+1	0	33	　先をいそぎますか<RGN_NAME__>」	Let us make haste, <RGN_NAME__>!	
+1	0	97	巻物「かまいたち」が完成！	Kamaitachi Scroll complete!	
+1	0	97	巻物「ぬりかべ」が完成！	Nurikabe Scroll complete!	
+1	0	97	巻物「　まい　　」を入手！	Obtained --mai----- Scroll!	
+1	0	97	巻物「ぬ　　　」を入手！	Obtained Nu------ Scroll!	
+1	0	97	巻物「　　　たち」を入手！	Obtained -----tachi Scroll!	
+1	0	97	巻物「　りか　」を入手！	Obtained --rika-- Scroll!	
+1	0	97	巻物「　　　べ」を入手！	Obtained ------be Scroll!	
+1	0	31	「大砲の準備はできた！	The cannons are ready!	
+1	0	33	　さあ！　天下を我のものにっ！！」	Now then! The world shall be mine!!	
+1	0	65	「撃てぇぇぇーーーーっ！！」	Fiiiiiiiire!!!!	
+1	0	149	ワーカナイ村	Waakanai Village	
+1	0	65	学のある武士「巻物には　ようかいの力が込められているのだとか」	Educated Samurai: Why yes, scrolls are infused with the power of ghosts!	
+1	0	65	強がり武士「この城は心配にはおよびませぬ！」	Tough-Guy Samurai: There's nothing to worry about with this castle!	
+1	0	65	きまじめ武士「船が消えれば　大砲を撃たれはしないであろう」	Serious Samurai: If that ship was gone, we wouldn't get shot at…	
+1	0	65	村長「城は大丈夫であろうか」	Village Chief: I wonder if the castle is okay?	
+1	0	149	ホツカイドウ城	Hockeyedo Castle	
+1	0	65	３０号「キオン　テイカチュウ・・・」	No. 30: Temperature… Falling…	
+1	0	65	かっちゅう好き「まぎれてみたものの・・・　戦になったらどうしよう」		
+1	0	149	グウンマ城	Guunma Castle	
+1	0	65	３０号「カッチュウと　マチガエられマシタ」	No. 30: I was mistaken for armor.	
+1	0	65	せんにゅう武士「ニンジャになりたい」	Sneaky Samurai: I want to be a ninja!	
+1	0	65	いせいの良い武士「何が来ようと　せっしゃは負けぬぞ！」	Samurai: No matter what comes, I ain't gonna lose!	
+1	0	65	いきな武士「カブトあまってんだけど　どうだい？」	Trendy Samurai: We have a surplus of helmets, how about it?	
+1	0	15	さしみ	Sashimi	
+1	0	65	おっちゃん「らっしゃ～い　しんせんだよ～う」	Uncle: They're fresh! So fresh!	
+1	0	65	兵長「大砲があるゆえ　この城は安全でござる」	Corporal: This castle has cannons, so we're safe here!	
+1	0	65	武士「<RGN_NAME__>殿　ご武運を！」	Soldier: May fortune favor your blade, <RGN_NAME__>!	
+1	0	15	やき魚	Grilled Fish	
+1	0	65	おっちゃん「やけてるよ～」	Uncle: It's grilling now!	
+1	0	65	兵長「はーっはっはっは　大砲で百人力じゃい！」	Corporal: Hahahahaha! Cannons have the strength of 100 men!	
+1	0	65	若武士「ハタの多い城では　何かしら得なことがあるらしいですぞ」		
+1	0	15	かばやき	Grilled Eel	
+1	0	65	店主「ごはんはまだできてないが・・・　食べるか？」	Owner: The rice isn't ready yet… want some anyway?	
+1	0	65	武士「どうぞ　船はお好きなようにお使いくだされ！」	Samurai: Please, use this boat as you wish!	
+1	0	65	武将の右ウデ「お金の使いどころも攻める順番も大事なんじゃ！」	Right Hand Man: Allocation of funds and attack order are both important!	
+1	0	65	兵長「大砲がないたあ　ちくしょうべらぼうめっ！」	Corporal: Dang! We don't have any cannons, this is awful!	
+1	0	65	兵長「大砲なら　おまかせあ～れ～！」	Corporal: Just leave it me regarding the cannons!	
+1	0	65	ほそみの武士「兵長ってのはみんな　大砲大砲うるさいんかい？」		
+1	0	15	やきとり	Yakitori	
+1	0	65	おっちゃん「ねぎま！　おすすめだぜ」	Uncle: Chicken and onion! Our specialty!	
+1	0	65	獣人っ子「魔王は露出度が上がると強くなる変態ニャ」		
+1	0	65	ばあや「女の子にははじらいが必要なのよ」	Old Woman: Girls need to be more modest!	
+1	0	65	兵長「不安でござる！　大砲を早く！」	Corporal: I'm worried! Hurry, get cannons!	
+1	0	65	兵長「ふう・・・　安心したでござるよ」	Corporal: Ah… that's better!	
+1	0	65	みならい武士「ハタが一つの城は　ヒデーヨ一族の城だそうだ」		
+1	0	65	店番兵士「戦では　店番も命がけなんだよ！」	Clerk: In war, even clerks risk their lives!	
+1	0	65	大工武士「城を壊されたって　いくらでもたててやらあ！」	Carpenter Samurai: If you knock down a castle, I'll build it up!	
+1	0	65	巻物好き武士「海からとは　なんとひきょうな！」	Scroll Loving Samurai: From the ocean? How cowardly!	
+1	0	65	ばあちゃん「おお　おそろしい戦じゃ　くわばらくわばら」	Woman: Oh! What a terrible battle. Heaven forbid!	
+1	0	65	けが武士「トゲにはきをつけてくだされ！　イタイでござる」	Wounded Samurai: Please watch out for thorns! They hurt!	
+1	0	65	ハタ好き武士「ななめにハタがある城は　築城したてみたいだぞ」		
+1	0	65	３０号「トクガのシセンから　熱を感知しまシタ」	No. 30: Since Tokuga's crisis, I feel a burning…	
+1	0	65	武将の右ウデ「おかげでしばらくは　ゆったり過ごせそうだ」	Right Hand Man: Thanks to this it looks like we can take it easy for a bit!	
+1	0	65	武将の右ウデ「<RGN_NAME__>殿に　せっしゃ感激いたした！」	Right Hand Man: <RGN_NAME__> has inspired me!	
+1	0	65	武将の左ウデ「お世話になりもうした」	Left Hand Man: Thanks for all your help!	
+1	0	65	武将の左ウデ「さすがでござった！」	Left Hand Man: Way to go!	
+1	0	129	「さあ　邪魔者はされいっ！」	Now, get rid of this nuisance!	
+1	0	129	「世の天下は我のものだっ！」	All that is beneath the Heavens belongs to me!	
+428	1	15	はなす	Talk	交谈
+248	1	15	○：はいる	○: Enter	○：进入
+102	1	81	城を出る	Exit Castle	离开城堡
+99	1	31	時の女神さま	Time Goddess	时之女神
+52	1	81	村を出る	Exit Village	
+39	1	149	城	Castle	城堡
+38	1	67	城に入った！	Entered castle!	进入城堡！
+35	1	83	女神像ワープ	Goddess Statue Warp	女神像传送
+30	1	15	○：でる	○: Exit	○：出去
+29	1	31	ローリー	Lowry	劳里
+29	1	15	○：こわす	○: Break	○：破坏
+27	1	31	戦国大名ヒデーヨ	Warlord Hideo	战国大名秀代
+24	1	165	おいのり	Pray	祈祷
+22	1	67	村に入った！	Entered village!	进入村庄！
+21	1	81	せつめい	Explanation	说明
+16	1	31	魔王ハラスメンツ	Evil Lord Harassmenz	魔王哈拉斯门茨
+15	1	31	魔王セクシウス	Evil Lord Sexius	魔王塞克西斯
+15	1	31	船大工	Shipwright	船匠
+13	1	15	○：はなす	○: Talk	○：交谈
+12	1	31	戦国超大名ノブロング	Great Warlord Noblong	战国超大名信长
+11	1	15	○：しらべる	○: Check	○：查看
+10	1	31	おじい	Old-timer	老爷爷
+6	1	31	こども	Child	小孩
+6	1	97	クエストクリア！	Quest Cleared!	任务完成！
+4	1	31	女性	Woman	女人
+4	1	81	港を出る	Exit Port	离开港口
+3	1	31	兵士	Soldier	士兵
+3	1	31	エロガキ	Pervy Brat	小色鬼
+2	1	67	どうくつをぬけた！	Exited cave!	离开洞穴！
+2	1	15	○：たたかう	○: Fight	○：战斗
+2	1	67	もうなにもない・・・	There's nothing left…	已经什么都没有了…
+2	1	67	港に入った！	Entered port!	进入港口！
+2	1	129	影武者ノブロング	Shadow Warrior Noblong	影武者信长
+1	1	31	うえたオス鳥	Deprived Male Bird	缺爱公鸟
+1	1	97	はじらう心の器をゲット！	Obtained Vessel of Shame!	获得羞耻之心容器！
+1	1	31	「わかりましたわっ	I understand.	明白了！
+1	1	97	船を手に入れた！	Obtained a boat!	得到一条船！
+1	1	129	戦国大名ヒデーヨ三男	Warlord Hideo's Son ＃3	秀代三男
+1	1	129	戦国大名ヒデーヨ本人	Warlord Hideo Himself	秀代本人
+1	1	129	戦国大名ヒデーヨ父	Warlord Hideo's Father	秀代之父
+1	1	129	戦国大名ヒデーヨ母	Warlord Hideo's Mother	秀代之母
+1	1	129	戦国大名ヒデーヨ長女	Warlord Hideo's Eldest Daughter	秀代长女
+1	1	129	戦国大名ヒデーヨ長男	Warlord Hideo's Son ＃1	秀代长子
+1	1	129	四天大名ゾゾラノスケ	Heavenly Warlord Zozoranosuke	四天大名佐佐拉之助
+1	1	129	四天大名タイラエモン	Heavenly Warlord Tairaemon	四天大名平右卫门
+1	1	129	火の大名バゼラゾウ	Fire Warlord Bazerazo	火之大名巴泽拉佐
+1	1	129	水の大名カイシンタ	Water Warlord Kaishin	水之大名凯辛
+1	1	129	四天大名ヴェトランコ	Heavenly Warlord Vetranko	四天大名维特拉恩科
+1	1	129	戦国大名ヒデーヨ知人	Warlord Hideo's Friend	秀代之友
+1	1	129	戦国大名ヒデーヨ親友	Warlord Hideo's Buddy	秀代挚友
+1	1	129	四天大名ジャアブロウ	Heavenly Warlord Jabro	四天大名贾布罗
+1	1	129	風の大名キュラマサ	Wind Warlord Curamasa	风之大名库拉玛萨
+1	1	129	戦国大名ヒデーヨハトコ	Warlord Hideo's 2nd Cousin	秀代二表亲
+1	1	129	戦国大名ヒデーヨイトコ	Warlord Hideo's Cousin	秀代表亲
+1	1	129	土の大名タリアンジョウ	Earth Warlord Talianjo	土之大名塔里安卓
+1	1	65	「ええーーーっ！！」	You can't be serious!!	你开玩笑吧！！

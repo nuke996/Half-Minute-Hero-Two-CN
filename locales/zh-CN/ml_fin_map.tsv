@@ -1,0 +1,1181 @@
+id	blob	off	en
+1	0	2004	Old Man: Whoever beats more monsters in 30 seconds wins.\nIt will begin when you reach the fence to the north.
+2	0	3700	Woman: My child is in the east cave,\nplease save him, I beg of you!
+3	0	5396	Armorer: Sorry, I haven't been able to stock up on gear,\nso I only have Herbs.
+4	1	4548	Equipment Clerk: Expensive, eh? Save the sleep-talking\nfor after you've tried it on!
+5	2	1580	Youth: It seems there's a bug swatter in the castle,\nwonder if it can be used as a weapon…
+6	12	4972	Receptionist: Interest is 3% per second! Very reasonable!\nGoddess loans! Give it a try!
+7	13	1580	Little Girl: I entrust the dragon's egg to you, hero.\nIt may very well hatch in your care. ★
+8	16	3700	Woman: I don't know how the others\nfeel but I am grateful, thank you!
+9	18	2852	Personal Assistant: The children of the orphanage\nto the south… They are always hungry…
+10	24	1580	Dai: Talk to me with △ if you want to customize\nparts, I'll change them for you!
+11	24	4548	Old Man: This village has a legend,\nthat says there's a <moving castle> up north…
+12	24	6244	Soldier: It's <Super Mudman> and <Super Mudman King>!\nPlease! Take them down with that moving castle!!
+13	37	1156	No. 30: <RGN_NAME__>, let us do this\nheroically without any time resets.
+14	37	1580	No. 30: When things get this bad, it's time to reset!\n… Of course, you're going to pay, right?
+15	37	2428	Coo: Next up, the semifinals!\nI knew I could count on you, <RGN_NAME__>!
+16	45	1580	It says… Francisca\nis out.
+17	45	2004	It says… Francisca\nis over there.
+18	49	1156	Clerk: I tried putting energy drink into the\njelly, so what? I don't know what, actually.
+19	49	4548	Athena: … whew… wait, what?\nI'm not tired.
+20	53	1580	Angel: Welcome! Dipping noodles\nare popular in Heaven too!
+21	53	4548	Angel: A strange castle fell in the\n<east>, I was so surprised!
+22	55	3276	Little Girl: … When I grow up, I'm\ngoing to marry <RGN_NAME__>.
+23	55	6244	Teacher: I'd like to make sure\nthe kids are full, at least…
+24	55	6668	Teacher: … Ah! <RGN_NAME__>! Thanks to\nyou, the orphanage has been renewed!
+25	55	10060	Demon Girl: <RGN_NAME__>, you turned out to be a nice person\nafter all. ♪
+26	56	1580	Village Chief: The Evil Lord may be gone, but there seems to be a\ncriminal loose… There's a reward for catching the bum.
+27	58	1580	King: I got thrown all the way here? It feels\ngood to just lie down under the blue sky.
+28	58	3700	Village Chief: Ah, peace at last… that's why I've\nplaced a Goddess Statue to commemorate!
+29	61	3276	Woman: Ugh… I… can't stand this, I\nwant to sing and dance some more…
+30	62	3700	Herb Dealer: If you want to meet Professor Seenoeevil go look\nfor his assistant who went off to the <northwest tent>.
+31	65	2004	Old Man: The road is like a maze, you should be\ncareful. There's treasure too, so it's not all bad.
+32	65	2428	Old Man: If you want to <recover all strength>,\nyou need my nuggets! Everybody loves them!!
+33	65	2852	Little Girl: At the thorns to the east,\ngo north and the monsters will swarm.
+34	68	4548	Carroty Old Man: Actually, salted carrots aren't\nthat tasty, so they don't sell too well…
+35	68	4972	Soldier: To have the advantage in battles,\ndiscover your enemy's weakness.
+36	72	1156	Good attention to detail gives the\nimpression of a job well done.
+37	72	1580	Fisherman: To defeat the Evil Lord here,\nyou'll have to make good use of boats!
+38	72	2004	Old Man: The sea is a treasure trove of edible things!\nYou there, take good care of it too!
+39	72	2428	Marie: The sea is so big…\nSo vast
+40	72	4548	Old Man: A long, long time ago, there was this person\nwho used to swim in the sea wearing a swimsuit…
+41	78	2852	Herbalist: The <Common Herb> restores\n100 points of health.
+42	78	4548	Clerk: Eat our <Recovery Miso>\nand all your strength will return.
+43	80	1580	Coo: … Hmm… the Dark Goddess huh…\nWell this has turned into a real mess…
+44	80	2004	Coo: Hey, hey, <RGN_NAME__>! ♪ … after becoming\nstone, did she say anything?
+45	80	2428	Coo: … I was a little bit lonely, hehe, so I'm glad\nKarin and Oron could be here! ♪
+46	80	3700	Karin: The arrogance of a castle like this… surely the Gods\nwill punish you for your immodesty!
+47	80	4124	Karin: Oron… He's so cute that I've\ndecided he now belongs to me!
+48	80	4548	Cozain: To be as great an Evil Lord\nas my father is my dream!
+49	80	4972	Asurako: I'm Asurako, formerly Asura Nadeshiko …\nnice… nice to meet… me, of you…
+50	80	5396	Sach: I'm Slaughter Sach, formerly the 3rd Slaughter Daughter!\nPlease, just call me Sach! It's damn nice to meet you!!
+51	81	3276	Angel: That man's sword… Could it be the\n<legendary Demon Sword Hero Eater>!?
+52	81	3700	Angel: Hey! You! If you want to defeat the evil sword,\ngo talk to the <old angel in the village to the north>!!
+53	94	2852	Herbalist: Actually it was Tyranz who destroyed\nmy home. Thank you for putting an end to him.
+54	101	2852	Village Chief: It seems that Vetra only\npossesses men who appear strong.
+55	108	2852	Female Angel: In the west there's a village\nwhere you can ride the legendary unicorn!
+56	112	2428	Male Demon: It's paradise here!\nDemons are given special treatment!
+57	112	2852	Tent: No problems with housing or\nfood here～ Life's a breeze～
+58	112	3276	Demoness: Humans and angels serve us\ninstead! ▼ Here, demons are in charge! ▼
+59	112	3700	Demon Child: Only demons live here. ★ So,\nI can safely play outside, even by myself! ♪
+60	112	4548	Demon Child: I don't like being alone, I wanna play\nwith human kids too, and sing songs with them…
+61	115	2004	Little Girl: Hehe! ▼ You're pretty good-looking, mister.\nDid you notice my perfume? Tee-hee! ▼
+62	117	2004	Old Lady: Ah, <RGN_NAME__>! Are you here for\n'the Brawl' up north? Or the casino?
+63	117	3276	Peddler: Maybe it has to do with the Brawl, but\nthings have become really rowdy here.
+64	118	1156	No. 30: Eh? I get excited around villages, you\nsay? …………… Please leave me alone.
+65	118	1580	Elder: My back is as stiff as stone! … If only\nsome kind miss would give me a back massage.
+66	118	4124	Peddler: … My body feels weak all over, for some reason.\nI'd better loosen up with some exercise, heh heh heh. ▼
+67	121	2428	Beastman: A huge dream… no, a huge God!\nThank you for showing it to me!
+68	123	4124	Lumberjack: You wanna beat the Evil Lord Weapon? Then\nyou'd better power up a bit in the forest up north!
+69	124	6668	Professor Kenja: Gathering information\nand helping people is very important.
+70	126	2428	Professor: The power of the ground splitting is making many places\nunreachable.
+71	126	2852	Man: If you reverse time, I bet you\ncould erase the cracks!
+72	130	5820	Cobbler: You haven't found shoes\nthat suit you yet, have you?
+73	130	7516	Girl: The <Bridge> is broken, so you can't go to the Eastern\nVillage! Maybe someone could fix it for you?
+74	130	7940	Girl: The <Bridge> is fixed! Now you\ncan go to the Eastern Village.
+75	132	2428	Old Man: It must be tired from throwing mountains so far,\nmight get <so tired that it can't throw any more>.
+76	134	3276	Lowry: Not yet! I can't show it to you half-finished,\ngo run around some more before coming back!
+77	135	4124	Yashu: Heh, <YUSHA_NAME>, looks like we've\nboth gotten too strong for each other!
+78	138	2852	Child: Earthquakes and the Evil Lord!\nMommy, I'm scared!
+79	142	3700	Old Master: At the end of the cave, there's a\nweapons shop and a busy restaurant, ho ho!
+80	142	7516	Lightning Man: Number 4 goes south! 5 is east!\n6 is west! … they go on the bridges there!
+81	143	1580	Old Man: The path splits into two from here\non … but you probably knew that already!
+82	143	4124	Owner: If you equip heavy items you\ncan't really bend backwards much!
+83	145	1580	Scholar: The Evil Lord Weapons are creating a\nprotective barrier around the Imperial Castle!
+84	146	1156	Roken: … Hey hey! <YUSHA_NAME>! I may be\nold, but I'll go anywhere with you!
+85	146	2852	Cozain: … Don't… don't say anything, gather\nyour strength and bring us back our peace!!
+86	146	3276	Asurako: <RGN_NAME__> is more\nmy type than you.
+87	149	1580	Owner: So Professor Seenoeevil\ndoesn't share the cloth with men…
+88	152	5396	Cobbler: It's hard to find shoes\nthat fit, isn't it?
+89	152	6668	Girl: The <Bridge> is broken, so you can't go to the\nEastern Village! Maybe someone could fix it for you?
+90	152	7092	Girl: The <Bridge> is fixed! Now you can\ngo to the Eastern Village!
+91	154	2852	Village Chief: I hear it possesses humans in\norder to cast the Spell of Destruction.
+92	156	2004	Singer: I have my voice back… but… I can't sing!?\nEven though… singing is what our tribe is for…
+93	156	2428	Singer: Coo is… a healthy… and really great kid\nsometimes… I even forget… that she can't see.
+94	156	2852	Singer: … <Coo>?? Where's… Coo?\nThat child… she can't see…
+95	156	3276	Singer: … Please… please take care of Coo…\nThat child… will surely finish the <Song>.
+96	156	3700	Singer: I feel… empty inside… there's\nno way… that I can sing like this!
+97	156	4124	Singer: Coo… please sing\nfor all of us…
+98	156	4548	Tent: We'll take care of the Singers until they can\nsing beautiful songs again! Don't you worry!
+99	156	4972	Singer: La la… what, we won't be able\nto sing again? That's… awful…
+100	156	5396	Singer: … Once you… know more about Coo…\nyou'll definitely… change your mind.
+101	158	1580	Little Girl: Welcome to the coastal village! We're\nknown for offering dives from the tower!
+102	158	2428	Village Chief: Northwest of the ruins is where you want to go,\nbut there are two towers, so you have to pick one!
+103	158	5396	Mother: Our child has always enjoyed playing around the tower, but\nthe child seems to enjoy it maybe just a little too much…
+104	158	5820	Kid: At the <northeast tower> of the village\nruins, I saw a bird-man a while ago.
+105	159	1580	Little Girl: If these jewels were ill-gotten, then\nthere's no happiness in owning them.
+106	159	2428	Village Chief: A strange temple appeared! You can only get there\nvia the <west tunnel>, but the jewels are blocking the way.
+107	159	5396	Old Woman: <Blue jewels> can probably\nbe destroyed somehow.
+108	159	6244	Child: <Red jewels> can't be destroyed. <That thing>\nmight be able to take care of those other things.
+109	161	2428	Grandchild: Gramps gets over-excited\nwhenever he sees a spearman.
+110	163	2004	Owner: The sauce has been made this way since\nthe time of the Ultimate Evil Lord.
+111	164	3700	Owner: In just a while we'll have a\nreally amazing axe for sale!
+112	165	2852	Angel: Some old guy just showed up in the northeast village,\nseems like he's selling some nasty-looking carrots.
+113	178	2852	Old Lady: There's nothing in this village,\nso all the men have gone off to other villages.
+114	182	1580	Little Girl: Hehe▼, you're pretty good-looking, mister.\nDid you notice my perfume? Tee-hee▼
+115	184	2428	Old Man: That's some outfit you've got on.\nPay up for your meal, got it?
+116	187	3276	Man: Do I… want to live forever? If not forever,\nat least, wasn't I supposed to enjoy life?
+117	188	1156	Old Man: Rumor has it, the criminal was somehow\nmade to take the blame for someone else.
+118	188	1580	Old Man: Poor <YUSHA_NAME>. Made out to be the\nbad guy, when he's really innocent.
+119	189	2004	Owner: Eat up! Eat with gusto,\nand fight with vigor!
+120	189	3276	Young Owner: Do you need\nHerbs… Do you need gear…?
+121	189	4972	Traveling Warrior: Rumor has it there's a master\n<spearman> somewhere in this land…
+122	192	2428	Man: If you're going to go north, you'll need to prepare!\nThere are a lot of tough monsters along the road!
+123	192	2852	Student: West… the Magic Circle…\nWill the door open for anybody?
+124	197	1580	Man: You can't dash on boats! So you\nhave to give yourself time to move!!
+125	199	1580	Youth: There's a really amazing witch around\nhere! … Huh? You knew that? No way!?
+126	201	1156	Shopkeeper: Eat our curry and you will\nrecover all your strength.
+127	201	7940	Equipment Clerk:\nThis is a small map. Hurry! Hurry!
+128	202	1580	Cole: Here again? I really wanted to do some more flirting …\nha ha ha, just kidding! Let's get violent again!!
+129	202	3276	Rina: And after I took all the trouble to make friends\nwith Mr. Monster… <RGN_NAME__>! I'll do my best!
+130	202	3700	Ultros: Rina's all fired up! Grr! I'm\ngonna get fired up like her!! Rawr!
+131	203	7940	Casino Girl: The new prizes will be gear for the legendary gentleman! ♪\nRemember though, they can't be worn by females! ▼
+132	204	2004	Casino Gramps: … Ho ho ho! Hmm,\nwhich slot machine to play!
+133	208	2428	Angel: There was a strange old man in the <northern cave>…\n… Oh! That's right! That old man!
+134	208	2852	Angel: Welcome! The soup\nis delicious too!
+135	208	3276	Angel: You're pretty good looking for a human! They say that\nromance between angels and humans is pretty hot!
+136	209	1156	No. 30: … I may very well become\nDark No. 30 in no time!
+137	209	2428	Grandma: On a continent somewhere, the <Tower of Contracts> is\nwhere the Ultimate Brawl decides who is strongest in the land!!
+138	210	4124	Clerk: Sorry, we already hired someone, but if you go\nnortheast, there's a <mine>. Why don't you try there?
+139	210	4548	Athena: … whew! I'm on\nmy break now.
+140	211	2428	Minister: !! The King is gone!? Where\nin blazes has he gone!?
+141	218	6244	Wife: My husband's skill is unmatched on this\nisland! He can fix anything in no time!
+142	227	3276	Zochi: This is my prophecy!\nYou will need me someday!
+143	227	4124	Rurufi: Ah, what is this place, I remember\nmy master teaching me about it…
+144	229	2852	Woman: Yes… I think they're coming\nfrom the plains over there.
+145	243	2004	Lumberjack: Something flew <north> that looked like an old man!\nShould be around the village on the other side of the cave.
+146	243	2852	Lumberjack: Ah! You're the old man who flew\nnorth! You're all right, what a relief.
+147	243	3276	Woman: Kyaa? What's up with that!? Instant\ndestruction, that's impossible!
+148	246	5396	Casino Gramps: Ho ho ho! Marvelous!\nSplendiferous! I feel young again!
+149	255	2004	Scholar: I came here to meet <Professor Seenoeevil> but I\nwasn't able to, in the end… He's really strange.
+150	255	2428	Scholar: Dragon eggs take a few centuries to hatch. You wanna\nspeed things up at the Temple of Time up ahead? … just kidding.
+151	258	1156	Man? Hahaha! If you make an agreement with\nthe devil, you can get incredible power!
+152	258	1580	Man? Those who make agreements with the devil\ncan never again <enter the village>, so be careful!
+153	258	2004	Woman? Well now, have you come to make an agreement\nwith the devil as well?
+154	258	2428	Woman? If you call off your agreement\nwith the devil, you'll <lose in battle> hahahaha!
+155	258	3700	Suspicious Woman: And only one of you can make an agreement at a\ntime. ▼
+156	259	2852	Village Belle: It's a little bit sad… seeing\nlumberjack fashion disappear.
+157	259	3276	Ex-Hunter: Remember me? I gave up hunting,\nnow I'm training to be a shipwright!
+158	266	1156	Owner: It's double the price!\nBut 5 times the amount!!
+159	266	2004	Woman: If monsters attack you in the air, I guess you\ncan't escape… Either you win or you lose…
+160	268	1156	It says… Francisca is probably\nin the Hero Castle.
+161	270	2428	Old Man: There's nothin' but an imperial lab up north.\nThey were researching all kinds of dangerous things.
+162	288	5396	Peddler: These iron geta are not shoes,\nok! They're weapons! I mean, armor!
+163	292	1156	Owner: … I was just asking really, I don't\nhave anything too strange.
+164	292	2428	Suspicious Woman: Beyond here is a power spot where you can\nmake a contract with an ancient demon.
+165	295	1580	Woman: If you destroy the battery, the\nland won't take any more damage.
+166	296	6244	Old Lady: The <Sacrificial Hat>? I dropped\nit in the southwest forest
+167	296	7092	Old Lady: Ah! That's it! … I don't really want it,\nwhy don't you keep it?
+168	299	2852	Soldier: I want to head north, but somehow\nI can't! Why!? I'm so tired of this!!
+169	299	3700	Woman: To go north, you'll have to become invisible\nor you'll be seen by the one with many eyes.
+170	299	5820	Assistant: … hehe, so it's you! By the looks of it,\nyou delivered it to the professor.
+171	302	3276	Woman: One never gets tired here, since it's\nso fun, even without singing or dancing! ♪
+172	303	3276	Clerk: That miserable thief! First the girl,\nnow he's also stolen my Herbs!
+173	303	4972	Mother: I've been hearing rumors lately of a\nthief on the loose, it's really worrying…
+174	303	5820	Mother: Please, save my child!!\nThe thief went <south>.
+175	303	6244	Mother: You saved my child.\nThank you so much!
+176	303	7940	Owner: That'll be f-f-ffff-500G… please I'm being\nthreatened by the thief in the back, help me?
+177	303	8788	Thief: If you wanna eat, then go talk\nto the restaurant owner, you git.
+178	306	3700	Angel: Frog Repellant can only be used\n<3 times>! Be careful!
+179	308	2004	Man: You might need to use a little strength,\nbut this job pays really well! Yup!
+180	311	1580	Traveling Man: I heard a rumor that you'll get gold\nif you catch the criminal <YUSHA_NAME>!
+181	311	5396	Old Lady: <YUSHA_NAME>!! If… if it's money you want…\nthe <monsters on the beach> nearby have lots of it.
+182	311	6244	Owner: Aiee! We… We don't\nrip off our customers here.
+183	315	3700	Girl: Clearing stages 1 and 2 perfectly will allow\nyou to attempt a really amazing stage, I hear!
+184	321	3700	Female Demon: It feels like I've been dreaming…\nHumans and angels were treating demons kindly! ▼
+185	321	4124	Traveling Warrior: I heard the paradise rumor and\ncame here … but it's just full of old people.
+186	321	4548	Traveling Warrior: Just what is going on? The\nold people suddenly became young again!!
+187	322	1156	No. 30: … <RGN_NAME__>, is this really\nthe time to be loafing around?
+188	322	2852	Old Man: If you go through the east cave, you'll\nfind an area with strong monsters.
+189	322	3276	Old Man: If you cross the bridge north of castle\nand head west, you'll go underground.
+190	323	4124	Scholar: The west tower is a magic tower! <Teleportation>\n<between the red and blue magic circles> is possible!
+191	323	4972	Soldier: The east tower is the tower of power!\nDestroy <troublesome rocks> that block your path!
+192	324	2852	Name: Goddess Statue Strap; Type: Event Item?\nThe Goddess Porta-Statue (looking) Strap will not rewind time.
+193	330	1156	No. 30: By the way, <RGN_NAME__>, can you tell the difference\nbetween a merman and a shore merman?
+194	337	1580	Village Chief: I'm the chief! Mr. Dai's\nreturned to the Hero Castle!
+195	351	2852	Old Angel: The Holy Water appears in\n<the cave in the southwest when 10 seconds are remaining>!
+196	353	5396	Evil Lord: I can't underestimate humans because of\npeople like you… I have to say, I'm impressed!
+197	353	14300	No. 30: We're getting close to the end!\nCome on! Let's go! <RGN_NAME__>!!
+198	356	2004	Owner: … Too bright～ But we're still\nopen for business!! Thank you!
+199	360	2004	Imperial Soldier: Each of the castle's four entrances\nwill bring you to different places, so be careful!
+200	360	2428	Owner: We gathered the Kings of Meats on one\nplate: truly a meal fit for an Emperor!
+201	360	4124	Peddler: You hear a lot of things in my line of work.\nFor instance, the castle is full of <hidden passages>!
+202	367	1580	Owner: If I had to pick, I'd go with\nthe Dark Goddess, personally!
+203	370	5820	Evil Lord: I want to see a splendid final battle,\nso I'm going to lend you some power too!
+204	371	3276	Merchant: I went through so much to get here, but\nI can't sell anything because there's no one around!
+205	372	2428	Mountain Man: Ah, just looking at the mountains,\nmakes me think of the game <Mountain Dash>.
+206	373	3700	Herbalist: Use the: <Common Herb> with the\n□ to recover 100 points of Strength!
+207	373	4548	Girl: There are <very strong monsters> in the Western\nMountains. You'll lose if you don't level up…
+208	373	7092	Weaponsmith: Even for strong monsters, if\nyou fight together, you'll have no problems
+209	375	9212	Weaponsmith: There's a big <Tower> in the Northwest.\nIf you go to the <Heights> you'll be able to see it.
+210	375	9636	Weaponsmith: Even for strong monsters, if\nyou fight together you'll have no problems.
+211	376	3700	Youth: The tunnel just a little way up north\nruns all the way to the northeast.
+212	376	6244	Lightning Man: No. 3 take the bridge west of the village!\nNo. 7 block the lightning striking the south bridge!
+213	377	2852	Old Woman: So Vetra was the culprit! You ought to\nlet the village chiefs know about this!
+214	377	4124	Shipwright?: Aha! ▼ With some help from the Reaper, I've\ndestroyed most of the Goddess Statues in this land.
+215	379	2428	Man: There's a bridge south of the volcano,\nbut the monsters won't let anyone pass.
+216	379	2852	Boy: It's a romance of treasure\nyou won't find it anywhere…
+217	380	1580	Woman: Someone told me that there's a secret\npassage that'll take you to the island.
+218	380	2428	Man: Do you want to go to the castle? There's no bridge but if you\nhad something like an arch you could probably get there.
+219	382	3700	Little Girl: Mr. Levan, ah-ma-zing guy! ▼\nOh, to be carried by him again! ▼
+220	385	2004	Man: Don't clip the wings, as they say…\nPlease take care of Oron for us.
+221	390	4972	Woman: So many monsters… Where\ndid they come from, I wonder…
+222	390	7092	Armorer: I don't care about looks! Important\nfolk just won't understand!!
+223	396	1580	Male Demon: It's paradise here! Demons\nare given special treatment!
+224	398	2004	Angel: That old man is trying to make those strange\ncarrots into this village's local delicacy…
+225	399	5396	Kid: So, about the bird-man, I hear\nhe's waiting for an immortal knight.
+226	400	1156	Suspicious Man: Great work! The northern\nvillage's elder is really happy.
+227	400	1580	Suspicious Man: Geez, this guy's a real letdown.\nCome to the northern village if you're in trouble.
+228	400	2428	Old Man: Tch! Go away! There's no\nfood here for criminals!
+229	400	7092	Slaw: I believe! Cole and <YUSHA_NAME>,\nyou guys too!
+230	402	3700	King: Thank you for that! Did\nyou obtain a great weapon?
+231	403	1156	Owner: It's double the price! But\n5 times the amount!!
+232	404	2852	Village Chief: That beast gets stronger every time it possesses\nsomeone, but it also moves more slowly, it seems.
+233	405	2004	Ovalia: He just dragged it all the way to the <northern forest>. It\nlooked so heavy, somehow I felt like cheering him on～
+234	405	3276	Old Woman: I saw the thief taking a small child to\nthe <southwest>! Please do something to help.
+235	405	5396	Clerk: Sorry man, the thief took all the Herbs I had for sale.\nI did see him run off to the <cave in the east>, however…
+236	405	6244	Clerk: Did you defeat the thief? Thank\nyou for getting the Herbs back.
+237	415	2852	Clerk: Thank you for getting the Herbs\nback but you still have to pay up.
+238	415	4548	Owner: Th-th-thank you～ Please have\nsome of our salad, if you wish.
+239	416	1580	Little Girl: Women are pleased with the demon in\nthe south. He has a lot of 'those', you know～
+240	416	2428	Woman in Pigtails: So the Jewel God is hard… !\nBut the demon man has even harder ones!
+241	416	3276	Owner: They're covered with powder made from\ncrushing freshly dropped jewels.
+242	419	3276	Woman: This child has wanted to be a hero\nfor forever… It's quite a pain, really.
+243	419	3700	Kid: I wanna become a great\nhero just like you, mister!!
+244	421	1156	Clerk: Eat our <Recovery Miso> and\nall your strength will return.
+245	421	5396	Weaponsmith: We've got some real cool weapons.\nThis one's a special model!
+246	422	1580	Old Man: We use the best local ingredients in generous\namounts… I guarantee that it's delicious!
+247	422	2428	Peasant: You wanna go across the lake?\nNow's not the time for that!
+248	423	8788	Weaponsmith: We've got some real cool\nweapons. How about a special model?
+249	428	1580	Little Girl: Walking on magma is really\npainful. So is running, of course.
+250	432	1580	Lumberjack: A human cannon… There aren't\nmany people who would do such a thing.
+251	434	3276	Lightning Man: If you buy this,\nlightning won't strike the north bridge any more!
+252	436	3276	Snake Boy: They say <frogs hate snakes>. If you\nwant to find snakes just go to the hole.
+253	436	4124	Clerk: A girl with an axe… I love\nmismatches like that!
+254	438	1156	Old Man: It will <recover all strength>\ntry my powerful noodles!
+255	441	2004	Demon: The Ultimate Evil Lord's castle is up ahead.\nEven if I told you not to, you'd go anyway, right?
+256	442	7092	Master: There's lots of Gold in the East Forest.\nThere are many monsters there.
+257	443	2852	Herbalist: I'm sorry, Herbs out at\nsea are pretty rare.
+258	443	4972	Owner: Oh! You look like a powerful warrior!\nCome, buy some of our armor!!
+259	443	5820	Old Man: Thanks to that fleet-footed\nperson, Marie has regained her health!
+260	446	1156	No. 30: The arena is a place for serious fights,\nso you won't be able to rewind time this… time.
+261	447	1156	Woman: The Evil Lord is just over there. There are tough\nmonsters on the way but you'll just have to pop in. ★
+262	447	1580	Old Lady: I made sweets that will give\nyou energy! Would you like to try?
+263	447	2852	Left Lumberjack: Them be a lot o' swarming monsters\nhere. So thrills 'n treasure, I can promise you that.
+264	447	3276	Right Lumberjack: Go north, there's a\nshortcut. You'll need friends!
+265	450	2428	Man: Until a while ago there was talk of creating a <Virtual World>.\nI mean, we were already excited, but now…
+266	450	3276	Man: Ah, it's you… what? There was a Virtual World, but it's gone?\nReally? Really??
+267	454	3276	Mayor: If you're not wearing any prisoner clothes,\nI have nothing to say to you!
+268	462	2428	Personal Assistant: It seems someone saved the orphanage\nin the south. This world is not lost yet, I'd say.
+269	464	2428	Old Man: Could you help me get clothes from\nthe old woman in the <east hut>?
+270	464	5396	Little Girl: Reading is about the only fun thing to\ndo up here in the snowy mountains～
+271	465	2004	Kid: By going back and forth through the\ntunnel you can always find monsters to fight～!
+272	467	1580	Old Man: This is Pleeze Village. It started\nout as a place for escaped convicts.
+273	467	2004	Old Man: This is Pleeze Village. You must\nhave gone through a lot, eh?
+274	467	9212	Peddler: Don't know if you'll find anything useful,\nbut please buy something.
+275	471	1580	Little Girl: I really want to see the <south village>…\n<The sacrifice>… how awful!
+276	471	3276	Old Fisherman: Try the old man in the south village's fish,\nyou'll feel great and look better. ★
+277	471	5396	Old Lady: This is terrible! The Sacrifice… I hope\nthey don't come for me…
+278	471	5820	Lady: Did you fix the sacrifice problem?\nI'm relieved.
+279	474	4548	Woman: The one called Sakuran is waiting\nfor you at the <east stage>, apparently…
+280	476	1156	No. 30: Am I interested in jewels, you ask?\nNot at all, I can't turn them into energy.
+281	476	1580	Little Girl: Even though there's no happiness,\nit's still nice to have some jewels, right?
+282	481	4124	Village Chief: Now that the Evil Lord is gone,\nthere shouldn't be any more avalanches.
+283	482	1580	Little Girl: Kyaa! It's <YUSHA_NAME>?!\nThe fugitive? Kyaaaa!
+284	485	2004	Traveling Man: What!? The criminal\n<YUSHA_NAME> is innocent!?
+285	496	2004	Old Man: … We never had rocks blocking\nthe roads before! What's going on!?
+286	496	4548	Enchanter: In order to get to the north…\nyou'll need Professor Seenoeevil's help.
+287	500	2004	Angel: The taste will send you to Heaven...\nOf course, you're already here…
+288	504	1156	Roken: If I ride in this castle for too long,\nI think I'm going to start getting queasy.
+289	504	1580	Cole: Is it heavy? You get used\nto it after a while I guess.
+290	504	2004	Rina: In battle, rest is essential, so maybe I\ncan play you a song on my harp?
+291	504	2852	Ultros: What? I'm playing\nwith Rina! Rawr!
+292	504	3276	Grillard: … Heh. If you ever need\nmy wings, let me know.
+293	504	3700	Guy: You've acquired so many companions and even a castle, it\nseems like you've surpassed the level of the Commando Unit. ★
+294	505	2428	Old Woman: All this ruckus is a real bother.\nPerhaps I should go home soon.
+295	505	8788	Lue: Dragon's～♪ egg～♪ Leave～♪\nit～♪ to me～♪
+296	513	2428	Owner: Eat my <recovery curry>.\nYou'll get all your strength back!
+297	514	3276	Old Man: I really want to make clothes that make people\nhappy… Sacrificial clothes are just sad… I feel sick…
+298	514	5396	Little Girl: The <sacrificial staff> is in the cave\nbut the monsters are dangerous!
+299	525	1580	Poly-A: This Virtual World was kinda poorly made. It's\nconstructed with nothing other than red and black.
+300	525	2004	Poly-Co: Aaah! What's with that body! What's with all those polygons!\nNow how am I going to express my beauty!!
+301	527	2428	Woman: I love the strong, silent types. ▼\nI used to cheer for Mr. Roken too, but…
+302	527	2852	Woman: I love the strong, silent types. ▼\nI'm cheering for you, Mr. Roken!
+303	531	1156	No. 30: Money… I am reluctant to\npart with the source of my energy.
+304	535	1156	No. 30: Even without the Time Goddess,\nGoddess loans are still available…
+305	536	2004	Young Man: There was a loud sound outside the village. I went\nto take a look and found this injured swordsman!
+306	539	1580	Old Man: Good Heavens! Our\nlocomotive is running loco!
+307	540	2004	Demon: The Ultimate Evil Lord is defeated, I\nshould've told you not to go after all.
+308	547	2852	Elder: … Come to think of it, the girls aren't around.\nThey're probably wandering around somewhere.
+309	547	3276	Elder: What!? My daughters were attacked by monsters!? …\nHow could this be… What am I to do now…?
+310	549	1580	Rurufi's Master: The wind's a lot stronger than before…\nYou may be able to go somewhere from the <western tower>.
+311	553	4548	Woman: My old man knows a lot, but I don't\nknow what he means by 'hard mode'.
+312	554	3700	Man: The skulls on the ground are mines.\nYou'll take a lot of damage if you step on them.
+313	554	6668	Energetic Kid: Oh hey! It's <YUSHA_NAME>! He defeated\nthe Evil Lord and is now traveling the world～
+314	554	7092	Gossipy Mother: Do you know of this person <YUSHA_NAME>? There are\nmany lies about him, but it seems he's not bad at all.
+315	558	2004	Clerk: Pretty rare to see humans here …\nWait… You… you're… Human? Right?
+316	561	1580	Owner: It seems there's a really strong duo who fights\nGods! And they're here on this continent now!
+317	563	2428	Soldier: I wanna be see-through too!\nAnd then I can… you know!
+318	564	2428	Old Man: I tried going to nearby villages to sell my wares,\nbut that was so tiring… so I'm selling shields here.
+319	564	4124	Old Lady: I'm traveling with my husband…\nYou there! How would you like some Herbs?
+320	566	2004	Boy: Lady Nadeshiko was awesome,\nbut you weren't too bad either!!
+321	567	2852	Boyfriend: I heard a rumor that there's an incredible jewel in the\n<cave to the west>, but Professor Kenja said I couldn't go.
+322	567	5396	Professor Kenja: When there isn't enough time, that's when\nyou need to go pray at the Goddess Statue.
+323	567	8364	Girl: There was a guy who was really upset that he couldn't give\nhis girlfriend a jewel. I think it was the <boy on the left>.
+324	569	1580	Old Lady: I sell sweets that will give\nyou energy! Please, buy some!
+325	571	4548	Clerk: After use, the radar can be used again\nright away. Use it as much as you like!
+326	575	2428	Angel: It doesn't matter whether you're an angel, human or a\ndemon… In a sense it's a sort of paradise… or not.
+327	577	2428	Man: Seems they found something in the western fissure,\nwonder what it is… ?
+328	578	2428	Man: Run in the middle to avoid monsters. It's\ngonna be a hot trip to the Evil Lord's Castle!
+329	578	2852	Hagihiko: I saw it! Among those circling monsters!\nOne of them has treasure!!
+330	582	1580	Lumberjack: The lumberjack in the west tent\nhates insects … or so I used to think.
+331	585	1156	Angel: You can't beat fate, that's\nprobably why they call it <fate>…
+332	588	1580	Scholar: It seems monsters can drop\nfragments of the Time Goddess' power.
+333	589	6244	Energetic Kid: <YUSHA_NAME> is awesome! I\nwanna be strong and defeat Evil Lords too!!
+334	589	7092	Gossipy Mother: This person <YUSHA_NAME>. He was\npursued even though he's not a bad person.
+335	593	1580	Demon: This continent is… was under the control of the Ultimate\nEvil Lord.
+336	596	1156	Old Man: It <restores all strength>. It's a\nlocal delicacy! Island Grape!
+337	596	2852	Girl: They say there's a strong\nmonster at the dead end.
+338	598	2428	Woman: There are 2 villages after this one,\nbut you may already know that… Right? ♪
+339	602	3700	Beastman: Kyaa? ★ Sir Champion\nis the best! ★
+340	610	2004	Old Man: The light is so bright,\nI can't make out the sea or the mountains anymore.
+341	611	2428	Man: So there are places like this in the\nworld! Without wars, without fighting!!
+342	611	3276	Man: I cried and laughed with my friends… Sometimes,\neven fighting with them was fun…
+343	612	9636	Scholar: Research says, though the four caves may look\nthe same, only one has an area with lots of rocks.
+344	614	2428	King: If we had known, we wouldn't have\nmade a show of testing our strength!
+345	617	3276	Man: Watch out for <land mines>! You'll take a\nlot of damage if you step on one!
+346	617	4548	Promoter: Hey there, handsome, won't\nyou buy this awesome shield?
+347	618	2852	Owner: Eat my <recovery stew>. You'll\nget all your strength back!
+348	619	5396	Armorer: Sorry about the delay,\nbut please use this in your future battles.
+349	622	2852	Scholar: There's an entrance to the Big Venus, high up. <If you ride>\n<something with enough height> you may be able to enter!
+350	623	2004	Village Chief: There are <four magic circles> that way…\nThat road will be the true test for your sword.
+351	623	2852	Man: I don't know what happened,\nbut if you don't eat you'll have trouble!
+352	624	1580	<Guy, Tetsu, Cole> … these three\nnames are carved here.
+353	624	3276	Guy: Hey! Dingus! …… You and me,\nwe're not the same!
+354	624	3700	Guy: Hey! Just when I finally thought you\nwere finished! … Idiot! …… Thanks a lot!!
+355	624	4124	Cole: Long time no see! … Heh!\nI knew you'd be back!!
+356	624	4548	Cole: … Tetsu, right? You may be a robot,\nbut you sure got guts!
+357	624	6244	<Levan Nanako Silveria> … these\nthree names are carved here.
+358	624	8364	Nanako: Still alive… ? Yaaay! I still have so\nmuch research to do! Thank you!
+359	624	9212	Levan: I died, and yet I return to life……\nhow beautiful! ♪
+360	626	1580	Soldier: Long live the hero <YUSHA_NAME>!\nLong live Queen Ciel!!
+361	626	2004	Minister: Please entrust Lady Ciel to my care. The world…\nwe leave that to your hands, <YUSHA_NAME>!
+362	626	2852	Ciel: No one in this kingdom shall ever speak poorly\nof the name <YUSHA_NAME>, rest assured.
+363	626	3276	Minister: Oh! Isn't it <YUSHA_NAME> …\nIs today a day for relaxing?
+364	626	4124	Soldier: Long live the hero <YUSHA_NAME>!\nLong live the new Queen Ciel!!
+365	627	3276	Old Man: The Hero's Sword lies deep within a cave…\nOh wait… I think there's <a cave in the east>…
+366	627	3700	Old Man: Oh my, you've obtained the Hero's Sword!?\nWhich means that you're the…
+367	629	1156	No. 30: … Unfortunately, it looks like this village won't\ngo back to the way it was, even with a time reset.
+368	631	3276	Tent Man: There's a really fine horse running along\nthe coast to the south, wonder how it's doing.
+369	632	2004	Child: The ground around the north cave is a little\nun-stay-bul, so I'm not allowed to go near it.
+370	632	2852	Demon Man: If you fall in a crevice, don't\ngive up! You just keep climbing back up!!
+371	633	1156	Young Man: When you just gotta win! That's\nwhen you need a Power Up Meal!
+372	633	1580	Old Man: … It's ok! No\nstrange additives here!
+373	636	1580	Old Man: Are you going on ahead? Isn't\nthere someone waiting for you?
+374	636	2852	Soldier: I can feel a fearsome power from up ahead. Take\nnote of your gear and strength if you're going forward.
+375	640	2428	Old Man: They say there used to be an underground\nImperial laboratory around here.
+376	640	2852	Man: Falling into different cracks will bring\nyou to different places, of course.
+377	646	2852	Research Assistant: Here's an Herb I keep for emergencies,\nI'll sell it for gold.
+378	650	3276	Grandma: It seems the <northern village>\nhas had a lot of earthquakes lately…
+379	650	3700	Grandma: It seems the earthquakes around the\n<northern village> have stopped…
+380	661	1156	Levan: I can't really say they're beautiful… but I say\nwe help since they're the princess' descendants.
+381	661	3700	Shamal: Well, no ifs, ands or buts. If it's <EVO_NAME__>'s\ndescendants I gotta lend my strength!
+382	661	4548	Silveria: Princess Athena… why not try to become\nfriends with more than just Princess <EVO_NAME__>…
+383	662	1580	Lumberjack: We're at the continent's boundary,\nso far everything's normal.
+384	662	2004	Youth: The monsters that appear here are a little bit\nstrong but there aren't any now, so don't worry.
+385	662	2428	Man: Eight Elements? I have no idea… Maybe you\ncould try going to the north of the continent?
+386	669	1580	Child: <Fire>?? Um, I'm not sure, but maybe\nthe Chief can help you somehow!
+387	669	2004	Child: Hey mister! That's great! It's the Princess! Awesome!\nMy first time seeing her, she's so pretty!
+388	669	4972	Clerk-Chief: You may only use the torch <5 times>!\nCome buy a new one if it goes out!
+389	674	2004	Demon: There seems to be someone other than the great Tyranz\nin the Dark World sky…
+390	674	3700	Demon: He was all, '<Aaah, Sir Sage!>',\nand then flew towards the north.
+391	674	4548	Demon: Is that the knight that flew just now? Well,\nif he helped us then that's all right, isn't it?
+392	677	1580	Woman: There's a casino here, you can enter\nthe casino from the building in the back.
+393	687	2852	Owner: You can virtually inhale this mochi!\nBe careful you don't choke!
+394	695	1580	Village Chief: Rumor has it that a rich, giant jelly appears in\nthe dead trees to the northwest when <15～10 seconds remain>!
+395	699	2004	Soldier: Just what you'd expect from the leader of the Royal Commando\nUnit!
+396	701	4548	Imperial Student: … I earned this money, I\nfeel so good about myself…
+397	702	1580	Old Man: There's a village east of here, but thanks\nto the Grimoire, it's completely empty now.
+398	702	2428	Soldier: If the villagers regained their senses\nyou could probably buy stuff here.
+399	708	3700	Old Man: You have brought peace back to this land … even\nif you are a criminal, we are grateful for your help.
+400	709	5396	Lumberjack: The orphanage in the south… They may be poor, but the\nchildren all get along. Humans, demons… It's heartwarming.
+401	709	6244	Owner: Now, the kids from the orphanage\nkeep coming by all the time.
+402	714	1580	Soldier Johnny: Princess, you're back!\nBut the King, he's…
+403	714	2428	Soldier Max: Princess… I'm truly sorry I\nwasn't able to protect the King!
+404	714	3276	Minister: Princess!? You have returned to us! However,\nit'd probably be best not to see the King…
+405	714	5396	Nanny: This must be the work of that Evil Lord, thought\nto be dead… Princess, please help save the King!
+406	718	1580	<Athena Karin Rina Rurufi> … the names\nof four people are carved here.
+407	718	3276	Athena: Wha? <EVO_NAME__>'s ancestor? You??\n(… oh my… so… so cool… !)
+408	718	4124	Karin: <RGN_NAME__>'s ancestor? Seriously!? …\nI can see the commonality in your genes though.
+409	718	4548	Karin: Hooray for <RGN_NAME__>'s ancestor! …\nUmm… Really, thank you! … Seriously!
+410	718	4972	Rina: … <YUSHA_NAME>! … um… I'm…\nuh, really glad to see you again!
+411	718	6244	<Ultros Shamal Sach> … the names of one\nanimal and two people are carved here.
+412	718	7940	Ultros: Rina was so worried about you! …\nWell, okay, I was a little worried too! Rawr!
+413	718	8364	Ultros: … <YUSHA_NAME>!! I can play with Rina again!\nYou can play too next time! Rawr!
+414	719	2004	Old Man: The Hero's Sword lies deep within a cave…\nbut… where has the hero gone, I wonder…
+415	726	5396	Mother: My son used to play by the tower,\nit was his thing, but…
+416	727	5396	Granny: Rina's harp has the power to lull animals to sleep.\nCriminals like you can go to sleep forever too!
+417	727	5820	Granny: Rina's harp has special powers.\nYou're probably after it, aren't you…
+418	727	6668	Old Man: You're here to defeat the Evil Lord?\nIt's in the north, so get up there, now!
+419	728	1156	No. 30: … There must be an error with my monitor. It\nkeeps showing some strange object to my left.
+420	732	1580	Lumberjack: Thanks for the help. Well,\njust take it easy for now.
+421	732	2004	Bro: Yo! It's you! I'm real proud\nof this dish! Try some!
+422	749	1580	Youth: The monsters in the <southern cave> are\nstrong! Better be prepared if you're going there!!
+423	751	2004	Angel: Interested in the den to the north?\nI'm interested too, I wonder what's in it.
+424	751	2852	Angel: On the edge of this continent there's a <warp hole> that\nyou can take to another continent … but only when necessary.
+425	752	1580	Beastwoman: This is a beastman village…\nIt's rare to see humans around here.
+426	752	4972	Young Beastman: I'll help if you're a friend of God…\nthere's a scholar in the village to the south.
+427	752	7516	Armorer: So you got buried in the snow…\nHere, I'll sell you this handmade coat.
+428	753	1580	Sand Person: I got here by looking at the cactuses.\nHmm, there are a lot of cactuses up ahead…
+429	753	2004	Sand Person: I took the <path with few cactuses> and\nit brought me back to the village, o-ho-ho…
+430	758	2852	Youth: I hear that at the end of the\ncave there's a rare monster!
+431	759	3700	Man: … About the password…\n*Looks at the pot*
+432	768	2428	Soldier: The Evil Lord's castle is close\nwould you like a <Common Herb>?
+433	768	4124	Old Man: If you want to get stronger\nyou should go to the south…
+434	782	4972	Royal Messenger: By His Majesty's order, I travel far and\nwide dispelling the vile rumors about <YUSHA_NAME>.
+435	783	2004	Woman: The Evil Lord's Castle is right in the middle.\nBut it's surrounded by strong monsters!
+436	783	2428	Old Man: Fresh-cooked! Nice and hot!\nWhat is it? It's a secret!
+437	783	2852	Hagio: You humans have such a narrow perspective.\nYou should look in the east and west caves.
+438	791	2428	Shore Merman: Darn! That vile God Nine! To just\nattack without giving us a chance to speak!
+439	791	4124	Armorer: … It's not like this armor\nwas prepared just for you, ok!
+440	792	6668	Armorer: I don't care about looks!\nImportant folks just won't understand!!
+441	801	3700	Villager: I hear it's paradise across the river! And\npeople who hear this rumor keep going there!
+442	801	4124	Villager: … But until recently, there\nwas just wilderness across the river…
+443	810	2428	Man: Run in the middle to avoid monsters. It's gonna\nbe a hot trip to the Evil Lord's Castle!
+444	815	1580	Clerk: Welcome to The Hell of Unending Suffering,\nit's only nominally a resort.
+445	815	3700	Clerk: You can fish from the pier in the east!\nThat's why we call it Itchybridge!
+446	815	6244	Fish Angel: I'm done… I can't go on\nwithout my family…
+447	815	7092	Demon Child: I'm just saying the monsters\naround here ain't got no money…
+448	821	2428	Man: In the Northern Cave <Legendary Equipment>\nmight be hidden!
+449	821	2852	Youth: At the Southern Beach, the Abyss Gator,\na rare monster, can be found.
+450	822	4972	Little Girl: For random items, the lineup will\nchange <every time you defeat five Evil Lords>!
+451	824	2428	Old Man: I forgot to mention: Thank you\nfor finding Little Rina!
+452	824	3276	Rina's Dad: If you go all the way north, you'll find a boat!\nGet on it and you'll be able to leave the continent.
+453	832	2428	Little Girl: I hear that there were many sightings of the\nrare monster in the <dead trees to the northwest>…
+454	832	3700	Tent Man: Recently, when there were <10 seconds left>, I saw a\n<swift shadow> in the bare forest to the northwest.
+455	835	1156	Old Man: Ha ha! Did I surprise you?\nThis here is Castle Town!
+456	843	2428	Tent Doctor: Coughs and so on may go away\non their own, but that's not always the case.
+457	844	4548	Shipwright: A shipwright who hates the Goddess Statue…\nSomething's not right.
+458	847	1156	No: 30: If you save the clerk, you'll be able\nto access the shop, right?
+459	852	5820	Right Soldier: The villagers from the east escaped, but\ntheir village was totally destroyed.
+460	852	7516	Left Soldier: … I did it. I got to carry a\ncannon, just once, just one.
+461	854	1156	Gramps: … What? Something about a girl?\nAnd she's in this village?
+462	854	6244	Strange woman: … Ha ha ha, in this land there is a\ndevil who can teach <weak heroes about strength>.
+463	857	1156	Ex-Commando: It's me! You shouldn't\ntalk to any soldiers aside from me!
+464	857	1580	Ex-Commando: It's me! It's ok to talk to the other soldiers,\nbut watch out, the food here is expensive.
+465	857	2852	Old Man: It's naan! Got a problem with it?!\nI won't stand for any naansense!
+466	859	5820	Owner: The tent up north is for those seeking shelter.\nThe ground here is unstable, you see.
+467	861	2004	Youth: When I think of the world ending,\nI get so scared I can't even run away.
+468	864	4124	Angel: In the <Northeast Cave> there's a time-related,\nextremely <rare item>, so they say.
+469	872	2004	Little Girl: The legendary dragon's egg that\nprotected this village… It's been eaten!
+470	872	3276	Levan: Find a <cannonball-substitute monster>!\nOtherwise we'll have to <destroy them ourselves>!
+471	872	6244	Mother: It seems the Grimoire has <powerful skills>.\nDamaging it with cannon fire will weaken those skills!
+472	879	2428	Beastgirl: God! Companion of God! Thank\nyou for stopping the avalanche!
+473	885	2852	Man: What, the Time Goddess is gone? Ha ha ha, I'm not\nsure what's going on, but we'll just make it, won't we?
+474	885	3276	Man: Huh? The Goddess Statues became really\nmetallic-looking all of a sudden… ah, whatever.
+475	895	2004	Shorty: Hey, hey, I saw Lady Athena up ahead～\nI wonder if she'll let me ride the glider again～
+476	896	2004	Shorty: Hey, hey, I saw Lady Athena up ahead～,\nwonder if she'll let me ride the glider again～
+477	901	1156	Lumberjack: It's… you! Quickly, get away from here! The\ndragon suddenly attacked and left the village in this state.
+478	903	2004	Little Girl: I peeked into the <eastern cave> recently\nand there was a really strong-looking monster!
+479	907	3700	No. 30: <RGN_NAME__>, your presence is also incredible.\nIn more than one way!
+480	908	2428	Old man: From now on, I'm going to make clothes\nfor the village… Thank you, thank you so much.
+481	908	3276	Embarrassed Mayor: The monster who told us to hand over\nthe sacrifice is in the castle to the southeast.
+482	908	3700	Village Chief: So it was a lie that it was an ancient beast…\nHah! I bet the Empire is up to something…
+483	908	4972	Village Chief's Daughter: Please don't worry about\nthe amulet, just take care of yourself.
+484	910	1156	No. 30: … Beep beep! After a certain time it seems\nsomething unbelievable happens to this village.
+485	910	1580	No. 30: No biological responses from the villagers… <RGN_NAME__>,\nlet's reset time since it's come to this.
+486	910	2428	Youth: Hey!! Have you heard!? The next\n<village has been turned to stone>, yo!!
+487	914	2852	Ex-King: There's a magic circle in the east!\nPower flows from red to blue!
+488	914	10060	Owner: I'll sell! I'm selling! Four\nUltimate Kings, who cares!
+489	915	1580	Little Girl: Kyaa! It's <YUSHA_NAME>?!\nHe's so scary! Kyaaa!
+490	915	2004	Little Girl: Kyaa! It's <YUSHA_NAME>?!\nHe's so hot! Kyaaa!
+491	915	7092	Old Lady: Ah… the criminal! I'll catch him\nfor a reward… but who am I kidding!
+492	919	1580	Youth: In the village up ahead, there's a <dragon's egg>\nthat's been well protected for a long time.
+493	926	1580	Rurufi's Master: Ah, it's you … Well,\nI leave Rurufi in your hands.
+494	934	3276	Dai: You got the engine! Now we can move\nthrough swamps with the Hero Castle!
+495	934	3700	Dai: Hey! Castle parts! Just face\nme and change parts with △!
+496	940	1156	Roken: I feel something in you similar to Sir <YUSHA_NAME>!\nI shall lend you my strength, with pleasure!
+497	940	3700	Ultros: Wha… What? Don't touch me! …\nwell, maybe just a little! Rawr!
+498	943	2428	Soldier Max: Princess… I'm truly sorry I\nwasn't able to protect the King…
+499	943	7092	Nanny: This must be the work of that Evil Lord, thought\nto be dead. Princess, please help save the King!
+500	945	1156	Turtleson: Now I'm able to become\nhuman, but the master is gone!
+501	950	1580	Levan: I love the rifle, it's so beautiful, and since\nI'm beautiful too, I love myself as well!
+502	950	2004	Nanako: Looks like the bowgun sword I invented\nis starting to spread around the world!
+503	950	3276	Athena: You've got a pretty nice\ncastle here for <EVO_NAME__>.
+504	950	3700	Silveria: I hope Princess Athena is\nsafe In the Imperial City.
+505	950	4124	Silveria: Princess <EVO_NAME__> and Princess Athena\nsure have a good relationship! ★
+506	958	2852	Old Man: Snow makes the lakes and swamps grow,\nand lightning can really hurt.
+507	961	2004	Demon Home: I saw a <red demon hound> just now… in the\nsouthwest, but was there ever such a beast around here?
+508	961	2852	Demon Home: So it WAS one of your party. This is the\nfirst time I've seen humans and a demon hound together.
+509	961	3276	Demon: There's a <human female in the west>! How\ngreat! I wanna be possessed by Lord Vetra too!
+510	961	4124	Demon: Oh my, you had a run-in with Lord Vetra? Ah,\nI wonder if she'll be so kind as to possess me next.
+511	961	4548	Demon Child: Mama! A <human with a ball chained to his feet>\njust flew off <towards the northwest>, whoosh～!
+512	961	5820	Demon: Uh-huh～♪ Instead of island exile,\nperhaps it was island banishment. ♪
+513	964	2852	Little Girl: Some guy from the Brave Kingdom hit on me. When I\nturned him down, he headed off to the east in low spirits.
+514	969	3276	Lue: Perhaps～♪ it's about time～♪ to\ngo～♪ on another journey～♪
+515	972	1156	No. 30: I'll carry all your petrified friends for you, <RGN_NAME__>.\nPlease find a way to cure them, okay?
+516	972	1580	Village Chief: Men turning to stone? … Hmm, maybe the <witch>\nin the village up ahead can do something to help.
+517	976	1580	Little Girl: Are you with the Brave Kingdom Commando Unit?\nThe Infinite Maze is to the east… Take care, ok? ▼
+518	976	2004	Little Girl: I wonder if there's some kind of treasure\nin the maze to the east?
+519	978	2428	Ovalia: What a ruckus, did something happen, I\nwonder～ Perhaps I should go take a look～
+520	978	4124	Old Woman: It must just be me, I thought\nI heard a little girl's voice.
+521	978	4548	Old Woman: Oh, is that so?\nThe bad thief is gone, eh?
+522	978	6668	Clerk: I have a bad feeling about this. Maybe\nI shouldn't be selling Herbs right now.
+523	989	2004	Beastman Scholar: To look for God, Shamal\nwent alone to explore the cave to the east.
+524	990	2428	Soldier: The cave entrance has been sealed,\nto prevent you from doing bad things.
+525	994	1580	Fisherman: Legendary items containing the Time\nGoddess' power are just lying about here.
+526	1000	2004	Man: That reminds me, for a guy with a ladder like you, the\nmonsters are strong, but there's probably treasure, too!
+527	1000	2852	Shorty: This place has 3 gatekeepers! Good luck,\nthe three of them are in the cave!
+528	1000	8788	Shieldsmith: If you can use a shield, you'll\ngo far in this world! … I think?
+529	1001	2004	Demoness: The spearman comes to this village\nsometimes. I have a feeling he'll be here soon.
+530	1001	4972	Young Owner: Fishing rods are all sold\nout. We'll get some new stock in a bit.
+531	1001	5396	Young Owner: Fishing rods are\nin stock again. Buy one?
+532	1001	6244	Young Owner: There's a fishing area to the southeast.\nWhen bubbles appear, that's your chance～
+533	1007	3276	Soothsaying Angel: You have an unfortunate future.\nSomething terrible will happen if you go forward!
+534	1014	2004	Clerk: It's not a pun! Are\nyou dissing my steak!?
+535	1014	2428	Angel Boy: … The world will end soon, or\nperhaps it's better to say it will be reset…
+536	1015	1580	Village Lumberjack: I want to help little Rina, but I can't\ndo anything, there are too many monsters.
+537	1015	2428	Soldier: I hear a little girl's voice coming from the cave,\nbut I can't go forward… Is this your doing?! You criminal!!
+538	1015	2852	Soldier: There was another entrance to the cave!? Only Rina's\nkidnapper would know something like that, which means… !?
+539	1015	3700	Wandering Musician: I came here because I heard there was a\nfamed harpist.
+540	1015	11756	Peddler: Even if you've helped people, I still don't trust you.\nBuy what you want and get out of here!
+541	1020	1580	Lumberjack: I found shelter here but\nwhat am I going to do from now on…
+542	1020	6244	Owner: Fleeing with your whole shop on your\nback really takes the wind out of you…
+543	1023	2004	Angel: I guess even you wouldn't be able to\nmove that big boulder in the <north> by yourself!
+544	1023	4972	Old Man Angel: Anybody hungry? You\ncould go fishing at the <East Point>!
+545	1029	6668	Student: We've decided to keep the arch from\nthe school festival up forever.
+546	1032	3276	Village Chief: Perhaps the sister can do something\nabout the magma in front of the temple?
+547	1032	6244	Kid: Pay attention to the ground's color,\nok, magma can spring up anywhere.
+548	1033	1156	No. 30: <RGN_NAME__>, you really are\na famous human, aren't you…
+549	1037	2004	Child: But the Princess is even more\nbeautiful than the Goddess Statue.
+550	1037	2852	Royal Messenger: <YUSHA_NAME>, a message from the Princess;\n<The guards have recovered. I'm returning to the palace>, she says.
+551	1037	5396	Clerk-Chief: I made some wooden swords as souvenirs!\nHow about it, brother! Please buy one!
+552	1041	2852	Hagio: You humans have such a narrow perspective.\nYou should look in the east and west caves
+553	1047	2428	Herb Girl: How about Herbs taken from the\nswamps? They're freshly harvested～♪
+554	1047	3700	Youth: Fluffiness is dangerous! The power of the\nEvil Lords! If you get hooked, there's no way out!
+555	1047	4124	Lumberjack: There's a witch in the east who can\nhelp you walk through swamps.
+556	1053	1156	Old Man: If you want to <recover all strength>,\nyou need my potato! It's delicious!!
+557	1054	2428	Man: If you destroy 3 Mini Moles\nthey'll settle down… I think.
+558	54	88	<YUSHA_NAME>: Ayaka Suda\nLeader of the Brave Kingdom Commando Unit.\nHalf-winged man of duty, still without his memory.
+559	54	748	Yashu: Ayaka Suda\nI like Maria. Or should I say, I love\nMariaaaaaaaaa!
+560	54	1408	Evil Swordsman Yashu: Ayaka Suda\nTried letting down his hair.\nTried using a bat for a cloak.
+561	54	2068	Queen Maria: Ayaka Suda\nQueen of the Brave Kingdom.\nHas a unique hairstyle.
+562	54	2728	Knight: Ayaka Suda\nGoddess' Knight, brimming with a sense of justice.\nThe Goddess' servant to be used.
+563	54	3388	Evil Lord: Ayaka Suda\nEvil Lord that loves beautiful things.\nMillenia the Bat is his partner.
+564	54	4048	<EVO_NAME__>: Ayaka Suda\nThe Princess is a student at the Goddess Academy.\nAt that age where she longs to be a hero.
+565	54	4708	Athena: Ayaka Suda\nDaughter of the emperor, ignorant of the world.\n<EVO_NAME__>'s 'tsundere' rival.
+566	54	5368	<RGN_NAME__>: Ayaka Suda\nA rather lighthearted hero.\nWould be nice if someone could watch over him.
+567	54	6028	Coo: Ayaka Suda\nHer voice not only nullifies sacred ground, but also\nconveys a mysterious feeling of tranquility.
+568	54	6688	Hero<>: Ayaka Suda\nCool in times of trouble.\nAs you may know, the hero of the last game.
+569	54	7348	Time Goddess: Ayaka Suda\nMoney loving Goddess of time.\nIt's unclear what she does with all the money she gets.
+570	54	8008	Dark Time Goddess: Ayaka Suda\nThe Goddess when she's gone mad.\nMany fans say they prefer this look.
+571	54	8668	Rurufi: Takushi Ikegame\nHer immodest legs are hard to ignore.\nAn apprentice magic user.
+572	54	9328	Roken: Takushi Ikegame\nA wandering warrior.\nAfter fighting the hero, becomes a close companion.
+573	54	9988	Rina: Takushi Ikegame\nLoves talking to forest creatures.\nShe's very skilled with her harp.
+574	54	10648	Emperor Golvadis: Takushi Ikegame\nA king that rules the empire, and a father that spoils\nhis daughter, Athena.
+575	54	11308	Evil Emperor: Takushi Ikegame\nThrew away his humanity\nto gain tremendous power.
+576	54	11968	Fate: Takushi Ikegame\nExists to control fate.\nFated to be beaten by the heroes.
+577	54	12628	Wood Dragon: Miho Midorikawa\nA mischievous tree-beast who\nsometimes gets burned by his own fire.
+578	54	13288	Horse Dragon: Miho Midorikawa\nHorse beast of the Eight Elements.\nSaid to carry only the worthy on its back.
+579	54	13948	Mist Dragon: Miho Midorikawa\nFog beast of the Eight Elements.\nMakes things disappear like mist.
+580	54	14608	Ring Dragon: Miho Midorikawa\nBends space-time with the power of its ring.\nLikes his privacy.
+581	54	15268	Dino Dragon: Miho Midorikawa\nIs one of the strongest, if perhaps\nalso the stupidest of all beasts.
+582	54	15928	Rock Dragon: Miho Midorikawa\nCan't seem to be left alone by mountaineers\nwho want to climb his rocky back.
+583	54	16588	Physic Dragon: Miho Midorikawa\nQuietly supports his emo older brother.\nLevel-headed seal beast.
+584	54	17248	Magic Dragon: Miho Midorikawa\nThis seal beast secretly supports\nhis reckless little brother.
+585	54	17908	Evil Lord Punisher: Kouichi\nWhines about appearing to be a sub-character,\ncausing him many problems.
+586	54	18568	Evil Lord Cerberus: Kouichi\nBlazing watchdog that gets in your way.\nPet of the Death God Evil Lord Lambde.
+587	54	19228	Zozaurus the Enraged: rareengine\nOne of the Four Ultimate Kings, his head is filled with destruction.\nTends to bother those around him.
+588	54	19888	Tyranz the Cruel: rareengine\nOne of the Four Ultimate Kings, rides the back of a raging dragon,\nand freely flies in the sky.
+589	54	20548	Vetra the Deceitful: rareengine\nOne of the Four Ultimate Kings. A cautious Evil Lord who\npreemptively destroyed the Goddess Statue.
+590	54	21208	Jarval the Rebellious: rareengine\nOne of the Four Ultimate Kings.\nCan steal the powers of his opponents and multiply them threefold.
+591	54	21868	Ultimate Evil Lord Metsvolos: Yuichi Maekawa\nFound that "Great" just wasn't impressive enough\nto describe his awesomeness.
+592	54	22528	Gasmong G4: Ittoku\nThis Evil Lord Weapon is a remodeled version of a mole\nfrom a whack-a-mole game.
+593	54	23188	Dosmammo G5: Ittoku\nAs mammoths are extinct, a bit of\nimagination was needed for this Evil Lord Weapon.
+594	54	23848	Gongorilla G6: Ittoku\nHe was tinkered with so many times, you can't really tell what he\noriginally was. So by majority rule we call him a gorilla.
+595	54	24508	Fierce General Gustaf: Yoko Tsukamoto\nBoasts of a strength that won\n30 consecutive rounds at the Imperial Arm Wrestling Tournament.
+596	54	25168	Wise General Richter: Yoko Tsukamoto\nThis narcissistic general believes that he\nis the world's most cunning and beautiful general.
+597	54	25828	Brave General Silveria: Yoko Tsukamoto\nPopular, female imperial general.\nRescued by <EVO_NAME__> from being executed.
+598	54	26488	Gravidon: Takashi Kojo\nHis repusliveness can't be beaten.\nNobody seems to want to, anyway.
+599	54	27148	Gulagate: Takashi Kojo\nIt's a mystery where people he eats go\nand also what happens to them.
+600	54	27808	Lux Deus: Takashi Kojo\nA grimoire brought to life using counter-mirrors.\nCreates copies from mirrors.
+601	54	28468	Ava: Takashi Kojo\nA marionette grimoire.\nManipulates things like dolls and people.
+602	54	29128	Faegwot: Takashi Kojo\nA grimoire with countless eyes.\nSees all through those eyes.
+603	54	29788	Eynvy: Takashi Kojo\nUses the mirror ball in its head\nto liven the place up.
+604	54	30448	Spelvia: Takashi Kojo\nGrimoire that absorbed the imperial castle,\nprotected by a powerful blood barrier.
+605	54	31108	Braelude of the Earth: Raita Kazama\nEarth divinity of the God Nine.\nHe can summon earthquakes at will.
+606	54	31768	Warlute of the Heavens: Raita Kazama\nWeather deity of the God Nine.\nHe can will the weather to change.
+607	54	32428	Oratoolio of the Holy: Raita Kazama\nHoly deity of the God Nine.\nProtects himself with holy sanctuaries.
+608	54	33088	Leike of the Seas: Raita Kazama\nSea deity of the God Nine.\nHas the power to control the waves.
+609	54	33748	Araveska of the Flames: Raita Kazama\nFire deity of the God Nine.\nBecomes unruly when upset.
+610	54	34408	Caprittio of the Mirrors: Raita Kazama\nMirror deity of the God Nine.\nHas a habit of spending too much time in front of the mirror.
+611	54	35068	Gospelia of the Light: Raita Kazama\nLight deity of the God Nine.\nEnvelops all in white radiance.
+612	54	35728	Jilvesta of the Fortress: Raita Kazama\nFortress deity of the God Nine.\nCrushes all with his giant body.
+613	54	36388	Varch of the Wars: Raita Kazama\nWar deity of the God Nine.\nWould choose battle if he had to choose between that or eating.
+614	54	37048	Asura Nadeshiko: Kazuno Yuikawa\nAttacks with six arms.\nNo one has escaped from her blade.
+615	54	37708	Yuri Yaksha: Kazuno Yuikawa\nJewel members of the Venus Seven.\nThese twins reek of danger.
+616	54	38368	1st Slaughter Daughter: Kazuno Yuikawa\nDeath member of the Venus Seven.\nHer right hand is actually just bone.
+617	54	39028	3rd Slaughter Daughter: Kazuno Yuikawa\nWind member of the Venus Seven.\nSpends most of her money on her motorcycle.
+618	54	39688	Lady of Despair: Shun\nCursed member of the Venus Seven.\nIs very specific about her methods of murder.
+619	54	40348	Maiden of Hell: Shun\nSnake member of the Venus Seven.\nHas the power to turn humans to stone.
+620	54	41008	Sakuran: Shun\nSonic member of the Venus Seven.\nFormer musician from the far east.
+621	54	41668	No. 30: Shishizaru\nTime Goddess-shaped android.\nCodename: Time is Money.
+622	54	42328	Big Venus: Shishizaru\nPray to this illustration everyday\nand maybe you'll get rich.
+623	54	42988	Wahrheit the First: hippo\nA war-changing weapon created by the Gods.\nHas a hammer that smashes evil.
+624	54	43648	Wahrheit the Second: hippo\nA war-changing weapon created by the Gods.\nCarries an axe to make mincemeat of evil.
+625	54	44308	Wahrheit the Third: hippo\nA war-changing weapon created by the Gods.\nCarries a book that can create an anti-evil barrier.
+626	54	44968	Wahrheit the Fourth: hippo\nA war-changing weapon created by the Gods.\nCarries a staff that can obliterate evil.
+627	54	45628	Wahrheit the Fifth: hippo\nA war-changing weapon created by the Gods.\nCarries a sword that slices and dices evil.
+628	54	46288	Wahrheit the Sixth: hippo\nA war-changing weapon created by the Gods.\nCarries a spear that can pierce evil.
+629	54	46948	Wahrheit the Seventh: hippo\nA war-changing weapon created by the Gods.\nCarries a kettle that can entrap evil spirits.
+630	54	47608	Wahrheit the Eighth: hippo\nA war-changing weapon created by the Gods.\nCarries a bow that can shoot down evil.
+631	54	48268	Wahrheit the Ninth: hippo\nA war-changing weapon created by the Gods.\nCarries a longsword that can cleave evil.
+632	54	48928	Ryuge: hippo\nCommander of the Wahrheit.\nCarries all weapons used to ambush evil.
+633	54	49588	Monochrome Package Illustration: Hiroaki\nTime Attack: Proof of those\nwho have mastered Normal Mode.
+634	54	50248	Color Package Illustration: Hiroaki\nTime Attack: Proof of those\nwho have mastered Hard Mode.
+635	54	50908	Gallery 100% Unlocked: Kenichiro Takaki\nCongratulations on completing your long journey!\nThank you for playing to the end.
+636	555	88	Ultimate Evil Lord\nLast boss of the previous game.\nHow nostalgic.
+637	555	748	Remnant Evil Lord Zant\nThis Evil Lord stays alive just to\ncast the Spell of Destruction.
+638	555	1408	Wood Dragon\nWood beast of the Eight Elements.\nLoves bonsai trees.
+639	555	2068	Horse Dragon\nHorse beast of the Eight Elements.\nIs a horse, but is also a dragon.
+640	555	2728	Mist Dragon\nMist beast of the Eight Elements.\nHides in the mist to evade work sometimes.
+641	555	3388	Ring Dragon\nSpace-time beast of the Eight Elements.\nLoves Donuts.
+642	555	4048	Dino Dragon\nFossil beast of the Eight Elements.\nWants to be an archaeologist.
+643	555	4708	Rock Dragon\nRock beast of the Eight Elements.\nThinks the best offence is a good defense.
+644	555	5368	Physic Dragon\nSeal beast of the Eight Elements.\nYounger brother of Magic Dragon.
+645	555	6028	Magic Dragon\nSeal beast of the Eight Elements.\nOlder brother of Physic Dragon.
+646	555	6688	Evil Lord Punisher\nTried to disguise himself as the queen, but\naccidentally exposed himself; not very bright.
+647	555	7348	Evil Lord Cerberus\nA playful pup, but playing with this\npooch will cause 3rd degree burns.
+648	555	8008	Evil Lord Degash\nIn the last game only his foot was represented;\nhere he is now in his full glory.
+649	555	8668	Evil Lord Breeza\nWas defeated last game,\nbut now is back to finish the job.
+650	555	9328	Black Knight Lord Zain\nWas defeated last game.\nHe's back to expand his social network.
+651	555	9988	Reaper Lord Lamde\nWas defeated last game.\nHe's back after greasing a few wheels.
+652	555	10648	Bullwood\nWas sealed away by the legendary sage,\nbut has been revived to full strength.
+653	555	11308	Zozaurus the Enraged\nQuick to anger.\nRecognized as one of the Four Ultimate Kings.
+654	555	11968	Tyranz the Cruel\nHis level headed cunning made him one of\nthe Four Ultimate Kings.
+655	555	12628	Vetra the Deceitful\nThis member of the Four Ultimate Kings\nis conscious about her age.
+656	555	13288	Jarval the Rebellious\nAn Ultimate King who enjoys coup d'etats\nas much as festivals.
+657	555	13948	Ultimate Evil Lord Metsvolos\nWishes heroes would find other ways\nto demonstrate their heroism.
+658	555	14608	Dark Dragon\nThe white crystal at the end of his tail\nis this dark dragon's best feature.
+659	555	15268	Frogross G1\nBuilt to be effective on both land and water.\nMakes annoying ribbiting noises.
+660	555	15928	Onigumon G2\nThe grotesque spider shape of this Evil Lord Weapon\nwas the source of many complaints.
+661	555	16588	Mabone G3\nWas meant to be a cyborg sunfish, but due to\nbudget constraints ended-up being a jellyfish.
+662	555	17248	Gasmong G4\nCombines a mole's digging speed with\nits dislike of light.
+663	555	17908	Dosmammo G5\nThis Evil Lord Weapon has strength rivalling\nthat of a whole army.
+664	555	18568	Gongorilla G6\nA balance of wild strength and science\nis found in this Evil Lord Weapon.
+665	555	19228	Darquiz G7\nWe got tired of the animal theme, so this Evil Lord\nweapon was repurposed for quiz shows.
+666	555	19888	Togeron G8\nThis caterpillar shaped Evil Lord Weapon\nwas defeated before metamorphosis.
+667	555	20548	Death Rail G9\nThis locomotive shaped Evil Lord Weapon can\nonly seat 30 riders.
+668	555	21208	Garvarin G10\nCan extend a barrier to protect imperial castles.\nIt is not a gift box.
+669	555	21868	Poly Noir\nThis grimoire will give the world a red color and\nmake it look more three-dimensional.
+670	555	22528	Gravidon\nIf you get touched by one of his disgusting tentacles,\nyou become part of him.
+671	555	23188	Gulagate\nClaims eating eggs whole through his huge mouth\nis his secret to health.
+672	555	23848	Lux Deus\nThis skilled creature can pull useful things\nout of his mirror.
+673	555	24508	Ava\nShe enjoys turning things into dolls\nand building her collection.
+674	555	25168	Ava Marionette\nA puppet controlled by Ava.\nWon't stop unless her strings are cut.
+675	555	25828	Faegwot\nA grimoire with countless eyes.\nUses lots of eye-drops.
+676	555	26488	Eynvy\nPossesses an alien sense of beauty.\nAn assembly of flying creatures.
+677	555	27148	Spelvia\nOften becomes absorbed into surrounding\nobjects, to their owners' annoyance.
+678	555	27808	Emperor Golvadis\nThis Emperor is said to have the power\nto do the impossible.
+679	555	28468	Fierce General Gustaf\nThis Imperial general has the power\nto do anything.
+680	555	29128	Wise General Richter\nOften says that the world doesn't\nrecognize brilliance.
+681	555	29788	Demon Dragon\nCan be ridden on, with a little creativity, either\nthrough the sky or the sea.
+682	555	30448	Evil Emperor\nIs manipulating the Emperor\nto destroy the Sky Continent.
+683	555	31108	God Zantes\nThis God is doing everything he can\nto block the hero's path.
+684	555	31768	God Ramizas\nThis hotheaded God is famous\nfor being impatient.
+685	555	32428	God Punishuel\nThis God can't help himself\nfrom handing out divine punishment.
+686	555	33088	Braelude of the Earth\nThis fearsome opponent uses his\nbig hands to rip opponents apart.
+687	555	33748	Warlute of the Heavens\nGets upset if the weather\ndoesn't follow his schedule.
+688	555	34408	Oratoolio of the Holy\nEnjoys relaxing in the sanctuaries\ncreated by his pet white snake.
+689	555	35068	Leike of the Seas\nAppears beautiful and intelligent.\nIs actually quite clumsy.
+690	555	35728	Araveska of the Flames\nWhen this foodie eats bad food,\nhis anger erupts into flames.
+691	555	36388	Caprittio of the Mirrors\nThis self absorbed God often\ngets ignored by other Gods.
+692	555	37048	Gospelia of the Light\nThis perfectionist does not\nforgive any mistakes.
+693	555	37708	Jilvesta of the Fortress\nA relatively unknown God who people\nhave a hard time remembering.
+694	555	38368	Varch of the Wars\nFocuses too much on beautiful victory scenes,\nneglecting other aspects of life.
+695	555	39028	Asura Nadeshiko\nFighter of the Venus Seven.\nHer many arms make buying clothes difficult.
+696	555	39688	Lady of Despair\nStrangely popular even among those\nshe curses to die.
+697	555	40348	Maiden of Hell\nThey say that those who see her,\nare petrified by her cuteness.
+698	555	41008	Yuri Yaksha\nHer mind-body combination skill\nis a beautiful gem to behold.
+699	555	41668	1st Slaughter Daughter\nEven death Gods respect her\ncollection of souls.
+700	555	42328	3rd Slaughter Daughter\nVenus Seven of Wind.\nExcessively energetic.
+701	555	42988	Sakuran\nVenus Seven of Sound.\nTalks strangely.
+702	555	43648	Big Venus\nThe Dark Time Goddess made this giant\nGoddess statue… probably for money.
+703	555	44308	Future Evil Lord Monos\nThe Dark Time Goddess brought this Evil Lord\nfrom the future.
+704	555	44968	Dark Time Goddess\nThis wild Goddess wields\na huge amount of Timestream.
+705	555	45628	Fallen Angel Hairo\nFirst member of God Rush.\nMembership was determined by rock-paper-scissors; he lost.
+706	555	46288	Burning Angel Hairo\nSecond member of God Rush.\nBurns for heroes.
+707	555	46948	Lucky Angel Hairo\nThird member of God Rush.\nAlways muttering, 'I want to be happy'.
+708	555	47608	Forgotten Angel Hairo\nFourth member of God Rush.\nVery forgetful angel.
+709	555	48268	Merchant Angel Hairo\nFifth member of God Rush.\nMakes money selling hero merchandise.
+710	555	48928	Fishing Angel Hairo\nSixth member of God Rush.\nHis hobby is to go fishing on weekends.
+711	555	49588	Insect Angel Hairo\nSeventh member of God Rush.\nBuzzes like an insect when he flies.
+712	555	50248	Muscle Angel Hairo\nEighth member of God Rush.\nAngel that boasts a macho body.
+713	555	50908	Flavor Angel Hairo\nNinth member of God Rush.\nIs an annoying foodie.
+714	555	51568	Optimistic Angel Hairo\nLast member of God Rush.\nDreams of becoming a singer.
+715	555	52228	Wahrheit the First\nBecause they all look similar, this war machine\ndifferentiates itself with its armaments.
+716	555	52888	Wahrheit the Second\nThis war machine likes his axes so much,\nhe can't sleep without them.
+717	555	53548	Wahrheit the Third\nThis war machine frequently skips work\nto read comic books.
+718	555	54208	Wahrheit the Fourth\nComplains a lot recently about his\nlegs having become weaker.
+719	555	54868	Wahrheit the Fifth\nThis war machine nervously insists that\nhis paper knife is really a sword.
+720	555	55528	Wahrheit the Sixth\nAlways volunteers to go 1st,\nbut gets scared, so got moved to 6th.
+721	555	56188	Wahrheit the Seventh\nIs frequently called upon to mow the grass\ndue to the armaments this war machine possesses.
+722	555	56848	Wahrheit the Eighth\nNamed his pet Apollo, so he could\nget better with the bow.
+723	555	57508	Wahrheit the Ninth\nThe greatsword was the only armament left,\nso that's what this war machine is equipped with.
+724	555	58168	Ryuge\nThe Commander carries a weapon given to\nhim from his subordinates for his birthday.
+725	555	58828	Yashu\nThe sub-leader of the Commando Unit\nis tied to the hero by fate.
+726	555	59488	Yashu Castle\nYashu built this castle\nto fight the heroes on equal footing.
+727	555	60148	Demon Sword Hero Eater\nAn evil sword held by Yashu.\nIt eats away at its bearer's soul.
+728	555	60808	Faceless Stone\nA mobile temple statue.\nThe head broke off long ago.
+729	555	61468	Faceless Silver\nA mobile silver temple statue.\nThere wasn't enough silver for a head.
+730	555	62128	Faceless Quartz\nA mobile crystal temple statue.\nSeems to have lost its head somewhere.
+731	555	62788	Faceless Gold\nA mobile gold temple statue.\nA thief stole its head.
+732	555	63448	Faceless Dark\nA mobile dark temple statue.\nRemoved its head because of headaches.
+733	555	64108	Faceless Shadow\nA mobile shadow temple statue.\nIts head is invisible.
+734	555	64768	Faceless Devil\nA mobile demon temple statue.\nModeled after a headless demon.
+735	555	65428	Faceless Daemon\nA mobile daemon temple statue.\nA ninja took its head.
+736	555	66088	Faceless Union\nA mobile statue that's a mix of light and dark.\nThe artistic symbolism is too deep for you.
+737	555	66748	Evil Lord Sexius\nThe Lady of Despair (spoilers?!) was too\ncute, so we created this character.
+738	555	67408	Evil Lord Harassmenz\nHistory's No.1 knockout beauty.\nSurvived using her sexiness as a weapon.
+739	555	68068	Herassmeow\nHarassmenz with half her armor knocked off.\nOh my!
+740	555	68728	Harassmight\nHarassmenz with all armor broken.\nStill covers important spots.
+741	555	69388	Warlord Hideo\nEveryone knows his name...\nBecause war is so hideo...us.
+742	555	70048	Great Warlord Noblong\nNob... Long...\nLong in Japanese being "naga"… get it?
+743	713	88	Herb\nTake this and you will be fully restored.\nWe promise we won't give this to your opponents.
+744	713	748	Pricey Herb\nThe owner is in a bit of a bad mood,\nso this Herb got a whole lot more expensive.
+745	713	1408	Gold Herb\nThis medicine is made from the leaves of the golden tree.\n30 times as effective as regular Herbs.
+746	713	2068	Wooden Sword\nAn excellent weapon from the last game.\nWell, really it's just a plain old tree branch.
+747	713	2728	Rusted Sword\nEnemies hate getting dirtied with rust.\nA well worn weapon filled with memories.
+748	713	3388	Iron Sword\nStar attraction of the Half Minute Hero Show,\nalthough it's really just a regular sword.
+749	713	4048	Tiger Blade\nThis ain't no cat toy.\nThis blade is made from a tiger's fang.
+750	713	4708	Silver Sword\nThis is a silver COLORED sword. It's just wrapped in aluminum foil.\nSilver is expensive.
+751	713	5368	Crimson Edge\nRubies are really expensive,\nso we just painted this sword red.
+752	713	6028	Hero Sword\nSacred sword that can only be carried by heroes. You can\nvisit the king without an appointment if you carry this sword.
+753	713	6688	Wing Blade\nThis sword is light (and fluffy) like a feather.\nTickle your enemies to death.
+754	713	7348	Neon Saber\nA sword with a blade of raw energy.\nWhen waved around creates a beautiful afterglow.
+755	713	8008	Brave Blade\nThis legendary holy sword\nis more than most heroes can handle.
+756	713	8668	Greatsword\nNot really sure what exactly is so great about it,\nbut trust us, it's a Greatsword.
+757	713	9328	Zweihander\nRecommended for those new to large swords.\nNo really, highly recommended!
+758	713	9988	Blue Dragon Sword\nWe can't recommend this one\nto people who like things to be straightforward.
+759	713	10648	Buster Sword\nAn extremely heavy long sword.\nCan also be used as a paperweight!
+760	713	11308	Ice Longsword\nIts wielder is cursed to tell lame puns.\nHas a chilling appearance.
+761	713	11968	Executioner\nUsed for execution by decapitation.\nDon't lose your head when using this one.
+762	713	12628	Muramasa\nMade by a swordmaker obsessed with Japan.\nDesigned to be used for harakiri.
+763	713	13288	God Eater\nJust like the God who won first prize at the eating competition,\nthis sword's stomach is never satisfied.
+764	713	13948	Balmung\nThis legendary blade is said by little old ladies\nto have been forged by the Gods.
+765	713	14608	Destiny Sword\nThis magic sword has the strange effect\nof slightly lengthening the life line of your palm.
+766	713	15268	Stone Axe\nA hero that would carry this into battle\nscreaming a war cry would be quite scary indeed.
+767	713	15928	Bronze Axe\nThis axe, familiar to those who played\nthe last game, is quite well balanced.
+768	713	16588	Lumberjack Axe\nAn axe that would be familiar to any lumberjack.\nIt chops logs very neatly at least.
+769	713	17248	Battle Axe\nNot really a utilitarian design,\nbut it can sure cleave monsters real nice.
+770	713	17908	Saw Axe\nA multipurpose tool made for carpenters.\nYou can fight and build a chair at the same time.
+771	713	18568	Bloody Axe\nHas drunk the blood of many a monster.\nWithout blood it gets anemic.
+772	713	19228	Evil Breaker\nAn Axe with the power to crush evil.\nIt will even smash Evil Lords into smithereens.
+773	713	19888	Giant's Axe\nAxe forged by giants.\nFor some reason it's human-sized.
+774	713	20548	Club\nA primitive hammer made of wood.\nNo instructions needed here, just whack away.
+775	713	21208	Iron Club\nSigned by a legendary baseball player\nwho hit 30 homeruns in one day.
+776	713	21868	Battle Hammer\nDeals great damage to opponents.\nCan also be used for whack-a-mole games.
+777	713	22528	Spike Mace\nPress a button and spikes shoot out\nin all directions; dangerous to everyone.
+778	713	23188	Silver Hammer\nHammer made of silver. Dad uses it\nto play golf on weekends.
+779	713	23848	Gold Rush\nGolden hammer instilled with the ambition\nof all who seek their fortune.
+780	713	24508	Thor Hammer\nStrikes with the thunder of the Gods.\nShockingly awesome.
+781	713	25168	Alpha\nA bowgun sword that Nanako poured her heart\ninto making for her friend.
+782	713	25828	Beta\nThe neighbor lady decided to try making\na bowgun sword on a whim.
+783	713	26488	Gamma\nThe old guy at the item shop\nmade this bowgun sword in his free time.
+784	713	27148	Delta\nThe old guy at the weapon shop\nrecommends this iffy-looking bowgun sword.
+785	713	27808	Epsilon\nMade of an unknown material.\nThe powers of this bowgun have yet to be known.
+786	713	28468	Zeta\nWhen it gets dull, a new blade\npops out of this bowgun sword.
+787	713	29128	Iota\nA bowgun crudely taped to a sword.\nOr is it a sword crudely taped to a bowgun?
+788	713	29788	Theta\nIts blueprints were scribbles of a bowgun\nsword scrawled by a child.
+789	713	30448	Lambda\nThis bowgun sword can launch many\nineffective attacks in an instant.
+790	713	31768	Omicron\nA replica of the legendary bowgun sword that\ncan defeat any enemy in one shot.
+791	713	33088	Sigma\nThey certainly had their eye on lofty goals when\nmaking this high-grade bowgun sword.
+792	713	33748	Phi\nSheathed in flame,\nthis bowgun sword seems burnt-out.
+793	713	34408	Omega\nAwarded the final code number.\nThe strongest bowgun sword.
+794	713	35068	Sacrificial Staff\nCarried to prevent the apocalypse and to end your\nfavorite sports team's losing streaks.
+795	713	35728	Gentleman's Wand\nSwindlers often carry this to convey an\nair of earnestness.
+796	713	36388	Mage Staff\nSwindlers often carry this to pretend like\nthey know magic.
+797	713	37048	Fire Rod\nThis flaming staff is imbued with the power of fire.\nOr maybe it's what you'd call a torch.
+798	713	37708	Ice Rod\nThis frosty rod is imbued with the power of ice.\nAlso known as a popsicle.
+799	713	38368	Sage's Staff\nBrandish this magically imbued staff\nand you will be loved by turtles.
+800	713	39028	Dragon Wand\nImbued with the power of dragons.\nFire comes out of the dragon's head on the top.
+801	713	39688	Gaia Staff\nThis staff is imbued with the power of earth.\nIt has the power to cause natural disasters.
+802	713	40348	Encyclopedia\nContains all the information in the world.\nOne of the volumes out a series of 30.
+803	713	41008	Tome of Lightning\nA powerful book imbued with the thundering rants\nof a crotchety old man.
+804	713	41668	Grimoire\nFull of embarrassing youthful indiscretions\nmade by heroes.
+805	713	42328	Stormproof Tome\nThe pages are wrought of iron so that the pages\nwon't be blown away by a storm.
+806	713	42988	Necronomicon\nThe embarrassing past lives of the Evil Lords\nare recorded in this tome.
+807	713	43648	Erotic Novel\nHey now, even heroes are human\nand get human urges.
+808	713	44308	Goddess Book\nA book full of money making secrets\nand techniques.
+809	713	44968	Stone Spear\nThis spear also comes with a handy\ntetherball pole feature.
+810	713	45628	Iron Spear\nThe inside is hollow.\nIt makes a convenient straw as well.
+811	713	46288	Trident\nThis spear can also be used as\na fork by a giant.
+812	713	46948	Thunder Spear\nIt's long enough to also be used\nto pick bananas with.
+813	713	47608	Knight Lance\nIt's long enough to also be used for\nlimbo dancing.
+814	713	48268	Drill Lance\nIt's long enough to also be used for\nshooting pool.
+815	713	48928	Dragon Lance\nIt's long enough to also be used for\ntraining dragons.
+816	713	49588	Gungnir Spear\nThis legendary spear has divine protection.\nIt has incredible destructive power.
+817	713	50248	Wood Stick\nCan also be used to paint your nails with.\nMakes for heroic nail art.
+818	713	50908	Skull Bone\nAn edible staff that can conveniently be consumed\nif you're calcium deficient.
+819	713	51568	War God Staff\nGrants the bearer military prowess or something,\nmaybe, possibly, we're not sure.
+820	713	52228	Clothesline\nSeems like it came from the yard of the legendary hero.\nDries clothes well.
+821	713	52888	Death Pipe\nSold well despite its confusing and\nawkward late-night infomercial.
+822	713	53548	Power Staff\nIts length can be elongated at will.\nThis feature seems not to work for older men.
+823	713	54208	Dream Breaker\nA horrible weapon that whispers the cruel truths about\npeople's dreams and convinces them to give up.
+824	713	54868	Bug Swatter\nA weapon built with the spirit of vengeance\nby a man betrayed by his bugs.
+825	713	55528	Chain Sword\nA sword with a creative name that\nhas a chainsaw for a blade.
+826	713	56188	Hero Killer\nAnti-hero weapon, any hero\nonce hit will die within 100 years.
+827	713	56848	Beast Beat\nWas created along with the Bug Swatter to\ndefeat beasts, because why not?
+828	713	57508	Thunder Hat\nA hat to protect against thunder and lightning.\nNow you can stop being afraid of thunder, wuss.
+829	713	58168	Mage Glasses\nThese specs make you look a little smarter but they\nactually aren't even prescription.
+830	713	58828	Leather Hat\nThis leather hat with a wide brim is\ndecorated with a stylish feather.
+831	713	59488	Barrel Head\nThis helmet is a repurposed bucket.\nNot particularly stylish or popular.
+832	713	60148	Red Bandana\nRed bandana given out for\nthe 'Save The World' campaign.
+833	713	60808	Ten Gallon Hat\nCurses the wearer with an insatiable urge\nto ride raging bulls.
+834	713	61468	Metal Helm\nMelt faces with epic guitar solos while head banging\nyour enemies to death.
+835	713	62128	Warm Beanie\nA replica of a beanie heartwarmingly knit together\nby a girl in love.
+836	713	62788	Captain Hat\nThis hat was worn by a legendary pirate king.\nParrot sold separately.
+837	713	63448	Gaia Helm\nIt is said that the wisdom of the\nearth Goddess will be granted to the wearer.
+838	713	64108	Goggle Cap\nGoggles that are good underwater too.\nAlso useful when chopping onions.
+839	713	64768	Afro Wig\nLooks cool but needs to be constantly\nmaintained with an afro pick.
+840	713	65428	Bone Head\nIt's just the skull of some monster.\nNot exactly fashionable.
+841	713	66088	Horned Helm\nHead butt someone with this and feel like\na real Viking.
+842	713	66748	Coleus Helm\nA helmet with a red mohawk.\nPeople might think you're a weirdo.
+843	713	67408	Demon's Horn\nWorn by kids when playing the bad guy in\na game of Hero vs. Demon.
+844	713	68068	Circlet\nA beautiful circlet made of silver.\nBestows a powerful magic defense.
+845	713	68728	Silver Sallet\nCovers everything but the chin.\nIt allows the wearer to eat freely.
+846	713	69388	Dragon Head\nA helmet that allows you to\nbe a pretend dragon.
+847	713	70048	Brave Crown\nThis crown was created by the Gods to save the world.\nWear it and become a limitless hero.
+848	713	70708	3D Specs\nThe three D's stand for dumb, dorky\nand double-sized.
+849	713	71368	Sacrificial Hat\nHat worn to stop the end of the world\nand to keep the king from snoring.
+850	713	72028	Hairband\nWhen you want to dress up a little\nwe recommend this ornament.
+851	713	72688	Feather Hat\nA sense of elegance\nis produced by the stylish white feather.
+852	713	73348	Coral Crown\nA maternity crown worn by women\nwho have given birth.
+853	713	74008	Floral Coronet\nThis beautiful crown is made from woven flowers.\nMakes you feel like a fairy.
+854	713	74668	Rabbit Helm\nLooks cute and the ladies\nlove it.
+855	713	75328	Fancy Hairband\nThis ornament forms a\nmatched set with the Maid's Dress.
+856	713	75988	Witch's Hat\nThis black hat is a staple costume\non Halloween.
+857	713	76648	Full Face Helmet\nThis serious helmet is worn to protect both your\nhead and your privacy.
+858	713	77308	Angel Ring\nPeople won't be quite sure whether you're alive\nor a spirit from another world.
+859	713	77968	Helm of Light\nEmits dazzling radiance when sensing danger,\nblinding your opponents.
+860	713	78628	Regal Crown\nA legendary princess made this for posterity.\nThis holy crown will make you wise.
+861	713	79288	Prisoner Clothes\nThe embarrassing form was designed to force\natonement for one's crimes.
+862	713	79948	Patched Clothes\nThe previous hero wore these\nduring a time of financial hardship.
+863	713	80608	Commando Uniform\nOnly Commandos, specially chosen from the ranks of\nthe Brave Kingdom's troops, get to wear this rare uniform.
+864	713	81268	Hero Cloth\nSpecial armor tailor made for heroes.\nMonogrammed for safekeeping.
+865	713	81928	Brave Coat\nThe Brave series of items now includes\nthis legendary coat.
+866	713	82588	Hide Armor\nArmor made of tanned hide.\nLooks better when broken in.
+867	713	83248	Magic Robe\nThis robe magically changes size\nto better fit the wearer.
+868	713	83908	Barrel Armor\nJust a barrel with some holes in it.\nPerhaps you should do a roll... in this barrel...
+869	713	84568	Gorgeous Mail\nGorgeous but extremely expensive armor.\nWe can only recommend this to the wealthy.
+870	713	85228	Cowboy Vest\nWear this together with the Ten Gallon Hat\nand you'll be feeling as wild as the West.
+871	713	85888	Black Belt\nWarm up gear of the legendary fighter.\nYou'll feel like you can take on anyone.
+872	713	86548	Scale Mail\nThis popular armor is well known\nas a souvenir of fishing villages.
+873	713	87208	Magma Plate\nThe power of magma is sealed in this armor.\nHas the same effect as entering a steamy sauna.
+874	713	87868	Holy Mail\nThis armor repels evil.\nOnly those with pure souls can equip it.
+875	713	88528	Sailor Suit\nIt's so embarrassing that enemies can't help\nbut be drawn to you.
+876	713	89188	Leather Jacket\nThis jumper was made of the skin\nof an unknown monster.
+877	713	89848	Combat Uniform\nNot just useful in combat,\nit's also an effective treatment for rheumatism.
+878	713	90508	Power Loincloth\nMade from a single piece of cloth.\nThis novel protector intimidates enemies.
+879	713	91168	Silver Mail\nThis armor instills in the wearer a\nrespect for the elderly.
+880	713	91828	Warrior Armor\nSaid to be made by an oriental-style armorer.\nCan repel ninja attacks.
+881	713	92488	Turtle Mail\nArmor that gives props to turtles.\nHeavy, but provides much HP.
+882	713	93148	Mithril Suit\nMade of the rare mithril silver.\nIts defense power is surpassed by its scarcity.
+883	713	93808	Metal Protector\nProtects your 'vital parts' with alloys.\nManufactured with high precision.
+884	713	94468	Blade Suit\nBlades protrude haphazardly.\nEqually dangerous for the wearer.
+885	713	95128	Lord Mail\nArmor made for the king of the world.\nHe generously allows heroes to wear it.
+886	713	95788	Aura Suit\nA stench like that of rotting fish\ngives this suit an aura of its own.
+887	713	96448	Mighty Protector\nThis armor raises the natural abilities of humans\nto their highest levels.
+888	713	97108	Brave Vest\nThe Gods made this armor to save the world.\nIt protects against all attacks.
+889	713	97768	Sacrificial Clothes\nThese clothes were made to stop the destruction of the\nworld and cure gambling addictions.
+890	713	98428	Uniform Dress\nClothes worn by girls at the Goddess Academy.\nCute and exceedingly popular.
+891	713	99088	Leather Dress\nOften worn by working women for its\ndurability and ruggedness.
+892	713	99748	Flower Apron\nThis magic apron\nslightly increases cooking skill.
+893	713	100408	Fur Coat\nA combination of warmth and style.\nExtremely unsuited for battle.
+894	713	101068	Crimson Robe\nThis deep red robe hides\nthe blood spatter from defeated foes.
+895	713	101728	Rider Suit\nA legendary rider supposedly wore\nthis black suit.
+896	713	102388	Military Uniform\nSomebody forgot this uniform in the laundry room.\nSmells faintly of sweat.
+897	713	103048	Sequined Dress\nThis spangled dress twinkles in the light.\nUnfortunately also attracts crows.
+898	713	103708	Maid's Dress\nThis beguiling dress was designed\nto attract unwary customers.
+899	713	104368	Holy Dress\nThis dress is said to hold holy powers.\nIs also impervious to wrinkles.
+900	713	105028	Light Armor\nThis armor is light and easy to wear.\nIt also twinkles pointlessly in the dark.
+901	713	105688	Regal Dress\nA legendary princess made this for posterity.\nCan also be worn at parties.
+902	713	106348	Goddess Raiment\nThe Time Goddess' old raiment.\nHas been mended in several places.
+903	713	107008	Commando Shoes\nThese special shoes carry the mark of the\nRoyal Palace Commando Unit.
+904	713	107668	Resistance Boots\nOnly true rebels can wear\nthese boots.
+905	713	108328	Brave Boots\nThe Brave series has expanded\nto include these legendary shoes.
+906	713	108988	Comfy Sandals\nThe bumps on the bottom massage your pressure points.\nVery popular at Shop 30.
+907	713	109648	Hide Shoes\nMade by a very skilled dwarf.\nThe quality of these shoes is apparent.
+908	713	110308	Clogs\nWood with holes for feet.\nStiff and difficult to walk in.
+909	713	110968	Rubber Boots\nWaterproof, but short, so not really of\nmuch use in deeper puddles.
+910	713	111628	Bigfoot\nBig shoes for a big hero.\nYou might get tracked by cryptozoologists.
+911	713	112288	Snow Shoes\nYou could walk even in 10m deep snow.\nThough apparently it never snows that much.
+912	713	112948	Gale Shoes\nIncredible shoes developed to reach the fastest speeds\nby imbuing it with magical powers.
+913	713	113608	Battle Boots\nWarriors love these boots.\nWill last through even extensive campaigns.
+914	713	114268	Speed Gear\nImproved significantly from their previous version,\nthis armor has uncanny balance.
+915	713	114928	Spike Shoes\nThese are modified Comfy Sandals, so they have\nspikes on the inside too.
+916	713	115588	Iron Geta\nThese iron clogs are very heavy.\nWear them and be strong in body and spirit.
+917	713	116248	Silent Boots\nHas no soles, so you'll walk as quietly\nas if you were barefoot.
+918	713	116908	Duel Greaves\nThese shoes were made for battle.\nThey hate wearers who wish to retreat.
+919	713	117568	Ultimate Gear\nState of the art shoes.\nAccept no compromise!
+920	713	118228	Destiny Boots\nIt is said that wearing these will\nhelp you marry your fated one.
+921	713	118888	Academy Boots\nBoots worn by students at the Goddess Academy.\nMatched set with the School Dress.
+922	713	119548	Sacrificial Shoes\nThese shoes are worn to stop the end of the world and\nend matrimonial quarrels.
+923	713	120208	Aero Sneakers\nMade with super-sneaker science, these air-insulated shoes\nwill keep you spry and energetic.
+924	713	120868	Roller Shoes\nThe rollers on the soles\nprovide incredible speed.
+925	713	121528	Battle Heels\nWhile sharp, some enemies seem to just enjoy being\nstepped on with these heels.
+926	713	122188	Rider Boots\nA legendary rider wore\nthese black boots.
+927	713	122848	Glass Shoes\nHaving given up his hope of ever selling glass armor,\na pervy cobbler made these shoes instead.
+928	713	123508	White Horse\nLike a white stallion striding through the plains,\nthese boots allow you to run with grace.
+929	713	124168	Regal Shoes\nA legendary princess made these for posterity.\nThey increase your fashion sense all around.
+930	713	124828	Leather Shield\nA leather frisbee.\nSlightly stained by dog drool.
+931	713	125488	Wooden Shield\nA shield made by putting a handle\non an unwanted tray.
+932	713	126148	Golden Scudetto\nMade to commemorate the release of Half Minute Hero II and\nnot very practical.
+933	713	126808	Scale Shield\nMade from the scales of a giant lizard.\nVery popular with scale enthusiasts.
+934	713	127468	Ice Shield\nThis chilly shield is perfect during hot summer battles,\nfor a while anyway.
+935	713	128128	Flame Shield\nAn iron shield hot as flame.\nCan be used to grill meat.
+936	713	128788	Shield of Light\nCan be brought up at the speed of light, but carries\ncertain other risks.
+937	713	129448	Parasol Shield\nSpecialized for blocking the sun's rays.\nProtects you from the harsh summer sun.
+938	713	130108	Glass Shield\nHaving given up his hope of ever selling glass armor,\na pervy armorer made this shield instead.
+939	713	130768	Royal Guard\nThis reasonably priced shield\nis wildly popular with protectors of the kingdom.
+940	713	131428	Rainbow Shield\nThis shield lights up in 7 different colors\nto increase morale.
+941	713	132088	Holy Guard\nThis holy shield does not guard\nthat which does not need it.
+942	713	132748	Regal Guard\nA legendary princess made this to cure\nher habit of going on random rampages.
+943	713	133408	Earth Guard\nThis shield is filled with the power of earth.\nPrevents injuries when tripping and falling.
+944	713	134068	Duralumin\nYou can peep out from behind this shield.\nVery handy.
+945	713	134728	Spike Shield\nThis spiked shield can also be used to\nattack using the attached spike.
+946	713	135388	Shining Shield\nA mirror shield would be useful in battling Medusa,\nbut unfortunately she does not appear in this game.
+947	713	136048	Kite Shield\nPopular children's character Mr. Kite\nis printed on this iron shield.
+948	713	136708	Palm Shield\nShield with a magical hand that will reach out\nto scratch even the farthest itchy places.
+949	713	137368	Storm Shield\nThis magic shield creates a windstorm\nthat deflects enemy attacks.
+950	713	138028	Men's Shield\nExudes gentlemanly poise\nto repel enemies.
+951	713	138688	Brave Guard\nThe Gods made this shield to save the world.\nDefends against all attacks.
+952	713	139348	Sexy Swimsuit\nOne piece frilled swimsuit.\nCould there be an illustration somewhere?!
+953	713	140008	Warring States Armor\nMatches the Warring States Helmet.\nAlso popular as a fashion piece.
+954	713	140668	Warring States Helmet\nA helmet worn by warriors of the Warring States.\nMakes you want to wear it out of battle too.
+955	734	88	Jelly\nSquishy monster that lives in grass.\nHas recently increased in number.
+956	734	748	Yellow Jelly\nThis leftover curry jelly\nhas gained consciousness and gone wild.
+957	734	1408	Purple Jelly\nThis leftover grape jelly\nhas gained consciousness and gone wild.
+958	734	2068	Spiky Jelly\nRecently discovered to not be Jelly.\nIs actually a snow covered hedgehog.
+959	734	2728	Magma Jelly\nThis magma-like jelly maintains\na 30 degree temperature.
+960	734	3388	Iron Jelly\nThey say it confers a lot of experience points.\nConceals a rebellious past.
+961	734	4048	Flying Jelly\nLong held the dream of flight.\nHas finally taken to the sky.
+962	734	4708	King Jelly\nLong held the dream of being king.\nHas finally ascended to the throne.
+963	734	5368	Emperor Jelly\nLong fought to be king of kings.\nRules the Jelly domain.
+964	734	6028	Wererat\nLooks just like a regular rat, but\nwhen hungry returns to human form.
+965	734	6688	Nomnom\nFriend to subterranean moles.\nOften mistaken for a potato.
+966	734	7348	Rhinochild\nBecame too obsessed with the Hero 30 Show\nand now can't find his parents.
+967	734	8008	Killer Monkey\nScrawls graffiti on Goddess Statues.\nNot even afraid of the Gods.
+968	734	8668	Squirrel Warrior\nThis brave squirrel warrior stores money and\nseeds in his cheeks.
+969	734	9328	Urchincorn\nThis legendary creature has hair like that of a sea urchin, and\ntastes like it to boot.
+970	734	9988	Killer Wolf\nLikes to wolf down junk food in front\nof struggling dieters.
+971	734	10648	Raging Deer\nTransforms into a deer-like creature and fights evil\nthat lurks the world. Very mysterious.
+972	734	11308	Sabertooth Tiger\nIts long fangs can be used\nto make Tiger Blades.
+973	734	11968	Yeti\nUses snow from their frosty tundras to make a killing\nduring hot summers selling snowcones.
+974	734	12628	Mr. Gorilla\nStrong even among Gorillas.\nCalled 'Mr.' because he's so popular.
+975	734	13288	Adult Rhino\nHas been forced into a life of crime, but feels guilt\nabout his lifestyle choices.
+976	734	13948	Hot Mr. Gorilla\nActually a double agent and an ally, but not knowing this,\nthe hero beats him up.
+977	734	14608	Horn Devil\nLikes to slide along the\nground with its horns.
+978	734	15268	Big Mole\nThis giant mole lives underground.\nTakes 30 years to grow this large.
+979	734	15928	Big Mammoth\nWent extinct long ago.\nProbably just a hairy elephant.
+980	734	16588	Grass Turtle\nThis long lived turtle is said\nto live 300,000 years.
+981	734	17248	Frilled Lizard\nHad major roles in a couple of dinosaur movies, but is now\na washed up has-been.
+982	734	17908	Big Lizard\nThis cute lizard dreams of\none day becoming a dragon.
+983	734	18568	Basilisk\nLooks cool, but makes\nfor a poor pet.
+984	734	19228	Poison Turtle\nThis scary turtle wounds opponents\nwith poisonous words.
+985	734	19888	Poison Lizard\nA Poison Turtle that evolved by\ntaking off its shell.
+986	734	20548	Lizardman\nOften mistaken for a Giant Lizard\nand carried off to be a pet.
+987	734	21208	Lizard Leader\nThe leader of the Lizard Men.\nEasily distinguished by the red color.
+988	734	21868	Fire Lizard\nThis carefree lizard wants to spend his life\nsafe inside a fire.
+989	734	22528	Cat Snake\nThis scary creature purrs\nto attract unwary cat lovers to their doom.
+990	734	23188	Ribbit\nHas a habit of swallowing\nmoney, but is adorable.
+991	734	23848	Death Alligator\nFeared member of swamp gangs.\nDresses stylishly.
+992	734	24508	King Ribbit\nRival of Frog Lords.\nThe King of all Ribbits.
+993	734	25168	Furry Hornet Bird\nA bear? A bee? A bird?\nWe're really not sure.
+994	734	25828	Peggy\nFormerly a hitman.\nNow works as a doctor saving people.
+995	734	26488	Mad Owl\nA huge fan of heroes.\nGloomy, but not hateful.
+996	734	27148	Goshawk\nBeautiful wings and brilliant plumage\nare the pride of this giant eagle.
+997	734	27808	Speed Moa\nThis bird lost its wings,\nbut gained incredible running speed.
+998	734	28468	Vulture\nThis hated bird hangs out\nnear those close to death.
+999	734	29128	Fire Dal Moa\nCalled the 'Running Roast Chicken'.\nExtremely rare bird.
+1000	734	29788	Griffin\nThis creature was put together from\neagles and 30 other animals.
+1001	734	30448	Bird of Paradise\nLegends say that drinking the blood of this bird\nextends life by 30 seconds.
+1002	734	31108	Giant Moa\nThis giant bird wanted to live life on land,\nso it threw its wings away.
+1003	734	31768	Poly-Pelican\nChanges color based on surroundings.\nVery handy!
+1004	734	32428	Goblin\nA small monster that lives in grass.\nMischievous and selfish.
+1005	734	33088	Troll Kid\nThis annoying creature\nabuses the generosity people show children.
+1006	734	33748	Ex-Evil Lord Army Pvt 3rd Class\nThis former Evil Lord Army soldier\nnow lives a pitiful life.
+1007	734	34408	Ex-Evil Lord Army Pvt 1st Class\nThis former soldier now drowns\nhis sorrows in booze.
+1008	734	35068	Ex-Evil Lord Army Corporal\nDefeated by a hero after many hard years\nof climbing up the military ladder.
+1009	734	35728	Goblin Leader\nTurned over a new leaf and rescued the princess and\nbrought peace to the world.
+1010	734	36388	Winged Demon\nWings with a demon growing out of them.\nVery rare monster.
+1011	734	37048	Hammer Troll\nBuilds Evil Lord castles.\nHates when the hero knocks them down.
+1012	734	37708	Lilith\nSexy female demon.\nRecently gained her own fan club.
+1013	734	38368	Ancient Devil\nOutwardly appears childlike,\nbut has been alive since ancient days.
+1014	734	39028	Poly-Goblin\nA crafty goblin who changes color in order to\nappear more three-dimensional.
+1015	734	39688	Bumblebee\nThis clever bee gets its honey\nstraight from the market.
+1016	734	40348	Spider\nJust a plain spider, but\nhis life was made into a movie overseas.
+1017	734	41008	Poison Caterpillar\nA poisonous caterpillar.\nMorphs into a beautiful butterfly.
+1018	734	41668	Scorpion\nThis poison-tailed insect lives in deserts.\nAside from the tail, is surprisingly tasty.
+1019	734	42328	Poison Spider\nLooks poisonous, but is actually\na safe, docile spider.
+1020	734	42988	Giant Mantis\nHas strength unrivalled among insects,\nbut weak in the looks department.
+1021	734	43648	Giant Centipede\nThe heroes' acquaintance's\nneighbor's friend's awesome pet.
+1022	734	44308	S-Cargot\nThis strange snail enjoys\ninflicting pain on others.
+1023	734	44968	M-Cargot\nThis strange snail enjoys\nbeing hurt by others.
+1024	734	45628	Demonfly\nThis dragonfly gained the power of a demon\nto avoid little kids with nets.
+1025	734	46288	Tagger Bug\nFounder of a religious sect.\nOften found doing missionary work.
+1026	734	46948	Sandeater\nLives off of eating sand.\nHas very low food bills.
+1027	734	47608	Rhino Beetle\nThe strongest giant beetle.\nPopular pet of young children.
+1028	734	48268	Stone Boy\nAs a boy born simply as a stone, he ponders\nthe meaning of his existence.
+1029	734	48928	Fyern\nThe embodiment of human jealousy.\nCame to life as a living flame.
+1030	734	49588	Fritz\nThe embodiment of terrible jokes.\nCame to life as living frost.
+1031	734	50248	Raiden\nThis tornado was recruited by an Evil Lord\nafter destroying many kids' sandcastles.
+1032	734	50908	Tyfume\nThis typhoon was recruited by an Evil Lord\nafter knocking over many lawn chairs.
+1033	734	51568	Mudman\nThis djinn of the earth comes to life after a seed\nis planted in dirt and watered for 30 days.
+1034	734	52228	Frosty\nNot actually made of snow, but rather two\ngiant scoops of vanilla ice cream.
+1035	734	52888	Lava Djinn\nWhen this djinn regains his cool, he\nbecomes...Mudman!
+1036	734	53548	Mudman King\nWhen a Mudman stays immersed in mud,\nhe can grow to immense sizes.
+1037	734	54208	Great Fire Demon\nThis fire demon's power rivals that of Evil Lords.\nHe's a twisted fire-starter.
+1038	734	54868	Tiny Wyvern\nBeing as cute as a stuffed animal,\nthis creature is very popular.
+1039	734	55528	Chubby Dragon\nThis dragon ate too much dragon kibble\nand is now on a diet.
+1040	734	56188	Dash Dragon\nThis dragon's appetite for moas\nled to his great speed.
+1041	734	56848	Skull Dragon\nThis dragon had an appetite for moas,\nbut ended up chasing them to death.
+1042	734	57508	Volcanosaurus\nThinking it was a moa, this Dash Dragon\nate a massive mound of chili peppers.
+1043	734	58168	Dragonsky\nIf you gather 30 of them together,\nyou may be granted one wish, maybe.
+1044	734	58828	Guardon\nA favorite of Evil Lords, so was\nbrought back for this game.
+1045	734	59488	Black Urchie\nThis fearful monster attacks your feelings\nwith prickly words.
+1046	734	60148	Flying Piranha\nFlies with some unknown power.\nWe're unsure how or why they fly.
+1047	734	60808	Runaway Merman\nThis ocean thief wears a fish costume.\nMaybe some kind of mascot?
+1048	734	61468	Beach Man\nA man turned into a cyborg with\nhermit crab powers through magic.
+1049	734	62128	Evil Merman\nThis pirate wears a fish costume.\nApparently somewhat popular.
+1050	734	62788	Evil Lobster\nHas disgusting color, but his\nmeat is devilishly delicious.
+1051	734	63448	Demon Spawn\nBorn when an Evil Lord went to the beach.\nYou might say that he's illegitimate.
+1052	734	64108	Chompers\nThis fierce shark lives in the ocean.\nLives to bother swimmers.
+1053	734	64768	Kraken\nThis annoying enemy likes to suddenly burst\nout of the water for camera close-ups.
+1054	734	65428	Evil Hermit Crab\nThis hermit crab finally grew\ninto his massive shell.
+1055	734	66088	Patrol Robo\nThis dangerous robot attacks\nanyone he doesn't recognize.
+1056	734	66748	Machine Warrior\nUsed to be a reception robot,\nbut was refitted for battle.
+1057	734	67408	Android Warrior\nUsed to be a broken toy robot,\nbut was refitted for battle.
+1058	734	68068	Drill Private E-1\nUsed to be a cleaning robot,\nbut was refitted for battle.
+1059	734	68728	Machine Army\nUsed to be a maid robot,\nbut was refitted for battle.
+1060	734	69388	Ultra Mech Warrior T3000\nUsed to be a... Well, always\nwas a tank.
+1061	734	70048	Zombie\nThis undead monster shambles\nlike a tired game developer.
+1062	734	70708	Ghost\nMissed the last ferry to the Netherworld.\nIs now unfortunately stuck in the living world.
+1063	734	71368	Skeleton\nThis undead has a part time job\nworking at medical schools.
+1064	734	72028	Wraith\nThis undead is shy, so hides\nunder white sheets.
+1065	734	72688	Skull Knight\nThis armed warrior is actually an invisible man\nwhose bones are still visible.
+1066	734	73348	Bone Beast\nThis undead ran away before he could\nbe turned into soup stock.
+1067	734	74008	Ritchie\nLoved his money to death.\nMight get along with the Time Goddess.
+1068	734	74668	Zombie Baron\nThis aristocrat is just dressing up\nas a zombie for Halloween.
+1069	734	75328	Zombie Emperor\nA trendsetter, he was zombie even\nbefore it was cool to be a zombie.
+1070	734	75988	Kingdom Soldier\nThis soldier sold his soul to the devil.\nI'm sure he had a good reason though.
+1071	734	76648	Pirate\nWorks part time as a mascot\nat Fish World.
+1072	734	77308	Thief\nThis cute and skillful robber\nwill steal your heart.
+1073	734	77968	Berserker\nThis troublesome warrior rampages\nover the slightest arguments.
+1074	734	78628	Assassin\nA master killer who trained\nunder Peggy.
+1075	734	79288	Imperial Grunt\nNameless protector of the empire.\nGives his life to his country.
+1076	734	79948	Imperial NCO\nNameless protector of the empire.\nUsed bribes to buy decent armor.
+1077	734	80608	Imperial Officer\nLost his will to protect the empire,\nbut clings to his status.
+1078	734	81268	Spiky Grass\nUpset about being mistaken all\nthe time for spiky jelly.
+1079	734	81928	Man-eating Flower\nHolds dirt cheap yard sales\nand then eats the customers.
+1080	734	82588	Dance Cactus\nThis dancing cactus lives in the desert.\nLoves to limbo dance.
+1081	734	83248	Devil Mushroom\nClaims to be from outer-space,\nbut is also a compulsive liar.
+1082	734	83908	Wood Golem\nWas broken but someone crawled inside\nand continues to protect the forest.
+1083	734	84568	Vine Djinn\nAn emotionally needy demon who coils around\nopponents until they confess their love.
+1084	734	85228	Man-eating Plant\nHolds cute cat photo sessions\nand eats the guests.
+1085	734	85888	Angel Jelly\nThis legendary Jelly has died and\ncome back to life 30 times.
+1086	734	86548	Angel Frog\nThis frog angel lives in heaven.\nSings in a gospel choir.
+1087	734	87208	Snowelle\nA snowman who survived through\nsummer into old-age.
+1088	734	87868	Penguelle\nThey wanted a cute pet in heaven,\nso they brought along Peggy.
+1089	734	88528	Yetielle\nThis yeti was said to achieve angelhood by\nbecoming smarter than humans.
+1090	734	89188	Mantiselle\nThis legendary fighter taught mantis style\nkung fu to bullied children.
+1091	734	89848	Winged Angel\nWings with an angel attached.\nA very rare creature.
+1092	734	90508	Platinum Guardon\nThis mutated Guardon is covered\nin platinum scales.
+1093	310	2384	2. Let's place some monsters!\nActually, there are monster\ntiles in the palette that can\nbe placed just like map tiles.\n\nFlip through the pages using\n〔 and 〕.
+1094	866	656	Overland tiles such as forests\nand mountains will also be touched up.\n\nIn the case of overland tiles,\nplacing them next to one another\nwill result in map tiles that\nappear connected.
+1095	960	80	In Multiplayer Battle mode,\nif the host player has map data\nthat was created using the Map Editor,\nthey will be able to select it\nas a multiplayer map.\n\nA few things must be noted, however.
+1096	960	656	<Note 1.>\nMap data that features vehicles\ncannot be played in\nMultiplayer Battle mode.\n\n<Note 2.>\nThe Evil Lord's scripts will be cut out.
+1097	551	2960	<8. Try It Out>♪\n<Do you have what it takes>\n<to clear a quest of your>\n<own design?!>\n\nOnce you've completed making\nyour map, try playing through\nit!!
+1098	866	80	<Touch-Up Mode> is a function\nthat automatically modifies the\nappearance of a placed map tile\nin order to connect it with its\nsurrounding tiles.\n\nSurface tiles such as sea, sand,\nand plains will be touched up.
+1099	310	1808	When making maps,\n<Touch-Up Mode> will become\nvery important, so we\nrecommend learning about it\nfrom the tutorial\n<What's Touch-Up Mode?>\n\nThis will make map-making\na lot simpler.
+1100	766	5264	<Overland Event - Reward>\nLets you set Overland Events and\ntheir rewards as well.\n\nMaking the Overland Event look\ntransparent is useful when\ncreating stories about looking\nfor objects on the map\nor discovering items.
+1101	866	1232	Touch-Up Mode is normally ON,\nbut can be toggled OFF using 〔.\n\nTurning Touch-Up Mode OFF\nmeans placing tiles one square at\na time, but <extra pages> containing\nmap tiles such as barrens and swamp\nwill appear in the palette,\nenabling more detailed maps.
+1102	930	3536	<- Appearance>\nSpecifies the appearance\nof the cave tile on the map.\n<- Remove>\nRemoves the cave. Please note\nthat settings will also be lost.\n<- Change to Event Cave>\nChanges a normal cave into an\nevent cave.
+1103	930	5264	<- Post-Defeat Script>\nSets the Evil Lord's script for\nwhen it's defeated.\nThis script can be somewhat long.\n<- Evil Lord Appearance>\nSets the Evil Lord's appearance.\nThe number of available models\nincreases as you advance the\nStory Mode.
+1104	930	5840	There are always <4 Starting>\n<Points> on the map. <1P> is where\nthe quest starts when playing\na map in single player.\n\n2P/3P/4P are where the other\nplayers start when playing a\ncreated map in Multiplayer\nBattle mode.
+1105	988	1232	<Edit Monsters> lets you make\nyour very own monsters.\n\nThese monsters can be set as\nmonsters that appear in caves.\n\nThey can also be placed on the\nmap from the palette's monster\ntile page.
+1106	310	80	First off...\n\nWith the Map Editor, you can\nmake quests quite easily,\nin under 30 seconds even.\n\nThere are many options to explore,\nbut even with <Edit Map> alone,\nyou can produce a perfectly\nenjoyable quest.
+1107	310	1232	From the <Main Menu>,\nselect <Edit Map>.\n\n1. Let's make a map!\nBring up the palette with △,\nwhere you can find all kinds\nof map tiles.\nSelect whatever map tiles\nyou want, and then just place\nthem on the map.
+1108	310	2960	Place monster tiles on\nthe map, using their levels\nas a guideline.\n\nThe Hero starts at level 1,\nso please remember to place\nlow-level monsters on the map,\notherwise the Hero will\nnot be able to level up.\n
+1109	551	2384	<7. Important Settings>\nGive the quest you made\na <Title> and a <Description>.\n\nThis is also where you can\n<Save> your map.\n\n<If you quit without saving,>\n<all unsaved data will be lost,>\n<so please remember to save!>
+1110	643	656	The Sample map is for those who\ndon't want to reinvent the wheel.\n\nThe island is more or less formed,\nand villages and monsters have\nbeen placed.\n\nIt can be played right away,\nor you can choose to customize\nthe map further.
+1111	722	2960	Without <Monster Tiles>\non the map, the Hero\nwill not be able to level up.\n\nThe Hero begins at level 1,\nso please remember to\nplace weak monsters that\ncan be defeated even at that\nlevel, otherwise the Hero\nwill be doomed.
+1112	766	6416	<Shortcut>\nThis special event can <only be>\n<set after placing a Cave Event>.\nSimply put, it is the <cave exit>.\n\nAfter defeating the cave monsters,\nthe Hero moves to the specified\nlocation.\n\nThis can be placed and moved.
+1113	310	656	Battle monsters on a map\nof your liking,\ngain levels and defeat the\nEvil Lord!\n\nA quest like this can be made\nwith just <Edit Map> alone.\n\nThe following pages will\ngive a simple description\nof the process.
+1114	310	3536	3. Let's place some events!\nJust like monsters, there are\nevent tiles in the palette that\ncan be placed on the map.\nLook through the pages with\n〔 and 〕.\n\nPlace village tiles where\ntime-reversing Goddess Statues\nor HP-restoring eateries\nare needed.
+1115	310	4112	The Hero's Starting Point and\nthe Evil Lord Castle are already\non the map, but they can be\nmoved around.\n\nAnd that completes your quest. ♪\n\nReturn to the Main Menu\nand try out the quest\nyou created by selecting\n<Try It Out>♪!
+1116	551	80	Here's a simple explanation\non how to create quests using\nthe Map Editor.\nRefer to specific tutorials\nfor more detailed information.\n\n<1. Select Map Base>\nTo make a map from scratch,\nselect <Plain>.\nTo start with some pre-made\nelements, select <Sample>.
+1117	643	1232	Broadly speaking, there are\ntwo types of map bases:\n<Small Base> and <Large Base>.\n\nA <Small Base> is <32 x 32> squares\nand a <Large Base> is <48 x 48>\nsquares.\n\n<Once you choose the size of the>\n<map it cannot be changed,>\n<so please choose carefully.>
+1118	766	80	<Edit Story> is something you\ndo at the start of quest\ndesign,\nbut it can be edited at any\ntime from the main menu.\n\nHowever, while the contents of\na single <event> can be changed\nfreely, changing the <story type>\nwill cause <all event data to be>\n<reset>, so please be careful.
+1119	766	656	A <story type> is a series\nof events that are arranged\nfrom top to bottom.\n\nFor story types such as\n<Rumor> or <Monster Slaying>,\nevents will be preset.\n\nIf you want to create your own\nevent layout, please select the\n<Original> story type.
+1120	930	80	<Event Tiles> are special tiles that\ncan be placed on the map.\n<Village>, <Cave>, <Evil Lord Castle>\nand <Starting Points> are examples.\n\nEvent tiles cannot be placed on top\nof other event tiles.\n\nThe menu for event tiles on the map,\nexcluding <Starting Points>, can be\nopened with □ and moved or edited.
+1121	930	4688	<- Entrance Script>\nSets the Evil Lord's script for its\nentrance at the start of the quest.\nThis script can be very long.\n<- Time-Up Script>\nSets the Evil Lord's script\nfor when time runs out.\n<- Pre-Battle Script>\nSets the Evil Lord's script for\nwhen the Hero enters the castle\nand before engaging in battle.
+1122	988	1808	Here are the possible settings.\n<- Name>\nSpecifies the monster's name.\n<- Spoils>\nSets the item that can be\nobtained after defeating it.\n<- Strength>\nSets monster's strength by levels.\n<- Number>\nSpecifies how many of this monster\nappear in battle.
+1123	310	4688	Once you get used to it\nand feel like making more\nadvanced quests,\ndo try out the other options\nsuch as <Edit Story>,\n<Edit Monsters>,\n<Edit Items> and\n<Set music>.\n\nYou can always refer to the\nvarious tutorials for more\ninformation.
+1124	551	656	<2. Edit Map>\nPick any map tile you want from\nthe palette to create a map.\n\nYou can also place event tiles\nsuch as villages and castles,\nor monster tiles.\n\nMake use of tools like the\nEyedropper 〕, Touch-Up Mode 〔\nand × Dash, to create your\nvery own map!
+1125	551	1808	<4. Edit Items>\nEdit item data to make\nall-new original items.\n\n<5. Edit Monsters>\nEdit monster data to make\nall-new original monsters.\n\n<6. Set Music>\nDecide which BGM tracks will play\nduring the various parts of your\nquest.
+1126	722	80	In <Edit Map>, you can create\nyour very own original map\nusing a variety of map tiles.\n\nThe main controls are below.\n╋: Move cursor\n×: Move cursor fast\n○: Place map tile\n□: Edit event tile\n△: Show palette\n〔: Toggle Touch-Up Mode\n〕: Eyedropper
+1127	766	1232	You are able to set a <maximum>\n<of 6 events>, which will be\ntriggered in order from the top.\n\nSimply setting the events here\nwill not cause them to trigger.\nThey will only trigger if\nyou place them on the map.\n\nIf you find story creation to\nbe a bother, you can refrain\nfrom placing events on the map.
+1128	766	3536	<Talking Event - Reward>\nJust like Talking Event,\nthe village has to be specified.\nThe difference is that\nyou can set a reward\nfor when the event triggers.\n\nRewards include the following.\n- Item\n- Gold\n- Terrain Change\n- Vehicle
+1129	930	1232	Within the <Village's Settings>,\nyou can do the following.\n\n<- BG>\nSets the village's background.\n<- Village Tile Type>\nSets the appearance of the village\ntile on the map.\n<- Statue: Have/None>\nSets/removes the Goddess Statue,\nwhich allows players to reset time\nin exchange for money.
+1130	930	2960	For <Caves>, up to 6 normal or event\ncaves may be placed on the map.\nYou can move the cursor over a\ncave and open its menu with □.\n\nFrom the cave menu you can:\n<- Move>\nMoves a placed cave.\n<- Monster>\nSpecifies the monsters that\nappear in the cave from your\n<Created Monsters List>.
+1131	988	2384	<- Movement>\nSets how the monster moves\non the map.\nNot relevant when the monster\nis placed in a cave.\n<- Symbol>\nSpecifies the symbol type used\non the map for the monster tile.\n<- Appearance>\nThe number of available models\nincreases as you advance the\nStory Mode.
+1132	551	1232	<3. Edit Story>\nA story type contains a series\nof events.\nYou can get off to an easy start\nby using pre-made story types\nsuch as <Rumor> or <Monster Slaying>\nthat already contain events.\n\nChoose <Original> to make\nyour very own story.\n\nEvents will not trigger unless they\nare properly placed on the map.
+1133	643	80	A map base is the starting\nsetup for a new map.\n\nThe Plain map is for those who\nwant to create a map from\nscratch.\nOnly the Evil Lord Castle and\nthe Hero's starting point have\nbeen placed.\n\nThis is the shortest possible\nquest and can be played\nimmediately.
+1134	722	656	To place map tiles on the map,\nfirst you have to display\nthe palette with △.\nYou can change pages using\n〔 and 〕, or by pressing ┿\nwhile on the side of the page.\n\nThe palette also has other\ntile types such as <Event Tiles>\nand <Monster Tiles>.\nTo learn more about Event Tiles,\nplease see the tutorial titled\n<What's an Event Tile?>
+1135	722	1232	There are 2 types of map tiles:\n<Surface Tiles> (like sea, sand,\nand plains) and <Overland Tiles>\n(like forest and mountain).\nYou can place Overland Tiles\non top of Surface Tiles.\n\nThe number of available pages\nof map tiles will change\ndepending on Touch-Up Mode\nand downloaded content.\nPlease also see the tutorial\ntitled <What's Touch-Up Mode?>
+1136	722	1808	To delete an <Overland Tile>, select\nthe "DEL" tile from the palette\nand apply it to the relevant tile.\n\nWhen using the eyedropper 〕 on\na square with both tile types,\nthe <Overland Tile> will be prioritized.\n\nThe type of tile determines if\nthe Hero can move over it or not.\nMovement is possible on tiles\nsuch as forests and bridges,\nbut not on seas or mountains.
+1137	722	2384	<Monster Tiles> can be\nplaced even on top of\nOverland Tiles.\n\nThe palette contains monsters\nof various types and\nstrengths.\n\nMonsters cannot move over\ntiles that the hero cannot\nmove over either,\nsuch as mountains and seas,\nso please place them with care.
+1138	766	1808	The following pages will introduce\nthe available types of events.\n\nA <Talking Event> allows the story\nto advance by talking to a\nspecified villager. In order to\ntrigger the event, the villager\nmust be placed in a village.\n\n< - Dialogue Settings>\n< - Select Village>\n< - Character>\nThese settings can be changed.
+1139	766	2384	<- Dialogue Settings>\n- Pre-Event Script\nThis is the script spoken\nbefore the event.\n* Not available for the first event.\n- Event Start Script\nThis will be spoken when\nthe event triggers.\n- Big News Text\nThese large letters will appear\nat the bottom of the screen.\n- Post-Event Script\nSpoken after the event has ended.
+1140	766	2960	<- Select Village>\nYou can place the event-related\nvillager in a particular village.\nIf no villages are available,\nyou will need to place a village\nevent tile from <Edit Map>.\n<- Character>\nSpecifies <who> holds this event.\nUp to 6 villagers (A～F) can be\nset for events. When there are\nmultiple event conversations,\nyou can specify if it is the same\nor a different character.
+1141	766	4112	<- Item> will give a specified item\nas a reward.\n\n<- Gold> will give a specified amount\nof gold as a reward.\n\n<- Terrain Change> sets an event,\nsuch as repairing a broken bridge\nor filling in a hole,\nthat triggers after the main event.\n\n<- Vehicle> produces a horse\nor boat at a specified location.
+1142	766	4688	<Overland Event>\nThis has to be placed on the map\nin order to be triggered.\nIf its appearance is transparent,\nstepping on the tile will\nbring you to the next event.\nIf it's a character, speaking to\nthem will advance the story.\n\n・Dialogue Settings\n・Placement / Move\n・Appearance\nThese can all be customized.
+1143	766	5840	<Cave Event>\nThis has to be placed on the map\nin order for the event to trigger.\nDefeating the monsters in the cave\nwill move you to the next event.\n\nYou can specify the following.\n- Placement / Move\nPlaces or moves the event cave.\n- Monster\nSpecifies the monsters that\nappear in the cave from your\n<Created Monsters List>.
+1144	930	656	A maximum of 6 <villages> can be placed.\nVillages <cannot be placed near>\n<other event tiles>.\nYou can move the cursor over a village\nand open its menu with □.\nFrom the village menu you can:\n<- Move>\nMoves a placed village.\n<- Settings>\nDefines various village settings.\n<- Remove>\nRemoves a village. Please note that\nsettings will also be lost.
+1145	930	4112	There is always one\n<Evil Lord Castle> on the map.\nYou can move the cursor over the\ncastle and open its menu with □.\n\nFrom the castle menu you can:\n<- Move Evil Lord Castle>\nMoves the Evil Lord's Castle.\n<- Evil Lord name>\nSets the Evil Lord's name.\n<- Evil Lord Strength>\nSets the strength of the Evil Lord\nby levels.
+1146	988	80	<Edit Items> lets you make items\nthat you can call your own.\n\nThese items can be sold\nin village shops,\ngiven as rewards by villagers,\nor placed inside monsters'\ntreasure chests as spoils.\n\nHere are the possible settings.\n<- Type>\nWeapon/Shield/Armor/Helmet/Shoes/\nHeal are the available types.
+1147	988	656	<- Cost>\nSets the shop price of the item\nby levels.\n<- Level>\nSets the attack power of weapons\nand the defense power of armor\nby levels.\n<- Name>\nSets the item's name.\n<- Appearance>\nThe number of available models\nincreases as you advance in\nStory Mode.
+1148	21	80	In this world there are two types\nof time, okay? ★\n\nFirst there's <global> time, where you\ncan travel around the world. ♪\nThere's no time limit, so\nyou can enjoy a leisured RPG. ♪\n\nThen there are <quests> with only 30\nseconds until world destruction!?\nUsing the power of the beautiful\nGoddess, you must defeat the Evil Lords!\nIt's a super high-speed RPG!!\n(1/7) ┿ Change page  × Back
+1149	21	656	Now I'll explain the differences\nbetween the two types of time. ★\nFirst, about <levels>!!\n\nWhat goes up during global time is\nyour <global level>!!\nThis is your real level.\n\nI can't help with what happens\nduring global time, so the\nexperience gained will remain low,\nbut global level is important so do\nyour best to level up, okay? ▼\n(2/7) ┿ Change page  × Back
+1150	21	1232	And whenever a quest begins,\n<your global level converts>\n<directly into your quest level>!!\nAfter that my power will allow you\nto gain levels super-fast. ♪\n\nBut things like these have side\neffects, you know…\n\nAfter clearing a quest, the levels\ngained during it will be lost, and\nyou'll <return to your global level>.\nSo keep that in mind, okay? ★\n(3/7) ┿ Change page  × Back
+1151	21	1808	Now I'll explain the most important\nthing: Gold! So you'd better listen up!\n\nThe gold you collect in global time\nis your <pocket money>. ★ You can\nbuy whatever you want with it. ♪\n\nBut unfortunately, pocket money\ncan't be brought over into quests.\nWhen a quest begins, you're forced\nto start with 100G. ★ After clearing\nthe quest you'll get your money back,\nwith a little extra, so don't worry. ▼\n(4/7) ┿ Change page  × Back
+1152	21	2384	So just like levels, gold will come\nby really easily during quest time.\nAfter you clear the quest… ▼\nyou'll have the pleasure of\noffering all that gold to me. ★\nIt's in our contract. ♪\n\nBut don't worry, the offerings of\ngold will be put to good use.\nIf you go to <The Goddess Room>\nfrom the Mode Selection screen,\nyou will be able to get loads\nof attractive goodies!\n(5/7) ┿ Change page  × Back
+1153	21	2960	Okay, next is the <pause menu>!!\n\nIn global time you can change\nequipment or party members as\nyou like, and also save. ★\n\nYou can only save in the field during\nglobal time, so please take note!\n\nThere is also an <Autosave> feature,\nwhich can be turned on and off from\nthe options menu. ▼\n\n(6/7) ┿ Change page  × Back
+1154	21	3536	During quest time you are\nable to <retry> or <give up>.\n\n<Retry> lets you do the quest\nover from the beginning.\n\nChoosing to <give up> brings you\nback to global time before the\nquest began.\n\nIf your global level is too low, or if\nyou need to change your equipment\nand party, go ahead and give up!\n(7/7) ┿ Change page  × Back
+1155	240	80	I'll teach you about field\nand battle controls.\n\nUse the direction keys or the\nanalog pad to move in the field.\n\nDash with ×.\n\nUse items with □.\n\nEnter villages, dungeons, and\ncheck things with ○, okay? ★\n\n(1/3) ┿ Change page  × Back
+1156	240	656	Monsters are running\namuck in the field!\n\nRunning into monsters in the\nfield will start a battle. ★\n\nThere are huge monsters as well,\nso be careful, okay? ▼\n\nYou'll get crushed, instantly. ♪\n\n\n\n(2/3) ┿ Change page  × Back
+1157	240	1232	Time to explain battles!\nBut actually, battles are almost\nentirely automatic, so there's\nnothing difficult about them. ♪\n\nDash with ×.\n\nUse items with □.\n\nAnd if you want to flee, hold\n〔 and 〕 simultaneously!\nBut remember, there are battles\nthat you can't escape from.\n(3/3) ┿ Change page  × Back
+1158	275	80	Are you feeling skillful?\nNow I'm going to tell you about\n<skills>, okay? ♪\n\nYou may have noticed already,\nbut there are a lot of weapons\nwith hidden <skills>.\n\nSkills that attack all enemies,\nelemental attack skills,\nthere are even skills that have\nnon-attack based effects!\n\n(1/6) ┿ Change page  × Back
+1159	275	656	Ah, but skills can't be used by\njust anyone, you know?\nEach <class> has its own\npreferred weapons.\n\nBut since your initial class is,\nwell, <that one▼>, you are able to\nuse skills from all weapons. ★\n\nIf you want to use <axe> or <staff>\nskills, for instance, you should\nobtain classes that are proficient\nwith those weapons!\n(2/6) ┿ Change page  × Back
+1160	275	1232	As for how to get the skills to\ntrigger, you just have to hit\nmonsters. ♪\n\nAll skills have a <Trigger Rate>.\nIf the rate is 1/10 that means\nyou'll execute the skill once every\n10 times you hit a monster. ★\n\nIf you think about it… it's an\namazing system that's not about\nchance or skill at all, huh!?\n\n(3/6) ┿ Change page  × Back
+1161	275	1808	Skills are really profound!\nWhen your <familiarity> reaches MAX,\nyou can even <equip> them!\n\nYou can equip skills just like\nweapons and armor.\nEquipped skills <can even be>\n<executed by any weapon equipped>!\n\n<Familiarity> naturally goes up\neach time a skill is triggered,\nso it's super easy. ♪\n\n(4/6) ┿ Change page  × Back
+1162	275	2384	So were you thinking that only\nheroes could use skills?\nOf course not! Your allies can too!\n(So can bosses! ▼)\nFamiliarity doesn't apply, but\ntrigger rates work the same. ★\n\nAlso, if your skill triggers while\nyour HP is flashing red, you'll be\nable to do a <skill link> with your\nallies' skills.\n\nKeep an eye out for this. ♪\n(5/6) ┿ Change page  × Back
+1163	275	2960	One more juicy tip for you. ▼\n\nAmong the many weapons in\nthis world are some with two skills!\nThis second skill is called an\n<advanced skill>.\n\nIn order for advanced skills to\ntrigger, you'll need an\nappropriately <advanced class>…\n\nTry to look for those on your\nown, okay～ ▼\n(6/6) ┿ Change page  × Back
+1164	538	80	Now I shall speak of that Paragon\nof Beauty, the <Goddess Statue>. ♪\n\nYou basically know what the\nstatue does, right?\nDuring time-limited quests, your\n<prayers> and the <gold> that you\ngive to me will allow you to reset\ntime as necessary. ★\n\n(Every time you pray during a\nquest, however, it'll cost you\nmore gold. ▼)\n(1/5) ┿ Change page  × Back
+1165	538	656	So then, isn't the Goddess Statue\nuseless during global time where\nthere is no limit?\nDid you actually think that?!\nOutrageous!!\n\nIn global time, the Goddess Statue\nprovides special services such as\n<Goddess Statue Warp>, and\n<Retry EZ Mode>.\n\nWrite that down!\n\n(2/5) ┿ Change page  × Back
+1166	538	1232	The <Goddess Statue Warp>\nlets you warp instantly to\nvillages you've visited\nbefore. *Whoosh*!\n\nSuper convenient for when\nthere's an item you forgot\nto buy or a dungeon you\ndidn't clear. ♪\n\n\n\n\n(3/5) ┿ Change page  × Back
+1167	538	1808	<Retry EZ Mode> is where\nyou can redo quests that\nyou've cleared before!!\n\nYou can take these quests on\nusing your current equipment and\nparty members.\nSo go get all those items and\ntitles that you missed out on! ★\n\nThis special service is brought to\nyou by our contract, ▼  so use it\nwith gratitude, okay～♪\n(4/5) ┿ Change page  × Back
+1168	538	2384	For the hardcore folks who want\na challenge, you should try\n<Time Attack> mode from the\nMode Selection screen～ ▼\n\nIn <Time Attack> you will be fighting\nfor every last 0.01 second～♪ \nThere's also a Hard Mode where time\ndoesn't even stop in villages.\nDo note that you won't get to keep\nany items and such from this mode.\n\n\n(5/5) ┿ Change page  × Back
+1169	590	80	At last, you've obtained the\nlong-awaited Hero Castle!!\nNow then, let me, the number\none fan of the Hero Castle, tell\nyou everything you should know\nabout it. ★\n\nFirst up, <how to ride> the Hero\nCastle! Just press △! Got it?\nIn global time you can enter the\nCastle, and during quests you'll\nstart moving right away!!\n\n(1/5) ┿ Change page  × Back
+1170	590	656	Then we have the awe-inspiring\nHero Castle battles! The time has\ncome for you to take on enormous\nmonsters. ★ Ride the Hero Castle\nand charge ahead at them!\n\nBut, there are things that even\nthe Hero Castle can't do, so be\ncareful. Items/Skills/Formations\ncan't be used so please take note.\n\nAlso, resetting time will restore\nthe Hero Castle's health. ▼\n(2/5) ┿ Change page  × Back
+1171	590	1232	Next, I'll teach you how to make\nthe Hero Castle stronger.\n\nThe Hero Castle's strength is the\nsum of its <body> and <leg> parts.\nOnce you start getting various\nparts, talk to Dai to customize\nthe Hero Castle. ★\n\nAnd if you have enough gold,\nZochi can <expand> the Hero Castle,\nwhich means that you'll be able\nto equip multiple body parts! ▼\n(3/5) ┿ Change page  × Back
+1172	590	1808	During quests, while I'm helping you\nlevel up super-fast, I'm also\npowering up the adorable Hero Castle\ntoo. ★\n\n<Get stronger with each battle>.\nWhat a marvelous system. ♪\nSmashing tiny monsters is also fine,\nheehee. ♪\n\nBut since there is such a thing\nas balance, after the quest ends\nthe power-ups will be reset. ♪\n(4/5) ┿ Change page  × Back
+1173	590	2384	Finally, about your allies living\ninside the Hero Castle. ★\n\nLet me just introduce some of\nthe more special folk. ♪\nKnight offers <Class Changes>.\nFrancisca handles <Crafting>.\nRurufi manages <Spirit Stones>.\nAnd Evil Lord runs the <Title Shop>.\n\nAll types of people may come in\nhandy (even Evil Lords?), so try\ntalking to everyone, okay? ★\n(5/5) ┿ Change page  × Back
+1174	874	80	So you've made the perfect party!\nYou haven't neglected formation,\nhave you?\n\nA party only flourishes when you\nmaster the art of formation. ★\n\nDuring global time, select <Formation>\nfrom the pause menu!!\n\nThis is where your formation\ncareer begins. ♪\n\n(1/3) ┿ Change page  × Back
+1175	874	656	Changing formation doesn't just\nchange your party's positions,\nit also provides special benefits\nfor your party.\n\nSo it's your loss if you ignore it!!\n\nHowever! ♪\n\nYou'll need five people including\nthe hero to enjoy the benefits of\nformations, so don't forget to\nacquire allies, okay～♪\n(2/3) ┿ Change page  × Back
+1176	874	1232	Formations that increase attack\npower or mysteriously increase\ngold obtained or…\n\nYou know, it'd be quicker to just\ncheck them out!\n\nSo then, let's form up. ♪\n\n\n\n\n\n(3/3) ┿ Change page  × Back
+1177	980	80	You've been getting more allies\nlately and you're probably\nwondering about them, right?\n\nLet me tell you all about\nthem. ♪\n\n\n\n\n\n\n\n(1/4) ┿ Change page  × Back
+1178	980	656	First, <ally levels>.\n\nActually, they get stronger as\nyou, the hero, get stronger. ★\nIn short, your allies' levels are\nthe same as yours. ♪\n\nAlso, even if allies are defeated\nthey'll <revive in the next battle>,\nand they can use <skills> too.\n\nSuch reliable companions. ♪\n\n(2/4) ┿ Change page  × Back
+1179	980	1232	As you get more allies you'll\nwant to change up your party,\nof course. ♪\n\nDuring global time, select <Party>\nfrom the pause menu and create\nthe party of your choice. ★\n\nPut tougher allies in the front\nand magic users in the back.\nOr just have fun trying out all\nkinds of arrangements. ♪\n\n(3/4) ┿ Change page  × Back
+1180	980	1808	For people who can't decide\non one best party, go ahead and\nmake two!\nYou can create multiple parties\nthat are completely different!!\n\nIf you want to change parties\nduring battle, just press △. ♪\n\nBut after changing once you won't\nbe able to change again until the\nnext battle, so do keep that in\nmind. ★\n(4/4) ┿ Change page  × Back
