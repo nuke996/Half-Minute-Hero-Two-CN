@@ -63,6 +63,8 @@ MD5:       867308FCD87A（前 12）
    `res/LANG_JA.s2a`、`res/LANG_EN.s2a`、`res/cscv.s2a`、`res/texture.s2a`）。
 4. 启动游戏。
 
+或参照 `BUILDING.md` 进行构建。
+
 > 当前装机采用 `dinput8.dll` 运行时补丁方案（磁盘 `HMH2.exe` 保持原版），
 > 需一同分发 `dinput8.dll` 与 `hm2zh_patch.bin`。
 
