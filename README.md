@@ -214,6 +214,5 @@ DLC01:         完成
 # 项目链接
 
 ```text
-Repository: https://github.com/<owner>/<repository>
-Releases:   https://github.com/<owner>/<repository>/releases
+Repository: https://github.com/nuke996/Half-Minute-Hero-Two-CN
 ```
