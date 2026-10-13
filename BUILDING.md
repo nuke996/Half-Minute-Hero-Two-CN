@@ -229,11 +229,18 @@ python _work/dlc_apply.py revert      # 从 *.bak_dlc01_20260913 还原
 # 12. 代理 DLL（运行时补丁）构建
 
 ```text
-_work/proxydll/main.c            # 代理 DLL 源码
-_work/proxydll/dinput8.def       # 导出表
-_work/proxydll/gen_patch_bin.js  # 由 HMH2.exe.bak 生成 hm2zh_patch.bin（含自测）
-_work/proxydll/build.bat         # 构建脚本（zig 工具链）
+tools/proxydll/main.c            # 代理 DLL 源码
+tools/proxydll/dinput8.def       # 导出表
+tools/proxydll/gen_patch_bin.js  # 由 HMH2.exe.bak 生成 hm2zh_patch.bin（含自测）
+tools/proxydll/build.bat         # 构建脚本（zig 工具链 + fix_exports.js）
+tools/proxydll/fix_exports.js    # 去除导出名 @N 装饰（原位截断）
+tools/proxydll/check_dll.js      # 校验 machine / 导出 / 导入
 ```
+
+构建：`set ZIG=<zig.exe 路径>` 后运行 `build.bat`（或把 zig 放进 PATH）。
+zig 0.13 实测两点：目标三元组为 `x86-windows-gnu`（`i686-...` 已不被接受），
+且 zig 的 lld 不支持 `--kill-at`，所以 build.bat 编译后再用 `fix_exports.js`
+把 `Name@N` 装饰名原位截断为未装饰名（游戏按未装饰名导入）。
 
 产物部署到游戏根目录：`dinput8.dll` + `hm2zh_patch.bin`。
 `gen_patch_bin.js` 会把补丁虚拟应用到 `HMH2.exe.bak` 并与当前 `HMH2.exe` 的 `.text` 区逐字节比对作为自测。

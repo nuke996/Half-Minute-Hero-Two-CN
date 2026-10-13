@@ -13,7 +13,7 @@
 //   - 数据区（坐标表+排序表 32KB）先尝试固定 0x5F4000（与离线补丁态一致便于对照），
 //     失败则任意地址回退并回填立即数（type2 记录的 delta 相对 atbl 基址）
 //   - 若检测到 exe 已是离线补丁态（T7），跳过打补丁并记录日志（游戏自洽运行）
-//   - 全程写 hm2zh_patch.log 诊断日志
+//   - 全程写 hm2zh_patch.log 诊断日志：每次进程启动覆盖（不跨启动累积），行首含日期时间
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -24,15 +24,29 @@
 // ---------------------------------------------------------------- 日志
 static char g_dir[MAX_PATH] = {0};
 
-static void logln(const char* fmt, ...) {
-    char path[MAX_PATH];
+static void log_path(char* path) {
     lstrcpyA(path, g_dir);
     lstrcatA(path, "\\hm2zh_patch.log");
+}
+
+// 每次进程启动清空一次日志：旧实现全程用 "a" 追加，导致日志跨启动无限增长。
+// 在 DllMain 里（任何 logln 之前）截断，此后本进程内仍以 "a" 追加。
+static void log_truncate(void) {
+    char path[MAX_PATH];
+    log_path(path);
+    FILE* f = fopen(path, "w");
+    if (f) fclose(f);
+}
+
+static void logln(const char* fmt, ...) {
+    char path[MAX_PATH];
+    log_path(path);
     FILE* f = fopen(path, "a");
     if (!f) return;
     SYSTEMTIME st;
     GetLocalTime(&st);
-    fprintf(f, "[%02u:%02u:%02u.%03u] ",
+    fprintf(f, "[%04u-%02u-%02u %02u:%02u:%02u.%03u] ",
+            (unsigned)st.wYear, (unsigned)st.wMonth, (unsigned)st.wDay,
             (unsigned)st.wHour, (unsigned)st.wMinute, (unsigned)st.wSecond, (unsigned)st.wMilliseconds);
     va_list ap;
     va_start(ap, fmt);
@@ -331,6 +345,9 @@ BOOL WINAPI DllMain(HINSTANCE h, DWORD reason, LPVOID rsv) {
         char* c = strrchr(path, '\\');
         if (c) *c = 0;
         lstrcpynA(g_dir, path, MAX_PATH);
+
+        // 先清空上次运行的日志（须在任何 logln 之前），再加载系统 dinput8
+        log_truncate();
 
         // 加载系统真 dinput8（绝对路径，绝对不会再递归到本代理）
         char sys[MAX_PATH], real[MAX_PATH];
