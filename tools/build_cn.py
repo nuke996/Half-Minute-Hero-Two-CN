@@ -15,10 +15,11 @@
   6) HMH2.exe 还原原版（游戏按 CP932 解码，不改 exe）
 
 用法:
-  python build_cn.py plan      # 统计覆盖率，不改文件
-  python build_cn.py apply     # 构建并安装（自动 .bak 备份）
-  python build_cn.py revert    # 还原
-  python build_cn.py package   # 完整补丁打包：装机后把补丁文件集复制到 dist/
+  python build_cn.py plan            # 统计覆盖率，不改文件
+  python build_cn.py apply           # 构建并安装（自动 .bak 备份）
+  python build_cn.py revert          # 还原
+  python build_cn.py package         # 完整补丁打包（默认·隔离）：只出 dist，不动游戏目录
+  python build_cn.py package_install # 完整补丁打包（就地装机版）：装机 + 出 dist
 建议经由 tools/build.py 调用（它提供 --game-dir，避免误打目标目录）:
   python tools/build.py --game-dir "<游戏目录>" package
 游戏目录的取值优先级（不硬编码任何 Steam 路径）:
@@ -2438,18 +2439,22 @@ def do_apply_menu(exe_mode=None):
     return stats
 
 
-# ================= ★ v2.66：完整补丁打包（package） =================
-# 目标：以【原版游戏】为输入，产出一份可直接覆盖游戏目录的完整补丁，放到 dist/。
+# ================= ★ v2.68：完整补丁打包（package / package_install） =================
+# 目标：以配置游戏目录里的【原版母本 .bak】为输入，产出一份可直接覆盖游戏目录的补丁到 dist/。
 #   dll 模式（默认）：dinput8.dll + hm2zh_patch.bin + res/*.s2a + DLC01/*.s2a
 #   exe 模式：        HMH2.exe      + res/*.s2a + DLC01/*.s2a
-# DLC01 仅在【确实存在原件】时才纳入（未持有 DLC 的玩家没有 DLC01/LANG_*.s2a）；
-#   DLC01 原件备份缺失时由 refresh_dlc01 自动从当前文件生成（故须在原版状态下首次运行）。
-# 流程：① 校验原版依赖 ② 跑生产装机 apply_menu ③ 逐文件确认「确实与原件不同」
+# DLC01 仅在【配置目录里存在 DLC01 母本备份】时才纳入（未持有 DLC 的玩家没有） 。
+#
+# 【默认】package = 隔离打包：只读配置目录的母本，在 build/package_stage/ 里装机，
+#   校验通过后复制到 dist/；**配置游戏目录逐字节不变**（不装机）。
+# 【另】package_install = 旧的"就地装机"行为：直接对配置目录跑 apply_menu 再复制到 dist/
+#   （会把游戏目录留在已汉化态）。exe 模式对应 package_exe / package_install_exe。
+# 流程：① 校验母本依赖 ② 生成 staging（或就地装机）③ 逐文件确认「确实与原件不同」
 #      （防止装机没生效时静默产出一份原版/半份补丁）④ 按相对路径复制进 dist/（不打 zip）
-# 注意：本命令会**原机安装**（与 apply_menu 完全一致），不会把游戏留在原版态；
-#      游戏目录取自 --game-dir / HMH2_GAME_DIR / config.local.json 的 game_dir。
+# 游戏目录取自 --game-dir / HMH2_GAME_DIR / config.local.json 的 game_dir。
 PACKAGE_RES = ['res/LANG_JA.s2a', 'res/LANG_EN.s2a', 'res/texture.s2a', 'res/cscv.s2a']
 PACKAGE_DLC = ['DLC01/LANG_JA.s2a', 'DLC01/LANG_EN.s2a']
+PKG_STAGE_NAME = 'package_stage'   # 隔离打包的临时装机目录（落在 build/ 下）
 
 
 def _sha(path, n=12):
@@ -2458,8 +2463,106 @@ def _sha(path, n=12):
         return hashlib.sha256(f.read()).hexdigest()[:n]
 
 
+def _orig_bak_name(rel):
+    """该相对路径对应的"母本备份"文件名（DLC01 用独立后缀，其余用 .bak）。"""
+    return rel + (dlc_lib.BAK_SUFFIX if rel.startswith('DLC01/') else '.bak')
+
+
+def _pkg_origin_sources():
+    """{相对路径: 配置目录里母本备份的绝对路径}（只读，绝不写配置目录）；返回 (src, has_dlc)。"""
+    src = {'HMH2.exe': os.path.join(BASE, _orig_bak_name('HMH2.exe'))}
+    for rel in PACKAGE_RES:
+        src[rel] = os.path.join(BASE, _orig_bak_name(rel))
+    has_dlc = all(os.path.exists(os.path.join(BASE, _orig_bak_name(rel))) for rel in PACKAGE_DLC)
+    if has_dlc:
+        for rel in PACKAGE_DLC:
+            src[rel] = os.path.join(BASE, _orig_bak_name(rel))
+    return src, has_dlc
+
+
 def do_package(exe_mode=None):
-    """完整补丁打包：装机 → 校验「已改」→ 复制到 dist/。"""
+    """完整补丁打包（默认·隔离模式）：只读配置目录母本 → 在 staging 装机 → 复制到 dist/。
+    配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。"""
+    em = (exe_mode or EXE_MODE).lower()
+    print('== 完整补丁打包·隔离模式（%s 模式，不装机）==' % em)
+    print('  母本来源    : %s（只读，不改）' % BASE)
+    print('  输出目录    : %s' % paths.DIST_DIR)
+
+    # ① 前置校验：缺母本备份就明确失败，绝不静默产出半份补丁
+    src, has_dlc = _pkg_origin_sources()
+    missing = [rel for rel, p in sorted(src.items()) if not os.path.exists(p)]
+    if missing:
+        print('!! 打包中止：配置游戏目录缺少母本备份')
+        for rel in missing:
+            print('   - %s' % _orig_bak_name(rel))
+        print('   请先确认游戏为原版，或先运行 revert 生成母本备份')
+        raise SystemExit(1)
+    if has_dlc:
+        print('  [DLC01] 检出 DLC01 母本备份，纳入补丁')
+    else:
+        print('  [DLC01] 未检出 DLC01 母本备份，本次补丁不含 DLC01')
+
+    # ② 用母本备份重建 staging（同时充当"当前文件"与"原件备份"）
+    stage = paths.build(PKG_STAGE_NAME)
+    if os.path.isdir(stage):
+        shutil.rmtree(stage)
+    for rel, p in src.items():
+        dst = os.path.join(stage, *rel.split('/'))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copy2(p, dst)
+        shutil.copy2(p, os.path.join(stage, *_orig_bak_name(rel).split('/')))
+    print('  staging     : %s（已由母本重建）' % stage)
+
+    # ③ 在 staging 里跑生产装机（子进程 + HMH2_GAME_DIR 覆盖，绝不影响配置目录）
+    import subprocess
+    env = os.environ.copy()
+    env['HMH2_GAME_DIR'] = stage
+    env['HMH2_EXE_MODE'] = em
+    env['PYTHONIOENCODING'] = 'utf-8'
+    rc = subprocess.call([sys.executable, os.path.abspath(__file__),
+                          'apply_menu' if em == 'dll' else 'apply_menu_exe'], env=env)
+    if rc != 0:
+        print('!! 打包中止：staging 装机失败（退出码 %s），dist/ 未写入' % rc)
+        raise SystemExit(1)
+
+    # ④ 校验：除生成物外，每个文件必须与 staging 里的母本不同（防装机未生效）
+    manifest = (['HMH2.exe'] if em == 'exe' else list(PROXY_FILES)) + PACKAGE_RES
+    if has_dlc:
+        manifest += PACKAGE_DLC
+    bad, table = [], []
+    for rel in manifest:
+        p = os.path.join(stage, *rel.split('/'))
+        if not os.path.exists(p):
+            bad.append('%s 不存在（未生成）' % rel)
+            continue
+        bak = os.path.join(stage, *_orig_bak_name(rel).split('/'))
+        tag = '生成物'
+        if os.path.exists(bak):
+            if _sha(p, 64) == _sha(bak, 64):
+                bad.append('%s 与原版完全相同（装机未生效）' % rel)
+                continue
+            tag = '已改(原版 %s)' % _sha(bak)
+        table.append((rel, os.path.getsize(p), _sha(p), tag))
+    if bad:
+        print('!! 打包中止：以下文件不合格，dist/ 未写入')
+        for b in bad:
+            print('   - %s' % b)
+        raise SystemExit(1)
+
+    # ⑤ 复制到 dist/（按相对路径建目录）
+    print('== 写入 dist ==')
+    for rel, sz, h, tag in table:
+        dst = paths.dist(*rel.split('/'))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copy2(os.path.join(stage, *rel.split('/')), dst)
+        print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
+    print('打包完成：%d 个文件已放入 %s（未打 zip；配置游戏目录未改动）'
+          % (len(table), paths.DIST_DIR))
+    print('提示：staging 暂存于 %s（可删）；dist 中不属于本次补丁的旧文件不会被删除。' % stage)
+
+
+def do_package_install(exe_mode=None):
+    """完整补丁打包（就地装机版）：对配置目录装机 → 校验「已改」→ 复制到 dist/。"""
     em = (exe_mode or EXE_MODE).lower()
     # DLC01 仅在【确实存在原件】时才纳入补丁（未持有 DLC 的玩家没有 DLC01/LANG_*.s2a）
     has_dlc = all(os.path.exists(os.path.join(BASE, rel)) for rel in PACKAGE_DLC)
@@ -2550,9 +2653,12 @@ if __name__ == '__main__':
                                         skip_blobs=MECHANIC_BLOBS, menu_exempt=True,
                                         ui_always=True),
      'dlc_only': refresh_dlc01,
-     # v2.66：完整补丁打包（装机 + 校验 + 复制到 dist/）；exe 模式另有 package_exe
+     # v2.68：完整补丁打包。默认 package = 隔离打包（不装机，只出 dist）；
+     #   package_install / package_install_exe = 旧的就地装机版。
      'package': do_package,
      'package_exe': lambda: do_package(exe_mode='exe'),
+     'package_install': do_package_install,
+     'package_install_exe': lambda: do_package_install(exe_mode='exe'),
      'apply_menu2': lambda: do_apply(text=True, sync_cscv=True, keep_collide=True,
                                      skip_blobs=MECHANIC_BLOBS, menu_exempt=True,
                                      ui_always=True),
