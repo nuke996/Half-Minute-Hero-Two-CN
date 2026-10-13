@@ -175,7 +175,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      待规范（当前无 build/dist 目录）
+发布打包:      完成（tools/build.py package → dist/，见 BUILDING.md §8）
 ```
 
 ---

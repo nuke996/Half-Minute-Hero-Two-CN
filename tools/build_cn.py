@@ -15,9 +15,14 @@
   6) HMH2.exe 还原原版（游戏按 CP932 解码，不改 exe）
 
 用法:
-  python build_cn.py plan     # 统计覆盖率，不改文件
-  python build_cn.py apply    # 构建并安装（自动 .bak 备份）
-  python build_cn.py revert   # 还原
+  python build_cn.py plan      # 统计覆盖率，不改文件
+  python build_cn.py apply     # 构建并安装（自动 .bak 备份）
+  python build_cn.py revert    # 还原
+  python build_cn.py package   # 完整补丁打包：装机后把补丁文件集复制到 dist/
+建议经由 tools/build.py 调用（它提供 --game-dir，避免误打目标目录）:
+  python tools/build.py --game-dir "<游戏目录>" package
+游戏目录的取值优先级（不硬编码任何 Steam 路径）:
+  build.py --game-dir  >  HMH2_GAME_DIR 环境变量  >  config.local.json 的 game_dir
 """
 import os, sys, io, csv, json, shutil, collections, ctypes, struct
 
@@ -31,6 +36,7 @@ import paths
 BASE = paths.GAME_DIR          # game install dir (HMH2.exe, res/, DLC01/)
 WORK = paths.DATA_DIR          # translation data (text_v2.csv, guards, dlc/)
 import s2a
+import dlc_lib
 from PIL import Image, ImageDraw, ImageFont
 from ctypes import wintypes
 
@@ -2197,8 +2203,25 @@ def refresh_dlc01(verbose=True):
     """把 DLC01 译文按当前 cmap 重新编码。任何异常都只打印，不抛出。"""
     dlc_dir = os.path.join(BASE, 'DLC01')
     ja = os.path.join(dlc_dir, 'LANG_JA.s2a')
-    bak = ja + '.bak_dlc01_20260913'
+    en = os.path.join(dlc_dir, 'LANG_EN.s2a')
+    bak = ja + dlc_lib.BAK_SUFFIX
     script = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dlc_apply.py')
+    # v2.67：仅在【确实存在 DLC01 原件】时自动生成原件备份。
+    #   · 玩家未持有 DLC → DLC01/LANG_JA|EN.s2a 不存在 → 不创建任何文件，保持目录干净。
+    #   · 持有 DLC 且首次构建 → 由当前文件复制出 .bak_dlc01_20260913（作为原件母本）。
+    #   ⚠️ 原件备份取自"当前文件"，故应在【原版状态】下首次运行；若对已装机的目录运行，
+    #      会把已改内容误当原件（届时 package 的逐文件校验会拒绝该文件并中止）。
+    if os.path.exists(ja) and os.path.exists(en):
+        for p in (ja, en):
+            b = p + dlc_lib.BAK_SUFFIX
+            if not os.path.exists(b):
+                try:
+                    shutil.copy2(p, b)
+                    if verbose:
+                        print('  [DLC01] 自动生成原件备份 %s' % os.path.basename(b))
+                except Exception as e:
+                    if verbose:
+                        print('  [DLC01] 原件备份生成失败 %s：%r' % (os.path.basename(b), e))
     if not (os.path.exists(bak) and os.path.exists(script)):
         if verbose:
             print('  [DLC01] 跳过：未找到 DLC01 原件备份或装机器')
@@ -2415,6 +2438,101 @@ def do_apply_menu(exe_mode=None):
     return stats
 
 
+# ================= ★ v2.66：完整补丁打包（package） =================
+# 目标：以【原版游戏】为输入，产出一份可直接覆盖游戏目录的完整补丁，放到 dist/。
+#   dll 模式（默认）：dinput8.dll + hm2zh_patch.bin + res/*.s2a + DLC01/*.s2a
+#   exe 模式：        HMH2.exe      + res/*.s2a + DLC01/*.s2a
+# DLC01 仅在【确实存在原件】时才纳入（未持有 DLC 的玩家没有 DLC01/LANG_*.s2a）；
+#   DLC01 原件备份缺失时由 refresh_dlc01 自动从当前文件生成（故须在原版状态下首次运行）。
+# 流程：① 校验原版依赖 ② 跑生产装机 apply_menu ③ 逐文件确认「确实与原件不同」
+#      （防止装机没生效时静默产出一份原版/半份补丁）④ 按相对路径复制进 dist/（不打 zip）
+# 注意：本命令会**原机安装**（与 apply_menu 完全一致），不会把游戏留在原版态；
+#      游戏目录取自 --game-dir / HMH2_GAME_DIR / config.local.json 的 game_dir。
+PACKAGE_RES = ['res/LANG_JA.s2a', 'res/LANG_EN.s2a', 'res/texture.s2a', 'res/cscv.s2a']
+PACKAGE_DLC = ['DLC01/LANG_JA.s2a', 'DLC01/LANG_EN.s2a']
+
+
+def _sha(path, n=12):
+    import hashlib
+    with open(path, 'rb') as f:
+        return hashlib.sha256(f.read()).hexdigest()[:n]
+
+
+def do_package(exe_mode=None):
+    """完整补丁打包：装机 → 校验「已改」→ 复制到 dist/。"""
+    em = (exe_mode or EXE_MODE).lower()
+    # DLC01 仅在【确实存在原件】时才纳入补丁（未持有 DLC 的玩家没有 DLC01/LANG_*.s2a）
+    has_dlc = all(os.path.exists(os.path.join(BASE, rel)) for rel in PACKAGE_DLC)
+    manifest = (['HMH2.exe'] if em == 'exe' else list(PROXY_FILES)) + PACKAGE_RES
+    if has_dlc:
+        manifest += PACKAGE_DLC
+    # 文件 -> 其原件备份（用于证明"确实被改了"）；dinput8.dll / hm2zh_patch.bin 是生成物，无原件
+    orig = dict((rel, rel + '.bak') for rel in PACKAGE_RES)
+    if has_dlc:
+        orig.update(dict((rel, rel + dlc_lib.BAK_SUFFIX) for rel in PACKAGE_DLC))
+
+    print('== 完整补丁打包（%s 模式）==' % em)
+    print('  输入游戏目录: %s' % BASE)
+    print('  输出目录    : %s' % paths.DIST_DIR)
+
+    # ① 前置校验：缺原版输入就明确失败，绝不静默产出半份补丁
+    #   注：res/*.s2a 与 HMH2.exe 的 .bak 由 do_apply 自动建（从当前文件）；
+    #       DLC01 的原件备份由 refresh_dlc01 在【确实存在 DLC01 原件】时自动生成，故均不预检。
+    missing = []
+    if not os.path.exists(EXE):
+        missing.append('HMH2.exe（缺失）')
+    for rel in PACKAGE_RES + (PACKAGE_DLC if has_dlc else []):
+        if not os.path.exists(os.path.join(BASE, rel)):
+            missing.append('%s（缺失）' % rel)
+    if missing:
+        print('!! 打包中止：游戏目录缺少下列文件')
+        for m in missing:
+            print('   - %s' % m)
+        print('   请先确认游戏为原版（Steam「验证游戏文件完整性」）')
+        raise SystemExit(1)
+    if has_dlc:
+        print('  [DLC01] 检出 DLC01 原件，纳入补丁（原件备份缺失时将自动生成）')
+    else:
+        print('  [DLC01] 未检出 DLC01 原件（%s），本次补丁不含 DLC01' % '、'.join(PACKAGE_DLC))
+
+    # ② 生产装机（装机 + 同步 DLC01 + Q16 键名保护）；refresh_dlc01 会自动补出 DLC01 原件备份
+    do_apply_menu(exe_mode=em)
+
+    # ③ 校验：除生成物外，每个文件必须与原版不同，否则装机未生效
+    bad, table = [], []
+    for rel in manifest:
+        p = os.path.join(BASE, rel)
+        if not os.path.exists(p):
+            bad.append('%s 不存在（未生成）' % rel)
+            continue
+        tag = '生成物'
+        if rel in orig:
+            op = os.path.join(BASE, orig[rel])
+            if not os.path.exists(op):
+                bad.append('%s 缺少原件备份（%s），无法校验' % (rel, orig[rel]))
+                continue
+            if _sha(p, 64) == _sha(op, 64):
+                bad.append('%s 与原版完全相同（装机未生效）' % rel)
+                continue
+            tag = '已改(原版 %s)' % _sha(op)
+        table.append((rel, os.path.getsize(p), _sha(p), tag))
+    if bad:
+        print('!! 打包中止：以下文件不合格，dist/ 未写入')
+        for b in bad:
+            print('   - %s' % b)
+        raise SystemExit(1)
+
+    # ④ 复制到 dist/（按相对路径建目录）
+    print('== 写入 dist ==')
+    for rel, sz, h, tag in table:
+        dst = paths.dist(*rel.split('/'))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copy2(os.path.join(BASE, rel), dst)
+        print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
+    print('打包完成：%d 个文件已放入 %s（未打 zip）' % (len(table), paths.DIST_DIR))
+    print('提示：dist 中不属于本次补丁的旧文件（如历史 zip）不会被删除。')
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'plan'
     {'plan': do_plan, 'apply': do_apply, 'revert': do_revert, 'check': do_check,
@@ -2432,6 +2550,9 @@ if __name__ == '__main__':
                                         skip_blobs=MECHANIC_BLOBS, menu_exempt=True,
                                         ui_always=True),
      'dlc_only': refresh_dlc01,
+     # v2.66：完整补丁打包（装机 + 校验 + 复制到 dist/）；exe 模式另有 package_exe
+     'package': do_package,
+     'package_exe': lambda: do_package(exe_mode='exe'),
      'apply_menu2': lambda: do_apply(text=True, sync_cscv=True, keep_collide=True,
                                      skip_blobs=MECHANIC_BLOBS, menu_exempt=True,
                                      ui_always=True),

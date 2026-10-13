@@ -58,8 +58,10 @@ DLC01/res.s2a               # DLC01（可选）
 **[已验证] 首次构建会自动备份**：`apply` 开始时若目标存在而 `.bak` 不存在，则复制为 `.bak`。
 但**必须先有原始母本**（尤其是 `HMH2.exe.bak`），否则 exe 补丁会中止。
 
-> 建议：首次运行前，手工把上述 5 个主文件复制为 `*.bak`，DLC01 三个文件复制为
-> `*.bak_dlc01_20260913`（脚本内部使用这两个固定后缀）。
+> **[已验证] DLC01 也会自动备份**：当 `DLC01/LANG_JA.s2a`、`DLC01/LANG_EN.s2a` 存在时，
+> `refresh_dlc01` 会在备份缺失时由当前文件自动生成 `*.bak_dlc01_20260913`；未持有 DLC 的玩家
+> 不会创建任何 DLC01 文件。因原件备份取自"当前文件"，**应在原版状态下首次运行**
+> （对已装机的目录运行会把已改内容误当原件，此时 `package` 的逐文件校验会拒绝并中止）。
 
 ---
 
@@ -110,6 +112,7 @@ python _work/runner.py <脚本名> [参数]
 | `python tools/build.py revert` | 从 `.bak` 还原全部文件（不含 DLC01；DLC 用 `dlc_apply.py revert`） |
 | `python tools/build.py check` | 打印各文件"原版/已修改"及 SHA-256 前 12 位 |
 | `python tools/build.py dlc_only` | 只按当前字库重编码 DLC01 |
+| `python tools/build.py --game-dir "<游戏目录>" package` | **完整补丁打包**：装机（=apply_menu）后校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。`DLC01` 仅在游戏目录确实存在原件时纳入（其原件备份自动生成）；缺原版输入时明确中止，不产出半份补丁 |
 | `apply_font` / `apply_nosync` / `apply_nocollide` / `apply_consistent` / `apply_nomech` | 历史测试包 A/B/C/E/D |
 | `apply_noplace` / `apply_menu_safe` / `apply_menu_noml` | 变体（回退地名/保守 UI/退回单行） |
 
@@ -168,11 +171,16 @@ python _work/runner.py <脚本名> [参数]
 # 8. 构建输出
 
 - 补丁产物直接**原地写入游戏目录**：`HMH2.exe`、`res/LANG_JA.s2a`、`res/LANG_EN.s2a`、
-  `res/cscv.s2a`、`res/texture.s2a`（+ DLC01 三个文件）。
+  `res/cscv.s2a`、`res/texture.s2a`（+ DLC01 的 `LANG_JA.s2a`、`LANG_EN.s2a`；DLC01 `res.s2a` 不改写）。
 - **工具运行产物**（日志 `*.txt`、`collide_cache.json`、回滚/快照备份 `_pre_*/`、`_name_good/`、
   校对工作目录 `校对/`、`存档记录.md` 等）统一写入仓库 `build/`（定义见 `tools/paths.py`），
   与语言数据目录 `locales/zh-CN/` 严格分离。`build/` 已被 `.gitignore` 忽略。
-- `dist/` 预留给"发布打包"（尚未实现）。
+- `dist/` 用于**完整补丁打包**：`python tools/build.py --game-dir "<游戏目录>" package`。
+  产物是可直接覆盖到游戏目录的补丁文件集（dll 模式 = `dinput8.dll` + `hm2zh_patch.bin` +
+  `res/*.s2a`(4) + `DLC01/*.s2a`(2)〔后者仅在游戏目录确实存在 DLC01 原件时纳入〕；
+  exe 模式 = `HMH2.exe` + 同 6 个 s2a），按相对路径写入。
+  注意 payload 就是整份 s2a（**约 320 MB**），命令只做复制、不压缩、不自动打 zip，
+  也不会删除 `dist/` 中不属于本次补丁的旧文件。
 - 还原命令：`python tools/build.py revert`（从 `.bak` 覆盖回原文件）。
 
 ---

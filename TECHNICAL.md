@@ -404,5 +404,9 @@ revert 前自动整文件备份到 `_work/_pre_t140/<ts>/`。
 | `_work/outputs/*.md`、`仓库/docs/*` | `docs/` | 历史报告 |
 | 生成的 `res/*.s2a`、`HMH2.exe` | `build/`、`dist/`（不进库） | 含游戏版权内容 |
 
-**注意 [已验证]：** 当前脚本将 `BASE` 与部分路径**硬编码**为 `E:\SteamLibrary\...`，
-且依赖大量 `_work/` 下的本地状态文件与 `.bak`。迁移/复用前必须解除这些耦合（详见 `BUILDING.md` §9）。
+**注意（2026-10-05 更新）[已验证]：** 上表描述的硬编码 `BASE`（`E:\SteamLibrary\...`）属作者早期
+`_work/` 历史目录，该目录已不在本仓库中。仓库现行 `tools/` 版本**已解除硬编码**：路径统一由
+`tools/paths.py` 解析（环境变量 > `config.local.json` > 仓库相对默认），并已用
+`python tools/build.py --game-dir <dir> apply_menu` 在干净目录复现验证（两次构建逐字节一致，
+`revert` 可还原，见 `BUILDING.md` §15）。仍存于 `_work/` 的旧脚本才会依赖本地状态文件与 `.bak`；
+差距清单见 `BUILDING.md` §9。
