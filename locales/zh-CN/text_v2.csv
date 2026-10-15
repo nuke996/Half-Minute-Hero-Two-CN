@@ -60800,3 +60800,443 @@ Physical Strength Fully Recovered!","%s を食べた！
 60795,671,340,130,65,23,< Producer / Director.>,<　プロデューサー>,<　制作人>,<　制作人>
 60796,681,16,64,32,13,%s completed!,%sまでクリア！,,%s 已通关！
 60797,681,376,64,32,13,%s completed!,%sまでクリア！,,%s 已通关！
+60798,147,60,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+60799,147,328,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+60800,147,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+60801,147,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+60802,147,1132,64,32,60,Fully restores strength; makes you feel the passage of ages.,使うと体力が全回復する　時代のながれを感じるやくそう　　,,使用后体力全恢复　让人感受时代潮流的伤药
+60803,147,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神雕像▼
+60804,147,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
+60805,147,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
+60806,147,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
+60807,147,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
+60808,147,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,笨蛋召唤！
+60809,147,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
+60810,147,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
+60811,147,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！
+60812,147,4348,64,32,20,Unequip your weapon.,すでだぞ,,要赤手空拳哦
+60813,147,27396,64,32,20,Unequip your helmet.,頭むきだしだぞ,,取下你的头盔。
+60814,147,37044,64,32,19,Unequip your armor.,体に何も装備してないぞ,,取下你的盔甲。
+60815,147,48568,64,32,19,Unequip your shoes.,はだしだぞ,,要光脚哦
+60816,147,56072,64,32,20,Unequip your shield.,盾は装備してないぞ,,没装备盾牌哦
+60817,147,63040,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+60818,147,63308,64,32,24,Clumsy Apprentice Witch.,どじっこ魔女みならい,,冒失魔女见习
+60819,147,63576,64,32,16,Oxidized Silver.,いぶしぎん,,古银
+60820,147,63844,64,32,35,That man seems extremely ferocious.,その男超きょうぼうにつき,,那男人超级狂
+60821,147,64112,64,32,35,Communicates with animals by heart.,どうぶつと心かよわす,,与动物心意相通
+60822,147,64380,64,32,24,A knowledgeable birdman.,ものしり鳥人,,博学的鸟人
+60823,147,64648,64,32,21,Tsundere Demon Hound.,ツンデレ魔犬,,傲娇魔犬
+60824,147,64916,64,32,9,Returned.,もどってきた,,回来了
+60825,147,65452,64,32,28,"Reliable, but sooo annoying.",たのもしいけどちょいウザイ,,可靠但有点烦人
+60826,147,65720,64,32,13,Gonna invent!,発明しちゃうぞっ,,要发明咯
+60827,147,65988,64,32,28,Wanna become human already…,早く人間になりたい・・・,,好想快点变成人类……
+60828,147,66256,64,32,20,Deeply loves Nanako.,ナナコにぞっこんラブ,,狂热爱着奈奈子
+60829,147,66524,64,32,19,A patriotic knight.,ゆうこくのきし,,忧国的骑士
+60830,147,66792,64,32,15,Aloof Princess.,ここうの皇女,,高傲的皇女
+60831,147,67060,64,32,20,A mysterious geezer.,ナゾのおじさま,,神秘老爷子
+60832,147,67328,64,32,14,Evil Looooord!,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+60833,147,67596,64,32,29,I'm incredible in battle too!,わたし戦ってもスゴイんです,,我战斗也很厉害的
+60834,147,67864,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+60835,147,68132,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+60836,147,68400,64,32,34,… God? What's that? _Is it tasty?,・・・神？_なにそれ？おいしいの？,,……神？_那是什么？好吃吗？
+60837,147,68668,64,32,29,I still haven't forgiven you!,・・・まだオレはオマエをゆるしたわけじゃないからなっ！,,……我还没原谅你呢！
+60838,147,68936,64,32,42,Let's go! To the other side of the period!,いきましょう！ピリオドのむこうへ！！,,出发吧！向着句点的那一边！！
+60839,147,69204,64,32,24,Not even Gods scare him.,神をもおそれぬだて男,,连神都不怕的花花公子
+60840,147,69472,64,32,13,Fallen Angel.,おちた天使,,堕落天使
+60841,147,69740,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+60842,147,70008,64,32,17,Mischievous Hero.,ヤンチャ主人公,,调皮主人公
+60843,147,70276,64,32,13,Foppish Hero.,ダンディ主人公,,潇洒主人公
+60844,147,70544,64,32,20,Without Demon Sword.,魔剣なし,,没有魔剑
+60845,147,71080,64,32,11,Technician.,テクニシャン,,技术高手
+60846,147,71348,64,32,19,Tomboyish Princess.,おてんば王女,,活泼好动的公主
+60847,147,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+60848,147,71884,64,32,17,The Evil Loooord.,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+60849,147,72152,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+60850,147,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
+60851,147,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
+60852,147,76708,64,32,25,You will see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
+60853,147,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
+60854,147,79656,64,32,51,A legendary fishing rod handed down from antiquity.,いにしえよりつたわる伝説のつりざお,,自古相传的传说钓竿
+60855,147,79924,64,32,10,Got Hint 1,ヒントをもらう１だ,,获得提示1
+60856,147,80460,64,32,10,Got Hint 3,ヒントをもらう３だ,,获得提示3
+60857,147,80728,64,32,10,Got Hint 4,ヒントをもらう４だ,,获得提示4
+60858,147,80996,64,32,14,A rental ship.,レンタルの船だ,,是租来的船
+60859,147,81264,64,32,29,"Hints about cursed ruins, yo.",ノロいせきのヒントだぜ,,是诅咒遗迹的提示哦
+60860,147,81532,64,32,29,Hints about the black market.,ブラックマーケットのヒントだぜ,,是黑市的情报哦
+60861,147,81800,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60862,147,82068,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60863,147,82336,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60864,147,82604,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60865,147,82872,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60866,147,83140,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60867,147,83408,64,32,8,Get memo,メモをもらう,,获得便签
+60868,147,83676,64,32,53,It's said that it has the power to stop even castles!,その力は城をもストップさせるという,,据说其力能让城堡都停止
+60869,147,83944,64,32,23,Contains 100% darkness.,やみが１００パーセントこもってます,,蕴含100%的黑暗
+60870,147,84212,64,32,28,A diary written by an angel.,天使がつづった日記,,天使写下的日记
+60871,147,84480,64,32,37,Walking on swampland just got easier!,ぬまがあるきやすくなるぜ！,,沼泽行走变轻松了！
+60872,147,84748,64,32,30,Going to remove the fuzziness.,ほわほわを消すぞ,,要把绒感去掉
+60873,147,85016,64,32,41,Blocks thunder from the south of the map!,マップ中心から見て南の雷をブロック！,,可阻挡地图中心以南的雷电！
+60874,147,85284,64,32,40,Blocks thunder from the east of the map!,マップ中心から見て東の雷をブロック！,,可阻挡地图中心以东的雷电！
+60875,147,85552,64,32,40,Blocks thunder from the west of the map!,マップ中心から見て西の雷をブロック！,,可阻挡地图中心以西的雷电！
+60876,147,85820,64,32,41,Blocks thunder from the north of the map!,マップ中心から見て北の雷をブロック！,,可阻挡地图中心以北的雷电！
+60877,147,86088,64,32,45,Blocks thunder from the northeast of the map!,マップ中心から見て北東の雷をブロック！,,可阻挡地图中心东北方的雷电！
+60878,147,86356,64,32,45,Blocks thunder from the northwest of the map!,マップ中心から見て北西の雷をブロック！,,可阻挡地图中心西北方的雷电！
+60879,147,86624,64,32,45,Blocks thunder from the southwest of the map!,マップ中心から見て南西の雷をブロック！,,可阻挡地图中心西南方的雷电！
+60880,147,86892,64,32,19,They're explosives!,バクヤクだ！,,是炸药！
+60881,147,87160,64,32,29,Legendary God of Destruction.,伝説の破壊の神,,传说的破坏之神
+60882,147,87428,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+60883,147,87696,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+60884,147,87964,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+60885,147,92788,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60886,147,93056,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60887,147,93324,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60888,147,93592,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60889,147,93860,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60890,147,94128,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+60891,147,95200,64,32,24,Increases defense power!,防御力があがるぞ！,,防御力提升！
+60892,147,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
+60893,147,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
+60894,147,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,讨厌的青蛙也一招搞定
+60895,147,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
+60896,147,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
+60897,147,97344,64,32,23,A torch lit with flame.,火が点いているいるたいまつ,,点燃着的火把
+60898,147,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
+60899,147,97880,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+60900,147,98148,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+60901,147,98416,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+60902,147,98952,64,32,11,Iron Maiden,鋼鉄の乙女,,钢铁处女
+60903,147,99220,64,32,18,Regular leg parts.,ノーマルな足のパーツ,,普通的腿部零件
+60904,147,99488,64,32,26,Armored warrior leg parts.,ヨロイ武者風の足パーツ,,盔甲武士风腿部零件
+60905,147,99756,64,32,21,Double the leg parts.,ノーマルより２倍多い足パーツ,,比普通多2倍的腿部零件
+60906,147,100024,64,32,19,Knightly leg parts.,ナイト風の足パーツ,,骑士风的腿部零件
+60907,147,100292,64,32,18,Virtual leg parts.,ヴァーチャルな足パーツ,,虚拟腿部零件
+60908,147,100560,64,32,21,Power-type leg parts.,パワータイプの足パーツ,,力量型腿部零件
+60909,147,101364,64,32,20,Normal castle parts.,ノーマルな城のパーツ,,普通的城堡零件
+60910,147,101632,64,32,28,It's surrounded by a forest.,森につつまれた城パーツ,,被森林环绕的城堡零件
+60911,147,101900,64,32,27,Has painful looking spikes.,いたそうなトゲがある城パーツ,,带刺痛尖刺的城堡零件
+60912,147,102168,64,32,21,Has hands for battle.,バトル用の手がついた城パーツ,,长了战斗用手臂的城堡零件
+60913,147,102436,64,32,28,Japanese style castle parts.,和風な城パーツ,,和风城堡零件
+60914,147,102704,64,32,26,Castle parts made of iron.,鉄造りの城パーツ,,钢铁造的城堡零件
+60915,147,102972,64,32,21,Virtual castle parts.,ヴァーチャルな城パーツ,,虚拟城堡零件
+60916,147,103240,64,32,28,Cultish castle parts indeed.,いかにもカルトな城パーツ,,十足邪教风的城堡零件
+60917,147,103508,64,32,28,Sugary looking castle parts.,すごくあまそうな城パーツ,,看起来超甜的城堡零件
+60918,147,103776,64,32,29,Castle parts made of crystal.,クリスタル造りの城パーツ,,水晶造的城堡零件
+60919,147,104044,64,32,29,Resembles an armored warrior.,ヨロイ武者がいそうな城キャッスル,,像盔甲武士的城堡
+60920,147,104312,64,32,18,A knightly castle.,ナイト風の城キャッスル,,骑士风的城堡
+60921,147,105920,64,32,47,Allows the Hero Castle to move through forests.,勇者城が森も移動可能になる,,勇者城也能在森林移动
+60922,147,106188,64,32,47,Allows the Hero Castle to walk over snowfields.,せつげんを歩ける,,勇者城能行走雪原
+60923,147,106456,64,32,46,Allows the Hero Castle to walk through swamps.,ぬまを歩ける,,勇者城能行走沼泽
+60924,147,106724,64,32,47,Allows the Hero Castle to walk through the sea.,海を歩ける,,勇者城能行走海上
+60925,147,106992,64,32,37,Might be able to fly through the sky.,そらをとべるかも,,也许能在天空飞翔
+60926,147,107260,64,32,26,You can build a 2nd floor.,2階ができるぞ,,可以建2层楼了
+60927,147,107528,64,32,26,You can build a 3rd floor.,3階ができるぞ,,可以建3层楼了
+60928,147,107796,64,32,26,You can build a 4th floor.,4階ができるぞ,,可以建4层楼了
+60929,147,108064,64,32,26,You can build a 5th floor.,5階ができるぞ,,可以建5层楼了
+60930,357,60,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+60931,357,328,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+60932,357,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+60933,357,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+60934,357,1132,64,32,16,Restores 100 HP.,使うと体力が100回復する,,使用后体力恢复100
+60935,357,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神雕像▼
+60936,357,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
+60937,357,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
+60938,357,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
+60939,357,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
+60940,357,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,笨蛋召唤！
+60941,357,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
+60942,357,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
+60943,357,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！
+60944,357,4348,64,32,20,Unequip your weapon.,すでだぞ,,要赤手空拳哦
+60945,357,48568,64,32,19,Unequip your shoes.,はだしだぞ,,要光脚哦
+60946,357,56072,64,32,20,Unequip your shield.,盾は装備してないぞ,,没装备盾牌哦
+60947,357,63040,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+60948,357,63308,64,32,24,Clumsy Apprentice Witch.,どじっこ魔女みならい,,冒失魔女见习
+60949,357,63576,64,32,16,Oxidized Silver.,いぶしぎん,,古银
+60950,357,63844,64,32,35,That man seems extremely ferocious.,その男超きょうぼうにつき,,那男人超级狂
+60951,357,64112,64,32,35,Communicates with animals by heart.,どうぶつと心かよわす,,与动物心意相通
+60952,357,64380,64,32,24,A knowledgeable birdman.,ものしり鳥人,,博学的鸟人
+60953,357,64648,64,32,21,Tsundere Demon Hound.,ツンデレ魔犬,,傲娇魔犬
+60954,357,64916,64,32,9,Returned.,もどってきた,,回来了
+60955,357,65452,64,32,28,"Reliable, but sooo annoying.",たのもしいけどちょいウザイ,,可靠但有点烦人
+60956,357,65720,64,32,13,Gonna invent!,発明しちゃうぞっ,,要发明咯
+60957,357,65988,64,32,28,Wanna become human already…,早く人間になりたい・・・,,好想快点变成人类……
+60958,357,66256,64,32,20,Deeply loves Nanako.,ナナコにぞっこんラブ,,狂热爱着奈奈子
+60959,357,66524,64,32,19,A patriotic knight.,ゆうこくのきし,,忧国的骑士
+60960,357,66792,64,32,15,Aloof Princess.,ここうの皇女,,高傲的皇女
+60961,357,67060,64,32,20,A mysterious geezer.,ナゾのおじさま,,神秘老爷子
+60962,357,67328,64,32,14,Evil Looooord!,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+60963,357,67596,64,32,29,I'm incredible in battle too!,わたし戦ってもスゴイんです,,我战斗也很厉害的
+60964,357,67864,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+60965,357,68132,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+60966,357,68400,64,32,34,… God? What's that? _Is it tasty?,・・・神？_なにそれ？おいしいの？,,……神？_那是什么？好吃吗？
+60967,357,68668,64,32,29,I still haven't forgiven you!,・・・まだオレはオマエをゆるしたわけじゃないからなっ！,,……我还没原谅你呢！
+60968,357,68936,64,32,42,Let's go! To the other side of the period!,いきましょう！ピリオドのむこうへ！！,,出发吧！向着句点的那一边！！
+60969,357,69204,64,32,24,Not even Gods scare him.,神をもおそれぬだて男,,连神都不怕的花花公子
+60970,357,69472,64,32,13,Fallen Angel.,おちた天使,,堕落天使
+60971,357,69740,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+60972,357,70008,64,32,17,Mischievous Hero.,ヤンチャ主人公,,调皮主人公
+60973,357,70276,64,32,13,Foppish Hero.,ダンディ主人公,,潇洒主人公
+60974,357,70544,64,32,20,Without Demon Sword.,魔剣なし,,没有魔剑
+60975,357,71080,64,32,11,Technician.,テクニシャン,,技术高手
+60976,357,71348,64,32,19,Tomboyish Princess.,おてんば王女,,活泼好动的公主
+60977,357,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+60978,357,71884,64,32,14,Evil Looooord!,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+60979,357,72152,64,32,14,Tomboy Heroine,おてんば主人公,,活泼好动的主人公
+60980,357,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
+60981,357,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
+60982,357,76708,64,32,25,You will see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
+60983,357,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
+60984,357,79656,64,32,51,A legendary fishing rod handed down from antiquity.,いにしえよりつたわる伝説のつりざお,,自古相传的传说钓竿
+60985,357,79924,64,32,10,Got Hint 1,ヒントをもらう１だ,,获得提示1
+60986,357,80192,64,32,10,Got Hint 2,ヒントをもらう２だ,,获得提示2
+60987,357,80460,64,32,10,Got Hint 3,ヒントをもらう３だ,,获得提示3
+60988,357,80728,64,32,10,Got Hint 4,ヒントをもらう４だ,,获得提示4
+60989,357,80996,64,32,14,A rental ship.,レンタルの船だ,,是租来的船
+60990,357,81264,64,32,33,"Hints about the cursed ruins, yo.",ノロいせきのヒントだぜ,,是诅咒遗迹的提示哦
+60991,357,81532,64,32,29,Hints about the black market.,ブラックマーケットのヒントだぜ,,是黑市的情报哦
+60992,357,81800,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60993,357,82068,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60994,357,82336,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60995,357,82604,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60996,357,82872,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60997,357,83140,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+60998,357,83408,64,32,9,Get memo.,メモをもらう,,获得便签
+60999,357,83676,64,32,53,It's said that it has the power to stop even castles.,その力は城をもストップさせるという,,据说其力能让城堡都停止
+61000,357,83944,64,32,23,Contains 100% darkness.,やみが１００パーセントこもってます,,蕴含100%的黑暗
+61001,357,84212,64,32,28,A diary written by an angel.,天使がつづった日記,,天使写下的日记
+61002,357,84480,64,32,37,Walking on swampland just got easier!,ぬまがあるきやすくなるぜ！,,沼泽行走变轻松了！
+61003,357,84748,64,32,30,Going to remove the fuzziness.,ほわほわを消すぞ,,要把绒感去掉
+61004,357,85016,64,32,41,Blocks thunder from the south of the map!,マップ中心から見て南の雷をブロック！,,可阻挡地图中心以南的雷电！
+61005,357,85284,64,32,40,Blocks thunder from the east of the map!,マップ中心から見て東の雷をブロック！,,可阻挡地图中心以东的雷电！
+61006,357,85552,64,32,40,Blocks thunder from the west of the map!,マップ中心から見て西の雷をブロック！,,可阻挡地图中心以西的雷电！
+61007,357,85820,64,32,41,Blocks thunder from the north of the map!,マップ中心から見て北の雷をブロック！,,可阻挡地图中心以北的雷电！
+61008,357,86088,64,32,45,Blocks thunder from the northeast of the map!,マップ中心から見て北東の雷をブロック！,,可阻挡地图中心东北方的雷电！
+61009,357,86356,64,32,45,Blocks thunder from the northwest of the map!,マップ中心から見て北西の雷をブロック！,,可阻挡地图中心西北方的雷电！
+61010,357,86624,64,32,45,Blocks thunder from the southwest of the map!,マップ中心から見て南西の雷をブロック！,,可阻挡地图中心西南方的雷电！
+61011,357,86892,64,32,19,They're explosives!,バクヤクだ！,,是炸药！
+61012,357,87160,64,32,29,Legendary God of Destruction.,伝説の破壊の神,,传说的破坏之神
+61013,357,87428,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61014,357,87696,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61015,357,87964,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61016,357,92788,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61017,357,93056,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61018,357,93324,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61019,357,93592,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61020,357,93860,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61021,357,94128,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61022,357,94396,64,32,19,"No shovel, no life.",ノースコップ　ノーライフ,,没有铲子　没有生活
+61023,357,95200,64,32,24,Increases defense power!,防御力があがるぞ！,,防御力提升！
+61024,357,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
+61025,357,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
+61026,357,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,讨厌的青蛙也一招搞定
+61027,357,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
+61028,357,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
+61029,357,97344,64,32,12,A lit torch.,火がついているたいまつ,,燃烧着的火把
+61030,357,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
+61031,357,97880,64,32,31,Makes you want to vandalize it.,ムショウになげたくなる,,让人想乱丢破坏
+61032,357,98148,64,32,31,Makes you want to vandalize it.,ムショウになげたくなる,,让人想乱丢破坏
+61033,357,98416,64,32,31,Makes you want to vandalize it.,ムショウになげたくなる,,让人想乱丢破坏
+61034,357,98952,64,32,11,Iron Maiden,鋼鉄の乙女,,钢铁处女
+61035,357,101900,64,32,16,Looks delicious.,うまそうだ,,看起来很好吃
+61036,357,102168,64,32,28,A diary written by an angel.,天使がつづった日記,,天使写下的日记
+61037,357,102436,64,32,40,Increases both attack and defense power!,攻撃力と防御力があがるぞ！,,攻击力和防御力提升！
+61038,357,102704,64,32,24,Geezer's favorite boots.,おじさま愛用のくつ,,大叔爱用的靴。
+61039,357,102972,64,32,48,From the brave series _but it's not very strong.,ブレイブシリーズだが_あまり強くない,,属于勇者系列，_但不太强。
+61040,357,103240,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61041,357,103508,64,32,62,Mysterious drink that raises your level by one with every use.,使うとレベルが一つ上がるフシギなドリンク,,用后升1级的神奇饮料
+61042,357,103776,64,32,61,Mysterious drink that drops your level by one with every use.,使うとレベルが一つ下がる危ないドリンク,,用后降1级的危险饮料
+61043,357,104044,64,32,31,Worth 3 bottles of Level Upper.,レベルアッパー３本分のレベルが上がります,,等级提升3瓶份
+61044,357,104312,64,32,32,Worth 3 bottles of Level Downer.,通常の製品にくらべ３本分レベルが下がります,,比常规产品多降3级
+61045,357,107796,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+61046,357,108064,64,32,17,Mischievous Hero.,ヤンチャ主人公,,调皮主人公
+61047,357,108332,64,32,13,Foppish Hero.,ダンディ主人公,,潇洒主人公
+61048,357,110744,64,32,23,A prize on every page?!,全ページふくろ閉じ！？,,整本连页都没拆封！？
+61049,357,111012,64,32,32,Make your fingernails sexier. ▼,あなたのツメをセクシーに▼,,让你的指甲更性感▼
+61050,357,111280,64,32,35,Makes your skin soft and supple. ▼,あなたのおはだをプルップルに▼,,让你的肌肤水嫩Q弹▼
+61051,357,111548,64,32,29,Dynamite for breaking hearts!,ハートをブレイクするダイナマイトだ！,,是能击碎心房的炸药！
+61052,357,112620,64,32,18,Regular leg parts.,ノーマルな足のパーツ,,普通的腿部零件
+61053,357,112888,64,32,26,Armored warrior leg parts.,ヨロイ武者風の足パーツ,,盔甲武士风腿部零件
+61054,357,113156,64,32,32,Quantity over quality… of legs.,足の数で勝負する足パーツ,,以数量取胜的腿部零件
+61055,357,113424,64,32,19,Knightly leg parts.,ナイト風の足パーツ,,骑士风的腿部零件
+61056,357,113692,64,32,18,Virtual leg parts.,ヴァーチャルな足パーツ,,虚拟腿部零件
+61057,357,113960,64,32,21,Power-type leg parts.,パワータイプの足パーツ,,力量型腿部零件
+61058,357,114764,64,32,22,Old Hero Castle parts.,古い勇者城パーツ,,陈旧的勇者城零件
+61059,357,115032,64,32,28,It's surrounded by a forest.,森につつまれた城パーツ,,被森林环绕的城堡零件
+61060,357,115300,64,32,27,Has painful looking spikes.,いたそうなトゲがある城パーツ,,带刺痛尖刺的城堡零件
+61061,357,115568,64,32,21,Has hands for battle.,バトル用の手がついた城パーツ,,长了战斗用手臂的城堡零件
+61062,357,115836,64,32,28,Japanese style castle parts.,和風な城パーツ,,和风城堡零件
+61063,357,116104,64,32,26,Castle parts made of iron.,鉄造りの城パーツ,,钢铁造的城堡零件
+61064,357,116372,64,32,21,Virtual castle parts.,ヴァーチャルな城パーツ,,虚拟城堡零件
+61065,357,116640,64,32,28,Cultish castle parts indeed.,いかにもカルトな城パーツ,,十足邪教风的城堡零件
+61066,357,116908,64,32,28,Sugary looking castle parts.,すごくあまそうな城パーツ,,看起来超甜的城堡零件
+61067,357,117176,64,32,29,Castle parts made of crystal.,クリスタル造りの城パーツ,,水晶造的城堡零件
+61068,357,117444,64,32,29,Resembles an armored warrior.,ヨロイ武者がいそうな城パーツ,,像盔甲武士的城堡零件
+61069,357,117712,64,32,18,A knightly castle.,ナイト風の城キャッスル,,骑士风的城堡
+61070,357,117980,64,32,28,Brand new Hero Castle parts.,新品の勇者城パーツ,,全新的勇者城零件
+61071,357,119320,64,32,47,Allows the Hero Castle to move through forests.,勇者城が森も移動可能になる,,勇者城也能在森林移动
+61072,357,119588,64,32,47,Allows the Hero Castle to walk over snowfields.,せつげんを歩ける,,勇者城能行走雪原
+61073,357,119856,64,32,46,Allows the Hero Castle to walk through swamps.,ぬまを歩ける,,勇者城能行走沼泽
+61074,357,120124,64,32,47,Allows the Hero Castle to walk through the sea.,海を歩ける,,勇者城能行走海上
+61075,357,120392,64,32,37,Might be able to fly through the sky.,そらをとべるかも,,也许能在天空飞翔
+61076,357,120660,64,32,26,You can build a 2nd floor.,2階ができるぞ,,可以建2层楼了
+61077,357,120928,64,32,26,You can build a 3rd floor.,3階ができるぞ,,可以建3层楼了
+61078,357,121196,64,32,26,You can build a 4th floor.,4階ができるぞ,,可以建4层楼了
+61079,357,121464,64,32,26,You can build a 5th floor.,5階ができるぞ,,可以建5层楼了
+61080,357,123876,64,32,13,It's a dummy.,ダミーだ,,是替身
+61081,357,124144,64,32,13,It's a dummy.,ダミーだ,,是替身
+61082,357,124412,64,32,33,Weakest yet strongest bare hands.,最弱かつ最強の素手だ,,最弱也最强的赤手空拳
+61083,357,148800,64,32,38,Explanation of 'no craftable weapons'.,合成出来る武器がありませんの説明,,"""没有可合成武器""的说明"
+61084,736,60,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61085,736,328,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+61086,736,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+61087,736,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+61088,736,1132,64,32,16,Restores 100 HP.,使うと体力が100回復する,,使用后体力恢复100
+61089,736,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神雕像▼
+61090,736,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
+61091,736,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
+61092,736,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
+61093,736,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
+61094,736,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,笨蛋召唤！
+61095,736,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
+61096,736,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
+61097,736,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！
+61098,736,4348,64,32,20,Unequip your weapon.,すでだぞ,,要赤手空拳哦
+61099,736,48568,64,32,19,Unequip your shoes.,はだしだぞ,,要光脚哦
+61100,736,56072,64,32,20,Unequip your shield.,盾は装備してないぞ,,没装备盾牌哦
+61101,736,63040,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+61102,736,63308,64,32,24,Clumsy Apprentice Witch.,どじっこ魔女みならい,,冒失魔女见习
+61103,736,63576,64,32,16,Oxidized Silver.,いぶしぎん,,古银
+61104,736,63844,64,32,35,That man seems extremely ferocious.,その男超きょうぼうにつき,,那男人超级狂
+61105,736,64112,64,32,35,Communicates with animals by heart.,どうぶつと心かよわす,,与动物心意相通
+61106,736,64380,64,32,22,Knowledgeable Birdman.,ものしり鳥人,,博学的鸟人
+61107,736,64648,64,32,21,Tsundere Demon Hound.,ツンデレ魔犬,,傲娇魔犬
+61108,736,64916,64,32,9,Returned.,もどってきた,,回来了
+61109,736,65452,64,32,28,"Reliable, but sooo annoying.",たのもしいけどちょいウザイ,,可靠但有点烦人
+61110,736,65720,64,32,13,Gonna invent!,発明しちゃうぞっ,,要发明咯
+61111,736,65988,64,32,28,Wanna become human already…,早く人間になりたい・・・,,好想快点变成人类……
+61112,736,66256,64,32,20,Deeply loves Nanako.,ナナコにぞっこんラブ,,狂热爱着奈奈子
+61113,736,66524,64,32,19,A patriotic knight.,ゆうこくのきし,,忧国的骑士
+61114,736,66792,64,32,15,Aloof princess.,ここうの皇女,,高傲的皇女
+61115,736,67060,64,32,20,A mysterious geezer.,ナゾのおじさま,,神秘老爷子
+61116,736,67328,64,32,14,Evil Looooord!,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+61117,736,67596,64,32,29,I'm incredible in battle too!,わたし戦ってもスゴイんです,,我战斗也很厉害的
+61118,736,67864,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+61119,736,68132,64,32,11,So awesome!,ぱねぇっす！,,太帅了！
+61120,736,68400,64,32,34,… God? What's that? _Is it tasty?,・・・神？_なにそれ？おいしいの？,,……神？_那是什么？好吃吗？
+61121,736,68668,64,32,29,I still haven't forgiven you!,・・・まだオレはオマエをゆるしたわけじゃないからなっ！,,……我还没原谅你呢！
+61122,736,68936,64,32,42,Let's go! To the other side of the period!,いきましょう！ピリオドのむこうへ！！,,出发吧！向着句点的那一边！！
+61123,736,69204,64,32,24,Not even Gods scare him.,神をもおそれぬだて男,,连神都不怕的花花公子
+61124,736,69472,64,32,13,Fallen Angel.,おちた天使,,堕落天使
+61125,736,69740,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+61126,736,70008,64,32,17,Mischievous Hero.,ヤンチャ主人公,,调皮主人公
+61127,736,70276,64,32,13,Foppish Hero.,ダンディ主人公,,潇洒主人公
+61128,736,70544,64,32,20,Without Demon Sword.,魔剣なし,,没有魔剑
+61129,736,71080,64,32,11,Technician.,テクニシャン,,技术高手
+61130,736,71348,64,32,16,Tomboy Princess.,おてんば王女,,活泼好动的公主
+61131,736,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
+61132,736,71884,64,32,14,The Evil Lord.,魔王さまぁぁあああ,,魔王大人啊啊啊啊
+61133,736,72152,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
+61134,736,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
+61135,736,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
+61136,736,76708,64,32,36,You will be able to see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
+61137,736,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
+61138,736,79656,64,32,51,A legendary fishing rod handed down from antiquity.,いにしえよりつたわる伝説のつりざお,,自古相传的传说钓竿
+61139,736,79924,64,32,13,To get Hint 1,ヒントをもらう１だ,,获得提示1
+61140,736,80192,64,32,13,To get Hint 2,ヒントをもらう２だ,,获得提示2
+61141,736,80460,64,32,13,To get Hint 3,ヒントをもらう３だ,,获得提示3
+61142,736,80728,64,32,13,To get Hint 4,ヒントをもらう４だ,,获得提示4
+61143,736,80996,64,32,14,A rental ship.,レンタルの船だ,,是租来的船
+61144,736,81264,64,32,32,"Information on Cursed Ruins, yo.",ノロいせきのヒントだぜ,,是诅咒遗迹的提示哦
+61145,736,81532,64,32,33,"Hints about the black market, yo.",ブラックマーケットのヒントだぜ,,是黑市的情报哦
+61146,736,81800,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61147,736,82068,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61148,736,82336,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61149,736,82604,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61150,736,82872,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61151,736,83140,64,32,28,Won-der-what's-in-siiide! ♪,な・に・が・で・る・か・な・♪,,会出来什么呢♪！
+61152,736,83408,64,32,8,Get memo,メモをもらう,,获得便签
+61153,736,83676,64,32,53,It's said that it has the power to stop even castles.,その力は城をもストップさせるという,,据说其力能让城堡都停止
+61154,736,83944,64,32,23,Contains 100% darkness.,やみが１００パーセントこもってます,,蕴含100%的黑暗
+61155,736,84212,64,32,28,A diary written by an angel.,天使がつづった日記,,天使写下的日记
+61156,736,84480,64,32,37,Walking on swampland just got easier!,ぬまがあるきやすくなるぜ！,,沼泽行走变轻松了！
+61157,736,84748,64,32,30,Going to remove the fuzziness.,ほわほわを消すぞ,,要把绒感去掉
+61158,736,85016,64,32,41,Blocks thunder from the south of the map!,マップ中心から見て南の雷をブロック！,,可阻挡地图中心以南的雷电！
+61159,736,85284,64,32,40,Blocks thunder from the east of the map!,マップ中心から見て東の雷をブロック！,,可阻挡地图中心以东的雷电！
+61160,736,85552,64,32,40,Blocks thunder from the west of the map!,マップ中心から見て西の雷をブロック！,,可阻挡地图中心以西的雷电！
+61161,736,85820,64,32,41,Blocks thunder from the north of the map!,マップ中心から見て北の雷をブロック！,,可阻挡地图中心以北的雷电！
+61162,736,86088,64,32,45,Blocks thunder from the northeast of the map!,マップ中心から見て北東の雷をブロック！,,可阻挡地图中心东北方的雷电！
+61163,736,86356,64,32,45,Blocks thunder from the northwest of the map!,マップ中心から見て北西の雷をブロック！,,可阻挡地图中心西北方的雷电！
+61164,736,86624,64,32,45,Blocks thunder from the southwest of the map!,マップ中心から見て南西の雷をブロック！,,可阻挡地图中心西南方的雷电！
+61165,736,86892,64,32,19,They're explosives!,バクヤクだ！,,是炸药！
+61166,736,87160,64,32,29,Legendary God of Destruction.,伝説の破壊の神,,传说的破坏之神
+61167,736,87428,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61168,736,87696,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61169,736,87964,64,32,28,Return villagers with money!,お金で村人を戻せ！,,用钱把村民买回来！
+61170,736,92788,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61171,736,93056,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61172,736,93324,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61173,736,93592,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61174,736,93860,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61175,736,94128,64,32,57,A stone with the power to summon _comrades from the past.,過去の時代の仲間を_呼び寄せる力を持つ石,,拥有将过去时代的伙伴_召唤而来之力的石头
+61176,736,95200,64,32,24,Increases defense power!,防御力があがるぞ！,,防御力提升！
+61177,736,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
+61178,736,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
+61179,736,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,讨厌的青蛙也一招搞定
+61180,736,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
+61181,736,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
+61182,736,97344,64,32,25,A torch lit with a flame.,火が点いているいるたいまつ,,点燃着的火把
+61183,736,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
+61184,736,97880,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+61185,736,98148,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+61186,736,98416,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
+61187,736,98952,64,32,11,Iron Maiden,鋼鉄の乙女,,钢铁处女
+61188,736,110744,64,32,23,A prize on every page?!,全ページふくろ閉じ！？,,整本连页都没拆封！？
+61189,736,111012,64,32,32,Make your fingernails sexier. ▼,あなたのツメをセクシーに▼,,让你的指甲更性感▼
+61190,736,111280,64,32,35,Makes your skin soft and supple. ▼,あなたのおはだをプルップルに▼,,让你的肌肤水嫩Q弹▼
+61191,736,111548,64,32,29,Dynamite for breaking hearts!,ハートをブレイクするダイナマイトだ！,,是能击碎心房的炸药！
+61192,736,112620,64,32,18,Regular leg parts.,ノーマルな足のパーツ,,普通的腿部零件
+61193,736,112888,64,32,26,Armored warrior leg parts.,ヨロイ武者風の足パーツ,,盔甲武士风腿部零件
+61194,736,113156,64,32,21,Double the leg parts.,ノーマルより２倍多い足パーツ,,比普通多2倍的腿部零件
+61195,736,113424,64,32,19,Knightly leg parts.,ナイト風の足パーツ,,骑士风的腿部零件
+61196,736,113692,64,32,18,Virtual leg parts.,ヴァーチャルな足パーツ,,虚拟腿部零件
+61197,736,113960,64,32,21,Power-type leg parts.,パワータイプの足パーツ,,力量型腿部零件
+61198,736,114764,64,32,20,Normal castle parts.,ノーマルな城のパーツ,,普通的城堡零件
+61199,736,115032,64,32,28,It's surrounded by a forest.,森につつまれた城パーツ,,被森林环绕的城堡零件
+61200,736,115300,64,32,27,Has painful looking spikes.,いたそうなトゲがある城パーツ,,带刺痛尖刺的城堡零件
+61201,736,115568,64,32,21,Has hands for battle.,バトル用の手がついた城パーツ,,长了战斗用手臂的城堡零件
+61202,736,115836,64,32,28,Japanese style castle parts.,和風な城パーツ,,和风城堡零件
+61203,736,116104,64,32,26,Castle parts made of iron.,鉄造りの城パーツ,,钢铁造的城堡零件
+61204,736,116372,64,32,21,Virtual castle parts.,ヴァーチャルな城パーツ,,虚拟城堡零件
+61205,736,116640,64,32,28,Cultish castle parts indeed.,いかにもカルトな城パーツ,,十足邪教风的城堡零件
+61206,736,116908,64,32,28,Sugary looking castle parts.,すごくあまそうな城パーツ,,看起来超甜的城堡零件
+61207,736,117176,64,32,29,Castle parts made of crystal.,クリスタル造りの城パーツ,,水晶造的城堡零件
+61208,736,117444,64,32,29,Resembles an armored warrior.,ヨロイ武者がいそうな城キャッスル,,像盔甲武士的城堡
+61209,736,117712,64,32,18,A knightly castle.,ナイト風の城キャッスル,,骑士风的城堡
+61210,736,119320,64,32,47,Allows the Hero Castle to move through forests.,勇者城が森も移動可能になる,,勇者城也能在森林移动
+61211,736,119588,64,32,47,Allows the Hero Castle to walk over snowfields.,せつげんを歩ける,,勇者城能行走雪原
+61212,736,119856,64,32,46,Allows the Hero Castle to walk through swamps.,ぬまを歩ける,,勇者城能行走沼泽
+61213,736,120124,64,32,47,Allows the Hero Castle to walk through the sea.,海を歩ける,,勇者城能行走海上
+61214,736,120392,64,32,37,Might be able to fly through the sky.,そらをとべるかも,,也许能在天空飞翔
+61215,736,120660,64,32,26,You can build a 2nd floor.,2階ができるぞ,,可以建2层楼了
+61216,736,120928,64,32,26,You can build a 3rd floor.,3階ができるぞ,,可以建3层楼了
+61217,736,121196,64,32,26,You can build a 4th floor.,4階ができるぞ,,可以建4层楼了
+61218,736,121464,64,32,26,You can build a 5th floor.,5階ができるぞ,,可以建5层楼了
+61219,736,121732,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61220,736,124412,64,32,33,Weakest yet strongest bare hands.,最弱かつ最強の素手だ,,最弱也最强的赤手空拳
+61221,998,60,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61222,998,328,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+61223,998,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+61224,998,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+61225,998,1132,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61226,998,1400,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+61227,998,1668,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+61228,998,1936,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+61229,998,2204,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61230,998,2472,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+61231,998,2740,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+61232,998,3008,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+61233,998,3276,64,32,18,Fully restores HP.,使うと体力が全回復する,,使用后体力全恢复
+61234,998,3544,64,32,42,"Fully restores HP, but a little expensive.",使うと体力が全回復するがちょっと高い,,使用后体力全恢复但有点贵
+61235,998,3812,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
+61236,998,4080,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
+61237,147,80192,64,32,10,Get Hint 2,ヒントをもらう２だ,,获得提示2

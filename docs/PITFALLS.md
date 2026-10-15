@@ -247,7 +247,21 @@ G5 为与官方 EN 一致把 `pos292` 也翻了 -> 键名改变 -> 查不到 -> 
 
 ---
 
-## 19. 其它经验（简记）
+## 19. 说明文只活在"账本血统"、未回流 CSV → 成品里道具说明仍是原文
+
+**状态：** 已验证
+**影响范围：** 翻译 / 构建
+**症状：** 装备说明已是中文，但道具说明（如草药 `Fully restores HP.`）仍是原文。
+**实际原因：** 名字批次（`name_ledger.json`）直接写 LANG，与 `text_v2.csv` 是**两条独立血统**。
+`道具说明-G10` 曾把 pos40 说明写成中文，但随后 `G14-装备表整体还原` 把 4 表还原，且这批译文**从未回流到 CSV**；
+而 `apply_menu` / `package` 只吃 CSV ⇒ 最终产物里这一列缺失。
+**正确解法：** 把 G10 译文回填为 CSV 行（`offset` 取说明实体起点 `pos44`、`slot_bytes=64`），
+由 `desc_release.json` 的 `(blob,268,44)` 规则放行；说明文非键（见 `TECHNICAL.md` §5.3.1）。
+**相关文件：** `locales/zh-CN/text_v2.csv`、`name_ledger.json`、`desc_release.json`、`build_cn.py: desc_release_hit()`。
+
+---
+
+## 20. 其它经验（简记）
 
 - **[已验证]** `cscv == cscv.bak` **不是**不变式（主汉化重建过字库）；真正的守卫是
   "孪生名字键仍日文原版 + apply 前后 md5 不变"。
