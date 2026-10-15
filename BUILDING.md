@@ -72,17 +72,19 @@ DLC01/res.s2a               # DLC01（可选）
 
 配置方式（任选其一）：
 
-1. 复制 `config.example.json` 为 `config.local.json`，填入 `game_dir`（游戏安装目录）：
+1. 复制 `config.example.json` 为 `config.local.json`，填入 `game_dir`（游戏安装目录；**绝对路径或相对仓库根的相对路径**均可）：
    ```json
-   { "game_dir": "D:\\Games\\Half Minute Hero Two", "locale": "zh-CN" }
+   { "game_dir": "work/original", "locale": "zh-CN" }
    ```
+   官方原版可放在仓库内 `work/original/`（该目录已被 `.gitignore` 忽略），此时 `game_dir` 写相对路径 `work/original`。
 2. 运行时指定：
    ```bash
    python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
    # 或 set HMH2_GAME_DIR=D:\Games\Half Minute Hero Two
    ```
 
-`game_dir` 需包含原版 `HMH2.exe`、`res/`、`DLC01/`。字体默认取 `assets/fonts/WenQuanYi Bitmap Song 13px.ttf`。
+`game_dir` 需包含原版 `HMH2.exe`、`res/`、`DLC01/`。`game_dir` / `data_dir` / `build_dir` / `dist_dir` /
+`font_path` 均支持"绝对路径或相对仓库根的相对路径"。字体默认取 `assets/fonts/WenQuanYi Bitmap Song 13px.ttf`。
 
 > 说明：作者原始工作目录 `_work/` 内的同名脚本**仍保留硬编码 BASE**（历史存档，本次未改动）。
 > 仓库 `tools/` 才是对外可复现的规范版本；两者内容同源，`tools/` 为可重定位（relocatable）版。
@@ -112,7 +114,7 @@ python _work/runner.py <脚本名> [参数]
 | `python tools/build.py revert` | 从 `.bak` 还原全部文件（不含 DLC01；DLC 用 `dlc_apply.py revert`） |
 | `python tools/build.py check` | 打印各文件"原版/已修改"及 SHA-256 前 12 位 |
 | `python tools/build.py dlc_only` | 只按当前字库重编码 DLC01 |
-| `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的母本备份（`HMH2.exe.bak`、`res/*.s2a.bak`、`DLC01/*.s2a.bak_dlc01_*`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺母本备份时明确中止 |
+| `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的原版文件（优先 `*.bak`，缺失时退回同名当前文件，如干净原版目录 `work/original`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺原版文件时明确中止 |
 | `python tools/build.py [--game-dir "<游戏目录>"] package_install` | **就地装机版打包**：对游戏目录跑 `apply_menu`（会把目录留在已汉化态）→ 校验 → 复制到 `dist/`。`DLC01` 仅在游戏目录确实存在原件时纳入（其原件备份自动生成）。`package_exe` / `package_install_exe` 为对应的 exe 模式 |
 | `apply_font` / `apply_nosync` / `apply_nocollide` / `apply_consistent` / `apply_nomech` | 历史测试包 A/B/C/E/D |
 | `apply_noplace` / `apply_menu_safe` / `apply_menu_noml` | 变体（回退地名/保守 UI/退回单行） |
@@ -179,7 +181,8 @@ python _work/runner.py <脚本名> [参数]
   与语言数据目录 `locales/zh-CN/` 严格分离。`build/` 已被 `.gitignore` 忽略。
 - `dist/` 用于**完整补丁打包**：
   - `python tools/build.py [--game-dir "<游戏目录>"] package`（**默认·隔离**）：只读游戏目录里的
-    母本备份，在 `build/package_stage/` 里装机并校验，再复制到 `dist/`；**游戏目录逐字节不变**。
+    原版文件（优先 `.bak`，缺失时退回同名当前文件），在 `build/package_stage/` 里装机并校验，
+    再复制到 `dist/`；**游戏目录逐字节不变**。
   - `python tools/build.py [--game-dir "<游戏目录>"] package_install`：旧行为——对游戏目录
     **就地装机**（目录会变为已汉化态）后再复制到 `dist/`。
   - 两者产物一致：可直接覆盖到游戏目录的补丁文件集（dll 模式 = `dinput8.dll` + `hm2zh_patch.bin`

@@ -12,6 +12,9 @@ config.local.json keys:
   locale     - e.g. "zh-CN"
   build_dir  - scratch/output dir (default: <repo>/build)
   dist_dir   - release output dir (default: <repo>/dist)
+
+Path-like keys accept either an absolute path or a repository-relative path
+(e.g. "work/original"); relative values are resolved against the repo root.
 """
 import os
 import json
@@ -44,19 +47,25 @@ def _resolve(name, key, default):
     return default
 
 
+def _as_path(val):
+    """相对路径按仓库根(REPO_DIR)解析；绝对路径原样返回。"""
+    return val if os.path.isabs(val) else os.path.join(REPO_DIR, val)
+
+
 LOCALE = _resolve('HMH2_LOCALE', 'locale', 'zh-CN')
 
-GAME_DIR = _resolve('HMH2_GAME_DIR', 'game_dir', REPO_DIR)
+# 路径类键均支持相对路径（相对仓库根），便于把原版游戏放在仓库内，如 work/original
+GAME_DIR = _as_path(_resolve('HMH2_GAME_DIR', 'game_dir', REPO_DIR))
 
-DATA_DIR = _resolve('HMH2_DATA_DIR', 'data_dir',
-                    os.path.join(REPO_DIR, 'locales', LOCALE))
+DATA_DIR = _as_path(_resolve('HMH2_DATA_DIR', 'data_dir',
+                             os.path.join(REPO_DIR, 'locales', LOCALE)))
 
-_font = _resolve('HMH2_FONT_PATH', 'font_path',
-                 os.path.join(REPO_DIR, 'assets', 'fonts', 'WenQuanYi Bitmap Song 13px.ttf'))
-FONT_PATH = _font if os.path.isabs(_font) else os.path.join(REPO_DIR, _font)
+FONT_PATH = _as_path(_resolve('HMH2_FONT_PATH', 'font_path',
+                              os.path.join(REPO_DIR, 'assets', 'fonts',
+                                           'WenQuanYi Bitmap Song 13px.ttf')))
 
-BUILD_DIR = _resolve('HMH2_BUILD_DIR', 'build_dir', os.path.join(REPO_DIR, 'build'))
-DIST_DIR = _resolve('HMH2_DIST_DIR', 'dist_dir', os.path.join(REPO_DIR, 'dist'))
+BUILD_DIR = _as_path(_resolve('HMH2_BUILD_DIR', 'build_dir', os.path.join(REPO_DIR, 'build')))
+DIST_DIR = _as_path(_resolve('HMH2_DIST_DIR', 'dist_dir', os.path.join(REPO_DIR, 'dist')))
 
 
 def game(*parts):

@@ -2440,12 +2440,14 @@ def do_apply_menu(exe_mode=None):
 
 
 # ================= ★ v2.68：完整补丁打包（package / package_install） =================
-# 目标：以配置游戏目录里的【原版母本 .bak】为输入，产出一份可直接覆盖游戏目录的补丁到 dist/。
+# 目标：以配置游戏目录里的【原版文件（优先 .bak，缺失时用同名当前文件）】为输入，
+#   产出一份可直接覆盖游戏目录的完整补丁到 dist/。
 #   dll 模式（默认）：dinput8.dll + hm2zh_patch.bin + res/*.s2a + DLC01/*.s2a
 #   exe 模式：        HMH2.exe      + res/*.s2a + DLC01/*.s2a
-# DLC01 仅在【配置目录里存在 DLC01 母本备份】时才纳入（未持有 DLC 的玩家没有） 。
+# DLC01 仅在【配置目录里存在 DLC01 文件】时才纳入（未持有 DLC 的玩家没有） 。
 #
-# 【默认】package = 隔离打包：只读配置目录的母本，在 build/package_stage/ 里装机，
+# 【默认】package = 隔离打包：只读配置目录里的原版文件（优先 .bak，缺失时退回同名当前文件，
+#   如干净原版目录 work/original），在 build/package_stage/ 里装机，
 #   校验通过后复制到 dist/；**配置游戏目录逐字节不变**（不装机）。
 # 【另】package_install = 旧的"就地装机"行为：直接对配置目录跑 apply_menu 再复制到 dist/
 #   （会把游戏目录留在已汉化态）。exe 模式对应 package_exe / package_install_exe。
@@ -2469,15 +2471,24 @@ def _orig_bak_name(rel):
 
 
 def _pkg_origin_sources():
-    """{相对路径: 配置目录里母本备份的绝对路径}（只读，绝不写配置目录）；返回 (src, has_dlc)。"""
-    src = {'HMH2.exe': os.path.join(BASE, _orig_bak_name('HMH2.exe'))}
-    for rel in PACKAGE_RES:
-        src[rel] = os.path.join(BASE, _orig_bak_name(rel))
-    has_dlc = all(os.path.exists(os.path.join(BASE, _orig_bak_name(rel))) for rel in PACKAGE_DLC)
-    if has_dlc:
-        for rel in PACKAGE_DLC:
-            src[rel] = os.path.join(BASE, _orig_bak_name(rel))
-    return src, has_dlc
+    """只在配置目录里读取的原版源：优先 `<rel>.bak`，缺失时退回同名当前文件。
+    适用于"干净原版目录"（如 work/original，只有原版文件、没有 .bak，且本命令不写它）。
+    返回 (src, missing, uses_current, has_dlc)。"""
+    has_dlc = all(os.path.exists(os.path.join(BASE, _orig_bak_name(rel))) or
+                  os.path.exists(os.path.join(BASE, rel)) for rel in PACKAGE_DLC)
+    rels = ['HMH2.exe'] + PACKAGE_RES + (PACKAGE_DLC if has_dlc else [])
+    src, missing, uses_current = {}, [], []
+    for rel in rels:
+        bak = os.path.join(BASE, _orig_bak_name(rel))
+        cur = os.path.join(BASE, rel)
+        if os.path.exists(bak):
+            src[rel] = bak
+        elif os.path.exists(cur):
+            src[rel] = cur
+            uses_current.append(rel)
+        else:
+            missing.append(rel)
+    return src, missing, uses_current, has_dlc
 
 
 def do_package(exe_mode=None):
@@ -2488,19 +2499,22 @@ def do_package(exe_mode=None):
     print('  母本来源    : %s（只读，不改）' % BASE)
     print('  输出目录    : %s' % paths.DIST_DIR)
 
-    # ① 前置校验：缺母本备份就明确失败，绝不静默产出半份补丁
-    src, has_dlc = _pkg_origin_sources()
-    missing = [rel for rel, p in sorted(src.items()) if not os.path.exists(p)]
+    # ① 前置校验：缺原版文件就明确失败，绝不静默产出半份补丁
+    src, missing, uses_current, has_dlc = _pkg_origin_sources()
     if missing:
-        print('!! 打包中止：配置游戏目录缺少母本备份')
+        print('!! 打包中止：配置游戏目录缺少原版文件（既无 .bak 也无同名当前文件）')
         for rel in missing:
-            print('   - %s' % _orig_bak_name(rel))
-        print('   请先确认游戏为原版，或先运行 revert 生成母本备份')
+            print('   - %s' % rel)
+        print('   请确认 game_dir 指向含原版文件的目录，或先运行 revert 生成 .bak')
         raise SystemExit(1)
+    if uses_current:
+        print('  [母本] 以下文件无 .bak 备份，改用当前文件作为原版源（只读，不写入）:')
+        for rel in uses_current:
+            print('   - %s' % rel)
     if has_dlc:
-        print('  [DLC01] 检出 DLC01 母本备份，纳入补丁')
+        print('  [DLC01] 检出 DLC01 原版文件，纳入补丁')
     else:
-        print('  [DLC01] 未检出 DLC01 母本备份，本次补丁不含 DLC01')
+        print('  [DLC01] 未检出 DLC01 原版文件，本次补丁不含 DLC01')
 
     # ② 用母本备份重建 staging（同时充当"当前文件"与"原件备份"）
     stage = paths.build(PKG_STAGE_NAME)
