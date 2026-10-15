@@ -72,7 +72,7 @@ MD5:       867308FCD87A（前 12）
 
 - 成品式安装会在游戏目录中留下被覆盖/新增的文件；请事先备份原版文件，
   或用 Steam"验证游戏文件完整性"还原（会一并还原其他被改文件）。
-- 脚本式安装可用 `汉化-还原.bat`（= `python _work/build_cn.py revert`）从 `.bak` 还原。
+- 脚本式安装可用 `汉化-还原.bat`（= `python tools/build_cn.py revert`）从 `.bak` 还原。
 
 ---
 
@@ -106,7 +106,7 @@ build/  dist/             构建中间产物 / 发布补丁（不纳入版本控
 ```
 
 一键 `汉化-*.bat` 由 `tools/make_bats.py` 生成到**游戏目录**（默认 `work/original`，
-或 `config.local.json` 的 `game_dir`）；游戏目录只需提供原版文件与这些 bat，不再放 `_work/`。
+或 `config.local.json` 的 `game_dir`）；游戏目录只需提供原版文件与这些 bat。
 
 见 `AGENTS.md` 与 `docs/LOCALIZATION_STANDARD.md`。
 
@@ -197,7 +197,7 @@ DLC01:         完成
 
 - 项目代码：MIT（`LICENSE`）
 - 原创译文：CC BY-SA 4.0（`LICENSE-translations.md`）
-- 字体：文泉驿点阵宋体，GPL-2.0（`仓库/fonts/GPL-2.0.txt`）
+- 字体：文泉驿点阵宋体，GPL-2.0（`assets/fonts/GPL-2.0.txt`）
 - 游戏原文与原始资源：版权归原权利人所有，不随仓库分发
 
 详见 `LICENSING.md`。

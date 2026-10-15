@@ -10,7 +10,7 @@
 |---|---|
 | 项目自有代码与工具（`build_cn.py`、`s2a.py`、`dlc_*.py`、`proxydll/` 等） | **MIT**（`LICENSE`） |
 | 原创译文（译表、术语、说明文） | **CC BY-SA 4.0**（`LICENSE-translations.md`） |
-| 字体 `WenQuanYi Bitmap Song 13px.ttf` | **GPL-2.0**（`仓库/fonts/GPL-2.0.txt`） |
+| 字体 `WenQuanYi Bitmap Song 13px.ttf` | **GPL-2.0**（`assets/fonts/GPL-2.0.txt`） |
 | 早期译文底本（3DM 补丁） | 仅作参考，权利归原作者；本项目不主张所有权 |
 | 源语言游戏文本 | 版权归原权利人所有 |
 | 原始游戏资产（exe/归档/音频/图集） | **不随仓库分发** |
@@ -82,10 +82,10 @@
 # 12. 目录级许可
 
 ```text
-_work/*.py, _work/proxydll/            MIT
-_work/outputs/text_v2.csv 等译表        CC BY-SA 4.0（原创译文部分）
-_work/outputs/*.md, docs/*.md           MIT（项目文档）
-仓库/fonts/                             GPL-2.0（字体）
+tools/*.py, tools/proxydll/             MIT
+locales/<locale>/*.csv|json|py 等译表    CC BY-SA 4.0（原创译文部分）
+docs/*.md, *.md                         MIT（项目文档）
+assets/fonts/                           GPL-2.0（字体）
 res/*.s2a, HMH2.exe, DLC01/*            不入库；版权归原权利人
 ```
 
@@ -106,7 +106,7 @@ res/*.s2a, HMH2.exe, DLC01/*            不入库；版权归原权利人
 ```text
 项目自有代码:    MIT (LICENSE)
 项目原创译文:    CC BY-SA 4.0 (LICENSE-translations.md)
-字体:            WenQuanYi Bitmap Song 13px.ttf — GPL-2.0 (仓库/fonts/GPL-2.0.txt)
+字体:            WenQuanYi Bitmap Song 13px.ttf — GPL-2.0 (assets/fonts/GPL-2.0.txt)
 第三方工具:      zig（仅构建期，不随仓库分发）
 上游（译文底本）: 3DM（仅参考，权利归原作者）
 游戏源代码文本:  版权归原权利人所有

@@ -2,7 +2,7 @@
 
 本文档记录本项目逆向得到的二进制/结构化格式。结论按 **已验证 / 高置信推断 / 未验证假设** 标注。
 
-> 逆向工具：`_work/s2a.py`（归档读写）、`_work/dlce_*`、`_work/probe_*.py`、`_work/proxydll/gen_patch_bin.js`。
+> 逆向工具：`tools/s2a.py`（归档读写）、`tools/dlc_lib.py`、`tools/proxydll/gen_patch_bin.js`。
 
 ---
 
@@ -48,7 +48,7 @@
 **未解：** 条目 hash 算法未知（16 哈希 × 5 编码 × 5 前缀全 0 命中，疑似自定义/带盐）——
 无法凭文件名合成新条目的 hash。
 
-**工具：** `_work/s2a.py`。
+**工具：** `tools/s2a.py`。
 
 ---
 
@@ -90,7 +90,7 @@
 
 未知字段保持未知；不要臆测字段含义。
 
-**工具：** `_work/s2a.py`、`_work/dlce_lib.py`、`_work/probe_*.py`。
+**工具：** `tools/s2a.py`、`tools/dlc_lib.py`。
 
 ---
 
@@ -164,7 +164,7 @@ Type2: u8 type=2 | u8 len=0 | u8 window | u8 rsv | u32 va | u32 expect | u32 del
 - Type2：在 `va` 起 `window` 字节内搜索 u32 `expect`，替换为 `atbl_base + delta`。
 - 实测：414 字节 / 18 条（type1=10, type2=8），作用域 VA `0x004D861F..0x004D8E3B`。
 
-**工具：** `_work/proxydll/main.c`、`gen_patch_bin.js`。
+**工具：** `tools/proxydll/main.c`、`tools/proxydll/gen_patch_bin.js`。
 
 ---
 
@@ -183,7 +183,7 @@ Type2: u8 type=2 | u8 len=0 | u8 window | u8 rsv | u32 va | u32 expect | u32 del
 - 回滚 = 把 `old` 写回 `off`，`[len(old), max(len(old),len(new)))` 清零。
 - 现有 24 批 / 44,129 槽。
 
-**工具：** `_work/nmledger.py`、`_work/t140_name_revert.py`。
+**工具：** `tools/nmledger.py`、`tools/t140_name_revert.py`（账本数据在 `locales/zh-CN/name_ledger.json`）。
 
 ---
 

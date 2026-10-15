@@ -91,7 +91,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 # 5. 换行与多行字段
 
 - 多行台词是**同一记录内的一个定长字段**：`[行1]\n[行2]\n…`。
-- `text_v2.csv` 只登记**第 1 行**；整段译文写入 `_work/ml_zh_fields.json`，
+- `text_v2.csv` 只登记**第 1 行**；整段译文写入 `locales/zh-CN/ml_zh_fields.json`，
   键 = 完整 EN 字段文本（含 `\n`），值 = 整段中文（含 `\n`）。
 - **[已验证]** 只写第 1 行会导致"后续行丢失/残留"，因此构建按整字段写。
 - ≥6 行的长文若无译文，则整段保留原文（不做截断退化）。
@@ -155,14 +155,14 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 名字类中文化（称号/伙伴/职业/阵形/装备/技能/敌人/道具说明/UI 标签/系统提示）走独立批次：
 
 ```bash
-python _work/t175_g3_apply.py check     # 只读预演：容量超限 / 缺字 必须为 0
-python _work/t175_g3_apply.py apply     # 写入 + 记账 + cscv md5 硬闸
+python tools/t175_g3_apply.py check     # 只读预演：容量超限 / 缺字 必须为 0
+python tools/t175_g3_apply.py apply     # 写入 + 记账 + cscv md5 硬闸
 # 写入后审计
-python _work/t162_diff_audit.py <备份根> <批次id>
-python _work/t180_verify_g3.py
-python _work/t34_health.py
+python tools/t162_diff_audit.py <备份根> <批次id>
+python tools/t180_verify_g3.py
+python tools/t34_health.py
 # 撤销
-python _work/t140_name_revert.py revert <批次id>
+python tools/t140_name_revert.py revert <批次id>
 ```
 
 原则（见 `TECHNICAL.md` §8）：只写 `LANG_JA`/`LANG_EN`；同一语言文件内**每份副本同改**；

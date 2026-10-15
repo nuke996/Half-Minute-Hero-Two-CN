@@ -5,8 +5,9 @@
 
 本文档按规范分为 **已验证 / 高置信推断 / 未验证假设** 三级，未达"已验证"的结论已显式标注。
 
-> 本文由 2026-10-05 对现有 `_work/` 工具链与既有报告（`_work/outputs/`、`仓库/docs/`）的
-> 只读审计整理而成。除特别注明外，结论均来自现有脚本、报告与实测日志，未做新的实验。
+> 本文由 2026-10-05 对现有 `tools/` 工具链与既有报告的只读审计整理而成。
+> 除特别注明外，结论均来自现有脚本、报告与实测日志，未做新的实验。
+> 注：早期文档中的 `_work/` 工作目录已废弃；本仓库现用 `tools/` + `locales/<locale>/`。
 
 ---
 
@@ -66,7 +67,7 @@
 ## 2.1 DLC01
 
 - **[已验证]** DLC01 `LANG_JA`/`LANG_EN` 各含 **102 个 blob**；`res.s2a` 中仅 `b30` 为 CSCV 结构表。
-- **[已验证]** DLC01 译文独立存放于 `_work/dlc/zh_01.tsv … zh_06.tsv`（逐行 `日文<TAB>中文`），
+- **[已验证]** DLC01 译文独立存放于 `locales/zh-CN/dlc/zh_01.tsv … zh_06.tsv`（逐行 `日文<TAB>中文`），
   `zh_07.tsv` 为索引表（读取时跳过），多行台词在 `zh_07.json`。
 - **[已验证]** 键表嫌疑 blob = `4 / 36 / 45 / 76 / 97`（整表不翻）；对话 blob = `7 / 19 / 48 / 53 / 73 / 78`（可翻）。
 
@@ -171,7 +172,7 @@ LANG 文本字节 --(CP932 解码)--> 字符 --(cscv 字符表: 字符->index)--
 ## 5.2 多行字段
 
 - **[已验证]** 多行台词是**同一记录内的一个定长字段**：`[行1]\x0A[行2]\x0A…\x00 + 0 填充`。
-- **[已验证]** 主译表 `text_v2.csv` 每行只登记**第 1 行**；整段译文单独存放于 `_work/ml_zh_fields.json`，
+- **[已验证]** 主译表 `text_v2.csv` 每行只登记**第 1 行**；整段译文单独存放于 `locales/zh-CN/ml_zh_fields.json`，
   以"完整 EN 字段文本（含 `\n`）"为键。
 - **[已验证]** 写入时按**整字段**写（保留 `\n`），容量由 `field_end()` 现场计算（留 1 字节 `0x00`）。
 - **[已验证]** 无整段译文时退化为"只写第 1 行并清零余下"；≥6 行的长文若无译文则整段保留原文。
@@ -306,7 +307,7 @@ Type2 记录: type=2 | len=0 | window | rsv | u32 va | u32 expect | u32 delta（
 - 实测日志：补丁文件 **414 字节 / 18 条记录**（type1=10 / type2=8），作用域 VA `0x004D861F..0x004D8E3B`；
   数据区优先 `VirtualAlloc` 固定 `0x5F4000`，失败则任意地址回退并回填立即数；
   若检测到 exe 已离线打补丁（T7），自动跳过。
-- 源码：`_work/proxydll/main.c`、`gen_patch_bin.js`、`dinput8.def`、`build.bat`（用 zig 工具链构建）。
+- 源码：`tools/proxydll/main.c`、`gen_patch_bin.js`、`dinput8.def`、`build.bat`（用 zig 工具链构建）。
 
 **意义：** 运行时方案不改磁盘 exe，规避 Steam 完整性校验还原 exe；但需要随包分发 DLL。
 当前磁盘 `HMH2.exe` 等于原版（见 §1.1），说明当前装机采用运行时方案。
@@ -315,7 +316,7 @@ Type2 记录: type=2 | len=0 | window | rsv | u32 va | u32 expect | u32 delta（
 
 # 8. 名字批次：账本 / 回滚 / 体检
 
-## 8.1 账本（`_work/name_ledger.json`）
+## 8.1 账本（`locales/zh-CN/name_ledger.json`）
 
 **[已验证]** 名字类批次（称号/伙伴/职业/阵形/装备/技能/敌人/道具说明/UI 标签/系统提示）逐槽记账：
 
@@ -342,20 +343,20 @@ Type2 记录: type=2 | len=0 | window | rsv | u32 va | u32 expect | u32 delta（
 ## 8.3 回滚命令（`t140_name_revert.py`）
 
 ```bash
-python _work/t140_name_revert.py list            # 列批次
-python _work/t140_name_revert.py scan            # 每槽状态（已应用/已还原/被覆盖）
-python _work/t140_name_revert.py check           # 全绿 exit 0
-python _work/t140_name_revert.py revert all      # 全量（内部按批次反序）
-python _work/t140_name_revert.py revert 称号名    # 按类
-python _work/t140_name_revert.py revert 装备名-G3 # 按批次 id
-python _work/t140_name_revert.py snapshot        # 五文件快照 -> _work/_name_good/<ts>/
-python _work/t140_name_revert.py restore         # 从最新快照整文件还原
+python tools/t140_name_revert.py list            # 列批次
+python tools/t140_name_revert.py scan            # 每槽状态（已应用/已还原/被覆盖）
+python tools/t140_name_revert.py check           # 全绿 exit 0
+python tools/t140_name_revert.py revert all      # 全量（内部按批次反序）
+python tools/t140_name_revert.py revert 称号名    # 按类
+python tools/t140_name_revert.py revert 装备名-G3 # 按批次 id
+python tools/t140_name_revert.py snapshot        # 五文件快照 -> build/_name_good/<ts>/
+python tools/t140_name_revert.py restore         # 从最新快照整文件还原
 ```
 
 **[已验证]** 全量回滚必须**按批次反序**（同槽可能被多批先后写过）。
-revert 前自动整文件备份到 `_work/_pre_t140/<ts>/`。
+revert 前自动整文件备份到 `build/_pre_t140/<ts>/`。
 
-另有 CSV 侧"手术式"回滚 `_work/revert_surgical.py`（对 `text_v2.csv` 行级回滚），与名字账本相互独立。
+另有 CSV 侧"手术式"回滚 `tools/revert_surgical.py`（对 `text_v2.csv` 行级回滚），与名字账本相互独立。
 
 ## 8.4 体检（`t34_health.py`，当前 v2.67）
 
@@ -373,7 +374,7 @@ revert 前自动整文件备份到 `_work/_pre_t140/<ts>/`。
 
 # 9. 工具清单
 
-| 工具（`_work/`） | 作用 |
+| 工具（`tools/`） | 作用 |
 |---|---|
 | `s2a.py` | S2AR 归档读写库（解析 + `pack()`） |
 | `build_cn.py` | 主构建器：字模 + 字符表 + 文本 + exe 补丁 + DLC 刷新 + Q16 保护 |
@@ -412,19 +413,18 @@ revert 前自动整文件备份到 `_work/_pre_t140/<ts>/`。
 
 # 11. 与通用规范的映射（现状 -> 规范结构）
 
-当前实现集中在 `_work/`，与 `docs/LOCALIZATION_STANDARD.md` 推荐结构的对应关系：
+当前实现已按 `docs/LOCALIZATION_STANDARD.md` 的推荐结构组织：
 
-| 现状 | 规范建议位置 | 备注 |
+| 现位置 | 规范建议位置 | 备注 |
 |---|---|---|
-| `_work/build_cn.py`、`s2a.py`、`dlc_*.py`、`proxydll/` | `tools/`、`src/` | 与语言无关的基础设施 |
-| `_work/outputs/text_v2.csv`、`replace_map.py`、`ml_zh_fields.json`、`*.json` 守卫 | `locales/zh-CN/` | 语言相关数据 |
-| `仓库/fonts/WenQuanYi Bitmap Song 13px.ttf` | `assets/fonts/` | GPL-2.0，可再分发 |
-| `_work/outputs/*.md`、`仓库/docs/*` | `docs/` | 历史报告 |
+| `tools/build_cn.py`、`s2a.py`、`dlc_*.py`、`proxydll/` | `tools/`、`src/` | 与语言无关的基础设施 |
+| `locales/zh-CN/text_v2.csv`、`replace_map.py`、`ml_zh_fields.json`、`*.json` 守卫 | `locales/zh-CN/` | 语言相关数据 |
+| `assets/fonts/WenQuanYi Bitmap Song 13px.ttf` | `assets/fonts/` | GPL-2.0，可再分发 |
+| `docs/*.md` | `docs/` | 技术文档 |
 | 生成的 `res/*.s2a`、`HMH2.exe` | `build/`、`dist/`（不进库） | 含游戏版权内容 |
 
-**注意（2026-10-05 更新）[已验证]：** 上表描述的硬编码 `BASE`（`E:\SteamLibrary\...`）属作者早期
-`_work/` 历史目录，该目录已不在本仓库中。仓库现行 `tools/` 版本**已解除硬编码**：路径统一由
+**注意（2026-10-05 更新）[已验证]：** 作者早期工作目录 `_work/` 曾存在硬编码 `BASE`
+（`E:\SteamLibrary\...`），该目录已不在本仓库中。仓库现行 `tools/` 版本**已解除硬编码**：路径统一由
 `tools/paths.py` 解析（环境变量 > `config.local.json` > 仓库相对默认），并已用
 `python tools/build.py --game-dir <dir> apply_menu` 在干净目录复现验证（两次构建逐字节一致，
-`revert` 可还原，见 `BUILDING.md` §15）。仍存于 `_work/` 的旧脚本才会依赖本地状态文件与 `.bak`；
-差距清单见 `BUILDING.md` §9。
+`revert` 可还原，见 `BUILDING.md` §15）。差距清单见 `BUILDING.md` §9。

@@ -31,12 +31,13 @@
 | 操作系统 | **Windows**（构建脚本使用 `ctypes` 调用 GDI，无法在 Linux/macOS 上完成 SimSun 回退路径） |
 | Python | **3.13（64 位）**；脚本无版本断言 |
 | Pillow | `pip install pillow`（渲染字模、读写 8bpp 调色板 BMP 图集） |
-| 字体 | `WenQuanYi Bitmap Song 13px.ttf`（文泉驿点阵宋体，GPL-2.0，仓库自带于 `仓库/fonts/`） |
+| 字体 | `WenQuanYi Bitmap Song 13px.ttf`（文泉驿点阵宋体，GPL-2.0，仓库自带于 `assets/fonts/`） |
 | 可选工具 | `zig` 工具链（仅在需要重建 `dinput8` 代理 DLL 时用到） |
 
-字体：构建默认读取 `C:\Windows\Fonts\WenQuanYi Bitmap Song 13px.ttf`；
+字体：构建默认读取仓库内 `assets/fonts/WenQuanYi Bitmap Song 13px.ttf`
+（可用 `HMH2_FONT_PATH` 或 `config.local.json` 的 `font_path` 覆盖）；
 缺失时**不报错**，回退 GDI SimSun 16px 单色（无描边，观感下降）。
-可用环境变量覆盖：`HMH2_FONT`（`wqy12/wqy13/wqy14/wqy16/simsun`）、`HMH2_THICK`、`HMH2_OUTLINE`。
+另可覆盖渲染参数：`HMH2_FONT`（`wqy12/wqy13/wqy14/wqy16/simsun`）、`HMH2_THICK`、`HMH2_OUTLINE`。
 
 ---
 
@@ -86,8 +87,8 @@ DLC01/res.s2a               # DLC01（可选）
 `game_dir` 需包含原版 `HMH2.exe`、`res/`、`DLC01/`。`game_dir` / `data_dir` / `build_dir` / `dist_dir` /
 `font_path` 均支持"绝对路径或相对仓库根的相对路径"。字体默认取 `assets/fonts/WenQuanYi Bitmap Song 13px.ttf`。
 
-> 说明：作者原始工作目录 `_work/` 内的同名脚本**仍保留硬编码 BASE**（历史存档，本次未改动）。
-> 仓库 `tools/` 才是对外可复现的规范版本；两者内容同源，`tools/` 为可重定位（relocatable）版。
+> 说明：作者早期工作目录 `_work/` 已不在本仓库中（其脚本曾保留硬编码 BASE）。
+> 现行仓库只有 `tools/` 版本，为对外可复现、可重定位（relocatable）的规范版本。
 
 ---
 
@@ -96,9 +97,10 @@ DLC01/res.s2a               # DLC01（可选）
 ## 5.1 统一脚本入口
 
 ```bash
-python _work/runner.py <脚本名> [参数]
+python tools/runner.py <脚本名> [参数]
 ```
-（在 `_work` 内运行，输出写入 `<脚本名>_run.txt`。）
+（在仓库根或 `tools/` 内运行；脚本在 `tools/` 下执行，工具输出统一写入 `build/`，
+如 `build/<脚本名>_run.txt`。）
 
 ## 5.2 主构建器 `build_cn.py`（经 `tools/build.py` 调用）
 
@@ -121,7 +123,7 @@ python _work/runner.py <脚本名> [参数]
 
 ## 5.3 一键 `.bat`（由 `make_bats.py` 生成）
 
-根目录当前存在的入口：
+游戏目录当前存在的入口（由 `tools/make_bats.py` 生成到 `game_dir`，默认 `work/original`）：
 
 | bat | 调用 |
 |---|---|
@@ -131,8 +133,8 @@ python _work/runner.py <脚本名> [参数]
 | `汉化-导入校对.bat` | `import_review.py apply` |
 | `汉化-导入校对-回滚.bat` | `import_review.py revert` |
 
-另有大量历史/专项 bat（健康体检、说明文放行开关、Q16 键名保护开关、名字类回滚等），
-见根目录与 `历史bat/`。
+另有大量历史/专项 bat（健康体检、说明文放行开关、Q16 键名保护开关等），
+由 `tools/make_bats.py` 定义并一并生成到游戏目录。
 
 ## 5.4 校对（导出 / 导入 / 回滚）
 
@@ -211,37 +213,35 @@ python _work/runner.py <脚本名> [参数]
 
 ---
 
-# 9. 可复现性现状（差距清单）
+# 9. 可复现性现状
 
 | 项 | 现状 | 结论 |
 |---|---|---|
 | exe 补丁 | 逐条校验原字节；离线与运行时两条路径等价 | **可复现** |
 | 图集/字符表生成 | 从 `.bak` + 字体确定性生成 | **可复现**（依赖字体文件） |
 | 文本导入 | 从 `text_v2.csv` + 守卫 JSON 确定性导入 | **基本可复现** |
-| 游戏根路径 | 硬编码 `E:\SteamLibrary\...` | **不可复现**（需手工改） |
-| 字形字体 | 依赖系统安装的 WenQuanYi；缺失静默降级 | **不可复现**（应改为仓库内相对路径 + 缺失即报错） |
-| 构建输入 | 依赖 `_work/` 下大量 JSON 守卫、`.bak`、`collide_cache.json` 等本地状态 | **部分不可复现** |
+| 游戏根路径 | 由 `tools/paths.py` 解析（环境变量 > `config.local.json` > 仓库相对默认） | **可复现**（已解除硬编码） |
+| 字形字体 | 默认读仓库 `assets/fonts/`（可被 `HMH2_FONT_PATH` 覆盖）；缺失静默降级 | **基本可复现**；缺失时仍缺"报错" |
+| 构建输入 | 语言数据在 `locales/<locale>/`；缓存/中间产物在 `build/` | **可复现** |
 | `collide_cache.json` | 缺失时现场重算（很慢） | 可重建但耗时 |
-| 输出 | 原地写入，无独立构建目录 | 不符合规范 §22 |
-| 母本校验 | `res/*.s2a` 无散列校验 | 应补充 |
+| 输出 | 工具产物统一写入 `build/`；发布产物写入 `dist/` | 符合规范 §22 |
+| 母本校验 | `res/*.s2a` 无散列校验（仅 exe 逐条校验原字节） | **应补充** |
 
-**改进方向（尚未实施，属建议）：**
-1. 用环境变量/配置文件（如 `config.local.json`）替代硬编码 `BASE`，并提供 `config.example.json`。
-2. 字体改从仓库 `assets/fonts/` 相对路径读取；缺失**报错**而非静默降级。
-3. 增加 `validate_inputs`：对原始 `HMH2.exe` / `res/*.s2a` 做散列校验。
-4. 提供单一入口 `python build.py --locale zh-CN`，输出到 `build/`/`dist/`。
-5. 明确哪些 `_work/*.json` 是"语言数据"（应入库）哪些是"构建产物/缓存"（应忽略）。
+**仍待补充（建议）：**
+1. 增加 `validate_inputs`：对原始 `HMH2.exe` / `res/*.s2a` 做散列校验（对照 `TECHNICAL.md` §1.1）。
+2. 构建入口尚未完全参数化 locale（当前以 `zh-CN` 为准，见 `TRANSLATING.md` §16）。
+3. 字体缺失时应**报错**而非静默降级。
 
 ---
 
 # 10. 校验与体检命令
 
 ```bash
-python _work/build_cn.py check                # 各文件 原版/已修改 + 散列
-python _work/t34_health.py                    # 项目体检，exit 0=全绿
-python _work/t162_diff_audit.py <备份根> <批次id...>   # 零附带变化审计
-python _work/t152_verify_g1.py                # 功能级反解（批次示例）
-python _work/dlce_apply.py verify            # DLC01 三重验证（同 dlc_apply.py）
+python tools/build.py check                   # 各文件 原版/已修改 + 散列
+python tools/t34_health.py                    # 项目体检，exit 0=全绿
+python tools/t162_diff_audit.py <备份根> <批次id...>   # 零附带变化审计
+python tools/t152_verify_g1.py                # 功能级反解（批次示例）
+python tools/dlc_apply.py verify              # DLC01 三重验证
 ```
 
 ---
@@ -249,11 +249,11 @@ python _work/dlce_apply.py verify            # DLC01 三重验证（同 dlc_appl
 # 11. DLC01 独立流程
 
 ```bash
-python _work/dlc_export.py            # 导出工作单（只读）
-python _work/dlc_apply.py plan        # 生成写入计划
-python _work/dlc_apply.py apply       # 写入（超容量即中止）
-python _work/dlc_apply.py verify      # 三重验证（读回 / 无越界清零 / 记录尾一致）
-python _work/dlc_apply.py revert      # 从 *.bak_dlc01_20260913 还原
+python tools/dlc_export.py            # 导出工作单（只读）
+python tools/dlc_apply.py plan        # 生成写入计划
+python tools/dlc_apply.py apply       # 写入（超容量即中止）
+python tools/dlc_apply.py verify      # 三重验证（读回 / 无越界清零 / 记录尾一致）
+python tools/dlc_apply.py revert      # 从 *.bak_dlc01_20260913 还原
 ```
 
 **[已验证]** DLC01 写入只在自己原文占用范围内改写，绝不越界清零（v1 曾把记录尾清零导致剧情断链）。
@@ -286,8 +286,8 @@ zig 0.13 实测两点：目标三元组为 `x86-windows-gnu`（`i686-...` 已不
 | 症状 | 原因 | 处理 |
 |---|---|---|
 | `缺少 HMH2.exe.bak，无法打补丁` | 缺原版母本 | 提供原版 exe 并备份为 `.bak` |
-| 找不到 `res/...` 文件 | `BASE` 路径不对 | 全局替换脚本内 `BASE` |
-| 字模变细/无描边 | WenQuanYi 字体未安装 | 安装字体到 `C:\Windows\Fonts\` |
+| 找不到 `res/...` 文件 | `game_dir` 解析不对 | 用 `--game-dir` / `HMH2_GAME_DIR` / `config.local.json` 的 `game_dir` 指定游戏目录 |
+| 字模变细/无描边 | 未找到 WenQuanYi，回退 GDI SimSun | 确认仓库 `assets/fonts/` 字体存在（或设 `HMH2_FONT_PATH`） |
 | `! exe 已含 .atbl 节` | 对已打补丁的 exe 再次打补丁 | 先 `revert` |
 | 构建后文字显示为别字 | 改了 `text_v2.csv` 但未重装 DLC01 | 跑 `apply_menu`（含 DLC 刷新） |
 | `python` 无法执行 | 解释器不在 PATH | 用完整 python 路径或 `runner.py` |
