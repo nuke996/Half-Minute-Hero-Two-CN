@@ -6,23 +6,30 @@
 
 # 1. 翻译数据位置
 
-**[现状]** 主译表与配置：
+**[现状]** 语言相关数据集中在 `locales/zh-CN/`（见 `AGENTS.md` 的多语言布局）：
 
 ```text
-_work/outputs/text_v2.csv        # 主译表（build_cn.py 的直接输入）
-_work/replace_map.py             # REPL 统一译名表（约 420 条）
-_work/hl_map.py                  # 高亮标记 <...> 映射（约 200 条）
-_work/ml_zh_fields.json          # 多行整字段译文（约 1180 条）
-_work/ui_always.json             # UI 标签豁免清单（347 串）
-_work/ml_fin_map.tsv             # 多行字段映射表
-_work/校对/                       # 校对工作目录
-_work/dlc/zh_01.tsv … zh_06.tsv   # DLC01 译文（zh_07.tsv 为索引表，勿加译文）
-_work/outputs/术语表.md            # 术语表
-_work/outputs/译文规范.md          # 早期译文规范（部分口径已被 v2 取代）
+locales/zh-CN/text_v2.csv          # 主译表（build_cn.py 的直接输入）
+locales/zh-CN/replace_map.py       # 替换词典 REPL（字库容量→近义词，344 条）
+locales/zh-CN/hl_map.py            # 替换词典 HL（高亮 <...> 标记映射，201 条）
+locales/zh-CN/ml_zh_fields.json    # 多行整字段译文（约 1180 条）
+locales/zh-CN/ui_always.json       # UI 标签豁免清单
+locales/zh-CN/ml_fin_map.tsv       # 多行字段映射表
+locales/zh-CN/dlc/zh_01.tsv … zh_06.tsv   # DLC01 译文（zh_07 为索引表，勿加译文）
+locales/zh-CN/dlc/zh_07.json       # DLC01 多行台词（ja -> zh）
+locales/zh-CN/menu_ok.json         # 菜单豁免白名单
+locales/zh-CN/slot_release.json    # 槽位级放行（说话人名字段）
+locales/zh-CN/desc_release.json    # 说明文槽位级放行
+locales/zh-CN/chap_title_guard.json # 章节名/称号名保护规则
+locales/zh-CN/place_map_raw.json   # cscv 村落名表
+locales/zh-CN/translator-view/     # ★ 面向译者的校对文件（见 §14）
 ```
 
-**[规范建议]** 迁移后语言相关数据应集中于 `locales/zh-CN/`（见 `AGENTS.md`），
-`text_v2.csv` 可作为主结构保留在该目录下。
+源码/工具位于 `tools/`（`build_cn.py`、`export_review.py`、`import_review.py`、
+`review_lib.py`、`dlc_*.py` 等），构建输出统一写入 `build/`，发布产物写入 `dist/`。
+
+> 旧版文档中的 `_work/...` 路径已废弃：本仓库把语言数据放在 `locales/<locale>/`，
+> 由 `tools/paths.py` 统一解析（环境变量 → `config.local.json` → 仓库相对默认）。
 
 ---
 
@@ -109,7 +116,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 
 # 8. 术语表
 
-- 维护于 `_work/outputs/术语表.md`；术语须跨全部译表一致。
+- 术语须跨全部译表一致；术语以译表（`locales/zh-CN/text_v2.csv`、`ml_zh_fields.json`、
+  DLC 译表）与替换词典（`replace_map.py` / `hl_map.py`）中的**实际用词**为准。
+- 如需独立术语表，置于 `locales/zh-CN/术语表.md`（当前仓库尚无此文件，属约定路径）。
 - 类别：角色名、地名、组织、武器、道具、技能、状态、怪物、职业、系统术语、固定 UI 文案。
 - 同一原串在不同位置必须**同一中文**（跨批次核对，例：`パンイチ/Skivvies` 同时是称号 rec40 与职业 rec0）。
 
@@ -170,15 +179,45 @@ cscv 孪生名字键保持日文原版；键名列（如技能 `b666 pos292`）�
 
 ---
 
-# 14. 校对工作流（非程序员可用）
+# 14. 校对工作流（面向译者）
 
-1. 把仓库内容放到游戏根目录（与 `HMH2.exe` 同级）。
-2. 双击 **汉化-导出校对.bat** -> 生成 `_work/校对/单行译文.csv`、`多行译文.csv`。
-3. 用 Excel/WPS 打开，**只在最后一列"修订译文"写字**：
-   - 留空 = 不改；`(清空)` = 恢复原文；`¶` = 换行符（勿删）；每行不超过"字数上限"列。
-4. 关闭游戏，双击 **汉化-导入校对.bat** 自动装入并出报告。
-5. 改坏了：双击 **汉化-导入校对-回滚.bat**。
-6. ⚠ 提示"多行字段"的行要在 `多行译文.csv` 里改；不要增删行、不要改"勿动"列。
+译者使用 `locales/zh-CN/translator-view/` 下的 **JSON 校对文件**（不再用 CSV）：
+
+```text
+translator-view/
+  10_ui_*.json         单行 · 菜单/系统消息/物品说明等 UI 文本
+  20_dialogue_*.json   单行 · 对话（原文带「」）
+  30_multiline.json    多行整字段（整段对话，游戏显示优先走它）
+  40_dlc01.json        DLC01 文本
+  protected/           受保护、当前【不会上屏】的文本（文件名 prot_ui_NN.json，见下）
+  dict/替换词典.json    当前生效的替换词典快照（见 §17）
+  如何校对.txt          同一套说明的译者版
+```
+
+每条记录形如 `{id, en, ja, zh, meta}`，**只改 `zh`**（= 游戏实际显示的最终中文，
+留空 = 不动）。`en` / `ja` 为英文/日文原文，`meta` 为位置与容量。
+
+流程：
+
+1. 双击 **汉化-导出校对.bat** → 生成/刷新 `translator-view/`（分片按 blob 切分）。
+2. 用 VS Code / 记事本编辑（**保持 UTF-8**；Excel 另存会损坏）。
+3. 双击 **汉化-导入校对.bat** → 写入译表 → **自检** → 通过后刷新 `dist/`。
+4. 自检**未通过即中断**：一个字节都不写入、`dist/` 保持原样，报告
+   `build/校对/导入报告.txt` 会逐条列出"哪一句、什么原因"（超长 / id 无法识别 /
+   非法字符 / 单行含换行等）。
+5. 导入不改游戏目录；想立刻进游戏验证，再双击 **汉化-安装.bat** 装机。
+6. 改坏了：双击 **汉化-导入校对-回滚.bat** 恢复到上次导入前的译表并重刷 `dist/`。
+
+**`protected/`（受保护、当下不上屏）**：项目已验证"翻译会破坏机制"而故意保留原文的
+文本也会一并导出到这里，便于将来保护解除后直接生效。判定口径即生产装机口径，共三类：
+
+- `collide`（名字键）：原文同时存在于 cscv 脚本/数据层，游戏按名比对；
+- `mech`（机制表）：`MECHANIC_BLOBS = 666/128/136/317`（技能/职业/连携技）整表；
+- `chaptitle`（章节名/称号名）：按字符串索引的键。
+
+这些条目**可以改**，改动会写入译表保存，但当前不会上屏；请勿删除 `protected/` 文件来
+"强制上屏"（保护由脚本规则决定，与文件是否存在无关）。DLC 与多行条目另有容量上限，
+自检同样按上限校验字节数。
 
 ---
 
@@ -205,3 +244,43 @@ cscv 孪生名字键保持日文原版；键名列（如技能 `b666 pos292`）�
   但构建脚本以 `zh-CN` 为主、路径与守卫以本地状态文件为准，尚未参数化 locale。
 - **[规范建议]** 新增语言时应能通过 `locales/<locale>/` + `build --locale <locale>` 完成，
   无需改通用代码；若需技术改动，先判断是"引擎限制"还是"框架限制"。
+
+---
+
+# 17. 替换词典机制（字库容量 → 近义词替换）
+
+**[背景 · 已验证]** 中文字经"专属 CP932 载体码"写入，图集槽位有限（index 1248–4095，
+约 2848 格）。为应对**缺字**与**占格紧张**，装机时会对译文再做一次**词级替换**：
+`build_cn.py` 的 `apply_repl()` 按键长**降序**逐词 `str.replace`，把译文里出现的词换成
+更省格的近义/代用词。先套 REPL，再把 HL 叠加进去（`REPL.update(HL)`）。
+
+## 17.1 当前生效的全部替换词典
+
+| 词典 | 源文件（仓库内） | 条目（约） | 作用 |
+|---|---|---|---|
+| REPL 缺字/近义替换 | `locales/zh-CN/replace_map.py`（`dict REPL`） | 344 | 缺字或占格紧张的词 → 省格近义词；也承担"统一译名"职能 |
+| HL 高亮标记补译 | `locales/zh-CN/hl_map.py`（`dict HL`） | 201 | 键=英文原文（含尖括号，如 `<east>`），值=中文；与 REPL 同表套用 |
+
+两者都是**纯 Python 字面 dict**，形如 `{"原文词": "替换词"}`。
+
+> `locales/zh-CN/place_map_raw.json`（cscv 村落名表）是**翻译数据**，不是替换词典，勿混。
+> `translator-view/dict/替换词典.json` 只是上面两张表的**只读快照**，改它无效。
+> `check_repl.py` 会校验"替换值必须全部被字库覆盖"，但当前仓库**尚无该脚本**（属约定工具）。
+
+## 17.2 能否由开发者人工维护？
+
+**可以**（评估结论：可行，且当前实际上就是这么维护的）。
+
+- 词典是纯文本、无二进制、无需重新生成；改一行即改一条规则。
+- `build_cn.py` 在加载时直接 `exec` 这两个文件读 `REPL` / `HL`，改完照常构建即生效。
+- 主要风险在于**叠加语义**：规则按词长降序**逐词 replace**，会互相叠加——
+  - 若新增长词**包含**某条已有短词规则，可能被短词规则先/后命中而误改；
+  - 新增"原词"也可能误伤**无关译文**中恰好包含该词的句子。
+- 因此**规则的键越短、越通用，误伤面越大**。建议只在确有必要时新增短词规则，
+  并在修改后走正常构建流程（重装或"导入校对"刷新 dist）验证覆盖率与效果。
+
+## 17.3 译者须知
+
+因为替换**先于显示**，`translator-view/*.json` 里的 `zh` 已是"压平后"的字面
+（所见即所得）。若某个词在 JSON 里显示成别的词，多半就是命中了这里的一条规则；
+译者**不需要**（也无法）改词典，如需调整请反馈给开发者。

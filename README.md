@@ -91,24 +91,22 @@ LANG 文本字节 --(CP932 解码)--> 字符 --(cscv 字符表: 字符->index)--
 
 # 仓库结构
 
-现行结构（在游戏目录内）：
+本仓库（源码/数据/工具）：
 
 ```text
-汉化-*.bat                    一键脚本（安装/还原/校对/回滚）
-_work/                        工具链与译表（build_cn.py、s2a.py、dlc_*.py、proxydll/ 等）
-_work/outputs/text_v2.csv     主译表
-_work/outputs/*.md            历史报告与术语表
-仓库/                         既有整理版仓库（docs/ fonts/ bat 等）
+tools/                    通用工具链（build.py、build_cn.py、s2a.py、dlc_*.py、
+                          export_review.py、import_review.py、review_lib.py、paths.py 等）
+locales/zh-CN/            翻译数据（text_v2.csv、ml_zh_fields.json、dlc/、
+                          replace_map.py、hl_map.py、各守卫/放行 JSON）
+locales/zh-CN/translator-view/  面向译者的校对文件（导出生成，见 TRANSLATING.md §14）
+src/  tests/              源码与测试
+docs/                     技术文档（LOCALIZATION_STANDARD / PITFALLS / FILE_FORMATS 等）
+assets/fonts/             字体（文泉驿点阵宋体 13px）
+build/  dist/             构建中间产物 / 发布补丁（不纳入版本控制）
 ```
 
-规范建议结构（迁移目标）：
-
-```text
-locales/zh-CN/   翻译数据
-tools/  src/     通用工具链
-docs/            技术文档
-assets/fonts/    字体
-```
+一键 `汉化-*.bat` 由 `tools/make_bats.py` 生成到**游戏目录**（默认 `work/original`，
+或 `config.local.json` 的 `game_dir`）；游戏目录只需提供原版文件与这些 bat，不再放 `_work/`。
 
 见 `AGENTS.md` 与 `docs/LOCALIZATION_STANDARD.md`。
 
@@ -136,9 +134,12 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 
 # 翻译
 
-- 主译表 `_work/outputs/text_v2.csv`，仅 `zh_new` 列可改。
-- 控制符、编码、长度限制、校对流程见 `TRANSLATING.md`。
-- 非程序员可用 `汉化-导出校对.bat` / `汉化-导入校对.bat` 进行校对。
+- 主译表 `locales/zh-CN/text_v2.csv`，仅 `zh_new` 列可改；多行整字段在 `ml_zh_fields.json`，
+  DLC 在 `locales/zh-CN/dlc/`。
+- 译者用 **JSON 校对文件**：先 `汉化-导出校对.bat` 生成 `locales/zh-CN/translator-view/`，
+  改其中每条记录的 `zh` 字段，再 `汉化-导入校对.bat` 写回并自动刷新 `dist/`
+  （含**自检**：超长/无法识别等问题会**中断**并输出日志指出是哪一句）。
+- 控制符、编码、长度限制、`protected/`（受保护不上屏）与替换词典机制见 `TRANSLATING.md`。
 
 ---
 

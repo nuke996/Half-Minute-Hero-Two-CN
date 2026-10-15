@@ -1147,13 +1147,19 @@ def build_canonical(rows, lang_a, collide, cmap, native):
 
 def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_blobs=(), consistent=False,
                  menu_exempt=False, field_fix=True, ui_always=False, slot_release=False,
-                 desc_release=False):
+                 desc_release=False, dry_run=False, classify=None):
     """把译文写进 LANG_JA / LANG_EN / cscv(与 LANG 重复的部分)。
 
     cscv.s2a 里有大量与 LANG 逐字节相同的 blob（实测 681 个），游戏可能从它读文本，
     所以按【内容相同 -> 同一套 offset 编辑】的方式一并改写，保证两边一致。
 
     field_fix=True 时，多行字段按【整字段】写入（保留 \\n），修复"只显示第一行"。
+
+    dry_run=True（只判定、不落盘）：只跑第 1 步"计算编辑清单"，写完 classify 后直接返回，
+    不触碰任何游戏文件。供导出器复用生产装机口径、判定"哪些槽位注释被保留原文"。
+    classify（可选，dict）：dry_run 时填充 {(blob_index, offset): 保留原因}，
+    原因取值 'collide'（疑似名字键）/ 'mech'（机制表整表）/ 'chaptitle'（章节/称号守卫）。
+    非 dry_run 时该参数无副作用（仍会填，便于调用方观察）。
     """
     stats = collections.Counter()
     import hashlib
@@ -1254,11 +1260,15 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
             if _st and chap_title_hit(ct_guard, ct_recs, bi, _st,
                                       (off - 16) % _st, (off - 16) // _st, _val):
                 stats['chaptitle'] += 1
+                if classify is not None:
+                    classify[(bi, off)] = 'chaptitle'
                 continue
         # v2.51 说明文放行：命中 (blob, stride, pos) 规则的说明字段，即使本表在 skip_blobs 里也照常翻译
         desc_ok = bool(desc_rel) and desc_release_hit(desc_rel, lang_a, bi, off)
         if bi in skip_blobs and not desc_ok:
             stats['skipblob'] += 1
+            if classify is not None:
+                classify[(bi, off)] = 'mech'
             continue
         if bi in skip_blobs:
             stats['descskipok'] += 1    # 机制表内被放行的说明槽
@@ -1336,6 +1346,8 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
                                 stats['ml_name_kept'] += 1
                                 continue
                     stats['kept'] += 1
+                    if classify is not None:
+                        classify[(bi, off)] = 'collide'
                     continue
         # --- 多行字段：整字段写入（保留 \n），修复"只显示第一行" ---
         if en_txt and '\n' in en_txt:
@@ -1402,6 +1414,10 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
              ' [槽位级放行命中 %d]' % stats['slotrel'] if stats['slotrel'] else '',
              ' [说明文放行命中 %d / 机制表内放行 %d]' % (stats['descrel'], stats['descskipok'])
              if desc_rel else ''))
+
+    # dry_run：只判定不落盘 —— 编辑清单已算好、classify 已填，直接返回，不触碰任何游戏文件
+    if dry_run:
+        return stats
 
     # 内容 -> LANG blob 索引
     lang_hash = {}

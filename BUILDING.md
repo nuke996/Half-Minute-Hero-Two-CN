@@ -134,6 +134,23 @@ python _work/runner.py <脚本名> [参数]
 另有大量历史/专项 bat（健康体检、说明文放行开关、Q16 键名保护开关、名字类回滚等），
 见根目录与 `历史bat/`。
 
+## 5.4 校对（导出 / 导入 / 回滚）
+
+面向译者的校对链路由三个脚本（`tools/export_review.py`、`tools/import_review.py`、
+共用库 `tools/review_lib.py`）驱动：
+
+- **导出**：`export_review.py` → `locales/zh-CN/translator-view/`，按 blob 切分成
+  `10_ui_*.json` / `20_dialogue_*.json`，外加 `30_multiline.json`、`40_dlc01.json`、
+  `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（快照）与 `如何校对.txt`。
+  受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
+  临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`。
+- **导入**：`import_review.py apply` → 逐条比对 `zh` → **自检**（超长/id/非法字符）……
+  有任一错误即**中断**：不写译表、不打包，写 `build/校对/导入报告.txt` 指明问题条目；
+  通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表
+  → 自动跑 `tools/build.py package`（隔离模式）刷新 `dist/`，**不改游戏目录**。
+- **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
+  译表，并重新刷新 `dist/`。
+
 ---
 
 # 6. 推荐构建管线

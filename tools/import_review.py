@@ -1,269 +1,421 @@
 # -*- coding: utf-8 -*-
-"""校对导入：把用户在 校对/单行译文.csv、校对/多行译文.csv 里填的"修订译文"
-合并回 text_v2.csv / ml_zh_fields.json，然后自动重装进游戏并生成大白话报告。
+"""校对导入：读 translator-view/*.json 的 zh，写回译表，自检后刷新 dist。
 
 约定：
-  修订列留空 = 不改；填 (清空) = 恢复原文；¶ = 换行。
-  只认"修订译文"列；"当前译文"列改动不会被应用（会提醒）。
-安全：
-  - 应用前 REPL 写平（apply_repl），保证 CSV 登记值 == 装机显示值（铁律）。
-  - 写回前备份三表 *.bak_import_时间戳，可 revert。
-  - 单行容量预检（len > max_cn 拒装并提示缩短）。
-  - Excel "另存为"会把文件转成 GBK 且丢失 ♪/¶ —— 健康检查拦下并给出解法。
-  - 装机前检测 HMH2.exe 是否被占用（游戏开着会拒绝）。
-模式：apply（默认）/ revert（恢复最近一次导入前的译表并重装）。
+  · 只认每条记录的 "zh" 字段；与当前值相同 = 未改动；清空 = 恢复显示原文。
+  · 单行条目不允许换行；多行整字段与 DLC 多行条目允许换行。
+  · JSON 必须保持 UTF-8 编码（带 BOM 亦可）。
+
+自检（有任一错误即【中断】：不写译表、不打包，并输出日志指明是哪一条）：
+  · 超长：编码字节数超过该槽位上限（装机时会被静默截断）
+  · id 无法识别 / 找不到对应字段（导出后又改过译表，或 id 被改动）
+  · JSON 结构损坏、非法控制字符、单行条目含换行
+
+通过自检后：
+  1) 备份译表 → 写回 text_v2.csv / ml_zh_fields.json / dlc/*.tsv / dlc/zh_07.json
+  2) 运行 tools/build.py package（隔离模式）刷新 dist/，**不改游戏目录**
+
+模式：apply（默认）/ revert（恢复上次导入前的译表并重新刷新 dist）。
 """
-import os, sys, csv, json, shutil, subprocess, datetime, io
+import datetime
+import json
+import os
+import shutil
+import subprocess
+import sys
 
 import paths
-BASE = paths.GAME_DIR
+import review_lib as R
+
+TOOLS = os.path.dirname(os.path.abspath(__file__))
 WORK = paths.DATA_DIR
+TV = os.path.join(WORK, 'translator-view')
 RDIR = paths.build('校对')
+os.makedirs(RDIR, exist_ok=True)
 CSV_P = paths.data('text_v2.csv')
 MJ_P = os.path.join(WORK, 'ml_zh_fields.json')
-EXE = os.path.join(BASE, 'HMH2.exe')
-NL, CLEAR = '¶', '(清空)'
-PY = sys.executable
-BUILD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'build_cn.py')
+DLC_DIR = paths.data('dlc')
+STATE = os.path.join(RDIR, '_import_state.json')
+RPT = os.path.join(RDIR, '导入报告.txt')
 
+sys.path.insert(0, TOOLS)
 sys.path.insert(0, WORK)
 os.chdir(WORK)
-import build_cn as B          # 复用 REPL（apply_repl）
+import build_cn as B
 
-RPT = os.path.join(RDIR, '导入报告.txt')
 L = []
-def P(s=''): L.append(str(s))
+def P(s=''):
+    L.append(str(s))
 
-def smart_read(path):
-    """utf-8-sig 优先，Excel 另存出的 GBK 兜底。返回 (text, 编码)。"""
-    raw = open(path, 'rb').read()
-    for enc in ('utf-8-sig', 'gbk'):
-        try:
-            return raw.decode(enc), enc
-        except UnicodeDecodeError:
-            continue
-    raise UnicodeDecodeError('未知编码', b'', 0, 1, 'decode fail')
 
-def read_rows(path):
-    text, enc = smart_read(path)
-    return list(csv.DictReader(io.StringIO(text))), enc
+def now():
+    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-def game_locked():
-    try:
-        f = open(EXE, 'r+b'); f.close()
-        return False
-    except PermissionError:
-        return True
-
-def run_install():
-    p = subprocess.run([PY, BUILD, 'apply_menu'], capture_output=True)
-    out = p.stdout.decode('utf-8', 'replace')
-    err = p.stderr.decode('utf-8', 'replace')
-    return p.returncode, out, err
-
-def do_apply():
-    P('==== 校对导入报告  %s ====' % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-    # ---------- 读库 ----------
-    rows = list(csv.DictReader(open(CSV_P, encoding='utf-8', newline='')))
-    md = json.load(open(MJ_P, encoding='utf-8'))
-    by_rid = {r['row_id']: r for r in rows}
-
-    # ---------- 读校对文件 ----------
-    f1 = os.path.join(RDIR, '单行译文.csv')
-    f2 = os.path.join(RDIR, '多行译文.csv')
-    if not (os.path.exists(f1) or os.path.exists(f2)):
-        P('没找到校对文件（%s）。请先双击「汉化-导出校对.bat」生成，改完再导入。' % RDIR)
-        _flush(); return
-
-    # 健康检查：Excel 另存为 GBK 会把 ♪/¶ 变问号
-    for path, kind in ((f1, '单行'), (f2, '多行')):
-        if not os.path.exists(path):
-            continue
-        text, enc = smart_read(path)
-        if enc != 'utf-8-sig':
-            P('[提醒] %s 不是 UTF-8 编码（%s，多半是 Excel"另存为"导致）。'
-              '已按 %s 兼容读取，但原文件里的音符♪等符号可能已丢失。' % (os.path.basename(path), enc, enc))
-        lib_notes = 0
-        if kind == '单行':
-            rd = list(csv.DictReader(io.StringIO(text)))
-            for r in rd:
-                lib_notes += ((by_rid.get(r.get('编号(勿动)', ''), {}).get('zh_new') or
-                               by_rid.get(r.get('编号(勿动)', ''), {}).get('zh_3dm') or '')
-                              ).count('♪')
-            file_notes = sum(str(r.get('当前译文', '')).count('♪') for r in rd)
-        else:
-            rd = list(csv.DictReader(io.StringIO(text)))
-            file_notes = sum(str(r.get('当前译文', '')).count(NL) for r in rd)
-            lib_notes = sum(str(v).count('\n') for v in md.values())
-        if lib_notes >= 10 and file_notes < lib_notes * 0.5:
-            P('')
-            P('[X] 编码健康检查未通过：%s 里特殊符号大量丢失（♪/换行符）。' % kind)
-            P('    直接导入会把损坏文字装进游戏，已终止。解决办法：')
-            P('    用记事本打开该文件 → 另存为 → 编码选 UTF-8 → 覆盖保存，再重新导入。')
-            _flush(); return
-
-    # ---------- 收集修订 ----------
-    ok = []          # (target描述, 库定位, final, rev)
-    reject = []      # (描述, 原因)
-    repl_hits = []   # 被 REPL 规则改写的
-    curcol_edits = 0
-
-    if os.path.exists(f1):
-        rd, _ = read_rows(f1)
-        for r in rd:
-            rid = (r.get('编号(勿动)') or '').strip()
-            rev = (r.get('修订译文(留空=不改)') or '').strip()
-            cur = (r.get('当前译文') or '').strip()
-            tr = by_rid.get(rid)
-            if tr is None:
-                if rid:
-                    reject.append(('单行 编号%s' % rid, '编号无法识别（可能被改动）'))
-                continue
-            eff = (tr.get('zh_new') or tr.get('zh_3dm') or '')
-            eff_disp = B.apply_repl(eff)   # v2.30: 基线=游戏实际显示（压平后），与导出的"当前译文"列同口径
-            if cur != eff_disp.strip():
-                curcol_edits += 1
-            if not rev or rev == eff_disp.strip():
-                continue
-            if rev == CLEAR:
-                ok.append(('单行 编号%s' % rid, ('row', tr), '', rev))
-                continue
-            try:
-                cap = int(tr.get('max_cn') or '-1')
-            except ValueError:
-                cap = -1
-            if cap >= 0 and len(rev) > cap:
-                reject.append(('单行 编号%s（%s…）' % (rid, rev[:12]), '共 %d 字，超过上限 %d 字，请缩短' % (len(rev), cap)))
-                continue
-            final = B.apply_repl(rev)
-            if final != rev:
-                repl_hits.append(('单行 编号%s' % rid, rev, final))
-            ok.append(('单行 编号%s' % rid, ('row', tr), final, rev))
-
-    if os.path.exists(f2):
-        rd, _ = read_rows(f2)
-        for r in rd:
-            key = (r.get('英文原文(勿动)') or '').replace(NL, '\n')
-            rev = (r.get('修订译文(留空=不改)') or '').replace(NL, '\n').strip()
-            cur = (r.get('当前译文') or '')
-            if key not in md:
-                if key:
-                    reject.append(('多行 %s…' % key[:20].replace('\n', '¶'), '找不到对应字段（英文原文列可能被改动）'))
-                continue
-            eff = str(md[key])
-            eff_disp = B.apply_repl(eff)   # v2.30: 基线=游戏实际显示（压平后）
-            if not rev or rev == eff_disp.strip():
-                continue
-            if rev == CLEAR:
-                ok.append(('多行 %s…' % key[:20].replace('\n', '¶'), ('ml', key), '', rev))
-                continue
-            final = B.apply_repl(rev)
-            if final != rev:
-                repl_hits.append(('多行 %s…' % key[:20].replace('\n', '¶'), rev, final))
-            ok.append(('多行 %s…' % key[:20].replace('\n', '¶'), ('ml', key), final, rev))
-
-    P('')
-    P('一、改动清点')
-    P('  收到有效修订: %d 处（单行+多行）' % len(ok))
-    if curcol_edits:
-        P('  [提醒] 有 %d 行你把字改在了「当前译文」列——那一列只是对照用，没有生效。' % curcol_edits)
-        P('         想改的话请把新文字填到「修订译文(留空=不改)」列再导入一次。')
-    if not ok:
-        P('  没有需要应用的修订，游戏文件保持原样，无需重装。')
-        _flush(); return
-    if reject:
-        P('  拒绝 %d 处（未装入游戏）:' % len(reject))
-        for t, why in reject[:30]:
-            P('    ✗ %s —— %s' % (t, why))
-        if len(reject) > 30:
-            P('    …（其余 %d 处见略）' % (len(reject) - 30))
-    if repl_hits:
-        P('  [说明] 有 %d 处译文触发了游戏内置的旧替换规则（历史缺字时期的词级替换），' % len(repl_hits))
-        P('         实际显示会按下面右边一列来，属正常现象:')
-        for t, old, new in repl_hits[:20]:
-            P('    %s: %r -> %r' % (t, old[:30], new[:30]))
-        if len(repl_hits) > 20:
-            P('    …（其余 %d 处见略）' % (len(repl_hits) - 20))
-
-    # ---------- 备份 + 写回 ----------
-    ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
-    backs = {}
-    for tag, path in (('csv', CSV_P), ('ml', MJ_P)):
-        bak = path + '.bak_import_' + ts
-        shutil.copy2(path, bak)
-        backs[tag] = bak
-    n_row = n_ml = 0
-    for _t, loc, final, _rev in ok:
-        if loc[0] == 'row':
-            loc[1]['zh_new'] = final
-            n_row += 1
-        else:
-            md[loc[1]] = final
-            n_ml += 1
-    with open(CSV_P, 'w', encoding='utf-8', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-        w.writeheader()
-        w.writerows(rows)
-    json.dump(md, open(MJ_P, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    json.dump({'ts': ts, 'backs': backs, 'n_row': n_row, 'n_ml': n_ml},
-              open(os.path.join(RDIR, '_import_state.json'), 'w', encoding='utf-8'),
-              ensure_ascii=False, indent=1)
-    P('')
-    P('二、写入译表')
-    P('  已更新 单行 %d 处 / 多行 %d 处' % (n_row, n_ml))
-    P('  备份: text_v2.csv%s 等两个文件（时间戳 %s）' % ('', ts))
-
-    # ---------- 装机 ----------
-    P('')
-    P('三、装进游戏')
-    if game_locked():
-        P('  [X] 游戏好像正开着（HMH2.exe 被占用）。译表已保存，')
-        P('      请先完全退出游戏，再双击一次「汉化-导入校对.bat」即可完成安装。')
-        _flush(); return
-    rc, out, err = run_install()
-    for ln in out.splitlines():
-        if any(k in ln for k in ('覆盖', 'slot', '溢出', '空槽', '写入', '孪生', '地名', '完成', '错误', 'Traceback')):
-            P('  ' + ln.strip())
-    if rc != 0 or 'Traceback' in err:
-        P('  [X] 安装过程报错（错误详情见 _work/_apply_err.txt）。译表改动已保存，')
-        P('      可运行「汉化-导入校对-回滚.bat」恢复。把报告发给小W可以帮忙排查。')
-        open(paths.build('_apply_err.txt'), 'w', encoding='utf-8').write(out + '\n--- STDERR ---\n' + err)
-    else:
-        if '溢出 0' not in out:
-            P('  [X] 检测到溢出不是 0！可能有译文超长被截断，建议回滚后缩短该译文。')
-        else:
-            P('  ✓ 安装完成，无溢出。进游戏看效果吧！')
-    P('')
-    P('四、回滚方式')
-    P('  双击「汉化-导入校对-回滚.bat」→ 恢复本次导入前的译表并重新安装。')
-    _flush()
-
-def do_revert():
-    P('==== 校对导入回滚  %s ====' % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-    stf = os.path.join(RDIR, '_import_state.json')
-    if not os.path.exists(stf):
-        P('没找到导入记录（从未导入过，或已回滚）。无需操作。')
-        _flush(); return
-    st = json.load(open(stf, encoding='utf-8'))
-    for tag, bak in st['backs'].items():
-        dst = CSV_P if tag == 'csv' else MJ_P
-        if os.path.exists(bak):
-            shutil.copy2(bak, dst)
-            P('  已恢复 %s <- %s' % (os.path.basename(dst), os.path.basename(bak)))
-    os.remove(stf)
-    if game_locked():
-        P('  [X] 游戏正开着，请先退出游戏再运行一次本回滚（译表文件已恢复，重装还没做）。')
-        _flush(); return
-    rc, out, err = run_install()
-    P('  重装: %s' % ('完成 ✓' if rc == 0 else '失败 ✗（详情 _work/_apply_err.txt）'))
-    if rc != 0:
-        open(paths.build('_apply_err.txt'), 'w', encoding='utf-8').write(out + '\n--- STDERR ---\n' + err)
-    P('  游戏已恢复到导入前的状态。')
-    _flush()
 
 def _flush():
     open(RPT, 'w', encoding='utf-8').write('\n'.join(L))
     print('OK ->', RPT)
+
+
+def collect_files():
+    """(路径, 是否 protected) 列表：单行分片 + 多行 + DLC。"""
+    out = []
+    for base, prot in ((TV, False), (os.path.join(TV, 'protected'), True)):
+        if not os.path.isdir(base):
+            continue
+        for name in sorted(os.listdir(base)):
+            if not name.endswith('.json'):
+                continue
+            # 普通分片：10_*/20_*；受保护分片：prot_*（命名与外层不同，避免混用）
+            if name.startswith('prot_') if prot else name[:2] in ('10', '20'):
+                out.append((os.path.join(base, name), prot))
+    for name in ('30_multiline.json', '40_dlc01.json'):
+        p = os.path.join(TV, name)
+        if os.path.exists(p):
+            out.append((p, False))
+    return out
+
+
+def bad_chars(s, allow_nl):
+    """非法控制字符：<0x20 且非 \\n（allow_nl=True 时 \\n 合法）。返回命中的字符列表。"""
+    bad = []
+    for ch in s:
+        o = ord(ch)
+        if o < 0x20 and not (ch == '\n' and allow_nl):
+            if ch == '\r':
+                bad.append('\\r')
+            elif ch == '\t':
+                bad.append('\\t')
+            else:
+                bad.append('U+%04X' % o)
+    return bad
+
+
+def run_package():
+    p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), 'package'],
+                       capture_output=True)
+    return (p.returncode, p.stdout.decode('utf-8', 'replace'),
+            p.stderr.decode('utf-8', 'replace'))
+
+
+def do_apply():
+    P('==== 校对导入报告  %s ====' % now())
+    files = collect_files()
+    if not files:
+        P('没找到校对文件（%s）。请先双击「汉化-导出校对.bat」生成，改完再导入。' % TV)
+        _flush(); return
+
+    rows = R.load_rows()
+    by_rid = {r['row_id']: r for r in rows}
+    rcaps = R.row_caps(rows)
+    md = json.load(open(MJ_P, encoding='utf-8'))
+    stage, missing = R.ensure_stage()
+    if not stage:
+        P('[提醒] 缺少原版文件（%s）：多行/DLC 的容量自检将退回 JSON 里的 meta。' % ', '.join(missing))
+    mlm = R.ml_meta(stage) if stage else {}
+    dcaps = R.dlc_caps()
+
+    edits = []       # (描述, 目标类型, 定位, 新值, 是否受保护)
+    errs = []        # (描述, 原因)
+    repl_hits = []   # (描述, 原文, 替换后)
+    unchanged = 0
+
+    def add(kind, loc, new, desc, is_prot, cap_bytes=None, after_nl=False):
+        """统一登记一条修订（含 REPL 命中记录与超长检查）。"""
+        eff = B.apply_repl(new)
+        if eff != new:
+            repl_hits.append((desc, new, eff))
+        if cap_bytes is not None:
+            n = R.byte_est(eff)
+            if n > cap_bytes:
+                errs.append((desc, '超长：编码 %d 字节 > 上限 %d 字节（装机时会被截断），请缩短 %d 字节'
+                             % (n, cap_bytes, n - cap_bytes)))
+                return
+        edits.append((desc, kind, loc, new, is_prot))
+
+    # ---- 单行 / 受保护 ----
+    for path, is_prot in files:
+        name = os.path.relpath(path, TV)
+        if name in ('30_multiline.json', '40_dlc01.json'):
+            continue
+        try:
+            d = json.load(open(path, encoding='utf-8-sig'))
+        except Exception as ex:
+            errs.append((name, '无法解析（JSON 损坏或非 UTF-8）：%s' % ex))
+            continue
+        ents = d.get('entries')
+        if not isinstance(ents, list):
+            errs.append((name, '结构损坏：entries 不是数组，请重新导出'))
+            continue
+        for e in ents:
+            eid = str(e.get('id') or '')
+            if not eid.startswith('row::'):
+                if eid:
+                    errs.append((eid, '无法识别的 id（%s）' % name))
+                continue
+            rid = eid[5:]
+            tr = by_rid.get(rid)
+            if tr is None:
+                errs.append((eid, '编号无法识别（译表已更新？请重新导出校对文件）'))
+                continue
+            if e.get('zh') is None:
+                continue
+            new = B.strip_ascii_ws(str(e['zh']))
+            cur = B.apply_repl(tr.get('zh_new') or '')
+            if new == cur:
+                unchanged += 1
+                continue
+            desc = '单行 %s' % eid
+            bad = bad_chars(new, False)
+            if '\n' in new and not bad:
+                bad.append('\\n')
+            if bad:
+                errs.append((desc, '含不允许的字符 %s（单行条目不能换行）' % ' '.join(bad)))
+                continue
+            sb = rcaps.get(rid, (None, None))[0]
+            add('row', tr, new, desc, is_prot, cap_bytes=sb)
+
+    # ---- 多行整字段 ----
+    mlp = os.path.join(TV, '30_multiline.json')
+    if os.path.exists(mlp):
+        try:
+            d = json.load(open(mlp, encoding='utf-8-sig'))
+            ents = d.get('entries') or []
+        except Exception as ex:
+            errs.append(('30_multiline.json', '无法解析：%s' % ex)); ents = []
+        for e in ents:
+            key = e.get('en')
+            if key not in md:
+                errs.append((str(e.get('id') or '?'), '找不到对应多行字段（en 可能被改动，请重新导出）'))
+                continue
+            if e.get('zh') is None:
+                continue
+            new = str(e['zh'])
+            if new == B.apply_repl(str(md[key])):
+                unchanged += 1
+                continue
+            desc = '多行 %s…' % key[:16].replace('\n', '¶')
+            bad = bad_chars(new, True)
+            if bad:
+                errs.append((desc, '含不允许的字符 %s' % ' '.join(bad)))
+                continue
+            cap = (mlm.get(key) or {}).get('cap_bytes')
+            if cap is None:
+                cap = (e.get('meta') or {}).get('cap_bytes')
+            add('ml', key, new, desc, False, cap_bytes=cap)
+
+    # ---- DLC01 ----
+    dlp = os.path.join(TV, '40_dlc01.json')
+    if os.path.exists(dlp):
+        try:
+            d = json.load(open(dlp, encoding='utf-8-sig'))
+            ents = d.get('entries') or []
+        except Exception as ex:
+            errs.append(('40_dlc01.json', '无法解析：%s' % ex)); ents = []
+        per_file = {}
+        for e in ents:
+            eid = str(e.get('id') or '')
+            parts = eid.split('::')
+            if len(parts) != 3 or parts[0] != 'dlc':
+                errs.append((eid or '?', '无法识别的 DLC id')); continue
+            fn, n = parts[1], parts[2]
+            m = (e.get('meta') or {})
+            cap = dcaps.get(e.get('ja')) or m.get('cap_bytes')
+            if e.get('zh') is None:
+                continue
+            new = str(e['zh'])
+            if fn in ('zh_01', 'zh_02', 'zh_03', 'zh_04', 'zh_05', 'zh_06'):
+                p = os.path.join(DLC_DIR, fn + '.tsv')
+                if not os.path.exists(p):
+                    errs.append((eid, '源文件 %s.tsv 不存在' % fn)); continue
+                lines = per_file.get(fn)
+                if lines is None:
+                    lines = open(p, encoding='utf-8-sig').read().splitlines()
+                    per_file[fn] = lines
+                try:
+                    idx = int(n) - 1
+                except Exception:
+                    errs.append((eid, '序号非法')); continue
+                if idx < 0 or idx >= len(lines):
+                    errs.append((eid, '序号越界（%s.tsv 只有 %d 行，可能被改动）' % (fn, len(lines))))
+                    continue
+                ja, sep, old = lines[idx].partition('\t')
+                if not sep or ja != e.get('ja'):
+                    errs.append((eid, '原文对不上（%s.tsv 第 %d 行已改动？）' % (fn, int(n))))
+                    continue
+                if new == old:
+                    unchanged += 1; continue
+                bad = bad_chars(new, False)
+                if bad or '\n' in new:
+                    errs.append((eid, '含不允许的字符 %s（DLC 单行条目不能换行）' % ' '.join(bad)))
+                    continue
+                add('dlc_tsv', (fn, idx), new, eid, False,
+                    cap_bytes=(cap if cap is not None else None))
+            elif fn == 'zh_07':
+                p7 = os.path.join(DLC_DIR, 'zh_07.json')
+                if not os.path.exists(p7):
+                    errs.append((eid, 'zh_07.json 不存在')); continue
+                d7 = per_file.get('zh_07')
+                if d7 is None:
+                    d7 = json.load(open(p7, encoding='utf-8'))
+                    per_file['zh_07'] = d7
+                key = e.get('ja')
+                if key not in d7:
+                    errs.append((eid, 'zh_07.json 里找不到该原文（可能被改动）')); continue
+                if new == d7[key]:
+                    unchanged += 1; continue
+                bad = bad_chars(new, True)
+                if bad:
+                    errs.append((eid, '含不允许的字符 %s' % ' '.join(bad)))
+                    continue
+                add('dlc_json', key, new, eid, False, cap_bytes=cap)
+            else:
+                errs.append((eid, '未知 DLC 源 %s' % fn))
+
+    # ---- 报告：清点 ----
+    P('')
+    P('一、改动清点')
+    P('  收到有效修订: %d 处（未改动 %d 处）' % (len(edits), unchanged))
+    n_prot = sum(1 for _d, _k, _l, _n, pr in edits if pr)
+    if n_prot:
+        P('  其中受保护(protected/)条目 %d 处 —— 会写进译表保存，但当前不会上屏。' % n_prot)
+
+    # ---- 自检：有错即中断 ----
+    if errs:
+        P('')
+        P('二、自检未通过 —— 已中断（未写译表、未打包）')
+        P('  错误 %d 条，请修正后重新运行 汉化-导入校对.bat：' % len(errs))
+        for t, why in errs[:60]:
+            P('    ✗ %s —— %s' % (t, why))
+        if len(errs) > 60:
+            P('    …（其余 %d 条略）' % (len(errs) - 60))
+        P('')
+        P('  修好后再导入。为避免误装，本次一个字节都没有写入。')
+        _flush(); return
+
+    if not edits:
+        P('')
+        P('没有需要应用的修订，译表与 dist 保持原样。')
+        _flush(); return
+
+    if repl_hits:
+        P('')
+        P('  [说明] %d 处译文命中替换词典（字库容量→近义词替换），实际显示按右边一列为准：'
+          % len(repl_hits))
+        for t, old, new in repl_hits[:15]:
+            P('    %s: %r -> %r' % (t, old[:26], new[:26]))
+        if len(repl_hits) > 15:
+            P('    …（其余 %d 处略；规则见 dict/替换词典.json）' % (len(repl_hits) - 15))
+
+    # ---- 备份 + 写回 ----
+    ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+    touched = {CSV_P, MJ_P}
+    for _d, kind, loc, _n, _p in edits:
+        if kind == 'dlc_tsv':
+            touched.add(os.path.join(DLC_DIR, loc[0] + '.tsv'))
+        elif kind == 'dlc_json':
+            touched.add(os.path.join(DLC_DIR, 'zh_07.json'))
+    backs = {}
+    for path in sorted(touched):
+        if os.path.exists(path):
+            bak = path + '.bak_review_' + ts
+            shutil.copy2(path, bak)
+            backs[path] = bak
+
+    n_row = n_ml = n_dl = 0
+    dlc_mod = {}
+    for _d, kind, loc, new, _p in edits:
+        if kind == 'row':
+            loc['zh_new'] = new
+            n_row += 1
+        elif kind == 'ml':
+            md[loc] = new
+            n_ml += 1
+        elif kind == 'dlc_tsv':
+            dlc_mod.setdefault(loc[0], {})[loc[1]] = new
+            n_dl += 1
+        elif kind == 'dlc_json':
+            d7 = per_file['zh_07']
+            d7[loc] = new
+            n_dl += 1
+
+    import csv as _csv
+    with open(CSV_P, 'w', encoding='utf-8', newline='') as f:
+        w = _csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    with open(MJ_P, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(md, f, ensure_ascii=False, indent=1)
+        f.write('\n')
+    for fn, mods in dlc_mod.items():
+        if fn == 'zh_07':
+            with open(os.path.join(DLC_DIR, 'zh_07.json'), 'w', encoding='utf-8', newline='\n') as f:
+                json.dump(d7, f, ensure_ascii=False, indent=0)
+                f.write('\n')
+        else:
+            p = os.path.join(DLC_DIR, fn + '.tsv')
+            lines = per_file[fn]
+            for idx, val in mods.items():
+                ja = lines[idx].partition('\t')[0]
+                lines[idx] = ja + '\t' + val
+            with open(p, 'w', encoding='utf-8-sig', newline='\n') as f:
+                f.write('\n'.join(lines) + '\n')
+
+    json.dump({'ts': ts, 'backs': backs, 'n_row': n_row, 'n_ml': n_ml, 'n_dlc': n_dl},
+              open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    P('')
+    P('三、写入译表')
+    P('  单行 %d 处 / 多行 %d 处 / DLC %d 处' % (n_row, n_ml, n_dl))
+    P('  备份: %s 等 %d 个文件（时间戳 %s）' % (os.path.basename(CSV_P), len(backs), ts))
+
+    # ---- 刷新 dist（隔离打包，不动游戏目录）----
+    P('')
+    P('四、刷新 dist（隔离打包）')
+    rc, out, err = run_package()
+    for ln in out.splitlines():
+        s = ln.strip()
+        if any(k in s for k in ('已改', '打包完成', '打包中止', 'staging', '母本',
+                                '空槽', '溢出', '覆盖', '写入', 'DLC01')):
+            P('  ' + s)
+    if rc != 0:
+        P('  [X] 打包失败（退出码 %s）。译表已写入，可运行「汉化-导入校对-回滚.bat」恢复。'
+          % rc)
+        open(paths.build('_review_package_err.txt'), 'w', encoding='utf-8').write(
+            out + '\n--- STDERR ---\n' + err)
+        P('      错误详情: %s' % paths.build('_review_package_err.txt'))
+    else:
+        P('  ✓ 打包完成，dist/ 已刷新。')
+    P('')
+    P('五、如何在游戏里看效果')
+    P('  本次导入不改游戏目录。想立刻进游戏验证，请双击「汉化-安装.bat」装机。')
+    P('  想撤销本次导入：双击「汉化-导入校对-回滚.bat」。')
+    _flush()
+
+
+def do_revert():
+    P('==== 校对导入回滚  %s ====' % now())
+    if not os.path.exists(STATE):
+        P('没找到导入记录（从未导入过，或已回滚）。无需操作。')
+        _flush(); return
+    st = json.load(open(STATE, encoding='utf-8'))
+    n = 0
+    for path, bak in st['backs'].items():
+        if os.path.exists(bak):
+            shutil.copy2(bak, path)
+            P('  已恢复 %s' % os.path.basename(path))
+            n += 1
+    os.remove(STATE)
+    P('  共恢复 %d 个文件。' % n)
+    P('')
+    P('  重新刷新 dist（隔离打包）…')
+    rc, out, err = run_package()
+    for ln in out.splitlines():
+        s = ln.strip()
+        if any(k in s for k in ('已改', '打包完成', '打包中止', '空槽', '溢出')):
+            P('  ' + s)
+    P('  %s' % ('✓ dist 已按回滚后的译表刷新。' if rc == 0 else '[X] 打包失败（退出码 %s）' % rc))
+    _flush()
+
 
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'apply'
