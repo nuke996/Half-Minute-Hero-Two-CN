@@ -15,7 +15,9 @@ rem 说明（zig 0.13 实测）：
 rem   * 目标三元组用 x86-windows-gnu（zig 的 arch 名是 x86，旧的 i686-... 已不被接受）
 rem   * zig 的 lld 不支持 --kill-at，因此编译产物导出名会带 @N 装饰，
 rem     由 fix_exports.js 原位截断为未装饰名（游戏按未装饰名导入）
-"%ZIG%" cc -target x86-windows-gnu -O2 -shared -o dinput8.dll main.c -Wl,--subsystem,windows
+rem   * -mstackrealign：strncmp 钩子 stub 在游戏栈上以 cdecl 回调本 DLL 函数，
+rem     栈对齐不由 ABI 保证，强制重对齐可避免 SSE 访问未对齐栈导致崩溃
+"%ZIG%" cc -target x86-windows-gnu -O2 -mstackrealign -shared -o dinput8.dll main.c -Wl,--subsystem,windows
 if errorlevel 1 (
   echo BUILD FAILED
   exit /b 1

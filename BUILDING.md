@@ -155,6 +155,65 @@ python tools/runner.py <脚本名> [参数]
 
 ---
 
+## 5.5 名字本地化实验包（保留，用于对照与后续探索）
+
+以下命令均为**隔离打包**（只读母本目录，不修改游戏目录），产物写入 `dist/`：
+
+| 命令 | 产物 | 配方要点 |
+|---|---|---|
+| `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文 |
+| `package_lang_ja_names_ja` | `dist/E3-ja-lang-ja-names-ja/` | **E3-JA**：E3 的日语镜像 —— 只写 `LANG_JA`，机制名保持原版，其余中文（游戏语言须设为**日语**） |
+| `package_names_cn_skill_loadout` | `dist/Z4-skill-loadout/` | **Z4**：技能/装备名中文 + 章节 loadout 值同步 + 武器表副本同步；`b666 +292` 键名保持原版 |
+| `package_names_cn_skill_loadout_ja` | `dist/Z4-ja-skill-loadout/` | **Z4-JA**：Z4 的日语镜像（只写 `LANG_JA`；`+292` 保持该文件原版日文）。**实机验证：与 Z4 同样异常**，仅作对照保留 |
+| `package_names_cn_skill_only` | `dist/Z3-skill-only/` | 二分对照：同 Z4 但不改 loadout（用于定位"装备丢失"） |
+| `package_names_cn_skill_only2` | `dist/Z6-skill-only2/` | 二分对照：只翻技能名，装备名保持英文 |
+| `package_names_cn_equip_only` | `dist/Z7-equip-only/` | 二分对照：只翻装备名，技能保持英文 |
+| `package_names_cn_keycol` | `dist/Z9-keycol/` | 反证实验：把 `b666 +292` 键名也翻中文（**已验证不可用**，技能有名字无效果） |
+
+用法示例：
+
+```bash
+python tools/build.py --game-dir work/original package_names_cn_skill_loadout
+python tools/build.py --game-dir work/original package_lang_en_names_en
+```
+
+> **默认打包行为 = HEAD（`9d8299b`）生产配方。**
+> `python tools/build.py --game-dir work/original package`（以及 `package_install`）
+> 仍按 HEAD 的 `apply_menu` 配方执行：双侧 `LANG` 写入 + `cscv` 同步 + place/chap/song。
+> 已实测其产物与 `dist/HEAD-package/` **8 个文件逐字节相同**。
+> E3 / Z4 等隔离配方不受影响，通过上表各自的命令调用。
+
+结论与失败教训见 `TECHNICAL.md` §10.3 与 `docs/PITFALLS.md` §21；
+当前可用包与已知缺陷见 `docs/KNOWN_ISSUES.md` §10.1。
+
+### 5.5.1 日语包与英语包的区别（重要）
+
+两者的**配方完全对称**，但底层条件不同：
+
+| 项 | 英语包（写 `LANG_EN`） | 日语包（写 `LANG_JA`） |
+|---|---|---|
+| 槽位基准 | 行偏移以 **`LANG_JA`** 为基准计算，再套用到 EN | **原生基准**（`lang_a` 就是 JA），对齐最稳 |
+| 未参与侧 | `LANG_JA` + `DLC01/LANG_JA` 逐字节不动（断言强制） | `LANG_EN` + `DLC01/LANG_EN` 逐字节不动（断言强制） |
+| `cscv` | 保持原版（仅重写字符表 blob） | 同左 |
+| DLC01 | `refresh_dlc01(en_only=True)` | `refresh_dlc01(ja_only=True)` |
+| Q16 键名 | 按 TSV 的 `file` 字段自动分文件回写 | 同左（无需改） |
+| 游戏内语言 | 必须设为 **English** | 必须设为 **日本語** |
+
+**主要风险（日语包特有）：**
+
+1. **`cscv` 与 `LANG_JA` 天然是"孪生"关系**（项目实测 653~687 个 blob 曾逐字节相同）。
+   日语包把 `LANG_JA` 改成中文、而 `cscv` 保持日文原版，**打破的正是这对孪生**；
+   英语包不存在这个问题（`LANG_EN` 与 `cscv` 本来就不是一套）。
+   → 因此日语包**更需要实机回归**，尤其注意历史事故点：勇者城、章节名、称号、伙伴名、技能效果。
+2. **语言切换会改变读取的文件**：同一份存档在 EN/JA 之间可通用（已实测），
+   但补丁只覆盖一侧，另一侧仍是原版 —— 切到未打补丁的语言会看到原版文本（属预期）。
+3. `refresh_dlc01(ja_only=True)` 只重编码 `DLC01/LANG_JA.s2a`；
+   若玩家未持有 DLC，目录保持干净（不创建文件）。
+4. 载体码 `cmap` 按**全量字频**分配，与写入哪一侧无关；因此 EN/JA 两个包的
+   字体与字符表产物相同，可互相复用。
+
+---
+
 # 6. 推荐构建管线
 
 **[已验证]** `汉化-安装.bat`（= `revert` + `apply_menu`）实际执行：

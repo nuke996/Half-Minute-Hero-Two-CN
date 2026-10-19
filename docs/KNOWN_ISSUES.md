@@ -145,8 +145,36 @@
 
 **症状：** 名字类改动出错时**不会闪退、不会消失**，而是"某技能放不出来 / 某称号拿不到 /
 某同伴不能攻击"，玩家不易立刻发现。
-**技术说明：** 见 `PITFALLS.md` §5/§6/§7/§11。
+**技术说明：** 见 `PITFALLS.md` §5/§6/§7/§11/§21、`TECHNICAL.md` §10.3。
 **缓解：** 每次装机后跑 `t34_health.py` 体检 + `t162` 差异审计；实机抽检技能/称号/同伴攻击。
+
+**补充（2026-10-19）：** 已确认根因是**名称 → CRC-32 哈希查表**，
+因此"译名重名"与"副本不同步"都会造成静默串味/失效；详见 `TECHNICAL.md` §10.3。
+
+---
+
+# 10.1 当前可用发行包与已知缺陷（2026-10-19）
+
+| 包 | 构建命令 | 名字语言 | 状态 |
+|---|---|---|---|
+| **E3**（推荐正式版） | `python tools/build.py --game-dir work/original package_lang_en_names_en` | 技能/装备/伙伴名**英文**，其余中文 | **功能全部正常**；只写 `LANG_EN`，隔离最干净 |
+| **HEAD-package**（默认配方） | `python tools/build.py --game-dir work/original package` | 同上（机制名保持原版） | **功能全部正常**；双侧写入 + `cscv` 改写，默认打包行为即此配方 |
+| **E3-JA**（E3 的日语镜像） | `python tools/build.py --game-dir work/original package_lang_ja_names_ja` | 同上，但只写 `LANG_JA` | 结构核验通过；**尚未实机回归** |
+| **Z4**（中文名可玩版） | `python tools/build.py --game-dir work/original package_names_cn_skill_loadout` | 技能/装备名**中文** | 可正常游玩，但有两个**纯演出**缺陷（见下），**不建议作为默认发布** |
+| **Z4-JA** | `python tools/build.py --game-dir work/original package_names_cn_skill_loadout_ja` | 技能/装备名**中文**（只写 `LANG_JA`） | **实机：与 Z4 同样异常** ⇒ 与语言路径无关 |
+| **Z6**（单变量对照） | `python tools/build.py --game-dir work/original package_names_cn_skill_only2` | 仅**技能名中文**，装备名英文 | **实机：同样异常** ⇒ 技能名中文化也会触发 |
+
+**Z4 / Z6 的共同缺陷（不影响通关，但确实是 bug）：**
+1. 序章伙伴「骑士」死亡演出中**骑士不出现**、复活后**不归队**、**贤者复活特效缺失**；
+2. **魔王技能特效缺失**。
+
+**结论（`TECHNICAL.md` §10.3.6、`PITFALLS.md` §21.9）：**
+- 只要**任一机制名（装备名或技能名）中文化**，就会出现上述瑕疵；
+- 该瑕疵与语言路径（EN/JA）、`cscv` 是否改写、loadout 是否同步**无关**；
+- ⇒ **机制名必须保持原版**；对白/UI/说明/消息可以安全中文化。
+
+> E3 与 HEAD-package 均应作为"保证能玩"的版本保留；Z4/Z6/Z4-JA 仅作后续探索的对照包。
+> 产物位置：`dist/E3-lang-en-names-en`、`dist/HEAD-package`、`dist/Z4-skill-loadout`、`dist/Z6-skill-only2`。
 
 ---
 

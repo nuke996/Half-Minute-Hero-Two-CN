@@ -253,6 +253,29 @@ DLC_EXTRA_CHARS = '鸭苹橘掀糯鲑蚝朗乳鼬樱'
 #   317 = 连携技表
 MECHANIC_BLOBS = (666, 128, 136, 317)
 
+# ★★ v2.67（E1b）：技能表 b666 的**内部键名列**（记录内 pos288~375，含 pos292）必须保持原版。
+#    docs/PITFALLS.md §6「G5 事故」/ §8「测试 E 全量一致翻译失败」：脚本执行时按【键名】查技能，
+#    键名一旦被换成载体码中文（含"同一原文全副本统一译成中文"的 consistent 路线）⇒ 查不到 ⇒
+#    主角技能"只有名字、无动画无效果"。这正是 E1 首/二轮实机失败的根因。
+#    记录基址 = 16 + rec*376（与 tools/t34_health.py 的 v2.67 守卫同一约定）。
+SKILL_KEY_BLOB = 666
+SKILL_STRIDE = 376
+SKILL_KEY_LO, SKILL_KEY_HI = 288, 376
+
+
+def in_skill_key_col(bi, off):
+    """该 (blob, 槽偏移) 是否落在技能表 b666 的内部键名列内（判据同 t34_health v2.67 守卫）。"""
+    if bi != SKILL_KEY_BLOB:
+        return False
+    r = (off - 16) % SKILL_STRIDE
+    return SKILL_KEY_LO <= r < SKILL_KEY_HI
+
+
+# 实验用按列黑名单（默认 None = 不启用）。由二分实验的 apply 函数临时设置/复原。
+_SLOT_BLOCK = None
+EQUIP_BLOBS = (147, 357, 736, 998)
+EQUIP_STRIDE = 268
+
 # ---- v2.2 菜单豁免（2026-09-12）----
 # 实测E证伪"全量统一翻译"，但用户确认E版菜单变中文 → 菜单文本链路安全。
 # analyze_menus2.py 分层分析：blob 358(UI) 被白名单挡的 133 串中，
@@ -1069,7 +1092,7 @@ def field_spans(run):
                 pass
 
 
-def build_canonical(rows, lang_a, collide, cmap, native):
+def build_canonical(rows, lang_a, collide, cmap, native, relax_fields=False):
     """一致翻译模式核心：
     1) 扫描 cscv独有 blob 中所有 \\x00 分界字段 -> {日文原文: [字段长度...]}
     2) 对每个碰撞串取统一译文（该原文在 LANG 槽位中最常见的 zh_new）
@@ -1137,23 +1160,102 @@ def build_canonical(rows, lang_a, collide, cmap, native):
             canonical[ja] = None
             continue
         # cscv独有 字段 fit；从未作为完整字段出现 -> 保守不翻
-        fl = fields.get(ja)
-        if not fl or any(len(enc) > sl for sl in fl):
-            canonical[ja] = None
-            continue
+        # ★ mirror（照抄官方 EN）：该约束只为"cscv 文本层会被同步写入"服务。
+        #   官方 EN 完全不写 cscv（analyze_en_ja §3：抽样 1500 仅 5 偶然命中），
+        #   本变体同样 sync_cscv=False ⇒ 约束无意义，relax_fields=True 时跳过。
+        if not relax_fields:
+            fl = fields.get(ja)
+            if not fl or any(len(enc) > sl for sl in fl):
+                canonical[ja] = None
+                continue
         canonical[ja] = enc
     return canonical, fields
 
 
+def propagate_canonical_dups(edits, canonical, lang_a, en_a, registered, skip_blobs=(), mirror=False):
+    """一致译名收尾：把 canonical 里【已定译】的原文串按"内容"传播到**未登记**的重复副本槽。
+
+    背景（2026-10-18 E1 实机诊断）：武器表 b147/b357/b736 的"该武器附带的技能名"列既不在
+    text_v2.csv（无对应行），也不是任何清单里的槽位，于是技能表 b666 被翻成中文、这些引用列
+    却仍是 'Drain Axe' ⇒ 按名链断，技能"只有名字没有效果/动画"、连名字都弹不出来。
+    本函数按内容把所有副本统一到同一译文（= TRANSLATING.md §10「所有副本一起翻」铁律）。
+
+    安全闸（只改 NUL 结尾的完整字段，绝不越界、绝不触碰 FF FF FF FF 前缀）：
+      · JA/EN 两侧 run 起点必须一致，且 run 起点→名字起点之间的字节两侧完全相同；
+      · 容量 = EN 侧【名字起点 → 下一个非 NUL 字节】的整段（即允许吃掉紧随其后的 NUL 填充，
+        但绝不吃到下一段真实内容），并强制保留 1 字节 NUL 终止符。
+
+    v2.66b（2026-10-18 残留个案）：早先容量只取 EN 当前值长（如 EN='Iai' 仅 3 字节），
+    导致 4 字节译文被拒 —— 实测该槽后有 64 字节纯 NUL 填充，真实容量远大于 3。
+    改为 padding-aware 容量后不再丢副本。该区间按定义全为 NUL，清零/写入都不会伤到相邻字段。
+    """
+    kanon = {}
+    for ja, enc in canonical.items():
+        if enc:
+            try:
+                kanon[ja.encode('cp932')] = enc
+            except Exception:
+                pass
+    if not kanon:
+        return 0
+    n = 0
+    relax_n = 0        # 用到 NUL 填充区的（旧闸会拒的）
+    relax_max = 0
+    for bi, jblob in enumerate(lang_a.blobs):
+        if bi in skip_blobs or bi >= len(en_a.blobs):
+            continue
+        jb = bytes(jblob)
+        eb = bytes(en_a.blobs[bi])
+        if not eb:
+            continue
+        pos, L = 0, len(jb)
+        while pos < L:
+            e = jb.find(b'\x00', pos)
+            if e < 0:
+                e = L
+            f = pos
+            while f < e and jb[f] == 0xFF:      # 跳过 ff ff ff ff 前缀，绝不写入前缀
+                f += 1
+            if f < e and (bi, pos) not in registered and (bi, f) not in registered \
+                    and (mirror or not in_skill_key_col(bi, f)):
+                enc = kanon.get(jb[f:e])
+                if enc is not None and len(enc) >= 2:
+                    es = eb.rfind(b'\x00', 0, f) + 1
+                    if es == pos and eb[pos:f] == jb[pos:f]:
+                        ee = eb.find(b'\x00', f)
+                        if ee < 0:
+                            ee = len(eb)
+                        # 容量 = 名字起点 → 下一个非 NUL 字节（含 NUL 填充区）；再留 1 字节做终止符
+                        nx = ee
+                        while nx < len(eb) and eb[nx] == 0x00:
+                            nx += 1
+                        cap = nx - f
+                        sb2 = max(ee - f, len(enc) + 1)
+                        if 0 < cap and sb2 <= cap:
+                            if sb2 > ee - f:
+                                relax_n += 1
+                                relax_max = max(relax_max, sb2)
+                            edits[bi].append((f, sb2, 0, enc))
+                            n += 1
+            pos = e + 1
+    if relax_n:
+        print('    （其中 %d 处借用了 NUL 填充区，最大写入槽 %d 字节）' % (relax_n, relax_max))
+    return n
+
+
 def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_blobs=(), consistent=False,
                  menu_exempt=False, field_fix=True, ui_always=False, slot_release=False,
-                 desc_release=False, dry_run=False, classify=None):
+                 desc_release=False, dry_run=False, classify=None, lang_files=None,
+                 propagate_dups=False, mirror=False):
     """把译文写进 LANG_JA / LANG_EN / cscv(与 LANG 重复的部分)。
 
     cscv.s2a 里有大量与 LANG 逐字节相同的 blob（实测 681 个），游戏可能从它读文本，
     所以按【内容相同 -> 同一套 offset 编辑】的方式一并改写，保证两边一致。
 
     field_fix=True 时，多行字段按【整字段】写入（保留 \\n），修复"只显示第一行"。
+
+    lang_files（可选，list）：限制写入哪些 LANG 文件，默认 TEXT_FILES（JA+EN）。
+    E1 隔离实验只传 ['res/LANG_EN.s2a']，此时 LANG_JA 侧一个字节都不写。
 
     dry_run=True（只判定、不落盘）：只跑第 1 步"计算编辑清单"，写完 classify 后直接返回，
     不触碰任何游戏文件。供导出器复用生产装机口径、判定"哪些槽位注释被保留原文"。
@@ -1209,7 +1311,8 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
     if consistent:
         # ======= 一致翻译模式（测试E）：同一个日文原文在 LANG 槽位与
         # cscv独有 字段里的所有出现统一译成同一个 CP932 串（全有或全无）=======
-        canonical, fields = build_canonical(rows, lang_a, collide, cmap, native)
+        canonical, fields = build_canonical(rows, lang_a, collide, cmap, native,
+                                            relax_fields=mirror)
         n_canon = sum(1 for v in canonical.values() if v is not None)
         print('  一致翻译: 碰撞串 %d, 可统一翻译 %d, 保留原文 %d'
               % (len(canonical), n_canon, len(canonical) - n_canon))
@@ -1245,10 +1348,25 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
         if (bi, off) in seen:
             continue
         seen.add((bi, off))
+        # ★ 实验用「按列黑名单」：由调用方设置 SLOT_BLOCK(bi, off) -> True 即跳过该槽。
+        #   仅用于二分实验（Z6/Z7），默认 None 不影响任何现有配方。
+        if _SLOT_BLOCK is not None and _SLOT_BLOCK(bi, off):
+            stats['slotblock'] += 1
+            if classify is not None:
+                classify[(bi, off)] = 'slotblock'
+            continue
+        # ★★ v2.67（E1b）：技能表 b666 的内部键名列 pos288~375 一律保留原文（不翻）
+        #    ★ mirror（E2，照抄官方 EN）：官方把该键名列也一并英文化（86/86，analyze_en_ja §4）
+        #    且技能可用 ⇒ mirror=True 时不设此护栏。
+        if not mirror and in_skill_key_col(bi, off):
+            stats['skillkey'] += 1
+            if classify is not None:
+                classify[(bi, off)] = 'skillkey'
+            continue
         # v2.58 章节名/称号保护：命中 (blob, stride, pos) 的槽位一律保留原文
         # v2.62 扩展：支持"按记录号"保护（Q16 单条例外），见 chap_title_hit()
         # v2.63 扩展：支持"按值"保护 —— 先解出该槽日文原文再判定（value_rules）
-        if ct_guard or ct_recs or _CT_VALUE_CACHE:
+        if (not mirror) and (ct_guard or ct_recs or _CT_VALUE_CACHE):
             _st = blob_stride(lang_a, bi)
             _val = None
             if _CT_VALUE_CACHE and bi < len(lang_a.blobs) and off < len(lang_a.blobs[bi]):
@@ -1384,6 +1502,14 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
             stats['overflow'] += 1
             continue
         edits[bi].append((off, sb, 0, enc))
+    # ★★ v2.66(E1)：一致译名收尾 —— 把已定译原文串按内容传播到**未登记**的重复副本槽
+    #    （武器表"该武器附带技能名"列等；否则 b666 中文 / b147 英文 ⇒ 按名链断）。
+    if propagate_dups and consistent and canonical and classify is None:
+        n_prop = propagate_canonical_dups(edits, canonical, lang_a, en_a, seen, skip_blobs,
+                                          mirror=mirror)
+        stats['prop'] = n_prop
+        if n_prop:
+            print('  ★未登记副本按内容统一译文: %d 处' % n_prop)
     # ★★ v2.64：算出"cscv 键名保护"集合 —— 这些槽位在 LANG 侧照常翻译，
     # 但在 cscv 的"内容匹配同步"（步骤 3）里必须保留原版 CP932 字节。
     # 判据：该槽位的日文原文 ∈ collide（= 在 cscv 独有 blob 里作为按名比对的键出现）。
@@ -1425,8 +1551,8 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
         if edits.get(i):
             lang_hash.setdefault(hashlib.md5(bytes(b)).hexdigest(), i)
 
-    # ---- 2) LANG_JA / LANG_EN ----
-    for rel in TEXT_FILES:
+    # ---- 2) LANG_JA / LANG_EN（lang_files 可限制只写其中一侧，E1 只写 EN）----
+    for rel in (lang_files or TEXT_FILES):
         src = os.path.join(BASE, rel)
         bk = src + '.bak'
         if not os.path.exists(src):
@@ -2100,10 +2226,10 @@ def apply_song_lyrics(cmap, native):
     return n
 
 
-def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=MECHANIC_BLOBS,
+def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=None,
              consistent=False, menu_exempt=False, field_fix=True, ui_always=False,
              place=True, chap=True, song=True, slot_release=False, desc_release=False,
-             exe_mode=None):
+             exe_mode=None, lang_files=None, propagate_dups=False, mirror=False):
     """生产安装 = 同名不翻(keep_collide) + 机制表不翻(skip_blobs)。
     这是 2026-09-12 测试C/D 验证过的"技能全可用"组合。
     v2.2/2.3: menu_exempt=True 额外豁免 UI blob(186/354/358/440/516/715/763) 的
@@ -2134,11 +2260,17 @@ def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=MECHANIC_B
     rewrite_atlas_cscv(slots, chosen, cmap, st['kana_set'])
     # 3) 文本（LANG_JA / LANG_EN / cscv.s2a）
     if text:
+        # ★ v2.68：skip_blobs 以 None 作"调用方未指定"哨兵。原先 consistent=True 会**无条件清空**
+        #   skip_blobs=()，把调用方显式传入的"机制表不翻"（如 E1 的 (128,136,317)）静默丢弃 ——
+        #   结果 128/136/317（职业/阵形/连携技）仍被翻译，与已验证稳定配方（测试C/D）不符。
+        #   现在：未指定时保持旧行为（consistent→()，否则 MECHANIC_BLOBS）；显式指定则一律生效。
+        if skip_blobs is None:
+            skip_blobs = () if consistent else MECHANIC_BLOBS
         if consistent:
             keep_collide = False
-            skip_blobs = ()
         rewrite_text(rows, cmap, st['native_set'], sync_cscv, keep_collide, skip_blobs,
-                     consistent, menu_exempt, field_fix, ui_always, slot_release, desc_release)
+                     consistent, menu_exempt, field_fix, ui_always, slot_release, desc_release,
+                     lang_files=lang_files, propagate_dups=propagate_dups, mirror=mirror)
         # v2.21：cscv 侧孪生表必须显式写（内容匹配同步配不上索引不同的孪生）
         if place:
             apply_cscv_place(cmap, st['native_set'])
@@ -2216,8 +2348,12 @@ def do_check():
 #   （实测 3704 个 DLC 译文槽里 2914 个对不上；`女神像ワープ`→`神女像传族`）。
 # 修法：生产装机（apply_menu）完成字库写入后，**自动重跑 DLC01 编码**。
 #   失败绝不影响主装机（try/except 吞掉），且 DLC 装机器自己会在超容量时中止。
-def refresh_dlc01(verbose=True):
-    """把 DLC01 译文按当前 cmap 重新编码。任何异常都只打印，不抛出。"""
+def refresh_dlc01(verbose=True, en_only=False, ja_only=False):
+    """把 DLC01 译文按当前 cmap 重新编码。任何异常都只打印，不抛出。
+
+    en_only=True（E1 隔离实验）：只写 DLC01/LANG_EN.s2a，DLC01/LANG_JA.s2a 保持原版。
+    ja_only=True（E3-JA 镜像实验）：只写 DLC01/LANG_JA.s2a，DLC01/LANG_EN.s2a 保持原版。
+    """
     dlc_dir = os.path.join(BASE, 'DLC01')
     ja = os.path.join(dlc_dir, 'LANG_JA.s2a')
     en = os.path.join(dlc_dir, 'LANG_EN.s2a')
@@ -2253,16 +2389,20 @@ def refresh_dlc01(verbose=True):
         # 直接写入（不复用 cmd_apply，避免它再 build_plan 一遍）
         import time as _t, shutil as _sh
         ts = _t.strftime('%Y%m%d_%H%M%S')
-        for pth in (DA.D.P_JA, DA.D.P_EN):
+        targets = ((DA.D.P_EN,) if en_only else
+                   (DA.D.P_JA,) if ja_only else
+                   (DA.D.P_JA, DA.D.P_EN))
+        for pth in targets:
             _sh.copy2(pth, pth + '.bak_dlcapplyv2_' + ts)
-        for pth in (DA.D.P_JA, DA.D.P_EN):
+        for pth in targets:
             a = DA.D.s2a.Archive(pth)
             blobs = [bytearray(bytes(b)) for b in a.blobs]
             for p in plan:
                 DA._write_slots(blobs[p['blob']], p)
             DA.D.s2a.pack(pth, a.entries, blobs)
-        print('  [DLC01] 已按当前字库重编码 %d 槽 / %d blob（备份后缀 .bak_dlcapplyv2_%s）'
-              % (len(plan), len({p['blob'] for p in plan}), ts))
+        side = ' [仅 EN 侧]' if en_only else (' [仅 JA 侧]' if ja_only else '')
+        print('  [DLC01] 已按当前字库重编码 %d 槽 / %d blob%s（备份后缀 .bak_dlcapplyv2_%s）'
+              % (len(plan), len({p['blob'] for p in plan}), side, ts))
     except Exception as e:
         print('  [DLC01] 重编码失败（不影响主装机）：%r' % e)
 
@@ -2455,6 +2595,802 @@ def do_apply_menu(exe_mode=None):
     return stats
 
 
+# ================= ★ E1 隔离实验：只写 LANG_EN（名字层整批中文化） =================
+# 动机（2026-10-18，官方 EN/JA 对比实测）：官方 EN 版把 61,048/61,162 个文本槽（含
+#   **全部名字列**：技能/职业/阵形/装备/称号/章节/伙伴）翻成英文，且 LANG_JA 与 cscv
+#   官方一字未动 —— 证明"名字层写进 LANG_EN"本身不会破坏机制。本项目的机制损坏来自
+#   （a）把中文载体码同步进 cscv 的脚本层、（b）改写 LANG_JA 的按键名槽位。
+# E1 做法：**只写 res/LANG_EN.s2a**，cscv 文本层一个字节都不动（仅按新字库重写字符表，
+#   CJK 必需），LANG_JA 保持原版。测试时须把游戏语言设为 English。
+def verify_e1_isolation(verbose=True, expect_skill_key=True, target='en'):
+    """断言隔离前提（不通过即返回 False）：
+       · 未参与装机的另一侧 LANG 文件与母本逐字节相同
+         （target='en' 校验 LANG_JA；target='ja' 校验 LANG_EN）
+       · res/cscv.s2a 除【字符表 blob】外与母本逐字节相同（未做文本同步）
+       · 目标文件 b666 的 pos288~375 键名列与原版一致（expect_skill_key=True 时）
+    """
+    import hashlib
+    if verbose:
+        print('== 隔离断言（目标=%s）==' % target.upper())
+    ok = True
+    # ① 另一侧 LANG 文件：整文件逐字节相同
+    untouched = (('res/LANG_EN.s2a', 'DLC01/LANG_EN.s2a') if target == 'ja'
+                 else ('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    for rel in untouched:
+        cur = os.path.join(BASE, *rel.split('/'))
+        bak = cur + (dlc_lib.BAK_SUFFIX if rel.startswith('DLC01/') else '.bak')
+        if not (os.path.exists(cur) and os.path.exists(bak)):
+            if verbose:
+                print('  [E1] 跳过 %s（缺当前文件或原件备份）' % rel)
+            continue
+        hc = hashlib.md5(open(cur, 'rb').read()).hexdigest()
+        hb = hashlib.md5(open(bak, 'rb').read()).hexdigest()
+        if hc != hb:
+            ok = False
+        if verbose:
+            print('  [E1] %-20s md5(cur)=%s md5(bak)=%s  %s'
+                  % (rel, hc[:12], hb[:12], '相同' if hc == hb else '!! 不同'))
+    # ② cscv：只允许字符表 blob 不同
+    cur = os.path.join(BASE, 'res/cscv.s2a')
+    bak = cur + '.bak'
+    if os.path.exists(bak):
+        arc = s2a.Archive(bak)
+        tbl = arc.hash_map()[TBL_HASH]
+        hb = [hashlib.md5(bytes(b)).hexdigest() for b in arc.blobs]
+        hc = [hashlib.md5(bytes(b)).hexdigest() for b in s2a.Archive(cur).blobs]
+        diff = [i for i in range(len(hb)) if i >= len(hc) or hc[i] != hb[i]]
+        if diff != [tbl]:
+            ok = False
+        if verbose:
+            print('  [E1] cscv.s2a 有差异的 blob=%s（字符表 blob=%d）%s'
+                  % (diff, tbl, '仅字符表 OK' if diff == [tbl] else '!! 期望仅字符表'))
+    # ③ ★ v2.67（E1b 守卫）：目标 LANG 文件 b666 的键名列 pos288~375 必须与原版逐字节一致
+    cur = os.path.join(BASE, 'res/LANG_JA.s2a' if target == 'ja' else 'res/LANG_EN.s2a')
+    bak = cur + '.bak'
+    if expect_skill_key and os.path.exists(bak):
+        lb = bytes(s2a.Archive(cur).blobs[SKILL_KEY_BLOB])
+        ob = bytes(s2a.Archive(bak).blobs[SKILL_KEY_BLOB])
+        n = bad = 0
+        while 16 + n * SKILL_STRIDE + SKILL_KEY_HI <= min(len(lb), len(ob)):
+            lo = 16 + n * SKILL_STRIDE + SKILL_KEY_LO
+            hi = 16 + n * SKILL_STRIDE + SKILL_KEY_HI
+            if lb[lo:hi] != ob[lo:hi]:
+                bad += 1
+            n += 1
+        if bad:
+            ok = False
+        if verbose:
+            print('  [E1] LANG_%s[666] 键名列 pos%d~%d 与原版一致：%d/%d %s'
+                  % (target.upper(), SKILL_KEY_LO, SKILL_KEY_HI - 1, n - bad, n,
+                     'OK' if not bad else '!! %d 条被改（技能会失效，中止）' % bad))
+    return ok
+
+
+def do_apply_lang_en_only(exe_mode=None):
+    """E1 隔离实验装机：**只写 res/LANG_EN.s2a**（+ 常规字体/图集 + DLL/exe）。
+
+    参数照批准方案：consistent=True（同一原文→同一译文，全副本一致）、
+    keep_collide=False、skip_blobs=()、sync_cscv=False；不写 cscv 孪生表
+    （place/chap/song=False）。DLC01 同样只写 LANG_EN。装机末尾断言隔离前提，失败则中止。
+
+    v2.66（2026-10-18 首轮实机结果后的修正）：
+      · propagate_dups=True —— 把已定译原文串按内容补齐到**未登记**的重复副本槽
+        （武器表"该武器附带技能名"列等）。首轮失败的直接原因就是 b666 中文 / b147 英文
+        ⇒ 按名链断，技能无效果/无动画、名字都弹不出来。
+      · restore_q16_keys() —— 首轮跳过它导致「勇者城」等按键名查找的键槽被翻成
+        中文；该函数把【各文件自己的】原版字节写回，LANG_JA/cscv 因未被改写而原样跳过，
+        不破坏隔离前提。
+
+    v2.67（E1b，2026-10-18 二轮实机结果后的修正）：
+      · **b666 键名列 pos288~375 保持原版**——E1 首/二轮用 consistent 全副本统一，
+        把内部键名也翻成载体码中文 ⇒ 脚本按名查技能失败 ⇒「只有名字、无动画无效果」。
+        与 docs/PITFALLS.md §6/§8 记载完全同因（测试 E 全量一致翻译失败）。
+      · **机制表 128/136/317（职业/阵形/连携技）整表不翻**——首轮把职业表也翻了，
+        疑为「大章节开头角色装备消失」之因（职业表的初始装备亦按名解析）。
+      · cscv 依旧不写（脚本层孪生名字键保持日版），隔离前提不变。
+    """
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=(128, 136, 317),   # 机制表不翻；b666 不整表跳过，只跳键名列
+                     consistent=True, menu_exempt=False, ui_always=False,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, exe_mode=exe_mode)
+    print('== 同步 DLC01（E1：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! E1 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+# ================= ★ E2 镜像实验：照抄官方 EN 的改动集合 =================
+# 依据（build/en_ja_report.txt、build/_e3_missing_out.txt、build/_e4_gapzh_out.txt、
+#       build/_e5_out.txt，2026-10-18 全程只读实测）：
+#   · 官方 EN 把 text_v2.csv 里 **全部 61,048 个 JA≠EN 槽**都改成英文，
+#     含技能表 b666 键名列 pos288~375（86/86）、称号表 b931、职业/阵形表 b128/b136/b317、
+#     装备表各引用列；官方 cscv 一字未动、LANG_JA 一字未动。
+#   · 本项目 E1b 只改了 95.4%（61,048 中的 58,241），遗留 2,807 槽仍是英文：
+#       2,105 = consistent"全有或全无"闸拒绝（cscv 字段可容纳约束，sync_cscv=False 时无意义）
+#         418 = 章节/称号护栏     86 = Q16 键名回写     84 = b666 键名列护栏
+#          41 = 无中文译文       6 = 机制表 skip_blobs
+#     ⇒ 90% 的缺口是【我们自己的护栏】造成，官方没有这些护栏。
+#   · 结论：E1b 失败的模式是"半中半英"（同一原文的副本一部分中文一部分英文）
+#     导致按名链断裂；官方是"整条链同语言"。本变体即照此对齐。
+def do_apply_lang_en_mirror(exe_mode=None):
+    """E2 镜像装机：**只写 res/LANG_EN.s2a**（cscv/LANG_JA 与母本逐字节相同）。
+
+    与 E1b 的差别（即与官方的第 1 步对齐）：
+      · skip_blobs=()          —— 官方把 b128/b136/b317 也翻了
+      · mirror=True            —— 去掉 b666 键名列护栏 + 章节/称号守卫，
+                                 并放宽 consistent 闸的"cscv 字段可容纳"约束
+      · 不调用 restore_q16_keys() —— 官方没有回写勇者城
+    仍保留：只写 LANG_EN、不写 cscv、不写 LANG_JA；propagate_dups + padding-aware 容量。
+    """
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=(), consistent=True, menu_exempt=False, ui_always=False,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True,
+                     mirror=True, exe_mode=exe_mode)
+    print('== 同步 DLC01（E2：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! E2 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_lang_en_mirror(exe_mode=None):
+    """E2 镜像实验打包：staging 里只写 LANG_EN 装机 → 输出 dist/E2-lang-en-mirror/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_en_mirror',
+                      stage_name='package_stage_e2',
+                      out_dir=paths.dist('E2-lang-en-mirror'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= ★ E3 可用包：LANG_EN 隔离 + 机制名保持该文件原版英文 =================
+# 依据（2026-10-18 全程只读实测 + 实机验证）：
+#   · E1b（consistent 全副本统一）失败：技能「只有名字、无动画无效果」，因把 b666 的
+#     【显示名 pos0】也翻成载体码中文 ⇒ 脚本按名查技能失败。
+#   · E1c（只把装备名一列回退英文）→ 装备恢复；E1b（Q16 槽写回各文件原版字节）→ 勇者城恢复。
+#   · E2（照抄官方 EN 改动集合，99.4%）失败模式与 E1b 完全相同：技能无效果 / 装备消失 / 勇者城消失。
+#     E6 反证：官方 EN 自身有 9.25% 同原文多副本不一致、E2 只有 5.01%（比官方更自洽）却全坏 ⇒
+#     决定性变量不是"一致性/覆盖率"，而是【机制按名解析时期待的是"该文件自己的原版语言串"】。
+#   ⇒ 结论：纯数据层无法让"参与机制解析的名字"上屏中文。本包即路线 (A) 的可用包——
+#     机制名/引用槽保持 LANG_EN 原版英文，其余（对话/说明/UI）中文化，机制应全部正常。
+#
+# 配方 = 生产装机 apply_menu 已验证稳定的护栏集合（测试 C/D"技能全可用"）：
+#   · skip_blobs=MECHANIC_BLOBS(666/128/136/317) + 装备/道具表(147/357/736/998) 整表不翻
+#     （技能/职业/阵形/连携技/装备的【名字与引用】列一律保持原版英文）
+#   · keep_collide=True  —— 在 cscv 独有 blob 里作为按名比对键出现的串（称号/章节/伙伴名等）保留原版英文
+#   · desc_release=True  —— 仅放行机制表内的【说明文字段】（b666 pos32/160、b128 pos84、b136 pos64、
+#                            b147/357/736/998 pos44），名字/引用列不放行
+#   · menu_exempt/ui_always/slot_release —— 生产已验证的 UI/说话人纯显示放行
+#   · restore_q16_keys() —— Q16「勇者城」键槽写回各文件自己的原版字节
+# 与生产装机的差别：sync_cscv=False（不写 cscv 文本层）、lang_files=['res/LANG_EN.s2a']
+#   （不写 LANG_JA，隔离前提：LANG_JA/cscv 与母本逐字节相同）、不写 cscv 孪生表
+#   （place/chap/song=False）。测试时须把游戏语言设为 English。
+def do_apply_lang_en_names_en(exe_mode=None):
+    """E3 可用包装机：只写 res/LANG_EN.s2a，机制名字/引用槽保持原版英文，其余中文。"""
+    # 装备/道具表(147/357/736/998)也整表跳过：实测其【名字列 pos4】里夹着技能名引用
+    #   （'Change Back!' / 'Gold Rush!' / 'Puny' / 附带技能名列 'Gold♪'），keep_collide 抓不全
+    #   ⇒ 一并跳过，改由 desc_release 放行其【说明列 pos44】上中文。
+    skip = tuple(MECHANIC_BLOBS) + (147, 357, 736, 998)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=False, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 同步 DLC01（E3：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! E3 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_lang_en_names_en(exe_mode=None):
+    """E3 可用包打包：staging 里只写 LANG_EN 装机 → 输出 dist/E3-lang-en-names-en/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_en_names_en',
+                      stage_name='package_stage_e3',
+                      out_dir=paths.dist('E3-lang-en-names-en'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= ★ Z1 names-cn 实验：翻技能表 b666 + 装备表，靠 propagate_dups 保链 =================
+# 与 E3 的差别：E3 整表跳过技能表 b666 与装备/道具表(147/357/736/998)，机制名保持原版英文；
+#   本变体只跳过 (128,136,317)（职业/阵形/连携技），放行 b666 与装备表让名字上中，
+#   依靠 propagate_dups=True（同一原文字符串在各副本译成同一中文）+ mirror=False
+#   （b666 内部键名列 pos288~375 自动保留原版，见 in_skill_key_col）维持"按名链"一致性。
+# ================= ★ Z1 名称副本一致性补全（byte-level，2026-10-18）=================
+# 依据（引擎 0x46C070 按名 CRC32 查表，无 strcmp；本文件按名链实测）：
+#   同一名称串在【所有副本】必须字节一致 —— 技能表 b666 显示名 / 武器表"附带技能"引用列 /
+#   脚本 loadout 行（`head=<装备名>`）等。只翻一部分 ⇒ 按名查表失败
+#   （技能无效无动画 / 章节初始装备不发 / 勇者城不出现）。
+# 做法：以【母本 vs 已装机产物】逐槽对比得规范表 canon（已翻槽的 原字节→译文字节），
+#   再把 canon 应用到"内容仍等于母本（未被装机翻译）"的副本槽：
+#     · 单槽整体：槽文本恰为 canon 键 → 整槽替换
+#     · 多行 `key=value`：只把 value 恰为 canon 键的段替换，保留 `key=` 与 `\n`
+#   容量以【母本】相邻内容为准：可吃掉尾部 NUL 填充，但保留 1 字节 NUL 终止符。
+#   跳过 b666 内部键名列（in_skill_key_col，脚本按名查技能）与 Q16 键名槽
+#   （与 restore_q16_keys 同一份 t17 清单；且 restore_q16_keys 在本补全之后还会回写一次）。
+NAME_MAX_LEN = 64
+
+
+def _iter_slots(blob):
+    """按母本 0x00 分界枚举槽位：yield (run_start, text_start, run_end)。
+    text_start = 跳过前导 0xFF 后的文本起点；纯 0xFF / 纯空 run 不产出。"""
+    n = len(blob)
+    pos = 0
+    while pos < n:
+        e = blob.find(b'\x00', pos)
+        if e < 0:
+            e = n
+        f = pos
+        while f < e and blob[f] == 0xFF:
+            f += 1
+        if f < e:
+            yield pos, f, e
+        pos = e + 1
+
+
+def _slot_text_at(data, f):
+    """从文本起点 f 读到下一个 0x00（无则到 blob 末尾），返回 (text, nul_pos)。"""
+    e = data.find(b'\x00', f)
+    if e < 0:
+        e = len(data)
+    return data[f:e], e
+
+
+def _next_content(data, start):
+    """start 起第一个既非 0x00 也非 0xFF 的字节位置（无则 len）。"""
+    n = len(data)
+    nx = start
+    while nx < n and (data[nx] == 0x00 or data[nx] == 0xFF):
+        nx += 1
+    return nx
+
+
+def _is_name_like(t):
+    """短名称串判据：<=64 字节、无 \\n、含至少一个 0x41..0x7A 或 >=0x81 的字节。"""
+    if not t or len(t) > NAME_MAX_LEN or b'\n' in t:
+        return False
+    for c in t:
+        if 0x41 <= c <= 0x7A or c >= 0x81:
+            return True
+    return False
+
+
+def _q16_lang_en_offsets(lang='LANG_EN'):
+    """t17 清单中 file==<lang> 且 wave==1 的槽位偏移 {blob: [off, ...]}（Q16 键名保护用）。"""
+    out = collections.defaultdict(list)
+    if not os.path.exists(Q16_KEY_TSV):
+        return out
+    try:
+        rows = list(csv.DictReader(open(Q16_KEY_TSV, encoding='utf-8-sig'), delimiter='\t'))
+    except Exception:
+        return out
+    for r in rows:
+        try:
+            if str(r['file']) != lang or int(r['wave']) != 1:
+                continue
+            out[int(r['blob'])].append(int(r['off']))
+        except Exception:
+            continue
+    return out
+
+
+def _q16_hit(q16, bi, lo, hi):
+    """blob bi 是否有 Q16 键槽偏移落在 [lo, hi) 内。"""
+    for o in q16.get(bi, ()):
+        if lo <= o < hi:
+            return True
+    return False
+
+
+def sync_name_replicas(orig_blobs, prod_path, verbose=True,
+                       single_slot_blob_allow=None, multiline=True, q16_lang='LANG_EN'):
+    """名称副本一致性补全（见上方说明）。orig_blobs = 装机前捕获的母本 blob 列表。
+    只就地改写槽内字节（blob 长度不变），有改动才回写。返回统计 dict。
+    两条规则可独立开关（bisect 用）：
+      · R1（单槽整体替换）: 仅当 single_slot_blob_allow is None（不限，Z1 原行为）
+        或当前 blob 索引 ∈ single_slot_blob_allow 时生效。
+      · R2（多行 key=value 只替换 value）: multiline=False 时完全不做。
+    安全跳过（b666 in_skill_key_col / Q16 键名槽）不受这两个开关影响。"""
+    import re
+    if not orig_blobs or not os.path.exists(prod_path):
+        if verbose:
+            print('  [名称副本] 跳过：缺少母本 blob 或产物文件')
+        return {}
+    arc = s2a.Archive(prod_path)
+    prod = [bytes(b) for b in arc.blobs]
+    q16 = _q16_lang_en_offsets(q16_lang)
+    kv_re = re.compile(rb'^[A-Za-z][A-Za-z0-9_]*=')
+
+    # ---- 1) 采集规范表 canon：母本槽文本(未翻) -> 产物槽文本(已翻) ----
+    cands = collections.defaultdict(collections.Counter)
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod):
+            continue
+        pb = prod[bi]
+        for pos, f, e in _iter_slots(ob):
+            if in_skill_key_col(bi, f) or _q16_hit(q16, bi, pos, e):
+                continue
+            ot = ob[f:e]
+            pt, _ = _slot_text_at(pb, f)
+            if ot != pt and _is_name_like(ot):
+                cands[ot][pt] += 1
+    canon, conflicts = {}, 0
+    for ot, ctr in cands.items():
+        if len(ctr) > 1:
+            conflicts += 1
+        canon[ot] = ctr.most_common(1)[0][0]
+
+    # ---- 2) 把 canon 应用到"仍未翻译"的副本槽 ----
+    n_single = n_multi = n_skip = 0
+    used = set()
+    changed_any = False
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod):
+            continue
+        ob = bytes(ob)
+        pb = bytearray(prod[bi])
+        dirty = False
+        for pos, f, e in _iter_slots(ob):
+            if in_skill_key_col(bi, f) or _q16_hit(q16, bi, pos, e):
+                continue
+            ot = ob[f:e]
+            pt, _ = _slot_text_at(pb, f)        # 直接读 bytearray（勿每次都 bytes(pb)）
+            if pt != ot:
+                continue                        # 该槽已被装机翻译，无需补
+            new, kind = None, 0
+            if ot in canon and (single_slot_blob_allow is None or bi in single_slot_blob_allow):
+                new, kind = canon[ot], 1
+            elif multiline and b'\n' in ot:
+                out, ch = [], False
+                for seg in ot.split(b'\n'):
+                    m = kv_re.match(seg)
+                    if m:
+                        val = seg[m.end():]
+                        if val in canon:
+                            out.append(seg[:m.end()] + canon[val])
+                            used.add(val)
+                            ch = True
+                            continue
+                    out.append(seg)
+                if ch:
+                    new, kind = b'\n'.join(out), 2
+            if new is None:
+                continue
+            room = _next_content(ob, e) - f - 1
+            if len(new) > room:
+                n_skip += 1
+                continue
+            nb = new + b'\x00'
+            pb[f:f + len(nb)] = nb
+            if e > f + len(nb):
+                # 清掉原槽残留的旧串尾巴（同装机约定：先清零再写）⇒ 槽仍是"单字段 + NUL 填充"
+                pb[f + len(nb):e] = b'\x00' * (e - (f + len(nb)))
+            dirty = True
+            if kind == 1:
+                n_single += 1
+                used.add(ot)
+            else:
+                n_multi += 1
+        if dirty:
+            prod[bi] = bytes(pb)
+            changed_any = True
+
+    if changed_any:
+        s2a.pack(prod_path, arc.entries, prod)
+    if verbose:
+        print('  [名称副本] 单槽填充 %d / 多行值填充 %d / 容量不足跳过 %d / '
+              '规范条目使用 %d（canon %d，冲突 %d）%s'
+              % (n_single, n_multi, n_skip, len(used), len(canon), conflicts,
+                 '' if changed_any else ' [无改动]'))
+    return dict(single=n_single, multi=n_multi, skip=n_skip, used=len(used),
+                canon=len(canon), conflicts=conflicts)
+
+
+def do_apply_names_cn(exe_mode=None):
+    """Z1 names-cn 装机：只写 res/LANG_EN.s2a，翻 b666 技能名 + 装备表名，保留机制键名列。
+    keep_collide=False —— 关键：collide 白名单里全是"疑似名字键"（技能/装备/称号/章节/伙伴名），
+      第一版用了 True，结果这些名字槽一个都没被写（实测 b666 rec17 pos0 仍是 'Drain Axe'）。
+      本实验要测的正是"显示层名字中文化"，故必须放行 collide。
+      cscv 脚本层不受影响：sync_cscv=False，cscv 文本层不写。
+    v2.69（2026-10-18）：do_apply 之后追加【名称副本一致性补全】——把已翻名字按内容补到
+      未翻的重复副本槽（武器表"附带技能"引用列 / 脚本 loadout 行），随后 refresh_dlc01。"""
+    # ★ 母本 = staging 里【未被 do_apply 触碰过】的 res/LANG_EN.s2a：在装机前捕获其 blob
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全（byte-level：武器表引用列 / 脚本 loadout 行）==')
+    sync_name_replicas(orig_blobs, en_path)
+    print('== 同步 DLC01（Z1：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! Z1 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn(exe_mode=None):
+    """Z1 names-cn 打包：staging 里只写 LANG_EN 装机 → 输出 dist/Z1-names-cn/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn',
+                      stage_name='package_stage_names_cn',
+                      out_dir=paths.dist('Z1-names-cn'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= ★ Z3/Z4 二分实验（2026-10-18）：把 Z1 的两条补全规则拆开验证 =================
+# 目的：Z1（两条规则全开）在开场 CG 结束时崩溃（exe VA 0x4714CA，按名遍历容器取到 0 而空指针）。
+#   Z3 = 只留 R1 且限定在装备/武器引用表 {147,357,736,998}（R2 关闭）；
+#   Z4 = Z3 + 打开 R2（多行 `key=value` 只替换 value）。二者对比即可定位是哪条规则打断了结构串。
+#   例：blob 34 的 OVERTURE 结构定义 `head=…\nbody=…\nhandR=Lumberjack Axe\n…` 只有 R2 会动它。
+def do_apply_names_cn_skill_only(exe_mode=None):
+    """Z3 装机：与 do_apply_names_cn 同配方，但 R1 仅限 {147,357,736,998}、R2 关闭。"""
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全 [Z3 skill-only：R1 限装备表 / R2 关闭] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998}, multiline=False)
+    print('== 同步 DLC01（Z3：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! Z3 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_apply_names_cn_skill_loadout(exe_mode=None):
+    """Z4 装机：与 Z3 同，但打开 R2（多行 `key=value` 值替换），即 R1 限装备表 + R2 全开。"""
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全 [Z4 skill-loadout：R1 限装备表 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998}, multiline=True)
+    print('== 同步 DLC01（Z4：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! Z4 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_head(exe_mode=None):
+    """HEAD（提交 9d8299b）生产配方复现包：apply_menu 原样 + 双侧写入 + cscv 同步 + place/chap/song。
+
+    仅改变输出目录（dist/HEAD-package/）与 staging 名，装机配方与 HEAD 的 `package` 完全一致。
+    用途：实机对照 HEAD 配方与 E3 隔离配方的差异。
+    """
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_menu',
+                      stage_name='package_stage_head',
+                      out_dir=paths.dist('HEAD-package'))
+
+
+def do_package_names_cn_skill_only(exe_mode=None):
+    """Z3 二分包：staging 装机 → 输出 dist/Z3-skill-only/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_skill_only',
+                      stage_name='package_stage_names_cn_skill_only',
+                      out_dir=paths.dist('Z3-skill-only'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_package_names_cn_skill_loadout(exe_mode=None):
+    """Z4 二分包：staging 装机 → 输出 dist/Z4-skill-loadout/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_skill_loadout',
+                      stage_name='package_stage_names_cn_skill_loadout',
+                      out_dir=paths.dist('Z4-skill-loadout'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_apply_names_cn_skill_loadout_ja(exe_mode=None):
+    """Z4-JA：Z4 配方（技能/装备名中文 + loadout 同步 + 副本补齐）的**日语镜像**。
+
+    与 Z4 的唯一区别：写 res/LANG_JA.s2a（而不是 LANG_EN），未参与侧 LANG_EN 保持原版。
+    动机：日语文件与 cscv 是"孪生"关系，语言路径可能与 EN 不同，
+          用来检验能否修复 Z4 遗留的两个演出瑕疵。
+    注意：b666 +292 键名仍保持**该文件自己的原版**（日语），不参与翻译。
+    """
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    orig_blobs = None
+    if os.path.exists(ja_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_JA.s2a'], propagate_dups=True, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全 [Z4-JA：R1 限装备表 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, ja_path,
+                       single_slot_blob_allow={147, 357, 736, 998}, multiline=True,
+                       q16_lang='LANG_JA')
+    print('== 同步 DLC01（Z4-JA：只写 DLC01/LANG_JA）==')
+    refresh_dlc01(ja_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    if not verify_e1_isolation(target='ja'):
+        raise SystemExit('!! Z4-JA 隔离断言失败：LANG_EN/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_skill_loadout_ja(exe_mode=None):
+    """Z4-JA 包：staging 装机 → 输出 dist/Z4-ja-skill-loadout/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_skill_loadout_ja',
+                      stage_name='package_stage_names_cn_skill_loadout_ja',
+                      out_dir=paths.dist('Z4-ja-skill-loadout'),
+                      expect_same=('res/LANG_EN.s2a', 'DLC01/LANG_EN.s2a'))
+
+
+def align_skill_keycol(orig_blobs, en_path):
+    """把技能表 b666 的键名（+292）写成与显示名（+0）相同的文本。
+
+    记录内 pos288~375 的真实结构（实测 EN/JA 对照）：
+        +288  u32 **语言无关的数字 ID**（EN 与 JA 87/87 完全相同，如 rec17=15）
+              ⇒ 绝对不可修改！
+        +292  字符串本体（NUL 填充）
+        尾部  0xFF*8 + 3 个 u32 元数据   ⇒ 必须逐字节保留
+
+    官方 EN='Hero Slash' / JA='ヒーロースラッシュ' 都随语言本地化，且与 pos0 相同。
+    本函数只替换 +292 的字符串与中间填充，+288 与尾部元数据一律不动。
+    """
+    try:
+        a = s2a.Archive(en_path)
+    except Exception as e:
+        print('  [键列对齐] 读取失败：%r' % e)
+        return 0
+    blobs = [bytearray(b) for b in a.blobs]
+    if 666 >= len(blobs) or 666 >= len(orig_blobs):
+        return 0
+    ob = orig_blobs[666]
+    zb = blobs[666]
+    done = skipped = 0
+    for rec in range((len(zb) - 16) // SKILL_STRIDE):
+        b = 16 + rec * SKILL_STRIDE
+        if b + SKILL_STRIDE > len(zb) or b + SKILL_STRIDE > len(ob):
+            break
+        o0 = ob[b:].split(b'\x00')[0]
+        o292 = ob[b + 292:b + SKILL_STRIDE].split(b'\x00')[0]
+        if not o292 or o0 != o292:
+            continue                       # 母本本来就不同 -> 不动
+        target = bytes(zb[b:].split(b'\x00')[0])
+        if not target:
+            continue
+        seg = ob[b + 292:b + SKILL_STRIDE]
+        tail_rel = seg.find(b'\xff', len(o292))
+        if tail_rel < 0 or len(target) + 1 > tail_rel:
+            skipped += 1
+            continue
+        zb[b + 292:b + SKILL_STRIDE] = (target + b'\x00' * (tail_rel - len(target))
+                                        + bytes(zb[b + 292 + tail_rel:b + SKILL_STRIDE]))
+        done += 1
+    print('  [键列对齐] 写入 %d 条（+288 与尾部元数据未动），跳过 %d 条' % (done, skipped))
+    if done:
+        s2a.pack(en_path, a.entries, [bytes(x) for x in blobs])
+    return done
+
+
+def do_apply_lang_ja_names_ja(exe_mode=None):
+    """E3-JA：E3 的日语镜像包 —— 只写 res/LANG_JA.s2a，机制名保持该文件原版。
+
+    配方与 E3 完全对称：
+      · lang_files=['res/LANG_JA.s2a']（LANG_EN / DLC01 LANG_EN 逐字节不动）
+      · skip_blobs = 机制表(666/128/136/317) + 装备/道具表(147/357/736/998)
+      · keep_collide=True（疑似名字键保留原文）、desc_release 放行说明列
+      · restore_q16_keys() 按 TSV 里的 file 字段自动分文件处理
+    游戏内需把语言设为 **日语**。
+    """
+    skip = tuple(MECHANIC_BLOBS) + (147, 357, 736, 998)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_JA.s2a'], propagate_dups=False, mirror=False,
+                     exe_mode=exe_mode)
+    print('== 同步 DLC01（E3-JA：只写 DLC01/LANG_JA，LANG_EN 保持原版）==')
+    refresh_dlc01(ja_only=True)
+    print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
+    restore_q16_keys()
+    if not verify_e1_isolation(target='ja'):
+        raise SystemExit('!! E3-JA 隔离断言失败：LANG_EN/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_lang_ja_names_ja(exe_mode=None):
+    """E3-JA 打包：staging 里只写 LANG_JA 装机 → 输出 dist/E3-ja-lang-ja-names-ja/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_ja_names_ja',
+                      stage_name='package_stage_ja_names_ja',
+                      out_dir=paths.dist('E3-ja-lang-ja-names-ja'),
+                      expect_same=('res/LANG_EN.s2a', 'DLC01/LANG_EN.s2a'))
+
+
+def do_apply_names_cn_keycol(exe_mode=None):
+    """Z9：与 Z4 相同，但把技能表 b666 的 pos288~375「键名列」也翻成中文（mirror=True）。
+
+    依据（官方原版实测）：
+      · LANG_EN b666 pos292 = 'Hero Slash'（英文）
+      · LANG_JA b666 pos292 = 'ヒーロースラッシュ'（日文）
+      ⇒ 键名列是**随语言本地化**的，官方两种语言都保持"pos0 == pos292"完全自洽。
+      ⇒ v2.67 的"键列必须保持原版"是根据语言内自洽现象做的错误外推。
+    本变体让中文包结构与官方一致：整张表全部中文、副本互相对应。
+    """
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全 [Z9 keycol：R1 限装备表 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0，复刻官方 EN/JA 的逐字节相同结构）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z9：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    # Z9 的实验目的就是让键列随语言本地化（与官方 JA/EN 一致），故关闭该条断言；
+    # 其余隔离前提（LANG_JA/cscv 文本层未动）仍然强制校验。
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z9 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_keycol(exe_mode=None):
+    """Z9 包：staging 装机 → 输出 dist/Z9-keycol/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_keycol',
+                      stage_name='package_stage_names_cn_keycol',
+                      out_dir=paths.dist('Z9-keycol'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_apply_names_cn_equip_only(exe_mode=None):
+    """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
+
+    单变量设计（对照 E3）：
+      · skip 掉 b666 → 技能显示名保持英文
+      · 装备表不跳过 → 名字列（+4）翻中文
+      · 但用 SLOT_BLOCK 封掉装备表的技能名副本列（记录内 168..268），
+        使它们与 b666 pos0 的英文保持一致（避免制造新的不一致）
+    """
+    global _SLOT_BLOCK
+
+    def block(bi, off):
+        if bi not in EQUIP_BLOBS:
+            return False
+        r = (off - 16) % EQUIP_STRIDE
+        return 168 <= r < 268
+
+    _SLOT_BLOCK = block
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                         skip_blobs=(666, 128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=False, mirror=False,
+                         exe_mode=exe_mode)
+    finally:
+        _SLOT_BLOCK = None
+    print('== 同步 DLC01（Z7：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! Z7 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_apply_names_cn_skill_only2(exe_mode=None):
+    """Z6 二分：只翻技能表 b666 显示名 + 武器表里的技能名副本；装备/道具名保持英文。
+
+    单变量设计（对照 E3）：
+      · b666 不跳过 → 技能显示名翻中文（pos288~375 键列仍由 in_skill_key_col 保护）
+      · 装备表名字列（+4..+36）用 SLOT_BLOCK 封掉 → 装备名保持英文
+      · 装备表的技能名副本列（168..268）照常翻 → 与 b666 pos0 一致
+    """
+    global _SLOT_BLOCK
+
+    def block(bi, off):
+        if bi not in EQUIP_BLOBS:
+            return False
+        r = (off - 16) % EQUIP_STRIDE
+        return 4 <= r < 36
+
+    _SLOT_BLOCK = block
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                         skip_blobs=(128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=False, mirror=False,
+                         exe_mode=exe_mode)
+    finally:
+        _SLOT_BLOCK = None
+    print('== 同步 DLC01（Z6：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    if not verify_e1_isolation():
+        raise SystemExit('!! Z6 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_equip_only(exe_mode=None):
+    """Z7 二分包：staging 装机 → 输出 dist/Z7-equip-only/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_equip_only',
+                      stage_name='package_stage_names_cn_equip_only',
+                      out_dir=paths.dist('Z7-equip-only'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_package_names_cn_skill_only2(exe_mode=None):
+    """Z6 二分包：staging 装机 → 输出 dist/Z6-skill-only/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_skill_only2',
+                      stage_name='package_stage_names_cn_skill_only2',
+                      out_dir=paths.dist('Z6-skill-only2'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
 # ================= ★ v2.68：完整补丁打包（package / package_install） =================
 # 目标：以配置游戏目录里的【原版文件（优先 .bak，缺失时用同名当前文件）】为输入，
 #   产出一份可直接覆盖游戏目录的完整补丁到 dist/。
@@ -2507,13 +3443,22 @@ def _pkg_origin_sources():
     return src, missing, uses_current, has_dlc
 
 
-def do_package(exe_mode=None):
+def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, expect_same=()):
     """完整补丁打包（默认·隔离模式）：只读配置目录母本 → 在 staging 装机 → 复制到 dist/。
-    配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。"""
+    配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。
+
+    可选参数（供 E1 等变体复用）：
+      apply_cmd  : staging 里要跑的装机子命令（默认 apply_menu / apply_menu_exe）
+      stage_name : staging 目录名（默认 package_stage）
+      out_dir    : 打包输出目录（默认 dist/；E1 用 dist/E1-lang-en-only/）
+      expect_same: 必须与母本【逐字节相同】的相对路径集合（默认空 = 全部必须不同）
+    """
     em = (exe_mode or EXE_MODE).lower()
+    out_dir = out_dir or paths.DIST_DIR
+    expect_same = set(expect_same)
     print('== 完整补丁打包·隔离模式（%s 模式，不装机）==' % em)
     print('  母本来源    : %s（只读，不改）' % BASE)
-    print('  输出目录    : %s' % paths.DIST_DIR)
+    print('  输出目录    : %s' % out_dir)
 
     # ① 前置校验：缺原版文件就明确失败，绝不静默产出半份补丁
     src, missing, uses_current, has_dlc = _pkg_origin_sources()
@@ -2533,7 +3478,7 @@ def do_package(exe_mode=None):
         print('  [DLC01] 未检出 DLC01 原版文件，本次补丁不含 DLC01')
 
     # ② 用母本备份重建 staging（同时充当"当前文件"与"原件备份"）
-    stage = paths.build(PKG_STAGE_NAME)
+    stage = paths.build(stage_name or PKG_STAGE_NAME)
     if os.path.isdir(stage):
         shutil.rmtree(stage)
     for rel, p in src.items():
@@ -2550,12 +3495,13 @@ def do_package(exe_mode=None):
     env['HMH2_EXE_MODE'] = em
     env['PYTHONIOENCODING'] = 'utf-8'
     rc = subprocess.call([sys.executable, os.path.abspath(__file__),
-                          'apply_menu' if em == 'dll' else 'apply_menu_exe'], env=env)
+                          apply_cmd or ('apply_menu' if em == 'dll' else 'apply_menu_exe')], env=env)
     if rc != 0:
         print('!! 打包中止：staging 装机失败（退出码 %s），dist/ 未写入' % rc)
         raise SystemExit(1)
 
-    # ④ 校验：除生成物外，每个文件必须与 staging 里的母本不同（防装机未生效）
+    # ④ 校验：默认每个文件必须与 staging 里的母本不同（防装机未生效）；
+    #    expect_same 里的文件反过来必须【逐字节相同】（E1：LANG_JA 保持原版）
     manifest = (['HMH2.exe'] if em == 'exe' else list(PROXY_FILES)) + PACKAGE_RES
     if has_dlc:
         manifest += PACKAGE_DLC
@@ -2568,10 +3514,17 @@ def do_package(exe_mode=None):
         bak = os.path.join(stage, *_orig_bak_name(rel).split('/'))
         tag = '生成物'
         if os.path.exists(bak):
-            if _sha(p, 64) == _sha(bak, 64):
-                bad.append('%s 与原版完全相同（装机未生效）' % rel)
-                continue
-            tag = '已改(原版 %s)' % _sha(bak)
+            same = _sha(p, 64) == _sha(bak, 64)
+            if rel in expect_same:
+                if not same:
+                    bad.append('%s 应保持原版（逐字节相同）却已被改动' % rel)
+                    continue
+                tag = '与原版一致(%s)' % _sha(bak)
+            else:
+                if same:
+                    bad.append('%s 与原版完全相同（装机未生效）' % rel)
+                    continue
+                tag = '已改(原版 %s)' % _sha(bak)
         table.append((rel, os.path.getsize(p), _sha(p), tag))
     if bad:
         print('!! 打包中止：以下文件不合格，dist/ 未写入')
@@ -2579,16 +3532,25 @@ def do_package(exe_mode=None):
             print('   - %s' % b)
         raise SystemExit(1)
 
-    # ⑤ 复制到 dist/（按相对路径建目录）
-    print('== 写入 dist ==')
+    # ⑤ 复制到输出目录（按相对路径建目录）
+    print('== 写入输出目录 ==')
     for rel, sz, h, tag in table:
-        dst = paths.dist(*rel.split('/'))
+        dst = os.path.join(out_dir, *rel.split('/'))
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         shutil.copy2(os.path.join(stage, *rel.split('/')), dst)
         print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
     print('打包完成：%d 个文件已放入 %s（未打 zip；配置游戏目录未改动）'
-          % (len(table), paths.DIST_DIR))
-    print('提示：staging 暂存于 %s（可删）；dist 中不属于本次补丁的旧文件不会被删除。' % stage)
+          % (len(table), out_dir))
+    print('提示：staging 暂存于 %s（可删）；输出目录中不属于本次补丁的旧文件不会被删除。' % stage)
+
+
+def do_package_lang_en_only(exe_mode=None):
+    """E1 隔离实验打包：staging 里只写 LANG_EN 装机 → 输出 dist/E1-lang-en-only/。
+    LANG_JA（含 DLC01 的）必须与母本逐字节相同，故列入 expect_same。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_en_only',
+                      stage_name='package_stage_e1',
+                      out_dir=paths.dist('E1-lang-en-only'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
 
 
 def do_package_install(exe_mode=None):
@@ -2687,6 +3649,35 @@ if __name__ == '__main__':
      #   package_install / package_install_exe = 旧的就地装机版。
      'package': do_package,
      'package_exe': lambda: do_package(exe_mode='exe'),
+     # E1 隔离实验：只写 LANG_EN 装机 / 打包到 dist/E1-lang-en-only/
+     'apply_lang_en_only': do_apply_lang_en_only,
+     'package_lang_en_only': do_package_lang_en_only,
+     # E2 镜像实验：照抄官方 EN 的改动集合（去掉护栏，仍只写 LANG_EN）
+     'apply_lang_en_mirror': do_apply_lang_en_mirror,
+     'package_lang_en_mirror': do_package_lang_en_mirror,
+     # E3 可用包：LANG_EN 隔离 + 机制名保持该文件原版英文，其余中文（生产护栏配方）
+     'apply_lang_en_names_en': do_apply_lang_en_names_en,
+     'package_lang_en_names_en': do_package_lang_en_names_en,
+     'apply_lang_ja_names_ja': do_apply_lang_ja_names_ja,
+     'package_lang_ja_names_ja': do_package_lang_ja_names_ja,
+     # HEAD(9d8299b) 生产配方复现包（双侧写入 + cscv 同步 + place/chap/song）
+     'package_head': do_package_head,
+     # Z1 names-cn 实验：翻 b666 技能名 + 装备表名（propagate_dups 保链），隔离只写 LANG_EN
+     'apply_names_cn': do_apply_names_cn,
+     'package_names_cn': do_package_names_cn,
+     # Z3/Z4 二分实验：拆分 Z1 的两条名称副本补全规则（R1 限装备表 / R2 开关）
+     'apply_names_cn_skill_only': do_apply_names_cn_skill_only,
+     'package_names_cn_skill_only': do_package_names_cn_skill_only,
+     'apply_names_cn_skill_loadout': do_apply_names_cn_skill_loadout,
+     'package_names_cn_skill_loadout': do_package_names_cn_skill_loadout,
+     'apply_names_cn_skill_loadout_ja': do_apply_names_cn_skill_loadout_ja,
+     'package_names_cn_skill_loadout_ja': do_package_names_cn_skill_loadout_ja,
+     'apply_names_cn_equip_only': do_apply_names_cn_equip_only,
+     'package_names_cn_equip_only': do_package_names_cn_equip_only,
+     'apply_names_cn_keycol': do_apply_names_cn_keycol,
+     'package_names_cn_keycol': do_package_names_cn_keycol,
+     'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
+     'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,
      'package_install_exe': lambda: do_package_install(exe_mode='exe'),
      'apply_menu2': lambda: do_apply(text=True, sync_cscv=True, keep_collide=True,

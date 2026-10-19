@@ -45,8 +45,28 @@
   **不排序、不对齐、不校验、不去重**；输出 = `S2AR` + u32(count) + 条目表 + blob 顺序拼接。
   => 相同顺序 + 相同内容 => **逐字节等于原文件**（本项目据此原地重写并保持格式一致）。
 
-**未解：** 条目 hash 算法未知（16 哈希 × 5 编码 × 5 前缀全 0 命中，疑似自定义/带盐）——
-无法凭文件名合成新条目的 hash。
+**条目 hash 算法（已验证，2026-10-19）：**
+
+`hash = f(key)`，其中 `key` 是**相对该 `.s2a` 所在目录**的路径字符串（例如 `res/texture.s2a` 的
+条目 key 是 `yushaTex/monsters/mons0000.bmp`；`res/SE.s2a` 是 `decision01.wav`）。
+
+`f` 的步骤（对应 exe VA `0x46C0C0`；`0x46C070` 是同一算法但不做大小写/斜杠归一化）：
+
+1. 逐字节归一化：`A`–`Z` 加 `0x20` 变小写；`0x5C`(`\`) 改为 `0x2F`(`/`)。
+2. CRC-32：`crc = 0xFFFFFFFF`；每字节 `edx = ext(b) ^ crc`（`b >= 0x80` 用**符号扩展**），
+   `crc = (edx >> 8) ^ table[edx & 0xFF]`。表为标准 CRC-32 表（多项式 `0xEDB88320`），
+   位于 exe VA `0x5A4658`（`tbl[1] = 0x77073096`）。
+3. 末尾取反 `~crc`。
+
+**纯 ASCII 输入的等价写法：** `zlib.crc32(key.lower().replace('\\','/')) ^ 0xFFFFFFFF`。
+
+**验证统计（已验证）：** `SE.s2a` 92/97、`BGM.s2a` 86/86、`GalleryTex.s2a` 79/80，
+且运行期实际请求过的贴图名 13/18 精确命中（`commonTex/effect/EFFECT_AX.BMP`、
+`yushaTex/monsters/MONS0000.BMP`、`townobj/machi.bmp`、`battlebg/battlebg_13.bmp` 等）。
+
+**重要性质：** 归档键是**语言中性数据名**（`mons0000`、`30gou`、`64_mao`），
+不是显示名。官方 EN 与 JA 共用同一批键（反例：显示名 EN=`Dragon` / JA=`ドラゴン`，
+归档里只有 `Event/Dragon.bmp`）⇒ **翻译显示名不会直接打断归档寻址**。
 
 **工具：** `tools/s2a.py`。
 
