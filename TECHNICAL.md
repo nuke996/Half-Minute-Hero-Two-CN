@@ -426,7 +426,7 @@ revert 前自动整文件备份到 `build/_pre_t140/<ts>/`。
 | `s2a.py` | S2AR 归档读写库（解析 + `pack()`） |
 | `build_cn.py` | 主构建器：字模 + 字符表 + 文本 + exe 补丁 + DLC 刷新 + Q16 保护 |
 | `dlc_lib.py` / `dlc_export.py` / `dlc_apply.py` | DLC01 导出 / 写入（plan/apply/verify/revert） |
-| `make_bats.py` | 生成根目录一键 .bat |
+| `make_bats.py` | 生成一键 .bat（装机类→游戏目录；校对类→`locales/<locale>/translator-view/`） |
 | `nmledger.py` / `t140_name_revert.py` | 名字账本读写 / 回滚总闸 |
 | `t153_name_apply.py` / `t175_g3_apply.py` / `t190_g5_apply.py` | 名字批次写入（check/apply，含 cscv 硬闸） |
 | `t34_health.py` | 项目体检 |

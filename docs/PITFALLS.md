@@ -348,3 +348,24 @@ JA/EN 一致、无 `?`。
 - 说话人名 `YuJa` 之类**全库 0 命中**的串是运行时/存档动态值，不是漏翻，也无法翻译。
 **相关文件：** `tools/build_cn.py: rewrite_text()/compute_collisions()`、
 `docs/KNOWN_ISSUES.md` §12、`locales/zh-CN/text_v2.csv` row 61239。
+
+---
+
+## 23. 校对 bat 与 JSON 同目录：导出时 `rmtree` 会把 bat 一起删掉
+
+**状态：** 已验证（2026-10-20）
+**影响范围：** 校对工作流
+**背景：** 导出 / 导入 / 回滚三个 bat 原先只生成在游戏目录（`work/original`，不入版本控制），
+其他协作者拿不到；把 bat 移进 `locales/<locale>/translator-view/` 后，导出 bat
+正好和它自己的输出目录重合。
+**症状：** 若保留原来的 `shutil.rmtree(OUT)`，双击一次 `汉化-导出校对.bat` 就会把同目录的
+三个 bat（以及译者放在这里的任何笔记）一并删掉。
+**正确解法：** 导出清理只删**自己生成的产物**——`10_*.json`、`20_*.json`、
+`30_multiline.json`、`40_dlc01.json`、`protected/`、`dict/`——其余文件原样保留。
+**其它约束：**
+- bat 必须保持纯 ASCII + CRLF（`make_bats.py` 用 `encode('ascii')` 写盘），
+  `echo` 行里不能出现中文。
+- bat 用 `cd /d "%~dp0."` 固定工作目录，再以相对路径 `..\..\..\tools\...` 调脚本；
+  脚本自身用 `paths.py`（`config.local.json` / 环境变量）定位游戏目录，故与 cwd 无关。
+**相关文件：** `tools/export_review.py: main()`、`tools/make_bats.py`、
+`locales/zh-CN/translator-view/*.bat`、`BUILDING.md` §5.3–5.4。

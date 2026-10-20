@@ -123,27 +123,35 @@ python tools/runner.py <脚本名> [参数]
 
 ## 5.3 一键 `.bat`（由 `make_bats.py` 生成）
 
-游戏目录当前存在的入口（由 `tools/make_bats.py` 生成到 `game_dir`，默认 `work/original`）：
+`tools/make_bats.py` 把入口 bat 生成到两处：
 
-| bat | 调用 |
-|---|---|
-| `汉化-安装.bat` | `build_cn.py revert` -> `build_cn.py apply_menu` |
-| `汉化-还原.bat` | `build_cn.py revert` |
-| `汉化-导出校对.bat` | `export_review.py` |
-| `汉化-导入校对.bat` | `import_review.py apply` |
-| `汉化-导入校对-回滚.bat` | `import_review.py revert` |
+- **装机类** → 游戏目录（`game_dir`，默认 `work/original`；该目录不入版本控制）
+- **校对类（导出 / 导入 / 回滚）** → `locales/<locale>/translator-view/`，
+  与面向译者的校对 JSON 同目录，随仓库一起分发，译者不依赖游戏目录
 
+| bat | 位置 | 调用 |
+|---|---|---|
+| `汉化-安装.bat` | 游戏目录 | `build_cn.py revert` -> `build_cn.py apply_menu` |
+| `汉化-还原.bat` | 游戏目录 | `build_cn.py revert` |
+| `汉化-导出校对.bat` | `locales/<locale>/translator-view/` | `export_review.py` |
+| `汉化-导入校对.bat` | `locales/<locale>/translator-view/` | `import_review.py apply` |
+| `汉化-导入校对-回滚.bat` | `locales/<locale>/translator-view/` | `import_review.py revert` |
+
+两个位置的 bat 都用 `..\..` / `..\..\..` 相对路径指向 `tools/`，且都依赖
+`config.local.json` / 环境变量定位游戏目录与译表，故放在哪一层都能跑。
 另有大量历史/专项 bat（健康体检、说明文放行开关、Q16 键名保护开关等），
 由 `tools/make_bats.py` 定义并一并生成到游戏目录。
 
 ## 5.4 校对（导出 / 导入 / 回滚）
 
 面向译者的校对链路由三个脚本（`tools/export_review.py`、`tools/import_review.py`、
-共用库 `tools/review_lib.py`）驱动：
+共用库 `tools/review_lib.py`）驱动；入口 bat 与 JSON 同在 `translator-view/`：
 
 - **导出**：`export_review.py` → `locales/zh-CN/translator-view/`，按 blob 切分成
   `10_ui_*.json` / `20_dialogue_*.json`，外加 `30_multiline.json`、`40_dlc01.json`、
   `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（快照）与 `如何校对.txt`。
+  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `protected/` /
+  `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
   受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
   临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`。
 - **导入**：`import_review.py apply` → 逐条比对 `zh` → **自检**（超长/id/非法字符）……
