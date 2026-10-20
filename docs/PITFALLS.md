@@ -347,7 +347,16 @@ JA/EN 一致、无 `?`。
   "propagation capacity 需 padding-aware"的教训）。
 - 说话人名 `YuJa` 之类**全库 0 命中**的串是运行时/存档动态值，不是漏翻，也无法翻译。
 **相关文件：** `tools/build_cn.py: rewrite_text()/compute_collisions()`、
-`docs/KNOWN_ISSUES.md` §12、`locales/zh-CN/text_v2.csv` row 61239。
+`docs/KNOWN_ISSUES.md` §12、`locales/zh-CN/text_v2.csv` row 61239–61260。
+
+**续（同日，批量落地 22 槽）：** `b252/b675/b774/b794/b883/b891` 已补登记并重建 dist。
+校验口径三步：①登记 `offset` 必须等于该处原文起点（`b675` 的字段带 4 字节 `FF FF FF FF` 前缀，
+文字从 `+4` 开始，写早 4 字节会毁字）；②`slot_bytes` ≤ 到下一个非 NUL 字节的距离；
+③dist 中"槽外零差异"的比对必须**排除同 blob 的全部登记槽**，否则同表多条会被互相误报。
+`b675/b794/b883/b891` 的 cscv 逐字节孪生（643/764/845/851）由构建按内容匹配自动同步，
+实测改动字节全部落在这些槽内且与 LANG 字节一致。
+**仍未处理：** `b630`（collide 假命中于战斗消息表）、`b845`（曲名表，2 条 collide 假命中）、
+`b1010`（装备名，需走名字批次）。
 
 ---
 
