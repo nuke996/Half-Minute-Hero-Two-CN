@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2820,
+ "_count": 2827,
  "entries": [
   {
    "id": "row::13247",
@@ -3393,10 +3393,43 @@
    }
   },
   {
+   "id": "row::13997",
+   "en": "I will sing in the midst of a storm",
+   "ja": "あらしの中　私は歌う",
+   "zh": "在风暴之中　我放声歌唱",
+   "meta": {
+    "blob": 249,
+    "offset": 48812,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13998",
+   "en": "From this moment,",
+   "ja": "さあここから",
+   "zh": "来吧，就从这里",
+   "meta": {
+    "blob": 249,
+    "offset": 49104,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13999",
+   "en": "I will begin my journey",
+   "ja": "旅を始めよう",
+   "zh": "开始旅程吧",
+   "meta": {
+    "blob": 249,
+    "offset": 49396,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::14000",
    "en": "Because I chose this path without fear,",
    "ja": "きっと進んでゆけるはずよ",
-   "zh": "因为选这条路我无所畏惧，",
+   "zh": "一定能够　继续前行",
    "meta": {
     "blob": 249,
     "offset": 52380,
@@ -3411,6 +3444,17 @@
    "meta": {
     "blob": 249,
     "offset": 52444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::14002",
+   "en": "even in the heart of Sanctuary",
+   "ja": "どこまでも",
+   "zh": "直至天涯海角",
+   "meta": {
+    "blob": 249,
+    "offset": 52508,
     "cap": 32
    }
   },
@@ -21452,6 +21496,39 @@
     "blob": 327,
     "offset": 308172,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::17773",
+   "en": "The arrangement",
+   "ja": "わずらいを消し去る",
+   "zh": "驱散忧伤的",
+   "meta": {
+    "blob": 327,
+    "offset": 316576,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::17774",
+   "en": "of the tones",
+   "ja": "ととのえられた",
+   "zh": "和谐悦耳的",
+   "meta": {
+    "blob": 327,
+    "offset": 316868,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::17775",
+   "en": "takes away my sadness",
+   "ja": "音色たちよ",
+   "zh": "音色啊",
+   "meta": {
+    "blob": 327,
+    "offset": 317160,
+    "cap": 128
    }
   },
   {

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2971,
+ "_count": 2991,
  "entries": [
   {
    "id": "row::43262",
@@ -4397,10 +4397,21 @@
    "id": "row::44407",
    "en": "A strong light pierces my heart",
    "ja": "心つらぬく強い光",
-   "zh": "强烈的光刺透我心",
+   "zh": "贯穿心灵的　强烈光芒",
    "meta": {
     "blob": 778,
     "offset": 110716,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::44408",
+   "en": "I know there will be",
+   "ja": "その先に",
+   "zh": "在那前方",
+   "meta": {
+    "blob": 778,
+    "offset": 111008,
     "cap": 128
    }
   },
@@ -11783,6 +11794,28 @@
     "blob": 796,
     "offset": 131220,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::46112",
+   "en": "But",
+   "ja": "恐れず",
+   "zh": "毫不畏惧",
+   "meta": {
+    "blob": 796,
+    "offset": 132616,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::46113",
+   "en": "I will make it through",
+   "ja": "選んだ",
+   "zh": "选择的",
+   "meta": {
+    "blob": 796,
+    "offset": 132908,
+    "cap": 128
    }
   },
   {
@@ -19335,7 +19368,7 @@
    "id": "row::47845",
    "en": "The passion that wells up in silence",
    "ja": "きっとだれにも止められない",
-   "zh": "静默中涌起的热血",
+   "zh": "一定谁也无法阻挡",
    "meta": {
     "blob": 813,
     "offset": 87648,
@@ -19346,7 +19379,7 @@
    "id": "row::47846",
    "en": "Will surely be stopped by none",
    "ja": "静かにわき起こる情熱は",
-   "zh": "定无人能将其阻挡",
+   "zh": "那静静涌起的　热情",
    "meta": {
     "blob": 813,
     "offset": 87940,
@@ -28429,6 +28462,39 @@
    }
   },
   {
+   "id": "row::49433",
+   "en": "And the passion that slept deep in my memory",
+   "ja": "記憶の底に眠りつづけていた",
+   "zh": "一直沉睡在记忆深处的",
+   "meta": {
+    "blob": 863,
+    "offset": 140208,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::49434",
+   "en": "Rushes forth",
+   "ja": "熱い思いが",
+   "zh": "炽热的心意",
+   "meta": {
+    "blob": 863,
+    "offset": 140500,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::49435",
+   "en": "from the back of my heart",
+   "ja": "むねの奥　ほとばしるの",
+   "zh": "正从胸中喷涌而出",
+   "meta": {
+    "blob": 863,
+    "offset": 140792,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::49436",
    "en": "Exit Village",
    "ja": "村を出る",
@@ -32683,6 +32749,160 @@
     "blob": 889,
     "offset": 4884,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::61238",
+   "en": "somehow",
+   "ja": "道だから",
+   "zh": "这条路",
+   "meta": {
+    "blob": 796,
+    "offset": 133200,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61245",
+   "en": "Offense increased!",
+   "ja": "攻撃力があがった！",
+   "zh": "攻击力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 40,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61246",
+   "en": "Offense increased!",
+   "ja": "防御力があがった！",
+   "zh": "防御力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 344,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61247",
+   "en": "Offense and defense increased!",
+   "ja": "攻撃力・防御力があがった！",
+   "zh": "攻击力和防御力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 648,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61248",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12352,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61249",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12656,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61250",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12960,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61251",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13264,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61252",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13568,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61253",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13872,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61254",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14176,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61255",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14480,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61256",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14784,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61257",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 15088,
+    "cap": 64
    }
   }
  ]

@@ -982,7 +982,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 980,29,98872,64,32,33,I propose that we use this device,「なので　この装置を使って,我建议我们可以用这个装置,「我建议用这个装置
 981,29,98936,64,32,33,to proceed to the next continent.,　次の地へ進むことをていあんしマス」,前往下一个大陆。,　前往下一块大陆。」
 982,29,101664,256,128,20,"I accept the sorrow,",時をうれう聖なるもの,,我接受这悲伤，
-983,29,101956,256,128,30,the burden of the Hero of Time,さずけし悲しみ受け入れ,,时之勇者的重担
+983,29,101956,256,128,30,the burden of the Hero of Time,さずけし悲しみ受け入れ,,接纳被授予的悲伤
 984,29,102248,256,128,52,I push these lofty thoughts inside and rise to fight,高ぶる想いむねにしずめ　いざ立ち向かえ！,,我将高昂的思绪压于心底，起身迎战！
 985,29,103124,64,32,25,<RGN_NAME__>: … Hraaaagh!,<RGN_NAME__>「・・・おらっ！」,<RGN_NAME__>: … Hraaaagh!,<RGN_NAME__>「……喝啊！」
 986,29,106336,64,32,25,<RGN_NAME__>: … Hraaaagh!,<RGN_NAME__>「・・・おらっ！」,<RGN_NAME__>: … Hraaaagh!,<RGN_NAME__>「……喝啊！」
@@ -12049,8 +12049,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12047,205,149844,256,128,15,Inexpensive Pot,安価なつぼ,便宜的锅,划算锅
 12048,205,150136,256,128,11,Regular Pot,普通なつぼ,普通锅,普通锅
 12049,205,150428,256,128,17,Jumbo Fresh Bread,特大やきたてパン,新鲜的巨型面包,特大现烤面包
-12050,205,151012,256,128,40,"Only my voice shakes, filled with spirit",心をこめた歌声だけが,,唯有满怀心意的歌声在
-12051,205,151304,256,128,11,As I marvel,ふるわせている,,微微颤抖着
+12050,205,151012,256,128,40,"Only my voice shakes, filled with spirit",心をこめた歌声だけが,,唯有倾注心意的歌声
+12051,205,151304,256,128,11,As I marvel,ふるわせている,,正震颤着
 12052,205,151596,256,128,20,at my bright destiny,生命（いのち）の結晶（クリスタル）,,我璀璨命运的生命结晶
 12053,205,152764,256,128,47,<RGN_NAME__>: It's too big! I can't finish it!!,<RGN_NAME__>「デカすぎて食いきれねぇ！！」,,<RGN_NAME__>「太大了！吃不完！！」
 12054,205,154288,64,32,3,Man,男性,男人,男人
@@ -13002,8 +13002,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13000,221,132096,64,32,6,No. 30,30号,30号,30号
 13001,221,132160,64,32,37,Our adventure is only just beginning!,「マダマダ　ぼうけんはつづきマス！,我们的冒险才刚刚开始！,30号「我们的冒险才刚要开始！
 13002,221,132224,64,32,36,So let's head to the next continent!,　それでは次の地へイッテみまショウ！」,所以，让我们前往下一个大陆！,　那我们去下一块大陆吧！」
-13003,221,133492,256,128,8,I commit,ありったけの,,我献上
-13004,221,133784,256,128,27,all the bravery that I have,勇気をささげたい,,我全部的勇气
+13003,221,133492,256,128,8,I commit,ありったけの,,全部的
+13004,221,133784,256,128,27,all the bravery that I have,勇気をささげたい,,勇气都愿献给你
 13005,221,145008,128,64,8,… Whoa!!,「・・・ヤベー！！」,...哇！,「……糟了！！」
 13006,221,145300,128,64,29,I've hit too many landmines!?,「地雷ふみすぎたか！？」,我已经轧到了了太多的地雷！？,「我踩太多地雷了！？」
 13007,221,145592,128,64,7,… Wow!!,「・・・おわっ！！」,...哇！,「……哇！！」
@@ -13996,12 +13996,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13994,249,47252,64,32,54,we can find a way to get closer to the Temple of Time.,　時の神殿に近づくための移動手段がありマス」,我们可以找到一条路接近时间之庙。,　就能找到接近时之神庙的办法。」
 13995,249,47416,64,32,6,No. 30,30号,30号,30号
 13996,249,47480,128,64,44,I recommend taking a route that heads south.,「南下するルートをオススメしマス」,我建议一直向南走。,「我建议走一条南下的路。」
-13997,249,48812,256,128,35,I will sing in the midst of a storm,あらしの中　私は歌う,,我将在风暴中歌唱
-13998,249,49104,256,128,17,"From this moment,",さあここから,,从这一刻起，
-13999,249,49396,256,128,23,I will begin my journey,旅を始めよう,,我将走上旅途
-14000,249,52380,64,32,39,"Because I chose this path without fear,",きっと進んでゆけるはずよ,因为选这条路我不会害怕，,因为选这条路我无所畏惧，
+13997,249,48812,256,128,35,I will sing in the midst of a storm,あらしの中　私は歌う,,在风暴之中　我放声歌唱
+13998,249,49104,256,128,17,"From this moment,",さあここから,,来吧，就从这里
+13999,249,49396,256,128,23,I will begin my journey,旅を始めよう,,开始旅程吧
+14000,249,52380,64,32,39,"Because I chose this path without fear,",きっと進んでゆけるはずよ,因为选这条路我不会害怕，,一定能够　继续前行
 14001,249,52444,64,32,11,I will sing,聖域（サンクチュアリ）突きぬけ,我可以唱歌,我便放声歌唱
-14002,249,52508,64,32,30,even in the heart of Sanctuary,どこまでも,即便身处避难所的核心,即便在圣域的中心
+14002,249,52508,64,32,30,even in the heart of Sanctuary,どこまでも,即便身处避难所的核心,直至天涯海角
 14003,250,44,128,64,16,Entered village!,村に入った！,进入村庄!,进入村庄！
 14004,250,180,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
 14005,250,376,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
@@ -17772,9 +17772,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 17770,327,314432,64,32,47,Anyone else would have died five times by now!!,　オレ様じゃなかったら５回くらい死んでんぞ！！」,换做别人已经死了五次了！！,「要不是我，早死五回有余了！！」
 17771,327,314660,128,64,6,… Ugh…,「・・・ヤレヤレ」,……唔……,「……唉……」
 17772,327,315828,128,64,22,… Well? Where are we??,「・・・で？　ココはどこだ？？」,……呃？我们在哪？？,「……所以？这儿是哪儿？？」
-17773,327,316576,256,128,15,The arrangement,わずらいを消し去る,,那编排
-17774,327,316868,256,128,12,of the tones,ととのえられた,,音色的
-17775,327,317160,256,128,21,takes away my sadness,音色たちよ,,带走了我的悲伤
+17773,327,316576,256,128,15,The arrangement,わずらいを消し去る,,驱散忧伤的
+17774,327,316868,256,128,12,of the tones,ととのえられた,,和谐悦耳的
+17775,327,317160,256,128,21,takes away my sadness,音色たちよ,,音色啊
 17776,328,44,128,64,16,Entered village!,村に入った！,进入村庄!,进入村庄！
 17777,328,180,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
 17778,328,376,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
@@ -28986,8 +28986,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28984,502,162464,64,32,3,Coo,クゥ,咕咕声,小咕
 28985,502,162528,64,32,24,"Now that you mention it,",「そういえばわたし,既然你提起了，,「说起来我
 28986,502,162592,64,32,56,the only reason I used to sing was because I enjoyed it…,　ただ歌うのがスキなだけだったな・・・」,我曾经唱歌的唯一理由就是因为我很喜欢唱歌...,　以前唱歌只是因为喜欢…」
-28987,502,168532,256,128,29,The beauty of flawless blades,よどみなき剣がえがく,,无瑕剑刃之美
-28988,502,168824,256,128,15,tracing the air,きせきの美しさ,,于空中划出的轨迹
+28987,502,168532,256,128,29,The beauty of flawless blades,よどみなき剣がえがく,,清澈无滞之剑所描绘的
+28988,502,168824,256,128,15,tracing the air,きせきの美しさ,,奇迹之美
 28989,503,44,128,64,16,Entered village!,村に入った！,进入村庄!,进入村庄！
 28990,503,180,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
 28991,503,376,32,16,8,○: Enter,○：はいる,仜: 进入,○：进入
@@ -30191,8 +30191,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 30189,526,141212,64,32,52,"If I can get both No. 30 and the Goddess on my side,",「いつか30号と時の女神がそろえば,如果我能将30号和女神都带在身边，,「若能拉拢30号和女神，
 30190,526,141276,64,32,41,I'll be more invincible than ever before.,　オレ様はますます無敵になっちまうぜー」,我会比以前更强大。,　我会比以往更强。」
 30191,526,143420,256,128,16,"I shall set out,",この歌,,这首歌
-30192,526,143712,256,128,18,carrying this song,たずさえて,,我带着它
-30193,526,144004,256,128,7,with me,旅に出よう,,去旅行。
+30192,526,143712,256,128,18,carrying this song,たずさえて,,随身带着
+30193,526,144004,256,128,7,with me,旅に出よう,,踏上旅途吧
 30194,526,147800,64,32,22,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「・・・うわっ！」,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「…呀！」
 30195,526,151596,64,32,22,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「・・・うわっ！」,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「…呀！」
 30196,526,155684,64,32,22,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「・・・うわっ！」,<RGN_NAME__>: … Yikes!,<RGN_NAME__>「…呀！」
@@ -37244,8 +37244,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37242,705,127716,64,32,6,No. 30,30号,30号,30号
 37243,705,127780,64,32,19,"Okay, <RGN_NAME__>…",「リョウカイデス　<RGN_NAME__>・・・,"好的, <RGN_NAME__>…",「明白，<RGN_NAME__>…
 37244,705,127844,64,32,30,Let's go! To our final battle!,　イキマショウ　決戦の地ヘ！」,出发吧！去进行我们的最后一场战争！,　走吧！去决战之地！」
-37245,705,129112,256,128,17,The space faraway,過去と未来の,,很远的空间
-37246,705,129404,256,128,34,That connects past and future ages,時をつないだ,,连接着过去与未来时代
+37245,705,129112,256,128,17,The space faraway,過去と未来の,,将过去与未来的
+37246,705,129404,256,128,34,That connects past and future ages,時をつないだ,,时光相连
 37247,705,129696,256,128,12,was gleaming,遥かな空間（そら）　きらめいていた,,正熠熠生辉
 37248,705,134660,64,32,32,Reception: Thank you for coming!,受付「ご利用ありがとうございまーす！」,,接待员「感谢您的光顾！」
 37249,705,135892,64,32,9,Reception,受付,接受,接待处
@@ -39667,9 +39667,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 39665,730,69088,64,32,38,… Reckless doesn't even do it justice.,「ほんとむちゃ・・・っていうか,…说你鲁莽应该还不够准确。,「…用鲁莽形容都太客气。
 39666,730,69152,64,32,43,I think INSANE is the word I'm looking for…,　むちゃくちゃなんだもん・・・」,应该用疯狂这个词儿……,　我想该用疯狂才对…」
 39667,730,69672,128,64,31,I'll take that as a compliment!,「ほめ言葉と受け取っておくぜっ！」,谢谢你的讽刺！,「我就当这是夸奖啦！」
-39668,730,73696,64,32,20,I sing wherever I am,どんな場所でも私は歌う,不管到哪里我都会唱歌,无论何处我都会歌唱
-39669,730,73760,64,32,7,And now,さあ今こそ,更何况现在,而现在
-39670,730,73824,64,32,11,We set sail,船出の時よ,我们即将起航,我们启航了
+39668,730,73696,64,32,20,I sing wherever I am,どんな場所でも私は歌う,不管到哪里我都会唱歌,无论身在何处　我都要歌唱
+39669,730,73760,64,32,7,And now,さあ今こそ,更何况现在,来吧，现在正是
+39670,730,73824,64,32,11,We set sail,船出の時よ,我们即将起航,启航之时
 39671,731,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 39672,731,956,160,80,5,Reset,まきもどす,重置,倒回
 39673,731,1124,32,16,4,Talk,はなす,交谈,交谈
@@ -44406,8 +44406,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44404,778,108864,64,32,54,"Then I'll give you one. Come here, let's do this then!",　いーから　おりてこい　すぐおりてこい」,你想打，我奉陪啊。过来，我们打一架吧！,　那我奉陪。下来，咱们这就开打！」
 44405,778,109028,64,32,6,No. 30,30号,30号,30号
 44406,778,109092,128,64,41,Let's head to the next continent instead.,「では次の地へ向かいまショウ」,我们前往下一块大陆吧。,「那我们前往下一块大陆吧。」
-44407,778,110716,256,128,31,A strong light pierces my heart,心つらぬく強い光,,强烈的光刺透我心
-44408,778,111008,256,128,20,I know there will be,その先に,,我知道前方
+44407,778,110716,256,128,31,A strong light pierces my heart,心つらぬく強い光,,贯穿心灵的　强烈光芒
+44408,778,111008,256,128,20,I know there will be,その先に,,在那前方
 44409,778,111300,256,128,17,a tomorrow for me,きっと未来（あした）がある,,必有属于我的明天
 44410,778,118372,192,96,19,The light subsided!,光がはれた！,光减弱了！,光芒散去了！
 44411,779,140,128,64,13,Spearman Hole,槍士のあな,斯皮尔曼洞穴,枪兵洞
@@ -46111,8 +46111,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 46109,796,131220,64,32,6,No. 30,30号,30号,30号
 46110,796,131284,64,32,31,We still have a long way to go!,「マダマダ　冒険はつづきマス！,我们还有很长的路要走！,「我们的冒险还长着呢！
 46111,796,131348,64,32,36,So let's head to the next continent!,　それでは次の地へイッテみまショウ！」,所以，让我们前往下一个大陆！,　那我们去下一块大陆吧！」
-46112,796,132616,256,128,3,But,恐れず,,但
-46113,796,132908,256,128,22,I will make it through,選んだ,,我会撑过去的
+46112,796,132616,256,128,3,But,恐れず,,毫不畏惧
+46113,796,132908,256,128,22,I will make it through,選んだ,,选择的
 46114,796,141960,256,128,11,Power Staff,にょいぼう,能量之杖,王杖
 46115,796,142544,256,128,11,Power Staff,にょいぼう,能量之杖,王杖
 46116,797,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
@@ -47844,8 +47844,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 47842,813,85796,64,32,55,I just hope she's better than the last God I prayed to…,　さっきのアレにいのるくらいなら・・・」,我就希望她比我上次崇敬的神要好点儿……,　我只盼她比上次我拜的神强点……」
 47843,813,85960,64,32,6,No. 30,30号,30号,30号
 47844,813,86024,128,64,56,"Well, it's about time we moved on to the next continent.",「ではそろそろ　次の地へ向かいまショウ」,好啦，是时候去下个目的地了。,「好，是时候前往下一块大陆了。」
-47845,813,87648,256,128,36,The passion that wells up in silence,きっとだれにも止められない,,静默中涌起的热血
-47846,813,87940,256,128,30,Will surely be stopped by none,静かにわき起こる情熱は,,定无人能将其阻挡
+47845,813,87648,256,128,36,The passion that wells up in silence,きっとだれにも止められない,,一定谁也无法阻挡
+47846,813,87940,256,128,30,Will surely be stopped by none,静かにわき起こる情熱は,,那静静涌起的　热情
 47847,814,20,68,34,25,Q01. The Adventure Begins,Q01．冒険の始まり,Q01.冒险开始了,Q01．冒险开始
 47848,814,600,68,34,17,Q02. Last Remnant,Q02．最後の残党,Q02. 上一个雷姆南特,Q02．最后的残党
 47849,814,1180,68,34,22,Q03. Fight the Thieves,Q03．とうぞく団をたたけ,Q03.与小偷斗争,Q03．讨伐盗贼团
@@ -49432,9 +49432,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 49430,863,138940,64,32,46,I've entered her personal data into my system.,　彼女のパーソナルデータをインプットしまシタ」,我已把她的个人信息存到我的系统里了。,　我已将她的个人数据录入系统。」
 49431,863,139104,64,32,6,No. 30,30号,30号,30号
 49432,863,139168,128,64,54,"<RGN_NAME__>, let's continue on to the next continent.",「それでは　<RGN_NAME__>　次へ進みマショウ」,<RGN_NAME>，我们继续前进到下一个大陆去吧。,「<RGN_NAME__>，我们去下个大陆吧。」
-49433,863,140208,256,128,44,And the passion that slept deep in my memory,記憶の底に眠りつづけていた,,还有深埋记忆中的热忱
-49434,863,140500,256,128,12,Rushes forth,熱い思いが,,炽热的情感奔涌而出
-49435,863,140792,256,128,25,from the back of my heart,むねの奥　ほとばしるの,,从心底深处迸发
+49433,863,140208,256,128,44,And the passion that slept deep in my memory,記憶の底に眠りつづけていた,,一直沉睡在记忆深处的
+49434,863,140500,256,128,12,Rushes forth,熱い思いが,,炽热的心意
+49435,863,140792,256,128,25,from the back of my heart,むねの奥　ほとばしるの,,正从胸中喷涌而出
 49436,864,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 49437,864,956,160,80,4,Pray,おいのり,祈祷,祈祷
 49438,864,1380,32,16,10,Last Lunch,ラストランチ,最后的午餐,最后的午餐
@@ -58413,8 +58413,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 58411,1013,78660,64,32,6,No. 30,30号,30号,30号
 58412,1013,78724,64,32,63,I no longer detect the presence of God Nine here. Let's sail to,「この大陸からゴッドナインの反応は消えました,我不再感觉到这里有九神的存在了，咱们从,「这里已感觉不到九神了。我们启航前往
 58413,1013,78788,64,32,61,the continent with the Temple of Time from the northern port.,　北の港から時の神殿のある大陸を目指しマショウ」,北面的港口到时光之寺的大陆去吧。,　从北港前往有时之神庙的大陆。」
-58414,1013,82456,64,32,24,From the puzzling mirror,迷わせる鏡に,从镜子迷宫中,从令人困惑的镜子
-58415,1013,82520,128,64,28,Reflects a heart of defiance,負けない心を反射して,折射出蔑视之心,映照出不服输的心。
+58414,1013,82456,64,32,24,From the puzzling mirror,迷わせる鏡に,从镜子迷宫中,面对迷惑之镜
+58415,1013,82520,128,64,28,Reflects a heart of defiance,負けない心を反射して,折射出蔑视之心,映照出不屈的心
 58416,1014,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 58417,1014,956,160,80,4,Pray,おいのり,祈祷,祈祷
 58418,1014,1548,32,16,4,Talk,はなす,交谈,交谈
@@ -58774,9 +58774,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 58772,1025,54488,128,64,38,The Dark Time Goddess' favorite thing…,「黒女神の好きなモノねえ・・・・・・」,黑暗时间女神喜欢的东西…,「时之黑女神喜欢的东西啊…」
 58773,1025,54716,64,32,6,No. 30,３０号,30号,30号
 58774,1025,55008,64,32,6,No. 30,３０号,30号,30号
-58775,1025,55072,64,32,42,… I'll give you a hint. It starts with a J,「・・・ヒントはホがついて,… 我给你一个提示，它跟猪同音,「…我提示一下。它开头是'珠'
+58775,1025,55072,64,32,42,… I'll give you a hint. It starts with a J,「・・・ヒントはホがついて,… 我给你一个提示，它跟猪同音,「…我提示一下。它开头是'宝'
 58776,1025,55136,64,32,25,and is very very sparkly.,　とてもキラキラしているモノだと思いマス」,而且闪亮亮。,　而且非常非常闪亮。」
-58777,1025,56240,128,64,28,Sparkly and starts with a J?,「ホがついてキラキラ？」,跟猪同音，而且闪亮亮？,「闪亮亮，而且开头是'珠'？」
+58777,1025,56240,128,64,28,Sparkly and starts with a J?,「ホがついてキラキラ？」,跟猪同音，而且闪亮亮？,「闪亮亮，而且开头是'宝'？」
 58778,1025,57636,192,96,33,Search for the Goddess' Favorite!,女神の好きなモノを探せ！,寻找女神喜欢的东西！,寻找女神喜欢的东西！
 58779,1025,59160,128,64,31,… Is this the trap he spoke of?,「・・・これがトラップってヤツか？」,… 这就是他口中的陷阱吗？,「…这就是他说的陷阱吗？」
 58780,1025,59452,128,64,34,Will this really get the job done?,「ホントに　こんなんで大丈夫か？」,这真的能行吗？,「这样真的能行吗？」
@@ -59900,8 +59900,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 59898,1045,114640,64,32,44,"Well then, let's head to the Temple of Time.",「では　時の神殿に向かいまショウ,那么，我们就去时光神庙吧。,「那我们去时之神庙吧。
 59899,1045,114704,64,32,33,It's located to the east of here.,　ここより東に行った地点デス」,从这里往东边走。,　就在此地往东。」
 59900,1045,116848,256,128,13,Though I balk,自分の運命（さだめ）に,,纵然我踌躇
-59901,1045,117140,256,128,22,at what fate awaits me,おびえながらも,,面对命中注定的未来
-59902,1045,117432,256,128,39,These loud notes are proof of my dreams,激しく鳴らす調べは希望のあかし,,这激昂的旋律是我梦想的证明
+59901,1045,117140,256,128,22,at what fate awaits me,おびえながらも,,纵然畏惧
+59902,1045,117432,256,128,39,These loud notes are proof of my dreams,激しく鳴らす調べは希望のあかし,,激越奏响的旋律　是希望的明证
 59903,1045,118600,64,32,32,Reception: Thank you for coming!,受付「ご利用ありがとうございまーす！」,,接待员「感谢您的光顾！」
 59904,1045,119832,64,32,9,Reception,受付,接受,接待处
 59905,1045,119896,128,64,21,Thank you for coming!,「ご利用ありがとうございまーす！」,欢饮光临！,「感谢您的光顾！」
@@ -61240,3 +61240,26 @@ Physical Strength Fully Recovered!","%s を食べた！
 61235,998,3812,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离谱
 61236,998,4080,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
 61237,147,80192,64,32,10,Get Hint 2,ヒントをもらう２だ,,获得提示2
+61238,796,133200,256,128,7,somehow,道だから,,这条路
+61239,252,2928,128,64,53,Mermaid Clan: There are still Evil Mermaids! Help me!,魚人族「まだ悪い魚人がいる！　助けてくれー」,,鱼人族「还有坏鱼人呢！　救命啊—」
+61240,675,1216,256,128,14,Infinite Clear,無限クリア,,无限通关
+61241,675,2092,256,128,15,Infinite Master,無限マスター,,无限大师
+61242,774,4296,128,64,49,"Man: If you break a pot, I'll sell you a new one.",男性「ツボをわったら　新しいのをうるよ」,,男性「把壶摔了的话　就卖你个新的哦」
+61243,774,4448,128,64,60,Master: Come back after you've done something with that pot.,マスター「ツボをどうにかしてから来なよ」,,店主「先把壶的事处理了再来吧」
+61244,774,4600,128,64,55,Herbalist: Please come back after you've used that pot.,やくそう屋「ツボをどうにかしてから来てください」,,药草店「请先把壶的事处理了再来」
+61245,794,40,128,64,18,Offense increased!,攻撃力があがった！,,攻击力提升了！
+61246,794,344,128,64,18,Offense increased!,防御力があがった！,,防御力提升了！
+61247,794,648,128,64,30,Offense and defense increased!,攻撃力・防御力があがった！,,攻击力和防御力提升了！
+61248,883,12352,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61249,883,12656,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61250,883,12960,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61251,883,13264,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61252,883,13568,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61253,883,13872,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61254,883,14176,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61255,883,14480,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61256,883,14784,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61257,883,15088,128,64,15,Fort destroyed!,ほうだいをはかいした！,,摧毁了炮台！
+61258,891,5816,128,64,57,You ate Recovery Miso! Physical strength fully recovered!,かいふくミソをたべた！　体力が全回復！,,吃了回复味噌！　体力完全恢复！
+61259,891,5968,128,64,58,You ate Recovery Curry! Physical strength fully recovered!,かいふくカレーをたべた！　体力が全回復！,,吃了回复咖喱！　体力完全恢复！
+61260,891,6120,128,64,59,You drank Recovery Milk! Physical strength fully recovered!,かいふくミルクをのんだ！　体力が全回復！,,喝了回复牛奶！　体力完全恢复！

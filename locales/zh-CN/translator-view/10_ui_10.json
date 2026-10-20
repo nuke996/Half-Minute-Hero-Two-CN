@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 1857,
+ "_count": 1860,
  "entries": [
   {
    "id": "row::56654",
@@ -10139,11 +10139,22 @@
    "id": "row::58414",
    "en": "From the puzzling mirror",
    "ja": "迷わせる鏡に",
-   "zh": "从令人困惑的镜子",
+   "zh": "面对迷惑之镜",
    "meta": {
     "blob": 1013,
     "offset": 82456,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::58415",
+   "en": "Reflects a heart of defiance",
+   "ja": "負けない心を反射して",
+   "zh": "映照出不屈的心",
+   "meta": {
+    "blob": 1013,
+    "offset": 82520,
+    "cap": 64
    }
   },
   {
@@ -17612,6 +17623,28 @@
    "meta": {
     "blob": 1045,
     "offset": 116848,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::59901",
+   "en": "at what fate awaits me",
+   "ja": "おびえながらも",
+   "zh": "纵然畏惧",
+   "meta": {
+    "blob": 1045,
+    "offset": 117140,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::59902",
+   "en": "These loud notes are proof of my dreams",
+   "ja": "激しく鳴らす調べは希望のあかし",
+   "zh": "激越奏响的旋律　是希望的明证",
+   "meta": {
+    "blob": 1045,
+    "offset": 117432,
     "cap": 128
    }
   },

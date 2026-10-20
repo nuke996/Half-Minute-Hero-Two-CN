@@ -2,7 +2,7 @@
  "_kind": "single-dialogue",
  "_note": "对话类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3948,
+ "_count": 3951,
  "entries": [
   {
    "id": "row::37539",
@@ -43429,6 +43429,39 @@
    "meta": {
     "blob": 838,
     "offset": 2004,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61242",
+   "en": "Man: If you break a pot, I'll sell you a new one.",
+   "ja": "男性「ツボをわったら　新しいのをうるよ」",
+   "zh": "男性「把壶摔了的话　就卖你个新的哦」",
+   "meta": {
+    "blob": 774,
+    "offset": 4296,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61243",
+   "en": "Master: Come back after you've done something with that pot.",
+   "ja": "マスター「ツボをどうにかしてから来なよ」",
+   "zh": "店主「先把壶的事处理了再来吧」",
+   "meta": {
+    "blob": 774,
+    "offset": 4448,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61244",
+   "en": "Herbalist: Please come back after you've used that pot.",
+   "ja": "やくそう屋「ツボをどうにかしてから来てください」",
+   "zh": "药草店「请先把壶的事处理了再来」",
+   "meta": {
+    "blob": 774,
+    "offset": 4600,
     "cap": 64
    }
   }

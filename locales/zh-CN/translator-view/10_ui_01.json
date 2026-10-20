@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2886,
+ "_count": 2887,
  "entries": [
   {
    "id": "row::0",
@@ -3785,6 +3785,17 @@
    "meta": {
     "blob": 29,
     "offset": 101664,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::983",
+   "en": "the burden of the Hero of Time",
+   "ja": "さずけし悲しみ受け入れ",
+   "zh": "接纳被授予的悲伤",
+   "meta": {
+    "blob": 29,
+    "offset": 101956,
     "cap": 128
    }
   },
@@ -31290,9 +31301,9 @@
   },
   {
    "id": "row::60746",
-   "en": "Ate %s!\nPhysical Strength Fully Recovered!",
-   "ja": "%s を食べた！\n体力全快！",
-   "zh": "吃下了%s！\n生命全满！",
+   "en": "Ate %s!\r\nPhysical Strength Fully Recovered!",
+   "ja": "%s を食べた！\r\n体力全快！",
+   "zh": "吃下了%s！\r\n生命全满！",
    "meta": {
     "blob": 25,
     "offset": 3080,

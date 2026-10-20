@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2720,
+ "_count": 2723,
  "entries": [
   {
    "id": "row::50012",
@@ -29922,6 +29922,39 @@
     "blob": 974,
     "offset": 271672,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::61258",
+   "en": "You ate Recovery Miso! Physical strength fully recovered!",
+   "ja": "かいふくミソをたべた！　体力が全回復！",
+   "zh": "吃了回复味噌！　体力完全恢复！",
+   "meta": {
+    "blob": 891,
+    "offset": 5816,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61259",
+   "en": "You ate Recovery Curry! Physical strength fully recovered!",
+   "ja": "かいふくカレーをたべた！　体力が全回復！",
+   "zh": "吃了回复咖喱！　体力完全恢复！",
+   "meta": {
+    "blob": 891,
+    "offset": 5968,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61260",
+   "en": "You drank Recovery Milk! Physical strength fully recovered!",
+   "ja": "かいふくミルクをのんだ！　体力が全回復！",
+   "zh": "喝了回复牛奶！　体力完全恢复！",
+   "meta": {
+    "blob": 891,
+    "offset": 6120,
+    "cap": 64
    }
   }
  ]

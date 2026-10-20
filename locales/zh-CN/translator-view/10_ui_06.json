@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3002,
+ "_count": 3006,
  "entries": [
   {
    "id": "row::31614",
@@ -29100,6 +29100,28 @@
    }
   },
   {
+   "id": "row::37245",
+   "en": "The space faraway",
+   "ja": "過去と未来の",
+   "zh": "将过去与未来的",
+   "meta": {
+    "blob": 705,
+    "offset": 129112,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::37246",
+   "en": "That connects past and future ages",
+   "ja": "時をつないだ",
+   "zh": "时光相连",
+   "meta": {
+    "blob": 705,
+    "offset": 129404,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::37247",
    "en": "was gleaming",
    "ja": "遥かな空間（そら）　きらめいていた",
@@ -33024,6 +33046,28 @@
     "blob": 681,
     "offset": 376,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::61240",
+   "en": "Infinite Clear",
+   "ja": "無限クリア",
+   "zh": "无限通关",
+   "meta": {
+    "blob": 675,
+    "offset": 1216,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61241",
+   "en": "Infinite Master",
+   "ja": "無限マスター",
+   "zh": "无限大师",
+   "meta": {
+    "blob": 675,
+    "offset": 2092,
+    "cap": 128
    }
   }
  ]

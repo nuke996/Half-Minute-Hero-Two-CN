@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3193,
+ "_count": 3197,
  "entries": [
   {
    "id": "row::24640",
@@ -21656,10 +21656,21 @@
    "id": "row::28987",
    "en": "The beauty of flawless blades",
    "ja": "よどみなき剣がえがく",
-   "zh": "无瑕剑刃之美",
+   "zh": "清澈无滞之剑所描绘的",
    "meta": {
     "blob": 502,
     "offset": 168532,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::28988",
+   "en": "tracing the air",
+   "ja": "きせきの美しさ",
+   "zh": "奇迹之美",
+   "meta": {
+    "blob": 502,
+    "offset": 168824,
     "cap": 128
    }
   },
@@ -27964,6 +27975,39 @@
     "blob": 526,
     "offset": 140272,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::30191",
+   "en": "I shall set out,",
+   "ja": "この歌",
+   "zh": "这首歌",
+   "meta": {
+    "blob": 526,
+    "offset": 143420,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30192",
+   "en": "carrying this song",
+   "ja": "たずさえて",
+   "zh": "随身带着",
+   "meta": {
+    "blob": 526,
+    "offset": 143712,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30193",
+   "en": "with me",
+   "ja": "旅に出よう",
+   "zh": "走上旅途吧",
+   "meta": {
+    "blob": 526,
+    "offset": 144004,
+    "cap": 128
    }
   },
   {

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3006,
+ "_count": 3009,
  "entries": [
   {
    "id": "row::6660",
@@ -25283,6 +25283,28 @@
    }
   },
   {
+   "id": "row::12050",
+   "en": "Only my voice shakes, filled with spirit",
+   "ja": "心をこめた歌声だけが",
+   "zh": "唯有倾注心意的歌声",
+   "meta": {
+    "blob": 205,
+    "offset": 151012,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::12051",
+   "en": "As I marvel",
+   "ja": "ふるわせている",
+   "zh": "正震颤着",
+   "meta": {
+    "blob": 205,
+    "offset": 151304,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::12052",
    "en": "at my bright destiny",
    "ja": "生命（いのち）の結晶（クリスタル）",
@@ -30046,10 +30068,21 @@
    }
   },
   {
+   "id": "row::13003",
+   "en": "I commit",
+   "ja": "ありったけの",
+   "zh": "全部的",
+   "meta": {
+    "blob": 221,
+    "offset": 133492,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::13004",
    "en": "all the bravery that I have",
    "ja": "勇気をささげたい",
-   "zh": "我全部的勇气",
+   "zh": "勇气都愿献给你",
    "meta": {
     "blob": 221,
     "offset": 133784,

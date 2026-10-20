@@ -2,7 +2,7 @@
  "_kind": "single-dialogue",
  "_note": "对话类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3852,
+ "_count": 3853,
  "entries": [
   {
    "id": "row::9473",
@@ -42373,6 +42373,17 @@
    "meta": {
     "blob": 335,
     "offset": 10908,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61239",
+   "en": "Mermaid Clan: There are still Evil Mermaids! Help me!",
+   "ja": "魚人族「まだ悪い魚人がいる！　助けてくれー」",
+   "zh": "鱼人族「还有坏鱼人呢！　救命啊—」",
+   "meta": {
+    "blob": 252,
+    "offset": 2928,
     "cap": 64
    }
   }
