@@ -14,6 +14,7 @@
 通过自检后：
   1) 备份译表 → 写回 text_v2.csv / ml_zh_fields.json / dlc/*.tsv / dlc/zh_07.json
   2) 运行 tools/build.py package（隔离模式）刷新 dist/，**不改游戏目录**
+     打包结束会自动重导出 translator-view，避免旧快照再次回写译表。
 
 模式：apply（默认）/ revert（恢复上次导入前的译表并重新刷新 dist）。
 """
@@ -376,7 +377,7 @@ def do_apply():
     for ln in out.splitlines():
         s = ln.strip()
         if any(k in s for k in ('已改', '打包完成', '打包中止', 'staging', '母本',
-                                '空槽', '溢出', '覆盖', '写入', 'DLC01')):
+                                '空槽', '溢出', '覆盖', '写入', 'DLC01', '校对视图')):
             P('  ' + s)
     if rc != 0:
         P('  [X] 打包失败（退出码 %s）。译表已写入，可运行「汉化-导入校对-回滚.bat」恢复。'

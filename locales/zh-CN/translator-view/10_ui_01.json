@@ -382,7 +382,7 @@
    "id": "row::133",
    "en": "(Darn Darn Darn!",
    "ja": "（ちくしょうちくしょうちくしょう",
-   "zh": "（可恶可恶可恶！",
+   "zh": "（可恶可恶可恶，",
    "meta": {
     "blob": 4,
     "offset": 38188,
@@ -3176,7 +3176,7 @@
    "id": "row::840",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 29,
     "offset": 24348,
@@ -8764,7 +8764,7 @@
    "id": "row::1932",
    "en": "Ring Dragon: Miho Midorikawa",
    "ja": "リングドラゴン：緑川美帆",
-   "zh": "环龙：绿川美帆",
+   "zh": "指环龙：绿川美帆",
    "meta": {
     "blob": 54,
     "offset": 14608,
@@ -23405,7 +23405,7 @@
    "id": "row::5489",
    "en": "Obtained Omega 2!",
    "ja": "オメガ２をゲット！",
-   "zh": "获得欧米茄2！",
+   "zh": "获得欧米伽2！",
    "meta": {
     "blob": 113,
     "offset": 2412,

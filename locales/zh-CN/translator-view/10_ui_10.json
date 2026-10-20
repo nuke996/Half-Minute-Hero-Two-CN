@@ -9677,7 +9677,7 @@
    "id": "row::58331",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 1013,
     "offset": 26392,
@@ -11833,7 +11833,7 @@
    "id": "row::58729",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "３０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 1025,
     "offset": 39532,
@@ -12504,7 +12504,7 @@
    "id": "row::58894",
    "en": "It appears that the Hero Castle can be summoned here.",
    "ja": "　ここに勇者城を呼べるようだ",
-   "zh": "看来能在此召唤勇者城。",
+   "zh": "看来能在此召唤勇者城，",
    "meta": {
     "blob": 1025,
     "offset": 133036,
@@ -16827,7 +16827,7 @@
    "id": "row::59718",
    "en": "… But it's a horrible thing when people are hurt.",
    "ja": "（・・・でも人がキズつくのはつらいことだよ",
-   "zh": "… 可有人受伤终归是件难过的事。",
+   "zh": "… 可有人受伤终归是件难过的事，",
    "meta": {
     "blob": 1045,
     "offset": 17696,
@@ -16871,7 +16871,7 @@
    "id": "row::59726",
    "en": "Defeat the Last of the God Nine!",
    "ja": "最後のゴッドナインをたおせ！",
-   "zh": "击败九天神中的最后一人！",
+   "zh": "击败九神中的最后一人！",
    "meta": {
     "blob": 1045,
     "offset": 26392,
@@ -18367,7 +18367,7 @@
    "id": "row::60026",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 28728,
@@ -18378,7 +18378,7 @@
    "id": "row::60027",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 31648,
@@ -18532,7 +18532,7 @@
    "id": "row::60064",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 86252,
@@ -18543,7 +18543,7 @@
    "id": "row::60065",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 92384,

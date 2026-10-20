@@ -13846,7 +13846,7 @@
    "id": "row::34045",
    "en": "Obtained Omega 2",
    "ja": "オメガ２をゲット！",
-   "zh": "获得荆棘宝藏2！",
+   "zh": "获得欧米伽2！",
    "meta": {
     "blob": 644,
     "offset": 19676,
@@ -24879,7 +24879,7 @@
    "id": "row::36544",
    "en": "* The sign-like thing to the left is the <movement button>!",
    "ja": "＊　左のカンバンっぽいのは<移動ボタン>",
-   "zh": "＊ 左边的标志是<移动键>！",
+   "zh": "＊ 左边的标志是<移动键>，",
    "meta": {
     "blob": 683,
     "offset": 209540,

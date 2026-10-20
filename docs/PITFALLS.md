@@ -378,3 +378,25 @@ JA/EN 一致、无 `?`。
   脚本自身用 `paths.py`（`config.local.json` / 环境变量）定位游戏目录，故与 cwd 无关。
 **相关文件：** `tools/export_review.py: main()`、`tools/make_bats.py`、
 `locales/zh-CN/translator-view/*.bat`、`BUILDING.md` §5.3–5.4。
+
+---
+
+## 24. 旧校对视图回写译表：术语与断句修复被整体覆盖
+
+**状态：** 已验证（2026-10-20）
+**影响范围：** 校对工作流、任何批量改译表 / 改汉化脚本的批次
+**背景：** `translator-view/` 是某一时刻导出的**快照**；`import_review.py` 只按 `id`
+把 JSON 里的 `zh` 写回译表，并不校验"快照之后译表是否又被脚本改过".
+**事故过程：** 第二批术语统一与多行断句修复直接改的是 `text_v2.csv` 与
+`ml_zh_fields.json`，之后没有重新导出视图；用户随即执行 `汉化-导入校对.bat`，
+导入把 **1,607 行**旧文本写回——其中术语回退 214 行、断句回退 1,393 行，
+另有 1 行真实校对修改（row 29555）。DLC `zh_01~05.tsv` 另有 21 行术语回退。
+**根因归类：** 导出 → 修改 → 导入 的时序被打破；修改方不是译者，而是构建/术语脚本。
+**正确解法（硬规则）：** 每次改过译表或汉化相关脚本，**打包完成后必须导出一次**
+`translator-view/`。自 v2.69 起 `do_package()` / `do_package_install()` 在写完 `dist/`
+后自动调用 `export_review.py`；导出失败即以非零码退出，并提示"导出成功前不要导入校对"。
+`import_review.py` 自带 `package` 调用，所以正常导入流程结束时视图也会自动刷新。
+**恢复办法：** 用导入前时间戳备份 `*.bak_review_<ts>` 逐行比对恢复，并保留真实校对修改
+（本次保留 1 行）；DLC 同名备份一并恢复；随后重新导出 + 重新打包。
+**相关文件：** `tools/build_cn.py: export_review_view()`、`tools/import_review.py`、
+`tools/export_review.py`、`BUILDING.md` §5.4、`TRANSLATING.md` §14。

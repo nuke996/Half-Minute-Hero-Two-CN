@@ -160,6 +160,10 @@ python tools/runner.py <脚本名> [参数]
   → 自动跑 `tools/build.py package`（隔离模式）刷新 `dist/`，**不改游戏目录**。
 - **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
   译表，并重新刷新 `dist/`。
+- **打包后强制导出（硬规则）**：`package` / `package_install`（含 `*_exe`）在写完 `dist/`
+  后会自动运行 `export_review.py` 刷新 `translator-view/`；导出失败则以非零码退出并提示，
+  在手动导出成功前**不得**运行导入校对。原因见 `docs/PITFALLS.md` §24：旧视图会把旧译文
+  整体回写译表。**任何译表或汉化脚本改动，都必须以一次成功打包（即自动导出）收尾。**
 
 ---
 

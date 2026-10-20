@@ -118,7 +118,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 
 - 术语须跨全部译表一致；术语以译表（`locales/zh-CN/text_v2.csv`、`ml_zh_fields.json`、
   DLC 译表）与替换词典（`replace_map.py` / `hl_map.py`）中的**实际用词**为准。
-- 如需独立术语表，置于 `locales/zh-CN/术语表.md`（当前仓库尚无此文件，属约定路径）。
+- 独立术语表：`locales/zh-CN/术语表.md`（含已统一译名、DLC 专名、待确认项与容量限制说明）。
 - 类别：角色名、地名、组织、武器、道具、技能、状态、怪物、职业、系统术语、固定 UI 文案。
 - 同一原串在不同位置必须**同一中文**（跨批次核对，例：`パンイチ/Skivvies` 同时是称号 rec40 与职业 rec0）。
 
@@ -211,6 +211,13 @@ translator-view/
    非法字符 / 单行含换行等）。
 5. 导入不改游戏目录；想立刻进游戏验证，再双击**游戏目录**里的 **汉化-安装.bat** 装机。
 6. 改坏了：双击本目录 **汉化-导入校对-回滚.bat** 恢复到上次导入前的译表并重刷 `dist/`。
+
+> **[硬规则] 改完文本或汉化脚本，必须以"成功打包 + 自动导出"收尾。**
+> `tools/build.py package`（及 `package_install`）写完 `dist/` 后会自动运行
+> `export_review.py` 刷新 `translator-view/`；导出失败时打包以非零码退出，须先手动
+> `python tools/export_review.py` 成功，才能再次导入校对。否则 `translator-view`
+> 会停留在旧快照，下次导入把旧译文整体回写译表（2026-10-20 事故：
+> 1,607 行术语/断句修复被覆盖，见 `docs/PITFALLS.md` §24）。
 
 **`protected/`（受保护、当下不上屏）**：项目已验证"翻译会破坏机制"而故意保留原文的
 文本也会一并导出到这里，便于将来保护解除后直接生效。判定口径即生产装机口径，共三类：

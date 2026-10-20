@@ -921,7 +921,7 @@
    "id": "row::6862",
    "en": "(Impressive, <RGN_NAME__>.",
    "ja": "（さすがだね<RGN_NAME__>",
-   "zh": "（真有你的，<RGN_NAME__>。",
+   "zh": "（真有你的，<RGN_NAME__>，",
    "meta": {
     "blob": 137,
     "offset": 159024,
@@ -4562,7 +4562,7 @@
    "id": "row::7629",
    "en": "Shoes favored by warriors.",
    "ja": "戦士団ごようたしのくつ",
-   "zh": "战士们爱用的鞋。",
+   "zh": "战士团御用的靴子。",
    "meta": {
     "blob": 147,
     "offset": 48836,
@@ -4859,7 +4859,7 @@
    "id": "row::7684",
    "en": "Shield made of hide.",
    "ja": "かわをはって作った盾",
-   "zh": "兽皮制成的盾。",
+   "zh": "用皮革绷制的盾。",
    "meta": {
     "blob": 147,
     "offset": 56340,
@@ -5409,7 +5409,7 @@
    "id": "row::7988",
    "en": "Omega _+ Gold Rush +1.",
    "ja": "オメガ_＋ゴールドラッシュ＋１",
-   "zh": "奥米伽_+淘金热+1。",
+   "zh": "欧米伽_+淘金热+1。",
    "meta": {
     "blob": 147,
     "offset": 127628,
@@ -13230,7 +13230,7 @@
    "id": "row::9581",
    "en": "(It looks like there's nothing left worth investigating.",
    "ja": "（これ以上は調べても　何もなさそうだな",
-   "zh": "（看来也没什么好调查的了。",
+   "zh": "（看来也没什么好调查的了，",
    "meta": {
     "blob": 176,
     "offset": 94784,

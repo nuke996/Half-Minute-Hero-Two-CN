@@ -8029,7 +8029,7 @@
    "id": "row::52672",
    "en": "(… Alright. The past doesn't matter anymore anyway.",
    "ja": "（・・・そうだ　過去など　もうどうでもいい",
-   "zh": "（…好吧。反正过去都无关紧要了。",
+   "zh": "（…好吧。反正过去都无关紧要了，",
    "meta": {
     "blob": 913,
     "offset": 95368,
@@ -10148,7 +10148,7 @@
    "id": "row::53607",
    "en": "Bread to the Sailors",
    "ja": "船乗りにパンを",
-   "zh": "给船员送面包",
+   "zh": "给水手送面包",
    "meta": {
     "blob": 931,
     "offset": 18704,
@@ -15699,7 +15699,7 @@
    "id": "row::55732",
    "en": "Temple of Time",
    "ja": "時の神殿",
-   "zh": "时之神庙",
+   "zh": "时之神殿",
    "meta": {
     "blob": 969,
     "offset": 140,

@@ -2533,6 +2533,28 @@ def _pkg_origin_sources():
     return src, missing, uses_current, has_dlc
 
 
+def export_review_view():
+    """打包后刷新译者校对视图（translator-view/）。
+
+    【强制规则】译表或汉化脚本有任何改动，打包完成后必须导出一次最新译文；
+    否则 translator-view 仍是旧快照，下次「导入校对」会把旧文本整体回写译表。
+    （2026-10-20 事故：旧视图回写导致 1,607 行术语/断句修复被覆盖。）
+    """
+    import subprocess
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'export_review.py')
+    print('== 刷新译者校对视图（translator-view）==')
+    sys.stdout.flush()
+    env = os.environ.copy()
+    env['PYTHONIOENCODING'] = 'utf-8'
+    rc = subprocess.call([sys.executable, script], env=env)
+    if rc != 0:
+        print('!! 校对视图导出失败（退出码 %s）：dist/ 已生成，但视图仍是旧快照' % rc)
+        print('   请立即手动运行: python tools/export_review.py')
+        print('   在导出成功之前，不要运行「汉化-导入校对.bat」，否则旧视图会回写译表。')
+        raise SystemExit(1)
+    print('校对视图已刷新：%s' % os.path.join(WORK, 'translator-view'))
+
+
 def do_package(exe_mode=None):
     """完整补丁打包（默认·隔离模式）：只读配置目录母本 → 在 staging 装机 → 复制到 dist/。
     配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。"""
@@ -2575,6 +2597,7 @@ def do_package(exe_mode=None):
     env['HMH2_GAME_DIR'] = stage
     env['HMH2_EXE_MODE'] = em
     env['PYTHONIOENCODING'] = 'utf-8'
+    sys.stdout.flush()
     rc = subprocess.call([sys.executable, os.path.abspath(__file__),
                           'apply_menu' if em == 'dll' else 'apply_menu_exe'], env=env)
     if rc != 0:
@@ -2615,6 +2638,9 @@ def do_package(exe_mode=None):
     print('打包完成：%d 个文件已放入 %s（未打 zip；配置游戏目录未改动）'
           % (len(table), paths.DIST_DIR))
     print('提示：staging 暂存于 %s（可删）；dist 中不属于本次补丁的旧文件不会被删除。' % stage)
+
+    # ⑥ 强制刷新译者校对视图：避免 translator-view 停留在旧快照，下次导入时整体回写译表
+    export_review_view()
 
 
 def do_package_install(exe_mode=None):
@@ -2690,6 +2716,9 @@ def do_package_install(exe_mode=None):
         print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
     print('打包完成：%d 个文件已放入 %s（未打 zip）' % (len(table), paths.DIST_DIR))
     print('提示：dist 中不属于本次补丁的旧文件（如历史 zip）不会被删除。')
+
+    # ⑤ 强制刷新译者校对视图（规则同 do_package）
+    export_review_view()
 
 
 if __name__ == '__main__':

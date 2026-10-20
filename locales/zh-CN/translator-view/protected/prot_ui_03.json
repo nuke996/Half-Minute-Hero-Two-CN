@@ -1646,7 +1646,7 @@
    "id": "row::14687",
    "en": "* Like Nanako, a childhood friend of <EVO_NAME__>'s.",
    "ja": "＊　ナナコと同じく<EVO_NAME__>のおさななじみ",
-   "zh": "＊ 和奈奈子一样，是<EVO_NAME__>的青梅竹马。",
+   "zh": "＊ 和奈奈子一样，是<EVO_NAME__>的青梅竹马，",
    "meta": {
     "blob": 282,
     "offset": 25288,
@@ -1672,7 +1672,7 @@
    "id": "row::14690",
    "en": "* His role is to keep an eye on Princess <EVO_NAME__>.",
    "ja": "＊　王女である<EVO_NAME__>のお目付け役でもある",
-   "zh": "＊ 他的职责是监视王女<EVO_NAME__>。",
+   "zh": "＊ 他的职责是监视王女<EVO_NAME__>，",
    "meta": {
     "blob": 282,
     "offset": 25580,
@@ -2946,7 +2946,7 @@
    "id": "row::15659",
    "en": "Varch of the Wars",
    "ja": "戦いのヴァーチ",
-   "zh": "战事的瓦奇",
+   "zh": "战争的瓦奇",
    "meta": {
     "blob": 297,
     "offset": 908,
@@ -4298,7 +4298,7 @@
    "id": "row::17031",
    "en": "Intro of THE VENUS 7",
    "ja": "Intro of THE VENUS 7",
-   "zh": "维纳斯7 开场戏",
+   "zh": "七美神 开场戏",
    "meta": {
     "blob": 320,
     "offset": 12544,
@@ -4324,7 +4324,7 @@
    "id": "row::17033",
    "en": "Battle of THE VENUS 7",
    "ja": "Battle of THE VENUS 7",
-   "zh": "维纳斯7 战斗",
+   "zh": "七美神 战斗",
    "meta": {
     "blob": 320,
     "offset": 13036,
@@ -6196,7 +6196,7 @@
    "id": "row::17182",
    "en": "Intro of THE VENUS 7",
    "ja": "Intro of THE VENUS 7",
-   "zh": "维纳斯7 开场戏",
+   "zh": "七美神 开场戏",
    "meta": {
     "blob": 320,
     "offset": 63220,
@@ -6235,7 +6235,7 @@
    "id": "row::17185",
    "en": "Battle of THE VENUS 7",
    "ja": "Battle of THE VENUS 7",
-   "zh": "维纳斯7 战斗",
+   "zh": "七美神 战斗",
    "meta": {
     "blob": 320,
     "offset": 63712,

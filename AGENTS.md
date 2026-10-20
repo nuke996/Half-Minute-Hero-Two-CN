@@ -132,8 +132,28 @@ Prefer the following order:
 10. Begin large-scale translation.
 11. Perform in-game QA.
 12. Build reproducible release packages.
+13. Re-export the translator review view after every successful package build.
 
 Do not start by translating the entire game before the technical pipeline has been validated.
+
+## Translator Review View Consistency (mandatory)
+
+`locales/<locale>/translator-view/` is a point-in-time snapshot that the review-import
+tool writes back into the translation tables by `id`. If the tables or any localization
+script change after an export, importing that stale snapshot silently reverts the newer
+work.
+
+Therefore:
+
+- After any change to translation data (including bulk terminology scripts, multi-line
+  fields, and DLC tables) or to localization scripts, finish with a successful package
+  build. `package` / `package_install` automatically re-export the review view after
+  writing `dist/`.
+- If that automatic export fails, the build exits non-zero. Run
+  `python tools/export_review.py` successfully before using the review-import entry
+  point again.
+- Never import a review view that is older than the current translation tables.
+  See `docs/PITFALLS.md` §24.
 
 ## Multi-Language Reuse
 
