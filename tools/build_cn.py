@@ -273,6 +273,16 @@ def in_skill_key_col(bi, off):
 
 # 实验用按列黑名单（默认 None = 不启用）。由二分实验的 apply 函数临时设置/复原。
 _SLOT_BLOCK = None
+# 实验用「collide 额外放行」回调（默认 None = 不启用）。
+# 签名 (bi, off, ja_cmp) -> True；仅在 keep_collide=True 且命中 collide 时调用，
+# 返回 True 表示该槽照常翻译（用于 Z10b/Z11：只放行指定名字/复合键）。
+_EXTRA_RELEASE = None
+# 实验用「额外译表行」（默认 None）。由 Z11 等配方注入，参与字库统计与文本写入，
+# 但不落盘到 text_v2.csv（避免污染译表/误登记）。
+_EXTRA_ROWS = None
+# Z14 用：明确允许翻译的称号名槽 {(blob, offset)}，用于绕过 chap_title_guard 的整表保护。
+# 只放行 b931 pos0 的称号名本体；pos36（章节标题副本）与 Q16 rec_rules 仍受保护。
+_TITLE_RELEASE = None
 EQUIP_BLOBS = (147, 357, 736, 998)
 EQUIP_STRIDE = 268
 
@@ -825,6 +835,9 @@ def char_freq(rows):
 def build_plan():
     """返回 (slots, chosen, cmap, stats)"""
     rows = list(csv.DictReader(open(CSV, encoding='utf-8')))
+    if _EXTRA_ROWS:
+        # 额外行放在最前：同名槽位去重时以额外行为准（CSV 里可能是空译文占位行）。
+        rows = list(_EXTRA_ROWS) + rows
     tbl = s2a.Archive(os.path.join(BASE, 'res/cscv.s2a.bak'))
     tb = tbl.blobs[tbl.hash_map()[TBL_HASH]]
     ents, types, end = parse_entries(tb)
@@ -1246,7 +1259,7 @@ def propagate_canonical_dups(edits, canonical, lang_a, en_a, registered, skip_bl
 def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_blobs=(), consistent=False,
                  menu_exempt=False, field_fix=True, ui_always=False, slot_release=False,
                  desc_release=False, dry_run=False, classify=None, lang_files=None,
-                 propagate_dups=False, mirror=False):
+                 propagate_dups=False, mirror=False, title_guard=True):
     """把译文写进 LANG_JA / LANG_EN / cscv(与 LANG 重复的部分)。
 
     cscv.s2a 里有大量与 LANG 逐字节相同的 blob（实测 681 个），游戏可能从它读文本，
@@ -1366,7 +1379,9 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
         # v2.58 章节名/称号保护：命中 (blob, stride, pos) 的槽位一律保留原文
         # v2.62 扩展：支持"按记录号"保护（Q16 单条例外），见 chap_title_hit()
         # v2.63 扩展：支持"按值"保护 —— 先解出该槽日文原文再判定（value_rules）
-        if (not mirror) and (ct_guard or ct_recs or _CT_VALUE_CACHE):
+        # ★ 2026-10-21 修复：mirror 只应放行 b666 键名列（in_skill_key_col），
+        #   不能连带关闭称号/Q16 保护（Z10b/Z11/Z12 曾因此把称号翻中文 -> 称号无法获得）。
+        if (title_guard or not mirror) and (ct_guard or ct_recs or _CT_VALUE_CACHE):
             _st = blob_stride(lang_a, bi)
             _val = None
             if _CT_VALUE_CACHE and bi < len(lang_a.blobs) and off < len(lang_a.blobs[bi]):
@@ -1377,10 +1392,13 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
                     _val = None
             if _st and chap_title_hit(ct_guard, ct_recs, bi, _st,
                                       (off - 16) % _st, (off - 16) // _st, _val):
-                stats['chaptitle'] += 1
-                if classify is not None:
-                    classify[(bi, off)] = 'chaptitle'
-                continue
+                if _TITLE_RELEASE is not None and (bi, off) in _TITLE_RELEASE:
+                    pass  # Z14：显式允许的称号名本体（已验证同语言副本一致）
+                else:
+                    stats['chaptitle'] += 1
+                    if classify is not None:
+                        classify[(bi, off)] = 'chaptitle'
+                    continue
         # v2.51 说明文放行：命中 (blob, stride, pos) 规则的说明字段，即使本表在 skip_blobs 里也照常翻译
         desc_ok = bool(desc_rel) and desc_release_hit(desc_rel, lang_a, bi, off)
         if bi in skip_blobs and not desc_ok:
@@ -1431,6 +1449,10 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
                     # v2.49 槽位级放行（TODO-2C 第二步）：说话人名字段是纯显示字段，
                     # 命中 collide 也照常翻译；同名副本（其它表/其它 pos）不受影响。
                     stats['slotrel'] += 1
+                elif _EXTRA_RELEASE is not None and _EXTRA_RELEASE(bi, off, ja_cmp):
+                    # 实验用（Z10b）：只额外放行机制名/装备名与章节 loadout，
+                    # 其余 collide 字符串仍按 stable 配方保留原文。
+                    stats['extrarel'] += 1
                 elif '「' in ja_cmp:
                     # v2.24 对话放行：带引号的对话文本（前半句「… / 整段 名字「…」）
                     # 不是机制比对目标——名字串（道具/武器/敌人名）均不含引号。
@@ -2255,7 +2277,8 @@ def apply_song_lyrics(cmap, native):
 def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=None,
              consistent=False, menu_exempt=False, field_fix=True, ui_always=False,
              place=True, chap=True, song=True, slot_release=False, desc_release=False,
-             exe_mode=None, lang_files=None, propagate_dups=False, mirror=False):
+             exe_mode=None, lang_files=None, propagate_dups=False, mirror=False,
+             title_guard=True):
     """生产安装 = 同名不翻(keep_collide) + 机制表不翻(skip_blobs)。
     这是 2026-09-12 测试C/D 验证过的"技能全可用"组合。
     v2.2/2.3: menu_exempt=True 额外豁免 UI blob(186/354/358/440/516/715/763) 的
@@ -2296,7 +2319,8 @@ def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=None,
             keep_collide = False
         rewrite_text(rows, cmap, st['native_set'], sync_cscv, keep_collide, skip_blobs,
                      consistent, menu_exempt, field_fix, ui_always, slot_release, desc_release,
-                     lang_files=lang_files, propagate_dups=propagate_dups, mirror=mirror)
+                     lang_files=lang_files, propagate_dups=propagate_dups, mirror=mirror,
+                     title_guard=title_guard)
         # v2.21：cscv 侧孪生表必须显式写（内容匹配同步配不上索引不同的孪生）
         if place:
             apply_cscv_place(cmap, st['native_set'])
@@ -2571,6 +2595,15 @@ def restore_q16_keys(verbose=True):
         if not own_run:
             n_doubt += 1
             continue
+        if not live_run:
+            # 槽头（FF FF FF FF 前缀 + 文本）被其它步骤整体清空：
+            # Q16 键必须原样恢复；只要长度不越过记录边界就直接写回。
+            if (c['stride'] <= 0 or c['rec'] < 0 or
+                    c['off'] + len(own_run) <= 16 + (c['rec'] + 1) * c['stride']):
+                per[name].append((c['bi'], c['off'], own_run, len(own_run)))
+            else:
+                n_doubt += 1
+            continue
         if live_run == own_run:
             n_same += 1
             continue
@@ -2756,7 +2789,7 @@ def do_apply_lang_en_mirror(exe_mode=None):
                      skip_blobs=(), consistent=True, menu_exempt=False, ui_always=False,
                      place=False, chap=False, song=False,
                      lang_files=['res/LANG_EN.s2a'], propagate_dups=True,
-                     mirror=True, exe_mode=exe_mode)
+                     mirror=True, title_guard=False, exe_mode=exe_mode)
     print('== 同步 DLC01（E2：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
     refresh_dlc01(en_only=True)
     if not verify_e1_isolation(expect_skill_key=False):
@@ -2821,6 +2854,18 @@ def do_package_lang_en_names_en(exe_mode=None):
     return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_en_names_en',
                       stage_name='package_stage_e3',
                       out_dir=paths.dist('E3-lang-en-names-en'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_package_stable_names(exe_mode=None):
+    """稳定版备份包：机制名受保护（不上屏中文），只写 LANG_EN，输出到独立目录。
+
+    配方与 E3 完全相同，只是固定写入 dist/stable-names-en/，便于随时回到稳定状态；
+    译表/字库取当前版本，因此不会回退后续新增的译文。
+    """
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_lang_en_names_en',
+                      stage_name='package_stage_stable_names',
+                      out_dir=paths.dist('stable-names-en'),
                       expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
 
 
@@ -3328,6 +3373,1295 @@ def do_package_names_cn_keycol(exe_mode=None):
                       expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
 
 
+# ============================================================================
+# 方案A：名字哈希操作数重算（TECHNICAL.md §10.3.7）
+# ----------------------------------------------------------------------------
+# 引擎按名查找 = 名称字节 -> CRC-32 -> 与 32 位操作数比较（exe 0x46C070 / 0x46C0C0）。
+# LANG 的 b83/b394/b417/b654/b756（stride 288）记录内 +4 处就是这种【名字哈希操作数】。
+# 官方 EN 随译名同步更新了它们；只改名字不改操作数 ⇒ 按名链断（技能无动画/无效果等）。
+# ============================================================================
+NAME_OPERAND_BLOBS = (83, 394, 417, 654, 756)
+NAME_OPERAND_REC_OFF = 4          # 记录内偏移：16 + rec*288 + 4
+_CRC32_ENG_TABLE = None
+
+
+def _crc32_eng_table():
+    global _CRC32_ENG_TABLE
+    if _CRC32_ENG_TABLE is None:
+        t = []
+        for i in range(256):
+            c = i
+            for _ in range(8):
+                c = (0xEDB88320 ^ (c >> 1)) if (c & 1) else (c >> 1)
+            t.append(c)
+        _CRC32_ENG_TABLE = t
+    return _CRC32_ENG_TABLE
+
+
+def eng_name_hash(b):
+    """引擎的按名哈希（exe 0x46C070）的 Python 等价实现。
+
+    与标准 CRC-32 的唯一区别：**高位字节按符号扩展**参与运算
+    （实测 JA 操作数 = 本函数结果；zlib.crc32 对 CP932 高字节给出不同值）。
+    纯 ASCII 时与 zlib.crc32 完全一致。
+    """
+    table = _crc32_eng_table()
+    crc = 0xFFFFFFFF
+    for x in b:
+        edx = (((x - 256) if x >= 0x80 else x) ^ crc) & 0xFFFFFFFF
+        crc = ((edx >> 8) ^ table[edx & 0xFF]) & 0xFFFFFFFF
+    return (~crc) & 0xFFFFFFFF
+
+
+def _eng_name_hash_fast(b):
+    """纯 ASCII 快路径（zlib.crc32 与引擎哈希逐位相同）；含高字节时走慢路径。"""
+    import zlib
+    if b and max(b) < 0x80:
+        return zlib.crc32(b) & 0xFFFFFFFF
+    return eng_name_hash(b)
+
+
+def _name_hash_index(blobs):
+    """{名字哈希: [(blob, 文本起点, 原文串)]}，只收 2..NAME_MAX_LEN 字节、无换行的槽。"""
+    idx = {}
+    for bi, blob in enumerate(blobs):
+        b = bytes(blob)
+        for _pos, f, e in _iter_slots(b):
+            t = b[f:e]
+            if not (2 <= len(t) <= NAME_MAX_LEN) or b'\n' in t:
+                continue
+            idx.setdefault(_eng_name_hash_fast(t), []).append((bi, f, t))
+    return idx
+
+
+def recompute_name_operands(orig_blobs, path, ja_blobs=None, strict=True, verbose=True):
+    """方案A：按【最终写入字节】重算 LANG 中的名字哈希操作数。
+
+    必须在所有写名步骤之后调用（副本补齐 / 键列对齐 / Q16 还原 / DLC 刷新）。
+    规则：
+      · 只处理 b83/394/417/654/756 的 16+rec*stride+4；原值为 0/0xFFFFFFFF 的跳过；
+      · 与母本 JA 同位置的取值相同 ⇒ 语言无关内部键，**不重算**（官方 JA/EN 一致）；
+      · 用【母本 EN】建立 名字哈希 -> 全部副本位置 的索引；
+      · 读出每个副本的【当前最终字节】：全部一致才重算；仍为原文 ⇒ 视为"名字未翻译"，不改；
+      · 副本之间不一致（部分翻译 / 译文不同）⇒ 按名链必断，strict 时中止并列出明细。
+    """
+    if not orig_blobs or not os.path.exists(path):
+        if verbose:
+            print('  [操作数] 跳过：缺少母本 blob 或产物文件')
+        return {}
+    arc = s2a.Archive(path)
+    prod = [bytearray(b) for b in arc.blobs]
+    idx = _name_hash_index(orig_blobs)
+    stats = dict(updated=0, kept=0, internal=0, unresolved=0, conflict=0, repaired=0)
+    bad = []
+    per_blob = collections.Counter()
+    for bi in NAME_OPERAND_BLOBS:
+        if bi >= len(orig_blobs) or bi >= len(prod):
+            continue
+        ob = bytes(orig_blobs[bi])
+        if ob[:4] != b'CSCV':
+            continue
+        stride, count = struct.unpack_from('<II', ob, 4)
+        if stride <= 0 or 16 + stride * count > len(ob):
+            continue
+        jb = bytes(ja_blobs[bi]) if ja_blobs is not None and bi < len(ja_blobs) else None
+        pb = prod[bi]
+        for rec in range(count):
+            off = 16 + rec * stride + NAME_OPERAND_REC_OFF
+            if off + 4 > len(ob):
+                break
+            old = struct.unpack_from('<I', ob, off)[0]
+            if old in (0, 0xFFFFFFFF):
+                continue
+            if jb is not None and off + 4 <= len(jb) \
+                    and struct.unpack_from('<I', jb, off)[0] == old:
+                stats['internal'] += 1      # 语言无关内部键（JA/EN 同值）
+                continue
+            occ = idx.get(old)
+            if not occ:
+                stats['unresolved'] += 1
+                if verbose:
+                    print('  [操作数] b%d rec%d 源串未解析（%08X），保持原值'
+                          % (bi, rec, old))
+                continue
+            finals = set()
+            for sbi, f, _t in occ:
+                if sbi >= len(prod):
+                    continue
+                dst = prod[sbi]
+                e = dst.find(b'\x00', f)
+                if e < 0:
+                    e = len(dst)
+                finals.add(bytes(dst[f:e]))
+            if not finals:
+                stats['unresolved'] += 1
+                continue
+            if len(finals) > 1:
+                stats['conflict'] += 1
+                bad.append((bi, rec, old, sorted(finals)))
+                continue
+            new_text = finals.pop()
+            if new_text == occ[0][2]:
+                want = old                # 名字保持原文（未翻译）：应还原为原操作数
+                kind = 'kept'
+            else:
+                want = eng_name_hash(new_text)
+                kind = 'kept' if want == old else 'updated'
+            cur = struct.unpack_from('<I', pb, off)[0]
+            if cur == want:
+                stats[kind] += 1
+                continue
+            struct.pack_into('<I', pb, off, want)
+            if kind == 'updated':
+                stats['updated'] += 1
+                per_blob[bi] += 1
+            else:
+                # 名字未翻译但操作数字节被其它步骤（如误登记为文本槽）覆盖 ⇒ 回填修复
+                stats['repaired'] += 1
+    if stats['updated'] or stats['repaired']:
+        s2a.pack(path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [操作数] 重算 %d / 回填修复 %d / 名字未变 %d / 内部键跳过 %d / '
+              '源串未解析 %d / 副本不一致 %d%s'
+              % (stats['updated'], stats['repaired'], stats['kept'],
+                 stats['internal'], stats['unresolved'], stats['conflict'],
+                 '' if (stats['updated'] or stats['repaired']) else ' [无改动]'))
+        if stats['updated']:
+            print('           按 blob 分布：%s'
+                  % ', '.join('b%d=%d' % (k, per_blob[k]) for k in sorted(per_blob)))
+        for bi, rec, old, fs in bad[:30]:
+            print('    !! b%d rec%d 原哈希 %08X 的副本终串不一致：%r'
+                  % (bi, rec, old,
+                     [x.decode('cp932', 'replace') for x in fs[:4]]))
+    if stats['conflict'] and strict:
+        print('!! 名字副本不一致：按名链必然断裂，先修副本同步再谈操作数（中止）')
+        raise SystemExit(1)
+    return stats
+
+
+def do_apply_names_cn_keycol_hash(exe_mode=None):
+    """Z10 = Z9（键列中文）+ 方案A（重算名字哈希操作数）。
+
+    Z9 实机表现：技能"有名字、无动画/无效果"，根因是名字改了而操作数没改
+    （TECHNICAL.md §10.3.7 / PITFALLS.md §25.9）。本配方在全部写名步骤之后，
+    按最终写入字节重算 b83/394/417/654/756 的 +4 操作数，并断言副本一致。
+    """
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    skip = (128, 136, 317)
+    stats = do_apply(text=True, sync_cscv=False, keep_collide=False,
+                     skip_blobs=skip, consistent=False,
+                     menu_exempt=True, ui_always=True,
+                     slot_release=True, desc_release=True,
+                     place=False, chap=False, song=False,
+                     lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                     exe_mode=exe_mode)
+    print('== 名称副本一致性补全 [Z10：R1 限装备表+连携技名表(b391) / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z10：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    ja_blobs = None
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if os.path.exists(ja_path):
+        try:
+            ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [操作数] 母本 LANG_JA 读取失败：%r' % e)
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z10 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_keycol_hash(exe_mode=None):
+    """Z10 包：staging 装机 → 输出 dist/Z10-keycol-hash/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_keycol_hash',
+                      stage_name='package_stage_names_cn_keycol_hash',
+                      out_dir=paths.dist('Z10-keycol-hash'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def _mech_ja_names():
+    """从母本 LANG_JA 收集机制名（技能 b666 pos0 + 装备/道具表名字列）的日文原串。"""
+    out = set()
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if not os.path.exists(ja_path):
+        return out
+
+    def add(t):
+        if not t:
+            return
+        try:
+            out.add(strip_f8f3(t.decode('cp932').strip()))
+        except Exception:
+            pass
+
+    try:
+        blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+    except Exception as e:
+        print('  [Z10b] 母本 LANG_JA 读取失败：%r' % e)
+        return out
+    b = blobs[666]
+    n = struct.unpack_from('<I', b, 8)[0] if b[:4] == b'CSCV' else 0
+    for rec in range(n):
+        add(b[16 + rec * SKILL_STRIDE:16 + rec * SKILL_STRIDE + 64].split(b'\x00')[0])
+    for bi in EQUIP_BLOBS:
+        b = blobs[bi]
+        n = struct.unpack_from('<I', b, 8)[0] if b[:4] == b'CSCV' else 0
+        for rec in range(n):
+            add(b[16 + rec * EQUIP_STRIDE + 4:16 + rec * EQUIP_STRIDE + 36].split(b'\x00')[0])
+    return out
+
+
+def _partner_ja_names():
+    """母本 LANG_JA 中伙伴名（b954 伙伴数据表 + b1034 伙伴演员表）的日文原串。"""
+    out = set()
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if not os.path.exists(ja_path):
+        return out
+    try:
+        blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+    except Exception:
+        return out
+
+    def add(t):
+        if t:
+            try:
+                out.add(strip_f8f3(t.decode('cp932').strip()))
+            except Exception:
+                pass
+
+    for rec in range(44):
+        add(blobs[954][16 + rec * 236 + 4:16 + rec * 236 + 236].split(b'\x00')[0])
+    for rec in range(54):
+        add(blobs[1034][16 + rec * 104 + 4:16 + rec * 104 + 36].split(b'\x00')[0])
+    return out
+
+
+def _mech_release_factory(mech_ja):
+    """Z10b 的 collide 额外放行：机制名整槽 / 章节 loadout 行里的装备名。"""
+    keys = ('head', 'body', 'handR', 'handL', 'foot')
+
+    def extra(bi, off, ja_cmp):
+        if ja_cmp in mech_ja:
+            return True
+        if '\n' in ja_cmp and '=' in ja_cmp:
+            for line in ja_cmp.split('\n'):
+                k, sep, v = line.partition('=')
+                if sep and k in keys and v in mech_ja:
+                    return True
+        return False
+
+    return extra
+
+
+def _partner_en_names(orig_blobs):
+    """母本 LANG_EN 中伙伴名（b954 + b1034）的英文原串。"""
+    out = set()
+    for rec in range(44):
+        t = orig_blobs[954][16 + rec * 236 + 4:16 + rec * 236 + 236].split(b'\x00')[0]
+        if t:
+            out.add(t)
+    for rec in range(54):
+        t = orig_blobs[1034][16 + rec * 104 + 4:16 + rec * 104 + 36].split(b'\x00')[0]
+        if t:
+            out.add(t)
+    return out
+
+
+def restore_partner_names(orig_blobs, en_path, verbose=True):
+    """Z10b 收尾：把所有伙伴名整槽写回母本字节，保证伙伴名不进入混合态。
+
+    例外：对话表 stride292/pos96 的说话人名（stable 的 slot_release 本就翻译），保持现状。
+    """
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    pset = _partner_en_names(orig_blobs)
+    n = skip = 0
+    for bi, ob in enumerate(orig_blobs):
+        pb = prod[bi]
+        st = struct.unpack_from('<I', ob, 4)[0] if ob[:4] == b'CSCV' else 0
+        for _pos, f, e in _iter_slots(ob):
+            t = ob[f:e]
+            if t not in pset:
+                continue
+            if st == 292 and (f - 16) % 292 == 96:
+                continue
+            oe = pb.find(b'\x00', f)
+            if oe < 0:
+                oe = len(pb) - 1
+            # 母本该槽原本就容纳 len(t) 字节，回写同长度一定安全；
+            # 若产物译文更短（常见：中文 2 字 vs 英文 6 字节），按母本长度写回并补 NUL。
+            pb[f:f + len(t)] = t
+            pb[f + len(t)] = 0
+            end = max(oe, f + len(t))
+            if end > f + len(t):
+                pb[f + len(t) + 1:end + 1] = b'\x00' * (end - f - len(t))
+            n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [伙伴名] 回写原版 %d 处%s' % (n, '（容量不足跳过 %d）' % skip if skip else ''))
+    return n
+
+
+def do_apply_names_cn_mech_hash(exe_mode=None):
+    """Z10b 判别实验：stable（其余 collide 全保留）+ 仅机制名中文化 + 操作数重算。
+
+    与 Z10 的唯一差异：keep_collide=True，并通过 _EXTRA_RELEASE 只放行
+    技能/装备名（含全部副本）与章节 loadout；伙伴名/说话人名/其它受保护串保持原版。
+    """
+    global _EXTRA_RELEASE
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    mech_ja = _mech_ja_names()
+    partner_ja = _partner_ja_names()
+    # 装备表 b147/357/736/998 里夹着伙伴角色自身条目（rec235=Knight 等），
+    # 名字列与伙伴名同串 ⇒ 必须从机制名集合剔除，否则会被当装备名一起翻掉。
+    overlap = mech_ja & partner_ja
+    mech_ja -= partner_ja
+    print('  [Z10b] 机制名原文 %d 条；伙伴名 %d 条保持原版（剔除同名 %d）'
+          % (len(mech_ja), len(partner_ja), len(overlap)))
+    _EXTRA_RELEASE = _mech_release_factory(mech_ja)
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                         skip_blobs=(128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                         exe_mode=exe_mode)
+    finally:
+        _EXTRA_RELEASE = None
+    print('== 名称副本一致性补全 [Z10b：R1 装备表+b391 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z10b：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 伙伴名保持原版（回写母本字节）==')
+    restore_partner_names(orig_blobs, en_path)
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    ja_blobs = None
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if os.path.exists(ja_path):
+        try:
+            ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [操作数] 母本 LANG_JA 读取失败：%r' % e)
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z10b 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_mech_hash(exe_mode=None):
+    """Z10b 判别包：staging 装机 → 输出 dist/Z10b-mech-names/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_mech_hash',
+                      stage_name='package_stage_names_cn_mech_hash',
+                      out_dir=paths.dist('Z10b-mech-names'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= Z11：伙伴名 + 复合键（2026-10-21） =================
+# 设计：Z10b（其余 collide 保留）只额外加入伙伴名与 b954 复合键。
+#   · b954/b1034 的译文由 _z11_partner_rows() 注入 build_plan（不写回 CSV）；
+#   · _EXTRA_RELEASE 放行：伙伴名（b954/b1034/全部副本）+ b954 +136/+168 复合键；
+#   · 不做 restore_partner_names（Z11 就是要让伙伴名上屏）；
+#   · 最后按终串重算操作数（76 个复合键引用会被更新）。
+_PARTNER_NAME_OVERRIDE = {
+    # 'Wise Man' 的日文是 ケンジャ（与 'Sage'=賢者 不同名），不可同译，避免哈希串味。
+    'Wise Man': '智者',
+}
+_PARTNER_COMP_SPECIAL = {
+    'Oron (Demon) Skill': '恶魔奥隆技能',
+    'Oron (Angel) Skill': '天使奥隆技能',
+}
+
+
+def _csv_name_map():
+    """当前译表：英文原串 -> 唯一中文译文（多译/缺译返回 None）。"""
+    m = collections.defaultdict(set)
+    for r in csv.DictReader(open(CSV, encoding='utf-8-sig')):
+        en = (r.get('en') or '').strip()
+        zh = (r.get('zh_new') or r.get('zh_3dm') or '').strip()
+        if en and zh:
+            m[en].add(zh)
+    return {k: next(iter(v)) for k, v in m.items() if len(v) == 1}
+
+
+def _z11_partner_rows():
+    """生成 b954/b1034 伙伴名与复合键的额外译表行（不落盘）。"""
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if not (os.path.exists(en_path) and os.path.exists(ja_path)):
+        return []
+    E = [bytes(b) for b in s2a.Archive(en_path).blobs]
+    J = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+    nm = _csv_name_map()
+
+    def z_of(en_s):
+        if en_s in _PARTNER_NAME_OVERRIDE:
+            return _PARTNER_NAME_OVERRIDE[en_s]
+        return nm.get(en_s)
+
+    def dec(t):
+        try:
+            return t.decode('cp932').strip()
+        except Exception:
+            return ''
+
+    out = []
+    rid = 900000
+    missing = []
+
+    def add(bi, off, sb, en_b, ja_b, zh):
+        nonlocal rid
+        if not zh:
+            missing.append(dec(en_b))
+            return
+        rid += 1
+        out.append(dict(
+            row_id=str(rid), blob_index=str(bi), offset=str(off),
+            slot_bytes=str(sb), max_cn=str(sb // 2), len_en=str(len(en_b)),
+            en=dec(en_b), ja=dec(ja_b), zh_3dm='', zh_new=zh,
+        ))
+
+    # b954 +4 伙伴实体名
+    for rec in range(44):
+        base = 16 + rec * 236
+        en_b = E[954][base + 4:base + 36].split(b'\x00')[0]
+        ja_b = J[954][base + 4:base + 36].split(b'\x00')[0]
+        if not en_b or b'<' in en_b:
+            continue
+        add(954, base + 4, 32, en_b, ja_b, z_of(dec(en_b)))
+    # b1034 +4 伙伴演员名
+    for rec in range(54):
+        base = 16 + rec * 104
+        en_b = E[1034][base + 4:base + 36].split(b'\x00')[0]
+        ja_b = J[1034][base + 4:base + 36].split(b'\x00')[0]
+        if not en_b or b'<' in en_b:
+            continue
+        add(1034, base + 4, 32, en_b, ja_b, z_of(dec(en_b)))
+    # b954 +136/+168 复合键（Yushia/Yuja 为运行时动态名，保持英文）
+    for rec in range(44):
+        base = 16 + rec * 236
+        for off, sb in ((136, 32), (168, 64)):
+            en_b = E[954][base + off:base + off + sb].split(b'\x00')[0]
+            ja_b = J[954][base + off:base + off + sb].split(b'\x00')[0]
+            if not en_b:
+                continue
+            en_s = dec(en_b)
+            if 'Yushia' in en_s or 'Yuja' in en_s:
+                continue
+            zh = _PARTNER_COMP_SPECIAL.get(en_s)
+            if not zh:
+                if en_s.endswith(' Skill'):
+                    base_zh = z_of(en_s[:-6])
+                    zh = (base_zh + '技能') if base_zh else None
+                elif en_s.endswith(' Resident'):
+                    base_zh = z_of(en_s[:-9])
+                    zh = (base_zh + '常驻') if base_zh else None
+            add(954, base + off, sb, en_b, ja_b, zh)
+    if missing:
+        print('  [Z11] 无译名跳过 %d：%r' % (len(missing), missing[:10]))
+    return out
+
+
+def _z11_release_factory(mech_ja, partner_ja):
+    """Z11 放行：机制名 + 伙伴名 + b954 复合键。"""
+    base = _mech_release_factory(mech_ja)
+
+    def extra(bi, off, ja_cmp):
+        if ja_cmp in partner_ja:
+            return True
+        if bi == 954 and (off - 16) % 236 in (136, 168):
+            return True
+        return base(bi, off, ja_cmp)
+
+    return extra
+
+
+def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
+                     skip_blobs=(128, 136, 317), title_ok=None):
+    """Z11/Z12 收尾：把仍未翻译的名字整槽按已译副本补齐（全 blob）。
+
+    只处理“原串恰好是给定名字集合中的整槽”；不碰其它字符串/命令 token。
+    skip_blobs 内的表（职业/阵型/连携技）视为键表，**绝不补齐**；
+    title_ok 内的 (blob, offset) 允许作为称号名参与 canon（Z14 专用）。
+    """
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    names_en = {x for x in names_en if x}
+    canon = {}
+    conflicts = 0
+    cnt = collections.defaultdict(collections.Counter)
+    ct_whole, ct_recs, _ct_vals = load_chap_title_guard()
+    q16 = _q16_lang_en_offsets('LANG_EN')
+
+    def blocked(bi, ob, pos, f, e):
+        """称号/Q16/技能键名列一律不参与“按内容补齐”。"""
+        st = struct.unpack_from('<I', ob, 4)[0] if ob[:4] == b'CSCV' else 0
+        if st and not (title_ok and (bi, f) in title_ok):
+            rec = (f - 16) // st
+            p = (f - 16) % st
+            if chap_title_hit(ct_whole, ct_recs, bi, st, p, rec):
+                return True
+        if in_skill_key_col(bi, f):
+            return True
+        if _q16_hit(q16, bi, pos, e):
+            return True
+        return False
+
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod) or bi in skip_blobs:
+            continue
+        pb = prod[bi]
+        for pos, f, e in _iter_slots(ob):
+            ot = ob[f:e]
+            if ot not in names_en or blocked(bi, ob, pos, f, e):
+                continue
+            pt, _ = _slot_text_at(bytes(pb), f)
+            if pt != ot:
+                cnt[ot][bytes(pt)] += 1
+    for ot, ctr in cnt.items():
+        if len(ctr) > 1:
+            conflicts += 1
+        canon[ot] = ctr.most_common(1)[0][0]
+    n = skip = 0
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod) or bi in skip_blobs:
+            continue
+        pb = prod[bi]
+        for pos, f, e in _iter_slots(ob):
+            ot = ob[f:e]
+            if ot not in canon or blocked(bi, ob, pos, f, e):
+                continue
+            pt, _ = _slot_text_at(bytes(pb), f)
+            if pt != ot:
+                continue
+            enc = canon[ot]
+            oe = pb.find(b'\x00', f)
+            if oe < 0:
+                continue
+            nx = oe
+            while nx < len(pb) and pb[nx] == 0:
+                nx += 1
+            if len(enc) + 1 > nx - f:
+                skip += 1
+                continue
+            pb[f:f + len(enc)] = enc
+            pb[f + len(enc)] = 0
+            for i in range(f + len(enc) + 1, nx):
+                pb[i] = 0
+            n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [伙伴名] 副本补齐 %d 处%s%s'
+              % (n, '（容量不足 %d）' % skip if skip else '',
+                 '（终串冲突 %d）' % conflicts if conflicts else ''))
+    return n
+
+
+def do_apply_names_cn_partner_hash(exe_mode=None):
+    """Z11：Z10b + 伙伴名（b954/b1034 及全部副本）+ b954 复合键 + 操作数重算。"""
+    global _EXTRA_RELEASE, _EXTRA_ROWS
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    mech_ja = _mech_ja_names()
+    partner_ja = _partner_ja_names()
+    mech_ja -= partner_ja
+    rows = _z11_partner_rows()
+    print('  [Z11] 伙伴名 %d 条 / 新增译表行 %d（机制名 %d，其余 collide 保留）'
+          % (len(partner_ja), len(rows), len(mech_ja)))
+    _EXTRA_ROWS = rows
+    _EXTRA_RELEASE = _z11_release_factory(mech_ja, partner_ja)
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                         skip_blobs=(128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                         exe_mode=exe_mode)
+    finally:
+        _EXTRA_RELEASE = None
+        _EXTRA_ROWS = None
+    print('== 名称副本一致性补全 [Z11：R1 装备表+b391 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z11：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 伙伴名副本补齐（含 skip 表，仅整槽名字）==')
+    fill_name_copies(orig_blobs, en_path, _partner_en_names(orig_blobs))
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    ja_blobs = None
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if os.path.exists(ja_path):
+        try:
+            ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [操作数] 母本 LANG_JA 读取失败：%r' % e)
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z11 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_partner_hash(exe_mode=None):
+    """Z11 包：staging 装机 → 输出 dist/Z11-partner-names/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_partner_hash',
+                      stage_name='package_stage_names_cn_partner_hash',
+                      out_dir=paths.dist('Z11-partner-names'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= Z12：批次 A 显示名（2026-10-21） =================
+# 只放行“已有译文、且已确认是显示列”的表；称号表不在内（chap_title_guard 明确是键）。
+# 几何：(stride, 允许的 record 内偏移集合)
+Z12_RELEASE_COLS = {
+    407: (236, (4,)),        # 敌人/怪物/伙伴数据名
+    4: (288, (92,)),         # Boss/敌人台词表 说话人名
+    30: (288, (92,)),
+    408: (288, (92,)),
+    445: (288, (92,)),
+    528: (288, (92,)),
+    748: (288, (92,)),
+    609: (288, (92,)),
+    483: (288, (92,)),
+    555: (660, (92,)),
+    734: (660, (92,)),
+    777: (236, (4,)),        # 宝箱显示名
+    1008: (236, (4,)),
+    320: (492, (228, 292)),  # 音乐表：曲名 / 艺术家
+    715: (224, (112,)),      # 地图编辑器 UI 标签
+}
+
+
+def _z12_names_en(orig_blobs):
+    """Z12 表内“已有现成译文”的 EN 原串（用于全库副本补齐）。"""
+    nm = _csv_name_map()
+    out = set()
+    for bi, (st, poss) in Z12_RELEASE_COLS.items():
+        if bi >= len(orig_blobs):
+            continue
+        b = orig_blobs[bi]
+        n = struct.unpack_from('<I', b, 8)[0]
+        for r in range(n):
+            base = 16 + r * st
+            for pos in poss:
+                t = b[base + pos:base + pos + 64].split(b'\x00')[0]
+                if not t:
+                    continue
+                try:
+                    s = t.decode('cp932').strip()
+                except Exception:
+                    continue
+                if s in nm:
+                    out.add(t)
+    return out
+
+
+def _z12_release_factory(mech_ja, partner_ja):
+    base = _z11_release_factory(mech_ja, partner_ja)
+
+    def extra(bi, off, ja_cmp):
+        cfg = Z12_RELEASE_COLS.get(bi)
+        if cfg and (off - 16) % cfg[0] in cfg[1]:
+            return True
+        return base(bi, off, ja_cmp)
+
+    return extra
+
+
+def do_apply_names_cn_display_hash(exe_mode=None):
+    """Z12：Z11 + 批次 A 显示名（敌名/Boss 名/宝箱/音乐/地图 UI）。"""
+    global _EXTRA_RELEASE, _EXTRA_ROWS
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    mech_ja = _mech_ja_names()
+    partner_ja = _partner_ja_names()
+    mech_ja -= partner_ja
+    rows = _z11_partner_rows()
+    extra_en = _z12_names_en(orig_blobs or [])
+    print('  [Z12] 批次 A 名字 %d 条 / 新增译表行 %d（机制名 %d，伙伴 %d）'
+          % (len(extra_en), len(rows), len(mech_ja), len(partner_ja)))
+    _EXTRA_ROWS = rows
+    _EXTRA_RELEASE = _z12_release_factory(mech_ja, partner_ja)
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                         skip_blobs=(128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                         exe_mode=exe_mode)
+    finally:
+        _EXTRA_RELEASE = None
+        _EXTRA_ROWS = None
+    print('== 名称副本一致性补全 [Z12：R1 装备表+b391 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z12：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 名字副本补齐（伙伴名 + 批次 A 名字，含 skip 表）==')
+    names = _partner_en_names(orig_blobs) | extra_en
+    fill_name_copies(orig_blobs, en_path, names)
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    ja_blobs = None
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if os.path.exists(ja_path):
+        try:
+            ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [操作数] 母本 LANG_JA 读取失败：%r' % e)
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z12 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_display_hash(exe_mode=None):
+    """Z12 包：staging 装机 → 输出 dist/Z12-display-names/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_display_hash',
+                      stage_name='package_stage_names_cn_display_hash',
+                      out_dir=paths.dist('Z12-display-names'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= Z13：批次 B（2026-10-21） =================
+# 内容：Z12 + 武器合成/UI 缺译行 + 伙伴/敌人技能名（脚本参数列）。
+# 设计：译文用 _EXTRA_ROWS 注入（不写回 CSV）；只挑“人类可读名字”，
+#       Disable/Enable/Utau/Title01 等 token 与说话人名一律不碰。
+Z13_TRANSLATIONS = {
+    'Wave Shout': '波动怒吼',
+    'Heavy Flame': '重炎',
+    'Earth Eject': '大地喷发',
+    'Storm Out': '风暴爆发',
+    'Judge of Dark': '暗之审判',
+    'Idiot Brothers': '笨蛋兄弟',
+    'Hero Chain!': '勇者连击！',
+    'Brave Triangle': '勇者三角',
+    'Goddess Academy Theme Song': '女神学园主题曲',
+    'Brave Triangle 2': '勇者三角2',
+    'All Star': '全明星',
+    'Magic Storm': '魔法风暴',
+    'Knight Dynamite': '骑士炸药',
+    'Prison Break': '破狱',
+    'Come on everyone!': '大家上！',
+    'Sonic Boom Attack': '音爆攻击',
+    'Hellfang': '地狱獠牙',
+    'Spot Burst Shot': '定点爆破射击',
+    'Satellite Laser': '卫星激光',
+    'Beast Fang': '野兽獠牙',
+    'Nanako Love Punch': '奈奈子爱心拳',
+    'Oh-ho-ho-ho!': '哦——呵呵呵！',
+    'Immovable Sword': '不动剑',
+    'Natural Born Devil': '天生恶魔',
+    'Destruction Blow': '破坏重击',
+    'Shadow Braver': '暗影勇者',
+    'Backside of Period': '终焉之背',
+    'Ultimate Karma Devil Slash': '究极业魔斩',
+    'Liar!': '骗子！',
+    'Legend of Hedgehog': '刺猬传说',
+    'Ultimate Twist': '究极扭转',
+    'Pink Hurricane': '粉色旋风',
+    'Time Hole Burst': '时空洞爆发',
+    'Devil Slash': '恶魔斩',
+    'Soldier Reppa': '士兵连破',
+    'Twin Spear': '双枪',
+    'Tsubame Gaeshi': '燕返',
+    'Crushing Strike of the War God': '战神碎击',
+    'You should feel ashamed!': '你该感到羞耻！',
+    'Evil Lord Wink Obliteration': '魔王眨眼歼灭',
+    'Infinite Weapon Fall': '无限武器坠落',
+    'Immovable Bright Divine Sword': '不动明王剑',
+    'New Meteor': '新流星',
+    'Swallow Reverse': '逆燕斩',
+    'War God Chain Assault': '战神连袭',
+    'Feel Shame!': '羞耻吧！',
+    'Evil Lord Blink Obliteration': '魔王瞬灭',
+    'Infinite Weapon Drop': '无限武器落下',
+    'Immovable Myojin Sword': '不动明神剑',
+    'Super New Meteor': '超新流星',
+}
+# 已有译文、只需同步副本的名字（不新增行）
+Z13_SYNC_NAMES = (
+    'Angel Ring', 'Gunshot', 'Summon Monster',
+    'Water Stone', 'Fire Stone', 'Earth Stone', 'Wind Stone',
+    'Golem Stone', 'Demon Stone', 'Nothing happened…',
+)
+# UI 缺译行（无可复用译文）：(blob, off, zh)
+Z13_UI_ROWS = (
+    (99, 16, '木剑+1'),
+    (99, 56, '兼具'),
+    (25, 62384, '材料：%s　＋　%s'),
+    (25, 63056, '材料：%s　＋　%s'),
+)
+Z13_SCRIPT_COLS = {83: 288, 394: 288, 417: 288, 654: 288,
+                   408: 288, 445: 288, 748: 288}
+Z13_UI_OFFS = frozenset((bi, off) for bi, off, _z in Z13_UI_ROWS)
+
+
+def _slot_span(starts, ob, f):
+    import bisect
+    i = bisect.bisect_right(starts, f)
+    return (starts[i] - f) if i < len(starts) else (len(ob) - f)
+
+
+def _z13_rows():
+    """生成批次 B 的额外译表行（技能名全部副本 + UI 行）。"""
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if not (os.path.exists(en_path) and os.path.exists(ja_path)):
+        return []
+    E = [bytes(b) for b in s2a.Archive(en_path).blobs]
+    J = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+    nm = _csv_name_map()
+    mapping = dict(Z13_TRANSLATIONS)
+    for s in Z13_SYNC_NAMES:
+        if nm.get(s):
+            mapping[s] = nm[s]
+    starts = {}
+    for bi, ob in enumerate(E):
+        starts[bi] = [pos for pos, _f, _e in _iter_slots(ob)]
+    out = []
+    seen = set()
+    rid = 910000
+
+    def dec(t):
+        try:
+            return t.decode('cp932').strip()
+        except Exception:
+            return ''
+
+    def add(bi, f, en_b, ja_b, zh):
+        nonlocal rid
+        if not zh or (bi, f) in seen:
+            return False
+        ob = E[bi]
+        span = _slot_span(starts[bi], ob, f)
+        # 只覆盖原字段本身（文本 + 终止符），绝不按“到下一槽”的整段清零，
+        # 以免把定长记录里的二进制字段一起抹掉。
+        sb = min(span, max(2, len(en_b) + 1))
+        if sb <= 0:
+            return False
+        seen.add((bi, f))
+        rid += 1
+        out.append(dict(
+            row_id=str(rid), blob_index=str(bi), offset=str(f),
+            slot_bytes=str(sb), max_cn=str(sb // 2), len_en=str(len(en_b)),
+            en=dec(en_b), ja=dec(ja_b), zh_3dm='', zh_new=zh,
+        ))
+        return True
+
+    for en, zh in mapping.items():
+        try:
+            eb = en.encode('cp932')
+        except Exception:
+            continue
+        for bi, ob in enumerate(E):
+            # 只在该串真正出现的 blob 上扫
+            if eb not in ob:
+                continue
+            for _pos, f, e in _iter_slots(ob):
+                if ob[f:e] == eb:
+                    jf = f
+                    je = J[bi].find(b'\x00', jf)
+                    add(bi, f, eb, J[bi][jf:je], zh)
+    for bi, off, zh in Z13_UI_ROWS:
+        ob = E[bi]
+        f = off
+        e = ob.find(b'\x00', f)
+        if e < 0:
+            continue
+        je = J[bi].find(b'\x00', f)
+        add(bi, f, ob[f:e], J[bi][f:je], zh)
+    return out
+
+
+def _z13_release_factory(mech_ja, partner_ja):
+    base = _z12_release_factory(mech_ja, partner_ja)
+
+    def extra(bi, off, ja_cmp):
+        if (bi, off) in Z13_UI_OFFS:
+            return True
+        st = Z13_SCRIPT_COLS.get(bi)
+        if st and (off - 16) % st == 28:
+            return True
+        return base(bi, off, ja_cmp)
+
+    return extra
+
+
+def do_apply_names_cn_batch_b_hash(exe_mode=None):
+    """Z13：Z12 + 批次 B（武器合成/UI 缺译 + 伙伴/敌人技能名）。"""
+    global _EXTRA_RELEASE, _EXTRA_ROWS
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    orig_blobs = None
+    if os.path.exists(en_path):
+        try:
+            orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs]
+        except Exception as e:
+            print('  [名称副本] 母本读取失败：%r' % e)
+    mech_ja = _mech_ja_names()
+    partner_ja = _partner_ja_names()
+    mech_ja -= partner_ja
+    rows = _z11_partner_rows() + _z13_rows()
+    extra_en = _z12_names_en(orig_blobs or [])
+    names = _partner_en_names(orig_blobs) | extra_en | {
+        s.encode('cp932') for s in list(Z13_TRANSLATIONS) + list(Z13_SYNC_NAMES)
+    }
+    print('  [Z13] 新增译表行 %d / 名字集合 %d（UI 行 %d）'
+          % (len(rows), len(names), len(Z13_UI_ROWS)))
+    _EXTRA_ROWS = rows
+    _EXTRA_RELEASE = _z13_release_factory(mech_ja, partner_ja)
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                         skip_blobs=(128, 136, 317), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                         exe_mode=exe_mode)
+    finally:
+        _EXTRA_RELEASE = None
+        _EXTRA_ROWS = None
+    print('== 名称副本一致性补全 [Z13：R1 装备表+b391 / R2 开启] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z13：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 名字副本补齐（伙伴 + 批次 A/B 名字，跳过键表）==')
+    fill_name_copies(orig_blobs, en_path, names)
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    ja_blobs = None
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if os.path.exists(ja_path):
+        try:
+            ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+        except Exception as e:
+            print('  [操作数] 母本 LANG_JA 读取失败：%r' % e)
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z13 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_batch_b_hash(exe_mode=None):
+    """Z13 包：staging 装机 → 输出 dist/Z13-batchB/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_batch_b_hash',
+                      stage_name='package_stage_names_cn_batch_b_hash',
+                      out_dir=paths.dist('Z13-batchB'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+# ================= Z14：职业/阵型/称号（2026-10-21） =================
+# 关键发现：称号名在 b931 pos0 之外，还在多个 stride292 表的 pos32 有副本；
+# 此前只翻 b931 导致“按名不可获得”。Z14 同时翻 b931 pos0 + 全部 pos32 副本。
+# 职业 b128 pos4 / 阵型 b136 pos0 无哈希操作数，按普通名字处理（skip 仅剩 317）。
+Z14_ENEMY_TRANSLATIONS = {
+    'Chaos Wing': '混沌之翼',
+    'No World': '无之世界',
+    'Rejection of Fate': '拒绝命运',
+    'Test Skill': '测试技能',
+    'True Emperor of Destruction': '真·破坏皇帝',
+    'Ultimate Karma Devil Slice Reversed!': '究极业魔斩·逆！',
+    'Zero Dimension': '零之次元',
+    'Curse Spell': '诅咒术',
+    'Extreme Evil Slash': '极恶斩',
+    'Jar Throw': '掷罐',
+    'Magic Flare': '魔法闪光',
+    'Physic Holy': '物理圣光',
+    'Turning Swallow Slash': '转身燕斩',
+    'Emperor of Destruction': '破坏皇帝',
+    'Galactic Cannon': '银河炮',
+    'Gustaf Launcher': '古斯塔夫发射器',
+}
+Z14_TITLE_FIX = {
+    'Narrowly Averted': '千钧一发',
+    'No!!': '不要！！',
+    'Geezer!': '大叔！',
+    'THE 3D': '三维',
+}
+Z14_SCRIPT_COLS = dict(Z13_SCRIPT_COLS)
+Z14_SCRIPT_COLS.update({483: 288, 528: 288, 609: 288})
+
+
+def _z14_rows():
+    """生成职业/阵型/称号/新敌技名的额外译表行。"""
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    if not (os.path.exists(en_path) and os.path.exists(ja_path)):
+        return []
+    E = [bytes(b) for b in s2a.Archive(en_path).blobs]
+    J = [bytes(b) for b in s2a.Archive(ja_path).blobs]
+    nm = _csv_name_map()
+    starts = {bi: [pos for pos, _f, _e in _iter_slots(ob)] for bi, ob in enumerate(E)}
+    out, seen = [], set()
+    rid = 920000
+
+    def dec(t):
+        try:
+            return t.decode('cp932').strip()
+        except Exception:
+            return ''
+
+    def add(bi, f, en_b, ja_b, zh, force_sb=None):
+        nonlocal rid
+        if not zh or (bi, f) in seen:
+            return
+        span = _slot_span(starts[bi], E[bi], f)
+        sb = force_sb if force_sb else min(span, max(2, len(en_b) + 1))
+        if sb <= 0:
+            return
+        seen.add((bi, f))
+        rid += 1
+        out.append(dict(
+            row_id=str(rid), blob_index=str(bi), offset=str(f),
+            slot_bytes=str(sb), max_cn=str(sb // 2), len_en=str(len(en_b)),
+            en=dec(en_b), ja=dec(ja_b), zh_3dm='', zh_new=zh,
+        ))
+
+    # 职业 / 阵型 / 称号：只登记“源表本体”一行，副本由 fill_name_copies 补齐。
+    # 这些表的名字字段容量是固定的，不能用 len(en)+1（否则“魔法师”会被裁成“魔法”）。
+    for bi, st, pos, cap_sb in ((128, 212, 4, 64), (136, 272, 0, 64), (931, 292, 0, 36)):
+        n = struct.unpack_from('<I', E[bi], 8)[0]
+        for r in range(n):
+            base = 16 + r * st
+            eb = E[bi][base + pos:base + pos + 64].split(b'\x00')[0]
+            if not eb:
+                continue
+            s = dec(eb)
+            zh = Z14_TITLE_FIX.get(s) or nm.get(s)
+            if not zh:
+                continue
+            jb = J[bi][base + pos:base + pos + 64].split(b'\x00')[0]
+            add(bi, base + pos, eb, jb, zh, force_sb=cap_sb)
+    # 新增敌技名：所有整槽副本（脚本参数列）
+    for s, zh in Z14_ENEMY_TRANSLATIONS.items():
+        try:
+            eb = s.encode('cp932')
+        except Exception:
+            continue
+        for bi, ob in enumerate(E):
+            if eb not in ob:
+                continue
+            for _p, f, e in _iter_slots(ob):
+                if ob[f:e] == eb:
+                    jf = f
+                    je = J[bi].find(b'\x00', jf)
+                    add(bi, f, eb, J[bi][jf:je], zh)
+    return out
+
+
+def _z14_release_factory(mech_ja, partner_ja, name_ja):
+    base = _z13_release_factory(mech_ja, partner_ja)
+
+    def extra(bi, off, ja_cmp):
+        if bi == 128 and (off - 16) % 212 == 4:
+            return True
+        if bi == 136 and (off - 16) % 272 == 0:
+            return True
+        if bi == 931 and (off - 16) % 292 == 0:
+            return True
+        st = Z14_SCRIPT_COLS.get(bi)
+        if st and (off - 16) % st == 28:
+            return True
+        if ja_cmp in name_ja:
+            return True
+        return base(bi, off, ja_cmp)
+
+    return extra
+
+
+def force_title_key_copies(orig_blobs, en_path, title_ok, verbose=True):
+    """Z14：把称号名的 stride292/pos32 条件副本强制统一为 b931 pos0 的终串。
+
+    只处理 (stride==292 且 pos==32) 的槽（称号取得条件/进度表），不碰台词与 pos160。
+    """
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    q16 = _q16_lang_en_offsets('LANG_EN')
+    canon = {}
+    ob = bytes(orig_blobs[931])
+    pb = prod[931]
+    for _p, f, e in _iter_slots(ob):
+        if (f - 16) % 292 != 0:
+            continue
+        pt, _ = _slot_text_at(bytes(pb), f)
+        canon[ob[f:e]] = bytes(pt)
+    n = skip = 0
+    for bi, obb in enumerate(orig_blobs):
+        st = struct.unpack_from('<I', obb, 4)[0] if obb[:4] == b'CSCV' else 0
+        if st != 292:
+            continue
+        pbb = prod[bi]
+        for pos, f, e in _iter_slots(obb):
+            if (f - 16) % 292 != 32:
+                continue
+            ot = obb[f:e]
+            enc = canon.get(ot)
+            if not enc or _q16_hit(q16, bi, pos, e):
+                continue
+            pt, _ = _slot_text_at(bytes(pbb), f)
+            if pt == enc:
+                continue
+            oe = pbb.find(b'\x00', f)
+            if oe < 0:
+                continue
+            nx = oe
+            while nx < len(pbb) and pbb[nx] == 0:
+                nx += 1
+            if len(enc) + 1 > nx - f:
+                skip += 1
+                continue
+            pbb[f:f + len(enc)] = enc
+            pbb[f + len(enc)] = 0
+            for i in range(f + len(enc) + 1, nx):
+                pbb[i] = 0
+            n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [称号条件] 统一 pos32 副本 %d 处%s'
+              % (n, '（容量不足 %d）' % skip if skip else ''))
+    return n
+
+
+def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
+    """Z14：Z13 + 职业名/阵型名/称号名 + 新敌技名（同语言全副本一致）。"""
+    global _EXTRA_RELEASE, _EXTRA_ROWS, _TITLE_RELEASE
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
+    orig_blobs = [bytes(b) for b in s2a.Archive(en_path).blobs] if os.path.exists(en_path) else None
+    ja_blobs = [bytes(b) for b in s2a.Archive(ja_path).blobs] if os.path.exists(ja_path) else None
+    mech_ja = _mech_ja_names()
+    partner_ja = _partner_ja_names()
+    mech_ja -= partner_ja
+    # 职业/阵型/称号的日文名集合（用于 collide 放行）
+    name_ja = set()
+    if ja_blobs:
+        for bi, st, pos in ((128, 212, 4), (136, 272, 0), (931, 292, 0)):
+            n = struct.unpack_from('<I', ja_blobs[bi], 8)[0]
+            for r in range(n):
+                base = 16 + r * st
+                t = ja_blobs[bi][base + pos:base + pos + 64].split(b'\x00')[0]
+                try:
+                    name_ja.add(t.decode('cp932').strip())
+                except Exception:
+                    pass
+    rows = _z11_partner_rows() + _z13_rows() + _z14_rows()
+    extra_en = _z12_names_en(orig_blobs or [])
+    en_names = set(_partner_en_names(orig_blobs or [])) | extra_en
+    en_names |= {s.encode('cp932') for s in list(Z13_TRANSLATIONS) + list(Z13_SYNC_NAMES)}
+    en_names |= {s.encode('cp932') for s in Z14_ENEMY_TRANSLATIONS}
+    en_names |= {s.encode('cp932') for s in Z14_TITLE_FIX}
+    if orig_blobs:
+        for bi, st, pos in ((128, 212, 4), (136, 272, 0), (931, 292, 0)):
+            n = struct.unpack_from('<I', orig_blobs[bi], 8)[0]
+            for r in range(n):
+                base = 16 + r * st
+                t = orig_blobs[bi][base + pos:base + pos + 64].split(b'\x00')[0]
+                if t:
+                    en_names.add(t)
+    # 称号名本体放行（绕过 chap_title_guard）
+    title_rel = set()
+    if orig_blobs:
+        n = struct.unpack_from('<I', orig_blobs[931], 8)[0]
+        for r in range(n):
+            title_rel.add((931, 16 + r * 292))
+    print('  [Z14] 新增译表行 %d / 名字集合 %d / 称号放行 %d'
+          % (len(rows), len(en_names), len(title_rel)))
+    _EXTRA_ROWS = rows
+    _EXTRA_RELEASE = _z14_release_factory(mech_ja, partner_ja, name_ja)
+    _TITLE_RELEASE = title_rel
+    try:
+        stats = do_apply(text=True, sync_cscv=False, keep_collide=True,
+                         skip_blobs=(317,), consistent=False,
+                         menu_exempt=True, ui_always=True,
+                         slot_release=True, desc_release=True,
+                         place=False, chap=False, song=False,
+                         lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
+                         exe_mode=exe_mode)
+    finally:
+        _EXTRA_RELEASE = None
+        _EXTRA_ROWS = None
+        _TITLE_RELEASE = None
+    print('== 名称副本一致性补全 [Z14] ==')
+    sync_name_replicas(orig_blobs, en_path,
+                       single_slot_blob_allow={147, 357, 736, 998, 391}, multiline=True)
+    print('== 键名列对齐（pos292 := pos0）==')
+    align_skill_keycol(orig_blobs, en_path)
+    print('== 同步 DLC01（Z14：只写 DLC01/LANG_EN）==')
+    refresh_dlc01(en_only=True)
+    print('== Q16 键名槽位保护 ==')
+    restore_q16_keys()
+    print('== 名字副本补齐（职业/阵型/称号/伙伴/批次 A-B，跳过 b317）==')
+    fill_name_copies(orig_blobs, en_path, en_names, skip_blobs=(317,), title_ok=title_rel)
+    print('== 称号条件副本统一（stride292 pos32）==')
+    force_title_key_copies(orig_blobs, en_path, title_rel)
+    print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
+    recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
+    if not verify_e1_isolation(expect_skill_key=False):
+        raise SystemExit('!! Z14 隔离断言失败：LANG_JA/cscv 文本层出现非预期改动，中止')
+    return stats
+
+
+def do_package_names_cn_jobs_titles_hash(exe_mode=None):
+    """Z14 包：staging 装机 → 输出 dist/Z14-jobs-titles/。"""
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                      stage_name='package_stage_names_cn_jobs_titles_hash',
+                      out_dir=paths.dist('Z14-jobs-titles'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -3713,6 +5047,8 @@ if __name__ == '__main__':
      # E3 可用包：LANG_EN 隔离 + 机制名保持该文件原版英文，其余中文（生产护栏配方）
      'apply_lang_en_names_en': do_apply_lang_en_names_en,
      'package_lang_en_names_en': do_package_lang_en_names_en,
+     # 稳定版备份包：E3 配方，独立输出 dist/stable-names-en/（不影响默认 dist）
+     'package_stable_names': do_package_stable_names,
      'apply_lang_ja_names_ja': do_apply_lang_ja_names_ja,
      'package_lang_ja_names_ja': do_package_lang_ja_names_ja,
      # HEAD(9d8299b) 生产配方复现包（双侧写入 + cscv 同步 + place/chap/song）
@@ -3731,6 +5067,24 @@ if __name__ == '__main__':
      'package_names_cn_equip_only': do_package_names_cn_equip_only,
      'apply_names_cn_keycol': do_apply_names_cn_keycol,
      'package_names_cn_keycol': do_package_names_cn_keycol,
+     # Z10 方案A：Z9（键列中文）+ 重算名字哈希操作数
+     'apply_names_cn_keycol_hash': do_apply_names_cn_keycol_hash,
+     'package_names_cn_keycol_hash': do_package_names_cn_keycol_hash,
+     # Z10b 判别：stable 其余 collide 保留 + 仅机制名中文 + 操作数重算
+     'apply_names_cn_mech_hash': do_apply_names_cn_mech_hash,
+     'package_names_cn_mech_hash': do_package_names_cn_mech_hash,
+     # Z11：Z10b + 伙伴名/复合键 + 操作数重算
+     'apply_names_cn_partner_hash': do_apply_names_cn_partner_hash,
+     'package_names_cn_partner_hash': do_package_names_cn_partner_hash,
+     # Z12：Z11 + 批次 A 显示名（敌名/Boss/宝箱/音乐/地图 UI）
+     'apply_names_cn_display_hash': do_apply_names_cn_display_hash,
+     'package_names_cn_display_hash': do_package_names_cn_display_hash,
+     # Z13：Z12 + 批次 B（UI 缺译 + 伙伴/敌人技能名）
+     'apply_names_cn_batch_b_hash': do_apply_names_cn_batch_b_hash,
+     'package_names_cn_batch_b_hash': do_package_names_cn_batch_b_hash,
+     # Z14：Z13 + 职业/阵型/称号 + 新敌技名
+     'apply_names_cn_jobs_titles_hash': do_apply_names_cn_jobs_titles_hash,
+     'package_names_cn_jobs_titles_hash': do_package_names_cn_jobs_titles_hash,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

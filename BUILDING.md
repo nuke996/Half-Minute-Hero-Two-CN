@@ -174,6 +174,7 @@ python tools/runner.py <脚本名> [参数]
 | 命令 | 产物 | 配方要点 |
 |---|---|---|
 | `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文 |
+| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/` |
 | `package_lang_ja_names_ja` | `dist/E3-ja-lang-ja-names-ja/` | **E3-JA**：E3 的日语镜像 —— 只写 `LANG_JA`，机制名保持原版，其余中文（游戏语言须设为**日语**） |
 | `package_names_cn_skill_loadout` | `dist/Z4-skill-loadout/` | **Z4**：技能/装备名中文 + 章节 loadout 值同步 + 武器表副本同步；`b666 +292` 键名保持原版 |
 | `package_names_cn_skill_loadout_ja` | `dist/Z4-ja-skill-loadout/` | **Z4-JA**：Z4 的日语镜像（只写 `LANG_JA`；`+292` 保持该文件原版日文）。**实机验证：与 Z4 同样异常**，仅作对照保留 |
@@ -181,13 +182,20 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_skill_only2` | `dist/Z6-skill-only2/` | 二分对照：只翻技能名，装备名保持英文 |
 | `package_names_cn_equip_only` | `dist/Z7-equip-only/` | 二分对照：只翻装备名，技能保持英文 |
 | `package_names_cn_keycol` | `dist/Z9-keycol/` | 反证实验：把 `b666 +292` 键名也翻中文（**已验证不可用**，技能有名字无效果） |
+| `package_names_cn_mech_hash` | `dist/Z10b-mech-names/` | **Z10b 判别包**：其余 collide/伙伴名保持 stable 原样，仅技能/装备名中文化 + 操作数重算；伙伴名最后强制回写原版 |
+| `package_names_cn_partner_hash` | `dist/Z11-partner-names/` | **Z11**：Z10b + 伙伴名（b954/b1034 及全部副本）+ b954 `X Resident`/`X Skill` 复合键；重算 240 个操作数（含 72 个复合键引用） |
+| `package_names_cn_display_hash` | `dist/Z12-display-names/` | **Z12 批次 A**：Z11 + 敌名/Boss 名/宝箱/音乐/地图 UI 等已有译文的显示列；称号表按守卫保持原文 |
+| `package_names_cn_batch_b_hash` | `dist/Z13-batchB/` | **Z13 批次 B**：技能名/合成 UI 缺译；脚本参数列按内容白名单 |
+| `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | **Z14**：Z13 + 职业/阵型/称号名 + 新敌技名；称号连同 pos32 条件副本同步 |
 
 用法示例：
 
 ```bash
-python tools/build.py --game-dir work/original package_names_cn_skill_loadout
-python tools/build.py --game-dir work/original package_lang_en_names_en
+python tools/build.py --game-dir work/original package_names_cn_partner_hash
+python tools/build.py --game-dir work/original package_names_cn_display_hash
 ```
+
+> 各包内容、实机状态、症状定位与回滚方式见 `docs/PACKAGE_LEDGER.md`。
 
 > **默认打包行为 = HEAD（`9d8299b`）生产配方。**
 > `python tools/build.py --game-dir work/original package`（以及 `package_install`）
