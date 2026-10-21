@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2820,
+ "_count": 2827,
  "entries": [
   {
    "id": "row::13247",
@@ -316,7 +316,7 @@
    "id": "row::13342",
    "en": "(… <Slow>… I have an idea.",
    "ja": "（・・・<のろまな>・・・ということは",
-   "zh": "（……<迟钝>……我有了个主意。",
+   "zh": "（……<迟钝>……我有了个主意，",
    "meta": {
     "blob": 233,
     "offset": 100916,
@@ -3198,7 +3198,7 @@
    "id": "row::13948",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 249,
     "offset": 30480,
@@ -3393,10 +3393,43 @@
    }
   },
   {
+   "id": "row::13997",
+   "en": "I will sing in the midst of a storm",
+   "ja": "あらしの中　私は歌う",
+   "zh": "在风暴之中　我放声歌唱",
+   "meta": {
+    "blob": 249,
+    "offset": 48812,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13998",
+   "en": "From this moment,",
+   "ja": "さあここから",
+   "zh": "来吧，就从这里",
+   "meta": {
+    "blob": 249,
+    "offset": 49104,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13999",
+   "en": "I will begin my journey",
+   "ja": "旅を始めよう",
+   "zh": "开始旅程吧",
+   "meta": {
+    "blob": 249,
+    "offset": 49396,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::14000",
    "en": "Because I chose this path without fear,",
    "ja": "きっと進んでゆけるはずよ",
-   "zh": "因为选这条路我无所畏惧，",
+   "zh": "一定能够　继续前行",
    "meta": {
     "blob": 249,
     "offset": 52380,
@@ -3411,6 +3444,17 @@
    "meta": {
     "blob": 249,
     "offset": 52444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::14002",
+   "en": "even in the heart of Sanctuary",
+   "ja": "どこまでも",
+   "zh": "直至天涯海角",
+   "meta": {
+    "blob": 249,
+    "offset": 52508,
     "cap": 32
    }
   },
@@ -7004,7 +7048,7 @@
    "id": "row::14657",
    "en": "* <EVO_NAME__>'s childhood friend.",
    "ja": "＊　<EVO_NAME__>のおさななじみ",
-   "zh": "＊ <EVO_NAME__>的青梅竹马。",
+   "zh": "＊ <EVO_NAME__>的青梅竹马，",
    "meta": {
     "blob": 282,
     "offset": 19448,
@@ -7026,7 +7070,7 @@
    "id": "row::14660",
    "en": "* Really gets along with <EVO_NAME__>.",
    "ja": "＊　<EVO_NAME__>とは大のなかよし",
-   "zh": "＊ 和<EVO_NAME__>特别要好。",
+   "zh": "＊ 和<EVO_NAME__>特别要好，",
    "meta": {
     "blob": 282,
     "offset": 19740,
@@ -7466,7 +7510,7 @@
    "id": "row::14789",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 77200,
@@ -7477,7 +7521,7 @@
    "id": "row::14791",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 77492,
@@ -7642,7 +7686,7 @@
    "id": "row::14845",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 106692,
@@ -7653,7 +7697,7 @@
    "id": "row::14849",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 107276,
@@ -7664,7 +7708,7 @@
    "id": "row::14853",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 108152,
@@ -7675,7 +7719,7 @@
    "id": "row::14856",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 108444,
@@ -7994,7 +8038,7 @@
    "id": "row::14942",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 156916,
@@ -8005,7 +8049,7 @@
    "id": "row::14946",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 157500,
@@ -8016,7 +8060,7 @@
    "id": "row::14949",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 158376,
@@ -8027,7 +8071,7 @@
    "id": "row::14952",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 161880,
@@ -8038,7 +8082,7 @@
    "id": "row::14954",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 162464,
@@ -8049,7 +8093,7 @@
    "id": "row::14957",
    "en": "Boatman",
    "ja": "船乗り",
-   "zh": "船夫",
+   "zh": "水手",
    "meta": {
     "blob": 282,
     "offset": 164508,
@@ -20006,7 +20050,7 @@
    "id": "row::17483",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 327,
     "offset": 3616,
@@ -20017,7 +20061,7 @@
    "id": "row::17486",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 327,
     "offset": 3908,
@@ -20193,7 +20237,7 @@
    "id": "row::17531",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "3０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 327,
     "offset": 20844,
@@ -21452,6 +21496,39 @@
     "blob": 327,
     "offset": 308172,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::17773",
+   "en": "The arrangement",
+   "ja": "わずらいを消し去る",
+   "zh": "驱散忧伤的",
+   "meta": {
+    "blob": 327,
+    "offset": 316576,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::17774",
+   "en": "of the tones",
+   "ja": "ととのえられた",
+   "zh": "和谐悦耳的",
+   "meta": {
+    "blob": 327,
+    "offset": 316868,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::17775",
+   "en": "takes away my sadness",
+   "ja": "音色たちよ",
+   "zh": "音色啊",
+   "meta": {
+    "blob": 327,
+    "offset": 317160,
+    "cap": 128
    }
   },
   {

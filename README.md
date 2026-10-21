@@ -98,15 +98,18 @@ tools/                    通用工具链（build.py、build_cn.py、s2a.py、dl
                           export_review.py、import_review.py、review_lib.py、paths.py 等）
 locales/zh-CN/            翻译数据（text_v2.csv、ml_zh_fields.json、dlc/、
                           replace_map.py、hl_map.py、各守卫/放行 JSON）
-locales/zh-CN/translator-view/  面向译者的校对文件（导出生成，见 TRANSLATING.md §14）
+locales/zh-CN/translator-view/  面向译者的校对文件 + 导出/导入/回滚三个 bat
+                          （导出生成，见 TRANSLATING.md §14）
 src/  tests/              源码与测试
 docs/                     技术文档（LOCALIZATION_STANDARD / PITFALLS / FILE_FORMATS 等）
 assets/fonts/             字体（文泉驿点阵宋体 13px）
 build/  dist/             构建中间产物 / 发布补丁（不纳入版本控制）
 ```
 
-一键 `汉化-*.bat` 由 `tools/make_bats.py` 生成到**游戏目录**（默认 `work/original`，
-或 `config.local.json` 的 `game_dir`）；游戏目录只需提供原版文件与这些 bat。
+一键 `汉化-*.bat` 由 `tools/make_bats.py` 生成：**装机类**放**游戏目录**（默认
+`work/original`，或 `config.local.json` 的 `game_dir`，不入版本控制）；
+**校对类**（`汉化-导出校对.bat` / `汉化-导入校对.bat` / `汉化-导入校对-回滚.bat`）
+放 `locales/<locale>/translator-view/`，与校对 JSON 同目录、随仓库分发。
 
 见 `AGENTS.md` 与 `docs/LOCALIZATION_STANDARD.md`。
 

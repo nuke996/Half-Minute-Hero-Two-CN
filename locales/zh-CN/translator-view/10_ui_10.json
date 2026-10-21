@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 1857,
+ "_count": 1860,
  "entries": [
   {
    "id": "row::56654",
@@ -9677,7 +9677,7 @@
    "id": "row::58331",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 1013,
     "offset": 26392,
@@ -10139,11 +10139,22 @@
    "id": "row::58414",
    "en": "From the puzzling mirror",
    "ja": "迷わせる鏡に",
-   "zh": "从令人困惑的镜子",
+   "zh": "面对迷惑之镜",
    "meta": {
     "blob": 1013,
     "offset": 82456,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::58415",
+   "en": "Reflects a heart of defiance",
+   "ja": "負けない心を反射して",
+   "zh": "映照出不屈的心",
+   "meta": {
+    "blob": 1013,
+    "offset": 82520,
+    "cap": 64
    }
   },
   {
@@ -11822,7 +11833,7 @@
    "id": "row::58729",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "３０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 1025,
     "offset": 39532,
@@ -12493,7 +12504,7 @@
    "id": "row::58894",
    "en": "It appears that the Hero Castle can be summoned here.",
    "ja": "　ここに勇者城を呼べるようだ",
-   "zh": "看来能在此召唤勇者城。",
+   "zh": "看来能在此召唤勇者城，",
    "meta": {
     "blob": 1025,
     "offset": 133036,
@@ -16816,7 +16827,7 @@
    "id": "row::59718",
    "en": "… But it's a horrible thing when people are hurt.",
    "ja": "（・・・でも人がキズつくのはつらいことだよ",
-   "zh": "… 可有人受伤终归是件难过的事。",
+   "zh": "… 可有人受伤终归是件难过的事，",
    "meta": {
     "blob": 1045,
     "offset": 17696,
@@ -16860,7 +16871,7 @@
    "id": "row::59726",
    "en": "Defeat the Last of the God Nine!",
    "ja": "最後のゴッドナインをたおせ！",
-   "zh": "击败九天神中的最后一人！",
+   "zh": "击败九神中的最后一人！",
    "meta": {
     "blob": 1045,
     "offset": 26392,
@@ -17616,6 +17627,28 @@
    }
   },
   {
+   "id": "row::59901",
+   "en": "at what fate awaits me",
+   "ja": "おびえながらも",
+   "zh": "纵然畏惧",
+   "meta": {
+    "blob": 1045,
+    "offset": 117140,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::59902",
+   "en": "These loud notes are proof of my dreams",
+   "ja": "激しく鳴らす調べは希望のあかし",
+   "zh": "激越奏响的旋律　是希望的明证",
+   "meta": {
+    "blob": 1045,
+    "offset": 117432,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::59904",
    "en": "Reception",
    "ja": "受付",
@@ -18334,7 +18367,7 @@
    "id": "row::60026",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 28728,
@@ -18345,7 +18378,7 @@
    "id": "row::60027",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 31648,
@@ -18499,7 +18532,7 @@
    "id": "row::60064",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 86252,
@@ -18510,7 +18543,7 @@
    "id": "row::60065",
    "en": "The Temple of Time's seal is broken!",
    "ja": "時の神殿の封印がとけた！",
-   "zh": "时之神庙的封印解除了！",
+   "zh": "时之神殿的封印解除了！",
    "meta": {
     "blob": 1050,
     "offset": 92384,

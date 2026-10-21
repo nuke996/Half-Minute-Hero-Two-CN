@@ -93,6 +93,8 @@ desktop.ini
 
 # Backups
 *.bak
+*.bak_*
+*.bak-*
 *.backup
 *.orig
 *.old

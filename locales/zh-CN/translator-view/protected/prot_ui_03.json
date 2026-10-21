@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 783,
+ "_count": 776,
  "entries": [
   {
    "id": "row::13768",
@@ -351,58 +351,6 @@
     "blob": 247,
     "offset": 10700,
     "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::13997",
-   "en": "I will sing in the midst of a storm",
-   "ja": "あらしの中　私は歌う",
-   "zh": "我将在风暴中歌唱",
-   "meta": {
-    "blob": 249,
-    "offset": 48812,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::13998",
-   "en": "From this moment,",
-   "ja": "さあここから",
-   "zh": "从这一刻起，",
-   "meta": {
-    "blob": 249,
-    "offset": 49104,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::13999",
-   "en": "I will begin my journey",
-   "ja": "旅を始めよう",
-   "zh": "我将走上旅途",
-   "meta": {
-    "blob": 249,
-    "offset": 49396,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14002",
-   "en": "even in the heart of Sanctuary",
-   "ja": "どこまでも",
-   "zh": "即便在圣域的中心",
-   "meta": {
-    "blob": 249,
-    "offset": 52508,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -1698,7 +1646,7 @@
    "id": "row::14687",
    "en": "* Like Nanako, a childhood friend of <EVO_NAME__>'s.",
    "ja": "＊　ナナコと同じく<EVO_NAME__>のおさななじみ",
-   "zh": "＊ 和奈奈子一样，是<EVO_NAME__>的青梅竹马。",
+   "zh": "＊ 和奈奈子一样，是<EVO_NAME__>的青梅竹马，",
    "meta": {
     "blob": 282,
     "offset": 25288,
@@ -1724,7 +1672,7 @@
    "id": "row::14690",
    "en": "* His role is to keep an eye on Princess <EVO_NAME__>.",
    "ja": "＊　王女である<EVO_NAME__>のお目付け役でもある",
-   "zh": "＊ 他的职责是监视王女<EVO_NAME__>。",
+   "zh": "＊ 他的职责是监视王女<EVO_NAME__>，",
    "meta": {
     "blob": 282,
     "offset": 25580,
@@ -2998,7 +2946,7 @@
    "id": "row::15659",
    "en": "Varch of the Wars",
    "ja": "戦いのヴァーチ",
-   "zh": "战事的瓦奇",
+   "zh": "战争的瓦奇",
    "meta": {
     "blob": 297,
     "offset": 908,
@@ -4350,7 +4298,7 @@
    "id": "row::17031",
    "en": "Intro of THE VENUS 7",
    "ja": "Intro of THE VENUS 7",
-   "zh": "维纳斯7 开场戏",
+   "zh": "七美神 开场戏",
    "meta": {
     "blob": 320,
     "offset": 12544,
@@ -4376,7 +4324,7 @@
    "id": "row::17033",
    "en": "Battle of THE VENUS 7",
    "ja": "Battle of THE VENUS 7",
-   "zh": "维纳斯7 战斗",
+   "zh": "七美神 战斗",
    "meta": {
     "blob": 320,
     "offset": 13036,
@@ -6248,7 +6196,7 @@
    "id": "row::17182",
    "en": "Intro of THE VENUS 7",
    "ja": "Intro of THE VENUS 7",
-   "zh": "维纳斯7 开场戏",
+   "zh": "七美神 开场戏",
    "meta": {
     "blob": 320,
     "offset": 63220,
@@ -6287,7 +6235,7 @@
    "id": "row::17185",
    "en": "Battle of THE VENUS 7",
    "ja": "Battle of THE VENUS 7",
-   "zh": "维纳斯7 战斗",
+   "zh": "七美神 战斗",
    "meta": {
     "blob": 320,
     "offset": 63712,
@@ -8345,45 +8293,6 @@
    "meta": {
     "blob": 327,
     "offset": 228392,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17773",
-   "en": "The arrangement",
-   "ja": "わずらいを消し去る",
-   "zh": "那编排",
-   "meta": {
-    "blob": 327,
-    "offset": 316576,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17774",
-   "en": "of the tones",
-   "ja": "ととのえられた",
-   "zh": "音色的",
-   "meta": {
-    "blob": 327,
-    "offset": 316868,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17775",
-   "en": "takes away my sadness",
-   "ja": "音色たちよ",
-   "zh": "带走了我的悲伤",
-   "meta": {
-    "blob": 327,
-    "offset": 317160,
     "cap": 128,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"

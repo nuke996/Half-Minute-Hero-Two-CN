@@ -63,7 +63,7 @@
    "id": "row::59314",
    "en": "Heroes everywhere!",
    "ja": "「全国の勇者しょく～ん",
-   "zh": "「各地的勇者啊！",
+   "zh": "「各地的勇者啊，",
    "meta": {
     "blob": 1038,
     "offset": 3680,
@@ -888,7 +888,7 @@
    "id": "row::59439",
    "en": "If you're so inclined, you might want to get your hands on one.",
    "ja": "「よかったら　そいつを手に入れてきなっ",
-   "zh": "「你要是有兴趣，不妨弄一个到手。",
+   "zh": "「你要是有兴趣，不妨弄一个到手，",
    "meta": {
     "blob": 1040,
     "offset": 17696,
@@ -1097,7 +1097,7 @@
    "id": "row::59473",
    "en": "… N-N-N-No!",
    "ja": "「・・・イタタタ　ヒドイ",
-   "zh": "「… 哎哟哟，好狠啊！",
+   "zh": "「… 哎哟哟，好狠啊，",
    "meta": {
     "blob": 1040,
     "offset": 44268,
@@ -1768,7 +1768,7 @@
    "id": "row::59604",
    "en": "Princess <EVO_NAME__>, reckless movements will endanger you.",
    "ja": "「<EVO_NAME__>姫　むやみに動くのは危険です",
-   "zh": "「公主<EVO_NAME__>，鲁莽行动会害了你。",
+   "zh": "「公主<EVO_NAME__>，鲁莽行动会害了你，",
    "meta": {
     "blob": 1043,
     "offset": 45144,
@@ -1911,7 +1911,7 @@
    "id": "row::59649",
    "en": "… Heh-heh-heh.",
    "ja": "「・・・クッ　クッ　クッ",
-   "zh": "「… 嘿嘿嘿。",
+   "zh": "「… 嘿嘿嘿，",
    "meta": {
     "blob": 1045,
     "offset": 2804,
@@ -1922,7 +1922,7 @@
    "id": "row::59650",
    "en": "I am Varch of the Wars, one of the God Nine!",
    "ja": "　我こそはゴッドナイン　戦いのヴァーチ！」",
-   "zh": "　我正是九天神之一，战争的瓦奇！」",
+   "zh": "　我正是九神之一，战争的瓦奇！」",
    "meta": {
     "blob": 1045,
     "offset": 2868,
@@ -2186,7 +2186,7 @@
    "id": "row::59686",
    "en": "We've already defeated eight Gods of the God Nine…",
    "ja": "　今までたおしたゴッドナインは８人だから・・・」",
-   "zh": "　咱们已经打败了九天神中的八位…」",
+   "zh": "　咱们已经打败了九神中的八位…」",
    "meta": {
     "blob": 1045,
     "offset": 10460,
@@ -2230,7 +2230,7 @@
    "id": "row::59692",
    "en": "It's God NINE, meaning <only one> remains.",
    "ja": "　ゴッドナインはこれで<最後の１人>デス」",
-   "zh": "　是九天神，也就是说<仅剩一人>了。」",
+   "zh": "　是九神，也就是说<仅剩一人>了。」",
    "meta": {
     "blob": 1045,
     "offset": 11920,
@@ -2274,7 +2274,7 @@
    "id": "row::59697",
    "en": "That's right.",
    "ja": "「その通りデス",
-   "zh": "「没错。",
+   "zh": "「没错，",
    "meta": {
     "blob": 1045,
     "offset": 13316,
@@ -2296,7 +2296,7 @@
    "id": "row::59700",
    "en": "The Temple of the God Nine is here.",
    "ja": "「ゴッドナインの神殿はここにありマス",
-   "zh": "「九天神的神殿就在此处。",
+   "zh": "「九神的神殿就在此处，",
    "meta": {
     "blob": 1045,
     "offset": 13900,
@@ -2318,7 +2318,7 @@
    "id": "row::59703",
    "en": "The southern land route is in a state of war.",
    "ja": "「南の陸地は戦争状態にあるようデス",
-   "zh": "「南边陆路正处于交战状态。",
+   "zh": "「南边陆路正处于交战状态，",
    "meta": {
     "blob": 1045,
     "offset": 14776,
@@ -2340,7 +2340,7 @@
    "id": "row::59706",
    "en": "The monsters are the underlings of the God Nine.",
    "ja": "「モンスターはゴッドナインの手先になってイマス",
-   "zh": "「那些怪兽是九天神的爪牙。",
+   "zh": "「那些怪兽是九神的爪牙，",
    "meta": {
     "blob": 1045,
     "offset": 15068,
@@ -2538,7 +2538,7 @@
    "id": "row::59737",
    "en": "We're counting on you, God Hunter! Come to our aid!",
    "ja": "「たのむゴッドハンター！　オレたちを助けてくれ",
-   "zh": "「就指望你了，神灵狩猎者！快来助我们！",
+   "zh": "「就指望你了，神灵狩猎者！快来助我们，",
    "meta": {
     "blob": 1045,
     "offset": 29960,
@@ -2648,7 +2648,7 @@
    "id": "row::59751",
    "en": "If you get through, we hope you can help those people out.",
    "ja": "「通るときに　みんなを助けてやってほしい",
-   "zh": "「若你能通关，盼你搭救那些人。",
+   "zh": "「若你能通关，盼你搭救那些人，",
    "meta": {
     "blob": 1045,
     "offset": 31420,
@@ -2670,7 +2670,7 @@
    "id": "row::59754",
    "en": "You could also head <north>. They're neutral up there.",
    "ja": "「<北>に行くのも手だ　あっちは中立なんでね",
-   "zh": "「你也能去<北边>，那边保持中立。",
+   "zh": "「你也能去<北边>，那边保持中立，",
    "meta": {
     "blob": 1045,
     "offset": 31712,
@@ -2692,7 +2692,7 @@
    "id": "row::59757",
    "en": "The route you choose is up to you.",
    "ja": "「どっちを選ぶかは　あんたの自由だ",
-   "zh": "「走哪条路全凭你做主。",
+   "zh": "「走哪条路全凭你做主，",
    "meta": {
     "blob": 1045,
     "offset": 32004,
@@ -2901,7 +2901,7 @@
    "id": "row::59792",
    "en": "ride to the God Nine's temple.",
    "ja": "　ゴッドナインの神殿まで泳いでくれよ」",
-   "zh": "　游到九天神的神殿去。」",
+   "zh": "　游到九神的神殿去。」",
    "meta": {
     "blob": 1045,
     "offset": 48128,
@@ -2934,7 +2934,7 @@
    "id": "row::59797",
    "en": "Ahem… In any case, I can do no such thing.",
    "ja": "「ゴホンッ・・・どちらにしろ　そんなことはできん",
-   "zh": "「咳… 反正，这种事我办不到。",
+   "zh": "「咳… 反正，这种事我办不到，",
    "meta": {
     "blob": 1045,
     "offset": 48648,
@@ -3418,7 +3418,7 @@
    "id": "row::59873",
    "en": "You've finally defeated the last of the God Nine!",
    "ja": "　ついにゴッドナインをすべてたおしマシタネ」",
-   "zh": "　你终于打败了九天神最后一人！」",
+   "zh": "　你终于打败了九神最后一人！」",
    "meta": {
     "blob": 1045,
     "offset": 108864,
@@ -3484,7 +3484,7 @@
    "id": "row::59881",
    "en": "It's true that our victory over the God Nine,",
    "ja": "「たしかに　地上でタイムストリーム回収に",
-   "zh": "「我们的确战胜了九天神，",
+   "zh": "「我们的确战胜了九神，",
    "meta": {
     "blob": 1045,
     "offset": 110844,
@@ -3616,7 +3616,7 @@
    "id": "row::59898",
    "en": "Well then, let's head to the Temple of Time.",
    "ja": "「では　時の神殿に向かいまショウ",
-   "zh": "「那我们去时之神庙吧。",
+   "zh": "「那我们去时之神殿吧，",
    "meta": {
     "blob": 1045,
     "offset": 114640,
@@ -3671,7 +3671,7 @@
    "id": "row::59908",
    "en": "Repayment to us is made in the form of <temple checks>.",
    "ja": "　ウチのへんさいは<神殿チェック>になってまして～」",
-   "zh": "　我们的还款形式是<神庙支票>～」",
+   "zh": "　我们的还款形式是<神殿支票>～」",
    "meta": {
     "blob": 1045,
     "offset": 120252,
@@ -3913,7 +3913,7 @@
    "id": "row::59979",
    "en": "Hee hee hee!",
    "ja": "「ふふふ",
-   "zh": "「嘿嘿嘿！",
+   "zh": "「嘿嘿嘿，",
    "meta": {
     "blob": 1050,
     "offset": 9812,
@@ -4078,7 +4078,7 @@
    "id": "row::60002",
    "en": "We can use the <Temple of Time> here",
    "ja": "「ここにある<時の神殿>をつかって",
-   "zh": "「咱们能用这里的<时之神庙>",
+   "zh": "「咱们能用这里的<时之神殿>",
    "meta": {
     "blob": 1050,
     "offset": 15360,
@@ -4155,7 +4155,7 @@
    "id": "row::60012",
    "en": "some sort of power is sealed inside the Temple of Time.",
    "ja": "　何かの力に封じられちゃってるのよね」",
-   "zh": "　时之神庙里封印着某种力量。」",
+   "zh": "　时之神殿里封印着某种力量。」",
    "meta": {
     "blob": 1050,
     "offset": 16300,
@@ -4177,7 +4177,7 @@
    "id": "row::60015",
    "en": "the temple from each of those two towers.",
    "ja": "　神殿にかんしょうしてるのね」",
-   "zh": "　那两座塔里监视着神庙。」",
+   "zh": "　那两座塔里监视着神殿。」",
    "meta": {
     "blob": 1050,
     "offset": 17176,
@@ -4199,7 +4199,7 @@
    "id": "row::60018",
    "en": "you won't be able to use the Temple of Time to visit the past!",
    "ja": "　時の神殿で過去に行くことはできないわ！」",
-   "zh": "　就别想用时之神庙回到过去！」",
+   "zh": "　就别想用时之神殿回到过去！」",
    "meta": {
     "blob": 1050,
     "offset": 17468,
@@ -4507,7 +4507,7 @@
    "id": "row::60070",
    "en": "You really fought hard this time, <EVO_NAME__>!",
    "ja": "「今回はがんばったわね　<EVO_NAME__>ちゃん",
-   "zh": "「这次你打得很拼呢，<EVO_NAME__>！",
+   "zh": "「这次你打得很拼呢，<EVO_NAME__>，",
    "meta": {
     "blob": 1050,
     "offset": 98580,
@@ -4584,7 +4584,7 @@
    "id": "row::60081",
    "en": "the Temple of Time that deifies the Time Goddess.",
    "ja": "　ぼうやと一緒においのりしにきたのよ」",
-   "zh": "　供奉时之女神的时之神庙祈祷。」",
+   "zh": "　供奉时之女神的时之神殿祈祷。」",
    "meta": {
     "blob": 1050,
     "offset": 108572,
@@ -4617,7 +4617,7 @@
    "id": "row::60088",
    "en": "That's the commander of the Brave Kingdom Commandos.",
    "ja": "「それがブレイブ王国の遊撃隊隊長だっていうんだから",
-   "zh": "「他就是勇者王国游击队的队长。",
+   "zh": "「他就是勇者王国游击队的队长，",
    "meta": {
     "blob": 1050,
     "offset": 109384,
@@ -4639,7 +4639,7 @@
    "id": "row::60094",
    "en": "Hey! Guess what? I've seen <YUSHA_NAME> in the flesh!",
    "ja": "「ぼくねぼくねっ　魔界の封印を解いたっていう",
-   "zh": "「嘿！猜怎么着？我见过<YUSHA_NAME>真人！",
+   "zh": "「嘿！猜怎么着？我见过<YUSHA_NAME>真人，",
    "meta": {
     "blob": 1050,
     "offset": 112596,
@@ -4661,7 +4661,7 @@
    "id": "row::60097",
    "en": "He didn't look like such a bad guy to me.",
    "ja": "「あんまり悪い人には見えなかったのっ",
-   "zh": "「在我眼里他并不像坏人。",
+   "zh": "「在我眼里他并不像坏人，",
    "meta": {
     "blob": 1050,
     "offset": 112888,
@@ -4903,7 +4903,7 @@
    "id": "row::60131",
    "en": "Her singing voice is wonderful!",
    "ja": "「すばらしい歌声よね",
-   "zh": "「她的歌声真是美妙！",
+   "zh": "「她的歌声真是美妙，",
    "meta": {
     "blob": 1050,
     "offset": 121940,
@@ -5189,7 +5189,7 @@
    "id": "row::60171",
    "en": "Oh, I'm sorry!",
    "ja": "「あ　ごめんなさい",
-   "zh": "「噢，抱歉！",
+   "zh": "「噢，抱歉，",
    "meta": {
     "blob": 1050,
     "offset": 143256,
@@ -5211,7 +5211,7 @@
    "id": "row::60173",
    "en": "Umm, my name is <EVO_NAME__>. I've come from the future.",
    "ja": "「えっと　わたくしは未来から来た<EVO_NAME__>です",
-   "zh": "「呃，我叫<EVO_NAME__>。我来自未来。",
+   "zh": "「呃，我叫<EVO_NAME__>。我来自未来，",
    "meta": {
     "blob": 1050,
     "offset": 143548,
@@ -5277,7 +5277,7 @@
    "id": "row::60180",
    "en": "at this temple!",
    "ja": "　この神殿で安置してほしいのですわ！」",
-   "zh": "　安置在这座神庙里！」",
+   "zh": "　安置在这座神殿里！」",
    "meta": {
     "blob": 1050,
     "offset": 144488,
@@ -5420,7 +5420,7 @@
    "id": "row::60200",
    "en": "The world is in crisis right now.",
    "ja": "「今世界は大変なことになってて",
-   "zh": "「如今世界正陷于危机。",
+   "zh": "「如今世界正陷于危机，",
    "meta": {
     "blob": 1050,
     "offset": 148220,
@@ -5541,7 +5541,7 @@
    "id": "row::60215",
    "en": "This is the dragon's egg.",
    "ja": "「これが竜のタマゴッ",
-   "zh": "「这就是那颗龙蛋。",
+   "zh": "「这就是那颗龙蛋，",
    "meta": {
     "blob": 1050,
     "offset": 152600,
@@ -5695,7 +5695,7 @@
    "id": "row::60236",
    "en": "But I get the feeling that I've met someone with",
    "ja": "「前に　この神殿で<EVO_NAME__>さんと",
-   "zh": "「但我总觉得曾在这神庙里，",
+   "zh": "「但我总觉得曾在这神殿里，",
    "meta": {
     "blob": 1050,
     "offset": 158440,
@@ -6047,7 +6047,7 @@
    "id": "row::60285",
    "en": "You have to pay back the money you borrow!",
    "ja": "「借りた金は返さなきゃー",
-   "zh": "「你借来的钱必须还！",
+   "zh": "「你借来的钱必须还，",
    "meta": {
     "blob": 1050,
     "offset": 185888,
@@ -6113,7 +6113,7 @@
    "id": "row::60296",
    "en": "… Fine. I'll let you off in consideration of this victory.",
    "ja": "「・・・いいダロウ　この勝利にめんじて",
-   "zh": "「……而已。看在这场胜利的份上，就放你一马。",
+   "zh": "「……而已。看在这场胜利的份上，就放你一马，",
    "meta": {
     "blob": 1050,
     "offset": 189684,
@@ -6157,7 +6157,7 @@
    "id": "row::60302",
    "en": "So you've come! Well, well.",
    "ja": "「来たか！　ええいっ",
-   "zh": "「你来了啊！好，好。",
+   "zh": "「你来了啊！好，好，",
    "meta": {
     "blob": 1051,
     "offset": 748,
@@ -6399,7 +6399,7 @@
    "id": "row::60351",
    "en": "Well, whatever you are, at least you got guts.",
    "ja": "「まあいい　どきょうだけはかってやる",
-   "zh": "「算了，至少你还有点胆量。",
+   "zh": "「算了，至少你还有点胆量，",
    "meta": {
     "blob": 1051,
     "offset": 52300,
@@ -6476,7 +6476,7 @@
    "id": "row::60364",
    "en": "Go ahead, take another step.",
    "ja": "「一歩でも近づいてみろ",
-   "zh": "「有本事就再靠近一步试试。",
+   "zh": "「有本事就再靠近一步试试，",
    "meta": {
     "blob": 1051,
     "offset": 56332,
@@ -6586,7 +6586,7 @@
    "id": "row::60380",
    "en": "Leave the kid to me.",
    "ja": "「この子はオレに任せて",
-   "zh": "「这孩子就交给我。",
+   "zh": "「这孩子就交给我，",
    "meta": {
     "blob": 1051,
     "offset": 60652,
@@ -7059,7 +7059,7 @@
    "id": "row::60508",
    "en": "You're very brave, young lady.",
    "ja": "「それでは勇気あるおじょうさん",
-   "zh": "「你还真勇敢啊，小姐。",
+   "zh": "「你还真勇敢啊，小姐，",
    "meta": {
     "blob": 1056,
     "offset": 16588,

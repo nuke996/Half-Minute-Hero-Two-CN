@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3193,
+ "_count": 3197,
  "entries": [
   {
    "id": "row::24640",
@@ -14077,7 +14077,7 @@
    "id": "row::27411",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 486,
     "offset": 49460,
@@ -14088,7 +14088,7 @@
    "id": "row::27414",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 486,
     "offset": 49752,
@@ -14099,7 +14099,7 @@
    "id": "row::27417",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 486,
     "offset": 50920,
@@ -14110,7 +14110,7 @@
    "id": "row::27420",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 486,
     "offset": 51212,
@@ -14121,7 +14121,7 @@
    "id": "row::27426",
    "en": "Venus Seven",
    "ja": "ヴィーナスセブン",
-   "zh": "维纳斯七",
+   "zh": "七美神",
    "meta": {
     "blob": 486,
     "offset": 59972,
@@ -14319,7 +14319,7 @@
    "id": "row::27479",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "３０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 486,
     "offset": 73988,
@@ -20182,7 +20182,7 @@
    "id": "row::28649",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "３０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 502,
     "offset": 31356,
@@ -21656,10 +21656,21 @@
    "id": "row::28987",
    "en": "The beauty of flawless blades",
    "ja": "よどみなき剣がえがく",
-   "zh": "无瑕剑刃之美",
+   "zh": "清澈无滞之剑所描绘的",
    "meta": {
     "blob": 502,
     "offset": 168532,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::28988",
+   "en": "tracing the air",
+   "ja": "きせきの美しさ",
+   "zh": "奇迹之美",
+   "meta": {
+    "blob": 502,
+    "offset": 168824,
     "cap": 128
    }
   },
@@ -27552,7 +27563,7 @@
    "id": "row::30086",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 526,
     "offset": 70192,
@@ -27967,6 +27978,39 @@
    }
   },
   {
+   "id": "row::30191",
+   "en": "I shall set out,",
+   "ja": "この歌",
+   "zh": "这首歌",
+   "meta": {
+    "blob": 526,
+    "offset": 143420,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30192",
+   "en": "carrying this song",
+   "ja": "たずさえて",
+   "zh": "随身带着",
+   "meta": {
+    "blob": 526,
+    "offset": 143712,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30193",
+   "en": "with me",
+   "ja": "旅に出よう",
+   "zh": "走上旅途吧",
+   "meta": {
+    "blob": 526,
+    "offset": 144004,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::30199",
    "en": "Kurail Village",
    "ja": "カレール村",
@@ -28344,7 +28388,7 @@
    "id": "row::30447",
    "en": "- Temple of Time -",
    "ja": "～時の神殿～",
-   "zh": "- 时之神庙 -",
+   "zh": "- 时之神殿 -",
    "meta": {
     "blob": 532,
     "offset": 29896,
@@ -30742,7 +30786,7 @@
    "id": "row::30912",
    "en": "Ring Dragon",
    "ja": "リングドラゴン",
-   "zh": "环龙",
+   "zh": "指环龙",
    "meta": {
     "blob": 555,
     "offset": 3388,

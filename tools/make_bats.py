@@ -1,13 +1,23 @@
 # -*- coding: utf-8 -*-
-"""重建根目录三个一键 bat：纯 ASCII + CRLF，避免 cmd 编码/换行问题。
+"""重建一键 bat：纯 ASCII + CRLF，避免 cmd 编码/换行问题。
 Python 自己负责打印中文（chcp 65001 + PYTHONIOENCODING）。
+
+两处输出位置：
+  · 装机类 bat → 游戏目录（game_dir，默认 work/original）；该目录不入版本控制。
+  · 校对类 bat（导出/导入/回滚）→ locales/<locale>/translator-view/，
+    与校对 JSON 同目录，随仓库一起分发，译者无需拿到游戏目录里的 bat。
 """
 import os
 import sys
 
 import paths
 B = paths.GAME_DIR
+TV = os.path.join(paths.DATA_DIR, 'translator-view')
 TOOLSREL = os.path.relpath(os.path.join(paths.REPO_DIR, 'tools'), B)
+TOOLSREL_TV = os.path.relpath(os.path.join(paths.REPO_DIR, 'tools'), TV)
+
+# 与校对 JSON 一起放在 translator-view/ 的入口（导出/导入/回滚）
+REVIEW_BATS = {'汉化-导出校对.bat', '汉化-导入校对.bat', '汉化-导入校对-回滚.bat'}
 
 CANDIDATES = [
     sys.executable,
@@ -23,16 +33,18 @@ for p in CANDIDATES:
     if p not in found:
         print('  MISS', p)
 
-HEAD = [
-    '@echo off',
-    'chcp 65001 >nul',
-    'set PYTHONIOENCODING=utf-8',
-    'cd /d "%~dp0."',
-    'set "PY=' + CANDIDATES[0] + '"',
-    'if not exist "%PY%" set "PY=' + CANDIDATES[1] + '"',
-    'if not exist "%PY%" set "PY=python"',
-    'if not exist "' + TOOLSREL + '\\build_cn.py" goto NOFILE',
-]
+def head(tools_rel):
+    return [
+        '@echo off',
+        'chcp 65001 >nul',
+        'set PYTHONIOENCODING=utf-8',
+        'cd /d "%~dp0."',
+        'set "PY=' + CANDIDATES[0] + '"',
+        'if not exist "%PY%" set "PY=' + CANDIDATES[1] + '"',
+        'if not exist "%PY%" set "PY=python"',
+        'if not exist "' + tools_rel + '\\build_cn.py" goto NOFILE',
+    ]
+
 
 BODY = {
     '汉化-安装.bat': [
@@ -93,9 +105,11 @@ BODY = {
     '汉化-还原.bat': ['echo [1/1] restoring...', '"%PY%" "' + TOOLSREL + '\\build_cn.py" revert'],
     '汉化-检查状态.bat': ['echo [1/1] checking...', '"%PY%" "' + TOOLSREL + '\\build_cn.py" check'],
     '汉化-导出校对.bat': [
-        'echo [REVIEW] export translator-facing JSON files (translator-view/).',
-        'echo Output: locales/<locale>/translator-view/  (UI / dialogue / protected /',
-        'echo         multiline / DLC01 / dict). Only the "zh" field should be edited.',
+        'echo [REVIEW] export translator-facing JSON files into THIS folder',
+        'echo          (locales/<locale>/translator-view/).',
+        'echo Output: 10_ui_*.json / 20_dialogue_*.json / protected/ /',
+        'echo         30_multiline.json / 40_dlc01.json / dict/.',
+        'echo         Only the "zh" field should be edited.',
         'echo Needs the original game files (a clean game dir, or *.bak backups).',
         '"%PY%" "' + TOOLSREL + '\\export_review.py"',
     ],
@@ -104,7 +118,8 @@ BODY = {
         'echo Self-check runs first: oversize / unknown id / bad chars.',
         'echo If anything is wrong it ABORTS (nothing written, dist untouched) and the',
         'echo report lists exactly which entry is broken.',
-        'echo This does NOT touch the game dir; run the install .bat to test in game.',
+        'echo This does NOT touch the game dir; run the install .bat in the game dir',
+        'echo (Han-hua-An-Zhuang.bat) to test the Chinese text in game.',
         '"%PY%" "' + TOOLSREL + '\\import_review.py" apply',
     ],
     '汉化-导入校对-回滚.bat': [
@@ -190,26 +205,44 @@ BODY = {
 
 REMOVE = ['汉化-UI词表版安装.bat']
 
-TAIL = [
-    'echo.',
-    'pause',
-    'exit /b 0',
-    ':NOFILE',
-    'echo.',
-    'echo ERROR: tools\\build_cn.py not found in the repository.',
-    'echo Run this .bat from the game folder (where HMH2.exe is).',
-    'echo.',
-    'pause',
-    'exit /b 1',
-]
 
+def tail(where):
+    return [
+        'echo.',
+        'pause',
+        'exit /b 0',
+        ':NOFILE',
+        'echo.',
+        'echo ERROR: tools\\build_cn.py not found in the repository.',
+        'echo Run this .bat from ' + where + '.',
+        'echo.',
+        'pause',
+        'exit /b 1',
+    ]
+
+
+TAIL = tail('the game folder (where HMH2.exe is)')
+TAIL_TV = tail('locales\\<locale>\\translator-view')
+
+os.makedirs(TV, exist_ok=True)
 for name, body in BODY.items():
-    lines = HEAD + body + TAIL
+    is_review = name in REVIEW_BATS
+    out_dir = TV if is_review else B
+    rel = TOOLSREL_TV if is_review else TOOLSREL
+    lines = head(rel) + [ln.replace(TOOLSREL, rel) for ln in body] + \
+            (TAIL_TV if is_review else TAIL)
     data = '\r\n'.join(lines) + '\r\n'
-    p = os.path.join(B, name)
+    p = os.path.join(out_dir, name)
     with open(p, 'wb') as fh:
         fh.write(data.encode('ascii'))
-    print('written', name, len(data), 'bytes (ASCII/CRLF)')
+    print('written', os.path.relpath(p, paths.REPO_DIR), len(data), 'bytes (ASCII/CRLF)')
+
+# 旧的校对 bat 曾在游戏目录，迁移后清理，避免两份入口指向不同路径
+for name in sorted(REVIEW_BATS):
+    p = os.path.join(B, name)
+    if os.path.exists(p):
+        os.remove(p)
+        print('removed', os.path.relpath(p, paths.REPO_DIR))
 
 for name in REMOVE:
     p = os.path.join(B, name)

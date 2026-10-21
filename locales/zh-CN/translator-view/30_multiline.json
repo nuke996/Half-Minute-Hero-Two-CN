@@ -6956,7 +6956,7 @@
    "id": "ml::580",
    "en": "Ring Dragon: Miho Midorikawa\nBends space-time with the power of its ring.\nLikes his privacy.",
    "ja": "リングドラゴン：緑川美帆\n時空の輪を使って空間をゆがめ\nプライベートを楽しむのが好き",
-   "zh": "环龙：Miho Midorikawa\n用环的力量扭曲时空。\n喜欢一个人。",
+   "zh": "指环龙：Miho Midorikawa\n用环的力量扭曲时空。\n喜欢一个人。",
    "meta": {
     "blob": 54,
     "offset": 14608,
@@ -7376,7 +7376,7 @@
    "id": "ml::615",
    "en": "Yuri Yaksha: Kazuno Yuikawa\nJewel members of the Venus Seven.\nThese twins reek of danger.",
    "ja": "百合夜叉：結川カズノ\n宝石のヴィーナスセブン\nあぶないかおりのする双子",
-   "zh": "百合夜叉：Kazuno Yuikawa\n维纳斯七人中的宝石成员。\n这对双生子散发着凶险气息。",
+   "zh": "百合夜叉：Kazuno Yuikawa\n七美神中的宝石成员。\n这对双生子散发着凶险气息。",
    "meta": {
     "blob": 54,
     "offset": 37708,
@@ -7388,7 +7388,7 @@
    "id": "ml::616",
    "en": "1st Slaughter Daughter: Kazuno Yuikawa\nDeath member of the Venus Seven.\nHer right hand is actually just bone.",
    "ja": "殺戮長女：結川カズノ\n死のヴィーナスセブン\nよく見ると右手がホネ",
-   "zh": "杀戮长女：Kazuno Yuikawa\n维纳斯七人中的死亡成员。\n她的右手其实只是骨头。",
+   "zh": "杀戮长女：Kazuno Yuikawa\n七美神中的死亡成员。\n她的右手其实只是骨头。",
    "meta": {
     "blob": 54,
     "offset": 38368,
@@ -7400,7 +7400,7 @@
    "id": "ml::617",
    "en": "3rd Slaughter Daughter: Kazuno Yuikawa\nWind member of the Venus Seven.\nSpends most of her money on her motorcycle.",
    "ja": "虐殺三女：結川カズノ\n風のヴィーナスセブン　収入の\nほとんどをバイクの改造につぎ込む",
-   "zh": "虐杀三女：Kazuno Yuikawa\n维纳斯七人中的风之成员。\n钱大多花在机车上。",
+   "zh": "虐杀三女：Kazuno Yuikawa\n七美神中的风之成员。\n钱大多花在机车上。",
    "meta": {
     "blob": 54,
     "offset": 39028,
@@ -7412,7 +7412,7 @@
    "id": "ml::618",
    "en": "Lady of Despair: Shun\nCursed member of the Venus Seven.\nIs very specific about her methods of murder.",
    "ja": "絶望淑女：シュン\n呪いのヴィーナスセブン\n殺し方に彼女なりの美学をもつ",
-   "zh": "绝望淑女：Shun\n维纳斯七人里受咒的成员。\n对杀人手法非常在意。",
+   "zh": "绝望淑女：Shun\n七美神里受咒的成员。\n对杀人手法非常在意。",
    "meta": {
     "blob": 54,
     "offset": 39688,
@@ -7424,7 +7424,7 @@
    "id": "ml::619",
    "en": "Maiden of Hell: Shun\nSnake member of the Venus Seven.\nHas the power to turn humans to stone.",
    "ja": "地獄乙女：シュン\nヘビのヴィーナスセブン\n人間を石にする力をもつ",
-   "zh": "地狱乙女：Shun\n维纳斯七人中的蛇之成员。\n拥有把人类变成石头的力量。",
+   "zh": "地狱乙女：Shun\n七美神中的蛇之成员。\n拥有把人类变成石头的力量。",
    "meta": {
     "blob": 54,
     "offset": 40348,
@@ -7436,7 +7436,7 @@
    "id": "ml::620",
    "en": "Sakuran: Shun\nSonic member of the Venus Seven.\nFormer musician from the far east.",
    "ja": "朔蘭：シュン\n音のヴィーナスセブン\nジパング出身の元ミュージシャン",
-   "zh": "朔兰：Shun\n维纳斯七人中的音速成员。\n来自远东的前音乐家。",
+   "zh": "朔兰：Shun\n七美神中的音速成员。\n来自远东的前音乐家。",
    "meta": {
     "blob": 54,
     "offset": 41008,
@@ -7688,7 +7688,7 @@
    "id": "ml::641",
    "en": "Ring Dragon\nSpace-time beast of the Eight Elements.\nLoves Donuts.",
    "ja": "リングドラゴン\nエイトエレメンツの時空の獣\nドーナツが大好物",
-   "zh": "环龙\n八元素中的时空兽。\n喜欢甜甜圈。",
+   "zh": "指环龙\n八元素中的时空兽。\n喜欢甜甜圈。",
    "meta": {
     "blob": 555,
     "offset": 3388,
@@ -8336,7 +8336,7 @@
    "id": "ml::695",
    "en": "Asura Nadeshiko\nFighter of the Venus Seven.\nHer many arms make buying clothes difficult.",
    "ja": "阿修羅撫子\n戦いのヴィーナスセブン\nうでが多いせいで着る服にこまる",
-   "zh": "阿修罗抚子\n维纳斯七人中的战士。\n手太多，买衣服很麻烦。",
+   "zh": "阿修罗抚子\n七美神中的战士。\n手太多，买衣服很麻烦。",
    "meta": {
     "blob": 555,
     "offset": 39028,
@@ -8396,7 +8396,7 @@
    "id": "ml::700",
    "en": "3rd Slaughter Daughter\nVenus Seven of Wind.\nExcessively energetic.",
    "ja": "虐殺三女\n風のヴィーナスセブン\nやたらとテンションが高い",
-   "zh": "虐杀三女\n维纳斯七人中的风。\n精力过剩。",
+   "zh": "虐杀三女\n七美神中的风。\n精力过剩。",
    "meta": {
     "blob": 555,
     "offset": 42328,
@@ -8408,7 +8408,7 @@
    "id": "ml::701",
    "en": "Sakuran\nVenus Seven of Sound.\nTalks strangely.",
    "ja": "朔蘭\n音のヴィーナスセブン\nしゃべり方が変",
-   "zh": "朔兰\n维纳斯七人中的音。\n说话很奇怪。",
+   "zh": "朔兰\n七美神中的音。\n说话很奇怪。",
    "meta": {
     "blob": 555,
     "offset": 42988,
@@ -11456,7 +11456,7 @@
    "id": "ml::955",
    "en": "Jelly\nSquishy monster that lives in grass.\nHas recently increased in number.",
    "ja": "ジェリー\n草原にすむぷるぷるのモンスター\n今作で変な仲間がいっぱい増えた",
-   "zh": "胶怪\n生活在草丛里的软趴趴怪物。\n最近数量变多了。",
+   "zh": "果冻怪\n生活在草丛里的软趴趴怪物。\n最近数量变多了。",
    "meta": {
     "blob": 734,
     "offset": 88,

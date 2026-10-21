@@ -2145,8 +2145,34 @@ CSCV_SONG_ANCHOR = 0x1F4      # 首条文本槽偏移
 CSCV_SONG_STRIDE = 0xA0       # 记录步长（32B 头 + 128B 文本槽）
 CSCV_SONG_SLOT = 0x80         # 文本槽定长
 
-# collide 放行清单：LANG b1025 歌词行的日文原文（主线两副本同串）。
-SONG_OK = frozenset(['おさなき日々の　あのせんりつは', '宝石よりも', 'まぶしくかがやいている'])
+# collide 放行清单：歌词行的日文原文。全部为【假命中】——同串也出现在 cscv 独有
+#   blob355（女神房间歌曲表），而歌词是纯显示文本，不参与任何按名/按键比对。
+#   · 主线剧情 LANG b1025（两副本同串，text_v2.csv row 58913-58915 / 58939-58941）；
+#   · 各章节关底歌词浮层：每条原串在 LANG 全库只落在【本关 stage blob 的 1 个槽位】
+#     （少数条形如 `どんな場所でも私は歌う` 另有两副本除外），在 cscv 全库只出现在
+#     blob355（歌曲表）⇒ collide 命中纯属假命中，可放行。
+#   ⚠ 不放行【名字键】同型槽：`聖なる者`（b34 村落/关卡表，stride1116）与 `いのち`
+#     （b998 装备表，stride268）——它们同串也出现在 cscv 脚本层，属真键，必须保留原文。
+#   实测枚举（lyric_report.py，2026-10-20）逐关列出：
+SONG_OK = frozenset([
+    # 主线剧情歌词（b1025 两副本）
+    'おさなき日々の　あのせんりつは', '宝石よりも', 'まぶしくかがやいている',
+    # 关底歌词浮层：按 stage blob 分组
+    'さずけし悲しみ受け入れ',                                    # b29
+    '心をこめた歌声だけが', 'ふるわせている',                        # b205
+    'ありったけの',                                            # b221
+    'さあここから', '旅を始めよう', 'あらしの中　私は歌う', 'どこまでも',    # b249
+    'わずらいを消し去る', 'ととのえられた', '音色たちよ',              # b327
+    'きせきの美しさ',                                          # b502
+    'この歌', 'たずさえて', '旅に出よう',                         # b526
+    '過去と未来の', '時をつないだ',                               # b705
+    'どんな場所でも私は歌う', 'さあ今こそ', '船出の時よ',              # b730（PITFALLS §21 第四章关底）
+    'その先に',                                               # b778
+    '恐れず', '選んだ', '道だから',                              # b796
+    '記憶の底に眠りつづけていた', '熱い思いが', 'むねの奥　ほとばしるの',    # b863
+    '迷わせる鏡に', '負けない心を反射して',                         # b1013
+    'おびえながらも', '激しく鳴らす調べは希望のあかし',                # b1045
+])
 
 # (k, 同记录日文行-校验用, 中文译文)。英文行槽锚点 = 0x1F4 + 0xA0*k，日文行在 k-1。
 # k=2/6 沿用 text_v2.csv 已有译文（在 LANG 侧拆两槽写入）；第 14 句保留前导全角
@@ -3443,6 +3469,28 @@ def _pkg_origin_sources():
     return src, missing, uses_current, has_dlc
 
 
+def export_review_view():
+    """打包后刷新译者校对视图（translator-view/）。
+
+    【强制规则】译表或汉化脚本有任何改动，打包完成后必须导出一次最新译文；
+    否则 translator-view 仍是旧快照，下次「导入校对」会把旧文本整体回写译表。
+    （2026-10-20 事故：旧视图回写导致 1,607 行术语/断句修复被覆盖。）
+    """
+    import subprocess
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'export_review.py')
+    print('== 刷新译者校对视图（translator-view）==')
+    sys.stdout.flush()
+    env = os.environ.copy()
+    env['PYTHONIOENCODING'] = 'utf-8'
+    rc = subprocess.call([sys.executable, script], env=env)
+    if rc != 0:
+        print('!! 校对视图导出失败（退出码 %s）：dist/ 已生成，但视图仍是旧快照' % rc)
+        print('   请立即手动运行: python tools/export_review.py')
+        print('   在导出成功之前，不要运行「汉化-导入校对.bat」，否则旧视图会回写译表。')
+        raise SystemExit(1)
+    print('校对视图已刷新：%s' % os.path.join(WORK, 'translator-view'))
+
+
 def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, expect_same=()):
     """完整补丁打包（默认·隔离模式）：只读配置目录母本 → 在 staging 装机 → 复制到 dist/。
     配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。
@@ -3494,6 +3542,7 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, exp
     env['HMH2_GAME_DIR'] = stage
     env['HMH2_EXE_MODE'] = em
     env['PYTHONIOENCODING'] = 'utf-8'
+    sys.stdout.flush()
     rc = subprocess.call([sys.executable, os.path.abspath(__file__),
                           apply_cmd or ('apply_menu' if em == 'dll' else 'apply_menu_exe')], env=env)
     if rc != 0:
@@ -3542,6 +3591,9 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, exp
     print('打包完成：%d 个文件已放入 %s（未打 zip；配置游戏目录未改动）'
           % (len(table), out_dir))
     print('提示：staging 暂存于 %s（可删）；输出目录中不属于本次补丁的旧文件不会被删除。' % stage)
+
+    # ⑥ 强制刷新译者校对视图：避免 translator-view 停留在旧快照，下次导入时整体回写译表
+    export_review_view()
 
 
 def do_package_lang_en_only(exe_mode=None):
@@ -3626,6 +3678,9 @@ def do_package_install(exe_mode=None):
         print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
     print('打包完成：%d 个文件已放入 %s（未打 zip）' % (len(table), paths.DIST_DIR))
     print('提示：dist 中不属于本次补丁的旧文件（如历史 zip）不会被删除。')
+
+    # ⑤ 强制刷新译者校对视图（规则同 do_package）
+    export_review_view()
 
 
 if __name__ == '__main__':

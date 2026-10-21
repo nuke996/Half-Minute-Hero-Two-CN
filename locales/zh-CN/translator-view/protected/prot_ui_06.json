@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 640,
+ "_count": 638,
  "entries": [
   {
    "id": "row::31680",
@@ -229,7 +229,7 @@
    "id": "row::31824",
    "en": "Horse　",
    "ja": "うま",
-   "zh": "马",
+   "zh": "骏马",
    "meta": {
     "blob": 582,
     "offset": 4772,
@@ -593,7 +593,7 @@
    "id": "row::32246",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 596,
     "offset": 5976,
@@ -606,7 +606,7 @@
    "id": "row::32247",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 596,
     "offset": 6044,
@@ -619,7 +619,7 @@
    "id": "row::32249",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 596,
     "offset": 6400,
@@ -632,7 +632,7 @@
    "id": "row::32250",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 596,
     "offset": 6468,
@@ -645,7 +645,7 @@
    "id": "row::32252",
    "en": "Hide Shield",
    "ja": "かわのたて",
-   "zh": "皮盾",
+   "zh": "兽皮盾",
    "meta": {
     "blob": 596,
     "offset": 6824,
@@ -658,7 +658,7 @@
    "id": "row::32253",
    "en": "Hide Shield",
    "ja": "かわのたて",
-   "zh": "皮盾",
+   "zh": "兽皮盾",
    "meta": {
     "blob": 596,
     "offset": 6892,
@@ -671,7 +671,7 @@
    "id": "row::32255",
    "en": "Hide Shield",
    "ja": "かわのたて",
-   "zh": "皮盾",
+   "zh": "兽皮盾",
    "meta": {
     "blob": 596,
     "offset": 7248,
@@ -684,7 +684,7 @@
    "id": "row::32256",
    "en": "Hide Shield",
    "ja": "かわのたて",
-   "zh": "皮盾",
+   "zh": "兽皮盾",
    "meta": {
     "blob": 596,
     "offset": 7316,
@@ -736,7 +736,7 @@
    "id": "row::32614",
    "en": "Jelly",
    "ja": "ジェリー",
-   "zh": "胶怪",
+   "zh": "果冻怪",
    "meta": {
     "blob": 601,
     "offset": 332,
@@ -762,7 +762,7 @@
    "id": "row::32616",
    "en": "Jelly",
    "ja": "ジェリー",
-   "zh": "胶怪",
+   "zh": "果冻怪",
    "meta": {
     "blob": 601,
     "offset": 1196,
@@ -788,7 +788,7 @@
    "id": "row::32618",
    "en": "Jelly",
    "ja": "ジェリー",
-   "zh": "胶怪",
+   "zh": "果冻怪",
    "meta": {
     "blob": 601,
     "offset": 2060,
@@ -1945,7 +1945,7 @@
    "id": "row::33052",
    "en": "Horse　",
    "ja": "うま",
-   "zh": "马",
+   "zh": "骏马",
    "meta": {
     "blob": 617,
     "offset": 5196,
@@ -2023,7 +2023,7 @@
    "id": "row::33079",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 618,
     "offset": 5976,
@@ -2036,7 +2036,7 @@
    "id": "row::33080",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 618,
     "offset": 6044,
@@ -2049,7 +2049,7 @@
    "id": "row::33082",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 618,
     "offset": 6400,
@@ -2062,7 +2062,7 @@
    "id": "row::33083",
    "en": "Wooden Blade",
    "ja": "ボクブレード",
-   "zh": "木刀",
+   "zh": "木刃",
    "meta": {
     "blob": 618,
     "offset": 6468,
@@ -2179,7 +2179,7 @@
    "id": "row::33271",
    "en": "Virtual Castle",
    "ja": "ヴァーチャキャッスル",
-   "zh": "虚拟城堡",
+   "zh": "幻想城堡",
    "meta": {
     "blob": 620,
     "offset": 129112,
@@ -4771,8 +4771,8 @@
     "blob": 666,
     "offset": 684,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4797,8 +4797,8 @@
     "blob": 666,
     "offset": 1060,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4823,8 +4823,8 @@
     "blob": 666,
     "offset": 1436,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4849,8 +4849,8 @@
     "blob": 666,
     "offset": 1812,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4875,8 +4875,8 @@
     "blob": 666,
     "offset": 2188,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4901,8 +4901,8 @@
     "blob": 666,
     "offset": 2564,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4927,8 +4927,8 @@
     "blob": 666,
     "offset": 2940,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4953,8 +4953,8 @@
     "blob": 666,
     "offset": 3316,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -4979,8 +4979,8 @@
     "blob": 666,
     "offset": 3692,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5005,8 +5005,8 @@
     "blob": 666,
     "offset": 4068,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5031,8 +5031,8 @@
     "blob": 666,
     "offset": 4444,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5057,8 +5057,8 @@
     "blob": 666,
     "offset": 4820,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5083,8 +5083,8 @@
     "blob": 666,
     "offset": 5196,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5109,8 +5109,8 @@
     "blob": 666,
     "offset": 5572,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5135,8 +5135,8 @@
     "blob": 666,
     "offset": 5948,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5161,8 +5161,8 @@
     "blob": 666,
     "offset": 6324,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5187,8 +5187,8 @@
     "blob": 666,
     "offset": 6700,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5213,8 +5213,8 @@
     "blob": 666,
     "offset": 7076,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5239,8 +5239,8 @@
     "blob": 666,
     "offset": 7452,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5265,8 +5265,8 @@
     "blob": 666,
     "offset": 7828,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5291,8 +5291,8 @@
     "blob": 666,
     "offset": 8204,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5317,8 +5317,8 @@
     "blob": 666,
     "offset": 8580,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5343,8 +5343,8 @@
     "blob": 666,
     "offset": 8956,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5369,8 +5369,8 @@
     "blob": 666,
     "offset": 9332,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5395,8 +5395,8 @@
     "blob": 666,
     "offset": 9708,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5421,8 +5421,8 @@
     "blob": 666,
     "offset": 10084,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5447,8 +5447,8 @@
     "blob": 666,
     "offset": 10460,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5473,8 +5473,8 @@
     "blob": 666,
     "offset": 10836,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5499,8 +5499,8 @@
     "blob": 666,
     "offset": 11212,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5525,8 +5525,8 @@
     "blob": 666,
     "offset": 11588,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5551,8 +5551,8 @@
     "blob": 666,
     "offset": 11964,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5577,8 +5577,8 @@
     "blob": 666,
     "offset": 12340,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5603,8 +5603,8 @@
     "blob": 666,
     "offset": 12716,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5629,8 +5629,8 @@
     "blob": 666,
     "offset": 13092,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5655,8 +5655,8 @@
     "blob": 666,
     "offset": 13468,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5681,8 +5681,8 @@
     "blob": 666,
     "offset": 13844,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5707,8 +5707,8 @@
     "blob": 666,
     "offset": 14220,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5733,8 +5733,8 @@
     "blob": 666,
     "offset": 14596,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5759,8 +5759,8 @@
     "blob": 666,
     "offset": 14972,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5785,8 +5785,8 @@
     "blob": 666,
     "offset": 15348,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5811,8 +5811,8 @@
     "blob": 666,
     "offset": 15724,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5837,8 +5837,8 @@
     "blob": 666,
     "offset": 16100,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5863,8 +5863,8 @@
     "blob": 666,
     "offset": 16476,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5889,8 +5889,8 @@
     "blob": 666,
     "offset": 16852,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5915,8 +5915,8 @@
     "blob": 666,
     "offset": 17228,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5941,8 +5941,8 @@
     "blob": 666,
     "offset": 18356,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5967,8 +5967,8 @@
     "blob": 666,
     "offset": 18732,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -5993,8 +5993,8 @@
     "blob": 666,
     "offset": 19108,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6019,8 +6019,8 @@
     "blob": 666,
     "offset": 19484,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6045,8 +6045,8 @@
     "blob": 666,
     "offset": 19860,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6071,8 +6071,8 @@
     "blob": 666,
     "offset": 20236,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6097,8 +6097,8 @@
     "blob": 666,
     "offset": 20612,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6123,8 +6123,8 @@
     "blob": 666,
     "offset": 20988,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6149,8 +6149,8 @@
     "blob": 666,
     "offset": 21364,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6175,8 +6175,8 @@
     "blob": 666,
     "offset": 21740,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6201,8 +6201,8 @@
     "blob": 666,
     "offset": 22116,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6227,8 +6227,8 @@
     "blob": 666,
     "offset": 22492,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6253,8 +6253,8 @@
     "blob": 666,
     "offset": 22868,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6279,8 +6279,8 @@
     "blob": 666,
     "offset": 23244,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6305,8 +6305,8 @@
     "blob": 666,
     "offset": 23620,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6331,8 +6331,8 @@
     "blob": 666,
     "offset": 23996,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6357,8 +6357,8 @@
     "blob": 666,
     "offset": 24372,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6383,8 +6383,8 @@
     "blob": 666,
     "offset": 24748,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6409,8 +6409,8 @@
     "blob": 666,
     "offset": 25124,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6435,8 +6435,8 @@
     "blob": 666,
     "offset": 25500,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6461,8 +6461,8 @@
     "blob": 666,
     "offset": 25876,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6487,8 +6487,8 @@
     "blob": 666,
     "offset": 26252,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6513,8 +6513,8 @@
     "blob": 666,
     "offset": 26628,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6539,8 +6539,8 @@
     "blob": 666,
     "offset": 27004,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6565,8 +6565,8 @@
     "blob": 666,
     "offset": 27380,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6591,8 +6591,8 @@
     "blob": 666,
     "offset": 27756,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6617,8 +6617,8 @@
     "blob": 666,
     "offset": 28132,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6643,8 +6643,8 @@
     "blob": 666,
     "offset": 28508,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6669,8 +6669,8 @@
     "blob": 666,
     "offset": 28884,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6695,8 +6695,8 @@
     "blob": 666,
     "offset": 29260,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6721,8 +6721,8 @@
     "blob": 666,
     "offset": 29636,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6747,8 +6747,8 @@
     "blob": 666,
     "offset": 30012,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6773,8 +6773,8 @@
     "blob": 666,
     "offset": 30388,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6799,8 +6799,8 @@
     "blob": 666,
     "offset": 30764,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6825,8 +6825,8 @@
     "blob": 666,
     "offset": 31140,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6851,8 +6851,8 @@
     "blob": 666,
     "offset": 31516,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6877,8 +6877,8 @@
     "blob": 666,
     "offset": 31892,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6903,8 +6903,8 @@
     "blob": 666,
     "offset": 32268,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -6929,8 +6929,8 @@
     "blob": 666,
     "offset": 32644,
     "cap": 32,
-    "protected": "mech",
-    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+    "protected": "skillkey",
+    "note": "skillkey"
    }
   },
   {
@@ -7626,7 +7626,7 @@
    "id": "row::36571",
    "en": "3D Glasses",
    "ja": "３Ｄグラス",
-   "zh": "3D眼镜",
+   "zh": "立体眼镜",
    "meta": {
     "blob": 683,
     "offset": 216420,
@@ -8151,32 +8151,6 @@
     "blob": 704,
     "offset": 3076,
     "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37245",
-   "en": "The space faraway",
-   "ja": "過去と未来の",
-   "zh": "很远的空间",
-   "meta": {
-    "blob": 705,
-    "offset": 129112,
-    "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37246",
-   "en": "That connects past and future ages",
-   "ja": "時をつないだ",
-   "zh": "连接着过去与未来时代",
-   "meta": {
-    "blob": 705,
-    "offset": 129404,
-    "cap": 128,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }

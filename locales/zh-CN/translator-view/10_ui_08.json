@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2971,
+ "_count": 2991,
  "entries": [
   {
    "id": "row::43262",
@@ -3649,7 +3649,7 @@
    "id": "row::44220",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 778,
     "offset": 27268,
@@ -4397,10 +4397,21 @@
    "id": "row::44407",
    "en": "A strong light pierces my heart",
    "ja": "心つらぬく強い光",
-   "zh": "强烈的光刺透我心",
+   "zh": "贯穿心灵的　强烈光芒",
    "meta": {
     "blob": 778,
     "offset": 110716,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::44408",
+   "en": "I know there will be",
+   "ja": "その先に",
+   "zh": "在那前方",
+   "meta": {
+    "blob": 778,
+    "offset": 111008,
     "cap": 128
    }
   },
@@ -10513,7 +10524,7 @@
    "id": "row::45840",
    "en": "Defeat the Venus Seven in 30 Seconds!",
    "ja": "３０秒でヴィーナス７をたおせ！",
-   "zh": "30秒内打倒维纳斯七！",
+   "zh": "30秒内打倒七美神！",
    "meta": {
     "blob": 796,
     "offset": 14128,
@@ -11558,7 +11569,7 @@
    "id": "row::46064",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 114868,
@@ -11569,7 +11580,7 @@
    "id": "row::46066",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 115160,
@@ -11580,7 +11591,7 @@
    "id": "row::46069",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 115452,
@@ -11591,7 +11602,7 @@
    "id": "row::46071",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 118956,
@@ -11602,7 +11613,7 @@
    "id": "row::46073",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 119248,
@@ -11635,7 +11646,7 @@
    "id": "row::46080",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 120124,
@@ -11646,7 +11657,7 @@
    "id": "row::46083",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 120416,
@@ -11668,7 +11679,7 @@
    "id": "row::46088",
    "en": "Demon",
    "ja": "悪魔",
-   "zh": "魔族",
+   "zh": "恶魔",
    "meta": {
     "blob": 796,
     "offset": 121000,
@@ -11783,6 +11794,28 @@
     "blob": 796,
     "offset": 131220,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::46112",
+   "en": "But",
+   "ja": "恐れず",
+   "zh": "毫不畏惧",
+   "meta": {
+    "blob": 796,
+    "offset": 132616,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::46113",
+   "en": "I will make it through",
+   "ja": "選んだ",
+   "zh": "选择的",
+   "meta": {
+    "blob": 796,
+    "offset": 132908,
+    "cap": 128
    }
   },
   {
@@ -14253,7 +14286,7 @@
    "id": "row::46830",
    "en": "He was a quiet, serious boy.",
    "ja": "　無口でマジメーな男の子だったな",
-   "zh": "他是个安静又认真男孩。",
+   "zh": "他是个安静又认真男孩，",
    "meta": {
     "blob": 804,
     "offset": 300352,
@@ -14352,7 +14385,7 @@
    "id": "row::46839",
    "en": "… But I had a really great time!",
    "ja": "　・・・でも　すっごい楽しかったし",
-   "zh": "…可是我真的玩得很开心！",
+   "zh": "…可是我真的玩得很开心，",
    "meta": {
     "blob": 804,
     "offset": 301228,
@@ -14869,7 +14902,7 @@
    "id": "row::46890",
    "en": "Ah, Heaven's such a nice place.",
    "ja": "　あぁ　天界っていいとこだなぁ",
-   "zh": "啊，天界真是个好地方。",
+   "zh": "啊，天界真是个好地方，",
    "meta": {
     "blob": 804,
     "offset": 314660,
@@ -15133,7 +15166,7 @@
    "id": "row::46918",
    "en": "Me? I get to follow Hero!",
    "ja": "　わたしはユウシャにくっついて",
-   "zh": "我？我当然跟着勇者！",
+   "zh": "我？我当然跟着勇者，",
    "meta": {
     "blob": 804,
     "offset": 325756,
@@ -15375,7 +15408,7 @@
    "id": "row::46944",
    "en": "… A large battle is about to begin.",
    "ja": "　・・・そろそろ大きなたたかいが始まるんだ",
-   "zh": "…一场大战即将展开。",
+   "zh": "…一场大战即将展开，",
    "meta": {
     "blob": 804,
     "offset": 336560,
@@ -15782,7 +15815,7 @@
    "id": "row::46985",
    "en": "Oh, don't worry, I don't mean that kind of sleep.",
    "ja": "　あ　心配しないでよ　変な意味じゃないの",
-   "zh": "噢别担心，我不是说那种沉睡。",
+   "zh": "噢别担心，我不是说那种沉睡，",
    "meta": {
     "blob": 804,
     "offset": 349116,
@@ -19335,7 +19368,7 @@
    "id": "row::47845",
    "en": "The passion that wells up in silence",
    "ja": "きっとだれにも止められない",
-   "zh": "静默中涌起的热血",
+   "zh": "一定谁也无法阻挡",
    "meta": {
     "blob": 813,
     "offset": 87648,
@@ -19346,7 +19379,7 @@
    "id": "row::47846",
    "en": "Will surely be stopped by none",
    "ja": "静かにわき起こる情熱は",
-   "zh": "定无人能将其阻挡",
+   "zh": "那静静涌起的　热情",
    "meta": {
     "blob": 813,
     "offset": 87940,
@@ -23724,7 +23757,7 @@
    "id": "row::48547",
    "en": "Destroy the temple in 30 seconds!!",
    "ja": "３０秒で神殿を破壊せよ！！",
-   "zh": "30秒内破坏神庙！！",
+   "zh": "30秒内破坏神殿！！",
    "meta": {
     "blob": 839,
     "offset": 48876,
@@ -27189,7 +27222,7 @@
    "id": "row::49154",
    "en": "(sic)Time Goddess, the Ultimate Evil Lord and the hero was,",
    "ja": "時の女神と超魔王　そして勇者の戦いは",
-   "zh": "(sic)时之女神、超级魔王与勇者之战，",
+   "zh": "时之女神、超级魔王与勇者之战，",
    "meta": {
     "blob": 860,
     "offset": 340,
@@ -27695,7 +27728,7 @@
    "id": "row::49252",
    "en": "Defeat the God Nine in 30 Seconds!",
    "ja": "３０秒でゴッドナインをたおせ！",
-   "zh": "30秒内打倒第九神！",
+   "zh": "30秒内打倒九神！",
    "meta": {
     "blob": 863,
     "offset": 23472,
@@ -28190,7 +28223,7 @@
    "id": "row::49376",
    "en": "Defeat the God in the temple!!",
    "ja": "神殿の神をたおせ！！",
-   "zh": "打倒神庙里的神！！",
+   "zh": "打倒神殿里的神！！",
    "meta": {
     "blob": 863,
     "offset": 117788,
@@ -28426,6 +28459,39 @@
     "blob": 863,
     "offset": 139104,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::49433",
+   "en": "And the passion that slept deep in my memory",
+   "ja": "記憶の底に眠りつづけていた",
+   "zh": "一直沉睡在记忆深处的",
+   "meta": {
+    "blob": 863,
+    "offset": 140208,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::49434",
+   "en": "Rushes forth",
+   "ja": "熱い思いが",
+   "zh": "炽热的心意",
+   "meta": {
+    "blob": 863,
+    "offset": 140500,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::49435",
+   "en": "from the back of my heart",
+   "ja": "むねの奥　ほとばしるの",
+   "zh": "正从胸中喷涌而出",
+   "meta": {
+    "blob": 863,
+    "offset": 140792,
+    "cap": 128
    }
   },
   {
@@ -32683,6 +32749,160 @@
     "blob": 889,
     "offset": 4884,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::61238",
+   "en": "somehow",
+   "ja": "道だから",
+   "zh": "这条路",
+   "meta": {
+    "blob": 796,
+    "offset": 133200,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61245",
+   "en": "Offense increased!",
+   "ja": "攻撃力があがった！",
+   "zh": "攻击力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 40,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61246",
+   "en": "Offense increased!",
+   "ja": "防御力があがった！",
+   "zh": "防御力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 344,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61247",
+   "en": "Offense and defense increased!",
+   "ja": "攻撃力・防御力があがった！",
+   "zh": "攻击力和防御力提升了！",
+   "meta": {
+    "blob": 794,
+    "offset": 648,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61248",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12352,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61249",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12656,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61250",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 12960,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61251",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13264,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61252",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13568,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61253",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 13872,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61254",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14176,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61255",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14480,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61256",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 14784,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::61257",
+   "en": "Fort destroyed!",
+   "ja": "ほうだいをはかいした！",
+   "zh": "破坏了炮台！",
+   "meta": {
+    "blob": 883,
+    "offset": 15088,
+    "cap": 64
    }
   }
  ]
