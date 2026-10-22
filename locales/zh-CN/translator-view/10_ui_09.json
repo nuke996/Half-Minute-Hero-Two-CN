@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2723,
+ "_count": 2974,
  "entries": [
   {
    "id": "row::50012",
@@ -15559,6 +15559,17 @@
    }
   },
   {
+   "id": "row::53449",
+   "en": "No!!",
+   "ja": "いいえ！！",
+   "zh": "不要！！",
+   "meta": {
+    "blob": 931,
+    "offset": 308,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53450",
    "en": "Hint: Something stubborn",
    "ja": "ヒント：がんこもの",
@@ -15567,6 +15578,17 @@
     "blob": 931,
     "offset": 472,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53451",
+   "en": "Rare Monster Hunter",
+   "ja": "レアモンハント",
+   "zh": "稀有怪猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 600,
+    "cap": 16
    }
   },
   {
@@ -15581,6 +15603,17 @@
    }
   },
   {
+   "id": "row::53453",
+   "en": "Weapon Getter",
+   "ja": "ウェポンゲッター",
+   "zh": "武器猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 892,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53454",
    "en": "Hint: Iron",
    "ja": "ヒント：アイアン",
@@ -15589,6 +15622,17 @@
     "blob": 931,
     "offset": 1056,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53455",
+   "en": "Goddess Statue Lover",
+   "ja": "女神像大好き",
+   "zh": "女神像爱好者",
+   "meta": {
+    "blob": 931,
+    "offset": 1184,
+    "cap": 16
    }
   },
   {
@@ -15603,6 +15647,17 @@
    }
   },
   {
+   "id": "row::53457",
+   "en": "Herb Lover",
+   "ja": "やくそう大好き",
+   "zh": "草药爱好者",
+   "meta": {
+    "blob": 931,
+    "offset": 1476,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53458",
    "en": "Hint: Restoration Item",
    "ja": "ヒント：回復アイテム",
@@ -15611,6 +15666,17 @@
     "blob": 931,
     "offset": 1640,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53459",
+   "en": "Eater Eater",
+   "ja": "イーターイーター",
+   "zh": "吞噬者",
+   "meta": {
+    "blob": 931,
+    "offset": 1768,
+    "cap": 16
    }
   },
   {
@@ -15625,6 +15691,17 @@
    }
   },
   {
+   "id": "row::53461",
+   "en": "Grass Cutting Hero",
+   "ja": "草かり勇者",
+   "zh": "割草勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 2060,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53462",
    "en": "Hint: Makes the map nice and clean",
    "ja": "ヒント：マップをキレイさっぱりに",
@@ -15633,6 +15710,17 @@
     "blob": 931,
     "offset": 2224,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53463",
+   "en": "Horseman",
+   "ja": "ホースマン",
+   "zh": "骑士",
+   "meta": {
+    "blob": 931,
+    "offset": 2352,
+    "cap": 16
    }
   },
   {
@@ -15647,6 +15735,17 @@
    }
   },
   {
+   "id": "row::53465",
+   "en": "Explorer",
+   "ja": "たんけんか",
+   "zh": "冒险家",
+   "meta": {
+    "blob": 931,
+    "offset": 2644,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53466",
    "en": "Hint: Take shortcuts without fear",
    "ja": "ヒント：恐れずに通りぬける",
@@ -15655,6 +15754,17 @@
     "blob": 931,
     "offset": 2808,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53467",
+   "en": "No Miss",
+   "ja": "ノーミス",
+   "zh": "零失误",
+   "meta": {
+    "blob": 931,
+    "offset": 2936,
+    "cap": 16
    }
   },
   {
@@ -15669,6 +15779,17 @@
    }
   },
   {
+   "id": "row::53469",
+   "en": "Axe Getter",
+   "ja": "オノゲッター",
+   "zh": "斧头猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 3228,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53470",
    "en": "Hint: Hidden Treasure",
    "ja": "ヒント：かくされた宝物",
@@ -15677,6 +15798,17 @@
     "blob": 931,
     "offset": 3392,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53471",
+   "en": "Bad with Directions",
+   "ja": "方向オンチ",
+   "zh": "路痴",
+   "meta": {
+    "blob": 931,
+    "offset": 3520,
+    "cap": 16
    }
   },
   {
@@ -15691,6 +15823,17 @@
    }
   },
   {
+   "id": "row::53473",
+   "en": "Navigator",
+   "ja": "ナビゲーター",
+   "zh": "带路人",
+   "meta": {
+    "blob": 931,
+    "offset": 3812,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53474",
    "en": "Hint: Accurate",
    "ja": "ヒント：正確",
@@ -15699,6 +15842,17 @@
     "blob": 931,
     "offset": 3976,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53475",
+   "en": "Destroyer",
+   "ja": "デストロイヤー",
+   "zh": "毁灭者",
+   "meta": {
+    "blob": 931,
+    "offset": 4104,
+    "cap": 16
    }
   },
   {
@@ -15713,6 +15867,17 @@
    }
   },
   {
+   "id": "row::53477",
+   "en": "Fight with Knight",
+   "ja": "ナイトといっしょ",
+   "zh": "与骑士同行",
+   "meta": {
+    "blob": 931,
+    "offset": 4396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53478",
    "en": "Hint: Fight Together",
    "ja": "ヒント：共にたたかう",
@@ -15721,6 +15886,17 @@
     "blob": 931,
     "offset": 4560,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53479",
+   "en": "New Shoes",
+   "ja": "ニューシューズ",
+   "zh": "新鞋",
+   "meta": {
+    "blob": 931,
+    "offset": 4688,
+    "cap": 16
    }
   },
   {
@@ -15735,6 +15911,17 @@
    }
   },
   {
+   "id": "row::53481",
+   "en": "Rock Breaker",
+   "ja": "ロックブレイカー",
+   "zh": "碎岩者",
+   "meta": {
+    "blob": 931,
+    "offset": 4980,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53482",
    "en": "Hint: All things",
    "ja": "ヒント：全ての物",
@@ -15743,6 +15930,17 @@
     "blob": 931,
     "offset": 5144,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53483",
+   "en": "Lover of Gilded Splendor",
+   "ja": "金ぴか好き",
+   "zh": "镀金控",
+   "meta": {
+    "blob": 931,
+    "offset": 5272,
+    "cap": 16
    }
   },
   {
@@ -15757,6 +15955,17 @@
    }
   },
   {
+   "id": "row::53485",
+   "en": "For the Sword",
+   "ja": "刀のために",
+   "zh": "为刀而战",
+   "meta": {
+    "blob": 931,
+    "offset": 5564,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53486",
    "en": "Hint: Seize it",
    "ja": "ヒント：横取りする",
@@ -15765,6 +15974,17 @@
     "blob": 931,
     "offset": 5728,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53487",
+   "en": "Rock Killer",
+   "ja": "岩キラー",
+   "zh": "岩石杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 5856,
+    "cap": 16
    }
   },
   {
@@ -15779,6 +15999,17 @@
    }
   },
   {
+   "id": "row::53489",
+   "en": "Warp Lover",
+   "ja": "ワープ大好き",
+   "zh": "瞬移爱好者",
+   "meta": {
+    "blob": 931,
+    "offset": 6148,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53490",
    "en": "Hint: Go there and back",
    "ja": "ヒント：行ったり来たり",
@@ -15787,6 +16018,17 @@
     "blob": 931,
     "offset": 6312,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53491",
+   "en": "Diary",
+   "ja": "ダイアリー",
+   "zh": "日记",
+   "meta": {
+    "blob": 931,
+    "offset": 6440,
+    "cap": 16
    }
   },
   {
@@ -15801,6 +16043,17 @@
    }
   },
   {
+   "id": "row::53493",
+   "en": "Just Barely",
+   "ja": "ギリギリセーフ",
+   "zh": "惊险过关",
+   "meta": {
+    "blob": 931,
+    "offset": 6732,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53494",
    "en": "Hint: Near ruin",
    "ja": "ヒント：ハメツ間近",
@@ -15809,6 +16062,17 @@
     "blob": 931,
     "offset": 6896,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53495",
+   "en": "Rat Killer",
+   "ja": "ネズミキラー",
+   "zh": "灭鼠者",
+   "meta": {
+    "blob": 931,
+    "offset": 7024,
+    "cap": 16
    }
   },
   {
@@ -15823,6 +16087,17 @@
    }
   },
   {
+   "id": "row::53497",
+   "en": "Stomach Pain",
+   "ja": "はらいた",
+   "zh": "肚子痛",
+   "meta": {
+    "blob": 931,
+    "offset": 7316,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53498",
    "en": "Hint: Caught in a trap",
    "ja": "ヒント：ワナにかかる",
@@ -15831,6 +16106,17 @@
     "blob": 931,
     "offset": 7480,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53499",
+   "en": "Take it Back!",
+   "ja": "とりもどせ！",
+   "zh": "夺回来！",
+   "meta": {
+    "blob": 931,
+    "offset": 7608,
+    "cap": 16
    }
   },
   {
@@ -15845,6 +16131,17 @@
    }
   },
   {
+   "id": "row::53501",
+   "en": "Escaped Prisoner",
+   "ja": "脱獄囚",
+   "zh": "越狱犯",
+   "meta": {
+    "blob": 931,
+    "offset": 7900,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53502",
    "en": "Hint: Village chief",
    "ja": "ヒント：村長",
@@ -15853,6 +16150,17 @@
     "blob": 931,
     "offset": 8064,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53503",
+   "en": "Famous Judge",
+   "ja": "名しんさ員",
+   "zh": "名审判员",
+   "meta": {
+    "blob": 931,
+    "offset": 8192,
+    "cap": 16
    }
   },
   {
@@ -15867,6 +16175,17 @@
    }
   },
   {
+   "id": "row::53505",
+   "en": "Craver of Knowledge",
+   "ja": "知りたがり",
+   "zh": "求知狂",
+   "meta": {
+    "blob": 931,
+    "offset": 8484,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53506",
    "en": "Hint: Stubbornness",
    "ja": "ヒント：しつこさ",
@@ -15875,6 +16194,17 @@
     "blob": 931,
     "offset": 8648,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53507",
+   "en": "Expert of Pursuit",
+   "ja": "追いかけ名人",
+   "zh": "追踪达人",
+   "meta": {
+    "blob": 931,
+    "offset": 8776,
+    "cap": 16
    }
   },
   {
@@ -15889,6 +16219,17 @@
    }
   },
   {
+   "id": "row::53509",
+   "en": "Steady Savings",
+   "ja": "コツコツちょきん",
+   "zh": "踏实存钱",
+   "meta": {
+    "blob": 931,
+    "offset": 9068,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53510",
    "en": "Hint: Just ignore",
    "ja": "ヒント：あえてムシする",
@@ -15897,6 +16238,17 @@
     "blob": 931,
     "offset": 9232,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53511",
+   "en": "Bounty Hunter",
+   "ja": "バウンティハンター",
+   "zh": "奖金猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 9360,
+    "cap": 16
    }
   },
   {
@@ -15911,6 +16263,17 @@
    }
   },
   {
+   "id": "row::53514",
+   "en": "Firefighting Hero",
+   "ja": "消火勇者",
+   "zh": "灭火勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 9652,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53516",
    "en": "Hint: Put it all out",
    "ja": "ヒント：全消しで",
@@ -15919,6 +16282,17 @@
     "blob": 931,
     "offset": 9816,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53517",
+   "en": "Mine Lover!",
+   "ja": "マイン大好き！",
+   "zh": "地雷爱好者！",
+   "meta": {
+    "blob": 931,
+    "offset": 9944,
+    "cap": 16
    }
   },
   {
@@ -15933,6 +16307,17 @@
    }
   },
   {
+   "id": "row::53520",
+   "en": "Cannon Buster",
+   "ja": "キャノンバスター",
+   "zh": "加农炮破坏者",
+   "meta": {
+    "blob": 931,
+    "offset": 10236,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53522",
    "en": "Hint: Reckless destruction",
    "ja": "ヒント：こわしまくる",
@@ -15941,6 +16326,17 @@
     "blob": 931,
     "offset": 10400,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53523",
+   "en": "Ruthless Cruelty",
+   "ja": "れいこく無情",
+   "zh": "冷酷无情",
+   "meta": {
+    "blob": 931,
+    "offset": 10528,
+    "cap": 16
    }
   },
   {
@@ -15955,6 +16351,17 @@
    }
   },
   {
+   "id": "row::53526",
+   "en": "Wind Stone",
+   "ja": "風の石",
+   "zh": "风之石",
+   "meta": {
+    "blob": 931,
+    "offset": 10820,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53528",
    "en": "Hint: Spirit Stone",
    "ja": "ヒント：精霊石",
@@ -15963,6 +16370,17 @@
     "blob": 931,
     "offset": 10984,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53529",
+   "en": "Famous Marksman",
+   "ja": "名射撃手",
+   "zh": "神射手",
+   "meta": {
+    "blob": 931,
+    "offset": 11112,
+    "cap": 16
    }
   },
   {
@@ -15977,6 +16395,17 @@
    }
   },
   {
+   "id": "row::53532",
+   "en": "Cannon Hater",
+   "ja": "大砲ギライ",
+   "zh": "反感大炮",
+   "meta": {
+    "blob": 931,
+    "offset": 11404,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53534",
    "en": "Hint: Don't touch",
    "ja": "ヒント：ふれない",
@@ -15985,6 +16414,17 @@
     "blob": 931,
     "offset": 11568,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53535",
+   "en": "Skivvies",
+   "ja": "パンイチ",
+   "zh": "内裤",
+   "meta": {
+    "blob": 931,
+    "offset": 11696,
+    "cap": 16
    }
   },
   {
@@ -15999,6 +16439,17 @@
    }
   },
   {
+   "id": "row::53538",
+   "en": "Snowfield Servant",
+   "ja": "雪原のお使い",
+   "zh": "雪原使者",
+   "meta": {
+    "blob": 931,
+    "offset": 11988,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53540",
    "en": "Hint: Your elderly ally",
    "ja": "ヒント：お年寄りの味方",
@@ -16007,6 +16458,17 @@
     "blob": 931,
     "offset": 12152,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53541",
+   "en": "Mister Faller",
+   "ja": "ミスター落下",
+   "zh": "坠落先生",
+   "meta": {
+    "blob": 931,
+    "offset": 12280,
+    "cap": 16
    }
   },
   {
@@ -16021,6 +16483,17 @@
    }
   },
   {
+   "id": "row::53544",
+   "en": "Get All",
+   "ja": "オールゲット",
+   "zh": "全拿",
+   "meta": {
+    "blob": 931,
+    "offset": 12572,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53546",
    "en": "Hint: Castle treasure",
    "ja": "ヒント：城の宝",
@@ -16029,6 +16502,17 @@
     "blob": 931,
     "offset": 12736,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53547",
+   "en": "Old Man Killer",
+   "ja": "オヤジキラー",
+   "zh": "大叔杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 12864,
+    "cap": 16
    }
   },
   {
@@ -16043,6 +16527,17 @@
    }
   },
   {
+   "id": "row::53550",
+   "en": "Regular Customer",
+   "ja": "おとくいさん",
+   "zh": "常客",
+   "meta": {
+    "blob": 931,
+    "offset": 13156,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53552",
    "en": "Hint: Overcharged",
    "ja": "ヒント：ボッタくられる",
@@ -16051,6 +16546,17 @@
     "blob": 931,
     "offset": 13320,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53553",
+   "en": "Challenger",
+   "ja": "チャレンジャー",
+   "zh": "迎战者",
+   "meta": {
+    "blob": 931,
+    "offset": 13448,
+    "cap": 16
    }
   },
   {
@@ -16065,6 +16571,17 @@
    }
   },
   {
+   "id": "row::53556",
+   "en": "Super Devil Hunter",
+   "ja": "超デビルハンター",
+   "zh": "超级恶魔猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 13740,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53558",
    "en": "Hint: Giant devil",
    "ja": "ヒント：巨大悪魔",
@@ -16073,6 +16590,17 @@
     "blob": 931,
     "offset": 13904,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53559",
+   "en": "All Members Assemble",
+   "ja": "全員集合",
+   "zh": "全员集合",
+   "meta": {
+    "blob": 931,
+    "offset": 14032,
+    "cap": 16
    }
   },
   {
@@ -16087,6 +16615,17 @@
    }
   },
   {
+   "id": "row::53562",
+   "en": "Last Full Course",
+   "ja": "ラストフルコース",
+   "zh": "最终大餐",
+   "meta": {
+    "blob": 931,
+    "offset": 14324,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53564",
    "en": "Hint: Eat and walk",
    "ja": "ヒント：食べあるく",
@@ -16095,6 +16634,17 @@
     "blob": 931,
     "offset": 14488,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53565",
+   "en": "Famous Sniper",
+   "ja": "名スナイパー",
+   "zh": "神狙手",
+   "meta": {
+    "blob": 931,
+    "offset": 14616,
+    "cap": 16
    }
   },
   {
@@ -16109,6 +16659,17 @@
    }
   },
   {
+   "id": "row::53568",
+   "en": "Reckless",
+   "ja": "無鉄砲",
+   "zh": "鲁莽",
+   "meta": {
+    "blob": 931,
+    "offset": 14908,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53570",
    "en": "Hint: Dare to take the absurd challenge",
    "ja": "ヒント：ムチャな勝負をいどむ",
@@ -16117,6 +16678,17 @@
     "blob": 931,
     "offset": 15072,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53571",
+   "en": "Snake Smell",
+   "ja": "スネークスメル",
+   "zh": "蛇腥味",
+   "meta": {
+    "blob": 931,
+    "offset": 15200,
+    "cap": 16
    }
   },
   {
@@ -16131,6 +16703,17 @@
    }
   },
   {
+   "id": "row::53574",
+   "en": "School Festival Friend",
+   "ja": "学祭仲間",
+   "zh": "校庆同伴",
+   "meta": {
+    "blob": 931,
+    "offset": 15492,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53576",
    "en": "Hint: Help out with events",
    "ja": "ヒント：イベントに協力する",
@@ -16139,6 +16722,17 @@
     "blob": 931,
     "offset": 15656,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53577",
+   "en": "Master of Disguise",
+   "ja": "変装マスター",
+   "zh": "变装大师",
+   "meta": {
+    "blob": 931,
+    "offset": 15784,
+    "cap": 16
    }
   },
   {
@@ -16153,6 +16747,17 @@
    }
   },
   {
+   "id": "row::53580",
+   "en": "Useless",
+   "ja": "持ちぐされ",
+   "zh": "闲置品",
+   "meta": {
+    "blob": 931,
+    "offset": 16076,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53582",
    "en": "Hint: Forget registration",
    "ja": "ヒント：とどけ忘れる",
@@ -16161,6 +16766,17 @@
     "blob": 931,
     "offset": 16240,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53583",
+   "en": "Hitman",
+   "ja": "ヒットマン",
+   "zh": "杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 16368,
+    "cap": 16
    }
   },
   {
@@ -16175,6 +16791,17 @@
    }
   },
   {
+   "id": "row::53586",
+   "en": "Master Part-Timer",
+   "ja": "バイトの達人",
+   "zh": "打工达人",
+   "meta": {
+    "blob": 931,
+    "offset": 16660,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53588",
    "en": "Hint: Achieve goals",
    "ja": "ヒント：目標達成",
@@ -16183,6 +16810,17 @@
     "blob": 931,
     "offset": 16824,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53589",
+   "en": "Princess Rockslayer",
+   "ja": "岩たたき姫",
+   "zh": "碎岩公主",
+   "meta": {
+    "blob": 931,
+    "offset": 16952,
+    "cap": 16
    }
   },
   {
@@ -16197,6 +16835,17 @@
    }
   },
   {
+   "id": "row::53592",
+   "en": "Without Breathing",
+   "ja": "息つぎなし",
+   "zh": "无法换气",
+   "meta": {
+    "blob": 931,
+    "offset": 17244,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53594",
    "en": "Hint: Air",
    "ja": "ヒント：空気",
@@ -16205,6 +16854,17 @@
     "blob": 931,
     "offset": 17408,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53595",
+   "en": "Earth Spirit Stone",
+   "ja": "土の精霊石",
+   "zh": "土之精灵石",
+   "meta": {
+    "blob": 931,
+    "offset": 17536,
+    "cap": 16
    }
   },
   {
@@ -16219,6 +16879,17 @@
    }
   },
   {
+   "id": "row::53598",
+   "en": "Mole Hunter",
+   "ja": "モグハンター",
+   "zh": "鼹鼠猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 17828,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53600",
    "en": "Hint: Defeat everyone",
    "ja": "ヒント：みんな退治する",
@@ -16227,6 +16898,17 @@
     "blob": 931,
     "offset": 17992,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53601",
+   "en": "Avalanche Ride",
+   "ja": "雪崩乗り",
+   "zh": "雪崩滑行",
+   "meta": {
+    "blob": 931,
+    "offset": 18120,
+    "cap": 16
    }
   },
   {
@@ -16241,6 +16923,17 @@
    }
   },
   {
+   "id": "row::53604",
+   "en": "Furry and Fluffy",
+   "ja": "けがわでモフモフ",
+   "zh": "毛茸茸",
+   "meta": {
+    "blob": 931,
+    "offset": 18412,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53606",
    "en": "Hint: Savor the warmth",
    "ja": "ヒント：やさしさを味わう",
@@ -16249,6 +16942,17 @@
     "blob": 931,
     "offset": 18576,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53607",
+   "en": "Bread to the Sailors",
+   "ja": "船乗りにパンを",
+   "zh": "给水手送面包",
+   "meta": {
+    "blob": 931,
+    "offset": 18704,
+    "cap": 16
    }
   },
   {
@@ -16263,6 +16967,17 @@
    }
   },
   {
+   "id": "row::53610",
+   "en": "Breakthrough～",
+   "ja": "とっぱ～",
+   "zh": "突破～",
+   "meta": {
+    "blob": 931,
+    "offset": 18996,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53612",
    "en": "Hint: Fight together",
    "ja": "ヒント：まとめて相手をする",
@@ -16271,6 +16986,17 @@
     "blob": 931,
     "offset": 19160,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53613",
+   "en": "Bird Protection",
+   "ja": "鳥まもり",
+   "zh": "护鸟人",
+   "meta": {
+    "blob": 931,
+    "offset": 19288,
+    "cap": 16
    }
   },
   {
@@ -16285,6 +17011,17 @@
    }
   },
   {
+   "id": "row::53616",
+   "en": "Lands Connected",
+   "ja": "陸つなぎ",
+   "zh": "陆地相连",
+   "meta": {
+    "blob": 931,
+    "offset": 19580,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53618",
    "en": "Hint: Avoid that mountain",
    "ja": "ヒント：あの山をかわす",
@@ -16293,6 +17030,17 @@
     "blob": 931,
     "offset": 19744,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53619",
+   "en": "Quiz Queen",
+   "ja": "クイズクイーン",
+   "zh": "问答女王",
+   "meta": {
+    "blob": 931,
+    "offset": 19872,
+    "cap": 16
    }
   },
   {
@@ -16307,6 +17055,17 @@
    }
   },
   {
+   "id": "row::53622",
+   "en": "Quiz Master",
+   "ja": "早解き名人",
+   "zh": "速答高手",
+   "meta": {
+    "blob": 931,
+    "offset": 20164,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53624",
    "en": "Hint: Dash!",
    "ja": "ヒント：ダッシュでいく",
@@ -16315,6 +17074,17 @@
     "blob": 931,
     "offset": 20328,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53625",
+   "en": "Booty Hunter",
+   "ja": "トレジャーハンター",
+   "zh": "宝藏猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 20456,
+    "cap": 16
    }
   },
   {
@@ -16329,6 +17099,17 @@
    }
   },
   {
+   "id": "row::53628",
+   "en": "Recovery",
+   "ja": "リカバリー",
+   "zh": "恢复",
+   "meta": {
+    "blob": 931,
+    "offset": 20748,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53630",
    "en": "Hint: Take a detour",
    "ja": "ヒント：まわりみちする",
@@ -16337,6 +17118,17 @@
     "blob": 931,
     "offset": 20912,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53631",
+   "en": "All Clear",
+   "ja": "オールクリア",
+   "zh": "全部清除",
+   "meta": {
+    "blob": 931,
+    "offset": 21040,
+    "cap": 16
    }
   },
   {
@@ -16351,6 +17143,17 @@
    }
   },
   {
+   "id": "row::53634",
+   "en": "THE 3D",
+   "ja": "THE　３D",
+   "zh": "THE 3D",
+   "meta": {
+    "blob": 931,
+    "offset": 21332,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53636",
    "en": "Hint: Why there?",
    "ja": "ヒント：なぜそんなとこに",
@@ -16359,6 +17162,17 @@
     "blob": 931,
     "offset": 21496,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53637",
+   "en": "Cannon Master",
+   "ja": "キャノンマスター",
+   "zh": "加农炮大师",
+   "meta": {
+    "blob": 931,
+    "offset": 21624,
+    "cap": 16
    }
   },
   {
@@ -16373,6 +17187,17 @@
    }
   },
   {
+   "id": "row::53640",
+   "en": "Pacifism",
+   "ja": "平和主義",
+   "zh": "和平主义",
+   "meta": {
+    "blob": 931,
+    "offset": 21916,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53642",
    "en": "Hint: Don't touch any weapons",
    "ja": "ヒント：兵器にふれない",
@@ -16381,6 +17206,17 @@
     "blob": 931,
     "offset": 22080,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53643",
+   "en": "Monster Hunter",
+   "ja": "モンスターハンター",
+   "zh": "怪物猎人",
+   "meta": {
+    "blob": 931,
+    "offset": 22208,
+    "cap": 16
    }
   },
   {
@@ -16395,6 +17231,17 @@
    }
   },
   {
+   "id": "row::53646",
+   "en": "Banana Hero",
+   "ja": "バナナ勇者",
+   "zh": "香蕉勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 22500,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53648",
    "en": "Hint: Set traps",
    "ja": "ヒント：トラップをしかける",
@@ -16403,6 +17250,17 @@
     "blob": 931,
     "offset": 22664,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53649",
+   "en": "Don't Waste Your Breath",
+   "ja": "問答無用",
+   "zh": "别废话",
+   "meta": {
+    "blob": 931,
+    "offset": 22792,
+    "cap": 16
    }
   },
   {
@@ -16417,6 +17275,17 @@
    }
   },
   {
+   "id": "row::53652",
+   "en": "Rescuer",
+   "ja": "救出者",
+   "zh": "救援者",
+   "meta": {
+    "blob": 931,
+    "offset": 23084,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53654",
    "en": "Hint: Help People",
    "ja": "ヒント：人助けをする",
@@ -16425,6 +17294,17 @@
     "blob": 931,
     "offset": 23248,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53655",
+   "en": "Rockfall",
+   "ja": "ロックフォール",
+   "zh": "落石",
+   "meta": {
+    "blob": 931,
+    "offset": 23376,
+    "cap": 16
    }
   },
   {
@@ -16439,6 +17319,17 @@
    }
   },
   {
+   "id": "row::53658",
+   "en": "Walker",
+   "ja": "ウォーカー",
+   "zh": "行路人",
+   "meta": {
+    "blob": 931,
+    "offset": 23668,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53660",
    "en": "Hint: I hate two-wheeled vehicles",
    "ja": "ヒント：二輪車ぎらい",
@@ -16447,6 +17338,17 @@
     "blob": 931,
     "offset": 23832,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53661",
+   "en": "Imprint Killer",
+   "ja": "残像キラー",
+   "zh": "残影杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 23960,
+    "cap": 16
    }
   },
   {
@@ -16461,6 +17363,17 @@
    }
   },
   {
+   "id": "row::53664",
+   "en": "Symmetry",
+   "ja": "シンメトリー",
+   "zh": "对称",
+   "meta": {
+    "blob": 931,
+    "offset": 24252,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53666",
    "en": "Hint: Make it symmetrical",
    "ja": "ヒント：左右対称をつくる",
@@ -16469,6 +17382,17 @@
     "blob": 931,
     "offset": 24416,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53667",
+   "en": "Sneaker",
+   "ja": "スニーカー",
+   "zh": "运动鞋",
+   "meta": {
+    "blob": 931,
+    "offset": 24544,
+    "cap": 16
    }
   },
   {
@@ -16483,6 +17407,17 @@
    }
   },
   {
+   "id": "row::53670",
+   "en": "Easily Found Out",
+   "ja": "バレバレ",
+   "zh": "露馅了",
+   "meta": {
+    "blob": 931,
+    "offset": 24836,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53672",
    "en": "Hint: Keep redoing it",
    "ja": "ヒント：やりなおしつづき",
@@ -16491,6 +17426,17 @@
     "blob": 931,
     "offset": 25000,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53673",
+   "en": "Sea Urchin Catch",
+   "ja": "ウニりょうっ",
+   "zh": "捕海胆",
+   "meta": {
+    "blob": 931,
+    "offset": 25128,
+    "cap": 16
    }
   },
   {
@@ -16505,6 +17451,17 @@
    }
   },
   {
+   "id": "row::53676",
+   "en": "Daring",
+   "ja": "だいたんっ",
+   "zh": "大胆",
+   "meta": {
+    "blob": 931,
+    "offset": 25420,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53678",
    "en": "Hint: Break with something big",
    "ja": "ヒント：巨大物でこわす",
@@ -16513,6 +17470,17 @@
     "blob": 931,
     "offset": 25584,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53679",
+   "en": "Harassment",
+   "ja": "いやがらせ",
+   "zh": "骚扰",
+   "meta": {
+    "blob": 931,
+    "offset": 25712,
+    "cap": 16
    }
   },
   {
@@ -16527,6 +17495,17 @@
    }
   },
   {
+   "id": "row::53682",
+   "en": "Independence",
+   "ja": "どくりつどくほ",
+   "zh": "独立",
+   "meta": {
+    "blob": 931,
+    "offset": 26004,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53684",
    "en": "Hint: Got no friends",
    "ja": "ヒント：トモダチなんていない",
@@ -16535,6 +17514,17 @@
     "blob": 931,
     "offset": 26168,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53685",
+   "en": "Along the Road",
+   "ja": "道なり",
+   "zh": "沿路而行",
+   "meta": {
+    "blob": 931,
+    "offset": 26296,
+    "cap": 16
    }
   },
   {
@@ -16549,6 +17539,17 @@
    }
   },
   {
+   "id": "row::53688",
+   "en": "Forced Entry",
+   "ja": "強行突破",
+   "zh": "强行突破",
+   "meta": {
+    "blob": 931,
+    "offset": 26588,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53690",
    "en": "Hint: Prepare for damage",
    "ja": "ヒント：ダメージかくご",
@@ -16557,6 +17558,17 @@
     "blob": 931,
     "offset": 26752,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53691",
+   "en": "Geezer!",
+   "ja": "おじさま！",
+   "zh": "大叔！",
+   "meta": {
+    "blob": 931,
+    "offset": 26880,
+    "cap": 16
    }
   },
   {
@@ -16571,6 +17583,17 @@
    }
   },
   {
+   "id": "row::53694",
+   "en": "Dragon Buster",
+   "ja": "ドラゴンバスター",
+   "zh": "屠龙者",
+   "meta": {
+    "blob": 931,
+    "offset": 27172,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53696",
    "en": "Hint: Phantom monster",
    "ja": "ヒント：まぼろしのモンスター",
@@ -16579,6 +17602,17 @@
     "blob": 931,
     "offset": 27336,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53697",
+   "en": "Kill 30 Monsters",
+   "ja": "３０匹斬り",
+   "zh": "斩杀30只",
+   "meta": {
+    "blob": 931,
+    "offset": 27464,
+    "cap": 16
    }
   },
   {
@@ -16593,6 +17627,17 @@
    }
   },
   {
+   "id": "row::53700",
+   "en": "Mighty Warrior",
+   "ja": "万夫不当",
+   "zh": "万夫不当",
+   "meta": {
+    "blob": 931,
+    "offset": 27756,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53702",
    "en": "Hint: Defeat more",
    "ja": "ヒント：もっとたおす",
@@ -16601,6 +17646,17 @@
     "blob": 931,
     "offset": 27920,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53703",
+   "en": "Master Squid Fisherman",
+   "ja": "イカ釣り名人",
+   "zh": "钓乌贼高手",
+   "meta": {
+    "blob": 931,
+    "offset": 28048,
+    "cap": 16
    }
   },
   {
@@ -16615,6 +17671,17 @@
    }
   },
   {
+   "id": "row::53706",
+   "en": "Barely a Bite",
+   "ja": "ほぼぼうず",
+   "zh": "几乎空军",
+   "meta": {
+    "blob": 931,
+    "offset": 28340,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53708",
    "en": "Hint: Repeat failures",
    "ja": "ヒント：失敗をくりかえす",
@@ -16623,6 +17690,17 @@
     "blob": 931,
     "offset": 28504,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53709",
+   "en": "Big Killer",
+   "ja": "ビッグキラー",
+   "zh": "巨型杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 28632,
+    "cap": 16
    }
   },
   {
@@ -16637,6 +17715,17 @@
    }
   },
   {
+   "id": "row::53712",
+   "en": "Part-Timer",
+   "ja": "フリーター",
+   "zh": "兼职族",
+   "meta": {
+    "blob": 931,
+    "offset": 28924,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53714",
    "en": "Hint: Don't stick with your class",
    "ja": "ヒント：クラスにつかない",
@@ -16645,6 +17734,17 @@
     "blob": 931,
     "offset": 29088,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53715",
+   "en": "Underground Lover",
+   "ja": "地下好き",
+   "zh": "地下爱好者",
+   "meta": {
+    "blob": 931,
+    "offset": 29216,
+    "cap": 16
    }
   },
   {
@@ -16659,6 +17759,17 @@
    }
   },
   {
+   "id": "row::53718",
+   "en": "Aboveground or Bust",
+   "ja": "地上命",
+   "zh": "必返地面",
+   "meta": {
+    "blob": 931,
+    "offset": 29508,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53720",
    "en": "Hint: Don't go where the sun doesn't shine",
    "ja": "ヒント：日のささない場所にいかない",
@@ -16667,6 +17778,17 @@
     "blob": 931,
     "offset": 29672,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53721",
+   "en": "Tornado Killer",
+   "ja": "トルネードキラー",
+   "zh": "龙卷风杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 29800,
+    "cap": 16
    }
   },
   {
@@ -16681,6 +17803,17 @@
    }
   },
   {
+   "id": "row::53724",
+   "en": "No Hat",
+   "ja": "ぼうしなし",
+   "zh": "没戴帽子",
+   "meta": {
+    "blob": 931,
+    "offset": 30092,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53726",
    "en": "Hint: Don't fear the Lightning",
    "ja": "ヒント：カミナリをおそれない",
@@ -16689,6 +17822,17 @@
     "blob": 931,
     "offset": 30256,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53727",
+   "en": "Black Marketeer",
+   "ja": "闇商人",
+   "zh": "黑市商人",
+   "meta": {
+    "blob": 931,
+    "offset": 30384,
+    "cap": 16
    }
   },
   {
@@ -16703,6 +17847,17 @@
    }
   },
   {
+   "id": "row::53730",
+   "en": "God Buster",
+   "ja": "ゴッドバスター",
+   "zh": "弑神者",
+   "meta": {
+    "blob": 931,
+    "offset": 30676,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53732",
    "en": "Hint: Take the treasure",
    "ja": "ヒント：秘宝をとる",
@@ -16711,6 +17866,17 @@
     "blob": 931,
     "offset": 30840,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53733",
+   "en": "Venture",
+   "ja": "ヤマカンッ",
+   "zh": "赌一把",
+   "meta": {
+    "blob": 931,
+    "offset": 30968,
+    "cap": 16
    }
   },
   {
@@ -16725,6 +17891,17 @@
    }
   },
   {
+   "id": "row::53736",
+   "en": "Go Against the Waves",
+   "ja": "波に逆らうっ",
+   "zh": "逆浪前行",
+   "meta": {
+    "blob": 931,
+    "offset": 31260,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53738",
    "en": "Hint: Challenge from the front",
    "ja": "ヒント：正面からいどむ",
@@ -16733,6 +17910,17 @@
     "blob": 931,
     "offset": 31424,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53739",
+   "en": "Sister Through",
+   "ja": "シスタースルー",
+   "zh": "修女穿越",
+   "meta": {
+    "blob": 931,
+    "offset": 31552,
+    "cap": 16
    }
   },
   {
@@ -16747,6 +17935,17 @@
    }
   },
   {
+   "id": "row::53742",
+   "en": "Cross Over Rocks",
+   "ja": "岩渡り",
+   "zh": "踏岩而过",
+   "meta": {
+    "blob": 931,
+    "offset": 31844,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53744",
    "en": "Hint: Avoid burns",
    "ja": "ヒント：火傷をさける",
@@ -16755,6 +17954,17 @@
     "blob": 931,
     "offset": 32008,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53745",
+   "en": "Friend of Children",
+   "ja": "こどもの味方",
+   "zh": "孩子之友",
+   "meta": {
+    "blob": 931,
+    "offset": 32136,
+    "cap": 16
    }
   },
   {
@@ -16769,6 +17979,17 @@
    }
   },
   {
+   "id": "row::53748",
+   "en": "Reverse Idea",
+   "ja": "逆の発想",
+   "zh": "逆向思维",
+   "meta": {
+    "blob": 931,
+    "offset": 32428,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53750",
    "en": "Hint: Overcome rivals",
    "ja": "ヒント：ライバルにうちかつ",
@@ -16777,6 +17998,17 @@
     "blob": 931,
     "offset": 32592,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53751",
+   "en": "Pain Lover",
+   "ja": "イタイの大好き",
+   "zh": "疼痛爱好者",
+   "meta": {
+    "blob": 931,
+    "offset": 32720,
+    "cap": 16
    }
   },
   {
@@ -16791,6 +18023,17 @@
    }
   },
   {
+   "id": "row::53754",
+   "en": "Balancer",
+   "ja": "バランサー",
+   "zh": "平衡者",
+   "meta": {
+    "blob": 931,
+    "offset": 33012,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53756",
    "en": "Hint: Skillful maneuvering",
    "ja": "ヒント：上手ないどう",
@@ -16799,6 +18042,17 @@
     "blob": 931,
     "offset": 33176,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53757",
+   "en": "Master of the Dark",
+   "ja": "闇の使い手",
+   "zh": "暗之使徒",
+   "meta": {
+    "blob": 931,
+    "offset": 33304,
+    "cap": 16
    }
   },
   {
@@ -16813,6 +18067,17 @@
    }
   },
   {
+   "id": "row::53760",
+   "en": "Underworld",
+   "ja": "アンダーワールド",
+   "zh": "地下世界",
+   "meta": {
+    "blob": 931,
+    "offset": 33596,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53762",
    "en": "Hint: Fall many times",
    "ja": "ヒント：何度もおちる",
@@ -16821,6 +18086,17 @@
     "blob": 931,
     "offset": 33760,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53763",
+   "en": "Soccer Ball",
+   "ja": "サッカーボール",
+   "zh": "足球",
+   "meta": {
+    "blob": 931,
+    "offset": 33888,
+    "cap": 16
    }
   },
   {
@@ -16835,6 +18111,17 @@
    }
   },
   {
+   "id": "row::53766",
+   "en": "Speed Star",
+   "ja": "スピードスター",
+   "zh": "速度之星",
+   "meta": {
+    "blob": 931,
+    "offset": 34180,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53768",
    "en": "Hint: Cunning moves",
    "ja": "ヒント：たくみな移動",
@@ -16843,6 +18130,17 @@
     "blob": 931,
     "offset": 34344,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53769",
+   "en": "Ruthless Boss",
+   "ja": "れいこくオヤビン",
+   "zh": "冷酷老大",
+   "meta": {
+    "blob": 931,
+    "offset": 34472,
+    "cap": 16
    }
   },
   {
@@ -16857,6 +18155,17 @@
    }
   },
   {
+   "id": "row::53772",
+   "en": "Impressive, Boss",
+   "ja": "さすがだぜオヤビン",
+   "zh": "真不愧啊老大",
+   "meta": {
+    "blob": 931,
+    "offset": 34764,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53774",
    "en": "Hint: Don't look away",
    "ja": "ヒント：見すててはおかない",
@@ -16865,6 +18174,17 @@
     "blob": 931,
     "offset": 34928,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53775",
+   "en": "Sudden Death Match",
+   "ja": "一本勝負",
+   "zh": "一局定胜负",
+   "meta": {
+    "blob": 931,
+    "offset": 35056,
+    "cap": 16
    }
   },
   {
@@ -16879,6 +18199,17 @@
    }
   },
   {
+   "id": "row::53778",
+   "en": "Liberator",
+   "ja": "解放者",
+   "zh": "解放者",
+   "meta": {
+    "blob": 931,
+    "offset": 35348,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53780",
    "en": "Hint: Reunion",
    "ja": "ヒント：再会",
@@ -16887,6 +18218,17 @@
     "blob": 931,
     "offset": 35512,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53781",
+   "en": "Miser",
+   "ja": "しゅせんど",
+   "zh": "吝啬鬼",
+   "meta": {
+    "blob": 931,
+    "offset": 35640,
+    "cap": 16
    }
   },
   {
@@ -16901,6 +18243,17 @@
    }
   },
   {
+   "id": "row::53784",
+   "en": "True Hero",
+   "ja": "真のヒーロー",
+   "zh": "真勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 35932,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53786",
    "en": "Hint: Children",
    "ja": "ヒント：こどもたち",
@@ -16909,6 +18262,17 @@
     "blob": 931,
     "offset": 36096,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53787",
+   "en": "The Witch's Secret Path",
+   "ja": "魔女のぬけ道",
+   "zh": "魔女的密道",
+   "meta": {
+    "blob": 931,
+    "offset": 36224,
+    "cap": 16
    }
   },
   {
@@ -16923,6 +18287,17 @@
    }
   },
   {
+   "id": "row::53790",
+   "en": "Stone Healer",
+   "ja": "ストーンヒーラー",
+   "zh": "岩石恢复师",
+   "meta": {
+    "blob": 931,
+    "offset": 36516,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53792",
    "en": "Hint: Used on all",
    "ja": "ヒント：みんなに使う",
@@ -16931,6 +18306,17 @@
     "blob": 931,
     "offset": 36680,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53793",
+   "en": "Gem Crusher",
+   "ja": "宝石クラッシャー",
+   "zh": "宝石粉碎机",
+   "meta": {
+    "blob": 931,
+    "offset": 36808,
+    "cap": 16
    }
   },
   {
@@ -16945,6 +18331,17 @@
    }
   },
   {
+   "id": "row::53796",
+   "en": "Dark Time Goddess!",
+   "ja": "黒女神様！",
+   "zh": "时之黑女神！",
+   "meta": {
+    "blob": 931,
+    "offset": 37100,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53798",
    "en": "Hint: Wait for it to go out",
    "ja": "ヒント：出てくるのを待つ",
@@ -16953,6 +18350,17 @@
     "blob": 931,
     "offset": 37264,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53799",
+   "en": "2 Weapons",
+   "ja": "２ウェポン",
+   "zh": "两件武器",
+   "meta": {
+    "blob": 931,
+    "offset": 37392,
+    "cap": 16
    }
   },
   {
@@ -16967,6 +18375,17 @@
    }
   },
   {
+   "id": "row::53802",
+   "en": "Useless Resistance",
+   "ja": "悪あがき",
+   "zh": "垂死挣扎",
+   "meta": {
+    "blob": 931,
+    "offset": 37684,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53804",
    "en": "Hint: Keep on slugging it out",
    "ja": "ヒント：やられてもやられても行く",
@@ -16975,6 +18394,17 @@
     "blob": 931,
     "offset": 37848,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53805",
+   "en": "Utter Victory",
+   "ja": "ぶっちぎり",
+   "zh": "碾压式胜利",
+   "meta": {
+    "blob": 931,
+    "offset": 37976,
+    "cap": 16
    }
   },
   {
@@ -16989,6 +18419,17 @@
    }
   },
   {
+   "id": "row::53808",
+   "en": "Stopover",
+   "ja": "寄り道",
+   "zh": "中途停留",
+   "meta": {
+    "blob": 931,
+    "offset": 38268,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53810",
    "en": "Hint: Get 3",
    "ja": "ヒント：３つゲット",
@@ -16997,6 +18438,17 @@
     "blob": 931,
     "offset": 38432,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53811",
+   "en": "Famous Conductor",
+   "ja": "名コンダクター",
+   "zh": "名指挥家",
+   "meta": {
+    "blob": 931,
+    "offset": 38560,
+    "cap": 16
    }
   },
   {
@@ -17011,6 +18463,17 @@
    }
   },
   {
+   "id": "row::53814",
+   "en": "Tone Deaf♪",
+   "ja": "オンチ♪",
+   "zh": "音痴",
+   "meta": {
+    "blob": 931,
+    "offset": 38852,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53816",
    "en": "Hint: Even if you lose you can still pass",
    "ja": "ヒント：失敗してもクリアする",
@@ -17019,6 +18482,17 @@
     "blob": 931,
     "offset": 39016,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53817",
+   "en": "Villagers' Hero",
+   "ja": "村人のヒーロー",
+   "zh": "村民的英雄",
+   "meta": {
+    "blob": 931,
+    "offset": 39144,
+    "cap": 16
    }
   },
   {
@@ -17033,6 +18507,17 @@
    }
   },
   {
+   "id": "row::53820",
+   "en": "Gold Rush!",
+   "ja": "ゴールドラッシュ！",
+   "zh": "黄金冲刺！",
+   "meta": {
+    "blob": 931,
+    "offset": 39436,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53822",
    "en": "Hint: The treasure inside",
    "ja": "ヒント：中にある宝",
@@ -17041,6 +18526,17 @@
     "blob": 931,
     "offset": 39600,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53823",
+   "en": "Regular of Paradise",
+   "ja": "楽園の常連",
+   "zh": "乐园常客",
+   "meta": {
+    "blob": 931,
+    "offset": 39728,
+    "cap": 16
    }
   },
   {
@@ -17055,6 +18551,17 @@
    }
   },
   {
+   "id": "row::53826",
+   "en": "Champion of Paradise",
+   "ja": "楽園のはしゃ",
+   "zh": "乐园明星",
+   "meta": {
+    "blob": 931,
+    "offset": 40020,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53828",
    "en": "Hint: Break the machine",
    "ja": "ヒント：機械をこわす",
@@ -17063,6 +18570,17 @@
     "blob": 931,
     "offset": 40184,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53829",
+   "en": "Dragon Header",
+   "ja": "ドラゴンヘッダー",
+   "zh": "龙首",
+   "meta": {
+    "blob": 931,
+    "offset": 40312,
+    "cap": 16
    }
   },
   {
@@ -17077,6 +18595,17 @@
    }
   },
   {
+   "id": "row::53832",
+   "en": "Man's Man",
+   "ja": "漢",
+   "zh": "真男人",
+   "meta": {
+    "blob": 931,
+    "offset": 40604,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53834",
    "en": "Hint: Get the hidden armor 2",
    "ja": "ヒント：かくされた防具をとる2",
@@ -17085,6 +18614,17 @@
     "blob": 931,
     "offset": 40768,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53835",
+   "en": "Cursed Shoes",
+   "ja": "呪いのくつ",
+   "zh": "被诅咒的鞋",
+   "meta": {
+    "blob": 931,
+    "offset": 40896,
+    "cap": 16
    }
   },
   {
@@ -17099,6 +18639,17 @@
    }
   },
   {
+   "id": "row::53838",
+   "en": "Spray-User",
+   "ja": "スプレー使い",
+   "zh": "喷雾使用者",
+   "meta": {
+    "blob": 931,
+    "offset": 41188,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53840",
    "en": "Hint: Use a tool",
    "ja": "ヒント：道具を使う",
@@ -17107,6 +18658,17 @@
     "blob": 931,
     "offset": 41352,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53841",
+   "en": "Undamaged Hero",
+   "ja": "やられずの勇者",
+   "zh": "一点没伤的勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 41480,
+    "cap": 16
    }
   },
   {
@@ -17121,6 +18683,17 @@
    }
   },
   {
+   "id": "row::53844",
+   "en": "Over-Damaged Hero",
+   "ja": "やられすぎ勇者",
+   "zh": "重伤勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 41772,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53846",
    "en": "Hint: Never give up",
    "ja": "ヒント：あきらめない",
@@ -17129,6 +18702,17 @@
     "blob": 931,
     "offset": 41936,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53847",
+   "en": "Demon Sword Killer",
+   "ja": "魔剣キラー",
+   "zh": "魔剑杀手",
+   "meta": {
+    "blob": 931,
+    "offset": 42064,
+    "cap": 16
    }
   },
   {
@@ -17143,6 +18727,17 @@
    }
   },
   {
+   "id": "row::53850",
+   "en": "Ultimate Castle",
+   "ja": "最強の城",
+   "zh": "最强城堡",
+   "meta": {
+    "blob": 931,
+    "offset": 42356,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53852",
    "en": "Hint: Fight using the strongest parts",
    "ja": "ヒント：最強のパーツで勝負する",
@@ -17151,6 +18746,17 @@
     "blob": 931,
     "offset": 42520,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53853",
+   "en": "Feared Hero",
+   "ja": "恐るべき勇者",
+   "zh": "令人畏惧的勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 42648,
+    "cap": 16
    }
   },
   {
@@ -17165,6 +18771,17 @@
    }
   },
   {
+   "id": "row::53856",
+   "en": "Overkill Hero",
+   "ja": "やりすぎ勇者",
+   "zh": "用力过猛的勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 42940,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53858",
    "en": "Hint: Save the fun for last",
    "ja": "ヒント：楽しみは最後にとっておく",
@@ -17173,6 +18790,17 @@
     "blob": 931,
     "offset": 43104,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53859",
+   "en": "Legend",
+   "ja": "レジェンド",
+   "zh": "传说",
+   "meta": {
+    "blob": 931,
+    "offset": 43232,
+    "cap": 16
    }
   },
   {
@@ -17187,6 +18815,17 @@
    }
   },
   {
+   "id": "row::53862",
+   "en": "Porta-Hero",
+   "ja": "ポータブル勇者",
+   "zh": "便携勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 43524,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53864",
    "en": "Hint: Small Goddess Statue",
    "ja": "ヒント：小さな女神像",
@@ -17195,6 +18834,17 @@
     "blob": 931,
     "offset": 43688,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53865",
+   "en": "Stone Freak",
+   "ja": "ストーンフリーク",
+   "zh": "石头狂",
+   "meta": {
+    "blob": 931,
+    "offset": 43816,
+    "cap": 16
    }
   },
   {
@@ -17209,6 +18859,17 @@
    }
   },
   {
+   "id": "row::53868",
+   "en": "Mt. Fuji and a Hole",
+   "ja": "フジ山と穴",
+   "zh": "富士山与洞",
+   "meta": {
+    "blob": 931,
+    "offset": 44108,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53870",
    "en": "Hint: Defeat two",
    "ja": "ヒント：２匹ともたおす",
@@ -17217,6 +18878,17 @@
     "blob": 931,
     "offset": 44272,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53871",
+   "en": "Goddess Mania",
+   "ja": "女神マニア",
+   "zh": "女神狂热",
+   "meta": {
+    "blob": 931,
+    "offset": 44400,
+    "cap": 16
    }
   },
   {
@@ -17231,6 +18903,17 @@
    }
   },
   {
+   "id": "row::53874",
+   "en": "A. B. Y. S. S",
+   "ja": "A・B・Y・S・S",
+   "zh": "A·B·Y·S·S",
+   "meta": {
+    "blob": 931,
+    "offset": 44692,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53876",
    "en": "Hint: Learn the secret",
    "ja": "ヒント：ヒミツを知る",
@@ -17239,6 +18922,17 @@
     "blob": 931,
     "offset": 44856,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53877",
+   "en": "Nothing Dirty",
+   "ja": "えっちいのダメ",
+   "zh": "不许搞黄",
+   "meta": {
+    "blob": 931,
+    "offset": 44984,
+    "cap": 16
    }
   },
   {
@@ -17253,6 +18947,17 @@
    }
   },
   {
+   "id": "row::53880",
+   "en": "Sexy Dancer",
+   "ja": "セクシーダンサー",
+   "zh": "性感舞者",
+   "meta": {
+    "blob": 931,
+    "offset": 45276,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53882",
    "en": "[Downloadable Content Quest Title]",
    "ja": "[ダウンロードコンテンツクエストの称号]",
@@ -17261,6 +18966,17 @@
     "blob": 931,
     "offset": 45440,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53883",
+   "en": "It was the Breeze",
+   "ja": "全めくり",
+   "zh": "全翻篇了",
+   "meta": {
+    "blob": 931,
+    "offset": 45568,
+    "cap": 16
    }
   },
   {
@@ -17275,6 +18991,17 @@
    }
   },
   {
+   "id": "row::53886",
+   "en": "Construction Stopper",
+   "ja": "築城させぬ",
+   "zh": "阻止筑城",
+   "meta": {
+    "blob": 931,
+    "offset": 45860,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53888",
    "en": "[Downloadable Content Quest Title]",
    "ja": "[ダウンロードコンテンツクエストの称号]",
@@ -17283,6 +19010,17 @@
     "blob": 931,
     "offset": 46024,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53889",
+   "en": "Turn the Tables",
+   "ja": "返り討ちぞ",
+   "zh": "反杀回去",
+   "meta": {
+    "blob": 931,
+    "offset": 46152,
+    "cap": 16
    }
   },
   {
@@ -17297,6 +19035,17 @@
    }
   },
   {
+   "id": "row::53892",
+   "en": "Ruler of the World!",
+   "ja": "天下討ち取り！",
+   "zh": "天下霸主！",
+   "meta": {
+    "blob": 931,
+    "offset": 46444,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53894",
    "en": "[Downloadable Content Quest Title]",
    "ja": "[ダウンロードコンテンツクエストの称号]",
@@ -17305,6 +19054,17 @@
     "blob": 931,
     "offset": 46608,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53895",
+   "en": "Infinite Clear",
+   "ja": "無限クリア",
+   "zh": "无限通关",
+   "meta": {
+    "blob": 931,
+    "offset": 46736,
+    "cap": 16
    }
   },
   {
@@ -17319,6 +19079,17 @@
    }
   },
   {
+   "id": "row::53897",
+   "en": "Infinite Master",
+   "ja": "無限マスター",
+   "zh": "无限大师",
+   "meta": {
+    "blob": 931,
+    "offset": 47028,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53898",
    "en": "Hint: Defeat 100 Evil Lords on Hard",
    "ja": "ヒント：むずかしいで百人斬り",
@@ -17327,6 +19098,17 @@
     "blob": 931,
     "offset": 47192,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53899",
+   "en": "Goddess Loan Hero",
+   "ja": "女神ローン勇者",
+   "zh": "女神贷款勇者",
+   "meta": {
+    "blob": 931,
+    "offset": 47320,
+    "cap": 16
    }
   },
   {
@@ -17341,6 +19123,17 @@
    }
   },
   {
+   "id": "row::53902",
+   "en": "Debt Bird Buster",
+   "ja": "借金鳥バスター",
+   "zh": "欠债鸟克星",
+   "meta": {
+    "blob": 931,
+    "offset": 47612,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53904",
    "en": "Hint: Defeat that dude!",
    "ja": "ヒント：ヤツをたおす！",
@@ -17349,6 +19142,17 @@
     "blob": 931,
     "offset": 47776,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53905",
+   "en": "Crafting Mania",
+   "ja": "合成マニア",
+   "zh": "合成狂热",
+   "meta": {
+    "blob": 931,
+    "offset": 47904,
+    "cap": 16
    }
   },
   {
@@ -17363,6 +19167,17 @@
    }
   },
   {
+   "id": "row::53907",
+   "en": "Three Venus",
+   "ja": "スリーヴィーナス",
+   "zh": "三位维纳斯",
+   "meta": {
+    "blob": 931,
+    "offset": 48196,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53909",
    "en": "Hint: Get three in a row",
    "ja": "ヒント：アレを３つそろえる",
@@ -17371,6 +19186,17 @@
     "blob": 931,
     "offset": 48360,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53910",
+   "en": "Return of the Hero",
+   "ja": "英雄のきかん",
+   "zh": "英雄归来",
+   "meta": {
+    "blob": 931,
+    "offset": 48488,
+    "cap": 16
    }
   },
   {
@@ -17385,6 +19211,17 @@
    }
   },
   {
+   "id": "row::53912",
+   "en": "Take Their Hand",
+   "ja": "手をとりあって",
+   "zh": "手牵着手",
+   "meta": {
+    "blob": 931,
+    "offset": 48780,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53913",
    "en": "Hint: Underground victory",
    "ja": "ヒント：地下優勝",
@@ -17393,6 +19230,17 @@
     "blob": 931,
     "offset": 48944,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53914",
+   "en": "True Leader",
+   "ja": "真のリーダー",
+   "zh": "真正的领袖",
+   "meta": {
+    "blob": 931,
+    "offset": 49072,
+    "cap": 16
    }
   },
   {
@@ -17407,6 +19255,17 @@
    }
   },
   {
+   "id": "row::53916",
+   "en": "Fateful Reunion",
+   "ja": "運命の再会",
+   "zh": "命中注定的重逢",
+   "meta": {
+    "blob": 931,
+    "offset": 49364,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53917",
    "en": "Hint: All diaries",
    "ja": "ヒント：オールダイアリー",
@@ -17415,6 +19274,17 @@
     "blob": 931,
     "offset": 49528,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53918",
+   "en": "No. 30, The World",
+   "ja": "３０号ザ・ワールド",
+   "zh": "30号·世界",
+   "meta": {
+    "blob": 931,
+    "offset": 49656,
+    "cap": 16
    }
   },
   {
@@ -17429,6 +19299,17 @@
    }
   },
   {
+   "id": "row::53920",
+   "en": "Ultimate Tag Team",
+   "ja": "最強タッグ結成",
+   "zh": "最强搭档组成",
+   "meta": {
+    "blob": 931,
+    "offset": 49948,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53921",
    "en": "Hint: No enemies where we're headed!",
    "ja": "ヒント：向かう所、敵無し！",
@@ -17437,6 +19318,17 @@
     "blob": 931,
     "offset": 50112,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53922",
+   "en": "Evil Lord Medal 1",
+   "ja": "マオウメダル１",
+   "zh": "魔王勋章1",
+   "meta": {
+    "blob": 931,
+    "offset": 50240,
+    "cap": 16
    }
   },
   {
@@ -17451,6 +19343,17 @@
    }
   },
   {
+   "id": "row::53924",
+   "en": "Evil Lord Medal 2",
+   "ja": "マオウメダル２",
+   "zh": "魔王勋章2",
+   "meta": {
+    "blob": 931,
+    "offset": 50532,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53925",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17459,6 +19362,17 @@
     "blob": 931,
     "offset": 50696,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53926",
+   "en": "Evil Lord Medal 3",
+   "ja": "マオウメダル３",
+   "zh": "魔王勋章3",
+   "meta": {
+    "blob": 931,
+    "offset": 50824,
+    "cap": 16
    }
   },
   {
@@ -17473,6 +19387,17 @@
    }
   },
   {
+   "id": "row::53928",
+   "en": "Evil Lord Medal 4",
+   "ja": "マオウメダル４",
+   "zh": "魔王勋章4",
+   "meta": {
+    "blob": 931,
+    "offset": 51116,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53929",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17481,6 +19406,17 @@
     "blob": 931,
     "offset": 51280,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53930",
+   "en": "Evil Lord Medal 5",
+   "ja": "マオウメダル５",
+   "zh": "魔王徽章5",
+   "meta": {
+    "blob": 931,
+    "offset": 51408,
+    "cap": 16
    }
   },
   {
@@ -17495,6 +19431,17 @@
    }
   },
   {
+   "id": "row::53932",
+   "en": "Evil Lord Medal 6",
+   "ja": "マオウメダル６",
+   "zh": "魔王徽章6",
+   "meta": {
+    "blob": 931,
+    "offset": 51700,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53933",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17503,6 +19450,17 @@
     "blob": 931,
     "offset": 51864,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53934",
+   "en": "Evil Lord Medal 7",
+   "ja": "マオウメダル７",
+   "zh": "魔王徽章7",
+   "meta": {
+    "blob": 931,
+    "offset": 51992,
+    "cap": 16
    }
   },
   {
@@ -17517,6 +19475,17 @@
    }
   },
   {
+   "id": "row::53936",
+   "en": "Evil Lord Medal 8",
+   "ja": "マオウメダル８",
+   "zh": "魔王徽章8",
+   "meta": {
+    "blob": 931,
+    "offset": 52284,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53937",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17525,6 +19494,17 @@
     "blob": 931,
     "offset": 52448,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53938",
+   "en": "Evil Lord Medal 9",
+   "ja": "マオウメダル９",
+   "zh": "魔王奖章9",
+   "meta": {
+    "blob": 931,
+    "offset": 52576,
+    "cap": 16
    }
   },
   {
@@ -17539,6 +19519,17 @@
    }
   },
   {
+   "id": "row::53940",
+   "en": "Evil Lord Medal 10",
+   "ja": "マオウメダル１０",
+   "zh": "魔王奖章10",
+   "meta": {
+    "blob": 931,
+    "offset": 52868,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53941",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -17547,6 +19538,17 @@
     "blob": 931,
     "offset": 53032,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53942",
+   "en": "Evil Lord Medal 11",
+   "ja": "マオウメダル１１",
+   "zh": "魔王奖章11",
+   "meta": {
+    "blob": 931,
+    "offset": 53160,
+    "cap": 16
    }
   },
   {
@@ -17561,6 +19563,17 @@
    }
   },
   {
+   "id": "row::53944",
+   "en": "Evil Lord Medal 12",
+   "ja": "マオウメダル１２",
+   "zh": "魔王勋章12",
+   "meta": {
+    "blob": 931,
+    "offset": 53452,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53945",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -17569,6 +19582,17 @@
     "blob": 931,
     "offset": 53616,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53946",
+   "en": "Evil Lord Medal 13",
+   "ja": "マオウメダル１３",
+   "zh": "魔王奖章13",
+   "meta": {
+    "blob": 931,
+    "offset": 53744,
+    "cap": 16
    }
   },
   {
@@ -17583,6 +19607,17 @@
    }
   },
   {
+   "id": "row::53948",
+   "en": "Evil Lord Medal 14",
+   "ja": "マオウメダル１４",
+   "zh": "魔王奖章14",
+   "meta": {
+    "blob": 931,
+    "offset": 54036,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53949",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17591,6 +19626,17 @@
     "blob": 931,
     "offset": 54200,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53950",
+   "en": "Evil Lord Medal 15",
+   "ja": "マオウメダル１５",
+   "zh": "魔王奖章15",
+   "meta": {
+    "blob": 931,
+    "offset": 54328,
+    "cap": 16
    }
   },
   {
@@ -17605,6 +19651,17 @@
    }
   },
   {
+   "id": "row::53952",
+   "en": "Evil Lord Medal 16",
+   "ja": "マオウメダル１６",
+   "zh": "魔王奖章16",
+   "meta": {
+    "blob": 931,
+    "offset": 54620,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53953",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17613,6 +19670,17 @@
     "blob": 931,
     "offset": 54784,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53954",
+   "en": "Evil Lord Medal 17",
+   "ja": "マオウメダル１７",
+   "zh": "魔王奖章17",
+   "meta": {
+    "blob": 931,
+    "offset": 54912,
+    "cap": 16
    }
   },
   {
@@ -17627,6 +19695,17 @@
    }
   },
   {
+   "id": "row::53956",
+   "en": "Evil Lord Medal 18",
+   "ja": "マオウメダル１８",
+   "zh": "魔王勋章18",
+   "meta": {
+    "blob": 931,
+    "offset": 55204,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53957",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17635,6 +19714,17 @@
     "blob": 931,
     "offset": 55368,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53958",
+   "en": "Evil Lord Medal 19",
+   "ja": "マオウメダル１９",
+   "zh": "魔王勋章19",
+   "meta": {
+    "blob": 931,
+    "offset": 55496,
+    "cap": 16
    }
   },
   {
@@ -17649,6 +19739,17 @@
    }
   },
   {
+   "id": "row::53960",
+   "en": "Evil Lord Medal 20",
+   "ja": "マオウメダル２０",
+   "zh": "魔王勋章20",
+   "meta": {
+    "blob": 931,
+    "offset": 55788,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53961",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17657,6 +19758,17 @@
     "blob": 931,
     "offset": 55952,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53962",
+   "en": "Evil Lord Medal 21",
+   "ja": "マオウメダル２１",
+   "zh": "魔王勋章21",
+   "meta": {
+    "blob": 931,
+    "offset": 56080,
+    "cap": 16
    }
   },
   {
@@ -17671,6 +19783,17 @@
    }
   },
   {
+   "id": "row::53964",
+   "en": "Evil Lord Medal 22",
+   "ja": "マオウメダル２２",
+   "zh": "魔王勋章22",
+   "meta": {
+    "blob": 931,
+    "offset": 56372,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53965",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -17679,6 +19802,17 @@
     "blob": 931,
     "offset": 56536,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53966",
+   "en": "Evil Lord Medal 23",
+   "ja": "マオウメダル２３",
+   "zh": "魔王勋章23",
+   "meta": {
+    "blob": 931,
+    "offset": 56664,
+    "cap": 16
    }
   },
   {
@@ -17693,6 +19827,17 @@
    }
   },
   {
+   "id": "row::53968",
+   "en": "Evil Lord Medal 24",
+   "ja": "マオウメダル２４",
+   "zh": "魔王勋章24",
+   "meta": {
+    "blob": 931,
+    "offset": 56956,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53969",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -17701,6 +19846,17 @@
     "blob": 931,
     "offset": 57120,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53970",
+   "en": "Evil Lord Medal 25",
+   "ja": "マオウメダル２５",
+   "zh": "魔王勋章25",
+   "meta": {
+    "blob": 931,
+    "offset": 57248,
+    "cap": 16
    }
   },
   {
@@ -17715,6 +19871,17 @@
    }
   },
   {
+   "id": "row::53972",
+   "en": "Evil Lord Medal 26",
+   "ja": "マオウメダル２６",
+   "zh": "魔王勋章26",
+   "meta": {
+    "blob": 931,
+    "offset": 57540,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53973",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -17723,6 +19890,17 @@
     "blob": 931,
     "offset": 57704,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53974",
+   "en": "Evil Lord Medal 27",
+   "ja": "マオウメダル２７",
+   "zh": "魔王勋章27",
+   "meta": {
+    "blob": 931,
+    "offset": 57832,
+    "cap": 16
    }
   },
   {
@@ -17737,6 +19915,17 @@
    }
   },
   {
+   "id": "row::53976",
+   "en": "Evil Lord Medal 28",
+   "ja": "マオウメダル２８",
+   "zh": "魔王勋章28",
+   "meta": {
+    "blob": 931,
+    "offset": 58124,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53977",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -17745,6 +19934,17 @@
     "blob": 931,
     "offset": 58288,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53978",
+   "en": "Evil Lord Medal 29",
+   "ja": "マオウメダル２９",
+   "zh": "魔王勋章29",
+   "meta": {
+    "blob": 931,
+    "offset": 58416,
+    "cap": 16
    }
   },
   {
@@ -17759,6 +19959,17 @@
    }
   },
   {
+   "id": "row::53980",
+   "en": "Evil Lord Medal 30",
+   "ja": "マオウメダル３０",
+   "zh": "魔王勋章30",
+   "meta": {
+    "blob": 931,
+    "offset": 58708,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53981",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17767,6 +19978,17 @@
     "blob": 931,
     "offset": 58872,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53982",
+   "en": "Evil Lord Medal 31",
+   "ja": "マオウメダル３１",
+   "zh": "魔王勋章31",
+   "meta": {
+    "blob": 931,
+    "offset": 59000,
+    "cap": 16
    }
   },
   {
@@ -17781,6 +20003,17 @@
    }
   },
   {
+   "id": "row::53984",
+   "en": "Evil Lord Medal 32",
+   "ja": "マオウメダル３２",
+   "zh": "魔王勋章32",
+   "meta": {
+    "blob": 931,
+    "offset": 59292,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53985",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17789,6 +20022,17 @@
     "blob": 931,
     "offset": 59456,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53986",
+   "en": "Evil Lord Medal 33",
+   "ja": "マオウメダル３３",
+   "zh": "魔王勋章33",
+   "meta": {
+    "blob": 931,
+    "offset": 59584,
+    "cap": 16
    }
   },
   {
@@ -17803,6 +20047,17 @@
    }
   },
   {
+   "id": "row::53988",
+   "en": "Evil Lord Medal 34",
+   "ja": "マオウメダル３４",
+   "zh": "魔王勋章34",
+   "meta": {
+    "blob": 931,
+    "offset": 59876,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53989",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17811,6 +20066,17 @@
     "blob": 931,
     "offset": 60040,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53990",
+   "en": "Evil Lord Medal 35",
+   "ja": "マオウメダル３５",
+   "zh": "魔王勋章35",
+   "meta": {
+    "blob": 931,
+    "offset": 60168,
+    "cap": 16
    }
   },
   {
@@ -17825,6 +20091,17 @@
    }
   },
   {
+   "id": "row::53992",
+   "en": "Evil Lord Medal 36",
+   "ja": "マオウメダル３６",
+   "zh": "魔王勋章36",
+   "meta": {
+    "blob": 931,
+    "offset": 60460,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53993",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -17833,6 +20110,17 @@
     "blob": 931,
     "offset": 60624,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53994",
+   "en": "Evil Lord Medal 37",
+   "ja": "マオウメダル３７",
+   "zh": "魔王勋章37",
+   "meta": {
+    "blob": 931,
+    "offset": 60752,
+    "cap": 16
    }
   },
   {
@@ -17847,6 +20135,17 @@
    }
   },
   {
+   "id": "row::53996",
+   "en": "Evil Lord Medal 38",
+   "ja": "マオウメダル３８",
+   "zh": "魔王勋章38",
+   "meta": {
+    "blob": 931,
+    "offset": 61044,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::53997",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17855,6 +20154,17 @@
     "blob": 931,
     "offset": 61208,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::53998",
+   "en": "Evil Lord Medal 39",
+   "ja": "マオウメダル３９",
+   "zh": "魔王勋章39",
+   "meta": {
+    "blob": 931,
+    "offset": 61336,
+    "cap": 16
    }
   },
   {
@@ -17869,6 +20179,17 @@
    }
   },
   {
+   "id": "row::54000",
+   "en": "Evil Lord Medal 40",
+   "ja": "マオウメダル４０",
+   "zh": "魔王勋章40",
+   "meta": {
+    "blob": 931,
+    "offset": 61628,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54001",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17877,6 +20198,17 @@
     "blob": 931,
     "offset": 61792,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54002",
+   "en": "Evil Lord Medal 41",
+   "ja": "マオウメダル４１",
+   "zh": "魔王勋章41",
+   "meta": {
+    "blob": 931,
+    "offset": 61920,
+    "cap": 16
    }
   },
   {
@@ -17891,6 +20223,17 @@
    }
   },
   {
+   "id": "row::54004",
+   "en": "Evil Lord Medal 42",
+   "ja": "マオウメダル４２",
+   "zh": "魔王勋章42",
+   "meta": {
+    "blob": 931,
+    "offset": 62212,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54005",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -17899,6 +20242,17 @@
     "blob": 931,
     "offset": 62376,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54006",
+   "en": "Evil Lord Medal 43",
+   "ja": "マオウメダル４３",
+   "zh": "魔王勋章43",
+   "meta": {
+    "blob": 931,
+    "offset": 62504,
+    "cap": 16
    }
   },
   {
@@ -17913,6 +20267,17 @@
    }
   },
   {
+   "id": "row::54008",
+   "en": "Evil Lord Medal 44",
+   "ja": "マオウメダル４４",
+   "zh": "魔王勋章44",
+   "meta": {
+    "blob": 931,
+    "offset": 62796,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54009",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -17921,6 +20286,17 @@
     "blob": 931,
     "offset": 62960,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54010",
+   "en": "Evil Lord Medal 45",
+   "ja": "マオウメダル４５",
+   "zh": "魔王勋章45",
+   "meta": {
+    "blob": 931,
+    "offset": 63088,
+    "cap": 16
    }
   },
   {
@@ -17935,6 +20311,17 @@
    }
   },
   {
+   "id": "row::54012",
+   "en": "Evil Lord Medal 46",
+   "ja": "マオウメダル４６",
+   "zh": "魔王勋章46",
+   "meta": {
+    "blob": 931,
+    "offset": 63380,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54013",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -17943,6 +20330,17 @@
     "blob": 931,
     "offset": 63544,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54014",
+   "en": "Evil Lord Medal 47",
+   "ja": "マオウメダル４７",
+   "zh": "魔王勋章47",
+   "meta": {
+    "blob": 931,
+    "offset": 63672,
+    "cap": 16
    }
   },
   {
@@ -17957,6 +20355,17 @@
    }
   },
   {
+   "id": "row::54016",
+   "en": "Evil Lord Medal 48",
+   "ja": "マオウメダル４８",
+   "zh": "魔王勋章48",
+   "meta": {
+    "blob": 931,
+    "offset": 63964,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54017",
    "en": "5th Continent",
    "ja": "第五大陸",
@@ -17965,6 +20374,17 @@
     "blob": 931,
     "offset": 64128,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54018",
+   "en": "Evil Lord Medal 49",
+   "ja": "マオウメダル４９",
+   "zh": "魔王勋章49",
+   "meta": {
+    "blob": 931,
+    "offset": 64256,
+    "cap": 16
    }
   },
   {
@@ -17979,6 +20399,17 @@
    }
   },
   {
+   "id": "row::54020",
+   "en": "Evil Lord Medal 50",
+   "ja": "マオウメダル５０",
+   "zh": "魔王勋章50",
+   "meta": {
+    "blob": 931,
+    "offset": 64548,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54021",
    "en": "5th Continent",
    "ja": "第五大陸",
@@ -17987,6 +20418,17 @@
     "blob": 931,
     "offset": 64712,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54022",
+   "en": "Evil Lord Medal 51",
+   "ja": "マオウメダル５１",
+   "zh": "魔王勋章51",
+   "meta": {
+    "blob": 931,
+    "offset": 64840,
+    "cap": 16
    }
   },
   {
@@ -18001,6 +20443,17 @@
    }
   },
   {
+   "id": "row::54024",
+   "en": "Evil Lord Medal 52",
+   "ja": "マオウメダル５２",
+   "zh": "魔王勋章52",
+   "meta": {
+    "blob": 931,
+    "offset": 65132,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54025",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -18009,6 +20462,17 @@
     "blob": 931,
     "offset": 65296,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54026",
+   "en": "Evil Lord Medal 53",
+   "ja": "マオウメダル５３",
+   "zh": "魔王勋章53",
+   "meta": {
+    "blob": 931,
+    "offset": 65424,
+    "cap": 16
    }
   },
   {
@@ -18023,6 +20487,17 @@
    }
   },
   {
+   "id": "row::54028",
+   "en": "Evil Lord Medal 54",
+   "ja": "マオウメダル５４",
+   "zh": "魔王勋章54",
+   "meta": {
+    "blob": 931,
+    "offset": 65716,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54029",
    "en": "1st Continent",
    "ja": "第一大陸",
@@ -18031,6 +20506,17 @@
     "blob": 931,
     "offset": 65880,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54030",
+   "en": "Evil Lord Medal 55",
+   "ja": "マオウメダル５５",
+   "zh": "魔王勋章55",
+   "meta": {
+    "blob": 931,
+    "offset": 66008,
+    "cap": 16
    }
   },
   {
@@ -18045,6 +20531,17 @@
    }
   },
   {
+   "id": "row::54032",
+   "en": "Evil Lord Medal 56",
+   "ja": "マオウメダル５６",
+   "zh": "魔王勋章56",
+   "meta": {
+    "blob": 931,
+    "offset": 66300,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54033",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -18053,6 +20550,17 @@
     "blob": 931,
     "offset": 66464,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54034",
+   "en": "Evil Lord Medal 57",
+   "ja": "マオウメダル５７",
+   "zh": "魔王勋章57",
+   "meta": {
+    "blob": 931,
+    "offset": 66592,
+    "cap": 16
    }
   },
   {
@@ -18067,6 +20575,17 @@
    }
   },
   {
+   "id": "row::54036",
+   "en": "Evil Lord Medal 58",
+   "ja": "マオウメダル５８",
+   "zh": "魔王勋章58",
+   "meta": {
+    "blob": 931,
+    "offset": 66884,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54037",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -18075,6 +20594,17 @@
     "blob": 931,
     "offset": 67048,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54038",
+   "en": "Evil Lord Medal 59",
+   "ja": "マオウメダル５９",
+   "zh": "魔王勋章59",
+   "meta": {
+    "blob": 931,
+    "offset": 67176,
+    "cap": 16
    }
   },
   {
@@ -18089,6 +20619,17 @@
    }
   },
   {
+   "id": "row::54040",
+   "en": "Evil Lord Medal 60",
+   "ja": "マオウメダル６０",
+   "zh": "魔王勋章60",
+   "meta": {
+    "blob": 931,
+    "offset": 67468,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54041",
    "en": "2nd Continent",
    "ja": "第二大陸",
@@ -18097,6 +20638,17 @@
     "blob": 931,
     "offset": 67632,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54042",
+   "en": "Evil Lord Medal 61",
+   "ja": "マオウメダル６１",
+   "zh": "魔王勋章61",
+   "meta": {
+    "blob": 931,
+    "offset": 67760,
+    "cap": 16
    }
   },
   {
@@ -18111,6 +20663,17 @@
    }
   },
   {
+   "id": "row::54044",
+   "en": "Evil Lord Medal 62",
+   "ja": "マオウメダル６２",
+   "zh": "魔王勋章62",
+   "meta": {
+    "blob": 931,
+    "offset": 68052,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54045",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -18119,6 +20682,17 @@
     "blob": 931,
     "offset": 68216,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54046",
+   "en": "Evil Lord Medal 63",
+   "ja": "マオウメダル６３",
+   "zh": "魔王勋章63",
+   "meta": {
+    "blob": 931,
+    "offset": 68344,
+    "cap": 16
    }
   },
   {
@@ -18133,6 +20707,17 @@
    }
   },
   {
+   "id": "row::54048",
+   "en": "Evil Lord Medal 64",
+   "ja": "マオウメダル６４",
+   "zh": "魔王勋章64",
+   "meta": {
+    "blob": 931,
+    "offset": 68636,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54049",
    "en": "3rd Continent",
    "ja": "第三大陸",
@@ -18141,6 +20726,17 @@
     "blob": 931,
     "offset": 68800,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54050",
+   "en": "Evil Lord Medal 65",
+   "ja": "マオウメダル６５",
+   "zh": "魔王勋章65",
+   "meta": {
+    "blob": 931,
+    "offset": 68928,
+    "cap": 16
    }
   },
   {
@@ -18155,6 +20751,17 @@
    }
   },
   {
+   "id": "row::54052",
+   "en": "Evil Lord Medal 66",
+   "ja": "マオウメダル６６",
+   "zh": "魔王勋章66",
+   "meta": {
+    "blob": 931,
+    "offset": 69220,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54053",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -18163,6 +20770,17 @@
     "blob": 931,
     "offset": 69384,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54054",
+   "en": "Evil Lord Medal 67",
+   "ja": "マオウメダル６７",
+   "zh": "魔王勋章67",
+   "meta": {
+    "blob": 931,
+    "offset": 69512,
+    "cap": 16
    }
   },
   {
@@ -18177,6 +20795,17 @@
    }
   },
   {
+   "id": "row::54056",
+   "en": "Evil Lord Medal 68",
+   "ja": "マオウメダル６８",
+   "zh": "魔王勋章68",
+   "meta": {
+    "blob": 931,
+    "offset": 69804,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54057",
    "en": "4th Continent",
    "ja": "第四大陸",
@@ -18185,6 +20814,17 @@
     "blob": 931,
     "offset": 69968,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54058",
+   "en": "Evil Lord Medal 69",
+   "ja": "マオウメダル６９",
+   "zh": "魔王勋章69",
+   "meta": {
+    "blob": 931,
+    "offset": 70096,
+    "cap": 16
    }
   },
   {
@@ -18199,6 +20839,17 @@
    }
   },
   {
+   "id": "row::54060",
+   "en": "Evil Lord Medal 70",
+   "ja": "マオウメダル７０",
+   "zh": "魔王勋章70",
+   "meta": {
+    "blob": 931,
+    "offset": 70388,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54061",
    "en": "5th Continent",
    "ja": "第五大陸",
@@ -18207,6 +20858,17 @@
     "blob": 931,
     "offset": 70552,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54062",
+   "en": "Evil Lord Medal 71",
+   "ja": "マオウメダル７１",
+   "zh": "魔王勋章71",
+   "meta": {
+    "blob": 931,
+    "offset": 70680,
+    "cap": 16
    }
   },
   {
@@ -18221,6 +20883,17 @@
    }
   },
   {
+   "id": "row::54064",
+   "en": "Evil Lord Medal 72",
+   "ja": "マオウメダル７２",
+   "zh": "魔王勋章72",
+   "meta": {
+    "blob": 931,
+    "offset": 70972,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54065",
    "en": "5th Continent",
    "ja": "第五大陸",
@@ -18229,6 +20902,17 @@
     "blob": 931,
     "offset": 71136,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54066",
+   "en": "Evil Lord Medal 73",
+   "ja": "マオウメダル７３",
+   "zh": "魔王勋章73",
+   "meta": {
+    "blob": 931,
+    "offset": 71264,
+    "cap": 16
    }
   },
   {
@@ -18243,6 +20927,17 @@
    }
   },
   {
+   "id": "row::54068",
+   "en": "Evil Lord Medal 74",
+   "ja": "マオウメダル７４",
+   "zh": "魔王勋章74",
+   "meta": {
+    "blob": 931,
+    "offset": 71556,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54069",
    "en": "5th Continent",
    "ja": "第五大陸",
@@ -18251,6 +20946,17 @@
     "blob": 931,
     "offset": 71720,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54070",
+   "en": "Evil Lord Medal 75",
+   "ja": "マオウメダル７５",
+   "zh": "魔王勋章75",
+   "meta": {
+    "blob": 931,
+    "offset": 71848,
+    "cap": 16
    }
   },
   {
@@ -18265,6 +20971,17 @@
    }
   },
   {
+   "id": "row::54072",
+   "en": "Evil Lord Medal 76",
+   "ja": "マオウメダル７６",
+   "zh": "魔王勋章76",
+   "meta": {
+    "blob": 931,
+    "offset": 72140,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54073",
    "en": "6th Continent",
    "ja": "第六大陸",
@@ -18273,6 +20990,17 @@
     "blob": 931,
     "offset": 72304,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54074",
+   "en": "Evil Lord Medal 77",
+   "ja": "マオウメダル７７",
+   "zh": "魔王勋章77",
+   "meta": {
+    "blob": 931,
+    "offset": 72432,
+    "cap": 16
    }
   },
   {
@@ -18287,6 +21015,17 @@
    }
   },
   {
+   "id": "row::54076",
+   "en": "Evil Lord Medal 78",
+   "ja": "マオウメダル７８",
+   "zh": "魔王勋章78",
+   "meta": {
+    "blob": 931,
+    "offset": 72724,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54077",
    "en": "6th Continent",
    "ja": "第六大陸",
@@ -18298,6 +21037,17 @@
    }
   },
   {
+   "id": "row::54078",
+   "en": "Evil Lord Medal 79",
+   "ja": "マオウメダル７９",
+   "zh": "魔王勋章79",
+   "meta": {
+    "blob": 931,
+    "offset": 73016,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::54079",
    "en": "7th Continent",
    "ja": "第七大陸",
@@ -18306,6 +21056,17 @@
     "blob": 931,
     "offset": 73180,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::54080",
+   "en": "Evil Lord Medal 80",
+   "ja": "マオウメダル８０",
+   "zh": "魔王勋章80",
+   "meta": {
+    "blob": 931,
+    "offset": 73308,
+    "cap": 16
    }
   },
   {

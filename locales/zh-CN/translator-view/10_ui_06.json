@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3005,
+ "_count": 3245,
  "entries": [
   {
    "id": "row::31614",
@@ -7452,6 +7452,17 @@
    }
   },
   {
+   "id": "row::32769",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 609,
+    "offset": 1548,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32771",
    "en": "Darquiz 100%",
    "ja": "ダークイズ100％",
@@ -7507,6 +7518,17 @@
    }
   },
   {
+   "id": "row::32781",
+   "en": "Darquiz 75%",
+   "ja": "ダークイズ75％",
+   "zh": "达奎兹75%",
+   "meta": {
+    "blob": 609,
+    "offset": 6956,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32782",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7525,6 +7547,50 @@
    "meta": {
     "blob": 609,
     "offset": 8172,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32786",
+   "en": "Darquiz 75%",
+   "ja": "ダークイズ75％",
+   "zh": "达奎兹75%",
+   "meta": {
+    "blob": 609,
+    "offset": 8396,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32787",
+   "en": "Darquiz 75%",
+   "ja": "ダークイズ75％",
+   "zh": "达奎兹75%",
+   "meta": {
+    "blob": 609,
+    "offset": 8684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32788",
+   "en": "Darquiz 75%",
+   "ja": "ダークイズ75％",
+   "zh": "达奎兹75%",
+   "meta": {
+    "blob": 609,
+    "offset": 8972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32789",
+   "en": "Darquiz 75%",
+   "ja": "ダークイズ75％",
+   "zh": "达奎兹75%",
+   "meta": {
+    "blob": 609,
+    "offset": 9260,
     "cap": 32
    }
   },
@@ -7573,6 +7639,17 @@
    }
   },
   {
+   "id": "row::32800",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 12716,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32801",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7595,6 +7672,50 @@
    }
   },
   {
+   "id": "row::32805",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 14156,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32806",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 14444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32807",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 14732,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32808",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 15020,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32809",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7613,6 +7734,50 @@
    "meta": {
     "blob": 609,
     "offset": 15948,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32813",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 16172,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32814",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 16460,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32815",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 16748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32816",
+   "en": "Darquiz 50%",
+   "ja": "ダークイズ50％",
+   "zh": "达奎兹50%",
+   "meta": {
+    "blob": 609,
+    "offset": 17036,
     "cap": 32
    }
   },
@@ -7661,6 +7826,17 @@
    }
   },
   {
+   "id": "row::32828",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 20492,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32829",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7679,6 +7855,50 @@
    "meta": {
     "blob": 609,
     "offset": 21708,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32833",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 21932,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32834",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 22220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32835",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 22508,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32836",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 22796,
     "cap": 32
    }
   },
@@ -7705,6 +7925,50 @@
    }
   },
   {
+   "id": "row::32841",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 23948,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32842",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 24236,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32843",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 24524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32844",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 24812,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32845",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7723,6 +7987,50 @@
    "meta": {
     "blob": 609,
     "offset": 25740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32849",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 25964,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32850",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 26252,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32851",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 26540,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32852",
+   "en": "Darquiz 25%",
+   "ja": "ダークイズ25％",
+   "zh": "达奎兹25%",
+   "meta": {
+    "blob": 609,
+    "offset": 26828,
     "cap": 32
    }
   },
@@ -7782,6 +8090,17 @@
    }
   },
   {
+   "id": "row::32865",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 30572,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32866",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7800,6 +8119,50 @@
    "meta": {
     "blob": 609,
     "offset": 31788,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32870",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 32012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32871",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 32300,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32872",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 32588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32873",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 32876,
     "cap": 32
    }
   },
@@ -7826,6 +8189,50 @@
    }
   },
   {
+   "id": "row::32878",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 34028,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32879",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 34316,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32880",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 34604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32881",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 34892,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32882",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7848,6 +8255,50 @@
    }
   },
   {
+   "id": "row::32886",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 36044,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32887",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 36332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32888",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 36620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32889",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 36908,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32890",
    "en": "Wise General Richter",
    "ja": "知将リヒター",
@@ -7866,6 +8317,50 @@
    "meta": {
     "blob": 609,
     "offset": 37836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32895",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 38060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32896",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 38348,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32897",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 38636,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32898",
+   "en": "Darquiz 1%",
+   "ja": "ダークイズ1％",
+   "zh": "达奎兹1%",
+   "meta": {
+    "blob": 609,
+    "offset": 38924,
     "cap": 32
    }
   },
@@ -7914,6 +8409,72 @@
    }
   },
   {
+   "id": "row::32909",
+   "en": "Category A",
+   "ja": "しょくしゅA",
+   "zh": "A类",
+   "meta": {
+    "blob": 609,
+    "offset": 42092,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32910",
+   "en": "Category B",
+   "ja": "しょくしゅB",
+   "zh": "B类",
+   "meta": {
+    "blob": 609,
+    "offset": 42380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32911",
+   "en": "Category C",
+   "ja": "しょくしゅC",
+   "zh": "C类",
+   "meta": {
+    "blob": 609,
+    "offset": 42668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32912",
+   "en": "Category A",
+   "ja": "しょくしゅA",
+   "zh": "A类",
+   "meta": {
+    "blob": 609,
+    "offset": 43532,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32913",
+   "en": "Category B",
+   "ja": "しょくしゅB",
+   "zh": "B类",
+   "meta": {
+    "blob": 609,
+    "offset": 43820,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32914",
+   "en": "Category C",
+   "ja": "しょくしゅC",
+   "zh": "C类",
+   "meta": {
+    "blob": 609,
+    "offset": 44108,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::32917",
    "en": "Grimoire 1",
    "ja": "グリモワール１",
@@ -7921,6 +8482,50 @@
    "meta": {
     "blob": 609,
     "offset": 47564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32920",
+   "en": "Gravidon",
+   "ja": "グラヴィドン",
+   "zh": "格拉维登",
+   "meta": {
+    "blob": 609,
+    "offset": 50220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32923",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 609,
+    "offset": 70380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32925",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 609,
+    "offset": 70668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::32928",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 609,
+    "offset": 70956,
     "cap": 32
    }
   },
@@ -16120,6 +16725,171 @@
    }
   },
   {
+   "id": "row::34534",
+   "en": "Magic Arrow",
+   "ja": "マジックアロー",
+   "zh": "魔法箭",
+   "meta": {
+    "blob": 654,
+    "offset": 332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34536",
+   "en": "Musical Note",
+   "ja": "おんぷ",
+   "zh": "音符",
+   "meta": {
+    "blob": 654,
+    "offset": 908,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34538",
+   "en": "Barrett",
+   "ja": "バレット",
+   "zh": "巴雷特",
+   "meta": {
+    "blob": 654,
+    "offset": 1484,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34540",
+   "en": "Arrow",
+   "ja": "矢",
+   "zh": "箭",
+   "meta": {
+    "blob": 654,
+    "offset": 2060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34542",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 654,
+    "offset": 3212,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34544",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 654,
+    "offset": 4076,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34546",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 654,
+    "offset": 4940,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34548",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 654,
+    "offset": 5804,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34550",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 654,
+    "offset": 6668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34552",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 654,
+    "offset": 7532,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34554",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 654,
+    "offset": 8396,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34556",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 654,
+    "offset": 9260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34558",
+   "en": "Guaderdon",
+   "ja": "ギャードルドン",
+   "zh": "加德尔顿",
+   "meta": {
+    "blob": 654,
+    "offset": 10124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34560",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 654,
+    "offset": 10988,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34563",
+   "en": "Sage",
+   "ja": "賢者",
+   "zh": "贤者",
+   "meta": {
+    "blob": 654,
+    "offset": 72908,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::34564",
    "en": "Ghost Knight",
    "ja": "おばけナイト",
@@ -16127,6 +16897,28 @@
    "meta": {
     "blob": 654,
     "offset": 74412,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34568",
+   "en": "Knight of the Past",
+   "ja": "むかしナイト",
+   "zh": "往日骑士",
+   "meta": {
+    "blob": 654,
+    "offset": 76364,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::34571",
+   "en": "Princess",
+   "ja": "オウジョ",
+   "zh": "公主",
+   "meta": {
+    "blob": 654,
+    "offset": 79532,
     "cap": 32
    }
   },
@@ -18287,6 +19079,17 @@
    }
   },
   {
+   "id": "row::35012",
+   "en": "Hero Slash",
+   "ja": "ヒーロースラッシュ",
+   "zh": "英雄斩",
+   "meta": {
+    "blob": 666,
+    "offset": 392,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35013",
    "en": "Medium damage to an enemy.",
    "ja": "敵単体に中ダメージ",
@@ -18295,6 +19098,28 @@
     "blob": 666,
     "offset": 424,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35014",
+   "en": "Hero Slash",
+   "ja": "ヒーロースラッシュ",
+   "zh": "英雄斩",
+   "meta": {
+    "blob": 666,
+    "offset": 684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35015",
+   "en": "Hero Cross",
+   "ja": "ヒーロークロス",
+   "zh": "英雄十字",
+   "meta": {
+    "blob": 666,
+    "offset": 768,
+    "cap": 16
    }
   },
   {
@@ -18309,6 +19134,28 @@
    }
   },
   {
+   "id": "row::35017",
+   "en": "Hero Cross",
+   "ja": "ヒーロークロス",
+   "zh": "英雄十字",
+   "meta": {
+    "blob": 666,
+    "offset": 1060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35018",
+   "en": "Prominence Rush",
+   "ja": "プロミネンスラッシュ",
+   "zh": "烈焰突进",
+   "meta": {
+    "blob": 666,
+    "offset": 1144,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35019",
    "en": "Large fire damage to an _enemy.",
    "ja": "敵単体に炎属性で大ダメージ",
@@ -18317,6 +19164,28 @@
     "blob": 666,
     "offset": 1176,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35020",
+   "en": "Prominence Rush",
+   "ja": "プロミネンスラッシュ",
+   "zh": "烈焰突进",
+   "meta": {
+    "blob": 666,
+    "offset": 1436,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35021",
+   "en": "Brave Slash",
+   "ja": "ブレイブスラッシュ",
+   "zh": "英勇斩",
+   "meta": {
+    "blob": 666,
+    "offset": 1520,
+    "cap": 16
    }
   },
   {
@@ -18331,6 +19200,28 @@
    }
   },
   {
+   "id": "row::35023",
+   "en": "Brave Slash",
+   "ja": "ブレイブスラッシュ",
+   "zh": "英勇斩",
+   "meta": {
+    "blob": 666,
+    "offset": 1812,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35024",
+   "en": "Full Break",
+   "ja": "フルブレイク",
+   "zh": "全破",
+   "meta": {
+    "blob": 666,
+    "offset": 1896,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35025",
    "en": "Damage to all enemies.",
    "ja": "敵全体にダメージ",
@@ -18339,6 +19230,28 @@
     "blob": 666,
     "offset": 1928,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35026",
+   "en": "Full Break",
+   "ja": "フルブレイク",
+   "zh": "全破",
+   "meta": {
+    "blob": 666,
+    "offset": 2188,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35027",
+   "en": "Rising Nova",
+   "ja": "ライジングノヴァ",
+   "zh": "升腾新星",
+   "meta": {
+    "blob": 666,
+    "offset": 2272,
+    "cap": 16
    }
   },
   {
@@ -18353,6 +19266,28 @@
    }
   },
   {
+   "id": "row::35029",
+   "en": "Rising Nova",
+   "ja": "ライジングノヴァ",
+   "zh": "升腾新星",
+   "meta": {
+    "blob": 666,
+    "offset": 2564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35030",
+   "en": "Space-Time Slash",
+   "ja": "時空間斬り",
+   "zh": "时空斩",
+   "meta": {
+    "blob": 666,
+    "offset": 2648,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35031",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -18361,6 +19296,28 @@
     "blob": 666,
     "offset": 2680,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35032",
+   "en": "Space-Time Slash",
+   "ja": "時空間斬り",
+   "zh": "时空斩",
+   "meta": {
+    "blob": 666,
+    "offset": 2940,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35033",
+   "en": "Slash of Bewitching Beauty",
+   "ja": "妖花滅斬剣",
+   "zh": "妖花灭斩剑",
+   "meta": {
+    "blob": 666,
+    "offset": 3024,
+    "cap": 16
    }
   },
   {
@@ -18375,6 +19332,28 @@
    }
   },
   {
+   "id": "row::35035",
+   "en": "Flower Blossom Decapitation Slash",
+   "ja": "妖花血斬剣",
+   "zh": "妖花血斩剑",
+   "meta": {
+    "blob": 666,
+    "offset": 3316,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35036",
+   "en": "Coin Toss Slash",
+   "ja": "ゼニナゲ斬り",
+   "zh": "撒钱斩",
+   "meta": {
+    "blob": 666,
+    "offset": 3400,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35037",
    "en": "Large darkness damage to all _enemies and decreased Gold.",
    "ja": "敵全体に闇特大ダメ＆G低下",
@@ -18383,6 +19362,28 @@
     "blob": 666,
     "offset": 3432,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35038",
+   "en": "Coin Toss Slash",
+   "ja": "ゼニナゲ斬り",
+   "zh": "撒钱斩",
+   "meta": {
+    "blob": 666,
+    "offset": 3692,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35039",
+   "en": "Coin Toss Slash Plus",
+   "ja": "ゼニナゲ斬り改",
+   "zh": "撒钱斩改",
+   "meta": {
+    "blob": 666,
+    "offset": 3776,
+    "cap": 16
    }
   },
   {
@@ -18397,6 +19398,28 @@
    }
   },
   {
+   "id": "row::35041",
+   "en": "Coin Toss Slash Plus",
+   "ja": "ゼニナゲ斬り改",
+   "zh": "撒钱斩改",
+   "meta": {
+    "blob": 666,
+    "offset": 4068,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35042",
+   "en": "Loan Break",
+   "ja": "ローンブレイク",
+   "zh": "借贷破除",
+   "meta": {
+    "blob": 666,
+    "offset": 4152,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35043",
    "en": "Damage to enemy equal to _your loan.",
    "ja": "ローンの分だけ敵にダメージ",
@@ -18405,6 +19428,28 @@
     "blob": 666,
     "offset": 4184,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35044",
+   "en": "Loan Break",
+   "ja": "ローンブレイク",
+   "zh": "借贷破除",
+   "meta": {
+    "blob": 666,
+    "offset": 4444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35045",
+   "en": "Brave Break",
+   "ja": "ブレイブブレイク",
+   "zh": "勇猛破",
+   "meta": {
+    "blob": 666,
+    "offset": 4528,
+    "cap": 16
    }
   },
   {
@@ -18419,6 +19464,28 @@
    }
   },
   {
+   "id": "row::35047",
+   "en": "Brave Break",
+   "ja": "ブレイブブレイク",
+   "zh": "勇猛破",
+   "meta": {
+    "blob": 666,
+    "offset": 4820,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35048",
+   "en": "Great Tree Slash",
+   "ja": "大木断",
+   "zh": "大木断",
+   "meta": {
+    "blob": 666,
+    "offset": 4904,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35049",
    "en": "Medium damage to an enemy.",
    "ja": "敵単体に中ダメージ",
@@ -18427,6 +19494,28 @@
     "blob": 666,
     "offset": 4936,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35050",
+   "en": "Big Bomb",
+   "ja": "たいぼくだん",
+   "zh": "大炸弹",
+   "meta": {
+    "blob": 666,
+    "offset": 5196,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35051",
+   "en": "Helmet Breaker",
+   "ja": "兜割り",
+   "zh": "破盔击",
+   "meta": {
+    "blob": 666,
+    "offset": 5280,
+    "cap": 16
    }
   },
   {
@@ -18441,6 +19530,28 @@
    }
   },
   {
+   "id": "row::35053",
+   "en": "Helmet Crush",
+   "ja": "かぶとわり",
+   "zh": "碎盔",
+   "meta": {
+    "blob": 666,
+    "offset": 5572,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35054",
+   "en": "Peerless Axe",
+   "ja": "アックス無双",
+   "zh": "无双斧",
+   "meta": {
+    "blob": 666,
+    "offset": 5656,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35055",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -18449,6 +19560,28 @@
     "blob": 666,
     "offset": 5688,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35056",
+   "en": "Peerless Axe",
+   "ja": "アックス無双",
+   "zh": "无双斧",
+   "meta": {
+    "blob": 666,
+    "offset": 5948,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35057",
+   "en": "Tomahawk",
+   "ja": "トマホーク",
+   "zh": "战斧",
+   "meta": {
+    "blob": 666,
+    "offset": 6032,
+    "cap": 16
    }
   },
   {
@@ -18463,6 +19596,28 @@
    }
   },
   {
+   "id": "row::35059",
+   "en": "Tomahawk",
+   "ja": "トマホーク",
+   "zh": "战斧",
+   "meta": {
+    "blob": 666,
+    "offset": 6324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35060",
+   "en": "Drain Axe",
+   "ja": "ドレインアックス",
+   "zh": "吸血斧",
+   "meta": {
+    "blob": 666,
+    "offset": 6408,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35061",
    "en": "Damage to an enemy and _HP recovery.",
    "ja": "敵単体にダメ＆HP回復",
@@ -18471,6 +19626,28 @@
     "blob": 666,
     "offset": 6440,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35062",
+   "en": "Drain Axe",
+   "ja": "ドレインアックス",
+   "zh": "吸血斧",
+   "meta": {
+    "blob": 666,
+    "offset": 6700,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35063",
+   "en": "Drain Axe +",
+   "ja": "ドレインアックス＋",
+   "zh": "吸血斧+",
+   "meta": {
+    "blob": 666,
+    "offset": 6784,
+    "cap": 16
    }
   },
   {
@@ -18485,6 +19662,28 @@
    }
   },
   {
+   "id": "row::35065",
+   "en": "Drain Axe +",
+   "ja": "ドレインアックス＋",
+   "zh": "吸血斧+",
+   "meta": {
+    "blob": 666,
+    "offset": 7076,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35066",
+   "en": "Wood Splitter Infinity",
+   "ja": "まき割りインフィニティ",
+   "zh": "无限劈柴斧",
+   "meta": {
+    "blob": 666,
+    "offset": 7160,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35067",
    "en": "Extremely large damage to an _enemy.",
    "ja": "敵単体に特大ダメージ",
@@ -18493,6 +19692,28 @@
     "blob": 666,
     "offset": 7192,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35068",
+   "en": "Wood Splitter Infinity",
+   "ja": "まき割りインフィニティ",
+   "zh": "无限劈柴斧",
+   "meta": {
+    "blob": 666,
+    "offset": 7452,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35069",
+   "en": "Ground Stomp",
+   "ja": "ドスタンプ",
+   "zh": "踏地",
+   "meta": {
+    "blob": 666,
+    "offset": 7536,
+    "cap": 16
    }
   },
   {
@@ -18507,6 +19728,28 @@
    }
   },
   {
+   "id": "row::35071",
+   "en": "Ground Stomp",
+   "ja": "ドスタンプ",
+   "zh": "踏地",
+   "meta": {
+    "blob": 666,
+    "offset": 7828,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35072",
+   "en": "Crush",
+   "ja": "クラッシュ",
+   "zh": "粉碎",
+   "meta": {
+    "blob": 666,
+    "offset": 7912,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35073",
    "en": "Medium damage to an enemy.",
    "ja": "敵単体に中ダメージ",
@@ -18515,6 +19758,28 @@
     "blob": 666,
     "offset": 7944,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35074",
+   "en": "Crush",
+   "ja": "クラッシュ",
+   "zh": "粉碎",
+   "meta": {
+    "blob": 666,
+    "offset": 8204,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35075",
+   "en": "Triple Press",
+   "ja": "トリプルプレス",
+   "zh": "三重压",
+   "meta": {
+    "blob": 666,
+    "offset": 8288,
+    "cap": 16
    }
   },
   {
@@ -18529,6 +19794,28 @@
    }
   },
   {
+   "id": "row::35077",
+   "en": "Pressure",
+   "ja": "プレッシャー",
+   "zh": "重压",
+   "meta": {
+    "blob": 666,
+    "offset": 8580,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35078",
+   "en": "Gold Plus Press",
+   "ja": "ゴールドプラスプレス",
+   "zh": "黄金重压",
+   "meta": {
+    "blob": 666,
+    "offset": 8664,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35079",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -18537,6 +19824,28 @@
     "blob": 666,
     "offset": 8696,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35080",
+   "en": "Gold Plus Press",
+   "ja": "ゴールドプラスプレス",
+   "zh": "黄金重压",
+   "meta": {
+    "blob": 666,
+    "offset": 8956,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35081",
+   "en": "Hero Impact",
+   "ja": "ヒーローインパクト",
+   "zh": "勇者冲击",
+   "meta": {
+    "blob": 666,
+    "offset": 9040,
+    "cap": 16
    }
   },
   {
@@ -18551,6 +19860,28 @@
    }
   },
   {
+   "id": "row::35083",
+   "en": "Hero Impact",
+   "ja": "ヒーローインパクト",
+   "zh": "勇者冲击",
+   "meta": {
+    "blob": 666,
+    "offset": 9332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35084",
+   "en": "Big Shot",
+   "ja": "ビッグショット",
+   "zh": "巨弹",
+   "meta": {
+    "blob": 666,
+    "offset": 9416,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35085",
    "en": "Small damage to all enemies.",
    "ja": "敵全体に小ダメージ",
@@ -18559,6 +19890,28 @@
     "blob": 666,
     "offset": 9448,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35086",
+   "en": "Big Shot",
+   "ja": "ビッグショット",
+   "zh": "巨弹",
+   "meta": {
+    "blob": 666,
+    "offset": 9708,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35087",
+   "en": "Big Shot Plus",
+   "ja": "ビッグショット改",
+   "zh": "巨弹改",
+   "meta": {
+    "blob": 666,
+    "offset": 9792,
+    "cap": 16
    }
   },
   {
@@ -18573,6 +19926,28 @@
    }
   },
   {
+   "id": "row::35089",
+   "en": "Big Shot Plus",
+   "ja": "ビッグショット改",
+   "zh": "巨弹改",
+   "meta": {
+    "blob": 666,
+    "offset": 10084,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35090",
+   "en": "Triple Shot",
+   "ja": "トリプルショット",
+   "zh": "三连射",
+   "meta": {
+    "blob": 666,
+    "offset": 10168,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35091",
    "en": "Small damage to all enemies _three times.",
    "ja": "敵全体に３回小ダメージ",
@@ -18581,6 +19956,28 @@
     "blob": 666,
     "offset": 10200,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35092",
+   "en": "Triple Shot",
+   "ja": "トリプルショット",
+   "zh": "三连射",
+   "meta": {
+    "blob": 666,
+    "offset": 10460,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35093",
+   "en": "Triple Shot Plus",
+   "ja": "トリプルショット改",
+   "zh": "三连射改",
+   "meta": {
+    "blob": 666,
+    "offset": 10544,
+    "cap": 16
    }
   },
   {
@@ -18595,6 +19992,28 @@
    }
   },
   {
+   "id": "row::35095",
+   "en": "Triple Shot Plus",
+   "ja": "トリプルショット改",
+   "zh": "三连射改",
+   "meta": {
+    "blob": 666,
+    "offset": 10836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35096",
+   "en": "Angel's Arrow",
+   "ja": "天使の矢",
+   "zh": "天使之箭",
+   "meta": {
+    "blob": 666,
+    "offset": 10920,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35097",
    "en": "Medium light damage to an _enemy.",
    "ja": "敵単体に光属性で中ダメージ",
@@ -18603,6 +20022,28 @@
     "blob": 666,
     "offset": 10952,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35098",
+   "en": "Angel's Arrow",
+   "ja": "天使の矢",
+   "zh": "天使之箭",
+   "meta": {
+    "blob": 666,
+    "offset": 11212,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35099",
+   "en": "Archangel's Arrow",
+   "ja": "大天使の矢",
+   "zh": "大天使之箭",
+   "meta": {
+    "blob": 666,
+    "offset": 11296,
+    "cap": 16
    }
   },
   {
@@ -18617,6 +20058,28 @@
    }
   },
   {
+   "id": "row::35101",
+   "en": "Archangel's Arrow",
+   "ja": "大天使の矢",
+   "zh": "大天使之箭",
+   "meta": {
+    "blob": 666,
+    "offset": 11588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35102",
+   "en": "Stunbeat",
+   "ja": "スタンビート",
+   "zh": "眩晕击",
+   "meta": {
+    "blob": 666,
+    "offset": 11672,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35103",
    "en": "Small damage to all enemies _five times.",
    "ja": "敵全体に５回小ダメージ",
@@ -18625,6 +20088,28 @@
     "blob": 666,
     "offset": 11704,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35104",
+   "en": "Stunbeat",
+   "ja": "スタンビート",
+   "zh": "眩晕击",
+   "meta": {
+    "blob": 666,
+    "offset": 11964,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35105",
+   "en": "Stunbeat Plus",
+   "ja": "スタンビート改",
+   "zh": "眩晕击改",
+   "meta": {
+    "blob": 666,
+    "offset": 12048,
+    "cap": 16
    }
   },
   {
@@ -18639,6 +20124,28 @@
    }
   },
   {
+   "id": "row::35107",
+   "en": "Stunbeat Plus",
+   "ja": "スタンビート改",
+   "zh": "眩晕击改",
+   "meta": {
+    "blob": 666,
+    "offset": 12340,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35108",
+   "en": "Hedgehog Burst",
+   "ja": "ヘッジホッグバースト",
+   "zh": "刺猬爆发",
+   "meta": {
+    "blob": 666,
+    "offset": 12424,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35109",
    "en": "Small damage to an enemy _eight times.",
    "ja": "敵単体に８回小ダメージ",
@@ -18647,6 +20154,28 @@
     "blob": 666,
     "offset": 12456,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35110",
+   "en": "Hedgehog Burst",
+   "ja": "ヘッジホッグバースト",
+   "zh": "刺猬爆发",
+   "meta": {
+    "blob": 666,
+    "offset": 12716,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35111",
+   "en": "Hedgehog Burst Plus",
+   "ja": "ヘッジホッグバースト改",
+   "zh": "刺猬爆发改。",
+   "meta": {
+    "blob": 666,
+    "offset": 12800,
+    "cap": 16
    }
   },
   {
@@ -18661,6 +20190,28 @@
    }
   },
   {
+   "id": "row::35113",
+   "en": "Hedgehog Burst Plus",
+   "ja": "ヘッジホッグバースト改",
+   "zh": "刺猬爆发改。",
+   "meta": {
+    "blob": 666,
+    "offset": 13092,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35114",
+   "en": "Healing Staff",
+   "ja": "いやしの杖",
+   "zh": "回复之杖",
+   "meta": {
+    "blob": 666,
+    "offset": 13176,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35115",
    "en": "Restores HP to all your allies.",
    "ja": "味方全体のHPを回復",
@@ -18669,6 +20220,28 @@
     "blob": 666,
     "offset": 13208,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35116",
+   "en": "Healing Stave",
+   "ja": "いやしのつえ",
+   "zh": "回复之杖",
+   "meta": {
+    "blob": 666,
+    "offset": 13468,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35117",
+   "en": "Crimson Flare",
+   "ja": "クリムゾンフレア",
+   "zh": "深红闪焰",
+   "meta": {
+    "blob": 666,
+    "offset": 13552,
+    "cap": 16
    }
   },
   {
@@ -18683,6 +20256,28 @@
    }
   },
   {
+   "id": "row::35119",
+   "en": "Crimson Flare",
+   "ja": "クリムゾンフレア",
+   "zh": "深红闪焰",
+   "meta": {
+    "blob": 666,
+    "offset": 13844,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35120",
+   "en": "Flare Inferno",
+   "ja": "フレアインフェルノ",
+   "zh": "烈焰炼狱",
+   "meta": {
+    "blob": 666,
+    "offset": 13928,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35121",
    "en": "Large fire damage to all _enemies.",
    "ja": "敵全体に炎属性で大ダメージ",
@@ -18691,6 +20286,28 @@
     "blob": 666,
     "offset": 13960,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35122",
+   "en": "Flare Inferno",
+   "ja": "フレアインフェルノ",
+   "zh": "烈焰炼狱",
+   "meta": {
+    "blob": 666,
+    "offset": 14220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35123",
+   "en": "Whisper of Gaia",
+   "ja": "ガイアのささやき",
+   "zh": "盖亚低语",
+   "meta": {
+    "blob": 666,
+    "offset": 14304,
+    "cap": 16
    }
   },
   {
@@ -18705,6 +20322,28 @@
    }
   },
   {
+   "id": "row::35125",
+   "en": "Whisper of Gaia",
+   "ja": "ガイアのささやき",
+   "zh": "盖亚低语",
+   "meta": {
+    "blob": 666,
+    "offset": 14596,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35126",
+   "en": "Minus 1,000 Degrees",
+   "ja": "マイナス１０００度",
+   "zh": "零下1000度",
+   "meta": {
+    "blob": 666,
+    "offset": 14680,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35127",
    "en": "Medium ice damage to an _enemy.",
    "ja": "敵単体に冷属性で中ダメージ",
@@ -18713,6 +20352,28 @@
     "blob": 666,
     "offset": 14712,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35128",
+   "en": "Minus 1,000 Degrees",
+   "ja": "マイナス１０００度",
+   "zh": "零下1000度",
+   "meta": {
+    "blob": 666,
+    "offset": 14972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35129",
+   "en": "Minus 10,000 Degrees",
+   "ja": "マイナス１００００度",
+   "zh": "零下10000度",
+   "meta": {
+    "blob": 666,
+    "offset": 15056,
+    "cap": 16
    }
   },
   {
@@ -18727,6 +20388,28 @@
    }
   },
   {
+   "id": "row::35131",
+   "en": "Minus 10,000 Degrees",
+   "ja": "マイナス１００００度",
+   "zh": "零下10000度",
+   "meta": {
+    "blob": 666,
+    "offset": 15348,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35132",
+   "en": "Turtle Ultimate",
+   "ja": "カメアルティメット",
+   "zh": "龟之终极",
+   "meta": {
+    "blob": 666,
+    "offset": 15432,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35133",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -18735,6 +20418,28 @@
     "blob": 666,
     "offset": 15464,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35134",
+   "en": "Turtle Ultimate",
+   "ja": "カメアルティメット",
+   "zh": "龟之终极",
+   "meta": {
+    "blob": 666,
+    "offset": 15724,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35135",
+   "en": "Dark Sphere",
+   "ja": "ダークスフィア",
+   "zh": "黑暗球体",
+   "meta": {
+    "blob": 666,
+    "offset": 15808,
+    "cap": 16
    }
   },
   {
@@ -18749,6 +20454,28 @@
    }
   },
   {
+   "id": "row::35137",
+   "en": "Dark Sphere",
+   "ja": "ダークスフィア",
+   "zh": "黑暗球体",
+   "meta": {
+    "blob": 666,
+    "offset": 16100,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35138",
+   "en": "Grand Shake",
+   "ja": "グランドシェイク",
+   "zh": "大地摇晃",
+   "meta": {
+    "blob": 666,
+    "offset": 16184,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35139",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -18757,6 +20484,28 @@
     "blob": 666,
     "offset": 16216,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35140",
+   "en": "Grand Shake",
+   "ja": "グランドシェイク",
+   "zh": "大地摇晃",
+   "meta": {
+    "blob": 666,
+    "offset": 16476,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35141",
+   "en": "Lightning Fear",
+   "ja": "ライトニングフィア",
+   "zh": "雷电恐惧",
+   "meta": {
+    "blob": 666,
+    "offset": 16560,
+    "cap": 16
    }
   },
   {
@@ -18771,6 +20520,28 @@
    }
   },
   {
+   "id": "row::35143",
+   "en": "Lightning Fear",
+   "ja": "ライトニングフィア",
+   "zh": "雷电恐惧",
+   "meta": {
+    "blob": 666,
+    "offset": 16852,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35144",
+   "en": "Giga Lightning",
+   "ja": "ギガ・ライトニング",
+   "zh": "吉加闪电",
+   "meta": {
+    "blob": 666,
+    "offset": 16936,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35145",
    "en": "Large lightning damage to all _enemies.",
    "ja": "敵全体に雷属性で大ダメージ",
@@ -18779,6 +20550,17 @@
     "blob": 666,
     "offset": 16968,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35146",
+   "en": "Giga Lightning",
+   "ja": "ギガ・ライトニング",
+   "zh": "吉加闪电",
+   "meta": {
+    "blob": 666,
+    "offset": 17228,
+    "cap": 32
    }
   },
   {
@@ -18804,6 +20586,17 @@
    }
   },
   {
+   "id": "row::35149",
+   "en": "Molecular Disintegration",
+   "ja": "分子分解",
+   "zh": "分子分解",
+   "meta": {
+    "blob": 666,
+    "offset": 18064,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35150",
    "en": "Medium damage to an enemy _five times.",
    "ja": "敵単体に５回中ダメージ",
@@ -18812,6 +20605,28 @@
     "blob": 666,
     "offset": 18096,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35151",
+   "en": "Molecular Disintegration",
+   "ja": "分子分解",
+   "zh": "分子分解",
+   "meta": {
+    "blob": 666,
+    "offset": 18356,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35152",
+   "en": "Pandora's Box",
+   "ja": "パンドラボックス",
+   "zh": "潘多拉盒",
+   "meta": {
+    "blob": 666,
+    "offset": 18440,
+    "cap": 16
    }
   },
   {
@@ -18826,6 +20641,28 @@
    }
   },
   {
+   "id": "row::35154",
+   "en": "Pandora's Box",
+   "ja": "パンドラボックス",
+   "zh": "潘多拉盒",
+   "meta": {
+    "blob": 666,
+    "offset": 18732,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35155",
+   "en": "Critical Striker",
+   "ja": "急所突き",
+   "zh": "要害突刺",
+   "meta": {
+    "blob": 666,
+    "offset": 18816,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35156",
    "en": "Medium to large damage to an _enemy.",
    "ja": "敵単体に中～大ダメージ",
@@ -18834,6 +20671,28 @@
     "blob": 666,
     "offset": 18848,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35157",
+   "en": "Oncoming Death",
+   "ja": "きゅうしょづき",
+   "zh": "迫近之死",
+   "meta": {
+    "blob": 666,
+    "offset": 19108,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35158",
+   "en": "Lightning Striker",
+   "ja": "雷突き",
+   "zh": "雷击",
+   "meta": {
+    "blob": 666,
+    "offset": 19192,
+    "cap": 16
    }
   },
   {
@@ -18848,6 +20707,28 @@
    }
   },
   {
+   "id": "row::35160",
+   "en": "Thunder Striker",
+   "ja": "かみなりづき",
+   "zh": "落雷击",
+   "meta": {
+    "blob": 666,
+    "offset": 19484,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35161",
+   "en": "Summer Rain Strike",
+   "ja": "五月雨突き",
+   "zh": "五月雨突刺",
+   "meta": {
+    "blob": 666,
+    "offset": 19568,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35162",
    "en": "Small damage to all enemies _four times.",
    "ja": "敵全体に４回小ダメージ",
@@ -18856,6 +20737,28 @@
     "blob": 666,
     "offset": 19600,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35163",
+   "en": "Summer Rain Striker",
+   "ja": "さみだれづき",
+   "zh": "五月雨突刺",
+   "meta": {
+    "blob": 666,
+    "offset": 19860,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35164",
+   "en": "Hero Javelin",
+   "ja": "ヒーロージャベリン",
+   "zh": "英雄标枪",
+   "meta": {
+    "blob": 666,
+    "offset": 19944,
+    "cap": 16
    }
   },
   {
@@ -18870,6 +20773,28 @@
    }
   },
   {
+   "id": "row::35166",
+   "en": "Hero Javelin",
+   "ja": "ヒーロージャベリン",
+   "zh": "英雄标枪",
+   "meta": {
+    "blob": 666,
+    "offset": 20236,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35167",
+   "en": "Terrorsclyde",
+   "ja": "テラスクライド",
+   "zh": "恐怖克莱德",
+   "meta": {
+    "blob": 666,
+    "offset": 20320,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35168",
    "en": "Extremely large damage to an _enemy.",
    "ja": "敵単体に特大ダメージ",
@@ -18878,6 +20803,28 @@
     "blob": 666,
     "offset": 20352,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35169",
+   "en": "Terrorsclyde",
+   "ja": "テラスクライド",
+   "zh": "恐怖克莱德",
+   "meta": {
+    "blob": 666,
+    "offset": 20612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35170",
+   "en": "War Crush",
+   "ja": "武破乱撃",
+   "zh": "武破乱击",
+   "meta": {
+    "blob": 666,
+    "offset": 20696,
+    "cap": 16
    }
   },
   {
@@ -18892,6 +20839,28 @@
    }
   },
   {
+   "id": "row::35172",
+   "en": "War Crush",
+   "ja": "武破乱撃",
+   "zh": "武破乱击",
+   "meta": {
+    "blob": 666,
+    "offset": 20988,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35173",
+   "en": "Beat Head",
+   "ja": "ビートヘッド",
+   "zh": "重击头部",
+   "meta": {
+    "blob": 666,
+    "offset": 21072,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35174",
    "en": "Medium damage to an enemy.",
    "ja": "敵単体に中ダメージ",
@@ -18900,6 +20869,28 @@
     "blob": 666,
     "offset": 21104,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35175",
+   "en": "Beat Head",
+   "ja": "ビートヘッド",
+   "zh": "重击头部",
+   "meta": {
+    "blob": 666,
+    "offset": 21364,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35176",
+   "en": "Divine War Dance",
+   "ja": "武神乱舞",
+   "zh": "武神乱舞",
+   "meta": {
+    "blob": 666,
+    "offset": 21448,
+    "cap": 16
    }
   },
   {
@@ -18914,6 +20905,28 @@
    }
   },
   {
+   "id": "row::35178",
+   "en": "Divine War Dance",
+   "ja": "武神乱舞",
+   "zh": "武神乱舞",
+   "meta": {
+    "blob": 666,
+    "offset": 21740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35179",
+   "en": "Breakable Dream",
+   "ja": "ブレイカブルドリーム",
+   "zh": "易碎之梦",
+   "meta": {
+    "blob": 666,
+    "offset": 21824,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35180",
    "en": "Large damage to all enemies.",
    "ja": "敵全体に大ダメージ",
@@ -18922,6 +20935,28 @@
     "blob": 666,
     "offset": 21856,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35181",
+   "en": "Breakable Dream",
+   "ja": "ブレイカブルドリーム",
+   "zh": "易碎之梦",
+   "meta": {
+    "blob": 666,
+    "offset": 22116,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35182",
+   "en": "Box Rush",
+   "ja": "ボクスラッシュ",
+   "zh": "拳击突进",
+   "meta": {
+    "blob": 666,
+    "offset": 22200,
+    "cap": 16
    }
   },
   {
@@ -18936,6 +20971,28 @@
    }
   },
   {
+   "id": "row::35184",
+   "en": "Box Rush",
+   "ja": "ボクスラッシュ",
+   "zh": "拳击突进",
+   "meta": {
+    "blob": 666,
+    "offset": 22492,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35185",
+   "en": "Wingfall",
+   "ja": "ウィングフォール",
+   "zh": "坠翼",
+   "meta": {
+    "blob": 666,
+    "offset": 22576,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35186",
    "en": "Damage to all enemies.",
    "ja": "敵全体にダメージ",
@@ -18944,6 +21001,28 @@
     "blob": 666,
     "offset": 22608,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35187",
+   "en": "Wingfall",
+   "ja": "ウィングフォール",
+   "zh": "坠翼",
+   "meta": {
+    "blob": 666,
+    "offset": 22868,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35188",
+   "en": "Force Rush",
+   "ja": "フォースラッシュ",
+   "zh": "力之突进",
+   "meta": {
+    "blob": 666,
+    "offset": 22952,
+    "cap": 16
    }
   },
   {
@@ -18958,6 +21037,28 @@
    }
   },
   {
+   "id": "row::35190",
+   "en": "Force Rush",
+   "ja": "フォースラッシュ",
+   "zh": "力之突进",
+   "meta": {
+    "blob": 666,
+    "offset": 23244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35191",
+   "en": "Braver",
+   "ja": "ブレイバー",
+   "zh": "勇者击",
+   "meta": {
+    "blob": 666,
+    "offset": 23328,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35192",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -18966,6 +21067,28 @@
     "blob": 666,
     "offset": 23360,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35193",
+   "en": "Braver",
+   "ja": "ブレイバー",
+   "zh": "勇者击",
+   "meta": {
+    "blob": 666,
+    "offset": 23620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35194",
+   "en": "High Slash",
+   "ja": "ハイスラッシュ",
+   "zh": "高斩",
+   "meta": {
+    "blob": 666,
+    "offset": 23704,
+    "cap": 16
    }
   },
   {
@@ -18980,6 +21103,28 @@
    }
   },
   {
+   "id": "row::35196",
+   "en": "High Slash",
+   "ja": "ハイスラッシュ",
+   "zh": "高斩",
+   "meta": {
+    "blob": 666,
+    "offset": 23996,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35197",
+   "en": "Death Slash",
+   "ja": "デススラッシュ",
+   "zh": "死之斩",
+   "meta": {
+    "blob": 666,
+    "offset": 24080,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35198",
    "en": "Damage to all enemies _two times.",
    "ja": "敵全体に２回ダメージ",
@@ -18988,6 +21133,28 @@
     "blob": 666,
     "offset": 24112,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35199",
+   "en": "Death Slash",
+   "ja": "デススラッシュ",
+   "zh": "死之斩",
+   "meta": {
+    "blob": 666,
+    "offset": 24372,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35200",
+   "en": "Iai",
+   "ja": "イ・ア・イ",
+   "zh": "居合",
+   "meta": {
+    "blob": 666,
+    "offset": 24456,
+    "cap": 16
    }
   },
   {
@@ -19002,6 +21169,28 @@
    }
   },
   {
+   "id": "row::35202",
+   "en": "Iai",
+   "ja": "イ・ア・イ",
+   "zh": "居合",
+   "meta": {
+    "blob": 666,
+    "offset": 24748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35203",
+   "en": "Relight",
+   "ja": "リライト",
+   "zh": "复起",
+   "meta": {
+    "blob": 666,
+    "offset": 24832,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35204",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -19010,6 +21199,28 @@
     "blob": 666,
     "offset": 24864,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35205",
+   "en": "Relight",
+   "ja": "リライト",
+   "zh": "复起",
+   "meta": {
+    "blob": 666,
+    "offset": 25124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35206",
+   "en": "Scar",
+   "ja": "スカー",
+   "zh": "伤痕",
+   "meta": {
+    "blob": 666,
+    "offset": 25208,
+    "cap": 16
    }
   },
   {
@@ -19024,6 +21235,28 @@
    }
   },
   {
+   "id": "row::35208",
+   "en": "Scar",
+   "ja": "スカー",
+   "zh": "伤痕",
+   "meta": {
+    "blob": 666,
+    "offset": 25500,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35209",
+   "en": "Red Scar",
+   "ja": "レッドスカー",
+   "zh": "赤红伤痕",
+   "meta": {
+    "blob": 666,
+    "offset": 25584,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35210",
    "en": "Large damage to an enemy _and HP recovery.",
    "ja": "敵単体に大ダメ＆HP回復",
@@ -19032,6 +21265,28 @@
     "blob": 666,
     "offset": 25616,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35211",
+   "en": "Red Scar",
+   "ja": "レッドスカー",
+   "zh": "赤红伤痕",
+   "meta": {
+    "blob": 666,
+    "offset": 25876,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35212",
+   "en": "Gold♪",
+   "ja": "ゴールド♪",
+   "zh": "黄金♪",
+   "meta": {
+    "blob": 666,
+    "offset": 25960,
+    "cap": 16
    }
   },
   {
@@ -19046,6 +21301,28 @@
    }
   },
   {
+   "id": "row::35214",
+   "en": "Gold♪",
+   "ja": "ゴールド♪",
+   "zh": "黄金♪",
+   "meta": {
+    "blob": 666,
+    "offset": 26252,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35215",
+   "en": "Thunder Shock",
+   "ja": "サンダーショック",
+   "zh": "雷电冲击",
+   "meta": {
+    "blob": 666,
+    "offset": 26336,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35216",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -19054,6 +21331,28 @@
     "blob": 666,
     "offset": 26368,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35217",
+   "en": "Thunder Shock",
+   "ja": "サンダーショック",
+   "zh": "雷电冲击",
+   "meta": {
+    "blob": 666,
+    "offset": 26628,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35218",
+   "en": "Vect Shot",
+   "ja": "ベクトショット",
+   "zh": "矢量弹",
+   "meta": {
+    "blob": 666,
+    "offset": 26712,
+    "cap": 16
    }
   },
   {
@@ -19068,6 +21367,28 @@
    }
   },
   {
+   "id": "row::35220",
+   "en": "Vect Shot",
+   "ja": "ベクトショット",
+   "zh": "矢量弹",
+   "meta": {
+    "blob": 666,
+    "offset": 27004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35221",
+   "en": "Unity Shot",
+   "ja": "イナティショット",
+   "zh": "合力弹",
+   "meta": {
+    "blob": 666,
+    "offset": 27088,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35222",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -19076,6 +21397,28 @@
     "blob": 666,
     "offset": 27120,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35223",
+   "en": "Unity Shot",
+   "ja": "イナティショット",
+   "zh": "合力弹",
+   "meta": {
+    "blob": 666,
+    "offset": 27380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35224",
+   "en": "Eternity Shot",
+   "ja": "エタニティショット",
+   "zh": "永恒弹",
+   "meta": {
+    "blob": 666,
+    "offset": 27464,
+    "cap": 16
    }
   },
   {
@@ -19090,6 +21433,28 @@
    }
   },
   {
+   "id": "row::35226",
+   "en": "Eternity Shot",
+   "ja": "エタニティショット",
+   "zh": "永恒弹",
+   "meta": {
+    "blob": 666,
+    "offset": 27756,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35227",
+   "en": "Turtle Power",
+   "ja": "カメパワー",
+   "zh": "龟之力量",
+   "meta": {
+    "blob": 666,
+    "offset": 27840,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35228",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -19098,6 +21463,28 @@
     "blob": 666,
     "offset": 27872,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35229",
+   "en": "Turtle Power",
+   "ja": "カメパワー",
+   "zh": "龟之力量",
+   "meta": {
+    "blob": 666,
+    "offset": 28132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35230",
+   "en": "Starfall",
+   "ja": "スターフォール",
+   "zh": "流星坠",
+   "meta": {
+    "blob": 666,
+    "offset": 28216,
+    "cap": 16
    }
   },
   {
@@ -19112,6 +21499,28 @@
    }
   },
   {
+   "id": "row::35232",
+   "en": "Starfall",
+   "ja": "スターフォール",
+   "zh": "流星坠",
+   "meta": {
+    "blob": 666,
+    "offset": 28508,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35233",
+   "en": "Love Burst",
+   "ja": "ラブバースト",
+   "zh": "爱意爆发",
+   "meta": {
+    "blob": 666,
+    "offset": 28592,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35234",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -19120,6 +21529,28 @@
     "blob": 666,
     "offset": 28624,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35235",
+   "en": "Love Burst",
+   "ja": "ラブバースト",
+   "zh": "爱意爆发",
+   "meta": {
+    "blob": 666,
+    "offset": 28884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35236",
+   "en": "Summon",
+   "ja": "召喚",
+   "zh": "召唤",
+   "meta": {
+    "blob": 666,
+    "offset": 28968,
+    "cap": 16
    }
   },
   {
@@ -19134,6 +21565,28 @@
    }
   },
   {
+   "id": "row::35238",
+   "en": "Summon",
+   "ja": "召喚",
+   "zh": "召唤",
+   "meta": {
+    "blob": 666,
+    "offset": 29260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35239",
+   "en": "Sky Dig",
+   "ja": "スカイディグ",
+   "zh": "天掘",
+   "meta": {
+    "blob": 666,
+    "offset": 29344,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35240",
    "en": "Medium damage to an enemy.",
    "ja": "敵単体に中ダメージ",
@@ -19142,6 +21595,28 @@
     "blob": 666,
     "offset": 29376,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35241",
+   "en": "Sky Dig",
+   "ja": "スカイディグ",
+   "zh": "天掘",
+   "meta": {
+    "blob": 666,
+    "offset": 29636,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35242",
+   "en": "Dragon Spear　",
+   "ja": "ドラゴンスピアー",
+   "zh": "龙之枪",
+   "meta": {
+    "blob": 666,
+    "offset": 29720,
+    "cap": 16
    }
   },
   {
@@ -19156,6 +21631,28 @@
    }
   },
   {
+   "id": "row::35244",
+   "en": "Dragon Spear　",
+   "ja": "ドラゴンスピアー",
+   "zh": "龙之枪",
+   "meta": {
+    "blob": 666,
+    "offset": 30012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35245",
+   "en": "Vixerbelly",
+   "ja": "ヴィックジャベリー",
+   "zh": "维克斯腹击",
+   "meta": {
+    "blob": 666,
+    "offset": 30096,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35246",
    "en": "Medium damage to all enemies.",
    "ja": "敵全体に中ダメージ",
@@ -19164,6 +21661,28 @@
     "blob": 666,
     "offset": 30128,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35247",
+   "en": "Vixerbelly",
+   "ja": "ヴィックジャベリー",
+   "zh": "维克斯腹击",
+   "meta": {
+    "blob": 666,
+    "offset": 30388,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35248",
+   "en": "Martial Charge",
+   "ja": "武破段撃",
+   "zh": "武破段击",
+   "meta": {
+    "blob": 666,
+    "offset": 30472,
+    "cap": 16
    }
   },
   {
@@ -19178,6 +21697,28 @@
    }
   },
   {
+   "id": "row::35250",
+   "en": "Martial Charge",
+   "ja": "武破段撃",
+   "zh": "武破段击",
+   "meta": {
+    "blob": 666,
+    "offset": 30764,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35251",
+   "en": "Knightmare Blast",
+   "ja": "武破夢壊",
+   "zh": "武破梦碎",
+   "meta": {
+    "blob": 666,
+    "offset": 30848,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35252",
    "en": "Large damage to an enemy.",
    "ja": "敵単体に大ダメージ",
@@ -19186,6 +21727,28 @@
     "blob": 666,
     "offset": 30880,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35253",
+   "en": "Knightmare Blast",
+   "ja": "武破夢壊",
+   "zh": "武破梦碎",
+   "meta": {
+    "blob": 666,
+    "offset": 31140,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35254",
+   "en": "Hero Twin Buster",
+   "ja": "勇者ツインバスター",
+   "zh": "英雄双爆",
+   "meta": {
+    "blob": 666,
+    "offset": 31224,
+    "cap": 16
    }
   },
   {
@@ -19200,6 +21763,28 @@
    }
   },
   {
+   "id": "row::35256",
+   "en": "Hero Twin Buster",
+   "ja": "勇者ツインバスター",
+   "zh": "英雄双爆",
+   "meta": {
+    "blob": 666,
+    "offset": 31516,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35257",
+   "en": "Hero Triple Buster",
+   "ja": "勇者トリプルバスター",
+   "zh": "英雄三爆",
+   "meta": {
+    "blob": 666,
+    "offset": 31600,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35258",
    "en": "Large damage to all enemies.",
    "ja": "敵全体に大ダメージ",
@@ -19208,6 +21793,28 @@
     "blob": 666,
     "offset": 31632,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35259",
+   "en": "Hero Triple Buster",
+   "ja": "勇者トリプルバスター",
+   "zh": "英雄三爆",
+   "meta": {
+    "blob": 666,
+    "offset": 31892,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35260",
+   "en": "Hero Final Buster",
+   "ja": "勇者ファイナルバスター",
+   "zh": "英雄终爆",
+   "meta": {
+    "blob": 666,
+    "offset": 31976,
+    "cap": 16
    }
   },
   {
@@ -19222,6 +21829,28 @@
    }
   },
   {
+   "id": "row::35262",
+   "en": "Hero Final Buster",
+   "ja": "勇者ファイナルバスター",
+   "zh": "英雄终爆",
+   "meta": {
+    "blob": 666,
+    "offset": 32268,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::35263",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 666,
+    "offset": 32352,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::35264",
    "en": "Damage to all enemies.",
    "ja": "敵全体にダメージ",
@@ -19230,6 +21859,17 @@
     "blob": 666,
     "offset": 32384,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::35265",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 666,
+    "offset": 32644,
+    "cap": 32
    }
   },
   {

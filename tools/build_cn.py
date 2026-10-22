@@ -283,6 +283,25 @@ _EXTRA_ROWS = None
 # Z14 用：明确允许翻译的称号名槽 {(blob, offset)}，用于绕过 chap_title_guard 的整表保护。
 # 只放行 b931 pos0 的称号名本体；pos36（章节标题副本）与 Q16 rec_rules 仍受保护。
 _TITLE_RELEASE = None
+# Z11–Z14 的“代码内额外译表行”的人工校对覆盖：{"<blob>:<offset>": "中文"}。
+# 导出到 translator-view/50_extra.json，导入时写回本文件；构建时优先使用这里的译文。
+EXTRA_REVIEW_FILE = os.path.join(WORK, 'extra_review.json')
+
+
+def _apply_extra_overrides(rows):
+    if not os.path.exists(EXTRA_REVIEW_FILE):
+        return rows
+    try:
+        import json as _json
+        m = _json.load(open(EXTRA_REVIEW_FILE, encoding='utf-8'))
+    except Exception:
+        return rows
+    for r in rows:
+        k = '%s:%s' % (r.get('blob_index'), r.get('offset'))
+        z = (m.get(k) or '').strip()
+        if z:
+            r['zh_new'] = z
+    return rows
 EQUIP_BLOBS = (147, 357, 736, 998)
 EQUIP_STRIDE = 268
 
@@ -3884,7 +3903,7 @@ def _z11_partner_rows():
             add(954, base + off, sb, en_b, ja_b, zh)
     if missing:
         print('  [Z11] 无译名跳过 %d：%r' % (len(missing), missing[:10]))
-    return out
+    return _apply_extra_overrides(out)
 
 
 def _z11_release_factory(mech_ja, partner_ja):
@@ -4195,7 +4214,7 @@ Z13_TRANSLATIONS = {
     'Satellite Laser': '卫星激光',
     'Beast Fang': '野兽獠牙',
     'Nanako Love Punch': '奈奈子爱心拳',
-    'Oh-ho-ho-ho!': '哦——呵呵呵！',
+    'Oh-ho-ho-ho!': '哦呵呵呵！',
     'Immovable Sword': '不动剑',
     'Natural Born Devil': '天生恶魔',
     'Destruction Blow': '破坏重击',
@@ -4317,7 +4336,7 @@ def _z13_rows():
             continue
         je = J[bi].find(b'\x00', f)
         add(bi, f, ob[f:e], J[bi][f:je], zh)
-    return out
+    return _apply_extra_overrides(out)
 
 
 def _z13_release_factory(mech_ja, partner_ja):
@@ -4496,7 +4515,7 @@ def _z14_rows():
                     jf = f
                     je = J[bi].find(b'\x00', jf)
                     add(bi, f, eb, J[bi][jf:je], zh)
-    return out
+    return _apply_extra_overrides(out)
 
 
 def _z14_release_factory(mech_ja, partner_ja, name_ja):
@@ -4575,6 +4594,57 @@ def force_title_key_copies(orig_blobs, en_path, title_ok, verbose=True):
     return n
 
 
+# 主角默认可编辑名字：b391 rec2/3/4 pos40（Yusha/Yushia/Yuja）与 b715 的示例名。
+# 这些是存档名字的默认值；为保证旧存档在补丁更新后仍按原版 EN/JA 解码，强制保留原文。
+PROTAGONIST_DEFAULT_SLOTS = (
+    (391, 16 + 2 * 168 + 40),
+    (391, 16 + 3 * 168 + 40),
+    (391, 16 + 4 * 168 + 40),
+    (715, 18272),
+)
+
+
+def restore_protagonist_defaults(orig_blobs, en_path, verbose=True):
+    """把主角默认名槽位写回该文件自己的原版字节（不参与翻译/副本补齐）。"""
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    n = skip = 0
+    for bi, off in PROTAGONIST_DEFAULT_SLOTS:
+        ob = bytes(orig_blobs[bi])
+        oe = ob.find(b'\x00', off)
+        if oe < 0:
+            skip += 1
+            continue
+        own = ob[off:oe]
+        if not own:
+            skip += 1
+            continue
+        pb = prod[bi]
+        ce = pb.find(b'\x00', off)
+        if ce < 0:
+            skip += 1
+            continue
+        nx = ce
+        while nx < len(pb) and pb[nx] == 0:
+            nx += 1
+        if off + len(own) + 1 > nx:
+            skip += 1
+            continue
+        pb[off:off + len(own)] = own
+        pb[off + len(own)] = 0
+        for i in range(off + len(own) + 1, max(ce, off + len(own) + 1)):
+            pb[i] = 0
+        n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [主角默认名] 还原原文 %d 处%s'
+              % (n, '（跳过 %d）' % skip if skip else ''))
+    return n
+
+
 def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
     """Z14：Z13 + 职业名/阵型名/称号名 + 新敌技名（同语言全副本一致）。"""
     global _EXTRA_RELEASE, _EXTRA_ROWS, _TITLE_RELEASE
@@ -4647,6 +4717,8 @@ def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
     fill_name_copies(orig_blobs, en_path, en_names, skip_blobs=(317,), title_ok=title_rel)
     print('== 称号条件副本统一（stride292 pos32）==')
     force_title_key_copies(orig_blobs, en_path, title_rel)
+    print('== 主角默认名还原（Yusha/Yushia/Yuja 保持原版）==')
+    restore_protagonist_defaults(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
     if not verify_e1_isolation(expect_skill_key=False):

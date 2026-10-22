@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3197,
+ "_count": 3344,
  "entries": [
   {
    "id": "row::24640",
@@ -4592,6 +4592,105 @@
    }
   },
   {
+   "id": "row::25591",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25593",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25595",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 3276,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25597",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 5580,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25599",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 7884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25601",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 445,
+    "offset": 9324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25607",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 445,
+    "offset": 10188,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25613",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 445,
+    "offset": 11052,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25616",
+   "en": "Pricey Pot",
+   "ja": "高いツボ",
+   "zh": "高价壶",
+   "meta": {
+    "blob": 445,
+    "offset": 13292,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::25617",
    "en": "Can't throw from the castle.",
    "ja": "城からはなげられない",
@@ -4600,6 +4699,17 @@
     "blob": 445,
     "offset": 13580,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::25618",
+   "en": "Cheap Pot",
+   "ja": "安いツボ",
+   "zh": "划算壶",
+   "meta": {
+    "blob": 445,
+    "offset": 15596,
+    "cap": 128
    }
   },
   {
@@ -4614,6 +4724,17 @@
    }
   },
   {
+   "id": "row::25620",
+   "en": "Plain Pot",
+   "ja": "普通ツボ",
+   "zh": "朴实壶",
+   "meta": {
+    "blob": 445,
+    "offset": 18188,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::25621",
    "en": "Can't throw from the castle.",
    "ja": "城からはなげられない",
@@ -4625,6 +4746,28 @@
    }
   },
   {
+   "id": "row::25622",
+   "en": "Broken Pot 1",
+   "ja": "われたツボ１",
+   "zh": "破壶1",
+   "meta": {
+    "blob": 445,
+    "offset": 19628,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::25623",
+   "en": "Broken Pot 2",
+   "ja": "われたツボ２",
+   "zh": "破壶2",
+   "meta": {
+    "blob": 445,
+    "offset": 20492,
+    "cap": 128
+   }
+  },
+  {
    "id": "row::25624",
    "en": "v`＋",
    "ja": "v`＋",
@@ -4633,6 +4776,127 @@
     "blob": 445,
     "offset": 31700,
     "cap": 2
+   }
+  },
+  {
+   "id": "row::25625",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 49644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25627",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 49932,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25630",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 50220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25633",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 50508,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25635",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 50796,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25638",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 54828,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25640",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 55116,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25642",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 55404,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25644",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 445,
+    "offset": 55692,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25646",
+   "en": "Cozain",
+   "ja": "コザイン",
+   "zh": "科赞",
+   "meta": {
+    "blob": 445,
+    "offset": 59724,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25648",
+   "en": "Cozain",
+   "ja": "コザイン",
+   "zh": "科赞",
+   "meta": {
+    "blob": 445,
+    "offset": 60012,
+    "cap": 32
    }
   },
   {
@@ -4676,6 +4940,193 @@
    "meta": {
     "blob": 445,
     "offset": 63756,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25658",
+   "en": "True Asura Nadeshiko",
+   "ja": "真・阿修羅撫子",
+   "zh": "真·阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 65484,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25660",
+   "en": "True Asura Nadeshiko",
+   "ja": "真・阿修羅撫子",
+   "zh": "真·阿修罗抚子",
+   "meta": {
+    "blob": 445,
+    "offset": 65772,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25662",
+   "en": "True Asura Nadeshiko+",
+   "ja": "真・阿修羅撫子改",
+   "zh": "真·阿修罗抚子+",
+   "meta": {
+    "blob": 445,
+    "offset": 67500,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25664",
+   "en": "True Asura Nadeshiko+",
+   "ja": "真・阿修羅撫子改",
+   "zh": "真·阿修罗抚子+",
+   "meta": {
+    "blob": 445,
+    "offset": 67788,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25666",
+   "en": "Punisher Hell",
+   "ja": "パニッシャーヘル",
+   "zh": "惩罚者地狱",
+   "meta": {
+    "blob": 445,
+    "offset": 69516,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25668",
+   "en": "Punisher Hell",
+   "ja": "パニッシャーヘル",
+   "zh": "惩罚者地狱",
+   "meta": {
+    "blob": 445,
+    "offset": 69804,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25670",
+   "en": "Zant Hell",
+   "ja": "ザントヘル",
+   "zh": "赞特地狱",
+   "meta": {
+    "blob": 445,
+    "offset": 71532,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25672",
+   "en": "Zant Hell",
+   "ja": "ザントヘル",
+   "zh": "赞特地狱",
+   "meta": {
+    "blob": 445,
+    "offset": 71820,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25674",
+   "en": "True Cozain",
+   "ja": "真・コザイン",
+   "zh": "真·科赞",
+   "meta": {
+    "blob": 445,
+    "offset": 73548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25676",
+   "en": "True Cozain",
+   "ja": "真・コザイン",
+   "zh": "真·科赞",
+   "meta": {
+    "blob": 445,
+    "offset": 73836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25678",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 75564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25680",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 75852,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25683",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 76140,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25685",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 76428,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25687",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 77868,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25689",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 78156,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::25691",
+   "en": "Mr. Cozain",
+   "ja": "コザインさん",
+   "zh": "科赞先生",
+   "meta": {
+    "blob": 445,
+    "offset": 78444,
     "cap": 32
    }
   },
@@ -13752,6 +14203,644 @@
     "blob": 482,
     "offset": 5788,
     "cap": 80
+   }
+  },
+  {
+   "id": "row::27226",
+   "en": "Faceless Stone",
+   "ja": "フェイスレスストーン",
+   "zh": "无面石",
+   "meta": {
+    "blob": 483,
+    "offset": 684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27228",
+   "en": "Faceless Silver",
+   "ja": "フェイスレスシルバー",
+   "zh": "无面银",
+   "meta": {
+    "blob": 483,
+    "offset": 2124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27230",
+   "en": "Faceless Quartz",
+   "ja": "フェイスレスクォーツ",
+   "zh": "无面水晶",
+   "meta": {
+    "blob": 483,
+    "offset": 3564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27233",
+   "en": "Faceless Gold",
+   "ja": "フェイスレスゴールド",
+   "zh": "无面金",
+   "meta": {
+    "blob": 483,
+    "offset": 5004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27236",
+   "en": "Faceless Dark",
+   "ja": "フェイスレスダーク",
+   "zh": "无面暗",
+   "meta": {
+    "blob": 483,
+    "offset": 6444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27238",
+   "en": "Faceless Shadow",
+   "ja": "フェイスレスシャドウ",
+   "zh": "无面影",
+   "meta": {
+    "blob": 483,
+    "offset": 7884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27241",
+   "en": "Faceless Devil",
+   "ja": "フェイスレスデビル",
+   "zh": "无面恶魔",
+   "meta": {
+    "blob": 483,
+    "offset": 9324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27243",
+   "en": "Faceless Daemon",
+   "ja": "フェイスレスデーモン",
+   "zh": "无面魔",
+   "meta": {
+    "blob": 483,
+    "offset": 10764,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27245",
+   "en": "Faceless Stone",
+   "ja": "フェイスレスストーン",
+   "zh": "无面石",
+   "meta": {
+    "blob": 483,
+    "offset": 12204,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27247",
+   "en": "Faceless Silver",
+   "ja": "フェイスレスシルバー",
+   "zh": "无面银",
+   "meta": {
+    "blob": 483,
+    "offset": 13644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27249",
+   "en": "Faceless Quartz",
+   "ja": "フェイスレスクォーツ",
+   "zh": "无面水晶",
+   "meta": {
+    "blob": 483,
+    "offset": 15084,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27251",
+   "en": "Faceless Gold",
+   "ja": "フェイスレスゴールド",
+   "zh": "无面金",
+   "meta": {
+    "blob": 483,
+    "offset": 16524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27254",
+   "en": "Faceless Dark",
+   "ja": "フェイスレスダーク",
+   "zh": "无面暗",
+   "meta": {
+    "blob": 483,
+    "offset": 17964,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27256",
+   "en": "Faceless Shadow",
+   "ja": "フェイスレスシャドウ",
+   "zh": "无面影",
+   "meta": {
+    "blob": 483,
+    "offset": 19404,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27258",
+   "en": "Faceless Devil",
+   "ja": "フェイスレスデビル",
+   "zh": "无面恶魔",
+   "meta": {
+    "blob": 483,
+    "offset": 20844,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27260",
+   "en": "Faceless Daemon",
+   "ja": "フェイスレスデーモン",
+   "zh": "无面魔",
+   "meta": {
+    "blob": 483,
+    "offset": 22284,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27262",
+   "en": "Faceless Stone",
+   "ja": "フェイスレスストーン",
+   "zh": "无面石",
+   "meta": {
+    "blob": 483,
+    "offset": 30060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27264",
+   "en": "Faceless Silver",
+   "ja": "フェイスレスシルバー",
+   "zh": "无面银",
+   "meta": {
+    "blob": 483,
+    "offset": 33804,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27266",
+   "en": "Faceless Quartz",
+   "ja": "フェイスレスクォーツ",
+   "zh": "无面水晶",
+   "meta": {
+    "blob": 483,
+    "offset": 37548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27268",
+   "en": "Faceless Gold",
+   "ja": "フェイスレスゴールド",
+   "zh": "无面金",
+   "meta": {
+    "blob": 483,
+    "offset": 41292,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27270",
+   "en": "Faceless Dark",
+   "ja": "フェイスレスダーク",
+   "zh": "无面暗",
+   "meta": {
+    "blob": 483,
+    "offset": 45036,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27272",
+   "en": "Faceless Shadow",
+   "ja": "フェイスレスシャドウ",
+   "zh": "无面影",
+   "meta": {
+    "blob": 483,
+    "offset": 48780,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27274",
+   "en": "Faceless Devil",
+   "ja": "フェイスレスデビル",
+   "zh": "无面恶魔",
+   "meta": {
+    "blob": 483,
+    "offset": 52524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27276",
+   "en": "Faceless Daemon",
+   "ja": "フェイスレスデーモン",
+   "zh": "无面魔",
+   "meta": {
+    "blob": 483,
+    "offset": 56268,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27278",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 60012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27280",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 60300,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27283",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 60588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27285",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 62028,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27287",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 62316,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27290",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 62604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27292",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 64044,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27294",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 64332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27297",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 64620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27299",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 66060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27301",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 66348,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27304",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 66636,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27306",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 68076,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27308",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 68364,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27311",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 68652,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27313",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 68940,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27316",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 70380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27318",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 70668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27321",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 70956,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27323",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 71244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27326",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 72684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27328",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 72972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27331",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 73260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27333",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 73548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27336",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 74988,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27339",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 75276,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27342",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 75564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27344",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 75852,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27346",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 77292,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27348",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 77580,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27351",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 77868,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27353",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 79308,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27355",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 79596,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::27358",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 483,
+    "offset": 79884,
+    "cap": 32
    }
   },
   {
@@ -28143,6 +29232,369 @@
    }
   },
   {
+   "id": "row::30220",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30225",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 1548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30227",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 1836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30230",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 2124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30232",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 2412,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30234",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 5868,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30237",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 6444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30240",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 9036,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30244",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 9612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30247",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 9900,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30251",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 13644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30253",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 13932,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30256",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 14220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30259",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 14796,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30262",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 17388,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30265",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 17676,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30273",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 19116,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30276",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 22572,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30279",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 22860,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30282",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 23148,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30284",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 23436,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30286",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 24012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30289",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 26604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30292",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 26892,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30303",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 29772,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30305",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 32652,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30311",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 33516,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30314",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 528,
+    "offset": 38636,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30315",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 528,
+    "offset": 47276,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30316",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 528,
+    "offset": 49580,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30317",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 528,
+    "offset": 52460,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::30318",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 53676,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30321",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 55116,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::30323",
    "en": "Evil Emperor's Body",
    "ja": "魔皇帝のむくろ",
@@ -28150,6 +29602,171 @@
    "meta": {
     "blob": 528,
     "offset": 55404,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30326",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 55692,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30330",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 56268,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30333",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 56556,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30337",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 57132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30339",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 528,
+    "offset": 57996,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30341",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 58860,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30344",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 59148,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30346",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 528,
+    "offset": 59436,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30348",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 528,
+    "offset": 59724,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30350",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 60012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30352",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 528,
+    "offset": 60300,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30354",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 528,
+    "offset": 64332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30356",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 528,
+    "offset": 64620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30358",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 528,
+    "offset": 66348,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30361",
+   "en": "Demon Dragon",
+   "ja": "魔竜",
+   "zh": "魔龙",
+   "meta": {
+    "blob": 528,
+    "offset": 92556,
     "cap": 32
    }
   },

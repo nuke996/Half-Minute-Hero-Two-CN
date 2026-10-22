@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 776,
+ "_count": 538,
  "entries": [
   {
    "id": "row::13768",
@@ -3736,1657 +3736,6 @@
    }
   },
   {
-   "id": "row::16986",
-   "en": "●●●",
-   "ja": "●●●",
-   "zh": "●●●",
-   "meta": {
-    "blob": 320,
-    "offset": 308,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16987",
-   "en": "Half-Minute Hero: The Second Coming Main Theme",
-   "ja": "Main Theme 勇者３０ ＳＥＣＯＮＤ",
-   "zh": "勇者30：再次降临 主題曲",
-   "meta": {
-    "blob": 320,
-    "offset": 736,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16988",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 800,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16989",
-   "en": "End of OVERTURE",
-   "ja": "End of OVERTURE",
-   "zh": "序曲结束",
-   "meta": {
-    "blob": 320,
-    "offset": 1228,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16990",
-   "en": "Kumi Tanioka",
-   "ja": "谷岡 久美",
-   "zh": "Kumi Tanioka",
-   "meta": {
-    "blob": 320,
-    "offset": 1292,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16991",
-   "en": "End of JUDGEMENT",
-   "ja": "End of JUDGEMENT",
-   "zh": "审判结束",
-   "meta": {
-    "blob": 320,
-    "offset": 1720,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16992",
-   "en": "Kumi Tanioka",
-   "ja": "谷岡 久美",
-   "zh": "Kumi Tanioka",
-   "meta": {
-    "blob": 320,
-    "offset": 1784,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16993",
-   "en": "Princess, Defender of the Academy -Theme of Yushia-",
-   "ja": "学園を守る王女 ～Theme of ユシア～",
-   "zh": "学院守护公主——犹西亚主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 2212,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16994",
-   "en": "Hiroyuki Iwatsuki",
-   "ja": "岩月博之",
-   "zh": "Hiroyuki Iwatsuki",
-   "meta": {
-    "blob": 320,
-    "offset": 2276,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16995",
-   "en": "Parade of REVOLUTION",
-   "ja": "Parade of REVOLUTION",
-   "zh": "革命游行",
-   "meta": {
-    "blob": 320,
-    "offset": 2704,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16996",
-   "en": "Hiroyuki Iwatsuki",
-   "ja": "岩月博之",
-   "zh": "Hiroyuki Iwatsuki",
-   "meta": {
-    "blob": 320,
-    "offset": 2768,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16997",
-   "en": "To a Space Faraway (Scat ver)",
-   "ja": "遥かな空間へ（スキャットver）",
-   "zh": "向很远空间（拟声版）",
-   "meta": {
-    "blob": 320,
-    "offset": 3196,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16998",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 3260,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::16999",
-   "en": "Grand Ending",
-   "ja": "Grand Ending",
-   "zh": "盛大收场",
-   "meta": {
-    "blob": 320,
-    "offset": 3688,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17000",
-   "en": "Yoshino Aoki",
-   "ja": "青木 佳乃",
-   "zh": "Yoshino Aoki",
-   "meta": {
-    "blob": 320,
-    "offset": 3752,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17001",
-   "en": "Everything Begins From Here",
-   "ja": "ここから全てが始まる",
-   "zh": "一切由此开始",
-   "meta": {
-    "blob": 320,
-    "offset": 4180,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17002",
-   "en": "Kenji Ito",
-   "ja": "伊藤 賢治",
-   "zh": "Kenji Ito",
-   "meta": {
-    "blob": 320,
-    "offset": 4244,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17003",
-   "en": "One Winged Hero -Theme of Yusha-",
-   "ja": "片翼の勇者 ～Theme of ユーシャ～",
-   "zh": "单翼勇者——玉沙主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 4672,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17004",
-   "en": "Kenji Ito",
-   "ja": "伊藤 賢治",
-   "zh": "Kenji Ito",
-   "meta": {
-    "blob": 320,
-    "offset": 4736,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17005",
-   "en": "Intro of THE 8 ELEMENTS",
-   "ja": "Intro of THE 8 ELEMENTS",
-   "zh": "八大元素 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 5164,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17006",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 5228,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17007",
-   "en": "Battle of THE 8 ELEMENTS",
-   "ja": "Battle of THE 8 ELEMENTS",
-   "zh": "八大元素 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 5656,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17008",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 5720,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17009",
-   "en": "Peek into the DARKSIDE",
-   "ja": "Peek into the DARKSIDE",
-   "zh": "窥探暗面",
-   "meta": {
-    "blob": 320,
-    "offset": 6148,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17010",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 6212,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17011",
-   "en": "Intro of THE 4 DEADLY SINS",
-   "ja": "Intro of THE 4 DEADLY SINS",
-   "zh": "四大极恶 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 6640,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17012",
-   "en": "Yasunori Mitsuda",
-   "ja": "光田 康典",
-   "zh": "Yasunori Mitsuda",
-   "meta": {
-    "blob": 320,
-    "offset": 6704,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17013",
-   "en": "Battle of THE 4 DEADLY SINS",
-   "ja": "Battle of THE 4 DEADLY SINS",
-   "zh": "四大极恶 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 7132,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17014",
-   "en": "Yasunori Mitsuda",
-   "ja": "光田 康典",
-   "zh": "Yasunori Mitsuda",
-   "meta": {
-    "blob": 320,
-    "offset": 7196,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17016",
-   "en": "Yui Isshiki",
-   "ja": "一色 由比",
-   "zh": "Yui Isshiki",
-   "meta": {
-    "blob": 320,
-    "offset": 8672,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17018",
-   "en": "Yui Isshiki",
-   "ja": "一色 由比",
-   "zh": "Yui Isshiki",
-   "meta": {
-    "blob": 320,
-    "offset": 9164,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17019",
-   "en": "Intro of THE 3 EMPIRE GENERALS",
-   "ja": "Intro of THE 3 EMPIRE GENERALS",
-   "zh": "帝国三将 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 9592,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17020",
-   "en": "Masaharu Iwata",
-   "ja": "岩田 匡治",
-   "zh": "Masaharu Iwata",
-   "meta": {
-    "blob": 320,
-    "offset": 9656,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17021",
-   "en": "Battle of THE 3 EMPIRE GENERALS",
-   "ja": "Battle of THE 3 EMPIRE GENERALS",
-   "zh": "帝国三将 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 10084,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17022",
-   "en": "Masaharu Iwata",
-   "ja": "岩田 匡治",
-   "zh": "Masaharu Iwata",
-   "meta": {
-    "blob": 320,
-    "offset": 10148,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17023",
-   "en": "Intro of THE 8 GRIMOIRE",
-   "ja": "Intro of THE 8 GRIMOIRE",
-   "zh": "八魔典 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 10576,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17024",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 10640,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17025",
-   "en": "Battle of THE 8 GRIMOIRE",
-   "ja": "Battle of THE 8 GRIMOIRE",
-   "zh": "八魔典 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 11068,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17026",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 11132,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17027",
-   "en": "Princess Battle Light",
-   "ja": "戦光王女",
-   "zh": "战光公主",
-   "meta": {
-    "blob": 320,
-    "offset": 11560,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17028",
-   "en": "Masashi Hamauzu",
-   "ja": "浜渦 正志",
-   "zh": "Masashi Hamauzu",
-   "meta": {
-    "blob": 320,
-    "offset": 11624,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17029",
-   "en": "Final Battle of REVOLUTION",
-   "ja": "Final Battle of REVOLUTION",
-   "zh": "革命 决战",
-   "meta": {
-    "blob": 320,
-    "offset": 12052,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17030",
-   "en": "Masashi Hamauzu",
-   "ja": "浜渦 正志",
-   "zh": "Masashi Hamauzu",
-   "meta": {
-    "blob": 320,
-    "offset": 12116,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17031",
-   "en": "Intro of THE VENUS 7",
-   "ja": "Intro of THE VENUS 7",
-   "zh": "七美神 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 12544,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17032",
-   "en": "Manabu Namiki",
-   "ja": "並木 学",
-   "zh": "Manabu Namiki",
-   "meta": {
-    "blob": 320,
-    "offset": 12608,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17033",
-   "en": "Battle of THE VENUS 7",
-   "ja": "Battle of THE VENUS 7",
-   "zh": "七美神 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 13036,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17034",
-   "en": "Manabu Namiki",
-   "ja": "並木 学",
-   "zh": "Manabu Namiki",
-   "meta": {
-    "blob": 320,
-    "offset": 13100,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17035",
-   "en": "Voice of the VENUS",
-   "ja": "Voice of the VENUS",
-   "zh": "维纳斯之声",
-   "meta": {
-    "blob": 320,
-    "offset": 13528,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17036",
-   "en": "Intro of THE GOD 9",
-   "ja": "Intro of THE GOD 9",
-   "zh": "九神 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 14020,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17037",
-   "en": "Yoko Shimomura",
-   "ja": "下村 陽子",
-   "zh": "Yoko Shimomura",
-   "meta": {
-    "blob": 320,
-    "offset": 14084,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17038",
-   "en": "Battle of THE GOD 9",
-   "ja": "Battle of THE GOD 9",
-   "zh": "九神 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 14512,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17039",
-   "en": "Yoko Shimomura",
-   "ja": "下村 陽子",
-   "zh": "Yoko Shimomura",
-   "meta": {
-    "blob": 320,
-    "offset": 14576,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17040",
-   "en": "To a Space Faraway (off vocal ver)",
-   "ja": "遥かな空間へ（off vocal ver）",
-   "zh": "向很远空间（伴奏版）",
-   "meta": {
-    "blob": 320,
-    "offset": 15004,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17041",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 15068,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17042",
-   "en": "To a Space Faraway",
-   "ja": "遥かな空間へ",
-   "zh": "向很远空间",
-   "meta": {
-    "blob": 320,
-    "offset": 15496,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17043",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 15560,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17044",
-   "en": "Intro of THE BLACK VENUS",
-   "ja": "Intro of THE BLACK VENUS",
-   "zh": "黑维纳斯 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 15988,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17045",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 16052,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17046",
-   "en": "Battle of THE BLACK VENUS",
-   "ja": "Battle of THE BLACK VENUS",
-   "zh": "黑维纳斯 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 16480,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17047",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 16544,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17048",
-   "en": "Intro of GODWAVE",
-   "ja": "Intro of GODWAVE",
-   "zh": "神波 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 16972,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17049",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 17036,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17050",
-   "en": "Battle of GODWAVE",
-   "ja": "Battle of GODWAVE",
-   "zh": "神波 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 17464,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17051",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 17528,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17052",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 18020,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17053",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 18512,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17054",
-   "en": "Reunion -Theme of Hero 55-",
-   "ja": "Reunion ～Theme of 勇者５５～",
-   "zh": "重逢——55号勇者主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 18940,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17055",
-   "en": "Hideki \"SHA-V\" Asanaka",
-   "ja": "麻中“SHA－V”秀樹",
-   "zh": "Hideki \"SHA-V\" Asanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 19004,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17056",
-   "en": "The prospects for...",
-   "ja": "The prospects for ・・・",
-   "zh": "前景之……",
-   "meta": {
-    "blob": 320,
-    "offset": 19432,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17057",
-   "en": "Yasuo Yamate (TATE_NORIO)",
-   "ja": "山手 安生（TATE_NORIO）",
-   "zh": "Yasuo Yamate (TATE_NORIO)",
-   "meta": {
-    "blob": 320,
-    "offset": 19496,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17058",
-   "en": "cheap treasure",
-   "ja": "cheap treasure",
-   "zh": "廉价宝藏",
-   "meta": {
-    "blob": 320,
-    "offset": 19924,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17059",
-   "en": "Hideki \"SHA-V\" Asanaka",
-   "ja": "麻中“SHA－V”秀樹",
-   "zh": "Hideki \"SHA-V\" Asanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 19988,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17060",
-   "en": "Winged my steps",
-   "ja": "Winged my steps",
-   "zh": "插翅而行",
-   "meta": {
-    "blob": 320,
-    "offset": 20416,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17061",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 20480,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17062",
-   "en": "Takushi Hiyamuta (HIYA!)",
-   "ja": "冷牟田 卓志（HIYA！）",
-   "zh": "Takushi Hiyamuta (HIYA!)",
-   "meta": {
-    "blob": 320,
-    "offset": 20972,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17063",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 21464,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17064",
-   "en": "Gadget March",
-   "ja": "ガジェットマーチ",
-   "zh": "转盘进行曲",
-   "meta": {
-    "blob": 320,
-    "offset": 21892,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17065",
-   "en": "Maiko Iuchi",
-   "ja": "井内 舞子",
-   "zh": "Maiko Iuchi",
-   "meta": {
-    "blob": 320,
-    "offset": 21956,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17066",
-   "en": "Maiko Iuchi",
-   "ja": "井内 舞子",
-   "zh": "Maiko Iuchi",
-   "meta": {
-    "blob": 320,
-    "offset": 22448,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17067",
-   "en": "Through the Ordeal",
-   "ja": "試練を越えて",
-   "zh": "渡过试炼",
-   "meta": {
-    "blob": 320,
-    "offset": 22876,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17068",
-   "en": "Takaaki Nakahashi",
-   "ja": "中橋 孝晃",
-   "zh": "Takaaki Nakahashi",
-   "meta": {
-    "blob": 320,
-    "offset": 22940,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17069",
-   "en": "No more HERO? -Theme of Yuja-",
-   "ja": "No more HERO？ ～Theme of ユウジャ～",
-   "zh": "再无勇者？——羽佳主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 23860,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17070",
-   "en": "Engines (The Engines)",
-   "ja": "エンジンズ（The Engines）",
-   "zh": "引擎（引擎们）",
-   "meta": {
-    "blob": 320,
-    "offset": 23924,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17071",
-   "en": "Yoshino Aoki",
-   "ja": "青木 佳乃",
-   "zh": "Yoshino Aoki",
-   "meta": {
-    "blob": 320,
-    "offset": 24416,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17072",
-   "en": "Divine Protection",
-   "ja": "Divine Protection",
-   "zh": "神之庇护",
-   "meta": {
-    "blob": 320,
-    "offset": 24844,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17073",
-   "en": "Engines",
-   "ja": "エンジンズ",
-   "zh": "引擎",
-   "meta": {
-    "blob": 320,
-    "offset": 24908,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17074",
-   "en": "Magnolia",
-   "ja": "マグノリア",
-   "zh": "木兰",
-   "meta": {
-    "blob": 320,
-    "offset": 25336,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17075",
-   "en": "Takaaki Nakahashi",
-   "ja": "中橋 孝晃",
-   "zh": "Takaaki Nakahashi",
-   "meta": {
-    "blob": 320,
-    "offset": 25400,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17077",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 25892,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17079",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 26384,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17080",
-   "en": "To a Space Faraway HamoKara",
-   "ja": "遥かな空間へ　HamoKara",
-   "zh": "向很远空间　哈莫卡拉",
-   "meta": {
-    "blob": 320,
-    "offset": 26812,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17081",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 26876,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17082",
-   "en": "To a Space Faraway JyunKara",
-   "ja": "遥かな空間へ　JyunKara",
-   "zh": "向很远空间　顺卡拉",
-   "meta": {
-    "blob": 320,
-    "offset": 27304,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17083",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 27368,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17084",
-   "en": "Electric Light Bath",
-   "ja": "電光浴",
-   "zh": "电光浴",
-   "meta": {
-    "blob": 320,
-    "offset": 27796,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17085",
-   "en": "To the sky of the fight",
-   "ja": "To the sky of the fight",
-   "zh": "飞向战空",
-   "meta": {
-    "blob": 320,
-    "offset": 28288,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17086",
-   "en": "Brave mans tragedy",
-   "ja": "Brave mans tragedy",
-   "zh": "勇者悲剧",
-   "meta": {
-    "blob": 320,
-    "offset": 28780,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17087",
-   "en": "Grief",
-   "ja": "愁傷",
-   "zh": "哀伤",
-   "meta": {
-    "blob": 320,
-    "offset": 29764,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17088",
-   "en": "Wicked Spirit",
-   "ja": "Wicked Spirit",
-   "zh": "恶灵",
-   "meta": {
-    "blob": 320,
-    "offset": 31732,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17089",
-   "en": "Only one victory",
-   "ja": "Only one victory",
-   "zh": "只此一胜",
-   "meta": {
-    "blob": 320,
-    "offset": 32224,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17090",
-   "en": "Queen of Peace",
-   "ja": "Queen of Peace",
-   "zh": "和平女王",
-   "meta": {
-    "blob": 320,
-    "offset": 33208,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17091",
-   "en": "Aim wilderness",
-   "ja": "Aim wilderness",
-   "zh": "瞄准荒野",
-   "meta": {
-    "blob": 320,
-    "offset": 33700,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17092",
-   "en": "Heavenly Voices",
-   "ja": "Heavenly Voices",
-   "zh": "天籁之声",
-   "meta": {
-    "blob": 320,
-    "offset": 34192,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17093",
-   "en": "Overcoming Darkness",
-   "ja": "Overcoming Darkness",
-   "zh": "克服黑暗",
-   "meta": {
-    "blob": 320,
-    "offset": 35176,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17094",
-   "en": "Fight with friend",
-   "ja": "Fight with friend",
-   "zh": "与友而战",
-   "meta": {
-    "blob": 320,
-    "offset": 35668,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17095",
-   "en": "Machine City",
-   "ja": "Machine City",
-   "zh": "机器城",
-   "meta": {
-    "blob": 320,
-    "offset": 37636,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17096",
-   "en": "Despair and Hope",
-   "ja": "絶望と希望",
-   "zh": "绝望与希望",
-   "meta": {
-    "blob": 320,
-    "offset": 38128,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17097",
-   "en": "Cutting the Gordian Knot",
-   "ja": "一刀両断",
-   "zh": "快刀斩乱麻",
-   "meta": {
-    "blob": 320,
-    "offset": 39604,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17098",
-   "en": "Sexy Pointer",
-   "ja": "Sexy Pointer",
-   "zh": "魅惑指针",
-   "meta": {
-    "blob": 320,
-    "offset": 40096,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17099",
-   "en": "Unknown conductivity",
-   "ja": "Unknown conductivity",
-   "zh": "未知导电性",
-   "meta": {
-    "blob": 320,
-    "offset": 40588,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17100",
-   "en": "Magnificent castle",
-   "ja": "Magnificent castle",
-   "zh": "巍峨城堡",
-   "meta": {
-    "blob": 320,
-    "offset": 41080,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17101",
-   "en": "Angel Of Repose",
-   "ja": "Angel Of Repose",
-   "zh": "安息天使",
-   "meta": {
-    "blob": 320,
-    "offset": 41572,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17103",
-   "en": "Feel the Rush",
-   "ja": "Feel the Rush",
-   "zh": "体验狂飙",
-   "meta": {
-    "blob": 320,
-    "offset": 42556,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17104",
-   "en": "Reminiscence",
-   "ja": "追憶",
-   "zh": "追忆",
-   "meta": {
-    "blob": 320,
-    "offset": 43540,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17105",
-   "en": "Takushi Hiyamuta",
-   "ja": "冷牟田 卓志",
-   "zh": "Takushi Hiyamuta",
-   "meta": {
-    "blob": 320,
-    "offset": 44588,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17106",
-   "en": "Maiko Iuchi",
-   "ja": "井内 舞子",
-   "zh": "Maiko Iuchi",
-   "meta": {
-    "blob": 320,
-    "offset": 45080,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17107",
-   "en": "Taisei Yamada",
-   "ja": "山田 泰正",
-   "zh": "Taisei Yamada",
-   "meta": {
-    "blob": 320,
-    "offset": 45572,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17108",
-   "en": "Yoshino Aoki",
-   "ja": "青木 佳乃",
-   "zh": "Yoshino Aoki",
-   "meta": {
-    "blob": 320,
-    "offset": 46064,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17109",
-   "en": "Intro of GODWAVE",
-   "ja": "Intro of GODWAVE",
-   "zh": "神波 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 48952,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17110",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 49016,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17111",
-   "en": "Half-Minute Hero: The Second Coming Main Theme",
-   "ja": "Main Theme 勇者３０ ＳＥＣＯＮＤ",
-   "zh": "勇者30：再次降临 主題曲",
-   "meta": {
-    "blob": 320,
-    "offset": 49444,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17112",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 49508,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17113",
-   "en": "Only one victory",
-   "ja": "Only one victory",
-   "zh": "只此一胜",
-   "meta": {
-    "blob": 320,
-    "offset": 49936,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17114",
-   "en": "Angel Of Repose",
-   "ja": "Angel Of Repose",
-   "zh": "安息天使",
-   "meta": {
-    "blob": 320,
-    "offset": 50920,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17115",
-   "en": "Reminiscence",
-   "ja": "追憶",
-   "zh": "追忆",
-   "meta": {
-    "blob": 320,
-    "offset": 51412,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17116",
-   "en": "Half-Minute Hero: The Second Coming Main Theme",
-   "ja": "Main Theme 勇者３０ ＳＥＣＯＮＤ",
-   "zh": "勇者30：再次降临 主題曲",
-   "meta": {
-    "blob": 320,
-    "offset": 52396,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17117",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 52460,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17118",
    "en": "Music 01",
    "ja": "ミュージック０１",
@@ -5395,32 +3744,6 @@
     "blob": 320,
     "offset": 52528,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17119",
-   "en": "End of OVERTURE",
-   "ja": "End of OVERTURE",
-   "zh": "序曲结束",
-   "meta": {
-    "blob": 320,
-    "offset": 52888,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17120",
-   "en": "Kumi Tanioka",
-   "ja": "谷岡 久美",
-   "zh": "Kumi Tanioka",
-   "meta": {
-    "blob": 320,
-    "offset": 52952,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5439,32 +3762,6 @@
    }
   },
   {
-   "id": "row::17122",
-   "en": "End of JUDGEMENT",
-   "ja": "End of JUDGEMENT",
-   "zh": "审判结束",
-   "meta": {
-    "blob": 320,
-    "offset": 53380,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17123",
-   "en": "Kumi Tanioka",
-   "ja": "谷岡 久美",
-   "zh": "Kumi Tanioka",
-   "meta": {
-    "blob": 320,
-    "offset": 53444,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17124",
    "en": "Music 03",
    "ja": "ミュージック０３",
@@ -5473,32 +3770,6 @@
     "blob": 320,
     "offset": 53512,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17125",
-   "en": "Princess, Defender of the Academy -Theme of Yushia-",
-   "ja": "学園を守る王女 ～Theme of ユシア～",
-   "zh": "学院守护公主——犹西亚主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 53872,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17126",
-   "en": "Hiroyuki Iwatsuki",
-   "ja": "岩月博之",
-   "zh": "Hiroyuki Iwatsuki",
-   "meta": {
-    "blob": 320,
-    "offset": 53936,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5517,32 +3788,6 @@
    }
   },
   {
-   "id": "row::17128",
-   "en": "Parade of REVOLUTION",
-   "ja": "Parade of REVOLUTION",
-   "zh": "革命游行",
-   "meta": {
-    "blob": 320,
-    "offset": 54364,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17129",
-   "en": "Hiroyuki Iwatsuki",
-   "ja": "岩月博之",
-   "zh": "Hiroyuki Iwatsuki",
-   "meta": {
-    "blob": 320,
-    "offset": 54428,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17130",
    "en": "Music 05",
    "ja": "ミュージック０５",
@@ -5551,32 +3796,6 @@
     "blob": 320,
     "offset": 54496,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17131",
-   "en": "To a Space Faraway (Scat ver)",
-   "ja": "遥かな空間へ（スキャットver）",
-   "zh": "向很远空间（拟声版）",
-   "meta": {
-    "blob": 320,
-    "offset": 54856,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17132",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 54920,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5595,32 +3814,6 @@
    }
   },
   {
-   "id": "row::17134",
-   "en": "Grand Ending",
-   "ja": "Grand Ending",
-   "zh": "盛大收场",
-   "meta": {
-    "blob": 320,
-    "offset": 55348,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17135",
-   "en": "Yoshino Aoki",
-   "ja": "青木 佳乃",
-   "zh": "Yoshino Aoki",
-   "meta": {
-    "blob": 320,
-    "offset": 55412,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17136",
    "en": "Music 07",
    "ja": "ミュージック０７",
@@ -5629,32 +3822,6 @@
     "blob": 320,
     "offset": 55480,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17137",
-   "en": "Everything Begins From Here",
-   "ja": "ここから全てが始まる",
-   "zh": "一切由此开始",
-   "meta": {
-    "blob": 320,
-    "offset": 55840,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17138",
-   "en": "Kenji Ito",
-   "ja": "伊藤 賢治",
-   "zh": "Kenji Ito",
-   "meta": {
-    "blob": 320,
-    "offset": 55904,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5673,32 +3840,6 @@
    }
   },
   {
-   "id": "row::17140",
-   "en": "One Winged Hero -Theme of Yusha-",
-   "ja": "片翼の勇者 ～Theme of ユーシャ～",
-   "zh": "单翼勇者——玉沙主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 56332,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17141",
-   "en": "Kenji Ito",
-   "ja": "伊藤 賢治",
-   "zh": "Kenji Ito",
-   "meta": {
-    "blob": 320,
-    "offset": 56396,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17142",
    "en": "Music 09",
    "ja": "ミュージック０９",
@@ -5707,32 +3848,6 @@
     "blob": 320,
     "offset": 56464,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17143",
-   "en": "Intro of THE 8 ELEMENTS",
-   "ja": "Intro of THE 8 ELEMENTS",
-   "zh": "八大元素 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 56824,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17144",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 56888,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5751,32 +3866,6 @@
    }
   },
   {
-   "id": "row::17146",
-   "en": "Battle of THE 8 ELEMENTS",
-   "ja": "Battle of THE 8 ELEMENTS",
-   "zh": "八大元素 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 57316,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17147",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 57380,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17148",
    "en": "Music 11",
    "ja": "ミュージック１１",
@@ -5785,32 +3874,6 @@
     "blob": 320,
     "offset": 57448,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17149",
-   "en": "Peek into the DARKSIDE",
-   "ja": "Peek into the DARKSIDE",
-   "zh": "窥探暗面",
-   "meta": {
-    "blob": 320,
-    "offset": 57808,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17150",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 57872,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5829,32 +3892,6 @@
    }
   },
   {
-   "id": "row::17152",
-   "en": "Intro of THE 4 DEADLY SINS",
-   "ja": "Intro of THE 4 DEADLY SINS",
-   "zh": "四大极恶 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 58300,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17153",
-   "en": "Yasunori Mitsuda",
-   "ja": "光田 康典",
-   "zh": "Yasunori Mitsuda",
-   "meta": {
-    "blob": 320,
-    "offset": 58364,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17154",
    "en": "Music 13",
    "ja": "ミュージック１３",
@@ -5863,32 +3900,6 @@
     "blob": 320,
     "offset": 58432,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17155",
-   "en": "Battle of THE 4 DEADLY SINS",
-   "ja": "Battle of THE 4 DEADLY SINS",
-   "zh": "四大极恶 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 58792,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17156",
-   "en": "Yasunori Mitsuda",
-   "ja": "光田 康典",
-   "zh": "Yasunori Mitsuda",
-   "meta": {
-    "blob": 320,
-    "offset": 58856,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5907,19 +3918,6 @@
    }
   },
   {
-   "id": "row::17159",
-   "en": "Yui Isshiki",
-   "ja": "一色 由比",
-   "zh": "Yui Isshiki",
-   "meta": {
-    "blob": 320,
-    "offset": 59348,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17160",
    "en": "Music 15",
    "ja": "ミュージック１５",
@@ -5928,19 +3926,6 @@
     "blob": 320,
     "offset": 59416,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17162",
-   "en": "Yui Isshiki",
-   "ja": "一色 由比",
-   "zh": "Yui Isshiki",
-   "meta": {
-    "blob": 320,
-    "offset": 59840,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -5959,32 +3944,6 @@
    }
   },
   {
-   "id": "row::17164",
-   "en": "Intro of THE 3 EMPIRE GENERALS",
-   "ja": "Intro of THE 3 EMPIRE GENERALS",
-   "zh": "帝国三将 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 60268,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17165",
-   "en": "Masaharu Iwata",
-   "ja": "岩田 匡治",
-   "zh": "Masaharu Iwata",
-   "meta": {
-    "blob": 320,
-    "offset": 60332,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17166",
    "en": "Music 17",
    "ja": "ミュージック１７",
@@ -5993,32 +3952,6 @@
     "blob": 320,
     "offset": 60400,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17167",
-   "en": "Battle of THE 3 EMPIRE GENERALS",
-   "ja": "Battle of THE 3 EMPIRE GENERALS",
-   "zh": "帝国三将 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 60760,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17168",
-   "en": "Masaharu Iwata",
-   "ja": "岩田 匡治",
-   "zh": "Masaharu Iwata",
-   "meta": {
-    "blob": 320,
-    "offset": 60824,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6037,32 +3970,6 @@
    }
   },
   {
-   "id": "row::17170",
-   "en": "Intro of THE 8 GRIMOIRE",
-   "ja": "Intro of THE 8 GRIMOIRE",
-   "zh": "八魔典 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 61252,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17171",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 61316,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17172",
    "en": "Music 19",
    "ja": "ミュージック１９",
@@ -6071,32 +3978,6 @@
     "blob": 320,
     "offset": 61384,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17173",
-   "en": "Battle of THE 8 GRIMOIRE",
-   "ja": "Battle of THE 8 GRIMOIRE",
-   "zh": "八魔典 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 61744,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17174",
-   "en": "Yoshitaka Hirota",
-   "ja": "弘田佳孝",
-   "zh": "Yoshitaka Hirota",
-   "meta": {
-    "blob": 320,
-    "offset": 61808,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6115,32 +3996,6 @@
    }
   },
   {
-   "id": "row::17176",
-   "en": "Princess Battle Light",
-   "ja": "戦光王女",
-   "zh": "战光公主",
-   "meta": {
-    "blob": 320,
-    "offset": 62236,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17177",
-   "en": "Masashi Hamauzu",
-   "ja": "浜渦 正志",
-   "zh": "Masashi Hamauzu",
-   "meta": {
-    "blob": 320,
-    "offset": 62300,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17178",
    "en": "Music 21",
    "ja": "ミュージック２１",
@@ -6149,32 +4004,6 @@
     "blob": 320,
     "offset": 62368,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17179",
-   "en": "Final Battle of REVOLUTION",
-   "ja": "Final Battle of REVOLUTION",
-   "zh": "革命 决战",
-   "meta": {
-    "blob": 320,
-    "offset": 62728,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17180",
-   "en": "Masashi Hamauzu",
-   "ja": "浜渦 正志",
-   "zh": "Masashi Hamauzu",
-   "meta": {
-    "blob": 320,
-    "offset": 62792,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6193,32 +4022,6 @@
    }
   },
   {
-   "id": "row::17182",
-   "en": "Intro of THE VENUS 7",
-   "ja": "Intro of THE VENUS 7",
-   "zh": "七美神 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 63220,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17183",
-   "en": "Manabu Namiki",
-   "ja": "並木 学",
-   "zh": "Manabu Namiki",
-   "meta": {
-    "blob": 320,
-    "offset": 63284,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17184",
    "en": "Music 23",
    "ja": "ミュージック２３",
@@ -6227,32 +4030,6 @@
     "blob": 320,
     "offset": 63352,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17185",
-   "en": "Battle of THE VENUS 7",
-   "ja": "Battle of THE VENUS 7",
-   "zh": "七美神 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 63712,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17186",
-   "en": "Manabu Namiki",
-   "ja": "並木 学",
-   "zh": "Manabu Namiki",
-   "meta": {
-    "blob": 320,
-    "offset": 63776,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6271,19 +4048,6 @@
    }
   },
   {
-   "id": "row::17188",
-   "en": "Voice of the VENUS",
-   "ja": "Voice of the VENUS",
-   "zh": "维纳斯之声",
-   "meta": {
-    "blob": 320,
-    "offset": 64204,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17189",
    "en": "Music 25",
    "ja": "ミュージック２５",
@@ -6292,32 +4056,6 @@
     "blob": 320,
     "offset": 64336,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17190",
-   "en": "Intro of THE GOD 9",
-   "ja": "Intro of THE GOD 9",
-   "zh": "九神 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 64696,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17191",
-   "en": "Yoko Shimomura",
-   "ja": "下村 陽子",
-   "zh": "Yoko Shimomura",
-   "meta": {
-    "blob": 320,
-    "offset": 64760,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6336,32 +4074,6 @@
    }
   },
   {
-   "id": "row::17193",
-   "en": "Battle of THE GOD 9",
-   "ja": "Battle of THE GOD 9",
-   "zh": "九神 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 65188,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17194",
-   "en": "Yoko Shimomura",
-   "ja": "下村 陽子",
-   "zh": "Yoko Shimomura",
-   "meta": {
-    "blob": 320,
-    "offset": 65252,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17195",
    "en": "Music 27",
    "ja": "ミュージック２７",
@@ -6370,32 +4082,6 @@
     "blob": 320,
     "offset": 65320,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17196",
-   "en": "To a Space Faraway (off vocal ver)",
-   "ja": "遥かな空間へ（off vocal ver）",
-   "zh": "向很远空间（伴奏版）",
-   "meta": {
-    "blob": 320,
-    "offset": 65680,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17197",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 65744,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6414,32 +4100,6 @@
    }
   },
   {
-   "id": "row::17199",
-   "en": "To a Space Faraway",
-   "ja": "遥かな空間へ",
-   "zh": "向很远空间",
-   "meta": {
-    "blob": 320,
-    "offset": 66172,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17200",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 66236,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17201",
    "en": "Music 29",
    "ja": "ミュージック２９",
@@ -6448,32 +4108,6 @@
     "blob": 320,
     "offset": 66304,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17202",
-   "en": "Intro of THE BLACK VENUS",
-   "ja": "Intro of THE BLACK VENUS",
-   "zh": "黑维纳斯 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 66664,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17203",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 66728,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6492,32 +4126,6 @@
    }
   },
   {
-   "id": "row::17205",
-   "en": "Battle of THE BLACK VENUS",
-   "ja": "Battle of THE BLACK VENUS",
-   "zh": "黑维纳斯 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 67156,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17206",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 67220,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17207",
    "en": "Music 31",
    "ja": "ミュージック３１",
@@ -6526,32 +4134,6 @@
     "blob": 320,
     "offset": 67288,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17208",
-   "en": "Intro of GODWAVE",
-   "ja": "Intro of GODWAVE",
-   "zh": "神波 开场戏",
-   "meta": {
-    "blob": 320,
-    "offset": 67648,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17209",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 67712,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6570,32 +4152,6 @@
    }
   },
   {
-   "id": "row::17211",
-   "en": "Battle of GODWAVE",
-   "ja": "Battle of GODWAVE",
-   "zh": "神波 战斗",
-   "meta": {
-    "blob": 320,
-    "offset": 68140,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17212",
-   "en": "Michiko Naruke",
-   "ja": "なるけみちこ",
-   "zh": "Michiko Naruke",
-   "meta": {
-    "blob": 320,
-    "offset": 68204,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17213",
    "en": "Music 33",
    "ja": "ミュージック３３",
@@ -6604,19 +4160,6 @@
     "blob": 320,
     "offset": 68272,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17214",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 68696,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6635,19 +4178,6 @@
    }
   },
   {
-   "id": "row::17216",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 69188,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17217",
    "en": "Music 35",
    "ja": "ミュージック３５",
@@ -6656,32 +4186,6 @@
     "blob": 320,
     "offset": 69256,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17218",
-   "en": "Reunion -Theme of Hero 55-",
-   "ja": "Reunion ～Theme of 勇者５５～",
-   "zh": "重逢——55号勇者主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 69616,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17219",
-   "en": "Hideki \"SHA-V\" Asanaka",
-   "ja": "麻中“SHA－V”秀樹",
-   "zh": "Hideki \"SHA-V\" Asanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 69680,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6700,32 +4204,6 @@
    }
   },
   {
-   "id": "row::17221",
-   "en": "The prospects for...",
-   "ja": "The prospects for ・・・",
-   "zh": "前景之……",
-   "meta": {
-    "blob": 320,
-    "offset": 70108,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17222",
-   "en": "Yasuo Yamate (TATE_NORIO)",
-   "ja": "山手 安生（TATE_NORIO）",
-   "zh": "Yasuo Yamate (TATE_NORIO)",
-   "meta": {
-    "blob": 320,
-    "offset": 70172,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17223",
    "en": "Music 37",
    "ja": "ミュージック３７",
@@ -6734,32 +4212,6 @@
     "blob": 320,
     "offset": 70240,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17224",
-   "en": "cheap treasure",
-   "ja": "cheap treasure",
-   "zh": "廉价宝藏",
-   "meta": {
-    "blob": 320,
-    "offset": 70600,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17225",
-   "en": "Hideki \"SHA-V\" Asanaka",
-   "ja": "麻中“SHA－V”秀樹",
-   "zh": "Hideki \"SHA-V\" Asanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 70664,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6778,32 +4230,6 @@
    }
   },
   {
-   "id": "row::17227",
-   "en": "Winged my steps",
-   "ja": "Winged my steps",
-   "zh": "插翅而行",
-   "meta": {
-    "blob": 320,
-    "offset": 71092,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17228",
-   "en": "Motoi Sakuraba",
-   "ja": "桜庭 統",
-   "zh": "Motoi Sakuraba",
-   "meta": {
-    "blob": 320,
-    "offset": 71156,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17229",
    "en": "Music 39",
    "ja": "ミュージック３９",
@@ -6812,19 +4238,6 @@
     "blob": 320,
     "offset": 71224,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17230",
-   "en": "Takushi Hiyamuta (HIYA!)",
-   "ja": "冷牟田 卓志（HIYA！）",
-   "zh": "Takushi Hiyamuta (HIYA!)",
-   "meta": {
-    "blob": 320,
-    "offset": 71648,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6843,19 +4256,6 @@
    }
   },
   {
-   "id": "row::17232",
-   "en": "Tetsuya Shibata",
-   "ja": "柴田 徹也",
-   "zh": "Tetsuya Shibata",
-   "meta": {
-    "blob": 320,
-    "offset": 72140,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17233",
    "en": "Music 41",
    "ja": "ミュージック４１",
@@ -6864,32 +4264,6 @@
     "blob": 320,
     "offset": 72208,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17234",
-   "en": "Gadget March",
-   "ja": "ガジェットマーチ",
-   "zh": "转盘进行曲",
-   "meta": {
-    "blob": 320,
-    "offset": 72568,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17235",
-   "en": "Maiko Iuchi",
-   "ja": "井内 舞子",
-   "zh": "Maiko Iuchi",
-   "meta": {
-    "blob": 320,
-    "offset": 72632,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6908,19 +4282,6 @@
    }
   },
   {
-   "id": "row::17237",
-   "en": "Maiko Iuchi",
-   "ja": "井内 舞子",
-   "zh": "Maiko Iuchi",
-   "meta": {
-    "blob": 320,
-    "offset": 73124,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17238",
    "en": "Music 43",
    "ja": "ミュージック４３",
@@ -6929,32 +4290,6 @@
     "blob": 320,
     "offset": 73192,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17239",
-   "en": "Through the Ordeal",
-   "ja": "試練を越えて",
-   "zh": "渡过试炼",
-   "meta": {
-    "blob": 320,
-    "offset": 73552,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17240",
-   "en": "Takaaki Nakahashi",
-   "ja": "中橋 孝晃",
-   "zh": "Takaaki Nakahashi",
-   "meta": {
-    "blob": 320,
-    "offset": 73616,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6986,32 +4321,6 @@
    }
   },
   {
-   "id": "row::17243",
-   "en": "No more HERO? -Theme of Yuja-",
-   "ja": "No more HERO？ ～Theme of ユウジャ～",
-   "zh": "再无勇者？——羽佳主题——",
-   "meta": {
-    "blob": 320,
-    "offset": 74536,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17244",
-   "en": "Engines (The Engines)",
-   "ja": "エンジンズ（The Engines）",
-   "zh": "引擎（引擎们）",
-   "meta": {
-    "blob": 320,
-    "offset": 74600,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17245",
    "en": "Music 46",
    "ja": "ミュージック４６",
@@ -7020,19 +4329,6 @@
     "blob": 320,
     "offset": 74668,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17246",
-   "en": "Yoshino Aoki",
-   "ja": "青木 佳乃",
-   "zh": "Yoshino Aoki",
-   "meta": {
-    "blob": 320,
-    "offset": 75092,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7051,32 +4347,6 @@
    }
   },
   {
-   "id": "row::17248",
-   "en": "Divine Protection",
-   "ja": "Divine Protection",
-   "zh": "神之庇护",
-   "meta": {
-    "blob": 320,
-    "offset": 75520,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17249",
-   "en": "Engines",
-   "ja": "エンジンズ",
-   "zh": "引擎",
-   "meta": {
-    "blob": 320,
-    "offset": 75584,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17250",
    "en": "Music 48",
    "ja": "ミュージック４８",
@@ -7085,32 +4355,6 @@
     "blob": 320,
     "offset": 75652,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17251",
-   "en": "Magnolia",
-   "ja": "マグノリア",
-   "zh": "木兰",
-   "meta": {
-    "blob": 320,
-    "offset": 76012,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17252",
-   "en": "Takaaki Nakahashi",
-   "ja": "中橋 孝晃",
-   "zh": "Takaaki Nakahashi",
-   "meta": {
-    "blob": 320,
-    "offset": 76076,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7129,19 +4373,6 @@
    }
   },
   {
-   "id": "row::17255",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 76568,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17256",
    "en": "Music 50",
    "ja": "ミュージック５０",
@@ -7150,19 +4381,6 @@
     "blob": 320,
     "offset": 76636,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17258",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 77060,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7181,32 +4399,6 @@
    }
   },
   {
-   "id": "row::17260",
-   "en": "To a Space Faraway HamoKara",
-   "ja": "遥かな空間へ　HamoKara",
-   "zh": "向很远空间　哈莫卡拉",
-   "meta": {
-    "blob": 320,
-    "offset": 77488,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17261",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 77552,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17262",
    "en": "Music 52",
    "ja": "ミュージック５２",
@@ -7215,32 +4407,6 @@
     "blob": 320,
     "offset": 77620,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17263",
-   "en": "To a Space Faraway JyunKara",
-   "ja": "遥かな空間へ　JyunKara",
-   "zh": "向很远空间　顺卡拉",
-   "meta": {
-    "blob": 320,
-    "offset": 77980,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17264",
-   "en": "Keiichi Tanaka",
-   "ja": "田中 敬一",
-   "zh": "Keiichi Tanaka",
-   "meta": {
-    "blob": 320,
-    "offset": 78044,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7259,19 +4425,6 @@
    }
   },
   {
-   "id": "row::17266",
-   "en": "Electric Light Bath",
-   "ja": "電光浴",
-   "zh": "电光浴",
-   "meta": {
-    "blob": 320,
-    "offset": 78472,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17267",
    "en": "Music 54",
    "ja": "ミュージック５４",
@@ -7285,19 +4438,6 @@
    }
   },
   {
-   "id": "row::17268",
-   "en": "To the sky of the fight",
-   "ja": "To the sky of the fight",
-   "zh": "飞向战空",
-   "meta": {
-    "blob": 320,
-    "offset": 78964,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17269",
    "en": "Music 55",
    "ja": "ミュージック５５",
@@ -7306,19 +4446,6 @@
     "blob": 320,
     "offset": 79096,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17270",
-   "en": "Brave man's tragedy",
-   "ja": "Brave man's tragedy",
-   "zh": "勇者之悲剧",
-   "meta": {
-    "blob": 320,
-    "offset": 79456,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7345,19 +4472,6 @@
     "blob": 320,
     "offset": 80080,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17273",
-   "en": "Grief",
-   "ja": "愁傷",
-   "zh": "哀伤",
-   "meta": {
-    "blob": 320,
-    "offset": 80440,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7415,19 +4529,6 @@
    }
   },
   {
-   "id": "row::17278",
-   "en": "Wicked Spirit",
-   "ja": "Wicked Spirit",
-   "zh": "恶灵",
-   "meta": {
-    "blob": 320,
-    "offset": 82408,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17279",
    "en": "Music 62",
    "ja": "ミュージック６２",
@@ -7436,19 +4537,6 @@
     "blob": 320,
     "offset": 82540,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17280",
-   "en": "Only one victory",
-   "ja": "Only one victory",
-   "zh": "只此一胜",
-   "meta": {
-    "blob": 320,
-    "offset": 82900,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7480,19 +4568,6 @@
    }
   },
   {
-   "id": "row::17283",
-   "en": "Queen of Peace",
-   "ja": "Queen of Peace",
-   "zh": "和平女王",
-   "meta": {
-    "blob": 320,
-    "offset": 83884,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17284",
    "en": "Music 65",
    "ja": "ミュージック６５",
@@ -7506,19 +4581,6 @@
    }
   },
   {
-   "id": "row::17285",
-   "en": "Aim wilderness",
-   "ja": "Aim wilderness",
-   "zh": "瞄准荒野",
-   "meta": {
-    "blob": 320,
-    "offset": 84376,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17286",
    "en": "Music 66",
    "ja": "ミュージック６６",
@@ -7527,19 +4589,6 @@
     "blob": 320,
     "offset": 84508,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17287",
-   "en": "Heavenly Voices",
-   "ja": "Heavenly Voices",
-   "zh": "天籁之声",
-   "meta": {
-    "blob": 320,
-    "offset": 84868,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7571,19 +4620,6 @@
    }
   },
   {
-   "id": "row::17290",
-   "en": "Overcoming Darkness",
-   "ja": "Overcoming Darkness",
-   "zh": "克服黑暗",
-   "meta": {
-    "blob": 320,
-    "offset": 85852,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17291",
    "en": "Music 69",
    "ja": "ミュージック６９",
@@ -7592,19 +4628,6 @@
     "blob": 320,
     "offset": 85984,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17292",
-   "en": "Fight with friend",
-   "ja": "Fight with friend",
-   "zh": "与友而战",
-   "meta": {
-    "blob": 320,
-    "offset": 86344,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7662,19 +4685,6 @@
    }
   },
   {
-   "id": "row::17297",
-   "en": "Machine City",
-   "ja": "Machine City",
-   "zh": "机器城",
-   "meta": {
-    "blob": 320,
-    "offset": 88312,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17298",
    "en": "Music 74",
    "ja": "ミュージック７４",
@@ -7683,19 +4693,6 @@
     "blob": 320,
     "offset": 88444,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17299",
-   "en": "Despair and Hope",
-   "ja": "絶望と希望",
-   "zh": "绝望与希望",
-   "meta": {
-    "blob": 320,
-    "offset": 88804,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7740,19 +4737,6 @@
    }
   },
   {
-   "id": "row::17303",
-   "en": "Cutting the Gordian Knot",
-   "ja": "一刀両断",
-   "zh": "快刀斩乱麻",
-   "meta": {
-    "blob": 320,
-    "offset": 90280,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17304",
    "en": "Music 78",
    "ja": "ミュージック７８",
@@ -7761,19 +4745,6 @@
     "blob": 320,
     "offset": 90412,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17305",
-   "en": "Sexy Pointer",
-   "ja": "Sexy Pointer",
-   "zh": "魅惑指针",
-   "meta": {
-    "blob": 320,
-    "offset": 90772,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7792,19 +4763,6 @@
    }
   },
   {
-   "id": "row::17307",
-   "en": "Unknown conductivity",
-   "ja": "Unknown conductivity",
-   "zh": "未知导电性",
-   "meta": {
-    "blob": 320,
-    "offset": 91264,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17308",
    "en": "Music 80",
    "ja": "ミュージック８０",
@@ -7818,19 +4776,6 @@
    }
   },
   {
-   "id": "row::17309",
-   "en": "Magnificent castle",
-   "ja": "Magnificent castle",
-   "zh": "巍峨城堡",
-   "meta": {
-    "blob": 320,
-    "offset": 91756,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17310",
    "en": "Music 81",
    "ja": "ミュージック８１",
@@ -7839,19 +4784,6 @@
     "blob": 320,
     "offset": 91888,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17311",
-   "en": "Angel Of Repose",
-   "ja": "Angel Of Repose",
-   "zh": "安息天使",
-   "meta": {
-    "blob": 320,
-    "offset": 92248,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -7883,19 +4815,6 @@
    }
   },
   {
-   "id": "row::17315",
-   "en": "Feel the Rush",
-   "ja": "Feel the Rush",
-   "zh": "体验狂飙",
-   "meta": {
-    "blob": 320,
-    "offset": 93232,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::17316",
    "en": "Music 84",
    "ja": "ミュージック８４",
@@ -7917,19 +4836,6 @@
     "blob": 320,
     "offset": 93856,
     "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::17318",
-   "en": "Reminiscence",
-   "ja": "追憶",
-   "zh": "追忆",
-   "meta": {
-    "blob": 320,
-    "offset": 94216,
-    "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }

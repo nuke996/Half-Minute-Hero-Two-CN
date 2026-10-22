@@ -1,0 +1,3349 @@
+{
+ "_kind": "extra",
+ "_note": "Z11–Z14 新上屏的伙伴名/技能名/合成 UI 等（不在 text_v2.csv）。改 zh 即可；导入时写入 locales/zh-CN/extra_review.json，并由 Z14 配方重新打包。",
+ "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
+ "_count": 257,
+ "entries": [
+  {
+   "id": "extra::954::20",
+   "en": "Knight",
+   "ja": "ナイト",
+   "zh": "骑士",
+   "meta": {
+    "blob": 954,
+    "offset": 20,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::256",
+   "en": "Rurufi",
+   "ja": "ルルフィ",
+   "zh": "露露菲",
+   "meta": {
+    "blob": 954,
+    "offset": 256,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::492",
+   "en": "Roken",
+   "ja": "ローケン",
+   "zh": "洛肯",
+   "meta": {
+    "blob": 954,
+    "offset": 492,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::728",
+   "en": "Cole",
+   "ja": "コール",
+   "zh": "科尔",
+   "meta": {
+    "blob": 954,
+    "offset": 728,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::964",
+   "en": "Rina",
+   "ja": "リィナ",
+   "zh": "莉娜",
+   "meta": {
+    "blob": 954,
+    "offset": 964,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1200",
+   "en": "Grillard",
+   "ja": "グリアード",
+   "zh": "格里亚德",
+   "meta": {
+    "blob": 954,
+    "offset": 1200,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1436",
+   "en": "Ultros",
+   "ja": "オルトロス",
+   "zh": "奥尔特罗斯",
+   "meta": {
+    "blob": 954,
+    "offset": 1436,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1672",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 954,
+    "offset": 1672,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1908",
+   "en": "Doug",
+   "ja": "ダグ",
+   "zh": "道格",
+   "meta": {
+    "blob": 954,
+    "offset": 1908,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2144",
+   "en": "Levan",
+   "ja": "レバン",
+   "zh": "莱万",
+   "meta": {
+    "blob": 954,
+    "offset": 2144,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2380",
+   "en": "Nanako",
+   "ja": "ナナコ",
+   "zh": "奈奈子",
+   "meta": {
+    "blob": 954,
+    "offset": 2380,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2616",
+   "en": "Shamal",
+   "ja": "シャマル",
+   "zh": "夏马尔",
+   "meta": {
+    "blob": 954,
+    "offset": 2616,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2852",
+   "en": "Tetsu",
+   "ja": "テツ",
+   "zh": "铁",
+   "meta": {
+    "blob": 954,
+    "offset": 2852,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3088",
+   "en": "Silveria",
+   "ja": "シルベリア",
+   "zh": "希尔贝莉亚",
+   "meta": {
+    "blob": 954,
+    "offset": 3088,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3324",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 954,
+    "offset": 3324,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3560",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 954,
+    "offset": 3560,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3796",
+   "en": "Evil Lord",
+   "ja": "マオウ",
+   "zh": "魔王",
+   "meta": {
+    "blob": 954,
+    "offset": 3796,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4032",
+   "en": "Francisca",
+   "ja": "フランシスカ",
+   "zh": "弗兰西丝卡",
+   "meta": {
+    "blob": 954,
+    "offset": 4032,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4268",
+   "en": "Demon Oron",
+   "ja": "悪魔オロン",
+   "zh": "恶魔奥隆",
+   "meta": {
+    "blob": 954,
+    "offset": 4268,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4504",
+   "en": "Angel Oron",
+   "ja": "天使オロン",
+   "zh": "天使奥隆",
+   "meta": {
+    "blob": 954,
+    "offset": 4504,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4740",
+   "en": "Karin",
+   "ja": "カリン",
+   "zh": "卡琳",
+   "meta": {
+    "blob": 954,
+    "offset": 4740,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4976",
+   "en": "Cozain",
+   "ja": "コザイン",
+   "zh": "科赞",
+   "meta": {
+    "blob": 954,
+    "offset": 4976,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5212",
+   "en": "Sach",
+   "ja": "サッチャン",
+   "zh": "小萨",
+   "meta": {
+    "blob": 954,
+    "offset": 5212,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5448",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 954,
+    "offset": 5448,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5684",
+   "en": "Sasha",
+   "ja": "サーシャ",
+   "zh": "萨莎",
+   "meta": {
+    "blob": 954,
+    "offset": 5684,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::6392",
+   "en": "True Geezer",
+   "ja": "真・おじさま",
+   "zh": "真大叔",
+   "meta": {
+    "blob": 954,
+    "offset": 6392,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::6628",
+   "en": "Sub-Commander Yashu",
+   "ja": "副隊長ヤーシュ",
+   "zh": "二当家亚修",
+   "meta": {
+    "blob": 954,
+    "offset": 6628,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::6864",
+   "en": "Commando Guy",
+   "ja": "隊員ガイ",
+   "zh": "游击队员盖伊",
+   "meta": {
+    "blob": 954,
+    "offset": 6864,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7100",
+   "en": "Asurako",
+   "ja": "アシュラコ",
+   "zh": "阿修罗子",
+   "meta": {
+    "blob": 954,
+    "offset": 7100,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7336",
+   "en": "Princess",
+   "ja": "オウジョ",
+   "zh": "公主",
+   "meta": {
+    "blob": 954,
+    "offset": 7336,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7572",
+   "en": "Knight of the Past",
+   "ja": "むかしナイト",
+   "zh": "往日骑士",
+   "meta": {
+    "blob": 954,
+    "offset": 7572,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7808",
+   "en": "Evil Lord of the Past",
+   "ja": "むかしマオウ",
+   "zh": "往日魔王",
+   "meta": {
+    "blob": 954,
+    "offset": 7808,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8044",
+   "en": "Ramiz",
+   "ja": "ラミス",
+   "zh": "拉米丝",
+   "meta": {
+    "blob": 954,
+    "offset": 8044,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8280",
+   "en": "Retrofitted No. 30",
+   "ja": "３０号改",
+   "zh": "30号改",
+   "meta": {
+    "blob": 954,
+    "offset": 8280,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8516",
+   "en": "Sage",
+   "ja": "賢者",
+   "zh": "贤者",
+   "meta": {
+    "blob": 954,
+    "offset": 8516,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8752",
+   "en": "Samurai",
+   "ja": "サムライ",
+   "zh": "武士",
+   "meta": {
+    "blob": 954,
+    "offset": 8752,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8988",
+   "en": "Ninja",
+   "ja": "ニンジャ",
+   "zh": "忍者",
+   "meta": {
+    "blob": 954,
+    "offset": 8988,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::9224",
+   "en": "Young Samurai",
+   "ja": "若サムライ",
+   "zh": "年轻武士",
+   "meta": {
+    "blob": 954,
+    "offset": 9224,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::9460",
+   "en": "Young Leader Ninja",
+   "ja": "若頭ニンジャ",
+   "zh": "年轻首领忍者",
+   "meta": {
+    "blob": 954,
+    "offset": 9460,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::9696",
+   "en": "E. Yushia",
+   "ja": "イベユシア",
+   "zh": "活动由希亚",
+   "meta": {
+    "blob": 954,
+    "offset": 9696,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::9932",
+   "en": "E. Yuja",
+   "ja": "イベユウジャ",
+   "zh": "活动由贾",
+   "meta": {
+    "blob": 954,
+    "offset": 9932,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::10168",
+   "en": "E. Uncle",
+   "ja": "イベおじさま",
+   "zh": "活动大叔",
+   "meta": {
+    "blob": 954,
+    "offset": 10168,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::184",
+   "en": "Knight Skill",
+   "ja": "ナイトスキル",
+   "zh": "骑士技能",
+   "meta": {
+    "blob": 954,
+    "offset": 184,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::388",
+   "en": "Rurufi Resident",
+   "ja": "ルルフィ常駐",
+   "zh": "露露菲常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 388,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::420",
+   "en": "Rurufi Skill",
+   "ja": "ルルフィスキル",
+   "zh": "露露菲技能",
+   "meta": {
+    "blob": 954,
+    "offset": 420,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::656",
+   "en": "Roken Skill",
+   "ja": "ローケンスキル",
+   "zh": "洛肯技能",
+   "meta": {
+    "blob": 954,
+    "offset": 656,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::892",
+   "en": "Cole Skill",
+   "ja": "コールスキル",
+   "zh": "科尔技能",
+   "meta": {
+    "blob": 954,
+    "offset": 892,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1096",
+   "en": "Rina Resident",
+   "ja": "リィナ常駐",
+   "zh": "莉娜常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 1096,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1128",
+   "en": "Rina Skill",
+   "ja": "リィナスキル",
+   "zh": "莉娜技能",
+   "meta": {
+    "blob": 954,
+    "offset": 1128,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1364",
+   "en": "Grillard Skill",
+   "ja": "グリアードスキル",
+   "zh": "格里亚德技能",
+   "meta": {
+    "blob": 954,
+    "offset": 1364,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1600",
+   "en": "Ultros Skill",
+   "ja": "オルトロスキル",
+   "zh": "奥尔特罗斯技能",
+   "meta": {
+    "blob": 954,
+    "offset": 1600,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::1836",
+   "en": "Guy Skill",
+   "ja": "ガイスキル",
+   "zh": "盖伊技能",
+   "meta": {
+    "blob": 954,
+    "offset": 1836,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2276",
+   "en": "Levan Resident",
+   "ja": "レバン常駐",
+   "zh": "莱万常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 2276,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2308",
+   "en": "Levan Skill",
+   "ja": "レバンスキル",
+   "zh": "莱万技能",
+   "meta": {
+    "blob": 954,
+    "offset": 2308,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2544",
+   "en": "Nanako Skill",
+   "ja": "ナナコスキル",
+   "zh": "奈奈子技能",
+   "meta": {
+    "blob": 954,
+    "offset": 2544,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::2780",
+   "en": "Shamal Skill",
+   "ja": "シャマルスキル",
+   "zh": "夏马尔技能",
+   "meta": {
+    "blob": 954,
+    "offset": 2780,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3016",
+   "en": "Tetsu Skill",
+   "ja": "テツスキル",
+   "zh": "铁技能",
+   "meta": {
+    "blob": 954,
+    "offset": 3016,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3252",
+   "en": "Silveria Skill",
+   "ja": "シルベリアスキル",
+   "zh": "希尔贝莉亚技能",
+   "meta": {
+    "blob": 954,
+    "offset": 3252,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3488",
+   "en": "Athena Skill",
+   "ja": "アテナスキル",
+   "zh": "雅典娜技能",
+   "meta": {
+    "blob": 954,
+    "offset": 3488,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3724",
+   "en": "Hero Skill",
+   "ja": "ユウシャスキル",
+   "zh": "勇者技能",
+   "meta": {
+    "blob": 954,
+    "offset": 3724,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3928",
+   "en": "Evil Lord Resident",
+   "ja": "マオウ常駐",
+   "zh": "魔王常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 3928,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::3960",
+   "en": "Evil Lord Skill",
+   "ja": "マオウスキル",
+   "zh": "魔王技能",
+   "meta": {
+    "blob": 954,
+    "offset": 3960,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4196",
+   "en": "Francisca Skill",
+   "ja": "フランシスカスキル",
+   "zh": "弗兰西丝卡技能",
+   "meta": {
+    "blob": 954,
+    "offset": 4196,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4432",
+   "en": "Oron (Demon) Skill",
+   "ja": "オロン（悪魔）スキル",
+   "zh": "恶魔奥隆技能",
+   "meta": {
+    "blob": 954,
+    "offset": 4432,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4668",
+   "en": "Oron (Angel) Skill",
+   "ja": "オロン（天使）スキル",
+   "zh": "天使奥隆技能",
+   "meta": {
+    "blob": 954,
+    "offset": 4668,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::4904",
+   "en": "Karin Skill",
+   "ja": "カリンスキル",
+   "zh": "卡琳技能",
+   "meta": {
+    "blob": 954,
+    "offset": 4904,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5140",
+   "en": "Cozain Skill",
+   "ja": "コザインスキル",
+   "zh": "科赞技能",
+   "meta": {
+    "blob": 954,
+    "offset": 5140,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5376",
+   "en": "3rd Slaughter Daughter Skill",
+   "ja": "ギャクサツ三女スキル",
+   "zh": "虐杀三女技能",
+   "meta": {
+    "blob": 954,
+    "offset": 5376,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5612",
+   "en": "Yashu Skill",
+   "ja": "ヤーシュスキル",
+   "zh": "亚修技能",
+   "meta": {
+    "blob": 954,
+    "offset": 5612,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::5848",
+   "en": "Sasha Skill",
+   "ja": "サーシャスキル",
+   "zh": "萨莎技能",
+   "meta": {
+    "blob": 954,
+    "offset": 5848,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::6556",
+   "en": "True Hero Skill",
+   "ja": "真・ユウシャスキル",
+   "zh": "真勇者技能",
+   "meta": {
+    "blob": 954,
+    "offset": 6556,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::6792",
+   "en": "Sub-Commander Yashu Skill",
+   "ja": "副隊長ヤーシュスキル",
+   "zh": "二当家亚修技能",
+   "meta": {
+    "blob": 954,
+    "offset": 6792,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7028",
+   "en": "Commando Guy Skill",
+   "ja": "隊員ガイスキル",
+   "zh": "游击队员盖伊技能",
+   "meta": {
+    "blob": 954,
+    "offset": 7028,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7264",
+   "en": "Asurako Skill",
+   "ja": "アシュラコスキル",
+   "zh": "阿修罗子技能",
+   "meta": {
+    "blob": 954,
+    "offset": 7264,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7468",
+   "en": "Princess Resident",
+   "ja": "オウジョ常駐",
+   "zh": "公主常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 7468,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7500",
+   "en": "Princess Skill",
+   "ja": "オウジョスキル",
+   "zh": "公主技能",
+   "meta": {
+    "blob": 954,
+    "offset": 7500,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::7940",
+   "en": "Evil Lord Resident",
+   "ja": "マオウ常駐",
+   "zh": "魔王常驻",
+   "meta": {
+    "blob": 954,
+    "offset": 7940,
+    "cap": 16,
+    "cap_bytes": 32,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8208",
+   "en": "Ramiz Skill",
+   "ja": "ラミススキル",
+   "zh": "拉米丝技能",
+   "meta": {
+    "blob": 954,
+    "offset": 8208,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::954::8444",
+   "en": "Retrofitted No. 30 Skill",
+   "ja": "３０号改スキル",
+   "zh": "30号改技能",
+   "meta": {
+    "blob": 954,
+    "offset": 8444,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::169100",
+   "en": "Wave Shout",
+   "ja": "ウェイブシャウト",
+   "zh": "波动怒吼",
+   "meta": {
+    "blob": 83,
+    "offset": 169100,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::169388",
+   "en": "Wave Shout",
+   "ja": "ウェイブシャウト",
+   "zh": "波动怒吼",
+   "meta": {
+    "blob": 83,
+    "offset": 169388,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::401804",
+   "en": "Wave Shout",
+   "ja": "ウェイブシャウト",
+   "zh": "波动怒吼",
+   "meta": {
+    "blob": 394,
+    "offset": 401804,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::402092",
+   "en": "Wave Shout",
+   "ja": "ウェイブシャウト",
+   "zh": "波动怒吼",
+   "meta": {
+    "blob": 394,
+    "offset": 402092,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::178316",
+   "en": "Heavy Flame",
+   "ja": "ヘビーフレイム",
+   "zh": "重炎",
+   "meta": {
+    "blob": 83,
+    "offset": 178316,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::178604",
+   "en": "Heavy Flame",
+   "ja": "ヘビーフレイム",
+   "zh": "重炎",
+   "meta": {
+    "blob": 83,
+    "offset": 178604,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::411020",
+   "en": "Heavy Flame",
+   "ja": "ヘビーフレイム",
+   "zh": "重炎",
+   "meta": {
+    "blob": 394,
+    "offset": 411020,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::411308",
+   "en": "Heavy Flame",
+   "ja": "ヘビーフレイム",
+   "zh": "重炎",
+   "meta": {
+    "blob": 394,
+    "offset": 411308,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::189836",
+   "en": "Earth Eject",
+   "ja": "アースエジェクト",
+   "zh": "大地喷发",
+   "meta": {
+    "blob": 83,
+    "offset": 189836,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::190124",
+   "en": "Earth Eject",
+   "ja": "アースエジェクト",
+   "zh": "大地喷发",
+   "meta": {
+    "blob": 83,
+    "offset": 190124,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::422540",
+   "en": "Earth Eject",
+   "ja": "アースエジェクト",
+   "zh": "大地喷发",
+   "meta": {
+    "blob": 394,
+    "offset": 422540,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::422828",
+   "en": "Earth Eject",
+   "ja": "アースエジェクト",
+   "zh": "大地喷发",
+   "meta": {
+    "blob": 394,
+    "offset": 422828,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::196460",
+   "en": "Storm Out",
+   "ja": "ストームアウト",
+   "zh": "风暴爆发",
+   "meta": {
+    "blob": 83,
+    "offset": 196460,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::196748",
+   "en": "Storm Out",
+   "ja": "ストームアウト",
+   "zh": "风暴爆发",
+   "meta": {
+    "blob": 83,
+    "offset": 196748,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::429164",
+   "en": "Storm Out",
+   "ja": "ストームアウト",
+   "zh": "风暴爆发",
+   "meta": {
+    "blob": 394,
+    "offset": 429164,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::429452",
+   "en": "Storm Out",
+   "ja": "ストームアウト",
+   "zh": "风暴爆发",
+   "meta": {
+    "blob": 394,
+    "offset": 429452,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::228716",
+   "en": "Judge of Dark",
+   "ja": "ジャッジオブダーク",
+   "zh": "暗之审判",
+   "meta": {
+    "blob": 83,
+    "offset": 228716,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::229004",
+   "en": "Judge of Dark",
+   "ja": "ジャッジオブダーク",
+   "zh": "暗之审判",
+   "meta": {
+    "blob": 83,
+    "offset": 229004,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::461420",
+   "en": "Judge of Dark",
+   "ja": "ジャッジオブダーク",
+   "zh": "暗之审判",
+   "meta": {
+    "blob": 394,
+    "offset": 461420,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::461708",
+   "en": "Judge of Dark",
+   "ja": "ジャッジオブダーク",
+   "zh": "暗之审判",
+   "meta": {
+    "blob": 394,
+    "offset": 461708,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::218636",
+   "en": "Idiot Brothers",
+   "ja": "ウスノロブラザーズ",
+   "zh": "笨蛋兄弟",
+   "meta": {
+    "blob": 83,
+    "offset": 218636,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::451340",
+   "en": "Idiot Brothers",
+   "ja": "ウスノロブラザーズ",
+   "zh": "笨蛋兄弟",
+   "meta": {
+    "blob": 394,
+    "offset": 451340,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::247436",
+   "en": "Hero Chain!",
+   "ja": "勇者チェイン！",
+   "zh": "勇者连击！",
+   "meta": {
+    "blob": 83,
+    "offset": 247436,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::481292",
+   "en": "Hero Chain!",
+   "ja": "勇者チェイン！",
+   "zh": "勇者连击！",
+   "meta": {
+    "blob": 394,
+    "offset": 481292,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::248012",
+   "en": "Brave Triangle",
+   "ja": "ブレイブトライアングル",
+   "zh": "勇者三角",
+   "meta": {
+    "blob": 83,
+    "offset": 248012,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::483596",
+   "en": "Brave Triangle",
+   "ja": "ブレイブトライアングル",
+   "zh": "勇者三角",
+   "meta": {
+    "blob": 394,
+    "offset": 483596,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::249164",
+   "en": "Goddess Academy Theme Song",
+   "ja": "女神学園テーマソング",
+   "zh": "女神学园主题曲",
+   "meta": {
+    "blob": 83,
+    "offset": 249164,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::488780",
+   "en": "Goddess Academy Theme Song",
+   "ja": "女神学園テーマソング",
+   "zh": "女神学园主题曲",
+   "meta": {
+    "blob": 394,
+    "offset": 488780,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::250316",
+   "en": "Brave Triangle 2",
+   "ja": "ブレイブトライアングル２",
+   "zh": "勇者三角2",
+   "meta": {
+    "blob": 83,
+    "offset": 250316,
+    "cap": 8,
+    "cap_bytes": 17,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::494252",
+   "en": "Brave Triangle 2",
+   "ja": "ブレイブトライアングル２",
+   "zh": "勇者三角2",
+   "meta": {
+    "blob": 394,
+    "offset": 494252,
+    "cap": 8,
+    "cap_bytes": 17,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::251468",
+   "en": "All Star",
+   "ja": "オールスター",
+   "zh": "全明星",
+   "meta": {
+    "blob": 83,
+    "offset": 251468,
+    "cap": 4,
+    "cap_bytes": 9,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::501452",
+   "en": "All Star",
+   "ja": "オールスター",
+   "zh": "全明星",
+   "meta": {
+    "blob": 394,
+    "offset": 501452,
+    "cap": 4,
+    "cap_bytes": 9,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::13292",
+   "en": "Magic Storm",
+   "ja": "マジックストーム",
+   "zh": "魔法风暴",
+   "meta": {
+    "blob": 417,
+    "offset": 13292,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::12140",
+   "en": "Magic Storm",
+   "ja": "マジックストーム",
+   "zh": "魔法风暴",
+   "meta": {
+    "blob": 654,
+    "offset": 12140,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::17324",
+   "en": "Knight Dynamite",
+   "ja": "ナイトダイナマイツ",
+   "zh": "骑士炸药",
+   "meta": {
+    "blob": 417,
+    "offset": 17324,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::13580",
+   "en": "Knight Dynamite",
+   "ja": "ナイトダイナマイツ",
+   "zh": "骑士炸药",
+   "meta": {
+    "blob": 654,
+    "offset": 13580,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::27116",
+   "en": "Prison Break",
+   "ja": "プリズンアウト",
+   "zh": "破狱",
+   "meta": {
+    "blob": 417,
+    "offset": 27116,
+    "cap": 6,
+    "cap_bytes": 13,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::17324",
+   "en": "Prison Break",
+   "ja": "プリズンアウト",
+   "zh": "破狱",
+   "meta": {
+    "blob": 654,
+    "offset": 17324,
+    "cap": 6,
+    "cap_bytes": 13,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::33452",
+   "en": "Come on everyone!",
+   "ja": "「みんながんばれ～♪」",
+   "zh": "大家上！",
+   "meta": {
+    "blob": 417,
+    "offset": 33452,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::19916",
+   "en": "Come on everyone!",
+   "ja": "「みんながんばれ～♪」",
+   "zh": "大家上！",
+   "meta": {
+    "blob": 654,
+    "offset": 19916,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::38060",
+   "en": "Sonic Boom Attack",
+   "ja": "音速アタック",
+   "zh": "音爆攻击",
+   "meta": {
+    "blob": 417,
+    "offset": 38060,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::21644",
+   "en": "Sonic Boom Attack",
+   "ja": "音速アタック",
+   "zh": "音爆攻击",
+   "meta": {
+    "blob": 654,
+    "offset": 21644,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::44108",
+   "en": "Hellfang",
+   "ja": "ヘルファング",
+   "zh": "地狱獠牙",
+   "meta": {
+    "blob": 417,
+    "offset": 44108,
+    "cap": 4,
+    "cap_bytes": 9,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::23948",
+   "en": "Hellfang",
+   "ja": "ヘルファング",
+   "zh": "地狱獠牙",
+   "meta": {
+    "blob": 654,
+    "offset": 23948,
+    "cap": 4,
+    "cap_bytes": 9,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::55340",
+   "en": "Spot Burst Shot",
+   "ja": "スポットバーストショット",
+   "zh": "定点爆破射击",
+   "meta": {
+    "blob": 417,
+    "offset": 55340,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::28268",
+   "en": "Spot Burst Shot",
+   "ja": "スポットバーストショット",
+   "zh": "定点爆破射击",
+   "meta": {
+    "blob": 654,
+    "offset": 28268,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::60812",
+   "en": "Satellite Laser",
+   "ja": "サテライトレーザー",
+   "zh": "卫星激光",
+   "meta": {
+    "blob": 417,
+    "offset": 60812,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::30284",
+   "en": "Satellite Laser",
+   "ja": "サテライトレーザー",
+   "zh": "卫星激光",
+   "meta": {
+    "blob": 654,
+    "offset": 30284,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::66860",
+   "en": "Beast Fang",
+   "ja": "ビーストファング",
+   "zh": "野兽獠牙",
+   "meta": {
+    "blob": 417,
+    "offset": 66860,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::31724",
+   "en": "Beast Fang",
+   "ja": "ビーストファング",
+   "zh": "野兽獠牙",
+   "meta": {
+    "blob": 654,
+    "offset": 31724,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::72620",
+   "en": "Nanako Love Punch",
+   "ja": "ナナコラブパンチ",
+   "zh": "奈奈子爱心拳",
+   "meta": {
+    "blob": 417,
+    "offset": 72620,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::34028",
+   "en": "Nanako Love Punch",
+   "ja": "ナナコラブパンチ",
+   "zh": "奈奈子爱心拳",
+   "meta": {
+    "blob": 654,
+    "offset": 34028,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::81260",
+   "en": "Oh-ho-ho-ho!",
+   "ja": "「お～ほっほっほ！」",
+   "zh": "哦呵呵呵！",
+   "meta": {
+    "blob": 417,
+    "offset": 81260,
+    "cap": 6,
+    "cap_bytes": 13,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::36908",
+   "en": "Oh-ho-ho-ho!",
+   "ja": "「お～ほっほっほ！」",
+   "zh": "哦呵呵呵！",
+   "meta": {
+    "blob": 654,
+    "offset": 36908,
+    "cap": 6,
+    "cap_bytes": 13,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::88460",
+   "en": "Immovable Sword",
+   "ja": "不動明王剣",
+   "zh": "不动剑",
+   "meta": {
+    "blob": 417,
+    "offset": 88460,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::39212",
+   "en": "Immovable Sword",
+   "ja": "不動明王剣",
+   "zh": "不动剑",
+   "meta": {
+    "blob": 654,
+    "offset": 39212,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::107180",
+   "en": "Natural Born Devil",
+   "ja": "ナチュラルボーンデビル",
+   "zh": "天生恶魔",
+   "meta": {
+    "blob": 417,
+    "offset": 107180,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::45548",
+   "en": "Natural Born Devil",
+   "ja": "ナチュラルボーンデビル",
+   "zh": "天生恶魔",
+   "meta": {
+    "blob": 654,
+    "offset": 45548,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::115820",
+   "en": "Destruction Blow",
+   "ja": "破壊の一撃",
+   "zh": "破坏重击",
+   "meta": {
+    "blob": 417,
+    "offset": 115820,
+    "cap": 8,
+    "cap_bytes": 17,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::48428",
+   "en": "Destruction Blow",
+   "ja": "破壊の一撃",
+   "zh": "破坏重击",
+   "meta": {
+    "blob": 654,
+    "offset": 48428,
+    "cap": 8,
+    "cap_bytes": 17,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::120716",
+   "en": "Shadow Braver",
+   "ja": "シャドウブレイバー",
+   "zh": "暗影勇者",
+   "meta": {
+    "blob": 417,
+    "offset": 120716,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::49868",
+   "en": "Shadow Braver",
+   "ja": "シャドウブレイバー",
+   "zh": "暗影勇者",
+   "meta": {
+    "blob": 654,
+    "offset": 49868,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::127628",
+   "en": "Backside of Period",
+   "ja": "ピリオドの向こう",
+   "zh": "终焉之背",
+   "meta": {
+    "blob": 417,
+    "offset": 127628,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::52748",
+   "en": "Backside of Period",
+   "ja": "ピリオドの向こう",
+   "zh": "终焉之背",
+   "meta": {
+    "blob": 654,
+    "offset": 52748,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::159596",
+   "en": "Ultimate Karma Devil Slash",
+   "ja": "極業魔神断",
+   "zh": "究极业魔斩",
+   "meta": {
+    "blob": 408,
+    "offset": 159596,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::167372",
+   "en": "Ultimate Karma Devil Slash",
+   "ja": "極業魔神断",
+   "zh": "究极业魔斩",
+   "meta": {
+    "blob": 408,
+    "offset": 167372,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::132812",
+   "en": "Ultimate Karma Devil Slash",
+   "ja": "極業魔神断",
+   "zh": "究极业魔斩",
+   "meta": {
+    "blob": 417,
+    "offset": 132812,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::54188",
+   "en": "Ultimate Karma Devil Slash",
+   "ja": "極業魔神断",
+   "zh": "究极业魔斩",
+   "meta": {
+    "blob": 654,
+    "offset": 54188,
+    "cap": 13,
+    "cap_bytes": 27,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::138860",
+   "en": "Liar!",
+   "ja": "「うそつき！」",
+   "zh": "骗子！",
+   "meta": {
+    "blob": 417,
+    "offset": 138860,
+    "cap": 3,
+    "cap_bytes": 6,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::56780",
+   "en": "Liar!",
+   "ja": "「うそつき！」",
+   "zh": "骗子！",
+   "meta": {
+    "blob": 654,
+    "offset": 56780,
+    "cap": 3,
+    "cap_bytes": 6,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::143468",
+   "en": "Legend of Hedgehog",
+   "ja": "レジェンドオブヘッジホッグ",
+   "zh": "刺猬传说",
+   "meta": {
+    "blob": 417,
+    "offset": 143468,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::58220",
+   "en": "Legend of Hedgehog",
+   "ja": "レジェンドオブヘッジホッグ",
+   "zh": "刺猬传说",
+   "meta": {
+    "blob": 654,
+    "offset": 58220,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::150668",
+   "en": "Ultimate Twist",
+   "ja": "アルティメットツイスト",
+   "zh": "究极扭转",
+   "meta": {
+    "blob": 417,
+    "offset": 150668,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::59660",
+   "en": "Ultimate Twist",
+   "ja": "アルティメットツイスト",
+   "zh": "究极扭转",
+   "meta": {
+    "blob": 654,
+    "offset": 59660,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::161324",
+   "en": "Pink Hurricane",
+   "ja": "ピンクハリケーン",
+   "zh": "粉色旋风",
+   "meta": {
+    "blob": 417,
+    "offset": 161324,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::22220",
+   "en": "Pink Hurricane",
+   "ja": "ピンクハリケーン",
+   "zh": "粉色旋风",
+   "meta": {
+    "blob": 445,
+    "offset": 22220,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::62540",
+   "en": "Pink Hurricane",
+   "ja": "ピンクハリケーン",
+   "zh": "粉色旋风",
+   "meta": {
+    "blob": 654,
+    "offset": 62540,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::167660",
+   "en": "Time Hole Burst",
+   "ja": "タイムホールバースト",
+   "zh": "时空洞爆发",
+   "meta": {
+    "blob": 417,
+    "offset": 167660,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::64268",
+   "en": "Time Hole Burst",
+   "ja": "タイムホールバースト",
+   "zh": "时空洞爆发",
+   "meta": {
+    "blob": 654,
+    "offset": 64268,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::172268",
+   "en": "Devil Slash",
+   "ja": "魔断",
+   "zh": "恶魔斩",
+   "meta": {
+    "blob": 417,
+    "offset": 172268,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::65708",
+   "en": "Devil Slash",
+   "ja": "魔断",
+   "zh": "恶魔斩",
+   "meta": {
+    "blob": 654,
+    "offset": 65708,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::180620",
+   "en": "Soldier Reppa",
+   "ja": "武人れっぱ",
+   "zh": "士兵连破",
+   "meta": {
+    "blob": 417,
+    "offset": 180620,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::69164",
+   "en": "Soldier Reppa",
+   "ja": "武人れっぱ",
+   "zh": "士兵连破",
+   "meta": {
+    "blob": 654,
+    "offset": 69164,
+    "cap": 7,
+    "cap_bytes": 14,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::185804",
+   "en": "Twin Spear",
+   "ja": "ツインスピア",
+   "zh": "双枪",
+   "meta": {
+    "blob": 417,
+    "offset": 185804,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::70604",
+   "en": "Twin Spear",
+   "ja": "ツインスピア",
+   "zh": "双枪",
+   "meta": {
+    "blob": 654,
+    "offset": 70604,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::22508",
+   "en": "Tsubame Gaeshi",
+   "ja": "つばめ返し",
+   "zh": "燕返",
+   "meta": {
+    "blob": 417,
+    "offset": 22508,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::49580",
+   "en": "Crushing Strike of the War God",
+   "ja": "武神練撃破",
+   "zh": "战神碎击",
+   "meta": {
+    "blob": 417,
+    "offset": 49580,
+    "cap": 15,
+    "cap_bytes": 31,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::76940",
+   "en": "You should feel ashamed!",
+   "ja": "「はじを知れっ！」",
+   "zh": "你该感到羞耻！",
+   "meta": {
+    "blob": 417,
+    "offset": 76940,
+    "cap": 12,
+    "cap_bytes": 25,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::93644",
+   "en": "Evil Lord Wink Obliteration",
+   "ja": "マオウ瞬滅殺",
+   "zh": "魔王眨眼歼灭",
+   "meta": {
+    "blob": 417,
+    "offset": 93644,
+    "cap": 14,
+    "cap_bytes": 28,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::101708",
+   "en": "Infinite Weapon Fall",
+   "ja": "無限武器落とし",
+   "zh": "无限武器坠落",
+   "meta": {
+    "blob": 417,
+    "offset": 101708,
+    "cap": 10,
+    "cap_bytes": 21,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::156140",
+   "en": "Immovable Bright Divine Sword",
+   "ja": "不動明神剣",
+   "zh": "不动明王剑",
+   "meta": {
+    "blob": 417,
+    "offset": 156140,
+    "cap": 15,
+    "cap_bytes": 30,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::206540",
+   "en": "New Meteor",
+   "ja": "超新流星",
+   "zh": "新流星",
+   "meta": {
+    "blob": 417,
+    "offset": 206540,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::15596",
+   "en": "Swallow Reverse",
+   "ja": "つばめ返し",
+   "zh": "逆燕斩",
+   "meta": {
+    "blob": 654,
+    "offset": 15596,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::26252",
+   "en": "War God Chain Assault",
+   "ja": "武神練撃破",
+   "zh": "战神连袭",
+   "meta": {
+    "blob": 654,
+    "offset": 26252,
+    "cap": 11,
+    "cap_bytes": 22,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::35468",
+   "en": "Feel Shame!",
+   "ja": "「はじを知れっ！」",
+   "zh": "羞耻吧！",
+   "meta": {
+    "blob": 654,
+    "offset": 35468,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::41228",
+   "en": "Evil Lord Blink Obliteration",
+   "ja": "マオウ瞬滅殺",
+   "zh": "魔王瞬灭",
+   "meta": {
+    "blob": 654,
+    "offset": 41228,
+    "cap": 14,
+    "cap_bytes": 29,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::42668",
+   "en": "Infinite Weapon Drop",
+   "ja": "無限武器落とし",
+   "zh": "无限武器落下",
+   "meta": {
+    "blob": 654,
+    "offset": 42668,
+    "cap": 10,
+    "cap_bytes": 21,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::61100",
+   "en": "Immovable Myojin Sword",
+   "ja": "不動明神剣",
+   "zh": "不动明神剑",
+   "meta": {
+    "blob": 654,
+    "offset": 61100,
+    "cap": 11,
+    "cap_bytes": 23,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::87308",
+   "en": "Super New Meteor",
+   "ja": "超新流星",
+   "zh": "超新流星",
+   "meta": {
+    "blob": 654,
+    "offset": 87308,
+    "cap": 8,
+    "cap_bytes": 17,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::417::111500",
+   "en": "Angel Ring",
+   "ja": "エンジェルリング",
+   "zh": "天使戒指",
+   "meta": {
+    "blob": 417,
+    "offset": 111500,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::654::46988",
+   "en": "Angel Ring",
+   "ja": "エンジェルリング",
+   "zh": "天使戒指",
+   "meta": {
+    "blob": 654,
+    "offset": 46988,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::147788",
+   "en": "Gunshot",
+   "ja": "射撃",
+   "zh": "枪击",
+   "meta": {
+    "blob": 83,
+    "offset": 147788,
+    "cap": 4,
+    "cap_bytes": 8,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::380492",
+   "en": "Gunshot",
+   "ja": "射撃",
+   "zh": "枪击",
+   "meta": {
+    "blob": 394,
+    "offset": 380492,
+    "cap": 4,
+    "cap_bytes": 8,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::166796",
+   "en": "Summon Monster",
+   "ja": "モンスター召喚",
+   "zh": "召唤怪物",
+   "meta": {
+    "blob": 83,
+    "offset": 166796,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::399500",
+   "en": "Summon Monster",
+   "ja": "モンスター召喚",
+   "zh": "召唤怪物",
+   "meta": {
+    "blob": 394,
+    "offset": 399500,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::175724",
+   "en": "Water Stone",
+   "ja": "水の石",
+   "zh": "水之石",
+   "meta": {
+    "blob": 83,
+    "offset": 175724,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::267::7884",
+   "en": "Water Stone",
+   "ja": "水の石",
+   "zh": "水之石",
+   "meta": {
+    "blob": 267,
+    "offset": 7884,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::408428",
+   "en": "Water Stone",
+   "ja": "水の石",
+   "zh": "水之石",
+   "meta": {
+    "blob": 394,
+    "offset": 408428,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::184652",
+   "en": "Fire Stone",
+   "ja": "火の石",
+   "zh": "火之石",
+   "meta": {
+    "blob": 83,
+    "offset": 184652,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::417356",
+   "en": "Fire Stone",
+   "ja": "火の石",
+   "zh": "火之石",
+   "meta": {
+    "blob": 394,
+    "offset": 417356,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::193868",
+   "en": "Earth Stone",
+   "ja": "土の石",
+   "zh": "土之石",
+   "meta": {
+    "blob": 83,
+    "offset": 193868,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::426572",
+   "en": "Earth Stone",
+   "ja": "土の石",
+   "zh": "土之石",
+   "meta": {
+    "blob": 394,
+    "offset": 426572,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::966::58796",
+   "en": "Earth Stone",
+   "ja": "土の石",
+   "zh": "土之石",
+   "meta": {
+    "blob": 966,
+    "offset": 58796,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::216908",
+   "en": "Wind Stone",
+   "ja": "風の石",
+   "zh": "风之石",
+   "meta": {
+    "blob": 83,
+    "offset": 216908,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::196::205616",
+   "en": "Wind Stone",
+   "ja": "風の石",
+   "zh": "风之石",
+   "meta": {
+    "blob": 196,
+    "offset": 205616,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::449612",
+   "en": "Wind Stone",
+   "ja": "風の石",
+   "zh": "风之石",
+   "meta": {
+    "blob": 394,
+    "offset": 449612,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::226412",
+   "en": "Golem Stone",
+   "ja": "ゴーレムストーン",
+   "zh": "魔像石",
+   "meta": {
+    "blob": 83,
+    "offset": 226412,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::459116",
+   "en": "Golem Stone",
+   "ja": "ゴーレムストーン",
+   "zh": "魔像石",
+   "meta": {
+    "blob": 394,
+    "offset": 459116,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::50564",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 50564,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::56112",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 56112,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::61660",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 61660,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::67208",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 67208,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::72756",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 72756,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::29::78304",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 29,
+    "offset": 78304,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::233900",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 83,
+    "offset": 233900,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::466604",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 394,
+    "offset": 466604,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::170540",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 170540,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::179756",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 179756,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::191276",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 191276,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::197900",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 197900,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::219788",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 219788,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::83::230156",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 83,
+    "offset": 230156,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::403244",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 403244,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::412460",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 412460,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::423980",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 423980,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::430604",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 430604,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::452492",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 452492,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::394::462860",
+   "en": "Nothing happened…",
+   "ja": "何もおこらなかった・・・",
+   "zh": "什么都没发生…",
+   "meta": {
+    "blob": 394,
+    "offset": 462860,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::99::16",
+   "en": "Wooden Sword +1",
+   "ja": "ボクソード＋１",
+   "zh": "木剑+1",
+   "meta": {
+    "blob": 99,
+    "offset": 16,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::99::56",
+   "en": "Combining the best features of",
+   "ja": "ボクソードとこんぼうの",
+   "zh": "兼备",
+   "meta": {
+    "blob": 99,
+    "offset": 56,
+    "cap": 15,
+    "cap_bytes": 31,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::25::62384",
+   "en": "Materials: %s　＋　%s",
+   "ja": "そざい：%s　＋　%s",
+   "zh": "材料：%s　＋　%s",
+   "meta": {
+    "blob": 25,
+    "offset": 62384,
+    "cap": 11,
+    "cap_bytes": 22,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::25::63056",
+   "en": "Materials: %s　＋　%s",
+   "ja": "そざい：%s　＋　%s",
+   "zh": "材料：%s　＋　%s",
+   "meta": {
+    "blob": 25,
+    "offset": 63056,
+    "cap": 11,
+    "cap_bytes": 22,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::136::16",
+   "en": "Freefight",
+   "ja": "フリーファイト",
+   "zh": "自由战斗",
+   "meta": {
+    "blob": 136,
+    "offset": 16,
+    "cap": 32,
+    "cap_bytes": 64,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::931::16",
+   "en": "Narrowly Averted",
+   "ja": "危機イッパツ",
+   "zh": "千钧一发",
+   "meta": {
+    "blob": 931,
+    "offset": 16,
+    "cap": 18,
+    "cap_bytes": 36,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::483::25100",
+   "en": "Chaos Wing",
+   "ja": "カオスウィング",
+   "zh": "混沌之翼",
+   "meta": {
+    "blob": 483,
+    "offset": 25100,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::49868",
+   "en": "No World",
+   "ja": "ノーワールド",
+   "zh": "无之世界",
+   "meta": {
+    "blob": 408,
+    "offset": 49868,
+    "cap": 4,
+    "cap_bytes": 9,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::62828",
+   "en": "Rejection of Fate",
+   "ja": "運命のキョゼツ",
+   "zh": "拒绝命运",
+   "meta": {
+    "blob": 408,
+    "offset": 62828,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::73772",
+   "en": "Rejection of Fate",
+   "ja": "運命のキョゼツ",
+   "zh": "拒绝命运",
+   "meta": {
+    "blob": 408,
+    "offset": 73772,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::96236",
+   "en": "Rejection of Fate",
+   "ja": "運命のキョゼツ",
+   "zh": "拒绝命运",
+   "meta": {
+    "blob": 408,
+    "offset": 96236,
+    "cap": 9,
+    "cap_bytes": 18,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::154412",
+   "en": "Test Skill",
+   "ja": "テストスキル",
+   "zh": "测试技能",
+   "meta": {
+    "blob": 408,
+    "offset": 154412,
+    "cap": 5,
+    "cap_bytes": 11,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::21356",
+   "en": "True Emperor of Destruction",
+   "ja": "真・ハメツの皇",
+   "zh": "真·破坏皇帝",
+   "meta": {
+    "blob": 408,
+    "offset": 21356,
+    "cap": 14,
+    "cap_bytes": 28,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::170540",
+   "en": "Ultimate Karma Devil Slice Reversed!",
+   "ja": "極業魔神断　返し！",
+   "zh": "究极业魔斩·逆！",
+   "meta": {
+    "blob": 408,
+    "offset": 170540,
+    "cap": 18,
+    "cap_bytes": 37,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::408::147500",
+   "en": "Zero Dimension",
+   "ja": "ゼロディメンション",
+   "zh": "零之次元",
+   "meta": {
+    "blob": 408,
+    "offset": 147500,
+    "cap": 7,
+    "cap_bytes": 15,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::29708",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 29708,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::33164",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 33164,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::36620",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 36620,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::40076",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 40076,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::43532",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 43532,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::46988",
+   "en": "Curse Spell",
+   "ja": "カーススペル",
+   "zh": "诅咒术",
+   "meta": {
+    "blob": 445,
+    "offset": 46988,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::86::27692",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 86,
+    "offset": 27692,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::105::10700",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 105,
+    "offset": 10700,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::80396",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 445,
+    "offset": 80396,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::528::84428",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 528,
+    "offset": 84428,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::676::52460",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 676,
+    "offset": 52460,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::966::13004",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 966,
+    "offset": 13004,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::966::51596",
+   "en": "Extreme Evil Slash",
+   "ja": "極魔断",
+   "zh": "极恶斩",
+   "meta": {
+    "blob": 966,
+    "offset": 51596,
+    "cap": 9,
+    "cap_bytes": 19,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::11852",
+   "en": "Jar Throw",
+   "ja": "つぼなげ",
+   "zh": "掷罐",
+   "meta": {
+    "blob": 445,
+    "offset": 11852,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::14156",
+   "en": "Jar Throw",
+   "ja": "つぼなげ",
+   "zh": "掷罐",
+   "meta": {
+    "blob": 445,
+    "offset": 14156,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::445::16460",
+   "en": "Jar Throw",
+   "ja": "つぼなげ",
+   "zh": "掷罐",
+   "meta": {
+    "blob": 445,
+    "offset": 16460,
+    "cap": 5,
+    "cap_bytes": 10,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::748::29420",
+   "en": "Magic Flare",
+   "ja": "マジックフレア",
+   "zh": "魔法闪光",
+   "meta": {
+    "blob": 748,
+    "offset": 29420,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::748::65996",
+   "en": "Magic Flare",
+   "ja": "マジックフレア",
+   "zh": "魔法闪光",
+   "meta": {
+    "blob": 748,
+    "offset": 65996,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::748::24524",
+   "en": "Physic Holy",
+   "ja": "フィジックホーリー",
+   "zh": "物理圣光",
+   "meta": {
+    "blob": 748,
+    "offset": 24524,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::748::71756",
+   "en": "Physic Holy",
+   "ja": "フィジックホーリー",
+   "zh": "物理圣光",
+   "meta": {
+    "blob": 748,
+    "offset": 71756,
+    "cap": 6,
+    "cap_bytes": 12,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::748::10124",
+   "en": "Turning Swallow Slash",
+   "ja": "つばめがえし",
+   "zh": "转身燕斩",
+   "meta": {
+    "blob": 748,
+    "offset": 10124,
+    "cap": 11,
+    "cap_bytes": 22,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::528::69452",
+   "en": "Emperor of Destruction",
+   "ja": "ハメツの皇",
+   "zh": "破坏皇帝",
+   "meta": {
+    "blob": 528,
+    "offset": 69452,
+    "cap": 11,
+    "cap_bytes": 23,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::528::76364",
+   "en": "Galactic Cannon",
+   "ja": "ギャラクティックカノン",
+   "zh": "银河炮",
+   "meta": {
+    "blob": 528,
+    "offset": 76364,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::756::49580",
+   "en": "Galactic Cannon",
+   "ja": "ギャラクティックカノン",
+   "zh": "银河炮",
+   "meta": {
+    "blob": 756,
+    "offset": 49580,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  },
+  {
+   "id": "extra::609::59372",
+   "en": "Gustaf Launcher",
+   "ja": "グスタフランチャー",
+   "zh": "古斯塔夫发射器",
+   "meta": {
+    "blob": 609,
+    "offset": 59372,
+    "cap": 8,
+    "cap_bytes": 16,
+    "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
+   }
+  }
+ ]
+}

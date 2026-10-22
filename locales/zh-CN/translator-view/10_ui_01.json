@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2887,
+ "_count": 3058,
  "entries": [
   {
    "id": "row::0",
@@ -379,6 +379,138 @@
    }
   },
   {
+   "id": "row::57",
+   "en": "Volcanosaurus",
+   "ja": "ボルカノサウルス",
+   "zh": "火山蜥蜴",
+   "meta": {
+    "blob": 4,
+    "offset": 972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::59",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 2700,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::62",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 2988,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::83",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 13644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::85",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 13932,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::87",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 15372,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::89",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 15660,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::92",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 15948,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::123",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 30636,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::126",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 30924,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::128",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 33804,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::132",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 38124,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::133",
    "en": "(Darn Darn Darn!",
    "ja": "（ちくしょうちくしょうちくしょう",
@@ -401,6 +533,17 @@
    }
   },
   {
+   "id": "row::135",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 38412,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::136",
    "en": "(I'll steal away your strength now that you've gotten stronger!",
    "ja": "（強くなったオマエの力をまたうばってやるぜ！！）",
@@ -412,6 +555,215 @@
    }
   },
   {
+   "id": "row::139",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 40716,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::143",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 43884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::146",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 45036,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::148",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 45324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::151",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 45612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::154",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 45900,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::157",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 46188,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::159",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 46476,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::164",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 47628,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::166",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 47916,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::170",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 48492,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::173",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 4,
+    "offset": 48780,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::176",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 60588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::179",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 62604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::182",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 62892,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::188",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 63756,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::191",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 66924,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::194",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 77004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::197",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 4,
+    "offset": 77292,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::212",
    "en": "………",
    "ja": "・・・　・・・　・・・",
@@ -420,6 +772,28 @@
     "blob": 4,
     "offset": 85708,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::213",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 89676,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::216",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 90252,
+    "cap": 32
    }
   },
   {
@@ -555,6 +929,116 @@
    }
   },
   {
+   "id": "row::231",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 97452,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::237",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 100620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::239",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 4,
+    "offset": 100908,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::246",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 109548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::248",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 109836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::251",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 110124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::254",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 113004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::257",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 115596,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::260",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 118188,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::262",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 120780,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::264",
    "en": "Zozaurus the Enraged",
    "ja": "憤怒（ふんぬ）のゾゾラース",
@@ -588,6 +1072,72 @@
    }
   },
   {
+   "id": "row::272",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 132012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::274",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 132300,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::276",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 132588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::279",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 4,
+    "offset": 132876,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::281",
+   "en": "Time Goddess",
+   "ja": "時の女神さま",
+   "zh": "时之女神",
+   "meta": {
+    "blob": 4,
+    "offset": 133740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::283",
+   "en": "Dai",
+   "ja": "ダイクン",
+   "zh": "大君",
+   "meta": {
+    "blob": 4,
+    "offset": 134028,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::285",
    "en": "and the Hero Castle, are going to be destroyed together!",
    "ja": "　勇者城もろとも　自爆しやがる気だぜっ！！！",
@@ -599,6 +1149,116 @@
    }
   },
   {
+   "id": "row::286",
+   "en": "Time Goddess",
+   "ja": "時の女神さま",
+   "zh": "时之女神",
+   "meta": {
+    "blob": 4,
+    "offset": 134316,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::288",
+   "en": "Dai",
+   "ja": "ダイクン",
+   "zh": "大君",
+   "meta": {
+    "blob": 4,
+    "offset": 134604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::291",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 4,
+    "offset": 143820,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::293",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 4,
+    "offset": 144108,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::295",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 4,
+    "offset": 145548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::297",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 4,
+    "offset": 145836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::299",
+   "en": "Vetra the Deceitful",
+   "ja": "欺瞞のヴェトラ",
+   "zh": "欺瞒的维特拉",
+   "meta": {
+    "blob": 4,
+    "offset": 150732,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::302",
+   "en": "Vetra the Deceitful",
+   "ja": "欺瞞のヴェトラ",
+   "zh": "欺瞒的维特拉",
+   "meta": {
+    "blob": 4,
+    "offset": 152172,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::305",
+   "en": "Vetra the Deceitful",
+   "ja": "欺瞞のヴェトラ",
+   "zh": "欺瞒的维特拉",
+   "meta": {
+    "blob": 4,
+    "offset": 152460,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::308",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 156204,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::310",
    "en": "(Hmm… Why can't I get it going? Am I just imagining things?)",
    "ja": "（うーん　なんか調子がデネーな？　気のせいか？）",
@@ -606,6 +1266,28 @@
    "meta": {
     "blob": 4,
     "offset": 156332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::311",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 157644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::314",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 4,
+    "offset": 157932,
     "cap": 32
    }
   },
@@ -4020,6 +4702,182 @@
    }
   },
   {
+   "id": "row::1049",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1051",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1053",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 15948,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1055",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 16236,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1057",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 16524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1059",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 20556,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1061",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 20844,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1063",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 21132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1065",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 21420,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1068",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 21708,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1071",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 21996,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1073",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 22284,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1075",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 23148,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1077",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 28044,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1079",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 36108,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1081",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 36396,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::1083",
    "en": "losing my humanity.",
    "ja": "",
@@ -4027,6 +4885,655 @@
    "meta": {
     "blob": 30,
     "offset": 36524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1084",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 30,
+    "offset": 36684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1086",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 41004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1088",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 42444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1090",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 43884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1093",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 45324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1096",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 46764,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1098",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 48204,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1101",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 49644,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1103",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 51084,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1106",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 52524,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1109",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 55116,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1111",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 59148,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1113",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 63180,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1116",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 67212,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1118",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 71244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1121",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 75276,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1124",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 79308,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1126",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 83340,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1129",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 30,
+    "offset": 87372,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1132",
+   "en": "Warlord Hideo's Son ＃3",
+   "ja": "戦国大名ヒデーヨ三男",
+   "zh": "秀代三男",
+   "meta": {
+    "blob": 30,
+    "offset": 91692,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1135",
+   "en": "Warlord Hideo's Son ＃3",
+   "ja": "戦国大名ヒデーヨ三男",
+   "zh": "秀代三男",
+   "meta": {
+    "blob": 30,
+    "offset": 91980,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1137",
+   "en": "Warlord Hideo Himself",
+   "ja": "戦国大名ヒデーヨ本人",
+   "zh": "秀代本人",
+   "meta": {
+    "blob": 30,
+    "offset": 96012,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1140",
+   "en": "Warlord Hideo Himself",
+   "ja": "戦国大名ヒデーヨ本人",
+   "zh": "秀代本人",
+   "meta": {
+    "blob": 30,
+    "offset": 96300,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1142",
+   "en": "Warlord Hideo's Father",
+   "ja": "戦国大名ヒデーヨ父",
+   "zh": "秀代之父",
+   "meta": {
+    "blob": 30,
+    "offset": 100332,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1145",
+   "en": "Warlord Hideo's Father",
+   "ja": "戦国大名ヒデーヨ父",
+   "zh": "秀代之父",
+   "meta": {
+    "blob": 30,
+    "offset": 100620,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1147",
+   "en": "Warlord Hideo's Mother",
+   "ja": "戦国大名ヒデーヨ母",
+   "zh": "秀代之母",
+   "meta": {
+    "blob": 30,
+    "offset": 104652,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1150",
+   "en": "Warlord Hideo's Mother",
+   "ja": "戦国大名ヒデーヨ母",
+   "zh": "秀代之母",
+   "meta": {
+    "blob": 30,
+    "offset": 104940,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1153",
+   "en": "Warlord Hideo's Eldest Daughter",
+   "ja": "戦国大名ヒデーヨ長女",
+   "zh": "秀代长女",
+   "meta": {
+    "blob": 30,
+    "offset": 108972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1156",
+   "en": "Warlord Hideo's Eldest Daughter",
+   "ja": "戦国大名ヒデーヨ長女",
+   "zh": "秀代长女",
+   "meta": {
+    "blob": 30,
+    "offset": 109260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1158",
+   "en": "Warlord Hideo's Son ＃1",
+   "ja": "戦国大名ヒデーヨ長男",
+   "zh": "秀代长子",
+   "meta": {
+    "blob": 30,
+    "offset": 113292,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1161",
+   "en": "Warlord Hideo's Son ＃1",
+   "ja": "戦国大名ヒデーヨ長男",
+   "zh": "秀代长子",
+   "meta": {
+    "blob": 30,
+    "offset": 113580,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1163",
+   "en": "Shadow Warrior Noblong",
+   "ja": "影武者ノブロング",
+   "zh": "影武者信长",
+   "meta": {
+    "blob": 30,
+    "offset": 117612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1166",
+   "en": "Shadow Warrior Noblong",
+   "ja": "影武者ノブロング",
+   "zh": "影武者信长",
+   "meta": {
+    "blob": 30,
+    "offset": 117900,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1169",
+   "en": "Heavenly Warlord Zozoranosuke",
+   "ja": "四天大名ゾゾラノスケ",
+   "zh": "四天大名佐佐拉之助",
+   "meta": {
+    "blob": 30,
+    "offset": 121932,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1171",
+   "en": "Heavenly Warlord Zozoranosuke",
+   "ja": "四天大名ゾゾラノスケ",
+   "zh": "四天大名佐佐拉之助",
+   "meta": {
+    "blob": 30,
+    "offset": 122220,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1173",
+   "en": "Heavenly Warlord Tairaemon",
+   "ja": "四天大名タイラエモン",
+   "zh": "四天大名平右卫门",
+   "meta": {
+    "blob": 30,
+    "offset": 126252,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1176",
+   "en": "Heavenly Warlord Tairaemon",
+   "ja": "四天大名タイラエモン",
+   "zh": "四天大名平右卫门",
+   "meta": {
+    "blob": 30,
+    "offset": 126540,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1178",
+   "en": "Fire Warlord Bazerazo",
+   "ja": "火の大名バゼラゾウ",
+   "zh": "火之大名巴泽拉佐",
+   "meta": {
+    "blob": 30,
+    "offset": 130572,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1180",
+   "en": "Fire Warlord Bazerazo",
+   "ja": "火の大名バゼラゾウ",
+   "zh": "火之大名巴泽拉佐",
+   "meta": {
+    "blob": 30,
+    "offset": 130860,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1182",
+   "en": "Water Warlord Kaishin",
+   "ja": "水の大名カイシンタ",
+   "zh": "水之大名凯辛",
+   "meta": {
+    "blob": 30,
+    "offset": 134892,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1185",
+   "en": "Water Warlord Kaishin",
+   "ja": "水の大名カイシンタ",
+   "zh": "水之大名凯辛",
+   "meta": {
+    "blob": 30,
+    "offset": 135180,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1187",
+   "en": "Heavenly Warlord Vetranko",
+   "ja": "四天大名ヴェトランコ",
+   "zh": "四天大名维特拉恩科",
+   "meta": {
+    "blob": 30,
+    "offset": 139212,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1190",
+   "en": "Heavenly Warlord Vetranko",
+   "ja": "四天大名ヴェトランコ",
+   "zh": "四天大名维特拉恩科",
+   "meta": {
+    "blob": 30,
+    "offset": 139500,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1192",
+   "en": "Warlord Hideo's Friend",
+   "ja": "戦国大名ヒデーヨ知人",
+   "zh": "秀代之友",
+   "meta": {
+    "blob": 30,
+    "offset": 143532,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1195",
+   "en": "Warlord Hideo's Friend",
+   "ja": "戦国大名ヒデーヨ知人",
+   "zh": "秀代之友",
+   "meta": {
+    "blob": 30,
+    "offset": 143820,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1198",
+   "en": "Warlord Hideo's Buddy",
+   "ja": "戦国大名ヒデーヨ親友",
+   "zh": "秀代挚友",
+   "meta": {
+    "blob": 30,
+    "offset": 147852,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1201",
+   "en": "Warlord Hideo's Buddy",
+   "ja": "戦国大名ヒデーヨ親友",
+   "zh": "秀代挚友",
+   "meta": {
+    "blob": 30,
+    "offset": 148140,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1203",
+   "en": "Heavenly Warlord Jabro",
+   "ja": "四天大名ジャアブロウ",
+   "zh": "四天大名贾布罗",
+   "meta": {
+    "blob": 30,
+    "offset": 152172,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1206",
+   "en": "Heavenly Warlord Jabro",
+   "ja": "四天大名ジャアブロウ",
+   "zh": "四天大名贾布罗",
+   "meta": {
+    "blob": 30,
+    "offset": 152460,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1208",
+   "en": "Wind Warlord Curamasa",
+   "ja": "風の大名キュラマサ",
+   "zh": "风之大名库拉玛萨",
+   "meta": {
+    "blob": 30,
+    "offset": 156492,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1211",
+   "en": "Wind Warlord Curamasa",
+   "ja": "風の大名キュラマサ",
+   "zh": "风之大名库拉玛萨",
+   "meta": {
+    "blob": 30,
+    "offset": 156780,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1213",
+   "en": "Warlord Hideo's 2nd Cousin",
+   "ja": "戦国大名ヒデーヨハトコ",
+   "zh": "秀代二表亲",
+   "meta": {
+    "blob": 30,
+    "offset": 160812,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1216",
+   "en": "Warlord Hideo's 2nd Cousin",
+   "ja": "戦国大名ヒデーヨハトコ",
+   "zh": "秀代二表亲",
+   "meta": {
+    "blob": 30,
+    "offset": 161100,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1218",
+   "en": "Warlord Hideo's Cousin",
+   "ja": "戦国大名ヒデーヨイトコ",
+   "zh": "秀代表亲",
+   "meta": {
+    "blob": 30,
+    "offset": 165132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1220",
+   "en": "Warlord Hideo's Cousin",
+   "ja": "戦国大名ヒデーヨイトコ",
+   "zh": "秀代表亲",
+   "meta": {
+    "blob": 30,
+    "offset": 165420,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1222",
+   "en": "Shadow Warrior Noblong",
+   "ja": "影武者ノブロング",
+   "zh": "影武者信长",
+   "meta": {
+    "blob": 30,
+    "offset": 169452,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1225",
+   "en": "Shadow Warrior Noblong",
+   "ja": "影武者ノブロング",
+   "zh": "影武者信长",
+   "meta": {
+    "blob": 30,
+    "offset": 169740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1228",
+   "en": "Earth Warlord Talianjo",
+   "ja": "土の大名タリアンジョウ",
+   "zh": "土之大名塔里安卓",
+   "meta": {
+    "blob": 30,
+    "offset": 173772,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::1231",
+   "en": "Earth Warlord Talianjo",
+   "ja": "土の大名タリアンジョウ",
+   "zh": "土之大名塔里安卓",
+   "meta": {
+    "blob": 30,
+    "offset": 174060,
     "cap": 32
    }
   },
@@ -16296,6 +17803,248 @@
    }
   },
   {
+   "id": "row::3646",
+   "en": "Bolt",
+   "ja": "ボルト",
+   "zh": "螺栓",
+   "meta": {
+    "blob": 83,
+    "offset": 147500,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3648",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 148652,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3650",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 149516,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3652",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 150380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3654",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 83,
+    "offset": 151244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3656",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 83,
+    "offset": 152108,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3658",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 152972,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3660",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 153836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3662",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 154700,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3664",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 83,
+    "offset": 155564,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3666",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 83,
+    "offset": 156428,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3668",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 157292,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3670",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 158156,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3672",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 159020,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3674",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 83,
+    "offset": 159884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3676",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 83,
+    "offset": 160748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3678",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 161612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3680",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 162476,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3682",
+   "en": "Lost Boy",
+   "ja": "すかボーヤ",
+   "zh": "迷路男孩",
+   "meta": {
+    "blob": 83,
+    "offset": 163340,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3684",
+   "en": "Black Speed",
+   "ja": "ブラックスピード",
+   "zh": "黑色加速",
+   "meta": {
+    "blob": 83,
+    "offset": 164204,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3686",
+   "en": "Power Beauty",
+   "ja": "パワービューティー",
+   "zh": "力量美人",
+   "meta": {
+    "blob": 83,
+    "offset": 165068,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::3688",
+   "en": "Guaderdon",
+   "ja": "ギャードルドン",
+   "zh": "加德尔顿",
+   "meta": {
+    "blob": 83,
+    "offset": 165932,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::3695",
    "en": "○: Enter",
    "ja": "○：はいる",
@@ -27703,6 +29452,17 @@
    }
   },
   {
+   "id": "row::6094",
+   "en": "Skivvies",
+   "ja": "パンイチ",
+   "zh": "内裤",
+   "meta": {
+    "blob": 128,
+    "offset": 20,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::6095",
    "en": "Can use all weapon skills. Its only redeeming feature.",
    "ja": "全ての武器でスキルが出せる　それだけが取りえのクラス",
@@ -27711,6 +29471,17 @@
     "blob": 128,
     "offset": 100,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6096",
+   "en": "Swordsman",
+   "ja": "剣士",
+   "zh": "剑士",
+   "meta": {
+    "blob": 128,
+    "offset": 232,
+    "cap": 18
    }
   },
   {
@@ -27725,6 +29496,17 @@
    }
   },
   {
+   "id": "row::6098",
+   "en": "Fighter",
+   "ja": "戦士",
+   "zh": "战士",
+   "meta": {
+    "blob": 128,
+    "offset": 444,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::6099",
    "en": "Specialist with axes and hammers. Slow, but high attack and defense.",
    "ja": "オノとハンマーが得意　スピードがネックだが攻撃力・防御力は高い",
@@ -27733,6 +29515,17 @@
     "blob": 128,
     "offset": 524,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6100",
+   "en": "Musketeer",
+   "ja": "銃士",
+   "zh": "射手",
+   "meta": {
+    "blob": 128,
+    "offset": 656,
+    "cap": 18
    }
   },
   {
@@ -27747,6 +29540,17 @@
    }
   },
   {
+   "id": "row::6102",
+   "en": "Mage",
+   "ja": "魔道士",
+   "zh": "魔法师",
+   "meta": {
+    "blob": 128,
+    "offset": 868,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::6103",
    "en": "Fights with staves and books. Increases HP and defense.",
    "ja": "杖と本を武器にたたかうクラス　体力と防御力が上がる",
@@ -27755,6 +29559,17 @@
     "blob": 128,
     "offset": 948,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6104",
+   "en": "Spearman",
+   "ja": "槍士",
+   "zh": "枪兵",
+   "meta": {
+    "blob": 128,
+    "offset": 1080,
+    "cap": 18
    }
   },
   {
@@ -27769,6 +29584,17 @@
    }
   },
   {
+   "id": "row::6106",
+   "en": "Hero",
+   "ja": "勇者",
+   "zh": "勇者",
+   "meta": {
+    "blob": 128,
+    "offset": 1292,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::6107",
    "en": "Can use all weapon skills. The legendary class.",
    "ja": "全ての武器でスキルが出せる　伝説のクラス",
@@ -27777,6 +29603,17 @@
     "blob": 128,
     "offset": 1372,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6108",
+   "en": "Warrior",
+   "ja": "ウォーリア",
+   "zh": "勇士",
+   "meta": {
+    "blob": 128,
+    "offset": 1504,
+    "cap": 18
    }
   },
   {
@@ -27791,6 +29628,17 @@
    }
   },
   {
+   "id": "row::6110",
+   "en": "Viking",
+   "ja": "バイキング",
+   "zh": "维京人",
+   "meta": {
+    "blob": 128,
+    "offset": 1716,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::6111",
    "en": "Advanced Warrior class.",
    "ja": "戦士の上級クラス",
@@ -27799,6 +29647,17 @@
     "blob": 128,
     "offset": 1796,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6112",
+   "en": "Marksman",
+   "ja": "シューター",
+   "zh": "神射手",
+   "meta": {
+    "blob": 128,
+    "offset": 1928,
+    "cap": 18
    }
   },
   {
@@ -27813,6 +29672,17 @@
    }
   },
   {
+   "id": "row::6114",
+   "en": "Wizard",
+   "ja": "ウィザード",
+   "zh": "巫师",
+   "meta": {
+    "blob": 128,
+    "offset": 2140,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::6115",
    "en": "Advanced Mage class.",
    "ja": "魔道士の上級クラス",
@@ -27821,6 +29691,17 @@
     "blob": 128,
     "offset": 2220,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::6116",
+   "en": "Lancer",
+   "ja": "ランサー",
+   "zh": "长枪兵",
+   "meta": {
+    "blob": 128,
+    "offset": 2352,
+    "cap": 18
    }
   },
   {

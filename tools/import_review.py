@@ -59,7 +59,7 @@ def _flush():
 
 
 def collect_files():
-    """(路径, 是否 protected) 列表：单行分片 + 多行 + DLC。"""
+    """(路径, 是否 protected) 列表：单行分片 + 多行 + DLC + 额外条目。"""
     out = []
     for base, prot in ((TV, False), (os.path.join(TV, 'protected'), True)):
         if not os.path.isdir(base):
@@ -70,7 +70,7 @@ def collect_files():
             # 普通分片：10_*/20_*；受保护分片：prot_*（命名与外层不同，避免混用）
             if name.startswith('prot_') if prot else name[:2] in ('10', '20'):
                 out.append((os.path.join(base, name), prot))
-    for name in ('30_multiline.json', '40_dlc01.json'):
+    for name in ('30_multiline.json', '40_dlc01.json', '50_extra.json'):
         p = os.path.join(TV, name)
         if os.path.exists(p):
             out.append((p, False))
@@ -93,8 +93,9 @@ def bad_chars(s, allow_nl):
 
 
 def run_package():
-    p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), 'package'],
-                       capture_output=True)
+    """刷新 dist：本分支的校对条目包含 Z11–Z14 新上屏文本，固定用 Z14 配方。"""
+    p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'),
+                        'package_names_cn_jobs_titles_hash'], capture_output=True)
     return (p.returncode, p.stdout.decode('utf-8', 'replace'),
             p.stderr.decode('utf-8', 'replace'))
 
@@ -138,7 +139,7 @@ def do_apply():
     # ---- 单行 / 受保护 ----
     for path, is_prot in files:
         name = os.path.relpath(path, TV)
-        if name in ('30_multiline.json', '40_dlc01.json'):
+        if name in ('30_multiline.json', '40_dlc01.json', '50_extra.json'):
             continue
         try:
             d = json.load(open(path, encoding='utf-8-sig'))
@@ -274,6 +275,48 @@ def do_apply():
             else:
                 errs.append((eid, '未知 DLC 源 %s' % fn))
 
+    # ---- Z11–Z14 额外条目（写 extra_review.json）----
+    exp = os.path.join(TV, '50_extra.json')
+    extra_map = {}
+    if os.path.exists(B.EXTRA_REVIEW_FILE):
+        try:
+            extra_map = json.load(open(B.EXTRA_REVIEW_FILE, encoding='utf-8'))
+        except Exception:
+            extra_map = {}
+    if os.path.exists(exp):
+        try:
+            d = json.load(open(exp, encoding='utf-8-sig'))
+            ents = d.get('entries') or []
+        except Exception as ex:
+            errs.append(('50_extra.json', '无法解析：%s' % ex)); ents = []
+        for e in ents:
+            eid = str(e.get('id') or '')
+            parts = eid.split('::')
+            if len(parts) != 3 or parts[0] != 'extra':
+                if eid:
+                    errs.append((eid, '无法识别的额外条目 id'))
+                continue
+            key = '%s:%s' % (parts[1], parts[2])
+            if e.get('zh') is None:
+                continue
+            new = B.strip_ascii_ws(str(e['zh']))
+            if new == '':
+                continue
+            if key in extra_map:
+                if new == B.strip_ascii_ws(str(extra_map[key])):
+                    unchanged += 1
+                    continue
+            # 首次导入时 extra_review.json 尚不存在：把所有条目落盘成完整覆盖表，
+            # 之后即可按“与当前覆盖值比较”判断是否改动。
+            bad = bad_chars(new, False)
+            if '\n' in new and not bad:
+                bad.append('\\n')
+            if bad:
+                errs.append((eid, '含不允许的字符 %s' % ' '.join(bad)))
+                continue
+            cap = (e.get('meta') or {}).get('cap_bytes')
+            add('extra', key, new, '额外 %s' % eid, False, cap_bytes=cap)
+
     # ---- 报告：清点 ----
     P('')
     P('一、改动清点')
@@ -317,14 +360,19 @@ def do_apply():
             touched.add(os.path.join(DLC_DIR, loc[0] + '.tsv'))
         elif kind == 'dlc_json':
             touched.add(os.path.join(DLC_DIR, 'zh_07.json'))
+        elif kind == 'extra':
+            touched.add(B.EXTRA_REVIEW_FILE)
     backs = {}
     for path in sorted(touched):
         if os.path.exists(path):
             bak = path + '.bak_review_' + ts
             shutil.copy2(path, bak)
             backs[path] = bak
+        else:
+            # 新建文件（例如首次生成 extra_review.json）：回滚时应删除
+            backs[path] = None
 
-    n_row = n_ml = n_dl = 0
+    n_row = n_ml = n_dl = n_ex = 0
     dlc_mod = {}
     for _d, kind, loc, new, _p in edits:
         if kind == 'row':
@@ -333,6 +381,9 @@ def do_apply():
         elif kind == 'ml':
             md[loc] = new
             n_ml += 1
+        elif kind == 'extra':
+            extra_map[loc] = new
+            n_ex += 1
         elif kind == 'dlc_tsv':
             dlc_mod.setdefault(loc[0], {})[loc[1]] = new
             n_dl += 1
@@ -349,6 +400,11 @@ def do_apply():
     with open(MJ_P, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(md, f, ensure_ascii=False, indent=1)
         f.write('\n')
+    if n_ex:
+        os.makedirs(os.path.dirname(B.EXTRA_REVIEW_FILE), exist_ok=True)
+        with open(B.EXTRA_REVIEW_FILE, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(extra_map, f, ensure_ascii=False, indent=1, sort_keys=True)
+            f.write('\n')
     for fn, mods in dlc_mod.items():
         if fn == 'zh_07':
             with open(os.path.join(DLC_DIR, 'zh_07.json'), 'w', encoding='utf-8', newline='\n') as f:
@@ -363,11 +419,13 @@ def do_apply():
             with open(p, 'w', encoding='utf-8-sig', newline='\n') as f:
                 f.write('\n'.join(lines) + '\n')
 
-    json.dump({'ts': ts, 'backs': backs, 'n_row': n_row, 'n_ml': n_ml, 'n_dlc': n_dl},
+    json.dump({'ts': ts, 'backs': backs, 'n_row': n_row, 'n_ml': n_ml, 'n_dlc': n_dl,
+               'n_extra': n_ex},
               open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     P('')
     P('三、写入译表')
-    P('  单行 %d 处 / 多行 %d 处 / DLC %d 处' % (n_row, n_ml, n_dl))
+    P('  单行 %d 处 / 多行 %d 处 / DLC %d 处 / 额外条目 %d 处'
+      % (n_row, n_ml, n_dl, n_ex))
     P('  备份: %s 等 %d 个文件（时间戳 %s）' % (os.path.basename(CSV_P), len(backs), ts))
 
     # ---- 刷新 dist（隔离打包，不动游戏目录）----
@@ -402,9 +460,13 @@ def do_revert():
     st = json.load(open(STATE, encoding='utf-8'))
     n = 0
     for path, bak in st['backs'].items():
-        if os.path.exists(bak):
+        if bak and os.path.exists(bak):
             shutil.copy2(bak, path)
             P('  已恢复 %s' % os.path.basename(path))
+            n += 1
+        elif bak is None and os.path.exists(path):
+            os.remove(path)
+            P('  已删除本次新建的 %s' % os.path.basename(path))
             n += 1
     os.remove(STATE)
     P('  共恢复 %d 个文件。' % n)

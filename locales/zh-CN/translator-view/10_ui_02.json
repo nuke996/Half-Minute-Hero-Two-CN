@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3009,
+ "_count": 3609,
  "entries": [
   {
    "id": "row::6660",
@@ -13,6 +13,17 @@
     "blob": 136,
     "offset": 80,
     "cap": 34
+   }
+  },
+  {
+   "id": "row::6661",
+   "en": "Boost Hero",
+   "ja": "ブーストヒーロー",
+   "zh": "提升勇者",
+   "meta": {
+    "blob": 136,
+    "offset": 288,
+    "cap": 32
    }
   },
   {
@@ -27,6 +38,17 @@
    }
   },
   {
+   "id": "row::6663",
+   "en": "Boost Party",
+   "ja": "ブーストパーティ",
+   "zh": "提升队伍",
+   "meta": {
+    "blob": 136,
+    "offset": 560,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::6664",
    "en": "Increases the party's power!",
    "ja": "仲間がパワーアップするぞ！",
@@ -35,6 +57,17 @@
     "blob": 136,
     "offset": 624,
     "cap": 76
+   }
+  },
+  {
+   "id": "row::6665",
+   "en": "Boost All",
+   "ja": "ブーストオール",
+   "zh": "全面提升",
+   "meta": {
+    "blob": 136,
+    "offset": 832,
+    "cap": 32
    }
   },
   {
@@ -49,6 +82,17 @@
    }
   },
   {
+   "id": "row::6667",
+   "en": "Gold Pick",
+   "ja": "ゴールドピック",
+   "zh": "黄金采掘",
+   "meta": {
+    "blob": 136,
+    "offset": 1104,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::6668",
    "en": "Get lots of gold!",
    "ja": "お金が多く手に入るぞ！",
@@ -56,6 +100,17 @@
    "meta": {
     "blob": 136,
     "offset": 1168,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::6669",
+   "en": "Experi-dive",
+   "ja": "エクスペリダイブ",
+   "zh": "经验俯冲",
+   "meta": {
+    "blob": 136,
+    "offset": 1376,
     "cap": 32
    }
   },
@@ -71,6 +126,17 @@
    }
   },
   {
+   "id": "row::6671",
+   "en": "Skill Maker",
+   "ja": "スキルメーカー",
+   "zh": "技能师",
+   "meta": {
+    "blob": 136,
+    "offset": 1648,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::6672",
    "en": "Skills become easier to activate!",
    "ja": "勇者のスキルが出やすくなるぞ！",
@@ -78,6 +144,17 @@
    "meta": {
     "blob": 136,
     "offset": 1712,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::6673",
+   "en": "Speed Eater",
+   "ja": "スピードイーター",
+   "zh": "速度吞噬者",
+   "meta": {
+    "blob": 136,
+    "offset": 1920,
     "cap": 32
    }
   },
@@ -93,6 +170,17 @@
    }
   },
   {
+   "id": "row::6675",
+   "en": "Meteor Formation",
+   "ja": "超新流星陣",
+   "zh": "超新流星阵",
+   "meta": {
+    "blob": 136,
+    "offset": 2192,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::6676",
    "en": "Try a party change during battle!",
    "ja": "パーティチェンジで何かが起こる！",
@@ -104,6 +192,17 @@
    }
   },
   {
+   "id": "row::6678",
+   "en": "Time is Life",
+   "ja": "タイムイズライフ",
+   "zh": "时间就是生命",
+   "meta": {
+    "blob": 136,
+    "offset": 2464,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::6679",
    "en": "Turn the flow of time into HP!",
    "ja": "時間の流れをHPにかえるぞ！",
@@ -111,6 +210,17 @@
    "meta": {
     "blob": 136,
     "offset": 2528,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::6680",
+   "en": "Beast King Formation",
+   "ja": "四天獣王陣",
+   "zh": "四天兽王阵",
+   "meta": {
+    "blob": 136,
+    "offset": 2736,
     "cap": 32
    }
   },
@@ -2810,6 +2920,193 @@
    }
   },
   {
+   "id": "row::7202",
+   "en": "Herb",
+   "ja": "やくそう",
+   "zh": "草药",
+   "meta": {
+    "blob": 147,
+    "offset": 20,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7203",
+   "en": "Pricey Herb",
+   "ja": "高価なやくそう",
+   "zh": "高价草药",
+   "meta": {
+    "blob": 147,
+    "offset": 288,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7204",
+   "en": "Gold Herb",
+   "ja": "金のやくそう",
+   "zh": "金草药",
+   "meta": {
+    "blob": 147,
+    "offset": 556,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7205",
+   "en": "Bread",
+   "ja": "パン",
+   "zh": "面包",
+   "meta": {
+    "blob": 147,
+    "offset": 824,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7206",
+   "en": "Inflation Herb",
+   "ja": "インフレやくそう",
+   "zh": "通胀草药",
+   "meta": {
+    "blob": 147,
+    "offset": 1092,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7207",
+   "en": "Goddess Porta-Statue",
+   "ja": "ポータブル女神像",
+   "zh": "便携女神像",
+   "meta": {
+    "blob": 147,
+    "offset": 1360,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7208",
+   "en": "Water Stone",
+   "ja": "水の石",
+   "zh": "水之石",
+   "meta": {
+    "blob": 147,
+    "offset": 1628,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7209",
+   "en": "Fire Stone",
+   "ja": "火の石",
+   "zh": "火之石",
+   "meta": {
+    "blob": 147,
+    "offset": 1896,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7210",
+   "en": "Earth Stone",
+   "ja": "土の石",
+   "zh": "土之石",
+   "meta": {
+    "blob": 147,
+    "offset": 2164,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7211",
+   "en": "Wind Stone",
+   "ja": "風の石",
+   "zh": "风之石",
+   "meta": {
+    "blob": 147,
+    "offset": 2432,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7212",
+   "en": "Golem Stone",
+   "ja": "ゴーレムストーン",
+   "zh": "魔像石",
+   "meta": {
+    "blob": 147,
+    "offset": 2700,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7213",
+   "en": "Demon Stone",
+   "ja": "デーモンストーン",
+   "zh": "恶魔石",
+   "meta": {
+    "blob": 147,
+    "offset": 2968,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7214",
+   "en": "Mole Radar",
+   "ja": "モグラレーダー",
+   "zh": "鼹鼠雷达",
+   "meta": {
+    "blob": 147,
+    "offset": 3236,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7215",
+   "en": "Stone Radar",
+   "ja": "ストーンレーダー",
+   "zh": "石头雷达",
+   "meta": {
+    "blob": 147,
+    "offset": 3504,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7216",
+   "en": "Yashu Attack 1",
+   "ja": "ヤーシュアタック１",
+   "zh": "亚修攻击1",
+   "meta": {
+    "blob": 147,
+    "offset": 3772,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7217",
+   "en": "Remove Weapon",
+   "ja": "武器をはずす",
+   "zh": "取下武器",
+   "meta": {
+    "blob": 147,
+    "offset": 4308,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7218",
+   "en": "Wooden Sword",
+   "ja": "ボクソード",
+   "zh": "木刀",
+   "meta": {
+    "blob": 147,
+    "offset": 4576,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7219",
    "en": "Sword made of wood.",
    "ja": "木でつくられた剣",
@@ -2818,6 +3115,28 @@
     "blob": 147,
     "offset": 4616,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7220",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 4808,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7221",
+   "en": "Rusted Sword",
+   "ja": "さびたけん",
+   "zh": "锈剑",
+   "meta": {
+    "blob": 147,
+    "offset": 4844,
+    "cap": 16
    }
   },
   {
@@ -2832,6 +3151,28 @@
    }
   },
   {
+   "id": "row::7223",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 5076,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7224",
+   "en": "Iron Sword",
+   "ja": "てつのつるぎ",
+   "zh": "铁剑",
+   "meta": {
+    "blob": 147,
+    "offset": 5112,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7225",
    "en": "A sword made of iron.",
    "ja": "鉄で作られた剣",
@@ -2840,6 +3181,28 @@
     "blob": 147,
     "offset": 5152,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7226",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 5344,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7227",
+   "en": "Tiger Blade",
+   "ja": "タイガーブレード",
+   "zh": "尖刺刀",
+   "meta": {
+    "blob": 147,
+    "offset": 5380,
+    "cap": 16
    }
   },
   {
@@ -2854,6 +3217,28 @@
    }
   },
   {
+   "id": "row::7229",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 5612,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7230",
+   "en": "Silver Sword",
+   "ja": "シルバーソード",
+   "zh": "银剑",
+   "meta": {
+    "blob": 147,
+    "offset": 5648,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7231",
    "en": "A sword made of silver.",
    "ja": "銀でつくられた剣",
@@ -2862,6 +3247,28 @@
     "blob": 147,
     "offset": 5688,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7232",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 5880,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7233",
+   "en": "Crimson Edge",
+   "ja": "しんくのほうけん",
+   "zh": "猩红刃",
+   "meta": {
+    "blob": 147,
+    "offset": 5916,
+    "cap": 16
    }
   },
   {
@@ -2876,6 +3283,28 @@
    }
   },
   {
+   "id": "row::7235",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 6148,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7236",
+   "en": "Hero Sword",
+   "ja": "勇者のつるぎ",
+   "zh": "勇者之剑",
+   "meta": {
+    "blob": 147,
+    "offset": 6184,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7237",
    "en": "Sword of a legendary hero.",
    "ja": "伝説の勇者のつるぎ",
@@ -2884,6 +3313,28 @@
     "blob": 147,
     "offset": 6224,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7238",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 6416,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7239",
+   "en": "Wing Blade",
+   "ja": "ウィングブレード",
+   "zh": "翼刃",
+   "meta": {
+    "blob": 147,
+    "offset": 6452,
+    "cap": 16
    }
   },
   {
@@ -2898,6 +3349,28 @@
    }
   },
   {
+   "id": "row::7241",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 6684,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7242",
+   "en": "Neon Saber",
+   "ja": "ネオンセーバー",
+   "zh": "霓虹剑",
+   "meta": {
+    "blob": 147,
+    "offset": 6720,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7243",
    "en": "A sword with a blade of _energy.",
    "ja": "エネルギーが刃になる剣",
@@ -2906,6 +3379,28 @@
     "blob": 147,
     "offset": 6760,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7244",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 6952,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7245",
+   "en": "Brave Blade",
+   "ja": "ブレイブブレイド",
+   "zh": "勇者之刃",
+   "meta": {
+    "blob": 147,
+    "offset": 6988,
+    "cap": 16
    }
   },
   {
@@ -2920,6 +3415,39 @@
    }
   },
   {
+   "id": "row::7247",
+   "en": "Brave Slash",
+   "ja": "ブレイブスラッシュ",
+   "zh": "英勇斩",
+   "meta": {
+    "blob": 147,
+    "offset": 7188,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7248",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 7220,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7249",
+   "en": "Greatsword",
+   "ja": "グレートソード",
+   "zh": "巨剑",
+   "meta": {
+    "blob": 147,
+    "offset": 7256,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7250",
    "en": "A thick and heavy sword. _Not very sharp.",
    "ja": "太くて重い大剣　_切れ味はよくない",
@@ -2928,6 +3456,28 @@
     "blob": 147,
     "offset": 7296,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7251",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 7488,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7252",
+   "en": "Zweihander",
+   "ja": "ツヴァイハンダー",
+   "zh": "双手巨剑",
+   "meta": {
+    "blob": 147,
+    "offset": 7524,
+    "cap": 16
    }
   },
   {
@@ -2942,6 +3492,28 @@
    }
   },
   {
+   "id": "row::7254",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 7756,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7255",
+   "en": "Blue Dragon Sword",
+   "ja": "せいりゅうとう",
+   "zh": "青龙剑",
+   "meta": {
+    "blob": 147,
+    "offset": 7792,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7256",
    "en": "A greatsword _with a dragon-like shape.",
    "ja": "きょく線が_竜っぽい大剣",
@@ -2950,6 +3522,28 @@
     "blob": 147,
     "offset": 7832,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7257",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 8024,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7258",
+   "en": "Buster Sword",
+   "ja": "バスターソード",
+   "zh": "破坏剑",
+   "meta": {
+    "blob": 147,
+    "offset": 8060,
+    "cap": 16
    }
   },
   {
@@ -2964,6 +3558,28 @@
    }
   },
   {
+   "id": "row::7260",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 8292,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7261",
+   "en": "Ice Longsword",
+   "ja": "こおりのたいけん",
+   "zh": "冰长剑",
+   "meta": {
+    "blob": 147,
+    "offset": 8328,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7262",
    "en": "Longsword made of magical _ice that will not melt.",
    "ja": "魔法のこおりでできた大剣　_とけはしない",
@@ -2972,6 +3588,28 @@
     "blob": 147,
     "offset": 8368,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7263",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 8560,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7264",
+   "en": "Executioner",
+   "ja": "エグゼキューター",
+   "zh": "处决者",
+   "meta": {
+    "blob": 147,
+    "offset": 8596,
+    "cap": 16
    }
   },
   {
@@ -2986,6 +3624,28 @@
    }
   },
   {
+   "id": "row::7266",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 8828,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7267",
+   "en": "Muramasa",
+   "ja": "ムラマサ",
+   "zh": "村正",
+   "meta": {
+    "blob": 147,
+    "offset": 8864,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7268",
    "en": "A single-edged sword from _the land of Warring States.",
    "ja": "戦国大陸から_もたらされた片刃の大剣",
@@ -2994,6 +3654,28 @@
     "blob": 147,
     "offset": 8904,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7269",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 9096,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7270",
+   "en": "God Eater",
+   "ja": "ゴッドイーター",
+   "zh": "噬神者",
+   "meta": {
+    "blob": 147,
+    "offset": 9132,
+    "cap": 16
    }
   },
   {
@@ -3008,6 +3690,28 @@
    }
   },
   {
+   "id": "row::7272",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 9364,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7273",
+   "en": "Balmung",
+   "ja": "バルムンク",
+   "zh": "巴鲁蒙",
+   "meta": {
+    "blob": 147,
+    "offset": 9400,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7274",
    "en": "It's said this greatsword _was forged in the Heavens.",
    "ja": "天界できたえられた_とされる大剣",
@@ -3016,6 +3720,28 @@
     "blob": 147,
     "offset": 9440,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7275",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 9632,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7276",
+   "en": "Destiny Sword",
+   "ja": "ディスティニーソード",
+   "zh": "命运剑",
+   "meta": {
+    "blob": 147,
+    "offset": 9668,
+    "cap": 16
    }
   },
   {
@@ -3030,6 +3756,39 @@
    }
   },
   {
+   "id": "row::7278",
+   "en": "Brave Break",
+   "ja": "ブレイブブレイク",
+   "zh": "勇猛破",
+   "meta": {
+    "blob": 147,
+    "offset": 9868,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7279",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 9900,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7280",
+   "en": "Stone Axe",
+   "ja": "いしのオノ",
+   "zh": "石斧",
+   "meta": {
+    "blob": 147,
+    "offset": 9936,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7281",
    "en": "An axe made of stone.",
    "ja": "石でできたオノ",
@@ -3038,6 +3797,28 @@
     "blob": 147,
     "offset": 9976,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7282",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 10168,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7283",
+   "en": "Bronze Axe",
+   "ja": "ブロンズアクス",
+   "zh": "青铜斧",
+   "meta": {
+    "blob": 147,
+    "offset": 10204,
+    "cap": 16
    }
   },
   {
@@ -3052,6 +3833,28 @@
    }
   },
   {
+   "id": "row::7285",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 10436,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7286",
+   "en": "Lumberjack Axe",
+   "ja": "きこりのオノ",
+   "zh": "樵夫斧",
+   "meta": {
+    "blob": 147,
+    "offset": 10472,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7287",
    "en": "A logger's axe.",
    "ja": "きこりごようたしのオノ",
@@ -3060,6 +3863,28 @@
     "blob": 147,
     "offset": 10512,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7288",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 10704,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7289",
+   "en": "Battle Axe",
+   "ja": "バトルアクス",
+   "zh": "战斧",
+   "meta": {
+    "blob": 147,
+    "offset": 10740,
+    "cap": 16
    }
   },
   {
@@ -3074,6 +3899,28 @@
    }
   },
   {
+   "id": "row::7291",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 10972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7292",
+   "en": "Saw Axe",
+   "ja": "のこぎりアクス",
+   "zh": "铁斧",
+   "meta": {
+    "blob": 147,
+    "offset": 11008,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7293",
    "en": "An axe with a jagged blade _more painful than necessary.",
    "ja": "ぎざぎざがついたオノ　_必要以上にイタイ",
@@ -3082,6 +3929,28 @@
     "blob": 147,
     "offset": 11048,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7294",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 11240,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7295",
+   "en": "Bloody Axe",
+   "ja": "ブラッディアクス",
+   "zh": "血斧",
+   "meta": {
+    "blob": 147,
+    "offset": 11276,
+    "cap": 16
    }
   },
   {
@@ -3096,6 +3965,28 @@
    }
   },
   {
+   "id": "row::7297",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 11508,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7298",
+   "en": "Evil Breaker",
+   "ja": "イビルブレイカー",
+   "zh": "破魔斧",
+   "meta": {
+    "blob": 147,
+    "offset": 11544,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7299",
    "en": "An axe with the power _to smash evil.",
    "ja": "悪を討ちくだく_力をもつオノ",
@@ -3104,6 +3995,28 @@
     "blob": 147,
     "offset": 11584,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7300",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 11776,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7301",
+   "en": "Giant's Axe",
+   "ja": "きょじんのオノ",
+   "zh": "巨人之斧",
+   "meta": {
+    "blob": 147,
+    "offset": 11812,
+    "cap": 16
    }
   },
   {
@@ -3118,6 +4031,39 @@
    }
   },
   {
+   "id": "row::7303",
+   "en": "Wood Splitter Infinity",
+   "ja": "まき割りインフィニティ",
+   "zh": "无限劈柴斧",
+   "meta": {
+    "blob": 147,
+    "offset": 12012,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7304",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 12044,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7305",
+   "en": "Club",
+   "ja": "こんぼう",
+   "zh": "木棒",
+   "meta": {
+    "blob": 147,
+    "offset": 12080,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7306",
    "en": "A hammer made of wood.",
    "ja": "木でできているハンマー",
@@ -3126,6 +4072,28 @@
     "blob": 147,
     "offset": 12120,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7307",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 12312,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7308",
+   "en": "Iron Club",
+   "ja": "アイアンクラブ",
+   "zh": "铁棍",
+   "meta": {
+    "blob": 147,
+    "offset": 12348,
+    "cap": 16
    }
   },
   {
@@ -3140,6 +4108,28 @@
    }
   },
   {
+   "id": "row::7310",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 12580,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7311",
+   "en": "Battle Hammer",
+   "ja": "バトルハンマー",
+   "zh": "战锤",
+   "meta": {
+    "blob": 147,
+    "offset": 12616,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7312",
    "en": "A hammer made for battle.",
    "ja": "戦闘用のハンマー",
@@ -3148,6 +4138,28 @@
     "blob": 147,
     "offset": 12656,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7313",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 12848,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7314",
+   "en": "Spike Mace",
+   "ja": "スパイクメイス",
+   "zh": "尖刺锤",
+   "meta": {
+    "blob": 147,
+    "offset": 12884,
+    "cap": 16
    }
   },
   {
@@ -3162,6 +4174,28 @@
    }
   },
   {
+   "id": "row::7316",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 13116,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7317",
+   "en": "Silver Hammer",
+   "ja": "シルバーハンマー",
+   "zh": "银锤",
+   "meta": {
+    "blob": 147,
+    "offset": 13152,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7318",
    "en": "A hammer made of silver.",
    "ja": "銀でつくられたハンマー",
@@ -3170,6 +4204,28 @@
     "blob": 147,
     "offset": 13192,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7319",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 13384,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7320",
+   "en": "Gold Rush",
+   "ja": "ゴールドラッシュ",
+   "zh": "黄金冲击",
+   "meta": {
+    "blob": 147,
+    "offset": 13420,
+    "cap": 16
    }
   },
   {
@@ -3184,6 +4240,39 @@
    }
   },
   {
+   "id": "row::7322",
+   "en": "Gold Plus Press",
+   "ja": "ゴールドプラスプレス",
+   "zh": "黄金重压",
+   "meta": {
+    "blob": 147,
+    "offset": 13620,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7323",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 13652,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7324",
+   "en": "Thor Hammer",
+   "ja": "トールハンマー",
+   "zh": "雷神锤",
+   "meta": {
+    "blob": 147,
+    "offset": 13688,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7325",
    "en": "Favored hammer _of the Thunder God.",
    "ja": "雷様も_愛用するハンマー",
@@ -3192,6 +4281,39 @@
     "blob": 147,
     "offset": 13728,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7326",
+   "en": "Hero Impact",
+   "ja": "ヒーローインパクト",
+   "zh": "勇者冲击",
+   "meta": {
+    "blob": 147,
+    "offset": 13888,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7327",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 13920,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7328",
+   "en": "Alpha",
+   "ja": "アルファ",
+   "zh": "阿尔",
+   "meta": {
+    "blob": 147,
+    "offset": 13956,
+    "cap": 16
    }
   },
   {
@@ -3206,6 +4328,28 @@
    }
   },
   {
+   "id": "row::7330",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 14188,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7331",
+   "en": "Beta",
+   "ja": "ベータ",
+   "zh": "贝",
+   "meta": {
+    "blob": 147,
+    "offset": 14224,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7332",
    "en": "Double-bladed bowgun sword. _Does it need the back blade?",
    "ja": "二枚刃のボウガンソード　_後ろの刃は意味がない？",
@@ -3214,6 +4358,28 @@
     "blob": 147,
     "offset": 14264,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7333",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 14456,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7334",
+   "en": "Gamma",
+   "ja": "ガンマ",
+   "zh": "伽玛",
+   "meta": {
+    "blob": 147,
+    "offset": 14492,
+    "cap": 16
    }
   },
   {
@@ -3228,6 +4394,28 @@
    }
   },
   {
+   "id": "row::7336",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 14724,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7337",
+   "en": "Delta",
+   "ja": "デルタ",
+   "zh": "代",
+   "meta": {
+    "blob": 147,
+    "offset": 14760,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7338",
    "en": "Axe-like bowgun sword, so _should it be a bowgun axe?",
    "ja": "オノっぽいボウガンソード　_じゃあボウガンアックス？",
@@ -3236,6 +4424,28 @@
     "blob": 147,
     "offset": 14800,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7339",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 14992,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7340",
+   "en": "Epsilon",
+   "ja": "イプシロン",
+   "zh": "埃普西",
+   "meta": {
+    "blob": 147,
+    "offset": 15028,
+    "cap": 16
    }
   },
   {
@@ -3250,6 +4460,28 @@
    }
   },
   {
+   "id": "row::7342",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 15260,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7343",
+   "en": "Zeta",
+   "ja": "ゼータ",
+   "zh": "泽塔",
+   "meta": {
+    "blob": 147,
+    "offset": 15296,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7344",
    "en": "Bowgun sword that's not to _be wasted as a box opener.",
    "ja": "けっしてカッターナイフ_ではないボウガンソード",
@@ -3258,6 +4490,28 @@
     "blob": 147,
     "offset": 15336,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7345",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 15528,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7346",
+   "en": "Iota",
+   "ja": "イオタ",
+   "zh": "伊塔",
+   "meta": {
+    "blob": 147,
+    "offset": 15564,
+    "cap": 16
    }
   },
   {
@@ -3272,6 +4526,28 @@
    }
   },
   {
+   "id": "row::7348",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 15796,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7349",
+   "en": "Theta",
+   "ja": "シータ",
+   "zh": "西塔",
+   "meta": {
+    "blob": 147,
+    "offset": 15832,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7350",
    "en": "A spear-like bowgun sword. _Don't call it a bowgun spear.",
    "ja": "ヤリっぽいボウガンソード　_ボウガンスピアじゃないよ",
@@ -3280,6 +4556,28 @@
     "blob": 147,
     "offset": 15872,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7351",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 16064,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7352",
+   "en": "Lambda",
+   "ja": "ラムダ",
+   "zh": "拉姆达",
+   "meta": {
+    "blob": 147,
+    "offset": 16100,
+    "cap": 16
    }
   },
   {
@@ -3294,6 +4592,17 @@
    }
   },
   {
+   "id": "row::7354",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 16332,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7355",
    "en": "An elaborate bowgun sword. _Cute name.",
    "ja": "こった作りのボウガンソード　_名前がカワイイ",
@@ -3302,6 +4611,28 @@
     "blob": 147,
     "offset": 16408,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7356",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 16600,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7357",
+   "en": "Omicron",
+   "ja": "オミクロン",
+   "zh": "奥米克",
+   "meta": {
+    "blob": 147,
+    "offset": 16636,
+    "cap": 16
    }
   },
   {
@@ -3316,6 +4647,17 @@
    }
   },
   {
+   "id": "row::7359",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 16868,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7360",
    "en": "The chin part is the blade. _Grrr!",
    "ja": "実はアゴ部分が刃だよ　_ガオーー",
@@ -3324,6 +4666,28 @@
     "blob": 147,
     "offset": 16944,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7361",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 17136,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7362",
+   "en": "Sigma",
+   "ja": "シグマ",
+   "zh": "西格",
+   "meta": {
+    "blob": 147,
+    "offset": 17172,
+    "cap": 16
    }
   },
   {
@@ -3338,6 +4702,28 @@
    }
   },
   {
+   "id": "row::7364",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 17404,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7365",
+   "en": "Phi",
+   "ja": "ファイ",
+   "zh": "法",
+   "meta": {
+    "blob": 147,
+    "offset": 17440,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7366",
    "en": "Burns with a passion. _Can be a bit hot on the face.",
    "ja": "気分的に燃えてくる　_装備すると少し顔が熱い",
@@ -3346,6 +4732,28 @@
     "blob": 147,
     "offset": 17480,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7367",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 17672,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7368",
+   "en": "Omega",
+   "ja": "オメガ",
+   "zh": "欧米伽",
+   "meta": {
+    "blob": 147,
+    "offset": 17708,
+    "cap": 16
    }
   },
   {
@@ -3360,6 +4768,39 @@
    }
   },
   {
+   "id": "row::7370",
+   "en": "Hedgehog Burst",
+   "ja": "ヘッジホッグバースト",
+   "zh": "刺猬爆发",
+   "meta": {
+    "blob": 147,
+    "offset": 17908,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7371",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 17940,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7372",
+   "en": "Sacrificial Staff",
+   "ja": "いけにえのつえ",
+   "zh": "牺牲之杖",
+   "meta": {
+    "blob": 147,
+    "offset": 17976,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7373",
    "en": "A staff made of wood.",
    "ja": "木でできた杖",
@@ -3368,6 +4809,28 @@
     "blob": 147,
     "offset": 18016,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7374",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 18208,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7375",
+   "en": "Gentleman's Wand",
+   "ja": "しんしのワンド",
+   "zh": "绅士杖",
+   "meta": {
+    "blob": 147,
+    "offset": 18244,
+    "cap": 16
    }
   },
   {
@@ -3382,6 +4845,28 @@
    }
   },
   {
+   "id": "row::7377",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 18476,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7378",
+   "en": "Mage Staff",
+   "ja": "メイジスタッフ",
+   "zh": "法师杖",
+   "meta": {
+    "blob": 147,
+    "offset": 18512,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7379",
    "en": "A staff carried _by magic users.",
    "ja": "魔法使いが_もっている杖",
@@ -3390,6 +4875,28 @@
     "blob": 147,
     "offset": 18552,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7380",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 18744,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7381",
+   "en": "Fire Rod",
+   "ja": "ファイアーロッド",
+   "zh": "火杖",
+   "meta": {
+    "blob": 147,
+    "offset": 18780,
+    "cap": 16
    }
   },
   {
@@ -3404,6 +4911,28 @@
    }
   },
   {
+   "id": "row::7383",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 19012,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7384",
+   "en": "Ice Rod",
+   "ja": "アイスロッド",
+   "zh": "冰杖",
+   "meta": {
+    "blob": 147,
+    "offset": 19048,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7385",
    "en": "A staff imbued with the _power of ice.",
    "ja": "アイスの力を宿した杖",
@@ -3412,6 +4941,28 @@
     "blob": 147,
     "offset": 19088,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7386",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 19280,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7387",
+   "en": "Sage's Staff",
+   "ja": "せんにんのつえ",
+   "zh": "仙人法杖",
+   "meta": {
+    "blob": 147,
+    "offset": 19316,
+    "cap": 16
    }
   },
   {
@@ -3426,6 +4977,28 @@
    }
   },
   {
+   "id": "row::7389",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 19548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7390",
+   "en": "Dragon Wand",
+   "ja": "ドラゴンワンド",
+   "zh": "龙杖",
+   "meta": {
+    "blob": 147,
+    "offset": 19584,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7391",
    "en": "A staff imbued with the _power of dragons.",
    "ja": "竜の力を宿した杖",
@@ -3434,6 +5007,28 @@
     "blob": 147,
     "offset": 19624,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7392",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 19816,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7393",
+   "en": "Gaia Staff",
+   "ja": "ガイアスタッフ",
+   "zh": "盖亚法杖",
+   "meta": {
+    "blob": 147,
+    "offset": 19852,
+    "cap": 16
    }
   },
   {
@@ -3448,6 +5043,28 @@
    }
   },
   {
+   "id": "row::7395",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 20084,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7396",
+   "en": "Encyclopedia",
+   "ja": "ひゃっかじてん",
+   "zh": "百科全书",
+   "meta": {
+    "blob": 147,
+    "offset": 20120,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7397",
    "en": "A book full of knowledge.",
    "ja": "ものしりな本",
@@ -3456,6 +5073,28 @@
     "blob": 147,
     "offset": 20160,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7398",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 20352,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7399",
+   "en": "Tome of Lightning",
+   "ja": "イカヅチのしょ",
+   "zh": "闪电之书",
+   "meta": {
+    "blob": 147,
+    "offset": 20388,
+    "cap": 16
    }
   },
   {
@@ -3470,6 +5109,28 @@
    }
   },
   {
+   "id": "row::7401",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 20620,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7402",
+   "en": "Grimoire",
+   "ja": "グリモワール",
+   "zh": "魔法书",
+   "meta": {
+    "blob": 147,
+    "offset": 20656,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7403",
    "en": "Might be able to summon an _Evil Lord!",
    "ja": "魔王をよびだせるかもっ！",
@@ -3478,6 +5139,28 @@
     "blob": 147,
     "offset": 20696,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7404",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 20888,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7405",
+   "en": "Stormproof Tome",
+   "ja": "ぼうふうじてん",
+   "zh": "风暴之书",
+   "meta": {
+    "blob": 147,
+    "offset": 20924,
+    "cap": 16
    }
   },
   {
@@ -3492,6 +5175,28 @@
    }
   },
   {
+   "id": "row::7407",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 21156,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7408",
+   "en": "Necronomicon",
+   "ja": "ネクロノミコン",
+   "zh": "死灵书",
+   "meta": {
+    "blob": 147,
+    "offset": 21192,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7409",
    "en": "Bring the dead back to life!",
    "ja": "死者をよみがえらせよう！",
@@ -3500,6 +5205,28 @@
     "blob": 147,
     "offset": 21232,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7410",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 21424,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7411",
+   "en": "Erotic Novel",
+   "ja": "エッチなほん",
+   "zh": "情色小说",
+   "meta": {
+    "blob": 147,
+    "offset": 21460,
+    "cap": 16
    }
   },
   {
@@ -3514,6 +5241,28 @@
    }
   },
   {
+   "id": "row::7413",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 21692,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7414",
+   "en": "Goddess Book",
+   "ja": "女神の書",
+   "zh": "女神书",
+   "meta": {
+    "blob": 147,
+    "offset": 21728,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7415",
    "en": "A book of essays by that _money-grubbing… lady.",
    "ja": "お金にガメツイ_あの人のエッセイ本",
@@ -3522,6 +5271,39 @@
     "blob": 147,
     "offset": 21768,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7416",
+   "en": "Pandora's Box",
+   "ja": "パンドラボックス",
+   "zh": "潘多拉盒",
+   "meta": {
+    "blob": 147,
+    "offset": 21928,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7417",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 21960,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7418",
+   "en": "Stone Spear",
+   "ja": "いしのヤリ",
+   "zh": "石矛",
+   "meta": {
+    "blob": 147,
+    "offset": 21996,
+    "cap": 16
    }
   },
   {
@@ -3536,6 +5318,28 @@
    }
   },
   {
+   "id": "row::7420",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 22228,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7421",
+   "en": "Iron Spear",
+   "ja": "アイアンスピア",
+   "zh": "铁矛",
+   "meta": {
+    "blob": 147,
+    "offset": 22264,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7422",
    "en": "A spear made of iron.",
    "ja": "鉄でできたヤリ",
@@ -3544,6 +5348,28 @@
     "blob": 147,
     "offset": 22304,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7423",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 22496,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7424",
+   "en": "Trident",
+   "ja": "トライデント",
+   "zh": "三叉戟",
+   "meta": {
+    "blob": 147,
+    "offset": 22532,
+    "cap": 16
    }
   },
   {
@@ -3558,6 +5384,28 @@
    }
   },
   {
+   "id": "row::7426",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 22764,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7427",
+   "en": "Thunder Spear",
+   "ja": "らいめいのヤリ",
+   "zh": "闪电长矛",
+   "meta": {
+    "blob": 147,
+    "offset": 22800,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7428",
    "en": "Has just a little power of _thunder.",
    "ja": "ちょいと雷の力がある",
@@ -3566,6 +5414,28 @@
     "blob": 147,
     "offset": 22840,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7429",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 23032,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7430",
+   "en": "Knight Lance",
+   "ja": "ナイトランス",
+   "zh": "骑士枪",
+   "meta": {
+    "blob": 147,
+    "offset": 23068,
+    "cap": 16
    }
   },
   {
@@ -3580,6 +5450,28 @@
    }
   },
   {
+   "id": "row::7432",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 23300,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7433",
+   "en": "Drill Lance",
+   "ja": "ドリルランス",
+   "zh": "尖枪",
+   "meta": {
+    "blob": 147,
+    "offset": 23336,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7434",
    "en": "Your drill will _pierce the Heavens!",
    "ja": "オマエの_ドリルが天をつく！！",
@@ -3588,6 +5480,28 @@
     "blob": 147,
     "offset": 23376,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7435",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 23568,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7436",
+   "en": "Dragon Lance",
+   "ja": "ドラゴンランス",
+   "zh": "龙枪",
+   "meta": {
+    "blob": 147,
+    "offset": 23604,
+    "cap": 16
    }
   },
   {
@@ -3602,6 +5516,28 @@
    }
   },
   {
+   "id": "row::7438",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 23836,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7439",
+   "en": "Gungnir Spear",
+   "ja": "グングニルのヤリ",
+   "zh": "冈格尼尔枪",
+   "meta": {
+    "blob": 147,
+    "offset": 23872,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7440",
    "en": "A spear with the power of _victory.",
    "ja": "勝利の運命を宿したヤリ",
@@ -3610,6 +5546,28 @@
     "blob": 147,
     "offset": 23912,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7441",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 24104,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7442",
+   "en": "Wood Stick",
+   "ja": "ウッドスティック",
+   "zh": "木杖",
+   "meta": {
+    "blob": 147,
+    "offset": 24140,
+    "cap": 16
    }
   },
   {
@@ -3624,6 +5582,28 @@
    }
   },
   {
+   "id": "row::7444",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 24372,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7445",
+   "en": "Skull Bone",
+   "ja": "スカルボーン",
+   "zh": "骷髅骨",
+   "meta": {
+    "blob": 147,
+    "offset": 24408,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7446",
    "en": "Made from the bones of _some strange creature.",
    "ja": "ナゾの生物の骨を_加工して作ったらしい",
@@ -3632,6 +5612,28 @@
     "blob": 147,
     "offset": 24448,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7447",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 24640,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7448",
+   "en": "War God Staff",
+   "ja": "ぶしんのぼう",
+   "zh": "战神杖",
+   "meta": {
+    "blob": 147,
+    "offset": 24676,
+    "cap": 16
    }
   },
   {
@@ -3646,6 +5648,28 @@
    }
   },
   {
+   "id": "row::7450",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 24908,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7451",
+   "en": "Clothesline",
+   "ja": "ものほしざお",
+   "zh": "晾衣竿",
+   "meta": {
+    "blob": 147,
+    "offset": 24944,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7452",
    "en": "From the backyard of a _legendary hero.",
    "ja": "伝説の戦士のニワにある",
@@ -3654,6 +5678,28 @@
     "blob": 147,
     "offset": 24984,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7453",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 25176,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7454",
+   "en": "Death Pipe",
+   "ja": "デスパイプ",
+   "zh": "死亡管",
+   "meta": {
+    "blob": 147,
+    "offset": 25212,
+    "cap": 16
    }
   },
   {
@@ -3668,6 +5714,28 @@
    }
   },
   {
+   "id": "row::7456",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 25444,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7457",
+   "en": "Power Staff",
+   "ja": "にょいぼう",
+   "zh": "王杖",
+   "meta": {
+    "blob": 147,
+    "offset": 25480,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7458",
    "en": "Extends as needed.",
    "ja": "状況におうじて_けっこうのびる",
@@ -3676,6 +5744,28 @@
     "blob": 147,
     "offset": 25520,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7459",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 25712,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7460",
+   "en": "Dream Breaker",
+   "ja": "ドリームブレイカー",
+   "zh": "碎梦者",
+   "meta": {
+    "blob": 147,
+    "offset": 25748,
+    "cap": 16
    }
   },
   {
@@ -3690,6 +5780,28 @@
    }
   },
   {
+   "id": "row::7462",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 25980,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7463",
+   "en": "Bug Swatter",
+   "ja": "ムシたたき",
+   "zh": "灭虫拍",
+   "meta": {
+    "blob": 147,
+    "offset": 26016,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7464",
    "en": "Go swat some bugs!",
    "ja": "ムシをたたくぜ！",
@@ -3698,6 +5810,28 @@
     "blob": 147,
     "offset": 26056,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7465",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 26248,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7466",
+   "en": "Chain Sword",
+   "ja": "チェーンソード",
+   "zh": "链剑",
+   "meta": {
+    "blob": 147,
+    "offset": 26284,
+    "cap": 16
    }
   },
   {
@@ -3712,6 +5846,28 @@
    }
   },
   {
+   "id": "row::7468",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 26516,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7469",
+   "en": "Hero Killer",
+   "ja": "ユウシャキラー",
+   "zh": "勇者杀手",
+   "meta": {
+    "blob": 147,
+    "offset": 26552,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7470",
    "en": "Can supposedly defeat _legendary heroes in one hit.",
    "ja": "伝説の勇者も_これでイチゲキらしい・・・",
@@ -3720,6 +5876,28 @@
     "blob": 147,
     "offset": 26592,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7471",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 26784,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7472",
+   "en": "Beast Beat",
+   "ja": "ビーストビート",
+   "zh": "猛兽拍",
+   "meta": {
+    "blob": 147,
+    "offset": 26820,
+    "cap": 16
    }
   },
   {
@@ -3734,6 +5912,39 @@
    }
   },
   {
+   "id": "row::7474",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 27052,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7475",
+   "en": "Remove Helmet",
+   "ja": "頭装備をはずす",
+   "zh": "取下头盔",
+   "meta": {
+    "blob": 147,
+    "offset": 27356,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7476",
+   "en": "Thunder Hat",
+   "ja": "かみなりぼうし",
+   "zh": "雷电帽",
+   "meta": {
+    "blob": 147,
+    "offset": 27624,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7477",
    "en": "Chic design.",
    "ja": "シックなデザイン",
@@ -3742,6 +5953,17 @@
     "blob": 147,
     "offset": 27664,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7478",
+   "en": "Mage Glasses",
+   "ja": "まどうしのメガネ",
+   "zh": "魔法眼镜",
+   "meta": {
+    "blob": 147,
+    "offset": 27892,
+    "cap": 16
    }
   },
   {
@@ -3756,6 +5978,17 @@
    }
   },
   {
+   "id": "row::7480",
+   "en": "Leather Hat",
+   "ja": "レザーハット",
+   "zh": "皮帽",
+   "meta": {
+    "blob": 147,
+    "offset": 28428,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7481",
    "en": "A hat made of leather.",
    "ja": "かわでできたぼうし",
@@ -3764,6 +5997,17 @@
     "blob": 147,
     "offset": 28468,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7482",
+   "en": "Barrel Head",
+   "ja": "タルヘッド",
+   "zh": "木桶头",
+   "meta": {
+    "blob": 147,
+    "offset": 28696,
+    "cap": 16
    }
   },
   {
@@ -3778,6 +6022,17 @@
    }
   },
   {
+   "id": "row::7484",
+   "en": "Red Bandana",
+   "ja": "あかいバンダナ",
+   "zh": "红头巾",
+   "meta": {
+    "blob": 147,
+    "offset": 28964,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7485",
    "en": "Put it on and you'll _feel like taking action.",
    "ja": "巻くとなぜか_やるぞって気になる",
@@ -3786,6 +6041,17 @@
     "blob": 147,
     "offset": 29004,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7486",
+   "en": "Ten Gallon Hat",
+   "ja": "テンガロンハット",
+   "zh": "草帽",
+   "meta": {
+    "blob": 147,
+    "offset": 29232,
+    "cap": 16
    }
   },
   {
@@ -3800,6 +6066,17 @@
    }
   },
   {
+   "id": "row::7488",
+   "en": "Metal Helm",
+   "ja": "メタルヘルム",
+   "zh": "金属头盔",
+   "meta": {
+    "blob": 147,
+    "offset": 29500,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7489",
    "en": "A helmet made of metal. _Somewhat heavy.",
    "ja": "金属でできたかぶと　_ちょっと重い",
@@ -3808,6 +6085,17 @@
     "blob": 147,
     "offset": 29540,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7490",
+   "en": "Warm Beanie",
+   "ja": "あったかニット",
+   "zh": "热乎毛线帽",
+   "meta": {
+    "blob": 147,
+    "offset": 29768,
+    "cap": 16
    }
   },
   {
@@ -3822,6 +6110,17 @@
    }
   },
   {
+   "id": "row::7492",
+   "en": "Captain Hat",
+   "ja": "キャプテンハット",
+   "zh": "船长帽",
+   "meta": {
+    "blob": 147,
+    "offset": 30036,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7493",
    "en": "Worn by the legendary _Pirate King.",
    "ja": "伝説のかいぞく王が_かぶっていたらしい",
@@ -3830,6 +6129,17 @@
     "blob": 147,
     "offset": 30076,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7494",
+   "en": "Gaia Helm",
+   "ja": "ガイアヘルム",
+   "zh": "盖亚盔",
+   "meta": {
+    "blob": 147,
+    "offset": 30304,
+    "cap": 16
    }
   },
   {
@@ -3844,6 +6154,17 @@
    }
   },
   {
+   "id": "row::7496",
+   "en": "Goggle Cap",
+   "ja": "ゴーグルキャップ",
+   "zh": "护目帽",
+   "meta": {
+    "blob": 147,
+    "offset": 30572,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7497",
    "en": "A helmet with built-in goggles.",
    "ja": "ゴーグルつきのかぶと",
@@ -3852,6 +6173,17 @@
     "blob": 147,
     "offset": 30612,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7498",
+   "en": "Afro Wig",
+   "ja": "アフロ★へっど",
+   "zh": "爆炸头★",
+   "meta": {
+    "blob": 147,
+    "offset": 30840,
+    "cap": 16
    }
   },
   {
@@ -3866,6 +6198,17 @@
    }
   },
   {
+   "id": "row::7500",
+   "en": "Bone Head",
+   "ja": "ボーンヘッド",
+   "zh": "骨头盔",
+   "meta": {
+    "blob": 147,
+    "offset": 31108,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7501",
    "en": "Stylishly made with bones.",
    "ja": "骨のそざいをいかしました",
@@ -3874,6 +6217,17 @@
     "blob": 147,
     "offset": 31148,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7502",
+   "en": "Horned Helm",
+   "ja": "ツノカブト",
+   "zh": "角盔",
+   "meta": {
+    "blob": 147,
+    "offset": 31376,
+    "cap": 16
    }
   },
   {
@@ -3888,6 +6242,17 @@
    }
   },
   {
+   "id": "row::7504",
+   "en": "Coleus Helm",
+   "ja": "コリュースヘルム",
+   "zh": "彩叶头盔",
+   "meta": {
+    "blob": 147,
+    "offset": 31644,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7505",
    "en": "A helmet with a cool mohawk.",
    "ja": "モヒカンがナイスなかぶと",
@@ -3896,6 +6261,17 @@
     "blob": 147,
     "offset": 31684,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7506",
+   "en": "Demon's Horn",
+   "ja": "あくまのつの",
+   "zh": "恶魔之角",
+   "meta": {
+    "blob": 147,
+    "offset": 31912,
+    "cap": 16
    }
   },
   {
@@ -3910,6 +6286,17 @@
    }
   },
   {
+   "id": "row::7508",
+   "en": "Circlet",
+   "ja": "サークレット",
+   "zh": "发环",
+   "meta": {
+    "blob": 147,
+    "offset": 32180,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7509",
    "en": "A simple design.",
    "ja": "シンプルなデザイン",
@@ -3918,6 +6305,17 @@
     "blob": 147,
     "offset": 32220,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7510",
+   "en": "Silver Sallet",
+   "ja": "シルバーサリット",
+   "zh": "银盔",
+   "meta": {
+    "blob": 147,
+    "offset": 32448,
+    "cap": 16
    }
   },
   {
@@ -3932,6 +6330,17 @@
    }
   },
   {
+   "id": "row::7512",
+   "en": "Dragon Head",
+   "ja": "ドラゴンヘッド",
+   "zh": "龙头",
+   "meta": {
+    "blob": 147,
+    "offset": 32716,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7513",
    "en": "A helmet imbued with the _power of dragons.",
    "ja": "竜の力を宿したかぶとなり",
@@ -3940,6 +6349,17 @@
     "blob": 147,
     "offset": 32756,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7514",
+   "en": "Brave Crown",
+   "ja": "ブレイブクラウン",
+   "zh": "勇者冠",
+   "meta": {
+    "blob": 147,
+    "offset": 32984,
+    "cap": 16
    }
   },
   {
@@ -3954,6 +6374,17 @@
    }
   },
   {
+   "id": "row::7516",
+   "en": "3D Shades",
+   "ja": "3Dメガネ",
+   "zh": "3D墨镜",
+   "meta": {
+    "blob": 147,
+    "offset": 33252,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7517",
    "en": "Extremely strange glasses _that make you very skillful.",
    "ja": "メッサ器用になる_とてもフシギなメガネ",
@@ -3962,6 +6393,17 @@
     "blob": 147,
     "offset": 33292,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7518",
+   "en": "Sacrificial Hat",
+   "ja": "いけにえのぼうし",
+   "zh": "祭祀帽",
+   "meta": {
+    "blob": 147,
+    "offset": 33520,
+    "cap": 16
    }
   },
   {
@@ -3976,6 +6418,17 @@
    }
   },
   {
+   "id": "row::7520",
+   "en": "Hairband",
+   "ja": "ヘアバンド",
+   "zh": "发带",
+   "meta": {
+    "blob": 147,
+    "offset": 33788,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7521",
    "en": "Simple and stylish.",
    "ja": "ワンポイントのおしゃれ",
@@ -3984,6 +6437,17 @@
     "blob": 147,
     "offset": 33828,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7522",
+   "en": "Feather Hat",
+   "ja": "はねぼうし",
+   "zh": "羽毛帽",
+   "meta": {
+    "blob": 147,
+    "offset": 34056,
+    "cap": 16
    }
   },
   {
@@ -3998,6 +6462,17 @@
    }
   },
   {
+   "id": "row::7524",
+   "en": "Coral Crown",
+   "ja": "さんごのかんむり",
+   "zh": "珊瑚冠",
+   "meta": {
+    "blob": 147,
+    "offset": 34324,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7525",
    "en": "A beautiful crown _made of coral.",
    "ja": "サンゴでできた_きれいなかんむり",
@@ -4006,6 +6481,17 @@
     "blob": 147,
     "offset": 34364,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7526",
+   "en": "Floral Coronet",
+   "ja": "はなのコロネット",
+   "zh": "花冠",
+   "meta": {
+    "blob": 147,
+    "offset": 34592,
+    "cap": 16
    }
   },
   {
@@ -4020,6 +6506,17 @@
    }
   },
   {
+   "id": "row::7528",
+   "en": "Rabbit Helm",
+   "ja": "ラビットヘルム",
+   "zh": "兔头盔",
+   "meta": {
+    "blob": 147,
+    "offset": 34860,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7529",
    "en": "Wear these bunny ears and _your speed will increase.",
    "ja": "つけることで_スピードがあがるうさみみ",
@@ -4028,6 +6525,17 @@
     "blob": 147,
     "offset": 34900,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7530",
+   "en": "Fancy Hairband",
+   "ja": "カチューシャ",
+   "zh": "发箍",
+   "meta": {
+    "blob": 147,
+    "offset": 35128,
+    "cap": 16
    }
   },
   {
@@ -4042,6 +6550,17 @@
    }
   },
   {
+   "id": "row::7532",
+   "en": "Witch's Hat",
+   "ja": "まじょのぼうし",
+   "zh": "魔女帽",
+   "meta": {
+    "blob": 147,
+    "offset": 35396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7533",
    "en": "Official hat of _witches everywhere.",
    "ja": "魔女っこ_オフィシャルなぼうし",
@@ -4050,6 +6569,17 @@
     "blob": 147,
     "offset": 35436,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7534",
+   "en": "Full Face Helmet",
+   "ja": "フルフェイス",
+   "zh": "全脸盔",
+   "meta": {
+    "blob": 147,
+    "offset": 35664,
+    "cap": 16
    }
   },
   {
@@ -4064,6 +6594,17 @@
    }
   },
   {
+   "id": "row::7536",
+   "en": "Angel Ring",
+   "ja": "エンジェルリング",
+   "zh": "天使戒指",
+   "meta": {
+    "blob": 147,
+    "offset": 35932,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7537",
    "en": "Like the ring of an angel.",
    "ja": "天使のリングっぽい",
@@ -4072,6 +6613,17 @@
     "blob": 147,
     "offset": 35972,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7538",
+   "en": "Helm of Light",
+   "ja": "ひかりのかぶと",
+   "zh": "光之盔",
+   "meta": {
+    "blob": 147,
+    "offset": 36200,
+    "cap": 16
    }
   },
   {
@@ -4086,6 +6638,17 @@
    }
   },
   {
+   "id": "row::7540",
+   "en": "Regal Crown",
+   "ja": "プリンセスクラウン",
+   "zh": "公主冠",
+   "meta": {
+    "blob": 147,
+    "offset": 36468,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7541",
    "en": "Crown said to be loved by _a legendary princess.",
    "ja": "伝説のオウジョも_愛用したとされるかんむり",
@@ -4094,6 +6657,28 @@
     "blob": 147,
     "offset": 36508,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7542",
+   "en": "Remove Armor",
+   "ja": "体装備をはずす",
+   "zh": "取下盔甲",
+   "meta": {
+    "blob": 147,
+    "offset": 37004,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7543",
+   "en": "Prisoner Clothes",
+   "ja": "しゅうじんのふく",
+   "zh": "囚犯服",
+   "meta": {
+    "blob": 147,
+    "offset": 37272,
+    "cap": 16
    }
   },
   {
@@ -4108,6 +6693,17 @@
    }
   },
   {
+   "id": "row::7545",
+   "en": "Patched Clothes",
+   "ja": "つぎはぎのふく",
+   "zh": "补丁服",
+   "meta": {
+    "blob": 147,
+    "offset": 37540,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7546",
    "en": "Many years of hardship are _apparent in these clothes.",
    "ja": "長年のくろうが_ふくにしみこんでいる",
@@ -4116,6 +6712,17 @@
     "blob": 147,
     "offset": 37580,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7547",
+   "en": "Commando Uniform",
+   "ja": "せんしだんのふく",
+   "zh": "突击队服",
+   "meta": {
+    "blob": 147,
+    "offset": 37808,
+    "cap": 16
    }
   },
   {
@@ -4130,6 +6737,17 @@
    }
   },
   {
+   "id": "row::7549",
+   "en": "Hero Cloth",
+   "ja": "ヒーロークロス",
+   "zh": "英雄十字",
+   "meta": {
+    "blob": 147,
+    "offset": 38076,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7550",
    "en": "Clothes worn by heroes.",
    "ja": "英雄がきている服",
@@ -4138,6 +6756,17 @@
     "blob": 147,
     "offset": 38116,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7551",
+   "en": "Brave Coat",
+   "ja": "ブレイブコート",
+   "zh": "勇者外套",
+   "meta": {
+    "blob": 147,
+    "offset": 38344,
+    "cap": 16
    }
   },
   {
@@ -4152,6 +6781,17 @@
    }
   },
   {
+   "id": "row::7553",
+   "en": "Hide Armor",
+   "ja": "かわのよろい",
+   "zh": "兽皮甲",
+   "meta": {
+    "blob": 147,
+    "offset": 38612,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7554",
    "en": "Armor made from hide.",
    "ja": "かわでつくられたよろい",
@@ -4160,6 +6800,17 @@
     "blob": 147,
     "offset": 38652,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7555",
+   "en": "Magic Robe",
+   "ja": "まほうのローブ",
+   "zh": "魔法袍",
+   "meta": {
+    "blob": 147,
+    "offset": 38880,
+    "cap": 16
    }
   },
   {
@@ -4174,6 +6825,17 @@
    }
   },
   {
+   "id": "row::7557",
+   "en": "Barrel Armor",
+   "ja": "タルアーマー",
+   "zh": "木桶甲",
+   "meta": {
+    "blob": 147,
+    "offset": 39148,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7558",
    "en": "Ecologically friendly _recycled barrel.",
    "ja": "タルをリサイクル_つまりはエコ",
@@ -4182,6 +6844,17 @@
     "blob": 147,
     "offset": 39188,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7559",
+   "en": "Gorgeous Mail",
+   "ja": "ゴージャスメイル",
+   "zh": "漂亮铠甲",
+   "meta": {
+    "blob": 147,
+    "offset": 39416,
+    "cap": 16
    }
   },
   {
@@ -4196,6 +6869,17 @@
    }
   },
   {
+   "id": "row::7561",
+   "en": "Cowboy Vest",
+   "ja": "カウボーイベスト",
+   "zh": "牛仔背心",
+   "meta": {
+    "blob": 147,
+    "offset": 39684,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7562",
    "en": "Worn by a legendary cowboy. _Raises HP when worn.",
    "ja": "伝説のカウボーイが装備_していたらしくHPがあがる",
@@ -4204,6 +6888,17 @@
     "blob": 147,
     "offset": 39724,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7563",
+   "en": "Black Belt",
+   "ja": "ブラックベルト",
+   "zh": "黑带",
+   "meta": {
+    "blob": 147,
+    "offset": 39952,
+    "cap": 16
    }
   },
   {
@@ -4218,6 +6913,17 @@
    }
   },
   {
+   "id": "row::7565",
+   "en": "Scale Mail",
+   "ja": "スケールメイル",
+   "zh": "鳞片铠甲",
+   "meta": {
+    "blob": 147,
+    "offset": 40220,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7566",
    "en": "Armor made _of scales.",
    "ja": "うろこでできた_よろいなのだよ",
@@ -4226,6 +6932,17 @@
     "blob": 147,
     "offset": 40260,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7567",
+   "en": "Magma Plate",
+   "ja": "マグマプレート",
+   "zh": "岩浆甲",
+   "meta": {
+    "blob": 147,
+    "offset": 40488,
+    "cap": 16
    }
   },
   {
@@ -4240,6 +6957,17 @@
    }
   },
   {
+   "id": "row::7569",
+   "en": "Holy Mail",
+   "ja": "ホーリーメイル",
+   "zh": "神圣甲",
+   "meta": {
+    "blob": 147,
+    "offset": 40756,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7570",
    "en": "Armor concealing holy power.",
    "ja": "聖なる力をひめたるよろい",
@@ -4248,6 +6976,17 @@
     "blob": 147,
     "offset": 40796,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7571",
+   "en": "Sailor Suit",
+   "ja": "てきよセーラー",
+   "zh": "水手服",
+   "meta": {
+    "blob": 147,
+    "offset": 41024,
+    "cap": 16
    }
   },
   {
@@ -4262,6 +7001,17 @@
    }
   },
   {
+   "id": "row::7573",
+   "en": "Leather Jacket",
+   "ja": "かわジャン",
+   "zh": "皮夹克",
+   "meta": {
+    "blob": 147,
+    "offset": 41292,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7574",
    "en": "Look like a gangster _... from the 50's.",
    "ja": "これ何でできてるの？_・・・かわジャン？",
@@ -4270,6 +7020,17 @@
     "blob": 147,
     "offset": 41332,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7575",
+   "en": "Combat Uniform",
+   "ja": "せんとうふく",
+   "zh": "战斗服",
+   "meta": {
+    "blob": 147,
+    "offset": 41560,
+    "cap": 16
    }
   },
   {
@@ -4284,6 +7045,17 @@
    }
   },
   {
+   "id": "row::7577",
+   "en": "Power Loincloth",
+   "ja": "パワーふんどし",
+   "zh": "力量兜裆布",
+   "meta": {
+    "blob": 147,
+    "offset": 41828,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7578",
    "en": "Power surges from this _loincloth.",
    "ja": "力がわいてくるふんどし",
@@ -4292,6 +7064,17 @@
     "blob": 147,
     "offset": 41868,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7579",
+   "en": "Silver Mail",
+   "ja": "シルバーメイル",
+   "zh": "银铠甲",
+   "meta": {
+    "blob": 147,
+    "offset": 42096,
+    "cap": 16
    }
   },
   {
@@ -4306,6 +7089,17 @@
    }
   },
   {
+   "id": "row::7581",
+   "en": "Warrior Armor",
+   "ja": "むしゃのよろい",
+   "zh": "武士甲",
+   "meta": {
+    "blob": 147,
+    "offset": 42364,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7582",
    "en": "Armor from _another dimension.",
    "ja": "別次元から_もたらされたよろい",
@@ -4314,6 +7108,17 @@
     "blob": 147,
     "offset": 42404,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7583",
+   "en": "Turtle Mail",
+   "ja": "カメカメイル",
+   "zh": "乌龟铠甲",
+   "meta": {
+    "blob": 147,
+    "offset": 42632,
+    "cap": 16
    }
   },
   {
@@ -4328,6 +7133,17 @@
    }
   },
   {
+   "id": "row::7585",
+   "en": "Mithril Suit",
+   "ja": "ミスリルスーツ",
+   "zh": "秘银装",
+   "meta": {
+    "blob": 147,
+    "offset": 42900,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7586",
    "en": "A suit made of _mithril silver.",
    "ja": "ミスリル銀で_できたスーツ",
@@ -4336,6 +7152,17 @@
     "blob": 147,
     "offset": 42940,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7587",
+   "en": "Metal Protector",
+   "ja": "メタルプロテクター",
+   "zh": "金属护具",
+   "meta": {
+    "blob": 147,
+    "offset": 43168,
+    "cap": 16
    }
   },
   {
@@ -4350,6 +7177,17 @@
    }
   },
   {
+   "id": "row::7589",
+   "en": "Blade Suit",
+   "ja": "ブレードスーツ",
+   "zh": "刃装",
+   "meta": {
+    "blob": 147,
+    "offset": 43436,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7590",
    "en": "Blades protrude from _this armor.",
    "ja": "刃があちこち_からとびでる",
@@ -4358,6 +7196,17 @@
     "blob": 147,
     "offset": 43476,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7591",
+   "en": "Lord Mail",
+   "ja": "ロードメイル",
+   "zh": "领主甲",
+   "meta": {
+    "blob": 147,
+    "offset": 43704,
+    "cap": 16
    }
   },
   {
@@ -4372,6 +7221,17 @@
    }
   },
   {
+   "id": "row::7593",
+   "en": "Aura Suit",
+   "ja": "オーラスーツ",
+   "zh": "灵光衣",
+   "meta": {
+    "blob": 147,
+    "offset": 43972,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7594",
    "en": "This suit raises the _body's abilities.",
    "ja": "人間の身体能力を_あげるスーツ",
@@ -4380,6 +7240,17 @@
     "blob": 147,
     "offset": 44012,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7595",
+   "en": "Mighty Protector",
+   "ja": "マイティプロテクター",
+   "zh": "强力护具",
+   "meta": {
+    "blob": 147,
+    "offset": 44240,
+    "cap": 16
    }
   },
   {
@@ -4394,6 +7265,17 @@
    }
   },
   {
+   "id": "row::7597",
+   "en": "Brave Vest",
+   "ja": "ブレイブベスト",
+   "zh": "勇者背心",
+   "meta": {
+    "blob": 147,
+    "offset": 44508,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7598",
    "en": "This ultimate vest is yielded _only to true heroes.",
    "ja": "真の勇者のみに_ゆるされた究極の服",
@@ -4402,6 +7284,17 @@
     "blob": 147,
     "offset": 44548,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7599",
+   "en": "Sacrificial Clothes",
+   "ja": "いけにえのふく",
+   "zh": "祭祀服",
+   "meta": {
+    "blob": 147,
+    "offset": 44776,
+    "cap": 16
    }
   },
   {
@@ -4416,6 +7309,17 @@
    }
   },
   {
+   "id": "row::7601",
+   "en": "Uniform Dress",
+   "ja": "せいふくドレス",
+   "zh": "制服裙",
+   "meta": {
+    "blob": 147,
+    "offset": 45044,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7602",
    "en": "Official clothes of the _academy.",
    "ja": "学園オフィシャルの服",
@@ -4424,6 +7328,17 @@
     "blob": 147,
     "offset": 45084,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7603",
+   "en": "Leather Dress",
+   "ja": "レザードレス",
+   "zh": "皮礼服",
+   "meta": {
+    "blob": 147,
+    "offset": 45312,
+    "cap": 16
    }
   },
   {
@@ -4438,6 +7353,17 @@
    }
   },
   {
+   "id": "row::7605",
+   "en": "Flower Apron",
+   "ja": "フラワーエプロン",
+   "zh": "花饭单",
+   "meta": {
+    "blob": 147,
+    "offset": 45580,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7606",
    "en": "The flowers make _a great impression.",
    "ja": "花のもようが_良いカンジです",
@@ -4446,6 +7372,17 @@
     "blob": 147,
     "offset": 45620,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7607",
+   "en": "Fur Coat",
+   "ja": "けがわのコート",
+   "zh": "毛皮衣",
+   "meta": {
+    "blob": 147,
+    "offset": 45848,
+    "cap": 16
    }
   },
   {
@@ -4460,6 +7397,17 @@
    }
   },
   {
+   "id": "row::7609",
+   "en": "Crimson Robe",
+   "ja": "クリムゾンローブ",
+   "zh": "深红袍",
+   "meta": {
+    "blob": 147,
+    "offset": 46116,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7610",
    "en": "A robe dyed crimson.",
    "ja": "紅色にそまったローブ",
@@ -4468,6 +7416,17 @@
     "blob": 147,
     "offset": 46156,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7611",
+   "en": "Rider Suit",
+   "ja": "ライダースーツ",
+   "zh": "骑士装",
+   "meta": {
+    "blob": 147,
+    "offset": 46384,
+    "cap": 16
    }
   },
   {
@@ -4482,6 +7441,17 @@
    }
   },
   {
+   "id": "row::7613",
+   "en": "Military Uniform",
+   "ja": "ぐんぷく",
+   "zh": "军装",
+   "meta": {
+    "blob": 147,
+    "offset": 46652,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7614",
    "en": "Official uniform of the _Imperial Army.",
    "ja": "帝国軍オフィシャルの服",
@@ -4490,6 +7460,17 @@
     "blob": 147,
     "offset": 46692,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7615",
+   "en": "Sequined Dress",
+   "ja": "スパンコールドレス",
+   "zh": "亮片礼服",
+   "meta": {
+    "blob": 147,
+    "offset": 46920,
+    "cap": 16
    }
   },
   {
@@ -4504,6 +7485,17 @@
    }
   },
   {
+   "id": "row::7617",
+   "en": "Maid's Dress",
+   "ja": "メイドレス",
+   "zh": "女仆装",
+   "meta": {
+    "blob": 147,
+    "offset": 47188,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7618",
    "en": "Definitely this one.",
    "ja": "やっぱりこれっすよ",
@@ -4512,6 +7504,17 @@
     "blob": 147,
     "offset": 47228,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7619",
+   "en": "Holy Dress",
+   "ja": "ホーリードレス",
+   "zh": "神圣裙",
+   "meta": {
+    "blob": 147,
+    "offset": 47456,
+    "cap": 16
    }
   },
   {
@@ -4526,6 +7529,17 @@
    }
   },
   {
+   "id": "row::7621",
+   "en": "Light Armor",
+   "ja": "ライトアーマー",
+   "zh": "轻甲",
+   "meta": {
+    "blob": 147,
+    "offset": 47724,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7622",
    "en": "Even little girls can wear _this comfortably.",
    "ja": "女の子も_ラクラクきれるよろい",
@@ -4534,6 +7548,17 @@
     "blob": 147,
     "offset": 47764,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7623",
+   "en": "Regal Dress",
+   "ja": "プリンセスドレス",
+   "zh": "公主裙",
+   "meta": {
+    "blob": 147,
+    "offset": 47992,
+    "cap": 16
    }
   },
   {
@@ -4548,6 +7573,17 @@
    }
   },
   {
+   "id": "row::7625",
+   "en": "Goddess Raiment",
+   "ja": "女神のはごろも",
+   "zh": "女神羽衣",
+   "meta": {
+    "blob": 147,
+    "offset": 48260,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7626",
    "en": "Venus' _bathrobe.",
    "ja": "ヴィーナスの_おふるのはごろも",
@@ -4556,6 +7592,28 @@
     "blob": 147,
     "offset": 48300,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7627",
+   "en": "Remove Shoes",
+   "ja": "足装備をはずす",
+   "zh": "脱下鞋子",
+   "meta": {
+    "blob": 147,
+    "offset": 48528,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7628",
+   "en": "Commando Shoes",
+   "ja": "せんしだんのくつ",
+   "zh": "突击队靴",
+   "meta": {
+    "blob": 147,
+    "offset": 48796,
+    "cap": 16
    }
   },
   {
@@ -4570,6 +7628,17 @@
    }
   },
   {
+   "id": "row::7630",
+   "en": "Resistance Boots",
+   "ja": "レジスタンブーツ",
+   "zh": "抗性靴",
+   "meta": {
+    "blob": 147,
+    "offset": 49064,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7631",
    "en": "Boots for surviving _a ruined world.",
    "ja": "荒廃した世界を_生きぬくためのブーツ",
@@ -4578,6 +7647,17 @@
     "blob": 147,
     "offset": 49104,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7632",
+   "en": "Brave Boots",
+   "ja": "ブレイブーツ",
+   "zh": "勇者靴",
+   "meta": {
+    "blob": 147,
+    "offset": 49332,
+    "cap": 16
    }
   },
   {
@@ -4592,6 +7672,17 @@
    }
   },
   {
+   "id": "row::7634",
+   "en": "Comfy Sandals",
+   "ja": "けんこうサンダル",
+   "zh": "健康凉鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 49600,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7635",
    "en": "The bumps massage _your pressure points.",
    "ja": "けんこう的な_ツブツブとイボイボ",
@@ -4600,6 +7691,17 @@
     "blob": 147,
     "offset": 49640,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7636",
+   "en": "Hide Shoes",
+   "ja": "かわのくつ",
+   "zh": "兽皮靴",
+   "meta": {
+    "blob": 147,
+    "offset": 49868,
+    "cap": 16
    }
   },
   {
@@ -4614,6 +7716,17 @@
    }
   },
   {
+   "id": "row::7638",
+   "en": "Clogs",
+   "ja": "ウッドズック",
+   "zh": "木屐",
+   "meta": {
+    "blob": 147,
+    "offset": 50136,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7639",
    "en": "Shoes made of wood.",
    "ja": "木でできたくつ",
@@ -4622,6 +7735,17 @@
     "blob": 147,
     "offset": 50176,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7640",
+   "en": "Rubber Boots",
+   "ja": "ゴムながブーツ",
+   "zh": "橡胶长靴",
+   "meta": {
+    "blob": 147,
+    "offset": 50404,
+    "cap": 16
    }
   },
   {
@@ -4636,6 +7760,17 @@
    }
   },
   {
+   "id": "row::7642",
+   "en": "Bigfoot",
+   "ja": "ビッグフット",
+   "zh": "大脚靴",
+   "meta": {
+    "blob": 147,
+    "offset": 50672,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7643",
    "en": "No matter what, _these shoes just won't fit.",
    "ja": "どうガンバっても_サイズが合わないくつ",
@@ -4644,6 +7779,17 @@
     "blob": 147,
     "offset": 50712,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7644",
+   "en": "Snow Shoes",
+   "ja": "スノーウォーカー",
+   "zh": "雪地靴",
+   "meta": {
+    "blob": 147,
+    "offset": 50940,
+    "cap": 16
    }
   },
   {
@@ -4658,6 +7804,17 @@
    }
   },
   {
+   "id": "row::7646",
+   "en": "Gale Shoes",
+   "ja": "はやてのくつ",
+   "zh": "疾风靴",
+   "meta": {
+    "blob": 147,
+    "offset": 51208,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7647",
    "en": "Makes you faster than _anyone!",
    "ja": "だれよりも速く！",
@@ -4666,6 +7823,17 @@
     "blob": 147,
     "offset": 51248,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7648",
+   "en": "Battle Boots",
+   "ja": "バトルブーツ",
+   "zh": "战斗靴",
+   "meta": {
+    "blob": 147,
+    "offset": 51476,
+    "cap": 16
    }
   },
   {
@@ -4680,6 +7848,17 @@
    }
   },
   {
+   "id": "row::7650",
+   "en": "Speed Gear",
+   "ja": "スピードギア",
+   "zh": "变速装备",
+   "meta": {
+    "blob": 147,
+    "offset": 51744,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7651",
    "en": "Heavy and fast _technical shoes.",
    "ja": "重く速い_テクニカルなシューズ",
@@ -4688,6 +7867,17 @@
     "blob": 147,
     "offset": 51784,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7652",
+   "en": "Spike Shoes",
+   "ja": "スパイクシューズ",
+   "zh": "爬山鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 52012,
+    "cap": 16
    }
   },
   {
@@ -4702,6 +7892,17 @@
    }
   },
   {
+   "id": "row::7654",
+   "en": "Iron Geta",
+   "ja": "てつげた",
+   "zh": "铁木屐",
+   "meta": {
+    "blob": 147,
+    "offset": 52280,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7655",
    "en": "Made of iron, _these shoes are heavy.",
    "ja": "てつでできたゲタ　_とてつも無く重い",
@@ -4710,6 +7911,17 @@
     "blob": 147,
     "offset": 52320,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7656",
+   "en": "Silent Boots",
+   "ja": "サイレントブーツ",
+   "zh": "静音靴",
+   "meta": {
+    "blob": 147,
+    "offset": 52548,
+    "cap": 16
    }
   },
   {
@@ -4724,6 +7936,17 @@
    }
   },
   {
+   "id": "row::7658",
+   "en": "Duel Greaves",
+   "ja": "デュエルグリーブ",
+   "zh": "决斗胫甲",
+   "meta": {
+    "blob": 147,
+    "offset": 52816,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7659",
    "en": "Cursed, but the strongest _shoes.",
    "ja": "呪われし最強のくつ",
@@ -4732,6 +7955,17 @@
     "blob": 147,
     "offset": 52856,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7660",
+   "en": "Ultimate Gear",
+   "ja": "アルティミットギア",
+   "zh": "究极装备",
+   "meta": {
+    "blob": 147,
+    "offset": 53084,
+    "cap": 16
    }
   },
   {
@@ -4746,6 +7980,17 @@
    }
   },
   {
+   "id": "row::7662",
+   "en": "Destiny Boots",
+   "ja": "ディスティニーブーツ",
+   "zh": "命运之靴",
+   "meta": {
+    "blob": 147,
+    "offset": 53352,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7663",
    "en": "These ultimate shoes are _yielded only to true heroes.",
    "ja": "真の勇者にのみ　_ゆるされた究極のくつ",
@@ -4754,6 +7999,17 @@
     "blob": 147,
     "offset": 53392,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7664",
+   "en": "Academy Boots",
+   "ja": "がくえんブーツ",
+   "zh": "学院靴",
+   "meta": {
+    "blob": 147,
+    "offset": 53620,
+    "cap": 16
    }
   },
   {
@@ -4768,6 +8024,17 @@
    }
   },
   {
+   "id": "row::7666",
+   "en": "Sacrificial Shoes",
+   "ja": "いけにえのクツ",
+   "zh": "祭祀鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 53888,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7667",
    "en": "Shoes for the sacrificial _victim.",
    "ja": "いけにえがはくためのクツ",
@@ -4776,6 +8043,17 @@
     "blob": 147,
     "offset": 53928,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7668",
+   "en": "Aero Sneakers",
+   "ja": "エアロスニーカー",
+   "zh": "航空运动鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 54156,
+    "cap": 16
    }
   },
   {
@@ -4790,6 +8068,17 @@
    }
   },
   {
+   "id": "row::7670",
+   "en": "Roller Shoes",
+   "ja": "ローラーシューズ",
+   "zh": "滚轴鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 54424,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7671",
    "en": "They have wheels!",
    "ja": "ローラーつきのくつ",
@@ -4798,6 +8087,17 @@
     "blob": 147,
     "offset": 54464,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7672",
+   "en": "Battle Heels",
+   "ja": "バトルヒール",
+   "zh": "战斗高跟",
+   "meta": {
+    "blob": 147,
+    "offset": 54692,
+    "cap": 16
    }
   },
   {
@@ -4812,6 +8112,17 @@
    }
   },
   {
+   "id": "row::7674",
+   "en": "Rider Boots",
+   "ja": "ライダーブーツ",
+   "zh": "骑士靴",
+   "meta": {
+    "blob": 147,
+    "offset": 54960,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7675",
    "en": "Good for riding _bikes.",
    "ja": "バイクにのるのに_とても都合がいいぞ",
@@ -4820,6 +8131,17 @@
     "blob": 147,
     "offset": 55000,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7676",
+   "en": "Glass Shoes",
+   "ja": "ガラスのくつ",
+   "zh": "玻璃鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 55228,
+    "cap": 16
    }
   },
   {
@@ -4834,6 +8156,17 @@
    }
   },
   {
+   "id": "row::7678",
+   "en": "White Horse",
+   "ja": "ホワイトホース",
+   "zh": "白马",
+   "meta": {
+    "blob": 147,
+    "offset": 55496,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7679",
    "en": "Graceful like a white horse.",
    "ja": "白馬のようにかろやかに",
@@ -4842,6 +8175,17 @@
     "blob": 147,
     "offset": 55536,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7680",
+   "en": "Regal Shoes",
+   "ja": "プリンセスのくつ",
+   "zh": "公主鞋",
+   "meta": {
+    "blob": 147,
+    "offset": 55764,
+    "cap": 16
    }
   },
   {
@@ -4856,6 +8200,28 @@
    }
   },
   {
+   "id": "row::7682",
+   "en": "Remove Shield",
+   "ja": "盾装備をはずす",
+   "zh": "取下护盾",
+   "meta": {
+    "blob": 147,
+    "offset": 56032,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7683",
+   "en": "Leather Shield",
+   "ja": "レザーシールド",
+   "zh": "皮盾",
+   "meta": {
+    "blob": 147,
+    "offset": 56300,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7684",
    "en": "Shield made of hide.",
    "ja": "かわをはって作った盾",
@@ -4864,6 +8230,17 @@
     "blob": 147,
     "offset": 56340,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7685",
+   "en": "Wooden Shield",
+   "ja": "きのたて",
+   "zh": "木盾",
+   "meta": {
+    "blob": 147,
+    "offset": 56568,
+    "cap": 16
    }
   },
   {
@@ -4878,6 +8255,17 @@
    }
   },
   {
+   "id": "row::7687",
+   "en": "Golden Scudetto",
+   "ja": "きんのスクデット",
+   "zh": "黄金盾",
+   "meta": {
+    "blob": 147,
+    "offset": 56836,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7688",
    "en": "It's gorgeous!",
    "ja": "ゴージャスではある",
@@ -4886,6 +8274,17 @@
     "blob": 147,
     "offset": 56876,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7689",
+   "en": "Scale Shield",
+   "ja": "スケールシールド",
+   "zh": "鳞片盾",
+   "meta": {
+    "blob": 147,
+    "offset": 57104,
+    "cap": 16
    }
   },
   {
@@ -4900,6 +8299,17 @@
    }
   },
   {
+   "id": "row::7691",
+   "en": "Ice Shield",
+   "ja": "こおりのたて",
+   "zh": "冰盾",
+   "meta": {
+    "blob": 147,
+    "offset": 57372,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7692",
    "en": "A shield with the _power of ice.",
    "ja": "こおりの力が_ふうじこめられた盾",
@@ -4908,6 +8318,17 @@
     "blob": 147,
     "offset": 57412,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7693",
+   "en": "Flame Shield",
+   "ja": "ほのおのたて",
+   "zh": "火焰盾",
+   "meta": {
+    "blob": 147,
+    "offset": 57640,
+    "cap": 16
    }
   },
   {
@@ -4922,6 +8343,17 @@
    }
   },
   {
+   "id": "row::7695",
+   "en": "Shield of Light",
+   "ja": "ひかりのたて",
+   "zh": "光之盾",
+   "meta": {
+    "blob": 147,
+    "offset": 57908,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7696",
    "en": "A shield with the _power of light.",
    "ja": "ひかりの力をあつめた盾",
@@ -4930,6 +8362,17 @@
     "blob": 147,
     "offset": 57948,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7697",
+   "en": "Parasol Shield",
+   "ja": "パラソルシールド",
+   "zh": "遮阳伞盾",
+   "meta": {
+    "blob": 147,
+    "offset": 58176,
+    "cap": 16
    }
   },
   {
@@ -4944,6 +8387,17 @@
    }
   },
   {
+   "id": "row::7699",
+   "en": "Glass Shield",
+   "ja": "ガラスのたて",
+   "zh": "玻璃盾",
+   "meta": {
+    "blob": 147,
+    "offset": 58444,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7700",
    "en": "Shield made of a mysterious, _glasslike substance.",
    "ja": "ガラスのような_ナゾのそざいで作られた盾",
@@ -4952,6 +8406,17 @@
     "blob": 147,
     "offset": 58484,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7701",
+   "en": "Royal Guard",
+   "ja": "ロイヤルガード",
+   "zh": "皇家盾",
+   "meta": {
+    "blob": 147,
+    "offset": 58712,
+    "cap": 16
    }
   },
   {
@@ -4966,6 +8431,17 @@
    }
   },
   {
+   "id": "row::7703",
+   "en": "Rainbow Shield",
+   "ja": "レインボーシールド",
+   "zh": "彩虹盾",
+   "meta": {
+    "blob": 147,
+    "offset": 58980,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7704",
    "en": "A nice shield that shines _in seven colors.",
    "ja": "なないろに_光かがやくナイスな盾",
@@ -4974,6 +8450,17 @@
     "blob": 147,
     "offset": 59020,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7705",
+   "en": "Holy Guard",
+   "ja": "ホーリーガード",
+   "zh": "神圣守卫",
+   "meta": {
+    "blob": 147,
+    "offset": 59248,
+    "cap": 16
    }
   },
   {
@@ -4988,6 +8475,17 @@
    }
   },
   {
+   "id": "row::7707",
+   "en": "Regal Guard",
+   "ja": "プリンセスガード",
+   "zh": "公主盾",
+   "meta": {
+    "blob": 147,
+    "offset": 59516,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7708",
    "en": "A model made to commemorate _a legendary princess.",
    "ja": "伝説のオウジョを_記念してつくられたモデル",
@@ -4996,6 +8494,17 @@
     "blob": 147,
     "offset": 59556,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7709",
+   "en": "Earth Guard",
+   "ja": "アースガード",
+   "zh": "大地守护",
+   "meta": {
+    "blob": 147,
+    "offset": 59784,
+    "cap": 16
    }
   },
   {
@@ -5010,6 +8519,17 @@
    }
   },
   {
+   "id": "row::7711",
+   "en": "Duralumin",
+   "ja": "ジェラルミン",
+   "zh": "硬铝合金",
+   "meta": {
+    "blob": 147,
+    "offset": 60052,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7712",
    "en": "A shield made of an _unknown metal.",
    "ja": "未知の金属で_つくられた盾",
@@ -5018,6 +8538,17 @@
     "blob": 147,
     "offset": 60092,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7713",
+   "en": "Spike Shield",
+   "ja": "スパイクタージュ",
+   "zh": "尖刺盾",
+   "meta": {
+    "blob": 147,
+    "offset": 60320,
+    "cap": 16
    }
   },
   {
@@ -5032,6 +8563,17 @@
    }
   },
   {
+   "id": "row::7715",
+   "en": "Shining Shield",
+   "ja": "かがやきのたて",
+   "zh": "闪光之盾",
+   "meta": {
+    "blob": 147,
+    "offset": 60588,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7716",
    "en": "This shield is like a mirror.",
    "ja": "かがみみたいな盾",
@@ -5040,6 +8582,17 @@
     "blob": 147,
     "offset": 60628,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7717",
+   "en": "Kite Shield",
+   "ja": "カイトシールド",
+   "zh": "鸢盾",
+   "meta": {
+    "blob": 147,
+    "offset": 60856,
+    "cap": 16
    }
   },
   {
@@ -5054,6 +8607,17 @@
    }
   },
   {
+   "id": "row::7719",
+   "en": "Palm Shield",
+   "ja": "パームシールド",
+   "zh": "棕榈盾",
+   "meta": {
+    "blob": 147,
+    "offset": 61124,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7720",
    "en": "A hand skillfully extends out _from this shield.",
    "ja": "盾から手がきようにでている",
@@ -5062,6 +8626,17 @@
     "blob": 147,
     "offset": 61164,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7721",
+   "en": "Storm Shield",
+   "ja": "ストームシールド",
+   "zh": "风暴盾",
+   "meta": {
+    "blob": 147,
+    "offset": 61392,
+    "cap": 16
    }
   },
   {
@@ -5076,6 +8651,17 @@
    }
   },
   {
+   "id": "row::7723",
+   "en": "Men's Shield",
+   "ja": "おとこのたて",
+   "zh": "男人之盾",
+   "meta": {
+    "blob": 147,
+    "offset": 61660,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7724",
    "en": "Only a real man _can hold this shield.",
    "ja": "真の漢のみが_もつことができる盾",
@@ -5084,6 +8670,17 @@
     "blob": 147,
     "offset": 61700,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7725",
+   "en": "Brave Guard",
+   "ja": "ブレイブガード",
+   "zh": "勇者盾",
+   "meta": {
+    "blob": 147,
+    "offset": 61928,
+    "cap": 16
    }
   },
   {
@@ -5098,6 +8695,897 @@
    }
   },
   {
+   "id": "row::7727",
+   "en": "Shoot",
+   "ja": "撃つ",
+   "zh": "开火",
+   "meta": {
+    "blob": 147,
+    "offset": 62464,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7728",
+   "en": "Summon　",
+   "ja": "召喚する",
+   "zh": "召唤",
+   "meta": {
+    "blob": 147,
+    "offset": 62732,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7729",
+   "en": "Knight",
+   "ja": "ナイト",
+   "zh": "骑士",
+   "meta": {
+    "blob": 147,
+    "offset": 63000,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7730",
+   "en": "Rurufi",
+   "ja": "ルルフィ",
+   "zh": "露露菲",
+   "meta": {
+    "blob": 147,
+    "offset": 63268,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7731",
+   "en": "Roken",
+   "ja": "ローケン",
+   "zh": "洛肯",
+   "meta": {
+    "blob": 147,
+    "offset": 63536,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7732",
+   "en": "Cole",
+   "ja": "コール",
+   "zh": "科尔",
+   "meta": {
+    "blob": 147,
+    "offset": 63804,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7733",
+   "en": "Rina",
+   "ja": "リィナ",
+   "zh": "莉娜",
+   "meta": {
+    "blob": 147,
+    "offset": 64072,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7734",
+   "en": "Grillard",
+   "ja": "グリアード",
+   "zh": "格里亚德",
+   "meta": {
+    "blob": 147,
+    "offset": 64340,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7735",
+   "en": "Ultros",
+   "ja": "オルトロス",
+   "zh": "奥尔特罗斯",
+   "meta": {
+    "blob": 147,
+    "offset": 64608,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7736",
+   "en": "Guy",
+   "ja": "ガイ",
+   "zh": "盖伊",
+   "meta": {
+    "blob": 147,
+    "offset": 64876,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7737",
+   "en": "Doug",
+   "ja": "ダグ",
+   "zh": "道格",
+   "meta": {
+    "blob": 147,
+    "offset": 65144,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7738",
+   "en": "Levan",
+   "ja": "レバン",
+   "zh": "莱万",
+   "meta": {
+    "blob": 147,
+    "offset": 65412,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7739",
+   "en": "Nanako",
+   "ja": "ナナコ",
+   "zh": "奈奈子",
+   "meta": {
+    "blob": 147,
+    "offset": 65680,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7740",
+   "en": "Shamal",
+   "ja": "シャマル",
+   "zh": "夏马尔",
+   "meta": {
+    "blob": 147,
+    "offset": 65948,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7741",
+   "en": "Tetsu",
+   "ja": "テツ",
+   "zh": "铁",
+   "meta": {
+    "blob": 147,
+    "offset": 66216,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7742",
+   "en": "Silveria",
+   "ja": "シルベリア",
+   "zh": "希尔贝莉亚",
+   "meta": {
+    "blob": 147,
+    "offset": 66484,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7743",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 147,
+    "offset": 66752,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7744",
+   "en": "Geezer",
+   "ja": "おじさま",
+   "zh": "大叔大人",
+   "meta": {
+    "blob": 147,
+    "offset": 67020,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7745",
+   "en": "Evil Lord",
+   "ja": "マオウ",
+   "zh": "魔王",
+   "meta": {
+    "blob": 147,
+    "offset": 67288,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7746",
+   "en": "Francisca",
+   "ja": "フランシスカ",
+   "zh": "弗兰西丝卡",
+   "meta": {
+    "blob": 147,
+    "offset": 67556,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7747",
+   "en": "Demon Oron",
+   "ja": "悪魔オロン",
+   "zh": "恶魔奥隆",
+   "meta": {
+    "blob": 147,
+    "offset": 67824,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7748",
+   "en": "Angel Oron",
+   "ja": "天使オロン",
+   "zh": "天使奥隆",
+   "meta": {
+    "blob": 147,
+    "offset": 68092,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7749",
+   "en": "Karin",
+   "ja": "カリン",
+   "zh": "卡琳",
+   "meta": {
+    "blob": 147,
+    "offset": 68360,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7750",
+   "en": "Cozain",
+   "ja": "コザイン",
+   "zh": "科赞",
+   "meta": {
+    "blob": 147,
+    "offset": 68628,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7751",
+   "en": "Sach",
+   "ja": "サッチャン",
+   "zh": "小萨",
+   "meta": {
+    "blob": 147,
+    "offset": 68896,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7752",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 147,
+    "offset": 69164,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7753",
+   "en": "Sasha",
+   "ja": "サーシャ",
+   "zh": "萨莎",
+   "meta": {
+    "blob": 147,
+    "offset": 69432,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7754",
+   "en": "True Geezer",
+   "ja": "真・おじさま",
+   "zh": "真大叔",
+   "meta": {
+    "blob": 147,
+    "offset": 70236,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7755",
+   "en": "Sub-Commander Yashu",
+   "ja": "副隊長ヤーシュ",
+   "zh": "二当家亚修",
+   "meta": {
+    "blob": 147,
+    "offset": 70504,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7756",
+   "en": "Commando Guy",
+   "ja": "隊員ガイ",
+   "zh": "游击队员盖伊",
+   "meta": {
+    "blob": 147,
+    "offset": 70772,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7757",
+   "en": "Asurako",
+   "ja": "アシュラコ",
+   "zh": "阿修罗子",
+   "meta": {
+    "blob": 147,
+    "offset": 71040,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7758",
+   "en": "Princess",
+   "ja": "オウジョ",
+   "zh": "公主",
+   "meta": {
+    "blob": 147,
+    "offset": 71308,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7759",
+   "en": "Knight of the Past",
+   "ja": "むかしナイト",
+   "zh": "往日骑士",
+   "meta": {
+    "blob": 147,
+    "offset": 71576,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7760",
+   "en": "Evil Lord of the Past",
+   "ja": "むかしマオウ",
+   "zh": "往日魔王",
+   "meta": {
+    "blob": 147,
+    "offset": 71844,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7761",
+   "en": "Ramiz",
+   "ja": "ラミス",
+   "zh": "拉米丝",
+   "meta": {
+    "blob": 147,
+    "offset": 72112,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7762",
+   "en": "Horse",
+   "ja": "馬",
+   "zh": "马",
+   "meta": {
+    "blob": 147,
+    "offset": 72380,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7763",
+   "en": "Bike",
+   "ja": "バイク",
+   "zh": "自行车",
+   "meta": {
+    "blob": 147,
+    "offset": 72648,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7764",
+   "en": "Buggy",
+   "ja": "バギー",
+   "zh": "越野车",
+   "meta": {
+    "blob": 147,
+    "offset": 72916,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7765",
+   "en": "Boat",
+   "ja": "船",
+   "zh": "船",
+   "meta": {
+    "blob": 147,
+    "offset": 73184,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7766",
+   "en": "Dragon",
+   "ja": "ドラゴン",
+   "zh": "龙",
+   "meta": {
+    "blob": 147,
+    "offset": 73452,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7767",
+   "en": "Bamboo Stilts",
+   "ja": "タケウマ",
+   "zh": "竹高跷",
+   "meta": {
+    "blob": 147,
+    "offset": 73720,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7768",
+   "en": "Unicorn",
+   "ja": "ユニコーン",
+   "zh": "灵角兽",
+   "meta": {
+    "blob": 147,
+    "offset": 73988,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7769",
+   "en": "Divine Water",
+   "ja": "神水",
+   "zh": "神水",
+   "meta": {
+    "blob": 147,
+    "offset": 74256,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7770",
+   "en": "Salted Carrot",
+   "ja": "しおニンジン",
+   "zh": "红萝卜",
+   "meta": {
+    "blob": 147,
+    "offset": 74524,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7771",
+   "en": "Fossil Away",
+   "ja": "石化ナオール",
+   "zh": "化石消除",
+   "meta": {
+    "blob": 147,
+    "offset": 74792,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7772",
+   "en": "Horse　",
+   "ja": "うま",
+   "zh": "骏马",
+   "meta": {
+    "blob": 147,
+    "offset": 75060,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7773",
+   "en": "Key",
+   "ja": "キイー",
+   "zh": "钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 75328,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7774",
+   "en": "Hard Gem",
+   "ja": "かたい宝石",
+   "zh": "硬宝石",
+   "meta": {
+    "blob": 147,
+    "offset": 75596,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7775",
+   "en": "Beautiful Jewel",
+   "ja": "キレイ宝石",
+   "zh": "美宝石",
+   "meta": {
+    "blob": 147,
+    "offset": 75864,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7776",
+   "en": "Pure Water",
+   "ja": "ピュアウォーター",
+   "zh": "纯净水",
+   "meta": {
+    "blob": 147,
+    "offset": 76132,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7777",
+   "en": "100 Gold",
+   "ja": "１００ゴールド",
+   "zh": "100金币",
+   "meta": {
+    "blob": 147,
+    "offset": 76400,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7778",
+   "en": "C-Ing Drink",
+   "ja": "ミエールドリンク",
+   "zh": "饮用水",
+   "meta": {
+    "blob": 147,
+    "offset": 76668,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7779",
+   "en": "Statue Stone",
+   "ja": "石像ストーン",
+   "zh": "石像石",
+   "meta": {
+    "blob": 147,
+    "offset": 76936,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7780",
+   "en": "Frozen Key",
+   "ja": "凍てついたカギ",
+   "zh": "冰冻钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 77204,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7781",
+   "en": "Mole Key",
+   "ja": "モグラのカギ",
+   "zh": "鼹鼠钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 77472,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7782",
+   "en": "Death Trap",
+   "ja": "デストラップ",
+   "zh": "死亡陷阱",
+   "meta": {
+    "blob": 147,
+    "offset": 77740,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7783",
+   "en": "Mole Key",
+   "ja": "モグラのカギ",
+   "zh": "鼹鼠钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 78008,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7784",
+   "en": "Time Key",
+   "ja": "時のカギ",
+   "zh": "时之钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 78276,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7785",
+   "en": "Rusted Key",
+   "ja": "さびついたカギ",
+   "zh": "生锈的钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 78544,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7786",
+   "en": "Fishing Rod",
+   "ja": "つりざお",
+   "zh": "钓鱼竿",
+   "meta": {
+    "blob": 147,
+    "offset": 78812,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7787",
+   "en": "Elite Fishing Rod",
+   "ja": "つりざおヘブン",
+   "zh": "极品钓具",
+   "meta": {
+    "blob": 147,
+    "offset": 79080,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7788",
+   "en": "Repair Bridge",
+   "ja": "橋をなおす",
+   "zh": "修复桥梁",
+   "meta": {
+    "blob": 147,
+    "offset": 79348,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7789",
+   "en": "Legendary Fishing Rod",
+   "ja": "伝説のつりざお",
+   "zh": "传说钓具",
+   "meta": {
+    "blob": 147,
+    "offset": 79616,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7790",
+   "en": "Get Hint 1",
+   "ja": "ヒントをもらう１",
+   "zh": "获得提示1",
+   "meta": {
+    "blob": 147,
+    "offset": 79884,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7791",
+   "en": "Get Hint 2",
+   "ja": "ヒントをもらう２",
+   "zh": "获得提示2",
+   "meta": {
+    "blob": 147,
+    "offset": 80152,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7792",
+   "en": "Get Hint 3",
+   "ja": "ヒントをもらう３",
+   "zh": "获得提示3",
+   "meta": {
+    "blob": 147,
+    "offset": 80420,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7793",
+   "en": "Get Hint 4",
+   "ja": "ヒントをもらう４",
+   "zh": "获得提示4",
+   "meta": {
+    "blob": 147,
+    "offset": 80688,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7794",
+   "en": "Rental Ship",
+   "ja": "レンタル船",
+   "zh": "租借船",
+   "meta": {
+    "blob": 147,
+    "offset": 80956,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7795",
+   "en": "Information on Cursed Ruins",
+   "ja": "ノロいせきのじょうほう",
+   "zh": "诅咒废墟情报",
+   "meta": {
+    "blob": 147,
+    "offset": 81224,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7796",
+   "en": "Market Information",
+   "ja": "マーケットのじょうほう",
+   "zh": "市场信息",
+   "meta": {
+    "blob": 147,
+    "offset": 81492,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7797",
+   "en": "Black Grab Bag 1",
+   "ja": "黒ふくぶくろ１",
+   "zh": "黑色福袋1",
+   "meta": {
+    "blob": 147,
+    "offset": 81760,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7798",
+   "en": "Black Grab Bag 2",
+   "ja": "黒ふくぶくろ２",
+   "zh": "黑色福袋2",
+   "meta": {
+    "blob": 147,
+    "offset": 82028,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7799",
+   "en": "Black Grab Bag 3",
+   "ja": "黒ふくぶくろ３",
+   "zh": "黑色福袋3",
+   "meta": {
+    "blob": 147,
+    "offset": 82296,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7800",
+   "en": "Black Grab Bag 4",
+   "ja": "黒ふくぶくろ４",
+   "zh": "黑色福袋4",
+   "meta": {
+    "blob": 147,
+    "offset": 82564,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7801",
+   "en": "Black Grab Bag 5",
+   "ja": "黒ふくぶくろ５",
+   "zh": "黑色福袋5",
+   "meta": {
+    "blob": 147,
+    "offset": 82832,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7802",
+   "en": "Black Grab Bag 6",
+   "ja": "黒ふくぶくろ６",
+   "zh": "黑色福袋6",
+   "meta": {
+    "blob": 147,
+    "offset": 83100,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7803",
+   "en": "Listen",
+   "ja": "はなしを聞く",
+   "zh": "倾听",
+   "meta": {
+    "blob": 147,
+    "offset": 83368,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7804",
+   "en": "Holy Sword Castle-leg",
+   "ja": "聖剣シロノアシ",
+   "zh": "圣剑城腿",
+   "meta": {
+    "blob": 147,
+    "offset": 83636,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7805",
+   "en": "Powder of Darkness",
+   "ja": "やみのコナ",
+   "zh": "黑暗粉末",
+   "meta": {
+    "blob": 147,
+    "offset": 83904,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7806",
+   "en": "Angel Diary",
+   "ja": "天使の日記",
+   "zh": "天使日记",
+   "meta": {
+    "blob": 147,
+    "offset": 84172,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7807",
+   "en": "Request swamp magic",
+   "ja": "ヌマジックをたのむ",
+   "zh": "请求泥沼魔法",
+   "meta": {
+    "blob": 147,
+    "offset": 84440,
+    "cap": 18
+   }
+  },
+  {
    "id": "row::7808",
    "en": "Get Rid of the Fuzzy!",
    "ja": "ホワホワをけして！",
@@ -5105,6 +9593,116 @@
    "meta": {
     "blob": 147,
     "offset": 84708,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7809",
+   "en": "Lightning Block 1",
+   "ja": "雷ブロック１",
+   "zh": "闪电方块1",
+   "meta": {
+    "blob": 147,
+    "offset": 84976,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7810",
+   "en": "Lightning Block 2",
+   "ja": "雷ブロック２",
+   "zh": "闪电区2",
+   "meta": {
+    "blob": 147,
+    "offset": 85244,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7811",
+   "en": "Lightning Block 3",
+   "ja": "雷ブロック３",
+   "zh": "闪电方块3",
+   "meta": {
+    "blob": 147,
+    "offset": 85512,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7812",
+   "en": "Lightning Block 4",
+   "ja": "雷ブロック４",
+   "zh": "闪电块4",
+   "meta": {
+    "blob": 147,
+    "offset": 85780,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7813",
+   "en": "Lightning Block 5",
+   "ja": "雷ブロック５",
+   "zh": "闪电块5",
+   "meta": {
+    "blob": 147,
+    "offset": 86048,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7814",
+   "en": "Lightning Block 6",
+   "ja": "雷ブロック６",
+   "zh": "闪电块6",
+   "meta": {
+    "blob": 147,
+    "offset": 86316,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7815",
+   "en": "Lightning Block 7",
+   "ja": "雷ブロック７",
+   "zh": "闪电方块7",
+   "meta": {
+    "blob": 147,
+    "offset": 86584,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7816",
+   "en": "Explosives",
+   "ja": "バクヤク",
+   "zh": "炸药",
+   "meta": {
+    "blob": 147,
+    "offset": 86852,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7817",
+   "en": "God of Destruction",
+   "ja": "破壊の神",
+   "zh": "破坏之神",
+   "meta": {
+    "blob": 147,
+    "offset": 87120,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7818",
+   "en": "Change Back",
+   "ja": "元に戻す",
+   "zh": "还原",
+   "meta": {
+    "blob": 147,
+    "offset": 87388,
     "cap": 18
    }
   },
@@ -5131,6 +9729,358 @@
    }
   },
   {
+   "id": "row::7821",
+   "en": "Crafting Recipe 1",
+   "ja": "合成レシピ１",
+   "zh": "合成配方1",
+   "meta": {
+    "blob": 147,
+    "offset": 88192,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7822",
+   "en": "Crafting Recipe 2",
+   "ja": "合成レシピ２",
+   "zh": "合成配方2",
+   "meta": {
+    "blob": 147,
+    "offset": 88460,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7823",
+   "en": "Crafting Recipe 3",
+   "ja": "合成レシピ３",
+   "zh": "合成配方3",
+   "meta": {
+    "blob": 147,
+    "offset": 88728,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7824",
+   "en": "Crafting Recipe 4",
+   "ja": "合成レシピ４",
+   "zh": "合成配方4",
+   "meta": {
+    "blob": 147,
+    "offset": 88996,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7825",
+   "en": "Crafting Recipe 5",
+   "ja": "合成レシピ５",
+   "zh": "合成配方5",
+   "meta": {
+    "blob": 147,
+    "offset": 89264,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7826",
+   "en": "Crafting Recipe 6",
+   "ja": "合成レシピ６",
+   "zh": "合成配方6",
+   "meta": {
+    "blob": 147,
+    "offset": 89532,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7827",
+   "en": "Heart Shard 1",
+   "ja": "こころのかけら１",
+   "zh": "心灵碎片1",
+   "meta": {
+    "blob": 147,
+    "offset": 89800,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7828",
+   "en": "Heart Shard 2",
+   "ja": "こころのかけら２",
+   "zh": "心灵碎片2",
+   "meta": {
+    "blob": 147,
+    "offset": 90068,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7829",
+   "en": "Heart Shard 3",
+   "ja": "こころのかけら３",
+   "zh": "心灵碎片3",
+   "meta": {
+    "blob": 147,
+    "offset": 90336,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7830",
+   "en": "Heart Shard 4",
+   "ja": "こころのかけら４",
+   "zh": "心灵碎片4",
+   "meta": {
+    "blob": 147,
+    "offset": 90604,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7831",
+   "en": "Pumice Key",
+   "ja": "火山岩のカギ",
+   "zh": "浮石钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 90872,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7832",
+   "en": "Heart Shard 5",
+   "ja": "こころのかけら５",
+   "zh": "心灵碎片5",
+   "meta": {
+    "blob": 147,
+    "offset": 91140,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7833",
+   "en": "250 Gold",
+   "ja": "２５０ゴールド",
+   "zh": "250金币",
+   "meta": {
+    "blob": 147,
+    "offset": 91408,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7834",
+   "en": "300 Gold",
+   "ja": "３００ゴールド",
+   "zh": "300金币",
+   "meta": {
+    "blob": 147,
+    "offset": 91676,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7835",
+   "en": "500 Gold",
+   "ja": "５００ゴールド",
+   "zh": "500金币",
+   "meta": {
+    "blob": 147,
+    "offset": 91944,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7836",
+   "en": "1000 Gold",
+   "ja": "１０００ゴールド",
+   "zh": "1000金币",
+   "meta": {
+    "blob": 147,
+    "offset": 92212,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7837",
+   "en": "1500 Gold",
+   "ja": "１５００ゴールド",
+   "zh": "1500金币",
+   "meta": {
+    "blob": 147,
+    "offset": 92480,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7838",
+   "en": "Time Stone 1",
+   "ja": "時寄せの石１",
+   "zh": "时之石1",
+   "meta": {
+    "blob": 147,
+    "offset": 92748,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7839",
+   "en": "Time Stone 2",
+   "ja": "時寄せの石２",
+   "zh": "时之石2",
+   "meta": {
+    "blob": 147,
+    "offset": 93016,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7840",
+   "en": "Time Stone 3",
+   "ja": "時寄せの石３",
+   "zh": "时之石3",
+   "meta": {
+    "blob": 147,
+    "offset": 93284,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7841",
+   "en": "Time Stone 4",
+   "ja": "時寄せの石４",
+   "zh": "时之石4",
+   "meta": {
+    "blob": 147,
+    "offset": 93552,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7842",
+   "en": "Time Stone 5",
+   "ja": "時寄せの石５",
+   "zh": "时之石5",
+   "meta": {
+    "blob": 147,
+    "offset": 93820,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7843",
+   "en": "Time Stone 6",
+   "ja": "時寄せの石６",
+   "zh": "时之石6",
+   "meta": {
+    "blob": 147,
+    "offset": 94088,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7844",
+   "en": "Shovel",
+   "ja": "スコップ",
+   "zh": "铁铲",
+   "meta": {
+    "blob": 147,
+    "offset": 94356,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7845",
+   "en": "Mysterious Gem",
+   "ja": "ナゾの宝石",
+   "zh": "神秘宝石",
+   "meta": {
+    "blob": 147,
+    "offset": 94624,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7846",
+   "en": "Gate Key",
+   "ja": "ゲートキー",
+   "zh": "大门钥匙",
+   "meta": {
+    "blob": 147,
+    "offset": 94892,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7847",
+   "en": "Defense Stone",
+   "ja": "ディフェンストーン",
+   "zh": "防御石",
+   "meta": {
+    "blob": 147,
+    "offset": 95160,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7848",
+   "en": "Offense Stone",
+   "ja": "オフェンストーン",
+   "zh": "攻击石",
+   "meta": {
+    "blob": 147,
+    "offset": 95428,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7849",
+   "en": "Angel Shell",
+   "ja": "エンジェルシェル",
+   "zh": "天使护盾",
+   "meta": {
+    "blob": 147,
+    "offset": 95696,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7850",
+   "en": "Frog Repellent",
+   "ja": "カエル撃退スプレー",
+   "zh": "驱蛙喷雾",
+   "meta": {
+    "blob": 147,
+    "offset": 95964,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7851",
+   "en": "Salty Carrot",
+   "ja": "ソルトニンジン",
+   "zh": "盐渍红萝卜",
+   "meta": {
+    "blob": 147,
+    "offset": 96232,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7852",
+   "en": "Brave Blade　",
+   "ja": "ブレイプブレイド",
+   "zh": "勇者战刃",
+   "meta": {
+    "blob": 147,
+    "offset": 96500,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7853",
    "en": "Destroys enemies with the _courage of the wielder.",
    "ja": "持つ者の勇気を_刃にかえて敵をうつ",
@@ -5139,6 +10089,666 @@
     "blob": 147,
     "offset": 96540,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7854",
+   "en": "Disappointing Stone",
+   "ja": "ハズレストーン",
+   "zh": "失望石",
+   "meta": {
+    "blob": 147,
+    "offset": 96768,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7855",
+   "en": "Sword Stone",
+   "ja": "ソードストーン",
+   "zh": "磨剑石",
+   "meta": {
+    "blob": 147,
+    "offset": 97036,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7856",
+   "en": "Torch",
+   "ja": "たいまつ",
+   "zh": "火把",
+   "meta": {
+    "blob": 147,
+    "offset": 97304,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7857",
+   "en": "Jumbo Fresh Bread",
+   "ja": "特大やきたてパン",
+   "zh": "特大现烤面包",
+   "meta": {
+    "blob": 147,
+    "offset": 97572,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7858",
+   "en": "Expensive Pot",
+   "ja": "高価なつぼ",
+   "zh": "高价锅",
+   "meta": {
+    "blob": 147,
+    "offset": 97840,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7859",
+   "en": "Inexpensive Pot",
+   "ja": "安価なつぼ",
+   "zh": "划算锅",
+   "meta": {
+    "blob": 147,
+    "offset": 98108,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7860",
+   "en": "Regular Pot",
+   "ja": "普通なつぼ",
+   "zh": "普通锅",
+   "meta": {
+    "blob": 147,
+    "offset": 98376,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7861",
+   "en": "Sage",
+   "ja": "賢者",
+   "zh": "贤者",
+   "meta": {
+    "blob": 147,
+    "offset": 98644,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7862",
+   "en": "Retrofitted No. 30",
+   "ja": "３０号改",
+   "zh": "30号改",
+   "meta": {
+    "blob": 147,
+    "offset": 98912,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7863",
+   "en": "Normal Legs",
+   "ja": "ノーマルフット",
+   "zh": "标准腿",
+   "meta": {
+    "blob": 147,
+    "offset": 99180,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7864",
+   "en": "Warrior Legs",
+   "ja": "ムシャフット",
+   "zh": "战士腿",
+   "meta": {
+    "blob": 147,
+    "offset": 99448,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7865",
+   "en": "Many Legs",
+   "ja": "メニーフット",
+   "zh": "多足怪",
+   "meta": {
+    "blob": 147,
+    "offset": 99716,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7866",
+   "en": "Knight Legs",
+   "ja": "ナイトフット",
+   "zh": "骑士腿",
+   "meta": {
+    "blob": 147,
+    "offset": 99984,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7867",
+   "en": "Virtual Legs",
+   "ja": "ヴァーチャフット",
+   "zh": "虚拟腿",
+   "meta": {
+    "blob": 147,
+    "offset": 100252,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7868",
+   "en": "Power Legs",
+   "ja": "パワーフット",
+   "zh": "力量腿",
+   "meta": {
+    "blob": 147,
+    "offset": 100520,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7869",
+   "en": "Normal Castle",
+   "ja": "ノーマルキャッスル",
+   "zh": "标准城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 101324,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7870",
+   "en": "Green Castle",
+   "ja": "グリーンキャッスル",
+   "zh": "绿色城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 101592,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7871",
+   "en": "Spike Castle",
+   "ja": "スパイクキャッスル",
+   "zh": "尖刺城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 101860,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7872",
+   "en": "Battle Castle",
+   "ja": "バトルキャッスル",
+   "zh": "战斗城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 102128,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7873",
+   "en": "Japonesque Castle",
+   "ja": "ジャポニキャッスル",
+   "zh": "日式城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 102396,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7874",
+   "en": "Iron Castle",
+   "ja": "テツノキャッスル",
+   "zh": "钢铁城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 102664,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7875",
+   "en": "VR Castle",
+   "ja": "ヴァーチャルキャッスル",
+   "zh": "虚拟城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 102932,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7876",
+   "en": "Cult Castle",
+   "ja": "カルトキャッスル",
+   "zh": "邪教城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 103200,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7877",
+   "en": "Sweets Castle",
+   "ja": "スィーツキャッスル",
+   "zh": "甜点城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 103468,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7878",
+   "en": "Crystal Castle",
+   "ja": "クリスタルキャッスル",
+   "zh": "水晶城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 103736,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7879",
+   "en": "Warrior Castle",
+   "ja": "ムシャキャッスル",
+   "zh": "战士城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 104004,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7880",
+   "en": "Knight Castle",
+   "ja": "ナイトキャッスル",
+   "zh": "骑士城堡",
+   "meta": {
+    "blob": 147,
+    "offset": 104272,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7881",
+   "en": "Forest Engine",
+   "ja": "森エンジン",
+   "zh": "森林引擎",
+   "meta": {
+    "blob": 147,
+    "offset": 105880,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7882",
+   "en": "Snow Engine",
+   "ja": "雪エンジン",
+   "zh": "雪地引擎",
+   "meta": {
+    "blob": 147,
+    "offset": 106148,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7883",
+   "en": "Swamp Engine",
+   "ja": "沼エンジン",
+   "zh": "泥沼引擎",
+   "meta": {
+    "blob": 147,
+    "offset": 106416,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7884",
+   "en": "Ship Engine",
+   "ja": "船エンジン",
+   "zh": "船舶引擎",
+   "meta": {
+    "blob": 147,
+    "offset": 106684,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7885",
+   "en": "Air Engine",
+   "ja": "空エンジン",
+   "zh": "航空引擎",
+   "meta": {
+    "blob": 147,
+    "offset": 106952,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7886",
+   "en": "2nd floor expansion",
+   "ja": "２階を増築",
+   "zh": "二楼增建",
+   "meta": {
+    "blob": 147,
+    "offset": 107220,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7887",
+   "en": "3rd floor expansion",
+   "ja": "３階を増築",
+   "zh": "三楼增建",
+   "meta": {
+    "blob": 147,
+    "offset": 107488,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7888",
+   "en": "4th floor expansion",
+   "ja": "４階を増築",
+   "zh": "四楼增建",
+   "meta": {
+    "blob": 147,
+    "offset": 107756,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7889",
+   "en": "5th floor expansion",
+   "ja": "５階を増築",
+   "zh": "五楼增建",
+   "meta": {
+    "blob": 147,
+    "offset": 108024,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7890",
+   "en": "Skivvies",
+   "ja": "パンイチ",
+   "zh": "内裤",
+   "meta": {
+    "blob": 147,
+    "offset": 113652,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7891",
+   "en": "Swordsman",
+   "ja": "剣士",
+   "zh": "剑士",
+   "meta": {
+    "blob": 147,
+    "offset": 113920,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7892",
+   "en": "Fighter",
+   "ja": "戦士",
+   "zh": "战士",
+   "meta": {
+    "blob": 147,
+    "offset": 114188,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7893",
+   "en": "Musketeer",
+   "ja": "銃士",
+   "zh": "射手",
+   "meta": {
+    "blob": 147,
+    "offset": 114456,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7894",
+   "en": "Mage",
+   "ja": "魔道士",
+   "zh": "魔法师",
+   "meta": {
+    "blob": 147,
+    "offset": 114724,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7895",
+   "en": "Spearman",
+   "ja": "槍士",
+   "zh": "枪兵",
+   "meta": {
+    "blob": 147,
+    "offset": 114992,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7896",
+   "en": "Hero",
+   "ja": "勇者",
+   "zh": "勇者",
+   "meta": {
+    "blob": 147,
+    "offset": 115260,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7897",
+   "en": "Warrior",
+   "ja": "ウォーリア",
+   "zh": "勇士",
+   "meta": {
+    "blob": 147,
+    "offset": 115528,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7898",
+   "en": "Viking",
+   "ja": "バイキング",
+   "zh": "维京人",
+   "meta": {
+    "blob": 147,
+    "offset": 115796,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7899",
+   "en": "Marksman",
+   "ja": "シューター",
+   "zh": "神射手",
+   "meta": {
+    "blob": 147,
+    "offset": 116064,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7900",
+   "en": "Wizard",
+   "ja": "ウィザード",
+   "zh": "巫师",
+   "meta": {
+    "blob": 147,
+    "offset": 116332,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7901",
+   "en": "Lancer",
+   "ja": "ランサー",
+   "zh": "长枪兵",
+   "meta": {
+    "blob": 147,
+    "offset": 116600,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7902",
+   "en": "Freefight",
+   "ja": "フリーファイト",
+   "zh": "自由战斗",
+   "meta": {
+    "blob": 147,
+    "offset": 116868,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7903",
+   "en": "Boost Hero",
+   "ja": "ブーストヒーロー",
+   "zh": "提升勇者",
+   "meta": {
+    "blob": 147,
+    "offset": 117136,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7904",
+   "en": "Boost Party",
+   "ja": "ブーストパーティ",
+   "zh": "提升队伍",
+   "meta": {
+    "blob": 147,
+    "offset": 117404,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7905",
+   "en": "Boost All",
+   "ja": "ブーストオール",
+   "zh": "全面提升",
+   "meta": {
+    "blob": 147,
+    "offset": 117672,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7906",
+   "en": "Gold Pick",
+   "ja": "ゴールドピック",
+   "zh": "黄金采掘",
+   "meta": {
+    "blob": 147,
+    "offset": 117940,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7907",
+   "en": "Experi-dive",
+   "ja": "エクスペリダイブ",
+   "zh": "经验俯冲",
+   "meta": {
+    "blob": 147,
+    "offset": 118208,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7908",
+   "en": "Skill Maker",
+   "ja": "スキルメーカー",
+   "zh": "技能师",
+   "meta": {
+    "blob": 147,
+    "offset": 118476,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7909",
+   "en": "Speed Eater",
+   "ja": "スピードイーター",
+   "zh": "速度吞噬者",
+   "meta": {
+    "blob": 147,
+    "offset": 118744,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7910",
+   "en": "Meteor Formation",
+   "ja": "超新流星陣",
+   "zh": "超新流星阵",
+   "meta": {
+    "blob": 147,
+    "offset": 119012,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7911",
+   "en": "Time is Life",
+   "ja": "タイムイズライフ",
+   "zh": "时间就是生命",
+   "meta": {
+    "blob": 147,
+    "offset": 119280,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7912",
+   "en": "Beast King Formation",
+   "ja": "四天獣王陣",
+   "zh": "四天兽王阵",
+   "meta": {
+    "blob": 147,
+    "offset": 119548,
+    "cap": 18
+   }
+  },
+  {
+   "id": "row::7913",
+   "en": "Wooden Sword +1",
+   "ja": "ボクソード＋１",
+   "zh": "木剑+1",
+   "meta": {
+    "blob": 147,
+    "offset": 121156,
+    "cap": 16
    }
   },
   {
@@ -5153,6 +10763,28 @@
    }
   },
   {
+   "id": "row::7915",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 121388,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7916",
+   "en": "Iron Sword +1",
+   "ja": "てつのつるぎ＋１",
+   "zh": "铁剑+1",
+   "meta": {
+    "blob": 147,
+    "offset": 121424,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7917",
    "en": "Iron Sword _+ Mage Staff.",
    "ja": "てつのつるぎ_＋メイジスタッフ",
@@ -5161,6 +10793,28 @@
     "blob": 147,
     "offset": 121464,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7918",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 121656,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7919",
+   "en": "Crimson Edge +1",
+   "ja": "しんくのほうけん＋１",
+   "zh": "猩红刃+1",
+   "meta": {
+    "blob": 147,
+    "offset": 121692,
+    "cap": 16
    }
   },
   {
@@ -5175,6 +10829,28 @@
    }
   },
   {
+   "id": "row::7921",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 121924,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7922",
+   "en": "Wing Blade +1",
+   "ja": "ウィングブレード＋１",
+   "zh": "翼刃+1",
+   "meta": {
+    "blob": 147,
+    "offset": 121960,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7923",
    "en": "Wing Blade _+ Power Staff.",
    "ja": "ウィングブレード_＋にょいぼう",
@@ -5183,6 +10859,28 @@
     "blob": 147,
     "offset": 122000,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7924",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 122192,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7925",
+   "en": "True Hero Sword",
+   "ja": "真・勇者のつるぎ",
+   "zh": "真勇者之剑",
+   "meta": {
+    "blob": 147,
+    "offset": 122228,
+    "cap": 16
    }
   },
   {
@@ -5197,6 +10895,39 @@
    }
   },
   {
+   "id": "row::7927",
+   "en": "Brave Slash",
+   "ja": "ブレイブスラッシュ",
+   "zh": "英勇斩",
+   "meta": {
+    "blob": 147,
+    "offset": 122428,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7928",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 122460,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7929",
+   "en": "Blue Dragon Sword +1",
+   "ja": "せいりゅうとう＋１",
+   "zh": "青龙剑+1",
+   "meta": {
+    "blob": 147,
+    "offset": 122496,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7930",
    "en": "Blue Dragon Sword _+ Dragon Wand.",
    "ja": "せいりゅうとう_＋ドラゴンワンド",
@@ -5205,6 +10936,28 @@
     "blob": 147,
     "offset": 122536,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7931",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 122728,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7932",
+   "en": "Buster Sword +1",
+   "ja": "バスターソード＋１",
+   "zh": "破坏剑+1",
+   "meta": {
+    "blob": 147,
+    "offset": 122764,
+    "cap": 16
    }
   },
   {
@@ -5219,6 +10972,28 @@
    }
   },
   {
+   "id": "row::7934",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 122996,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7935",
+   "en": "Ice Longsword +1",
+   "ja": "こおりのたいけん＋１",
+   "zh": "冰长剑+1",
+   "meta": {
+    "blob": 147,
+    "offset": 123032,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7936",
    "en": "Ice Longsword _+ Skullbone.",
    "ja": "こおりのたいけん_＋スカルボーン",
@@ -5227,6 +11002,28 @@
     "blob": 147,
     "offset": 123072,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7937",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 123264,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7938",
+   "en": "Executioner +1",
+   "ja": "エグゼキューター＋１",
+   "zh": "处决者+1",
+   "meta": {
+    "blob": 147,
+    "offset": 123300,
+    "cap": 16
    }
   },
   {
@@ -5241,6 +11038,28 @@
    }
   },
   {
+   "id": "row::7940",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 123532,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7941",
+   "en": "Spirit Sword Muramasa",
+   "ja": "妖刀ムラマサ",
+   "zh": "妖刀村正",
+   "meta": {
+    "blob": 147,
+    "offset": 123568,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7942",
    "en": "Muramasa _+ Sacrificial Staff.",
    "ja": "ムラマサ_＋いけにえのつえ",
@@ -5249,6 +11068,28 @@
     "blob": 147,
     "offset": 123608,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7943",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 123800,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7944",
+   "en": "Lumberjack Axe +1",
+   "ja": "きこりのオノ＋１",
+   "zh": "樵夫斧+1",
+   "meta": {
+    "blob": 147,
+    "offset": 123836,
+    "cap": 16
    }
   },
   {
@@ -5263,6 +11104,28 @@
    }
   },
   {
+   "id": "row::7946",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 124068,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7947",
+   "en": "Battle Axe +1",
+   "ja": "バトルアクス＋１",
+   "zh": "战斧+1",
+   "meta": {
+    "blob": 147,
+    "offset": 124104,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7948",
    "en": "Battle Axe _+ Fire Rod.",
    "ja": "バトルアクス_＋ファイアーロッド",
@@ -5271,6 +11134,28 @@
     "blob": 147,
     "offset": 124144,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7949",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 124336,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7950",
+   "en": "Saw Axe +1",
+   "ja": "のこぎりアクス＋１",
+   "zh": "铁斧+1",
+   "meta": {
+    "blob": 147,
+    "offset": 124372,
+    "cap": 16
    }
   },
   {
@@ -5285,6 +11170,28 @@
    }
   },
   {
+   "id": "row::7952",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 124604,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7953",
+   "en": "Bloody Axe +1",
+   "ja": "ブラッディアクス＋１",
+   "zh": "血斧+1",
+   "meta": {
+    "blob": 147,
+    "offset": 124640,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7954",
    "en": "Bloody Axe _+ Balmung.",
    "ja": "ブラッディアクス_＋バルムンク",
@@ -5293,6 +11200,28 @@
     "blob": 147,
     "offset": 124680,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7955",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 124872,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7956",
+   "en": "Club +1",
+   "ja": "こんぼう＋１",
+   "zh": "木棒+1",
+   "meta": {
+    "blob": 147,
+    "offset": 124908,
+    "cap": 16
    }
   },
   {
@@ -5307,6 +11236,28 @@
    }
   },
   {
+   "id": "row::7958",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 125140,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7959",
+   "en": "Spike Mace +1",
+   "ja": "スパイクメイス＋１",
+   "zh": "钉刺锤+1",
+   "meta": {
+    "blob": 147,
+    "offset": 125176,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7960",
    "en": "Spike Mace _+ Theta.",
    "ja": "スパイクメイス_＋シータ",
@@ -5315,6 +11266,28 @@
     "blob": 147,
     "offset": 125216,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7961",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 125408,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7962",
+   "en": "Battle Hammer +1",
+   "ja": "バトルハンマー＋１",
+   "zh": "战锤+1",
+   "meta": {
+    "blob": 147,
+    "offset": 125444,
+    "cap": 16
    }
   },
   {
@@ -5329,6 +11302,28 @@
    }
   },
   {
+   "id": "row::7964",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 125676,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7965",
+   "en": "Gold Rush +1",
+   "ja": "ゴールドラッシュ＋１",
+   "zh": "黄金冲击+1",
+   "meta": {
+    "blob": 147,
+    "offset": 125712,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7966",
    "en": "Gold Rush _+ Wing Blade +1.",
    "ja": "ゴールドラッシュ_＋ウィングブレード＋１",
@@ -5337,6 +11332,39 @@
     "blob": 147,
     "offset": 125752,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7967",
+   "en": "Gold Plus Press",
+   "ja": "ゴールドプラスプレス",
+   "zh": "黄金重压",
+   "meta": {
+    "blob": 147,
+    "offset": 125912,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7968",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 125944,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7969",
+   "en": "Alpha Plus",
+   "ja": "アルファ改",
+   "zh": "阿尔法改",
+   "meta": {
+    "blob": 147,
+    "offset": 125980,
+    "cap": 16
    }
   },
   {
@@ -5351,6 +11379,28 @@
    }
   },
   {
+   "id": "row::7971",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 126212,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7972",
+   "en": "Gamma Plus",
+   "ja": "ガンマ改",
+   "zh": "伽马改",
+   "meta": {
+    "blob": 147,
+    "offset": 126248,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7973",
    "en": "Gamma _+ Silver Hammer.",
    "ja": "ガンマ_＋シルバーハンマー",
@@ -5359,6 +11409,28 @@
     "blob": 147,
     "offset": 126288,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7974",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 126480,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7975",
+   "en": "Zeta Plus",
+   "ja": "ゼータ改",
+   "zh": "泽塔改",
+   "meta": {
+    "blob": 147,
+    "offset": 126516,
+    "cap": 16
    }
   },
   {
@@ -5373,6 +11445,28 @@
    }
   },
   {
+   "id": "row::7977",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 126748,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7978",
+   "en": "Lambda Plus",
+   "ja": "ラムダ改",
+   "zh": "拉姆达改",
+   "meta": {
+    "blob": 147,
+    "offset": 126784,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7979",
    "en": "Lambda _+ Dream Breaker.",
    "ja": "ラムダ_＋ドリームブレイカー",
@@ -5381,6 +11475,28 @@
     "blob": 147,
     "offset": 126824,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7980",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 127016,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7981",
+   "en": "Omicron Plus",
+   "ja": "オミクロン改",
+   "zh": "奥米克戎改",
+   "meta": {
+    "blob": 147,
+    "offset": 127052,
+    "cap": 16
    }
   },
   {
@@ -5395,6 +11511,28 @@
    }
   },
   {
+   "id": "row::7983",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 127284,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7984",
+   "en": "Sigma Plus",
+   "ja": "シグマ改",
+   "zh": "西格玛改",
+   "meta": {
+    "blob": 147,
+    "offset": 127320,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7985",
    "en": "Sigma _+ Gungnir Spear.",
    "ja": "シグマ_＋グングニルのヤリ",
@@ -5403,6 +11541,28 @@
     "blob": 147,
     "offset": 127360,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7986",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 127552,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7987",
+   "en": "Omega Plus",
+   "ja": "オメガ改",
+   "zh": "欧米伽改",
+   "meta": {
+    "blob": 147,
+    "offset": 127588,
+    "cap": 16
    }
   },
   {
@@ -5417,6 +11577,39 @@
    }
   },
   {
+   "id": "row::7989",
+   "en": "Hedgehog Burst Plus",
+   "ja": "ヘッジホッグバースト改",
+   "zh": "刺猬爆发改。",
+   "meta": {
+    "blob": 147,
+    "offset": 127788,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7990",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 127820,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7991",
+   "en": "Fire Rod +1",
+   "ja": "ファイアーロッド＋１",
+   "zh": "火杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 127856,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7992",
    "en": "Fire Rod _+ Crimson Edge +1.",
    "ja": "ファイアーロッド_＋しんくのほうけん＋１",
@@ -5425,6 +11618,28 @@
     "blob": 147,
     "offset": 127896,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7993",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 128088,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7994",
+   "en": "Ice Rod +1",
+   "ja": "アイスロッド＋１",
+   "zh": "冰杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 128124,
+    "cap": 16
    }
   },
   {
@@ -5439,6 +11654,28 @@
    }
   },
   {
+   "id": "row::7996",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 128356,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::7997",
+   "en": "Sage's Staff +1",
+   "ja": "せんにんのつえ＋１",
+   "zh": "贤者之杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 128392,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::7998",
    "en": "Sage's Staff _+ Gamma Plus.",
    "ja": "せんにんのつえ_＋ガンマ改",
@@ -5447,6 +11684,28 @@
     "blob": 147,
     "offset": 128432,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::7999",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 128624,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8000",
+   "en": "Dragon Wand +1",
+   "ja": "ドラゴンワンド＋１",
+   "zh": "龙杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 128660,
+    "cap": 16
    }
   },
   {
@@ -5461,6 +11720,39 @@
    }
   },
   {
+   "id": "row::8002",
+   "en": "Dark Sphere",
+   "ja": "ダークスフィア",
+   "zh": "黑暗球体",
+   "meta": {
+    "blob": 147,
+    "offset": 128860,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8003",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 128892,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8004",
+   "en": "Encyclopedia +1",
+   "ja": "ひゃっかじてん＋１",
+   "zh": "百科全书+1",
+   "meta": {
+    "blob": 147,
+    "offset": 128928,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8005",
    "en": "Encyclopedia _+ Xi.",
    "ja": "ひゃっかじてん_＋クシー",
@@ -5469,6 +11761,28 @@
     "blob": 147,
     "offset": 128968,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8006",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 129160,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8007",
+   "en": "Tome of Lightning +1",
+   "ja": "イカヅチのしょ＋１",
+   "zh": "闪电之书+1",
+   "meta": {
+    "blob": 147,
+    "offset": 129196,
+    "cap": 16
    }
   },
   {
@@ -5483,6 +11797,28 @@
    }
   },
   {
+   "id": "row::8009",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 129428,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8010",
+   "en": "Stormproof Tome +1",
+   "ja": "ぼうふうじてん＋１",
+   "zh": "风暴书+1",
+   "meta": {
+    "blob": 147,
+    "offset": 129464,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8011",
    "en": "Stormproof Tome _+ Tome of Lightning +1.",
    "ja": "ぼうふうじてん_＋いかづちのしょ＋１",
@@ -5491,6 +11827,28 @@
     "blob": 147,
     "offset": 129504,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8012",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 129696,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8013",
+   "en": "Grimoire +1",
+   "ja": "グリモワール＋１",
+   "zh": "魔法书+1",
+   "meta": {
+    "blob": 147,
+    "offset": 129732,
+    "cap": 16
    }
   },
   {
@@ -5505,6 +11863,39 @@
    }
   },
   {
+   "id": "row::8015",
+   "en": "Molecular Disintegration",
+   "ja": "分子分解",
+   "zh": "分子分解",
+   "meta": {
+    "blob": 147,
+    "offset": 129932,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8016",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 129964,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8017",
+   "en": "Stone Spear +1",
+   "ja": "いしのヤリ＋１",
+   "zh": "石矛+1",
+   "meta": {
+    "blob": 147,
+    "offset": 130000,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8018",
    "en": "Stone Spear _+ Grimoire.",
    "ja": "いしのヤリ_＋グリモワール",
@@ -5513,6 +11904,28 @@
     "blob": 147,
     "offset": 130040,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8019",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 130232,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8020",
+   "en": "Iron Spear +1",
+   "ja": "アイアンスピア＋１",
+   "zh": "铁矛+1",
+   "meta": {
+    "blob": 147,
+    "offset": 130268,
+    "cap": 16
    }
   },
   {
@@ -5527,6 +11940,28 @@
    }
   },
   {
+   "id": "row::8022",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 130500,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8023",
+   "en": "Trident +1",
+   "ja": "トライデント＋１",
+   "zh": "三叉戟+1",
+   "meta": {
+    "blob": 147,
+    "offset": 130536,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8024",
    "en": "Trident _+ Gaia Staff.",
    "ja": "トライデント_＋ガイアスタッフ",
@@ -5535,6 +11970,28 @@
     "blob": 147,
     "offset": 130576,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8025",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 130768,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8026",
+   "en": "Spiral Spear",
+   "ja": "らせんのヤリ",
+   "zh": "螺旋之枪",
+   "meta": {
+    "blob": 147,
+    "offset": 130804,
+    "cap": 16
    }
   },
   {
@@ -5549,6 +12006,39 @@
    }
   },
   {
+   "id": "row::8028",
+   "en": "Terrorsclyde",
+   "ja": "テラスクライド",
+   "zh": "恐怖克莱德",
+   "meta": {
+    "blob": 147,
+    "offset": 131004,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8029",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 131036,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8030",
+   "en": "Wood Stick +1",
+   "ja": "ウッドスティック＋１",
+   "zh": "木杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 131072,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8031",
    "en": "Wood Stick _+ Iron Spear.",
    "ja": "ウッドスティック_＋アイアンスピア",
@@ -5557,6 +12047,28 @@
     "blob": 147,
     "offset": 131112,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8032",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 131304,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8033",
+   "en": "Skull Bone +1",
+   "ja": "スカルボーン＋１",
+   "zh": "骷髅骨+1",
+   "meta": {
+    "blob": 147,
+    "offset": 131340,
+    "cap": 16
    }
   },
   {
@@ -5571,6 +12083,28 @@
    }
   },
   {
+   "id": "row::8035",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 131572,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8036",
+   "en": "War God Staff +1",
+   "ja": "ぶしんのぼう＋１",
+   "zh": "战神杖+1",
+   "meta": {
+    "blob": 147,
+    "offset": 131608,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8037",
    "en": "War God Staff _+ Encyclopedia +1.",
    "ja": "ぶしんのぼう_＋ひゃっかじてん＋１",
@@ -5579,6 +12113,28 @@
     "blob": 147,
     "offset": 131648,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8038",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 131840,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8039",
+   "en": "Dream Breaker +1",
+   "ja": "ドリームブレイカー＋１",
+   "zh": "碎梦者+1",
+   "meta": {
+    "blob": 147,
+    "offset": 131876,
+    "cap": 16
    }
   },
   {
@@ -5593,6 +12149,39 @@
    }
   },
   {
+   "id": "row::8041",
+   "en": "Breakable Dream",
+   "ja": "ブレイカブルドリーム",
+   "zh": "易碎之梦",
+   "meta": {
+    "blob": 147,
+    "offset": 132076,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8042",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 132108,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::8043",
+   "en": "Chain Sword Plus",
+   "ja": "チェーンソード改",
+   "zh": "链剑改",
+   "meta": {
+    "blob": 147,
+    "offset": 132144,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::8044",
    "en": "Chain Sword _+ Hero Killer.",
    "ja": "チェーンソード_＋ユウシャキラー",
@@ -5601,6 +12190,17 @@
     "blob": 147,
     "offset": 132184,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::8045",
+   "en": "Fall Buster",
+   "ja": "フォールバスター",
+   "zh": "坠落破坏者",
+   "meta": {
+    "blob": 147,
+    "offset": 132376,
+    "cap": 16
    }
   },
   {

@@ -6666,9 +6666,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 6664,136,624,152,76,28,Increases the party's power!,仲間がパワーアップするぞ！,提高队伍的力量！,同伴会强化！
 6665,136,832,64,32,9,Boost All,ブーストオール,提高所有,全面提升
 6666,136,896,132,66,27,Increases everyone's power!,勇者も仲間もちょいパワーアップ！,增加每个人的力量！,勇者和同伴都略微强化！
-6667,136,1104,64,32,9,Gold Pick,ゴールドピック,黄金一掘,黄金镐
+6667,136,1104,64,32,9,Gold Pick,ゴールドピック,黄金一掘,黄金采掘
 6668,136,1168,64,32,17,Get lots of gold!,お金が多く手に入るぞ！,获取大量黄金！,能获得很多钱！
-6669,136,1376,64,32,11,Experi-dive,エクスペリダイブ,试验潜水,试验潜水
+6669,136,1376,64,32,11,Experi-dive,エクスペリダイブ,试验潜水,经验俯冲
 6670,136,1440,64,32,23,Get lots of experience!,経験値が多く手に入るぞ！,获得大量经验！,能获得很多经验！
 6671,136,1648,64,32,11,Skill Maker,スキルメーカー,技能制作者,技能师
 6672,136,1712,64,32,33,Skills become easier to activate!,勇者のスキルが出やすくなるぞ！,技能变得更容易激活！,技能更容易发动了！
@@ -7905,8 +7905,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 7903,147,117136,36,18,10,Boost Hero,ブーストヒーロー,提升英雄,提升勇者
 7904,147,117404,36,18,11,Boost Party,ブーストパーティ,提高队伍,提升队伍
 7905,147,117672,36,18,9,Boost All,ブーストオール,提高所有,全面提升
-7906,147,117940,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金镐
-7907,147,118208,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,试验潜水
+7906,147,117940,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金采掘
+7907,147,118208,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,经验俯冲
 7908,147,118476,36,18,11,Skill Maker,スキルメーカー,技能制作者,技能师
 7909,147,118744,36,18,11,Speed Eater,スピードイーター,速度吞噬者,速度吞噬者
 7910,147,119012,36,18,16,Meteor Formation,超新流星陣,流星之形成,超新流星阵
@@ -16986,338 +16986,338 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16984,319,23084,256,128,15,"Hah, hah, haaa!",「ほっほっほっ,哈，哈，哈哈！,「呵，呵，呵呵！
 16985,319,23372,256,128,55,Now you shall shatter into pieces like a broken mirror!,　カガミが割れるように　くだけてほろびなさい！」,你会像镜子一样被打成碎片！,　你将如破镜般粉碎消亡！」
 16986,320,308,64,32,3,●●●,●●●,,●●●
-16987,320,736,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,勇者30：再次降临 主題曲
-16988,320,800,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
-16989,320,1228,64,32,15,End of OVERTURE,End of OVERTURE,,序曲结束
-16990,320,1292,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,Kumi Tanioka
-16991,320,1720,64,32,16,End of JUDGEMENT,End of JUDGEMENT,,审判结束
-16992,320,1784,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,Kumi Tanioka
-16993,320,2212,64,32,51,"Princess, Defender of the Academy -Theme of Yushia-",学園を守る王女 ～Theme of ユシア～,公主，学院保卫者——犹西亚主题——,学院守护公主——犹西亚主题——
-16994,320,2276,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,Hiroyuki Iwatsuki
-16995,320,2704,64,32,20,Parade of REVOLUTION,Parade of REVOLUTION,,革命游行
-16996,320,2768,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,Hiroyuki Iwatsuki
-16997,320,3196,64,32,29,To a Space Faraway (Scat ver),遥かな空間へ（スキャットver）,到遥远的宇宙（快速版）,向很远空间（拟声版）
-16998,320,3260,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-16999,320,3688,64,32,12,Grand Ending,Grand Ending,,盛大收场
-17000,320,3752,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,Yoshino Aoki
-17001,320,4180,64,32,27,Everything Begins From Here,ここから全てが始まる,一切从这里开始,一切由此开始
-17002,320,4244,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,Kenji Ito
-17003,320,4672,64,32,32,One Winged Hero -Theme of Yusha-,片翼の勇者 ～Theme of ユーシャ～,单翼英雄——玉沙主题——,单翼勇者——玉沙主题——
-17004,320,4736,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,Kenji Ito
-17005,320,5164,64,32,23,Intro of THE 8 ELEMENTS,Intro of THE 8 ELEMENTS,,八大元素 开场戏
-17006,320,5228,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
-17007,320,5656,64,32,24,Battle of THE 8 ELEMENTS,Battle of THE 8 ELEMENTS,,八大元素 战斗
-17008,320,5720,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
-17009,320,6148,64,32,22,Peek into the DARKSIDE,Peek into the DARKSIDE,,窥探暗面
-17010,320,6212,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
-17011,320,6640,64,32,26,Intro of THE 4 DEADLY SINS,Intro of THE 4 DEADLY SINS,,四大极恶 开场戏
-17012,320,6704,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,Yasunori Mitsuda
-17013,320,7132,64,32,27,Battle of THE 4 DEADLY SINS,Battle of THE 4 DEADLY SINS,,四大极恶 战斗
-17014,320,7196,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,Yasunori Mitsuda
-17015,320,8608,64,32,22,The Evil Lord Appears!,魔王が現れた！,邪恶领主出现了！,魔王现身！
-17016,320,8672,64,32,11,Yui Isshiki,一色 由比,一色 结衣,Yui Isshiki
-17017,320,9100,64,32,55,"When I'm finished, you're gonna look like swiss cheese!",蜂の巣に切刻んであげるわ！,当我完成之后，你就会变得和奶酪一样！,等我美食完，你就成筛子了！
-17018,320,9164,64,32,11,Yui Isshiki,一色 由比,一色 结衣,Yui Isshiki
-17019,320,9592,64,32,30,Intro of THE 3 EMPIRE GENERALS,Intro of THE 3 EMPIRE GENERALS,,帝国三将 开场戏
-17020,320,9656,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,Masaharu Iwata
-17021,320,10084,64,32,31,Battle of THE 3 EMPIRE GENERALS,Battle of THE 3 EMPIRE GENERALS,,帝国三将 战斗
-17022,320,10148,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,Masaharu Iwata
-17023,320,10576,64,32,23,Intro of THE 8 GRIMOIRE,Intro of THE 8 GRIMOIRE,,八魔典 开场戏
-17024,320,10640,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
-17025,320,11068,64,32,24,Battle of THE 8 GRIMOIRE,Battle of THE 8 GRIMOIRE,,八魔典 战斗
-17026,320,11132,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
-17027,320,11560,64,32,21,Princess Battle Light,戦光王女,战光公主,战光公主
-17028,320,11624,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,Masashi Hamauzu
-17029,320,12052,64,32,26,Final Battle of REVOLUTION,Final Battle of REVOLUTION,,革命 决战
-17030,320,12116,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,Masashi Hamauzu
-17031,320,12544,64,32,20,Intro of THE VENUS 7,Intro of THE VENUS 7,,七美神 开场戏
-17032,320,12608,64,32,13,Manabu Namiki,並木 学,並木 学夫,Manabu Namiki
-17033,320,13036,64,32,21,Battle of THE VENUS 7,Battle of THE VENUS 7,,七美神 战斗
-17034,320,13100,64,32,13,Manabu Namiki,並木 学,並木 学夫,Manabu Namiki
-17035,320,13528,64,32,18,Voice of the VENUS,Voice of the VENUS,,维纳斯之声
-17036,320,14020,64,32,18,Intro of THE GOD 9,Intro of THE GOD 9,,九神 开场戏
-17037,320,14084,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,Yoko Shimomura
-17038,320,14512,64,32,19,Battle of THE GOD 9,Battle of THE GOD 9,,九神 战斗
-17039,320,14576,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,Yoko Shimomura
-17040,320,15004,64,32,34,To a Space Faraway (off vocal ver),遥かな空間へ（off vocal ver）,到遥远的宇宙（无声版）,向很远空间（伴奏版）
-17041,320,15068,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-17042,320,15496,64,32,18,To a Space Faraway,遥かな空間へ,到遥远的空间,向很远空间
-17043,320,15560,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-17044,320,15988,64,32,24,Intro of THE BLACK VENUS,Intro of THE BLACK VENUS,,黑维纳斯 开场戏
-17045,320,16052,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
-17046,320,16480,64,32,25,Battle of THE BLACK VENUS,Battle of THE BLACK VENUS,,黑维纳斯 战斗
-17047,320,16544,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
-17048,320,16972,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,神波 开场戏
-17049,320,17036,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-17050,320,17464,64,32,17,Battle of GODWAVE,Battle of GODWAVE,,神波 战斗
-17051,320,17528,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-17052,320,18020,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
-17053,320,18512,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
-17054,320,18940,64,32,26,Reunion -Theme of Hero 55-,Reunion ～Theme of 勇者５５～,团聚——英雄55主题——,重逢——55号勇者主题——
-17055,320,19004,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,"Hideki ""SHA-V"" Asanaka"
-17056,320,19432,64,32,20,The prospects for...,The prospects for ・・・,希望之……,前景之……
-17057,320,19496,64,32,25,Yasuo Yamate (TATE_NORIO),山手 安生（TATE_NORIO）,康夫 山手(TATE_NORIO),Yasuo Yamate (TATE_NORIO)
-17058,320,19924,64,32,14,cheap treasure,cheap treasure,,廉价宝藏
-17059,320,19988,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,"Hideki ""SHA-V"" Asanaka"
-17060,320,20416,64,32,15,Winged my steps,Winged my steps,,插翅而行
-17061,320,20480,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
-17062,320,20972,64,32,24,Takushi Hiyamuta (HIYA!),冷牟田 卓志（HIYA！）,冷牟田 卓志(你好!),Takushi Hiyamuta (HIYA!)
-17063,320,21464,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
-17064,320,21892,64,32,12,Gadget March,ガジェットマーチ,小工具行军,转盘进行曲
-17065,320,21956,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,Maiko Iuchi
-17066,320,22448,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,Maiko Iuchi
-17067,320,22876,64,32,18,Through the Ordeal,試練を越えて,通过了考验,渡过试炼
-17068,320,22940,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,Takaaki Nakahashi
-17069,320,23860,64,32,29,No more HERO? -Theme of Yuja-,No more HERO？ ～Theme of ユウジャ～,再没有英雄了？——羽佳主题——,再无勇者？——羽佳主题——
-17070,320,23924,64,32,21,Engines (The Engines),エンジンズ（The Engines）,引擎(发动机),引擎（引擎们）
-17071,320,24416,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,Yoshino Aoki
-17072,320,24844,64,32,17,Divine Protection,Divine Protection,,神之庇护
-17073,320,24908,64,32,7,Engines,エンジンズ,引擎,引擎
-17074,320,25336,64,32,8,Magnolia,マグノリア,木兰,木兰
-17075,320,25400,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,Takaaki Nakahashi
-17076,320,25828,64,32,13,Last is Doon!,Last is Doon！,杜恩的最后一人！,最后是杜恩！
-17077,320,25892,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
-17078,320,26320,64,32,25,Last is Doon! (short ver),Last is Doon！（short ver）,杜恩的最后一人！（短版）,最后是杜恩！（短版）
-17079,320,26384,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
-17080,320,26812,64,32,27,To a Space Faraway HamoKara,遥かな空間へ　HamoKara,到遥远的哈莫卡拉空间,向很远空间　哈莫卡拉
-17081,320,26876,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
-17082,320,27304,64,32,27,To a Space Faraway JyunKara,遥かな空間へ　JyunKara,到遥远的顺卡拉空间,向很远空间　顺卡拉
-17083,320,27368,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
-17084,320,27796,64,32,19,Electric Light Bath,電光浴,电光浴,电光浴
-17085,320,28288,64,32,23,To the sky of the fight,To the sky of the fight,,飞向战空
-17086,320,28780,64,32,18,Brave mans tragedy,Brave mans tragedy,,勇者悲剧
-17087,320,29764,64,32,5,Grief,愁傷,悲伤,哀伤
-17088,320,31732,64,32,13,Wicked Spirit,Wicked Spirit,,恶灵
-17089,320,32224,64,32,16,Only one victory,Only one victory,,只此一胜
-17090,320,33208,64,32,14,Queen of Peace,Queen of Peace,,和平女王
-17091,320,33700,64,32,14,Aim wilderness,Aim wilderness,,瞄准荒野
-17092,320,34192,64,32,15,Heavenly Voices,Heavenly Voices,,天籁之声
-17093,320,35176,64,32,19,Overcoming Darkness,Overcoming Darkness,,克服黑暗
-17094,320,35668,64,32,17,Fight with friend,Fight with friend,,与友而战
-17095,320,37636,64,32,12,Machine City,Machine City,,机器城
-17096,320,38128,64,32,16,Despair and Hope,絶望と希望,绝望和希望,绝望与希望
-17097,320,39604,64,32,24,Cutting the Gordian Knot,一刀両断,快刀斩乱麻,快刀斩乱麻
-17098,320,40096,64,32,12,Sexy Pointer,Sexy Pointer,,魅惑指针
-17099,320,40588,64,32,20,Unknown conductivity,Unknown conductivity,,未知导电性
-17100,320,41080,64,32,18,Magnificent castle,Magnificent castle,,巍峨城堡
-17101,320,41572,64,32,15,Angel Of Repose,Angel Of Repose,,安息天使
-17102,320,42064,64,32,17,Whimsical Friends,Whimsical Friends,,随性好友
-17103,320,42556,64,32,13,Feel the Rush,Feel the Rush,,体验狂飙
-17104,320,43540,64,32,12,Reminiscence,追憶,回忆录,追忆
-17105,320,44588,64,32,16,Takushi Hiyamuta,冷牟田 卓志,冷牟田 卓志,Takushi Hiyamuta
-17106,320,45080,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,Maiko Iuchi
-17107,320,45572,64,32,13,Taisei Yamada,山田 泰正,山田 大成,Taisei Yamada
-17108,320,46064,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,Yoshino Aoki
-17109,320,48952,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,神波 开场戏
-17110,320,49016,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
-17111,320,49444,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,勇者30：再次降临 主題曲
-17112,320,49508,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
-17113,320,49936,64,32,16,Only one victory,Only one victory,,只此一胜
-17114,320,50920,64,32,15,Angel Of Repose,Angel Of Repose,,安息天使
-17115,320,51412,64,32,12,Reminiscence,追憶,回忆录,追忆
-17116,320,52396,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,勇者30：再次降临 主題曲
-17117,320,52460,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
+16987,320,736,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,Main Theme 勇者３０ ＳＥＣＯＮＤ
+16988,320,800,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
+16989,320,1228,64,32,15,End of OVERTURE,End of OVERTURE,,End of OVERTURE
+16990,320,1292,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,谷岡 久美
+16991,320,1720,64,32,16,End of JUDGEMENT,End of JUDGEMENT,,End of JUDGEMENT
+16992,320,1784,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,谷岡 久美
+16993,320,2212,64,32,51,"Princess, Defender of the Academy -Theme of Yushia-",学園を守る王女 ～Theme of ユシア～,公主，学院保卫者——犹西亚主题——,学園を守る王女 ～Theme of ユシア～
+16994,320,2276,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,岩月博之
+16995,320,2704,64,32,20,Parade of REVOLUTION,Parade of REVOLUTION,,Parade of REVOLUTION
+16996,320,2768,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,岩月博之
+16997,320,3196,64,32,29,To a Space Faraway (Scat ver),遥かな空間へ（スキャットver）,到遥远的宇宙（快速版）,遥かな空間へ（スキャットver）
+16998,320,3260,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+16999,320,3688,64,32,12,Grand Ending,Grand Ending,,Grand Ending
+17000,320,3752,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,青木 佳乃
+17001,320,4180,64,32,27,Everything Begins From Here,ここから全てが始まる,一切从这里开始,ここから全てが始まる
+17002,320,4244,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,伊藤 賢治
+17003,320,4672,64,32,32,One Winged Hero -Theme of Yusha-,片翼の勇者 ～Theme of ユーシャ～,单翼英雄——玉沙主题——,片翼の勇者 ～Theme of ユーシャ～
+17004,320,4736,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,伊藤 賢治
+17005,320,5164,64,32,23,Intro of THE 8 ELEMENTS,Intro of THE 8 ELEMENTS,,Intro of THE 8 ELEMENTS
+17006,320,5228,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
+17007,320,5656,64,32,24,Battle of THE 8 ELEMENTS,Battle of THE 8 ELEMENTS,,Battle of THE 8 ELEMENTS
+17008,320,5720,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
+17009,320,6148,64,32,22,Peek into the DARKSIDE,Peek into the DARKSIDE,,Peek into the DARKSIDE
+17010,320,6212,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
+17011,320,6640,64,32,26,Intro of THE 4 DEADLY SINS,Intro of THE 4 DEADLY SINS,,Intro of THE 4 DEADLY SINS
+17012,320,6704,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,光田 康典
+17013,320,7132,64,32,27,Battle of THE 4 DEADLY SINS,Battle of THE 4 DEADLY SINS,,Battle of THE 4 DEADLY SINS
+17014,320,7196,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,光田 康典
+17015,320,8608,64,32,22,The Evil Lord Appears!,魔王が現れた！,邪恶领主出现了！,魔王が現れた！
+17016,320,8672,64,32,11,Yui Isshiki,一色 由比,一色 结衣,一色 由比
+17017,320,9100,64,32,55,"When I'm finished, you're gonna look like swiss cheese!",蜂の巣に切刻んであげるわ！,当我完成之后，你就会变得和奶酪一样！,蜂の巣に切刻んであげるわ！
+17018,320,9164,64,32,11,Yui Isshiki,一色 由比,一色 结衣,一色 由比
+17019,320,9592,64,32,30,Intro of THE 3 EMPIRE GENERALS,Intro of THE 3 EMPIRE GENERALS,,Intro of THE 3 EMPIRE GENERALS
+17020,320,9656,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,岩田 匡治
+17021,320,10084,64,32,31,Battle of THE 3 EMPIRE GENERALS,Battle of THE 3 EMPIRE GENERALS,,Battle of THE 3 EMPIRE GENERALS
+17022,320,10148,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,岩田 匡治
+17023,320,10576,64,32,23,Intro of THE 8 GRIMOIRE,Intro of THE 8 GRIMOIRE,,Intro of THE 8 GRIMOIRE
+17024,320,10640,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
+17025,320,11068,64,32,24,Battle of THE 8 GRIMOIRE,Battle of THE 8 GRIMOIRE,,Battle of THE 8 GRIMOIRE
+17026,320,11132,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
+17027,320,11560,64,32,21,Princess Battle Light,戦光王女,战光公主,戦光王女
+17028,320,11624,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,浜渦 正志
+17029,320,12052,64,32,26,Final Battle of REVOLUTION,Final Battle of REVOLUTION,,Final Battle of REVOLUTION
+17030,320,12116,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,浜渦 正志
+17031,320,12544,64,32,20,Intro of THE VENUS 7,Intro of THE VENUS 7,,Intro of THE VENUS 7
+17032,320,12608,64,32,13,Manabu Namiki,並木 学,並木 学夫,並木 学
+17033,320,13036,64,32,21,Battle of THE VENUS 7,Battle of THE VENUS 7,,Battle of THE VENUS 7
+17034,320,13100,64,32,13,Manabu Namiki,並木 学,並木 学夫,並木 学
+17035,320,13528,64,32,18,Voice of the VENUS,Voice of the VENUS,,Voice of the VENUS
+17036,320,14020,64,32,18,Intro of THE GOD 9,Intro of THE GOD 9,,Intro of THE GOD 9
+17037,320,14084,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,下村 陽子
+17038,320,14512,64,32,19,Battle of THE GOD 9,Battle of THE GOD 9,,Battle of THE GOD 9
+17039,320,14576,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,下村 陽子
+17040,320,15004,64,32,34,To a Space Faraway (off vocal ver),遥かな空間へ（off vocal ver）,到遥远的宇宙（无声版）,遥かな空間へ（off vocal ver）
+17041,320,15068,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+17042,320,15496,64,32,18,To a Space Faraway,遥かな空間へ,到遥远的空间,遥かな空間へ
+17043,320,15560,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+17044,320,15988,64,32,24,Intro of THE BLACK VENUS,Intro of THE BLACK VENUS,,Intro of THE BLACK VENUS
+17045,320,16052,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
+17046,320,16480,64,32,25,Battle of THE BLACK VENUS,Battle of THE BLACK VENUS,,Battle of THE BLACK VENUS
+17047,320,16544,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
+17048,320,16972,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,Intro of GODWAVE
+17049,320,17036,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+17050,320,17464,64,32,17,Battle of GODWAVE,Battle of GODWAVE,,Battle of GODWAVE
+17051,320,17528,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+17052,320,18020,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
+17053,320,18512,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
+17054,320,18940,64,32,26,Reunion -Theme of Hero 55-,Reunion ～Theme of 勇者５５～,团聚——英雄55主题——,Reunion ～Theme of 勇者５５～
+17055,320,19004,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,麻中“SHA－V”秀樹
+17056,320,19432,64,32,20,The prospects for...,The prospects for ・・・,希望之……,The prospects for ・・・
+17057,320,19496,64,32,25,Yasuo Yamate (TATE_NORIO),山手 安生（TATE_NORIO）,康夫 山手(TATE_NORIO),山手 安生（TATE_NORIO）
+17058,320,19924,64,32,14,cheap treasure,cheap treasure,,cheap treasure
+17059,320,19988,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,麻中“SHA－V”秀樹
+17060,320,20416,64,32,15,Winged my steps,Winged my steps,,Winged my steps
+17061,320,20480,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
+17062,320,20972,64,32,24,Takushi Hiyamuta (HIYA!),冷牟田 卓志（HIYA！）,冷牟田 卓志(你好!),冷牟田 卓志（HIYA！）
+17063,320,21464,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
+17064,320,21892,64,32,12,Gadget March,ガジェットマーチ,小工具行军,ガジェットマーチ
+17065,320,21956,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,井内 舞子
+17066,320,22448,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,井内 舞子
+17067,320,22876,64,32,18,Through the Ordeal,試練を越えて,通过了考验,試練を越えて
+17068,320,22940,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,中橋 孝晃
+17069,320,23860,64,32,29,No more HERO? -Theme of Yuja-,No more HERO？ ～Theme of ユウジャ～,再没有英雄了？——羽佳主题——,No more HERO？ ～Theme of ユウジャ～
+17070,320,23924,64,32,21,Engines (The Engines),エンジンズ（The Engines）,引擎(发动机),エンジンズ（The Engines）
+17071,320,24416,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,青木 佳乃
+17072,320,24844,64,32,17,Divine Protection,Divine Protection,,Divine Protection
+17073,320,24908,64,32,7,Engines,エンジンズ,引擎,エンジンズ
+17074,320,25336,64,32,8,Magnolia,マグノリア,木兰,マグノリア
+17075,320,25400,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,中橋 孝晃
+17076,320,25828,64,32,13,Last is Doon!,Last is Doon！,杜恩的最后一人！,Last is Doon！
+17077,320,25892,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
+17078,320,26320,64,32,25,Last is Doon! (short ver),Last is Doon！（short ver）,杜恩的最后一人！（短版）,Last is Doon！（short ver）
+17079,320,26384,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
+17080,320,26812,64,32,27,To a Space Faraway HamoKara,遥かな空間へ　HamoKara,到遥远的哈莫卡拉空间,遥かな空間へ　HamoKara
+17081,320,26876,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
+17082,320,27304,64,32,27,To a Space Faraway JyunKara,遥かな空間へ　JyunKara,到遥远的顺卡拉空间,遥かな空間へ　JyunKara
+17083,320,27368,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
+17084,320,27796,64,32,19,Electric Light Bath,電光浴,电光浴,電光浴
+17085,320,28288,64,32,23,To the sky of the fight,To the sky of the fight,,To the sky of the fight
+17086,320,28780,64,32,18,Brave mans tragedy,Brave mans tragedy,,Brave mans tragedy
+17087,320,29764,64,32,5,Grief,愁傷,悲伤,愁傷
+17088,320,31732,64,32,13,Wicked Spirit,Wicked Spirit,,Wicked Spirit
+17089,320,32224,64,32,16,Only one victory,Only one victory,,Only one victory
+17090,320,33208,64,32,14,Queen of Peace,Queen of Peace,,Queen of Peace
+17091,320,33700,64,32,14,Aim wilderness,Aim wilderness,,Aim wilderness
+17092,320,34192,64,32,15,Heavenly Voices,Heavenly Voices,,Heavenly Voices
+17093,320,35176,64,32,19,Overcoming Darkness,Overcoming Darkness,,Overcoming Darkness
+17094,320,35668,64,32,17,Fight with friend,Fight with friend,,Fight with friend
+17095,320,37636,64,32,12,Machine City,Machine City,,Machine City
+17096,320,38128,64,32,16,Despair and Hope,絶望と希望,绝望和希望,絶望と希望
+17097,320,39604,64,32,24,Cutting the Gordian Knot,一刀両断,快刀斩乱麻,一刀両断
+17098,320,40096,64,32,12,Sexy Pointer,Sexy Pointer,,Sexy Pointer
+17099,320,40588,64,32,20,Unknown conductivity,Unknown conductivity,,Unknown conductivity
+17100,320,41080,64,32,18,Magnificent castle,Magnificent castle,,Magnificent castle
+17101,320,41572,64,32,15,Angel Of Repose,Angel Of Repose,,Angel Of Repose
+17102,320,42064,64,32,17,Whimsical Friends,Whimsical Friends,,Whimsical Friends
+17103,320,42556,64,32,13,Feel the Rush,Feel the Rush,,Feel the Rush
+17104,320,43540,64,32,12,Reminiscence,追憶,回忆录,追憶
+17105,320,44588,64,32,16,Takushi Hiyamuta,冷牟田 卓志,冷牟田 卓志,冷牟田 卓志
+17106,320,45080,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,井内 舞子
+17107,320,45572,64,32,13,Taisei Yamada,山田 泰正,山田 大成,山田 泰正
+17108,320,46064,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,青木 佳乃
+17109,320,48952,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,Intro of GODWAVE
+17110,320,49016,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
+17111,320,49444,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,Main Theme 勇者３０ ＳＥＣＯＮＤ
+17112,320,49508,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
+17113,320,49936,64,32,16,Only one victory,Only one victory,,Only one victory
+17114,320,50920,64,32,15,Angel Of Repose,Angel Of Repose,,Angel Of Repose
+17115,320,51412,64,32,12,Reminiscence,追憶,回忆录,追憶
+17116,320,52396,64,32,46,Half-Minute Hero: The Second Coming Main Theme,Main Theme 勇者３０ ＳＥＣＯＮＤ,勇者30：再次降临主题,Main Theme 勇者３０ ＳＥＣＯＮＤ
+17117,320,52460,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
 17118,320,52528,128,64,8,Music 01,ミュージック０１,,音乐01
-17119,320,52888,64,32,15,End of OVERTURE,End of OVERTURE,,序曲结束
-17120,320,52952,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,Kumi Tanioka
+17119,320,52888,64,32,15,End of OVERTURE,End of OVERTURE,,End of OVERTURE
+17120,320,52952,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,谷岡 久美
 17121,320,53020,128,64,8,Music 02,ミュージック０２,,音乐02
-17122,320,53380,64,32,16,End of JUDGEMENT,End of JUDGEMENT,,审判结束
-17123,320,53444,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,Kumi Tanioka
+17122,320,53380,64,32,16,End of JUDGEMENT,End of JUDGEMENT,,End of JUDGEMENT
+17123,320,53444,64,32,12,Kumi Tanioka,谷岡 久美,谷岡 来未,谷岡 久美
 17124,320,53512,128,64,8,Music 03,ミュージック０３,,音乐03
-17125,320,53872,64,32,51,"Princess, Defender of the Academy -Theme of Yushia-",学園を守る王女 ～Theme of ユシア～,公主，学院保卫者——犹西亚主题——,学院守护公主——犹西亚主题——
-17126,320,53936,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,Hiroyuki Iwatsuki
+17125,320,53872,64,32,51,"Princess, Defender of the Academy -Theme of Yushia-",学園を守る王女 ～Theme of ユシア～,公主，学院保卫者——犹西亚主题——,学園を守る王女 ～Theme of ユシア～
+17126,320,53936,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,岩月博之
 17127,320,54004,128,64,8,Music 04,ミュージック０４,,音乐04
-17128,320,54364,64,32,20,Parade of REVOLUTION,Parade of REVOLUTION,,革命游行
-17129,320,54428,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,Hiroyuki Iwatsuki
+17128,320,54364,64,32,20,Parade of REVOLUTION,Parade of REVOLUTION,,Parade of REVOLUTION
+17129,320,54428,64,32,17,Hiroyuki Iwatsuki,岩月博之,岩槻 裕之,岩月博之
 17130,320,54496,128,64,8,Music 05,ミュージック０５,,音乐05
-17131,320,54856,64,32,29,To a Space Faraway (Scat ver),遥かな空間へ（スキャットver）,到遥远的宇宙（快速版）,向很远空间（拟声版）
-17132,320,54920,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
+17131,320,54856,64,32,29,To a Space Faraway (Scat ver),遥かな空間へ（スキャットver）,到遥远的宇宙（快速版）,遥かな空間へ（スキャットver）
+17132,320,54920,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
 17133,320,54988,128,64,8,Music 06,ミュージック０６,,音乐06
-17134,320,55348,64,32,12,Grand Ending,Grand Ending,,盛大收场
-17135,320,55412,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,Yoshino Aoki
+17134,320,55348,64,32,12,Grand Ending,Grand Ending,,Grand Ending
+17135,320,55412,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,青木 佳乃
 17136,320,55480,128,64,8,Music 07,ミュージック０７,,音乐07
-17137,320,55840,64,32,27,Everything Begins From Here,ここから全てが始まる,一切从这里开始,一切由此开始
-17138,320,55904,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,Kenji Ito
+17137,320,55840,64,32,27,Everything Begins From Here,ここから全てが始まる,一切从这里开始,ここから全てが始まる
+17138,320,55904,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,伊藤 賢治
 17139,320,55972,128,64,8,Music 08,ミュージック０８,,音乐08
-17140,320,56332,64,32,32,One Winged Hero -Theme of Yusha-,片翼の勇者 ～Theme of ユーシャ～,单翼英雄——玉沙主题——,单翼勇者——玉沙主题——
-17141,320,56396,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,Kenji Ito
+17140,320,56332,64,32,32,One Winged Hero -Theme of Yusha-,片翼の勇者 ～Theme of ユーシャ～,单翼英雄——玉沙主题——,片翼の勇者 ～Theme of ユーシャ～
+17141,320,56396,64,32,9,Kenji Ito,伊藤 賢治,伊藤 健二,伊藤 賢治
 17142,320,56464,128,64,8,Music 09,ミュージック０９,,音乐09
-17143,320,56824,64,32,23,Intro of THE 8 ELEMENTS,Intro of THE 8 ELEMENTS,,八大元素 开场戏
-17144,320,56888,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
+17143,320,56824,64,32,23,Intro of THE 8 ELEMENTS,Intro of THE 8 ELEMENTS,,Intro of THE 8 ELEMENTS
+17144,320,56888,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
 17145,320,56956,128,64,8,Music 10,ミュージック１０,,音乐10
-17146,320,57316,64,32,24,Battle of THE 8 ELEMENTS,Battle of THE 8 ELEMENTS,,八大元素 战斗
-17147,320,57380,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
+17146,320,57316,64,32,24,Battle of THE 8 ELEMENTS,Battle of THE 8 ELEMENTS,,Battle of THE 8 ELEMENTS
+17147,320,57380,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
 17148,320,57448,128,64,8,Music 11,ミュージック１１,,音乐11
-17149,320,57808,64,32,22,Peek into the DARKSIDE,Peek into the DARKSIDE,,窥探暗面
-17150,320,57872,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
+17149,320,57808,64,32,22,Peek into the DARKSIDE,Peek into the DARKSIDE,,Peek into the DARKSIDE
+17150,320,57872,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
 17151,320,57940,128,64,8,Music 12,ミュージック１２,,音乐12
-17152,320,58300,64,32,26,Intro of THE 4 DEADLY SINS,Intro of THE 4 DEADLY SINS,,四大极恶 开场戏
-17153,320,58364,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,Yasunori Mitsuda
+17152,320,58300,64,32,26,Intro of THE 4 DEADLY SINS,Intro of THE 4 DEADLY SINS,,Intro of THE 4 DEADLY SINS
+17153,320,58364,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,光田 康典
 17154,320,58432,128,64,8,Music 13,ミュージック１３,,音乐13
-17155,320,58792,64,32,27,Battle of THE 4 DEADLY SINS,Battle of THE 4 DEADLY SINS,,四大极恶 战斗
-17156,320,58856,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,Yasunori Mitsuda
+17155,320,58792,64,32,27,Battle of THE 4 DEADLY SINS,Battle of THE 4 DEADLY SINS,,Battle of THE 4 DEADLY SINS
+17156,320,58856,64,32,16,Yasunori Mitsuda,光田 康典,三津田 康纪,光田 康典
 17157,320,58924,128,64,8,Music 14,ミュージック１４,,音乐14
-17158,320,59284,64,32,22,The Evil Lord Appears!,魔王が現れた！,邪恶领主出现了！,魔王现身！
-17159,320,59348,64,32,11,Yui Isshiki,一色 由比,一色 结衣,Yui Isshiki
+17158,320,59284,64,32,22,The Evil Lord Appears!,魔王が現れた！,邪恶领主出现了！,魔王が現れた！
+17159,320,59348,64,32,11,Yui Isshiki,一色 由比,一色 结衣,一色 由比
 17160,320,59416,128,64,8,Music 15,ミュージック１５,,音乐15
-17161,320,59776,64,32,55,"When I'm finished, you're gonna look like swiss cheese!",蜂の巣に切刻んであげるわ！,当我完成之后，你就会变得和奶酪一样！,等我美食完，你就成筛子了！
-17162,320,59840,64,32,11,Yui Isshiki,一色 由比,一色 结衣,Yui Isshiki
+17161,320,59776,64,32,55,"When I'm finished, you're gonna look like swiss cheese!",蜂の巣に切刻んであげるわ！,当我完成之后，你就会变得和奶酪一样！,蜂の巣に切刻んであげるわ！
+17162,320,59840,64,32,11,Yui Isshiki,一色 由比,一色 结衣,一色 由比
 17163,320,59908,128,64,8,Music 16,ミュージック１６,,音乐16
-17164,320,60268,64,32,30,Intro of THE 3 EMPIRE GENERALS,Intro of THE 3 EMPIRE GENERALS,,帝国三将 开场戏
-17165,320,60332,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,Masaharu Iwata
+17164,320,60268,64,32,30,Intro of THE 3 EMPIRE GENERALS,Intro of THE 3 EMPIRE GENERALS,,Intro of THE 3 EMPIRE GENERALS
+17165,320,60332,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,岩田 匡治
 17166,320,60400,128,64,8,Music 17,ミュージック１７,,音乐17
-17167,320,60760,64,32,31,Battle of THE 3 EMPIRE GENERALS,Battle of THE 3 EMPIRE GENERALS,,帝国三将 战斗
-17168,320,60824,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,Masaharu Iwata
+17167,320,60760,64,32,31,Battle of THE 3 EMPIRE GENERALS,Battle of THE 3 EMPIRE GENERALS,,Battle of THE 3 EMPIRE GENERALS
+17168,320,60824,64,32,14,Masaharu Iwata,岩田 匡治,岩田 雅治,岩田 匡治
 17169,320,60892,128,64,8,Music 18,ミュージック１８,,音乐18
-17170,320,61252,64,32,23,Intro of THE 8 GRIMOIRE,Intro of THE 8 GRIMOIRE,,八魔典 开场戏
-17171,320,61316,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
+17170,320,61252,64,32,23,Intro of THE 8 GRIMOIRE,Intro of THE 8 GRIMOIRE,,Intro of THE 8 GRIMOIRE
+17171,320,61316,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
 17172,320,61384,128,64,8,Music 19,ミュージック１９,,音乐19
-17173,320,61744,64,32,24,Battle of THE 8 GRIMOIRE,Battle of THE 8 GRIMOIRE,,八魔典 战斗
-17174,320,61808,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,Yoshitaka Hirota
+17173,320,61744,64,32,24,Battle of THE 8 GRIMOIRE,Battle of THE 8 GRIMOIRE,,Battle of THE 8 GRIMOIRE
+17174,320,61808,64,32,16,Yoshitaka Hirota,弘田佳孝,幸田 孝,弘田佳孝
 17175,320,61876,128,64,8,Music 20,ミュージック２０,,音乐20
-17176,320,62236,64,32,21,Princess Battle Light,戦光王女,战光公主,战光公主
-17177,320,62300,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,Masashi Hamauzu
+17176,320,62236,64,32,21,Princess Battle Light,戦光王女,战光公主,戦光王女
+17177,320,62300,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,浜渦 正志
 17178,320,62368,128,64,8,Music 21,ミュージック２１,,音乐21
-17179,320,62728,64,32,26,Final Battle of REVOLUTION,Final Battle of REVOLUTION,,革命 决战
-17180,320,62792,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,Masashi Hamauzu
+17179,320,62728,64,32,26,Final Battle of REVOLUTION,Final Battle of REVOLUTION,,Final Battle of REVOLUTION
+17180,320,62792,64,32,15,Masashi Hamauzu,浜渦 正志,滨涡 政志,浜渦 正志
 17181,320,62860,128,64,8,Music 22,ミュージック２２,,音乐22
-17182,320,63220,64,32,20,Intro of THE VENUS 7,Intro of THE VENUS 7,,七美神 开场戏
-17183,320,63284,64,32,13,Manabu Namiki,並木 学,並木 学夫,Manabu Namiki
+17182,320,63220,64,32,20,Intro of THE VENUS 7,Intro of THE VENUS 7,,Intro of THE VENUS 7
+17183,320,63284,64,32,13,Manabu Namiki,並木 学,並木 学夫,並木 学
 17184,320,63352,128,64,8,Music 23,ミュージック２３,,音乐23
-17185,320,63712,64,32,21,Battle of THE VENUS 7,Battle of THE VENUS 7,,七美神 战斗
-17186,320,63776,64,32,13,Manabu Namiki,並木 学,並木 学夫,Manabu Namiki
+17185,320,63712,64,32,21,Battle of THE VENUS 7,Battle of THE VENUS 7,,Battle of THE VENUS 7
+17186,320,63776,64,32,13,Manabu Namiki,並木 学,並木 学夫,並木 学
 17187,320,63844,128,64,8,Music 24,ミュージック２４,,音乐24
-17188,320,64204,64,32,18,Voice of the VENUS,Voice of the VENUS,,维纳斯之声
+17188,320,64204,64,32,18,Voice of the VENUS,Voice of the VENUS,,Voice of the VENUS
 17189,320,64336,128,64,8,Music 25,ミュージック２５,,音乐25
-17190,320,64696,64,32,18,Intro of THE GOD 9,Intro of THE GOD 9,,九神 开场戏
-17191,320,64760,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,Yoko Shimomura
+17190,320,64696,64,32,18,Intro of THE GOD 9,Intro of THE GOD 9,,Intro of THE GOD 9
+17191,320,64760,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,下村 陽子
 17192,320,64828,128,64,8,Music 26,ミュージック２６,,音乐26
-17193,320,65188,64,32,19,Battle of THE GOD 9,Battle of THE GOD 9,,九神 战斗
-17194,320,65252,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,Yoko Shimomura
+17193,320,65188,64,32,19,Battle of THE GOD 9,Battle of THE GOD 9,,Battle of THE GOD 9
+17194,320,65252,64,32,14,Yoko Shimomura,下村 陽子,下村 洋子,下村 陽子
 17195,320,65320,128,64,8,Music 27,ミュージック２７,,音乐27
-17196,320,65680,64,32,34,To a Space Faraway (off vocal ver),遥かな空間へ（off vocal ver）,到遥远的宇宙（无声版）,向很远空间（伴奏版）
-17197,320,65744,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
+17196,320,65680,64,32,34,To a Space Faraway (off vocal ver),遥かな空間へ（off vocal ver）,到遥远的宇宙（无声版）,遥かな空間へ（off vocal ver）
+17197,320,65744,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
 17198,320,65812,128,64,8,Music 28,ミュージック２８,,音乐28
-17199,320,66172,64,32,18,To a Space Faraway,遥かな空間へ,到遥远的空间,向很远空间
-17200,320,66236,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
+17199,320,66172,64,32,18,To a Space Faraway,遥かな空間へ,到遥远的空间,遥かな空間へ
+17200,320,66236,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
 17201,320,66304,128,64,8,Music 29,ミュージック２９,,音乐29
-17202,320,66664,64,32,24,Intro of THE BLACK VENUS,Intro of THE BLACK VENUS,,黑维纳斯 开场戏
-17203,320,66728,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
+17202,320,66664,64,32,24,Intro of THE BLACK VENUS,Intro of THE BLACK VENUS,,Intro of THE BLACK VENUS
+17203,320,66728,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
 17204,320,66796,128,64,8,Music 30,ミュージック３０,,音乐30
-17205,320,67156,64,32,25,Battle of THE BLACK VENUS,Battle of THE BLACK VENUS,,黑维纳斯 战斗
-17206,320,67220,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
+17205,320,67156,64,32,25,Battle of THE BLACK VENUS,Battle of THE BLACK VENUS,,Battle of THE BLACK VENUS
+17206,320,67220,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
 17207,320,67288,128,64,8,Music 31,ミュージック３１,,音乐31
-17208,320,67648,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,神波 开场戏
-17209,320,67712,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
+17208,320,67648,64,32,16,Intro of GODWAVE,Intro of GODWAVE,,Intro of GODWAVE
+17209,320,67712,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
 17210,320,67780,128,64,8,Music 32,ミュージック３２,,音乐32
-17211,320,68140,64,32,17,Battle of GODWAVE,Battle of GODWAVE,,神波 战斗
-17212,320,68204,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,Michiko Naruke
+17211,320,68140,64,32,17,Battle of GODWAVE,Battle of GODWAVE,,Battle of GODWAVE
+17212,320,68204,64,32,14,Michiko Naruke,なるけみちこ,岩槻 美智子,なるけみちこ
 17213,320,68272,128,64,8,Music 33,ミュージック３３,,音乐33
-17214,320,68696,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
+17214,320,68696,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
 17215,320,68764,128,64,8,Music 34,ミュージック３４,,音乐34
-17216,320,69188,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
+17216,320,69188,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
 17217,320,69256,128,64,8,Music 35,ミュージック３５,,音乐35
-17218,320,69616,64,32,26,Reunion -Theme of Hero 55-,Reunion ～Theme of 勇者５５～,团聚——英雄55主题——,重逢——55号勇者主题——
-17219,320,69680,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,"Hideki ""SHA-V"" Asanaka"
+17218,320,69616,64,32,26,Reunion -Theme of Hero 55-,Reunion ～Theme of 勇者５５～,团聚——英雄55主题——,Reunion ～Theme of 勇者５５～
+17219,320,69680,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,麻中“SHA－V”秀樹
 17220,320,69748,128,64,8,Music 36,ミュージック３６,,音乐36
-17221,320,70108,64,32,20,The prospects for...,The prospects for ・・・,希望之……,前景之……
-17222,320,70172,64,32,25,Yasuo Yamate (TATE_NORIO),山手 安生（TATE_NORIO）,康夫 山手(TATE_NORIO),Yasuo Yamate (TATE_NORIO)
+17221,320,70108,64,32,20,The prospects for...,The prospects for ・・・,希望之……,The prospects for ・・・
+17222,320,70172,64,32,25,Yasuo Yamate (TATE_NORIO),山手 安生（TATE_NORIO）,康夫 山手(TATE_NORIO),山手 安生（TATE_NORIO）
 17223,320,70240,128,64,8,Music 37,ミュージック３７,,音乐37
-17224,320,70600,64,32,14,cheap treasure,cheap treasure,,廉价宝藏
-17225,320,70664,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,"Hideki ""SHA-V"" Asanaka"
+17224,320,70600,64,32,14,cheap treasure,cheap treasure,,cheap treasure
+17225,320,70664,64,32,22,"Hideki ""SHA-V"" Asanaka",麻中“SHA－V”秀樹,麻中“沙-V”秀树,麻中“SHA－V”秀樹
 17226,320,70732,128,64,8,Music 38,ミュージック３８,,音乐38
-17227,320,71092,64,32,15,Winged my steps,Winged my steps,,插翅而行
-17228,320,71156,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,Motoi Sakuraba
+17227,320,71092,64,32,15,Winged my steps,Winged my steps,,Winged my steps
+17228,320,71156,64,32,14,Motoi Sakuraba,桜庭 統,本井 樱,桜庭 統
 17229,320,71224,128,64,8,Music 39,ミュージック３９,,音乐39
-17230,320,71648,64,32,24,Takushi Hiyamuta (HIYA!),冷牟田 卓志（HIYA！）,冷牟田 卓志(你好!),Takushi Hiyamuta (HIYA!)
+17230,320,71648,64,32,24,Takushi Hiyamuta (HIYA!),冷牟田 卓志（HIYA！）,冷牟田 卓志(你好!),冷牟田 卓志（HIYA！）
 17231,320,71716,128,64,8,Music 40,ミュージック４０,,音乐40
-17232,320,72140,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,Tetsuya Shibata
+17232,320,72140,64,32,15,Tetsuya Shibata,柴田 徹也,柴田 哲也,柴田 徹也
 17233,320,72208,128,64,8,Music 41,ミュージック４１,,音乐41
-17234,320,72568,64,32,12,Gadget March,ガジェットマーチ,小工具行军,转盘进行曲
-17235,320,72632,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,Maiko Iuchi
+17234,320,72568,64,32,12,Gadget March,ガジェットマーチ,小工具行军,ガジェットマーチ
+17235,320,72632,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,井内 舞子
 17236,320,72700,128,64,8,Music 42,ミュージック４２,,音乐42
-17237,320,73124,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,Maiko Iuchi
+17237,320,73124,64,32,11,Maiko Iuchi,井内 舞子,井内 芸姬,井内 舞子
 17238,320,73192,128,64,8,Music 43,ミュージック４３,,音乐43
-17239,320,73552,64,32,18,Through the Ordeal,試練を越えて,通过了考验,渡过试炼
-17240,320,73616,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,Takaaki Nakahashi
+17239,320,73552,64,32,18,Through the Ordeal,試練を越えて,通过了考验,試練を越えて
+17240,320,73616,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,中橋 孝晃
 17241,320,73684,128,64,8,Music 44,ミュージック４４,,音乐44
 17242,320,74176,128,64,8,Music 45,ミュージック４５,,音乐45
-17243,320,74536,64,32,29,No more HERO? -Theme of Yuja-,No more HERO？ ～Theme of ユウジャ～,再没有英雄了？——羽佳主题——,再无勇者？——羽佳主题——
-17244,320,74600,64,32,21,Engines (The Engines),エンジンズ（The Engines）,引擎(发动机),引擎（引擎们）
+17243,320,74536,64,32,29,No more HERO? -Theme of Yuja-,No more HERO？ ～Theme of ユウジャ～,再没有英雄了？——羽佳主题——,No more HERO？ ～Theme of ユウジャ～
+17244,320,74600,64,32,21,Engines (The Engines),エンジンズ（The Engines）,引擎(发动机),エンジンズ（The Engines）
 17245,320,74668,128,64,8,Music 46,ミュージック４６,,音乐46
-17246,320,75092,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,Yoshino Aoki
+17246,320,75092,64,32,12,Yoshino Aoki,青木 佳乃,青木 吉野,青木 佳乃
 17247,320,75160,128,64,8,Music 47,ミュージック４７,,音乐47
-17248,320,75520,64,32,17,Divine Protection,Divine Protection,,神之庇护
-17249,320,75584,64,32,7,Engines,エンジンズ,引擎,引擎
+17248,320,75520,64,32,17,Divine Protection,Divine Protection,,Divine Protection
+17249,320,75584,64,32,7,Engines,エンジンズ,引擎,エンジンズ
 17250,320,75652,128,64,8,Music 48,ミュージック４８,,音乐48
-17251,320,76012,64,32,8,Magnolia,マグノリア,木兰,木兰
-17252,320,76076,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,Takaaki Nakahashi
+17251,320,76012,64,32,8,Magnolia,マグノリア,木兰,マグノリア
+17252,320,76076,64,32,17,Takaaki Nakahashi,中橋 孝晃,中桥 隆明,中橋 孝晃
 17253,320,76144,128,64,8,Music 49,ミュージック４９,,音乐49
-17254,320,76504,64,32,13,Last is Doon!,Last is Doon！,杜恩的最后一人！,最后是杜恩！
-17255,320,76568,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
+17254,320,76504,64,32,13,Last is Doon!,Last is Doon！,杜恩的最后一人！,Last is Doon！
+17255,320,76568,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
 17256,320,76636,128,64,8,Music 50,ミュージック５０,,音乐50
-17257,320,76996,64,32,25,Last is Doon! (short ver),Last is Doon！（short ver）,杜恩的最后一人！（短版）,最后是杜恩！（短版）
-17258,320,77060,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
+17257,320,76996,64,32,25,Last is Doon! (short ver),Last is Doon！（short ver）,杜恩的最后一人！（短版）,Last is Doon！（short ver）
+17258,320,77060,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
 17259,320,77128,128,64,8,Music 51,ミュージック５１,,音乐51
-17260,320,77488,64,32,27,To a Space Faraway HamoKara,遥かな空間へ　HamoKara,到遥远的哈莫卡拉空间,向很远空间　哈莫卡拉
-17261,320,77552,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
+17260,320,77488,64,32,27,To a Space Faraway HamoKara,遥かな空間へ　HamoKara,到遥远的哈莫卡拉空间,遥かな空間へ　HamoKara
+17261,320,77552,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
 17262,320,77620,128,64,8,Music 52,ミュージック５２,,音乐52
-17263,320,77980,64,32,27,To a Space Faraway JyunKara,遥かな空間へ　JyunKara,到遥远的顺卡拉空间,向很远空间　顺卡拉
-17264,320,78044,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,Keiichi Tanaka
+17263,320,77980,64,32,27,To a Space Faraway JyunKara,遥かな空間へ　JyunKara,到遥远的顺卡拉空间,遥かな空間へ　JyunKara
+17264,320,78044,64,32,14,Keiichi Tanaka,田中 敬一,田中 敬一,田中 敬一
 17265,320,78112,128,64,8,Music 53,ミュージック５３,,音乐53
-17266,320,78472,64,32,19,Electric Light Bath,電光浴,电光浴,电光浴
+17266,320,78472,64,32,19,Electric Light Bath,電光浴,电光浴,電光浴
 17267,320,78604,128,64,8,Music 54,ミュージック５４,,音乐54
-17268,320,78964,64,32,23,To the sky of the fight,To the sky of the fight,,飞向战空
+17268,320,78964,64,32,23,To the sky of the fight,To the sky of the fight,,To the sky of the fight
 17269,320,79096,128,64,8,Music 55,ミュージック５５,,音乐55
-17270,320,79456,64,32,19,Brave man's tragedy,Brave man's tragedy,,勇者之悲剧
+17270,320,79456,64,32,19,Brave man's tragedy,Brave man's tragedy,,Brave man's tragedy
 17271,320,79588,128,64,8,Music 56,ミュージック５６,,音乐56
 17272,320,80080,128,64,8,Music 57,ミュージック５７,,音乐57
-17273,320,80440,64,32,5,Grief,愁傷,悲伤,哀伤
+17273,320,80440,64,32,5,Grief,愁傷,悲伤,愁傷
 17274,320,80572,128,64,8,Music 58,ミュージック５８,,音乐58
 17275,320,81064,128,64,8,Music 59,ミュージック５９,,音乐59
 17276,320,81556,128,64,8,Music 60,ミュージック６０,,音乐60
 17277,320,82048,128,64,8,Music 61,ミュージック６１,,音乐61
-17278,320,82408,64,32,13,Wicked Spirit,Wicked Spirit,,恶灵
+17278,320,82408,64,32,13,Wicked Spirit,Wicked Spirit,,Wicked Spirit
 17279,320,82540,128,64,8,Music 62,ミュージック６２,,音乐62
-17280,320,82900,64,32,16,Only one victory,Only one victory,,只此一胜
+17280,320,82900,64,32,16,Only one victory,Only one victory,,Only one victory
 17281,320,83032,128,64,8,Music 63,ミュージック６３,,音乐63
 17282,320,83524,128,64,8,Music 64,ミュージック６４,,音乐64
-17283,320,83884,64,32,14,Queen of Peace,Queen of Peace,,和平女王
+17283,320,83884,64,32,14,Queen of Peace,Queen of Peace,,Queen of Peace
 17284,320,84016,128,64,8,Music 65,ミュージック６５,,音乐65
-17285,320,84376,64,32,14,Aim wilderness,Aim wilderness,,瞄准荒野
+17285,320,84376,64,32,14,Aim wilderness,Aim wilderness,,Aim wilderness
 17286,320,84508,128,64,8,Music 66,ミュージック６６,,音乐66
-17287,320,84868,64,32,15,Heavenly Voices,Heavenly Voices,,天籁之声
+17287,320,84868,64,32,15,Heavenly Voices,Heavenly Voices,,Heavenly Voices
 17288,320,85000,128,64,8,Music 67,ミュージック６７,,音乐67
 17289,320,85492,128,64,8,Music 68,ミュージック６８,,音乐68
-17290,320,85852,64,32,19,Overcoming Darkness,Overcoming Darkness,,克服黑暗
+17290,320,85852,64,32,19,Overcoming Darkness,Overcoming Darkness,,Overcoming Darkness
 17291,320,85984,128,64,8,Music 69,ミュージック６９,,音乐69
-17292,320,86344,64,32,17,Fight with friend,Fight with friend,,与友而战
+17292,320,86344,64,32,17,Fight with friend,Fight with friend,,Fight with friend
 17293,320,86476,128,64,8,Music 70,ミュージック７０,,音乐70
 17294,320,86968,128,64,8,Music 71,ミュージック７１,,音乐71
 17295,320,87460,128,64,8,Music 72,ミュージック７２,,音乐72
 17296,320,87952,128,64,8,Music 73,ミュージック７３,,音乐73
-17297,320,88312,64,32,12,Machine City,Machine City,,机器城
+17297,320,88312,64,32,12,Machine City,Machine City,,Machine City
 17298,320,88444,128,64,8,Music 74,ミュージック７４,,音乐74
-17299,320,88804,64,32,16,Despair and Hope,絶望と希望,绝望和希望,绝望与希望
+17299,320,88804,64,32,16,Despair and Hope,絶望と希望,绝望和希望,絶望と希望
 17300,320,88936,128,64,8,Music 75,ミュージック７５,,音乐75
 17301,320,89428,128,64,8,Music 76,ミュージック７６,,音乐76
 17302,320,89920,128,64,8,Music 77,ミュージック７７,,音乐77
-17303,320,90280,64,32,24,Cutting the Gordian Knot,一刀両断,快刀斩乱麻,快刀斩乱麻
+17303,320,90280,64,32,24,Cutting the Gordian Knot,一刀両断,快刀斩乱麻,一刀両断
 17304,320,90412,128,64,8,Music 78,ミュージック７８,,音乐78
-17305,320,90772,64,32,12,Sexy Pointer,Sexy Pointer,,魅惑指针
+17305,320,90772,64,32,12,Sexy Pointer,Sexy Pointer,,Sexy Pointer
 17306,320,90904,128,64,8,Music 79,ミュージック７９,,音乐79
-17307,320,91264,64,32,20,Unknown conductivity,Unknown conductivity,,未知导电性
+17307,320,91264,64,32,20,Unknown conductivity,Unknown conductivity,,Unknown conductivity
 17308,320,91396,128,64,8,Music 80,ミュージック８０,,音乐80
-17309,320,91756,64,32,18,Magnificent castle,Magnificent castle,,巍峨城堡
+17309,320,91756,64,32,18,Magnificent castle,Magnificent castle,,Magnificent castle
 17310,320,91888,128,64,8,Music 81,ミュージック８１,,音乐81
-17311,320,92248,64,32,15,Angel Of Repose,Angel Of Repose,,安息天使
+17311,320,92248,64,32,15,Angel Of Repose,Angel Of Repose,,Angel Of Repose
 17312,320,92380,128,64,8,Music 82,ミュージック８２,,音乐82
-17313,320,92740,64,32,17,Whimsical Friends,Whimsical Friends,,随性好友
+17313,320,92740,64,32,17,Whimsical Friends,Whimsical Friends,,Whimsical Friends
 17314,320,92872,128,64,8,Music 83,ミュージック８３,,音乐83
-17315,320,93232,64,32,13,Feel the Rush,Feel the Rush,,体验狂飙
+17315,320,93232,64,32,13,Feel the Rush,Feel the Rush,,Feel the Rush
 17316,320,93364,128,64,8,Music 84,ミュージック８４,,音乐84
 17317,320,93856,128,64,8,Music 85,ミュージック８５,,音乐85
-17318,320,94216,64,32,12,Reminiscence,追憶,回忆录,追忆
+17318,320,94216,64,32,12,Reminiscence,追憶,回忆录,追憶
 17319,320,94348,128,64,8,Music 86,ミュージック８６,,音乐86
 17320,321,140,128,64,13,Paradise Lost,パラダイスロスト,失乐园,失乐之地
 17321,321,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
@@ -20076,8 +20076,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 20074,357,133484,36,18,10,Boost Hero,ブーストヒーロー,提升英雄,提升勇者
 20075,357,133752,36,18,11,Boost Party,ブーストパーティ,提高队伍,提升队伍
 20076,357,134020,36,18,9,Boost All,ブーストオール,提高所有,全面提升
-20077,357,134288,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金镐
-20078,357,134556,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,试验潜水
+20077,357,134288,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金采掘
+20078,357,134556,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,经验俯冲
 20079,357,134824,36,18,11,Skill Maker,スキルメーカー,技能制作者,技能师
 20080,357,135092,36,18,11,Speed Eater,スピードイーター,速度吞噬者,速度吞噬者
 20081,357,135360,36,18,16,Meteor Formation,超新流星陣,流星之形成,超新流星阵
@@ -40969,8 +40969,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 40969,736,133484,36,18,10,Boost Hero,ブーストヒーロー,提升英雄,提升勇者
 40970,736,133752,36,18,11,Boost Party,ブーストパーティ,提高队伍,提升队伍
 40971,736,134020,36,18,9,Boost All,ブーストオール,提高所有,全面提升
-40972,736,134288,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金镐
-40973,736,134556,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,试验潜水
+40972,736,134288,36,18,9,Gold Pick,ゴールドピック,黄金一掘,黄金采掘
+40973,736,134556,36,18,11,Experi-dive,エクスペリダイブ,试验潜水,经验俯冲
 40974,736,134824,36,18,11,Skill Maker,スキルメーカー,技能制作者,技能师
 40975,736,135092,36,18,11,Speed Eater,スピードイーター,速度吞噬者,速度吞噬者
 40976,736,135360,36,18,16,Meteor Formation,超新流星陣,流星之形成,超新流星阵

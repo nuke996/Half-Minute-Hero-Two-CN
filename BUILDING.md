@@ -149,21 +149,32 @@ python tools/runner.py <脚本名> [参数]
 
 - **导出**：`export_review.py` → `locales/zh-CN/translator-view/`，按 blob 切分成
   `10_ui_*.json` / `20_dialogue_*.json`，外加 `30_multiline.json`、`40_dlc01.json`、
+  `50_extra.json`（Z11–Z14 代码内额外行：伙伴名/技能名/合成 UI）、
   `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（快照）与 `如何校对.txt`。
-  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `protected/` /
-  `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
+  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `50_*` /
+  `protected/` / `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
   受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
-  临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`。
+  临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`；
+  Z10b–Z14 已实测放行的显示槽（`released_row()`）即使仍被 apply_menu 保护，也导出到普通分片。
 - **导入**：`import_review.py apply` → 逐条比对 `zh` → **自检**（超长/id/非法字符）……
   有任一错误即**中断**：不写译表、不打包，写 `build/校对/导入报告.txt` 指明问题条目；
-  通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表
-  → 自动跑 `tools/build.py package`（隔离模式）刷新 `dist/`，**不改游戏目录**。
+  通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
+  `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
+  → 自动跑 `tools/build.py package_names_cn_jobs_titles_hash`（隔离模式）刷新
+  `dist/Z14-jobs-titles/`，**不改游戏目录**。
 - **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
-  译表，并重新刷新 `dist/`。
+  译表（含 `extra_review.json`），并重新刷新 `dist/`。
 - **打包后强制导出（硬规则）**：`package` / `package_install`（含 `*_exe`）在写完 `dist/`
   后会自动运行 `export_review.py` 刷新 `translator-view/`；导出失败则以非零码退出并提示，
   在手动导出成功前**不得**运行导入校对。原因见 `docs/PITFALLS.md` §24：旧视图会把旧译文
   整体回写译表。**任何译表或汉化脚本改动，都必须以一次成功打包（即自动导出）收尾。**
+- **改脚本必须同步适配校对链（硬规则）**：当修改翻译脚本以“放行更多文本上屏”或
+  “保护某些文本不上屏”时，必须在同一次改动里：
+  - 把新上屏文本导出为可校对条目（CSV 普通分片或 `50_extra.json`）；
+  - 把仍受保护的文本只放进 `translator-view/protected/`，并写明保护原因；
+  - 让导入写回正确的数据源，并重建**真正放行这些文本的配方**；
+  - **完成后立即执行一次 `export_review.py`**（或成功打包，自动导出），
+    避免下一次人工校对拿到旧视图、把早期译文覆盖掉导致进度丢失。
 
 ---
 

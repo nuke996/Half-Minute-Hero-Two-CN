@@ -19,6 +19,8 @@ Also read the following files if they exist:
 - `TECHNICAL.md`
 - `LICENSING.md`
 - `docs/PITFALLS.md`
+- `docs/PACKAGE_LEDGER.md`
+- `docs/FINAL_QA_PLAN.md`
 - `docs/FILE_FORMATS.md`
 - `docs/KNOWN_ISSUES.md`
 
@@ -154,6 +156,26 @@ Therefore:
   point again.
 - Never import a review view that is older than the current translation tables.
   See `docs/PITFALLS.md` §24.
+
+## Review Pipeline Adaptation (mandatory)
+
+Whenever localization scripts are changed to **display more text** or to **protect text
+from being displayed**, the same change must adapt the review/import/package pipeline:
+
+- Newly displayed text must be exported into `translator-view/` as editable entries
+  (CSV rows in `10_*`/`20_*`/`30_*`, or code-injected rows in `50_extra.json`).
+- Text that is deliberately kept original must be exported **only** under
+  `translator-view/protected/`, with a clear protection reason (`collide` / `mech` /
+  `chaptitle`).
+- Import must write edits back to the correct source (`text_v2.csv`,
+  `extra_review.json`, multi-line/DLC files) and rebuild the package that actually
+  releases those texts.
+- Immediately after finishing that adaptation work, run `python tools/export_review.py`
+  (or a successful package build, which exports automatically). Do not leave the review
+  view stale: a later import of an older view can overwrite newer translations and lose
+  work.
+- Update the relevant documentation (`BUILDING.md`, `docs/PACKAGE_LEDGER.md`,
+  `docs/PITFALLS.md`) in the same change.
 
 ## Multi-Language Reuse
 

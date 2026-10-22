@@ -33,10 +33,64 @@ import build_cn as B
 
 SHARD_MAX = 4000          # 每片目标条目数（按 blob 聚合切分）
 
+# Z10b–Z14 已实测/已放行的显示槽（(blob, stride, pos 规则)）。
+# 导出时即使 apply_menu 仍把它们判为 protected，也放进可校对分片；
+# 真正是否上屏仍由各装机器（Z14 / stable）决定。
+REVIEW_STRIDES = {
+    666: 376, 147: 268, 357: 268, 736: 268, 998: 268,
+    128: 212, 136: 272, 931: 292,
+    407: 236, 777: 236, 1008: 236,
+    4: 288, 30: 288, 408: 288, 445: 288, 528: 288, 748: 288, 609: 288, 483: 288,
+    555: 660, 734: 660, 320: 492, 715: 224,
+    83: 288, 394: 288, 417: 288, 654: 288,
+    99: 308, 25: 168,
+}
+
+
+PROTAGONIST_DEFAULT_OFFS = {
+    (391, 16 + 2 * 168 + 40),
+    (391, 16 + 3 * 168 + 40),
+    (391, 16 + 4 * 168 + 40),
+    (715, 18272),
+}
+
+
+def released_row(bi, off):
+    st = REVIEW_STRIDES.get(bi)
+    if not st:
+        return False
+    p = (off - 16) % st
+    if bi == 666:
+        return p < 64 or p == 292
+    if bi in (147, 357, 736, 998):
+        return 0 <= p < 40 or 160 <= p < 268
+    if bi == 128:
+        return p == 4
+    if bi == 136:
+        return p == 0
+    if bi == 931:
+        return p == 0
+    if bi in (407, 777, 1008):
+        return p == 4
+    if bi in (4, 30, 408, 445, 528, 748, 609, 483, 555, 734):
+        return p == 92 or (bi in (408, 445, 748, 483, 528, 609) and p == 28)
+    if bi == 320:
+        return p in (228, 292)
+    if bi == 715:
+        return p == 112
+    if bi in (83, 394, 417, 654):
+        return p == 28
+    if bi == 99:
+        return off in (16, 56)
+    if bi == 25:
+        return off in (62384, 63056)
+    return False
+
 PROTECT_NOTE = {
     'collide': '疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文',
     'mech': '机制表整表保护（技能/职业/连携技等按内容读取的表）',
     'chaptitle': '章节名/称号名保护（按字符串索引的键）',
+    'protagonist-default': '主角默认名（Yusha/Yushia/Yuja）：为保证旧存档在补丁更新后不串字，构建时强制还原原文',
 }
 HOW_TO_EDIT = ('只修改每条记录的 "zh" 字段（id/en/ja/meta 请勿改）。保存后运行 '
                '汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat '
@@ -142,6 +196,10 @@ def main():
         except Exception:
             continue
         reason = classify.get(key)
+        if key in PROTAGONIST_DEFAULT_OFFS:
+            reason = 'protagonist-default'   # 主角默认名：为保证旧存档兼容，强制保留原文
+        elif reason and released_row(*key):
+            reason = None       # Z10b–Z14 已实测放行的显示槽：即使 apply_menu 仍保护，也可校对
         if reason:
             prot.append((r, reason))
         elif r.get('zh_new'):
@@ -151,7 +209,8 @@ def main():
     import glob as _glob
     import shutil
     os.makedirs(OUT, exist_ok=True)
-    for pat in ('10_*.json', '20_*.json', '30_multiline.json', '40_dlc01.json'):
+    for pat in ('10_*.json', '20_*.json', '30_multiline.json', '40_dlc01.json',
+                '50_extra.json'):
         for old in _glob.glob(os.path.join(OUT, pat)):
             os.remove(old)
     for sub in ('protected', 'dict'):
@@ -220,6 +279,47 @@ def main():
                  doc('dlc', 'DLC01（时之女神宝物包）译文；zh 的换行为屏上换行。'
                      '改不了的条目（dlc_skip.txt 列出的键）不会上屏。', dlc_entries))
 
+    # ---- Z11–Z14 代码内额外译表行（伙伴名/技能名/合成 UI 等）----
+    extra_entries = []
+    oldb = B.BASE
+    try:
+        B.BASE = paths.GAME_DIR
+        ers = (B._z11_partner_rows() + B._z13_rows() + B._z14_rows())
+    except Exception as ex:
+        print('  [extra] 生成额外校对条目失败：%r' % ex)
+        ers = []
+    finally:
+        B.BASE = oldb
+    filled = set()
+    for r in rows:
+        if (r.get('zh_new') or '').strip():
+            try:
+                filled.add((int(r['blob_index']), int(r['offset'])))
+            except Exception:
+                pass
+    seen = set()
+    for r in ers:
+        try:
+            key = (int(r['blob_index']), int(r['offset']))
+        except Exception:
+            continue
+        if key in filled or key in seen:
+            continue
+        seen.add(key)
+        cap = int(r.get('slot_bytes') or 0)
+        extra_entries.append({
+            'id': 'extra::%d::%d' % key,
+            'en': r.get('en') or '', 'ja': r.get('ja') or '',
+            'zh': r.get('zh_new') or '',
+            'meta': {'blob': key[0], 'offset': key[1],
+                     'cap': cap // 2, 'cap_bytes': cap,
+                     'note': 'Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json'},
+        })
+    R.write_json(os.path.join(OUT, '50_extra.json'),
+                 doc('extra', 'Z11–Z14 新上屏的伙伴名/技能名/合成 UI 等（不在 text_v2.csv）。'
+                     '改 zh 即可；导入时写入 locales/zh-CN/extra_review.json，'
+                     '并由 Z14 配方重新打包。', extra_entries))
+
     # ---- 替换词典 ----
     def load_ns(p):
         ns = {}
@@ -240,13 +340,13 @@ def main():
     # ---- 说明 ----
     with open(os.path.join(OUT, '如何校对.txt'), 'w', encoding='utf-8') as f:
         f.write(HOWTO % {'n_norm': n_norm, 'n_prot': n_prot, 'n_ml': len(ml_entries),
-                         'n_dlc': len(dlc_entries),
+                         'n_dlc': len(dlc_entries), 'n_extra': len(extra_entries),
                          'n_repl': len(repl), 'n_hl': len(hl),
                          'prot_ok': ('已生成' if protected_ok else
                                      '未生成（缺原版文件，见导出日志）')})
 
-    print('done. 普通 %d 条 / 受保护 %d 条 / 多行 %d 条 / DLC %d 条'
-          % (n_norm, n_prot, len(ml_entries), len(dlc_entries)))
+    print('done. 普通 %d 条 / 受保护 %d 条 / 多行 %d 条 / DLC %d 条 / 额外 %d 条'
+          % (n_norm, n_prot, len(ml_entries), len(dlc_entries), len(extra_entries)))
     print('out: %s' % OUT)
 
 
@@ -258,6 +358,7 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
     20_dialogue_*.json  对话类单行文本（原文带「」引号）
     30_multiline.json   多行整字段（一次显示几行的对话整段，游戏显示优先走它）
     40_dlc01.json       DLC01（时之女神宝物包）文本
+    50_extra.json       Z11–Z14 新上屏的伙伴名/技能名/合成 UI 等（不在 text_v2.csv）
     protected/          受保护、当前【不会上屏】的文本（文件名 prot_ui_*.json，见第三节）
     dict/替换词典.json   当前生效的替换词典（见第四节）
     汉化-导出校对.bat    重新导出译文（覆盖上面的 JSON，不删本目录其它文件）
@@ -305,7 +406,7 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
   · 每次导入前请先关闭游戏；导入有自检，出问题会中断并告诉你哪一条需要修。
 
 【本次导出】普通文本 %(n_norm)d 条、受保护文本 %(n_prot)d 条（%(prot_ok)s）、
-多行整字段 %(n_ml)d 条、DLC %(n_dlc)d 条；
+多行整字段 %(n_ml)d 条、DLC %(n_dlc)d 条、额外条目 %(n_extra)d 条；
 替换词典 replace_map %(n_repl)d 条 / hl_map %(n_hl)d 条。
 '''
 
