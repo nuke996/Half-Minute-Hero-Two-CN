@@ -89,6 +89,9 @@
 **说明：** v2.7 曾回收 index 1024–1119 的版权/制作人员姓名汉字区以扩格，
 代价是版权页日文姓名显示为汉字乱码。**v2.14 起不再回收原版 index 0-1247**，该代价已消除。
 **注意：** 若回退到旧策略（`RECLAIM_STAFF=True`）会重新出现此问题。
+**Z15 补充（2026-10-22）：** 同字复用只重画 `256..1023` 中与译文同码位的 523 个汉字格，
+STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，会显示**同字的简中字形**
+（码位/字符身份不变，不是乱码）；这是有意换取字库容量的外观取舍。
 
 ---
 
@@ -308,3 +311,92 @@ JA/EN 两侧写入字节一致。
 3. 容量不足时用同义词替换/拒绝新字（当前约剩 51 格），不得挤掉旧码；
 4. 固化后连续构建两次，验证同一汉字的码不变；再用旧存档名字字节反查确认同字。
 **相关文件：** `docs/PITFALLS.md` §27、`tools/build_cn.py: build_plan()`。
+
+---
+
+# 14. 宝箱提示“获得××！”但背包没有（Z15 已修，待复测）
+
+**Status:** Fixed in development　**Severity:** High（道具无法获得）
+**Affected versions:** Z10b–Z14 及此前包　**Affected locales:** zh-CN
+
+**症状：** 宝箱开启后显示“获得便携女神像！”等提示，但道具未进入背包；
+其他宝箱同样只提示不发放。
+**原因：** 道具表的名称已中文化，但事件/宝箱脚本参数列（`b219 pos28`、
+`b290 pos28`、`b408 pos28` 等）仍是英文；游戏按名字匹配发放，找不到中文道具。
+与 Z15 同字复用无关——Z14 中这些槽位同样如此，是更早的道具名翻译未同步全副本。
+**修复（Z15）：** `fill_item_name_copies()` 以道具表终串为准，同步全库同名副本；
+实测同步 253 处，真实道具名英文副本 0，操作数 260 点 0 失败。
+**Workaround：** 使用 Z15 或更新包；Z14 及更早仍有此问题。
+**相关文件：** `docs/PITFALLS.md` §28、`docs/PACKAGE_LEDGER.md` §3/§7。
+
+---
+
+# 15. 载具/坐骑（龙、船、马等）在关卡里不出现
+
+**Status:** Fixed in development　**Severity:** High（剧情 NPC/载具缺失）
+**Affected versions:** Z10b–Z15（修复前）　**Affected locales:** zh-CN
+
+**症状：** 过场演出中本应出现的「奇尔多尼克斯」（Childonyx，龙）在中文下完全不见；
+同一 build 切日语正常。船、马、摩托、越野车、竹马同样受影响。
+**原因：** 道具表载具名已中文化，但关卡实体表（`stride 152 pos24`）的同名副本未同步；
+该字段紧跟 float `-1.0f` 尾字节 `80 BF`，无 NUL 分隔，旧同步/审计匹配不到。
+**修复（Z15）：** `fill_item_name_copies()` 增加嵌入副本分支，本篇同步 35 处。
+**验证进度：** 龙已实机确认恢复；**DLC Q78 船见 §15.1，待复测；马/摩托/越野车/竹马未逐项实机测试。**
+**相关文件：** `docs/PITFALLS.md` §29、`build/_scratch/audit_mechanic_replicas.py`。
+
+---
+
+# 15.1 DLC01 载具/实体名未同步（Q78 船）
+
+**Status:** Fixed in development　**Severity:** High（DLC 关卡载具不出现）
+**Affected versions:** Z10b–Z15（修复前）　**Affected locales:** zh-CN
+
+**症状：** DLC01 Q78 触发造船事件后「船」不出现；JA 正常。
+**原因：** `fill_item_name_copies()` 只处理主 `res/LANG_EN.s2a`；DLC 的
+`b45 stride152 pos24`（19 条）、`b76 rec9`、`b97 rec5` 仍是 `Boat`。
+**修复（Z15）：** 新增 `fill_dlc_item_name_copies()`，由 `refresh_dlc01()` 自动调用；
+DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
+**Workaround：** 使用修复后的 Z15。今后审计必须同时覆盖本篇与 DLC01。
+**相关文件：** `docs/PITFALLS.md` §29.1、`tools/build_cn.py`。
+
+---
+
+# 16. DLC01 台词整段乱码
+
+**Status:** Fixed in development　**Severity:** High（DLC 可读性）
+**Affected versions:** Z11–Z15（修复前）　**Affected locales:** zh-CN
+
+**症状：** DLC01 台词出现形近错字（「啊哈哈，抱歉抱歉」→「啊哈哈，剩建剩建」）；本篇正常。
+**原因：** 主装机使用带 `_EXTRA_ROWS` 的 cmap，而 `refresh_dlc01()` 在其被清空后重算 cmap；
+字符表与 DLC 文本使用两套载体码。
+**修复（Z15）：** `build_plan()` 缓存 `_LAST_BUILD_PLAN`，`refresh_dlc01()` 复用主 cmap。
+**验证：** 解码恢复「啊哈哈，抱歉抱歉」；DLC 结构改动 0。
+**相关文件：** `docs/PITFALLS.md` §30。
+
+---
+
+# 17. DLC 防具从装备栏消失
+
+**Status:** Fixed in development　**Severity:** High（装备不可用）
+**Affected versions:** Z10b–Z15（修复前）　**Affected locales:** zh-CN
+
+**症状：** DLC 防具「セクシーみずぎ / Sexy Swimsuit」从装备栏消失；道具表大量
+`pos0` ID 与 `pos140` 进化链 ID 被清零。
+**原因：** `_is_name_like()` 把数字 ID 当名字，`sync_name_replicas()` 传播空译文。
+**修复（Z15）：** 严格 CP932 校验 + 空译文不传播。
+**验证：** 道具表记录前 4 字节改动 0；泳装 ID 完好；名称恢复「性感泳衣」。
+**相关文件：** `docs/PITFALLS.md` §31。
+
+---
+
+# 18. 职业成长数值 / 称号条件 ID 被清零
+
+**Status:** Fixed in development　**Severity:** High（职业属性/称号）
+**Affected versions:** Z14–Z15（修复前）　**Affected locales:** zh-CN
+
+**症状（静态发现）：** `b128` 职业表 pos36/44/48/52/56 成长数值被清零；
+`b931` 称号表 pos32 条件/ID 字段被清零。
+**原因：** `_z14_rows()` 的 `force_sb` 过大（`b128=64`、`b931=36`），写前整段清零覆盖相邻字段。
+**修复（Z15）：** 改为 `(128,212,4,32)`、`(931,292,0,32)`。
+**验证：** 结构审计：主 LANG 仅 2 处预期操作数重算，职业/称号数值改动 0，DLC01 0。
+**相关文件：** `docs/PITFALLS.md` §32、`build/_scratch/audit_structural_changes.py`。

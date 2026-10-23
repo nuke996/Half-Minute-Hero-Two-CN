@@ -17,6 +17,7 @@
      打包结束会自动重导出 translator-view，避免旧快照再次回写译表。
 
 模式：apply（默认）/ revert（恢复上次导入前的译表并重新刷新 dist）。
+可选：--no-repl（只保留 HL，不套用 replace_map REPL；重建 Z15-norepl）。
 """
 import datetime
 import json
@@ -92,16 +93,21 @@ def bad_chars(s, allow_nl):
     return bad
 
 
+NO_REPL = False
+
+
 def run_package():
-    """刷新 dist：本分支的校对条目包含 Z11–Z14 新上屏文本，固定用 Z14 配方。"""
-    p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'),
-                        'package_names_cn_jobs_titles_hash'], capture_output=True)
+    """刷新 dist：默认 Z15（REPL+HL）；--no-repl 时重建 Z15-norepl（仅 HL）。"""
+    cmd = 'package_names_cn_reuse_norepl' if NO_REPL else 'package_names_cn_reuse'
+    p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), cmd],
+                       capture_output=True)
     return (p.returncode, p.stdout.decode('utf-8', 'replace'),
             p.stderr.decode('utf-8', 'replace'))
 
 
 def do_apply():
     P('==== 校对导入报告  %s ====' % now())
+    P('  词典模式: %s' % ('关闭（仅 HL）' if NO_REPL else '开启（REPL+HL）'))
     files = collect_files()
     if not files:
         P('没找到校对文件（%s）。请先双击同目录的「汉化-导出校对.bat」生成，改完再导入。'
@@ -454,6 +460,7 @@ def do_apply():
 
 def do_revert():
     P('==== 校对导入回滚  %s ====' % now())
+    P('  词典模式: %s' % ('关闭（仅 HL）' if NO_REPL else '开启（REPL+HL）'))
     if not os.path.exists(STATE):
         P('没找到导入记录（从未导入过，或已回滚）。无需操作。')
         _flush(); return
@@ -482,7 +489,11 @@ def do_revert():
 
 
 if __name__ == '__main__':
-    mode = sys.argv[1] if len(sys.argv) > 1 else 'apply'
+    args = [a for a in sys.argv[1:] if a != '--no-repl']
+    NO_REPL = '--no-repl' in sys.argv[1:]
+    if NO_REPL:
+        B.set_apply_repl(False)      # 自检/对比也用“仅 HL”口径
+    mode = args[0] if args else 'apply'
     if mode == 'revert':
         do_revert()
     else:

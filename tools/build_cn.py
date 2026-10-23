@@ -82,6 +82,16 @@ A_TBL_SIZE = 0x8000          # 节大小 32KB（坐标表 16KB + 排序表 16KB�
 ENABLE_A_EXT = UNLOCK_1280
 A_EXT_FIRST = 1248       # v2.14：简体字统一从 index 1248 起（原版 0-1247 全部保留）
 
+# ==== 2026-10-22：同字复用原版汉字槽位（方案 B）====
+# 原版 256-1023 是日文汉字区。若简体译文用到**同一个 Unicode 字**（如 勇/者/的/我），
+# 其 CP932 码与原版表项完全相同，因此可以直接沿用原版码：
+#   · 字符表条目**不改**（改条目会破坏原版日文/旧存档/按键名查表）；
+#   · 文本直接写原版 CP932 字节，游戏查表命中原来的 index；
+#   · 再把该 index 的图集格用文泉驿简体字形重画，保证中文观感统一（方案 B）。
+# 效果：这些字不再占用 1248+ 的新格，直接释放容量。
+REUSE_ORIGINAL_CJK = True
+REUSE_CJK_RANGE = (256, 1023)
+
 # ==== v2.14：扩到 4096 + 保留原版全部字形（假名/日文汉字/姓名/符号/ASCII）====
 # 【沿革，别重犯】
 #   v2.11(图集2048x2048) / v2.12(1024x1024) 两次「启动即闪退」，
@@ -117,10 +127,11 @@ A_EXT_FIRST = 1248       # v2.14：简体字统一从 index 1248 起（原版 0-
 #   * 图集仍 512x1024（宽 512 与高 1024 都是实测可用尺寸）。
 #
 # 【保留原版字形的代价与容量】
-#   * 不再回收假名格(162)/日文汉字格(256-1023)/STAFF区(1024-1119) —— 全部保留原版。
-#   * 简体字统一用 **index 1248..4095**（其中 1408='ED' 标记保留）
+#   * 不再回收假名格(162)/STAFF区(1024-1119) —— 全部保留原版。
+#   * 简体字**新分配**用 **index 1248..4095**（其中 1408='ED' 标记保留）
 #     = 1248-1279(32) + 1280-2047(768) + 2048-3071(1024) + 3072-4095(1024) = **2847 格**
-#     → 足够装下全部简体字（v2.13 实装 2640 字，且新方案下"与日文汉字同形的字"还能免占格）
+#   * 2026-10-22（方案 B）：256-1023 中与译文**同码位**的 523 字直接复用原版槽位，
+#     原格重画为文泉驿简体字形，不再占新格（Z15 实装：2296 新格 + 523 复用）。
 #   * ⚠️ 图集A 的 x∈[0,256) y∈[96,224) 是**硬编码 ASCII 路径**占用区
 #     （0x4D8CF2 `mov [esi],0x3f` 页号写死 63；0x4D8D21 u=(c&15)*16；
 #       0x4D8D2E/36 v=(c&~15)+0x60），该路径只处理 c∈[0x01,0x7F]（c>=0x80 走双字节分支）
@@ -246,6 +257,10 @@ FORCE_CHARS = '左右斩饿御沙香锅影醒调餐掌荡砍奖肉岛墟陛罪�
 # 判据（用户 2026-09-13 确认）：字较常用，且换成别的字会导致指代/理解错误时才加。
 DLC_EXTRA_CHARS = '鸭苹橘掀糯鲑蚝朗乳鼬樱'
 
+# ---- 关闭 REPL 时 DLC 文本重新出现的字（2026-10-22）----
+# char_freq 不扫 DLC；关掉 REPL 后 DLC 的 洞窟→洞穴 失效，会重新用到「窟」。
+NO_REPL_EXTRA_CHARS = '窟'
+
 
 # 技能/职业机制表：游戏会按内容读取，翻译会导致技能无动画无效果（2026-09-12 测试D 实锤）
 #   666 = 技能升级链表（技能名→下一级→说明→思いつき率）
@@ -283,6 +298,9 @@ _EXTRA_ROWS = None
 # Z14 用：明确允许翻译的称号名槽 {(blob, offset)}，用于绕过 chap_title_guard 的整表保护。
 # 只放行 b931 pos0 的称号名本体；pos36（章节标题副本）与 Q16 rec_rules 仍受保护。
 _TITLE_RELEASE = None
+# 最近一次 build_plan() 的 (cmap, statistics)。DLC01 重编码必须复用主装机的
+# 同一套 cmap，否则 DLC 文本会按另一套载体码写入而整段乱码（2026-10-22 实机确认）。
+_LAST_BUILD_PLAN = None
 # Z11–Z14 的“代码内额外译表行”的人工校对覆盖：{"<blob>:<offset>": "中文"}。
 # 导出到 translator-view/50_extra.json，导入时写回本文件；构建时优先使用这里的译文。
 EXTRA_REVIEW_FILE = os.path.join(WORK, 'extra_review.json')
@@ -512,21 +530,45 @@ def desc_release_excl(rel, s):
     return False
 
 
+REPL_RAW = {}
+HL_RAW = {}
 _rm = os.path.join(WORK, 'replace_map.py')
 if os.path.exists(_rm):
     _ns = {}
     exec(compile(open(_rm, encoding='utf-8').read(), _rm, 'exec'), _ns)
-    REPL = _ns.get('REPL', {})
-    _repl_items = sorted(REPL.items(), key=lambda kv: -len(kv[0]))
+    REPL_RAW = _ns.get('REPL', {})
 
 # ---- 高亮标记 <...> 补译表（2026-09-12 补全未翻译文本）----
 _hlm = os.path.join(WORK, 'hl_map.py')
 if os.path.exists(_hlm):
     _ns2 = {}
     exec(compile(open(_hlm, encoding='utf-8').read(), _hlm, 'exec'), _ns2)
-    REPL = dict(REPL)
-    REPL.update(_ns2.get('HL', {}))
-    _repl_items = sorted(REPL.items(), key=lambda kv: -len(kv[0]))
+    HL_RAW = _ns2.get('HL', {})
+
+# ---- 词典开关（2026-10-22）----
+# HMH2_APPLY_REPL=0 / --no-repl：只保留 HL（高亮补译），不套用 REPL（术语/近义替换）。
+# 默认开启，保持现有生产行为。
+APPLY_REPL = os.environ.get('HMH2_APPLY_REPL', '1').strip().lower() not in (
+    '0', 'false', 'off', 'no')
+
+
+def _refresh_repl():
+    """重建 apply_repl 用的合并表：REPL（可关）+ HL（始终保留）。"""
+    global REPL, _repl_items
+    table = dict(REPL_RAW) if APPLY_REPL else {}
+    table.update(HL_RAW)
+    REPL = table
+    _repl_items = sorted(table.items(), key=lambda kv: -len(kv[0]))
+
+
+def set_apply_repl(enabled):
+    """运行时切换词典开关（同进程内生效）。"""
+    global APPLY_REPL
+    APPLY_REPL = bool(enabled)
+    _refresh_repl()
+
+
+_refresh_repl()
 
 
 def apply_repl(t):
@@ -889,13 +931,23 @@ def build_plan():
             cnt[_ch] += 1
 
     # 已被"保留格"覆盖的字（符号/图标/姓名汉字等）不必占用我们的槽位
-    # ⭐ v2.14：只把**非汉字**（标点/符号/假名/全角字母数字）视为"原版已有、免占格"。
-    #   汉字一律走载体码 → 图集里画 SimSun 简体字形，保证中文观感与 v2.13 一致；
-    #   原版 0-1247 的汉字条目/字形则留给**日文原文**（日语环境、日文名旧存档）使用。
+    # ⭐ v2.14：非汉字（标点/符号/假名/全角字母数字）视为"原版已有、免占格"，直接写原版码。
+    # ⭐ 2026-10-22 方案 B：日文汉字区 256-1023 中与简体译文**同码位**的字也免占格，
+    #   沿用原版表项/码值；区别只是图集格会被重画为简体字形（见 rewrite_atlas_cscv）。
     overwrite_set = set(slots)
     native_chars = {ents[i] for i in range(len(ents))
                     if i not in overwrite_set and ents[i] and len(ents[i]) == 1
                     and ord(ents[i]) >= 0x80 and not is_cjk(ents[i])}
+
+    # 原版汉字区：字 -> 全部索引（少数汉字有重复表项，如 名/矢/切/連/御）
+    reuse_map = {}
+    if REUSE_ORIGINAL_CJK:
+        _lo, _hi = REUSE_CJK_RANGE
+        for i in range(_lo, _hi + 1):
+            c = ents[i]
+            if c and len(c) == 1 and is_cjk(c):
+                reuse_map.setdefault(c, []).append(i)
+        native_chars |= set(reuse_map)
 
     candidates = [c for c, _ in cnt.most_common() if c not in native_chars]
 
@@ -909,12 +961,22 @@ def build_plan():
     # ---- DLC01 汉化专用字：追加到末尾（不挤占既有字格，只用剩余空槽）----
     _dlc_add = [c for c in DLC_EXTRA_CHARS if c not in candidates and c not in native_chars]
     candidates = candidates + _dlc_add
+    if not APPLY_REPL:
+        _nr_add = [c for c in NO_REPL_EXTRA_CHARS
+                   if c not in candidates and c not in native_chars]
+        candidates = candidates + _nr_add
     if len(candidates) > n_slot:
         print('  !! 候选字 %d > 可用格 %d —— 尾部 %d 字将被挤出（DLC 追加字在末尾，先被挤）'
               % (len(candidates), n_slot, len(candidates) - n_slot))
     chosen = candidates[:n_slot]
 
+    # 只对**译文实际用到**的复用字建 cmap（并记录要重画的索引）。
+    # 未用到的日文汉字槽位保持原样，避免无谓改动。
+    reuse_used = {c: v for c, v in reuse_map.items()
+                  if c in cnt or c in DLC_EXTRA_CHARS}
     cmap = {}
+    for c, ids in reuse_used.items():
+        cmap[c] = ents[ids[0]].encode('cp932')
     k = 0
     for idx, ch in zip(slots, chosen):
         if idx in kana_set:
@@ -931,7 +993,12 @@ def build_plan():
                       n_ext=n_ext, n_staff=n_staff, n_dead=n_dead,
                       native=sum(cnt[c] for c in cnt if c in native_chars),
                       native_set=native_chars,
+                      reuse_map=reuse_used,
+                      reuse_n=len(reuse_used),
+                      reuse_slots=sum(len(v) for v in reuse_used.values()),
                       coverage=covered / tot if tot else 0)
+    global _LAST_BUILD_PLAN
+    _LAST_BUILD_PLAN = (cmap, statistics)
     return rows, ents, types, end, tb, slots, chosen, cmap, statistics
 
 
@@ -945,7 +1012,12 @@ def do_plan():
     _nA = len([i for i in st['slots_list'] if i >= 1024])         # 图集A 格
     print('可用图集格          : %d   (图集B汉字格 %d + 假名格 %d + 图集A格 %d)'
           % (st['slots'], st['slots'] - _nb - _nA, _nb, _nA))
-    print('拟装入字数          : %d' % st['chosen'])
+    print('同字复用原版格      : %d 字 (重画 %d 格, 含重复表项)'
+          % (st['reuse_n'], st['reuse_slots']))
+    print('实际新占图集格      : %d / %d, 余量 %d'
+          % (st['chosen'], st['slots'], st['slots'] - st['chosen']))
+    print('含复用可显示汉字    : %d  (新格 %d + 复用 %d)'
+          % (st['chosen'] + st['reuse_n'], st['chosen'], st['reuse_n']))
     print('载体码池            : %d  (其中 CP932 常规汉字区 %d)' % (st['pool'], st['kanji']))
     print('预计覆盖率          : %.2f%%' % (st['coverage'] * 100))
     cnt, tot = char_freq(rows)
@@ -1713,6 +1785,23 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
     ob = Image.open(io.BytesIO(blobs[hm[B_HASH]]))      # 原版图集B 512x512 (32列)
     oa = Image.open(io.BytesIO(blobs[hm[A_HASH]]))      # 原版图集A 256x256 (16列)
 
+    # ---- 同字复用（方案 B）：cmap 中沿用原版汉字的字，重画其原版索引格 ----
+    # 注意：只重画**译文实际用到**的复用字；未用到的日文汉字格保持原样。
+    import struct as _st
+    ac = s2a.Archive(os.path.join(BASE, 'res/cscv.s2a.bak'))
+    ahm = ac.hash_map()
+    blob = ac.blobs[ahm[TBL_HASH]]
+    ents, types, end = parse_entries(blob)
+    if len(ents) < 1409:
+        raise SystemExit('!! 字符表解析异常: 仅 %d 项 (<1409)，中止' % len(ents))
+    reuse_pairs = []
+    if REUSE_ORIGINAL_CJK:
+        _lo, _hi = REUSE_CJK_RANGE
+        for i in range(_lo, _hi + 1):
+            c = ents[i]
+            if c and len(c) == 1 and is_cjk(c) and c in cmap:
+                reuse_pairs.append((i, c))      # 重复表项也一并重画，保证查表命中哪格都一致
+
     if EXPAND_4096:
         # ---- v2.13：两张图集均 512x1024 ----
         # ① 原版整幅贴到 (0,0)：
@@ -1726,7 +1815,7 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
         na = Image.new('P', (A_W, A_TALL), 0)
         na.putpalette(oa.getpalette())
         na.paste(oa, (0, 0))
-        aset = set(slots)
+        aset = set(slots) | {i for i, _ in reuse_pairs}
         n_moved = n_skip = 0
         for i in range(0, 1280):                 # 原版只有 0..1279 有字形
             if i in aset:
@@ -1753,10 +1842,12 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
                     c = row[x]
                     px[u + x, v + y] = w if c == 1 else (g if c == 2 else (e if c == 3 else 0))
 
-        for idx, ch in zip(slots, chosen):
+        for idx, ch in list(zip(slots, chosen)) + reuse_pairs:
             page, u, v = game_cell(idx)
             put(pxb if page == 62 else pxA, u, v, glyph3(ch, page), page)
         print('  图集搬迁: 原版字形移动 %d 格, 跳过 %d (图集外/空位)' % (n_moved, n_skip))
+        print('  同字复用: 重画原版汉字格 %d 格（%d 字）'
+              % (len(reuse_pairs), len({c for _, c in reuse_pairs})))
     else:
         pb = ob.getpalette()
         nb = Image.new('P', (512, 512), 0)
@@ -1781,7 +1872,7 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
                     v = row[x]
                     px[c * CELL + x, r * CELL + y] = w if v == 1 else (g if v == 2 else (e if v == 3 else 0))
 
-        for idx, ch in zip(slots, chosen):
+        for idx, ch in list(zip(slots, chosen)) + reuse_pairs:
             if idx < 1024:
                 draw(pxb, blk_cell(idx), COLS_B, glyph3(ch, 62), 62)
             else:
@@ -1800,13 +1891,7 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
               % (na.size[0], na.size[1], A_EXT_LAST))
 
     # ---- 字符表（定长 2 字节/项；v2.9 加长到 TBL_SLOTS 项）----
-    import struct as _st
-    ac = s2a.Archive(os.path.join(BASE, 'res/cscv.s2a.bak'))
-    ahm = ac.hash_map()
-    blob = ac.blobs[ahm[TBL_HASH]]
-    ents, types, end = parse_entries(blob)
-    if len(ents) < 1409:
-        raise SystemExit('!! 字符表解析异常: 仅 %d 项 (<1409)，中止' % len(ents))
+    # 复用字的条目在上面解析后保持原样，这里只写 1248+ 的新分配格。
     new = list(ents)
     if len(new) < TBL_SLOTS:
         new += [None] * (TBL_SLOTS - len(new))      # v2.9：追加空槽供扩容使用
@@ -2306,8 +2391,9 @@ def do_apply(text=True, sync_cscv=True, keep_collide=True, skip_blobs=None,
     em = (exe_mode or EXE_MODE).lower()
     rows, ents, types, end, tb, slots, chosen, cmap, st = build_plan()
     print('== 安装简体字模补丁%s ==' % ('' if text else '（测试包A：仅字模，不翻文本）'))
-    print('覆盖 %.2f%% (%d 字/%d 格, 保留原版字形 index 0-1247)'
-          % (st['coverage'] * 100, st['chosen'], st['slots']))
+    print('覆盖 %.2f%% (新格 %d/%d, 同字复用 %d 字/重画 %d 格; 原版 0-1247 表项不变)'
+          % (st['coverage'] * 100, st['chosen'], st['slots'],
+             st['reuse_n'], st['reuse_slots']))
     # 0) 确保全部有原版备份
     for rel in ALL_FILES:
         p = os.path.join(BASE, rel)
@@ -2451,7 +2537,12 @@ def refresh_dlc01(verbose=True, en_only=False, ja_only=False):
     try:
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import dlc_apply as DA
-        plan, over, _L = DA.build_plan()
+        # ★ 必须复用主装机的 cmap：主装机用到 _EXTRA_ROWS，而调用本函数前
+        #   _EXTRA_ROWS 已被清空；重算 build_plan() 会得到不同码表 ⇒ DLC 整段乱码。
+        _cp = _LAST_BUILD_PLAN
+        plan, over, _L = DA.build_plan(
+            cmap=_cp[0] if _cp else None,
+            native=_cp[1].get('native_set') if _cp else None)
         if over:
             print('  [DLC01] !! 有 %d 处超容量，已跳过（未写入）' % len(over))
             return
@@ -2472,6 +2563,12 @@ def refresh_dlc01(verbose=True, en_only=False, ja_only=False):
         side = ' [仅 EN 侧]' if en_only else (' [仅 JA 侧]' if ja_only else '')
         print('  [DLC01] 已按当前字库重编码 %d 槽 / %d blob%s（备份后缀 .bak_dlcapplyv2_%s）'
               % (len(plan), len({p['blob'] for p in plan}), side, ts))
+        # DLC 的关卡实体表同样按载具名查找（Q78「船」），必须与主道具表同串。
+        if not ja_only:
+            try:
+                fill_dlc_item_name_copies(verbose=verbose)
+            except Exception as e:
+                print('  [DLC 道具名副本] 失败（不影响主装机）：%r' % e)
     except Exception as e:
         print('  [DLC01] 重编码失败（不影响主装机）：%r' % e)
 
@@ -2943,13 +3040,23 @@ def _next_content(data, start):
 
 
 def _is_name_like(t):
-    """短名称串判据：<=64 字节、无 \\n、含至少一个 0x41..0x7A 或 >=0x81 的字节。"""
+    """短名称串判据：<=64 字节、无 \\n、且必须是【合法的 CP932 文本】。
+
+    ★ 2026-10-22 修复：旧版只看“含 0x41..0x7A 或 >=0x81 的字节”，
+      于是道具表里的 1~2 字节数字 ID（b'\\xd6'、b'\\x90\\x01'、b'\\xa1\\x01'）
+      被当成“名字”。sync_name_replicas 会把某个被清空的副本当作翻译 b''，
+      再把这个空值传播到全库同字节 run ⇒ 所有对应道具 ID 被清零，
+      装备从列表消失（DLC 泳装 セクシーみずぎ 即此例）。
+      数字 ID/二进制字段通常不是合法 CP932（前导字节缺少合法尾字节），
+      严格解码即可排除。
+    """
     if not t or len(t) > NAME_MAX_LEN or b'\n' in t:
         return False
-    for c in t:
-        if 0x41 <= c <= 0x7A or c >= 0x81:
-            return True
-    return False
+    try:
+        s = t.decode('cp932')
+    except UnicodeDecodeError:
+        return False
+    return any(ch.isalnum() or ord(ch) >= 0x2E80 for ch in s)
 
 
 def _q16_lang_en_offsets(lang='LANG_EN'):
@@ -3051,8 +3158,8 @@ def sync_name_replicas(orig_blobs, prod_path, verbose=True,
                     out.append(seg)
                 if ch:
                     new, kind = b'\n'.join(out), 2
-            if new is None:
-                continue
+            if new is None or not new:
+                continue        # 空译文不能当“名字副本”传播（会清掉 ID/键字段）
             room = _next_content(ob, e) - f - 1
             if len(new) > room:
                 n_skip += 1
@@ -4488,7 +4595,9 @@ def _z14_rows():
 
     # 职业 / 阵型 / 称号：只登记“源表本体”一行，副本由 fill_name_copies 补齐。
     # 这些表的名字字段容量是固定的，不能用 len(en)+1（否则“魔法师”会被裁成“魔法”）。
-    for bi, st, pos, cap_sb in ((128, 212, 4, 64), (136, 272, 0, 64), (931, 292, 0, 36)):
+    # ★ 2026-10-22 修复：b128 名字容量必须 32（pos4→下一字段 pos36）；旧 64 会清零职业成长数值。
+    #   b931 称号名容量必须 32（pos0→pos32）；旧 36 会清零称号条件/ID 字段。b136 的 64 正确。
+    for bi, st, pos, cap_sb in ((128, 212, 4, 32), (136, 272, 0, 64), (931, 292, 0, 32)):
         n = struct.unpack_from('<I', E[bi], 8)[0]
         for r in range(n):
             base = 16 + r * st
@@ -4536,6 +4645,264 @@ def _z14_release_factory(mech_ja, partner_ja, name_ja):
         return base(bi, off, ja_cmp)
 
     return extra
+
+
+def _equip_name_canon(orig_blobs, prod):
+    """道具表规范名：EN 原串 -> 最终写入字节（优先 b147/357/736/998）。"""
+    canon = {}
+    for bi in EQUIP_BLOBS:
+        ob = bytes(orig_blobs[bi])
+        pb = prod[bi]
+        st = struct.unpack_from('<I', ob, 4)[0]
+        for r in range(struct.unpack_from('<I', ob, 8)[0]):
+            base = 16 + r * st + 4
+            oe = ob.find(b'\x00', base)
+            if oe < 0:
+                continue
+            en = ob[base:oe]
+            if not en or en in canon:
+                continue
+            pe = pb.find(b'\x00', base)
+            fin = bytes(pb[base:pe])
+            if not fin or fin == en:
+                continue
+            if b'<' in en and b'>' in en:
+                continue
+            if not en.strip(b'?'):
+                continue
+            if len(en) < 2:
+                continue
+            canon[en] = fin
+    return canon
+
+
+def _sync_item_copies(orig_blobs, prod, canon, foreign=False):
+    """把 canon 里的道具名同步到 orig_blobs 对应 prod 的全部副本。
+
+    foreign=True 用于 DLC01/LANG_EN：DLC 是独立档案，blob 编号与主 LANG 无关，
+    因此不做称号/Q16/技能键列等“主 LANG 专用”守卫。
+    返回 (整槽数, 嵌入数, 整槽容量不足, 嵌入容量不足)。
+    """
+    ct_whole, ct_recs, _ct_vals = load_chap_title_guard()
+    q16 = None if foreign else _q16_lang_en_offsets('LANG_EN')
+    skip_blobs = () if foreign else (128, 136, 317)
+    n = skip = 0
+    for bi, ob in enumerate(orig_blobs):
+        if bi in skip_blobs:
+            continue
+        pb = prod[bi]
+        for pos, f, e in _iter_slots(bytes(ob)):
+            en = bytes(ob)[f:e]
+            fin = canon.get(en)
+            if not fin:
+                continue
+            if not foreign:
+                st = struct.unpack_from('<I', ob, 4)[0] if ob[:4] == b'CSCV' else 0
+                if st and chap_title_hit(ct_whole, ct_recs, bi, st,
+                                         (f - 16) % st, (f - 16) // st):
+                    continue
+                if in_skill_key_col(bi, f):
+                    continue
+                if _q16_hit(q16, bi, pos, e):
+                    continue
+            ce = pb.find(b'\x00', f)
+            if ce < 0:
+                continue
+            cur = bytes(pb[f:ce])
+            if cur == fin:
+                continue
+            nx = ce
+            while nx < len(pb) and pb[nx] == 0:
+                nx += 1
+            if len(fin) + 1 > nx - f:
+                skip += 1
+                continue
+            pb[f:f + len(fin)] = fin
+            pb[f + len(fin)] = 0
+            for i in range(f + len(fin) + 1, max(ce, f + len(fin) + 1)):
+                pb[i] = 0
+            n += 1
+    # ---- 嵌入副本：stride 152 关卡实体表 pos24 ----
+    # 载具/坐骑名（Horse/Bike/Buggy/Boat/Dragon/Bamboo Stilts）位于若干 float 之后，
+    # 前面没有 0x00 分隔（float -1.0 的尾字节 80 BF 与名字连成一个 run），
+    # _iter_slots 会把前缀并入字符串，整槽匹配因此漏掉。引擎按 pos24 固定读取，
+    # 名字必须与道具表终串一致，否则载具/NPC 不出现（龙、DLC Q78 船）。
+    suf3 = {}
+    for en in canon:
+        if len(en) >= 3:
+            suf3.setdefault(en[-3:], []).append(en)
+    n_emb = skip_emb = 0
+    for bi, ob in enumerate(orig_blobs):
+        obv = bytes(ob)
+        if bi in skip_blobs or obv[:4] != b'CSCV':
+            continue
+        st = struct.unpack_from('<I', obv, 4)[0]
+        if st != 152:
+            continue
+        pb = prod[bi]
+        for pos, f, e in _iter_slots(obv):
+            run = obv[f:e]
+            if len(run) < 4 or run[-3:] not in suf3:
+                continue
+            en = next((c for c in suf3[run[-3:]] if run.endswith(c)), None)
+            if en is None or run == en:
+                continue
+            pre = run[:-len(en)]
+            if not pre or pre[-1] < 0x80:
+                continue
+            i = e - len(en)
+            if (i - 16) % st != 24:
+                continue
+            if pb[i:e] != en:
+                continue
+            fin = canon[en]
+            nx = e
+            while nx < len(pb) and pb[nx] == 0:
+                nx += 1
+            if len(fin) + 1 > nx - i:
+                skip_emb += 1
+                continue
+            pb[i:i + len(fin)] = fin
+            pb[i + len(fin)] = 0
+            for j in range(i + len(fin) + 1, max(e, i + len(fin) + 1)):
+                pb[j] = 0
+            n_emb += 1
+    return n, n_emb, skip, skip_emb
+
+
+def fill_item_name_copies(orig_blobs, en_path, verbose=True, canon=None):
+    """把装备/道具表（b147/357/736/998 pos4）的中文名同步到全库同名副本。
+
+    宝箱/事件发放道具时按名字匹配；只翻道具表而不同步脚本参数列会导致“提示获得但
+    背包没有”。本函数以道具表的最终字节为准，补齐所有整槽同名副本与
+    stride152/pos24 嵌入副本。跳过：b128/b136/b317、称号/Q16、技能键列。
+    返回 canon（EN 原串 -> 终串），供 DLC01 同步复用。
+    """
+    if not orig_blobs or not os.path.exists(en_path):
+        return canon or {}
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    if canon is None:
+        canon = _equip_name_canon(orig_blobs, prod)
+    n, n_emb, skip, skip_emb = _sync_item_copies(orig_blobs, prod, canon)
+    if n or n_emb:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [道具名副本] 同步 %d 处%s%s'
+              % (n, ('，嵌入副本 %d 处' % n_emb) if n_emb else '',
+                 ('（容量不足 %d）' % (skip + skip_emb)) if (skip or skip_emb) else ''))
+    return canon
+
+
+def fill_dlc_item_name_copies(canon=None, verbose=True):
+    """把主道具表的中文名同步到 DLC01/LANG_EN.s2a。
+
+    DLC01 是独立档案，但关卡实体表（stride 152 pos24）同样按载具名查找
+    （Q78「船」即此例）。主同步器只处理 res/LANG_EN.s2a，DLC 会被漏掉。
+    以主 LANG 的道具表终串为准，同步 DLC 的整槽副本与 stride152/pos24 嵌入副本。
+    """
+    dlc_dir = os.path.join(BASE, 'DLC01')
+    en = os.path.join(dlc_dir, 'LANG_EN.s2a')
+    if not os.path.exists(en):
+        return 0
+    orig = en + dlc_lib.BAK_SUFFIX
+    if not os.path.exists(orig):
+        orig = en + '.bak'
+    if not os.path.exists(orig):
+        if verbose:
+            print('  [DLC 道具名副本] 跳过：缺少 DLC01 原件备份')
+        return 0
+    if canon is None:
+        mo = os.path.join(BASE, 'res', 'LANG_EN.s2a.bak')
+        mp = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+        if not (os.path.exists(mo) and os.path.exists(mp)):
+            if verbose:
+                print('  [DLC 道具名副本] 跳过：缺少主 LANG_EN 原件/产物')
+            return 0
+        m_o = [bytes(x) for x in s2a.Archive(mo).blobs]
+        m_p = [bytearray(bytes(x)) for x in s2a.Archive(mp).blobs]
+        canon = _equip_name_canon(m_o, m_p)
+    if not canon:
+        return 0
+    d_o = [bytes(x) for x in s2a.Archive(orig).blobs]
+    arc = s2a.Archive(en)
+    d_p = [bytearray(bytes(x)) for x in arc.blobs]
+    n, n_emb, skip, skip_emb = _sync_item_copies(d_o, d_p, canon, foreign=True)
+    if n or n_emb:
+        s2a.pack(en, arc.entries, [bytes(x) for x in d_p])
+    if verbose:
+        print('  [DLC 道具名副本] 同步 %d 处%s%s'
+              % (n, ('，嵌入副本 %d 处' % n_emb) if n_emb else '',
+                 ('（容量不足 %d）' % (skip + skip_emb)) if (skip or skip_emb) else ''))
+    return n + n_emb
+
+
+def fill_enemy_name_copies(orig_blobs, en_path, verbose=True):
+    """把 b407 敌名/Boss 表的终串同步到其余敌名/宝箱/Boss 名副本列。
+
+    目标列（静态审计发现的残留英文副本）：
+      b601 stride288 pos28；b734 stride660 pos4/40；
+      b54 stride660 pos4；b555 stride660 pos4。
+    只写“整槽仍等于英文原名”的槽，跳过容量不足者。
+    """
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    targets = {601: (288, {28}), 734: (660, {4, 40}),
+               54: (660, {4}), 555: (660, {4})}
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    canon = {}
+    ob = bytes(orig_blobs[407])
+    pb = prod[407]
+    st = struct.unpack_from('<I', ob, 4)[0]
+    for r in range(struct.unpack_from('<I', ob, 8)[0]):
+        base = 16 + r * st + 4
+        oe = ob.find(b'\x00', base)
+        if oe < 0:
+            continue
+        en = ob[base:oe]
+        if not en or en in canon:
+            continue
+        pe = pb.find(b'\x00', base)
+        fin = bytes(pb[base:pe])
+        if fin and fin != en and not (b'<' in en and b'>' in en):
+            canon[en] = fin
+    n = skip = 0
+    for bi, (tst, poss) in targets.items():
+        if bi >= len(orig_blobs):
+            continue
+        ob = bytes(orig_blobs[bi])
+        pb = prod[bi]
+        for pos in poss:
+            for r in range(struct.unpack_from('<I', ob, 8)[0]):
+                f = 16 + r * tst + pos
+                oe = ob.find(b'\x00', f)
+                if oe < 0:
+                    continue
+                en = ob[f:oe]
+                fin = canon.get(en)
+                if not fin:
+                    continue
+                ce = pb.find(b'\x00', f)
+                cur = bytes(pb[f:ce])
+                if cur != en:
+                    continue
+                nx = ce
+                while nx < len(pb) and pb[nx] == 0:
+                    nx += 1
+                if len(fin) + 1 > nx - f:
+                    skip += 1
+                    continue
+                pb[f:f + len(fin)] = fin
+                pb[f + len(fin)] = 0
+                for i in range(f + len(fin) + 1, max(ce, f + len(fin) + 1)):
+                    pb[i] = 0
+                n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [敌名副本] 同步 %d 处%s' % (n, '（容量不足 %d）' % skip if skip else ''))
+    return n
 
 
 def force_title_key_copies(orig_blobs, en_path, title_ok, verbose=True):
@@ -4715,6 +5082,10 @@ def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
     restore_q16_keys()
     print('== 名字副本补齐（职业/阵型/称号/伙伴/批次 A-B，跳过 b317）==')
     fill_name_copies(orig_blobs, en_path, en_names, skip_blobs=(317,), title_ok=title_rel)
+    print('== 道具名副本同步（宝箱/事件按名发放）==')
+    fill_item_name_copies(orig_blobs, en_path)
+    print('== 敌名/Boss 名副本同步 ==')
+    fill_enemy_name_copies(orig_blobs, en_path)
     print('== 称号条件副本统一（stride292 pos32）==')
     force_title_key_copies(orig_blobs, en_path, title_rel)
     print('== 主角默认名还原（Yusha/Yushia/Yuja 保持原版）==')
@@ -4732,6 +5103,39 @@ def do_package_names_cn_jobs_titles_hash(exe_mode=None):
                       stage_name='package_stage_names_cn_jobs_titles_hash',
                       out_dir=paths.dist('Z14-jobs-titles'),
                       expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_package_names_cn_reuse(exe_mode=None):
+    """Z15 包：Z14 配方 + 同字复用原版日文汉字槽位（方案 B，重画简中字形）。
+
+    复用字不再占用 1248+ 的新格；单字输出 dist/Z15-reuse-kanji/，不改 Z14。
+    """
+    return do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                      stage_name='package_stage_names_cn_reuse',
+                      out_dir=paths.dist('Z15-reuse-kanji'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+
+
+def do_apply_names_cn_jobs_titles_norepl(exe_mode=None):
+    """Z15 无词典实验：Z14 配方相同，但不套用 REPL（仍保留 HL 高亮补译）。"""
+    set_apply_repl(False)
+    try:
+        return do_apply_names_cn_jobs_titles_hash(exe_mode=exe_mode)
+    finally:
+        set_apply_repl(True)
+
+
+def do_package_names_cn_reuse_norepl(exe_mode=None):
+    """Z15-norepl 包：不套用 replace_map REPL，输出 dist/Z15-reuse-kanji-norepl/。
+
+    与 Z15 并存；用于对比“关掉术语/近义替换”后的实际文本与字库占用。
+    """
+    return do_package(exe_mode=exe_mode,
+                      apply_cmd='apply_names_cn_jobs_titles_norepl',
+                      stage_name='package_stage_names_cn_reuse_norepl',
+                      out_dir=paths.dist('Z15-reuse-kanji-norepl'),
+                      expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'),
+                      apply_repl=False)
 
 
 def do_apply_names_cn_equip_only(exe_mode=None):
@@ -4875,12 +5279,14 @@ def _pkg_origin_sources():
     return src, missing, uses_current, has_dlc
 
 
-def export_review_view():
+def export_review_view(apply_repl=True):
     """打包后刷新译者校对视图（translator-view/）。
 
     【强制规则】译表或汉化脚本有任何改动，打包完成后必须导出一次最新译文；
     否则 translator-view 仍是旧快照，下次「导入校对」会把旧文本整体回写译表。
     （2026-10-20 事故：旧视图回写导致 1,607 行术语/断句修复被覆盖。）
+
+    apply_repl=False：导出“不套用 REPL”的视图，与 Z15-norepl 包保持一致。
     """
     import subprocess
     script = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'export_review.py')
@@ -4888,6 +5294,7 @@ def export_review_view():
     sys.stdout.flush()
     env = os.environ.copy()
     env['PYTHONIOENCODING'] = 'utf-8'
+    env['HMH2_APPLY_REPL'] = '1' if apply_repl else '0'
     rc = subprocess.call([sys.executable, script], env=env)
     if rc != 0:
         print('!! 校对视图导出失败（退出码 %s）：dist/ 已生成，但视图仍是旧快照' % rc)
@@ -4897,7 +5304,8 @@ def export_review_view():
     print('校对视图已刷新：%s' % os.path.join(WORK, 'translator-view'))
 
 
-def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, expect_same=()):
+def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
+               expect_same=(), apply_repl=True):
     """完整补丁打包（默认·隔离模式）：只读配置目录母本 → 在 staging 装机 → 复制到 dist/。
     配置游戏目录逐字节不变（不装机）。就地装机版见 do_package_install。
 
@@ -4948,6 +5356,7 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, exp
     env['HMH2_GAME_DIR'] = stage
     env['HMH2_EXE_MODE'] = em
     env['PYTHONIOENCODING'] = 'utf-8'
+    env['HMH2_APPLY_REPL'] = '1' if apply_repl else '0'
     sys.stdout.flush()
     rc = subprocess.call([sys.executable, os.path.abspath(__file__),
                           apply_cmd or ('apply_menu' if em == 'dll' else 'apply_menu_exe')], env=env)
@@ -4999,7 +5408,7 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None, exp
     print('提示：staging 暂存于 %s（可删）；输出目录中不属于本次补丁的旧文件不会被删除。' % stage)
 
     # ⑥ 强制刷新译者校对视图：避免 translator-view 停留在旧快照，下次导入时整体回写译表
-    export_review_view()
+    export_review_view(apply_repl=apply_repl)
 
 
 def do_package_lang_en_only(exe_mode=None):
@@ -5157,6 +5566,11 @@ if __name__ == '__main__':
      # Z14：Z13 + 职业/阵型/称号 + 新敌技名
      'apply_names_cn_jobs_titles_hash': do_apply_names_cn_jobs_titles_hash,
      'package_names_cn_jobs_titles_hash': do_package_names_cn_jobs_titles_hash,
+     # Z15：同字复用原版日文汉字槽位（方案 B）
+     'package_names_cn_reuse': do_package_names_cn_reuse,
+     # Z15 无词典实验（只保留 HL；用于对比）
+     'apply_names_cn_jobs_titles_norepl': do_apply_names_cn_jobs_titles_norepl,
+     'package_names_cn_reuse_norepl': do_package_names_cn_reuse_norepl,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

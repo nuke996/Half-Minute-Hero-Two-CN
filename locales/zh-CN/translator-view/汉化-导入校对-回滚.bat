@@ -3,7 +3,7 @@ chcp 65001 >nul
 set PYTHONIOENCODING=utf-8
 cd /d "%~dp0."
 set "PY=C:\Users\admin\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
-if not exist "%PY%" set "PY=C:\Users\admin\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
+if not exist "%PY%" set "PY=C:\Users\admin\.workbuddy\binaries\python\versions\3.13.12\python.exe"
 if not exist "%PY%" set "PY=python"
 if not exist "..\..\..\tools\build_cn.py" goto NOFILE
 echo [REVIEW] restore the tables from before the last review import,

@@ -38,6 +38,8 @@
 | **Z12** | `package_names_cn_display_hash` | `dist/Z12-display-names/` | Z11 + 敌名/Boss 名/宝箱/音乐/地图 UI 显示列 | 敌名/Boss 说话人/音乐正常；**称号曾因 mirror 绕过守卫而变中文，已修复并重建** |
 | **Z13** | `package_names_cn_batch_b_hash` | `dist/Z13-batchB/` | Z12 + 批次 B：50 个技能名（脚本参数列）+ 10 个已有译名同步 + `b99`/`b25` UI 缺译 | 伙伴技能/合成界面/元素石正常；敌人技能仍有少量漏译（Z14 已补 Chaos Wing 等） |
 | **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验） |
+| **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
+| **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -53,6 +55,12 @@
 | 序章骑士不出现/不归队、贤者复活特效、魔王技能特效缺失 | 是否处于“伙伴名混合态”：`b954` 与其它副本是否同语言 | 用 Z10b/Z11/Z12（均已修）；若新包回归，回滚到 Z10b |
 | 技能“有名字无效果/动画” | `b83/b394` 操作数、`b666 +288/+292`、键列 87/87 | 回滚 Z10b；检查 `recompute_name_operands` 日志（副本冲突应为 0） |
 | 装备/初始装备/商店异常 | `b147/357/736/998` + `b34` loadout + `b83/b394` 操作数 | 回滚 stable/Z10b；对照 `TECHNICAL` §10.3 |
+| **宝箱提示“获得××！”但背包没有** | 道具表名（`b147/357/736/998` pos4）与事件/宝箱脚本参数列（如 `b219/b290/b408` pos28）是否同串 | Z15 起 `fill_item_name_copies()` 同步全库道具名副本；旧包回滚到 Z14 也有此 bug |
+| **龙/船/马等载具或 NPC 不出现**（如奇尔多尼克斯） | 道具表载具名与关卡实体表 `stride152 pos24` 是否同串（紧跟 float 尾字节 `80 BF`，无 NUL 分隔） | Z15 起嵌入副本分支同步本篇 35 处 |
+| **DLC01 关卡载具不出现**（Q78 船） | DLC 的 `stride152 pos24`（`b45/b76/b97`）是否与主道具名同串 | Z15 起 `fill_dlc_item_name_copies()` 在 `refresh_dlc01` 后同步 |
+| **DLC01 台词形近错字/整段乱码** | DLC 重编码是否复用主装机 cmap（`_LAST_BUILD_PLAN`） | Z15 起 `refresh_dlc01(cmap,native)` 复用主 cmap |
+| **DLC 防具从装备栏消失** / 道具表 ID 成片为 0 | `_is_name_like` 是否把数字 ID 当名字；`sync_name_replicas` 是否传播空译文 | Z15 起严格 CP932 校验 + 空译文不传播 |
+| **职业属性异常 / 称号条件异常** | `force_sb`：`b128` 必须 32、`b931` 必须 32 | Z15 起修正；跑 `audit_structural_changes.py` |
 | 称号变中文且无法获得 | `b931 pos0` 与所有 stride292/pos32 条件副本是否同串；Q16 槽头是否完好 | 用 Z14 配方（`_TITLE_RELEASE` + `force_title_key_copies`）；旧包回滚到 Z13 |
 | 职业/阵型/连携技名字部分变中文 | `b128 pos4` / `b136 pos0` / `b317 pos24/48/72` 是否被 `fill_name_copies` 写入 | 补齐必须跳过 `skip_blobs`；Z14 起职业/阵型为**有意翻译**，`b317` 仍保留原版 |
 | 伙伴名错乱/不出现 | 伙伴名全副本终串是否唯一；`b954` 名字/复合键；72 个操作数 | 用 Z11+；`fill_name_copies` 补齐；检查 `b954` 是否有空行未覆盖 |
@@ -79,6 +87,9 @@ python tools/build.py --game-dir work/original package_names_cn_partner_hash
 
 # 机制名 + 伙伴名 + 批次 A 显示名
 python tools/build.py --game-dir work/original package_names_cn_display_hash
+
+# Z15：同字复用原版日文汉字槽位（方案 B，重画简中字形）
+python tools/build.py --game-dir work/original package_names_cn_reuse
 ```
 
 - 安装：把对应 `dist/<包>/` 下的文件覆盖到游戏目录（先备份原文件）。
@@ -109,6 +120,19 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 
 ## 6. 变更记录
 
+- **2026-10-23（Z15 补丁轮 2）**：
+  1. `fill_dlc_item_name_copies()`：DLC01 道具/载具名与本篇同串（整槽 102 + 嵌入 23），
+     Q78「船」修复；`refresh_dlc01()` 自动调用；
+  2. 泳装译名恢复「性感泳衣」；
+  3. 审计范围正式扩到 **本篇 + DLC01**（名字副本、嵌入副本、结构字段）。
+  离机：DLC 未同步 0、结构主 2 / DLC 0。
+- **2026-10-22（Z15 补丁轮）**：
+  1. 载具名嵌入副本（`stride152 pos24`）同步 35 处 → 龙 NPC 恢复（实机确认）；
+  2. `refresh_dlc01` 复用主 cmap → DLC 台词乱码修复；
+  3. `_is_name_like` 严格 CP932 + 空译文不传播 → 道具 ID/装备消失修复（泳装已恢复）；
+  4. `force_sb` 修正（`b128 32` / `b931 32`）→ 职业成长/称号条件 ID 不再清零（待测）。
+  结构审计：主 LANG 仅 2 处预期操作数重算，DLC01 0 处。
+
 - **2026-10-21**：Z10b 实机通过 → 机制名中文化可行；Z11 加入伙伴名/复合键并通过；
   Z12 加入批次 A 显示名；发现称号回归（`mirror` 绕过守卫），已在 `rewrite_text`
   增加 `title_guard` 并在 `fill_name_copies` 加入称号/Q16/键列跳过，三个包全部重建。
@@ -121,6 +145,11 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
   并发现称号的 `stride292/pos32` 条件副本必须同步，否则无法获得；
   Q16 槽头（FF 前缀）被清空的问题已修复。离机：称号 pos0 252/252、pos32 460 副本一致、
   Q16 存疑 0、操作数 242 点 0 失败。**实机待验证。**
+- **2026-10-22（Z15 / 字库同字复用）**：原版 `256..1023` 中与译文同码位的 523 字
+  直接沿用原版 CP932 码，不再占 `1248+` 新格；对应 527 个原版索引格重画为文泉驿简体字形。
+  Z15 实测新占 2296/2847，余量 551（含复用共 2819 字）。表项 0-1247 改动 0，
+  复用格像素与 `glyph3` 完全一致，操作数 242 点/冲突 0，DLC 重编码 3785 槽。
+  **实机待验证。**
 
 ---
 
@@ -133,6 +162,9 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 |---|---|---|---|
 | Z10b | 技能显示名 | `b666` stride376 pos0（键列 pos292 镜像同名） | `+288` 数字 ID 不动；87/87 键列校验 |
 | Z10b | 装备/武器/道具名 | `b147/357/736/998` stride268 pos4（名字）；pos168/204/236（技能名副本） | 四表全副本一致；`b34` 章节 loadout 同步 |
+| Z15 | 道具/装备名副本（宝箱发放） | 全库整槽同名，重点 `b219` stride196 pos28、`b290/b408` stride288 pos28、`b25`/`b218`/`b324`/`b815` 等 | `fill_item_name_copies()` 以道具表终串为准；跳过 `b128/b136/b317`、称号/Q16、技能键列 |
+| Z15 | 载具/坐骑名（关卡实体） | 本篇 `stride152 pos24`：`b39/b232/b236/b429/b433/b473/b499/b556/b565/b700/b703/b803/b883/b891/b897/b938/b957/b1036/b1055` 等 | Dragon→龙、Boat→船、Horse→马、Bike→摩托、Buggy→越野车、Bamboo Stilts→竹马；`b923 "Back"` 是 token 保持英文 |
+| Z15 | DLC01 道具/载具名 | `DLC01/LANG_EN.s2a`：`b45 stride152 pos24`（19 条 Boat）、`b76 rec9`、`b97 rec5`；`b32/b49/b53/b86/b94` 等 | `fill_dlc_item_name_copies()` 以主道具表终串为准，`foreign=True` |
 | Z10b | 技能/装备名操作数 | `b83/394` 记录内 `16+rec*288+4` | 必须按最终 CP932 字节重算 CRC-32 |
 | Z11 | 伙伴实体名 | `b954` stride288 pos4 | 42 条；`<EVO_NAME__>/<RGN_NAME__>` 保持占位符 |
 | Z11 | 伙伴演员名 | `b1034` stride288 pos4 | 54 条；与 `b954` 名字集不完全一致 |
@@ -186,10 +218,15 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
   - 导入时额外行写入 `locales/zh-CN/extra_review.json`（完整覆盖表），
     CSV 行写回 `text_v2.csv`；
   - `汉化-导入校对.bat` 自检通过后固定运行
-    `package_names_cn_jobs_titles_hash` 刷新 `dist/Z14-jobs-titles/`；
-    回滚会同时恢复 `extra_review.json` 与 `text_v2.csv` 的备份。
+    `package_names_cn_reuse` 刷新 `dist/Z15-reuse-kanji/`（应用 REPL+HL）；
+  - `汉化-导入校对-不应用词典.bat` 运行 `import_review.py apply --no-repl`，
+    重建 `dist/Z15-reuse-kanji-norepl/`（不套用 REPL，仅保留 HL）；
+    两者读同一批 JSON，只是打包模式不同；
+  - 对应装机：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）；
+  - 回滚会同时恢复 `extra_review.json` 与 `text_v2.csv` 的备份。
 - 已实测：导出 55,170 普通 / 6,048 受保护 / 1,181 多行 / 1,707 DLC / **257 额外**；
-  导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建 Z14。
+  导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建包
+  （Z14 时期重建 Z14，Z15 起重建 Z15）。
 
 ---
 
@@ -203,3 +240,30 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 - 需要实机覆盖：职业切换/职业装备、阵型效果、称号获得、Q16 勇者城、Chaos Wing 等敌技、
   以及此前已通过的序章/技能/装备/商店/伙伴/敌名/音乐。
 - 若出现问题：优先回滚到 Z13；称号单独失败时先对比 `b931 pos0` 与 pos32 副本。
+
+---
+
+## 11. 机制名副本全面审计（2026-10-22/23，Z15）
+
+**脚本：** `build/_scratch/audit_mechanic_replicas.py`（本篇 14 类 + DLC01）与
+`build/_scratch/audit_structural_changes.py`（本篇 + DLC01 结构字段）。
+
+**14 类机制名（当前全部英文副本 0）：** skill 85 / item 633 / partner 42+52+36 /
+class 12 / formation 11 / title 252 / enemy 611 / boss_speaker 313 / chest_label 497 /
+music 51 / map_ui 262 / script_name 76。
+剩余“变体”仅为引号台词/风格差异；显示类重名 enemy 17 / chest 23 / map_ui 1，
+其哈希在操作数 blob 与 `cscv` 中 0 命中。
+
+**嵌入副本：** 本篇 `stride152 pos24` 未同步 **0**；DLC01 整槽+嵌入未同步 **0**。
+
+**按名哈希碰撞：** 被操作数引用的同哈希 3 组，全部是技能/道具**跨表同名**：
+英雄十字（Hero Cross/Hero Cloth）、战斧（Tomahawk/Battle Axe）、召唤（Summon/召唤道具）。
+第一组在日文母本中本来就叫 `ヒーロークロス`（同串同哈希），原版可运行 ⇒ 引擎按表解析，
+跨表同名安全；其余两组结构相同。同一类别内部重复译名 0。
+
+**结构改动基线：**
+- 主 LANG：仅 **2 处**预期改动（`b83/b394 rec196/824` 名字哈希操作数重算）；
+- `DLC01/LANG_EN`：**0 处**结构性改动。
+
+**结论：** 本篇 + DLC01 的机制名副本、嵌入载具名、结构字段均已静态度量通过；
+龙 NPC 与泳装已实机恢复。剩余实机项见 `docs/FINAL_QA_PLAN.md` §2.1。

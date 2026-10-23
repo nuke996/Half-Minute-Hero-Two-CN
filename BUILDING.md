@@ -160,8 +160,11 @@ python tools/runner.py <脚本名> [参数]
   有任一错误即**中断**：不写译表、不打包，写 `build/校对/导入报告.txt` 指明问题条目；
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
-  → 自动跑 `tools/build.py package_names_cn_jobs_titles_hash`（隔离模式）刷新
-  `dist/Z14-jobs-titles/`，**不改游戏目录**。
+  → 自动跑 `tools/build.py package_names_cn_reuse`（隔离模式）刷新
+  `dist/Z15-reuse-kanji/`，**不改游戏目录**。
+  不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
+  （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
+  对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。
 - **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
   译表（含 `extra_review.json`），并重新刷新 `dist/`。
 - **打包后强制导出（硬规则）**：`package` / `package_install`（含 `*_exe`）在写完 `dist/`
@@ -198,6 +201,8 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_display_hash` | `dist/Z12-display-names/` | **Z12 批次 A**：Z11 + 敌名/Boss 名/宝箱/音乐/地图 UI 等已有译文的显示列；称号表按守卫保持原文 |
 | `package_names_cn_batch_b_hash` | `dist/Z13-batchB/` | **Z13 批次 B**：技能名/合成 UI 缺译；脚本参数列按内容白名单 |
 | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | **Z14**：Z13 + 职业/阵型/称号名 + 新敌技名；称号连同 pos32 条件副本同步 |
+| `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | **Z15**：Z14 + 同字复用原版日文汉字槽位（523 字，重画 527 格）；新占 2296/2847，余量 551；**应用 REPL+HL** |
+| `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 
 用法示例：
 
@@ -347,6 +352,17 @@ python tools/dlc_apply.py revert      # 从 *.bak_dlc01_20260913 还原
 ```
 
 **[已验证]** DLC01 写入只在自己原文占用范围内改写，绝不越界清零（v1 曾把记录尾清零导致剧情断链）。
+
+**[硬性规则·2026-10-22]** DLC01 重编码必须使用**与主装机完全相同的 cmap**。
+生产配方里 `refresh_dlc01()` 会把 `build_plan()` 缓存的 `_LAST_BUILD_PLAN` 传给
+`dlc_apply.build_plan(cmap=, native=)`；不要让它自行重算 `build_plan()`
+（主装机的 `_EXTRA_ROWS` 此时已清空，重算会得到另一套载体码 ⇒ DLC 台词整段乱码，
+见 `docs/PITFALLS.md` §30）。
+
+**[硬性规则·2026-10-23]** DLC01 的关卡实体表同样按载具名查找：
+`refresh_dlc01()` 完成后会自动调用 `fill_dlc_item_name_copies()`，
+把主道具表终串同步到 `DLC01/LANG_EN.s2a` 的整槽与 `stride152 pos24` 嵌入副本。
+任何名字/结构审计都必须同时覆盖本篇与 DLC01。
 
 ---
 

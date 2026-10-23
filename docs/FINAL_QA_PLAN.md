@@ -1,9 +1,11 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
-> 状态：**计划待执行**（2026-10-21 记录，供新对话直接接续）
+> 状态：**计划待执行**（2026-10-21 记录，2026-10-22 更新，供新对话直接接续）
 > 前置：Z14 已生成但**尚未完整实机测试**；先完成 Z14 机制验证，再做本收尾。
+> 2026-10-22 起 Z15（`dist/Z15-reuse-kanji/`）在 Z14 基础上启用字库同字复用（文本内容不变），
+> 后续实机与收尾以 **Z15** 为准；Z14 保留为回滚基线。
 > 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
-> `dist/Z14-jobs-titles/`。
+> `dist/Z15-reuse-kanji/`。
 
 ---
 
@@ -38,6 +40,22 @@
 
 > 2026-10-21 已修：`Wooden Sword +1`→木剑+1、合成说明首行、`Materials:`。
 > Z14 已补：Chaos Wing 等新敌技名。
+
+---
+
+## 2.1 开放测试项（2026-10-22/23，Z15 补丁轮）
+
+1. **载具/坐骑**：龙（Childonyx）已实机确认恢复；**DLC01 Q78 的船**已在离机侧修复
+   （`DLC01/LANG_EN.s2a` 实体表 Boat→船，21 处），待实机复测；**马/Horse、摩托/Bike、
+   越野车/Buggy、竹马/Bamboo Stilts** 尚未逐关验证。本篇与 DLC01 都要测。
+2. **DLC01**：台词乱码（PITFALLS §30）、泳装回到装备栏并可装备且名字为「性感泳衣」
+   （PITFALLS §31）——均待复测。
+3. **职业/称号数值修复**（PITFALLS §32）：职业成长数值、称号条件是否正常；
+   Z14 起 `b128` 成长字段与 `b931 pos32` 条件 ID 曾被清零，已修但未实机复测。
+4. 结构审计基线：`python build/_scratch/audit_structural_changes.py`
+   期望“主 LANG 仅 2 处操作数重算、DLC01 0 处”；
+   `python build/_scratch/audit_mechanic_replicas.py` 期望“14 类英文副本 0、
+   嵌入副本 0、DLC 未同步 0”。
 
 ---
 

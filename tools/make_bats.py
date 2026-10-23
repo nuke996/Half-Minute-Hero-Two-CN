@@ -17,13 +17,16 @@ TOOLSREL = os.path.relpath(os.path.join(paths.REPO_DIR, 'tools'), B)
 TOOLSREL_TV = os.path.relpath(os.path.join(paths.REPO_DIR, 'tools'), TV)
 
 # 与校对 JSON 一起放在 translator-view/ 的入口（导出/导入/回滚）
-REVIEW_BATS = {'汉化-导出校对.bat', '汉化-导入校对.bat', '汉化-导入校对-回滚.bat'}
+REVIEW_BATS = {'汉化-导出校对.bat', '汉化-导入校对.bat', '汉化-导入校对-回滚.bat',
+               '汉化-导入校对-不应用词典.bat'}
 
-CANDIDATES = [
+CANDIDATES = [p for p in [
     sys.executable,
     r'C:\Users\admin\.workbuddy\binaries\python\envs\default\Scripts\python.exe',
     r'C:\Users\admin\.workbuddy\binaries\python\versions\3.13.12\python.exe',
-]
+] if p.isascii()]      # bat 内容必须纯 ASCII；仓库路径含中文时跳过 venv 解释器
+if not CANDIDATES:
+    CANDIDATES = ['python']
 
 found = [p for p in CANDIDATES if os.path.exists(p)]
 print('存在的 Python:')
@@ -66,6 +69,15 @@ BODY = {
         'echo [1/2] revert to original...',
         '"%PY%" "' + TOOLSREL + '\\build_cn.py" revert',
         'echo [2/2] install v2.23 build...',
+        '"%PY%" "' + TOOLSREL + '\\build_cn.py" apply_menu',
+    ],
+    '汉化-安装-不应用词典.bat': [
+        'echo [NOREPL] full Chinese build WITHOUT replace_map (hl_map still applies).',
+        'echo Use this to compare the raw translation wording in game.',
+        'echo [1/2] revert to original...',
+        '"%PY%" "' + TOOLSREL + '\\build_cn.py" revert',
+        'echo [2/2] install no-dictionary build...',
+        'set HMH2_APPLY_REPL=0',
         '"%PY%" "' + TOOLSREL + '\\build_cn.py" apply_menu',
     ],
     '汉化-地名章节还原.bat': [
@@ -120,7 +132,17 @@ BODY = {
         'echo report lists exactly which entry is broken.',
         'echo This does NOT touch the game dir; run the install .bat in the game dir',
         'echo (Han-hua-An-Zhuang.bat) to test the Chinese text in game.',
+        'echo To build WITHOUT the replace dictionary, use the no-dictionary import',
+        'echo .bat in this folder (same edits, Z15-norepl output).',
         '"%PY%" "' + TOOLSREL + '\\import_review.py" apply',
+    ],
+    '汉化-导入校对-不应用词典.bat': [
+        'echo [REVIEW-NOREPL] import the edited JSON back into the tables, then refresh dist/.',
+        'echo Same self-check as the normal import, but the package is built WITHOUT',
+        'echo replace_map (hl_map highlight translations still apply).',
+        'echo Use this only to compare the raw translation wording.',
+        'echo This does NOT touch the game dir; install with the game-folder .bat to test.',
+        '"%PY%" "' + TOOLSREL + '\\import_review.py" apply --no-repl',
     ],
     '汉化-导入校对-回滚.bat': [
         'echo [REVIEW] restore the tables from before the last review import,',

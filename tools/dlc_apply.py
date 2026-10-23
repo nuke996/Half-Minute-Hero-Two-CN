@@ -48,11 +48,19 @@ def load_multi():
     return json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else {}
 
 
-def build_plan():
-    """plan 每项：off / cap / limit（两侧较小）/ orig_end（两侧较大）/ cap_eff。"""
+def build_plan(cmap=None, native=None):
+    """plan 每项：off / cap / limit（两侧较小）/ orig_end（两侧较大）/ cap_eff。
+
+    cmap/native 由主装机（build_cn.refresh_dlc01）传入，确保 DLC 文本与主装机
+    使用【完全相同】的载体码映射；缺省时才自行重算（独立 CLI 用）。
+    """
     import build_cn as B
-    rows, ents, types, end, tb, slots, chosen, cmap, st = B.build_plan()
-    native = st['native_set']
+    if cmap is None or native is None:
+        _r, _e, _t, _end, _tb, _s, _c, _cm, _st = B.build_plan()
+        if cmap is None:
+            cmap = _cm
+        if native is None:
+            native = _st['native_set']
     zh = load_zh()
     mzh = load_multi()
 

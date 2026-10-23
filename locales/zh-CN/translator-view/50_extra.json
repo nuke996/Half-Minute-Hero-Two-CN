@@ -2898,8 +2898,8 @@
    "meta": {
     "blob": 931,
     "offset": 16,
-    "cap": 18,
-    "cap_bytes": 36,
+    "cap": 16,
+    "cap_bytes": 32,
     "note": "Z11–Z14 代码内额外译表行；改 zh 后导入会写入 extra_review.json"
    }
   },
