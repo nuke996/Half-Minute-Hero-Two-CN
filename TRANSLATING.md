@@ -167,6 +167,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
    DLC 的关卡实体表 `stride152 pos24` 也按载具名查找（Q78 船，`PITFALLS.md` §29.1），
    载具/道具名必须由 `fill_dlc_item_name_copies()` 同步到 `DLC01/LANG_EN.s2a`。
 
+**替换词典（REPL/HL）的修改方式（2026-10-23 起）：** 直接编辑
+`translator-view/dict/替换词典.json`，再运行「汉化-导入校对.bat」。
+导入会校验条目、写回 `replace_map.py` / `hl_map.py`、重建，并执行构建自检；
+致命问题（副本混合态、操作数过期、关键类别重名、token 丢失、DLC 不一致）
+会自动回滚本次导入并返回失败。详见 `PITFALLS.md` §33。
+
 一句话：**`JA == EN` ⇒ 不动；`JA != EN` ⇒ 可进入候选，但必须通过“副本链 + 容量/结构 + DLC”三项检查。**
 
 ---

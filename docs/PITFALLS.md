@@ -889,3 +889,43 @@ Z15 同步 **35 处**（Dragon 12、Boat 8、Horse 6、Bamboo Stilts 5、Bike 1�
 **教训：** 任何“整槽清零”写入都必须以**下一字段起点**为硬上界。
 **相关文件：** `tools/build_cn.py`、`build/_scratch/audit_structural_changes.py`、
 `docs/KNOWN_ISSUES.md` §18。
+
+---
+
+## 33. 替换词典可编辑化 + 导入构建自检（2026-10-23）
+
+**入口：** `locales/zh-CN/translator-view/dict/替换词典.json` 现在是**可编辑入口**。
+改完直接运行「汉化-导入校对.bat」；导入流程会：
+1. 校验两个表（REPL / HL）；
+2. 备份 `replace_map.py` / `hl_map.py`，只替换其中的 `REPL = {...}` / `HL = {...}` 段；
+3. 调用 `build_cn.reload_replace_maps()` 重新加载；
+4. 即使没有任何校对条目改动，只要词典变了也会重建 dist；
+5. 构建完成后运行 `tools/validate_build.py` 自检。
+
+**词典条目规则：**
+- 键/值必须是非空字符串，不能含控制字符/换行/NUL/`\uf8f0-\uf8ff`；
+- REPL 的键和值不能含 `% $ { } < > #`（占位符/token 字符）；
+- HL 的 `<`/`>` 数量必须成对（高亮标记允许翻译为中文，但括号要保留）；
+- 词典改动会改变字频 → cmap 重排 → 旧存档自定义名可能再次漂移，并触发 DLC 重编码（已自动）。
+
+**构建自检（导入时自动运行，任一致命错误 → 自动回滚并恢复 dist，退出码 1）：**
+1. **名字副本混合态**：规范名已中文化，但仍有整槽/`stride152 pos24` 嵌入副本停留在英文；
+2. **操作数过期**：用“原哈希→原串副本→终串哈希”核对每个操作数，必须与最终字节一致；
+3. **译名重名/哈希碰撞**：按名查表的关键类别（技能/道具/伙伴/职业/阵型/称号）同类重名 → 错误；
+   纯显示类别（敌名/宝箱/地图 UI）重名 → 警告；
+4. **占位符/token**：`%s`、`%d`、`{n}`、`$X`、`#RG`、`SE_xxx`、`<YUSHA_NAME>` 等；
+   只检查 **JA 原文也存在的 token**（EN 本地化额外插入的 `<EVO_NAME__>` 等不作为错误）；
+5. **DLC01**：载具/道具名未同步、结构字段被改、文本未按当前 cmap 重编码。
+
+**基线（2026-10-23）：** `validate_build.py` 对 Z15 产物结果为
+**error 0 / warning 45**（45 条均为纯显示类重名：敌名 17、宝箱 23、地图 UI 1 等），
+可放行；任何 error 都必须先修复。
+
+**已实测：**
+- 只改 `dict/替换词典.json`、不改任何校对 JSON → 成功写回 .py 并重建，自检通过；
+- 故意删除某条的 `%s` → 自检报 `[token] b757 off30708 丢失 '%s'`，
+  自动回滚译表并恢复 dist，退出码 1。
+
+**相关文件：** `tools/import_review.py`（`sync_dictionary` / 构建后自检）、
+`tools/validate_build.py`、`tools/export_review.py`（`如何校对.txt` 第四节）、
+`docs/KNOWN_ISSUES.md` §19。

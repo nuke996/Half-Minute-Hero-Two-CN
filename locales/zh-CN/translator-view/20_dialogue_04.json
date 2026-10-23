@@ -18928,7 +18928,7 @@
    "id": "row::33023",
    "en": "Minister: If we do nothing, the kingdom will be completely destroyed!",
    "ja": "大臣「このままでは国がはめつしてしまうーっ！」",
-   "zh": "家老「再这样下去国家就完蛋了！」",
+   "zh": "大臣「再这样下去国家就完蛋了！」",
    "meta": {
     "blob": 614,
     "offset": 2004,
@@ -21766,7 +21766,7 @@
    "id": "row::33606",
    "en": "Minister: Please entrust Lady Ciel to my care. The world…",
    "ja": "大臣「シエル様のことはおまかせください",
-   "zh": "家老「请把希尔公主交给我。世界…",
+   "zh": "大臣「请把希尔公主交给我。世界…",
    "meta": {
     "blob": 626,
     "offset": 2004,
@@ -21788,7 +21788,7 @@
    "id": "row::33611",
    "en": "Minister: Oh! Isn't it <YUSHA_NAME> …",
    "ja": "大臣「おお！<YUSHA_NAME>ではないか？",
-   "zh": "家老「噢！这不是<YUSHA_NAME>…",
+   "zh": "大臣「噢！这不是<YUSHA_NAME>…",
    "meta": {
     "blob": 626,
     "offset": 3276,
@@ -32711,7 +32711,7 @@
    "id": "row::35936",
    "en": "Anyway, these gates <can't be>",
    "ja": "「要は　このゲートってね",
-   "zh": "「总之这些门<无法>",
+   "zh": "「总之这些门",
    "meta": {
     "blob": 668,
     "offset": 333348,
@@ -37991,7 +37991,7 @@
    "id": "row::37011",
    "en": "Minister: I beg of you! Please help us!",
    "ja": "大臣「おねがいです！　助けて下さい！」",
-   "zh": "家老「求求你们！帮帮我们！」",
+   "zh": "大臣「求求你们！帮帮我们！」",
    "meta": {
     "blob": 699,
     "offset": 2428,
@@ -38002,7 +38002,7 @@
    "id": "row::37013",
    "en": "Minister: Thank you! Now, go see the King.",
    "ja": "大臣「ありがとうございます！　さあ王のもとへ」",
-   "zh": "家老「谢谢！快去见国王吧。」",
+   "zh": "大臣「谢谢！快去见国王吧。」",
    "meta": {
     "blob": 699,
     "offset": 2852,

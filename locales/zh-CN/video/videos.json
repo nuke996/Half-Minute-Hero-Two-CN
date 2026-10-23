@@ -1,0 +1,397 @@
+{
+  "_note": "视频硬字幕数据。文字已烧录在视频像素里，不能靠 text_v2.csv 改变；本文件是视频字幕的唯一源。RAGNAROK 对话框通过 csv_row/csv_rows 读取 text_v2.csv 当前 zh_new，保证每次打包使用最新译文。",
+  "_how_to_edit": "只改每条记录的 zh（以及必要时 start/end/cover/样式）。改完运行 python tools/build.py package；打包会自动重渲染并重新打包 LANG_EN.s2a / MOV.s2a。",
+  "videos": {
+    "prologue": {
+      "archive": "res/LANG_EN.s2a",
+      "blob": "4229ebe4",
+      "width": 1280,
+      "height": 720,
+      "note": "开场剧情滚动字幕（截图2~6）。日文源在 LANG_JA.s2a 同 hash 视频。",
+      "segments": [
+        {
+          "id": "pro_01",
+          "start": 1.0,
+          "end": 9.5,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 46,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 300,
+          "ja": "かつて\n世界を破滅から救った\n勇者達がいた・・・",
+          "en": "Long ago,\nthere was a group of heroes\nwho saved the world from destruction...",
+          "zh": "很久以前，\n有一群勇者\n将世界从毁灭中拯救出来……"
+        },
+        {
+          "id": "tr_pro_01",
+          "start": 9.5,
+          "end": 10.5,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "cover_only": true
+        },
+        {
+          "id": "pro_02",
+          "start": 10.5,
+          "end": 17.0,
+          "cover": [
+            0,
+            450,
+            1280,
+            270
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 520,
+          "ja": "超速の勇者",
+          "en": "The Super Fast Hero",
+          "zh": "超高速勇者"
+        },
+        {
+          "id": "pro_03",
+          "start": 17.0,
+          "end": 24.0,
+          "cover": [
+            0,
+            450,
+            1280,
+            270
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 520,
+          "ja": "超ナルシストな魔王",
+          "en": "The Ultimate Narcissist Evil Lord",
+          "zh": "超级自恋的魔王"
+        },
+        {
+          "id": "pro_04",
+          "start": 24.0,
+          "end": 31.5,
+          "cover": [
+            0,
+            450,
+            1280,
+            270
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 520,
+          "ja": "超攻撃的な王女",
+          "en": "The Hyper Hero Princess",
+          "zh": "超攻击性的公主"
+        },
+        {
+          "id": "pro_05",
+          "start": 31.5,
+          "end": 39.0,
+          "cover": [
+            0,
+            450,
+            1280,
+            270
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 520,
+          "ja": "超ド根性の騎士",
+          "en": "The Super Gutty Knight",
+          "zh": "超有骨气的骑士"
+        },
+        {
+          "id": "pro_06",
+          "start": 39.0,
+          "end": 46.5,
+          "cover": [
+            0,
+            450,
+            1280,
+            270
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 520,
+          "ja": "気まぐれな女神",
+          "en": "The Capricious Goddess",
+          "zh": "反复无常的女神"
+        },
+        {
+          "id": "pro_07",
+          "start": 46.5,
+          "end": 51.0,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 46,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 330,
+          "ja": "平和を取り戻した世界",
+          "en": "The world was at peace.",
+          "zh": "世界重归和平"
+        },
+        {
+          "id": "pro_08",
+          "start": 51.0,
+          "end": 56.0,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 46,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 330,
+          "ja": "しかし",
+          "en": "However,",
+          "zh": "然而"
+        },
+        {
+          "id": "pro_09",
+          "start": 56.0,
+          "end": 61.0,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 46,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 330,
+          "ja": "時は流れ・・・",
+          "en": "time marches on...",
+          "zh": "时光流逝……"
+        },
+        {
+          "id": "pro_10",
+          "start": 61.0,
+          "end": 66.0,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 46,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 330,
+          "ja": "女神暦６００年",
+          "en": "Goddess Era 600",
+          "zh": "女神历600年"
+        },
+        {
+          "id": "pro_11",
+          "start": 66.0,
+          "end": 73.5,
+          "cover": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "font": "serif",
+          "size": 44,
+          "color": "#FFFFFF",
+          "align": "center",
+          "x": 640,
+          "y": 250,
+          "ja": "今、「運命」の歯車は\n再び世界を破壊へと\n導こうとしていた・・・",
+          "en": "Now, the wheels of fate\nturn once again, heralding\nthe world's destruction.",
+          "zh": "如今，“命运”的齿轮\n再次将世界\n引向毁灭……"
+        }
+      ]
+    },
+    "ragnarok": {
+      "archive": "res/LANG_EN.s2a",
+      "blob": "1297f874",
+      "width": 1280,
+      "height": 720,
+      "note": "RAGNAROK 通关后的制作名单 + 剧情对话框（截图1）。对话框文字是烧录的；csv_row 读取当前 text_v2.csv 的 zh_new。",
+      "cover": [
+        86,
+        471,
+        1109,
+        185
+      ],
+      "box_color": "#0F0E2D",
+      "font": "pixel",
+      "speaker_size": 24,
+      "line_size": 26,
+      "line_spacing": 6,
+      "x": 100,
+      "speaker_y": 485,
+      "text_y": 525,
+      "segments": [
+        {
+          "id": "rag_01",
+          "start": 67.0,
+          "end": 68.5,
+          "speaker": "时之女神",
+          "csv_row": 8928
+        },
+        {
+          "id": "rag_02",
+          "start": 68.5,
+          "end": 71.0,
+          "speaker": "时之女神",
+          "csv_row": 8930
+        },
+        {
+          "id": "rag_03",
+          "start": 71.0,
+          "end": 72.5,
+          "speaker": "时之女神",
+          "csv_row": 8932
+        },
+        {
+          "id": "rag_04",
+          "start": 72.5,
+          "end": 74.5,
+          "speaker": "时之女神",
+          "csv_rows": [
+            8934,
+            8935
+          ],
+          "join": "\n　"
+        },
+        {
+          "id": "rag_05",
+          "start": 74.5,
+          "end": 76.5,
+          "speaker": "时之女神",
+          "csv_rows": [
+            8937,
+            8938
+          ],
+          "join": "\n　"
+        },
+        {
+          "id": "rag_06",
+          "start": 76.5,
+          "end": 78.0,
+          "speaker": "时之女神",
+          "ja": "「このまんまじゃ終わらせないんだからっ\n　アイツに・・・・・・」",
+          "en": "It's time...",
+          "zh": "「不能就这样结束……\n　那家伙……"
+        },
+        {
+          "id": "rag_07",
+          "start": 78.0,
+          "end": 80.0,
+          "speaker": "时之女神",
+          "csv_row": 8942
+        }
+      ]
+    },
+    "opening": {
+      "archive": "res/MOV.s2a",
+      "blob": "2afe07ce",
+      "width": 1280,
+      "height": 720,
+      "note": "片头 5 句（MOV.s2a 共享视频）。日文大字可作前 4 句依据；第 5 句只有英文画面。",
+      "cover": [
+        0,
+        560,
+        1280,
+        160
+      ],
+      "cover_color": "#000000",
+      "cover_alpha": 255,
+      "font": "pixel",
+      "size": 36,
+      "color": "#FFFFFF",
+      "outline": 2,
+      "align": "center",
+      "x": 640,
+      "segments": [
+        {
+          "id": "op_01",
+          "start": 5.0,
+          "end": 7.2,
+          "y": 620,
+          "ja": "この戦いは",
+          "en": "My battle is",
+          "zh": "我的战斗"
+        },
+        {
+          "id": "op_02",
+          "start": 9.6,
+          "end": 11.8,
+          "y": 620,
+          "ja": "俺を裏切った",
+          "en": "against my betrayer,",
+          "zh": "是为了向背叛我的人复仇，"
+        },
+        {
+          "id": "op_03",
+          "start": 12.0,
+          "end": 14.4,
+          "y": 620,
+          "ja": "運命へ",
+          "en": "against fate, itself.",
+          "zh": "也是向命运本身抗争。"
+        },
+        {
+          "id": "op_04",
+          "start": 15.8,
+          "end": 17.4,
+          "y": 620,
+          "ja": "復讐だ",
+          "en": "I will have revenge.",
+          "zh": "我要复仇。"
+        },
+        {
+          "id": "op_05",
+          "start": 17.8,
+          "end": 19.4,
+          "y": 620,
+          "ja": "",
+          "en": "I will save everyone.",
+          "zh": "我会拯救所有人。"
+        }
+      ]
+    }
+  }
+}

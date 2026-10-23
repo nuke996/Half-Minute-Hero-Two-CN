@@ -16002,7 +16002,7 @@
    "id": "row::22532",
    "en": "Minister: Ho ho ho! It's the hero!",
    "ja": "大臣「フォスフォス！勇者じゃ勇者じゃ！」",
-   "zh": "家老「吼吼吼！是勇者！是勇者！」",
+   "zh": "大臣「吼吼吼！是勇者！是勇者！」",
    "meta": {
     "blob": 402,
     "offset": 4124,
@@ -16013,7 +16013,7 @@
    "id": "row::22534",
    "en": "Minister: Hero <RGN_NAME__>!! Welcome to our castle!!",
    "ja": "大臣「勇者<RGN_NAME__>！ようこそ我らが城へ！！」",
-   "zh": "家老「勇者<RGN_NAME__>！！欢迎来到我们的城堡！！」",
+   "zh": "大臣「勇者<RGN_NAME__>！！欢迎来到我们的城堡！！」",
    "meta": {
     "blob": 402,
     "offset": 4548,

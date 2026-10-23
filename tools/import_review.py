@@ -10,15 +10,26 @@
   · 超长：编码字节数超过该槽位上限（装机时会被静默截断）
   · id 无法识别 / 找不到对应字段（导出后又改过译表，或 id 被改动）
   · JSON 结构损坏、非法控制字符、单行条目含换行
+  · 词典条目非法（空键值、控制字符、REPL 含占位符/token、HL 尖括号不配对）
+
+替换词典（2026-10-23 起）：
+  · 可以编辑 translator-view/dict/替换词典.json 后直接运行本导入；
+  · 导入会校验条目，备份并写回 locales/<locale>/replace_map.py 与 hl_map.py，
+    然后按新词典重建；
+  · 只改词典、不改任何校对 JSON 也会执行重建。
 
 通过自检后：
   1) 备份译表 → 写回 text_v2.csv / ml_zh_fields.json / dlc/*.tsv / dlc/zh_07.json
   2) 运行 tools/build.py package（隔离模式）刷新 dist/，**不改游戏目录**
      打包结束会自动重导出 translator-view，避免旧快照再次回写译表。
+  3) 构建后运行 validate_build.py 自检：名字副本混合态、操作数过期、
+     同类重名/哈希碰撞、占位符/token 丢失、DLC 载具名/结构/编码一致性。
+     任一致命错误 → 自动回滚本次导入并恢复 dist，退出码 1。
 
 模式：apply（默认）/ revert（恢复上次导入前的译表并重新刷新 dist）。
 可选：--no-repl（只保留 HL，不套用 replace_map REPL；重建 Z15-norepl）。
 """
+import ast
 import datetime
 import json
 import os
@@ -44,6 +55,11 @@ sys.path.insert(0, TOOLS)
 sys.path.insert(0, WORK)
 os.chdir(WORK)
 import build_cn as B
+import validate_build as V
+
+DICT_P = os.path.join(TV, 'dict', '替换词典.json')
+REPL_P = paths.data('replace_map.py')
+HL_P = paths.data('hl_map.py')
 
 L = []
 def P(s=''):
@@ -105,14 +121,121 @@ def run_package():
             p.stderr.decode('utf-8', 'replace'))
 
 
+def _dict_validate(repl, hl):
+    """校验 dict/替换词典.json 里的两个表。"""
+    errs = []
+
+    def check(name, m, is_hl):
+        if not isinstance(m, dict):
+            errs.append((name, '结构不是 JSON 对象'))
+            return
+        for k, v in m.items():
+            if not isinstance(k, str) or not isinstance(v, str):
+                errs.append((name, '键/值必须是字符串：%r -> %r' % (k, v)))
+                continue
+            if not k or not v:
+                errs.append((name, '键/值不能为空：%r -> %r' % (k, v)))
+                continue
+            if any(ord(c) < 0x20 or c == '\x7f' for c in k + v):
+                errs.append((name, '含控制字符：%r -> %r' % (k, v)))
+                continue
+            if any('\uf8f0' <= c <= '\uf8ff' for c in k + v):
+                errs.append((name, '含二进制前缀字符：%r -> %r' % (k, v)))
+                continue
+            if is_hl:
+                if k.count('<') != v.count('<') or k.count('>') != v.count('>'):
+                    errs.append((name, '高亮词尖括号不配对：%r -> %r' % (k, v)))
+            else:
+                if any(t in k or t in v for t in ('%', '$', '{', '}', '<', '>', '#')):
+                    errs.append((name, '替换词不能含占位符/token 字符：%r -> %r' % (k, v)))
+
+    check('REPL', repl, False)
+    check('HL', hl, True)
+    return errs
+
+
+def _rewrite_map_py(path, var, mapping, ts):
+    """只替换 `VAR = {...}` 这一段，保留文件其余注释/说明。"""
+    src = open(path, encoding='utf-8').read()
+    tree = ast.parse(src)
+    node = None
+    for n in tree.body:
+        if isinstance(n, ast.Assign) and any(
+                isinstance(t, ast.Name) and t.id == var for t in n.targets):
+            node = n
+            break
+    if node is None:
+        raise ValueError('找不到 %s = {...}' % var)
+    lines = src.splitlines(keepends=True)
+    start, end = node.lineno - 1, node.end_lineno
+    out = ['%s = {\n' % var]
+    for k, v in mapping.items():
+        out.append('    %r: %r,\n' % (k, v))
+    out.append('}\n')
+    bak = path + '.bak_dict_' + ts
+    shutil.copy2(path, bak)
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(''.join(lines[:start] + out + lines[end:]))
+    return bak
+
+
+def sync_dictionary(ts):
+    """把 translator-view/dict/替换词典.json 写回 replace_map.py / hl_map.py。
+
+    返回 (errors, backs)，backs 为 {源文件: 备份路径}，供导入回滚时恢复。
+    """
+    if not os.path.exists(DICT_P):
+        return [], {}
+    try:
+        d = json.load(open(DICT_P, encoding='utf-8-sig'))
+    except Exception as ex:
+        return [(DICT_P, '无法解析：%s' % ex)], {}
+    repl = d.get('replace_map(REPL)')
+    hl = d.get('hl_map(HL)')
+    if repl is None and hl is None:
+        return [], {}
+    errs = _dict_validate(repl if repl is not None else {},
+                          hl if hl is not None else {})
+    if errs:
+        return errs, {}
+    backs, changed = {}, False
+    try:
+        if isinstance(repl, dict) and repl != B.REPL_RAW:
+            backs[REPL_P] = _rewrite_map_py(REPL_P, 'REPL', repl, ts)
+            changed = True
+        if isinstance(hl, dict) and hl != B.HL_RAW:
+            backs[HL_P] = _rewrite_map_py(HL_P, 'HL', hl, ts)
+            changed = True
+    except Exception as ex:
+        return [(DICT_P, '写回失败：%r' % ex)], {}
+    if changed:
+        B.reload_replace_maps()
+    return [], backs
+
+
 def do_apply():
+    ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     P('==== 校对导入报告  %s ====' % now())
+    dict_errs, dict_backs = sync_dictionary(ts)
+    if dict_errs:
+        P('')
+        P('一、替换词典自检')
+        for name, why in dict_errs[:40]:
+            P('  [X] %s: %s' % (name, why))
+        P('  词典未写回；请修正 dict/替换词典.json 后重试。')
+        _flush()
+        return
+    if dict_backs:
+        P('  替换词典：已写回 %s' % ', '.join(os.path.basename(p)
+                                               for p in dict_backs))
     P('  词典模式: %s' % ('关闭（仅 HL）' if NO_REPL else '开启（REPL+HL）'))
     files = collect_files()
-    if not files:
+    if not files and not dict_backs:
         P('没找到校对文件（%s）。请先双击同目录的「汉化-导出校对.bat」生成，改完再导入。'
           % TV)
         _flush(); return
+    if not files:
+        P('  [说明] 未找到校对 JSON：本次只应用替换词典改动。')
 
     rows = R.load_rows()
     by_rid = {r['row_id']: r for r in rows}
@@ -344,10 +467,12 @@ def do_apply():
         P('  修好后再导入。为避免误装，本次一个字节都没有写入。')
         _flush(); return
 
-    if not edits:
+    if not edits and not dict_backs:
         P('')
         P('没有需要应用的修订，译表与 dist 保持原样。')
         _flush(); return
+    if not edits:
+        P('  替换词典有改动：仅重建 dist（不改任何译文条目）。')
 
     if repl_hits:
         P('')
@@ -359,7 +484,6 @@ def do_apply():
             P('    …（其余 %d 处略；规则见 dict/替换词典.json）' % (len(repl_hits) - 15))
 
     # ---- 备份 + 写回 ----
-    ts = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     touched = {CSV_P, MJ_P}
     for _d, kind, loc, _n, _p in edits:
         if kind == 'dlc_tsv':
@@ -368,8 +492,10 @@ def do_apply():
             touched.add(os.path.join(DLC_DIR, 'zh_07.json'))
         elif kind == 'extra':
             touched.add(B.EXTRA_REVIEW_FILE)
-    backs = {}
+    backs = dict(dict_backs)
     for path in sorted(touched):
+        if path in backs:
+            continue
         if os.path.exists(path):
             bak = path + '.bak_review_' + ts
             shutil.copy2(path, bak)
@@ -451,8 +577,42 @@ def do_apply():
         P('      错误详情: %s' % paths.build('_review_package_err.txt'))
     else:
         P('  ✓ 打包完成，dist/ 已刷新。')
+        P('')
+        P('五、构建自检（机制名/操作数/重名/token/DLC）')
+        if stage is None:
+            P('  [警告] 缺少原版文件，跳过构建自检。')
+        else:
+            dist_dir = paths.dist('Z15-reuse-kanji-norepl' if NO_REPL
+                                  else 'Z15-reuse-kanji')
+            v_errs, v_warns = V.validate(dist_dir, stage)
+            for w in v_warns[:8]:
+                P('  [警告] ' + w)
+            if len(v_warns) > 8:
+                P('  …共 %d 条警告（显示类重名等，不阻断）' % len(v_warns))
+            if v_errs:
+                P('  [X] 自检失败：%d 个高危问题，已阻止发布。' % len(v_errs))
+                for e in v_errs[:40]:
+                    P('    ' + e)
+                if len(v_errs) > 40:
+                    P('    …（其余 %d 条略）' % (len(v_errs) - 40))
+                P('')
+                P('  正在回滚本次导入…')
+                for path, bak in backs.items():
+                    if bak and os.path.exists(bak):
+                        shutil.copy2(bak, path)
+                    elif bak is None and os.path.exists(path):
+                        os.remove(path)
+                if os.path.exists(STATE):
+                    os.remove(STATE)
+                rc2, _o2, _e2 = run_package()
+                P('  %s dist 已按回滚后的译表刷新。请修正后重新导出/导入。'
+                  % ('✓' if rc2 == 0 else '[X] 回滚打包失败，请手动运行回滚.bat'))
+                _flush()
+                sys.exit(1)
+            else:
+                P('  ✓ 自检通过（error 0 / warning %d）。' % len(v_warns))
     P('')
-    P('五、如何在游戏里看效果')
+    P('六、如何在游戏里看效果')
     P('  本次导入不改游戏目录。想立刻进游戏验证，请双击游戏目录里的「汉化-安装.bat」装机。')
     P('  想撤销本次导入：双击 translator-view 目录里的「汉化-导入校对-回滚.bat」。')
     _flush()

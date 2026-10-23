@@ -1676,7 +1676,7 @@
    "id": "ml::140",
    "en": "Minister: !! The King is gone!? Where\nin blazes has he gone!?",
    "ja": "大臣「！！　国王がおりませんぞ！？\n　　　一体どこにいってしまったのだ！？」",
-   "zh": "家老「！！国王不见了！？他\n到底跑哪去了！？」",
+   "zh": "大臣「！！国王不见了！？他\n到底跑哪去了！？」",
    "meta": {
     "blob": 211,
     "offset": 2428,
@@ -4328,7 +4328,7 @@
    "id": "ml::361",
    "en": "Minister: Please entrust Lady Ciel to my care. The world…\nwe leave that to your hands, <YUSHA_NAME>!",
    "ja": "大臣「シエル様のことはおまかせください\n　　　世界のことはたのみましたぞ！　<YUSHA_NAME>殿！」",
-   "zh": "家老「请把希尔公主交给我。世界…\n就交到你手上了，<YUSHA_NAME>！」",
+   "zh": "大臣「请把希尔公主交给我。世界…\n就交到你手上了，<YUSHA_NAME>！」",
    "meta": {
     "blob": 626,
     "offset": 2004,
@@ -4352,7 +4352,7 @@
    "id": "ml::363",
    "en": "Minister: Oh! Isn't it <YUSHA_NAME> …\nIs today a day for relaxing?",
    "ja": "大臣「おお！<YUSHA_NAME>ではないか？\n　　　・・・今日はゆっくりしていけるのであろう？」",
-   "zh": "家老「噢！这不是<YUSHA_NAME>…\n今天这么悠闲？」",
+   "zh": "大臣「噢！这不是<YUSHA_NAME>…\n今天这么悠闲？」",
    "meta": {
     "blob": 626,
     "offset": 3276,
@@ -4844,7 +4844,7 @@
    "id": "ml::404",
    "en": "Minister: Princess!? You have returned to us! However,\nit'd probably be best not to see the King…",
    "ja": "大臣「姫さま！？　お戻りになったのですね！\n　　　しかし　国王さまとはお会いにならないほうが・・・」",
-   "zh": "家老「公主！？你回来了！但\n最好还是别去见国王…」",
+   "zh": "大臣「公主！？你回来了！但\n最好还是别去见国王…」",
    "meta": {
     "blob": 714,
     "offset": 3276,

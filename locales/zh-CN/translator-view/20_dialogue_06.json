@@ -2648,7 +2648,7 @@
    "id": "row::48976",
    "en": "Right Minister: By the grace of the Time Goddess…",
    "ja": "右大臣「時の女神のかごを・・・」",
-   "zh": "右家老「承蒙时之女神的庇佑……」",
+   "zh": "右大臣「承蒙时之女神的庇佑……」",
    "meta": {
     "blob": 852,
     "offset": 6244,
@@ -2670,7 +2670,7 @@
    "id": "row::48980",
    "en": "Left Minister: Please save this continent.",
    "ja": "左大臣「この大陸を救ってくだされ」",
-   "zh": "左家老「请拯救这片大陆。」",
+   "zh": "左大臣「请拯救这片大陆。」",
    "meta": {
     "blob": 852,
     "offset": 7092,
@@ -23735,7 +23735,7 @@
    "id": "row::54582",
    "en": "Minister: Princess!? You have returned to us! However,",
    "ja": "大臣「姫さま！？　お戻りになったのですね！",
-   "zh": "家老「公主！？你回来了！但",
+   "zh": "大臣「公主！？你回来了！但",
    "meta": {
     "blob": 943,
     "offset": 3276,
@@ -23746,7 +23746,7 @@
    "id": "row::54584",
    "en": "Minister: Princess, do take care!",
    "ja": "大臣「姫さま　どうかお気をつけて！」",
-   "zh": "家老「公主，请多保重！」",
+   "zh": "大臣「公主，请多保重！」",
    "meta": {
     "blob": 943,
     "offset": 3700,
@@ -23757,7 +23757,7 @@
    "id": "row::54586",
    "en": "Minister: Princess, please come back any time!",
    "ja": "大臣「姫さま　いつでも帰って来てください」",
-   "zh": "家老「公主，随时欢迎回来！」",
+   "zh": "大臣「公主，随时欢迎回来！」",
    "meta": {
     "blob": 943,
     "offset": 4124,
@@ -42468,7 +42468,7 @@
    "id": "row::58869",
    "en": "Which one…?",
    "ja": "「どうすっかなー」",
-   "zh": "「哪一颗呢…？」（美丽宝石/坚硬宝石）",
+   "zh": "「哪一颗呢…？」",
    "meta": {
     "blob": 1025,
     "offset": 107632,

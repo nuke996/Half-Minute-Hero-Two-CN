@@ -6982,7 +6982,7 @@
    "id": "row::1421",
    "en": "Q75. TLoH",
    "ja": "Q75．ＴＬＯＨ",
-   "zh": "Q75．TLoH",
+   "zh": "Q75．英雄传说",
    "meta": {
     "blob": 34,
     "offset": 128360,
@@ -21568,7 +21568,7 @@
    "id": "row::4756",
    "en": "Change controller, graphics, sound and hero name settings.",
    "ja": "サウンドや勇者の名前の設定を変更できます",
-   "zh": "修改手柄、画面、音效与勇者名设定。",
+   "zh": "修改设定。（汉化作者nobina 使用模型DeepSeekFlash）",
    "meta": {
     "blob": 102,
     "offset": 428,

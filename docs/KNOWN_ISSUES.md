@@ -400,3 +400,19 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 **修复（Z15）：** 改为 `(128,212,4,32)`、`(931,292,0,32)`。
 **验证：** 结构审计：主 LANG 仅 2 处预期操作数重算，职业/称号数值改动 0，DLC01 0。
 **相关文件：** `docs/PITFALLS.md` §32、`build/_scratch/audit_structural_changes.py`。
+
+---
+
+# 19. 替换词典的编辑方式与导入自检
+
+**Status:** Implemented　**Severity:** —（使用说明）
+
+- 可直接编辑 `translator-view/dict/替换词典.json`，然后运行「汉化-导入校对.bat」；
+  导入会校验条目、备份并写回 `replace_map.py` / `hl_map.py`，然后重建。
+- 只改词典、不改任何校对 JSON 也会重建。
+- REPL 条目不能含 `% $ { } < > #`；HL 的尖括号必须成对；键值不能为空/含控制字符。
+- 导入后会运行构建自检（名字副本、操作数、重名/碰撞、token、DLC）。
+  致命错误会**自动回滚**本次导入并恢复 dist，退出码 1。
+- 基线：Z15 为 error 0 / warning 45（纯显示类重名，不阻断）。
+- 词典改动会改变字频 → cmap 重排，旧存档自定义名可能漂移；DLC 会自动重编码。
+**相关文件：** `docs/PITFALLS.md` §33、`tools/validate_build.py`、`tools/import_review.py`。

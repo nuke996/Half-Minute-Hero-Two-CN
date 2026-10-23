@@ -170,6 +170,14 @@ from being displayed**, the same change must adapt the review/import/package pip
 - Import must write edits back to the correct source (`text_v2.csv`,
   `extra_review.json`, multi-line/DLC files) and rebuild the package that actually
   releases those texts.
+- The replacement dictionaries are editable through
+  `translator-view/dict/替换词典.json`; import must validate the two tables, back up and
+  rewrite `replace_map.py` / `hl_map.py`, reload them, and rebuild even when no
+  review entry changed.
+- Every successful import/package must run `tools/validate_build.py` (name replica
+  consistency, stale name-hash operands, intra-category duplicate names, placeholder/
+  token loss, DLC vehicle-name/structure/cmap checks) for **both** the main LANG and
+  DLC01. A fatal error must roll back the import and exit non-zero.
 - Immediately after finishing that adaptation work, run `python tools/export_review.py`
   (or a successful package build, which exports automatically). Do not leave the review
   view stale: a later import of an older view can overwrite newer translations and lose

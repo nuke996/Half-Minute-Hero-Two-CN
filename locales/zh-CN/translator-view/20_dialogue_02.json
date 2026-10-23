@@ -14880,7 +14880,7 @@
    "id": "row::12194",
    "en": "Minister: The return of the hero of legend.",
    "ja": "大臣「伝説の勇者の再来ですなぁ」",
-   "zh": "家老「传说中的勇者归来了。」",
+   "zh": "大臣「传说中的勇者归来了。」",
    "meta": {
     "blob": 211,
     "offset": 2004,
@@ -14891,7 +14891,7 @@
    "id": "row::12196",
    "en": "Minister: !! The King is gone!? Where",
    "ja": "大臣「！！　国王がおりませんぞ！？",
-   "zh": "家老「！！国王不见了！？他",
+   "zh": "大臣「！！国王不见了！？他",
    "meta": {
     "blob": 211,
     "offset": 2428,
@@ -27750,7 +27750,7 @@
    "id": "row::14703",
    "en": "Levan… lately you've become a lot like the minister.",
    "ja": "「レバン・・・最近なんだか国の大臣ににてきましたわ",
-   "zh": "「莱万…你最近越来越像那位家老了，",
+   "zh": "「莱万…你最近越来越像那位大臣了，",
    "meta": {
     "blob": 282,
     "offset": 27624,
@@ -42303,7 +42303,7 @@
    "id": "row::18172",
    "en": "Right Minister: This continent is in great danger.",
    "ja": "右大臣「この大陸は今キキにひんしている」",
-   "zh": "「右家老：这片大陆如今危在旦夕。」",
+   "zh": "「右大臣：这片大陆如今危在旦夕。」",
    "meta": {
     "blob": 335,
     "offset": 7940,
@@ -42314,7 +42314,7 @@
    "id": "row::18174",
    "en": "Right Minister: Peace has been restored to this continent.",
    "ja": "右大臣「この大陸は今しあわせになった」",
-   "zh": "「右家老：这片大陆如今已重获安宁。」",
+   "zh": "「右大臣：这片大陆如今已重获安宁。」",
    "meta": {
     "blob": 335,
     "offset": 8364,
@@ -42336,7 +42336,7 @@
    "id": "row::18179",
    "en": "Left Minister: Please listen to the King!",
    "ja": "左大臣「国王の話を聞いてください！」",
-   "zh": "「左家老：请听国王说！」",
+   "zh": "「左大臣：请听国王说！」",
    "meta": {
     "blob": 335,
     "offset": 9636,
@@ -42347,7 +42347,7 @@
    "id": "row::18181",
    "en": "Left Minister: Thank you for taking heed.",
    "ja": "左大臣「話を聞いてくださってありがとう」",
-   "zh": "「左家老：感谢你愿意听我说。」",
+   "zh": "「左大臣：感谢你愿意听我说。」",
    "meta": {
     "blob": 335,
     "offset": 10060,

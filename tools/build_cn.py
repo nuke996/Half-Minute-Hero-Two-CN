@@ -568,6 +568,26 @@ def set_apply_repl(enabled):
     _refresh_repl()
 
 
+def reload_replace_maps():
+    """重新读取 locales/<locale>/replace_map.py 与 hl_map.py。
+
+    校对导入把 dict/替换词典.json 写回这两个 .py 后必须调用，
+    否则本进程仍使用启动时加载的旧表。
+    """
+    global REPL_RAW, HL_RAW
+    REPL_RAW = {}
+    HL_RAW = {}
+    if os.path.exists(_rm):
+        _ns = {}
+        exec(compile(open(_rm, encoding='utf-8').read(), _rm, 'exec'), _ns)
+        REPL_RAW = _ns.get('REPL', {})
+    if os.path.exists(_hlm):
+        _ns2 = {}
+        exec(compile(open(_hlm, encoding='utf-8').read(), _hlm, 'exec'), _ns2)
+        HL_RAW = _ns2.get('HL', {})
+    _refresh_repl()
+
+
 _refresh_repl()
 
 

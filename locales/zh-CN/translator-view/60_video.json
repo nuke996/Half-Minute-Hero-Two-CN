@@ -1,0 +1,260 @@
+{
+ "_kind": "video",
+ "_note": "视频硬字幕校对。source=video 的条目可直接改 zh；source=text_v2.csv 的条目请到主译表修改。",
+ "_count": 23,
+ "entries": [
+  {
+   "id": "prologue::pro_01",
+   "video": "prologue",
+   "start": 1.0,
+   "end": 9.5,
+   "ja": "かつて\n世界を破滅から救った\n勇者達がいた・・・",
+   "en": "Long ago,\nthere was a group of heroes\nwho saved the world from destruction...",
+   "zh": "很久以前，\n有一群勇者\n将世界从毁灭中拯救出来……",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_02",
+   "video": "prologue",
+   "start": 10.5,
+   "end": 17.0,
+   "ja": "超速の勇者",
+   "en": "The Super Fast Hero",
+   "zh": "超高速勇者",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_03",
+   "video": "prologue",
+   "start": 17.0,
+   "end": 24.0,
+   "ja": "超ナルシストな魔王",
+   "en": "The Ultimate Narcissist Evil Lord",
+   "zh": "超级自恋的魔王",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_04",
+   "video": "prologue",
+   "start": 24.0,
+   "end": 31.5,
+   "ja": "超攻撃的な王女",
+   "en": "The Hyper Hero Princess",
+   "zh": "超攻击性的公主",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_05",
+   "video": "prologue",
+   "start": 31.5,
+   "end": 39.0,
+   "ja": "超ド根性の騎士",
+   "en": "The Super Gutty Knight",
+   "zh": "超有骨气的骑士",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_06",
+   "video": "prologue",
+   "start": 39.0,
+   "end": 46.5,
+   "ja": "気まぐれな女神",
+   "en": "The Capricious Goddess",
+   "zh": "反复无常的女神",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_07",
+   "video": "prologue",
+   "start": 46.5,
+   "end": 51.0,
+   "ja": "平和を取り戻した世界",
+   "en": "The world was at peace.",
+   "zh": "世界重归和平",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_08",
+   "video": "prologue",
+   "start": 51.0,
+   "end": 56.0,
+   "ja": "しかし",
+   "en": "However,",
+   "zh": "然而",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_09",
+   "video": "prologue",
+   "start": 56.0,
+   "end": 61.0,
+   "ja": "時は流れ・・・",
+   "en": "time marches on...",
+   "zh": "时光流逝……",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_10",
+   "video": "prologue",
+   "start": 61.0,
+   "end": 66.0,
+   "ja": "女神暦６００年",
+   "en": "Goddess Era 600",
+   "zh": "女神历600年",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "prologue::pro_11",
+   "video": "prologue",
+   "start": 66.0,
+   "end": 73.5,
+   "ja": "今、「運命」の歯車は\n再び世界を破壊へと\n導こうとしていた・・・",
+   "en": "Now, the wheels of fate\nturn once again, heralding\nthe world's destruction.",
+   "zh": "如今，“命运”的齿轮\n再次将世界\n引向毁灭……",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "ragnarok::rag_01",
+   "video": "ragnarok",
+   "start": 67.0,
+   "end": 68.5,
+   "ja": "「うぅぅぅぅぅぅぅぅぅぅぅぅぅぅぅぅぅぅ」",
+   "en": "Arrrrrrrrrrrrrrrrggggggggggghhhhhhhhhhh!!!",
+   "zh": "「呜啊啊啊啊啊啊啊啊啊啊啊啊啊！！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "ragnarok::rag_02",
+   "video": "ragnarok",
+   "start": 68.5,
+   "end": 71.0,
+   "ja": "「にゃあああああああああああああああ！！」",
+   "en": "NyaaaaaaaAAAAAAAAAAAHHHHHHHHH!!",
+   "zh": "「喵啊啊啊啊啊啊啊啊啊啊啊啊！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "ragnarok::rag_03",
+   "video": "ragnarok",
+   "start": 71.0,
+   "end": 72.5,
+   "ja": "「こんな終りかた　ナットクできないっ！！」",
+   "en": "I will not allow it to end like this!!",
+   "zh": "「我无法接受就这样结束！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "ragnarok::rag_04",
+   "video": "ragnarok",
+   "start": 72.5,
+   "end": 74.5,
+   "ja": "「クゥちゃんのタイムストリームのおかげで\n　　ぜ～んぶわかったんだから！！」",
+   "en": "Thanks to Coo's Timestream,\n　I've been able to figure out everything!!",
+   "zh": "「多亏了小咕的时之流，\n　我已经全都搞明白了！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "ragnarok::rag_05",
+   "video": "ragnarok",
+   "start": 74.5,
+   "end": 76.5,
+   "ja": "「まさか　わたしがあやつられていたなんてっ！！\n　　このウラミはらさでおくべきかあ！！」",
+   "en": "How could I have let myself be used like that!?\n　I cannot let this go unanswered!",
+   "zh": "「我怎么会被那样操控了！？\n　这仇我必报！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "ragnarok::rag_06",
+   "video": "ragnarok",
+   "start": 76.5,
+   "end": 78.0,
+   "ja": "「このまんまじゃ終わらせないんだからっ\n　アイツに・・・・・・」",
+   "en": "It's time...",
+   "zh": "「不能就这样结束……\n　那家伙……",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "ragnarok::rag_07",
+   "video": "ragnarok",
+   "start": 78.0,
+   "end": 80.0,
+   "ja": "「一発おみまいしてやりましょ！！」",
+   "en": "… for some payback!!!",
+   "zh": "「…去找回场子！！！」",
+   "source": "text_v2.csv",
+   "note": "来自 text_v2.csv，改这里不会写回 CSV；请在对应译表行修改"
+  },
+  {
+   "id": "opening::op_01",
+   "video": "opening",
+   "start": 5.0,
+   "end": 7.2,
+   "ja": "この戦いは",
+   "en": "My battle is",
+   "zh": "我的战斗",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "opening::op_02",
+   "video": "opening",
+   "start": 9.6,
+   "end": 11.8,
+   "ja": "俺を裏切った",
+   "en": "against my betrayer,",
+   "zh": "是为了向背叛我的人复仇，",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "opening::op_03",
+   "video": "opening",
+   "start": 12.0,
+   "end": 14.4,
+   "ja": "運命へ",
+   "en": "against fate, itself.",
+   "zh": "也是向命运本身抗争。",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "opening::op_04",
+   "video": "opening",
+   "start": 15.8,
+   "end": 17.4,
+   "ja": "復讐だ",
+   "en": "I will have revenge.",
+   "zh": "我要复仇。",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  },
+  {
+   "id": "opening::op_05",
+   "video": "opening",
+   "start": 17.8,
+   "end": 19.4,
+   "ja": "",
+   "en": "I will save everyone.",
+   "zh": "我会拯救所有人。",
+   "source": "video",
+   "note": "视频专用条目；改 zh 后导入会写回 videos.json"
+  }
+ ]
+}

@@ -329,8 +329,9 @@ def main():
     repl = load_ns(paths.data('replace_map.py')).get('REPL', {})
     hl = load_ns(paths.data('hl_map.py')).get('HL', {})
     R.write_json(os.path.join(OUT, 'dict', '替换词典.json'), {
-        '_note': '本文件为导出快照，请勿在此编辑。真正的词典源文件是 locales/<locale>/'
-                 'replace_map.py（REPL）与 hl_map.py（HL），由开发者人工维护。',
+        '_note': '本文件可直接编辑：修改后运行「汉化-导入校对.bat」会先校验，'
+                 '再备份并写回 locales/<locale>/replace_map.py 与 hl_map.py，然后重建。'
+                 '只改本文件、不改任何校对条目也会执行重建。',
         '_mechanism': '字库容量有限，装机时按键长降序对译文做词级替换（apply_repl）。'
                       '因此 JSON 里的 zh 是“压平后”的显示值。',
         'replace_map(REPL)': repl,
@@ -396,13 +397,18 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
   将来若保护被解除（例如找到安全方案），这些译文即可直接生效。
   请勿为了“让它上屏”而删除 protected/ 文件，那不会改变保护规则。
 
-四、替换词典（REPL）与“不应用词典”打包
+四、替换词典（REPL / HL）
   装机时默认会在译文上再做一次“词级替换”，规则表就是 dict/替换词典.json：
-  · replace_map.py（REPL）：早期用于省字，现在主要承担术语/专名/地名统一；
-  · hl_map.py（HL）：英文高亮标记补译（如 <east> → <东边>），始终保留。
+  · replace_map(REPL)：术语/专名/地名统一与省字；
+  · hl_map(HL)：英文高亮标记补译（如 <east> → <东边>），始终保留。
+  · 本 JSON 现在是可编辑入口：改完后双击 汉化-导入校对.bat，
+    导入会校验 → 备份 → 写回 replace_map.py / hl_map.py → 重建。
+    只改词典、不改任何校对条目也会执行重建。
+  · 允许的条目：键/值均为字符串，不能为空、不能含控制字符；
+    REPL 不能含 %% $ { } < > # 等占位符/token 字符；HL 的 <...> 必须成对。
+  · 导入后会自动运行构建自检（名字副本、操作数、重名、token、DLC），
+    有致命问题会【自动回滚】本次导入并恢复 dist，退出码 1。
   · 因为替换先于显示，JSON 里的 zh 已经是“压平后”的字面，所见即所得。
-  · 词典真正的源文件是 locales/zh-CN/replace_map.py 与 hl_map.py（纯文本，形如
-    {"原文词": "替换词"}），由开发者人工维护；本目录下的 JSON 只是快照，改它无效。
   · Z15 后字库余量 551 格，容量上已不需要 REPL 省字；保留它是为了术语一致。
   · 想查看“不套用 REPL”的原始措辞：双击 汉化-导入校对-不应用词典.bat，
     它会把补丁重建到 dist/Z15-reuse-kanji-norepl/（HL 仍生效）。

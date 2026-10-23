@@ -150,7 +150,7 @@ python tools/runner.py <脚本名> [参数]
 - **导出**：`export_review.py` → `locales/zh-CN/translator-view/`，按 blob 切分成
   `10_ui_*.json` / `20_dialogue_*.json`，外加 `30_multiline.json`、`40_dlc01.json`、
   `50_extra.json`（Z11–Z14 代码内额外行：伙伴名/技能名/合成 UI）、
-  `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（快照）与 `如何校对.txt`。
+  `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（**可编辑入口**）与 `如何校对.txt`。
   清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `50_*` /
   `protected/` / `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
   受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
@@ -165,6 +165,18 @@ python tools/runner.py <脚本名> [参数]
   不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
   （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
   对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。
+- **替换词典（可编辑）**：`dict/替换词典.json` 的两个表（`replace_map(REPL)` / `hl_map(HL)`）
+  可直接编辑。导入会先校验条目（非空、无控制字符；REPL 禁含 `% $ { } < > #`；
+  HL 尖括号成对），备份并只替换 `replace_map.py` / `hl_map.py` 中的字典字面量，
+  调用 `build_cn.reload_replace_maps()` 后重建；**只改词典、不改校对条目也会重建**。
+- **构建后自检（硬规则）**：导入成功打包后自动运行 `tools/validate_build.py`，检查
+  ① 名字副本混合态（整槽 + `stride152 pos24` 嵌入，本篇 + DLC01）；
+  ② 操作数过期（原哈希→副本终串哈希核对）；
+  ③ 关键类别同类重名 / 哈希碰撞（显示类重名仅警告）；
+  ④ 占位符/token（`%s`/`%d`/`{n}`/`$X`/`#RG`/`SE_xxx`/`<YUSHA_NAME>` 等，仅检查 JA 也有的 token）；
+  ⑤ DLC01 载具/道具名、结构字段、cmap 编码一致性。
+  任一 error → **自动回滚本次导入并恢复 dist**，退出码 1；warning 写入报告不阻断。
+  基线：Z15 为 error 0 / warning 45（纯显示类重名）。详见 `docs/PITFALLS.md` §33。
 - **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
   译表（含 `extra_review.json`），并重新刷新 `dist/`。
 - **打包后强制导出（硬规则）**：`package` / `package_install`（含 `*_exe`）在写完 `dist/`
