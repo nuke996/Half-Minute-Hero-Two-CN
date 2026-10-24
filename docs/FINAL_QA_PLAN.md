@@ -1,11 +1,10 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
-> 状态：**计划待执行**（2026-10-21 记录，2026-10-22 更新，供新对话直接接续）
-> 前置：Z14 已生成但**尚未完整实机测试**；先完成 Z14 机制验证，再做本收尾。
-> 2026-10-22 起 Z15（`dist/Z15-reuse-kanji/`）在 Z14 基础上启用字库同字复用（文本内容不变），
-> 后续实机与收尾以 **Z15** 为准；Z14 保留为回滚基线。
+> 状态：**进行中**（2026-10-21 记录，2026-10-22/23/24 更新，供新对话直接接续）
+> 2026-10-24：Z17（`dist/Z17-display-fill/`）完成第一轮显示文本补全，并合入 Z16 视频；
+> 后续实机与收尾以 **Z17** 为准；Z15 保留为回滚基线。
 > 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
-> `dist/Z15-reuse-kanji/`。
+> `dist/Z17-display-fill/`。
 
 ---
 
@@ -57,11 +56,45 @@
    `python build/_scratch/audit_mechanic_replicas.py` 期望“14 类英文副本 0、
    嵌入副本 0、DLC 未同步 0”。
 
+## 2.2 Z17 第一轮漏译排查（2026-10-24）
+
+**已补全（纯显示，不涉机制名）：**
+
+- 括号独白/选项：`（…）` 开头的对话行不再被 collide 挡住（如亚修自言自语、莱万
+  “比公主更不懂世故”、`I'm sure I can handle it!` 选项）；
+- `Change Clothes` 菜单：`The Usual`→老样子、`Robe`→长袍、`Swimsuit`→泳装、
+  `Dress`→连衣裙、`Music Player`→音乐播放器；
+- 图鉴页签：`Boss`→头目、`Artwork`→插画；
+- 合成/战斗菜单：`Class Change`→职业变更、`Craft Weapons`→武器合成、
+  `Bring Allies Back to Life`→复活同伴、`Specialty`→擅长；
+- 日文单行、英文多行造成的孤立尾行（`moving.`/`ready.`/`village.`/`humans.`/
+  `kidnapped.`/`either.`/`anyone.`）已补行并用全角空格清零；
+- 网络/地图 UI 标签（`b763`/`b354`/`b516`/`b186`）一批纯 UI 串放行；
+- `b804` 萨莎日记 4 种×5 份、魔王勋章 84/85、30 个魔人迷宫标题、检查选项已放行；
+- `b291` 地图编辑器说明/半句按记录重译（说明、外观/强度/数量、洞穴/捷径位置等）；
+- `b153` 战斗行动提示（我走啦/我停下来）、`S-I-L-E-N-C-E!`、`I have no regrets!`、
+  `Entered tent!`、样例地图说明已补译。
+
+**只排查、不补全（机制名）：**
+
+- 道具名 `Mu`（ミュー）、`Xi`（クシー）仍在道具图鉴/收藏列表显示英文；
+  它们是 `b147/357/736` 的规范道具名，补译会影响按名哈希/发放，暂不动。
+- 其余 `b137`（区域名）、`b656`（帝国兵）、`b290`（无限亚修/无限魔王）等
+  名字类同理保留原文。
+- `1,000m/h Wind` / `10,000m/h Wind`：技能名，命中 `b83/b394` 操作数，
+  需走完整机制名批次，不能按说明文补。
+
+**待后续处理（纯显示但未在本轮补）：**
+
+- `b34` 关卡/章节标题：多数有译文但被 Q16/章节键保护，需逐条确认；
+- 道具/技能说明中的能力名与发动率短句（`b147/357/736/666`）仍英文，暂未补行；
+- `Catch and Release`、`Beam Security`、`Thunder Storm Breath` 等敌/技能名保持原文。
+
 ---
 
 ## 3. 排查流程（建议按顺序）
 
-1. **以 Z14 产物为基线**：`dist/Z14-jobs-titles/res/LANG_EN.s2a`。
+1. **以 Z17 产物为基线**：`dist/Z17-display-fill/res/LANG_EN.s2a`。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
    - 可复用/扩展 `build/_scratch/audit_untranslated.py`；
@@ -93,20 +126,21 @@
 
 ```bash
 # 构建当前实验包（同时刷新 dist 与校对视图）
-python tools/build.py --game-dir work/original package_names_cn_jobs_titles_hash
+python tools/build.py --game-dir work/original package_names_cn_reuse_z17
 
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→重建 Z14）
+# 导入校对（自检→写 CSV/extra_review.json→重建 Z17）
 python tools/import_review.py
 
 # 只读盘点（示例）
-python build/_scratch/audit_untranslated.py
-python build/_scratch/batchB_plan.py
+python build/_scratch/audit_untranslated_z15.py
+python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在固定运行 Z14 配方；不要再用旧的 `package` 刷新本分支的 dist。
+注意：`import_review.py` 现在固定重建 Z17（`dist/Z17-display-fill/`）；不要再用旧的
+`package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
 
 ---
 

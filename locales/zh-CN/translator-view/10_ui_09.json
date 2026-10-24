@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2974,
+ "_count": 2980,
  "entries": [
   {
    "id": "row::50012",
@@ -10807,6 +10807,17 @@
    }
   },
   {
+   "id": "row::52672",
+   "en": "(… Alright. The past doesn't matter anymore anyway.",
+   "ja": "（・・・そうだ　過去など　もうどうでもいい",
+   "zh": "（…好吧。反正过去都无关紧要了，",
+   "meta": {
+    "blob": 913,
+    "offset": 95368,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::52673",
    "en": "All that matters now is revenge…)",
    "ja": "　今はヤツらに復讐する　それだけで・・・）",
@@ -10862,6 +10873,28 @@
    }
   },
   {
+   "id": "row::52685",
+   "en": "(… Metsvolos must be waiting up ahead…)",
+   "ja": "（・・・この先にメツヴォロスが・・・・・・）",
+   "zh": "（…梅茨沃洛斯一定在前方等着…）",
+   "meta": {
+    "blob": 913,
+    "offset": 103836,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::52686",
+   "en": "(… No, wait. One of the Four",
+   "ja": "（・・・いや　まてよ　たしか",
+   "zh": "（…不，等等。四天大王中",
+   "meta": {
+    "blob": 913,
+    "offset": 104420,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::52687",
    "en": "Ultimate Kings still remains…)",
    "ja": "　四天大王がまだ一匹残っていたな・・・）",
@@ -10870,6 +10903,17 @@
     "blob": 913,
     "offset": 104484,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::52688",
+   "en": "(… I'll hunt them down to the last…)",
+   "ja": "（・・・狩り残しは無し・・・だ）",
+   "zh": "（…我会把他们赶尽杀绝…）",
+   "meta": {
+    "blob": 913,
+    "offset": 105588,
+    "cap": 64
    }
   },
   {
@@ -11115,6 +11159,17 @@
    }
   },
   {
+   "id": "row::52762",
+   "en": "(I see… So that strong enemy he spoke of…",
+   "ja": "（そうか・・・ヤツが言っていた最強の敵",
+   "zh": "（我明白了…他所说的强敌…",
+   "meta": {
+    "blob": 913,
+    "offset": 152600,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::52763",
    "en": "… He was talking about Yashu all along.)",
    "ja": "　あれは・・・・・・ヤーシュのことだったのか）",
@@ -11189,6 +11244,17 @@
     "blob": 913,
     "offset": 154872,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::52782",
+   "en": "(After we've defeated Metsvolos…)",
+   "ja": "（メツヴォロスをたおした後・・・か）",
+   "zh": "（等我们打败梅茨沃洛斯之后…）",
+   "meta": {
+    "blob": 913,
+    "offset": 156396,
+    "cap": 64
    }
   },
   {

@@ -55,7 +55,10 @@ PROTAGONIST_DEFAULT_OFFS = {
 }
 
 
-def released_row(bi, off):
+def released_row(bi, off, ja=''):
+    # Z17：括号独白/选项与逐槽确认的 UI 标签直接视为可校对显示文本。
+    if B.display_release_hit(bi, off, ja or ''):
+        return True
     st = REVIEW_STRIDES.get(bi)
     if not st:
         return False
@@ -198,7 +201,7 @@ def main():
         reason = classify.get(key)
         if key in PROTAGONIST_DEFAULT_OFFS:
             reason = 'protagonist-default'   # 主角默认名：为保证旧存档兼容，强制保留原文
-        elif reason and released_row(*key):
+        elif reason and released_row(*key, ja=(r.get('ja') or '').strip()):
             reason = None       # Z10b–Z14 已实测放行的显示槽：即使 apply_menu 仍保护，也可校对
         if reason:
             prot.append((r, reason))
@@ -409,6 +412,7 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
   · 导入后会自动运行构建自检（名字副本、操作数、重名、token、DLC），
     有致命问题会【自动回滚】本次导入并恢复 dist，退出码 1。
   · 因为替换先于显示，JSON 里的 zh 已经是“压平后”的字面，所见即所得。
+  · 默认导入现在重建到 dist/Z17-display-fill/（含显示补全与 Z16 视频）。
   · Z15 后字库余量 551 格，容量上已不需要 REPL 省字；保留它是为了术语一致。
   · 想查看“不套用 REPL”的原始措辞：双击 汉化-导入校对-不应用词典.bat，
     它会把补丁重建到 dist/Z15-reuse-kanji-norepl/（HL 仍生效）。

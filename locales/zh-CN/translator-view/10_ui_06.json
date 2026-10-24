@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3245,
+ "_count": 3256,
  "entries": [
   {
    "id": "row::31614",
@@ -11060,6 +11060,17 @@
    }
   },
   {
+   "id": "row::33401",
+   "en": "Bring Allies Back to Life",
+   "ja": "仲間を生き返らせる",
+   "zh": "复活同伴",
+   "meta": {
+    "blob": 624,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::33404",
    "en": "Talk",
    "ja": "はなす",
@@ -11133,6 +11144,17 @@
    "meta": {
     "blob": 624,
     "offset": 6244,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::33421",
+   "en": "Bring Allies Back to Life",
+   "ja": "仲間を生き返らせる",
+   "zh": "复活同伴",
+   "meta": {
+    "blob": 624,
+    "offset": 7060,
     "cap": 16
    }
   },
@@ -28176,6 +28198,17 @@
    }
   },
   {
+   "id": "row::36653",
+   "en": "Class Change",
+   "ja": "クラスチェンジ",
+   "zh": "职业变更",
+   "meta": {
+    "blob": 688,
+    "offset": 3076,
+    "cap": 80
+   }
+  },
+  {
    "id": "row::36654",
    "en": "Talk",
    "ja": "はなす",
@@ -28184,6 +28217,17 @@
     "blob": 688,
     "offset": 3244,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::36656",
+   "en": "Craft Weapons",
+   "ja": "武器合成",
+   "zh": "武器合成",
+   "meta": {
+    "blob": 688,
+    "offset": 3500,
+    "cap": 80
    }
   },
   {
@@ -34886,6 +34930,17 @@
    }
   },
   {
+   "id": "row::37920",
+   "en": "(Fighting Yashu head on",
+   "ja": "（ヤーシュに正面から勝つのは",
+   "zh": "（正面击败亚修",
+   "meta": {
+    "blob": 712,
+    "offset": 353204,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::37921",
    "en": "is no easy task.)",
    "ja": "　むずかしそうですわ）",
@@ -34894,6 +34949,28 @@
     "blob": 712,
     "offset": 353268,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::37922",
+   "en": "Perhaps if I plotted something with Geezer…",
+   "ja": "（おじさまとはまみうちをしかけるとか・・・）",
+   "zh": "或许若与大叔合谋…",
+   "meta": {
+    "blob": 712,
+    "offset": 353496,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::37923",
+   "en": "(I wonder if there's some weakness we can exploit…)",
+   "ja": "（どこかにそんなポイントがないかしら）",
+   "zh": "（不知是否有可乘之弱点…）",
+   "meta": {
+    "blob": 712,
+    "offset": 353788,
+    "cap": 64
    }
   },
   {
@@ -35048,6 +35125,17 @@
     "blob": 712,
     "offset": 380880,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::37972",
+   "en": "(His muttering to himself is actually quite helpful…)",
+   "ja": "（ヒントの多い独り言で助かりますわ）",
+   "zh": "（他自言自语倒是挺有帮助…）",
+   "meta": {
+    "blob": 712,
+    "offset": 381236,
+    "cap": 64
    }
   },
   {
@@ -35697,6 +35785,39 @@
     "blob": 675,
     "offset": 2092,
     "cap": 128
+   }
+  },
+  {
+   "id": "row::61264",
+   "en": "moving.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 712,
+    "offset": 70320,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61265",
+   "en": "either.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 712,
+    "offset": 132224,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61269",
+   "en": "Specialty",
+   "ja": "とくい",
+   "zh": "擅长",
+   "meta": {
+    "blob": 642,
+    "offset": 16,
+    "cap": 4
    }
   }
  ]

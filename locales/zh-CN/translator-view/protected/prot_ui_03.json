@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 538,
+ "_count": 498,
  "entries": [
   {
    "id": "row::13768",
@@ -1006,45 +1006,6 @@
    }
   },
   {
-   "id": "row::14371",
-   "en": "Class Change",
-   "ja": "クラスチェンジ",
-   "zh": "职业变更",
-   "meta": {
-    "blob": 265,
-    "offset": 3500,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14374",
-   "en": "Craft Weapons",
-   "ja": "武器合成",
-   "zh": "武器合成",
-   "meta": {
-    "blob": 265,
-    "offset": 3924,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14377",
-   "en": "Craft Weapons",
-   "ja": "武器合成",
-   "zh": "武器合成",
-   "meta": {
-    "blob": 265,
-    "offset": 4348,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::14390",
    "en": "Water Stone",
    "ja": "水の石",
@@ -1422,58 +1383,6 @@
    }
   },
   {
-   "id": "row::14566",
-   "en": "The Usual",
-   "ja": "いつものヤツ",
-   "zh": "老样子",
-   "meta": {
-    "blob": 280,
-    "offset": 48,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14570",
-   "en": "Robe",
-   "ja": "ローブ",
-   "zh": "长袍",
-   "meta": {
-    "blob": 280,
-    "offset": 456,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14574",
-   "en": "Swimsuit",
-   "ja": "水着",
-   "zh": "泳装",
-   "meta": {
-    "blob": 280,
-    "offset": 864,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14576",
-   "en": "Dress",
-   "ja": "ドレス",
-   "zh": "连衣裙",
-   "meta": {
-    "blob": 280,
-    "offset": 1068,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::14578",
    "en": "Dark Goddess",
    "ja": "黒女神",
@@ -1481,19 +1390,6 @@
    "meta": {
     "blob": 280,
     "offset": 1272,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::14581",
-   "en": "Music Player",
-   "ja": "ミュージックプレイヤー",
-   "zh": "音乐播放器",
-   "meta": {
-    "blob": 280,
-    "offset": 1476,
     "cap": 16,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
@@ -2696,149 +2592,6 @@
    }
   },
   {
-   "id": "row::15405",
-   "en": "Your monster's",
-   "ja": "モンスターの",
-   "zh": "怪兽的",
-   "meta": {
-    "blob": 291,
-    "offset": 1420,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15409",
-   "en": "Your item's",
-   "ja": "アイテムの",
-   "zh": "物品的",
-   "meta": {
-    "blob": 291,
-    "offset": 2000,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15419",
-   "en": "Check how to create quests",
-   "ja": "ロマンシング・ツクレールの",
-   "zh": "查看任务做法",
-   "meta": {
-    "blob": 291,
-    "offset": 3596,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15427",
-   "en": "map and return to the",
-   "ja": "ロマンシング・ツクレールの",
-   "zh": "地图回到",
-   "meta": {
-    "blob": 291,
-    "offset": 4804,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15441",
-   "en": "Delete your",
-   "ja": "セーブデータを",
-   "zh": "删掉你的",
-   "meta": {
-    "blob": 291,
-    "offset": 7608,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15453",
-   "en": "Configure",
-   "ja": "村の",
-   "zh": "设置",
-   "meta": {
-    "blob": 291,
-    "offset": 11088,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15459",
-   "en": "Set location",
-   "ja": "どうくつの",
-   "zh": "设置新村庄的",
-   "meta": {
-    "blob": 291,
-    "offset": 12828,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15461",
-   "en": "Configure",
-   "ja": "どうくつの",
-   "zh": "设置",
-   "meta": {
-    "blob": 291,
-    "offset": 13408,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15463",
-   "en": "Set location",
-   "ja": "ぬけみちの",
-   "zh": "设置新村庄的",
-   "meta": {
-    "blob": 291,
-    "offset": 13988,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15465",
-   "en": "Configure",
-   "ja": "ぬけみちの",
-   "zh": "设置",
-   "meta": {
-    "blob": 291,
-    "offset": 14568,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15558",
-   "en": "Story type can be",
-   "ja": "ストーリータイプを",
-   "zh": "故事类型可以",
-   "meta": {
-    "blob": 291,
-    "offset": 25636,
-    "cap": 24,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::15583",
    "en": "Check",
    "ja": "しらべる",
@@ -2956,84 +2709,6 @@
    }
   },
   {
-   "id": "row::15874",
-   "en": "(Maybe he'd like some bread.)",
-   "ja": "（パンがほしいのかしら）",
-   "zh": "（他可能想要些面包。）",
-   "meta": {
-    "blob": 298,
-    "offset": 88360,
-    "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15875",
-   "en": "I'll give you some bread",
-   "ja": "あげますわ",
-   "zh": "我会给你面包",
-   "meta": {
-    "blob": 298,
-    "offset": 88652,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15876",
-   "en": "I won't give you any",
-   "ja": "あげませんわ",
-   "zh": "我什么都不会给你",
-   "meta": {
-    "blob": 298,
-    "offset": 88716,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15881",
-   "en": "(Maybe he'd like some bread.)",
-   "ja": "（パンがほしいのかしら）",
-   "zh": "（他可能想要些面包。）",
-   "meta": {
-    "blob": 298,
-    "offset": 90404,
-    "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15882",
-   "en": "Give it to him",
-   "ja": "あげますわ",
-   "zh": "给他吧",
-   "meta": {
-    "blob": 298,
-    "offset": 90696,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15883",
-   "en": "Don't give it to him",
-   "ja": "あげませんわ",
-   "zh": "别给他",
-   "meta": {
-    "blob": 298,
-    "offset": 90760,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::15886",
    "en": "Delicious Bread",
    "ja": "うまそうなパン",
@@ -3042,19 +2717,6 @@
     "blob": 298,
     "offset": 92320,
     "cap": 128,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::15889",
-   "en": "(I guess he's a man of few words.)",
-   "ja": "（それにしても無口な方ですわ）",
-   "zh": "（他大概是个沉默寡言的人。）",
-   "meta": {
-    "blob": 298,
-    "offset": 93616,
-    "cap": 64,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }
@@ -6609,32 +6271,6 @@
    }
   },
   {
-   "id": "row::19124",
-   "en": "Class Change",
-   "ja": "クラスチェンジ",
-   "zh": "职业变更",
-   "meta": {
-    "blob": 353,
-    "offset": 3500,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19127",
-   "en": "Craft Weapons",
-   "ja": "武器合成",
-   "zh": "武器合成",
-   "meta": {
-    "blob": 353,
-    "offset": 3924,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::19140",
    "en": "Water Stone",
    "ja": "水の石",
@@ -6812,162 +6448,6 @@
     "blob": 354,
     "offset": 24320,
     "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19226",
-   "en": "Arrange from newest",
-   "ja": "新着順に表示",
-   "zh": "按最新排列",
-   "meta": {
-    "blob": 354,
-    "offset": 35520,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19227",
-   "en": "Arrange from No. of downloads",
-   "ja": "ダウンロード数の多い順に表示",
-   "zh": "按下载数排列",
-   "meta": {
-    "blob": 354,
-    "offset": 35744,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19228",
-   "en": "Arrange from rating",
-   "ja": "評価の高い順に表示",
-   "zh": "按评分排列",
-   "meta": {
-    "blob": 354,
-    "offset": 35968,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19229",
-   "en": "Map with Palace",
-   "ja": "殿堂入りマップ",
-   "zh": "殿堂地图",
-   "meta": {
-    "blob": 354,
-    "offset": 36192,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19230",
-   "en": "Search by ID",
-   "ja": "ＩＤで検索",
-   "zh": "按ID寻找",
-   "meta": {
-    "blob": 354,
-    "offset": 36416,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19231",
-   "en": "Search by Username",
-   "ja": "ユーザー名で検索",
-   "zh": "按用户名寻找",
-   "meta": {
-    "blob": 354,
-    "offset": 36640,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19232",
-   "en": "Transmit Quest",
-   "ja": "配信クエスト",
-   "zh": "发布任务",
-   "meta": {
-    "blob": 354,
-    "offset": 36864,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19237",
-   "en": "Difficulty Level:",
-   "ja": "なんい度：",
-   "zh": "难度：",
-   "meta": {
-    "blob": 354,
-    "offset": 42240,
-    "cap": 48,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19264",
-   "en": "Difficulty Level:",
-   "ja": "なんい度：",
-   "zh": "难度：",
-   "meta": {
-    "blob": 354,
-    "offset": 81440,
-    "cap": 48,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19285",
-   "en": "Arrange from newest",
-   "ja": "新着順に表示",
-   "zh": "按最新排列",
-   "meta": {
-    "blob": 354,
-    "offset": 104064,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19286",
-   "en": "Arrange by No. of downloads",
-   "ja": "ダウンロード数の多い順に表示",
-   "zh": "按下载数排列",
-   "meta": {
-    "blob": 354,
-    "offset": 104288,
-    "cap": 50,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::19287",
-   "en": "Arrange from rating",
-   "ja": "評価の高い順に表示",
-   "zh": "按评分排列",
-   "meta": {
-    "blob": 354,
-    "offset": 104512,
-    "cap": 50,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }

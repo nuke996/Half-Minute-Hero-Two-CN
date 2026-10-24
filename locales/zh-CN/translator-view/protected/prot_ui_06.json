@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 398,
+ "_count": 390,
  "entries": [
   {
    "id": "row::31680",
@@ -1929,19 +1929,6 @@
    }
   },
   {
-   "id": "row::33401",
-   "en": "Bring Allies Back to Life",
-   "ja": "仲間を生き返らせる",
-   "zh": "复活同伴",
-   "meta": {
-    "blob": 624,
-    "offset": 2396,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::33402",
    "en": "Check",
    "ja": "しらべる",
@@ -1988,19 +1975,6 @@
    "meta": {
     "blob": 624,
     "offset": 6636,
-    "cap": 16,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::33421",
-   "en": "Bring Allies Back to Life",
-   "ja": "仲間を生き返らせる",
-   "zh": "复活同伴",
-   "meta": {
-    "blob": 624,
-    "offset": 7060,
     "cap": 16,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
@@ -4646,32 +4620,6 @@
    }
   },
   {
-   "id": "row::36653",
-   "en": "Class Change",
-   "ja": "クラスチェンジ",
-   "zh": "职业变更",
-   "meta": {
-    "blob": 688,
-    "offset": 3076,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::36656",
-   "en": "Craft Weapons",
-   "ja": "武器合成",
-   "zh": "武器合成",
-   "meta": {
-    "blob": 688,
-    "offset": 3500,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::36669",
    "en": "Water Stone",
    "ja": "水の石",
@@ -5109,58 +5057,6 @@
     "blob": 709,
     "offset": 4348,
     "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37920",
-   "en": "(Fighting Yashu head on",
-   "ja": "（ヤーシュに正面から勝つのは",
-   "zh": "（正面击败亚修",
-   "meta": {
-    "blob": 712,
-    "offset": 353204,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37922",
-   "en": "Perhaps if I plotted something with Geezer…",
-   "ja": "（おじさまとはまみうちをしかけるとか・・・）",
-   "zh": "或许若与大叔合谋…",
-   "meta": {
-    "blob": 712,
-    "offset": 353496,
-    "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37923",
-   "en": "(I wonder if there's some weakness we can exploit…)",
-   "ja": "（どこかにそんなポイントがないかしら）",
-   "zh": "（不知是否有可乘之弱点…）",
-   "meta": {
-    "blob": 712,
-    "offset": 353788,
-    "cap": 64,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::37972",
-   "en": "(His muttering to himself is actually quite helpful…)",
-   "ja": "（ヒントの多い独り言で助かりますわ）",
-   "zh": "（他自言自语倒是挺有帮助…）",
-   "meta": {
-    "blob": 712,
-    "offset": 381236,
-    "cap": 64,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
    }

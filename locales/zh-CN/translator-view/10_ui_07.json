@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3084,
+ "_count": 3094,
  "entries": [
   {
    "id": "row::38136",
@@ -7452,6 +7452,17 @@
    }
   },
   {
+   "id": "row::39253",
+   "en": "Bring Allies Back to Life",
+   "ja": "仲間を生き返らせる",
+   "zh": "复活同伴",
+   "meta": {
+    "blob": 718,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::39256",
    "en": "Talk",
    "ja": "はなす",
@@ -7526,6 +7537,17 @@
     "blob": 718,
     "offset": 6244,
     "cap": 20
+   }
+  },
+  {
+   "id": "row::39273",
+   "en": "Bring Allies Back to Life",
+   "ja": "仲間を生き返らせる",
+   "zh": "复活同伴",
+   "meta": {
+    "blob": 718,
+    "offset": 7060,
+    "cap": 16
    }
   },
   {
@@ -24161,6 +24183,17 @@
    }
   },
   {
+   "id": "row::41295",
+   "en": "(H-He's really intimidating…)",
+   "ja": "（す　すごいケンマクですわ・・・）",
+   "zh": "（他、他好有压迫感……）",
+   "meta": {
+    "blob": 741,
+    "offset": 8936,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::41296",
    "en": "Lewd Soldier",
    "ja": "エロ兵",
@@ -28066,6 +28099,17 @@
    }
   },
   {
+   "id": "row::42223",
+   "en": "(… Somebody who knows even less than you, princess…)",
+   "ja": "（・・・姫様より世間知らずなのが出てきた・・・）",
+   "zh": "（……比公主您更不懂世故的人出现了……）",
+   "meta": {
+    "blob": 757,
+    "offset": 9812,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::42227",
    "en": "Athena",
    "ja": "アテナ",
@@ -28249,6 +28293,17 @@
    "meta": {
     "blob": 757,
     "offset": 40700,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::42283",
+   "en": "I'm up for it!",
+   "ja": "そーでも無いですわ",
+   "zh": "我可不服输！",
+   "meta": {
+    "blob": 757,
+    "offset": 41056,
     "cap": 32
    }
   },
@@ -28876,6 +28931,17 @@
    "meta": {
     "blob": 757,
     "offset": 149324,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::42437",
+   "en": "I'm sure I can handle it!",
+   "ja": "そーでも無いですわ",
+   "zh": "我肯定能行！",
+   "meta": {
+    "blob": 757,
+    "offset": 149680,
     "cap": 32
    }
   },
@@ -33926,6 +33992,50 @@
     "blob": 736,
     "offset": 124412,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::61266",
+   "en": "ready.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 757,
+    "offset": 239972,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61267",
+   "en": "ready.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 757,
+    "offset": 303920,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61268",
+   "en": "anyone.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 757,
+    "offset": 366700,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61295",
+   "en": "I have no regrets!",
+   "ja": "わが生涯に一遍の悔い無し",
+   "zh": "我此生无怨无悔！",
+   "meta": {
+    "blob": 756,
+    "offset": 28268,
+    "cap": 9
    }
   }
  ]

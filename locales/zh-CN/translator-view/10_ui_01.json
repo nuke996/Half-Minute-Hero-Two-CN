@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3058,
+ "_count": 3060,
  "entries": [
   {
    "id": "row::0",
@@ -33640,6 +33640,28 @@
     "blob": 25,
     "offset": 41888,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::61261",
+   "en": "village.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 106,
+    "offset": 147700,
+    "cap": 4
+   }
+  },
+  {
+   "id": "row::61296",
+   "en": "Entered tent!",
+   "ja": "テントに入った！",
+   "zh": "进入帐篷！",
+   "meta": {
+    "blob": 109,
+    "offset": 828,
+    "cap": 6
    }
   }
  ]

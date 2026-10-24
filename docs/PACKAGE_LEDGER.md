@@ -40,6 +40,7 @@
 | **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验） |
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
+| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**合入 Z16 硬字幕视频**（`4229ebe4`/`1297f874` + `MOV.s2a`）；默认「汉化-导入校对.bat」目标 | 待实机。sha256 `LANG_EN E5FB5413095F` / `DLC01 5B435D085113` / `MOV 399151BBA94C` |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -120,6 +121,14 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 
 ## 6. 变更记录
 
+- **2026-10-24（Z17 显示文本补全）**：
+  1. 括号独白/选项放行：`display_release_hit()`（以 `（` 开头且不含 Q16「勇者城」）；
+  2. 逐槽放行 `DISPLAY_RELEASE_OFFS`：合成界面、战斗菜单、Change Clothes 菜单、`Specialty` 等；
+  3. 日文单行/英文多行尾行（`moving.`/`ready.`/`village.` 等 8 处）补行并清零；
+  4. 新增译表行：`Specialty` →「擅长」，地图编辑器 10 个 UI 标签，英文尾行用全角空格占位；
+  5. `b804` 萨莎日记/勋章/魔人迷宫标题、`b291` 说明/半句、`b153` 战斗行动提示放行；
+     另补 `S-I-L-E-N-C-E!`、`I have no regrets!`、`Entered tent!`、样例地图说明；
+  6. Z17 自动合入 Z16 视频；导入校对默认目标改为 `dist/Z17-display-fill/`。
 - **2026-10-23（Z15 补丁轮 2）**：
   1. `fill_dlc_item_name_copies()`：DLC01 道具/载具名与本篇同串（整槽 102 + 嵌入 23），
      Q78「船」修复；`refresh_dlc01()` 自动调用；

@@ -2,8 +2,19 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3320,
+ "_count": 3420,
  "entries": [
+  {
+   "id": "row::43261",
+   "en": "XAudio2 sound initialization failed",
+   "ja": "XAudio2起動失敗",
+   "zh": "XAudio2声音初始化失败",
+   "meta": {
+    "blob": 763,
+    "offset": 144,
+    "cap": 64
+   }
+  },
   {
    "id": "row::43262",
    "en": "Selection",
@@ -82,6 +93,50 @@
    }
   },
   {
+   "id": "row::43269",
+   "en": "Call yourself the true hero",
+   "ja": "真の勇者を名乗る",
+   "zh": "自称真勇者",
+   "meta": {
+    "blob": 763,
+    "offset": 1168,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43270",
+   "en": "Search for a hero",
+   "ja": "勇者を探す",
+   "zh": "寻找勇者",
+   "meta": {
+    "blob": 763,
+    "offset": 1296,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43271",
+   "en": "Game permissions",
+   "ja": "ゲームの公開レベル",
+   "zh": "游戏公开等级",
+   "meta": {
+    "blob": 763,
+    "offset": 1424,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43272",
+   "en": "Battle history",
+   "ja": "戦歴を見る",
+   "zh": "战绩",
+   "meta": {
+    "blob": 763,
+    "offset": 1552,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43273",
    "en": "◆Refresh◆",
    "ja": "◆更新◆",
@@ -89,6 +144,72 @@
    "meta": {
     "blob": 763,
     "offset": 1680,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43275",
+   "en": "Invite Friend",
+   "ja": "フレンドをしょうたい",
+   "zh": "邀请好友",
+   "meta": {
+    "blob": 763,
+    "offset": 1936,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43276",
+   "en": "Creating Lobby ・・・",
+   "ja": "さくせいちゅう ・・・",
+   "zh": "建立大厅……",
+   "meta": {
+    "blob": 763,
+    "offset": 2064,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43277",
+   "en": "Searching Lobby ・・・",
+   "ja": "けんさくちゅう ・・・",
+   "zh": "寻找大厅……",
+   "meta": {
+    "blob": 763,
+    "offset": 2192,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43278",
+   "en": "Entering Lobby ・・・",
+   "ja": "にゅうしつちゅう ・・・",
+   "zh": "进入大厅……",
+   "meta": {
+    "blob": 763,
+    "offset": 2320,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43279",
+   "en": "Starting Game ・・・",
+   "ja": "ゲームスタート ・・・",
+   "zh": "开始游戏……",
+   "meta": {
+    "blob": 763,
+    "offset": 2448,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43280",
+   "en": "Connecting ・・・",
+   "ja": "せつぞく中 ・・・",
+   "zh": "连接中……",
+   "meta": {
+    "blob": 763,
+    "offset": 2576,
     "cap": 64
    }
   },
@@ -159,6 +280,17 @@
    }
   },
   {
+   "id": "row::43297",
+   "en": "Change Party, Action",
+   "ja": "パーティチェンジ・行動",
+   "zh": "更换队伍，行动",
+   "meta": {
+    "blob": 763,
+    "offset": 4880,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43298",
    "en": "Confirm",
    "ja": "決定",
@@ -170,6 +302,17 @@
    }
   },
   {
+   "id": "row::43299",
+   "en": "Cancel, Dash",
+   "ja": "キャンセル・ダッシュ",
+   "zh": "取消，冲刺",
+   "meta": {
+    "blob": 763,
+    "offset": 5136,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43300",
    "en": "Use Item",
    "ja": "アイテム",
@@ -177,6 +320,28 @@
    "meta": {
     "blob": 763,
     "offset": 5264,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43303",
+   "en": "Music Player",
+   "ja": "ミュージックプレイヤー",
+   "zh": "音乐播放器",
+   "meta": {
+    "blob": 763,
+    "offset": 5648,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43305",
+   "en": "Set to defaults",
+   "ja": "デフォルトに戻す",
+   "zh": "恢复默认",
+   "meta": {
+    "blob": 763,
+    "offset": 5904,
     "cap": 64
    }
   },
@@ -203,6 +368,28 @@
    }
   },
   {
+   "id": "row::43308",
+   "en": "Press the new button to assign",
+   "ja": "新しいボタンを押してください",
+   "zh": "请按新按钮进行设置",
+   "meta": {
+    "blob": 763,
+    "offset": 6288,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43309",
+   "en": "(Cancel with ESC)",
+   "ja": "（ESCでキャンセル）",
+   "zh": "（按ESC取消）",
+   "meta": {
+    "blob": 763,
+    "offset": 6416,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43310",
    "en": "Loading ・・・",
    "ja": "ロード中 ・・・",
@@ -210,6 +397,17 @@
    "meta": {
     "blob": 763,
     "offset": 6544,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43311",
+   "en": "No data available",
+   "ja": "データはありません",
+   "zh": "无可用数据",
+   "meta": {
+    "blob": 763,
+    "offset": 6672,
     "cap": 64
    }
   },
@@ -247,6 +445,17 @@
    }
   },
   {
+   "id": "row::43316",
+   "en": "Download Map",
+   "ja": "マップをダウンロード",
+   "zh": "下载地图",
+   "meta": {
+    "blob": 763,
+    "offset": 7312,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43317",
    "en": "Map Name",
    "ja": "マップ名",
@@ -258,6 +467,17 @@
    }
   },
   {
+   "id": "row::43318",
+   "en": "Map Description",
+   "ja": "コメント",
+   "zh": "地图描述",
+   "meta": {
+    "blob": 763,
+    "offset": 7568,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43319",
    "en": "Author",
    "ja": "つくった人",
@@ -265,6 +485,39 @@
    "meta": {
     "blob": 763,
     "offset": 7696,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43320",
+   "en": "Leaderboard Selection",
+   "ja": "ランキング選択",
+   "zh": "排行榜选择",
+   "meta": {
+    "blob": 763,
+    "offset": 7824,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43324",
+   "en": "Infinite Battle",
+   "ja": "ゆうしゃむげん",
+   "zh": "无限战斗",
+   "meta": {
+    "blob": 763,
+    "offset": 8336,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43325",
+   "en": "Multiplayer Battle",
+   "ja": "しん・ゆうしゃたいせん",
+   "zh": "多人战斗",
+   "meta": {
+    "blob": 763,
+    "offset": 8464,
     "cap": 64
    }
   },
@@ -291,6 +544,72 @@
    }
   },
   {
+   "id": "row::43332",
+   "en": "Global leaderboards",
+   "ja": "みんなのランキング",
+   "zh": "全球排行榜",
+   "meta": {
+    "blob": 763,
+    "offset": 9360,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43333",
+   "en": "Show my own position",
+   "ja": "自分のランキング",
+   "zh": "显示我的排名",
+   "meta": {
+    "blob": 763,
+    "offset": 9488,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43334",
+   "en": "Friend leaderboards",
+   "ja": "フレンドのランキング",
+   "zh": "好友排行榜",
+   "meta": {
+    "blob": 763,
+    "offset": 9616,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43337",
+   "en": "Number of Walked Steps",
+   "ja": "歩数",
+   "zh": "行走步数",
+   "meta": {
+    "blob": 763,
+    "offset": 10000,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43338",
+   "en": "Lowest Level to Clear",
+   "ja": "最低レベル",
+   "zh": "通关最低等级",
+   "meta": {
+    "blob": 763,
+    "offset": 10128,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43339",
+   "en": "Highest Level to Clear",
+   "ja": "最大レベル",
+   "zh": "通关最高等级",
+   "meta": {
+    "blob": 763,
+    "offset": 10256,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43340",
    "en": "Remaining Gold",
    "ja": "残金",
@@ -302,6 +621,17 @@
    }
   },
   {
+   "id": "row::43341",
+   "en": "Number of Defeated Bosses",
+   "ja": "最大魔王撃破数",
+   "zh": "击败魔王数",
+   "meta": {
+    "blob": 763,
+    "offset": 10512,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43342",
    "en": "Rank",
    "ja": "ランク",
@@ -309,6 +639,17 @@
    "meta": {
     "blob": 763,
     "offset": 10640,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43345",
+   "en": "Steps",
+   "ja": "歩数",
+   "zh": "步数",
+   "meta": {
+    "blob": 763,
+    "offset": 11024,
     "cap": 64
    }
   },
@@ -390,6 +731,28 @@
    }
   },
   {
+   "id": "row::43355",
+   "en": "Yes, overwrite entry.",
+   "ja": "はい、　上書きする",
+   "zh": "是，覆盖条目。",
+   "meta": {
+    "blob": 763,
+    "offset": 12304,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43356",
+   "en": "No, add as new entry.",
+   "ja": "いいえ、新しいマップとして公開",
+   "zh": "否，作为新地图发布。",
+   "meta": {
+    "blob": 763,
+    "offset": 12432,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43357",
    "en": "Cancel",
    "ja": "キャンセル",
@@ -423,6 +786,28 @@
    }
   },
   {
+   "id": "row::43360",
+   "en": "Uploading Map ...",
+   "ja": "アップロード中・・・",
+   "zh": "上传地图中……",
+   "meta": {
+    "blob": 763,
+    "offset": 12944,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43361",
+   "en": "Error publishing map",
+   "ja": "公開中エラーが発生しました",
+   "zh": "发布地图时出错",
+   "meta": {
+    "blob": 763,
+    "offset": 13072,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43362",
    "en": "Map published successfully!",
    "ja": "マップを公開しました！",
@@ -430,6 +815,28 @@
    "meta": {
     "blob": 763,
     "offset": 13200,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43363",
+   "en": "Play this map",
+   "ja": "このマップを遊ぶ",
+   "zh": "游玩此地图",
+   "meta": {
+    "blob": 763,
+    "offset": 13328,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43364",
+   "en": "Show more information",
+   "ja": "マップの情報",
+   "zh": "显示更多信息",
+   "meta": {
+    "blob": 763,
+    "offset": 13456,
     "cap": 64
    }
   },
@@ -456,6 +863,39 @@
    }
   },
   {
+   "id": "row::43367",
+   "en": "Downloading Map ...",
+   "ja": "ダウンロード中・・・",
+   "zh": "下载地图中……",
+   "meta": {
+    "blob": 763,
+    "offset": 13840,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43368",
+   "en": "Map saved successfully",
+   "ja": "マップをセーブしました",
+   "zh": "地图保存成功",
+   "meta": {
+    "blob": 763,
+    "offset": 13968,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43369",
+   "en": "Error downloading map",
+   "ja": "ダウンロード中エラーが発生しました",
+   "zh": "下载地图时出错",
+   "meta": {
+    "blob": 763,
+    "offset": 14096,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::43370",
    "en": "◆ Find Community Maps ◆",
    "ja": "◆　みんなのマップを探す　◆",
@@ -463,6 +903,39 @@
    "meta": {
     "blob": 763,
     "offset": 14224,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43371",
+   "en": "Highly Rated",
+   "ja": "高評価",
+   "zh": "高评价",
+   "meta": {
+    "blob": 763,
+    "offset": 14352,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43374",
+   "en": "Maps By Friends",
+   "ja": "フレンドのマップ",
+   "zh": "好友的地图",
+   "meta": {
+    "blob": 763,
+    "offset": 14736,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43375",
+   "en": "Favorited By Friends",
+   "ja": "フレンドのお気に入り",
+   "zh": "好友收藏",
+   "meta": {
+    "blob": 763,
+    "offset": 14864,
     "cap": 64
    }
   },
@@ -485,6 +958,17 @@
    "meta": {
     "blob": 763,
     "offset": 15632,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43382",
+   "en": "Please choose your vote",
+   "ja": "あなたの評価を選んでください",
+   "zh": "请选择你的评价",
+   "meta": {
+    "blob": 763,
+    "offset": 15760,
     "cap": 64
    }
   },
@@ -617,6 +1101,17 @@
    "meta": {
     "blob": 763,
     "offset": 17680,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::43397",
+   "en": "Reset Defaults",
+   "ja": "デフォルトに戻す",
+   "zh": "恢复默认",
+   "meta": {
+    "blob": 763,
+    "offset": 17808,
     "cap": 64
    }
   },
@@ -17858,6 +18353,28 @@
    }
   },
   {
+   "id": "row::46824",
+   "en": "It's a mysterious diary!",
+   "ja": "ふしぎな感じのする日記だ",
+   "zh": "这是一本神秘的日记！",
+   "meta": {
+    "blob": 804,
+    "offset": 297140,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46825",
+   "en": "Sasha, probably a name, is written on it.",
+   "ja": "サーシャという名前らしきものも書かれている",
+   "zh": "上面写着，大概是叫萨莎的名字。",
+   "meta": {
+    "blob": 804,
+    "offset": 297432,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::46826",
    "en": "～ Sasha's Diary ～",
    "ja": "～　サーシャの日記　～",
@@ -18108,6 +18625,50 @@
     "blob": 804,
     "offset": 302168,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::46849",
+   "en": "The diary ends there…",
+   "ja": "日記の内容はここで終わっている・・・",
+   "zh": "日记在此便结束了…",
+   "meta": {
+    "blob": 804,
+    "offset": 304732,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46850",
+   "en": "Does it continue, I wonder…",
+   "ja": "つづきはあるのだろうか・・・",
+   "zh": "不知是否还有后续…",
+   "meta": {
+    "blob": 804,
+    "offset": 305024,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46851",
+   "en": "It's a mysterious diary!",
+   "ja": "ふしぎな感じのする日記だ",
+   "zh": "这是一本神秘的日记！",
+   "meta": {
+    "blob": 804,
+    "offset": 307944,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46852",
+   "en": "Sasha, probably a name, is written on it.",
+   "ja": "サーシャという名前らしきものも書かれている",
+   "zh": "上面写着，大概是叫萨莎的名字。",
+   "meta": {
+    "blob": 804,
+    "offset": 308236,
+    "cap": 64
    }
   },
   {
@@ -18606,6 +19167,50 @@
    }
   },
   {
+   "id": "row::46898",
+   "en": "The diary ends here…",
+   "ja": "日記の内容はここで終わっている・・・",
+   "zh": "日记到此为止…",
+   "meta": {
+    "blob": 804,
+    "offset": 317872,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46899",
+   "en": "Does it continue, I wonder…",
+   "ja": "つづきはあるのだろうか・・・",
+   "zh": "不知是否还有后续…",
+   "meta": {
+    "blob": 804,
+    "offset": 318164,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46900",
+   "en": "It's a mysterious diary!",
+   "ja": "ふしぎな感じのする日記だ",
+   "zh": "这是一本神秘的日记！",
+   "meta": {
+    "blob": 804,
+    "offset": 321084,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46901",
+   "en": "Sasha, probably a name, is written on it.",
+   "ja": "サーシャという名前らしきものも書かれている",
+   "zh": "上面写着，大概是叫萨莎的名字。",
+   "meta": {
+    "blob": 804,
+    "offset": 321376,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::46902",
    "en": "～ Sasha's Diary ～",
    "ja": "～　サーシャの日記　～",
@@ -18822,6 +19427,50 @@
    "meta": {
     "blob": 804,
     "offset": 326048,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46922",
+   "en": "The diary ends here…",
+   "ja": "日記の内容はここで終わっている・・・",
+   "zh": "日记到此为止…",
+   "meta": {
+    "blob": 804,
+    "offset": 328676,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46923",
+   "en": "Does it continue, I wonder…",
+   "ja": "つづきはあるのだろうか・・・",
+   "zh": "不知是否还有后续…",
+   "meta": {
+    "blob": 804,
+    "offset": 328968,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46924",
+   "en": "It's a mysterious diary!",
+   "ja": "ふしぎな感じのする日記だ",
+   "zh": "这是一本神秘的日记！",
+   "meta": {
+    "blob": 804,
+    "offset": 331888,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46925",
+   "en": "Sasha, probably a name, is written on it.",
+   "ja": "サーシャという名前らしきものも書かれている",
+   "zh": "上面写着，大概是叫萨莎的名字。",
+   "meta": {
+    "blob": 804,
+    "offset": 332180,
     "cap": 64
    }
   },
@@ -19097,6 +19746,50 @@
    "meta": {
     "blob": 804,
     "offset": 337144,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46951",
+   "en": "The diary ends here…",
+   "ja": "日記の内容はここで終わっている・・・",
+   "zh": "日记到此为止…",
+   "meta": {
+    "blob": 804,
+    "offset": 339772,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46952",
+   "en": "Does it continue, I wonder…",
+   "ja": "つづきはあるのだろうか・・・",
+   "zh": "不知是否还有后续…",
+   "meta": {
+    "blob": 804,
+    "offset": 340064,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46953",
+   "en": "It's a mysterious diary!",
+   "ja": "ふしぎな感じのする日記だ",
+   "zh": "这是一本神秘的日记！",
+   "meta": {
+    "blob": 804,
+    "offset": 342984,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::46954",
+   "en": "Sasha, probably a name, is written on it.",
+   "ja": "サーシャという名前らしきものも書かれている",
+   "zh": "上面写着，大概是叫萨莎的名字。",
+   "meta": {
+    "blob": 804,
+    "offset": 343276,
     "cap": 64
    }
   },
@@ -19629,6 +20322,17 @@
    }
   },
   {
+   "id": "row::47003",
+   "en": "The diary ends here…",
+   "ja": "日記の内容はここで終わっている・・・",
+   "zh": "日记到此为止…",
+   "meta": {
+    "blob": 804,
+    "offset": 353496,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::47032",
    "en": "Geezer",
    "ja": "おじさま",
@@ -19772,6 +20476,17 @@
    }
   },
   {
+   "id": "row::47065",
+   "en": "(… Roleplaying…)",
+   "ja": "（・・・お母さん遊び）",
+   "zh": "（…母子扮演…）",
+   "meta": {
+    "blob": 804,
+    "offset": 385324,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::47066",
    "en": "Sasha",
    "ja": "サーシャ",
@@ -19791,6 +20506,28 @@
     "blob": 804,
     "offset": 389348,
     "cap": 96
+   }
+  },
+  {
+   "id": "row::47070",
+   "en": "Evil Lord Medal 84",
+   "ja": "マオウメダル８４",
+   "zh": "魔王勋章84",
+   "meta": {
+    "blob": 804,
+    "offset": 419652,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::47071",
+   "en": "Evil Lord Medal 85",
+   "ja": "マオウメダル８５",
+   "zh": "魔王勋章85",
+   "meta": {
+    "blob": 804,
+    "offset": 420236,
+    "cap": 128
    }
   },
   {
@@ -19923,6 +20660,336 @@
     "blob": 804,
     "offset": 465560,
     "cap": 96
+   }
+  },
+  {
+   "id": "row::47099",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 467832,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47100",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 468416,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47101",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 469000,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47102",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 469584,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47103",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 470168,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47104",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 470752,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47105",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 471336,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47106",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 471920,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47107",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 472504,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47108",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 473088,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47109",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 473672,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47110",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 474256,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47111",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 474840,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47112",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 475424,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47113",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 476008,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47114",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 476592,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47115",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 477176,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47116",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 477760,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47117",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 478344,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47118",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 478928,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47119",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 479512,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47120",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 480096,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47121",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 480680,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47122",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 481264,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47123",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 481848,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47124",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 482432,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47125",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 483016,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47126",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 483600,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47127",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 484184,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47128",
+   "en": "～Demon Maze B%s～",
+   "ja": "～魔人迷宮B%s～",
+   "zh": "～魔人迷宫B%s～",
+   "meta": {
+    "blob": 804,
+    "offset": 484768,
+    "cap": 32
    }
   },
   {
@@ -20879,6 +21946,28 @@
    "meta": {
     "blob": 804,
     "offset": 639008,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47361",
+   "en": "I'll check.",
+   "ja": "チェックするぞ",
+   "zh": "我去确认。",
+   "meta": {
+    "blob": 804,
+    "offset": 639364,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::47362",
+   "en": "Not now.",
+   "ja": "今はやめとく",
+   "zh": "现在不行。",
+   "meta": {
+    "blob": 804,
+    "offset": 639428,
     "cap": 32
    }
   },
@@ -36522,6 +37611,17 @@
     "blob": 883,
     "offset": 15088,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::61297",
+   "en": "A small sample map.",
+   "ja": "小さめのサンプルマップです。",
+   "zh": "一张小样本地图。",
+   "meta": {
+    "blob": 867,
+    "offset": 16,
+    "cap": 9
    }
   }
  ]

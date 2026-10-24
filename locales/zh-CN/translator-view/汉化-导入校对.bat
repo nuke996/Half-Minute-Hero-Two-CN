@@ -14,6 +14,7 @@ echo This does NOT touch the game dir; run the install .bat in the game dir
 echo (Han-hua-An-Zhuang.bat) to test the Chinese text in game.
 echo To build WITHOUT the replace dictionary, use the no-dictionary import
 echo .bat in this folder (same edits, Z15-norepl output).
+echo Default import rebuilds dist/Z17-display-fill (with Z16 video).
 "%PY%" "..\..\..\tools\import_review.py" apply
 echo.
 pause

@@ -431,3 +431,29 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 从而产生整体前移感。逐句调 `start/end` 只能缓解个别句，无法保证全段随音频。
 **Workaround：** 暂无。后续可考虑运行时字幕叠加（完全不动视频/音频）。
 **相关文件：** `docs/PITFALLS.md` §25.26、`locales/zh-CN/video/videos.json`。
+
+---
+
+# 21. 显示文本漏译：Z17 第一轮排查结果
+
+**Status:** Partially fixed　**Severity:** Low（可见性）
+**Affected versions:** Z17-display-fill　**Affected locales:** zh-CN
+
+**已补全（纯显示，不涉机制名）：**
+- 括号独白/选项（`（…）`）不再被 collide 挡住；
+- `Change Clothes` 菜单 The Usual/Robe/Swimsuit/Dress/Music Player；
+- 图鉴 Boss/Artwork 页签；合成 Class Change/Craft Weapons/Specialty；
+- 战斗菜单 Bring Allies Back to Life；
+- 日文单行、英文多行造成的 8 个孤立尾行（`moving.` 等）已补行清零；
+- `b763`/`b354`/`b516`/`b186` 一批纯 UI 标签；
+- `b804` 萨莎日记/魔王勋章/魔人迷宫标题、`b291` 地图编辑器说明/半句、
+  `b153` 战斗行动提示（我走啦/我停下来）已放行；
+- `S-I-L-E-N-C-E!`、`I have no regrets!`、`Entered tent!`、样例地图说明已补译。
+
+**只排查、不补全（机制名）：**
+- 道具名 `Mu`（ミュー）、`Xi`（クシー）以及区域名/敌名等仍保留原文；
+  它们参与按名哈希/发放，补译会破坏机制。
+
+**待后续：** `b34` 关卡/章节标题、道具/技能说明中的短句（`b147/357/736/666`）、
+`1,000m/h Wind`/`10,000m/h Wind`（技能名，需整批机制名处理）。
+**相关文件：** `docs/FINAL_QA_PLAN.md` §2.2、`tools/build_cn.py`（`display_release_hit` / `DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/menu_ok.json`。

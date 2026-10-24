@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3344,
+ "_count": 3355,
  "entries": [
   {
    "id": "row::24640",
@@ -137,6 +137,17 @@
    }
   },
   {
+   "id": "row::24678",
+   "en": "(Little <EVO_NAME__>, is she that clueless about gold?)",
+   "ja": "（<EVO_NAME__>ちゃん　お金のコトあまり知らないの？）",
+   "zh": "（小<EVO_NAME__>，她对钱这么不懂吗？）",
+   "meta": {
+    "blob": 427,
+    "offset": 10460,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::24679",
    "en": "Mysterious Beauty?",
    "ja": "ナゾの美女？",
@@ -159,6 +170,17 @@
    }
   },
   {
+   "id": "row::24685",
+   "en": "(Somehow this kid is really throwing me off.)",
+   "ja": "（何だかすっごい調子がくるうわね　この子）",
+   "zh": "（这孩子真让我方寸大乱。）",
+   "meta": {
+    "blob": 427,
+    "offset": 11336,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::24687",
    "en": "Mysterious Beauty?",
    "ja": "ナゾの美女？",
@@ -177,6 +199,17 @@
    "meta": {
     "blob": 427,
     "offset": 12376,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::24694",
+   "en": "(I feel bad, but I'm sure that'll pass. ▼)",
+   "ja": "（ココロがいたむけど気のせいよね▼）",
+   "zh": "（我有点过意不去，但肯定是错觉。▼）",
+   "meta": {
+    "blob": 427,
+    "offset": 12504,
     "cap": 32
    }
   },
@@ -11313,6 +11346,17 @@
    }
   },
   {
+   "id": "row::26736",
+   "en": "Class Change",
+   "ja": "クラスチェンジ",
+   "zh": "职业变更",
+   "meta": {
+    "blob": 469,
+    "offset": 4348,
+    "cap": 80
+   }
+  },
+  {
    "id": "row::26737",
    "en": "Talk",
    "ja": "はなす",
@@ -11321,6 +11365,17 @@
     "blob": 469,
     "offset": 4516,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::26739",
+   "en": "Class Change",
+   "ja": "クラスチェンジ",
+   "zh": "职业变更",
+   "meta": {
+    "blob": 469,
+    "offset": 4772,
+    "cap": 80
    }
   },
   {
@@ -26900,6 +26955,28 @@
    }
   },
   {
+   "id": "row::29816",
+   "en": "Name the True Hero",
+   "ja": "真の勇者を名乗る",
+   "zh": "命名真勇者",
+   "meta": {
+    "blob": 516,
+    "offset": 1472,
+    "cap": 48
+   }
+  },
+  {
+   "id": "row::29817",
+   "en": "Find the Hero",
+   "ja": "勇者を探す",
+   "zh": "寻找勇者",
+   "meta": {
+    "blob": 516,
+    "offset": 1696,
+    "cap": 48
+   }
+  },
+  {
    "id": "row::29819",
    "en": "Choose Password",
    "ja": "合言葉を決める",
@@ -27380,6 +27457,17 @@
    "meta": {
     "blob": 516,
     "offset": 30592,
+    "cap": 48
+   }
+  },
+  {
+   "id": "row::29874",
+   "en": "Battle History",
+   "ja": "戦歴",
+   "zh": "战历",
+   "meta": {
+    "blob": 516,
+    "offset": 31264,
     "cap": 48
    }
   },
@@ -30230,6 +30318,28 @@
     "blob": 534,
     "offset": 96,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::30490",
+   "en": "Music Player",
+   "ja": "ミュージックプレイヤー",
+   "zh": "音乐播放器",
+   "meta": {
+    "blob": 534,
+    "offset": 240,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::30491",
+   "en": "Music Player",
+   "ja": "ミュージックプレイヤー",
+   "zh": "音乐播放器",
+   "meta": {
+    "blob": 534,
+    "offset": 280,
+    "cap": 18
    }
   },
   {
@@ -36786,6 +36896,17 @@
     "blob": 440,
     "offset": 46048,
     "cap": 20
+   }
+  },
+  {
+   "id": "row::61263",
+   "en": "kidnapped.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 466,
+    "offset": 30316,
+    "cap": 5
    }
   }
  ]

@@ -286,6 +286,68 @@ def in_skill_key_col(bi, off):
     return SKILL_KEY_LO <= r < SKILL_KEY_HI
 
 
+# Z17：逐槽放行的纯显示文本（collide 假命中）。
+# 只放行明确确认是菜单标签/对话/选项的槽位；同名副本与机制表不受影响。
+DISPLAY_RELEASE_OFFS = {
+    # b280 Change Clothes 菜单（The Usual / Robe / Swimsuit / Dress / Music Player）
+    (280, 48), (280, 456), (280, 864), (280, 1068), (280, 1476),
+    # b534 Music Player
+    (534, 240), (534, 280),
+    # b642 合成界面 Specialty
+    (642, 16),
+    # 合成界面 Class Change / Craft Weapons
+    (265, 3500), (265, 3924), (265, 4348),
+    (353, 3500), (353, 3924),
+    (370, 3924), (370, 4348),
+    (469, 4348), (469, 4772),
+    (688, 3076), (688, 3500),
+    # 战斗菜单 Bring Allies Back to Life
+    (624, 2396), (624, 7060),
+    (718, 2396), (718, 7060),
+    # 对话选项（无「」/括号）
+    (757, 41056), (757, 149680),
+    (298, 88652), (298, 88716), (298, 90696), (298, 90760),
+    (365, 33236), (365, 57472),
+    (366, 131868),
+    # b291 地图编辑器 UI 标签
+    (291, 20320), (291, 20900), (291, 21480), (291, 22060), (291, 22640),
+    (291, 23220), (291, 23800), (291, 24380), (291, 24960), (291, 27860),
+    # b291 其余说明/半句（按整条记录重译）
+    (291, 600), (291, 1180), (291, 1420), (291, 1468), (291, 1760),
+    (291, 2000), (291, 2048), (291, 2340), (291, 2920), (291, 3500),
+    (291, 3596), (291, 4080), (291, 4660), (291, 4804), (291, 7608),
+    (291, 11088), (291, 12828), (291, 13408), (291, 13988), (291, 14568),
+    (291, 25540), (291, 25636), (291, 25684), (291, 26120), (291, 26700),
+    # b804 萨莎日记 / 魔王勋章 / 魔人迷宫标题 / 检查选项
+    (804, 297140), (804, 297432), (804, 304732), (804, 305024),
+    (804, 307944), (804, 308236), (804, 317872), (804, 318164),
+    (804, 321084), (804, 321376), (804, 328676), (804, 328968),
+    (804, 331888), (804, 332180), (804, 339772), (804, 340064),
+    (804, 342984), (804, 343276), (804, 353496),
+    (804, 419652), (804, 420236),
+    (804, 639364), (804, 639428),
+    # b153 战斗行动提示（普通对话）
+    (153, 7184), (153, 7248), (153, 10980), (153, 11044), (153, 12440),
+    (153, 12504), (153, 13900), (153, 13964), (153, 15360), (153, 15424),
+    (153, 16884), (153, 18344), (153, 19804), (153, 21264), (153, 23308),
+    # 其他普通对话/事件提示
+    (668, 376564), (756, 28268), (109, 828), (867, 16),
+}
+
+# b804 魔人迷宫标题：30 个记录，步长 584
+DISPLAY_RELEASE_OFFS.update((804, o) for o in range(467832, 484769, 584))
+
+
+def display_release_hit(bi, off, ja_cmp):
+    """Z17：纯显示文本的 collide 假命中放行（按槽位或括号台词）。"""
+    if (bi, off) in DISPLAY_RELEASE_OFFS:
+        return True
+    # 括号内心独白/选项：与「」台词同理，不是机制名；Q16 勇者城键仍保护。
+    if ja_cmp.startswith('（') and '勇者城' not in ja_cmp:
+        return True
+    return False
+
+
 # 实验用按列黑名单（默认 None = 不启用）。由二分实验的 apply 函数临时设置/复原。
 _SLOT_BLOCK = None
 # 实验用「collide 额外放行」回调（默认 None = 不启用）。
@@ -1575,6 +1637,9 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
                     #   （以名字开头、句未收尾），实测新增放行恰好 4 槽（b427×2 / b757×2），
                     #   全部有译文、全部在机制 blob 之外（`t4_collide_probe.py` 实测）。
                     pass
+                elif display_release_hit(bi, off, ja_cmp):
+                    # Z17：括号内心独白、选项与逐槽确认的 UI 标签（collide 假命中）。
+                    stats['displayrel'] += 1
                 else:
                     # v2.15：专有名词（敌人/道具名）第一行【保留原文】——
                     # 名字字节原样不动，不影响脚本按名字比对；只把后面几行说明翻成中文。
@@ -4651,6 +4716,8 @@ def _z14_release_factory(mech_ja, partner_ja, name_ja):
     base = _z13_release_factory(mech_ja, partner_ja)
 
     def extra(bi, off, ja_cmp):
+        if display_release_hit(bi, off, ja_cmp):
+            return True
         if bi == 128 and (off - 16) % 212 == 4:
             return True
         if bi == 136 and (off - 16) % 272 == 0:
@@ -5158,6 +5225,45 @@ def do_package_names_cn_reuse_norepl(exe_mode=None):
                       apply_repl=False)
 
 
+def _apply_z16_video(out_dir):
+    """把 Z16 验证过的视频 blob 合入 Z17（保留视频翻译）。"""
+    src_dir = paths.dist('Z16-video-hardsub')
+    src_lang = os.path.join(src_dir, 'res', 'LANG_EN.s2a')
+    src_mov = os.path.join(src_dir, 'res', 'MOV.s2a')
+    dst_lang = os.path.join(out_dir, 'res', 'LANG_EN.s2a')
+    if not (os.path.exists(src_lang) and os.path.exists(dst_lang)):
+        print('  [视频] 未找到 Z16 视频包或 Z17 LANG_EN，跳过视频合入')
+        return
+    import build_video
+    specs = build_video.load_specs()
+    src = s2a.Archive(src_lang)
+    repl = {}
+    for kind in ('prologue', 'ragnarok'):
+        h = int(specs[kind]['blob'], 16)
+        i = src.hash_map().get(h)
+        if i is None:
+            print('  [视频] Z16 缺少 %s blob %08x，跳过' % (kind, h))
+            return
+        repl[h] = bytes(src.blobs[i])
+    build_video._replace_blobs(dst_lang, repl)
+    if os.path.exists(src_mov):
+        shutil.copy2(src_mov, os.path.join(out_dir, 'res', 'MOV.s2a'))
+    print('  [视频] 已合入 Z16 视频：%s%s'
+          % (' '.join('%08x' % h for h in repl),
+             ' + res/MOV.s2a' if os.path.exists(src_mov) else ''))
+
+
+def do_package_names_cn_reuse_z17(exe_mode=None):
+    """Z17：Z14 配方 + 显示文本补全；并合入 Z16 已验证的视频翻译。"""
+    out = paths.dist('Z17-display-fill')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z17',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z16_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5591,6 +5697,8 @@ if __name__ == '__main__':
      # Z15 无词典实验（只保留 HL；用于对比）
      'apply_names_cn_jobs_titles_norepl': do_apply_names_cn_jobs_titles_norepl,
      'package_names_cn_reuse_norepl': do_package_names_cn_reuse_norepl,
+     # Z17：显示文本补全 + 合入 Z16 视频
+     'package_names_cn_reuse_z17': do_package_names_cn_reuse_z17,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

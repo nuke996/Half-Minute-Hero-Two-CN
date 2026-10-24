@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3065,
+ "_count": 3130,
  "entries": [
   {
    "id": "row::13247",
@@ -5021,6 +5021,17 @@
    }
   },
   {
+   "id": "row::14371",
+   "en": "Class Change",
+   "ja": "クラスチェンジ",
+   "zh": "职业变更",
+   "meta": {
+    "blob": 265,
+    "offset": 3500,
+    "cap": 80
+   }
+  },
+  {
    "id": "row::14372",
    "en": "Talk",
    "ja": "はなす",
@@ -5032,6 +5043,17 @@
    }
   },
   {
+   "id": "row::14374",
+   "en": "Craft Weapons",
+   "ja": "武器合成",
+   "zh": "武器合成",
+   "meta": {
+    "blob": 265,
+    "offset": 3924,
+    "cap": 80
+   }
+  },
+  {
    "id": "row::14375",
    "en": "Talk",
    "ja": "はなす",
@@ -5040,6 +5062,17 @@
     "blob": 265,
     "offset": 4092,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::14377",
+   "en": "Craft Weapons",
+   "ja": "武器合成",
+   "zh": "武器合成",
+   "meta": {
+    "blob": 265,
+    "offset": 4348,
+    "cap": 80
    }
   },
   {
@@ -6451,6 +6484,17 @@
    }
   },
   {
+   "id": "row::14566",
+   "en": "The Usual",
+   "ja": "いつものヤツ",
+   "zh": "老样子",
+   "meta": {
+    "blob": 280,
+    "offset": 48,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::14567",
    "en": "You have many of the same!",
    "ja": "おなじのを　いっぱいもってるの！",
@@ -6481,6 +6525,17 @@
     "blob": 280,
     "offset": 292,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::14570",
+   "en": "Robe",
+   "ja": "ローブ",
+   "zh": "长袍",
+   "meta": {
+    "blob": 280,
+    "offset": 456,
+    "cap": 16
    }
   },
   {
@@ -6517,6 +6572,17 @@
    }
   },
   {
+   "id": "row::14574",
+   "en": "Swimsuit",
+   "ja": "水着",
+   "zh": "泳装",
+   "meta": {
+    "blob": 280,
+    "offset": 864,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::14575",
    "en": "Don't get a sunburn!",
    "ja": "ひやけあとは　ないからねー",
@@ -6525,6 +6591,17 @@
     "blob": 280,
     "offset": 904,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::14576",
+   "en": "Dress",
+   "ja": "ドレス",
+   "zh": "连衣裙",
+   "meta": {
+    "blob": 280,
+    "offset": 1068,
+    "cap": 16
    }
   },
   {
@@ -6558,6 +6635,17 @@
     "blob": 280,
     "offset": 1376,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::14581",
+   "en": "Music Player",
+   "ja": "ミュージックプレイヤー",
+   "zh": "音乐播放器",
+   "meta": {
+    "blob": 280,
+    "offset": 1476,
+    "cap": 16
    }
   },
   {
@@ -10510,6 +10598,17 @@
    }
   },
   {
+   "id": "row::15405",
+   "en": "Your monster's",
+   "ja": "モンスターの",
+   "zh": "怪兽的",
+   "meta": {
+    "blob": 291,
+    "offset": 1420,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15406",
    "en": "can all be specified.",
    "ja": "設定することができます。",
@@ -10540,6 +10639,17 @@
     "blob": 291,
     "offset": 1904,
     "cap": 48
+   }
+  },
+  {
+   "id": "row::15409",
+   "en": "Your item's",
+   "ja": "アイテムの",
+   "zh": "物品的",
+   "meta": {
+    "blob": 291,
+    "offset": 2000,
+    "cap": 24
    }
   },
   {
@@ -10642,10 +10752,21 @@
    }
   },
   {
+   "id": "row::15419",
+   "en": "Check how to create quests",
+   "ja": "ロマンシング・ツクレールの",
+   "zh": "可查看「浪漫创世」的",
+   "meta": {
+    "blob": 291,
+    "offset": 3596,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15420",
    "en": "to fully enjoy all the features",
    "ja": "作り方や遊び方について",
-   "zh": "来充分体验特性",
+   "zh": "任务做法与玩法，",
    "meta": {
     "blob": 291,
     "offset": 3644,
@@ -10656,7 +10777,7 @@
    "id": "row::15421",
    "en": "of the Map Editor.",
    "ja": "確認することができます。",
-   "zh": "地图编辑器的。",
+   "zh": "体验全部功能。",
    "meta": {
     "blob": 291,
     "offset": 3692,
@@ -10719,10 +10840,21 @@
    }
   },
   {
+   "id": "row::15427",
+   "en": "map and return to the",
+   "ja": "ロマンシング・ツクレールの",
+   "zh": "地图，",
+   "meta": {
+    "blob": 291,
+    "offset": 4804,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15428",
    "en": "Map Editor's main menu.",
    "ja": "メインメニューに戻ります。",
-   "zh": "地图编辑器的主菜单。",
+   "zh": "返回编辑器主菜单。",
    "meta": {
     "blob": 291,
     "offset": 4852,
@@ -10862,6 +10994,17 @@
    }
   },
   {
+   "id": "row::15441",
+   "en": "Delete your",
+   "ja": "セーブデータを",
+   "zh": "删除你的",
+   "meta": {
+    "blob": 291,
+    "offset": 7608,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15442",
    "en": "saved data.",
    "ja": "さくじょします。",
@@ -10983,6 +11126,17 @@
    }
   },
   {
+   "id": "row::15453",
+   "en": "Configure",
+   "ja": "村の",
+   "zh": "配置",
+   "meta": {
+    "blob": 291,
+    "offset": 11088,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15454",
    "en": "a village's settings.",
    "ja": "設定ができます。",
@@ -11038,6 +11192,17 @@
    }
   },
   {
+   "id": "row::15459",
+   "en": "Set location",
+   "ja": "どうくつの",
+   "zh": "设置洞穴的",
+   "meta": {
+    "blob": 291,
+    "offset": 12828,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15460",
    "en": "of a cave.",
    "ja": "場所を決めます。",
@@ -11046,6 +11211,17 @@
     "blob": 291,
     "offset": 12876,
     "cap": 240
+   }
+  },
+  {
+   "id": "row::15461",
+   "en": "Configure",
+   "ja": "どうくつの",
+   "zh": "配置",
+   "meta": {
+    "blob": 291,
+    "offset": 13408,
+    "cap": 24
    }
   },
   {
@@ -11060,6 +11236,17 @@
    }
   },
   {
+   "id": "row::15463",
+   "en": "Set location",
+   "ja": "ぬけみちの",
+   "zh": "设置捷径的",
+   "meta": {
+    "blob": 291,
+    "offset": 13988,
+    "cap": 24
+   }
+  },
+  {
    "id": "row::15464",
    "en": "of a shortcut.",
    "ja": "場所を決めます。",
@@ -11068,6 +11255,17 @@
     "blob": 291,
     "offset": 14036,
     "cap": 240
+   }
+  },
+  {
+   "id": "row::15465",
+   "en": "Configure",
+   "ja": "ぬけみちの",
+   "zh": "配置",
+   "meta": {
+    "blob": 291,
+    "offset": 14568,
+    "cap": 24
    }
   },
   {
@@ -12080,6 +12278,17 @@
     "blob": 291,
     "offset": 24812,
     "cap": 72
+   }
+  },
+  {
+   "id": "row::15558",
+   "en": "Story type can be",
+   "ja": "ストーリータイプを",
+   "zh": "故事类型可以",
+   "meta": {
+    "blob": 291,
+    "offset": 25636,
+    "cap": 24
    }
   },
   {
@@ -13645,6 +13854,39 @@
    }
   },
   {
+   "id": "row::15874",
+   "en": "(Maybe he'd like some bread.)",
+   "ja": "（パンがほしいのかしら）",
+   "zh": "（他可能想要些面包。）",
+   "meta": {
+    "blob": 298,
+    "offset": 88360,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::15875",
+   "en": "I'll give you some bread",
+   "ja": "あげますわ",
+   "zh": "我会给你面包",
+   "meta": {
+    "blob": 298,
+    "offset": 88652,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::15876",
+   "en": "I won't give you any",
+   "ja": "あげませんわ",
+   "zh": "我什么都不会给你",
+   "meta": {
+    "blob": 298,
+    "offset": 88716,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::15877",
    "en": "Captain",
    "ja": "船頭",
@@ -13663,6 +13905,39 @@
    "meta": {
     "blob": 298,
     "offset": 90048,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::15881",
+   "en": "(Maybe he'd like some bread.)",
+   "ja": "（パンがほしいのかしら）",
+   "zh": "（他可能想要些面包。）",
+   "meta": {
+    "blob": 298,
+    "offset": 90404,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::15882",
+   "en": "Give it to him",
+   "ja": "あげますわ",
+   "zh": "给他吧",
+   "meta": {
+    "blob": 298,
+    "offset": 90696,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::15883",
+   "en": "Don't give it to him",
+   "ja": "あげませんわ",
+   "zh": "别给他",
+   "meta": {
+    "blob": 298,
+    "offset": 90760,
     "cap": 32
    }
   },
@@ -13686,6 +13961,17 @@
     "blob": 298,
     "offset": 93260,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::15889",
+   "en": "(I guess he's a man of few words.)",
+   "ja": "（それにしても無口な方ですわ）",
+   "zh": "（他大概是个沉默寡言的人。）",
+   "meta": {
+    "blob": 298,
+    "offset": 93616,
+    "cap": 64
    }
   },
   {
@@ -31883,6 +32169,17 @@
    }
   },
   {
+   "id": "row::19124",
+   "en": "Class Change",
+   "ja": "クラスチェンジ",
+   "zh": "职业变更",
+   "meta": {
+    "blob": 353,
+    "offset": 3500,
+    "cap": 80
+   }
+  },
+  {
    "id": "row::19125",
    "en": "Talk",
    "ja": "はなす",
@@ -31891,6 +32188,17 @@
     "blob": 353,
     "offset": 3668,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::19127",
+   "en": "Craft Weapons",
+   "ja": "武器合成",
+   "zh": "武器合成",
+   "meta": {
+    "blob": 353,
+    "offset": 3924,
+    "cap": 80
    }
   },
   {
@@ -32719,6 +33027,83 @@
    }
   },
   {
+   "id": "row::19226",
+   "en": "Arrange from newest",
+   "ja": "新着順に表示",
+   "zh": "按最新排列",
+   "meta": {
+    "blob": 354,
+    "offset": 35520,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19227",
+   "en": "Arrange from No. of downloads",
+   "ja": "ダウンロード数の多い順に表示",
+   "zh": "按下载数排列",
+   "meta": {
+    "blob": 354,
+    "offset": 35744,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19228",
+   "en": "Arrange from rating",
+   "ja": "評価の高い順に表示",
+   "zh": "按评分排列",
+   "meta": {
+    "blob": 354,
+    "offset": 35968,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19229",
+   "en": "Map with Palace",
+   "ja": "殿堂入りマップ",
+   "zh": "殿堂地图",
+   "meta": {
+    "blob": 354,
+    "offset": 36192,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19230",
+   "en": "Search by ID",
+   "ja": "ＩＤで検索",
+   "zh": "按ID寻找",
+   "meta": {
+    "blob": 354,
+    "offset": 36416,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19231",
+   "en": "Search by Username",
+   "ja": "ユーザー名で検索",
+   "zh": "按用户名寻找",
+   "meta": {
+    "blob": 354,
+    "offset": 36640,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19232",
+   "en": "Transmit Quest",
+   "ja": "配信クエスト",
+   "zh": "发布任务",
+   "meta": {
+    "blob": 354,
+    "offset": 36864,
+    "cap": 50
+   }
+  },
+  {
    "id": "row::19233",
    "en": "╂Select　　　　○Confirm　　　　　×Return",
    "ja": "╂選択　　　　　○決定　　　　　×戻る",
@@ -32759,6 +33144,17 @@
    "meta": {
     "blob": 354,
     "offset": 41344,
+    "cap": 48
+   }
+  },
+  {
+   "id": "row::19237",
+   "en": "Difficulty Level:",
+   "ja": "なんい度：",
+   "zh": "难度：",
+   "meta": {
+    "blob": 354,
+    "offset": 42240,
     "cap": 48
    }
   },
@@ -33049,6 +33445,17 @@
    }
   },
   {
+   "id": "row::19264",
+   "en": "Difficulty Level:",
+   "ja": "なんい度：",
+   "zh": "难度：",
+   "meta": {
+    "blob": 354,
+    "offset": 81440,
+    "cap": 48
+   }
+  },
+  {
    "id": "row::19265",
    "en": "[Results]",
    "ja": "[ランク]",
@@ -33266,6 +33673,39 @@
     "blob": 354,
     "offset": 102944,
     "cap": 48
+   }
+  },
+  {
+   "id": "row::19285",
+   "en": "Arrange from newest",
+   "ja": "新着順に表示",
+   "zh": "按最新排列",
+   "meta": {
+    "blob": 354,
+    "offset": 104064,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19286",
+   "en": "Arrange by No. of downloads",
+   "ja": "ダウンロード数の多い順に表示",
+   "zh": "按下载数排列",
+   "meta": {
+    "blob": 354,
+    "offset": 104288,
+    "cap": 50
+   }
+  },
+  {
+   "id": "row::19287",
+   "en": "Arrange from rating",
+   "ja": "評価の高い順に表示",
+   "zh": "按评分排列",
+   "meta": {
+    "blob": 354,
+    "offset": 104512,
+    "cap": 50
    }
   },
   {
@@ -33717,6 +34157,281 @@
     "blob": 291,
     "offset": 18580,
     "cap": 48
+   }
+  },
+  {
+   "id": "row::61262",
+   "en": "humans.",
+   "ja": "",
+   "zh": "　",
+   "meta": {
+    "blob": 318,
+    "offset": 127260,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61270",
+   "en": "Event: [Talking Event]",
+   "ja": "イベント：[イベント会話]",
+   "zh": "事件：[对话]",
+   "meta": {
+    "blob": 291,
+    "offset": 20320,
+    "cap": 11
+   }
+  },
+  {
+   "id": "row::61271",
+   "en": "Event: [Talking Event - Reward]",
+   "ja": "イベント：[イベント会話・お礼]",
+   "zh": "事件：[对话・谢礼]",
+   "meta": {
+    "blob": 291,
+    "offset": 20900,
+    "cap": 15
+   }
+  },
+  {
+   "id": "row::61272",
+   "en": "Just villagers' talk",
+   "ja": "村人のお話だけ",
+   "zh": "仅村民闲聊",
+   "meta": {
+    "blob": 291,
+    "offset": 21480,
+    "cap": 10
+   }
+  },
+  {
+   "id": "row::61273",
+   "en": "Event: [Cave Event]",
+   "ja": "イベント：[イベントどうくつ]",
+   "zh": "事件：[洞窟]",
+   "meta": {
+    "blob": 291,
+    "offset": 22060,
+    "cap": 9
+   }
+  },
+  {
+   "id": "row::61274",
+   "en": "Event: [Shortcut]",
+   "ja": "イベント：[ぬけみち]",
+   "zh": "事件：[捷径]",
+   "meta": {
+    "blob": 291,
+    "offset": 22640,
+    "cap": 8
+   }
+  },
+  {
+   "id": "row::61275",
+   "en": "Terrain change",
+   "ja": "地形へんか",
+   "zh": "地形变化",
+   "meta": {
+    "blob": 291,
+    "offset": 23220,
+    "cap": 7
+   }
+  },
+  {
+   "id": "row::61276",
+   "en": "Event: [Overland Event]",
+   "ja": "イベント：[地上イベント]",
+   "zh": "事件：[地上]",
+   "meta": {
+    "blob": 291,
+    "offset": 23800,
+    "cap": 11
+   }
+  },
+  {
+   "id": "row::61277",
+   "en": "Event: [Overland Event - Reward]",
+   "ja": "イベント：[地上イベント・お礼]",
+   "zh": "事件：[地上・谢礼]",
+   "meta": {
+    "blob": 291,
+    "offset": 24380,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::61278",
+   "en": "Delete Command",
+   "ja": "消すコマンド",
+   "zh": "删除指令",
+   "meta": {
+    "blob": 291,
+    "offset": 24960,
+    "cap": 7
+   }
+  },
+  {
+   "id": "row::61279",
+   "en": "The village is full.",
+   "ja": "村人がいっぱいです。",
+   "zh": "村庄已满。",
+   "meta": {
+    "blob": 291,
+    "offset": 27860,
+    "cap": 10
+   }
+  },
+  {
+   "id": "row::61280",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 600,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61281",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 1180,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61282",
+   "en": "appearance/strength/numbers",
+   "ja": "見た目／強さ／数などを",
+   "zh": "外观／强度／数量等",
+   "meta": {
+    "blob": 291,
+    "offset": 1468,
+    "cap": 13
+   }
+  },
+  {
+   "id": "row::61283",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 1760,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61284",
+   "en": "appearance/level/cost",
+   "ja": "見た目／強さ／値段などを",
+   "zh": "外观／强度／价格等",
+   "meta": {
+    "blob": 291,
+    "offset": 2048,
+    "cap": 10
+   }
+  },
+  {
+   "id": "row::61285",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 2340,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61286",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 2920,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61287",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 3500,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61288",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 4080,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61289",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 4660,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61290",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 25540,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61291",
+   "en": "configured.",
+   "ja": "設定することができます。",
+   "zh": "进行设定。",
+   "meta": {
+    "blob": 291,
+    "offset": 25684,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61292",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 26120,
+    "cap": 5
+   }
+  },
+  {
+   "id": "row::61293",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 291,
+    "offset": 26700,
+    "cap": 5
    }
   }
  ]
