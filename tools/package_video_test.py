@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Build isolated video-only test packages (Z16-video-*).
 
-The latest text/name work lives in dist/Z15-reuse-kanji.  These test packages
-reuse that LANG_EN.s2a verbatim and only replace the video blobs, so a video
-regression cannot be confused with a text/name regression.  Nothing is
-installed into work/original or the Steam game directory.
+These test packages reuse one existing text/name package's LANG_EN.s2a verbatim
+and only replace the video blobs, so a video regression cannot be confused with
+a text/name regression.  Nothing is installed into work/original or the Steam
+game directory.
 
 Modes:
   remux   : ffmpeg -c copy (original Theora packets, new Ogg pages)
@@ -15,6 +15,10 @@ Usage:
   python tools/package_video_test.py --mode remux
   python tools/package_video_test.py --mode plain
   python tools/package_video_test.py --mode hardsub
+  python tools/package_video_test.py --mode hardsub --base dist/Z17-xxx
+
+--base 指定文字/机制名的底包（默认 dist/Z15-reuse-kanji）。底包重建后请用
+--base 指向新目录，或重新生成 Z16 测试包，避免测试到旧译文。
 """
 
 from __future__ import annotations
@@ -30,8 +34,7 @@ import paths
 import s2a
 import build_video
 
-Z15 = os.path.join(paths.DIST_DIR, 'Z15-reuse-kanji')
-Z15_LANG = os.path.join(Z15, 'res', 'LANG_EN.s2a')
+DEFAULT_BASE = os.path.join(paths.DIST_DIR, 'Z15-reuse-kanji')
 ORIG_MOV = os.path.join(paths.GAME_DIR, 'res', 'MOV.s2a')
 OUT_ROOT = os.path.join(paths.DIST_DIR, 'Z16-video-%s')
 
@@ -93,11 +96,15 @@ def _render_hardsub(video, segments, src_blob, work):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--mode', choices=['remux', 'plain', 'hardsub'], required=True)
+    ap.add_argument('--base', default=DEFAULT_BASE,
+                    help='文字/机制名底包目录（默认 dist/Z15-reuse-kanji）')
     ap.add_argument('--force', action='store_true')
     args = ap.parse_args()
 
-    if not os.path.exists(Z15_LANG):
-        raise SystemExit('latest Z15 package not found: %s' % Z15_LANG)
+    base = os.path.abspath(args.base)
+    base_lang = os.path.join(base, 'res', 'LANG_EN.s2a')
+    if not os.path.exists(base_lang):
+        raise SystemExit('text/name base package not found: %s' % base_lang)
     out_dir = OUT_ROOT % args.mode
     out_lang = os.path.join(out_dir, 'res', 'LANG_EN.s2a')
     out_mov = os.path.join(out_dir, 'res', 'MOV.s2a')
@@ -107,12 +114,12 @@ def main():
     os.makedirs(os.path.dirname(out_mov), exist_ok=True)
 
     print('== Z16-video-%s ==' % args.mode)
-    print('  base text/names: %s' % Z15_LANG)
+    print('  base text/names: %s' % base_lang)
     print('  original MOV   : %s' % ORIG_MOV)
 
     specs = build_video.load_specs()
     rows = build_video.load_csv_rows()
-    lang = s2a.Archive(Z15_LANG)
+    lang = s2a.Archive(base_lang)
     lang_blobs = [bytes(b) for b in lang.blobs]
     replacements = {}
 
@@ -121,7 +128,7 @@ def main():
         h = int(video['blob'], 16)
         idx = lang.hash_map().get(h)
         if idx is None:
-            raise SystemExit('%s: blob %08x missing in Z15 LANG_EN' % (kind, h))
+            raise SystemExit('%s: blob %08x missing in base LANG_EN' % (kind, h))
         src = lang_blobs[idx]
         work = paths.build('video_test', '%s_%s' % (args.mode, kind))
         if os.path.isdir(work):
@@ -134,9 +141,9 @@ def main():
             data = _transcode(src, work, args.mode)
         replacements[h] = data
 
-    # LANG_EN: same text/names as Z15, only video blobs changed.
+    # LANG_EN: same text/names as the base package, only video blobs changed.
     tmp_lang = out_lang + '.tmp'
-    shutil.copy2(Z15_LANG, tmp_lang)
+    shutil.copy2(base_lang, tmp_lang)
     build_video._replace_blobs(tmp_lang, replacements)
     os.replace(tmp_lang, out_lang)
 
@@ -161,10 +168,10 @@ def main():
     note = os.path.join(out_dir, '测试说明.txt')
     with open(note, 'w', encoding='utf-8') as fh:
         fh.write('Z16-video-%s\n\n' % args.mode)
-        fh.write('这是只替换视频的测试包，基于 dist/Z15-reuse-kanji 的文字/机制名。\n')
+        fh.write('这是只替换视频的测试包，文字/机制名取自：%s\n' % base)
         fh.write('把本目录 res\\LANG_EN.s2a 覆盖到游戏 res\\LANG_EN.s2a；\n')
         fh.write('把本目录 res\\MOV.s2a 覆盖到游戏 res\\MOV.s2a。\n')
-        fh.write('先备份游戏原文件。其他 Z15 文件不要动。\n')
+        fh.write('先备份游戏原文件。底包中的其他文件不要动。\n')
         if args.mode == 'remux':
             fh.write('本包只把原视频重新封装为新的 Ogg 页结构，不重编码；用于判断容器/页结构是否被游戏接受。\n')
         elif args.mode == 'plain':

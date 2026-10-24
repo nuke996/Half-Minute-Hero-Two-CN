@@ -17,9 +17,12 @@ package build always uses the latest translation/review data.
 
 Usage:
   python tools/build_video.py --check
-  python tools/build_video.py --apply --game-dir work/original
-  python tools/build_video.py --apply --only prologue,ragnarok
-  python tools/build_video.py --apply --only opening
+  python tools/build_video.py --apply --game-dir "D:\\Games\\Half Minute Hero Two"
+  python tools/build_video.py --apply --game-dir <游戏目录> --only prologue,ragnarok
+  python tools/build_video.py --apply --game-dir <游戏目录> --only opening
+
+注意：--apply 会原地改写目标目录的归档。`work/original` 是所有打包的母本，
+本工具会拒绝写入该目录；请指向游戏安装目录或它的副本。
 """
 
 from __future__ import annotations
@@ -44,6 +47,16 @@ import s2a
 VIDEO_JSON = os.path.join(paths.DATA_DIR, 'video', 'videos.json')
 CSV_PATH = os.path.join(paths.DATA_DIR, 'text_v2.csv')
 DEFAULT_ARCHIVE = 'res/LANG_EN.s2a'
+PRISTINE_DIR = os.path.join(paths.REPO_DIR, 'work', 'original')
+
+
+def _assert_not_pristine(base_dir: str) -> None:
+    """拒绝把视频写进母本目录：母本被改动会污染后续所有打包。"""
+    target = os.path.normcase(os.path.abspath(base_dir))
+    master = os.path.normcase(os.path.abspath(PRISTINE_DIR))
+    if target == master:
+        raise SystemExit('拒绝写入母本目录 %s；请用 --game-dir 指向游戏安装目录或其副本'
+                         % master)
 
 # ---------------------------------------------------------------- basic utils
 
@@ -593,6 +606,7 @@ def _replace_blobs(path: str, replacements: Dict[int, bytes]) -> None:
 def apply_videos(base_dir: str, only: Optional[Iterable[str]] = None,
                  force: bool = False, verbose: bool = True) -> None:
     """Render and replace all enabled video specs in base_dir."""
+    _assert_not_pristine(base_dir)
     specs = load_specs()
     csv_rows = load_csv_rows()
     wanted = set(only) if only else None

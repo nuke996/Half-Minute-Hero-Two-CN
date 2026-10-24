@@ -1,6 +1,6 @@
 {
   "_note": "视频硬字幕数据。文字已烧录在视频像素里，不能靠 text_v2.csv 改变；本文件是视频字幕的唯一源。RAGNAROK 对话框通过 csv_row/csv_rows 读取 text_v2.csv 当前 zh_new，保证每次打包使用最新译文。",
-  "_how_to_edit": "只改每条记录的 zh（以及必要时 start/end/cover/样式）。改完运行 python tools/build.py package；打包会自动重渲染并重新打包 LANG_EN.s2a / MOV.s2a。",
+  "_how_to_edit": "只改每条记录的 zh（以及必要时 start/end/cover/样式）。改完运行 python tools/build_video.py --apply --game-dir <游戏目录> 写入 LANG_EN.s2a / MOV.s2a；或运行 python tools/package_video_test.py --mode hardsub 生成只含视频的隔离测试包。普通 tools/build.py package 不会重渲染视频。",
   "videos": {
     "prologue": {
       "archive": "res/LANG_EN.s2a",

@@ -958,3 +958,13 @@ Z15 同步 **35 处**（Dragon 12、Boat 8、Horse 6、Bamboo Stilts 5、Bike 1�
   `The world was at peace.` → `However,` → `time marches on...` → `Goddess Era 600`；
   中文也必须按这 4 行顺序写，否则玩家对照原文字幕时会觉得“错行”。
 - 工具：`tools/build_video.py`；隔离测试包：`tools/package_video_test.py`。
+- **视频不在普通打包链路里（2026-10-24 修正）：** `python tools/build.py package`
+  不会调用 `build_video`，Z15 包仍保留原版英文视频。视频只会通过
+  `build_video.py --apply --game-dir <游戏目录>` 或 `package_video_test.py`
+  写入；不要把 `videos.json` 的说明当成“普通打包已包含视频”。
+- **`--apply` 禁止写母本（2026-10-24）：** 该工具原地改写目标目录的
+  `LANG_EN.s2a` / `MOV.s2a`；`work/original` 是所有打包的原版源，写入会污染母本。
+  `build_video.py` 现在会直接拒绝该目录，必须用 `--game-dir` 指向游戏安装目录或副本。
+- **Z16 测试包有底包版本（2026-10-24）：** `package_video_test.py --base` 默认
+  `dist/Z15-reuse-kanji`；底包重建（如“家老→大臣”）后，旧 Z16 包仍带旧译文，
+  需用 `--base` 指向新底包或重新生成，避免把文字回归误判成视频问题。
