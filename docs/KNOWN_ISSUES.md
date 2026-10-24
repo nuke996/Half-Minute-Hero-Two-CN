@@ -416,3 +416,18 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 - 基线：Z15 为 error 0 / warning 45（纯显示类重名，不阻断）。
 - 词典改动会改变字频 → cmap 重排，旧存档自定义名可能漂移；DLC 会自动重编码。
 **相关文件：** `docs/PITFALLS.md` §33、`tools/validate_build.py`、`tools/import_review.py`。
+
+---
+
+# 20. 视频硬字幕：RAGNAROK 对话仍略早于音频
+
+**Status:** Open（暂不解决）　**Severity:** Low（演出同步）
+**Affected versions:** Z16-video　**Affected locales:** zh-CN
+
+**症状：** RAGNAROK 制作名单视频（`LANG_EN.s2a` `1297f874`）中段的女神对话，
+出现时间仍比音频略早；中段卡顿与瞬间杂音已修复。
+**技术说明：** 原视频为 VFR 且结尾有约 5s 长静帧；单遍重编码保留原时间轴、
+末尾用 `tpad=0.7` 克隆最后一帧补足 BGM，仍会丢失约 0.3–0.4s 的尾部，
+从而产生整体前移感。逐句调 `start/end` 只能缓解个别句，无法保证全段随音频。
+**Workaround：** 暂无。后续可考虑运行时字幕叠加（完全不动视频/音频）。
+**相关文件：** `docs/PITFALLS.md` §25.26、`locales/zh-CN/video/videos.json`。

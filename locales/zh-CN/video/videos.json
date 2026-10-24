@@ -8,238 +8,109 @@
       "width": 1280,
       "height": 720,
       "note": "开场剧情滚动字幕（截图2~6）。日文源在 LANG_JA.s2a 同 hash 视频。",
+      "subtitle_size": 34,
       "segments": [
         {
-          "id": "pro_01",
-          "start": 1.0,
-          "end": 9.5,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
+          "id": "pro_scroll1",
+          "start": 1.5,
+          "end": 8.0,
+          "type": "scroll",
+          "y1": 700,
+          "y2": 260,
           "font": "serif",
           "size": 46,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 300,
+          "zh": "很久以前，\n有一群勇者\n将世界从毁灭中\n拯救出来……",
           "ja": "かつて\n世界を破滅から救った\n勇者達がいた・・・",
           "en": "Long ago,\nthere was a group of heroes\nwho saved the world from destruction...",
-          "zh": "很久以前，\n有一群勇者\n将世界从毁灭中拯救出来……"
+          "line_gap": 80
         },
         {
-          "id": "tr_pro_01",
-          "start": 9.5,
-          "end": 10.5,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
-          "cover_only": true
-        },
-        {
-          "id": "pro_02",
+          "id": "pro_title1",
           "start": 10.5,
-          "end": 17.0,
-          "cover": [
-            0,
-            450,
-            1280,
-            270
-          ],
+          "end": 16.0,
+          "type": "static",
+          "y": 590,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 520,
+          "zh": "超高速勇者",
           "ja": "超速の勇者",
-          "en": "The Super Fast Hero",
-          "zh": "超高速勇者"
+          "en": "The Super Fast Hero"
         },
         {
-          "id": "pro_03",
-          "start": 17.0,
-          "end": 24.0,
-          "cover": [
-            0,
-            450,
-            1280,
-            270
-          ],
+          "id": "pro_title2",
+          "start": 18.0,
+          "end": 25.0,
+          "type": "static",
+          "y": 590,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 520,
+          "zh": "超级自恋的魔王",
           "ja": "超ナルシストな魔王",
-          "en": "The Ultimate Narcissist Evil Lord",
-          "zh": "超级自恋的魔王"
+          "en": "The Ultimate Narcissist Evil Lord"
         },
         {
-          "id": "pro_04",
-          "start": 24.0,
-          "end": 31.5,
-          "cover": [
-            0,
-            450,
-            1280,
-            270
-          ],
+          "id": "pro_title3",
+          "start": 27.0,
+          "end": 34.0,
+          "type": "static",
+          "y": 590,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 520,
+          "zh": "超攻击性的公主",
           "ja": "超攻撃的な王女",
-          "en": "The Hyper Hero Princess",
-          "zh": "超攻击性的公主"
+          "en": "The Hyper Hero Princess"
         },
         {
-          "id": "pro_05",
-          "start": 31.5,
-          "end": 39.0,
-          "cover": [
-            0,
-            450,
-            1280,
-            270
-          ],
+          "id": "pro_title4",
+          "start": 37.0,
+          "end": 43.0,
+          "type": "static",
+          "y": 590,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 520,
+          "zh": "超有骨气的骑士",
           "ja": "超ド根性の騎士",
-          "en": "The Super Gutty Knight",
-          "zh": "超有骨气的骑士"
+          "en": "The Super Gutty Knight"
         },
         {
-          "id": "pro_06",
-          "start": 39.0,
-          "end": 46.5,
-          "cover": [
-            0,
-            450,
-            1280,
-            270
-          ],
+          "id": "pro_title5",
+          "start": 45.5,
+          "end": 52.0,
+          "type": "static",
+          "y": 590,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 520,
+          "zh": "以及，那位操纵时间的\n随心所欲的女神",
           "ja": "気まぐれな女神",
-          "en": "The Capricious Goddess",
-          "zh": "反复无常的女神"
+          "en": "The Capricious Goddess"
         },
         {
-          "id": "pro_07",
-          "start": 46.5,
-          "end": 51.0,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
-          "font": "serif",
-          "size": 46,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 330,
-          "ja": "平和を取り戻した世界",
-          "en": "The world was at peace.",
-          "zh": "世界重归和平"
-        },
-        {
-          "id": "pro_08",
-          "start": 51.0,
-          "end": 56.0,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
-          "font": "serif",
-          "size": 46,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 330,
-          "ja": "しかし",
-          "en": "However,",
-          "zh": "然而"
-        },
-        {
-          "id": "pro_09",
+          "id": "pro_scroll2",
           "start": 56.0,
-          "end": 61.0,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
-          "font": "serif",
-          "size": 46,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 330,
-          "ja": "時は流れ・・・",
-          "en": "time marches on...",
-          "zh": "时光流逝……"
-        },
-        {
-          "id": "pro_10",
-          "start": 61.0,
-          "end": 66.0,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
-          "font": "serif",
-          "size": 46,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 330,
-          "ja": "女神暦６００年",
-          "en": "Goddess Era 600",
-          "zh": "女神历600年"
-        },
-        {
-          "id": "pro_11",
-          "start": 66.0,
-          "end": 73.5,
-          "cover": [
-            0,
-            0,
-            1280,
-            720
-          ],
+          "end": 68.0,
+          "type": "scroll",
+          "y1": 710,
+          "y2": 260,
           "font": "serif",
           "size": 44,
-          "color": "#FFFFFF",
-          "align": "center",
-          "x": 640,
-          "y": 250,
+          "zh": "世界重归和平。\n然而，\n时光流逝……\n女神历600年。",
+          "ja": "平和を取り戻した世界\n女神暦６００年\nしかし時は流れ・・・",
+          "en": "The world was at peace.\nHowever,\ntime marches on...\nGoddess Era 600.",
+          "line_gap": 180
+        },
+        {
+          "id": "pro_scroll3",
+          "start": 69.5,
+          "end": 81.0,
+          "type": "scroll",
+          "y1": 720,
+          "y2": 220,
+          "font": "serif",
+          "size": 44,
+          "zh": "如今，“命运”的\n齿轮再次转动，\n预示着世界的毁灭。",
           "ja": "今、「運命」の歯車は\n再び世界を破壊へと\n導こうとしていた・・・",
           "en": "Now, the wheels of fate\nturn once again, heralding\nthe world's destruction.",
-          "zh": "如今，“命运”的齿轮\n再次将世界\n引向毁灭……"
+          "line_gap": 180
         }
       ]
     },
@@ -257,12 +128,12 @@
       ],
       "box_color": "#0F0E2D",
       "font": "pixel",
-      "speaker_size": 24,
-      "line_size": 26,
-      "line_spacing": 6,
+      "speaker_size": 30,
+      "line_size": 34,
+      "line_spacing": 8,
       "x": 100,
-      "speaker_y": 485,
-      "text_y": 525,
+      "speaker_y": 482,
+      "text_y": 522,
       "segments": [
         {
           "id": "rag_01",
@@ -331,16 +202,8 @@
       "width": 1280,
       "height": 720,
       "note": "片头 5 句（MOV.s2a 共享视频）。日文大字可作前 4 句依据；第 5 句只有英文画面。",
-      "cover": [
-        0,
-        560,
-        1280,
-        160
-      ],
-      "cover_color": "#000000",
-      "cover_alpha": 255,
       "font": "pixel",
-      "size": 36,
+      "size": 34,
       "color": "#FFFFFF",
       "outline": 2,
       "align": "center",
@@ -391,7 +254,8 @@
           "en": "I will save everyone.",
           "zh": "我会拯救所有人。"
         }
-      ]
+      ],
+      "y": 650
     }
   }
 }

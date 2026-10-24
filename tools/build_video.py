@@ -66,16 +66,60 @@ def _rgba(value: str, alpha: int = 255) -> Tuple[int, int, int, int]:
     return (int(value[0:2], 16), int(value[2:4], 16), int(value[4:6], 16), alpha)
 
 
+SERIF_FALLBACKS = ('C:\\Windows\\Fonts\\屏显臻宋.ttf', 'C:\\Windows\\Fonts\\simsun.ttc')
+
+
 def _font_path(kind: str) -> str:
     """serif = prologue / cinematic text, pixel = game dialogue / opening."""
     if kind == 'serif':
-        p = os.environ.get('HMH2_VIDEO_FONT_SERIF') or r'C:\Windows\Fonts\simsun.ttc'
-        if os.path.exists(p):
-            return p
+        candidates = (os.environ.get('HMH2_VIDEO_FONT_SERIF'),) + SERIF_FALLBACKS
+        for p in candidates:
+            if p and os.path.exists(p):
+                return p
     p = os.environ.get('HMH2_VIDEO_FONT_PIXEL') or paths.FONT_PATH
     if not os.path.exists(p):
         raise SystemExit('video font not found: %s' % p)
     return p
+
+
+def _font_family(path: str) -> str:
+    """Return the family name libass/fontconfig matches inside `fontsdir`.
+
+    Pillow's getname() returns '????' when a font only ships a localized
+    Windows family record, so parse the sfnt name table directly.
+    """
+    with open(path, 'rb') as fh:
+        data = fh.read()
+    base = struct.unpack_from('>I', data, 12)[0] if data[:4] == b'ttcf' else 0
+    name_off = None
+    for i in range(struct.unpack_from('>H', data, base + 4)[0]):
+        rec = base + 12 + i * 16
+        if data[rec:rec + 4] == b'name':
+            name_off = struct.unpack_from('>I', data, rec + 8)[0]
+            break
+    if name_off is None:
+        raise SystemExit('font has no name table: %s' % path)
+    count, str_off = struct.unpack_from('>HH', data, name_off + 2)
+    tbl = name_off + str_off
+    fallback = ''
+    for i in range(count):
+        r = name_off + 6 + i * 12
+        pid, _eid, lid, nid, ln, off = struct.unpack_from('>HHHHHH', data, r)
+        if nid != 1:
+            continue
+        raw = data[tbl + off:tbl + off + ln]
+        try:
+            fam = raw.decode('utf-16-be') if pid == 3 else raw.decode('mac-roman')
+        except Exception:
+            continue
+        if not fam:
+            continue
+        if pid == 3 and lid == 0x409:
+            return fam
+        fallback = fallback or fam
+    if fallback:
+        return fallback
+    raise SystemExit('cannot read font family: %s' % path)
 
 
 def _ffmpeg() -> str:
@@ -320,10 +364,102 @@ def _render_key(video: dict, segments: List[dict], src_blob: bytes, ffmpeg: str)
         'segments': [{k: v for k, v in s.items() if k not in ('source',)} for s in segments],
         'src': _sha256_bytes(src_blob),
         'ffmpeg': ffmpeg,
+        'pix_fmt': 'yuv420p',
         'font_serif': _sha256_file(_font_path('serif')) if os.path.exists(_font_path('serif')) else '',
         'font_pixel': _sha256_file(_font_path('pixel')),
     }
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode('utf-8')).hexdigest()
+
+
+def _ass_time(t: float) -> str:
+    h = int(t // 3600)
+    m = int((t % 3600) // 60)
+    s = t % 60
+    return '%d:%02d:%05.2f' % (h, m, s)
+
+
+def _ass_text(text: str) -> str:
+    return (text or '').replace('\r', '').replace('\n', '\\N')
+
+
+def _build_ass(video: dict, segments: List[dict], path: str) -> None:
+    """Generate an ASS script for scrolling cinematic text / dialogue / opening."""
+    kind = video.get('_kind') or ''
+    serif_path = _font_path('serif')
+    serif_name = _font_family(serif_path)
+    pixel_name = 'WenQuanYi Bitmap Song 13px'
+    subtitle_size = int(video.get('subtitle_size') or 32)
+    head = [
+        '[Script Info]',
+        'ScriptType: v4.00+',
+        'PlayResX: 1280',
+        'PlayResY: 720',
+        'WrapStyle: 2',
+        'ScaledBorderAndShadow: yes',
+        '',
+        '[V4+ Styles]',
+        'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding',
+        'Style: Prologue,%s,46,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,5,0,0,0,1' % serif_name,
+        'Style: Title,%s,44,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,5,0,0,0,1' % serif_name,
+        'Style: Cover,%s,10,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1' % serif_name,
+        'Style: DialogSpeaker,%s,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,0,0,0,1' % pixel_name,
+        'Style: Dialog,%s,32,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,0,0,0,1' % pixel_name,
+        'Style: Opening,%s,34,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,5,0,0,0,1' % pixel_name,
+        'Style: Bottom,%s,%d,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,7,0,0,0,1' % (serif_name, subtitle_size),
+        '',
+        '[Events]',
+        'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text',
+    ]
+    lines = list(head)
+    for seg in segments:
+        start = _ass_time(seg['start'])
+        end = _ass_time(seg['end'])
+        if kind == 'ragnarok':
+            speaker = seg.get('speaker') or ''
+            if speaker:
+                lines.append('Dialogue: 0,%s,%s,DialogSpeaker,,0,0,0,,{\\an7\\pos(100,482)}%s' % (start, end, _ass_text(speaker)))
+            lines.append('Dialogue: 0,%s,%s,Dialog,,0,0,0,,{\\an7\\pos(100,522)}%s' % (start, end, _ass_text(seg['zh'])))
+        elif kind == 'opening':
+            y = int(seg.get('y') or video.get('y') or 650)
+            lines.append('Dialogue: 0,%s,%s,Opening,,0,0,0,,{\\an5\\pos(640,%d)\\fad(100,100)}%s'
+                         % (start, end, y, _ass_text(seg['zh'])))
+        else:
+            # Prologue: do not replace the original scrolling text.  Add one
+            # extra bottom subtitle for the whole text block, like the opening.
+            lines.append('Dialogue: 0,%s,%s,Bottom,,0,0,0,,{\\an7\\pos(20,80)\\fad(200,200)}%s'
+                         % (start, end, _ass_text(seg['zh'])))
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as fh:
+        fh.write('\n'.join(lines))
+        fh.write('\n')
+
+
+def _decoded_frames(ffmpeg: str, work: str, name: str) -> int:
+    probe = subprocess.run([ffmpeg, '-hide_banner', '-i', name, '-map', '0:v:0', '-f', 'null', '-'],
+                           cwd=work, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    txt = probe.stderr.decode('utf-8', 'replace')
+    frames = 0
+    for line in txt.splitlines():
+        if 'frame=' in line:
+            try:
+                frames = int(line.split('frame=')[1].split()[0])
+            except Exception:
+                pass
+    return frames
+
+
+def _last_video_pts(ffmpeg: str, work: str, name: str) -> float:
+    probe = subprocess.run([ffmpeg, '-hide_banner', '-i', name, '-vf', 'showinfo', '-f', 'null', '-'],
+                           cwd=work, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    txt = probe.stderr.decode('utf-8', 'replace')
+    last = 0.0
+    for line in txt.splitlines():
+        if 'pts_time:' in line:
+            try:
+                last = float(line.split('pts_time:')[1].split()[0])
+            except Exception:
+                pass
+    return last
 
 
 def render_video(video: dict, segments: List[dict], src_blob: bytes, out_path: str,
@@ -341,49 +477,80 @@ def render_video(video: dict, segments: List[dict], src_blob: bytes, out_path: s
         shutil.copy2(cache, out_path)
         return out_path
 
+    src_info = _probe_bytes(src_blob)
+    duration = float(src_info.get('duration') or 0)
     work = paths.build('video_work', '%s_%s' % (blob, key[:12]))
     os.makedirs(work, exist_ok=True)
     src_path = os.path.join(work, 'source.ogv')
     with open(src_path, 'wb') as fh:
         fh.write(src_blob)
 
-    overlays = []
-    for i, seg in enumerate(segments, 1):
-        p = os.path.join(work, '%02d_%s.png' % (i, seg.get('id') or 'seg'))
-        render_overlay(video, seg, p)
-        overlays.append(p)
-
-    inputs = [ffmpeg, '-hide_banner', '-loglevel', 'error', '-y', '-i', src_path]
-    for p in overlays:
-        inputs += ['-loop', '1', '-framerate', '30', '-i', p]
-    filters, last = [], '0:v'
-    for i, seg in enumerate(segments, 1):
-        nxt = 'v%d' % i
-        filters.append("[%s][%d:v]overlay=enable='between(t,%.3f,%.3f)':format=auto[%s]"
-                       % (last, i, seg['start'], seg['end'], nxt))
-        last = nxt
-    inputs += ['-filter_complex', ';'.join(filters),
-               '-map', '[%s]' % last, '-map', '0:a:0?',
-               '-c:v', 'libtheora', '-q:v', '7', '-c:a', 'copy',
-               '-shortest', out_path]
+    fonts = os.path.join(work, 'fonts')
+    os.makedirs(fonts, exist_ok=True)
+    serif_src = _font_path('serif')
+    serif_dst = 'video_serif' + os.path.splitext(serif_src)[1].lower()
+    shutil.copy2(serif_src, os.path.join(fonts, serif_dst))
+    shutil.copy2(_font_path('pixel'), os.path.join(fonts, 'wqy.ttf'))
+    ass_path = os.path.join(work, 'sub.ass')
+    _build_ass(video, segments, ass_path)
     if verbose:
-        print('  [video] %s 渲染 %d 段 -> %s' % (video.get('_kind') or blob, len(segments), out_path))
-    proc = subprocess.run(inputs, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        print('  [video] %s ASS 渲染 %d 段 -> %s' % (video.get('_kind') or blob, len(segments), out_path))
+        print('  [video]   字幕字体 %s (%s)' % (_font_family(serif_src), os.path.basename(serif_src)))
+
+    kind = video.get('_kind') or ''
+    vf_parts = []
+    # Prologue: no cover.  Keep the original (including its English text) and
+    # add extra Chinese subtitles, exactly like the opening.  This avoids any
+    # frame-timeline modification from covers/conversion.
+    if kind == 'ragnarok':
+        # The dialogue box already has a fixed position; cover its burned-in
+        # English text with the box colour.  Static drawbox does not change
+        # frame timing.
+        for seg in segments:
+            vf_parts.append("drawbox=x=86:y=471:w=1109:h=185:color=0x0F0E2D:t=fill:enable='between(t,%.3f,%.3f)'"
+                            % (seg['start'], seg['end']))
+    vf_parts.append('ass=sub.ass:fontsdir=fonts')
+    # The source's final still frame is shorter than its audio/container by
+    # ~0.4-0.5s.  Clone the last frame a little so the game does not stop BGM
+    # at the video EOS.  This is still a single encode pass; no fps conversion.
+    vf_parts.append('tpad=stop_mode=clone:stop_duration=%.2f' % (0.4 if kind == 'opening' else 0.7))
+    vf = ','.join(vf_parts)
+
+    # Single pass only: do NOT use fps/tpad/-t/-shortest.  The source is VFR
+    # with long still frames; any of those filters changes frame timing and
+    # causes stutter / early video EOS / audio desync.
+    cmd = [ffmpeg, '-hide_banner', '-loglevel', 'error', '-y', '-i', 'source.ogv',
+           '-map', '0:v:0', '-map', '0:a:0?',
+           '-vf', vf,
+           '-c:v', 'libtheora', '-q:v', '7', '-pix_fmt', 'yuv420p',
+           '-c:a', 'copy', 'out.ogv']
+    proc = subprocess.run(cmd, cwd=work, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if proc.returncode != 0:
         err = proc.stderr.decode('utf-8', 'replace')[-4000:]
-        raise SystemExit('ffmpeg failed for %s:\n%s' % (blob, err))
-    if not os.path.exists(out_path) or os.path.getsize(out_path) == 0:
+        raise SystemExit('ffmpeg ASS render failed for %s:\n%s' % (blob, err))
+    produced = os.path.join(work, 'out.ogv')
+    if not os.path.exists(produced) or os.path.getsize(produced) == 0:
         raise SystemExit('ffmpeg produced no output for %s' % blob)
+    shutil.copy2(produced, out_path)
 
-    # validate container/codecs/duration against the source
-    src_info = _probe_bytes(src_blob)
+    # validate container/codecs/timeline against the source
     with open(out_path, 'rb') as fh:
         out_blob = fh.read()
     out_info = _probe_bytes(out_blob)
     if (src_info['video']['width'], src_info['video']['height']) != (out_info['video']['width'], out_info['video']['height']):
         raise SystemExit('%s: output resolution changed: %r -> %r' % (blob, src_info['video'], out_info['video']))
-    if abs(float(src_info['duration']) - float(out_info['duration'])) > 0.25:
-        raise SystemExit('%s: output duration %.2f != source %.2f' % (blob, out_info['duration'], src_info['duration']))
+    if abs(duration - float(out_info['duration'])) > 0.5:
+        raise SystemExit('%s: output duration %.2f != source %.2f' % (blob, out_info['duration'], duration))
+    src_last = _last_video_pts(ffmpeg, work, 'source.ogv')
+    out_last = _last_video_pts(ffmpeg, work, 'out.ogv')
+    if src_last and out_last and out_last < src_last - 0.15:
+        raise SystemExit('%s: output video ends at %.2fs, source at %.2fs (timeline shortened)'
+                         % (blob, out_last, src_last))
+    if out_last and duration and out_last > duration + 0.9:
+        raise SystemExit('%s: output video ends at %.2fs, container %.2fs (padding too long)'
+                         % (blob, out_last, duration))
+    if verbose:
+        print('  [video]   末帧 %.2fs/源 %.2fs/容器 %.2fs' % (out_last, src_last, duration))
     if verbose:
         v = out_info['video']  # type: ignore
         print('  [video]   %dx%d %.2fs %.1fMB'

@@ -929,3 +929,32 @@ Z15 同步 **35 处**（Dragon 12、Boat 8、Horse 6、Bamboo Stilts 5、Bike 1�
 **相关文件：** `tools/import_review.py`（`sync_dictionary` / 构建后自检）、
 `tools/validate_build.py`、`tools/export_review.py`（`如何校对.txt` 第四节）、
 `docs/KNOWN_ISSUES.md` §19。
+
+### 25.26 视频硬字幕：yuv444p 被游戏静默跳过；VFR/结尾长帧导致音画不同步
+
+**已验证（2026-10-24）：**
+- 游戏电影播放器只接受 **Theora yuv420p**。ffmpeg 默认 overlay + libtheora 会输出
+  **yuv444p**，游戏不报错，直接跳过整段视频。必须加 `-pix_fmt yuv420p`。
+- 原视频是 **VFR**：开头有 0.4s 长帧，结尾最后一张静帧可长达约 5s；容器/音频
+  时长（如 91.70s）比最后一张非重复视频帧（86.6s）长。直接用 `-shortest` 会把视频
+  截到 86.6s 甚至更短，导致 BGM 截断、剧情相对音频提前。
+- **不要用 fps=30 / 二次编码 / `-t`**：会重写 VFR 时间轴，造成中段跳帧、杂音、
+  对话早于音频。当前做法是 **单遍** `ass`（+ RAGNAROK 静态 drawbox）→ libtheora，
+  保留原帧时间轴；末尾只加 `tpad=0.7` 克隆最后一帧，保证 BGM 不在视频 EOS 处被截断。
+- 硬字幕不可能做到“绝对零时长偏移”：重编码仍会丢失约 0.3–0.4s 的末尾长静帧，
+  所以用 tpad 补到略晚于音频。若要求完全不动视频/音频，只能用运行时字幕叠加。
+- 开场剧情采用 **不改原文** 的方式：只在左上角加整段中文，原英文滚动/淡入淡出全部保留；
+  中文放左下会被滚动的原文压住，放顶部中间会在后段被压住，左上角窄栏是最稳的。
+- ASS 的 `\move(x1,y1,x2,y2,t1,t2)` 时间是 **相对事件开始**，不是绝对时间。
+- 本 ffmpeg 构建的 `drawbox` **y 表达式不按帧求值**；不要用它做移动遮罩。
+- **已知残留（Open，暂不解决）：** 单遍方案下 RAGNAROK 对话仍略早于音频，
+  见 `docs/KNOWN_ISSUES.md` §20；中段卡顿/杂音已消除。
+- 片头 26s 的 5 句不要加黑底；只叠带描边的中文，避免遮住画面。
+- **开场中文字体（2026-10-24）：** 用系统字体 `C:\Windows\Fonts\屏显臻宋.ttf`（族名
+  `Clear Han Serif`），字号 34。Pillow 对这套字体 `getname()` 返回 `'????'`，所以
+  `_font_family()` 直接解析 sfnt `name` 表的 nameID 1（优先 platform 3 / lang 0x409）。
+  ASS 的 `Fontname` 必须写 `Clear Han Serif`，字体文件复制进 `fontsdir` 即可被 libass 命中。
+- **开场行序必须跟原片一致（2026-10-24）：** `pro_scroll2` 原片顺序是
+  `The world was at peace.` → `However,` → `time marches on...` → `Goddess Era 600`；
+  中文也必须按这 4 行顺序写，否则玩家对照原文字幕时会觉得“错行”。
+- 工具：`tools/build_video.py`；隔离测试包：`tools/package_video_test.py`。

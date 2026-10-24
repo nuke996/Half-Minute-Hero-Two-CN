@@ -1,4 +1,5 @@
 # Python dependencies for the localization build toolchain.
 # Install: python -m pip install -r requirements.txt
 pillow>=10.0
+imageio-ffmpeg>=0.6  # video hardsub build (tools/build_video.py)
 
