@@ -332,10 +332,23 @@ DISPLAY_RELEASE_OFFS = {
     (153, 16884), (153, 18344), (153, 19804), (153, 21264), (153, 23308),
     # 其他普通对话/事件提示
     (668, 376564), (756, 28268), (109, 828), (867, 16),
+    # PITFALLS §9 同类：菜单项名与分组标签必须同串，补齐遗漏副本
+    (280, 1444),          # Music Player 分组标签（b534/240/280 与 b280/1476 已译）
+    (410, 956),           # Craft Weapons 分组标签（其余 5 份已译）
+    (280, 3484), (280, 3688), (280, 3892), (280, 4096),  # Gallery 分组标签
+    (186, 94656),         # Normal Mode（b354 对应副本已译）
+    (763, 9872),          # Best Time（b358 对应副本已译）
 }
 
 # b804 魔人迷宫标题：30 个记录，步长 584
 DISPLAY_RELEASE_OFFS.update((804, o) for o in range(467832, 484769, 584))
+
+
+# Z17：已知字体查表问题（描述渲染器把“神”0x905F 解析成“挑”0x9091）。
+# 这三份“便携女神像”描述暂不上屏，保留原文；译文仍留在 CSV / protected JSON 供以后修复。
+PROTECTED_DISPLAY_OFFS = {
+    (147, 1400), (357, 1400), (736, 1400),
+}
 
 
 def display_release_hit(bi, off, ja_cmp):
@@ -1572,6 +1585,12 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
                     if classify is not None:
                         classify[(bi, off)] = 'chaptitle'
                     continue
+        # Z17：已知查表问题的显示槽强制保留原文（不上屏翻译）。
+        if (bi, off) in PROTECTED_DISPLAY_OFFS:
+            stats['protected_display'] += 1
+            if classify is not None:
+                classify[(bi, off)] = 'protected-display'
+            continue
         # v2.51 说明文放行：命中 (blob, stride, pos) 规则的说明字段，即使本表在 skip_blobs 里也照常翻译
         desc_ok = bool(desc_rel) and desc_release_hit(desc_rel, lang_a, bi, off)
         if bi in skip_blobs and not desc_ok:
@@ -5225,42 +5244,48 @@ def do_package_names_cn_reuse_norepl(exe_mode=None):
                       apply_repl=False)
 
 
-def _apply_z16_video(out_dir):
-    """把 Z16 验证过的视频 blob 合入 Z17（保留视频翻译）。"""
-    src_dir = paths.dist('Z16-video-hardsub')
+def _apply_z17_video(out_dir):
+    """把 Z17-video 中已翻译的 4 个视频合入 Z17（prologue/ragnarok/overture + MOV opening）。"""
+    src_dir = paths.dist('Z17-video')
     src_lang = os.path.join(src_dir, 'res', 'LANG_EN.s2a')
     src_mov = os.path.join(src_dir, 'res', 'MOV.s2a')
     dst_lang = os.path.join(out_dir, 'res', 'LANG_EN.s2a')
     if not (os.path.exists(src_lang) and os.path.exists(dst_lang)):
-        print('  [视频] 未找到 Z16 视频包或 Z17 LANG_EN，跳过视频合入')
+        print('  [视频] 未找到 Z17-video 视频包或 Z17 LANG_EN，跳过视频合入')
         return
     import build_video
     specs = build_video.load_specs()
     src = s2a.Archive(src_lang)
     repl = {}
-    for kind in ('prologue', 'ragnarok'):
-        h = int(specs[kind]['blob'], 16)
+    kinds = []
+    for kind, spec in specs.items():
+        if spec.get('archive') != 'res/LANG_EN.s2a':
+            continue
+        h = int(spec['blob'], 16)
         i = src.hash_map().get(h)
         if i is None:
-            print('  [视频] Z16 缺少 %s blob %08x，跳过' % (kind, h))
-            return
+            print('  [视频] Z17-video 缺少 %s blob %08x，跳过' % (kind, h))
+            continue
         repl[h] = bytes(src.blobs[i])
-    build_video._replace_blobs(dst_lang, repl)
+        kinds.append(kind)
+    if repl:
+        build_video._replace_blobs(dst_lang, repl)
     if os.path.exists(src_mov):
         shutil.copy2(src_mov, os.path.join(out_dir, 'res', 'MOV.s2a'))
-    print('  [视频] 已合入 Z16 视频：%s%s'
-          % (' '.join('%08x' % h for h in repl),
+        kinds.append('opening')
+    print('  [视频] 已合入 Z17-video 视频：%s%s'
+          % (' '.join('%s/%08x' % (k, int(specs[k]['blob'], 16)) for k in kinds),
              ' + res/MOV.s2a' if os.path.exists(src_mov) else ''))
 
 
 def do_package_names_cn_reuse_z17(exe_mode=None):
-    """Z17：Z14 配方 + 显示文本补全；并合入 Z16 已验证的视频翻译。"""
+    """Z17：Z14 配方 + 显示文本补全；并合入 Z17-video 的 4 个已翻译视频。"""
     out = paths.dist('Z17-display-fill')
     rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
                     stage_name='package_stage_names_cn_reuse_z17',
                     out_dir=out,
                     expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
-    _apply_z16_video(out)
+    _apply_z17_video(out)
     return rc
 
 
@@ -5697,7 +5722,7 @@ if __name__ == '__main__':
      # Z15 无词典实验（只保留 HL；用于对比）
      'apply_names_cn_jobs_titles_norepl': do_apply_names_cn_jobs_titles_norepl,
      'package_names_cn_reuse_norepl': do_package_names_cn_reuse_norepl,
-     # Z17：显示文本补全 + 合入 Z16 视频
+     # Z17：显示文本补全 + 合入 Z17-video 的 4 个视频
      'package_names_cn_reuse_z17': do_package_names_cn_reuse_z17,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Build isolated video-only test packages (Z16-video-*).
+"""Build isolated video-only test packages (video-only dist folders).
 
-These test packages reuse one existing text/name package's LANG_EN.s2a verbatim
+These test packages reuse one existing text/name package's archives verbatim
 and only replace the video blobs, so a video regression cannot be confused with
 a text/name regression.  Nothing is installed into work/original or the Steam
 game directory.
@@ -9,16 +9,15 @@ game directory.
 Modes:
   remux   : ffmpeg -c copy (original Theora packets, new Ogg pages)
   plain   : ffmpeg libtheora re-encode, no subtitle overlay
-  hardsub : Pillow overlay + ffmpeg libtheora (the current Chinese video)
+  hardsub : Pillow overlay + ffmpeg libtheora (current Chinese video)
 
 Usage:
-  python tools/package_video_test.py --mode remux
-  python tools/package_video_test.py --mode plain
-  python tools/package_video_test.py --mode hardsub
-  python tools/package_video_test.py --mode hardsub --base dist/Z17-xxx
+  python tools/package_video_test.py --mode hardsub --base dist/Z17-display-fill
+  python tools/package_video_test.py --mode hardsub --only overture --out-dir dist/Z17-video
 
---base 指定文字/机制名的底包（默认 dist/Z15-reuse-kanji）。底包重建后请用
---base 指向新目录，或重新生成 Z16 测试包，避免测试到旧译文。
+--base 指定文字/机制名的底包（默认 dist/Z17-display-fill）。底包重建后请用
+--base 指向新目录，避免测试到旧译文。--only 只重渲染指定视频（逗号分隔）；
+未选中的视频沿用底包里的现有版本。--out-dir 指定输出目录。
 """
 
 from __future__ import annotations
@@ -34,9 +33,8 @@ import paths
 import s2a
 import build_video
 
-DEFAULT_BASE = os.path.join(paths.DIST_DIR, 'Z15-reuse-kanji')
+DEFAULT_BASE = os.path.join(paths.DIST_DIR, 'Z17-display-fill')
 ORIG_MOV = os.path.join(paths.GAME_DIR, 'res', 'MOV.s2a')
-OUT_ROOT = os.path.join(paths.DIST_DIR, 'Z16-video-%s')
 
 
 def _ffmpeg():
@@ -97,7 +95,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--mode', choices=['remux', 'plain', 'hardsub'], required=True)
     ap.add_argument('--base', default=DEFAULT_BASE,
-                    help='文字/机制名底包目录（默认 dist/Z15-reuse-kanji）')
+                    help='文字/机制名底包目录（默认 dist/Z17-display-fill）')
+    ap.add_argument('--only', default='',
+                    help='只处理这些视频（逗号分隔，如 overture）')
+    ap.add_argument('--out-dir', default='',
+                    help='输出目录（默认 dist/<底包名>-video-<mode>）')
     ap.add_argument('--force', action='store_true')
     args = ap.parse_args()
 
@@ -105,7 +107,10 @@ def main():
     base_lang = os.path.join(base, 'res', 'LANG_EN.s2a')
     if not os.path.exists(base_lang):
         raise SystemExit('text/name base package not found: %s' % base_lang)
-    out_dir = OUT_ROOT % args.mode
+    out_dir = os.path.abspath(args.out_dir) if args.out_dir else os.path.join(
+        paths.DIST_DIR, '%s-video-%s' % (os.path.basename(base), args.mode))
+    if os.path.normcase(out_dir) == os.path.normcase(base):
+        raise SystemExit('输出目录不能与底包相同: %s' % out_dir)
     out_lang = os.path.join(out_dir, 'res', 'LANG_EN.s2a')
     out_mov = os.path.join(out_dir, 'res', 'MOV.s2a')
     if os.path.isdir(out_dir) and args.force:
@@ -113,7 +118,8 @@ def main():
     os.makedirs(os.path.dirname(out_lang), exist_ok=True)
     os.makedirs(os.path.dirname(out_mov), exist_ok=True)
 
-    print('== Z16-video-%s ==' % args.mode)
+    only = set(x.strip() for x in args.only.split(',') if x.strip()) or None
+    print('== %s ==' % os.path.basename(out_dir))
     print('  base text/names: %s' % base_lang)
     print('  original MOV   : %s' % ORIG_MOV)
 
@@ -123,7 +129,10 @@ def main():
     lang_blobs = [bytes(b) for b in lang.blobs]
     replacements = {}
 
-    for kind in ('prologue', 'ragnarok'):
+    lang_kinds = [k for k, v in specs.items()
+                  if k != 'opening' and v.get('enabled') is not False
+                  and (only is None or k in only)]
+    for kind in lang_kinds:
         video = dict(specs[kind]); video['_kind'] = kind
         h = int(video['blob'], 16)
         idx = lang.hash_map().get(h)
@@ -142,32 +151,40 @@ def main():
         replacements[h] = data
 
     # LANG_EN: same text/names as the base package, only video blobs changed.
-    tmp_lang = out_lang + '.tmp'
-    shutil.copy2(base_lang, tmp_lang)
-    build_video._replace_blobs(tmp_lang, replacements)
-    os.replace(tmp_lang, out_lang)
-
-    # MOV: original archive with the 26s opening replaced.
-    mov = s2a.Archive(ORIG_MOV)
-    h = int(specs['opening']['blob'], 16)
-    idx = mov.hash_map()[h]
-    src = bytes(mov.blobs[idx])
-    work = paths.build('video_test', '%s_opening' % args.mode)
-    if os.path.isdir(work):
-        shutil.rmtree(work)
-    os.makedirs(work, exist_ok=True)
-    if args.mode == 'hardsub':
-        v = dict(specs['opening']); v['_kind'] = 'opening'
-        segs = build_video.resolve_segments(v, rows)
-        data = _render_hardsub(v, segs, src, work)
+    if replacements:
+        tmp_lang = out_lang + '.tmp'
+        shutil.copy2(base_lang, tmp_lang)
+        build_video._replace_blobs(tmp_lang, replacements)
+        os.replace(tmp_lang, out_lang)
     else:
-        data = _transcode(src, work, args.mode)
-    shutil.copy2(ORIG_MOV, out_mov)
-    build_video._replace_blobs(out_mov, {h: data})
+        shutil.copy2(base_lang, out_lang)
+
+    # MOV: the opening is already translated in the base package; only rebuild
+    # it when requested, otherwise carry the base version over unchanged.
+    if only is None or 'opening' in only:
+        mov = s2a.Archive(ORIG_MOV)
+        h = int(specs['opening']['blob'], 16)
+        idx = mov.hash_map()[h]
+        src = bytes(mov.blobs[idx])
+        work = paths.build('video_test', '%s_opening' % args.mode)
+        if os.path.isdir(work):
+            shutil.rmtree(work)
+        os.makedirs(work, exist_ok=True)
+        if args.mode == 'hardsub':
+            v = dict(specs['opening']); v['_kind'] = 'opening'
+            segs = build_video.resolve_segments(v, rows)
+            data = _render_hardsub(v, segs, src, work)
+        else:
+            data = _transcode(src, work, args.mode)
+        shutil.copy2(ORIG_MOV, out_mov)
+        build_video._replace_blobs(out_mov, {h: data})
+    else:
+        base_mov = os.path.join(base, 'res', 'MOV.s2a')
+        shutil.copy2(base_mov if os.path.exists(base_mov) else ORIG_MOV, out_mov)
 
     note = os.path.join(out_dir, '测试说明.txt')
     with open(note, 'w', encoding='utf-8') as fh:
-        fh.write('Z16-video-%s\n\n' % args.mode)
+        fh.write('%s\n\n' % os.path.basename(out_dir))
         fh.write('这是只替换视频的测试包，文字/机制名取自：%s\n' % base)
         fh.write('把本目录 res\\LANG_EN.s2a 覆盖到游戏 res\\LANG_EN.s2a；\n')
         fh.write('把本目录 res\\MOV.s2a 覆盖到游戏 res\\MOV.s2a。\n')
@@ -178,6 +195,8 @@ def main():
             fh.write('本包用 ffmpeg libtheora 重编码但不加字幕；用于判断编码器/码流是否被游戏接受。\n')
         else:
             fh.write('本包是当前中文硬字幕版本；用于判断遮盖/合成是否影响播放。\n')
+        if only:
+            fh.write('本轮重渲染的视频：%s；其余视频沿用底包。\n' % ', '.join(sorted(only)))
     print('done: %s' % out_dir)
     print('  %s' % out_lang)
     print('  %s' % out_mov)

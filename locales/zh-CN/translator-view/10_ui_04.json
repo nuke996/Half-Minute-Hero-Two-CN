@@ -34468,6 +34468,17 @@
    }
   },
   {
+   "id": "row::23819",
+   "en": "Craft Weapons",
+   "ja": "武器合成",
+   "zh": "武器合成",
+   "meta": {
+    "blob": 410,
+    "offset": 956,
+    "cap": 6
+   }
+  },
+  {
    "id": "row::23820",
    "en": "Open All Weapons",
    "ja": "武器全オープン",
@@ -38919,17 +38930,6 @@
    "meta": {
     "blob": 357,
     "offset": 1132,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::60935",
-   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
-   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
-   "zh": "便携式的_女神石像▼",
-   "meta": {
-    "blob": 357,
-    "offset": 1400,
     "cap": 32
    }
   },

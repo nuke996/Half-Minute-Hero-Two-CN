@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3130,
+ "_count": 3135,
  "entries": [
   {
    "id": "row::13247",
@@ -34432,6 +34432,61 @@
     "blob": 291,
     "offset": 26700,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::61298",
+   "en": "Music Player",
+   "ja": "ミュージックプレイヤー",
+   "zh": "音乐播放器",
+   "meta": {
+    "blob": 280,
+    "offset": 1444,
+    "cap": 6
+   }
+  },
+  {
+   "id": "row::61299",
+   "en": "Gallery",
+   "ja": "ギャラリー",
+   "zh": "图集",
+   "meta": {
+    "blob": 280,
+    "offset": 3484,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61300",
+   "en": "Gallery",
+   "ja": "ギャラリー",
+   "zh": "图集",
+   "meta": {
+    "blob": 280,
+    "offset": 3688,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61301",
+   "en": "Gallery",
+   "ja": "ギャラリー",
+   "zh": "图集",
+   "meta": {
+    "blob": 280,
+    "offset": 3892,
+    "cap": 3
+   }
+  },
+  {
+   "id": "row::61302",
+   "en": "Gallery",
+   "ja": "ギャラリー",
+   "zh": "图集",
+   "meta": {
+    "blob": 280,
+    "offset": 4096,
+    "cap": 3
    }
   }
  ]

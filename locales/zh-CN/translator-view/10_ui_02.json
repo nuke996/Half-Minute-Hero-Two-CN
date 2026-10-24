@@ -27351,6 +27351,17 @@
    }
   },
   {
+   "id": "row::11065",
+   "en": "Normal Mode",
+   "ja": "ノーマル：ふつう",
+   "zh": "普通模式",
+   "meta": {
+    "blob": 186,
+    "offset": 94656,
+    "cap": 5
+   }
+  },
+  {
    "id": "row::11066",
    "en": "Hard Mode",
    "ja": "ハード　：むずかしい",
@@ -38545,17 +38556,6 @@
    "meta": {
     "blob": 147,
     "offset": 1132,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::60803",
-   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
-   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
-   "zh": "便携式的_女神石像▼",
-   "meta": {
-    "blob": 147,
-    "offset": 1400,
     "cap": 32
    }
   },

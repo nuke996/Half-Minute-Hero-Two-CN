@@ -457,3 +457,69 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 **待后续：** `b34` 关卡/章节标题、道具/技能说明中的短句（`b147/357/736/666`）、
 `1,000m/h Wind`/`10,000m/h Wind`（技能名，需整批机制名处理）。
 **相关文件：** `docs/FINAL_QA_PLAN.md` §2.2、`tools/build_cn.py`（`display_release_hit` / `DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/menu_ok.json`。
+
+---
+
+# 22. 便携女神像描述：描述渲染器把“神”解析成“挑”
+
+**Status:** Open（已有 Workaround）　**Severity:** Low（仅调试/物品信息描述）
+**Affected versions:** Z17　**Affected locales:** zh-CN
+
+**症状：** 便携女神像（`Goddess Porta-Statue`）的描述在物品信息界面显示为
+`便携女挑♥`；同一界面的标题/物品名 `便携女神像` 正常。粉色心形是翻页/结束标记，
+不是缺字。
+
+**技术说明：**
+- `神` 的原生 CP932 码为 `0x905F`，字符表 index 343，图集 B 该格确实是“神”；
+- `挑` 是新增汉字，载体码 `0x9091`，字符表 index 2308；
+- 描述文本写入的是 `便携女神像`（字节 `89F7 8D83 8F97 905F 919C`），
+  但描述渲染器把 `0x905F` 解析成 index 2308（挑），而标题/物品名渲染器解析成
+  index 343（神）；
+- 说明这是**两套文本渲染路径的字符表/排序表查表结果不一致**，不是缺字、容量或
+  单纯分页问题；新增载体码 `0x9091` 与原生 `0x905F` 在扩展表中存在查表冲突/邻接
+  的可能。
+
+**Workaround：** 已在 `build_cn.py` 加入 `PROTECTED_DISPLAY_OFFS`，把
+`b147/b357/b736` 的 `offset 1400` 描述强制保留原文；中文译文仍保存在译表与
+`translator-view/protected/`（reason=`protected-display`），修复后可放行。
+
+**后续修复方向：** 调整“挑”的载体码（移出 `0x90xx` 邻接区或改 User-Defined 区），
+或修正扩展字符表的排序/查找；需全量重建并实机验证其他含“神”的描述。
+
+**相关文件：** `tools/build_cn.py`（`PROTECTED_DISPLAY_OFFS`）、`tools/export_review.py`
+（`PROTECT_NOTE`）、`locales/zh-CN/text_v2.csv`（row 60803/60935/61089）。
+
+---
+
+# 23. 购买音乐播放器列表闪退：菜单项名与 b280 分组标签再次不一致
+
+**Status:** Fixed（Z17）　**Severity:** High（进入即闪退）
+**Affected versions:** Z17 前一版　**Affected locales:** zh-CN
+
+**症状：** 在女神商店选择「音乐播放器」并确认进入购买列表时游戏闪退；
+日文版同一操作正常，列表标题为 `ミュージックプレイヤー ON`。
+
+**实际原因：** 与 `PITFALLS.md` §9（v2.19 女神选项闪退）同一类问题：
+- 菜单项名 `Music Player` 已翻译为「音乐播放器」：
+  `b534/240`、`b534/280`、`b280/1476`、`b186/137664`、`b763/5648`；
+- 但 `b280/1444` 的**分组标签**仍是英文 `Music Player`；
+- 游戏按「分组标签文本 == 菜单项名」匹配，匹配失败后进入空指针/闪退。
+
+**同类隐患（本轮一并修复）：**
+- `Craft Weapons`：`b410/956` 分组标签未译，其余 5 份已译；
+- `Gallery`：`b186` 两份已译「图集」，`b280/3484/3688/3892/4096` 四份分组标签未译；
+- `Normal Mode`：`b354` 已译「普通模式」，`b186/94656` 未译；
+- `Best Time`：`b358` 已译「最快时间」，`b763/9872` 未译。
+
+**修复：** 把上述遗漏副本统一成同一中文串（音乐播放器 / 武器合成 / 图集 /
+普通模式 / 最快时间），并在 `DISPLAY_RELEASE_OFFS` 中显式放行对应槽位。
+复查后只剩两类**有意保留**的差异：
+- `Hero Castle`：`b265/b353/b370/b688` 是 Q16 键，必须保留原文；
+- `Title`：`b186` 7 份的日文原文也是 `Title`（JA==EN 内部键），不翻译。
+
+**审计规则：** 任何菜单项名/UI 标签一旦翻译，必须检查**所有同名副本**，
+尤其是 `b280` 分组标签；要么全部统一为同一中文串，要么全部保留原文。
+复查脚本：`build/_scratch/audit_menu_name_copies.py`、
+`build/_scratch/audit_partial_menu_translations.py`。
+
+**相关文件：** `tools/build_cn.py`（`DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/text_v2.csv`。

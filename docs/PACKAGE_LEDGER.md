@@ -40,7 +40,7 @@
 | **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验） |
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
-| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**合入 Z16 硬字幕视频**（`4229ebe4`/`1297f874` + `MOV.s2a`）；默认「汉化-导入校对.bat」目标 | 待实机。sha256 `LANG_EN E5FB5413095F` / `DLC01 5B435D085113` / `MOV 399151BBA94C` |
+| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标 | 待实机。sha256 `LANG_EN 618C211DABEA` / `DLC01 F70B78C54EDD` / `MOV 399151BBA94C` |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -121,6 +121,27 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 
 ## 6. 变更记录
 
+- **2026-10-24（Overture 制作人员表剧情字幕）**：
+  1. 新增视频 spec `overture`（`res/LANG_EN.s2a` `a0849a33`，140.07s）：Overture 章
+     制作人员表中的 13 条红色剧情独白（4.0–56.0s），**按画面英文稿翻译**
+     （英文版与日文版不是逐句对应；首版按日文翻译后实机发现意义对不上，已重译）；
+  2. 中文以片头同款硬字幕叠加在画面下方：红色 `#D02020`、屏显臻宋 48px、黑描边，
+     不改原文、不加底框；
+  3. 隔离测试包 `dist/Z17-video`（基于 `dist/Z17-display-fill`）：本轮四个字幕视频
+     全部重建（`LANG_EN.s2a` 的 prologue/ragnarok/overture 三个 blob +
+     `MOV.s2a` 的 opening），其余 blob 与 Z17 逐字节一致；
+     未安装到母本/游戏目录。
+     构建：`python tools/package_video_test.py --mode hardsub --base dist/Z17-display-fill --out-dir dist/Z17-video`。
+  4. **根因（2026-10-24 实测）：** 源片是 **CFR 30fps**，静止画面靠重复帧包保持；
+     普通重编码把它们折叠成 VFR（帧位少 586 个），游戏逐包推进 → 静止帧被跳过、
+     过场缩短且与 BGM 不同步。而且只加 `fps=30` 仍会被 libtheora 折叠（10s 静止
+     只写 28 包），因此在 `fps=30` + `tpad` + `trim` 之后再加 **2×2 暗灰块逐帧交替**
+     （`drawbox 0x202020`，位于 1278,0），强制每 tick 一包。
+     实测：四个视频 `missing_ticks = 0`，Overture 4214 包 / 4213 帧，
+     开头 4 秒 123 包（≈30/秒）。
+     新增校验：视频包数 ≥ (音频−0.3)×30、末帧 ≥ 音频−0.4s，否则构建失败。
+  5. 本轮 **四个视频全部重建**（prologue/ragnarok/overture + MOV opening），
+     一并修复此前所有被折叠的静止帧。
 - **2026-10-24（Z17 显示文本补全）**：
   1. 括号独白/选项放行：`display_release_hit()`（以 `（` 开头且不含 Q16「勇者城」）；
   2. 逐槽放行 `DISPLAY_RELEASE_OFFS`：合成界面、战斗菜单、Change Clothes 菜单、`Specialty` 等；
@@ -128,7 +149,15 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
   4. 新增译表行：`Specialty` →「擅长」，地图编辑器 10 个 UI 标签，英文尾行用全角空格占位；
   5. `b804` 萨莎日记/勋章/魔人迷宫标题、`b291` 说明/半句、`b153` 战斗行动提示放行；
      另补 `S-I-L-E-N-C-E!`、`I have no regrets!`、`Entered tent!`、样例地图说明；
-  6. Z17 自动合入 Z16 视频；导入校对默认目标改为 `dist/Z17-display-fill/`。
+  6. Z17 自动合入 **Z17-video 的 4 个已翻译视频**（LANG_EN：prologue/ragnarok/overture；
+     MOV：opening）；导入校对默认目标改为 `dist/Z17-display-fill/`；
+  7. 便携女神像描述发现“描述渲染器把神解析成挑”的字体查表问题；三份描述加入
+     `PROTECTED_DISPLAY_OFFS`，暂显示原文，译文保存在 protected JSON（reason=`protected-display`），
+     待修复字体查表后再放行（见 `KNOWN_ISSUES.md` §22）；
+  8. 修复音乐播放器购买列表闪退：`b280/1444` 分组标签未译，与已译菜单项名
+     `Music Player` 不匹配；同时统一 `Craft Weapons`（b410/956）、`Gallery`
+     （b280×4）、`Normal Mode`（b186/94656）、`Best Time`（b763/9872）的所有副本
+     （见 `PITFALLS.md` §35、`KNOWN_ISSUES.md` §23）。
 - **2026-10-23（Z15 补丁轮 2）**：
   1. `fill_dlc_item_name_copies()`：DLC01 道具/载具名与本篇同串（整槽 102 + 嵌入 23），
      Q78「船」修复；`refresh_dlc01()` 自动调用；

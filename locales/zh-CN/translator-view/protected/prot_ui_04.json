@@ -2644,19 +2644,6 @@
    }
   },
   {
-   "id": "row::23819",
-   "en": "Craft Weapons",
-   "ja": "武器合成",
-   "zh": "武器合成",
-   "meta": {
-    "blob": 410,
-    "offset": 956,
-    "cap": 80,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::23835",
    "en": "Pricey Herb",
    "ja": "高価なやくそう",
@@ -3785,6 +3772,19 @@
     "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
+   }
+  },
+  {
+   "id": "row::60935",
+   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
+   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
+   "zh": "便携女神像",
+   "meta": {
+    "blob": 357,
+    "offset": 1400,
+    "cap": 32,
+    "protected": "protected-display",
+    "note": "已知字体查表问题（描述渲染器把“神”解析成“挑”）：暂保留原文，待修复后再放行"
    }
   }
  ]

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3094,
+ "_count": 3093,
  "entries": [
   {
    "id": "row::38136",
@@ -28311,7 +28311,7 @@
    "id": "row::42284",
    "en": "You're probably right!",
    "ja": "トーゼンですわ！",
-   "zh": "那是自然！",
+   "zh": "恐怕你说得对！",
    "meta": {
     "blob": 757,
     "offset": 41120,
@@ -28949,7 +28949,7 @@
    "id": "row::42438",
    "en": "I suppose you're right!",
    "ja": "トーゼンですわ！",
-   "zh": "那是自然！",
+   "zh": "恐怕你说得对！",
    "meta": {
     "blob": 757,
     "offset": 149744,
@@ -32539,17 +32539,6 @@
    "meta": {
     "blob": 736,
     "offset": 1132,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::61089",
-   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
-   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
-   "zh": "便携式的_女神石像▼",
-   "meta": {
-    "blob": 736,
-    "offset": 1400,
     "cap": 32
    }
   },

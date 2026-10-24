@@ -256,6 +256,126 @@
         }
       ],
       "y": 650
+    },
+    "overture": {
+      "archive": "res/LANG_EN.s2a",
+      "blob": "a0849a33",
+      "width": 1280,
+      "height": 720,
+      "note": "Overture 章制作人员表中的红色剧情独白（截图）。画面保留英文原文，中文按英文稿翻译以保证对照一致；日文版同 hash 仅作参考。中文按片头方式额外叠在画面下方，不改原文。",
+      "font": "serif",
+      "size": 48,
+      "color": "#D02020",
+      "outline": 2,
+      "align": "center",
+      "x": 640,
+      "y": 650,
+      "segments": [
+        {
+          "id": "ov_01",
+          "start": 4.0,
+          "end": 5.75,
+          "ja": "何だ！？",
+          "en": "What...",
+          "zh": "什么……"
+        },
+        {
+          "id": "ov_02",
+          "start": 9.4,
+          "end": 11.0,
+          "ja": "いったい何が・・・？",
+          "en": "What is this?",
+          "zh": "这是什么？"
+        },
+        {
+          "id": "ov_03",
+          "start": 17.0,
+          "end": 17.6,
+          "ja": "これは・・・！？",
+          "en": "Is this...",
+          "zh": "这难道是……"
+        },
+        {
+          "id": "ov_04",
+          "start": 21.8,
+          "end": 23.3,
+          "ja": "時の記憶・・・？",
+          "en": "a memory of time?!",
+          "zh": "时间的记忆？！"
+        },
+        {
+          "id": "ov_05",
+          "start": 28.0,
+          "end": 29.3,
+          "ja": "！？",
+          "en": "!?",
+          "zh": "！？"
+        },
+        {
+          "id": "ov_06",
+          "start": 38.0,
+          "end": 39.5,
+          "ja": "そうか・・・",
+          "en": "I see...",
+          "zh": "原来如此……"
+        },
+        {
+          "id": "ov_07",
+          "start": 39.5,
+          "end": 41.0,
+          "ja": "そういう事か",
+          "en": "Here is the truth:",
+          "zh": "真相如下："
+        },
+        {
+          "id": "ov_08",
+          "start": 41.2,
+          "end": 42.8,
+          "ja": "全てが騙され\n裏切られている",
+          "en": "I have been fooled\nand betrayed.",
+          "zh": "我被人欺骗，\n也被人背叛。"
+        },
+        {
+          "id": "ov_09",
+          "start": 43.8,
+          "end": 45.3,
+          "ja": "俺は、、、許さない",
+          "en": "I will not forgive this.",
+          "zh": "我绝不原谅。"
+        },
+        {
+          "id": "ov_10",
+          "start": 45.3,
+          "end": 46.8,
+          "ja": "こんな運命を・・・",
+          "en": "This fate...",
+          "zh": "这样的命运……"
+        },
+        {
+          "id": "ov_11",
+          "start": 48.0,
+          "end": 49.6,
+          "ja": "・・・復讐を",
+          "en": "Revenge...",
+          "zh": "复仇……"
+        },
+        {
+          "id": "ov_12",
+          "start": 50.2,
+          "end": 52.1,
+          "ja": "この世界の運命への",
+          "en": "upon this world!",
+          "zh": "向这个世界！"
+        },
+        {
+          "id": "ov_13",
+          "start": 52.8,
+          "end": 56.0,
+          "ja": "復讐を！",
+          "en": "REVENGE!",
+          "zh": "复仇！"
+        }
+      ]
     }
   }
 }

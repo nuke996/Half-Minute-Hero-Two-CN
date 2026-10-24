@@ -27046,7 +27046,7 @@
    "id": "row::5756",
    "en": "<YUSHA_NAME>: It says, <With Giant Lizards, be quick>.",
    "ja": "<YUSHA_NAME>「<巨大トカゲはすばやく>・・・と書いてある」",
-   "zh": "<YUSHA_NAME>「上面写着，<巨大蜥蜴要速战>。」",
+   "zh": "<YUSHA_NAME>「上面写着，<巨大蜥蜴要快快过>。」",
    "meta": {
     "blob": 119,
     "offset": 9452,
@@ -27057,7 +27057,7 @@
    "id": "row::5758",
    "en": "<YUSHA_NAME>: It says, <With the Blue Whirlwind, be gentle>.",
    "ja": "<YUSHA_NAME>「<青きせんぷうはそっと>・・・と書いてある」",
-   "zh": "<YUSHA_NAME>「上面写着，<蓝色旋风要轻手>。」",
+   "zh": "<YUSHA_NAME>「上面写着，<蓝色旋风要慢慢来>。」",
    "meta": {
     "blob": 119,
     "offset": 9648,
@@ -27222,7 +27222,7 @@
    "id": "row::5916",
    "en": "<YUSHA_NAME>: It says, <The Skeleton is hidden>.",
    "ja": "<YUSHA_NAME>「<ガイコツはそっと>・・・と書いてある」",
-   "zh": "<YUSHA_NAME>「上面写着，<骷髅要轻手>。」",
+   "zh": "<YUSHA_NAME>「上面写着，<骷髅要慢慢过>。」",
    "meta": {
     "blob": 119,
     "offset": 42772,
@@ -27233,7 +27233,7 @@
    "id": "row::5918",
    "en": "<YUSHA_NAME>: It says, <Bugs, all at once>.",
    "ja": "<YUSHA_NAME>「<虫はイッキに！>・・・と書いてある」",
-   "zh": "<YUSHA_NAME>「上面写着，<虫子要一次解决！>。」",
+   "zh": "<YUSHA_NAME>「上面写着，<虫子要一口气！>。」",
    "meta": {
     "blob": 119,
     "offset": 42968,

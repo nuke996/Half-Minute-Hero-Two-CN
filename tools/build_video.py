@@ -210,6 +210,37 @@ def _probe_bytes(data: bytes) -> Dict[str, object]:
     return _ogg_info(data)
 
 
+def _video_packet_count(data: bytes) -> int:
+    """Count Theora data packets (excluding the 3 header packets).
+
+    libtheora collapses runs of identical frames into fewer packets and jumps
+    the granule instead.  The game advances one packet per 1/30s tick, so the
+    packet count must cover the whole timeline; counting packets (not decoded
+    frames) is the only reliable check.
+    """
+    off = 0
+    serial = None
+    count = 0
+    headers = 0
+    while off + 27 <= len(data):
+        if data[off:off + 4] != b'OggS':
+            break
+        nseg = data[off + 26]
+        segs = data[off + 27:off + 27 + nseg]
+        dlen = sum(segs)
+        ser = struct.unpack_from('<I', data, off + 14)[0]
+        payload = data[off + 27 + nseg:off + 27 + nseg + dlen]
+        if serial is None and payload.startswith(b'\x80theora'):
+            serial = ser
+        if ser == serial:
+            n = sum(1 for s in segs if s < 255)
+            count += n
+            if payload[:1] in (b'\x80', b'\x81', b'\x82'):
+                headers += 1
+        off += 27 + nseg + dlen
+    return max(0, count - headers)
+
+
 # ---------------------------------------------------------------- spec / csv
 
 def load_specs() -> Dict[str, dict]:
@@ -378,6 +409,7 @@ def _render_key(video: dict, segments: List[dict], src_blob: bytes, ffmpeg: str)
         'src': _sha256_bytes(src_blob),
         'ffmpeg': ffmpeg,
         'pix_fmt': 'yuv420p',
+        'pipeline': 'cfr-dupfix-v6',
         'font_serif': _sha256_file(_font_path('serif')) if os.path.exists(_font_path('serif')) else '',
         'font_pixel': _sha256_file(_font_path('pixel')),
     }
@@ -395,6 +427,14 @@ def _ass_text(text: str) -> str:
     return (text or '').replace('\r', '').replace('\n', '\\N')
 
 
+def _ass_color(value: str, alpha: int = 0) -> str:
+    """Convert '#RRGGBB' to ASS '&HAABBGGRR'."""
+    value = (value or '#FFFFFF').lstrip('#')
+    if len(value) == 3:
+        value = ''.join(c * 2 for c in value)
+    return '&H%02X%02X%02X%02X' % (alpha, int(value[4:6], 16), int(value[2:4], 16), int(value[0:2], 16))
+
+
 def _build_ass(video: dict, segments: List[dict], path: str) -> None:
     """Generate an ASS script for scrolling cinematic text / dialogue / opening."""
     kind = video.get('_kind') or ''
@@ -402,6 +442,12 @@ def _build_ass(video: dict, segments: List[dict], path: str) -> None:
     serif_name = _font_family(serif_path)
     pixel_name = 'WenQuanYi Bitmap Song 13px'
     subtitle_size = int(video.get('subtitle_size') or 32)
+    # Bottom-centre overlay (opening / Overture staff-roll monologue): no box,
+    # just coloured text with a black outline over the original picture.
+    center_font = serif_name if (video.get('font') or 'pixel') == 'serif' else pixel_name
+    center_size = int(video.get('size') or 34)
+    center_color = _ass_color(video.get('color') or '#FFFFFF')
+    center_outline = int(video.get('outline') or 2)
     head = [
         '[Script Info]',
         'ScriptType: v4.00+',
@@ -417,7 +463,8 @@ def _build_ass(video: dict, segments: List[dict], path: str) -> None:
         'Style: Cover,%s,10,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1' % serif_name,
         'Style: DialogSpeaker,%s,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,0,0,0,1' % pixel_name,
         'Style: Dialog,%s,32,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,0,0,0,1' % pixel_name,
-        'Style: Opening,%s,34,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,5,0,0,0,1' % pixel_name,
+        'Style: Opening,%s,%d,%s,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,%d,0,5,0,0,0,1'
+        % (center_font, center_size, center_color, center_outline),
         'Style: Bottom,%s,%d,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,7,0,0,0,1' % (serif_name, subtitle_size),
         '',
         '[Events]',
@@ -432,7 +479,7 @@ def _build_ass(video: dict, segments: List[dict], path: str) -> None:
             if speaker:
                 lines.append('Dialogue: 0,%s,%s,DialogSpeaker,,0,0,0,,{\\an7\\pos(100,482)}%s' % (start, end, _ass_text(speaker)))
             lines.append('Dialogue: 0,%s,%s,Dialog,,0,0,0,,{\\an7\\pos(100,522)}%s' % (start, end, _ass_text(seg['zh'])))
-        elif kind == 'opening':
+        elif kind in ('opening', 'overture'):
             y = int(seg.get('y') or video.get('y') or 650)
             lines.append('Dialogue: 0,%s,%s,Opening,,0,0,0,,{\\an5\\pos(640,%d)\\fad(100,100)}%s'
                          % (start, end, y, _ass_text(seg['zh'])))
@@ -523,15 +570,45 @@ def render_video(video: dict, segments: List[dict], src_blob: bytes, out_path: s
             vf_parts.append("drawbox=x=86:y=471:w=1109:h=185:color=0x0F0E2D:t=fill:enable='between(t,%.3f,%.3f)'"
                             % (seg['start'], seg['end']))
     vf_parts.append('ass=sub.ass:fontsdir=fonts')
-    # The source's final still frame is shorter than its audio/container by
-    # ~0.4-0.5s.  Clone the last frame a little so the game does not stop BGM
-    # at the video EOS.  This is still a single encode pass; no fps conversion.
-    vf_parts.append('tpad=stop_mode=clone:stop_duration=%.2f' % (0.4 if kind == 'opening' else 0.7))
+    # The source is CFR 30fps: static holds are encoded as duplicate packets,
+    # so every 1/30s tick has a packet and the last granule equals the packet
+    # count (frame index).  A plain re-encode turns those holds into VFR
+    # timestamp gaps (fewer packets than ticks); the game advances one packet
+    # per 1/30s, so held frames get skipped and the cutscene plays short.
+    # Force CFR again so every tick has a real frame, exactly like the source.
+    src_frn = int(src_info['video'].get('fps_num') or 30)
+    src_frd = int(src_info['video'].get('fps_den') or 1)
+    vf_parts.append('fps=%d/%d' % (src_frn, src_frd))
+    # The source's last video frame can end well before its audio/container
+    # (Overture: 138.73s vs 140.07s).  The game stops the cutscene at the video
+    # EOS, which cuts the BGM tail and feels "shortened / out of sync".  Clone
+    # the last frame long enough for the video stream to outlive the audio.
+    src_last = _last_video_pts(ffmpeg, work, 'source.ogv')
+    if src_last and duration:
+        # Pad generously then trim to an exact end: the fps filter already
+        # extends the last source frame by its own frame interval, so a fixed
+        # pad can overshoot the audio (prologue: 93.1s vs 91.7s).
+        pad = min(3.0, max(0.7, duration - src_last + 0.8))
+        vf_parts.append('tpad=stop_mode=clone:stop_duration=%.2f' % pad)
+        vf_parts.append('trim=duration=%.2f' % (duration + 0.35))
+    else:
+        vf_parts.append('tpad=stop_mode=clone:stop_duration=%.2f'
+                        % (0.4 if kind == 'opening' else 0.7))
+    # libtheora collapses runs of identical frames into a single packet plus a
+    # granule jump.  The game advances one packet per 1/30s tick, so those
+    # static holds would be skipped (cutscene plays short).  A 2x2, very dark
+    # pixel block that alternates every frame defeats the duplicate detection;
+    # it is invisible at 720p and costs almost no bitrate.  (1x1 0x404040 is
+    # not reliable: on a fully static card it still collapsed to 97/120.)
+    # It must come AFTER tpad/trim, otherwise every cloned tail frame is
+    # identical and collapses again.
+    vf_parts.append("drawbox=x=1278:y=0:w=2:h=2:color=0x202020:t=fill:"
+                    "enable='eq(mod(n,2),0)'")
     vf = ','.join(vf_parts)
 
-    # Single pass only: do NOT use fps/tpad/-t/-shortest.  The source is VFR
-    # with long still frames; any of those filters changes frame timing and
-    # causes stutter / early video EOS / audio desync.
+    # Single pass only.  `fps=30` is required: it restores the source's CFR
+    # duplicate-frame holds (see above).  Do NOT add -t / -shortest: they
+    # truncate to the last input frame and drop the cloned tail.
     cmd = [ffmpeg, '-hide_banner', '-loglevel', 'error', '-y', '-i', 'source.ogv',
            '-map', '0:v:0', '-map', '0:a:0?',
            '-vf', vf,
@@ -554,16 +631,25 @@ def render_video(video: dict, segments: List[dict], src_blob: bytes, out_path: s
         raise SystemExit('%s: output resolution changed: %r -> %r' % (blob, src_info['video'], out_info['video']))
     if abs(duration - float(out_info['duration'])) > 0.5:
         raise SystemExit('%s: output duration %.2f != source %.2f' % (blob, out_info['duration'], duration))
-    src_last = _last_video_pts(ffmpeg, work, 'source.ogv')
     out_last = _last_video_pts(ffmpeg, work, 'out.ogv')
     if src_last and out_last and out_last < src_last - 0.15:
         raise SystemExit('%s: output video ends at %.2fs, source at %.2fs (timeline shortened)'
                          % (blob, out_last, src_last))
+    if out_last and duration and out_last < duration - 0.4:
+        raise SystemExit('%s: video ends at %.2fs, audio %.2fs (game will cut BGM at EOS)'
+                         % (blob, out_last, duration))
     if out_last and duration and out_last > duration + 0.9:
         raise SystemExit('%s: output video ends at %.2fs, container %.2fs (padding too long)'
                          % (blob, out_last, duration))
+    out_packets = _video_packet_count(out_blob)
+    min_packets = int((duration - 0.3) * src_frn / src_frd)
+    if out_packets < min_packets:
+        raise SystemExit('%s: %d video packets for %.2fs at %d/%d fps - static holds '
+                         'were collapsed (game will skip them)'
+                         % (blob, out_packets, duration, src_frn, src_frd))
     if verbose:
-        print('  [video]   末帧 %.2fs/源 %.2fs/容器 %.2fs' % (out_last, src_last, duration))
+        print('  [video]   末帧 %.2fs/源 %.2fs/容器 %.2fs  包数 %d'
+              % (out_last, src_last, duration, out_packets))
     if verbose:
         v = out_info['video']  # type: ignore
         print('  [video]   %dx%d %.2fs %.1fMB'

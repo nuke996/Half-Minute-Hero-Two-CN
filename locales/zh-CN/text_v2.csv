@@ -5755,9 +5755,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5753,119,8608,32,16,21,○: Summon Hero Castle,○：勇者城召喚,仜: 召唤英雄城堡,○：召唤勇者城
 5754,119,9196,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
 5755,119,9392,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
-5756,119,9452,128,64,54,"<YUSHA_NAME>: It says, <With Giant Lizards, be quick>.",<YUSHA_NAME>「<巨大トカゲはすばやく>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <碰到大蜥蜴要快点>.",<YUSHA_NAME>「上面写着，<巨大蜥蜴要速战>。」
+5756,119,9452,128,64,54,"<YUSHA_NAME>: It says, <With Giant Lizards, be quick>.",<YUSHA_NAME>「<巨大トカゲはすばやく>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <碰到大蜥蜴要快点>.",<YUSHA_NAME>「上面写着，<巨大蜥蜴要快快过>。」
 5757,119,9588,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
-5758,119,9648,128,64,60,"<YUSHA_NAME>: It says, <With the Blue Whirlwind, be gentle>.",<YUSHA_NAME>「<青きせんぷうはそっと>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <碰着蓝色的旋风要温柔点>.",<YUSHA_NAME>「上面写着，<蓝色旋风要轻手>。」
+5758,119,9648,128,64,60,"<YUSHA_NAME>: It says, <With the Blue Whirlwind, be gentle>.",<YUSHA_NAME>「<青きせんぷうはそっと>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <碰着蓝色的旋风要温柔点>.",<YUSHA_NAME>「上面写着，<蓝色旋风要慢慢来>。」
 5759,119,9784,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
 5760,119,10960,32,16,7,○: Heal,○：かいふく,仜:治疗,○：恢复
 5761,119,11156,32,16,16,○: Exit the Maze,○：めいきゅうをでる,仜：退出迷宫,○：离开迷宫
@@ -5915,9 +5915,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5913,119,39184,32,16,9,○: Stairs,○：かいだん,仜：楼梯,○：楼梯
 5914,119,39380,32,16,9,○: Stairs,○：かいだん,仜：楼梯,○：楼梯
 5915,119,39576,32,16,9,○: Stairs,○：かいだん,仜：楼梯,○：楼梯
-5916,119,42772,128,64,48,"<YUSHA_NAME>: It says, <The Skeleton is hidden>.",<YUSHA_NAME>「<ガイコツはそっと>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <骷髅被藏起来了>.",<YUSHA_NAME>「上面写着，<骷髅要轻手>。」
+5916,119,42772,128,64,48,"<YUSHA_NAME>: It says, <The Skeleton is hidden>.",<YUSHA_NAME>「<ガイコツはそっと>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <骷髅被藏起来了>.",<YUSHA_NAME>「上面写着，<骷髅要慢慢过>。」
 5917,119,42908,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
-5918,119,42968,128,64,43,"<YUSHA_NAME>: It says, <Bugs, all at once>.",<YUSHA_NAME>「<虫はイッキに！>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <突然疯了>.",<YUSHA_NAME>「上面写着，<虫子要一次解决！>。」
+5918,119,42968,128,64,43,"<YUSHA_NAME>: It says, <Bugs, all at once>.",<YUSHA_NAME>「<虫はイッキに！>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <突然疯了>.",<YUSHA_NAME>「上面写着，<虫子要一口气！>。」
 5919,119,43104,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
 5920,119,43752,128,64,48,"<YUSHA_NAME>: It says, <Everything is Opposite>.",<YUSHA_NAME>「<すべてがアベコベ>・・・と書いてある」,"<YUSHA_NAME>: 上面写道, <任何东西都是对立的>.",<YUSHA_NAME>「上面写着，<一切颠倒>。」
 5921,119,43888,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
@@ -11064,7 +11064,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 11062,186,91744,96,48,4,Back,戻る,退后,返回
 11063,186,92640,96,48,4,Next,次へ,下一个,下一个
 11064,186,93088,96,48,4,Back,戻る,退后,返回
-11065,186,94656,96,48,11,Normal Mode,ノーマル：ふつう,正常模式,普通模式
+11065,186,94656,11,5,11,Normal Mode,ノーマル：ふつう,正常模式,普通模式
 11066,186,94880,96,48,9,Hard Mode,ハード　：むずかしい,困难模式,困难模式
 11067,186,96000,96,48,37,<Maximum No. of Evil Lords Defeated>:,<最大魔王撃破数>：,<击败的邪恶领主最大数量>:,<最大魔王击破数>：
 11068,186,96448,96,48,7,<Time>:,<タイム>　　　　：,<时间>:,<时间>：
@@ -23818,7 +23818,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 23816,409,4548,128,64,55,Clerk: All the moles are gone… I can't sell any radars.,モグラ屋「モグラがいないんじゃ　レーダー売れないよ」,职员：所有鼹鼠都走了...我的雷达卖不出去了。,店员「鼹鼠都没了……雷达卖不出去啦。」
 23817,409,4940,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 23818,410,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
-23819,410,956,160,80,13,Craft Weapons,武器合成,制作武器,武器合成
+23819,410,956,13,6,13,Craft Weapons,武器合成,制作武器,武器合成
 23820,410,1124,32,16,16,Open All Weapons,武器全オープン,打开所有武器,武器全开
 23821,410,1156,128,64,28,Francisca: Open all weapons!,フランシスカ「武器全オープン！」,弗朗西斯卡：打开所有武器,弗兰西丝卡「武器全开！」
 23822,410,1380,160,80,10,See Titles,称号を見る,看标题,查看称号
@@ -42281,7 +42281,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42281,757,40764,64,32,23,It might be a bit tough,「女の子には,虽然有点困难,「对女孩子来说
 42282,757,40828,64,32,20,for a girl like you.,　ちょっとキツイかもねぇ」,对你这样的女孩来说,　可能有点辛苦。」
 42283,757,41056,64,32,14,I'm up for it!,そーでも無いですわ,我可以！,我可不服输！
-42284,757,41120,64,32,22,You're probably right!,トーゼンですわ！,你应该是对的！,那是自然！
+42284,757,41120,64,32,22,You're probably right!,トーゼンですわ！,你应该是对的！,恐怕你说得对！
 42285,757,41284,64,32,12,Receptionist,受付クン,接待员,接待员
 42286,757,41348,128,64,30,That's what I thought! Sorry!!,「だよねー！　ごめんねー！！」,我原本是这样想的！对不起！！,「就知道你会这么说！抱歉！！」
 42287,757,43620,64,32,12,Receptionist,受付クン,接待员,接待员
@@ -42435,7 +42435,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42435,757,149388,64,32,29,This job might be a bit tough,「女の子には,这份工作可能有点苦。,「这活儿对女孩子
 42436,757,149452,64,32,20,for a girl like you.,　ちょっとキツイかもねぇ」,对你这样的女孩来说,　可能有点辛苦。」
 42437,757,149680,64,32,25,I'm sure I can handle it!,そーでも無いですわ,我确定我能够胜任！,我肯定能行！
-42438,757,149744,64,32,23,I suppose you're right!,トーゼンですわ！,你是对的！,那是自然！
+42438,757,149744,64,32,23,I suppose you're right!,トーゼンですわ！,你是对的！,恐怕你说得对！
 42439,757,149908,64,32,12,Receptionist,受付クン,接待员,接待员
 42440,757,149972,128,64,30,That's what I thought! Sorry!!,「だよねー！　ごめんねー！！」,我原本是这样想的！对不起！！,「就知道你会这么说！抱歉！！」
 42441,757,152244,64,32,12,Receptionist,受付クン,接待员,接待员
@@ -43333,7 +43333,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43333,763,9488,128,64,20,Show my own position,自分のランキング,展示自己的位置,显示我的排名
 43334,763,9616,128,64,19,Friend leaderboards,フレンドのランキング,好友排行榜,好友排行榜
 43335,763,9744,128,64,8,Ranking:,ランキング：,排名：,排名：
-43336,763,9872,128,64,9,Best Time,時間,最好时间,最快时间
+43336,763,9872,9,4,9,Best Time,時間,最好时间,最快时间
 43337,763,10000,128,64,22,Number of Walked Steps,歩数,已实施的步骤数,行走步数
 43338,763,10128,128,64,21,Lowest Level to Clear,最低レベル,清除的最低级别,通关最低等级
 43339,763,10256,128,64,22,Highest Level to Clear,最大レベル,清除的最高级别,通关最高等级
@@ -60803,7 +60803,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60800,147,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离奇
 60801,147,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
 60802,147,1132,64,32,60,Fully restores strength; makes you feel the passage of ages.,使うと体力が全回復する　時代のながれを感じるやくそう　　,,使用后体力全恢复　让人感受时代潮流的伤药
-60803,147,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神石像▼
+60803,147,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携女神像
 60804,147,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
 60805,147,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 60806,147,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
@@ -60935,7 +60935,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60932,357,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离奇
 60933,357,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
 60934,357,1132,64,32,16,Restores 100 HP.,使うと体力が100回復する,,使用后体力恢复100
-60935,357,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神石像▼
+60935,357,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携女神像
 60936,357,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
 60937,357,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 60938,357,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
@@ -61089,7 +61089,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61086,736,596,64,32,38,"Fully restores HP, but way overpriced.",使うと体力が全回復するがトンデモ無く高い,,使用后体力全恢复但贵得离奇
 61087,736,864,64,32,49,"Fully restores HP, but mind-bogglingly expensive.",使うと体力が全回復するが目がとびでる高さ,,使用后体力全恢复但价格吓死人
 61088,736,1132,64,32,16,Restores 100 HP.,使うと体力が100回復する,,使用后体力恢复100
-61089,736,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携式的_女神石像▼
+61089,736,1400,64,32,55,It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼,ポータブルな_メ・ガ・ミ・ゾ・ウ▼,,便携女神像
 61090,736,1668,64,32,28,Summons the Master of Water.,水の四天王を召喚する,,召唤水之四天王
 61091,736,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 61092,736,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
@@ -61298,3 +61298,8 @@ Physical Strength Fully Recovered!","%s を食べた！
 61295,756,28268,18,9,18,I have no regrets!,わが生涯に一遍の悔い無し,,我此生无怨无悔！
 61296,109,828,13,6,13,Entered tent!,テントに入った！,,进入帐篷！
 61297,867,16,19,9,19,A small sample map.,小さめのサンプルマップです。,,一张小样本地图。
+61298,280,1444,12,6,12,Music Player,ミュージックプレイヤー,,音乐播放器
+61299,280,3484,7,3,7,Gallery,ギャラリー,,图集
+61300,280,3688,7,3,7,Gallery,ギャラリー,,图集
+61301,280,3892,7,3,7,Gallery,ギャラリー,,图集
+61302,280,4096,7,3,7,Gallery,ギャラリー,,图集

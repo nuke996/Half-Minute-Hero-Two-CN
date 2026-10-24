@@ -1,7 +1,7 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
 > 状态：**进行中**（2026-10-21 记录，2026-10-22/23/24 更新，供新对话直接接续）
-> 2026-10-24：Z17（`dist/Z17-display-fill/`）完成第一轮显示文本补全，并合入 Z16 视频；
+> 2026-10-24：Z17（`dist/Z17-display-fill/`）完成第一轮显示文本补全，并合入 Z17-video 的 4 个字幕视频；
 > 后续实机与收尾以 **Z17** 为准；Z15 保留为回滚基线。
 > 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
 > `dist/Z17-display-fill/`。

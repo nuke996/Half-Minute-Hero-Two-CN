@@ -113,7 +113,7 @@ NO_REPL = False
 
 
 def run_package():
-    """刷新 dist：默认 Z17（含显示补全与 Z16 视频）；--no-repl 时 Z15-norepl。"""
+    """刷新 dist：默认 Z17（含显示补全与 Z17-video 的 4 个视频）；--no-repl 时 Z15-norepl。"""
     cmd = 'package_names_cn_reuse_norepl' if NO_REPL else 'package_names_cn_reuse_z17'
     p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), cmd],
                        capture_output=True)
