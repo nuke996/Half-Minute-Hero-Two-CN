@@ -1,10 +1,10 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
 > 状态：**进行中**（2026-10-21 记录，2026-10-22/23/24 更新，供新对话直接接续）
-> 2026-10-24：Z17（`dist/Z17-display-fill/`）完成第一轮显示文本补全，并合入 Z17-video 的 4 个字幕视频；
-> 后续实机与收尾以 **Z17** 为准；Z15 保留为回滚基线。
+> 2026-10-25：Z18（`dist/Z18-dlc-place-names/`）在 Z17 基础上完成 DLC01 战国大陆地名汉字化，
+> 并继续合入 Z17-video 的 4 个字幕视频；后续实机与收尾以 **Z18** 为准；Z15 保留为回滚基线。
 > 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
-> `dist/Z17-display-fill/`。
+> `dist/Z18-dlc-place-names/`。
 
 ---
 
@@ -94,7 +94,7 @@
 
 ## 3. 排查流程（建议按顺序）
 
-1. **以 Z17 产物为基线**：`dist/Z17-display-fill/res/LANG_EN.s2a`。
+1. **以 Z18 产物为基线**：`dist/Z18-dlc-place-names/res/LANG_EN.s2a`。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
    - 可复用/扩展 `build/_scratch/audit_untranslated.py`；
@@ -126,12 +126,12 @@
 
 ```bash
 # 构建当前实验包（同时刷新 dist 与校对视图）
-python tools/build.py --game-dir work/original package_names_cn_reuse_z17
+python tools/build.py --game-dir work/original package_names_cn_reuse_z18
 
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→重建 Z17）
+# 导入校对（自检→写 CSV/extra_review.json→重建 Z18）
 python tools/import_review.py
 
 # 只读盘点（示例）
@@ -139,7 +139,7 @@ python build/_scratch/audit_untranslated_z15.py
 python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在固定重建 Z17（`dist/Z17-display-fill/`）；不要再用旧的
+注意：`import_review.py` 现在固定重建 Z18（`dist/Z18-dlc-place-names/`）；不要再用旧的
 `package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
 
 ---

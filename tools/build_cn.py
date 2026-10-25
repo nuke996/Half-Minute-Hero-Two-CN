@@ -255,7 +255,7 @@ FORCE_CHARS = '左右斩饿御沙香锅影醒调餐掌荡砍奖肉岛墟陛罪�
 # 处理：在 build_plan 里把这些字**追加到候选末尾**——只占剩余空槽，不移动主译表既有字格，
 #       对已装机文字零影响。容量不足时会在 do_plan 打印警告。
 # 判据（用户 2026-09-13 确认）：字较常用，且换成别的字会导致指代/理解错误时才加。
-DLC_EXTRA_CHARS = '鸭苹橘掀糯鲑蚝朗乳鼬樱'
+DLC_EXTRA_CHARS = '鸭苹橘掀糯鲑蚝朗乳鼬樱坂潟讼哲'
 
 # ---- 关闭 REPL 时 DLC 文本重新出现的字（2026-10-22）----
 # char_freq 不扫 DLC；关掉 REPL 后 DLC 的 洞窟→洞穴 失效，会重新用到「窟」。
@@ -5289,6 +5289,17 @@ def do_package_names_cn_reuse_z17(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z18(exe_mode=None):
+    """Z18：Z17 配方 + DLC01 战国大陆地名汉字化；并合入 4 个已翻译视频。"""
+    out = paths.dist('Z18-dlc-place-names')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z18',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5724,6 +5735,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_norepl': do_package_names_cn_reuse_norepl,
      # Z17：显示文本补全 + 合入 Z17-video 的 4 个视频
      'package_names_cn_reuse_z17': do_package_names_cn_reuse_z17,
+     # Z18：Z17 + DLC01 战国大陆地名汉字化
+     'package_names_cn_reuse_z18': do_package_names_cn_reuse_z18,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

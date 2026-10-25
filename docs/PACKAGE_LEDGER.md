@@ -40,7 +40,8 @@
 | **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验） |
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
-| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标 | 待实机。sha256 `LANG_EN 618C211DABEA` / `DLC01 F70B78C54EDD` / `MOV 399151BBA94C` |
+| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标；**2026-10-25 修正译表两处错译（b245/2004 老管家台词、b445/63532）** | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 B24FDDFB15F4` / `MOV 53BD2E668E99` |
+| **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲（2301/2847，余量 546）；合入 Z17-video 的 4 个视频；默认「汉化-导入校对.bat」目标 | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 00B247ECA9BA` / `MOV 53BD2E668E99`；`texture 7F9181DC8316` / `cscv 24B07FF9E779` |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -158,6 +159,25 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
      `Music Player` 不匹配；同时统一 `Craft Weapons`（b410/956）、`Gallery`
      （b280×4）、`Normal Mode`（b186/94656）、`Best Time`（b763/9872）的所有副本
      （见 `PITFALLS.md` §35、`KNOWN_ISSUES.md` §23）。
+  9. **2026-10-25 译表错译修正**：
+     - `row 13829`（b245/2004，`じいや「ほっほっほ ようこそおいでなすった」`）的
+       `zh_new` 被误填成隔壁鲍鱼摊台词 → 改为「老管家「呵呵呵，欢迎光临」」。
+       该坏行自首次提交即存在，经 `propagate_dups` 扩散到本体 LANG 中该原文的
+       全部 10 个副本；与 `row 13832`（b245/2428，鲍鱼摊）撞译。
+     - `row 25655`（b445/63532，`「・・・またまたぁ」`）按英文 `… Ah, well…` 误译成
+       「……哎，算了……」 → 改为「……又来这套……」。
+     - 重建后自检 error 0 / warning 45；sha 见上表。
+  10. **2026-10-25 Z18：DLC01 战国大陆地名汉字化**：
+     - 将片假名戏仿地名按现实日本地名还原：ヒロシーマ→广岛、アーオモリ→青森、
+       カッゴシマ→鹿儿岛、オンサカ→音坂、ニーガータ→新潟、ワーカナイ→稚内、
+       エーヒメ→爱媛、ウッタエ→诉讼、オトコテツガク→男哲学；
+       `イー村`（伊村）与 `フクオンカ城`（福音香城）按用户选择保持。
+     - `ワーカナイ村` 另出现在 `zh_01.tsv:69` 村长台词，已同步为「稚内村」。
+     - 新增 `坂/潟/讼/哲` 4 字到 `DLC_EXTRA_CHARS`：仅追加到候选末尾，
+       现有字载体码 0 变化，字库 2301/2847（余量 546）。
+     - 隔离校验：所有地名槽位非空、无 `?`；未改名地名与 Z17 逐字节一致。
+     - 自检 error 0 / warning 45；Z18 含 Z17-video 的 4 个视频；
+       导入校对默认目标改为 `dist/Z18-dlc-place-names/`。
 - **2026-10-23（Z15 补丁轮 2）**：
   1. `fill_dlc_item_name_copies()`：DLC01 道具/载具名与本篇同串（整槽 102 + 嵌入 23），
      Q78「船」修复；`refresh_dlc01()` 自动调用；

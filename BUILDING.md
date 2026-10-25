@@ -160,8 +160,8 @@ python tools/runner.py <脚本名> [参数]
   有任一错误即**中断**：不写译表、不打包，写 `build/校对/导入报告.txt` 指明问题条目；
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
-  → 自动跑 `tools/build.py package_names_cn_reuse_z17`（隔离模式）刷新
-  `dist/Z17-display-fill/`（含 Z17-video 的 4 个字幕视频），**不改游戏目录**。
+  → 自动跑 `tools/build.py package_names_cn_reuse_z18`（隔离模式）刷新
+  `dist/Z18-dlc-place-names/`（含 DLC 地名汉字化与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
   不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
   （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
   对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。
@@ -215,7 +215,8 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | **Z14**：Z13 + 职业/阵型/称号名 + 新敌技名；称号连同 pos32 条件副本同步 |
 | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | **Z15**：Z14 + 同字复用原版日文汉字槽位（523 字，重画 527 格）；新占 2296/2847，余量 551；**应用 REPL+HL** |
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
-| `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）；默认导入校对目标 |
+| `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
+| `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频；**默认导入校对目标** |
 
 用法示例：
 
