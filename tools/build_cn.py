@@ -3212,8 +3212,8 @@ def sync_name_replicas(orig_blobs, prod_path, verbose=True,
     # ---- 1) 采集规范表 canon：母本槽文本(未翻) -> 产物槽文本(已翻) ----
     cands = collections.defaultdict(collections.Counter)
     for bi, ob in enumerate(orig_blobs):
-        if bi >= len(prod):
-            continue
+        if bi >= len(prod) or bytes(ob)[:4] != b'CSCV':
+            continue    # 只扫 CSCV 文本表：音频/图片里的巧合短串不能当归范名
         pb = prod[bi]
         for pos, f, e in _iter_slots(ob):
             if in_skill_key_col(bi, f) or _q16_hit(q16, bi, pos, e):
@@ -3236,6 +3236,8 @@ def sync_name_replicas(orig_blobs, prod_path, verbose=True,
         if bi >= len(prod):
             continue
         ob = bytes(ob)
+        if ob[:4] != b'CSCV':
+            continue    # 非文本表（Ogg/PNG 等）：绝不改写
         pb = bytearray(prod[bi])
         dirty = False
         for pos, f, e in _iter_slots(ob):
@@ -4165,8 +4167,8 @@ def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
         return False
 
     for bi, ob in enumerate(orig_blobs):
-        if bi >= len(prod) or bi in skip_blobs:
-            continue
+        if bi >= len(prod) or bi in skip_blobs or bytes(ob)[:4] != b'CSCV':
+            continue    # 资料型 blob（音频/图片）不参与名字副本补齐
         pb = prod[bi]
         for pos, f, e in _iter_slots(ob):
             ot = ob[f:e]
@@ -4181,8 +4183,8 @@ def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
         canon[ot] = ctr.most_common(1)[0][0]
     n = skip = 0
     for bi, ob in enumerate(orig_blobs):
-        if bi >= len(prod) or bi in skip_blobs:
-            continue
+        if bi >= len(prod) or bi in skip_blobs or bytes(ob)[:4] != b'CSCV':
+            continue    # 同上：只写 CSCV 文本表
         pb = prod[bi]
         for pos, f, e in _iter_slots(ob):
             ot = ob[f:e]
@@ -4794,8 +4796,8 @@ def _sync_item_copies(orig_blobs, prod, canon, foreign=False):
     skip_blobs = () if foreign else (128, 136, 317)
     n = skip = 0
     for bi, ob in enumerate(orig_blobs):
-        if bi in skip_blobs:
-            continue
+        if bi in skip_blobs or bytes(ob)[:4] != b'CSCV':
+            continue    # 音频/图片等非文本资料不参与名字同步（2 字节名字易撞巧合字节）
         pb = prod[bi]
         for pos, f, e in _iter_slots(bytes(ob)):
             en = bytes(ob)[f:e]

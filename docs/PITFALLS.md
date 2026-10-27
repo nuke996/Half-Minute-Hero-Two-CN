@@ -1115,3 +1115,38 @@ Z15 同步 **35 处**（Dragon 12、Boat 8、Horse 6、Bamboo Stilts 5、Bike 1�
    + 用 `work/original` 的 cmap 反解码产物核对（见 `BUILDING.md`）；
 4. `package` 会自动重导出 `translator-view`，不要用旧视图回写。
 
+---
+
+# §37 2 字节名字（`Mu`/`Xi`）会命中非文本 blob 的巧合字节（Z18，2026-10-27，已验证）
+
+**现象（staging 实测）：** 名字副本同步 `_sync_item_copies()` 会遍历**所有** blob 的
+NUL 分隔 run，不区分 `CSCV` 文本表与音频/图片。`Mu`（`4D 75`）这种 2 字节 ASCII
+名字在 Ogg 音频 `b274` 的负载里巧合出现一次，于是被改写成 `缪`（`94 B9`）：
+
+```text
+build/package_stage_names_cn_reuse_z18/res/LANG_EN.s2a
+  b274 @25893502  ...2a 00 4d 75 00 86...  ->  ...2a 00 94 b9 00 86...
+```
+
+Ogg 页有 CRC，改动负载而不更新 CRC 会让该页校验失败（约一页音频的丢失/杂音）。
+
+**为什么当前 Z18 不受影响：** `do_package_names_cn_reuse_z18` 在 apply 之后执行
+`_apply_z17_video()`，把 `b75/b274/b673` 三个 Ogg blob 整块换成 `dist/Z17-video`
+的版本，那 2 字节改动被覆盖。**但任何不含视频步骤的包（`package` 普通入口）
+会保留这 2 字节。**
+
+**影响面：** 只发生在“名字本身很短”的条目上（2–3 字节，如 `Mu`/`Xi`），
+越长越不可能在压缩/音频数据里巧合出现。同名同步对 `b147/357/736/713` 等
+道具表的改写本身是正确的。
+
+**修复（2026-10-27 已实施）：** `_sync_item_copies()`、`fill_name_copies()`、
+`sync_name_replicas()` 的采集与写入循环都加了
+`blob[:4] != b'CSCV'` 跳过。依据：`text_v2.csv` 的每一行都指向 `CSCV` 表
+（0 个非 CSCV）；非 CSCV blob 里命中道具名的只有 `???` 占位与音频里的巧合串。
+
+**验证（加固后重建 Z18）：**
+
+- staging 的非 CSCV blob 与母本差异 **0 字节**（修复前 `b274` 为 2 字节）；
+- 产物与 staging 的差异只在 3 个视频 Ogg（`b75/b274/b673`），且等于 `dist/Z17-video`；
+- `validate_build.py` error 0 / warning 45；§36 的反解码核对 714 行 0 不一致。
+

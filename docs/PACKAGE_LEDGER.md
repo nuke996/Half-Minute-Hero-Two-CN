@@ -41,7 +41,7 @@
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
 | **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标；**2026-10-25 修正译表两处错译（b245/2004 老管家台词、b445/63532）** | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 B24FDDFB15F4` / `MOV 53BD2E668E99` |
-| **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲；合入 Z17-video 的 4 个视频；默认「汉化-导入校对.bat」目标；**2026-10-27 截图校对轮**：断句重复、`AVALANCHE!` 补译、选项「尚未登场」、希腊字母/巴鲁蒙全名补全、补 `Mu/Xi`、泳装/Balmung 多行首行截断修正 | 待实机。sha256 `LANG_EN e557c6020b5d` / `DLC01 4d75992c06bc` / `MOV 53BD2E668E99`；`texture bc8e9dc75faa` / `cscv 5785a9f8ffb7`；`LANG_JA 924eff209d0e`（未改） |
+| **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲；合入 Z17-video 的 4 个视频；默认「汉化-导入校对.bat」目标；**2026-10-27 截图校对轮**：断句重复、`AVALANCHE!` 补译、选项「尚未登场」、希腊字母/巴鲁蒙全名补全、补 `Mu/Xi`、泳装/Balmung 多行首行截断修正 | 待实机。sha256 `LANG_EN aa4d8e69646e`（含视频后）/ `DLC01 4d75992c06bc` / `MOV 53BD2E668E99`；`texture bc8e9dc75faa` / `cscv 5785a9f8ffb7`；`LANG_JA 924eff209d0e`（未改） |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -142,6 +142,11 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
      离机自检 **error 0 / warning 45**；用打包母本 cmap 反解码 714 行
      （全部 `b713` + 本轮改动行）**逐字一致**，英文 Greek/Balmung 名整槽残留 0；
      校对视图已自动重导出（普通 55419 / 受保护 5850 / 多行 1183 / DLC 1707 / 额外 257）。
+  7. 名字副本同步加固：`sync_name_replicas` / `fill_name_copies` / `_sync_item_copies`
+     只扫 `CSCV` 文本表，避免 `Mu`（2 字节）在 Ogg 音频里巧合命中（PITFALLS §37）；
+     加固后 staging 非 CSCV 差异 0 字节，产物差异仅 3 个视频 blob。
+  8. 修正哈希记录：Z18 的 `res/LANG_EN.s2a` 真实终值（已合入视频）为
+     `aa4d8e69646e`；此前记录的 `e557c6020b5d` 是**合入视频前**的中间值，不要再引用。
 - **2026-10-24（Overture 制作人员表剧情字幕）**：
   1. 新增视频 spec `overture`（`res/LANG_EN.s2a` `a0849a33`，140.07s）：Overture 章
      制作人员表中的 13 条红色剧情独白（4.0–56.0s），**按画面英文稿翻译**
