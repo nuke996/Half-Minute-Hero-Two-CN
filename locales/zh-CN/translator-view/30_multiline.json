@@ -2,7 +2,7 @@
  "_kind": "multiline",
  "_note": "多行整字段（一次显示多行的对话/说明整段）。游戏显示优先走这里，zh 的换行就是屏上的换行。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 1181,
+ "_count": 1183,
  "entries": [
   {
    "id": "ml::1",
@@ -9164,7 +9164,7 @@
    "id": "ml::764",
    "en": "Balmung\nThis legendary blade is said by little old ladies\nto have been forged by the Gods.",
    "ja": "バルムンク\n神によってきたえられたと近所の\nオバさんが言っていた伝説の大剣",
-   "zh": "巴鲁蒙\n据说这把传说之刃\n是众神锻造的。",
+   "zh": "巴鲁蒙格\n据说这把传说之刃\n是众神锻造的。",
    "meta": {
     "blob": 713,
     "offset": 13948,
@@ -9368,7 +9368,7 @@
    "id": "ml::781",
    "en": "Alpha\nA bowgun sword that Nanako poured her heart\ninto making for her friend.",
    "ja": "アルファ\nナナコが親友のために作ってくれた\n心のこもったボウガンソード",
-   "zh": "阿尔\n奈奈子为朋友倾注心血\n制作的弩剑。",
+   "zh": "阿尔法\n奈奈子为朋友倾注心血\n制作的弩剑。",
    "meta": {
     "blob": 713,
     "offset": 25168,
@@ -9380,7 +9380,7 @@
    "id": "ml::782",
    "en": "Beta\nThe neighbor lady decided to try making\na bowgun sword on a whim.",
    "ja": "ベータ\n近所のおっさんがなんとなく\n作ってみたボウガンソード",
-   "zh": "贝\n邻居大婶一时兴起，\n决定试着做把弩剑。",
+   "zh": "贝塔\n邻居大婶一时兴起，\n决定试着做把弩剑。",
    "meta": {
     "blob": 713,
     "offset": 25828,
@@ -9404,7 +9404,7 @@
    "id": "ml::784",
    "en": "Delta\nThe old guy at the weapon shop\nrecommends this iffy-looking bowgun sword.",
    "ja": "デルタ\n武器屋のおっさんおすすめの\nインチキくさいボウガンソード",
-   "zh": "代\n武器店的老爷子推荐的\n一把看着很可疑的弩剑。",
+   "zh": "德尔塔\n武器店的老爷子推荐的\n一把看着很可疑的弩剑。",
    "meta": {
     "blob": 713,
     "offset": 27148,
@@ -9416,7 +9416,7 @@
    "id": "ml::785",
    "en": "Epsilon\nMade of an unknown material.\nThe powers of this bowgun have yet to be known.",
    "ja": "イプシロン\n未知のそざいで作られた\n得体のしれないボウガンソード",
-   "zh": "埃普西\n用未知材料制成。\n这把弩的力量尚不明白。",
+   "zh": "埃普西隆\n用未知材料制成。\n这把弩的力量尚不明白。",
    "meta": {
     "blob": 713,
     "offset": 27808,
@@ -9440,7 +9440,7 @@
    "id": "ml::787",
    "en": "Iota\nA bowgun crudely taped to a sword.\nOr is it a sword crudely taped to a bowgun?",
    "ja": "イオタ\nボウガンと剣をテープでくっつけた\nだけの本格的ボウガンソード",
-   "zh": "伊塔\n把弩粗暴地绑在剑上。\n还是把剑粗暴地绑在弩上？",
+   "zh": "伊奥塔\n把弩粗暴地绑在剑上。\n还是把剑粗暴地绑在弩上？",
    "meta": {
     "blob": 713,
     "offset": 29128,
@@ -9476,7 +9476,7 @@
    "id": "ml::790",
    "en": "Omicron\nA replica of the legendary bowgun sword that\ncan defeat any enemy in one shot.",
    "ja": "オミクロン\nどんな敵も一撃でたおす\n伝説のボウガンソードのレプリカ",
-   "zh": "奥米克\n能一击击败任何敌人的\n传说弩剑的仿制品。",
+   "zh": "奥米克戎\n能一击击败任何敌人的\n传说弩剑的仿制品。",
    "meta": {
     "blob": 713,
     "offset": 31768,
@@ -9488,7 +9488,7 @@
    "id": "ml::791",
    "en": "Sigma\nThey certainly had their eye on lofty goals when\nmaking this high-grade bowgun sword.",
    "ja": "シグマ\nワイルドでかなり高度な何かを\n目指したボウガンソード",
-   "zh": "西格\n打造这把高级弩剑时，\n他们的目标确实很宏大。",
+   "zh": "西格玛\n打造这把高级弩剑时，\n他们的目标确实很宏大。",
    "meta": {
     "blob": 713,
     "offset": 33088,
@@ -9500,7 +9500,7 @@
    "id": "ml::792",
    "en": "Phi\nSheathed in flame,\nthis bowgun sword seems burnt-out.",
    "ja": "ファイ\nほのおにつつまれて\n半分もえつきたボウガンソード",
-   "zh": "法\n裹在火焰里，\n这把弩剑看起来已经烧尽了。",
+   "zh": "法伊\n裹在火焰里，\n这把弩剑看起来已经烧尽了。",
    "meta": {
     "blob": 713,
     "offset": 33748,
@@ -9512,7 +9512,7 @@
    "id": "ml::793",
    "en": "Omega\nAwarded the final code number.\nThe strongest bowgun sword.",
    "ja": "オメガ\n最後のコードナンバーがあたえられた\n最強のボウガンソード",
-   "zh": "欧米\n被授予最后的编号。\n最强的弩剑。",
+   "zh": "欧米伽\n被授予最后的编号。\n最强的弩剑。",
    "meta": {
     "blob": 713,
     "offset": 34408,
@@ -9800,7 +9800,7 @@
    "id": "ml::817",
    "en": "Wood Stick\nCan also be used to paint your nails with.\nMakes for heroic nail art.",
    "ja": "ウッドスティック\nネイルアートにも使える万能武器\n勇者しか使おうと思わないらしい",
-   "zh": "木棒\n也能用来涂指甲油。\n做出很勇者的美甲。",
+   "zh": "木杖\n也能用来涂指甲油。\n做出很勇者的美甲。",
    "meta": {
     "blob": 713,
     "offset": 50248,
@@ -10364,7 +10364,7 @@
    "id": "ml::864",
    "en": "Hero Cloth\nSpecial armor tailor made for heroes.\nMonogrammed for safekeeping.",
    "ja": "ヒーロークロス\n勇者用にオーダーメイドした特注の鎧\n名前入りでなくしても安心　",
-   "zh": "英雄布\n为勇者量身定制的特殊护甲。\n还绣了名字以防弄丢。",
+   "zh": "英雄十字\n为勇者量身定制的特殊护甲。\n还绣了名字以防弄丢。",
    "meta": {
     "blob": 713,
     "offset": 81268,
@@ -11420,7 +11420,7 @@
    "id": "ml::952",
    "en": "Sexy Swimsuit\nOne piece frilled swimsuit.\nCould there be an illustration somewhere?!",
    "ja": "セクシーみずぎ\nフリルつきのワンピース水着\nある場所でイラストも見れる！？",
-   "zh": "性感泳\n一件荷叶边连体泳衣。\n说不定哪里会有插画？！",
+   "zh": "性感泳衣\n一件荷叶边连体泳衣。\n说不定哪里会有插画？！",
    "meta": {
     "blob": 713,
     "offset": 139348,
@@ -14170,6 +14170,30 @@
    "ja": "",
    "zh": "吃下了%s！\n生命全满！",
    "meta": {}
+  },
+  {
+   "id": "ml::1182",
+   "en": "Mu\nA cat dragged this bowgun sword home one day.\nNow it's on sale.",
+   "ja": "ミュー\nネコがくわえてひろってきたのを\n売りに出したボウガンソード　",
+   "zh": "缪\n猫有一天把这把弩剑拖回了家。\n现在拿出来出售。",
+   "meta": {
+    "blob": 713,
+    "offset": 31108,
+    "cap": 207,
+    "cap_bytes": 415
+   }
+  },
+  {
+   "id": "ml::1183",
+   "en": "Xi\nA bowgun sword with a dragon head that mutters quietly.\nIt's quite annoying.",
+   "ja": "クシー\nドラゴンの頭がぼそぼそつぶやくのが\n気になるボウガンソード",
+   "zh": "克西\n龙头会小声嘟囔的弩剑。\n挺让人在意的。",
+   "meta": {
+    "blob": 713,
+    "offset": 32428,
+    "cap": 207,
+    "cap_bytes": 415
+   }
   }
  ]
 }
