@@ -8,7 +8,7 @@
    "id": "ml::1",
    "en": "Old Man: Whoever beats more monsters in 30 seconds wins.\nIt will begin when you reach the fence to the north.",
    "ja": "老人「３０秒で数多くのモンスターをたおしたほうが勝ち\n　　　村から出て　北のさくについたらスタートだそうじゃ」",
-   "zh": "大叔「30秒里打倒更多怪物的人就赢。\n走到北边的栅栏处就开始了。」",
+   "zh": "老人「30秒里打倒更多怪物的人就赢。\n走到北边的栅栏处就开始了。」",
    "meta": {
     "blob": 0,
     "offset": 2004,
@@ -104,7 +104,7 @@
    "id": "ml::9",
    "en": "Personal Assistant: The children of the orphanage\nto the south… They are always hungry…",
    "ja": "使用人「南にいるこじいんのこどもたちは\n　　　　いつもオナカを減らしているとか・・・」",
-   "zh": "助理「南边失亲孩子院的孩子们…\n总是吃不饱…」",
+   "zh": "佣人「南边孤儿院的孩子们…\n总是吃不饱…」",
    "meta": {
     "blob": 18,
     "offset": 2852,
@@ -392,7 +392,7 @@
    "id": "ml::33",
    "en": "Little Girl: At the thorns to the east,\ngo north and the monsters will swarm.",
    "ja": "女の子「東に行くとトゲトゲーでー\n　　　　北に行くとモンスターうじゃうじゃだよー」",
-   "zh": "小女孩「在东边的荆棘处，\n往北走就会涌出怪物。」",
+   "zh": "小女孩「往东走全是荆棘——\n往北走怪物成群哦——」",
    "meta": {
     "blob": 65,
     "offset": 2852,
@@ -488,7 +488,7 @@
    "id": "ml::41",
    "en": "Herbalist: The <Common Herb> restores\n100 points of health.",
    "ja": "やくそう屋「<みんなのやくそう>は\n　　　　　　体力を100回復しますの」",
-   "zh": "草药师「<普通草药>可恢复\n100点体力。」",
+   "zh": "草药师「<大众草药>可恢复\n100点体力哦」",
    "meta": {
     "blob": 78,
     "offset": 2852,
@@ -728,7 +728,7 @@
    "id": "ml::61",
    "en": "Little Girl: Hehe! ▼ You're pretty good-looking, mister.\nDid you notice my perfume? Tee-hee! ▼",
    "ja": "女の子「うふ▼　なかなかカッコイイお兄さんね\n　　　　わたしのこうすいには気付いた？　うふ▼」",
-   "zh": "小女孩「嘿嘿！▼大叔你长得挺帅的嘛。\n你闻到我身上的香水了吗？嘻嘻！▼」",
+   "zh": "小女孩「嘿嘿！▼这位小哥长得挺帅的嘛。\n你闻到我身上的香水了吗？嘻嘻！▼」",
    "meta": {
     "blob": 115,
     "offset": 2004,
@@ -764,7 +764,7 @@
    "id": "ml::64",
    "en": "No. 30: Eh? I get excited around villages, you\nsay? …………… Please leave me alone.",
    "ja": "３０号「エ？　村だとワタシのテンションが高い？\n　　　　・・・・・・・・・・・・・・・ほっといてクダサイ」",
-   "zh": "30号「咦？一靠近村子我就来劲，你\n这么说？…………… 让我一个人待着吧。」",
+   "zh": "30号「咦？在村子里我就会情绪高涨？\n…………… 别管我了。」",
    "meta": {
     "blob": 118,
     "offset": 1156,
@@ -848,7 +848,7 @@
    "id": "ml::71",
    "en": "Man: If you reverse time, I bet you\ncould erase the cracks!",
    "ja": "青年「時間を戻せれば\n　　　きっと地割れも消えるのにな」",
-   "zh": "男人「只要倒流时间，我打赌你\n就能消除那些破口！」",
+   "zh": "男人「要是能倒转时间，\n地裂肯定也会消失的…」",
    "meta": {
     "blob": 126,
     "offset": 2852,
@@ -956,7 +956,7 @@
    "id": "ml::80",
    "en": "Lightning Man: Number 4 goes south! 5 is east!\n6 is west! … they go on the bridges there!",
    "ja": "雷オヤジ「４は南！５は東！６は西！\n　　　　　・・・の橋にそれぞれ対応しているぜ！」",
-   "zh": "闪电大叔「4号向南！5号向东！\n6号向西！…它们会走到那边的桥上！」",
+   "zh": "闪电大叔「4号是南！5号是东！6号是西！\n分别对应那边的桥！」",
    "meta": {
     "blob": 142,
     "offset": 7516,
@@ -980,7 +980,7 @@
    "id": "ml::82",
    "en": "Owner: If you equip heavy items you\ncan't really bend backwards much!",
    "ja": "主人「重いアイテムを装備すると\n　　　あまりのけぞらなくなるよ！」",
-   "zh": "老板「若装备重型道具，你\n就没法好好向后弯身了！」",
+   "zh": "老板「装备重型道具后，你就\n不太会被打得后仰了！」",
    "meta": {
     "blob": 143,
     "offset": 4124,
@@ -992,7 +992,7 @@
    "id": "ml::83",
    "en": "Scholar: The Evil Lord Weapons are creating a\nprotective barrier around the Imperial Castle!",
    "ja": "学者「四方を守る魔王兵器が\n　　　皇帝城を守る結界を作っているのだ！」",
-   "zh": "学者「守护四方的魔王兵器正在\n皇城周围展开防护罩！」",
+   "zh": "学者「守护四方的魔王兵器正在\n皇帝城周围张开结界！」",
    "meta": {
     "blob": 145,
     "offset": 1580,
@@ -1004,7 +1004,7 @@
    "id": "ml::84",
    "en": "Roken: … Hey hey! <YUSHA_NAME>! I may be\nold, but I'll go anywhere with you!",
    "ja": "ローケン「・・・おおおお　<YUSHA_NAME>殿！\n　　　　　このオイボレよければ　どこまでもご一緒しますぞ！」",
-   "zh": "洛肯「…嘿！<YUSHA_NAME>！我虽\n上了年纪，但你去哪我都跟！」",
+   "zh": "洛肯「……哦哦哦，<YUSHA_NAME>大人！\n若不嫌老朽，我愿随您到天涯海角！」",
    "meta": {
     "blob": 146,
     "offset": 1156,
@@ -1016,7 +1016,7 @@
    "id": "ml::85",
    "en": "Cozain: … Don't… don't say anything, gather\nyour strength and bring us back our peace!!",
    "ja": "コザイン「・・・キデンか・・・何も言うなでゴザル\n　　　　　力を合わせ真の平和を取り戻すでゴザルよ！！」",
-   "zh": "科赞「…别…别说话，保留\n力气，把和平带回来给我们！！」",
+   "zh": "科赞「……是贵殿啊……什么都别说了。\n让我们齐心协力夺回真正的和平吧！！」",
    "meta": {
     "blob": 146,
     "offset": 2852,
@@ -1112,7 +1112,7 @@
    "id": "ml::93",
    "en": "Singer: Coo is… a healthy… and really great kid\nsometimes… I even forget… that she can't see.",
    "ja": "歌族「クゥは・・・元気で・・・とてもいい子よ\n　　　目が見えない・・・なんてこと忘れそうなくらい」",
-   "zh": "歌族「小咕…很健康…特别棒的孩子，\n有时…我乃至忘了…她看不见。」",
+   "zh": "歌族「小咕…很精神…是个特别好的孩子，\n好到…我几乎忘了…她看不见。」",
    "meta": {
     "blob": 156,
     "offset": 2428,
@@ -1184,7 +1184,7 @@
    "id": "ml::99",
    "en": "Singer: La la… what, we won't be able\nto sing again? That's… awful…",
    "ja": "歌族「ハァハァ・・・もう二度と歌えないの？\n　　　そんなの・・・いや・・・」",
-   "zh": "歌族「啦啦…什么，我们没法再\n唱了？那…太糟了…」",
+   "zh": "歌族「呼…呼…再也唱不了了吗？\n那样…不要…」",
    "meta": {
     "blob": 156,
     "offset": 4972,
@@ -1220,7 +1220,7 @@
    "id": "ml::102",
    "en": "Village Chief: Northwest of the ruins is where you want to go,\nbut there are two towers, so you have to pick one!",
    "ja": "村長「はいきょの北西の塔は行き先が\n　　　２つあるのじゃ　どちらかをえらぶのじゃ！」",
-   "zh": "村长「废墟的西北之塔就是你要去的地方，\n但那有两座塔，得选一座！」",
+   "zh": "村长「废墟西北的塔有两个去向，\n得从里头选一个！」",
    "meta": {
     "blob": 158,
     "offset": 2428,
@@ -1232,7 +1232,7 @@
    "id": "ml::103",
    "en": "Mother: Our child has always enjoyed playing around the tower, but\nthe child seems to enjoy it maybe just a little too much…",
    "ja": "母親「うちの子は昔から塔で遊ぶのが好きなんだけど\n　　　どうも好きすぎて　よくわからないこと言うのよ・・・」",
-   "zh": "母亲「我家孩子一直喜欢在塔边玩，但\n好像喜欢得有点过头了…」",
+   "zh": "母亲「我家孩子从小就喜欢在塔那边玩，但\n实在喜欢过头，常说些莫名其妙的话…」",
    "meta": {
     "blob": 158,
     "offset": 5396,
@@ -1256,7 +1256,7 @@
    "id": "ml::105",
    "en": "Little Girl: If these jewels were ill-gotten, then\nthere's no happiness in owning them.",
    "ja": "女の子「いくら宝石でも　こんなせっそうなく\n　　　　落ちてこられたら　ありがたみがないわね」",
-   "zh": "小女孩「如果这些宝石是不义之财，那\n拥有它们也不会快乐。」",
+   "zh": "小女孩「就算是宝石，这么乱七八糟地\n掉下来，也让人觉得不值钱了呢」",
    "meta": {
     "blob": 159,
     "offset": 1580,
@@ -1292,7 +1292,7 @@
    "id": "ml::108",
    "en": "Child: <Red jewels> can't be destroyed. <That thing>\nmight be able to take care of those other things.",
    "ja": "子「<赤い宝石>は壊せないけど\n　　大きなソレなら　アレで壊すにゃちょうどいい」",
-   "zh": "小孩「<红宝石>无法破坏。<那个东西>\n也许能处理掉那些东西。」",
+   "zh": "小孩「<红宝石>是打不坏的喵，\n但要是大的那种，用那个砸正合适喵」",
    "meta": {
     "blob": 159,
     "offset": 6244,
@@ -1376,7 +1376,7 @@
    "id": "ml::115",
    "en": "Old Man: That's some outfit you've got on.\nPay up for your meal, got it?",
    "ja": "おやじ「・・・ずいぶんなカッコウだな\n　　　　ちゃんとお金ははらってくれよな」",
-   "zh": "大叔「你这身打扮可真够绝的。\n饭钱付了没？听见没？」",
+   "zh": "大叔「你这身打扮可真够夸张的。\n钱可要好好付啊」",
    "meta": {
     "blob": 184,
     "offset": 2428,
@@ -1472,7 +1472,7 @@
    "id": "ml::123",
    "en": "Student: West… the Magic Circle…\nWill the door open for anybody?",
    "ja": "学者「西・・・魔法陣・・・\n　　　だれかがふんでいれば　トビラが開くのでは？」",
-   "zh": "学生「西边……魔法阵……\n那扇门谁都能开吗？」",
+   "zh": "学者「西边……魔法阵……\n只要有人踩上去，门应该就会开吧？」",
    "meta": {
     "blob": 192,
     "offset": 2852,
@@ -1520,7 +1520,7 @@
    "id": "ml::127",
    "en": "Equipment Clerk:\nThis is a small map. Hurry! Hurry!",
    "ja": "装備屋「ここはせまいマップだ\n　　　　いそげ！いそげ！」",
-   "zh": "装备店员「\n这是张小地图。快点快点！」",
+   "zh": "装备店员「这是张小地图。\n快点！快点！」",
    "meta": {
     "blob": 201,
     "offset": 7940,
@@ -1532,7 +1532,7 @@
    "id": "ml::128",
    "en": "Cole: Here again? I really wanted to do some more flirting …\nha ha ha, just kidding! Let's get violent again!!",
    "ja": "コール「またココか　スローともっとイチャイチャしたかったんだが\n　　　　・・・ははは　ウソだよ！　また暴れさせてもらうぜ！！」",
-   "zh": "科尔「又来这儿？我还想跟情人多亲热…\n哈哈哈，开玩笑的！再来大战一场！！」",
+   "zh": "科尔「又来这儿？我还想跟斯洛多亲热亲热…\n哈哈哈，骗你的！再让我大闹一场！！」",
    "meta": {
     "blob": 202,
     "offset": 1580,
@@ -1592,7 +1592,7 @@
    "id": "ml::133",
    "en": "Angel: There was a strange old man in the <northern cave>…\n… Oh! That's right! That old man!",
    "ja": "天使「シブイおじさまが<北のどうくつ>にいたのよね\n　　　・・・あっ！　そうそう！　そのおじさまよ！」",
-   "zh": "天使「<北边的洞穴>里有个古怪老大爷…\n…噢！对了！就是那个老头！」",
+   "zh": "天使「<北边的洞穴>里有个很有型的大叔呢\n…啊！对对！就是那位大叔！」",
    "meta": {
     "blob": 208,
     "offset": 2428,
@@ -1604,7 +1604,7 @@
    "id": "ml::134",
    "en": "Angel: Welcome! The soup\nis delicious too!",
    "ja": "天使「まいどー\n　　　スープ割りもあるよーっ」",
-   "zh": "天使「欢迎！这汤\n也很好喝哦！」",
+   "zh": "天使「欢迎光临——\n还有汤割哦——」",
    "meta": {
     "blob": 208,
     "offset": 2852,
@@ -1724,7 +1724,7 @@
    "id": "ml::144",
    "en": "Woman: Yes… I think they're coming\nfrom the plains over there.",
    "ja": "女の人「そうねえ・・・\n　　　　この先の草原からゆれが来てる気がするわね」",
-   "zh": "女人「是的……我觉得它们\n是从那边的平原来的。」",
+   "zh": "女人「嗯……我觉得前方草原那边\n有震动传过来呢」",
    "meta": {
     "blob": 229,
     "offset": 2852,
@@ -1736,7 +1736,7 @@
    "id": "ml::145",
    "en": "Lumberjack: Something flew <north> that looked like an old man!\nShould be around the village on the other side of the cave.",
    "ja": "キコリ「おっさんっぽいものが<北>のほうに飛んでったな！\n　　　　どうくつをぬけたとこにある村のあたりかな」",
-   "zh": "樵夫「有个像大叔的东西往<北边>边飞走了！\n应该就在洞穴那头的村子附近。」",
+   "zh": "樵夫「有个像大叔的东西往<北>边飞走了！\n大概在穿过洞穴后的村子附近吧」",
    "meta": {
     "blob": 243,
     "offset": 2004,
@@ -1952,7 +1952,7 @@
    "id": "ml::163",
    "en": "Owner: … I was just asking really, I don't\nhave anything too strange.",
    "ja": "主人「・・・言ってみただけだ\n　　　べつにヘンなもんは入ってねぇよ」",
-   "zh": "老板「……我只是随便问问，我并不\n有什么奇怪的东西。」",
+   "zh": "老板「……我只是随口说说，\n里面可没放什么奇怪的东西」",
    "meta": {
     "blob": 292,
     "offset": 1156,
@@ -1976,7 +1976,7 @@
    "id": "ml::165",
    "en": "Woman: If you destroy the battery, the\nland won't take any more damage.",
    "ja": "女の人「<ほうだい>をこわせば\n　　　　大地をこわされずにすみそうね」",
-   "zh": "女人「如果毁掉电池，\n大地就不会再受损了。」",
+   "zh": "女人「只要毁掉那座<炮台>，\n大地应该就不会再遭到破坏了吧」",
    "meta": {
     "blob": 295,
     "offset": 1580,
@@ -2156,7 +2156,7 @@
    "id": "ml::180",
    "en": "Traveling Man: I heard a rumor that you'll get gold\nif you catch the criminal <YUSHA_NAME>!",
    "ja": "旅のおとこ「<YUSHA_NAME>って悪人をつかまえると\n　　　　　　お金がもらえるってウワサだぜ！」",
-   "zh": "旅人「听说抓住罪犯<YUSHA_NAME>\n就能拿到奖金！」",
+   "zh": "旅人「听说<YUSHA_NAME>抓到坏人，\n就能拿到赏金呢！」",
    "meta": {
     "blob": 311,
     "offset": 1580,
@@ -2204,7 +2204,7 @@
    "id": "ml::184",
    "en": "Female Demon: It feels like I've been dreaming…\nHumans and angels were treating demons kindly! ▼",
    "ja": "女「ゆめを見ていたような気がするわ・・・\n　　魔族も天使も人間にやさしくしてくれるの▼」",
-   "zh": "女恶魔：「感觉像做了一场梦……」\n「人类和天使竟对魔族这么友善！」▼",
+   "zh": "女：「感觉像做了一场梦……」\n「魔族和天使都对我们人类这么友善呢」▼",
    "meta": {
     "blob": 321,
     "offset": 3700,
@@ -2228,7 +2228,7 @@
    "id": "ml::186",
    "en": "Traveling Warrior: Just what is going on? The\nold people suddenly became young again!!",
    "ja": "旅の戦士「どういうことだ？\n　　　　　お年よりが急に若返ったんだよ！！」",
-   "zh": "旅战士：「到底是怎么回事？这」\n「些老人突然变年轻了！！」",
+   "zh": "旅战士：「到底是怎么回事？」\n「这些老人突然变年轻了！！」",
    "meta": {
     "blob": 321,
     "offset": 4548,
@@ -2240,7 +2240,7 @@
    "id": "ml::187",
    "en": "No. 30: … <RGN_NAME__>, is this really\nthe time to be loafing around?",
    "ja": "30号「・・・<RGN_NAME__>\n　　　　こんなトコでアブラを売っている場合デスカ？」",
-   "zh": "30号：「……<RGN_NAME__>，现在」\n「是闲逛的时候吗？」",
+   "zh": "30号：「……<RGN_NAME__>，在这种地方」\n「是磨洋工的时候吗？」",
    "meta": {
     "blob": 322,
     "offset": 1156,
@@ -2276,7 +2276,7 @@
    "id": "ml::190",
    "en": "Scholar: The west tower is a magic tower! <Teleportation>\n<between the red and blue magic circles> is possible!",
    "ja": "学者「西の塔は魔法の塔！\n　　　<赤と青の魔法陣の間をテレポート>できるのです！」",
-   "zh": "学者：「西塔是魔法塔！<传送>」\n「<红蓝魔法阵之间>可行！」",
+   "zh": "学者：「西塔是魔法塔！」\n「可以<在红蓝魔法阵之间传送>！」",
    "meta": {
     "blob": 323,
     "offset": 4124,
@@ -2312,7 +2312,7 @@
    "id": "ml::193",
    "en": "No. 30: By the way, <RGN_NAME__>, can you tell the difference\nbetween a merman and a shore merman?",
    "ja": "３０号「ちなみに<RGN_NAME__>\n　　　　魚人と陸魚人のクベツはツキマスカ？」",
-   "zh": "30号「对了，<RGN_NAME__>，你能分辨出\n人鱼和岸人鱼的区别吗？」",
+   "zh": "30号「对了，<RGN_NAME__>，\n鱼人和海岸人鱼的区别分得清吗？」",
    "meta": {
     "blob": 330,
     "offset": 1156,
@@ -2324,7 +2324,7 @@
    "id": "ml::194",
    "en": "Village Chief: I'm the chief! Mr. Dai's\nreturned to the Hero Castle!",
    "ja": "村長「ワシャ村長じゃ！\n　　　ダイクンさんは勇者城へ戻ったらしいな！」",
-   "zh": "村长「咱就是村长！大君\n回勇者城堡了！」",
+   "zh": "村长「咱就是村长！大君大人\n好像回勇者城了！」",
    "meta": {
     "blob": 337,
     "offset": 1580,
@@ -2384,7 +2384,7 @@
    "id": "ml::199",
    "en": "Imperial Soldier: Each of the castle's four entrances\nwill bring you to different places, so be careful!",
    "ja": "帝国兵士「皇帝城は東西南北の入口から\n　　　　　それぞれちがう場所に入れるから注意するんだ！」",
-   "zh": "帝国士兵「城堡的四个入口\n通往不同地方，小心点！」",
+   "zh": "帝国士兵「皇帝城的东南西北四个入口\n通向不同地方，要小心！」",
    "meta": {
     "blob": 360,
     "offset": 2004,
@@ -2408,7 +2408,7 @@
    "id": "ml::201",
    "en": "Peddler: You hear a lot of things in my line of work.\nFor instance, the castle is full of <hidden passages>!",
    "ja": "よろず屋「よろず屋だから　いろいろ知ってるね\n　　　　　皇帝城の中には<かくし通路>いっぱいね！」",
-   "zh": "小贩「干我这行能听到不少事。\n比如城堡里全是<隐藏通道>！」",
+   "zh": "小贩「干我这行能听到不少事。\n比如皇帝城里全是<隐藏通道>！」",
    "meta": {
     "blob": 360,
     "offset": 4124,
@@ -2420,7 +2420,7 @@
    "id": "ml::202",
    "en": "Owner: If I had to pick, I'd go with\nthe Dark Goddess, personally!",
    "ja": "店主「オレはどっちかっていうと\n　　　黒い方の女神さまの方が好きなんだっ！」",
-   "zh": "店主「要我选的话，我个人\n会选暗黑女神！」",
+   "zh": "店主「要说的话，我更喜欢\n黑色的那位女神大人！」",
    "meta": {
     "blob": 367,
     "offset": 1580,
@@ -2468,7 +2468,7 @@
    "id": "ml::206",
    "en": "Herbalist: Use the: <Common Herb> with the\n□ to recover 100 points of Strength!",
    "ja": "やくそう屋「<みんなのやくそう>は　□でつかうと\n　　　　　　体力を100回復できるんです」",
-   "zh": "草药商「用□使用<普通草药>，\n可恢复100点体力！」",
+   "zh": "草药商「用□使用<大众草药>，\n可恢复100点体力。」",
    "meta": {
     "blob": 373,
     "offset": 3700,
@@ -2552,7 +2552,7 @@
    "id": "ml::213",
    "en": "Old Woman: So Vetra was the culprit! You ought to\nlet the village chiefs know about this!",
    "ja": "おばば「ヴェトラが犯人であったか！\n　　　　村長たちに　このことを知らせておいたぞよ」",
-   "zh": "老婆婆「原来维特拉才是犯人！你得\n把这事告诉村长们！」",
+   "zh": "老婆婆「原来维特拉才是犯人！\n这事我已经通知村长他们了」",
    "meta": {
     "blob": 377,
     "offset": 2852,
@@ -2588,7 +2588,7 @@
    "id": "ml::216",
    "en": "Boy: It's a romance of treasure\nyou won't find it anywhere…",
    "ja": "少年「宝ってロマンだよな\n　　　どこかにないかな～」",
-   "zh": "男孩「宝藏就是风情啊\n哪儿都找不到的…」",
+   "zh": "男孩「宝藏就是浪漫啊。\n哪里会不会有呢～」",
    "meta": {
     "blob": 379,
     "offset": 2852,
@@ -2600,7 +2600,7 @@
    "id": "ml::217",
    "en": "Woman: Someone told me that there's a secret\npassage that'll take you to the island.",
    "ja": "女「島へ渡る　ヒミツのデートコースがあるって\n　　<カップル男>が言っていたわよ」",
-   "zh": "女人「有人跟我说有个秘密\n通道能带你去那座岛。」",
+   "zh": "女人「<男朋友>说过，有条能去岛上的\n秘密约会路线哦」",
    "meta": {
     "blob": 380,
     "offset": 1580,
@@ -2708,7 +2708,7 @@
    "id": "ml::226",
    "en": "Suspicious Man: Great work! The northern\nvillage's elder is really happy.",
    "ja": "あやしい男「やったな！\n　　　　　　北の村の村長もよろこんでたぜ」",
-   "zh": "可疑的人「干得好！\n北村的老人可开心了。」",
+   "zh": "可疑的人「干得好！\n北村的村长也很高兴呢」",
    "meta": {
     "blob": 400,
     "offset": 1156,
@@ -2768,7 +2768,7 @@
    "id": "ml::231",
    "en": "Owner: It's double the price! But\n5 times the amount!!",
    "ja": "店主「値段は２倍！\n　　　ただボリュームは５倍だぜ！！」",
-   "zh": "店主「价钱是两份！但\n分量是五倍！！」",
+   "zh": "店主「价钱是两倍！\n不过分量是五倍！！」",
    "meta": {
     "blob": 403,
     "offset": 1156,
@@ -2864,7 +2864,7 @@
    "id": "ml::239",
    "en": "Little Girl: Women are pleased with the demon in\nthe south. He has a lot of 'those', you know～",
    "ja": "女の子「南にいる魔族のヒトは女の子がよろこぶ\n　　　　アレをいっぱい持ってんのよね～」",
-   "zh": "小女孩「南边的魔族，女孩们都很喜欢。\n他有很多“那个”哦～」",
+   "zh": "小女孩「南边那个魔族，手里有好多\n女孩子会高兴的『那个』哦～」",
    "meta": {
     "blob": 416,
     "offset": 1580,
@@ -3068,7 +3068,7 @@
    "id": "ml::256",
    "en": "Master: There's lots of Gold in the East Forest.\nThere are many monsters there.",
    "ja": "マスター「東の森にいっぱいお金をおとす\n　　　　　モンスターがすんでいるぞ」",
-   "zh": "老板「东边森林里有很多金币。\n那边怪物也多。」",
+   "zh": "老板「东边的森林里住着会掉\n很多钱的怪物哦」",
    "meta": {
     "blob": 442,
     "offset": 7092,
@@ -3128,7 +3128,7 @@
    "id": "ml::261",
    "en": "Woman: The Evil Lord is just over there. There are tough\nmonsters on the way but you'll just have to pop in. ★",
    "ja": "おばちゃん「ちょっと強いヤツいるけど魔王はすぐそこよっ\n　　　　　　でも　よりみちもかんじんよ★」",
-   "zh": "女人「魔王就在那边，路上有强敌，\n但你只能硬上了。★」",
+   "zh": "女人「路上有几个强敌，但魔王就在那边。\n不过绕绕路也很重要哦★」",
    "meta": {
     "blob": 447,
     "offset": 1156,
@@ -3212,7 +3212,7 @@
    "id": "ml::268",
    "en": "Personal Assistant: It seems someone saved the orphanage\nin the south. This world is not lost yet, I'd say.",
    "ja": "使用人「南のこじいんを救った人がいるそうだ\n　　　　世の中まだまだすてたもんじゃあないねえ」",
-   "zh": "助理「似乎有人救了南边的失亲孩子院。\n看来这世界还没完蛋。」",
+   "zh": "佣人「听说有人救了南边的孤儿院。\n这世界还没糟到家呢」",
    "meta": {
     "blob": 462,
     "offset": 2428,
@@ -3296,7 +3296,7 @@
    "id": "ml::275",
    "en": "Little Girl: I really want to see the <south village>…\n<The sacrifice>… how awful!",
    "ja": "女の子「<南の村>　タイヘンみたい・・・\n　　　　<いけにえ>だなんて・・・ひどいよね？」",
-   "zh": "小女孩「我真想看看<南边的村庄>……\n<祭品>……好惨！」",
+   "zh": "小女孩「<南边的村庄>好像很惨……\n居然要<祭品>……太过分了吧？」",
    "meta": {
     "blob": 471,
     "offset": 1580,
@@ -3308,7 +3308,7 @@
    "id": "ml::276",
    "en": "Old Fisherman: Try the old man in the south village's fish,\nyou'll feel great and look better. ★",
    "ja": "りょうしオヤジ「南のジジイは好物のサカナ食うとよ\n　　　　　　　　元気になってイイ顔するんだよなあ★」",
-   "zh": "老渔夫「试试南村老头的鱼，\n精神好，气色也更好。★」",
+   "zh": "老渔夫「南边那老头一吃上爱吃的鱼啊，\n就精神抖擞、气色好得很呢★」",
    "meta": {
     "blob": 471,
     "offset": 3276,
@@ -3356,7 +3356,7 @@
    "id": "ml::280",
    "en": "No. 30: Am I interested in jewels, you ask?\nNot at all, I can't turn them into energy.",
    "ja": "３０号「宝石にキョウミはあるかデスカ？\n　　　　ありまセンヨ　宝石はエネルギーになりマセン」",
-   "zh": "30号「你问我可对宝石觉得好玩？\n一点也没有，我又不能把它变成能量。」",
+   "zh": "30号「你对宝石有兴趣吗？\n没有哦，宝石又不能变成能量。」",
    "meta": {
     "blob": 476,
     "offset": 1156,
@@ -3368,7 +3368,7 @@
    "id": "ml::281",
    "en": "Little Girl: Even though there's no happiness,\nit's still nice to have some jewels, right?",
    "ja": "女の子「ありがたみがないとはいえ\n　　　　やっぱり宝石はあってもいいわねぇ」",
-   "zh": "小女孩「就算没什么开心事，\n有宝石总还是好的吧？」",
+   "zh": "小女孩「虽说没那么稀罕了，\n但有宝石总归还是好的呢」",
    "meta": {
     "blob": 476,
     "offset": 1580,
@@ -3464,7 +3464,7 @@
    "id": "ml::289",
    "en": "Cole: Is it heavy? You get used\nto it after a while I guess.",
    "ja": "コール「てっきゅうが重くないかって？\n　　　　長いことやってるとこの重さがフツーになるのさ」",
-   "zh": "科尔「重吗？习惯就好。」",
+   "zh": "科尔「你问铁球重不重？干久了，这重量也就成常态了」",
    "meta": {
     "blob": 504,
     "offset": 1580,
@@ -3512,7 +3512,7 @@
    "id": "ml::293",
    "en": "Guy: You've acquired so many companions and even a castle, it\nseems like you've surpassed the level of the Commando Unit. ★",
    "ja": "ガイ「たくさんの仲間や城まで手に入れちまって\n　　　もう遊撃隊をこえちまったって感じだな★」",
-   "zh": "盖伊「你竟有了这么多同伴乃至城堡，\n看来已经超越了游击队的层次。★」",
+   "zh": "盖伊「连城堡都到手了，同伴也这么多，\n感觉已经超出游击队的层次了★」",
    "meta": {
     "blob": 504,
     "offset": 3700,
@@ -3524,7 +3524,7 @@
    "id": "ml::294",
    "en": "Old Woman: All this ruckus is a real bother.\nPerhaps I should go home soon.",
    "ja": "おばちゃん「まったくブッソウでこまるわ\n　　　　　　そろそろ家に戻ろうかしら」",
-   "zh": "老婆婆「这喧闹真让人头疼。\n我是不是该早点回家。」",
+   "zh": "老婆婆「真是没礼貌，真伤脑筋。\n我也差不多该回家了」",
    "meta": {
     "blob": 505,
     "offset": 2428,
@@ -3572,7 +3572,7 @@
    "id": "ml::298",
    "en": "Little Girl: The <sacrificial staff> is in the cave\nbut the monsters are dangerous!",
    "ja": "女の子「<いけにえのつえ>なら　どうくつにあるよ\n　　　　でも　モンスターがいるから　あぶない！」",
-   "zh": "小女孩「<牺牲之杖>在洞里，\n但怪物很凶险！」",
+   "zh": "小女孩「<祭品之杖>就在洞里，\n但那里有怪物，很危险！」",
    "meta": {
     "blob": 514,
     "offset": 5396,
@@ -3908,7 +3908,7 @@
    "id": "ml::326",
    "en": "Angel: It doesn't matter whether you're an angel, human or a\ndemon… In a sense it's a sort of paradise… or not.",
    "ja": "天使「天使も人間も魔族だろうがカンケー無い\n　　　ある意味ココはパラダイス・・・・・・じゃねぇな」",
-   "zh": "天使「是天使还是人类还是魔族，都不在意……\n某种意思上这里也算天堂……也不算。」",
+   "zh": "天使「天使也好人类也好魔族也好，都无所谓。\n某种意义上这儿算天堂……不过也不算啦」",
    "meta": {
     "blob": 575,
     "offset": 2428,
@@ -3932,7 +3932,7 @@
    "id": "ml::328",
    "en": "Man: Run in the middle to avoid monsters. It's\ngonna be a hot trip to the Evil Lord's Castle!",
    "ja": "青年「ちゅうおうで走りつづけるモンスターをよけて\n　　　魔王城に行くのがアツイんだっ！」",
-   "zh": "青年「在中间跑闪开怪物。\n去魔王城的路很凶险！」",
+   "zh": "青年「躲开在中央不停奔跑的怪物，\n一路冲向魔王城才够刺激！」",
    "meta": {
     "blob": 578,
     "offset": 2428,
@@ -4184,7 +4184,7 @@
    "id": "ml::349",
    "en": "Scholar: There's an entrance to the Big Venus, high up. <If you ride>\n<something with enough height> you may be able to enter!",
    "ja": "学者「大きなヴィーナスの　高いところに入口が見える\n　　　<高さのあるものに乗れば>中に入れるかもしれん」",
-   "zh": "学者「巨大的维纳斯高处有个入口。<骑上它的话>\n<足够高的东西>就能进去！」",
+   "zh": "学者「巨大的维纳斯高处能看到入口。\n<只要骑上够高的东西>也许就能进去」",
    "meta": {
     "blob": 622,
     "offset": 2852,
@@ -4196,7 +4196,7 @@
    "id": "ml::350",
    "en": "Village Chief: There are <four magic circles> that way…\nThat road will be the true test for your sword.",
    "ja": "村長「この先の<４つある魔法陣>に力をあたえる・・・\n　　　それだけが剣への道じゃ」",
-   "zh": "村长「那边有<四个魔法阵>…\n那条路才是你剑术的真正考验。」",
+   "zh": "村长「给前方的<四个魔法阵>注入力量……\n那才是通往剑的道路」",
    "meta": {
     "blob": 623,
     "offset": 2004,
@@ -4244,7 +4244,7 @@
    "id": "ml::354",
    "en": "Guy: Hey! Just when I finally thought you\nwere finished! … Idiot! …… Thanks a lot!!",
    "ja": "ガイ「何だよ！せっかくカッコ良くちったと思ったのによ！\n　　　・・・バーカ！・・・・・・・・・・ありがとな」",
-   "zh": "盖伊「喂！我刚觉得你帅起来，\n…饭桶！……多亏了！！」",
+   "zh": "盖伊「搞什么！难得我觉得你死得挺帅的！\n…笨蛋！…………谢了」",
    "meta": {
     "blob": 624,
     "offset": 3700,
@@ -4256,7 +4256,7 @@
    "id": "ml::355",
    "en": "Cole: Long time no see! … Heh!\nI knew you'd be back!!",
    "ja": "コール「ひさしぶりだな！・・・へっ！\n　　　　タダでくたばるタマじゃねぇって思ってたぜ！！」",
-   "zh": "科尔「好久不见！…嘿！\n我就知道你会回来！！」",
+   "zh": "科尔「好久不见！…嘿！\n我就知道你不是会白白送死的家伙！！」",
    "meta": {
     "blob": 624,
     "offset": 4124,
@@ -4328,7 +4328,7 @@
    "id": "ml::361",
    "en": "Minister: Please entrust Lady Ciel to my care. The world…\nwe leave that to your hands, <YUSHA_NAME>!",
    "ja": "大臣「シエル様のことはおまかせください\n　　　世界のことはたのみましたぞ！　<YUSHA_NAME>殿！」",
-   "zh": "大臣「请把希尔公主交给我。世界…\n就交到你手上了，<YUSHA_NAME>！」",
+   "zh": "大臣「希尔大人的事请交给我。\n世界就拜托你了，<YUSHA_NAME>大人！」",
    "meta": {
     "blob": 626,
     "offset": 2004,
@@ -4664,7 +4664,7 @@
    "id": "ml::389",
    "en": "Demon: There seems to be someone other than the great Tyranz\nin the Dark World sky…",
    "ja": "魔族「魔界の空にタイランツ様以外のヤツがいるような・・・」",
-   "zh": "魔族「魔界有泰兰兹以外的家伙……\n出现在天空…」",
+   "zh": "魔族「魔界的天空里，好像有泰兰兹大人\n以外的家伙……」",
    "meta": {
     "blob": 674,
     "offset": 2004,
@@ -4724,7 +4724,7 @@
    "id": "ml::394",
    "en": "Village Chief: Rumor has it that a rich, giant jelly appears in\nthe dead trees to the northwest when <15～10 seconds remain>!",
    "ja": "村長「北西のカレ木には<残り１５秒～１０秒の間>だけ\n　　　巨大な金持ちジェリーがやってくるというウワサじゃ！」",
-   "zh": "村长「听说西北枯树林里，\n<剩余15～10秒>时会出现巨型果冻！」",
+   "zh": "村长「听说西北的枯树林里，<剩余15～10秒>时\n会有有钱的巨型果冻怪出现！」",
    "meta": {
     "blob": 695,
     "offset": 1580,
@@ -4760,7 +4760,7 @@
    "id": "ml::397",
    "en": "Old Man: There's a village east of here, but thanks\nto the Grimoire, it's completely empty now.",
    "ja": "おじさん「東に村があるがグリモワールのせいで\n　　　　　ガラーンとしちまってるんだよ」",
-   "zh": "大叔「东边有个村子，不过多亏了格瑞莫，\n现在完全空了。」",
+   "zh": "大叔「东边有个村子，可被魔法书害得\n现在空空荡荡的」",
    "meta": {
     "blob": 702,
     "offset": 1580,
@@ -4856,7 +4856,7 @@
    "id": "ml::405",
    "en": "Nanny: This must be the work of that Evil Lord, thought\nto be dead… Princess, please help save the King!",
    "ja": "ばあや「これは滅びたはずの魔王のしわざでしょう\n　　　　姫さま　どうか国王をお救いくだされ！」",
-   "zh": "保姆「这一定是魔王的大作……\n公主，请救救国王！」",
+   "zh": "保姆「这一定是那本该灭亡的魔王干的……\n公主，请您救救国王！」",
    "meta": {
     "blob": 714,
     "offset": 5396,
@@ -4892,7 +4892,7 @@
    "id": "ml::408",
    "en": "Karin: <RGN_NAME__>'s ancestor? Seriously!? …\nI can see the commonality in your genes though.",
    "ja": "カリン「<RGN_NAME__>のご先祖？　マジかよ！？\n　　　　・・・今日ほどDNAのシンピを感じたコトはねーです」",
-   "zh": "卡琳「<RGN_NAME__>的先人？真的假的！？…\n不过从基因上倒看得出来。」",
+   "zh": "卡琳「<RGN_NAME__>的先人？真的假的！？\n…我从没像今天这样感受到DNA的神秘」",
    "meta": {
     "blob": 718,
     "offset": 4124,
@@ -5072,7 +5072,7 @@
    "id": "ml::423",
    "en": "Angel: Interested in the den to the north?\nI'm interested too, I wonder what's in it.",
    "ja": "天使「北のほらあな・・・気になる？\n　　　わたしも気になるのよね・・・なんなのかしら」",
-   "zh": "天使「对北边的洞穴觉得好玩吗？\n我也觉得好玩，不知里面有什么。」",
+   "zh": "天使「北边的洞穴……你在意吗？\n我也很在意呢……那到底是什么」",
    "meta": {
     "blob": 751,
     "offset": 2004,
@@ -5084,7 +5084,7 @@
    "id": "ml::424",
    "en": "Angel: On the edge of this continent there's a <warp hole> that\nyou can take to another continent … but only when necessary.",
    "ja": "天使「大陸のはしにある<うず>から　別の大陸へいけるよ\n　　　・・・必要になった時だけだけどね」",
-   "zh": "天使「这片大陆边缘有个<传送洞>，\n能带你去别的大陆…但只在必要时。」",
+   "zh": "天使「从大陆边缘的<漩涡>能去别的大陆哦\n…不过只在需要的时候」",
    "meta": {
     "blob": 751,
     "offset": 2852,
@@ -5168,7 +5168,7 @@
    "id": "ml::431",
    "en": "Man: … About the password…\n*Looks at the pot*",
    "ja": "男性「・・・合言葉ねぇ」\n　　（・・・つぼをチラッ）",
-   "zh": "男人「……关于暗号……\n＊看向罐子＊」",
+   "zh": "男人「……暗号啊……」\n（……瞥了一眼罐子）",
    "meta": {
     "blob": 759,
     "offset": 3700,
@@ -5336,7 +5336,7 @@
    "id": "ml::445",
    "en": "Clerk: You can fish from the pier in the east!\nThat's why we call it Itchybridge!",
    "ja": "やくそう売り「東のさん橋からサカナとれる\n　　　　　　　これすなわちギョギョーーってなもんよ！」",
-   "zh": "店主「你能从东边码头钓到鱼！\n所以这里叫痒痒桥！」",
+   "zh": "草药贩「从东边栈桥能钓到鱼！\n这就是所谓的『鱼鱼——』啊！」",
    "meta": {
     "blob": 815,
     "offset": 3700,
@@ -5348,7 +5348,7 @@
    "id": "ml::446",
    "en": "Fish Angel: I'm done… I can't go on\nwithout my family…",
    "ja": "魚天使「オラはもうハサンだぁ\n　　　　でも家族無しじゃオラは生きていけねぇ・・・」",
-   "zh": "鱼天使「我不行了…没有家人\n我真的撑不下去…」",
+   "zh": "鱼天使「俺已经破产啦……\n可是没有家人，俺活不下去啊……」",
    "meta": {
     "blob": 815,
     "offset": 6244,
@@ -5528,7 +5528,7 @@
    "id": "ml::461",
    "en": "Gramps: … What? Something about a girl?\nAnd she's in this village?",
    "ja": "ジイ様「・・・はて？　はじっこにムスメがおるが\n　　　　あんなムスメこの村におったかのう～・・・？」",
-   "zh": "老爷爷「……什么？说女孩的事？\n她就在这村里？」",
+   "zh": "老爷爷「……咦？角落里有个女孩，\n咱们村何时有过那样的女孩呀……？」",
    "meta": {
     "blob": 854,
     "offset": 1156,
@@ -5540,7 +5540,7 @@
    "id": "ml::462",
    "en": "Strange woman: … Ha ha ha, in this land there is a\ndevil who can teach <weak heroes about strength>.",
    "ja": "あやしい女「・・・うふふ　この大陸にはねぇ\n　　　　　　<弱き者に力を>さずけてくれる悪魔がいるの」",
-   "zh": "神秘女子「……呵呵呵，这片大陆上有个\n魔物能<教软弱的勇者何为强大>。」",
+   "zh": "神秘女子「……呵呵呵，这片大陆上啊，\n有个会<给弱者以力量>的恶魔哦」",
    "meta": {
     "blob": 854,
     "offset": 6244,
@@ -5576,7 +5576,7 @@
    "id": "ml::465",
    "en": "Old Man: It's naan! Got a problem with it?!\nI won't stand for any naansense!",
    "ja": "おやじ「ナンだよ！　モンクあっか！　ナンナンだよ！」",
-   "zh": "大叔「是面包啦！有意见吗？！\n我不许有人拿馕开玩笑！」",
+   "zh": "大叔「是馕啦！有意见吗！\n到底想怎样啊！」",
    "meta": {
     "blob": 857,
     "offset": 2852,
@@ -5696,7 +5696,7 @@
    "id": "ml::475",
    "en": "Shorty: Hey, hey, I saw Lady Athena up ahead～\nI wonder if she'll let me ride the glider again～",
    "ja": "チビッコ「この先でね～　アテナさまをみたよ～\n　　　　　またグライダーにのせてくれないかな～」",
-   "zh": "小不点「嘿嘿，我在前面看到雅典娜女士了～\n不知道她还会不会让我坐滑翔翼～」",
+   "zh": "小不点「前面那里啊～我看到雅典娜大人了～\n不知她还会不会再让我坐滑翔翼～」",
    "meta": {
     "blob": 895,
     "offset": 2004,
@@ -5828,7 +5828,7 @@
    "id": "ml::486",
    "en": "Youth: Hey!! Have you heard!? The next\n<village has been turned to stone>, yo!!",
    "ja": "青年「おいおい！！　聞いたか！？\n　　　この先の<村が石化しちまった>ってよ！！」",
-   "zh": "青年「喂！！听说了吗！？接下来\n<村子会变成石头>哦！！」",
+   "zh": "青年「喂！！听说了吗！？\n前面的<村子已经变成石头了>啊！！」",
    "meta": {
     "blob": 910,
     "offset": 2428,
@@ -6032,7 +6032,7 @@
    "id": "ml::503",
    "en": "Athena: You've got a pretty nice\ncastle here for <EVO_NAME__>.",
    "ja": "アテナ「<EVO_NAME__>のくせに\n　　　　なかなかイイ城持ってるじゃないっ」",
-   "zh": "雅典娜「你这<EVO_NAME__>的\n城堡还挺不错。」",
+   "zh": "雅典娜「亏你还是<EVO_NAME__>，\n城堡倒挺不错的嘛」",
    "meta": {
     "blob": 950,
     "offset": 3276,
@@ -6116,7 +6116,7 @@
    "id": "ml::510",
    "en": "Demon: Oh my, you had a run-in with Lord Vetra? Ah,\nI wonder if she'll be so kind as to possess me next.",
    "ja": "魔族「あららら　ヴェトラ様やられちゃったの？\n　　　あーあ　次はオレにとりついてくれねーかなー」",
-   "zh": "魔族「哎呀，你碰上维特拉大人了？\n啊，下次也附身我吧。」",
+   "zh": "魔族「哎呀呀，维特拉大人被打倒了？\n唉，下次能不能附身我啊」",
    "meta": {
     "blob": 961,
     "offset": 4124,
@@ -6152,7 +6152,7 @@
    "id": "ml::513",
    "en": "Little Girl: Some guy from the Brave Kingdom hit on me. When I\nturned him down, he headed off to the east in low spirits.",
    "ja": "女の子「ブレイブ王国の男の人にナンパされたの\n　　　　お断りしたらガックリして東の方に行ったわよ」",
-   "zh": "小女孩「勇者王国有人来搭讪我。我\n拒绝后，他就垂头丧气往东去了。」",
+   "zh": "小女孩「有个勇敢王国的男人来搭讪我，\n我拒绝后他就垂头丧气往东去了」",
    "meta": {
     "blob": 964,
     "offset": 2852,
@@ -6308,7 +6308,7 @@
    "id": "ml::526",
    "en": "Man: That reminds me, for a guy with a ladder like you, the\nmonsters are strong, but there's probably treasure, too!",
    "ja": "男の人「そういえばハシゴつきのあなには\n　　　　強いモンスターがいるが宝もあるらしいな～」",
-   "zh": "男人「说起来，像你这样带着梯子的人，\n怪物很强，但大概也有宝藏！」",
+   "zh": "男人「说起来，带梯子的那个洞穴里\n怪物很强，但好像也有宝藏呢～」",
    "meta": {
     "blob": 1000,
     "offset": 2004,
@@ -6452,7 +6452,7 @@
    "id": "ml::538",
    "en": "Soldier: There was another entrance to the cave!? Only Rina's\nkidnapper would know something like that, which means… !?",
    "ja": "兵士「どうくつに　べつの入口があったって！？\n　　　そんなこと知っているとは　やっぱりあんたがリィナを！？」",
-   "zh": "士兵「洞穴另有入口！？只有莉娜的\n绑架犯才知道，难道说…！？」",
+   "zh": "士兵「洞穴还有另一个入口！？\n你居然知道…果然莉娜是你绑的！？」",
    "meta": {
     "blob": 1015,
     "offset": 2852,
@@ -6608,7 +6608,7 @@
    "id": "ml::551",
    "en": "Clerk-Chief: I made some wooden swords as souvenirs!\nHow about it, brother! Please buy one!",
    "ja": "店番村長「ミヤゲ物用に木刀をこさえてみた！\n　　　　　どうだいニイちゃん！買ってってくれよ！」",
-   "zh": "店长村长「我做了木刀当伴手礼！\n怎么样啊手足！买一个吧！」",
+   "zh": "店长村长「我做了木刀当伴手礼！\n怎么样，小哥！买一把吧！」",
    "meta": {
     "blob": 1037,
     "offset": 5396,
@@ -6644,7 +6644,7 @@
    "id": "ml::554",
    "en": "Youth: Fluffiness is dangerous! The power of the\nEvil Lords! If you get hooked, there's no way out!",
    "ja": "若者「ほわほわはキケン！魔王の魔力！\n　　　ハマったらなかなか出れないなり！」",
-   "zh": "年轻人「毛乎乎很凶险！那是魔王的力量！\n迷上就再也出不来了！」",
+   "zh": "年轻人「软绵绵很危险！那是魔王的魔力！\n陷进去就很难出来了！」",
    "meta": {
     "blob": 1047,
     "offset": 3700,
@@ -13628,7 +13628,7 @@
    "id": "ml::1136",
    "en": "To delete an <Overland Tile>, select\nthe \"DEL\" tile from the palette\nand apply it to the relevant tile.\n\nWhen using the eyedropper 〕 on\na square with both tile types,\nthe <Overland Tile> will be prioritized.\n\nThe type of tile determines if\nthe Hero can move over it or not.\nMovement is possible on tiles\nsuch as forests and bridges,\nbut not on seas or mountains.",
    "ja": "<地上>チップを消したい時は\nパレットの「消」チップを選択し\n配置と同じ方法で消去できます。\n\n<地面>と<地上>が重なったマスで\n〕でスポイトを行うと\n<地上>チップの方が優先されます。\n\n勇者が移動可能なチップは\nチップごとに決まっています。\n森や橋は移動できますが\n海や山は移動できない\nといった具合です。",
-   "zh": "要删除<地上图块>，请从调色板\n选择“DEL”图块，然后\n应用到对应的图块上。\n\n在同时有两种图块的格子上\n使用吸管〕时，\n会优先选中<地上图块>。\n\n图块类型决定勇者\n能否走到上面。\n森林和桥之类的图块\n可以走，\n海和山则不行。",
+   "zh": "要删除<地上图块>，请从调色板\n选择“消”图块，然后\n按放置时相同的方法抹除。\n\n在<地面>与<地上>重叠的格子上\n用〕吸管时，\n会优先选中<地上图块>。\n\n勇者能否通过由图块\n各自决定。\n森林和桥可以通过，\n海和山则不行，\n诸如此类。",
    "meta": {
     "blob": 722,
     "offset": 1808,

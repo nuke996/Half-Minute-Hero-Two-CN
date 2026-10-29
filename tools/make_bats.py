@@ -134,7 +134,7 @@ BODY = {
         'echo (Han-hua-An-Zhuang.bat) to test the Chinese text in game.',
         'echo To build WITHOUT the replace dictionary, use the no-dictionary import',
         'echo .bat in this folder (same edits, Z15-norepl output).',
-        'echo Default import rebuilds dist/Z18-dlc-place-names (with Z17-video).',
+        'echo Default import rebuilds dist/Z19-proofread (with Z17-video).',
         '"%PY%" "' + TOOLSREL + '\\import_review.py" apply',
     ],
     '汉化-导入校对-不应用词典.bat': [

@@ -5302,6 +5302,17 @@ def do_package_names_cn_reuse_z18(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z19(exe_mode=None):
+    """Z19：Z18 配方 + proofread 分支的对话文本日文基准校对修订。"""
+    out = paths.dist('Z19-proofread')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z19',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5739,6 +5750,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z17': do_package_names_cn_reuse_z17,
      # Z18：Z17 + DLC01 战国大陆地名汉字化
      'package_names_cn_reuse_z18': do_package_names_cn_reuse_z18,
+     # Z19：Z18 + 对话文本日文基准校对修订
+     'package_names_cn_reuse_z19': do_package_names_cn_reuse_z19,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

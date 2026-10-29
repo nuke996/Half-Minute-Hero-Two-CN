@@ -113,8 +113,8 @@ NO_REPL = False
 
 
 def run_package():
-    """刷新 dist：默认 Z18（含 DLC 地名汉字化与 Z17-video 的 4 个视频）；--no-repl 时 Z15-norepl。"""
-    cmd = 'package_names_cn_reuse_norepl' if NO_REPL else 'package_names_cn_reuse_z18'
+    """刷新 dist：默认 Z19（Z18 + 对话校对修订）；--no-repl 时 Z15-norepl。"""
+    cmd = 'package_names_cn_reuse_norepl' if NO_REPL else 'package_names_cn_reuse_z19'
     p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), cmd],
                        capture_output=True)
     return (p.returncode, p.stdout.decode('utf-8', 'replace'),
@@ -522,6 +522,7 @@ def do_apply():
         elif kind == 'dlc_json':
             d7 = per_file['zh_07']
             d7[loc] = new
+            dlc_mod.setdefault('zh_07', {})[loc] = new
             n_dl += 1
 
     import csv as _csv
@@ -583,7 +584,7 @@ def do_apply():
             P('  [警告] 缺少原版文件，跳过构建自检。')
         else:
             dist_dir = paths.dist('Z15-reuse-kanji-norepl' if NO_REPL
-                                  else 'Z18-dlc-place-names')
+                                  else 'Z19-proofread')
             v_errs, v_warns = V.validate(dist_dir, stage)
             for w in v_warns[:8]:
                 P('  [警告] ' + w)

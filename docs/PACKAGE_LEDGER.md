@@ -41,7 +41,8 @@
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
 | **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标；**2026-10-25 修正译表两处错译（b245/2004 老管家台词、b445/63532）** | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 B24FDDFB15F4` / `MOV 53BD2E668E99` |
-| **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲；合入 Z17-video 的 4 个视频；默认「汉化-导入校对.bat」目标；**2026-10-27 截图校对轮**：断句重复、`AVALANCHE!` 补译、选项「尚未登场」、希腊字母/巴鲁蒙全名补全、补 `Mu/Xi`、泳装/Balmung 多行首行截断修正 | 待实机。sha256 `LANG_EN aa4d8e69646e`（含视频后）/ `DLC01 4d75992c06bc` / `MOV 53BD2E668E99`；`texture bc8e9dc75faa` / `cscv 5785a9f8ffb7`；`LANG_JA 924eff209d0e`（未改） |
+| **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲；合入 Z17-video 的 4 个视频；**2026-10-27 截图校对轮**：断句重复、`AVALANCHE!` 补译、选项「尚未登场」、希腊字母/巴鲁蒙全名补全、补 `Mu/Xi`、泳装/Balmung 多行首行截断修正 | 待实机。sha256 `LANG_EN aa4d8e69646e`（含视频后）/ `DLC01 4d75992c06bc` / `MOV 53BD2E668E99`；`texture bc8e9dc75faa` / `cscv 5785a9f8ffb7`；`LANG_JA 924eff209d0e`（未改） |
+| **Z19** | `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | Z18 + **`proofread` 分支对话文本日文基准校对修订**：按 `docs/PROOFREAD_DIALOGUE_REPORT.md` 分 3 批导入 1786 个单元（2649 单行槽 + 86 多行整段 + 40 DLC 条目），只改 `20_dialogue` / `30_multiline` / `40_dlc01` 的 `zh`；专名向机制名对齐，修复英文二次转译失真与断句；**2026-10-29 追加 35 条高严重度**（按日文逐单元核对占位符/符号/缩进），共 1821 单元 / 2842 处条目（2716 单行槽 + 86 多行 + 40 DLC）；**默认「汉化-导入校对.bat」目标** | 待实机。sha256 `LANG_EN a32b68d61f01`（含 Z17-video 合入后）/ `DLC01 650f6b1eeeea` / `MOV 53bd2e668e99`；`texture 9b799d7aecd7` / `cscv 85ce13ee8af6`；`LANG_JA 924eff209d0e`（未改）；自检 error 0 / warning 45 |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -203,6 +204,23 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
      - 隔离校验：所有地名槽位非空、无 `?`；未改名地名与 Z17 逐字节一致。
      - 自检 error 0 / warning 45；Z18 含 Z17-video 的 4 个视频；
        导入校对默认目标改为 `dist/Z18-dlc-place-names/`。
+  11. **2026-10-29 Z19：对话文本日文基准校对**：
+     - 依据 `docs/PROOFREAD_DIALOGUE_REPORT.md` 的 2272 条问题清单，按
+       high → medium/low（非语义）→ medium/low（语义）分 3 批导入，共 1786 个单元；
+     - 实际写回 **2649 个单行槽 + 86 个多行整段 + 40 个 DLC 条目**；
+       只改 `zh` 列/字段，`ja`、`blob_index`、`offset`、`slot_bytes` 等全部逐项比对未变；
+     - 改动的单行槽 **0** 个落在 `protected/`，且全部含日文 `「」`（对话台词）；
+       `10_ui_*`、`protected/`、`50_extra`、`60_video`、`extra_review.json`、
+       `replace_map.py` / `hl_map.py` 均未改动；
+     - 修复 `import_review.py` 的 `dlc_json` 分支漏写 `dlc/zh_07.json` 的缺陷
+       （此前 DLC `zh_07` 条目只在报告里计数，未落盘）；
+     - 新增 `package_names_cn_reuse_z19`（= Z18 配方），导入默认目标改为
+       `dist/Z19-proofread/`；自检 error 0 / warning 45；
+     - **同日追加 35 条高严重度**：原判据要求「多行单元每行都必须变化」，
+       误拦了只改一行的条目；改为按日文逐单元核对占位符/符号/引号/缩进/说话人标签后，
+       补入 19 条（日之国→日之本、勇者王国→勇敢王国等）+ 10 条占位符与日文一致的 +
+       6 条符号与日文一致的，实际写入 47 个单行槽；
+       剩余高严重度 14 条（建议本身缺 `」`/`♪`、丢续行缩进或说话人标签、视频条目）本轮未动。
 - **2026-10-23（Z15 补丁轮 2）**：
   1. `fill_dlc_item_name_copies()`：DLC01 道具/载具名与本篇同串（整槽 102 + 嵌入 23），
      Q78「船」修复；`refresh_dlc01()` 自动调用；

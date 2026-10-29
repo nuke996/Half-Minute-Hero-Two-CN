@@ -19,7 +19,7 @@
    "id": "row::59309",
    "en": "At this point, in addition to you, <YUSHA_NAME>,",
    "ja": "「ここはあえて<YUSHA_NAME>さんではなく",
-   "zh": "「此时，除了你<YUSHA_NAME>，",
+   "zh": "「这里我偏不跟<YUSHA_NAME>大人讲，",
    "meta": {
     "blob": 1038,
     "offset": 3096,
@@ -30,7 +30,7 @@
    "id": "row::59310",
    "en": "let me say this to everyone in the country!",
    "ja": "　全国のみなさんに対して言わせてもらうわ！」",
-   "zh": "　让我对全国的人说！」",
+   "zh": "　而是要对全国的人说！」",
    "meta": {
     "blob": 1038,
     "offset": 3160,
@@ -294,7 +294,7 @@
    "id": "row::59349",
    "en": "I'm really lucky to have met",
    "ja": "「アナタみたいなヒトに出会えてわたしも",
-   "zh": "「真走运能遇见",
+   "zh": "「能遇见像你这样的人，",
    "meta": {
     "blob": 1038,
     "offset": 15944,
@@ -305,7 +305,7 @@
    "id": "row::59350",
    "en": "someone like you! ♪ Tee hee hee! ▼",
    "ja": "　時の女神みょうりにつきるってもんよ♪　うふふ▼」",
-   "zh": "　像你这样的人！♪ 嘿嘿嘿！▼」",
+   "zh": "　我这时之女神也值了♪　呵呵▼」",
    "meta": {
     "blob": 1038,
     "offset": 16008,
@@ -646,7 +646,7 @@
    "id": "row::59402",
    "en": "Piece of junk! Why did you activate your Destruction System so",
    "ja": "「どうして突然ハメツシステムなのよポンコツ！」",
-   "zh": "「废物！你为何要这么启动毁灭系统」",
+   "zh": "「废物！干嘛突然启动毁灭系统！」",
    "meta": {
     "blob": 1040,
     "offset": 5724,
@@ -822,7 +822,7 @@
    "id": "row::59430",
    "en": "Eh? Are you by chance saying",
    "ja": "「えっ　ダイクンさん　もしかして",
-   "zh": "「咦？你该不会是说",
+   "zh": "「咦？大君，难道说",
    "meta": {
     "blob": 1040,
     "offset": 16820,
@@ -833,7 +833,7 @@
    "id": "row::59431",
    "en": "that the Hero Castle can also handle swamps?",
    "ja": "　勇者城　沼もオッケーなんですの？」",
-   "zh": "　勇者城连泥沼也能应付？」",
+   "zh": "　勇者城连泥沼也能行？」",
    "meta": {
     "blob": 1040,
     "offset": 16884,
@@ -866,7 +866,7 @@
    "id": "row::59436",
    "en": "I heard a rumor that they are selling <new engines>",
    "ja": "「こっから<北のテント>で勇者城の<ニューエンジン>を",
-   "zh": "「听说他们在卖<新引擎>",
+   "zh": "「听说<北边的帐篷>那边",
    "meta": {
     "blob": 1040,
     "offset": 17404,
@@ -877,7 +877,7 @@
    "id": "row::59437",
    "en": "for the Hero Castle at the <tent to the north>.",
    "ja": "　売ってるってウワサがあってな」",
-   "zh": "　给勇者城，地点在<北边的帐篷>。」",
+   "zh": "　在卖勇者城的<新引擎>啊」",
    "meta": {
     "blob": 1040,
     "offset": 17468,
@@ -1042,7 +1042,7 @@
    "id": "row::59464",
    "en": "There ya go!",
    "ja": "「それーー！」",
-   "zh": "「这就对了！」",
+   "zh": "「接招——！」",
    "meta": {
     "blob": 1040,
     "offset": 34924,
@@ -1262,7 +1262,7 @@
    "id": "row::59497",
    "en": "So many choices, whichever shall you choose? ★",
    "ja": "「これが自由度が高いっていうことかしら★」",
-   "zh": "「选项这么多，你到底选哪条路？★」",
+   "zh": "「这就是所谓的自由度高吗★」",
    "meta": {
     "blob": 1040,
     "offset": 61788,
@@ -1702,7 +1702,7 @@
    "id": "row::59594",
    "en": "We'll charge toward the Sky Continent",
    "ja": "「準備はバンタンッ",
-   "zh": "「我们就要朝空中大陆发起突击",
+   "zh": "「准备万全！",
    "meta": {
     "blob": 1043,
     "offset": 40472,
@@ -1713,7 +1713,7 @@
    "id": "row::59595",
    "en": "when our preparations are in order!",
    "ja": "　空中大陸に突撃ですわ！」",
-   "zh": "　等一切准备就绪！」",
+   "zh": "　朝空中大陆突击！」",
    "meta": {
     "blob": 1043,
     "offset": 40536,
@@ -1735,7 +1735,7 @@
    "id": "row::59599",
    "en": "I need more time to think about whether or not",
    "ja": "「やりのこしたことがあるかどうか",
-   "zh": "「我还需时间想想",
+   "zh": "「是否还有没做完的事，",
    "meta": {
     "blob": 1043,
     "offset": 42516,
@@ -1746,7 +1746,7 @@
    "id": "row::59600",
    "en": "there's more that must be done first.",
    "ja": "　もう少し　考えてみますわ」",
-   "zh": "　还稍微事得先做。」",
+   "zh": "　我再多想一会儿。」",
    "meta": {
     "blob": 1043,
     "offset": 42580,
@@ -1977,7 +1977,7 @@
    "id": "row::59658",
    "en": "What you call peace! And war! All of it",
    "ja": "「キサマらの言う　平和も！　戦争も！　全ては",
-   "zh": "「你们传说中的和平！还有战争！这一切",
+   "zh": "「你们所谓的和平！还有战争！这一切",
    "meta": {
     "blob": 1045,
     "offset": 3680,
@@ -1988,7 +1988,7 @@
    "id": "row::59659",
    "en": "exists solely to produce Timestream for us to harvest!",
    "ja": "　タイムストリームを生みだし回収するためのものよ！」",
-   "zh": "　都只为产出供我们收割的时之流！」",
+   "zh": "　都只是为了产出并收割时之流！」",
    "meta": {
     "blob": 1045,
     "offset": 3744,
@@ -2120,7 +2120,7 @@
    "id": "row::59678",
    "en": "… Did you hear that! Yes, did you? So that's the reason",
    "ja": "「なんてこった・・・です！　神々が突然地上を",
-   "zh": "「… 你听到了吗！听到了吧？原来原因就是",
+   "zh": "「怎么会这样…！原来诸神突然",
    "meta": {
     "blob": 1045,
     "offset": 9228,
@@ -2131,7 +2131,7 @@
    "id": "row::59679",
    "en": "that the Gods suddenly attacked the world's surface!",
    "ja": "　襲ったのはそういう理由だったですのね！」",
-   "zh": "　诸神突然进攻了地表！」",
+   "zh": "　袭击地上就是这个原因啊！」",
    "meta": {
     "blob": 1045,
     "offset": 9292,
@@ -2153,7 +2153,7 @@
    "id": "row::59683",
    "en": "It's because the Timestream has been",
    "ja": "「アイツらのせいで　今　地上から",
-   "zh": "「是因为时之流被",
+   "zh": "「都是因为他们，地上的时之流",
    "meta": {
     "blob": 1045,
     "offset": 9812,
@@ -2164,7 +2164,7 @@
    "id": "row::59684",
    "en": "disappearing into the hands of these Gods!",
    "ja": "　どんどんタイムストリームが無くなってるからだよ！」",
-   "zh": "　正被这些神明占为己有！」",
+   "zh": "　才会不断消失啊！」",
    "meta": {
     "blob": 1045,
     "offset": 9876,
@@ -2252,7 +2252,7 @@
    "id": "row::59694",
    "en": "If I can just defeat this last one,",
    "ja": "「こいつをぶっちめれば",
-   "zh": "「只要能打倒这最后一个，",
+   "zh": "「只要干掉这家伙，",
    "meta": {
     "blob": 1045,
     "offset": 13024,
@@ -2263,7 +2263,7 @@
    "id": "row::59695",
    "en": "the reign of the Gods on this planet will come to an end!",
    "ja": "　神々の地上へのかんしょうも止まるってことだろ！」",
-   "zh": "　诸神对这星球的掌管就终结了！」",
+   "zh": "　诸神对地上的干涉也就停了！」",
    "meta": {
     "blob": 1045,
     "offset": 13088,
@@ -2362,7 +2362,7 @@
    "id": "row::59709",
    "en": "In the <north> is a neutral third party and if we ally with",
    "ja": "「<北>には中立の第３せいりょくがいるようデス",
-   "zh": "「在<北边>有一中立第三方，若与",
+   "zh": "「在<北边>似乎有个中立的第三方，",
    "meta": {
     "blob": 1045,
     "offset": 15652,
@@ -2373,7 +2373,7 @@
    "id": "row::59710",
    "en": "them, they could be of use to us on the southern route.",
    "ja": "　味方にできれば海のルートがつかえるかもしれまセン」",
-   "zh": "　他们结盟，南线就多一分助力。」",
+   "zh": "　若能结盟，也许就能走海路了」",
    "meta": {
     "blob": 1045,
     "offset": 15716,
@@ -2648,7 +2648,7 @@
    "id": "row::59751",
    "en": "If you get through, we hope you can help those people out.",
    "ja": "「通るときに　みんなを助けてやってほしい",
-   "zh": "「若你能通关，盼你搭救那些人，",
+   "zh": "「路过的时候，希望你能帮帮那些人，",
    "meta": {
     "blob": 1045,
     "offset": 31420,
@@ -2659,7 +2659,7 @@
    "id": "row::59752",
    "en": "Some of the people will return to the village and help out.",
    "ja": "　何人かは村に戻って　あんたの力になってくれる」",
-   "zh": "　会有人回村去帮你的忙。」",
+   "zh": "　会有几个人回村去助你一臂之力。」",
    "meta": {
     "blob": 1045,
     "offset": 31484,
@@ -2824,7 +2824,7 @@
    "id": "row::59781",
    "en": "Oh!? It's the God Hunter!!",
    "ja": "「うおっ！？　まさかゴッドハンター！！",
-   "zh": "「噢！？是神灵狩猎者！！",
+   "zh": "「能给我签个名吗…不对，",
    "meta": {
     "blob": 1045,
     "offset": 43392,
@@ -2835,7 +2835,7 @@
    "id": "row::59782",
    "en": "Can I have your autograph…? Photobomb you?",
    "ja": "　サインください・・・ってそんなバアイじゃないか」",
-   "zh": "　能给我签名吗…？要跟你合个影？」",
+   "zh": "　现在可不是说这个的时候！」",
    "meta": {
     "blob": 1045,
     "offset": 43456,
@@ -2857,7 +2857,7 @@
    "id": "row::59786",
    "en": "I pray for good fortune… Our hero!! That was quick!!",
    "ja": "「どうかご武運を・・・勇者どのっ！！」",
-   "zh": "「祈求武运昌隆… 我们的勇者！！好快！！」",
+   "zh": "「祝您武运昌隆… 勇者大人！！」",
    "meta": {
     "blob": 1045,
     "offset": 43976,
@@ -3000,7 +3000,7 @@
    "id": "row::59806",
    "en": "… A-AH! Who are you!?",
    "ja": "「・・・な　何よ！　アンタたち！」",
-   "zh": "「… 啊-啊！你们是谁！？」",
+   "zh": "「… 什、什么啊！你们这些家伙！」",
    "meta": {
     "blob": 1045,
     "offset": 53904,
@@ -3055,7 +3055,7 @@
    "id": "row::59815",
    "en": "That's why he rescued us monsters.",
    "ja": "「ソウスレバ　ワレラモンスターハ　スクワレルノダ」",
-   "zh": "「所以他才救了我们怪兽。」",
+   "zh": "「这样一来，我们怪兽就能得救了。」",
    "meta": {
     "blob": 1045,
     "offset": 55072,
@@ -3407,7 +3407,7 @@
    "id": "row::59872",
    "en": "Well done, <RGN_NAME__>!!!",
    "ja": "「おつかれさまデス　<RGN_NAME__>！！",
-   "zh": "「干得好，<RGN_NAME__>！！！",
+   "zh": "「辛苦了，<RGN_NAME__>！！",
    "meta": {
     "blob": 1045,
     "offset": 108800,
@@ -3418,7 +3418,7 @@
    "id": "row::59873",
    "en": "You've finally defeated the last of the God Nine!",
    "ja": "　ついにゴッドナインをすべてたおしマシタネ」",
-   "zh": "　你终于打败了九神最后一人！」",
+   "zh": "　你终于把九神全部打倒了」",
    "meta": {
     "blob": 1045,
     "offset": 108864,
@@ -3462,7 +3462,7 @@
    "id": "row::59878",
    "en": "We set out to kill Gods!!",
    "ja": "「神をぶっちめるっ！！",
-   "zh": "「我们本就是要弑神！！",
+   "zh": "「把神揍扁！！",
    "meta": {
     "blob": 1045,
     "offset": 110552,
@@ -3473,7 +3473,7 @@
    "id": "row::59879",
    "en": "And now we've driven them all from the world!",
    "ja": "　地上から全部追い出してやるっ！」",
-   "zh": "　如今已把他们尽数逐出世界！」",
+   "zh": "　把他们从地上全部赶出去！」",
    "meta": {
     "blob": 1045,
     "offset": 110616,
@@ -3528,7 +3528,7 @@
    "id": "row::59887",
    "en": "In any case, you are victorious, <RGN_NAME__>!",
    "ja": "「<RGN_NAME__>の勝利デス　おめでとうゴザイマス」",
-   "zh": "「总之你胜利了，<RGN_NAME__>！」",
+   "zh": "「是<RGN_NAME__>的胜利　恭喜恭喜」",
    "meta": {
     "blob": 1045,
     "offset": 111428,
@@ -3935,7 +3935,7 @@
    "id": "row::59981",
    "en": "I sure am. If only I could fly the skies",
    "ja": "「そうなんですの　女神さまやアテナのように",
-   "zh": "「当然。要能像你们和雅典娜那样飞",
+   "zh": "「是啊，要是我也能像女神大人和雅典娜",
    "meta": {
     "blob": 1050,
     "offset": 10396,
@@ -3946,7 +3946,7 @@
    "id": "row::59982",
    "en": "like you and Athena do…",
    "ja": "　わたくしも飛べればいいですのに・・・」",
-   "zh": "　就好了…」",
+   "zh": "　那样飞就好了…」",
    "meta": {
     "blob": 1050,
     "offset": 10460,
@@ -4166,7 +4166,7 @@
    "id": "row::60014",
    "en": "I have a feeling that strong monsters are watching",
    "ja": "「きっとこの二つの塔に強いモンスターがいて",
-   "zh": "「我总觉得有猛兽在",
+   "zh": "「一定是那两座塔里有强怪，",
    "meta": {
     "blob": 1050,
     "offset": 17112,
@@ -4177,7 +4177,7 @@
    "id": "row::60015",
    "en": "the temple from each of those two towers.",
    "ja": "　神殿にかんしょうしてるのね」",
-   "zh": "　那两座塔里监视着神殿。」",
+   "zh": "　在干扰神殿呢。」",
    "meta": {
     "blob": 1050,
     "offset": 17176,
@@ -4617,7 +4617,7 @@
    "id": "row::60088",
    "en": "That's the commander of the Brave Kingdom Commandos.",
    "ja": "「それがブレイブ王国の遊撃隊隊長だっていうんだから",
-   "zh": "「他就是勇者王国游击队的队长，",
+   "zh": "「他居然是勇敢王国游击队的队长，",
    "meta": {
     "blob": 1050,
     "offset": 109384,
@@ -4628,7 +4628,7 @@
    "id": "row::60089",
    "en": "He can't be trusted!",
    "ja": "　まったく信じられないわ！」",
-   "zh": "　绝不能信他！」",
+   "zh": "　真让人不敢相信！」",
    "meta": {
     "blob": 1050,
     "offset": 109448,
@@ -4837,7 +4837,7 @@
    "id": "row::60122",
    "en": "By the way, I'm grateful that you came and talked",
    "ja": "「ところでこのおいさき短い老人に",
-   "zh": "「对了，你肯来和我说说话",
+   "zh": "「对了，你特意来跟这没多少时日的老头说话，",
    "meta": {
     "blob": 1050,
     "offset": 118436,
@@ -4848,7 +4848,7 @@
    "id": "row::60123",
    "en": "to this elderly man in his last years of life.",
    "ja": "　わざわざ話しかけるとは何か頼みごとかね」",
-   "zh": "　我这行将就木的老头很感谢。」",
+   "zh": "　是有什么事要拜托我吗？」",
    "meta": {
     "blob": 1050,
     "offset": 118500,
@@ -4859,7 +4859,7 @@
    "id": "row::60124",
    "en": "Last years of his life…",
    "ja": "「おいさき短い・・・・・・",
-   "zh": "「他人生的最后几年…",
+   "zh": "「没多少时日……",
    "meta": {
     "blob": 1050,
     "offset": 118728,
@@ -4870,7 +4870,7 @@
    "id": "row::60125",
    "en": "No, don't mention it!",
    "ja": "　いいえっ　なんでもありませんわ！」",
-   "zh": "　不，别客气！」",
+   "zh": "　不，没什么事！」",
    "meta": {
     "blob": 1050,
     "offset": 118792,
@@ -4958,7 +4958,7 @@
    "id": "row::60139",
    "en": "I'm about to escape this land for one",
    "ja": "「これから魔界の魔王たちの支配が",
-   "zh": "「我正要逃离这片",
+   "zh": "「我正打算逃到魔王们的统治",
    "meta": {
     "blob": 1050,
     "offset": 122816,
@@ -4969,7 +4969,7 @@
    "id": "row::60140",
    "en": "not yet ruled by the Dark World's Evil Lords.",
    "ja": "　とどかない土地まで逃げるところなの」",
-   "zh": "　尚未被魔界魔王掌管的土地。」",
+   "zh": "　还触及不到的地方去。」",
    "meta": {
     "blob": 1050,
     "offset": 122880,
@@ -6069,7 +6069,7 @@
    "id": "row::60288",
    "en": "… You dun goof'd!!!",
    "ja": "「・・・いいドキョウだ！！！」",
-   "zh": "「……你个饭桶！！！」",
+   "zh": "「……还真有胆量啊！！！」",
    "meta": {
     "blob": 1050,
     "offset": 186180,
@@ -6113,7 +6113,7 @@
    "id": "row::60296",
    "en": "… Fine. I'll let you off in consideration of this victory.",
    "ja": "「・・・いいダロウ　この勝利にめんじて",
-   "zh": "「……而已。看在这场胜利的份上，就放你一马，",
+   "zh": "「……好吧。看在这场胜利的份上，",
    "meta": {
     "blob": 1050,
     "offset": 189684,
@@ -6124,7 +6124,7 @@
    "id": "row::60297",
    "en": "Just this once, I'll pay your loan for you.",
    "ja": "　今回だけは　このオレ様が立てかえといテヤル」",
-   "zh": "　就这一次，本大爷代你还债。」",
+   "zh": "　就这一次，本大爷替你把债还上。」",
    "meta": {
     "blob": 1050,
     "offset": 189748,
@@ -6157,7 +6157,7 @@
    "id": "row::60302",
    "en": "So you've come! Well, well.",
    "ja": "「来たか！　ええいっ",
-   "zh": "「你来了啊！好，好，",
+   "zh": "「你来了啊！好，",
    "meta": {
     "blob": 1051,
     "offset": 748,
@@ -6168,7 +6168,7 @@
    "id": "row::60303",
    "en": "The Spell of Destruction will take effect in no time!",
    "ja": "　ハメツの呪文の発動を待つまでもない！」",
-   "zh": "　毁灭咒语马上就要发动了！」",
+   "zh": "　都不用等毁灭咒语发动了！」",
    "meta": {
     "blob": 1051,
     "offset": 812,
@@ -6322,7 +6322,7 @@
    "id": "row::60339",
    "en": "We must end this battle…",
    "ja": "「このたたかいを終わらせ・・・",
-   "zh": "「我们必须结束这场战斗…",
+   "zh": "「结束这场战斗…",
    "meta": {
     "blob": 1051,
     "offset": 47116,
@@ -6333,7 +6333,7 @@
    "id": "row::60340",
    "en": "… and create our own future!!",
    "ja": "　未来に時をつむぐのだ！！」",
-   "zh": "　…开创我们自己的未来！！」",
+   "zh": "　为未来编织时光！！」",
    "meta": {
     "blob": 1051,
     "offset": 47180,
@@ -6366,7 +6366,7 @@
    "id": "row::60346",
    "en": "Don't bug me when I'm eating",
    "ja": "「ぬすんできた好物のやくそうを",
-   "zh": "「我吃东西时别来烦我",
+   "zh": "「别打扰我偷偷吃",
    "meta": {
     "blob": 1051,
     "offset": 50284,
@@ -6377,7 +6377,7 @@
    "id": "row::60347",
    "en": "these Herbs I stole, my favorite food!",
    "ja": "　こっそり食べるのをジャマすんな！」",
-   "zh": "　别打扰我偷吃最爱的食物！」",
+   "zh": "　偷来的最爱——草药！」",
    "meta": {
     "blob": 1051,
     "offset": 50348,
@@ -6421,7 +6421,7 @@
    "id": "row::60354",
    "en": "Nahaha! This doesn't concern you at all, but",
    "ja": "「ナハハッ　関係ないくせにこんなとこまで来やがって」",
-   "zh": "「呐哈哈！这跟你全无关系，可」",
+   "zh": "「呐哈哈！明明跟你没关系，还跑到这儿来。」",
    "meta": {
     "blob": 1051,
     "offset": 55180,
@@ -6586,7 +6586,7 @@
    "id": "row::60380",
    "en": "Leave the kid to me.",
    "ja": "「この子はオレに任せて",
-   "zh": "「这孩子就交给我，",
+   "zh": "「这孩子交给我，",
    "meta": {
     "blob": 1051,
     "offset": 60652,
@@ -6597,7 +6597,7 @@
    "id": "row::60381",
    "en": "I'll clear it up in no time.",
    "ja": "　さっさとザコを片づけるんだな」",
-   "zh": "　我很快就能解决。」",
+   "zh": "　你赶紧把小喽啰收拾掉。」",
    "meta": {
     "blob": 1051,
     "offset": 60716,
@@ -7048,7 +7048,7 @@
    "id": "row::60506",
    "en": "Humph. ▼ No doubt, it looks like a Chrono Crystal.",
    "ja": "「んっふー▼　たしかにクロノクリスタルのようですね」",
-   "zh": "「哼▼全无疑问，这看起来像时之水晶。」",
+   "zh": "「哼▼全无疑问，这看起来像计时水晶。」",
    "meta": {
     "blob": 1056,
     "offset": 16300,
@@ -7125,7 +7125,7 @@
    "id": "row::60519",
    "en": "The masses have begun to",
    "ja": "「下民のブンザイでワタクシに",
-   "zh": "「那些平民居然对我",
+   "zh": "「区区下民，不知分寸，竟敢",
    "meta": {
     "blob": 1056,
     "offset": 34732,
@@ -7136,7 +7136,7 @@
    "id": "row::60520",
    "en": "battle directly against me…",
    "ja": "　ちょくせつバトルをしかけてくるなんて・・・」",
-   "zh": "　直接对我开战了…」",
+   "zh": "　直接向本小姐开战…」",
    "meta": {
     "blob": 1056,
     "offset": 34796,
@@ -7158,7 +7158,7 @@
    "id": "row::60525",
    "en": "Okay! Who am I gonna",
    "ja": "「♪～　さ～てと今日はダレを",
-   "zh": "「好♪今天我要给谁",
+   "zh": "「好～♪今天要吓唬",
    "meta": {
     "blob": 1056,
     "offset": 37324,
@@ -7169,7 +7169,7 @@
    "id": "row::60526",
    "en": "surprise today, I wonder? Tralala.",
    "ja": "　おどかしちゃおうかな～　うふふ～♪」",
-   "zh": "　吓唬吓唬呢～呵呵♪」",
+   "zh": "　谁好呢～呵呵～♪」",
    "meta": {
     "blob": 1056,
     "offset": 37388,
