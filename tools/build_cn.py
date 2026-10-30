@@ -5313,6 +5313,21 @@ def do_package_names_cn_reuse_z19(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z20(exe_mode=None):
+    """Z20（试验）：Z19 配方 + 道具说明“避字”改写（避开描述渲染器错字：神/奇/饮）。
+
+    仅用于实机验证“描述渲染器按码错位”的假设：改写后的说明若显示正常，
+    说明避开坏字即可规避；若仍异常，说明问题不在具体字符而在槽位/渲染路径。
+    """
+    out = paths.dist('Z20-desc-dodge')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z20',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5752,6 +5767,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z18': do_package_names_cn_reuse_z18,
      # Z19：Z18 + 对话文本日文基准校对修订
      'package_names_cn_reuse_z19': do_package_names_cn_reuse_z19,
+     # Z20（试验）：Z19 + 道具说明避字改写（避开神/奇/饮），输出 dist/Z20-desc-dodge
+     'package_names_cn_reuse_z20': do_package_names_cn_reuse_z20,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

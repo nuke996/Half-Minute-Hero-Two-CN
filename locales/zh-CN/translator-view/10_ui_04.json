@@ -40092,7 +40092,7 @@
    "id": "row::61041",
    "en": "Mysterious drink that raises your level by one with every use.",
    "ja": "使うとレベルが一つ上がるフシギなドリンク",
-   "zh": "用后升1级的神奇饮料",
+   "zh": "用后升1级的灵药",
    "meta": {
     "blob": 357,
     "offset": 103508,
@@ -40103,7 +40103,7 @@
    "id": "row::61042",
    "en": "Mysterious drink that drops your level by one with every use.",
    "ja": "使うとレベルが一つ下がる危ないドリンク",
-   "zh": "用后降1级的凶险饮料",
+   "zh": "用后降1级的凶险药水",
    "meta": {
     "blob": 357,
     "offset": 103776,
