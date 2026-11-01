@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-10-21（Z10b/Z11/Z12 + 称号守卫修复）
+> 最近更新：2026-10-30（Z19 重建 + `cscv[355]` 歌词恢复 + Z20 实验包）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 
 ---
@@ -30,19 +30,20 @@
 
 ## 2. 当前包谱系
 
-| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-10-21） |
+| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-10-30） |
 |---|---|---|---|---|
 | **stable**（E3） | `package_stable_names` | `dist/stable-names-en/` | 只写 `LANG_EN`；机制名/伙伴名/称号等保持原版；其余中文；当前译表 | **稳定基准**，历次验证可玩 |
 | **Z10b** | `package_names_cn_mech_hash` | `dist/Z10b-mech-names/` | 仅技能/装备名中文 + 操作数重算；伙伴名与其余 collide 原版；**称号已恢复原版** | 序章五项、技能、装备、商店正常（2026-10-21） |
 | **Z11** | `package_names_cn_partner_hash` | `dist/Z11-partner-names/` | Z10b + 伙伴名（`b954/b1034` 及全副本）+ 复合键；重算 240 个操作数 | 用户实测“尚未测出问题”；**称号已恢复原版（需复测获得）** |
 | **Z12** | `package_names_cn_display_hash` | `dist/Z12-display-names/` | Z11 + 敌名/Boss 名/宝箱/音乐/地图 UI 显示列 | 敌名/Boss 说话人/音乐正常；**称号曾因 mirror 绕过守卫而变中文，已修复并重建** |
 | **Z13** | `package_names_cn_batch_b_hash` | `dist/Z13-batchB/` | Z12 + 批次 B：50 个技能名（脚本参数列）+ 10 个已有译名同步 + `b99`/`b25` UI 缺译 | 伙伴技能/合成界面/元素石正常；敌人技能仍有少量漏译（Z14 已补 Chaos Wing 等） |
-| **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验） |
+| **Z14** | `package_names_cn_jobs_titles_hash` | `dist/Z14-jobs-titles/` | Z13 + 职业名（12）+ 阵型名（11）+ 称号名（252）+ 新敌技名 | **尚未完整实机测试**（仅生成并完成离机校验）；后续已由 Z15→Z19 覆盖，本行作历史记录 |
 | **Z15** | `package_names_cn_reuse` | `dist/Z15-reuse-kanji/` | Z14 + **同字复用原版日文汉字槽位**（523 字，重画 527 格）；新占 2296/2847，余量 551；应用 REPL+HL；**Z15 起同步道具名全副本**，含 `stride152 pos24` 载具嵌入副本（本篇 35 / DLC 23）；**2026-10-22：DLC cmap 复用、数字 ID 保护、`force_sb` 修正**；**2026-10-23：DLC 道具/载具名同步（整槽 102 + 嵌入 23）、泳装名恢复「性感泳衣」** | **部分实机**：龙 NPC、性感泳衣已恢复；DLC 船待复测；马/摩托/越野车/竹马未逐项测。离机：主结构仅 2 处预期操作数重算、DLC 结构 0、14 类英文副本 0、嵌入副本 0、DLC 未同步 0。sha256 `LANG_EN 39297e1e3d29` / `DLC01 39a25404d9d1` |
 | **Z15-norepl** | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | 同 Z15，但**不套用 REPL**（仅保留 HL）；新增「窟」1 格，余量 550 | 对比用；未实机测试 |
-| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；默认「汉化-导入校对.bat」目标；**2026-10-25 修正译表两处错译（b245/2004 老管家台词、b445/63532）** | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 B24FDDFB15F4` / `MOV 53BD2E668E99` |
+| **Z17** | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | Z15 + 显示文本补全：括号独白/选项、UI 标签（Boss/Artwork/The Usual/Robe/Swimsuit/Dress/Class Change 等）、英文多行尾行清零、`Specialty`、地图编辑器说明/半句、`b804` 萨莎日记/勋章/魔人迷宫标题、`b153` 战斗行动提示；**菜单名/分组标签全副本统一（Music Player/Craft Weapons/Gallery/Normal Mode/Best Time），修复音乐播放器购买列表闪退**；**便携女神像描述因“神→挑”字体查表问题加入 `PROTECTED_DISPLAY_OFFS`（显示原文，译文存 protected）**；**合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening）**；**2026-10-25 修正译表两处错译（b245/2004 老管家台词、b445/63532）** | 待实机。sha256 `LANG_EN A87C91AF8452` / `DLC01 B24FDDFB15F4` / `MOV 53BD2E668E99` |
 | **Z18** | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | Z17 + **DLC01 战国大陆地名汉字化**：ヒロシーマ→广岛城、アーオモリ→青森村/青森城、カッゴシマ→鹿儿岛城、オンサカ→音坂城、ニーガータ→新潟村、ワーカナイ→稚内村（含村长台词）、エーヒメ→爱媛城、ウッタエ→诉讼村、オトコテツガク→男哲学村；イー村、フクオンカ城保持原译；新增字 坂/潟/讼/哲；合入 Z17-video 的 4 个视频；**2026-10-27 截图校对轮**：断句重复、`AVALANCHE!` 补译、选项「尚未登场」、希腊字母/巴鲁蒙全名补全、补 `Mu/Xi`、泳装/Balmung 多行首行截断修正 | 待实机。sha256 `LANG_EN aa4d8e69646e`（含视频后）/ `DLC01 4d75992c06bc` / `MOV 53BD2E668E99`；`texture bc8e9dc75faa` / `cscv 5785a9f8ffb7`；`LANG_JA 924eff209d0e`（未改） |
-| **Z19** | `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | Z18 + **`proofread` 分支对话文本日文基准校对修订**：按 `docs/PROOFREAD_DIALOGUE_REPORT.md` 分 3 批导入 1786 个单元（2649 单行槽 + 86 多行整段 + 40 DLC 条目），只改 `20_dialogue` / `30_multiline` / `40_dlc01` 的 `zh`；专名向机制名对齐，修复英文二次转译失真与断句；**2026-10-29 追加 35 条高严重度**（按日文逐单元核对占位符/符号/缩进），共 1821 单元 / 2842 处条目（2716 单行槽 + 86 多行 + 40 DLC）；**默认「汉化-导入校对.bat」目标** | 待实机。sha256 `LANG_EN a32b68d61f01`（含 Z17-video 合入后）/ `DLC01 650f6b1eeeea` / `MOV 53bd2e668e99`；`texture 9b799d7aecd7` / `cscv 85ce13ee8af6`；`LANG_JA 924eff209d0e`（未改）；自检 error 0 / warning 45 |
+| **Z19** | `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | Z18 + **`proofread` 分支对话文本日文基准校对修订**：按 `docs/PROOFREAD_DIALOGUE_REPORT.md` 分 3 批导入 1786 个单元（2649 单行槽 + 86 多行整段 + 40 DLC 条目），只改 `20_dialogue` / `30_multiline` / `40_dlc01` 的 `zh`；专名向机制名对齐，修复英文二次转译失真与断句；**2026-10-29 追加 35 条高严重度**（按日文逐单元核对占位符/符号/缩进），共 1821 单元 / 2842 处条目（2716 单行槽 + 86 多行 + 40 DLC）；**2026-10-30 恢复 `cscv[355]` 歌曲表 28 个英文行中文写入**（`song=True`，`place/chap` 仍关闭；见 `PITFALLS.md` §38）；**默认「汉化-导入校对.bat」目标** | 待实机。sha256 `LANG_EN 19aa627cd8f3`（含 Z17-video 合入后）/ `DLC01 ded29342db0b` / `MOV 53bd2e668e99`；`texture 2f9ef4324ab2` / `cscv e0aa054fe161`；`LANG_JA 924eff209d0e`（未改）；自检 error 0 / warning 45 |
+| **Z20（试验）** | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），其余与 Z19 相同 | 仅用于验证「描述渲染器按码错位」假设，未实机。**2026-10-30 19:15 构建，早于歌词修复，`cscv[355]` 仍为原文**。sha256 `LANG_EN 18546ee7cbe4` / `DLC01 90798e39748f` / `MOV 53bd2e668e99`；`texture eec24de3af54` / `cscv 85ce13ee8af6` / `LANG_JA 924eff209d0e` |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -73,6 +74,7 @@
 | 界面/物品少量漏译 | 未放行表/未登记副本 | 记为正式版前收尾项，不是回归 |
 | 生僻字 `?` | 字库覆盖 / `cmap` | 检查 `build_plan` 覆盖率；不要用 `?` 判断漏译 |
 | 某处文本仍是原文 | 可能受 collide/称号/Q16/键列保护 | 查 `docs/PITFALLS.md`，不要直接放行整表 |
+| **「小咕的歌」页歌词仍为英文** | `cscv[355]` 歌曲表英文行是否写入（Z 系列曾 `song=False`） | 用 Z19（2026-10-30 起含歌词）；Z18 及更早包需重建，见 `PITFALLS.md` §38 |
 
 ---
 
@@ -93,6 +95,9 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 
 # Z15：同字复用原版日文汉字槽位（方案 B，重画简中字形）
 python tools/build.py --game-dir work/original package_names_cn_reuse
+
+# 当前发布包 Z19（对话校对 + cscv[355] 歌词 + 4 个视频）
+python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 ```
 
 - 安装：把对应 `dist/<包>/` 下的文件覆盖到游戏目录（先备份原文件）。
@@ -104,15 +109,16 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 
 ## 5. 已知未完成 / 暂不处理
 
-- 界面少量漏译（2026-10-21 截图：道具收藏中的 `Mu`/`Xi`、怪物图鉴第 1 项 `Jelly`、
-  地图编辑器 `Explanation` 栏）→ 正式版前统一全量扫描收尾。
-- 武器合成界面（`b99`，stride 308）：**未登记进译表**，不是守卫/未放行问题——
+- 界面少量漏译：道具收藏中的 `Mu`/`Xi` 已在 Z18 补译（缪/克西，见 `PITFALLS.md` §34/§36）；
+  仍待收尾的只有怪物图鉴第 1 项 `Jelly`、地图编辑器 `Explanation` 栏等零散项。
+- 武器合成界面（`b99`，stride 308）：**Z13 起已用额外译表行补上**（此前未登记进译表，
+  不是守卫/未放行问题）——
   - `b99 off16` `Wooden Sword +1`（rec0 名称）无 CSV 行；
   - `b99 off56` `Combining the best features of`（说明第一行）无 CSV 行，
     第二行 `off110` 已有译文（“木刀与木棒，各取其长”）；
   - `b25 off62384/63056` `Materials: %s　＋　%s` 无 CSV 行（注意保留 `%s`）。
-  **Z13 已用额外译表行补上（木剑+1 / 兼具 / 材料：%s　＋　%s），待实机验证。**
-- 称号名保持原文（EN 包显示英文）——**Z14 起已改为中文**：b931 pos0 与所有
+  （木剑+1 / 兼具 / 材料：%s　＋　%s）；已进 Z13 起的包，正式版前仍按 §3 做一次收尾复核。
+- 称号名：**Z14 起已改为中文**（Z10b–Z13 时期保持原文）；b931 pos0 与所有
   stride292/pos32 条件副本必须同串；Q16 槽位仍按原字节恢复。
 - 敌人/伙伴专属技能名、部分 Boss 名等缺译（批次 B）；脚本参数列需按内容白名单放行，
   禁止整列翻译。`Chaos Wing` 等已在 Z14 补译。
@@ -123,6 +129,20 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 
 ## 6. 变更记录
 
+- **2026-10-30（歌词恢复 + Z20 实验包）**：
+  1. `do_apply_names_cn_jobs_titles_hash`（Z14/Z15/Z17/Z18/Z19/Z20 共用配方）改 `song=True`：
+     `cscv[355]` 歌曲表 28 个英文行重新写入中文；`place`/`chap` 仍为 False
+     （原因见 `PITFALLS.md` §38）。
+  2. `verify_e1_isolation()` 的 cscv 差异白名单由 `{836}` 扩为 `{836,355}`
+     （836 = 字符表，355 = 歌曲表英文行，均为纯显示；其余 blob 仍须与母本一致）。
+  3. 重建 Z19：28/28 反解码逐字一致，记录头/相邻记录改动 0；`LANG_EN`/`DLC01`/`texture`/`MOV`
+     与重建前逐字节相同；`validate_build` error 0 / warning 45。
+     Z19 sha256：`LANG_EN 19aa627cd8f3` / `DLC01 ded29342db0b` /
+     `texture 2f9ef4324ab2` / `cscv e0aa054fe161`。
+     **Z18 仍是 10-27 构建，不含歌词**；需要歌词请用 Z19 或重建。
+  4. 新增实验包 Z20（`dist/Z20-desc-dodge/`，道具说明避字），构建于歌词修复前 ⇒ 不含歌词。
+  5. 说明：歌词译文仍是代码常量 `SONG_EN_LINES`，不在 `text_v2.csv`/`translator-view`，
+     因此校对视图看不到、改不了（后续如需人工校对要另接导出/导入通道）。
 - **2026-10-27（Z18 截图校对轮）**：
   1. `row 14180`（`b260/18636`）跨槽台词重复：第二行原译把上一行的
      `<地震>/<落石>` 再写一遍 → 改为 `　用这些招数来攻击你吧。」`（日文该槽只写
@@ -254,10 +274,11 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 
 ---
 
-## 7. 今日新上屏文本映射表（2026-10-21）
+## 7. 新上屏文本映射表（累计，截至 2026-10-30）
 
 > 用途：实机出问题时，按“现象 → 包 → 表/位置”快速定位。
-> 所有坐标均指 `res/LANG_EN.s2a`（Z10b–Z14 只写 EN；JA 侧不写）。
+> 除特别标注外，坐标指 `res/LANG_EN.s2a`（Z10b 起只写 EN；Z14 起同时写 `DLC01/LANG_EN`；
+> JA 侧一律不写）。
 
 | 包 | 文本 | 表 / 位置 | 机制与注意 |
 |---|---|---|---|
@@ -319,21 +340,21 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
   - 导入时额外行写入 `locales/zh-CN/extra_review.json`（完整覆盖表），
     CSV 行写回 `text_v2.csv`；
   - `汉化-导入校对.bat` 自检通过后固定运行
-    `package_names_cn_reuse` 刷新 `dist/Z15-reuse-kanji/`（应用 REPL+HL）；
+    `package_names_cn_reuse_z19` 刷新 `dist/Z19-proofread/`（应用 REPL+HL）；
   - `汉化-导入校对-不应用词典.bat` 运行 `import_review.py apply --no-repl`，
     重建 `dist/Z15-reuse-kanji-norepl/`（不套用 REPL，仅保留 HL）；
     两者读同一批 JSON，只是打包模式不同；
   - 对应装机：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）；
   - 回滚会同时恢复 `extra_review.json` 与 `text_v2.csv` 的备份。
-- 已实测：导出 55,170 普通 / 6,048 受保护 / 1,181 多行 / 1,707 DLC / **257 额外**；
-  导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建包
-  （Z14 时期重建 Z14，Z15 起重建 Z15）。
+- 已实测导出规模（2026-10-27 Z18 轮）：55,419 普通 / 5,850 受保护 / 1,183 多行 /
+  1,707 DLC / **257 额外**；导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建包
+  （Z14 时期重建 Z14，Z15 起重建 Z15，2026-10-23 起重建 Z18，2026-10-29 起重建 Z19）。
 
 ---
 
-## 10. Z14 测试状态（重要）
+## 10. Z14 测试状态（历史记录，已由 Z15/Z18/Z19 取代）
 
-- **Z14 尚未完整实机测试**：目前只完成生成与离机校验（职业 12/12、阵型 11/11、
+- **Z14 尚未完整实机测试**（历史包，后续由 Z15→Z19 覆盖）：目前只完成生成与离机校验（职业 12/12、阵型 11/11、
   称号 252/252、pos32 460 副本一致、Q16 存疑 0、操作数 242 点 0 失败）。
 - 2026-10-22 追加：主角默认名 `b391 rec2-4` 与 `b715` 已强制还原原文
   （`restore_protagonist_defaults()`），`Yusha` 在 `translator-view/protected/`；

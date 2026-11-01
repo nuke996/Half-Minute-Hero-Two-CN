@@ -201,7 +201,9 @@ cscv 孪生名字键保持日文原版；键名列（如技能 `b666 pos292`）�
 
 - **[已验证]** 主译表的中文以 **3DM 补丁**为底本，而 3DM 又以**英文本**为底本；
   英文版本身存在二次创作失真，导致部分译文与日文原文不符。
-- 已知未完成项：TODO-5 计划把对话表族约 **21,376 槽**逐句改回日语本意（进度 1/724 blob）。
+- 已知未完成项：TODO-5 把对话表族约 **21,376 槽**逐句改回日语本意。2026-10-29/30 已导入
+  1821 单元 / 2842 处条目（`dist/Z19-proofread/`），剩余 451 条未导入（高 14 条），
+  详见 `docs/PROOFREAD_DIALOGUE_REPORT.md`。
 - 使用机翻/旧译时：保留原文与术语规则、保护控制符、跑校验、人工复核关键叙述与 UI 串。
 
 ---
@@ -326,6 +328,7 @@ translator-view/
 ## 17.4 容量理由已消失（2026-10-22 评估）
 
 **[已验证 · Z15 口径]** 同字复用后新格余量 551（见 `TECHNICAL.md` §4.5）。
+2026-10-30 按当前译表（含 Z18 新增字与 Z19 校对）重算为 **2300/2847，余量 547 格**。
 按生产语料（CSV + Z11/Z13/Z14 额外行 + 多行 + 歌词 + DLC）实测：
 
 - **关闭 REPL、保留 HL**：当前显示文本只新增 **1 个**未覆盖字「窟」，只占 1 格；
@@ -343,12 +346,15 @@ translator-view/
 **现成的打包开关（2026-10-22）：**
 
 ```bash
-# 应用词典（默认，Z15）
+# 应用词典（默认，Z15 对照包）
 python tools/build.py --game-dir work/original package_names_cn_reuse
 
 # 不应用 REPL（仅保留 HL，Z15-norepl）
 python tools/build.py --game-dir work/original package_names_cn_reuse_norepl
 ```
+
+> 当前发布链是 Z19（`package_names_cn_reuse_z19`，含歌词与对话校对）；词典改动后同样要对它
+> 重建一次，否则 `dist/Z19-proofread` 与译表不一致。
 
 - 导入校对时：`汉化-导入校对.bat` = 应用词典；`汉化-导入校对-不应用词典.bat`
   = `import_review.py apply --no-repl`。两者读同一批 JSON，只切换 REPL 开关。

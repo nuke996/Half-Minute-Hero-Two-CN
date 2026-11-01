@@ -252,7 +252,7 @@
    "end": 19.4,
    "ja": "",
    "en": "I will save everyone.",
-   "zh": "我会拯救所有人。",
+   "zh": " ",
    "source": "video",
    "note": "视频专用条目；改 zh 后导入会写回 videos.json"
   }

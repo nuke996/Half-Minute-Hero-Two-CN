@@ -1,10 +1,11 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
-> 状态：**进行中**（2026-10-21 记录，2026-10-22/23/24 更新，供新对话直接接续）
-> 2026-10-25：Z18（`dist/Z18-dlc-place-names/`）在 Z17 基础上完成 DLC01 战国大陆地名汉字化，
-> 并继续合入 Z17-video 的 4 个字幕视频；后续实机与收尾以 **Z18** 为准；Z15 保留为回滚基线。
+> 状态：**进行中**（2026-10-21 记录；2026-10-22/23/24/25/27/30 更新，供新对话直接接续）
+> 2026-10-30：当前发布基线改为 **Z19**（`dist/Z19-proofread/`）——在 Z18 基础上导入日文基准
+> 校对（1821 单元 / 2842 处条目），并恢复 `cscv[355]` 歌曲表 28 个英文行的中文。
 > 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
-> `dist/Z18-dlc-place-names/`。
+> `dist/Z19-proofread/`。Z18（`dist/Z18-dlc-place-names/`）为 10-27 快照、不含歌词，仅作对照；
+> Z15 保留为回滚基线。
 
 ---
 
@@ -30,11 +31,11 @@
 
 | 位置 | 现象 | 性质 | 处理建议 |
 |---|---|---|---|
-| 道具收藏列表 | `Mu`、`Xi` 等少数名称仍英文 | 未登记/缺译 | 先定位表与槽位，再补行 |
+| 道具收藏列表 | `Mu`、`Xi` 等少数名称仍英文 | **已补（2026-10-27，Z18 起）** | 已译 缪/克西，见 §2.3；仍需实机确认可获得/装备 |
 | 怪物图鉴第 1 项 | `Jelly` | 缺译 | 补译并全副本同步 |
 | 地图编辑器 `Explanation` 栏 | 中英混排说明 | 未登记/部分缺译 | 定位该说明字段，整段翻译 |
-| 合成界面 `Class Change` | 仍英文 | CSV 有译文但被保护 | 确认是纯 UI 标签后放行 |
-| 合成界面 `Specialty` | 仍英文 | 未登记 | 补行 |
+| 合成界面 `Class Change` | 仍英文 | **已放行（Z17）** | 现为「职业变更」，见 §2.2 |
+| 合成界面 `Specialty` | 仍英文 | **已补（Z17）** | 现为「擅长」，见 §2.2 |
 | 其它零散 UI | 待全量扫描 | — | 按第 3 节流程处理 |
 
 > 2026-10-21 已修：`Wooden Sword +1`→木剑+1、合成说明首行、`Materials:`。
@@ -108,9 +109,25 @@
 
 ---
 
+## 2.4 Z19 校对轮 + 歌词恢复（2026-10-30）
+
+1. **对话校对已入库**：`proofread` 分支共 1821 单元 / 2842 处条目（2716 单行槽 +
+   86 多行整段 + 40 DLC），详见 `docs/PROOFREAD_DIALOGUE_REPORT.md`；剩余未导入 451 条
+   （其中高严重度 14 条）。
+2. **「小咕的歌」歌曲表恢复中文**：Z14→Z20 共用配方改 `song=True`，`cscv[355]` 的
+   28 个英文行写回中文；`place`/`chap` 仍关闭（`PITFALLS.md` §38）。
+   实机重点：音乐播放器「小咕的歌」页应是 日文行 + 中文行，间奏 `♪` 行不变。
+3. **Z20 实验包**（`dist/Z20-desc-dodge/`，2026-10-30 19:15）：Z19 + 道具说明避字，
+   用于验证"描述渲染器按码错位"假设；**它构建于歌词修复前，不含歌词**，不作为发布基线。
+4. **注意**：歌词译文仍是代码常量 `SONG_EN_LINES`，在 `translator-view/` 里看不到、
+   也改不了；若要人工校对需另接导出/导入通道。
+
+---
+
 ## 3. 排查流程（建议按顺序）
 
-1. **以 Z18 产物为基线**：`dist/Z18-dlc-place-names/res/LANG_EN.s2a`。
+1. **以 Z19 产物为基线**：`dist/Z19-proofread/res/LANG_EN.s2a`（Z20 是"道具说明避字"实验包，
+   只用于验证描述渲染器，不作漏译基线）。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
    - 可复用/扩展 `build/_scratch/audit_untranslated.py`；
@@ -134,20 +151,21 @@
    - 无新增 `?`（`GAME OVER<??>` 等字面量除外）；
    - 名字全副本终串一致；
    - 相对 Z14“只增不减”（不得回退已译槽）。
-7. **打包**：`package_names_cn_jobs_titles_hash`，导出 translator-view 后交付实机抽检。
+7. **打包**：`package_names_cn_reuse_z19`（不要再用旧的 `package_names_cn_jobs_titles_hash`），
+   导出 translator-view 后交付实机抽检。
 
 ---
 
 ## 4. 工具与命令
 
 ```bash
-# 构建当前实验包（同时刷新 dist 与校对视图）
-python tools/build.py --game-dir work/original package_names_cn_reuse_z18
+# 构建当前发布包（同时刷新 dist 与校对视图）
+python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→重建 Z18）
+# 导入校对（自检→写 CSV/extra_review.json→重建 Z19）
 python tools/import_review.py
 
 # 只读盘点（示例）
@@ -155,7 +173,7 @@ python build/_scratch/audit_untranslated_z15.py
 python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在固定重建 Z18（`dist/Z18-dlc-place-names/`）；不要再用旧的
+注意：`import_review.py` 现在固定重建 Z19（`dist/Z19-proofread/`）；不要再用旧的
 `package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
 
 ---
@@ -194,6 +212,6 @@ python build/_scratch/list_blocked_display.py
 - TODO：
   1. 持久化某一版的「字 → 载体码」到 `locales/zh-CN/cmap.json`；
   2. 构建时优先使用固化码；新字只从未使用的码/格追加，绝不重排旧字；
-  3. 容量不足时用同义词替换/拒绝新字（当前约剩 51 格），不得挤掉旧码；
+  3. 容量不足时用同义词替换/拒绝新字（当前 Z19 口径 2300/2847，余量 547 格），不得挤掉旧码；
   4. 连续构建两次验证同一汉字码不变，并用旧存档名字字节反查同字。
 - 参考：`docs/PITFALLS.md` §27、`docs/KNOWN_ISSUES.md` §13。

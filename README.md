@@ -179,7 +179,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；当前发布包为 Z19（`package_names_cn_reuse_z19`）
 ```
 
 ---

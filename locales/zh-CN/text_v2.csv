@@ -36340,7 +36340,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 36340,676,8172,64,32,8,Lux Deus,ルクスデウス,卢克斯迪乌斯,路克斯
 36341,676,8236,128,64,25,Except I don't have any!?,「って　鏡像が一体もいない！？」,除非我没有！？,「可我一个分身都没有！？」
 36342,676,9900,64,32,5,Yashu,ヤーシュ,亚述,亚修
-36343,676,9964,128,64,61,"Did I keep you waiting, <EVO_NAME__>, descendant of monsters?",「待っていたぞ<EVO_NAME__>　バケモノのまつえい」,"我让你久等了吗， <EVO_NAME__>, 恶魔后裔？",「我等你好久了，<EVO_NAME__>，怪兽的后裔。」
+36343,676,9964,128,64,61,"Did I keep you waiting, <EVO_NAME__>, descendant of monsters?",「待っていたぞ<EVO_NAME__>　バケモノのまつえい」,"我让你久等了吗， <EVO_NAME__>, 恶魔后裔？",「我等你好久了，<EVO_NAME__>，怪物的后裔。」
 36344,676,10252,128,64,6,Yashu!,「ヤーシュ！！」,雅树!,「亚修！」
 36345,676,10540,64,32,42,I don't have time to be fighting with you!,「今はあなたとたたかってる場合じゃないんですの！,我没空跟你战斗！,「我没空跟你战斗！
 36346,676,10604,64,32,11,Step aside!,　どいてください！！」,靠边站！,　让开！」
@@ -36352,8 +36352,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 36352,676,11180,64,32,46,how you're going to get out of this encounter?,　切りぬけることに集中したほうがいいんじゃないか？」,你是怎样摆脱这场劫难的吗？,　怎么摆脱这场遭遇吗？」
 36353,676,12492,64,32,5,Yashu,ヤーシュ,亚述,亚修
 36354,676,12556,64,32,49,"This strength… I can't believe she's come so far,",「こ　この強さ　それほど成長したとでもいうのかっ,这种力量… 我简直不敢相信她能一路这么远的赶过来，,「这种力量……真不敢相信她竟成长到这般地步，
-36355,676,12620,64,32,37,the blood of the monsters has awoken!,　バケモノの血に目覚めたか！」,恶魔的鲜血被唤醒了！,　怪兽之血苏醒了！」
-36356,676,12844,64,32,19,I ain't no monster!,「バケモノなんかじゃありませんわっ,我不是恶魔！,「我才不是怪兽，
+36355,676,12620,64,32,37,the blood of the monsters has awoken!,　バケモノの血に目覚めたか！」,恶魔的鲜血被唤醒了！,　怪物之血苏醒了！」
+36356,676,12844,64,32,19,I ain't no monster!,「バケモノなんかじゃありませんわっ,我不是恶魔！,「我才不是怪物，
 36357,676,12908,64,32,28,This is the power of a hero!,　これが勇者の力ですわ！！」,这是英雄的力量！,　这才是勇者的力量！！」
 36358,676,13068,64,32,5,Yashu,ヤーシュ,亚述,亚修
 36359,676,13132,128,64,33,Guh! Don't think this is the end…,「ぐっ！　これで終わりと思うな・・・」,额！别以为这就结束了…,「咕！别以为这就完了……」
@@ -60808,7 +60808,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60805,147,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 60806,147,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
 60807,147,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
-60808,147,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,饭桶召唤！
+60808,147,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,召唤笨蛋！
 60809,147,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
 60810,147,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
 60811,147,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！
@@ -60940,7 +60940,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60937,357,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 60938,357,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
 60939,357,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
-60940,357,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,饭桶召唤！
+60940,357,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,召唤笨蛋！
 60941,357,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
 60942,357,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
 60943,357,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！
@@ -61094,7 +61094,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61091,736,1936,64,32,27,Summons the Master of Fire.,火の四天王を召喚する,,召唤火之四天王
 61092,736,2204,64,32,28,Summons the Master of Earth.,土の四天王を召喚する,,召唤土之四天王
 61093,736,2472,64,32,27,Summons the Master of Wind.,風の四天王を召喚する,,召唤风之四天王
-61094,736,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,饭桶召唤！
+61094,736,2740,64,32,15,Summons an oaf!,ウスノロ召喚！,,召唤笨蛋！
 61095,736,3008,64,32,30,Summons the Power of Darkness.,闇の力を召喚する,,召唤黑暗之力
 61096,736,3276,64,32,23,Use this to find moles!,モグラさがしにコレ！,,找鼹鼠就用它！
 61097,736,3544,64,32,36,Use this to find the Stones of Time!,時寄せの石さがしにはコレ！,,寻找时之石就用它！

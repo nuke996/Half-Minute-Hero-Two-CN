@@ -1111,7 +1111,8 @@ Z15 同步 **35 处**（Dragon 12、Boat 8、Horse 6、Bamboo Stilts 5、Bike 1�
 **规则：**
 1. 装备名的规范来源是 `EQUIP_BLOBS=(147,357,736,998)` 的 `pos4`；
 2. `ml_zh_fields.json` 的首行**必须**与规范名逐字一致；
-3. 改完必须重建包（`package_names_cn_reuse_z18`）+ `validate_build.py`
+3. 改完必须重建当前发布包（`package_names_cn_reuse_z19`；Z18 已冻结为 10-27 快照）
+   + `validate_build.py`
    + 用 `work/original` 的 cmap 反解码产物核对（见 `BUILDING.md`）；
 4. `package` 会自动重导出 `translator-view`，不要用旧视图回写。
 
@@ -1133,7 +1134,7 @@ Ogg 页有 CRC，改动负载而不更新 CRC 会让该页校验失败（约一�
 **为什么当前 Z18 不受影响：** `do_package_names_cn_reuse_z18` 在 apply 之后执行
 `_apply_z17_video()`，把 `b75/b274/b673` 三个 Ogg blob 整块换成 `dist/Z17-video`
 的版本，那 2 字节改动被覆盖。**但任何不含视频步骤的包（`package` 普通入口）
-会保留这 2 字节。**
+会保留这 2 字节。**（Z19/Z20 同理——它们也调用 `_apply_z17_video()`。）
 
 **影响面：** 只发生在“名字本身很短”的条目上（2–3 字节，如 `Mu`/`Xi`），
 越长越不可能在压缩/音频数据里巧合出现。同名同步对 `b147/357/736/713` 等
@@ -1149,4 +1150,53 @@ Ogg 页有 CRC，改动负载而不更新 CRC 会让该页校验失败（约一�
 - staging 的非 CSCV blob 与母本差异 **0 字节**（修复前 `b274` 为 2 字节）；
 - 产物与 staging 的差异只在 3 个视频 Ogg（`b75/b274/b673`），且等于 `dist/Z17-video`；
 - `validate_build.py` error 0 / warning 45；§36 的反解码核对 714 行 0 不一致。
+
+---
+
+# §38 Z 系列隔离配方一律 `song=False` → 「小咕的歌」歌曲表英文行全部失翻（2026-10-30）
+
+**状态：** 已验证（原因与修复均已实测）
+**影响范围：** 显示（歌词页），不影响机制
+
+**现象：** 音乐播放器「小咕的歌」页只显示 日文行 + 原版英文行（如
+`The melody that sings of my youth`），中文译文不见；而第四章等关底歌词浮层仍是中文。
+
+**根因：** 歌词写在 `res/cscv.s2a` 的 `blob355`（歌曲表，`[注音][日文][英文][空行]`），
+由 `apply_song_lyrics()` 写入 28 个英文行槽。该函数只在 `do_apply(song=True)` 里被调用；
+2026-10-18 为做"cscv 与母本逐字节相同"的隔离实验（E1/E3）把
+`place/chap/song` 全部置 False，之后 Z1 → Z10b → … → Z19 → Z20 每代配方都从上一代**复制参数**，
+无人重新打开 `song`。`apply_menu`（旧生产装机）仍带 `song=True`，所以旧版本（含 10-20 的 8.x 包、
+`build/package_stage_head`）歌词是中文的。
+
+**为什么关底浮层没事：** 那些歌词走 `LANG` 槽 + `SONG_OK` 放行（§21），与 cscv 无关；
+`sync_cscv=False` 只是让 cscv 文本层整体不写，并不影响 LANG 侧。
+
+**修复（最小改动）：**
+
+1. `do_apply_names_cn_jobs_titles_hash`（Z14/Z15/Z17/Z18/Z19/Z20 共用配方）改 `song=True`，
+   `place`/`chap` **保持 False**（那两张表属脚本/数据层，写坏的代价是选关闪退，见 §4）；
+2. `verify_e1_isolation()` 的 cscv 差异白名单由 `{836}` 扩为 `{836, 355}`
+   （836 = 字符表，355 = 歌曲表英文行，均为纯显示；其余 blob 仍必须与母本一致）。
+
+**为什么安全：**
+
+- 28 条英文原串在 cscv **全库只出现在 blob355**，LANG_EN/LANG_JA 无副本 ⇒ 不参与按名/哈希比对；
+- 原位定长写入（槽 `0x80`、步长 `0xA0`），记录头与相邻记录不动，文件大小不变；
+- 歌词用字早已计入 `char_freq`（`build_cn.py` 开头），**不占新格、不改变 cmap**；
+  实测 192 个非 ASCII 字 0 缺字，最长编码 38 B（上限 126 B）。
+
+**验证（重建 Z19，2026-10-30）：** 28/28 中文写入且反解码与 `SONG_EN_LINES` 逐字一致；
+记录头/相邻记录改动 0；cscv 差异 blob 恰为 `[355, 836]`；`LANG_EN/DLC01/texture/MOV` 哈希与
+重建前**完全相同**（`LANG_EN 19AA627CD8F3`）；`validate_build.py` error 0 / warning 45。
+
+**未做（有意）：** 这 28 条仍是代码常量 `SONG_EN_LINES`，不在 `text_v2.csv`，也不在
+`translator-view/`（校对视图看不到、改不了）；若要纳入人工校对，需要另接一条导出/导入通道。
+
+**适用范围（2026-10-30 核对 dist 结果）：**
+
+- `Z19-proofread`（10-30 22:51 重建）→ **28/28 已中文**；
+- `Z20-desc-dodge`（10-30 19:15 构建，早于本修复）→ **0/28**，不含歌词；
+- `Z18-dlc-place-names`（10-27 构建）→ **0/28**，不含歌词。
+  要歌词请用 Z19，或按上面的配方重建；`_apply_z17_video` 只换 3 个视频 blob，不会补歌词。
+
 

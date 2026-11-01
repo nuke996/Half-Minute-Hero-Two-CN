@@ -161,7 +161,7 @@ python tools/runner.py <脚本名> [参数]
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
   → 自动跑 `tools/build.py package_names_cn_reuse_z19`（隔离模式）刷新
-  `dist/Z19-proofread/`（Z18 配方 + 对话文本日文基准校对修订，含 DLC 地名汉字化与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
+  `dist/Z19-proofread/`（Z18 配方 + 对话文本日文基准校对修订，含 DLC 地名汉字化、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
   不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
   （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
   对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。
@@ -217,7 +217,8 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
-| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；**默认导入校对目标** |
+| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；2026-10-30 起含 `cscv[355]` 歌曲表歌词（28 个英文行）；**默认导入校对目标** |
+| `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
 
 用法示例：
 
@@ -245,7 +246,7 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 |---|---|---|
 | 槽位基准 | 行偏移以 **`LANG_JA`** 为基准计算，再套用到 EN | **原生基准**（`lang_a` 就是 JA），对齐最稳 |
 | 未参与侧 | `LANG_JA` + `DLC01/LANG_JA` 逐字节不动（断言强制） | `LANG_EN` + `DLC01/LANG_EN` 逐字节不动（断言强制） |
-| `cscv` | 保持原版（仅重写字符表 blob） | 同左 |
+| `cscv` | 仅重写字符表 blob（2026-10-30 起 Z19 另写歌曲表 `blob355`） | 仅重写字符表 blob（E3-JA `song=False`，不写 355） |
 | DLC01 | `refresh_dlc01(en_only=True)` | `refresh_dlc01(ja_only=True)` |
 | Q16 键名 | 按 TSV 的 `file` 字段自动分文件回写 | 同左（无需改） |
 | 游戏内语言 | 必须设为 **English** | 必须设为 **日本語** |
@@ -288,6 +289,10 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 ```
 
 > 当前磁盘 `HMH2.exe` 等于原版（采用 `dinput8` 运行时方案），则第 1 步等价于"保持原版"。
+>
+> Z 系列隔离配方（Z14→Z20）自 2026-10-30 起同样执行 `apply_song_lyrics()`（`song=True`），
+> 但 `place`/`chap` 仍为 False；隔离断言因此允许 cscv 差异 `{836, 355}`
+> （836 = 字符表，355 = 歌曲表英文行；见 `docs/PITFALLS.md` §38）。
 
 ---
 

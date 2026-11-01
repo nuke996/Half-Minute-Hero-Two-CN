@@ -2918,11 +2918,14 @@ def verify_e1_isolation(verbose=True, expect_skill_key=True, target='en'):
         hb = [hashlib.md5(bytes(b)).hexdigest() for b in arc.blobs]
         hc = [hashlib.md5(bytes(b)).hexdigest() for b in s2a.Archive(cur).blobs]
         diff = [i for i in range(len(hb)) if i >= len(hc) or hc[i] != hb[i]]
-        if diff != [tbl]:
+        # 允许字符表 + 歌曲表英文行（apply_song_lyrics，纯显示定长槽，见 §5.3.2）
+        allowed = {tbl, CSCV_SONG_BLOB}
+        if set(diff) - allowed:
             ok = False
         if verbose:
-            print('  [E1] cscv.s2a 有差异的 blob=%s（字符表 blob=%d）%s'
-                  % (diff, tbl, '仅字符表 OK' if diff == [tbl] else '!! 期望仅字符表'))
+            print('  [E1] cscv.s2a 有差异的 blob=%s（允许 字符表=%d / 歌曲表=%d）%s'
+                  % (diff, tbl, CSCV_SONG_BLOB,
+                     'OK' if not set(diff) - allowed else '!! 出现非预期改动'))
     # ③ ★ v2.67（E1b 守卫）：目标 LANG 文件 b666 的键名列 pos288~375 必须与原版逐字节一致
     cur = os.path.join(BASE, 'res/LANG_JA.s2a' if target == 'ja' else 'res/LANG_EN.s2a')
     bak = cur + '.bak'
@@ -5172,7 +5175,10 @@ def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
                          skip_blobs=(317,), consistent=False,
                          menu_exempt=True, ui_always=True,
                          slot_release=True, desc_release=True,
-                         place=False, chap=False, song=False,
+                         # song=True：恢复 cscv[355] 歌曲表 28 个英文行槽的中文写入
+                         # （纯显示表，定长槽；Z 系列曾因隔离配方一律 song=False 而失翻）。
+                         # place/chap 仍为 False：那两张表属脚本/数据层，保持原版最安全。
+                         place=False, chap=False, song=True,
                          lang_files=['res/LANG_EN.s2a'], propagate_dups=True, mirror=True,
                          exe_mode=exe_mode)
     finally:

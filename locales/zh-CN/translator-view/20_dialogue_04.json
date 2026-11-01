@@ -35296,7 +35296,7 @@
    "id": "row::36343",
    "en": "Did I keep you waiting, <EVO_NAME__>, descendant of monsters?",
    "ja": "「待っていたぞ<EVO_NAME__>　バケモノのまつえい」",
-   "zh": "「我等你好久了，<EVO_NAME__>，怪兽的后裔。」",
+   "zh": "「我等你好久了，<EVO_NAME__>，怪物的后裔。」",
    "meta": {
     "blob": 676,
     "offset": 9964,
@@ -35395,7 +35395,7 @@
    "id": "row::36355",
    "en": "the blood of the monsters has awoken!",
    "ja": "　バケモノの血に目覚めたか！」",
-   "zh": "　怪兽之血苏醒了！」",
+   "zh": "　怪物之血苏醒了！」",
    "meta": {
     "blob": 676,
     "offset": 12620,
@@ -35406,7 +35406,7 @@
    "id": "row::36356",
    "en": "I ain't no monster!",
    "ja": "「バケモノなんかじゃありませんわっ",
-   "zh": "「我才不是怪兽，",
+   "zh": "「我才不是怪物，",
    "meta": {
     "blob": 676,
     "offset": 12844,
