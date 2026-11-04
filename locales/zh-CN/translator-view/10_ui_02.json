@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3634,
+ "_count": 3635,
  "entries": [
   {
    "id": "row::6660",
@@ -38556,6 +38556,17 @@
    "meta": {
     "blob": 147,
     "offset": 1132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::60803",
+   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
+   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
+   "zh": "便携女神像",
+   "meta": {
+    "blob": 147,
+    "offset": 1400,
     "cap": 32
    }
   },

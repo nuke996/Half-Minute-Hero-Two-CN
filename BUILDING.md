@@ -199,8 +199,8 @@ python tools/runner.py <脚本名> [参数]
 
 | 命令 | 产物 | 配方要点 |
 |---|---|---|
-| `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文 |
-| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/` |
+| `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文；与 `package_stable_names` 共用 `apply_lang_en_names_en`（含 2026-11-01 新增的显示列副本同步收尾） |
+| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/`。**2026-11-01 起配方收尾加 `sync_e3_display_columns()`**：Boss 说话人名/地图编辑器 UI 等已放行显示列做整槽全副本同步，与受保护机制名同名的串整库回写原版（`validate_build` 由 error 35 → **error 0**）。该配方不含 4 个视频与 `cscv[355]` 歌词（`song=False`），属既定差异 |
 | `package_lang_ja_names_ja` | `dist/E3-ja-lang-ja-names-ja/` | **E3-JA**：E3 的日语镜像 —— 只写 `LANG_JA`，机制名保持原版，其余中文（游戏语言须设为**日语**） |
 | `package_names_cn_skill_loadout` | `dist/Z4-skill-loadout/` | **Z4**：技能/装备名中文 + 章节 loadout 值同步 + 武器表副本同步；`b666 +292` 键名保持原版 |
 | `package_names_cn_skill_loadout_ja` | `dist/Z4-ja-skill-loadout/` | **Z4-JA**：Z4 的日语镜像（只写 `LANG_JA`；`+292` 保持该文件原版日文）。**实机验证：与 Z4 同样异常**，仅作对照保留 |
@@ -219,6 +219,7 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
 | `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；2026-10-30 起含 `cscv[355]` 歌曲表歌词（28 个英文行）；**默认导入校对目标** |
 | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
+| `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 
 用法示例：
 

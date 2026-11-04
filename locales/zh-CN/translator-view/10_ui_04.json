@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3689,
+ "_count": 3690,
  "entries": [
   {
    "id": "row::19310",
@@ -38934,6 +38934,17 @@
    }
   },
   {
+   "id": "row::60935",
+   "en": "It's a Portable GAH! DES! _(wait for it)...STA! CHU! ▼",
+   "ja": "ポータブルな_メ・ガ・ミ・ゾ・ウ▼",
+   "zh": "便携女神像",
+   "meta": {
+    "blob": 357,
+    "offset": 1400,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::60936",
    "en": "Summons the Master of Water.",
    "ja": "水の四天王を召喚する",
@@ -40092,7 +40103,7 @@
    "id": "row::61041",
    "en": "Mysterious drink that raises your level by one with every use.",
    "ja": "使うとレベルが一つ上がるフシギなドリンク",
-   "zh": "用后升1级的灵药",
+   "zh": "用后升1级的神奇饮料",
    "meta": {
     "blob": 357,
     "offset": 103508,
@@ -40103,7 +40114,7 @@
    "id": "row::61042",
    "en": "Mysterious drink that drops your level by one with every use.",
    "ja": "使うとレベルが一つ下がる危ないドリンク",
-   "zh": "用后降1级的凶险药水",
+   "zh": "用后降1级的凶险饮料",
    "meta": {
     "blob": 357,
     "offset": 103776,

@@ -484,34 +484,37 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 
 ---
 
-# 22. 便携女神像描述：描述渲染器把“神”解析成“挑”
+# 22. 道具描述错字：`0x5F`（`_`）被当断行控制符（含便携女神像/升级药水）
 
-**Status:** Open（已有 Workaround）　**Severity:** Low（仅调试/物品信息描述）
+**Status:** Fixed in development（Z21 测试包，待实机）　**Severity:** Low（仅物品信息描述）
 **Affected versions:** Z17 起（含 Z18/Z19/Z20）　**Affected locales:** zh-CN
 
-**症状：** 便携女神像（`Goddess Porta-Statue`）的描述在物品信息界面显示为
-`便携女挑♥`；同一界面的标题/物品名 `便携女神像` 正常。粉色心形是翻页/结束标记，
-不是缺字。
+**症状：** 便携女神像（`Goddess Porta-Statue`）描述显示 `便携女挑♥`；
+樵夫斧描述显示 `毛v用的斧。`（应为 `樵夫用的斧。`）；升级/降级药水说明也曾异常。
+同一界面的**物品名**始终正常。
 
-**技术说明：**
-- `神` 的原生 CP932 码为 `0x905F`，字符表 index 343，图集 B 该格确实是“神”；
-- `挑` 是新增汉字，载体码 `0x9091`，字符表 index 2308；
-- 描述文本写入的是 `便携女神像`（字节 `89F7 8D83 8F97 905F 919C`），
-  但描述渲染器把 `0x905F` 解析成 index 2308（挑），而标题/物品名渲染器解析成
-  index 343（神）；
-- 说明这是**两套文本渲染路径的字符表/排序表查表结果不一致**，不是缺字、容量或
-  单纯分页问题；新增载体码 `0x9091` 与原生 `0x905F` 在扩展表中存在查表冲突/邻接
-  的可能。
+**真因（2026-11-04 更正）：** 原版英文道具说明用 `_`（字节 `0x5F`）作**断行标记**；
+描述路径按原始字节在 `0x5F` 处切分，因此当某个字的 CP932 码**尾字节**为 `0x5F` 时，
+该字会被从中间劈开，后续字节错位：
+- `樵` 的载体码 `8B 5F` → `8B|95`＝毛 + `76`＝ASCII `v` ⇒ `毛v用的斧。`
+- `神` 的原生码 `90 5F` → `90|91`＝挑，末尾孤立字节变 ♥ ⇒ `便携女挑♥`
 
-**Workaround：** 已在 `build_cn.py` 加入 `PROTECTED_DISPLAY_OFFS`，把
-`b147/b357/b736` 的 `offset 1400` 描述强制保留原文；中文译文仍保存在译表与
-`translator-view/protected/`（reason=`protected-display`），修复后可放行。
+旧结论“载体码 `0x9091` 与 `0x905F` 查表冲突”**作废**；这不是字符表/排序表问题，
+也不是缺字或容量问题。详见 `docs/PITFALLS.md` §40。
 
-**后续修复方向：** 调整“挑”的载体码（移出 `0x90xx` 邻接区或改 User-Defined 区），
-或修正扩展字符表的排序/查找；需全量重建并实机验证其他含“神”的描述。
+**修复：** Z21（`package_names_cn_reuse_z21`）：
+- 载体码池禁用 `0x??5F`；原生码尾字节为 `0x5F` 的复用字（神/点）改分配安全载体码；
+- 撤销 `PROTECTED_DISPLAY_OFFS`，便携女神像说明恢复中文；
+- 译表恢复 10-30 避字前的「用后升1级的神奇饮料 / 用后降1级的凶险饮料」；
+- `validate_build.py` 新增描述尾字节检查（本篇 + DLC01），命中即 error。
 
-**相关文件：** `tools/build_cn.py`（`PROTECTED_DISPLAY_OFFS`）、`tools/export_review.py`
-（`PROTECT_NOTE`）、`locales/zh-CN/text_v2.csv`（row 60803/60935/61089）。
+**残留风险：** 若译文用字出现新的“排版控制字节”尾字节（目前只确认 `0x5F`），
+校验会拦截；原生日文描述本身也有同类潜在缺陷（原版很少触发）。
+
+**相关文件：** `tools/build_cn.py`（`UNSAFE_TRAIL_BYTES` / `carrier_pool` / `build_plan` /
+`PROTECTED_DISPLAY_OFFS`）、`tools/validate_build.py`（`_check_desc_trail`）、
+`locales/zh-CN/text_v2.csv`（row 60803/60935/61089、61041/61042）、
+`docs/PACKAGE_LEDGER.md`（Z21）。
 
 ---
 

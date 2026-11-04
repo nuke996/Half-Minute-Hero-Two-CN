@@ -49,6 +49,9 @@ NAME_SOURCES = {
     'map_ui': [(715, 224, 112)],
 }
 OPERAND_BLOBS = tuple(B.NAME_OPERAND_BLOBS)
+# 描述排版控制字节：原版 EN 描述用 "_"（0x5F）断行，故尾字节 0x5F 会被劈开。
+UNSAFE_TRAIL_BYTES = frozenset((0x5F,))
+ITEM_DESC_SLOTS = ((147, 268, 44), (357, 268, 44), (736, 268, 44), (998, 268, 44))
 UNRESOLVED_OK = {(756, 0), (756, 3), (756, 91), (756, 94)}
 
 # 只保护“引擎会解析”的 token；普通 <高亮词> 属于显示文本（HL 会主动翻译），不在此列。
@@ -446,6 +449,39 @@ def _check_dlc_encoding(dist_dir, stage_dir):
     return errs, warns
 
 
+def _check_desc_trail(prod, label):
+    """道具描述内，双字节字符的尾字节不得是描述排版控制符（0x5F）。
+
+    描述路径把 "_"(0x5F) 当断行；尾字节撞上会被劈开并让后续字节错位
+    （“樵夫用的斧。”→“毛v用的斧。”）。载体码池已禁用该尾字节，此检查防回归。
+    """
+    errs = []
+    for bi, st, pos in ITEM_DESC_SLOTS:
+        if bi >= len(prod):
+            continue
+        blob = prod[bi]
+        if blob[:4] != b'CSCV':
+            continue
+        n = (len(blob) - 16) // st
+        for r in range(n):
+            f = 16 + r * st + pos
+            if f >= len(blob):
+                break
+            run = _nt(blob, f)
+            j = 0
+            while j < len(run):
+                b0 = run[j]
+                if b0 < 0x80 or 0xA1 <= b0 <= 0xDF:
+                    j += 1
+                    continue
+                if j + 1 < len(run) and run[j + 1] in UNSAFE_TRAIL_BYTES:
+                    errs.append('[描述控制符] %s b%d rec%d pos%d 尾字节 0x%02X：%s'
+                                % (label, bi, r, pos, run[j + 1], bytes(run).hex(' ')))
+                    break
+                j += 2
+    return errs
+
+
 def validate(dist_dir, stage_dir=None):
     """返回 (errors, warnings)。dist_dir 为打包输出目录（含 res/ 与 DLC01/）。"""
     errors, warns = [], []
@@ -470,6 +506,7 @@ def validate(dist_dir, stage_dir=None):
     spans = _text_spans(stage_dir)
     errors += _check_tokens(orig, ja, prod, '本篇')
     errors += _check_structure(orig, prod, '本篇', operand_ok=True, spans=spans)
+    errors += _check_desc_trail(prod, '本篇')
 
     # DLC01
     dlc_p = os.path.join(dist_dir, 'DLC01', 'LANG_EN.s2a')
@@ -485,6 +522,7 @@ def validate(dist_dir, stage_dir=None):
             errors += _check_replicas(do_b, dp_b, d_canon, 'DLC01', foreign=True)
             errors += _check_tokens(do_b, dja_b, dp_b, 'DLC01')
             errors += _check_structure(do_b, dp_b, 'DLC01', operand_ok=False)
+            errors += _check_desc_trail(dp_b, 'DLC01')
         e3, w3 = _check_dlc_encoding(dist_dir, stage_dir)
         errors += e3
         warns += w3

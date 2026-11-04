@@ -94,7 +94,7 @@ PROTECT_NOTE = {
     'mech': '机制表整表保护（技能/职业/连携技等按内容读取的表）',
     'chaptitle': '章节名/称号名保护（按字符串索引的键）',
     'protagonist-default': '主角默认名（Yusha/Yushia/Yuja）：为保证旧存档在补丁更新后不串字，构建时强制还原原文',
-    'protected-display': '已知字体查表问题（描述渲染器把“神”解析成“挑”）：暂保留原文，待修复后再放行',
+    'protected-display': '描述文本 0x5F 尾字节问题（旧规避）：2026-11-04 起已修复，正常情况不应再出现该原因',
 }
 HOW_TO_EDIT = ('只修改每条记录的 "zh" 字段（id/en/ja/meta 请勿改）。保存后运行 '
                '汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat '

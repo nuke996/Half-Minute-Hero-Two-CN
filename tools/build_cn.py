@@ -344,11 +344,30 @@ DISPLAY_RELEASE_OFFS = {
 DISPLAY_RELEASE_OFFS.update((804, o) for o in range(467832, 484769, 584))
 
 
-# Z17：已知字体查表问题（描述渲染器把“神”0x905F 解析成“挑”0x9091）。
-# 这三份“便携女神像”描述暂不上屏，保留原文；译文仍留在 CSV / protected JSON 供以后修复。
-PROTECTED_DISPLAY_OFFS = {
-    (147, 1400), (357, 1400), (736, 1400),
-}
+# 2026-11-04：描述文本把下划线 0x5F 当排版控制符（原版 EN 描述用 "_" 断行，689 处）。
+# 若某个字的 CP932 码**尾字节**是 0x5F，描述路径会在 0x5F 处断开：
+#   · 载体码例：樵 = 8B 5F -> 被劈成 8B|95(毛) + 76(v)，即 "毛v用的斧。"
+#   · 原生码例：神 = 90 5F、点 = 93 5F（便携女神像/升级药水说明的旧症）
+# 因此载体码池禁用这些尾字节；原生复用字若尾字节不安全，改为分配安全载体码。
+UNSAFE_TRAIL_BYTES = frozenset((0x5F,))
+
+
+def trail_ok(code_bytes):
+    """CP932 双字节码的尾字节是否可用于描述文本（避免被当排版控制符）。"""
+    return len(code_bytes) == 2 and code_bytes[1] not in UNSAFE_TRAIL_BYTES
+
+
+def native_code_trail_ok(ch):
+    """该字原生 CP932 码的尾字节是否安全；不安全则不能走“复用原版格”。"""
+    try:
+        return trail_ok(ch.encode('cp932'))
+    except Exception:
+        return False
+
+
+# Z17 的“便携女神像描述不上屏”保护已由上面的 0x5F 尾字节修复取代（2026-11-04）。
+# 机制保留，供将来再次定位未知渲染问题时使用。
+PROTECTED_DISPLAY_OFFS = set()
 
 
 def display_release_hit(bi, off, ja_cmp):
@@ -925,6 +944,8 @@ def carrier_pool(reserved):
                 continue
             if ch in reserved or ch in seen:
                 continue
+            if lo in UNSAFE_TRAIL_BYTES:      # 尾字节 0x5F 会被描述路径当断行符
+                continue
             seen.add(ch)
             pool.append(b)
     n_kanji = len(pool)
@@ -937,6 +958,8 @@ def carrier_pool(reserved):
             except Exception:
                 continue
             if ch in reserved or ch in seen:
+                continue
+            if lo in UNSAFE_TRAIL_BYTES:      # 同上：备用区也不得使用 0x5F 尾字节
                 continue
             seen.add(ch)
             pool.append(b)
@@ -1040,8 +1063,10 @@ def build_plan():
         _lo, _hi = REUSE_CJK_RANGE
         for i in range(_lo, _hi + 1):
             c = ents[i]
-            if c and len(c) == 1 and is_cjk(c):
+            if c and len(c) == 1 and is_cjk(c) and native_code_trail_ok(c):
                 reuse_map.setdefault(c, []).append(i)
+        # 原生码尾字节不安全的字（神=90 5F、点=93 5F …）不复用，改走安全载体码，
+        # 否则它们在道具描述里会被 0x5F 断行符劈开。
         native_chars |= set(reuse_map)
 
     candidates = [c for c, _ in cnt.most_common() if c not in native_chars]
@@ -3050,6 +3075,97 @@ def do_package_lang_en_mirror(exe_mode=None):
 # 与生产装机的差别：sync_cscv=False（不写 cscv 文本层）、lang_files=['res/LANG_EN.s2a']
 #   （不写 LANG_JA，隔离前提：LANG_JA/cscv 与母本逐字节相同）、不写 cscv 孪生表
 #   （place/chap/song=False）。测试时须把游戏语言设为 English。
+# E3/稳定版收尾：已放行显示列（Boss/敌人说话人名 pos92、地图编辑器 UI b715 pos112）。
+# 这些列在部分表被放行、其余副本仍为原版 ⇒ validate_build 报“名字副本混合态”。
+# 母本整槽串集合交给 fill_name_copies 做全副本同步（与 Z 配方终串一致；
+# b317 / 称号 / Q16 / 技能键名列仍跳过）。
+E3_DISPLAY_SYNC_COLS = (
+    (4, 288, 92), (30, 288, 92), (408, 288, 92), (445, 288, 92),
+    (528, 288, 92), (748, 288, 92), (609, 288, 92), (483, 288, 92),
+    (555, 660, 92), (734, 660, 92), (715, 224, 112),
+)
+
+
+# 受保护机制名所在的表（含伙伴表 b954/b1034）：这里出现的整槽串在稳定版必须保持原版，
+# 否则会与“显示列已中文化”的另一份副本形成混合态。
+E3_PROTECTED_NAME_BLOBS = (666, 147, 357, 736, 998, 954, 1034, 128, 136, 317)
+
+
+def _display_label_names(orig_blobs):
+    """收集 E3_DISPLAY_SYNC_COLS 各列在母本中的整槽串（用于全副本同步）。"""
+    names = set()
+    for bi, st, pos in E3_DISPLAY_SYNC_COLS:
+        if bi >= len(orig_blobs):
+            continue
+        ob = bytes(orig_blobs[bi])
+        if ob[:4] != b'CSCV':
+            continue
+        n = struct.unpack_from('<I', ob, 8)[0]
+        for r in range(n):
+            f = 16 + r * st + pos
+            if f >= len(ob):
+                break
+            t = ob[f:f + 64].split(b'\x00')[0]
+            if t:
+                names.add(t)
+    return names
+
+
+def _protected_name_strings(orig_blobs):
+    """E3_PROTECTED_NAME_BLOBS 中的整槽串（排除长句/多行/占位符，只保留名字级短串）。"""
+    out = set()
+    for bi in E3_PROTECTED_NAME_BLOBS:
+        if bi >= len(orig_blobs):
+            continue
+        ob = bytes(orig_blobs[bi])
+        if ob[:4] != b'CSCV':
+            continue
+        for _pos, f, e in _iter_slots(ob):
+            t = ob[f:e]
+            if 2 <= len(t) <= 64 and b'\n' not in t and not (b'<' in t and b'>' in t):
+                out.add(t)
+    return out
+
+
+def sync_e3_display_columns(orig_blobs, en_path, skip_blobs, verbose=True):
+    """E3/稳定版收尾：显示列全副本同步；与机制名同名的串一律回写原版。
+
+    1) 显示列（Boss 说话人名 / 地图编辑器 UI）已译副本 → 补齐其余整槽副本；
+    2) 若同一串同时出现在受保护机制表（技能/道具/伙伴/职业/阵型/连携技），
+       稳定版必须整库保持原版 ⇒ 把这些串的所有已译副本写回母本字节。
+    """
+    disp = _display_label_names(orig_blobs)
+    prot = disp & _protected_name_strings(orig_blobs)
+    fill_name_copies(orig_blobs, en_path, disp - prot, skip_blobs=skip_blobs,
+                     label='显示列')
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    n = 0
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod) or bytes(ob)[:4] != b'CSCV':
+            continue
+        pb = prod[bi]
+        for _pos, f, e in _iter_slots(ob):
+            t = ob[f:e]
+            if t not in prot:
+                continue
+            pe = pb.find(b'\x00', f)
+            cur = bytes(pb[f:(pe if pe >= 0 else len(pb))])
+            if cur == t:
+                continue
+            pb[f:f + len(t)] = t
+            pb[f + len(t)] = 0
+            i = f + len(t) + 1
+            while i < len(pb) and pb[i] == 0:
+                i += 1
+            n += 1
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [显示列] 机制名冲突串 %d 个，回写原版 %d 处' % (len(prot), n))
+    return n
+
+
 def do_apply_lang_en_names_en(exe_mode=None):
     """E3 可用包装机：只写 res/LANG_EN.s2a，机制名字/引用槽保持原版英文，其余中文。"""
     # 装备/道具表(147/357/736/998)也整表跳过：实测其【名字列 pos4】里夹着技能名引用
@@ -3065,6 +3181,12 @@ def do_apply_lang_en_names_en(exe_mode=None):
                      exe_mode=exe_mode)
     print('== 同步 DLC01（E3：只写 DLC01/LANG_EN，LANG_JA 保持原版）==')
     refresh_dlc01(en_only=True)
+    print('== 已放行显示列副本同步（Boss 说话人名 / 地图编辑器 UI）==')
+    en_path = os.path.join(BASE, 'res', 'LANG_EN.s2a')
+    bak = en_path + '.bak'
+    if os.path.exists(bak):
+        orig_blobs = [bytes(b) for b in s2a.Archive(bak).blobs]
+        sync_e3_display_columns(orig_blobs, en_path, skip)
     print('== Q16 键名槽位保护（「勇者城」城/关卡按键名查找）==')
     restore_q16_keys()
     if not verify_e1_isolation():
@@ -4137,7 +4259,7 @@ def _z11_release_factory(mech_ja, partner_ja):
 
 
 def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
-                     skip_blobs=(128, 136, 317), title_ok=None):
+                     skip_blobs=(128, 136, 317), title_ok=None, label='伙伴名'):
     """Z11/Z12 收尾：把仍未翻译的名字整槽按已译副本补齐（全 blob）。
 
     只处理“原串恰好是给定名字集合中的整槽”；不碰其它字符串/命令 token。
@@ -4214,8 +4336,8 @@ def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
     if n:
         s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
     if verbose:
-        print('  [伙伴名] 副本补齐 %d 处%s%s'
-              % (n, '（容量不足 %d）' % skip if skip else '',
+        print('  [%s] 副本补齐 %d 处%s%s'
+              % (label, n, '（容量不足 %d）' % skip if skip else '',
                  '（终串冲突 %d）' % conflicts if conflicts else ''))
     return n
 
@@ -5334,6 +5456,22 @@ def do_package_names_cn_reuse_z20(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z21(exe_mode=None):
+    """Z21（测试）：Z19 + 描述 0x5F 尾字节修复。
+
+    · 载体码池禁用尾字节 0x5F；
+    · 原生码尾字节为 0x5F 的字（神/点）改分配安全载体码；
+    · 恢复“便携女神像”“升级/降级药水”说明的中文（此前为避字/保护而上屏原文）。
+    """
+    out = paths.dist('Z21-desc-5f-fix')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z21',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5775,6 +5913,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z19': do_package_names_cn_reuse_z19,
      # Z20（试验）：Z19 + 道具说明避字改写（避开神/奇/饮），输出 dist/Z20-desc-dodge
      'package_names_cn_reuse_z20': do_package_names_cn_reuse_z20,
+     # Z21（测试）：Z19 + 描述 0x5F 尾字节修复 + 恢复两条说明，输出 dist/Z21-desc-5f-fix
+     'package_names_cn_reuse_z21': do_package_names_cn_reuse_z21,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,
