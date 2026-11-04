@@ -486,7 +486,7 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 
 # 22. 道具描述错字：`0x5F`（`_`）被当断行控制符（含便携女神像/升级药水）
 
-**Status:** Fixed in development（Z21 测试包，待实机）　**Severity:** Low（仅物品信息描述）
+**Status:** Fixed（2026-11-04 Z21 实机验证通过，已并入 Z19 / stable 基线）　**Severity:** Low（仅物品信息描述）
 **Affected versions:** Z17 起（含 Z18/Z19/Z20）　**Affected locales:** zh-CN
 
 **症状：** 便携女神像（`Goddess Porta-Statue`）描述显示 `便携女挑♥`；
