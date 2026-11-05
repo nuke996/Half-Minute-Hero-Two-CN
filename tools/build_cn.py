@@ -338,6 +338,7 @@ DISPLAY_RELEASE_OFFS = {
     (280, 3484), (280, 3688), (280, 3892), (280, 4096),  # Gallery 分组标签
     (186, 94656),         # Normal Mode（b354 对应副本已译）
     (763, 9872),          # Best Time（b358 对应副本已译）
+    (186, 86592),         # Z22：装备切换提示 Switch（切り替え，假命中）
 }
 
 # b804 魔人迷宫标题：30 个记录，步长 584
@@ -370,9 +371,49 @@ def native_code_trail_ok(ch):
 PROTECTED_DISPLAY_OFFS = set()
 
 
+# Z22（2026-11-04）：低风险 UI 批的“整列放行”。
+#   · b25 = 键值型 UI 消息表（记录 = 4 字节 id + 键名 + FF FF FF FF + 值列 +40）；
+#     键名不动、只翻值列 ⇒ 纯显示。cscv b23 是同构孪生（键名同样不动）。
+#   · b642 = “擅长”面板读取的 12 条武器种名表（400..752，步长 32）；职业表用数字索引。
+#   · b763 = 按键设置/多人菜单的按键名与标签（记录起点即文本）。
+def _z22_column_release(bi, off):
+    if bi == 25:
+        return (off - 16) % 168 == 40
+    if bi == 642:
+        return 400 <= off < 784 and (off - 400) % 32 == 0
+    if bi == 763:
+        return (off - 16) % 128 == 0
+    return False
+
+
+# Z23（2026-11-04）：图鉴敌人/Boss 列表主名列（stride 660，记录 +40）。
+#   · b734 = 敌人名表（138 条）；b54 = 头目/插图名表（75 条可译 + 3 条占位符无行）。
+#   · 同一张表里 pos24（短名）/pos92（说话人副本）已是中文，pos40 是列表显示名；
+#     译表里这些名字的译文早已存在（多数来自 Z12/3DM），本批只是放行。
+#   · (54,6656) = rec10 的 `Hero<>` 模板槽，`<>` 是占位标记，保持原版。
+Z23_NAME_EXCLUDE = {(54, 6656)}
+# 仅 Z23 配方启用：避免连带改变 stable / 旧配方的“名字保留原文”行为。
+# 打包的装机在子进程里跑，因此用环境变量传递（HMH2_Z23_RELEASE=1）。
+_Z23_RELEASE = os.environ.get('HMH2_Z23_RELEASE') == '1'
+
+
+def _z23_name_release(bi, off):
+    if bi in (54, 734):
+        return (off - 16) % 660 == 40 and (bi, off) not in Z23_NAME_EXCLUDE
+    # 2026-11-05 修正：图鉴“头目”页读的是 b555 的 +40 列（107 条，与 b54 同名副本）；
+    # 另外 b105/b529 的 +92 列是同名 Boss 的战斗表显示列（多数已中文化）。
+    if bi == 555:
+        return (off - 16) % 660 == 40
+    if bi in (105, 529):
+        return (off - 16) % 288 == 92
+    return False
+
+
 def display_release_hit(bi, off, ja_cmp):
     """Z17：纯显示文本的 collide 假命中放行（按槽位或括号台词）。"""
     if (bi, off) in DISPLAY_RELEASE_OFFS:
+        return True
+    if _z22_column_release(bi, off) or (_Z23_RELEASE and _z23_name_release(bi, off)):
         return True
     # 括号内心独白/选项：与「」台词同理，不是机制名；Q16 勇者城键仍保护。
     if ja_cmp.startswith('（') and '勇者城' not in ja_cmp:
@@ -3285,6 +3326,11 @@ def _is_name_like(t):
         s = t.decode('cp932')
     except UnicodeDecodeError:
         return False
+    # Z22（2026-11-04）：纯数字串（"1".."4" 等）也会命中 isalnum，
+    # 若某张显示表把它们译成 "1只"，“1”→“1只”会进 canon，
+    # 再被传播到全库同字节的数字 ID 字段（实测 b1039 记录头被改写）。
+    if s.strip().isdigit():
+        return False
     return any(ch.isalnum() or ord(ch) >= 0x2E80 for ch in s)
 
 
@@ -5472,6 +5518,73 @@ def do_package_names_cn_reuse_z21(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z22(exe_mode=None):
+    """Z22（测试）：Z21 + 低风险 UI 补译批。
+
+    本批只动“纯显示”槽位：
+    · b25 键值 UI 消息表值列（城堡面板 / 道具类型 / 黑白铁匠铺 / 地图编辑器等，补 301 条）；
+    · b99 合成说明首段（3 条：融合 / 铁斧的锯齿 / 木杖）；
+    · b642 武器种名 12 条（“擅长”面板）；
+    · b763 按键名（含唯一未登记的 Up）；
+    · b186 “Switch”装备切换提示。
+    Q16 键名（Customize Hero Castle 等）与敌人/Boss 名不在本批。
+    """
+    out = paths.dist('Z22-ui-lowrisk')
+    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                    stage_name='package_stage_names_cn_reuse_z22',
+                    out_dir=out,
+                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    _apply_z17_video(out)
+    return rc
+
+
+def do_package_names_cn_reuse_z23(exe_mode=None):
+    """Z23（测试）：Z22 + 图鉴敌人/Boss 列表名批次 + “事件道具”措辞修订。
+
+    · b734（敌人名 138 条）/ b54（头目·插图名 75 条）的记录 +40 列放行；
+      同一记录的 pos24 短名 / pos92 说话人副本此前已是中文（Z12）。
+    · (54,6656) 的 `Hero<>` 模板槽保持原版。
+    · `活动道具` 统一改为 `事件道具`（译表 16 行 + 多行译表 1 条）。
+    中风险：敌名属“名字键族”，已做副本一致性/操作数自检，需实机验图鉴与战斗。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z23-ui-mediumrisk')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z23',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
+def do_package_names_cn_reuse_z24(exe_mode=None):
+    """Z24（测试）：Z23 + 地图编辑器「说明」面板（b291）按日文整句重译。
+
+    b291 每条说明按 48 字节显示行切分，原译文逐行直译导致句子断裂；
+    本批以日文整句为基准重写，仍按原行数/行宽落回各槽。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z24-mapeditor')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z24',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -5915,6 +6028,12 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z20': do_package_names_cn_reuse_z20,
      # Z21（测试）：Z19 + 描述 0x5F 尾字节修复 + 恢复两条说明，输出 dist/Z21-desc-5f-fix
      'package_names_cn_reuse_z21': do_package_names_cn_reuse_z21,
+     # Z22（测试）：Z21 + 低风险 UI 补译批，输出 dist/Z22-ui-lowrisk
+     'package_names_cn_reuse_z22': do_package_names_cn_reuse_z22,
+     # Z23（测试）：Z22 + 图鉴敌人/Boss 名单 + 事件道具措辞，输出 dist/Z23-ui-mediumrisk
+     'package_names_cn_reuse_z23': do_package_names_cn_reuse_z23,
+     # Z24（测试）：Z23 + 地图编辑器说明面板整句重译，输出 dist/Z24-mapeditor
+     'package_names_cn_reuse_z24': do_package_names_cn_reuse_z24,
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

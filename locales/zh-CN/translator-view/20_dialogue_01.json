@@ -2,7 +2,7 @@
  "_kind": "single-dialogue",
  "_note": "对话类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3693,
+ "_count": 3713,
  "entries": [
   {
    "id": "row::4",
@@ -40624,6 +40624,226 @@
    "meta": {
     "blob": 25,
     "offset": 3584,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61485",
+   "en": "Hahahaha! Time's up!!",
+   "ja": "「ガッハッハッハ　時間ギレだ！！」",
+   "zh": "「哇哈哈哈，时间到了！！」",
+   "meta": {
+    "blob": 25,
+    "offset": 41384,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61489",
+   "en": "Clerk: Can't beat the Evil Lord if you're hungry!",
+   "ja": "めしや「ハラがへってちゃ魔王はたおせないぜ！」",
+   "zh": "饭馆「肚子饿了就打不倒魔王！」",
+   "meta": {
+    "blob": 25,
+    "offset": 42224,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61587",
+   "en": "This is bad!",
+   "ja": "「あらあらタイヘン！",
+   "zh": "「哎呀呀不得了！",
+   "meta": {
+    "blob": 25,
+    "offset": 59024,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61588",
+   "en": "The Evil Lord has begun to cast the spell!",
+   "ja": "　魔王が魔法をとなえだしたわ！」",
+   "zh": "　魔王开始咏唱魔法了！」",
+   "meta": {
+    "blob": 25,
+    "offset": 59192,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61589",
+   "en": "The Evil Lord is in this castle!",
+   "ja": "「魔王はこの城にたてこもってるわ！」",
+   "zh": "「魔王就盘踞在这座城里！」",
+   "meta": {
+    "blob": 25,
+    "offset": 59360,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61590",
+   "en": "First, go to this village",
+   "ja": "「まずはこの村にいって",
+   "zh": "「首先去这个村子",
+   "meta": {
+    "blob": 25,
+    "offset": 59528,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61591",
+   "en": "and get everything ready!",
+   "ja": "　じゅんびをととのえるのよ！」",
+   "zh": "　做好准备！」",
+   "meta": {
+    "blob": 25,
+    "offset": 59696,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61592",
+   "en": "Okay, good luck! ▼▼▼",
+   "ja": "「それじゃあがんばってね～▼▼▼」",
+   "zh": "「那就加油吧～▼▼▼」",
+   "meta": {
+    "blob": 25,
+    "offset": 59864,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61593",
+   "en": "Mic Test 1",
+   "ja": "「マイクテスト１",
+   "zh": "「麦克风测试1",
+   "meta": {
+    "blob": 25,
+    "offset": 60032,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61594",
+   "en": "Mic Test 2",
+   "ja": "　マイクテスト２」",
+   "zh": "　麦克风测试2」",
+   "meta": {
+    "blob": 25,
+    "offset": 60200,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61595",
+   "en": "Don't you understand?",
+   "ja": "「わかってないな",
+   "zh": "「你还不明白啊",
+   "meta": {
+    "blob": 25,
+    "offset": 60368,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61596",
+   "en": "You know, that cat-looking thing",
+   "ja": "　ネコがたのアレを」",
+   "zh": "　那只像猫的东西」",
+   "meta": {
+    "blob": 25,
+    "offset": 60536,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61597",
+   "en": "Your father is",
+   "ja": "「きみのおちちうえが",
+   "zh": "「你父亲",
+   "meta": {
+    "blob": 25,
+    "offset": 60704,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61598",
+   "en": "to blame.",
+   "ja": "　いけないのだよ。」",
+   "zh": "　是不行的。」",
+   "meta": {
+    "blob": 25,
+    "offset": 60872,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61599",
+   "en": "Before the Fist of the North Star,",
+   "ja": "「ホクトシンケンのまえには",
+   "zh": "「在北斗神拳面前",
+   "meta": {
+    "blob": 25,
+    "offset": 61040,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61600",
+   "en": "there is only death.",
+   "ja": "　死あるのみ」",
+   "zh": "　只有死亡」",
+   "meta": {
+    "blob": 25,
+    "offset": 61208,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61601",
+   "en": "Now you shall understand our power!",
+   "ja": "「わがちからをおもいしるがいい！」",
+   "zh": "「好好见识我的力量吧！」",
+   "meta": {
+    "blob": 25,
+    "offset": 61376,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61602",
+   "en": "TAWABAAAAAA!!",
+   "ja": "「タワバアアアアアア」",
+   "zh": "「塔瓦巴啊啊啊啊」",
+   "meta": {
+    "blob": 25,
+    "offset": 61544,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61606",
+   "en": "Craft Items?",
+   "ja": "「アイテムを合成するの？」",
+   "zh": "「要合成道具吗？」",
+   "meta": {
+    "blob": 25,
+    "offset": 62720,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61610",
+   "en": " %s is ready!!",
+   "ja": "「%s　ができた！！」",
+   "zh": "「%s　做好了！！」",
+   "meta": {
+    "blob": 25,
+    "offset": 63392,
     "cap": 62
    }
   }

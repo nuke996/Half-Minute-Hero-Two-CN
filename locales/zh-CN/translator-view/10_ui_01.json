@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3060,
+ "_count": 3178,
  "entries": [
   {
    "id": "row::0",
@@ -10037,6 +10037,17 @@
    }
   },
   {
+   "id": "row::1872",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 54,
+    "offset": 716,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1873",
    "en": "Yashu: Ayaka Suda",
    "ja": "ヤーシュ：須田彩加",
@@ -10048,6 +10059,17 @@
    }
   },
   {
+   "id": "row::1875",
+   "en": "Evil Swordsman Yashu",
+   "ja": "魔剣士ヤーシュ",
+   "zh": "魔剑士亚修",
+   "meta": {
+    "blob": 54,
+    "offset": 1376,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1876",
    "en": "Evil Swordsman Yashu: Ayaka Suda",
    "ja": "魔剣士ヤーシュ：須田彩加",
@@ -10055,6 +10077,17 @@
    "meta": {
     "blob": 54,
     "offset": 1408,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::1878",
+   "en": "Queen Maria",
+   "ja": "女王マリア",
+   "zh": "玛丽亚女王",
+   "meta": {
+    "blob": 54,
+    "offset": 2036,
     "cap": 16
    }
   },
@@ -10070,6 +10103,17 @@
    }
   },
   {
+   "id": "row::1881",
+   "en": "Knight",
+   "ja": "ナイト",
+   "zh": "骑士",
+   "meta": {
+    "blob": 54,
+    "offset": 2696,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1882",
    "en": "Knight: Ayaka Suda",
    "ja": "ナイト：須田彩加",
@@ -10078,6 +10122,17 @@
     "blob": 54,
     "offset": 2728,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::1884",
+   "en": "Evil Lord",
+   "ja": "マオウ",
+   "zh": "魔王",
+   "meta": {
+    "blob": 54,
+    "offset": 3356,
+    "cap": 16
    }
   },
   {
@@ -10103,6 +10158,17 @@
    }
   },
   {
+   "id": "row::1888",
+   "en": "Athena",
+   "ja": "アテナ",
+   "zh": "雅典娜",
+   "meta": {
+    "blob": 54,
+    "offset": 4676,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1889",
    "en": "Athena: Ayaka Suda",
    "ja": "アテナ：須田彩加",
@@ -10122,6 +10188,17 @@
     "blob": 54,
     "offset": 5368,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::1892",
+   "en": "Coo",
+   "ja": "クゥ",
+   "zh": "小咕",
+   "meta": {
+    "blob": 54,
+    "offset": 5996,
+    "cap": 16
    }
   },
   {
@@ -10147,6 +10224,17 @@
    }
   },
   {
+   "id": "row::1898",
+   "en": "Time Goddess",
+   "ja": "時の女神さま",
+   "zh": "时之女神",
+   "meta": {
+    "blob": 54,
+    "offset": 7316,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1899",
    "en": "Time Goddess: Ayaka Suda",
    "ja": "時の女神さま：須田彩加",
@@ -10155,6 +10243,17 @@
     "blob": 54,
     "offset": 7348,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::1901",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 54,
+    "offset": 7976,
+    "cap": 16
    }
   },
   {
@@ -10169,6 +10268,17 @@
    }
   },
   {
+   "id": "row::1904",
+   "en": "Rurufi",
+   "ja": "ルルフィ",
+   "zh": "露露菲",
+   "meta": {
+    "blob": 54,
+    "offset": 8636,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1905",
    "en": "Rurufi: Takushi Ikegame",
    "ja": "ルルフィ：池亀卓史",
@@ -10177,6 +10287,17 @@
     "blob": 54,
     "offset": 8668,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::1907",
+   "en": "Roken",
+   "ja": "ローケン",
+   "zh": "洛肯",
+   "meta": {
+    "blob": 54,
+    "offset": 9296,
+    "cap": 16
    }
   },
   {
@@ -10191,6 +10312,17 @@
    }
   },
   {
+   "id": "row::1910",
+   "en": "Rina",
+   "ja": "リィナ",
+   "zh": "莉娜",
+   "meta": {
+    "blob": 54,
+    "offset": 9956,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1911",
    "en": "Rina: Takushi Ikegame",
    "ja": "リィナ：池亀卓史",
@@ -10202,6 +10334,17 @@
    }
   },
   {
+   "id": "row::1913",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 54,
+    "offset": 10616,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1914",
    "en": "Emperor Golvadis: Takushi Ikegame",
    "ja": "皇帝ゴルバディス：池亀卓史",
@@ -10209,6 +10352,17 @@
    "meta": {
     "blob": 54,
     "offset": 10648,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::1916",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 54,
+    "offset": 11276,
     "cap": 16
    }
   },
@@ -10224,6 +10378,17 @@
    }
   },
   {
+   "id": "row::1919",
+   "en": "Fate",
+   "ja": "運命",
+   "zh": "命运",
+   "meta": {
+    "blob": 54,
+    "offset": 11936,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1920",
    "en": "Fate: Takushi Ikegame",
    "ja": "運命：池亀卓史",
@@ -10232,6 +10397,17 @@
     "blob": 54,
     "offset": 11968,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::1922",
+   "en": "Wood Dragon",
+   "ja": "ウッドドラゴン",
+   "zh": "木龙",
+   "meta": {
+    "blob": 54,
+    "offset": 12596,
+    "cap": 16
    }
   },
   {
@@ -10246,6 +10422,17 @@
    }
   },
   {
+   "id": "row::1925",
+   "en": "Horse Dragon",
+   "ja": "ホースドラゴン",
+   "zh": "马龙",
+   "meta": {
+    "blob": 54,
+    "offset": 13256,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1926",
    "en": "Horse Dragon: Miho Midorikawa",
    "ja": "ホースドラゴン：緑川美帆",
@@ -10254,6 +10441,17 @@
     "blob": 54,
     "offset": 13288,
     "cap": 14
+   }
+  },
+  {
+   "id": "row::1928",
+   "en": "Mist Dragon",
+   "ja": "ミストドラゴン",
+   "zh": "雾龙",
+   "meta": {
+    "blob": 54,
+    "offset": 13916,
+    "cap": 16
    }
   },
   {
@@ -10268,6 +10466,17 @@
    }
   },
   {
+   "id": "row::1931",
+   "en": "Ring Dragon",
+   "ja": "リングドラゴン",
+   "zh": "指环龙",
+   "meta": {
+    "blob": 54,
+    "offset": 14576,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1932",
    "en": "Ring Dragon: Miho Midorikawa",
    "ja": "リングドラゴン：緑川美帆",
@@ -10276,6 +10485,17 @@
     "blob": 54,
     "offset": 14608,
     "cap": 14
+   }
+  },
+  {
+   "id": "row::1934",
+   "en": "Dino Dragon",
+   "ja": "ダイノドラゴン",
+   "zh": "迪诺龙",
+   "meta": {
+    "blob": 54,
+    "offset": 15236,
+    "cap": 16
    }
   },
   {
@@ -10290,6 +10510,17 @@
    }
   },
   {
+   "id": "row::1937",
+   "en": "Rock Dragon",
+   "ja": "ロックドラゴン",
+   "zh": "岩龙",
+   "meta": {
+    "blob": 54,
+    "offset": 15896,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1938",
    "en": "Rock Dragon: Miho Midorikawa",
    "ja": "ロックドラゴン：緑川美帆",
@@ -10298,6 +10529,17 @@
     "blob": 54,
     "offset": 15928,
     "cap": 14
+   }
+  },
+  {
+   "id": "row::1940",
+   "en": "Physic Dragon",
+   "ja": "フィジックドラゴン",
+   "zh": "药疗龙",
+   "meta": {
+    "blob": 54,
+    "offset": 16556,
+    "cap": 16
    }
   },
   {
@@ -10312,6 +10554,17 @@
    }
   },
   {
+   "id": "row::1943",
+   "en": "Magic Dragon",
+   "ja": "マジックドラゴン",
+   "zh": "魔法龙",
+   "meta": {
+    "blob": 54,
+    "offset": 17216,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1944",
    "en": "Magic Dragon: Miho Midorikawa",
    "ja": "マジックドラゴン：緑川美帆",
@@ -10320,6 +10573,17 @@
     "blob": 54,
     "offset": 17248,
     "cap": 14
+   }
+  },
+  {
+   "id": "row::1946",
+   "en": "Evil Lord Punisher",
+   "ja": "魔王パニッシャー",
+   "zh": "魔王惩罚者",
+   "meta": {
+    "blob": 54,
+    "offset": 17876,
+    "cap": 16
    }
   },
   {
@@ -10334,6 +10598,17 @@
    }
   },
   {
+   "id": "row::1949",
+   "en": "Evil Lord Cerberus",
+   "ja": "魔王ケルベロス",
+   "zh": "魔王瑟伯勒斯",
+   "meta": {
+    "blob": 54,
+    "offset": 18536,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1950",
    "en": "Evil Lord Cerberus: Kouichi",
    "ja": "魔王ケルベロス：甲壱",
@@ -10345,6 +10620,17 @@
    }
   },
   {
+   "id": "row::1952",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 54,
+    "offset": 19196,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1953",
    "en": "Zozaurus the Enraged: rareengine",
    "ja": "憤怒のゾゾラース：rareengine",
@@ -10352,6 +10638,17 @@
    "meta": {
     "blob": 54,
     "offset": 19228,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::1955",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 54,
+    "offset": 19856,
     "cap": 16
    }
   },
@@ -10367,6 +10664,17 @@
    }
   },
   {
+   "id": "row::1958",
+   "en": "Vetra the Deceitful",
+   "ja": "欺瞞のヴェトラ",
+   "zh": "欺瞒的维特拉",
+   "meta": {
+    "blob": 54,
+    "offset": 20516,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1959",
    "en": "Vetra the Deceitful: rareengine",
    "ja": "欺瞞のヴェトラ：rareengine",
@@ -10378,6 +10686,17 @@
    }
   },
   {
+   "id": "row::1961",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 54,
+    "offset": 21176,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1962",
    "en": "Jarval the Rebellious: rareengine",
    "ja": "反逆のジャアブル：rareengine",
@@ -10385,6 +10704,17 @@
    "meta": {
     "blob": 54,
     "offset": 21208,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::1964",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 54,
+    "offset": 21836,
     "cap": 16
    }
   },
@@ -10400,6 +10730,17 @@
    }
   },
   {
+   "id": "row::1967",
+   "en": "Gasmong G4",
+   "ja": "ガスモングG4",
+   "zh": "嘎斯蒙G4",
+   "meta": {
+    "blob": 54,
+    "offset": 22496,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1968",
    "en": "Gasmong G4: Ittoku",
    "ja": "ガスモングG4：一徳",
@@ -10408,6 +10749,17 @@
     "blob": 54,
     "offset": 22528,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::1970",
+   "en": "Dosmammo G5",
+   "ja": "ドスマンモG5",
+   "zh": "多斯曼G5",
+   "meta": {
+    "blob": 54,
+    "offset": 23156,
+    "cap": 16
    }
   },
   {
@@ -10422,6 +10774,17 @@
    }
   },
   {
+   "id": "row::1973",
+   "en": "Gongorilla G6",
+   "ja": "ゴンゴリラG6",
+   "zh": "刚格里拉G6",
+   "meta": {
+    "blob": 54,
+    "offset": 23816,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1974",
    "en": "Gongorilla G6: Ittoku",
    "ja": "ゴンゴリラG6：一徳",
@@ -10430,6 +10793,17 @@
     "blob": 54,
     "offset": 23848,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::1976",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 54,
+    "offset": 24476,
+    "cap": 16
    }
   },
   {
@@ -10510,6 +10884,17 @@
    }
   },
   {
+   "id": "row::1985",
+   "en": "Gravidon",
+   "ja": "グラヴィドン",
+   "zh": "格拉维登",
+   "meta": {
+    "blob": 54,
+    "offset": 26456,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1986",
    "en": "Gravidon: Takashi Kojo",
    "ja": "グラヴィドン：小城崇志",
@@ -10518,6 +10903,17 @@
     "blob": 54,
     "offset": 26488,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::1988",
+   "en": "Gulagate",
+   "ja": "グラグェート",
+   "zh": "古拉盖特",
+   "meta": {
+    "blob": 54,
+    "offset": 27116,
+    "cap": 16
    }
   },
   {
@@ -10532,6 +10928,17 @@
    }
   },
   {
+   "id": "row::1991",
+   "en": "Lux Deus",
+   "ja": "ルクスデウス",
+   "zh": "路克斯",
+   "meta": {
+    "blob": 54,
+    "offset": 27776,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1992",
    "en": "Lux Deus: Takashi Kojo",
    "ja": "ルクスデウス：小城崇志",
@@ -10540,6 +10947,17 @@
     "blob": 54,
     "offset": 27808,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::1994",
+   "en": "Ava",
+   "ja": "アヴァ",
+   "zh": "艾",
+   "meta": {
+    "blob": 54,
+    "offset": 28436,
+    "cap": 16
    }
   },
   {
@@ -10554,6 +10972,17 @@
    }
   },
   {
+   "id": "row::1997",
+   "en": "Faegwot",
+   "ja": "フェグォット",
+   "zh": "费格特",
+   "meta": {
+    "blob": 54,
+    "offset": 29096,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::1998",
    "en": "Faegwot: Takashi Kojo",
    "ja": "フェグォット：小城崇志",
@@ -10562,6 +10991,17 @@
     "blob": 54,
     "offset": 29128,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::2000",
+   "en": "Eynvy",
+   "ja": "エインヴィー",
+   "zh": "恩维",
+   "meta": {
+    "blob": 54,
+    "offset": 29756,
+    "cap": 16
    }
   },
   {
@@ -10576,6 +11016,17 @@
    }
   },
   {
+   "id": "row::2003",
+   "en": "Spelvia",
+   "ja": "スペルヴィア",
+   "zh": "斯佩维",
+   "meta": {
+    "blob": 54,
+    "offset": 30416,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2004",
    "en": "Spelvia: Takashi Kojo",
    "ja": "スペルヴィア：小城崇志",
@@ -10584,6 +11035,17 @@
     "blob": 54,
     "offset": 30448,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::2006",
+   "en": "Braelude of the Earth",
+   "ja": "地のブレルード",
+   "zh": "大地的布雷鲁德",
+   "meta": {
+    "blob": 54,
+    "offset": 31076,
+    "cap": 16
    }
   },
   {
@@ -10598,6 +11060,17 @@
    }
   },
   {
+   "id": "row::2009",
+   "en": "Warlute of the Heavens",
+   "ja": "天のワールート",
+   "zh": "天之瓦鲁特",
+   "meta": {
+    "blob": 54,
+    "offset": 31736,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2010",
    "en": "Warlute of the Heavens: Raita Kazama",
    "ja": "天のワールート：風間雷太",
@@ -10606,6 +11079,17 @@
     "blob": 54,
     "offset": 31768,
     "cap": 18
+   }
+  },
+  {
+   "id": "row::2012",
+   "en": "Oratoolio of the Holy",
+   "ja": "聖のオラトゥーリオ",
+   "zh": "神圣的奥拉托里奥",
+   "meta": {
+    "blob": 54,
+    "offset": 32396,
+    "cap": 16
    }
   },
   {
@@ -10620,6 +11104,17 @@
    }
   },
   {
+   "id": "row::2015",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 54,
+    "offset": 33056,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2016",
    "en": "Leike of the Seas: Raita Kazama",
    "ja": "海のレイケ：風間雷太",
@@ -10628,6 +11123,17 @@
     "blob": 54,
     "offset": 33088,
     "cap": 15
+   }
+  },
+  {
+   "id": "row::2018",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 54,
+    "offset": 33716,
+    "cap": 16
    }
   },
   {
@@ -10642,6 +11148,17 @@
    }
   },
   {
+   "id": "row::2021",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 54,
+    "offset": 34376,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2022",
    "en": "Caprittio of the Mirrors: Raita Kazama",
    "ja": "鏡のカプリティオ：風間雷太",
@@ -10650,6 +11167,17 @@
     "blob": 54,
     "offset": 34408,
     "cap": 19
+   }
+  },
+  {
+   "id": "row::2024",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 54,
+    "offset": 35036,
+    "cap": 16
    }
   },
   {
@@ -10664,6 +11192,17 @@
    }
   },
   {
+   "id": "row::2027",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 54,
+    "offset": 35696,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2028",
    "en": "Jilvesta of the Fortress: Raita Kazama",
    "ja": "砦のジルヴェスタ：風間雷太",
@@ -10672,6 +11211,17 @@
     "blob": 54,
     "offset": 35728,
     "cap": 19
+   }
+  },
+  {
+   "id": "row::2030",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 54,
+    "offset": 36356,
+    "cap": 16
    }
   },
   {
@@ -10686,6 +11236,17 @@
    }
   },
   {
+   "id": "row::2033",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 54,
+    "offset": 37016,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2034",
    "en": "Asura Nadeshiko: Kazuno Yuikawa",
    "ja": "阿修羅撫子：結川カズノ",
@@ -10694,6 +11255,17 @@
     "blob": 54,
     "offset": 37048,
     "cap": 15
+   }
+  },
+  {
+   "id": "row::2036",
+   "en": "Yuri Yaksha",
+   "ja": "百合夜叉",
+   "zh": "百合夜叉",
+   "meta": {
+    "blob": 54,
+    "offset": 37676,
+    "cap": 16
    }
   },
   {
@@ -10708,6 +11280,17 @@
    }
   },
   {
+   "id": "row::2039",
+   "en": "1st Slaughter Daughter",
+   "ja": "殺戮長女",
+   "zh": "杀戮长女",
+   "meta": {
+    "blob": 54,
+    "offset": 38336,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2040",
    "en": "1st Slaughter Daughter: Kazuno Yuikawa",
    "ja": "殺戮長女：結川カズノ",
@@ -10716,6 +11299,17 @@
     "blob": 54,
     "offset": 38368,
     "cap": 19
+   }
+  },
+  {
+   "id": "row::2042",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 54,
+    "offset": 38996,
+    "cap": 16
    }
   },
   {
@@ -10730,6 +11324,17 @@
    }
   },
   {
+   "id": "row::2045",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 54,
+    "offset": 39656,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2046",
    "en": "Lady of Despair: Shun",
    "ja": "絶望淑女：シュン",
@@ -10738,6 +11343,17 @@
     "blob": 54,
     "offset": 39688,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::2048",
+   "en": "Maiden of Hell",
+   "ja": "地獄乙女",
+   "zh": "地狱乙女",
+   "meta": {
+    "blob": 54,
+    "offset": 40316,
+    "cap": 16
    }
   },
   {
@@ -10752,6 +11368,17 @@
    }
   },
   {
+   "id": "row::2051",
+   "en": "Sakuran",
+   "ja": "朔蘭",
+   "zh": "朔兰",
+   "meta": {
+    "blob": 54,
+    "offset": 40976,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2052",
    "en": "Sakuran: Shun",
    "ja": "朔蘭：シュン",
@@ -10760,6 +11387,17 @@
     "blob": 54,
     "offset": 41008,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::2054",
+   "en": "No. 30",
+   "ja": "３０号",
+   "zh": "30号",
+   "meta": {
+    "blob": 54,
+    "offset": 41636,
+    "cap": 16
    }
   },
   {
@@ -10774,6 +11412,17 @@
    }
   },
   {
+   "id": "row::2057",
+   "en": "Big Venus",
+   "ja": "ビッグヴィーナス",
+   "zh": "大维纳斯",
+   "meta": {
+    "blob": 54,
+    "offset": 42296,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2058",
    "en": "Big Venus: Shishizaru",
    "ja": "ビッグヴィーナス：獅子猿",
@@ -10782,6 +11431,17 @@
     "blob": 54,
     "offset": 42328,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::2060",
+   "en": "Wahrheit the First",
+   "ja": "第一ヴァールハイト",
+   "zh": "第一瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 42956,
+    "cap": 16
    }
   },
   {
@@ -10796,6 +11456,17 @@
    }
   },
   {
+   "id": "row::2063",
+   "en": "Wahrheit the Second",
+   "ja": "第二ヴァールハイト",
+   "zh": "第二瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 43616,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2064",
    "en": "Wahrheit the Second: hippo",
    "ja": "第二ヴァールハイト：hippo",
@@ -10804,6 +11475,17 @@
     "blob": 54,
     "offset": 43648,
     "cap": 13
+   }
+  },
+  {
+   "id": "row::2066",
+   "en": "Wahrheit the Third",
+   "ja": "第三ヴァールハイト",
+   "zh": "第三瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 44276,
+    "cap": 16
    }
   },
   {
@@ -10818,6 +11500,17 @@
    }
   },
   {
+   "id": "row::2069",
+   "en": "Wahrheit the Fourth",
+   "ja": "第四ヴァールハイト",
+   "zh": "第四瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 44936,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2070",
    "en": "Wahrheit the Fourth: hippo",
    "ja": "第四ヴァールハイト：hippo",
@@ -10826,6 +11519,17 @@
     "blob": 54,
     "offset": 44968,
     "cap": 13
+   }
+  },
+  {
+   "id": "row::2072",
+   "en": "Wahrheit the Fifth",
+   "ja": "第五ヴァールハイト",
+   "zh": "第五瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 45596,
+    "cap": 16
    }
   },
   {
@@ -10840,6 +11544,17 @@
    }
   },
   {
+   "id": "row::2075",
+   "en": "Wahrheit the Sixth",
+   "ja": "第六ヴァールハイト",
+   "zh": "第六瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 46256,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2076",
    "en": "Wahrheit the Sixth: hippo",
    "ja": "第六ヴァールハイト：hippo",
@@ -10848,6 +11563,17 @@
     "blob": 54,
     "offset": 46288,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::2078",
+   "en": "Wahrheit the Seventh",
+   "ja": "第七ヴァールハイト",
+   "zh": "第七瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 46916,
+    "cap": 16
    }
   },
   {
@@ -10862,6 +11588,17 @@
    }
   },
   {
+   "id": "row::2081",
+   "en": "Wahrheit the Eighth",
+   "ja": "第八ヴァールハイト",
+   "zh": "第八瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 47576,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2082",
    "en": "Wahrheit the Eighth: hippo",
    "ja": "第八ヴァールハイト：hippo",
@@ -10873,6 +11610,17 @@
    }
   },
   {
+   "id": "row::2084",
+   "en": "Wahrheit the Ninth",
+   "ja": "第九ヴァールハイト",
+   "zh": "第九瓦尔海特",
+   "meta": {
+    "blob": 54,
+    "offset": 48236,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::2085",
    "en": "Wahrheit the Ninth: hippo",
    "ja": "第九ヴァールハイト：hippo",
@@ -10881,6 +11629,17 @@
     "blob": 54,
     "offset": 48268,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::2087",
+   "en": "Ryuge",
+   "ja": "リューゲ",
+   "zh": "留格",
+   "meta": {
+    "blob": 54,
+    "offset": 48896,
+    "cap": 16
    }
   },
   {
@@ -22104,6 +22863,72 @@
    }
   },
   {
+   "id": "row::4860",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 105,
+    "offset": 1260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4862",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 105,
+    "offset": 1548,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4864",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 105,
+    "offset": 6732,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4866",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 105,
+    "offset": 8460,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4868",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 105,
+    "offset": 8748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4870",
+   "en": "Karin",
+   "ja": "カリン",
+   "zh": "卡琳",
+   "meta": {
+    "blob": 105,
+    "offset": 9036,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::4873",
    "en": "Evil Lord Zant Hell",
    "ja": "魔王ザントヘル",
@@ -22247,6 +23072,39 @@
    }
   },
   {
+   "id": "row::4891",
+   "en": "Evil Lord",
+   "ja": "マオウ",
+   "zh": "魔王",
+   "meta": {
+    "blob": 105,
+    "offset": 22572,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4893",
+   "en": "Evil Lord",
+   "ja": "マオウ",
+   "zh": "魔王",
+   "meta": {
+    "blob": 105,
+    "offset": 22860,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4899",
+   "en": "Cole",
+   "ja": "コール",
+   "zh": "科尔",
+   "meta": {
+    "blob": 105,
+    "offset": 24300,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::4901",
    "en": "Defeat the Evil Lord!",
    "ja": "魔王をたおせ！！",
@@ -22364,6 +23222,105 @@
    "meta": {
     "blob": 105,
     "offset": 33740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4912",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 105,
+    "offset": 35244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4915",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 105,
+    "offset": 56556,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4917",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 105,
+    "offset": 56844,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4920",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 105,
+    "offset": 57132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4923",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 105,
+    "offset": 61164,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4925",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 105,
+    "offset": 61452,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4928",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 105,
+    "offset": 61740,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4930",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 105,
+    "offset": 65772,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::4932",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 105,
+    "offset": 66060,
     "cap": 32
    }
   },
@@ -29452,2712 +30409,6 @@
    }
   },
   {
-   "id": "row::6094",
-   "en": "Skivvies",
-   "ja": "パンイチ",
-   "zh": "内裤",
-   "meta": {
-    "blob": 128,
-    "offset": 20,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6095",
-   "en": "Can use all weapon skills. Its only redeeming feature.",
-   "ja": "全ての武器でスキルが出せる　それだけが取りえのクラス",
-   "zh": "能使用所有武器技能。这是它唯一的长处。",
-   "meta": {
-    "blob": 128,
-    "offset": 100,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6096",
-   "en": "Swordsman",
-   "ja": "剣士",
-   "zh": "剑士",
-   "meta": {
-    "blob": 128,
-    "offset": 232,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6097",
-   "en": "Good with swords and greatswords. No real strengths or weaknesses.",
-   "ja": "剣と大剣が得意な可も無く不可も無い使いやすいクラス",
-   "zh": "擅长剑与大剑。没有特别强弱。",
-   "meta": {
-    "blob": 128,
-    "offset": 312,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6098",
-   "en": "Fighter",
-   "ja": "戦士",
-   "zh": "战士",
-   "meta": {
-    "blob": 128,
-    "offset": 444,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6099",
-   "en": "Specialist with axes and hammers. Slow, but high attack and defense.",
-   "ja": "オノとハンマーが得意　スピードがネックだが攻撃力・防御力は高い",
-   "zh": "擅长斧与锤。速度慢，但攻防高。",
-   "meta": {
-    "blob": 128,
-    "offset": 524,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6100",
-   "en": "Musketeer",
-   "ja": "銃士",
-   "zh": "射手",
-   "meta": {
-    "blob": 128,
-    "offset": 656,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6101",
-   "en": "Specialist with bowgun swords. Only this class can increase critical.",
-   "ja": "ボウガンソードが得意なクラス　器用さが上がるのはこのクラスだけ",
-   "zh": "擅长弓枪剑。只有此职业能提升暴击。",
-   "meta": {
-    "blob": 128,
-    "offset": 736,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6102",
-   "en": "Mage",
-   "ja": "魔道士",
-   "zh": "魔法师",
-   "meta": {
-    "blob": 128,
-    "offset": 868,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6103",
-   "en": "Fights with staves and books. Increases HP and defense.",
-   "ja": "杖と本を武器にたたかうクラス　体力と防御力が上がる",
-   "zh": "以杖和书战斗。提升体力与防御。",
-   "meta": {
-    "blob": 128,
-    "offset": 948,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6104",
-   "en": "Spearman",
-   "ja": "槍士",
-   "zh": "枪兵",
-   "meta": {
-    "blob": 128,
-    "offset": 1080,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6105",
-   "en": "Skilled with spears and polearms. Fast, but defense does not increase.",
-   "ja": "槍とぼうが得意　剣士よりも速さはあるが防御力は上がらない",
-   "zh": "擅长枪与长柄武器。快，但防御不升。",
-   "meta": {
-    "blob": 128,
-    "offset": 1160,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6106",
-   "en": "Hero",
-   "ja": "勇者",
-   "zh": "勇者",
-   "meta": {
-    "blob": 128,
-    "offset": 1292,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6107",
-   "en": "Can use all weapon skills. The legendary class.",
-   "ja": "全ての武器でスキルが出せる　伝説のクラス",
-   "zh": "能使用所有武器技能。传说中的职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 1372,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6108",
-   "en": "Warrior",
-   "ja": "ウォーリア",
-   "zh": "勇士",
-   "meta": {
-    "blob": 128,
-    "offset": 1504,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6109",
-   "en": "Advanced Swordsman class.",
-   "ja": "剣士の上級クラス",
-   "zh": "剑士的进阶职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 1584,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6110",
-   "en": "Viking",
-   "ja": "バイキング",
-   "zh": "维京人",
-   "meta": {
-    "blob": 128,
-    "offset": 1716,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6111",
-   "en": "Advanced Warrior class.",
-   "ja": "戦士の上級クラス",
-   "zh": "战士的进阶职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 1796,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6112",
-   "en": "Marksman",
-   "ja": "シューター",
-   "zh": "神射手",
-   "meta": {
-    "blob": 128,
-    "offset": 1928,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6113",
-   "en": "Advanced Musketeer class.",
-   "ja": "銃士の上級クラス",
-   "zh": "射手的进阶职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 2008,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6114",
-   "en": "Wizard",
-   "ja": "ウィザード",
-   "zh": "巫师",
-   "meta": {
-    "blob": 128,
-    "offset": 2140,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6115",
-   "en": "Advanced Mage class.",
-   "ja": "魔道士の上級クラス",
-   "zh": "魔法师的进阶职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 2220,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6116",
-   "en": "Lancer",
-   "ja": "ランサー",
-   "zh": "长枪兵",
-   "meta": {
-    "blob": 128,
-    "offset": 2352,
-    "cap": 18
-   }
-  },
-  {
-   "id": "row::6117",
-   "en": "Advanced Spearman class.",
-   "ja": "槍士の上級クラス",
-   "zh": "枪兵的进阶职业。",
-   "meta": {
-    "blob": 128,
-    "offset": 2432,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6121",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 3032,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6124",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 3324,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6127",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 3616,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6130",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 3908,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6133",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 4200,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6136",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 4492,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6138",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 7120,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6141",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 7704,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6144",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 8580,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6147",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 9164,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6152",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 10916,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6154",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 12084,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6156",
-   "en": "Defeat the Remnant Evil Lord in 30 Seconds!",
-   "ja": "３０秒で残党魔王をたおせ！",
-   "zh": "在30秒内消灭残党魔王！",
-   "meta": {
-    "blob": 129,
-    "offset": 17632,
-    "cap": 96
-   }
-  },
-  {
-   "id": "row::6157",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 22888,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6161",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 23764,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6164",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 24056,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6167",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 24640,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6170",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 25224,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6172",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 26100,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6175",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 26684,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6178",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 27268,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6180",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 27852,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6182",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 28144,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6185",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 29604,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6188",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 29896,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6192",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 31064,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6195",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 31356,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6198",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 31648,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6202",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 32232,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6205",
-   "en": "Little Girl",
-   "ja": "女の子",
-   "zh": "小女孩",
-   "meta": {
-    "blob": 129,
-    "offset": 32816,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6209",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 33692,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6212",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 33984,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6215",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 34860,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6217",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 35444,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6219",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 36028,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6224",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 43620,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6226",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 43912,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6229",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 44788,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6232",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 45080,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6235",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 45956,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6237",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 46248,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6240",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 46832,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6242",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 47416,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6245",
-   "en": "(Why can't we just wait here… ?)",
-   "ja": "（ココで待ってるのは無しなのか・・・）",
-   "zh": "（为什么不能在这儿等呢…？）",
-   "meta": {
-    "blob": 129,
-    "offset": 47836,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6246",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 48584,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6249",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 49168,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6252",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 49752,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6255",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 51796,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6259",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 52964,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6261",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 55300,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6264",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 55592,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6266",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 55884,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6269",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 56176,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6271",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 56760,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6273",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 60848,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6275",
-   "en": "Blacksmith",
-   "ja": "かじ屋",
-   "zh": "铁匠",
-   "meta": {
-    "blob": 129,
-    "offset": 61140,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6278",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 65228,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6281",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 65520,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6283",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 69024,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6285",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 69608,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6287",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 69900,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6291",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 71068,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6293",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 71360,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6296",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 71652,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6299",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 71944,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6302",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 72528,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6304",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 73404,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6307",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 74280,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6310",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 74864,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6312",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 76032,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6315",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 76616,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6318",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 77492,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6320",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 77784,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6322",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 78076,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6325",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 78660,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6328",
-   "en": "Soldier",
-   "ja": "兵士",
-   "zh": "士兵",
-   "meta": {
-    "blob": 129,
-    "offset": 78952,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6330",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 79244,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6332",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 80996,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6334",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 83624,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6336",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 83916,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6339",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 84500,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6342",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 85084,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6346",
-   "en": "Mysterious Voice",
-   "ja": "ナゾの声",
-   "zh": "神秘的声音",
-   "meta": {
-    "blob": 129,
-    "offset": 85668,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6350",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 87420,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6354",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 88296,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6357",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 88880,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6360",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 89464,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6364",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 90048,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6366",
-   "en": "(Huh? What? He doesn't want to call me that?)",
-   "ja": "（え？　何？　さま付けはイヤなの？）",
-   "zh": "（咦？什么？他不想用敬称？）",
-   "meta": {
-    "blob": 129,
-    "offset": 90176,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6367",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 90340,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6370",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 90924,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6374",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 92092,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6376",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 92384,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6380",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 93552,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6383",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 94136,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6386",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 94428,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6389",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 95304,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6392",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 95596,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6395",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 95888,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6399",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 97640,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6402",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 97932,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6404",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 98808,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6407",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 99684,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6409",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 99976,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6412",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 100268,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6415",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 100560,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6419",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 101436,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6422",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 101728,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6425",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 102020,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6430",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 103772,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6435",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 104940,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6438",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 105524,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6441",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 106108,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6443",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 106400,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6446",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 106692,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6449",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 106984,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6452",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 107568,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6455",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 112532,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6459",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 113408,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6463",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 113992,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6465",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 115160,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6469",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 115744,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6472",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 116036,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6475",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 116620,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6478",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 116912,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6481",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 117788,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6484",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 118080,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6487",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 118664,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6490",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 119248,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6493",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 119832,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6500",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 122168,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6502",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 122460,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6505",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 122752,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6508",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 123044,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6511",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 123336,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6514",
-   "en": "Use super-fast leveling up to get strong fast!",
-   "ja": "超速レベルアップで強くなれ！",
-   "zh": "用超快速升级快速变强！",
-   "meta": {
-    "blob": 129,
-    "offset": 125088,
-    "cap": 96
-   }
-  },
-  {
-   "id": "row::6515",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 125964,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6517",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 126256,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6520",
-   "en": "Guy",
-   "ja": "ガイ",
-   "zh": "盖伊",
-   "meta": {
-    "blob": 129,
-    "offset": 126548,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6523",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 126840,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6525",
-   "en": "Yashu",
-   "ja": "ヤーシュ",
-   "zh": "亚修",
-   "meta": {
-    "blob": 129,
-    "offset": 127132,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6527",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 127424,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6529",
-   "en": "Remnant Evil Lord Zandest",
-   "ja": "残党魔王ザンデスト",
-   "zh": "残党魔王赞德斯特",
-   "meta": {
-    "blob": 129,
-    "offset": 127716,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6531",
-   "en": "Quest Cleared!",
-   "ja": "クエストクリア！",
-   "zh": "任务完成！",
-   "meta": {
-    "blob": 129,
-    "offset": 132388,
-    "cap": 96
-   }
-  },
-  {
-   "id": "row::6532",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 134432,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6534",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 134724,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6536",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 135016,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6539",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 135308,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6542",
-   "en": "Time Goddess",
-   "ja": "時の女神さま",
-   "zh": "时之女神",
-   "meta": {
-    "blob": 129,
-    "offset": 135600,
-    "cap": 32
-   }
-  },
-  {
-   "id": "row::6544",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 130,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6547",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 1972,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6550",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 2396,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6551",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 2820,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6553",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 3244,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6557",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 4940,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6560",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 5364,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6561",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 5788,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6565",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 6212,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6568",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 130,
-    "offset": 6636,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6569",
-   "en": "Recovery Milk",
-   "ja": "かいふくミルク",
-   "zh": "恢复牛奶",
-   "meta": {
-    "blob": 130,
-    "offset": 6892,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6570",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 7060,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6572",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 7484,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6574",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 130,
-    "offset": 7908,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6577",
-   "en": "A cute statue.",
-   "ja": "せきぞー",
-   "zh": "可爱的石像",
-   "meta": {
-    "blob": 130,
-    "offset": 8364,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6578",
-   "en": "Pray",
-   "ja": "おいのり",
-   "zh": "祈祷",
-   "meta": {
-    "blob": 130,
-    "offset": 8588,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6579",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 130,
-    "offset": 9180,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6580",
-   "en": "Rest Tent",
-   "ja": "きゅうけいテント",
-   "zh": "休息帐篷",
-   "meta": {
-    "blob": 131,
-    "offset": 140,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6581",
-   "en": "Exit Rest Tent",
-   "ja": "きゅうけいテントを出る",
-   "zh": "离开休息帐篷",
-   "meta": {
-    "blob": 131,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6582",
-   "en": "Goddess Statue Warp",
-   "ja": "女神像ワープ",
-   "zh": "女神像传送",
-   "meta": {
-    "blob": 131,
-    "offset": 956,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6583",
-   "en": "War Rice Ball",
-   "ja": "いくさおにぎり",
-   "zh": "战饭团",
-   "meta": {
-    "blob": 131,
-    "offset": 1380,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6584",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 131,
-    "offset": 1548,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6586",
-   "en": "Exit Rest Tent",
-   "ja": "きゅうけいテントを出る",
-   "zh": "离开休息帐篷",
-   "meta": {
-    "blob": 131,
-    "offset": 1972,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6587",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 132,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6588",
-   "en": "Pray",
-   "ja": "おいのり",
-   "zh": "祈祷",
-   "meta": {
-    "blob": 132,
-    "offset": 956,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6589",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 132,
-    "offset": 1548,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6591",
-   "en": "Overflowing Bowl",
-   "ja": "モリヤマどん",
-   "zh": "满溢之碗",
-   "meta": {
-    "blob": 132,
-    "offset": 1804,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6592",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 132,
-    "offset": 1972,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6594",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 132,
-    "offset": 2396,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6598",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 132,
-    "offset": 2820,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6599",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 132,
-    "offset": 3668,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6603",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 132,
-    "offset": 4516,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6604",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 132,
-    "offset": 5364,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6605",
-   "en": "Entered village!",
-   "ja": "村に入った！",
-   "zh": "进入村庄！",
-   "meta": {
-    "blob": 133,
-    "offset": 44,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6606",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 180,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6607",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 376,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6608",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 572,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6609",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 768,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6610",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 964,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6611",
-   "en": "Entered village!",
-   "ja": "村に入った！",
-   "zh": "进入村庄！",
-   "meta": {
-    "blob": 133,
-    "offset": 1024,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6612",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 1160,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6613",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 1356,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6614",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 1552,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6615",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 1748,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6616",
-   "en": "Entered village!",
-   "ja": "村に入った！",
-   "zh": "进入村庄！",
-   "meta": {
-    "blob": 133,
-    "offset": 1808,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6617",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 1944,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6618",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 2140,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6619",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 2336,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6620",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 2532,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6621",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 2728,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6622",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 2924,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6623",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 3120,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6624",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 3512,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6625",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 3708,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6626",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 3904,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6627",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 4100,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6628",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 4296,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6629",
-   "en": "○: Enter",
-   "ja": "○：はいる",
-   "zh": "○：进入",
-   "meta": {
-    "blob": 133,
-    "offset": 4492,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6630",
-   "en": "Lowry's Parasol",
-   "ja": "ローリーズパラソル",
-   "zh": "洛瑞的阳伞",
-   "meta": {
-    "blob": 134,
-    "offset": 140,
-    "cap": 64
-   }
-  },
-  {
-   "id": "row::6631",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 134,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6634",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 134,
-    "offset": 1972,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6637",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 134,
-    "offset": 2820,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6638",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 134,
-    "offset": 3244,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6640",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 134,
-    "offset": 3668,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6641",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 134,
-    "offset": 4092,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6643",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 1124,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6645",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 1548,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6647",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 1972,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6649",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 2396,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6651",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 2820,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6653",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 3244,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6655",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 3668,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6657",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 135,
-    "offset": 4092,
-    "cap": 16
-   }
-  },
-  {
    "id": "row::60626",
    "en": "Starthome Village",
    "ja": "サイショール村",
@@ -33182,9 +31433,9 @@
   },
   {
    "id": "row::60746",
-   "en": "Ate %s!\r\nPhysical Strength Fully Recovered!",
-   "ja": "%s を食べた！\r\n体力全快！",
-   "zh": "吃下了%s！\r\n生命全满！",
+   "en": "Ate %s!\nPhysical Strength Fully Recovered!",
+   "ja": "%s を食べた！\n体力全快！",
+   "zh": "吃下了%s！\n生命全满！",
    "meta": {
     "blob": 25,
     "offset": 3080,
@@ -33662,6 +31913,3053 @@
     "blob": 109,
     "offset": 828,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::61312",
+   "en": "Awesome Hero",
+   "ja": "ステキ勇者",
+   "zh": "帅气勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 9128,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61313",
+   "en": "Great Hero",
+   "ja": "スゴイ勇者",
+   "zh": "厉害勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 9296,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61314",
+   "en": "Regular Hero",
+   "ja": "フツウ勇者",
+   "zh": "普通勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 9464,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61315",
+   "en": "So-so Hero",
+   "ja": "タダノ勇者",
+   "zh": "平庸勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 9632,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61316",
+   "en": "Awful Hero",
+   "ja": "ヒドイ勇者",
+   "zh": "糟糕勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 9800,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61317",
+   "en": "None",
+   "ja": "無し",
+   "zh": "无",
+   "meta": {
+    "blob": 25,
+    "offset": 9968,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61318",
+   "en": "⑦ 1st Party",
+   "ja": "⑦ 1stパーティ",
+   "zh": "⑦ 第一队伍",
+   "meta": {
+    "blob": 25,
+    "offset": 10808,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61319",
+   "en": "⑨ 2nd Party",
+   "ja": "⑨ 2ndパーティ",
+   "zh": "⑨ 第二队伍",
+   "meta": {
+    "blob": 25,
+    "offset": 10976,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61320",
+   "en": "None",
+   "ja": "なし",
+   "zh": "无",
+   "meta": {
+    "blob": 25,
+    "offset": 11144,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61321",
+   "en": "Legs",
+   "ja": "足",
+   "zh": "腿部",
+   "meta": {
+    "blob": 25,
+    "offset": 11312,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61322",
+   "en": "1st Floor",
+   "ja": "胴体1階",
+   "zh": "躯干1层",
+   "meta": {
+    "blob": 25,
+    "offset": 11480,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61323",
+   "en": "2nd Floor",
+   "ja": "胴体2階",
+   "zh": "躯干2层",
+   "meta": {
+    "blob": 25,
+    "offset": 11648,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61324",
+   "en": "3rd Floor",
+   "ja": "胴体3階",
+   "zh": "躯干3层",
+   "meta": {
+    "blob": 25,
+    "offset": 11816,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61325",
+   "en": "4th Floor",
+   "ja": "胴体4階",
+   "zh": "躯干4层",
+   "meta": {
+    "blob": 25,
+    "offset": 11984,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61326",
+   "en": "5th Floor",
+   "ja": "胴体5階",
+   "zh": "躯干5层",
+   "meta": {
+    "blob": 25,
+    "offset": 12152,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61327",
+   "en": "None",
+   "ja": "なし",
+   "zh": "无",
+   "meta": {
+    "blob": 25,
+    "offset": 12320,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61328",
+   "en": "Parameters",
+   "ja": "パーツパラメータ",
+   "zh": "部件参数",
+   "meta": {
+    "blob": 25,
+    "offset": 12488,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61329",
+   "en": "Total Parameters",
+   "ja": "トータルパラメータ",
+   "zh": "总参数",
+   "meta": {
+    "blob": 25,
+    "offset": 12656,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61330",
+   "en": "Customize Leg Parts",
+   "ja": "足パーツをカスタマイズ",
+   "zh": "自定腿部部件",
+   "meta": {
+    "blob": 25,
+    "offset": 12824,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61331",
+   "en": "Customize Body Parts",
+   "ja": "胴体パーツをカスタマイズ",
+   "zh": "自定躯干部件",
+   "meta": {
+    "blob": 25,
+    "offset": 12992,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61332",
+   "en": "Heal",
+   "ja": "かいふく",
+   "zh": "恢复",
+   "meta": {
+    "blob": 25,
+    "offset": 13160,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61333",
+   "en": "Helmet",
+   "ja": "ぼうし",
+   "zh": "头盔",
+   "meta": {
+    "blob": 25,
+    "offset": 13328,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61334",
+   "en": "Armor",
+   "ja": "よろい",
+   "zh": "盔甲",
+   "meta": {
+    "blob": 25,
+    "offset": 13496,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61335",
+   "en": "Shoes",
+   "ja": "くつ",
+   "zh": "鞋子",
+   "meta": {
+    "blob": 25,
+    "offset": 13664,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61336",
+   "en": "Weapon",
+   "ja": "ぶき",
+   "zh": "武器",
+   "meta": {
+    "blob": 25,
+    "offset": 13832,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61337",
+   "en": "Shield",
+   "ja": "たて",
+   "zh": "护盾",
+   "meta": {
+    "blob": 25,
+    "offset": 14000,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61338",
+   "en": "Lv 1",
+   "ja": "Ｌｖ１",
+   "zh": "等级1",
+   "meta": {
+    "blob": 25,
+    "offset": 14168,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61339",
+   "en": "Lv 2",
+   "ja": "Ｌｖ２",
+   "zh": "等级2",
+   "meta": {
+    "blob": 25,
+    "offset": 14336,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61340",
+   "en": "Lv 3",
+   "ja": "Ｌｖ３",
+   "zh": "等级3",
+   "meta": {
+    "blob": 25,
+    "offset": 14504,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61341",
+   "en": "Lv 4",
+   "ja": "Ｌｖ４",
+   "zh": "等级4",
+   "meta": {
+    "blob": 25,
+    "offset": 14672,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61342",
+   "en": "Lv 5",
+   "ja": "Ｌｖ５",
+   "zh": "等级5",
+   "meta": {
+    "blob": 25,
+    "offset": 14840,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61343",
+   "en": "Lv 6",
+   "ja": "Ｌｖ６",
+   "zh": "等级6",
+   "meta": {
+    "blob": 25,
+    "offset": 15008,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61344",
+   "en": "Lv 7",
+   "ja": "Ｌｖ７",
+   "zh": "等级7",
+   "meta": {
+    "blob": 25,
+    "offset": 15176,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61345",
+   "en": "Lv 8",
+   "ja": "Ｌｖ８",
+   "zh": "等级8",
+   "meta": {
+    "blob": 25,
+    "offset": 15344,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61346",
+   "en": "Lv 9",
+   "ja": "Ｌｖ９",
+   "zh": "等级9",
+   "meta": {
+    "blob": 25,
+    "offset": 15512,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61347",
+   "en": "Lv 10",
+   "ja": "Ｌｖ１０",
+   "zh": "等级10",
+   "meta": {
+    "blob": 25,
+    "offset": 15680,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61348",
+   "en": "Lv 1 Noob",
+   "ja": "Ｌｖ１　　へっぽこ",
+   "zh": "等级1 菜鸟",
+   "meta": {
+    "blob": 25,
+    "offset": 15848,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61349",
+   "en": "Lv 2 Defense",
+   "ja": "Ｌｖ２　　まもり",
+   "zh": "等级2 防御",
+   "meta": {
+    "blob": 25,
+    "offset": 16016,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61350",
+   "en": "Lv 3 Weak",
+   "ja": "Ｌｖ３　　よわい",
+   "zh": "等级3 虚弱",
+   "meta": {
+    "blob": 25,
+    "offset": 16184,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61351",
+   "en": "Lv 4 Fast",
+   "ja": "Ｌｖ４　　はやい",
+   "zh": "等级4 迅捷",
+   "meta": {
+    "blob": 25,
+    "offset": 16352,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61352",
+   "en": "Lv 5 Regular",
+   "ja": "Ｌｖ５　　ふつう",
+   "zh": "等级5 普通",
+   "meta": {
+    "blob": 25,
+    "offset": 16520,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61353",
+   "en": "Lv 6 Heavy",
+   "ja": "Ｌｖ６　　おもい",
+   "zh": "等级6 沉重",
+   "meta": {
+    "blob": 25,
+    "offset": 16688,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61354",
+   "en": "Lv 7 Strong",
+   "ja": "Ｌｖ７　　つよい",
+   "zh": "等级7 强力",
+   "meta": {
+    "blob": 25,
+    "offset": 16856,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61355",
+   "en": "Lv 8 Technique",
+   "ja": "Ｌｖ８　　テクニック",
+   "zh": "等级8 技巧",
+   "meta": {
+    "blob": 25,
+    "offset": 17024,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61356",
+   "en": "Lv 9 Very Strong",
+   "ja": "Ｌｖ９　　めちゃつよ",
+   "zh": "等级9 超强",
+   "meta": {
+    "blob": 25,
+    "offset": 17192,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61357",
+   "en": "Lv 10 Legend",
+   "ja": "Ｌｖ１０　レジェンド",
+   "zh": "等级10 传说",
+   "meta": {
+    "blob": 25,
+    "offset": 17360,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61358",
+   "en": "Lv 1 Noob",
+   "ja": "Ｌｖ１　　へっぽこ",
+   "zh": "等级1 菜鸟",
+   "meta": {
+    "blob": 25,
+    "offset": 17528,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61359",
+   "en": "Lv 2 Life",
+   "ja": "Ｌｖ２　　いのち",
+   "zh": "等级2 生命",
+   "meta": {
+    "blob": 25,
+    "offset": 17696,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61360",
+   "en": "Lv 3 Weak",
+   "ja": "Ｌｖ３　　よわい",
+   "zh": "等级3 虚弱",
+   "meta": {
+    "blob": 25,
+    "offset": 17864,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61361",
+   "en": "Lv 4 Fast",
+   "ja": "Ｌｖ４　　はやい",
+   "zh": "等级4 迅捷",
+   "meta": {
+    "blob": 25,
+    "offset": 18032,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61362",
+   "en": "Lv 5 Regular",
+   "ja": "Ｌｖ５　　ふつう",
+   "zh": "等级5 普通",
+   "meta": {
+    "blob": 25,
+    "offset": 18200,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61363",
+   "en": "Lv 6 Technique",
+   "ja": "Ｌｖ６　　テクニック",
+   "zh": "等级6 技巧",
+   "meta": {
+    "blob": 25,
+    "offset": 18368,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61364",
+   "en": "Lv 7 Strong",
+   "ja": "Ｌｖ７　　つよい",
+   "zh": "等级7 强力",
+   "meta": {
+    "blob": 25,
+    "offset": 18536,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61365",
+   "en": "Lv 8 Thorny",
+   "ja": "Ｌｖ８　　とげとげ",
+   "zh": "等级8 荆棘",
+   "meta": {
+    "blob": 25,
+    "offset": 18704,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61366",
+   "en": "Lv 9 Very Strong",
+   "ja": "Ｌｖ９　　めちゃつよ",
+   "zh": "等级9 超强",
+   "meta": {
+    "blob": 25,
+    "offset": 18872,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61367",
+   "en": "Lv 10 Legend",
+   "ja": "Ｌｖ１０　レジェンド",
+   "zh": "等级10 传说",
+   "meta": {
+    "blob": 25,
+    "offset": 19040,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61368",
+   "en": "Lv 1 Fighter",
+   "ja": "Ｌｖ１　　せんし",
+   "zh": "等级1 战士",
+   "meta": {
+    "blob": 25,
+    "offset": 19208,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61369",
+   "en": "Lv 2 Knight",
+   "ja": "Ｌｖ２　　ナイト",
+   "zh": "等级2 骑士",
+   "meta": {
+    "blob": 25,
+    "offset": 19376,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61370",
+   "en": "Lv 3 Monk",
+   "ja": "Ｌｖ３　　そうりょ",
+   "zh": "等级3 僧侣",
+   "meta": {
+    "blob": 25,
+    "offset": 19544,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61371",
+   "en": "Lv 4 Hunter",
+   "ja": "Ｌｖ４　　かりうど",
+   "zh": "等级4 猎人",
+   "meta": {
+    "blob": 25,
+    "offset": 19712,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61372",
+   "en": "Lv 5 Ninja",
+   "ja": "Ｌｖ５　　にんじゃ",
+   "zh": "等级5 忍者",
+   "meta": {
+    "blob": 25,
+    "offset": 19880,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61373",
+   "en": "Lv 6 Berserker",
+   "ja": "Ｌｖ６　　バーサーカー",
+   "zh": "等级6 狂战士",
+   "meta": {
+    "blob": 25,
+    "offset": 20048,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61374",
+   "en": "Lv 7 Princess",
+   "ja": "Ｌｖ７　　おうじょ",
+   "zh": "等级7 公主",
+   "meta": {
+    "blob": 25,
+    "offset": 20216,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61375",
+   "en": "Lv 8 Sage",
+   "ja": "Ｌｖ８　　けんじゃ",
+   "zh": "等级8 贤者",
+   "meta": {
+    "blob": 25,
+    "offset": 20384,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61376",
+   "en": "Lv 9 Evil Lord",
+   "ja": "Ｌｖ９　　まおう",
+   "zh": "等级9 魔王",
+   "meta": {
+    "blob": 25,
+    "offset": 20552,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61377",
+   "en": "Lv 10 Hero",
+   "ja": "Ｌｖ１０　ゆうしゃ",
+   "zh": "等级10 勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 20720,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61378",
+   "en": "Lv 1 Noob",
+   "ja": "Ｌｖ１　　へっぽこ",
+   "zh": "等级1 菜鸟",
+   "meta": {
+    "blob": 25,
+    "offset": 20888,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61379",
+   "en": "Lv 2 Life",
+   "ja": "Ｌｖ２　　いのち",
+   "zh": "等级2 生命",
+   "meta": {
+    "blob": 25,
+    "offset": 21056,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61380",
+   "en": "Lv 3 Weak",
+   "ja": "Ｌｖ３　　よわい",
+   "zh": "等级3 虚弱",
+   "meta": {
+    "blob": 25,
+    "offset": 21224,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61381",
+   "en": "Lv 4 Heavy",
+   "ja": "Ｌｖ４　　おもい",
+   "zh": "等级4 沉重",
+   "meta": {
+    "blob": 25,
+    "offset": 21392,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61382",
+   "en": "Lv 5 Regular",
+   "ja": "Ｌｖ５　　ふつう",
+   "zh": "等级5 普通",
+   "meta": {
+    "blob": 25,
+    "offset": 21560,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61383",
+   "en": "Lv 6 Fast",
+   "ja": "Ｌｖ６　　はやい",
+   "zh": "等级6 迅捷",
+   "meta": {
+    "blob": 25,
+    "offset": 21728,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61384",
+   "en": "Lv 7 Strong",
+   "ja": "Ｌｖ７　　つよい",
+   "zh": "等级7 强力",
+   "meta": {
+    "blob": 25,
+    "offset": 21896,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61385",
+   "en": "Lv 8 Curse",
+   "ja": "Ｌｖ８　　のろい",
+   "zh": "等级8 诅咒",
+   "meta": {
+    "blob": 25,
+    "offset": 22064,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61386",
+   "en": "Lv 9 Very Strong",
+   "ja": "Ｌｖ９　　めちゃつよ",
+   "zh": "等级9 超强",
+   "meta": {
+    "blob": 25,
+    "offset": 22232,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61387",
+   "en": "Lv 10 Legend",
+   "ja": "Ｌｖ１０　レジェンド",
+   "zh": "等级10 传说",
+   "meta": {
+    "blob": 25,
+    "offset": 22400,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61388",
+   "en": "Lv 1 Noob",
+   "ja": "Ｌｖ１　　へっぽこ",
+   "zh": "等级1 菜鸟",
+   "meta": {
+    "blob": 25,
+    "offset": 22568,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61389",
+   "en": "Lv 2 Technique",
+   "ja": "Ｌｖ２　　テクニック",
+   "zh": "等级2 技巧",
+   "meta": {
+    "blob": 25,
+    "offset": 22736,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61390",
+   "en": "Lv 3 Weak",
+   "ja": "Ｌｖ３　　よわい",
+   "zh": "等级3 虚弱",
+   "meta": {
+    "blob": 25,
+    "offset": 22904,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61391",
+   "en": "Lv 4 Thorny",
+   "ja": "Ｌｖ４　　とげとげ",
+   "zh": "等级4 荆棘",
+   "meta": {
+    "blob": 25,
+    "offset": 23072,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61392",
+   "en": "Lv 5 Regular",
+   "ja": "Ｌｖ５　　ふつう",
+   "zh": "等级5 普通",
+   "meta": {
+    "blob": 25,
+    "offset": 23240,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61393",
+   "en": "Lv 6 Heavy",
+   "ja": "Ｌｖ６　　おもい",
+   "zh": "等级6 沉重",
+   "meta": {
+    "blob": 25,
+    "offset": 23408,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61394",
+   "en": "Lv 7 Strong",
+   "ja": "Ｌｖ７　　つよい",
+   "zh": "等级7 强力",
+   "meta": {
+    "blob": 25,
+    "offset": 23576,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61395",
+   "en": "Lv 8 Life",
+   "ja": "Ｌｖ８　　いのち",
+   "zh": "等级8 生命",
+   "meta": {
+    "blob": 25,
+    "offset": 23744,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61396",
+   "en": "Lv 9 Very Strong",
+   "ja": "Ｌｖ９　　めちゃつよ",
+   "zh": "等级9 超强",
+   "meta": {
+    "blob": 25,
+    "offset": 23912,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61397",
+   "en": "Lv 10 Legend",
+   "ja": "Ｌｖ１０　レジェンド",
+   "zh": "等级10 传说",
+   "meta": {
+    "blob": 25,
+    "offset": 24080,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61398",
+   "en": "Grasslands",
+   "ja": "草原",
+   "zh": "草原",
+   "meta": {
+    "blob": 25,
+    "offset": 25928,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61399",
+   "en": "Desert",
+   "ja": "砂漠",
+   "zh": "沙漠",
+   "meta": {
+    "blob": 25,
+    "offset": 26096,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61400",
+   "en": "Wasteland",
+   "ja": "荒野",
+   "zh": "荒地",
+   "meta": {
+    "blob": 25,
+    "offset": 26264,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61401",
+   "en": "Snowy Fields",
+   "ja": "雪山",
+   "zh": "雪山",
+   "meta": {
+    "blob": 25,
+    "offset": 26432,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61402",
+   "en": "Forest",
+   "ja": "森",
+   "zh": "森林",
+   "meta": {
+    "blob": 25,
+    "offset": 26600,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61403",
+   "en": "Seashore",
+   "ja": "海辺",
+   "zh": "海岸",
+   "meta": {
+    "blob": 25,
+    "offset": 26768,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61404",
+   "en": "City",
+   "ja": "都市",
+   "zh": "城市",
+   "meta": {
+    "blob": 25,
+    "offset": 26936,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61405",
+   "en": "Street",
+   "ja": "街",
+   "zh": "街道",
+   "meta": {
+    "blob": 25,
+    "offset": 27104,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61406",
+   "en": "Castle",
+   "ja": "お城",
+   "zh": "城堡",
+   "meta": {
+    "blob": 25,
+    "offset": 27272,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61407",
+   "en": "Have",
+   "ja": "あり",
+   "zh": "有",
+   "meta": {
+    "blob": 25,
+    "offset": 27440,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61408",
+   "en": "None",
+   "ja": "なし",
+   "zh": "无",
+   "meta": {
+    "blob": 25,
+    "offset": 27608,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61409",
+   "en": "Treasure Chest",
+   "ja": "たからばこ",
+   "zh": "宝箱",
+   "meta": {
+    "blob": 25,
+    "offset": 27776,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61410",
+   "en": "Got %s!",
+   "ja": "%sをゲット！",
+   "zh": "获得%s！",
+   "meta": {
+    "blob": 25,
+    "offset": 27944,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61411",
+   "en": "Level 1 One-Hit Kill",
+   "ja": "レベル1　いちげき",
+   "zh": "等级1 一击必杀",
+   "meta": {
+    "blob": 25,
+    "offset": 28112,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61412",
+   "en": "Level 2 Iron Wall",
+   "ja": "レベル2　てっぺき",
+   "zh": "等级2 铁壁",
+   "meta": {
+    "blob": 25,
+    "offset": 28280,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61413",
+   "en": "Level 5 Money",
+   "ja": "レベル5　おかね",
+   "zh": "等级5 金钱",
+   "meta": {
+    "blob": 25,
+    "offset": 28448,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61414",
+   "en": "Level 10 EXP",
+   "ja": "レベル10　けいけんち",
+   "zh": "等级10 经验",
+   "meta": {
+    "blob": 25,
+    "offset": 28616,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61415",
+   "en": "Level 11 Falcon",
+   "ja": "レベル11　はやぶさ",
+   "zh": "等级11 隼",
+   "meta": {
+    "blob": 25,
+    "offset": 28784,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61416",
+   "en": "Level 15 Mid-Boss",
+   "ja": "レベル15　中ボス",
+   "zh": "等级15 中Boss",
+   "meta": {
+    "blob": 25,
+    "offset": 28952,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61417",
+   "en": "Level 40 Mid-Boss",
+   "ja": "レベル40　中ボス",
+   "zh": "等级40 中Boss",
+   "meta": {
+    "blob": 25,
+    "offset": 29120,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61418",
+   "en": "Level 60 Mid-Boss",
+   "ja": "レベル60　中ボス",
+   "zh": "等级60 中Boss",
+   "meta": {
+    "blob": 25,
+    "offset": 29288,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61419",
+   "en": "Level 70 Hidden Boss",
+   "ja": "レベル70　うらボス",
+   "zh": "等级70 隐藏Boss",
+   "meta": {
+    "blob": 25,
+    "offset": 29456,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61420",
+   "en": "Level 99 Invincible",
+   "ja": "レベル99　むてき",
+   "zh": "等级99 无敌Boss",
+   "meta": {
+    "blob": 25,
+    "offset": 29624,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61425",
+   "en": "Level 1 Noob",
+   "ja": "レベル1　　へっぽこ",
+   "zh": "等级1 菜鸟",
+   "meta": {
+    "blob": 25,
+    "offset": 30968,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61426",
+   "en": "Level 5 Rookie",
+   "ja": "レベル5　　ひよっこ",
+   "zh": "等级5 新手",
+   "meta": {
+    "blob": 25,
+    "offset": 31136,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61427",
+   "en": "Level 10 Balanced",
+   "ja": "レベル10　バランス",
+   "zh": "等级10 平衡",
+   "meta": {
+    "blob": 25,
+    "offset": 31304,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61428",
+   "en": "Level 15 Skillful",
+   "ja": "レベル15　きよう",
+   "zh": "15级 灵活",
+   "meta": {
+    "blob": 25,
+    "offset": 31472,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61429",
+   "en": "Level 20 Balanced",
+   "ja": "レベル20　バランス",
+   "zh": "等级20 平衡",
+   "meta": {
+    "blob": 25,
+    "offset": 31640,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61430",
+   "en": "Level 25 Solid",
+   "ja": "レベル25　かたい",
+   "zh": "等级25 坚固",
+   "meta": {
+    "blob": 25,
+    "offset": 31808,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61431",
+   "en": "Level 30 Balanced",
+   "ja": "レベル30　バランス",
+   "zh": "等级30 平衡",
+   "meta": {
+    "blob": 25,
+    "offset": 31976,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61432",
+   "en": "Level 35 Attack",
+   "ja": "レベル35　こうげき",
+   "zh": "等级35 攻击",
+   "meta": {
+    "blob": 25,
+    "offset": 32144,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61433",
+   "en": "Level 40 Balanced",
+   "ja": "レベル40　バランス",
+   "zh": "等级40 平衡",
+   "meta": {
+    "blob": 25,
+    "offset": 32312,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61434",
+   "en": "Level 99 Destiny",
+   "ja": "レベル99　ディスティニー",
+   "zh": "等级99 命运",
+   "meta": {
+    "blob": 25,
+    "offset": 32480,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61435",
+   "en": "Bridge<＞> Fix (Vertical)",
+   "ja": "壊れた橋<＞>なおる（たて）",
+   "zh": "桥<＞>修复（垂直）",
+   "meta": {
+    "blob": 25,
+    "offset": 32648,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61436",
+   "en": "Bridge<＞> Fix (Horizontal)",
+   "ja": "壊れた橋<＞>なおる（よこ）",
+   "zh": "桥<＞>修复（横向）",
+   "meta": {
+    "blob": 25,
+    "offset": 32816,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61437",
+   "en": "Rock<＞> Remove",
+   "ja": "岩<＞>なくなる",
+   "zh": "岩石<＞>移除",
+   "meta": {
+    "blob": 25,
+    "offset": 32984,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61438",
+   "en": "Hole<＞> Fill",
+   "ja": "穴<＞>ふさがる",
+   "zh": "洞<＞>填平",
+   "meta": {
+    "blob": 25,
+    "offset": 33152,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61439",
+   "en": "Gate<＞> Remove",
+   "ja": "ゲート<＞>なくなる",
+   "zh": "大门<＞>移除",
+   "meta": {
+    "blob": 25,
+    "offset": 33320,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61440",
+   "en": "Horse　",
+   "ja": "うま",
+   "zh": "骏马",
+   "meta": {
+    "blob": 25,
+    "offset": 33488,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61441",
+   "en": "Ship",
+   "ja": "ふね",
+   "zh": "船",
+   "meta": {
+    "blob": 25,
+    "offset": 33656,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61442",
+   "en": "Vehicle",
+   "ja": "乗り物",
+   "zh": "载具",
+   "meta": {
+    "blob": 25,
+    "offset": 33824,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61443",
+   "en": "Villager's speech",
+   "ja": "村人のはなし",
+   "zh": "村民对话",
+   "meta": {
+    "blob": 25,
+    "offset": 34160,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61444",
+   "en": "Receive from villager",
+   "ja": "村人からもらえる",
+   "zh": "可从村民获得",
+   "meta": {
+    "blob": 25,
+    "offset": 34328,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61445",
+   "en": "Only villager's speech",
+   "ja": "村人のはなしだけ",
+   "zh": "仅村民对话",
+   "meta": {
+    "blob": 25,
+    "offset": 34496,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61446",
+   "en": "Cave",
+   "ja": "どうくつ",
+   "zh": "洞穴",
+   "meta": {
+    "blob": 25,
+    "offset": 34664,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61447",
+   "en": "Shortcut",
+   "ja": "ぬけみち",
+   "zh": "捷径",
+   "meta": {
+    "blob": 25,
+    "offset": 34832,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61448",
+   "en": "Terrain change",
+   "ja": "地形変化",
+   "zh": "地形变化",
+   "meta": {
+    "blob": 25,
+    "offset": 35000,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61449",
+   "en": "Delete this event",
+   "ja": "このイベントを消す",
+   "zh": "删除此事件",
+   "meta": {
+    "blob": 25,
+    "offset": 35168,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61450",
+   "en": "Evil Lord Castle",
+   "ja": "魔王城",
+   "zh": "魔王城",
+   "meta": {
+    "blob": 25,
+    "offset": 35336,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61451",
+   "en": "Village",
+   "ja": "村",
+   "zh": "村庄",
+   "meta": {
+    "blob": 25,
+    "offset": 35504,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61452",
+   "en": "Cave",
+   "ja": "どうくつ",
+   "zh": "洞穴",
+   "meta": {
+    "blob": 25,
+    "offset": 35672,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61453",
+   "en": "Vehicle",
+   "ja": "乗り物",
+   "zh": "载具",
+   "meta": {
+    "blob": 25,
+    "offset": 35840,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61454",
+   "en": "Shortcut",
+   "ja": "ぬけみち",
+   "zh": "捷径",
+   "meta": {
+    "blob": 25,
+    "offset": 36008,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61455",
+   "en": "Terrain change",
+   "ja": "地形変化",
+   "zh": "地形变化",
+   "meta": {
+    "blob": 25,
+    "offset": 36176,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61456",
+   "en": "Ground",
+   "ja": "地面",
+   "zh": "地面",
+   "meta": {
+    "blob": 25,
+    "offset": 36344,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61457",
+   "en": "Character selection",
+   "ja": "人物選択",
+   "zh": "人物选择",
+   "meta": {
+    "blob": 25,
+    "offset": 36512,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61458",
+   "en": "Unused",
+   "ja": "使ってない",
+   "zh": "未使用",
+   "meta": {
+    "blob": 25,
+    "offset": 36680,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61459",
+   "en": "No treasure chest",
+   "ja": "宝箱なし",
+   "zh": "无宝箱",
+   "meta": {
+    "blob": 25,
+    "offset": 36848,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61460",
+   "en": "Do something about the Evil Lord!",
+   "ja": "魔王をなんとかしてください！",
+   "zh": "请想想办法对付魔王！",
+   "meta": {
+    "blob": 25,
+    "offset": 37016,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61461",
+   "en": "There you go!",
+   "ja": "おねがいです　アレをもってきてください！",
+   "zh": "拜托了，把那个东西拿来！",
+   "meta": {
+    "blob": 25,
+    "offset": 37184,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61462",
+   "en": "You got it!",
+   "ja": "アレをさがせ！",
+   "zh": "去找那个东西！",
+   "meta": {
+    "blob": 25,
+    "offset": 37352,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61463",
+   "en": "Go! Go! Go! You can do it!",
+   "ja": "アレはきっとあそこにあります",
+   "zh": "那个东西一定在那里",
+   "meta": {
+    "blob": 25,
+    "offset": 37520,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61464",
+   "en": "Nice weather, isn't it?",
+   "ja": "ええてんきじゃ",
+   "zh": "天气真好啊",
+   "meta": {
+    "blob": 25,
+    "offset": 37688,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61465",
+   "en": "Thank you very much! This is a gift!",
+   "ja": "ありがとうございます！　コレはお礼です！",
+   "zh": "非常感谢！这是谢礼！",
+   "meta": {
+    "blob": 25,
+    "offset": 37856,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61466",
+   "en": "Received this!",
+   "ja": "コレを手にいれた！",
+   "zh": "获得了这个！",
+   "meta": {
+    "blob": 25,
+    "offset": 38024,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61467",
+   "en": "Thank you very much!",
+   "ja": "どうもありがとうございました",
+   "zh": "非常感谢",
+   "meta": {
+    "blob": 25,
+    "offset": 38192,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61468",
+   "en": "Money %d G",
+   "ja": "お金%dＧ",
+   "zh": "金钱%dG",
+   "meta": {
+    "blob": 25,
+    "offset": 38360,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61469",
+   "en": "Pre-Event Script",
+   "ja": "イベント前のセリフ",
+   "zh": "事件前脚本",
+   "meta": {
+    "blob": 25,
+    "offset": 38528,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61470",
+   "en": "Event Start Script",
+   "ja": "イベント発生時のセリフ",
+   "zh": "事件触发脚本",
+   "meta": {
+    "blob": 25,
+    "offset": 38696,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61471",
+   "en": "Big News Text",
+   "ja": "でか文字ニュース",
+   "zh": "大标题文字",
+   "meta": {
+    "blob": 25,
+    "offset": 38864,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61472",
+   "en": "Post-Event Script",
+   "ja": "イベント後のセリフ",
+   "zh": "事件后脚本",
+   "meta": {
+    "blob": 25,
+    "offset": 39032,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61473",
+   "en": "Accepted",
+   "ja": "ひきうけた",
+   "zh": "已接受",
+   "meta": {
+    "blob": 25,
+    "offset": 39200,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61474",
+   "en": "This will erase settings,",
+   "ja": "設定が消えてしまいますが",
+   "zh": "这会清除设置，",
+   "meta": {
+    "blob": 25,
+    "offset": 39368,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61475",
+   "en": "This will erase settings,",
+   "ja": "設定が消えてしまいますが",
+   "zh": "这会清除设置，",
+   "meta": {
+    "blob": 25,
+    "offset": 39536,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61476",
+   "en": "Doesn't move",
+   "ja": "うごかない",
+   "zh": "不移动",
+   "meta": {
+    "blob": 25,
+    "offset": 39872,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61477",
+   "en": "Slow, random",
+   "ja": "おそいランダム",
+   "zh": "缓慢，随机",
+   "meta": {
+    "blob": 25,
+    "offset": 40040,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61478",
+   "en": "Fast, random",
+   "ja": "はやいランダム",
+   "zh": "快速，随机",
+   "meta": {
+    "blob": 25,
+    "offset": 40208,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61479",
+   "en": "Slow, pursuing",
+   "ja": "おそいついせき",
+   "zh": "缓慢，追击",
+   "meta": {
+    "blob": 25,
+    "offset": 40376,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61480",
+   "en": "Fast, pursuing",
+   "ja": "はやいついせき",
+   "zh": "快速，追击",
+   "meta": {
+    "blob": 25,
+    "offset": 40544,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61481",
+   "en": "Vertical, back and forth",
+   "ja": "たてにおうふく",
+   "zh": "垂直，往返",
+   "meta": {
+    "blob": 25,
+    "offset": 40712,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61482",
+   "en": "Horizontal, back and forth",
+   "ja": "よこにおうふく",
+   "zh": "水平，往返",
+   "meta": {
+    "blob": 25,
+    "offset": 40880,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61483",
+   "en": "Moves in circles",
+   "ja": "ぐるぐるまわる",
+   "zh": "绕圈移动",
+   "meta": {
+    "blob": 25,
+    "offset": 41048,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61484",
+   "en": "Evil Lord Mapmaker",
+   "ja": "ツクレール魔王",
+   "zh": "创造魔王",
+   "meta": {
+    "blob": 25,
+    "offset": 41216,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61486",
+   "en": "Have",
+   "ja": "あり",
+   "zh": "有",
+   "meta": {
+    "blob": 25,
+    "offset": 41552,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61487",
+   "en": "None",
+   "ja": "なし",
+   "zh": "无",
+   "meta": {
+    "blob": 25,
+    "offset": 41720,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61488",
+   "en": "Hero Food",
+   "ja": "ゆうしゃごはん",
+   "zh": "勇者饭",
+   "meta": {
+    "blob": 25,
+    "offset": 42056,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61490",
+   "en": "Event: A",
+   "ja": "イベント：Ａさん",
+   "zh": "事件：A",
+   "meta": {
+    "blob": 25,
+    "offset": 42392,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61491",
+   "en": "Event: B",
+   "ja": "イベント：Ｂさん",
+   "zh": "事件：B",
+   "meta": {
+    "blob": 25,
+    "offset": 42560,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61492",
+   "en": "Event: C",
+   "ja": "イベント：Ｃさん",
+   "zh": "事件：C",
+   "meta": {
+    "blob": 25,
+    "offset": 42728,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61493",
+   "en": "Event: D",
+   "ja": "イベント：Ｄさん",
+   "zh": "事件：D",
+   "meta": {
+    "blob": 25,
+    "offset": 42896,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61494",
+   "en": "Event: E",
+   "ja": "イベント：Ｅさん",
+   "zh": "事件：E",
+   "meta": {
+    "blob": 25,
+    "offset": 43064,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61495",
+   "en": "Event: F",
+   "ja": "イベント：Ｆさん",
+   "zh": "事件：F",
+   "meta": {
+    "blob": 25,
+    "offset": 43232,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61496",
+   "en": "Talking Villager",
+   "ja": "会話村人",
+   "zh": "对话村民",
+   "meta": {
+    "blob": 25,
+    "offset": 43400,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61497",
+   "en": "Custom Map",
+   "ja": "ロマンマップ",
+   "zh": "浪漫地图",
+   "meta": {
+    "blob": 25,
+    "offset": 43736,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61498",
+   "en": "Select Villager Appearance",
+   "ja": "村人の見た目選択",
+   "zh": "选择村民外观",
+   "meta": {
+    "blob": 25,
+    "offset": 43904,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61499",
+   "en": "Character Selection",
+   "ja": "人物選択",
+   "zh": "人物选择",
+   "meta": {
+    "blob": 25,
+    "offset": 44072,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61500",
+   "en": "Select",
+   "ja": "選択",
+   "zh": "选择",
+   "meta": {
+    "blob": 25,
+    "offset": 44240,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61501",
+   "en": "Confirm",
+   "ja": "決定",
+   "zh": "确定",
+   "meta": {
+    "blob": 25,
+    "offset": 44408,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61502",
+   "en": "Back",
+   "ja": "戻る",
+   "zh": "返回",
+   "meta": {
+    "blob": 25,
+    "offset": 44576,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61503",
+   "en": "Move",
+   "ja": "移動",
+   "zh": "移动",
+   "meta": {
+    "blob": 25,
+    "offset": 44744,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61504",
+   "en": "Menu",
+   "ja": "メニュー",
+   "zh": "菜单",
+   "meta": {
+    "blob": 25,
+    "offset": 44912,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61505",
+   "en": "Switch Page",
+   "ja": "ページ切り替え",
+   "zh": "切换页面",
+   "meta": {
+    "blob": 25,
+    "offset": 45080,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61506",
+   "en": "Close",
+   "ja": "とじる",
+   "zh": "关闭",
+   "meta": {
+    "blob": 25,
+    "offset": 45248,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61507",
+   "en": "Palette",
+   "ja": "パレット",
+   "zh": "调色板",
+   "meta": {
+    "blob": 25,
+    "offset": 45416,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61508",
+   "en": "Eyedropper",
+   "ja": "スポイト",
+   "zh": "吸管",
+   "meta": {
+    "blob": 25,
+    "offset": 45584,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61509",
+   "en": "Appearance",
+   "ja": "見た目選択",
+   "zh": "选择外观",
+   "meta": {
+    "blob": 25,
+    "offset": 45752,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61510",
+   "en": "Playback",
+   "ja": "再生",
+   "zh": "播放",
+   "meta": {
+    "blob": 25,
+    "offset": 45920,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61511",
+   "en": "Select (Move 10)",
+   "ja": "選択（10コ移動）",
+   "zh": "选择（移动10格）",
+   "meta": {
+    "blob": 25,
+    "offset": 46088,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61512",
+   "en": "Rumor",
+   "ja": "ウワサ話",
+   "zh": "传闻",
+   "meta": {
+    "blob": 25,
+    "offset": 46256,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61513",
+   "en": "Errand",
+   "ja": "おつかい",
+   "zh": "跑腿",
+   "meta": {
+    "blob": 25,
+    "offset": 46424,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61514",
+   "en": "Lost and Found",
+   "ja": "おとしもの",
+   "zh": "失物招领",
+   "meta": {
+    "blob": 25,
+    "offset": 46592,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61515",
+   "en": "Search and Find",
+   "ja": "さがしもの",
+   "zh": "寻物",
+   "meta": {
+    "blob": 25,
+    "offset": 46760,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61516",
+   "en": "Monster Slaying",
+   "ja": "魔物退治",
+   "zh": "讨伐魔物",
+   "meta": {
+    "blob": 25,
+    "offset": 46928,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61517",
+   "en": "Shortcut",
+   "ja": "ぬけみち",
+   "zh": "捷径",
+   "meta": {
+    "blob": 25,
+    "offset": 47096,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61518",
+   "en": "Original",
+   "ja": "自分でつくる",
+   "zh": "自制",
+   "meta": {
+    "blob": 25,
+    "offset": 47264,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61519",
+   "en": "Talking Event",
+   "ja": "イベント会話",
+   "zh": "事件对话",
+   "meta": {
+    "blob": 25,
+    "offset": 47432,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61520",
+   "en": "Talk Reward",
+   "ja": "イベント会話・お礼",
+   "zh": "事件对话·谢礼",
+   "meta": {
+    "blob": 25,
+    "offset": 47600,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61521",
+   "en": "Overland Event",
+   "ja": "地上イベント",
+   "zh": "地上事件",
+   "meta": {
+    "blob": 25,
+    "offset": 47768,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61522",
+   "en": "Overland Reward",
+   "ja": "地上イベント・お礼",
+   "zh": "地上事件·谢礼",
+   "meta": {
+    "blob": 25,
+    "offset": 47936,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61523",
+   "en": "Cave Event",
+   "ja": "イベントどうくつ",
+   "zh": "事件洞窟",
+   "meta": {
+    "blob": 25,
+    "offset": 48104,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61524",
+   "en": "Shortcut",
+   "ja": "ぬけみち",
+   "zh": "捷径",
+   "meta": {
+    "blob": 25,
+    "offset": 48272,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61525",
+   "en": "ON",
+   "ja": "ＯＮ",
+   "zh": "开启",
+   "meta": {
+    "blob": 25,
+    "offset": 48440,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61526",
+   "en": "OFF",
+   "ja": "ＯＦＦ",
+   "zh": "关闭",
+   "meta": {
+    "blob": 25,
+    "offset": 48608,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61527",
+   "en": "Name: %s Type: %s",
+   "ja": "名前：%s　しゅるい：%s",
+   "zh": "名称：%s　类型：%s",
+   "meta": {
+    "blob": 25,
+    "offset": 48776,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61528",
+   "en": "Heal",
+   "ja": "かいふく",
+   "zh": "恢复",
+   "meta": {
+    "blob": 25,
+    "offset": 48944,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61529",
+   "en": "Helmet",
+   "ja": "ぼうし",
+   "zh": "头盔",
+   "meta": {
+    "blob": 25,
+    "offset": 49112,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61530",
+   "en": "Armor",
+   "ja": "よろい",
+   "zh": "盔甲",
+   "meta": {
+    "blob": 25,
+    "offset": 49280,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61531",
+   "en": "Shoes",
+   "ja": "くつ",
+   "zh": "鞋子",
+   "meta": {
+    "blob": 25,
+    "offset": 49448,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61532",
+   "en": "Weapon",
+   "ja": "ぶき",
+   "zh": "武器",
+   "meta": {
+    "blob": 25,
+    "offset": 49616,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61533",
+   "en": "Shield",
+   "ja": "たて",
+   "zh": "护盾",
+   "meta": {
+    "blob": 25,
+    "offset": 49784,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61534",
+   "en": "Tool",
+   "ja": "どうぐ",
+   "zh": "道具",
+   "meta": {
+    "blob": 25,
+    "offset": 49952,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61535",
+   "en": "Sword",
+   "ja": "剣",
+   "zh": "剑",
+   "meta": {
+    "blob": 25,
+    "offset": 50120,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61536",
+   "en": "Greatsword",
+   "ja": "大剣",
+   "zh": "巨剑",
+   "meta": {
+    "blob": 25,
+    "offset": 50288,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61537",
+   "en": "Axe",
+   "ja": "オノ",
+   "zh": "斧头",
+   "meta": {
+    "blob": 25,
+    "offset": 50456,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61538",
+   "en": "Hammer",
+   "ja": "ハンマー",
+   "zh": "锤",
+   "meta": {
+    "blob": 25,
+    "offset": 50624,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61539",
+   "en": "Bowgun Sword",
+   "ja": "ボウガンソード",
+   "zh": "弩枪剑",
+   "meta": {
+    "blob": 25,
+    "offset": 50792,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61540",
+   "en": "Bowgun Sword",
+   "ja": "ボウガンソード",
+   "zh": "弩枪剑",
+   "meta": {
+    "blob": 25,
+    "offset": 50960,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61541",
+   "en": "Staff",
+   "ja": "つえ",
+   "zh": "法杖",
+   "meta": {
+    "blob": 25,
+    "offset": 51128,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61542",
+   "en": "Book",
+   "ja": "本",
+   "zh": "书",
+   "meta": {
+    "blob": 25,
+    "offset": 51296,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61543",
+   "en": "Spear",
+   "ja": "ヤリ",
+   "zh": "长矛",
+   "meta": {
+    "blob": 25,
+    "offset": 51464,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61544",
+   "en": "Polearm",
+   "ja": "ぼう",
+   "zh": "长柄",
+   "meta": {
+    "blob": 25,
+    "offset": 51632,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61545",
+   "en": "Event Item",
+   "ja": "イベントアイテム",
+   "zh": "事件道具",
+   "meta": {
+    "blob": 25,
+    "offset": 51800,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61546",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52136,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61547",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52304,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61548",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52472,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61549",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52640,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61550",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52808,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61551",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 52976,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61552",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 53144,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61553",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 53312,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61554",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 53480,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61555",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 53648,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61556",
+   "en": "Map Tile",
+   "ja": "マップチップ",
+   "zh": "地图块",
+   "meta": {
+    "blob": 25,
+    "offset": 53816,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61557",
+   "en": "Monster Tile 1",
+   "ja": "モンスターチップ１",
+   "zh": "怪物块1",
+   "meta": {
+    "blob": 25,
+    "offset": 53984,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61558",
+   "en": "Monster Tile 2",
+   "ja": "モンスターチップ２",
+   "zh": "怪物块2",
+   "meta": {
+    "blob": 25,
+    "offset": 54152,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61559",
+   "en": "Event Tile",
+   "ja": "イベントチップ",
+   "zh": "事件块",
+   "meta": {
+    "blob": 25,
+    "offset": 54320,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61560",
+   "en": "Dragon",
+   "ja": "ドラゴン",
+   "zh": "龙",
+   "meta": {
+    "blob": 25,
+    "offset": 54488,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61561",
+   "en": "Uploading",
+   "ja": "アップロードしています。",
+   "zh": "正在上传。",
+   "meta": {
+    "blob": 25,
+    "offset": 54656,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61562",
+   "en": "%s",
+   "ja": "%sを",
+   "zh": "%s",
+   "meta": {
+    "blob": 25,
+    "offset": 54824,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61563",
+   "en": "will be downloaded.",
+   "ja": "ダウンロードします。",
+   "zh": "将会下载。",
+   "meta": {
+    "blob": 25,
+    "offset": 54992,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61564",
+   "en": "Okay?",
+   "ja": "よろしいですか？",
+   "zh": "可以吗？",
+   "meta": {
+    "blob": 25,
+    "offset": 55160,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61565",
+   "en": "You have %d new records.",
+   "ja": "あなたのニューレコードが%dけんあります。",
+   "zh": "你有%d条新记录。",
+   "meta": {
+    "blob": 25,
+    "offset": 55328,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61566",
+   "en": "Data transfer interrupted",
+   "ja": "通信が切断されました",
+   "zh": "通信已断开",
+   "meta": {
+    "blob": 25,
+    "offset": 55496,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61567",
+   "en": "You have %d items.",
+   "ja": "%dけんあります。",
+   "zh": "有%d条。",
+   "meta": {
+    "blob": 25,
+    "offset": 55664,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61568",
+   "en": "%d item",
+   "ja": "%dけん",
+   "zh": "%d条",
+   "meta": {
+    "blob": 25,
+    "offset": 55832,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61569",
+   "en": "OVERTURE",
+   "ja": "ＯＶＥＲＴＵＲＥ",
+   "zh": "序曲",
+   "meta": {
+    "blob": 25,
+    "offset": 56000,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61570",
+   "en": "JUDGEMENT",
+   "ja": "ＪＵＤＧＥＭＥＮＴ",
+   "zh": "审判",
+   "meta": {
+    "blob": 25,
+    "offset": 56168,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61571",
+   "en": "REVOLUTION",
+   "ja": "ＲＥＶＯＬＵＴＩＯＮ",
+   "zh": "革命",
+   "meta": {
+    "blob": 25,
+    "offset": 56336,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61572",
+   "en": "RAGNAROK",
+   "ja": "ＲＡＧＮＡＲＯＫ",
+   "zh": "诸神黄昏",
+   "meta": {
+    "blob": 25,
+    "offset": 56504,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61573",
+   "en": "DESTINY",
+   "ja": "ＤＥＳＴＩＮＹ",
+   "zh": "命运",
+   "meta": {
+    "blob": 25,
+    "offset": 56672,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61574",
+   "en": "DOWNLOAD QUEST",
+   "ja": "ダウンロードクエスト",
+   "zh": "下载任务",
+   "meta": {
+    "blob": 25,
+    "offset": 56840,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61575",
+   "en": "Arrange from new",
+   "ja": "新着順に表示",
+   "zh": "按最新排列",
+   "meta": {
+    "blob": 25,
+    "offset": 57008,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61576",
+   "en": "Arrange from no. of downloads",
+   "ja": "ダウンロード数の多い順に表示",
+   "zh": "按下载数排列",
+   "meta": {
+    "blob": 25,
+    "offset": 57176,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61577",
+   "en": "Arrange from rating",
+   "ja": "評価の高い順に表示",
+   "zh": "按评分排列",
+   "meta": {
+    "blob": 25,
+    "offset": 57344,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61578",
+   "en": "Maps in the Hall of Fame",
+   "ja": "殿堂入りマップ",
+   "zh": "殿堂地图",
+   "meta": {
+    "blob": 25,
+    "offset": 57512,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61579",
+   "en": "Search by ID",
+   "ja": "ＩＤで検索",
+   "zh": "按ID寻找",
+   "meta": {
+    "blob": 25,
+    "offset": 57680,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61580",
+   "en": "Search by username",
+   "ja": "ユーザー名で検索",
+   "zh": "按用户名寻找",
+   "meta": {
+    "blob": 25,
+    "offset": 57848,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61581",
+   "en": "Transmit quest",
+   "ja": "配信クエスト",
+   "zh": "发布任务",
+   "meta": {
+    "blob": 25,
+    "offset": 58016,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61582",
+   "en": "[Review]",
+   "ja": "[評価]",
+   "zh": "[评价]",
+   "meta": {
+    "blob": 25,
+    "offset": 58184,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61583",
+   "en": "[No. of Downloads]",
+   "ja": "[ダウンロード数]",
+   "zh": "[下载数]",
+   "meta": {
+    "blob": 25,
+    "offset": 58352,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61584",
+   "en": "Normal",
+   "ja": "ノーマル",
+   "zh": "普通",
+   "meta": {
+    "blob": 25,
+    "offset": 58520,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61585",
+   "en": "Hard",
+   "ja": "ハード",
+   "zh": "困难",
+   "meta": {
+    "blob": 25,
+    "offset": 58688,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61586",
+   "en": "No updated records.",
+   "ja": "更新された記録がありません。",
+   "zh": "没有更新的记录。",
+   "meta": {
+    "blob": 25,
+    "offset": 58856,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61603",
+   "en": "Nananananananana",
+   "ja": "ナナナナナナナナナ",
+   "zh": "那那那那那那那那那",
+   "meta": {
+    "blob": 25,
+    "offset": 61712,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61605",
+   "en": "Francisca",
+   "ja": "フランシスカ",
+   "zh": "弗兰西丝卡",
+   "meta": {
+    "blob": 25,
+    "offset": 62552,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61607",
+   "en": "Weapon Name: %s",
+   "ja": "武器名：%s",
+   "zh": "武器名：%s",
+   "meta": {
+    "blob": 25,
+    "offset": 62888,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61609",
+   "en": "Francisca",
+   "ja": "フランシスカ",
+   "zh": "弗兰西丝卡",
+   "meta": {
+    "blob": 25,
+    "offset": 63224,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61611",
+   "en": "Map",
+   "ja": "マップ",
+   "zh": "地图",
+   "meta": {
+    "blob": 25,
+    "offset": 63896,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61612",
+   "en": "Hero",
+   "ja": "ユウシャ",
+   "zh": "勇者",
+   "meta": {
+    "blob": 25,
+    "offset": 64064,
+    "cap": 62
+   }
+  },
+  {
+   "id": "row::61614",
+   "en": "The jagged edge of the Saw Axe",
+   "ja": "のこぎりアクスのギザギザが",
+   "zh": "铁斧的锯齿",
+   "meta": {
+    "blob": 99,
+    "offset": 4368,
+    "cap": 35
+   }
+  },
+  {
+   "id": "row::61615",
+   "en": "The Wood Stick",
+   "ja": "ウッドスティックに",
+   "zh": "木杖",
+   "meta": {
+    "blob": 99,
+    "offset": 11452,
+    "cap": 35
    }
   }
  ]

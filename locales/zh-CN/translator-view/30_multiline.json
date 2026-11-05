@@ -2300,7 +2300,7 @@
    "id": "ml::192",
    "en": "Name: Goddess Statue Strap; Type: Event Item?\nThe Goddess Porta-Statue (looking) Strap will not rewind time.",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？\nポータブル女神像っぽいストラップ　時間は巻き戻らない",
-   "zh": "名称：女神像饰物　类型：活动道具？\n女神像（看着）饰物无法倒流时间。",
+   "zh": "名称：女神像饰物　类型：事件道具？\n女神像（看着）饰物无法倒流时间。",
    "meta": {
     "blob": 324,
     "offset": 2852,

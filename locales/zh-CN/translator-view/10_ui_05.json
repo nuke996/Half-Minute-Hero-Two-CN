@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3355,
+ "_count": 3475,
  "entries": [
   {
    "id": "row::24640",
@@ -29859,6 +29859,160 @@
    }
   },
   {
+   "id": "row::30364",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 2124,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30367",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 2412,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30370",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 2988,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30372",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 529,
+    "offset": 5004,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30375",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 529,
+    "offset": 6732,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30378",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 18252,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30380",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 18540,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30383",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 529,
+    "offset": 18828,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30385",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 529,
+    "offset": 29484,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30387",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 529,
+    "offset": 29772,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30390",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 529,
+    "offset": 30060,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30392",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 529,
+    "offset": 34380,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30394",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 529,
+    "offset": 34668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::30397",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 529,
+    "offset": 34956,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::30399",
    "en": "Exit Cave",
    "ja": "どうくつを出る",
@@ -32455,6 +32609,17 @@
    }
   },
   {
+   "id": "row::30896",
+   "en": "Ultimate Evil Lord",
+   "ja": "超魔王",
+   "zh": "超级魔王",
+   "meta": {
+    "blob": 555,
+    "offset": 56,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30897",
    "en": "Ultimate Evil Lord",
    "ja": "超魔王",
@@ -32463,6 +32628,17 @@
     "blob": 555,
     "offset": 88,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::30899",
+   "en": "Remnant Evil Lord Zant",
+   "ja": "残党魔王ザント",
+   "zh": "残党魔王赞特",
+   "meta": {
+    "blob": 555,
+    "offset": 716,
+    "cap": 16
    }
   },
   {
@@ -32477,6 +32653,17 @@
    }
   },
   {
+   "id": "row::30902",
+   "en": "Wood Dragon",
+   "ja": "ウッドドラゴン",
+   "zh": "木龙",
+   "meta": {
+    "blob": 555,
+    "offset": 1376,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30903",
    "en": "Wood Dragon",
    "ja": "ウッドドラゴン",
@@ -32485,6 +32672,17 @@
     "blob": 555,
     "offset": 1408,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30905",
+   "en": "Horse Dragon",
+   "ja": "ホースドラゴン",
+   "zh": "马龙",
+   "meta": {
+    "blob": 555,
+    "offset": 2036,
+    "cap": 16
    }
   },
   {
@@ -32499,6 +32697,17 @@
    }
   },
   {
+   "id": "row::30908",
+   "en": "Mist Dragon",
+   "ja": "ミストドラゴン",
+   "zh": "雾龙",
+   "meta": {
+    "blob": 555,
+    "offset": 2696,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30909",
    "en": "Mist Dragon",
    "ja": "ミストドラゴン",
@@ -32507,6 +32716,17 @@
     "blob": 555,
     "offset": 2728,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30911",
+   "en": "Ring Dragon",
+   "ja": "リングドラゴン",
+   "zh": "指环龙",
+   "meta": {
+    "blob": 555,
+    "offset": 3356,
+    "cap": 16
    }
   },
   {
@@ -32521,6 +32741,17 @@
    }
   },
   {
+   "id": "row::30914",
+   "en": "Dino Dragon",
+   "ja": "ダイノドラゴン",
+   "zh": "迪诺龙",
+   "meta": {
+    "blob": 555,
+    "offset": 4016,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30915",
    "en": "Dino Dragon",
    "ja": "ダイノドラゴン",
@@ -32529,6 +32760,17 @@
     "blob": 555,
     "offset": 4048,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30917",
+   "en": "Rock Dragon",
+   "ja": "ロックドラゴン",
+   "zh": "岩龙",
+   "meta": {
+    "blob": 555,
+    "offset": 4676,
+    "cap": 16
    }
   },
   {
@@ -32543,6 +32785,17 @@
    }
   },
   {
+   "id": "row::30920",
+   "en": "Physic Dragon",
+   "ja": "フィジックドラゴン",
+   "zh": "药疗龙",
+   "meta": {
+    "blob": 555,
+    "offset": 5336,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30921",
    "en": "Physic Dragon",
    "ja": "フィジックドラゴン",
@@ -32551,6 +32804,17 @@
     "blob": 555,
     "offset": 5368,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::30923",
+   "en": "Magic Dragon",
+   "ja": "マジックドラゴン",
+   "zh": "魔法龙",
+   "meta": {
+    "blob": 555,
+    "offset": 5996,
+    "cap": 16
    }
   },
   {
@@ -32565,6 +32829,17 @@
    }
   },
   {
+   "id": "row::30926",
+   "en": "Evil Lord Punisher",
+   "ja": "魔王パニッシャー",
+   "zh": "魔王惩罚者",
+   "meta": {
+    "blob": 555,
+    "offset": 6656,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30927",
    "en": "Evil Lord Punisher",
    "ja": "魔王パニッシャー",
@@ -32573,6 +32848,17 @@
     "blob": 555,
     "offset": 6688,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::30929",
+   "en": "Evil Lord Cerberus",
+   "ja": "魔王ケルベロス",
+   "zh": "魔王瑟伯勒斯",
+   "meta": {
+    "blob": 555,
+    "offset": 7316,
+    "cap": 16
    }
   },
   {
@@ -32587,6 +32873,17 @@
    }
   },
   {
+   "id": "row::30932",
+   "en": "Evil Lord Degash",
+   "ja": "魔王デガーシュ",
+   "zh": "魔王德加修",
+   "meta": {
+    "blob": 555,
+    "offset": 7976,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30933",
    "en": "Evil Lord Degash",
    "ja": "魔王デガーシュ",
@@ -32595,6 +32892,17 @@
     "blob": 555,
     "offset": 8008,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::30935",
+   "en": "Evil Lord Breeza",
+   "ja": "魔王ブリーザ",
+   "zh": "魔王布里扎",
+   "meta": {
+    "blob": 555,
+    "offset": 8636,
+    "cap": 16
    }
   },
   {
@@ -32609,6 +32917,17 @@
    }
   },
   {
+   "id": "row::30938",
+   "en": "Black Knight Lord Zain",
+   "ja": "黒騎士魔王ザイン",
+   "zh": "黑骑士魔王扎因",
+   "meta": {
+    "blob": 555,
+    "offset": 9296,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30939",
    "en": "Black Knight Lord Zain",
    "ja": "黒騎士魔王ザイン",
@@ -32617,6 +32936,17 @@
     "blob": 555,
     "offset": 9328,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::30941",
+   "en": "Reaper Lord Lamde",
+   "ja": "死神魔王ラミデス",
+   "zh": "死神魔王拉米德斯",
+   "meta": {
+    "blob": 555,
+    "offset": 9956,
+    "cap": 16
    }
   },
   {
@@ -32631,6 +32961,17 @@
    }
   },
   {
+   "id": "row::30944",
+   "en": "Bullwood",
+   "ja": "ブルウッド",
+   "zh": "布鲁伍德",
+   "meta": {
+    "blob": 555,
+    "offset": 10616,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30945",
    "en": "Bullwood",
    "ja": "ブルウッド",
@@ -32639,6 +32980,17 @@
     "blob": 555,
     "offset": 10648,
     "cap": 4
+   }
+  },
+  {
+   "id": "row::30947",
+   "en": "Zozaurus the Enraged",
+   "ja": "憤怒のゾゾラース",
+   "zh": "愤怒的佐佐劳斯",
+   "meta": {
+    "blob": 555,
+    "offset": 11276,
+    "cap": 16
    }
   },
   {
@@ -32653,6 +33005,17 @@
    }
   },
   {
+   "id": "row::30950",
+   "en": "Tyranz the Cruel",
+   "ja": "暴虐のタイランツ",
+   "zh": "暴虐的泰兰兹",
+   "meta": {
+    "blob": 555,
+    "offset": 11936,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30951",
    "en": "Tyranz the Cruel",
    "ja": "暴虐のタイランツ",
@@ -32661,6 +33024,17 @@
     "blob": 555,
     "offset": 11968,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::30953",
+   "en": "Vetra the Deceitful",
+   "ja": "欺瞞のヴェトラ",
+   "zh": "欺瞒的维特拉",
+   "meta": {
+    "blob": 555,
+    "offset": 12596,
+    "cap": 16
    }
   },
   {
@@ -32675,6 +33049,17 @@
    }
   },
   {
+   "id": "row::30956",
+   "en": "Jarval the Rebellious",
+   "ja": "反逆のジャアブル",
+   "zh": "反叛的贾布尔",
+   "meta": {
+    "blob": 555,
+    "offset": 13256,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30957",
    "en": "Jarval the Rebellious",
    "ja": "反逆のジャアブル",
@@ -32683,6 +33068,17 @@
     "blob": 555,
     "offset": 13288,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::30959",
+   "en": "Ultimate Evil Lord Metsvolos",
+   "ja": "超大魔王メツヴォロス",
+   "zh": "超级魔王梅茨沃洛斯",
+   "meta": {
+    "blob": 555,
+    "offset": 13916,
+    "cap": 16
    }
   },
   {
@@ -32697,6 +33093,17 @@
    }
   },
   {
+   "id": "row::30962",
+   "en": "Dark Dragon",
+   "ja": "ダークドラゴン",
+   "zh": "暗黑龙",
+   "meta": {
+    "blob": 555,
+    "offset": 14576,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30963",
    "en": "Dark Dragon",
    "ja": "ダークドラゴン",
@@ -32705,6 +33112,17 @@
     "blob": 555,
     "offset": 14608,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30965",
+   "en": "Frogross G1",
+   "ja": "フログロスG1",
+   "zh": "弗洛格G1",
+   "meta": {
+    "blob": 555,
+    "offset": 15236,
+    "cap": 16
    }
   },
   {
@@ -32719,6 +33137,17 @@
    }
   },
   {
+   "id": "row::30968",
+   "en": "Onigumon G2",
+   "ja": "オニグモンG2",
+   "zh": "欧尼鬼G2",
+   "meta": {
+    "blob": 555,
+    "offset": 15896,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30969",
    "en": "Onigumon G2",
    "ja": "オニグモンG2",
@@ -32727,6 +33156,17 @@
     "blob": 555,
     "offset": 15928,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30971",
+   "en": "Mabone G3",
+   "ja": "マボーンG3",
+   "zh": "马邦G3",
+   "meta": {
+    "blob": 555,
+    "offset": 16556,
+    "cap": 16
    }
   },
   {
@@ -32741,6 +33181,17 @@
    }
   },
   {
+   "id": "row::30974",
+   "en": "Gasmong G4",
+   "ja": "ガスモングG4",
+   "zh": "嘎斯蒙G4",
+   "meta": {
+    "blob": 555,
+    "offset": 17216,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30975",
    "en": "Gasmong G4",
    "ja": "ガスモングG4",
@@ -32749,6 +33200,17 @@
     "blob": 555,
     "offset": 17248,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30977",
+   "en": "Dosmammo G5",
+   "ja": "ドスマンモG5",
+   "zh": "多斯曼G5",
+   "meta": {
+    "blob": 555,
+    "offset": 17876,
+    "cap": 16
    }
   },
   {
@@ -32763,6 +33225,17 @@
    }
   },
   {
+   "id": "row::30980",
+   "en": "Gongorilla G6",
+   "ja": "ゴンゴリラG6",
+   "zh": "刚格里拉G6",
+   "meta": {
+    "blob": 555,
+    "offset": 18536,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30981",
    "en": "Gongorilla G6",
    "ja": "ゴンゴリラG6",
@@ -32771,6 +33244,17 @@
     "blob": 555,
     "offset": 18568,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::30983",
+   "en": "Darquiz G7",
+   "ja": "ダークイズG7",
+   "zh": "达奎兹G7",
+   "meta": {
+    "blob": 555,
+    "offset": 19196,
+    "cap": 16
    }
   },
   {
@@ -32785,6 +33269,17 @@
    }
   },
   {
+   "id": "row::30986",
+   "en": "Togeron G8",
+   "ja": "トゲロンG8",
+   "zh": "托格龙G8",
+   "meta": {
+    "blob": 555,
+    "offset": 19856,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30987",
    "en": "Togeron G8",
    "ja": "トゲロンG8",
@@ -32793,6 +33288,17 @@
     "blob": 555,
     "offset": 19888,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::30989",
+   "en": "Death Rail G9",
+   "ja": "デスレールG9",
+   "zh": "死亡铁路G9",
+   "meta": {
+    "blob": 555,
+    "offset": 20516,
+    "cap": 16
    }
   },
   {
@@ -32807,6 +33313,17 @@
    }
   },
   {
+   "id": "row::30992",
+   "en": "Garvarin G10",
+   "ja": "ガーバリンG10",
+   "zh": "加巴林G10",
+   "meta": {
+    "blob": 555,
+    "offset": 21176,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30993",
    "en": "Garvarin G10",
    "ja": "ガーバリンＧ10",
@@ -32815,6 +33332,17 @@
     "blob": 555,
     "offset": 21208,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::30995",
+   "en": "Poly Noir",
+   "ja": "ポリノワール",
+   "zh": "波利诺",
+   "meta": {
+    "blob": 555,
+    "offset": 21836,
+    "cap": 16
    }
   },
   {
@@ -32829,6 +33357,17 @@
    }
   },
   {
+   "id": "row::30998",
+   "en": "Gravidon",
+   "ja": "グラヴィドン",
+   "zh": "格拉维登",
+   "meta": {
+    "blob": 555,
+    "offset": 22496,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::30999",
    "en": "Gravidon",
    "ja": "グラヴィドン",
@@ -32837,6 +33376,17 @@
     "blob": 555,
     "offset": 22528,
     "cap": 4
+   }
+  },
+  {
+   "id": "row::31001",
+   "en": "Gulagate",
+   "ja": "グラグェート",
+   "zh": "古拉盖特",
+   "meta": {
+    "blob": 555,
+    "offset": 23156,
+    "cap": 16
    }
   },
   {
@@ -32851,6 +33401,17 @@
    }
   },
   {
+   "id": "row::31004",
+   "en": "Lux Deus",
+   "ja": "ルクスデウス",
+   "zh": "路克斯",
+   "meta": {
+    "blob": 555,
+    "offset": 23816,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31005",
    "en": "Lux Deus",
    "ja": "ルクスデウス",
@@ -32859,6 +33420,17 @@
     "blob": 555,
     "offset": 23848,
     "cap": 4
+   }
+  },
+  {
+   "id": "row::31007",
+   "en": "Ava",
+   "ja": "アヴァ",
+   "zh": "艾",
+   "meta": {
+    "blob": 555,
+    "offset": 24476,
+    "cap": 16
    }
   },
   {
@@ -32873,6 +33445,17 @@
    }
   },
   {
+   "id": "row::31010",
+   "en": "Ava Marionette",
+   "ja": "アヴァ・マリオネット",
+   "zh": "艾娃木偶",
+   "meta": {
+    "blob": 555,
+    "offset": 25136,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31011",
    "en": "Ava Marionette",
    "ja": "アヴァ・マリオネット",
@@ -32881,6 +33464,17 @@
     "blob": 555,
     "offset": 25168,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31013",
+   "en": "Faegwot",
+   "ja": "フェグォット",
+   "zh": "费格特",
+   "meta": {
+    "blob": 555,
+    "offset": 25796,
+    "cap": 16
    }
   },
   {
@@ -32895,6 +33489,17 @@
    }
   },
   {
+   "id": "row::31016",
+   "en": "Eynvy",
+   "ja": "エインヴィー",
+   "zh": "恩维",
+   "meta": {
+    "blob": 555,
+    "offset": 26456,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31017",
    "en": "Eynvy",
    "ja": "エインヴィー",
@@ -32903,6 +33508,17 @@
     "blob": 555,
     "offset": 26488,
     "cap": 2
+   }
+  },
+  {
+   "id": "row::31019",
+   "en": "Spelvia",
+   "ja": "スペルヴィア",
+   "zh": "斯佩维",
+   "meta": {
+    "blob": 555,
+    "offset": 27116,
+    "cap": 16
    }
   },
   {
@@ -32917,6 +33533,17 @@
    }
   },
   {
+   "id": "row::31022",
+   "en": "Emperor Golvadis",
+   "ja": "皇帝ゴルバディス",
+   "zh": "戈尔巴迪斯皇帝",
+   "meta": {
+    "blob": 555,
+    "offset": 27776,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31023",
    "en": "Emperor Golvadis",
    "ja": "皇帝ゴルバディス",
@@ -32925,6 +33552,17 @@
     "blob": 555,
     "offset": 27808,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::31025",
+   "en": "Fierce General Gustaf",
+   "ja": "猛将グスタフ",
+   "zh": "猛将古斯塔夫",
+   "meta": {
+    "blob": 555,
+    "offset": 28436,
+    "cap": 16
    }
   },
   {
@@ -32972,6 +33610,17 @@
    }
   },
   {
+   "id": "row::31031",
+   "en": "Demon Dragon",
+   "ja": "魔竜",
+   "zh": "魔龙",
+   "meta": {
+    "blob": 555,
+    "offset": 29756,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31032",
    "en": "Demon Dragon",
    "ja": "魔竜",
@@ -32980,6 +33629,17 @@
     "blob": 555,
     "offset": 29788,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::31034",
+   "en": "Evil Emperor",
+   "ja": "魔皇帝",
+   "zh": "魔皇帝",
+   "meta": {
+    "blob": 555,
+    "offset": 30416,
+    "cap": 16
    }
   },
   {
@@ -32994,6 +33654,17 @@
    }
   },
   {
+   "id": "row::31037",
+   "en": "God Zantes",
+   "ja": "神ザンテス",
+   "zh": "赞特斯神",
+   "meta": {
+    "blob": 555,
+    "offset": 31076,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31038",
    "en": "God Zantes",
    "ja": "神ザンテス",
@@ -33002,6 +33673,17 @@
     "blob": 555,
     "offset": 31108,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::31040",
+   "en": "God Ramizas",
+   "ja": "神ラミサス",
+   "zh": "拉米萨斯神",
+   "meta": {
+    "blob": 555,
+    "offset": 31736,
+    "cap": 16
    }
   },
   {
@@ -33016,6 +33698,17 @@
    }
   },
   {
+   "id": "row::31043",
+   "en": "God Punishuel",
+   "ja": "神パニシュエル",
+   "zh": "神帕尼休尔",
+   "meta": {
+    "blob": 555,
+    "offset": 32396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31044",
    "en": "God Punishuel",
    "ja": "神パニシュエル",
@@ -33024,6 +33717,17 @@
     "blob": 555,
     "offset": 32428,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::31046",
+   "en": "Braelude of the Earth",
+   "ja": "地のブレルード",
+   "zh": "大地的布雷鲁德",
+   "meta": {
+    "blob": 555,
+    "offset": 33056,
+    "cap": 16
    }
   },
   {
@@ -33038,6 +33742,17 @@
    }
   },
   {
+   "id": "row::31049",
+   "en": "Warlute of the Heavens",
+   "ja": "天のワールート",
+   "zh": "天之瓦鲁特",
+   "meta": {
+    "blob": 555,
+    "offset": 33716,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31050",
    "en": "Warlute of the Heavens",
    "ja": "天のワールート",
@@ -33046,6 +33761,17 @@
     "blob": 555,
     "offset": 33748,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::31052",
+   "en": "Oratoolio of the Holy",
+   "ja": "聖のオラトゥーリオ",
+   "zh": "神圣的奥拉托里奥",
+   "meta": {
+    "blob": 555,
+    "offset": 34376,
+    "cap": 16
    }
   },
   {
@@ -33060,6 +33786,17 @@
    }
   },
   {
+   "id": "row::31055",
+   "en": "Leike of the Seas",
+   "ja": "海のレイケ",
+   "zh": "海之雷克",
+   "meta": {
+    "blob": 555,
+    "offset": 35036,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31056",
    "en": "Leike of the Seas",
    "ja": "海のレイケ",
@@ -33068,6 +33805,17 @@
     "blob": 555,
     "offset": 35068,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::31058",
+   "en": "Araveska of the Flames",
+   "ja": "火のアラヴェスカ",
+   "zh": "火焰阿拉维斯卡",
+   "meta": {
+    "blob": 555,
+    "offset": 35696,
+    "cap": 16
    }
   },
   {
@@ -33082,6 +33830,17 @@
    }
   },
   {
+   "id": "row::31061",
+   "en": "Caprittio of the Mirrors",
+   "ja": "鏡のカプリティオ",
+   "zh": "镜之卡普里蒂奥",
+   "meta": {
+    "blob": 555,
+    "offset": 36356,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31062",
    "en": "Caprittio of the Mirrors",
    "ja": "鏡のカプリティオ",
@@ -33090,6 +33849,17 @@
     "blob": 555,
     "offset": 36388,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::31064",
+   "en": "Gospelia of the Light",
+   "ja": "光のゴスペリア",
+   "zh": "光之戈斯佩莉亚",
+   "meta": {
+    "blob": 555,
+    "offset": 37016,
+    "cap": 16
    }
   },
   {
@@ -33104,6 +33874,17 @@
    }
   },
   {
+   "id": "row::31067",
+   "en": "Jilvesta of the Fortress",
+   "ja": "砦のジルヴェスタ",
+   "zh": "要塞的吉尔维斯塔",
+   "meta": {
+    "blob": 555,
+    "offset": 37676,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31068",
    "en": "Jilvesta of the Fortress",
    "ja": "砦のジルヴェスタ",
@@ -33112,6 +33893,17 @@
     "blob": 555,
     "offset": 37708,
     "cap": 12
+   }
+  },
+  {
+   "id": "row::31070",
+   "en": "Varch of the Wars",
+   "ja": "戦いのヴァーチ",
+   "zh": "战争的瓦奇",
+   "meta": {
+    "blob": 555,
+    "offset": 38336,
+    "cap": 16
    }
   },
   {
@@ -33126,6 +33918,17 @@
    }
   },
   {
+   "id": "row::31073",
+   "en": "Asura Nadeshiko",
+   "ja": "阿修羅撫子",
+   "zh": "阿修罗抚子",
+   "meta": {
+    "blob": 555,
+    "offset": 38996,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31074",
    "en": "Asura Nadeshiko",
    "ja": "阿修羅撫子",
@@ -33134,6 +33937,17 @@
     "blob": 555,
     "offset": 39028,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31076",
+   "en": "Lady of Despair",
+   "ja": "絶望淑女",
+   "zh": "绝望淑女",
+   "meta": {
+    "blob": 555,
+    "offset": 39656,
+    "cap": 16
    }
   },
   {
@@ -33148,6 +33962,17 @@
    }
   },
   {
+   "id": "row::31079",
+   "en": "Maiden of Hell",
+   "ja": "地獄乙女",
+   "zh": "地狱乙女",
+   "meta": {
+    "blob": 555,
+    "offset": 40316,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31080",
    "en": "Maiden of Hell",
    "ja": "地獄乙女",
@@ -33156,6 +33981,17 @@
     "blob": 555,
     "offset": 40348,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31082",
+   "en": "Yuri Yaksha",
+   "ja": "百合夜叉",
+   "zh": "百合夜叉",
+   "meta": {
+    "blob": 555,
+    "offset": 40976,
+    "cap": 16
    }
   },
   {
@@ -33170,6 +34006,17 @@
    }
   },
   {
+   "id": "row::31085",
+   "en": "1st Slaughter Daughter",
+   "ja": "殺戮長女",
+   "zh": "杀戮长女",
+   "meta": {
+    "blob": 555,
+    "offset": 41636,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31086",
    "en": "1st Slaughter Daughter",
    "ja": "殺戮長女",
@@ -33178,6 +34025,17 @@
     "blob": 555,
     "offset": 41668,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::31088",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 555,
+    "offset": 42296,
+    "cap": 16
    }
   },
   {
@@ -33192,6 +34050,17 @@
    }
   },
   {
+   "id": "row::31091",
+   "en": "Sakuran",
+   "ja": "朔蘭",
+   "zh": "朔兰",
+   "meta": {
+    "blob": 555,
+    "offset": 42956,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31092",
    "en": "Sakuran",
    "ja": "朔蘭",
@@ -33200,6 +34069,17 @@
     "blob": 555,
     "offset": 42988,
     "cap": 3
+   }
+  },
+  {
+   "id": "row::31094",
+   "en": "Big Venus",
+   "ja": "ビッグヴィーナス",
+   "zh": "大维纳斯",
+   "meta": {
+    "blob": 555,
+    "offset": 43616,
+    "cap": 16
    }
   },
   {
@@ -33214,6 +34094,17 @@
    }
   },
   {
+   "id": "row::31097",
+   "en": "Future Evil Lord Monos",
+   "ja": "超未来魔王モノス",
+   "zh": "超未来魔王莫诺斯",
+   "meta": {
+    "blob": 555,
+    "offset": 44276,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31098",
    "en": "Future Evil Lord Monos",
    "ja": "超未来魔王モノス",
@@ -33222,6 +34113,17 @@
     "blob": 555,
     "offset": 44308,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::31100",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 555,
+    "offset": 44936,
+    "cap": 16
    }
   },
   {
@@ -33236,6 +34138,17 @@
    }
   },
   {
+   "id": "row::31103",
+   "en": "Fallen Angel Hairo",
+   "ja": "滅天使ハイロウ",
+   "zh": "灭天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 45596,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31104",
    "en": "Fallen Angel Hairo",
    "ja": "滅天使ハイロウ",
@@ -33244,6 +34157,17 @@
     "blob": 555,
     "offset": 45628,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31106",
+   "en": "Burning Angel Hairo",
+   "ja": "熱天使ハイロウ",
+   "zh": "炎天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 46256,
+    "cap": 16
    }
   },
   {
@@ -33258,6 +34182,17 @@
    }
   },
   {
+   "id": "row::31109",
+   "en": "Lucky Angel Hairo",
+   "ja": "幸天使ハイロウ",
+   "zh": "吉天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 46916,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31110",
    "en": "Lucky Angel Hairo",
    "ja": "幸天使ハイロウ",
@@ -33266,6 +34201,17 @@
     "blob": 555,
     "offset": 46948,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::31112",
+   "en": "Forgotten Angel Hairo",
+   "ja": "忘天使ハイロウ",
+   "zh": "忘天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 47576,
+    "cap": 16
    }
   },
   {
@@ -33280,6 +34226,17 @@
    }
   },
   {
+   "id": "row::31115",
+   "en": "Merchant Angel Hairo",
+   "ja": "商天使ハイロウ",
+   "zh": "商天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 48236,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31116",
    "en": "Merchant Angel Hairo",
    "ja": "商天使ハイロウ",
@@ -33288,6 +34245,17 @@
     "blob": 555,
     "offset": 48268,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::31118",
+   "en": "Fishing Angel Hairo",
+   "ja": "釣天使ハイロウ",
+   "zh": "钓天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 48896,
+    "cap": 16
    }
   },
   {
@@ -33302,6 +34270,17 @@
    }
   },
   {
+   "id": "row::31121",
+   "en": "Insect Angel Hairo",
+   "ja": "虫天使ハイロウ",
+   "zh": "虫天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 49556,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31122",
    "en": "Insect Angel Hairo",
    "ja": "虫天使ハイロウ",
@@ -33310,6 +34289,17 @@
     "blob": 555,
     "offset": 49588,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31124",
+   "en": "Muscle Angel Hairo",
+   "ja": "筋天使ハイロウ",
+   "zh": "筋天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 50216,
+    "cap": 16
    }
   },
   {
@@ -33324,6 +34314,17 @@
    }
   },
   {
+   "id": "row::31127",
+   "en": "Flavor Angel Hairo",
+   "ja": "味天使ハイロウ",
+   "zh": "味天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 50876,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31128",
    "en": "Flavor Angel Hairo",
    "ja": "味天使ハイロウ",
@@ -33332,6 +34333,17 @@
     "blob": 555,
     "offset": 50908,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31130",
+   "en": "Optimistic Angel Hairo",
+   "ja": "楽天使ハイロウ",
+   "zh": "乐天使海罗",
+   "meta": {
+    "blob": 555,
+    "offset": 51536,
+    "cap": 16
    }
   },
   {
@@ -33346,6 +34358,17 @@
    }
   },
   {
+   "id": "row::31133",
+   "en": "Wahrheit the First",
+   "ja": "第一ヴァールハイト",
+   "zh": "第一瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 52196,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31134",
    "en": "Wahrheit the First",
    "ja": "第一ヴァールハイト",
@@ -33354,6 +34377,17 @@
     "blob": 555,
     "offset": 52228,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31136",
+   "en": "Wahrheit the Second",
+   "ja": "第二ヴァールハイト",
+   "zh": "第二瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 52856,
+    "cap": 16
    }
   },
   {
@@ -33368,6 +34402,17 @@
    }
   },
   {
+   "id": "row::31139",
+   "en": "Wahrheit the Third",
+   "ja": "第三ヴァールハイト",
+   "zh": "第三瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 53516,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31140",
    "en": "Wahrheit the Third",
    "ja": "第三ヴァールハイト",
@@ -33376,6 +34421,17 @@
     "blob": 555,
     "offset": 53548,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31142",
+   "en": "Wahrheit the Fourth",
+   "ja": "第四ヴァールハイト",
+   "zh": "第四瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 54176,
+    "cap": 16
    }
   },
   {
@@ -33390,6 +34446,17 @@
    }
   },
   {
+   "id": "row::31145",
+   "en": "Wahrheit the Fifth",
+   "ja": "第五ヴァールハイト",
+   "zh": "第五瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 54836,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31146",
    "en": "Wahrheit the Fifth",
    "ja": "第五ヴァールハイト",
@@ -33398,6 +34465,17 @@
     "blob": 555,
     "offset": 54868,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31148",
+   "en": "Wahrheit the Sixth",
+   "ja": "第六ヴァールハイト",
+   "zh": "第六瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 55496,
+    "cap": 16
    }
   },
   {
@@ -33412,6 +34490,17 @@
    }
   },
   {
+   "id": "row::31151",
+   "en": "Wahrheit the Seventh",
+   "ja": "第七ヴァールハイト",
+   "zh": "第七瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 56156,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31152",
    "en": "Wahrheit the Seventh",
    "ja": "第七ヴァールハイト",
@@ -33420,6 +34509,17 @@
     "blob": 555,
     "offset": 56188,
     "cap": 10
+   }
+  },
+  {
+   "id": "row::31154",
+   "en": "Wahrheit the Eighth",
+   "ja": "第八ヴァールハイト",
+   "zh": "第八瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 56816,
+    "cap": 16
    }
   },
   {
@@ -33434,6 +34534,17 @@
    }
   },
   {
+   "id": "row::31157",
+   "en": "Wahrheit the Ninth",
+   "ja": "第九ヴァールハイト",
+   "zh": "第九瓦尔海特",
+   "meta": {
+    "blob": 555,
+    "offset": 57476,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31158",
    "en": "Wahrheit the Ninth",
    "ja": "第九ヴァールハイト",
@@ -33442,6 +34553,17 @@
     "blob": 555,
     "offset": 57508,
     "cap": 9
+   }
+  },
+  {
+   "id": "row::31160",
+   "en": "Ryuge",
+   "ja": "リューゲ",
+   "zh": "留格",
+   "meta": {
+    "blob": 555,
+    "offset": 58136,
+    "cap": 16
    }
   },
   {
@@ -33456,6 +34578,17 @@
    }
   },
   {
+   "id": "row::31163",
+   "en": "Yashu",
+   "ja": "ヤーシュ",
+   "zh": "亚修",
+   "meta": {
+    "blob": 555,
+    "offset": 58796,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31164",
    "en": "Yashu",
    "ja": "ヤーシュ",
@@ -33464,6 +34597,17 @@
     "blob": 555,
     "offset": 58828,
     "cap": 2
+   }
+  },
+  {
+   "id": "row::31166",
+   "en": "Yashu Castle",
+   "ja": "ヤーシュ城",
+   "zh": "亚修城",
+   "meta": {
+    "blob": 555,
+    "offset": 59456,
+    "cap": 16
    }
   },
   {
@@ -33478,6 +34622,17 @@
    }
   },
   {
+   "id": "row::31169",
+   "en": "Demon Sword Hero Eater",
+   "ja": "魔剣ユーシャイーター",
+   "zh": "魔剑食勇者",
+   "meta": {
+    "blob": 555,
+    "offset": 60116,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31170",
    "en": "Demon Sword Hero Eater",
    "ja": "魔剣ユーシャイーター",
@@ -33486,6 +34641,17 @@
     "blob": 555,
     "offset": 60148,
     "cap": 11
+   }
+  },
+  {
+   "id": "row::31172",
+   "en": "Faceless Stone",
+   "ja": "フェイスレスストーン",
+   "zh": "无面石",
+   "meta": {
+    "blob": 555,
+    "offset": 60776,
+    "cap": 16
    }
   },
   {
@@ -33500,6 +34666,17 @@
    }
   },
   {
+   "id": "row::31175",
+   "en": "Faceless Silver",
+   "ja": "フェイスレスシルバー",
+   "zh": "无面银",
+   "meta": {
+    "blob": 555,
+    "offset": 61436,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31176",
    "en": "Faceless Silver",
    "ja": "フェイスレスシルバー",
@@ -33508,6 +34685,17 @@
     "blob": 555,
     "offset": 61468,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31178",
+   "en": "Faceless Quartz",
+   "ja": "フェイスレスクォーツ",
+   "zh": "无面水晶",
+   "meta": {
+    "blob": 555,
+    "offset": 62096,
+    "cap": 16
    }
   },
   {
@@ -33522,6 +34710,17 @@
    }
   },
   {
+   "id": "row::31181",
+   "en": "Faceless Gold",
+   "ja": "フェイスレスゴールド",
+   "zh": "无面金",
+   "meta": {
+    "blob": 555,
+    "offset": 62756,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31182",
    "en": "Faceless Gold",
    "ja": "フェイスレスゴールド",
@@ -33530,6 +34729,17 @@
     "blob": 555,
     "offset": 62788,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::31184",
+   "en": "Faceless Dark",
+   "ja": "フェイスレスダーク",
+   "zh": "无面暗",
+   "meta": {
+    "blob": 555,
+    "offset": 63416,
+    "cap": 16
    }
   },
   {
@@ -33544,6 +34754,17 @@
    }
   },
   {
+   "id": "row::31187",
+   "en": "Faceless Shadow",
+   "ja": "フェイスレスシャドウ",
+   "zh": "无面影",
+   "meta": {
+    "blob": 555,
+    "offset": 64076,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31188",
    "en": "Faceless Shadow",
    "ja": "フェイスレスシャドウ",
@@ -33552,6 +34773,17 @@
     "blob": 555,
     "offset": 64108,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31190",
+   "en": "Faceless Devil",
+   "ja": "フェイスレスデビル",
+   "zh": "无面恶魔",
+   "meta": {
+    "blob": 555,
+    "offset": 64736,
+    "cap": 16
    }
   },
   {
@@ -33566,6 +34798,17 @@
    }
   },
   {
+   "id": "row::31193",
+   "en": "Faceless Daemon",
+   "ja": "フェイスレスデーモン",
+   "zh": "无面魔",
+   "meta": {
+    "blob": 555,
+    "offset": 65396,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31194",
    "en": "Faceless Daemon",
    "ja": "フェイスレスデーモン",
@@ -33574,6 +34817,17 @@
     "blob": 555,
     "offset": 65428,
     "cap": 7
+   }
+  },
+  {
+   "id": "row::31196",
+   "en": "Faceless Union",
+   "ja": "フェイスレスユニオン",
+   "zh": "无面联盟",
+   "meta": {
+    "blob": 555,
+    "offset": 66056,
+    "cap": 16
    }
   },
   {
@@ -33588,6 +34842,17 @@
    }
   },
   {
+   "id": "row::31199",
+   "en": "Evil Lord Sexius",
+   "ja": "魔王セクシウス",
+   "zh": "魔王塞克西斯",
+   "meta": {
+    "blob": 555,
+    "offset": 66716,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31200",
    "en": "Evil Lord Sexius",
    "ja": "魔王セクシウス",
@@ -33596,6 +34861,17 @@
     "blob": 555,
     "offset": 66748,
     "cap": 8
+   }
+  },
+  {
+   "id": "row::31202",
+   "en": "Evil Lord Harassmenz",
+   "ja": "魔王ハラスメンツ",
+   "zh": "魔王哈拉斯门茨",
+   "meta": {
+    "blob": 555,
+    "offset": 67376,
+    "cap": 16
    }
   },
   {
@@ -33610,6 +34886,17 @@
    }
   },
   {
+   "id": "row::31205",
+   "en": "Herassmeow",
+   "ja": "ハラスいや～ん",
+   "zh": "骚扰猫",
+   "meta": {
+    "blob": 555,
+    "offset": 68036,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31206",
    "en": "Herassmeow",
    "ja": "ハラスいや～ん",
@@ -33618,6 +34905,17 @@
     "blob": 555,
     "offset": 68068,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::31208",
+   "en": "Harassmight",
+   "ja": "ハラスまいっちんぐ",
+   "zh": "骚扰兵",
+   "meta": {
+    "blob": 555,
+    "offset": 68696,
+    "cap": 16
    }
   },
   {
@@ -33632,6 +34930,17 @@
    }
   },
   {
+   "id": "row::31211",
+   "en": "Warlord Hideo",
+   "ja": "戦国大名ヒデーヨ",
+   "zh": "战国大名秀代",
+   "meta": {
+    "blob": 555,
+    "offset": 69356,
+    "cap": 16
+   }
+  },
+  {
    "id": "row::31212",
    "en": "Warlord Hideo",
    "ja": "戦国大名ヒデーヨ",
@@ -33640,6 +34949,17 @@
     "blob": 555,
     "offset": 69388,
     "cap": 6
+   }
+  },
+  {
+   "id": "row::31214",
+   "en": "Great Warlord Noblong",
+   "ja": "戦国超大名ノブロング",
+   "zh": "战国超大名信长",
+   "meta": {
+    "blob": 555,
+    "offset": 70016,
+    "cap": 16
    }
   },
   {

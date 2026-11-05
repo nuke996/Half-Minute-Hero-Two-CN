@@ -41,9 +41,10 @@ REVIEW_STRIDES = {
     128: 212, 136: 272, 931: 292,
     407: 236, 777: 236, 1008: 236,
     4: 288, 30: 288, 408: 288, 445: 288, 528: 288, 748: 288, 609: 288, 483: 288,
-    555: 660, 734: 660, 320: 492, 715: 224,
+    555: 660, 734: 660, 54: 660, 320: 492, 715: 224,
+    105: 288, 529: 288,
     83: 288, 394: 288, 417: 288, 654: 288,
-    99: 308, 25: 168,
+    99: 308, 25: 168, 642: 384, 763: 128,
 }
 
 
@@ -75,6 +76,15 @@ def released_row(bi, off, ja=''):
         return p == 0
     if bi in (407, 777, 1008):
         return p == 4
+    if bi in (54, 734):
+        # Z23：图鉴敌人/Boss 列表主名列（+40）；(54,6656) 的 `Hero<>` 是模板槽，保持保护
+        return p == 40 and (bi, off) != (54, 6656)
+    if bi == 555:
+        # Z23 修正：图鉴“头目”页读的是 b555 的 +40 列
+        return p == 40
+    if bi in (105, 529):
+        # Z23 修正：同名 Boss 的战斗表显示列（+92）
+        return p == 92
     if bi in (4, 30, 408, 445, 528, 748, 609, 483, 555, 734):
         return p == 92 or (bi in (408, 445, 748, 483, 528, 609) and p == 28)
     if bi == 320:
@@ -86,7 +96,11 @@ def released_row(bi, off, ja=''):
     if bi == 99:
         return off in (16, 56)
     if bi == 25:
-        return off in (62384, 63056)
+        return p == 40          # Z22：键值表“值列”整列（键名不动）
+    if bi == 642:
+        return off >= 400 and (off - 400) % 32 == 0   # Z22：武器种名 12 条
+    if bi == 763:
+        return p == 0           # Z22：按键名/UI 标签整列
     return False
 
 PROTECT_NOTE = {
@@ -169,6 +183,8 @@ def write_shards(prefix, cat, items, outdir, idxmap, nshards, prot=False):
 
 
 def main():
+    # Z23 起：图鉴敌人/Boss 列表名已上屏（仅 Z23 配方启用），导出时视为可校对显示槽
+    B._Z23_RELEASE = True
     rows = R.load_rows()
     md = json.load(open(os.path.join(WORK, 'ml_zh_fields.json'), encoding='utf-8'))
     stage, missing = R.ensure_stage()

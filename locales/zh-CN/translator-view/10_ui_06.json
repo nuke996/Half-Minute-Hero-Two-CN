@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3256,
+ "_count": 3266,
  "entries": [
   {
    "id": "row::31614",
@@ -14346,6 +14346,116 @@
     "blob": 641,
     "offset": 2820,
     "cap": 80
+   }
+  },
+  {
+   "id": "row::34024",
+   "en": "Sword",
+   "ja": "剣",
+   "zh": "剑",
+   "meta": {
+    "blob": 642,
+    "offset": 400,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34025",
+   "en": "Greatsword",
+   "ja": "大剣",
+   "zh": "巨剑",
+   "meta": {
+    "blob": 642,
+    "offset": 432,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34026",
+   "en": "Axe",
+   "ja": "オノ",
+   "zh": "斧头",
+   "meta": {
+    "blob": 642,
+    "offset": 464,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34027",
+   "en": "Hammer",
+   "ja": "ハンマー",
+   "zh": "锤",
+   "meta": {
+    "blob": 642,
+    "offset": 496,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34028",
+   "en": "Bowgun Sword",
+   "ja": "ボウガンソード",
+   "zh": "弩枪剑",
+   "meta": {
+    "blob": 642,
+    "offset": 528,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34029",
+   "en": "Staff",
+   "ja": "杖",
+   "zh": "法杖",
+   "meta": {
+    "blob": 642,
+    "offset": 560,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34030",
+   "en": "Book",
+   "ja": "本",
+   "zh": "书",
+   "meta": {
+    "blob": 642,
+    "offset": 592,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34031",
+   "en": "Spear",
+   "ja": "槍",
+   "zh": "长矛",
+   "meta": {
+    "blob": 642,
+    "offset": 624,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34032",
+   "en": "Polearm",
+   "ja": "ぼう",
+   "zh": "长柄",
+   "meta": {
+    "blob": 642,
+    "offset": 656,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::34033",
+   "en": "All",
+   "ja": "全て",
+   "zh": "全部",
+   "meta": {
+    "blob": 642,
+    "offset": 688,
+    "cap": 16
    }
   },
   {

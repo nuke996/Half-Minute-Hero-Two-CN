@@ -2,8 +2,3220 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3135,
+ "_count": 3427,
  "entries": [
+  {
+   "id": "row::12701",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 44,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12702",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 180,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12703",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 376,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12704",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 572,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12705",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 632,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12706",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 768,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12707",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 964,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12708",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 1160,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12709",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 1220,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12710",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 1356,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12711",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 1552,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12712",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 1748,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12713",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 1808,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12714",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 1944,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12715",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 2140,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12716",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 2336,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12717",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 2396,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12718",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 2532,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12719",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 2728,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12720",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 2924,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12721",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 219,
+    "offset": 2984,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12722",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 3120,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12723",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 3316,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12724",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 3512,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12725",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 3708,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12726",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 3904,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12727",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 4100,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12728",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 4296,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12729",
+   "en": "There's nothing left…",
+   "ja": "もう何も無い",
+   "zh": "已经什么都没有了…",
+   "meta": {
+    "blob": 219,
+    "offset": 4356,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12730",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 4492,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12731",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 4688,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12732",
+   "en": "There's nothing left…",
+   "ja": "もう何も無い",
+   "zh": "已经什么都没有了…",
+   "meta": {
+    "blob": 219,
+    "offset": 4748,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12733",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 4884,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12734",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 5080,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12735",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 5276,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12736",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 5472,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12737",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 5668,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12738",
+   "en": "There's nothing left…",
+   "ja": "もう何も無い",
+   "zh": "已经什么都没有了…",
+   "meta": {
+    "blob": 219,
+    "offset": 5728,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12739",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 5864,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12740",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 219,
+    "offset": 6060,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12741",
+   "en": "There's nothing left…",
+   "ja": "もう何も無い",
+   "zh": "已经什么都没有了…",
+   "meta": {
+    "blob": 219,
+    "offset": 6120,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12742",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 6452,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12743",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 6648,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12744",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 6844,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12745",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 7040,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12746",
+   "en": "It's just an ordinary statue…",
+   "ja": "何のヘンテツも無いセキヒだ・・・",
+   "zh": "只是座普普通通的石像……",
+   "meta": {
+    "blob": 219,
+    "offset": 7100,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12747",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 219,
+    "offset": 7432,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12748",
+   "en": "It's just an ordinary statue…",
+   "ja": "何のヘンテツも無いセキヒだ・・・",
+   "zh": "只是座普普通通的石像……",
+   "meta": {
+    "blob": 219,
+    "offset": 7492,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12749",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 219,
+    "offset": 7824,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12750",
+   "en": "It's just an ordinary statue…",
+   "ja": "何のヘンテツも無いセキヒだ・・・",
+   "zh": "只是座普普通通的石像……",
+   "meta": {
+    "blob": 219,
+    "offset": 7884,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12751",
+   "en": "It's just an ordinary statue…",
+   "ja": "何のヘンテツも無いセキヒだ・・・",
+   "zh": "只是座普普通通的石像……",
+   "meta": {
+    "blob": 219,
+    "offset": 8080,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12752",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 8608,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12753",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 8804,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12754",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9000,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12755",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9196,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12756",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9392,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12757",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9588,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12758",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9784,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12759",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 9980,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12760",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 10176,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12761",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 219,
+    "offset": 10372,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12762",
+   "en": "Disilluzhend Village",
+   "ja": "メザメータ村",
+   "zh": "梅扎梅塔村",
+   "meta": {
+    "blob": 220,
+    "offset": 140,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::12763",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 220,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::12764",
+   "en": "Goddess Statue Warp",
+   "ja": "女神像ワープ",
+   "zh": "女神像传送",
+   "meta": {
+    "blob": 220,
+    "offset": 956,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::12765",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 220,
+    "offset": 1124,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12767",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 220,
+    "offset": 1548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12769",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 220,
+    "offset": 1972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12771",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 220,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::12773",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 220,
+    "offset": 2820,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::12777",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 4200,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12780",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 4492,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12783",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 4784,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12785",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 5076,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12788",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 6244,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12791",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 6536,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12794",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 6828,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12798",
+   "en": "No. 30",
+   "ja": "３０号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 10624,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12800",
+   "en": "No. 30",
+   "ja": "３０号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 10916,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12802",
+   "en": "No. 30",
+   "ja": "３０号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 12668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12806",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 13544,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12809",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 13836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12812",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 14712,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12816",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 15296,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12819",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 15588,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12822",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 15880,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12825",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 16172,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12828",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 16464,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12831",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 16756,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12834",
+   "en": "Win the Race",
+   "ja": "レースを制しろ！",
+   "zh": "赢下比赛！",
+   "meta": {
+    "blob": 221,
+    "offset": 22596,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::12835",
+   "en": "Gramps",
+   "ja": "じじい",
+   "zh": "老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 25516,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12837",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 25808,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12840",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 26100,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12843",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 26392,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12846",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 26684,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12849",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 26976,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12852",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 27268,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12855",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 29604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12858",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 29896,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12860",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 30480,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12863",
+   "en": "Will you ride on!?",
+   "ja": "まだいけるかっ！？",
+   "zh": "还能继续骑吗！？",
+   "meta": {
+    "blob": 221,
+    "offset": 32232,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::12864",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 81872,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12866",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 82164,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12869",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 82456,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12871",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 82748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12873",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 83040,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12875",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 84208,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12877",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 84500,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12880",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 84792,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12882",
+   "en": "Sure!",
+   "ja": "いいぞ！",
+   "zh": "干啊！",
+   "meta": {
+    "blob": 221,
+    "offset": 85148,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12883",
+   "en": "No way!",
+   "ja": "ダメだ！",
+   "zh": "才不要！",
+   "meta": {
+    "blob": 221,
+    "offset": 85212,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12884",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 85376,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12886",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 85668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12888",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 86836,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12890",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 87128,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12893",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 87420,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12896",
+   "en": "Obtained Circlet and Cannon!",
+   "ja": "サークレットと大砲ゲット！",
+   "zh": "获得头饰与大炮！",
+   "meta": {
+    "blob": 221,
+    "offset": 90340,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::12897",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 90924,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12899",
+   "en": "Demon Child",
+   "ja": "悪魔の子",
+   "zh": "恶魔之子",
+   "meta": {
+    "blob": 221,
+    "offset": 91216,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12901",
+   "en": "Jellico",
+   "ja": "ジェリ子",
+   "zh": "杰利科",
+   "meta": {
+    "blob": 221,
+    "offset": 92676,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12903",
+   "en": "Jellico",
+   "ja": "ジェリ子",
+   "zh": "杰利科",
+   "meta": {
+    "blob": 221,
+    "offset": 92968,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12906",
+   "en": "Jellico",
+   "ja": "ジェリ子",
+   "zh": "杰利科",
+   "meta": {
+    "blob": 221,
+    "offset": 93260,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12909",
+   "en": "Jellico",
+   "ja": "ジェリ子",
+   "zh": "杰利科",
+   "meta": {
+    "blob": 221,
+    "offset": 93552,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12912",
+   "en": "Jellico",
+   "ja": "ジェリ子",
+   "zh": "杰利科",
+   "meta": {
+    "blob": 221,
+    "offset": 93844,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12915",
+   "en": "Obtained shield and cannon!",
+   "ja": "盾と大砲をゲット！",
+   "zh": "获得盾与大炮！",
+   "meta": {
+    "blob": 221,
+    "offset": 97056,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::12916",
+   "en": "Time and HP restored!",
+   "ja": "時間とHPが回復！",
+   "zh": "时间与HP已恢复！",
+   "meta": {
+    "blob": 221,
+    "offset": 97576,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12917",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 100560,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12924",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 108444,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12926",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 108736,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12931",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 109320,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12934",
+   "en": "Dark Time Goddess",
+   "ja": "時の黒女神",
+   "zh": "时之黑女神",
+   "meta": {
+    "blob": 221,
+    "offset": 109612,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12939",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 112824,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12942",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 113116,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12946",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 113992,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12950",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 115160,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12953",
+   "en": "Quest Cleared!",
+   "ja": "クエストクリア！",
+   "zh": "任务完成！",
+   "meta": {
+    "blob": 221,
+    "offset": 120416,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::12954",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 121876,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12956",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 122168,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12961",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 123044,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12963",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 123628,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12967",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 124796,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12969",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 125672,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12973",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 126840,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12975",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 127132,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12978",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 127424,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12980",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 127716,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12985",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 128884,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12988",
+   "en": "3rd Slaughter Daughter",
+   "ja": "虐殺三女",
+   "zh": "虐杀三女",
+   "meta": {
+    "blob": 221,
+    "offset": 129176,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12991",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 130636,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12995",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 131512,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::12998",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 131804,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::13000",
+   "en": "No. 30",
+   "ja": "30号",
+   "zh": "30号",
+   "meta": {
+    "blob": 221,
+    "offset": 132096,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::13003",
+   "en": "I commit",
+   "ja": "ありったけの",
+   "zh": "全部的",
+   "meta": {
+    "blob": 221,
+    "offset": 133492,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13004",
+   "en": "all the bravery that I have",
+   "ja": "勇気をささげたい",
+   "zh": "勇气都愿献给你",
+   "meta": {
+    "blob": 221,
+    "offset": 133784,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::13011",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 153412,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::13013",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 153704,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::13017",
+   "en": "Racy Gramps",
+   "ja": "実行ジジイ",
+   "zh": "风骚老爷爷",
+   "meta": {
+    "blob": 221,
+    "offset": 155748,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::13044",
+   "en": "Start!",
+   "ja": "スタート！",
+   "zh": "开始！",
+   "meta": {
+    "blob": 224,
+    "offset": 108,
+    "cap": 96
+   }
+  },
+  {
+   "id": "row::13045",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 180,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13046",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 376,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13047",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 572,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13048",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 768,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13051",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 1356,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13052",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 1552,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13055",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 2140,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13056",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 2336,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13060",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 3708,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13061",
+   "en": "Entered the temple!",
+   "ja": "神殿に入った！",
+   "zh": "进入神殿！",
+   "meta": {
+    "blob": 225,
+    "offset": 3768,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13062",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 3904,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13063",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 4100,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13065",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 4296,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13066",
+   "en": "○: Exit",
+   "ja": "○：でる",
+   "zh": "○：出去",
+   "meta": {
+    "blob": 225,
+    "offset": 4492,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13068",
+   "en": "○: Exit",
+   "ja": "○：でる",
+   "zh": "○：出去",
+   "meta": {
+    "blob": 225,
+    "offset": 4688,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13069",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 4884,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13071",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 5472,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13073",
+   "en": "○: Summon Hero Castle",
+   "ja": "○：勇者城召喚",
+   "zh": "○：召唤勇者城",
+   "meta": {
+    "blob": 225,
+    "offset": 6060,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13074",
+   "en": "○: Break",
+   "ja": "○：こわす",
+   "zh": "○：破坏",
+   "meta": {
+    "blob": 225,
+    "offset": 7628,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13075",
+   "en": "○: Break",
+   "ja": "○：こわす",
+   "zh": "○：破坏",
+   "meta": {
+    "blob": 225,
+    "offset": 7824,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13076",
+   "en": "Entered village!",
+   "ja": "村に入った！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 225,
+    "offset": 7884,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13077",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 8020,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13078",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 8216,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13079",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 225,
+    "offset": 8412,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13080",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 180,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13081",
+   "en": "Entered castle!",
+   "ja": "城に入った！",
+   "zh": "进入城堡！",
+   "meta": {
+    "blob": 226,
+    "offset": 240,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13082",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 376,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13083",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 572,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13084",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 768,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13085",
+   "en": "○: Talk",
+   "ja": "○：はなす",
+   "zh": "○：交谈",
+   "meta": {
+    "blob": 226,
+    "offset": 964,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13087",
+   "en": "○: Talk",
+   "ja": "○：はなす",
+   "zh": "○：交谈",
+   "meta": {
+    "blob": 226,
+    "offset": 1160,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13088",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 1552,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13089",
+   "en": "Entered rest tent!",
+   "ja": "きゅうけいテントに入った！",
+   "zh": "进入休息帐篷！",
+   "meta": {
+    "blob": 226,
+    "offset": 1612,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13090",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 1748,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13091",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 1944,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13092",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 2140,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13093",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 2336,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13094",
+   "en": "Entered rest tent!",
+   "ja": "きゅうけいテントに入った！",
+   "zh": "进入休息帐篷！",
+   "meta": {
+    "blob": 226,
+    "offset": 2396,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13095",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 2532,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13096",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 2728,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13097",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 2924,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13098",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 3120,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13099",
+   "en": "Entered rest tent!",
+   "ja": "きゅうけいテントに入った！",
+   "zh": "进入休息帐篷！",
+   "meta": {
+    "blob": 226,
+    "offset": 3180,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13100",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 3316,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13101",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 3512,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13102",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 3708,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13103",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 3904,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13104",
+   "en": "Entered ranch!",
+   "ja": "ぼくじょうに入った！",
+   "zh": "进入牧场！",
+   "meta": {
+    "blob": 226,
+    "offset": 3964,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13105",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 4100,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13106",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 4296,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13107",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 4492,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13108",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 4688,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13109",
+   "en": "Entered village!",
+   "ja": "村に入ったさー！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 226,
+    "offset": 4748,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13110",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 4884,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13111",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 5080,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13112",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 5276,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13113",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 5472,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13114",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 5668,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13116",
+   "en": "○: To the next continent",
+   "ja": "○：次の大陸へ",
+   "zh": "○：前往下一片大陆",
+   "meta": {
+    "blob": 226,
+    "offset": 6256,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13117",
+   "en": "○: To the next continent",
+   "ja": "○：次の大陸へ",
+   "zh": "○：前往下一片大陆",
+   "meta": {
+    "blob": 226,
+    "offset": 6452,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13118",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 6648,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13119",
+   "en": "Entered port!",
+   "ja": "港に入った！",
+   "zh": "进入港口！",
+   "meta": {
+    "blob": 226,
+    "offset": 6708,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13120",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 6844,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13121",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 7040,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13122",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 7236,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13123",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 7432,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13124",
+   "en": "Entered village!",
+   "ja": "村に入ったさー！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 226,
+    "offset": 7492,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13125",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 7628,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13126",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 7824,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13127",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 8020,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13128",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 8216,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13129",
+   "en": "Entered village!",
+   "ja": "村に入ったさー！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 226,
+    "offset": 8276,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13130",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 8412,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13131",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 8608,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13132",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 8804,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13133",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9000,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13134",
+   "en": "Entered village!",
+   "ja": "村に入ったさー！",
+   "zh": "进入村庄！",
+   "meta": {
+    "blob": 226,
+    "offset": 9060,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13135",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9196,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13136",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9392,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13137",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9588,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13138",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9784,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13139",
+   "en": "Entered rest tent!",
+   "ja": "きゅうけいテントに入った！",
+   "zh": "进入休息帐篷！",
+   "meta": {
+    "blob": 226,
+    "offset": 9844,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13140",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 9980,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13141",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 10176,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13142",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 10372,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13143",
+   "en": "Tally-ho!",
+   "ja": "トーウッ！",
+   "zh": "冲锋！",
+   "meta": {
+    "blob": 226,
+    "offset": 10432,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13144",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 10568,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13145",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 10764,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13147",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 10960,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13148",
+   "en": "Tally-ho!",
+   "ja": "トーウッ！",
+   "zh": "冲锋！",
+   "meta": {
+    "blob": 226,
+    "offset": 11020,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13149",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 11156,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13150",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 11352,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13151",
+   "en": "The door is shut firmly.",
+   "ja": "とびらはかたく閉ざされている",
+   "zh": "门被紧紧地关上了。",
+   "meta": {
+    "blob": 226,
+    "offset": 11412,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13152",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 11548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13153",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 11744,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13154",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 11940,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13155",
+   "en": "Entered village",
+   "ja": "村に入った",
+   "zh": "进入村庄",
+   "meta": {
+    "blob": 226,
+    "offset": 12000,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13156",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 12136,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13157",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 12332,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13158",
+   "en": "○: Enter",
+   "ja": "○：はいる",
+   "zh": "○：进入",
+   "meta": {
+    "blob": 226,
+    "offset": 12528,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13160",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 226,
+    "offset": 12920,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13161",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 226,
+    "offset": 13116,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13162",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 226,
+    "offset": 13312,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13163",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 226,
+    "offset": 13508,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13164",
+   "en": "○: Check",
+   "ja": "○：しらべる",
+   "zh": "○：查看",
+   "meta": {
+    "blob": 226,
+    "offset": 13704,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13165",
+   "en": "Mysterious Castle",
+   "ja": "ナゾの城",
+   "zh": "神秘城堡",
+   "meta": {
+    "blob": 227,
+    "offset": 140,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13166",
+   "en": "Exit Castle",
+   "ja": "城を出る",
+   "zh": "离开城堡",
+   "meta": {
+    "blob": 227,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13169",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 1548,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13170",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 1972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13172",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 2396,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13173",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 2820,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13175",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 3244,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13177",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 3668,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13179",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 227,
+    "offset": 4092,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13182",
+   "en": "Heaven Port",
+   "ja": "ヘブン港",
+   "zh": "天堂港",
+   "meta": {
+    "blob": 228,
+    "offset": 140,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13183",
+   "en": "Exit Port",
+   "ja": "港を出る",
+   "zh": "离开港口",
+   "meta": {
+    "blob": 228,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13184",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 228,
+    "offset": 1124,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13186",
+   "en": "Goddess Statue Warp",
+   "ja": "女神像ワープ",
+   "zh": "女神像传送",
+   "meta": {
+    "blob": 228,
+    "offset": 1380,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13187",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 228,
+    "offset": 1548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13189",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 228,
+    "offset": 1972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13191",
+   "en": "Mixed Juice",
+   "ja": "ミックスジュース",
+   "zh": "混合果汁",
+   "meta": {
+    "blob": 228,
+    "offset": 2228,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13192",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 228,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13194",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 228,
+    "offset": 2820,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13196",
+   "en": "Exit Port",
+   "ja": "港を出る",
+   "zh": "离开港口",
+   "meta": {
+    "blob": 228,
+    "offset": 3244,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13197",
+   "en": "Port Minatent",
+   "ja": "ミナテント港",
+   "zh": "米纳滕特港",
+   "meta": {
+    "blob": 229,
+    "offset": 140,
+    "cap": 64
+   }
+  },
+  {
+   "id": "row::13198",
+   "en": "Exit Port",
+   "ja": "港を出る",
+   "zh": "离开港口",
+   "meta": {
+    "blob": 229,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13199",
+   "en": "Goddess Statue Warp",
+   "ja": "女神像ワープ",
+   "zh": "女神像传送",
+   "meta": {
+    "blob": 229,
+    "offset": 956,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13200",
+   "en": "Clam Stew",
+   "ja": "はまナベ",
+   "zh": "蛤蜊锅",
+   "meta": {
+    "blob": 229,
+    "offset": 1380,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13201",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 229,
+    "offset": 1548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13203",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 229,
+    "offset": 1972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13205",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 229,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13207",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 229,
+    "offset": 2820,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13209",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 229,
+    "offset": 3244,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::13211",
+   "en": "Exit Port",
+   "ja": "港を出る",
+   "zh": "离开港口",
+   "meta": {
+    "blob": 229,
+    "offset": 3668,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::13242",
+   "en": "Hero Castle",
+   "ja": "勇者城",
+   "zh": "勇者城",
+   "meta": {
+    "blob": 231,
+    "offset": 44,
+    "cap": 128
+   }
+  },
   {
    "id": "row::13247",
    "en": "Fierce General Gustaf",
@@ -10414,7 +13626,7 @@
    "id": "row::15388",
    "en": "Make a map using various",
    "ja": "さまざまなマップチップを",
-   "zh": "用各式各样",
+   "zh": "使用各种地图块，",
    "meta": {
     "blob": 291,
     "offset": 116,
@@ -10425,7 +13637,7 @@
    "id": "row::15389",
    "en": "types of map tiles.",
    "ja": "使ってマップを",
-   "zh": "地图素材来造地图",
+   "zh": "就能制作地图。",
    "meta": {
     "blob": 291,
     "offset": 164,
@@ -10436,7 +13648,7 @@
    "id": "row::15390",
    "en": "You can also place",
    "ja": "イベントチップや",
-   "zh": "也可放置",
+   "zh": "还能把事件块、",
    "meta": {
     "blob": 291,
     "offset": 260,
@@ -10447,7 +13659,7 @@
    "id": "row::15391",
    "en": "event tiles and",
    "ja": "モンスターチップなども",
-   "zh": "事件元件和",
+   "zh": "怪物块等素材",
    "meta": {
     "blob": 291,
     "offset": 308,
@@ -10458,7 +13670,7 @@
    "id": "row::15392",
    "en": "monster tiles.",
    "ja": "配置することができます。",
-   "zh": "可配置怪物块。",
+   "zh": "全都配置到地图上。",
    "meta": {
     "blob": 291,
     "offset": 356,
@@ -10469,7 +13681,7 @@
    "id": "row::15393",
    "en": "Toggle <Touch-Up Mode>",
    "ja": "<ほかんモード>によって",
-   "zh": "切换<修饰模式>",
+   "zh": "切换<修饰模式>后，",
    "meta": {
     "blob": 291,
     "offset": 452,
@@ -10480,7 +13692,7 @@
    "id": "row::15394",
    "en": "to change palette contents.",
    "ja": "パレットの内容が変わります。",
-   "zh": "可改变调色板内容。",
+   "zh": "调色板内容会随之改变。",
    "meta": {
     "blob": 291,
     "offset": 500,
@@ -10491,7 +13703,7 @@
    "id": "row::15395",
    "en": "By setting events that occur",
    "ja": "順番に発生するイベントを",
-   "zh": "以顺序设定",
+   "zh": "按顺序设置",
    "meta": {
     "blob": 291,
     "offset": 696,
@@ -10502,7 +13714,7 @@
    "id": "row::15396",
    "en": "in chronological order,",
    "ja": "設定することでストーリーを",
-   "zh": "依时序",
+   "zh": "依次发生的事件，",
    "meta": {
     "blob": 291,
     "offset": 744,
@@ -10513,7 +13725,7 @@
    "id": "row::15397",
    "en": "you can create a story.",
    "ja": "つくることができます。",
-   "zh": "便能编出剧情。",
+   "zh": "就能创作出故事。",
    "meta": {
     "blob": 291,
     "offset": 792,
@@ -10524,7 +13736,7 @@
    "id": "row::15398",
    "en": "You can also set the",
    "ja": "ストーリータイプとイベントを",
-   "zh": "还能设置",
+   "zh": "还能设定",
    "meta": {
     "blob": 291,
     "offset": 888,
@@ -10535,7 +13747,7 @@
    "id": "row::15399",
    "en": "story type and events.",
    "ja": "設定することができます。",
-   "zh": "剧情类型与事件。",
+   "zh": "故事类型与事件。",
    "meta": {
     "blob": 291,
     "offset": 936,
@@ -10546,7 +13758,7 @@
    "id": "row::15400",
    "en": "Do note that events",
    "ja": "イベントはマップに",
-   "zh": "注意事件",
+   "zh": "注意，事件必须",
    "meta": {
     "blob": 291,
     "offset": 1032,
@@ -10557,7 +13769,7 @@
    "id": "row::15401",
    "en": "must be placed on the map",
    "ja": "設置しないと発生しないので",
-   "zh": "要放到地图",
+   "zh": "设置在地图上",
    "meta": {
     "blob": 291,
     "offset": 1080,
@@ -10568,7 +13780,7 @@
    "id": "row::15402",
    "en": "for them to trigger.",
    "ja": "注意してください。",
-   "zh": "才会触发。",
+   "zh": "才会发生。",
    "meta": {
     "blob": 291,
     "offset": 1128,
@@ -10579,7 +13791,7 @@
    "id": "row::15403",
    "en": "You can customize",
    "ja": "自分だけのモンスターを",
-   "zh": "能自定",
+   "zh": "可以制作",
    "meta": {
     "blob": 291,
     "offset": 1276,
@@ -10590,7 +13802,7 @@
    "id": "row::15404",
    "en": "your own monsters.",
    "ja": "つくることができます。",
-   "zh": "自己的怪兽。",
+   "zh": "只属于你的怪物。",
    "meta": {
     "blob": 291,
     "offset": 1324,
@@ -10601,7 +13813,7 @@
    "id": "row::15405",
    "en": "Your monster's",
    "ja": "モンスターの",
-   "zh": "怪兽的",
+   "zh": "怪物的",
    "meta": {
     "blob": 291,
     "offset": 1420,
@@ -10612,7 +13824,7 @@
    "id": "row::15406",
    "en": "can all be specified.",
    "ja": "設定することができます。",
-   "zh": "都可被设定。",
+   "zh": "都能自行设定。",
    "meta": {
     "blob": 291,
     "offset": 1516,
@@ -10623,7 +13835,7 @@
    "id": "row::15407",
    "en": "You can customize",
    "ja": "自分だけのアイテムを",
-   "zh": "能自定",
+   "zh": "可以制作",
    "meta": {
     "blob": 291,
     "offset": 1856,
@@ -10634,7 +13846,7 @@
    "id": "row::15408",
    "en": "your own items.",
    "ja": "つくることができます。",
-   "zh": "自己的物品。",
+   "zh": "只属于你的道具。",
    "meta": {
     "blob": 291,
     "offset": 1904,
@@ -10645,7 +13857,7 @@
    "id": "row::15409",
    "en": "Your item's",
    "ja": "アイテムの",
-   "zh": "物品的",
+   "zh": "道具的",
    "meta": {
     "blob": 291,
     "offset": 2000,
@@ -10656,7 +13868,7 @@
    "id": "row::15410",
    "en": "can all be specified.",
    "ja": "設定することができます。",
-   "zh": "都可被设定。",
+   "zh": "都能自行设定。",
    "meta": {
     "blob": 291,
     "offset": 2096,
@@ -10667,7 +13879,7 @@
    "id": "row::15411",
    "en": "This lets you decide what",
    "ja": "クエストのいろいろな場面で",
-   "zh": "可决定",
+   "zh": "可在任务的各个场景",
    "meta": {
     "blob": 291,
     "offset": 2436,
@@ -10678,7 +13890,7 @@
    "id": "row::15412",
    "en": "BGM will play at various",
    "ja": "流れるＢＧＭを",
-   "zh": "各类场景播放",
+   "zh": "自由决定",
    "meta": {
     "blob": 291,
     "offset": 2484,
@@ -10689,7 +13901,7 @@
    "id": "row::15413",
    "en": "points in the quest.",
    "ja": "きめることができます。",
-   "zh": "任务中的时机。",
+   "zh": "播放哪首BGM。",
    "meta": {
     "blob": 291,
     "offset": 2532,
@@ -10700,7 +13912,7 @@
    "id": "row::15414",
    "en": "Give a title to the quest",
    "ja": "つくったクエストに",
-   "zh": "为任务加标题",
+   "zh": "可为您创建的任务",
    "meta": {
     "blob": 291,
     "offset": 3016,
@@ -10711,7 +13923,7 @@
    "id": "row::15415",
    "en": "you created and add",
    "ja": "<だいめい>と<コメント>を",
-   "zh": "你建立的并添加",
+   "zh": "加上<标题>和",
    "meta": {
     "blob": 291,
     "offset": 3064,
@@ -10722,7 +13934,7 @@
    "id": "row::15416",
    "en": "a description.",
    "ja": "つけることができます。",
-   "zh": "一段说明。",
+   "zh": "<说明>。",
    "meta": {
     "blob": 291,
     "offset": 3112,
@@ -10733,7 +13945,7 @@
    "id": "row::15417",
    "en": "This is also where you",
    "ja": "<セーブ>もここで",
-   "zh": "这里也是你",
+   "zh": "<保存>任务也",
    "meta": {
     "blob": 291,
     "offset": 3208,
@@ -10744,7 +13956,7 @@
    "id": "row::15418",
    "en": "<Save> the quest.",
    "ja": "おこないます。",
-   "zh": "在这里<保存>任务。",
+   "zh": "在这里进行。",
    "meta": {
     "blob": 291,
     "offset": 3256,
@@ -10755,7 +13967,7 @@
    "id": "row::15419",
    "en": "Check how to create quests",
    "ja": "ロマンシング・ツクレールの",
-   "zh": "可查看「浪漫创世」的",
+   "zh": "可查阅「浪漫创世」",
    "meta": {
     "blob": 291,
     "offset": 3596,
@@ -10766,7 +13978,7 @@
    "id": "row::15420",
    "en": "to fully enjoy all the features",
    "ja": "作り方や遊び方について",
-   "zh": "任务做法与玩法，",
+   "zh": "的任务制作方法",
    "meta": {
     "blob": 291,
     "offset": 3644,
@@ -10777,7 +13989,7 @@
    "id": "row::15421",
    "en": "of the Map Editor.",
    "ja": "確認することができます。",
-   "zh": "体验全部功能。",
+   "zh": "与游玩方式。",
    "meta": {
     "blob": 291,
     "offset": 3692,
@@ -10788,7 +14000,7 @@
    "id": "row::15422",
    "en": "You can try out the",
    "ja": "現在つくっているクエストを",
-   "zh": "能体验",
+   "zh": "可以试玩",
    "meta": {
     "blob": 291,
     "offset": 4176,
@@ -10799,7 +14011,7 @@
    "id": "row::15423",
    "en": "quest you just made.",
    "ja": "あそぶことができます。",
-   "zh": "刚做的任务。",
+   "zh": "当前正在制作的任务。",
    "meta": {
     "blob": 291,
     "offset": 4224,
@@ -10810,7 +14022,7 @@
    "id": "row::15424",
    "en": "Make sure that it's possible",
    "ja": "つくったクエストは",
-   "zh": "确认可",
+   "zh": "请确认制作的任务",
    "meta": {
     "blob": 291,
     "offset": 4320,
@@ -10821,7 +14033,7 @@
    "id": "row::15425",
    "en": "to clear your quest. ★",
    "ja": "クリアできるかどうか",
-   "zh": "通关你的任务。★",
+   "zh": "能否顺利通关。★",
    "meta": {
     "blob": 291,
     "offset": 4368,
@@ -10832,7 +14044,7 @@
    "id": "row::15426",
    "en": "Quit editing your current",
    "ja": "マップの作成を終了して",
-   "zh": "退出正在编辑",
+   "zh": "结束地图制作，",
    "meta": {
     "blob": 291,
     "offset": 4756,
@@ -10843,7 +14055,7 @@
    "id": "row::15427",
    "en": "map and return to the",
    "ja": "ロマンシング・ツクレールの",
-   "zh": "地图，",
+   "zh": "返回「浪漫创世」",
    "meta": {
     "blob": 291,
     "offset": 4804,
@@ -10854,7 +14066,7 @@
    "id": "row::15428",
    "en": "Map Editor's main menu.",
    "ja": "メインメニューに戻ります。",
-   "zh": "返回编辑器主菜单。",
+   "zh": "主菜单。",
    "meta": {
     "blob": 291,
     "offset": 4852,
@@ -10876,7 +14088,7 @@
    "id": "row::15430",
    "en": "<lost forever.>",
    "ja": "<消えてしまいます。>",
-   "zh": "<永远消失。>",
+   "zh": "<全部丢失。>",
    "meta": {
     "blob": 291,
     "offset": 4996,
@@ -10887,7 +14099,7 @@
    "id": "row::15431",
    "en": "<Please save your quest>",
    "ja": "<必ずセーブしてから>",
-   "zh": "<请保存你的任务>",
+   "zh": "<请务必先保存>",
    "meta": {
     "blob": 291,
     "offset": 5044,
@@ -10898,7 +14110,7 @@
    "id": "row::15432",
    "en": "<before ending.>",
    "ja": "<終了してください。>",
-   "zh": "<结束前。>",
+   "zh": "<再结束。>",
    "meta": {
     "blob": 291,
     "offset": 5092,
@@ -10909,7 +14121,7 @@
    "id": "row::15433",
    "en": "You can give a title",
    "ja": "つくったクエストに",
-   "zh": "能给任务取名",
+   "zh": "可为您制作的任务",
    "meta": {
     "blob": 291,
     "offset": 5288,
@@ -10920,7 +14132,7 @@
    "id": "row::15434",
    "en": "to the quest you made.",
    "ja": "だいめいをつけられます。",
-   "zh": "给你做的任务。",
+   "zh": "取一个标题。",
    "meta": {
     "blob": 291,
     "offset": 5336,
@@ -10931,7 +14143,7 @@
    "id": "row::15435",
    "en": "You can add a description",
    "ja": "つくったクエストに",
-   "zh": "能添加描述",
+   "zh": "也可以为它",
    "meta": {
     "blob": 291,
     "offset": 5868,
@@ -10942,7 +14154,7 @@
    "id": "row::15436",
    "en": "to the quest you made.",
    "ja": "コメントをつけられます。",
-   "zh": "给你做的任务。",
+   "zh": "添加一段说明。",
    "meta": {
     "blob": 291,
     "offset": 5916,
@@ -10953,7 +14165,7 @@
    "id": "row::15437",
    "en": "You can select the Hero",
    "ja": "勇者（主人公）キャラを",
-   "zh": "可选择勇者",
+   "zh": "还能选择",
    "meta": {
     "blob": 291,
     "offset": 6448,
@@ -10964,7 +14176,7 @@
    "id": "row::15438",
    "en": "(main character).",
    "ja": "設定することができます。",
-   "zh": "可选勇者",
+   "zh": "勇者（主角）。",
    "meta": {
     "blob": 291,
     "offset": 6496,
@@ -10975,7 +14187,7 @@
    "id": "row::15439",
    "en": "Save the quest",
    "ja": "つくったクエストを",
-   "zh": "保存任务",
+   "zh": "保存您制作好的",
    "meta": {
     "blob": 291,
     "offset": 7028,
@@ -10986,7 +14198,7 @@
    "id": "row::15440",
    "en": "that you created.",
    "ja": "セーブします。",
-   "zh": "你所建立的。",
+   "zh": "任务数据。",
    "meta": {
     "blob": 291,
     "offset": 7076,
@@ -10997,7 +14209,7 @@
    "id": "row::15441",
    "en": "Delete your",
    "ja": "セーブデータを",
-   "zh": "删除你的",
+   "zh": "删除已保存的",
    "meta": {
     "blob": 291,
     "offset": 7608,
@@ -11008,7 +14220,7 @@
    "id": "row::15442",
    "en": "saved data.",
    "ja": "さくじょします。",
-   "zh": "已保存的数据。",
+   "zh": "任务数据。",
    "meta": {
     "blob": 291,
     "offset": 7656,
@@ -11019,7 +14231,7 @@
    "id": "row::15443",
    "en": "Configure the Evil Lord",
    "ja": "魔王城の場所や魔王を",
-   "zh": "配置魔王",
+   "zh": "可设定魔王城的位置",
    "meta": {
     "blob": 291,
     "offset": 8188,
@@ -11030,7 +14242,7 @@
    "id": "row::15444",
    "en": "and its Castle's location.",
    "ja": "設定することができます。",
-   "zh": "及其城堡的位置。",
+   "zh": "以及魔王。",
    "meta": {
     "blob": 291,
     "offset": 8236,
@@ -11041,7 +14253,7 @@
    "id": "row::15445",
    "en": "You can select",
    "ja": "村を選択して",
-   "zh": "能选择",
+   "zh": "可选择村庄",
    "meta": {
     "blob": 291,
     "offset": 8768,
@@ -11052,7 +14264,7 @@
    "id": "row::15446",
    "en": "and configure a village.",
    "ja": "設定することができます。",
-   "zh": "并配置村庄。",
+   "zh": "并进行设定。",
    "meta": {
     "blob": 291,
     "offset": 8816,
@@ -11063,7 +14275,7 @@
    "id": "row::15447",
    "en": "You can select",
    "ja": "どうくつを選択して",
-   "zh": "能选择",
+   "zh": "可选择洞穴",
    "meta": {
     "blob": 291,
     "offset": 9348,
@@ -11074,7 +14286,7 @@
    "id": "row::15448",
    "en": "and configure a cave.",
    "ja": "設定することができます。",
-   "zh": "并配置洞穴。",
+   "zh": "并进行设定。",
    "meta": {
     "blob": 291,
     "offset": 9396,
@@ -11085,7 +14297,7 @@
    "id": "row::15449",
    "en": "You can configure",
    "ja": "ぬけみちを",
-   "zh": "能配置",
+   "zh": "可以设定",
    "meta": {
     "blob": 291,
     "offset": 9928,
@@ -11096,7 +14308,7 @@
    "id": "row::15450",
    "en": "a shortcut.",
    "ja": "設定することができます。",
-   "zh": "一条捷径。",
+   "zh": "捷径。",
    "meta": {
     "blob": 291,
     "offset": 9976,
@@ -11107,7 +14319,7 @@
    "id": "row::15451",
    "en": "Set location",
    "ja": "新しい村の",
-   "zh": "设置新村庄的",
+   "zh": "决定新村庄的",
    "meta": {
     "blob": 291,
     "offset": 10508,
@@ -11129,7 +14341,7 @@
    "id": "row::15453",
    "en": "Configure",
    "ja": "村の",
-   "zh": "配置",
+   "zh": "可以调整村庄",
    "meta": {
     "blob": 291,
     "offset": 11088,
@@ -11140,7 +14352,7 @@
    "id": "row::15454",
    "en": "a village's settings.",
    "ja": "設定ができます。",
-   "zh": "村庄的设置。",
+   "zh": "的各项设置。",
    "meta": {
     "blob": 291,
     "offset": 11136,
@@ -11151,7 +14363,7 @@
    "id": "row::15455",
    "en": "Set location of",
    "ja": "イベント用どうくつの",
-   "zh": "设置事件洞穴的",
+   "zh": "决定事件用洞穴的",
    "meta": {
     "blob": 291,
     "offset": 11668,
@@ -11173,7 +14385,7 @@
    "id": "row::15457",
    "en": "Configure settings for",
    "ja": "イベント用どうくつの",
-   "zh": "为……配置设定",
+   "zh": "可以调整事件用",
    "meta": {
     "blob": 291,
     "offset": 12248,
@@ -11184,7 +14396,7 @@
    "id": "row::15458",
    "en": "an event cave.",
    "ja": "設定ができます。",
-   "zh": "位置。",
+   "zh": "洞穴的设置。",
    "meta": {
     "blob": 291,
     "offset": 12296,
@@ -11195,7 +14407,7 @@
    "id": "row::15459",
    "en": "Set location",
    "ja": "どうくつの",
-   "zh": "设置洞穴的",
+   "zh": "决定洞穴的",
    "meta": {
     "blob": 291,
     "offset": 12828,
@@ -11206,7 +14418,7 @@
    "id": "row::15460",
    "en": "of a cave.",
    "ja": "場所を決めます。",
-   "zh": "洞穴的",
+   "zh": "位置。",
    "meta": {
     "blob": 291,
     "offset": 12876,
@@ -11217,7 +14429,7 @@
    "id": "row::15461",
    "en": "Configure",
    "ja": "どうくつの",
-   "zh": "配置",
+   "zh": "可以调整",
    "meta": {
     "blob": 291,
     "offset": 13408,
@@ -11239,7 +14451,7 @@
    "id": "row::15463",
    "en": "Set location",
    "ja": "ぬけみちの",
-   "zh": "设置捷径的",
+   "zh": "决定捷径的",
    "meta": {
     "blob": 291,
     "offset": 13988,
@@ -11250,7 +14462,7 @@
    "id": "row::15464",
    "en": "of a shortcut.",
    "ja": "場所を決めます。",
-   "zh": "捷径的",
+   "zh": "位置。",
    "meta": {
     "blob": 291,
     "offset": 14036,
@@ -11261,7 +14473,7 @@
    "id": "row::15465",
    "en": "Configure",
    "ja": "ぬけみちの",
-   "zh": "配置",
+   "zh": "可以调整",
    "meta": {
     "blob": 291,
     "offset": 14568,
@@ -11294,7 +14506,7 @@
    "id": "row::15468",
    "en": "Talking to villagers in order will",
    "ja": "村人と順番に話すことで",
-   "zh": "按顺序和村民交谈将会",
+   "zh": "按顺序与村民交谈，",
    "meta": {
     "blob": 291,
     "offset": 15196,
@@ -11305,7 +14517,7 @@
    "id": "row::15469",
    "en": "make script contents change.",
    "ja": "セリフの内容が変わります。",
-   "zh": "使剧本内容改变。",
+   "zh": "台词内容会随之改变。",
    "meta": {
     "blob": 291,
     "offset": 15244,
@@ -11327,7 +14539,7 @@
    "id": "row::15471",
    "en": "1. Talk to A.",
    "ja": "１．Aさんと話します。",
-   "zh": "1. 和A交谈。",
+   "zh": "1. 与A交谈。",
    "meta": {
     "blob": 291,
     "offset": 15340,
@@ -11338,7 +14550,7 @@
    "id": "row::15472",
    "en": "2. Talking to B will result",
    "ja": "２．Bさんと話すと",
-   "zh": "2. 和B交谈会",
+   "zh": "2. 再与B交谈，",
    "meta": {
     "blob": 291,
     "offset": 15388,
@@ -11349,7 +14561,7 @@
    "id": "row::15473",
    "en": "　 in a different script.",
    "ja": "　　セリフが変わります。",
-   "zh": "导致不同的剧本。",
+   "zh": "　台词就会改变。",
    "meta": {
     "blob": 291,
     "offset": 15436,
@@ -11360,7 +14572,7 @@
    "id": "row::15474",
    "en": "Talk to villagers in order",
    "ja": "村人と順番に話すことで",
-   "zh": "按顺序和村民交谈",
+   "zh": "按顺序与村民交谈，",
    "meta": {
     "blob": 291,
     "offset": 15776,
@@ -11371,7 +14583,7 @@
    "id": "row::15475",
    "en": "to receive a reward.",
    "ja": "お礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 15824,
@@ -11393,7 +14605,7 @@
    "id": "row::15477",
    "en": "1. Talk to A.",
    "ja": "１．Aさんと話します。",
-   "zh": "1. 和A交谈。",
+   "zh": "1. 与A交谈。",
    "meta": {
     "blob": 291,
     "offset": 15920,
@@ -11404,7 +14616,7 @@
    "id": "row::15478",
    "en": "2. Talk to B.",
    "ja": "２．Bさんと話します。",
-   "zh": "2. 和B交谈。",
+   "zh": "2. 与B交谈。",
    "meta": {
     "blob": 291,
     "offset": 15968,
@@ -11415,7 +14627,7 @@
    "id": "row::15479",
    "en": "3. Talk to A",
    "ja": "３．Aさんと話すと",
-   "zh": "3. 和A交谈",
+   "zh": "3. 与A交谈后，",
    "meta": {
     "blob": 291,
     "offset": 16016,
@@ -11426,7 +14638,7 @@
    "id": "row::15480",
    "en": "　 to get a reward.",
    "ja": "　　お礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "　就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 16064,
@@ -11437,7 +14649,7 @@
    "id": "row::15481",
    "en": "After talking to villagers,",
    "ja": "村人と話したあと",
-   "zh": "和村民交谈后，",
+   "zh": "与村民交谈后，",
    "meta": {
     "blob": 291,
     "offset": 16356,
@@ -11448,7 +14660,7 @@
    "id": "row::15482",
    "en": "step on an event on the map",
    "ja": "マップ上のイベントをふむと",
-   "zh": "踩中地图上的事件",
+   "zh": "踩到地图上的事件，",
    "meta": {
     "blob": 291,
     "offset": 16404,
@@ -11459,7 +14671,7 @@
    "id": "row::15483",
    "en": "and you will get a reward.",
    "ja": "お礼をゲットできます。",
-   "zh": "你就能获得奖金。",
+   "zh": "就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 16452,
@@ -11481,7 +14693,7 @@
    "id": "row::15485",
    "en": "1. Talk to A.",
    "ja": "１．Aさんと話します。",
-   "zh": "1. 和A交谈。",
+   "zh": "1. 与A交谈。",
    "meta": {
     "blob": 291,
     "offset": 16548,
@@ -11492,7 +14704,7 @@
    "id": "row::15486",
    "en": "2. Step on a transparent",
    "ja": "２．マップ上のとうめいな",
-   "zh": "2. 踩中一个透明的",
+   "zh": "2. 踩到地图上",
    "meta": {
     "blob": 291,
     "offset": 16596,
@@ -11503,7 +14715,7 @@
    "id": "row::15487",
    "en": "　 event on the map and",
    "ja": "　　イベントをふむと",
-   "zh": "地图上的事件并",
+   "zh": "　透明的事件后，",
    "meta": {
     "blob": 291,
     "offset": 16644,
@@ -11514,7 +14726,7 @@
    "id": "row::15488",
    "en": "　 receive a reward.",
    "ja": "　　お礼をゲットできます。",
-   "zh": "获得奖金。",
+   "zh": "　就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 16692,
@@ -11525,7 +14737,7 @@
    "id": "row::15489",
    "en": "After talking to a villager,",
    "ja": "村人と話したあと",
-   "zh": "和一名村民交谈后，",
+   "zh": "与村民交谈后，",
    "meta": {
     "blob": 291,
     "offset": 16936,
@@ -11536,7 +14748,7 @@
    "id": "row::15490",
    "en": "step on an event on the map",
    "ja": "マップ上のイベントをふむと",
-   "zh": "踩中地图上的事件",
+   "zh": "踩到地图上的事件，",
    "meta": {
     "blob": 291,
     "offset": 16984,
@@ -11547,7 +14759,7 @@
    "id": "row::15491",
    "en": "to earn a reward.",
    "ja": "村人からお礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "就能从村民处获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 17032,
@@ -11569,7 +14781,7 @@
    "id": "row::15493",
    "en": "1. Talk to A.",
    "ja": "１．Aさんと話します。",
-   "zh": "1. 和A交谈。",
+   "zh": "1. 与A交谈。",
    "meta": {
     "blob": 291,
     "offset": 17128,
@@ -11580,7 +14792,7 @@
    "id": "row::15494",
    "en": "2. Step on a transparent",
    "ja": "２．マップ上のとうめいな",
-   "zh": "2. 踩中一个透明的",
+   "zh": "2. 踩到地图上",
    "meta": {
     "blob": 291,
     "offset": 17176,
@@ -11591,7 +14803,7 @@
    "id": "row::15495",
    "en": "　 event on the map.",
    "ja": "　　イベントをふみます。",
-   "zh": "地图上的事件。",
+   "zh": "　透明的事件。",
    "meta": {
     "blob": 291,
     "offset": 17224,
@@ -11602,7 +14814,7 @@
    "id": "row::15496",
    "en": "3. Talk to A",
    "ja": "３．Aさんと話すと",
-   "zh": "3. 和A交谈",
+   "zh": "3. 与A交谈后，",
    "meta": {
     "blob": 291,
     "offset": 17272,
@@ -11613,7 +14825,7 @@
    "id": "row::15497",
    "en": "　 to receive a reward.",
    "ja": "　　お礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "　就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 17320,
@@ -11624,7 +14836,7 @@
    "id": "row::15498",
    "en": "After talking to a villager,",
    "ja": "村人と話したあとどうくつの",
-   "zh": "和一名村民交谈后，",
+   "zh": "与村民交谈后，打败",
    "meta": {
     "blob": 291,
     "offset": 17516,
@@ -11635,7 +14847,7 @@
    "id": "row::15499",
    "en": "defeat cave monsters",
    "ja": "モンスターをたおすと",
-   "zh": "击败洞穴怪物",
+   "zh": "洞穴中的怪物，",
    "meta": {
     "blob": 291,
     "offset": 17564,
@@ -11646,7 +14858,7 @@
    "id": "row::15500",
    "en": "to earn a reward.",
    "ja": "村人からお礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "就能获得村民的谢礼。",
    "meta": {
     "blob": 291,
     "offset": 17612,
@@ -11668,7 +14880,7 @@
    "id": "row::15502",
    "en": "1. Talk to A.",
    "ja": "１．Aさんと話します。",
-   "zh": "1. 和A交谈。",
+   "zh": "1. 与A交谈。",
    "meta": {
     "blob": 291,
     "offset": 17708,
@@ -11679,7 +14891,7 @@
    "id": "row::15503",
    "en": "2. Clear the cave.",
    "ja": "２．どうくつをクリアします。",
-   "zh": "2. 清理洞穴。",
+   "zh": "2. 通关洞穴。",
    "meta": {
     "blob": 291,
     "offset": 17756,
@@ -11690,7 +14902,7 @@
    "id": "row::15504",
    "en": "3. Talk to A",
    "ja": "３．Aさんと話すと",
-   "zh": "3. 和A交谈",
+   "zh": "3. 与A交谈后，",
    "meta": {
     "blob": 291,
     "offset": 17804,
@@ -11701,7 +14913,7 @@
    "id": "row::15505",
    "en": "　 to get a reward.",
    "ja": "　　お礼がもらえます。",
-   "zh": "以获得奖金。",
+   "zh": "　就能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 17852,
@@ -11712,7 +14924,7 @@
    "id": "row::15506",
    "en": "Clear a cave and",
    "ja": "どうくつをクリアすると",
-   "zh": "清理一个洞穴并",
+   "zh": "通关洞穴后，",
    "meta": {
     "blob": 291,
     "offset": 18096,
@@ -11723,7 +14935,7 @@
    "id": "row::15507",
    "en": "move to a different exit.",
    "ja": "別の出口に移動します。",
-   "zh": "移动到另一个出口。",
+   "zh": "就会移动到另一个出口。",
    "meta": {
     "blob": 291,
     "offset": 18144,
@@ -11745,7 +14957,7 @@
    "id": "row::15509",
    "en": "1. Clear the cave.",
    "ja": "１．どうくつをクリアします。",
-   "zh": "1. 清理洞穴。",
+   "zh": "1. 通关洞穴。",
    "meta": {
     "blob": 291,
     "offset": 18240,
@@ -11767,7 +14979,7 @@
    "id": "row::15511",
    "en": "This is a story type without",
    "ja": "イベントが何も組まれていない",
-   "zh": "这是一个没有任何",
+   "zh": "这是没有设置任何",
    "meta": {
     "blob": 291,
     "offset": 18676,
@@ -11789,7 +15001,7 @@
    "id": "row::15513",
    "en": "You can combine up to",
    "ja": "最大6コのイベントを",
-   "zh": "你最多可以组合",
+   "zh": "最多可将6个事件",
    "meta": {
     "blob": 291,
     "offset": 18772,
@@ -11800,7 +15012,7 @@
    "id": "row::15514",
    "en": "6 events to form",
    "ja": "自分で上から順番に",
-   "zh": "6个事件来组成",
+   "zh": "按自己的顺序",
    "meta": {
     "blob": 291,
     "offset": 18820,
@@ -11811,7 +15023,7 @@
    "id": "row::15515",
    "en": "a sequence.",
    "ja": "組み立てることができます。",
-   "zh": "一个顺序。",
+   "zh": "自上而下组合起来。",
    "meta": {
     "blob": 291,
     "offset": 18868,
@@ -11833,7 +15045,7 @@
    "id": "row::15517",
    "en": "Sets script and characters.",
    "ja": "セリフや人物を設定できます。",
-   "zh": "设置剧本和角色。",
+   "zh": "可以设定台词与人物。",
    "meta": {
     "blob": 291,
     "offset": 20416,
@@ -11844,7 +15056,7 @@
    "id": "row::15518",
    "en": "Talk to a specific person",
    "ja": "この人物と話すことで",
-   "zh": "和特定的人交谈",
+   "zh": "与这个人物交谈，",
    "meta": {
     "blob": 291,
     "offset": 20464,
@@ -11855,7 +15067,7 @@
    "id": "row::15519",
    "en": "to move to the next event.",
    "ja": "次のイベントに進みます。",
-   "zh": "以进入下一个事件。",
+   "zh": "即可进入下一个事件。",
    "meta": {
     "blob": 291,
     "offset": 20512,
@@ -11866,7 +15078,7 @@
    "id": "row::15520",
    "en": "Note that you must define",
    "ja": "村のどれかに設定しないと",
-   "zh": "注意你必须指定",
+   "zh": "若没有设置到某个村庄，",
    "meta": {
     "blob": 291,
     "offset": 20608,
@@ -11877,7 +15089,7 @@
    "id": "row::15521",
    "en": "someone in the village",
    "ja": "イベントが起こらないので",
-   "zh": "村庄中的某人",
+   "zh": "事件就不会发生，",
    "meta": {
     "blob": 291,
     "offset": 20656,
@@ -11888,7 +15100,7 @@
    "id": "row::15522",
    "en": "or the event will not occur.",
    "ja": "注意してください。",
-   "zh": "要不事件不会发生。",
+   "zh": "请务必注意。",
    "meta": {
     "blob": 291,
     "offset": 20704,
@@ -11899,7 +15111,7 @@
    "id": "row::15523",
    "en": "Basically the same event",
    "ja": "基本はイベント会話と",
-   "zh": "基本是相同的事件",
+   "zh": "基本上与对话事件相同，",
    "meta": {
     "blob": 291,
     "offset": 20996,
@@ -11910,7 +15122,7 @@
    "id": "row::15524",
    "en": "as Talking Event,",
    "ja": "同じイベントですが",
-   "zh": "和交谈事件一样，",
+   "zh": "只是不同之处在于",
    "meta": {
     "blob": 291,
     "offset": 21044,
@@ -11921,7 +15133,7 @@
    "id": "row::15525",
    "en": "except that you can get",
    "ja": "話すことでお礼をもらう",
-   "zh": "只是你能通过",
+   "zh": "可以通过交谈",
    "meta": {
     "blob": 291,
     "offset": 21092,
@@ -11932,7 +15144,7 @@
    "id": "row::15526",
    "en": "a reward by talking.",
    "ja": "ことができます。",
-   "zh": "交谈获得奖金。",
+   "zh": "获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 21140,
@@ -11943,7 +15155,7 @@
    "id": "row::15527",
    "en": "You can set the contents",
    "ja": "お礼の内容も",
-   "zh": "你可以设置内容",
+   "zh": "谢礼的内容也可以",
    "meta": {
     "blob": 291,
     "offset": 21236,
@@ -11954,7 +15166,7 @@
    "id": "row::15528",
    "en": "of the reward.",
    "ja": "設定することができます。",
-   "zh": "奖金的。",
+   "zh": "自行设定。",
    "meta": {
     "blob": 291,
     "offset": 21284,
@@ -11965,7 +15177,7 @@
    "id": "row::15529",
    "en": "Place the cave on the map",
    "ja": "マップ上での設置と移動を",
-   "zh": "在地图上放置洞穴",
+   "zh": "可在地图上设置",
    "meta": {
     "blob": 291,
     "offset": 22156,
@@ -11976,7 +15188,7 @@
    "id": "row::15530",
    "en": "or move it.",
    "ja": "することができます。",
-   "zh": "或移动它。",
+   "zh": "并移动洞穴。",
    "meta": {
     "blob": 291,
     "offset": 22204,
@@ -11987,7 +15199,7 @@
    "id": "row::15531",
    "en": "The monsters in the cave",
    "ja": "どうくつにいるモンスターを",
-   "zh": "洞穴中的怪物",
+   "zh": "还能设定",
    "meta": {
     "blob": 291,
     "offset": 22300,
@@ -11998,7 +15210,7 @@
    "id": "row::15532",
    "en": "can be set.",
    "ja": "設定することができます。",
-   "zh": "可以被设置。",
+   "zh": "洞穴内的怪物。",
    "meta": {
     "blob": 291,
     "offset": 22348,
@@ -12009,7 +15221,7 @@
    "id": "row::15533",
    "en": "Defeat the monsters",
    "ja": "どうくつのモンスターを",
-   "zh": "击败怪物",
+   "zh": "打倒洞穴中的怪物后，",
    "meta": {
     "blob": 291,
     "offset": 22444,
@@ -12020,7 +15232,7 @@
    "id": "row::15534",
    "en": "in the cave to move to",
    "ja": "たおすことで",
-   "zh": "在洞穴中以前往",
+   "zh": "即可进入",
    "meta": {
     "blob": 291,
     "offset": 22492,
@@ -12042,7 +15254,7 @@
    "id": "row::15536",
    "en": "<This event can only be set>",
    "ja": "<イベントどうくつの次にのみ>",
-   "zh": "<此事件只能设置>",
+   "zh": "<只能在事件洞穴>",
    "meta": {
     "blob": 291,
     "offset": 22736,
@@ -12053,7 +15265,7 @@
    "id": "row::15537",
    "en": "<after a Cave Event.>",
    "ja": "<設定できるイベントです。>",
-   "zh": "<洞穴事件之后。>",
+   "zh": "<之后设置此事件。>",
    "meta": {
     "blob": 291,
     "offset": 22784,
@@ -12064,7 +15276,7 @@
    "id": "row::15538",
    "en": "Specifies a different exit after",
    "ja": "イベントどうくつをクリア後の",
-   "zh": "指定一个不同的出口",
+   "zh": "可以设定通关事件洞穴后",
    "meta": {
     "blob": 291,
     "offset": 22880,
@@ -12075,7 +15287,7 @@
    "id": "row::15539",
    "en": "the event cave is cleared.",
    "ja": "別の出口を設定できます。",
-   "zh": "在事件洞穴清理之后。",
+   "zh": "前往的另一个出口。",
    "meta": {
     "blob": 291,
     "offset": 22928,
@@ -12086,7 +15298,7 @@
    "id": "row::15540",
    "en": "You can place it on the map",
    "ja": "マップ上での設置と移動を",
-   "zh": "你可以在地图上放置它",
+   "zh": "也能在地图上设置",
    "meta": {
     "blob": 291,
     "offset": 23024,
@@ -12097,7 +15309,7 @@
    "id": "row::15541",
    "en": "or move it.",
    "ja": "することができます。",
-   "zh": "或移动它。",
+   "zh": "并移动它。",
    "meta": {
     "blob": 291,
     "offset": 23072,
@@ -12108,7 +15320,7 @@
    "id": "row::15542",
    "en": "You can place an event",
    "ja": "マップ上にイベントを置く",
-   "zh": "你可以放置一个事件",
+   "zh": "可在地图上",
    "meta": {
     "blob": 291,
     "offset": 23896,
@@ -12119,7 +15331,7 @@
    "id": "row::15543",
    "en": "on the map.",
    "ja": "ことができます。",
-   "zh": "在地图上。",
+   "zh": "放置事件。",
    "meta": {
     "blob": 291,
     "offset": 23944,
@@ -12130,7 +15342,7 @@
    "id": "row::15544",
    "en": "Appearance can be <transparent>",
    "ja": "見た目は<とうめい>か",
-   "zh": "外观可以是<透明>的",
+   "zh": "外观可选择<透明>，",
    "meta": {
     "blob": 291,
     "offset": 23992,
@@ -12141,7 +15353,7 @@
    "id": "row::15545",
    "en": "or a selected <character>.",
    "ja": "<キャラ>かを選択できます。",
-   "zh": "或选择一个<角色>。",
+   "zh": "或选择<角色>。",
    "meta": {
     "blob": 291,
     "offset": 24040,
@@ -12152,7 +15364,7 @@
    "id": "row::15546",
    "en": "<Stepping> on a <transparent>",
    "ja": "マップ上のイベントに対して",
-   "zh": "<踩中>一个<透明>的",
+   "zh": "地图上的事件中，",
    "meta": {
     "blob": 291,
     "offset": 24136,
@@ -12163,7 +15375,7 @@
    "id": "row::15547",
    "en": "event on the map, or talking to",
    "ja": "<とうめい>なら<ふむ>ことで",
-   "zh": "地图上的事件，或与之交谈",
+   "zh": "<透明>的用<踩>，",
    "meta": {
     "blob": 291,
     "offset": 24184,
@@ -12174,7 +15386,7 @@
    "id": "row::15548",
    "en": "a <character> event will move",
    "ja": "<キャラ>なら話すことで",
-   "zh": "一个<角色>事件会把",
+   "zh": "<角色>的用交谈，",
    "meta": {
     "blob": 291,
     "offset": 24232,
@@ -12185,7 +15397,7 @@
    "id": "row::15549",
    "en": "the player to the next event.",
    "ja": "次のイベントに進みます。",
-   "zh": "玩家带到下一个事件。",
+   "zh": "即可进入下一个事件。",
    "meta": {
     "blob": 291,
     "offset": 24280,
@@ -12196,7 +15408,7 @@
    "id": "row::15550",
    "en": "Scripts can also be specified.",
    "ja": "セリフを設定もできます。",
-   "zh": "也可以指定剧本。",
+   "zh": "也可以设定台词。",
    "meta": {
     "blob": 291,
     "offset": 24328,
@@ -12207,7 +15419,7 @@
    "id": "row::15551",
    "en": "Basically the same",
    "ja": "基本は地上イベントと",
-   "zh": "基本和",
+   "zh": "基本上与地上事件相同，",
    "meta": {
     "blob": 291,
     "offset": 24476,
@@ -12218,7 +15430,7 @@
    "id": "row::15552",
    "en": "as an Overland Event,",
    "ja": "同じイベントですが",
-   "zh": "地上事件一样，",
+   "zh": "但触发地图上的事件时，",
    "meta": {
     "blob": 291,
     "offset": 24524,
@@ -12229,7 +15441,7 @@
    "id": "row::15553",
    "en": "except that triggering the",
    "ja": "マップ上のイベントに対して",
-   "zh": "只是触发",
+   "zh": "无论是踩上去",
    "meta": {
     "blob": 291,
     "offset": 24572,
@@ -12240,7 +15452,7 @@
    "id": "row::15554",
    "en": "event by stepping or talking",
    "ja": "ふむか話すかすることで",
-   "zh": "事件的方式是踩中或交谈",
+   "zh": "还是与它交谈，",
    "meta": {
     "blob": 291,
     "offset": 24620,
@@ -12251,7 +15463,7 @@
    "id": "row::15555",
    "en": "lets you get a reward.",
    "ja": "お礼をゲットできます。",
-   "zh": "让你获得奖金。",
+   "zh": "都能获得谢礼。",
    "meta": {
     "blob": 291,
     "offset": 24668,
@@ -12262,7 +15474,7 @@
    "id": "row::15556",
    "en": "The contents of the reward",
    "ja": "お礼の内容も",
-   "zh": "奖金的内容",
+   "zh": "谢礼的内容也可以",
    "meta": {
     "blob": 291,
     "offset": 24764,
@@ -12273,7 +15485,7 @@
    "id": "row::15557",
    "en": "can be set.",
    "ja": "設定することができます。",
-   "zh": "可以被设置。",
+   "zh": "自行设定。",
    "meta": {
     "blob": 291,
     "offset": 24812,
@@ -12284,7 +15496,7 @@
    "id": "row::15558",
    "en": "Story type can be",
    "ja": "ストーリータイプを",
-   "zh": "故事类型可以",
+   "zh": "可对故事类型",
    "meta": {
     "blob": 291,
     "offset": 25636,
@@ -12295,7 +15507,7 @@
    "id": "row::15559",
    "en": "Confirm contents",
    "ja": "内容を決定して",
-   "zh": "确认内容",
+   "zh": "确认内容后，",
    "meta": {
     "blob": 291,
     "offset": 26216,
@@ -12306,7 +15518,7 @@
    "id": "row::15560",
    "en": "and return to Main menu.",
    "ja": "メインメニューに戻ります。",
-   "zh": "并返回主菜单。",
+   "zh": "返回主菜单。",
    "meta": {
     "blob": 291,
     "offset": 26264,
@@ -12317,7 +15529,7 @@
    "id": "row::15561",
    "en": "<Create a new event.>",
    "ja": "<新しいイベントをつくります。>",
-   "zh": "<建立一个新事件。>",
+   "zh": "<创建一个新事件。>",
    "meta": {
     "blob": 291,
     "offset": 26796,
@@ -12339,7 +15551,7 @@
    "id": "row::15564",
    "en": "and place a village on the map.",
    "ja": "村を設置してください。",
-   "zh": "并在地图上放置一个村庄。",
+   "zh": "在地图上设置村庄。",
    "meta": {
     "blob": 291,
     "offset": 27376,
@@ -12350,7 +15562,7 @@
    "id": "row::15565",
    "en": "This village already",
    "ja": "この村にはすでに",
-   "zh": "这个村庄已经",
+   "zh": "这个村庄已经有",
    "meta": {
     "blob": 291,
     "offset": 27908,
@@ -12361,7 +15573,7 @@
    "id": "row::15566",
    "en": "has three villagers.",
    "ja": "三人の村人がいます。",
-   "zh": "有三个村民。",
+   "zh": "三名村民了。",
    "meta": {
     "blob": 291,
     "offset": 27956,
@@ -12372,7 +15584,7 @@
    "id": "row::15567",
    "en": "Please pick another village.",
    "ja": "ほかの村をえらんでください。",
-   "zh": "请选择另一个村庄。",
+   "zh": "请选择其他村庄。",
    "meta": {
     "blob": 291,
     "offset": 28004,
@@ -12383,7 +15595,7 @@
    "id": "row::15569",
    "en": "and place a cave on the map.",
    "ja": "どうくつを設置してください。",
-   "zh": "并在地图上放置一个洞穴。",
+   "zh": "在地图上设置洞穴。",
    "meta": {
     "blob": 291,
     "offset": 28536,
@@ -12394,7 +15606,7 @@
    "id": "row::15570",
    "en": "Move the Evil Lord Castle.",
    "ja": "魔王城の位置を移動します。",
-   "zh": "移动魔王城。",
+   "zh": "移动魔王城的位置。",
    "meta": {
     "blob": 291,
     "offset": 29648,
@@ -12405,7 +15617,7 @@
    "id": "row::15571",
    "en": "Give a name to the Evil Lord.",
    "ja": "魔王に名前をつけます。",
-   "zh": "给魔王起名。",
+   "zh": "为魔王起名。",
    "meta": {
     "blob": 291,
     "offset": 30228,
@@ -12416,7 +15628,7 @@
    "id": "row::15572",
    "en": "Set the strength of the Evil Lord.",
    "ja": "魔王の強さを設定します。",
-   "zh": "设置魔王的强度。",
+   "zh": "设定魔王的强度。",
    "meta": {
     "blob": 291,
     "offset": 30808,
@@ -12427,7 +15639,7 @@
    "id": "row::15573",
    "en": "The Evil Lord's script at the quest's start.",
    "ja": "登場する魔王のセリフです。",
-   "zh": "任务开始时魔王的台词。",
+   "zh": "魔王登场时的台词。",
    "meta": {
     "blob": 291,
     "offset": 31388,
@@ -12449,7 +15661,7 @@
    "id": "row::15575",
    "en": "The Evil Lord's script before battle.",
    "ja": "魔王のバトル前のセリフです。",
-   "zh": "战斗前魔王的台词。",
+   "zh": "魔王战斗前的台词。",
    "meta": {
     "blob": 291,
     "offset": 32548,
@@ -12471,7 +15683,7 @@
    "id": "row::15577",
    "en": "Set the Evil Lord's appearance.",
    "ja": "魔王の見た目を設定します。",
-   "zh": "设置魔王的外观。",
+   "zh": "设定魔王的外观。",
    "meta": {
     "blob": 291,
     "offset": 33708,
@@ -12482,7 +15694,7 @@
    "id": "row::15578",
    "en": "Look up a tutorial.",
    "ja": "チュートリアルを確認できます。",
-   "zh": "查看教程。",
+   "zh": "可以查看教程。",
    "meta": {
     "blob": 291,
     "offset": 34288,
@@ -22349,7 +25561,7 @@
    "id": "row::17394",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 2852,
@@ -22382,7 +25594,7 @@
    "id": "row::17399",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 3276,
@@ -22415,7 +25627,7 @@
    "id": "row::17404",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 3700,
@@ -22448,7 +25660,7 @@
    "id": "row::17409",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 4124,
@@ -22481,7 +25693,7 @@
    "id": "row::17414",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 4548,
@@ -22514,7 +25726,7 @@
    "id": "row::17419",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 6668,
@@ -22547,7 +25759,7 @@
    "id": "row::17424",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 7092,
@@ -22580,7 +25792,7 @@
    "id": "row::17429",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 7516,
@@ -22613,7 +25825,7 @@
    "id": "row::17434",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 7940,
@@ -22646,7 +25858,7 @@
    "id": "row::17439",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 10908,
@@ -22679,7 +25891,7 @@
    "id": "row::17444",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 11332,
@@ -22712,7 +25924,7 @@
    "id": "row::17449",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 11756,
@@ -22745,7 +25957,7 @@
    "id": "row::17454",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 12180,
@@ -22778,7 +25990,7 @@
    "id": "row::17459",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 12604,
@@ -22811,7 +26023,7 @@
    "id": "row::17464",
    "en": "Name: Goddess Statue Strap; Type: Event Item?",
    "ja": "名前：女神像ストラップ　しゅるい：イベントアイテム？",
-   "zh": "名称：女神像饰物　类型：活动道具？",
+   "zh": "名称：女神像饰物　类型：事件道具？",
    "meta": {
     "blob": 324,
     "offset": 13028,
@@ -34174,7 +37386,7 @@
    "id": "row::61270",
    "en": "Event: [Talking Event]",
    "ja": "イベント：[イベント会話]",
-   "zh": "事件：[对话]",
+   "zh": "事件：[对话事件]",
    "meta": {
     "blob": 291,
     "offset": 20320,
@@ -34185,7 +37397,7 @@
    "id": "row::61271",
    "en": "Event: [Talking Event - Reward]",
    "ja": "イベント：[イベント会話・お礼]",
-   "zh": "事件：[对话・谢礼]",
+   "zh": "事件：[对话事件・谢礼]",
    "meta": {
     "blob": 291,
     "offset": 20900,
@@ -34207,7 +37419,7 @@
    "id": "row::61273",
    "en": "Event: [Cave Event]",
    "ja": "イベント：[イベントどうくつ]",
-   "zh": "事件：[洞窟]",
+   "zh": "事件：[洞穴事件]",
    "meta": {
     "blob": 291,
     "offset": 22060,
@@ -34240,7 +37452,7 @@
    "id": "row::61276",
    "en": "Event: [Overland Event]",
    "ja": "イベント：[地上イベント]",
-   "zh": "事件：[地上]",
+   "zh": "事件：[地上事件]",
    "meta": {
     "blob": 291,
     "offset": 23800,
@@ -34251,7 +37463,7 @@
    "id": "row::61277",
    "en": "Event: [Overland Event - Reward]",
    "ja": "イベント：[地上イベント・お礼]",
-   "zh": "事件：[地上・谢礼]",
+   "zh": "事件：[地上事件・谢礼]",
    "meta": {
     "blob": 291,
     "offset": 24380,
@@ -34306,7 +37518,7 @@
    "id": "row::61282",
    "en": "appearance/strength/numbers",
    "ja": "見た目／強さ／数などを",
-   "zh": "外观／强度／数量等",
+   "zh": "外观、强度、数量等",
    "meta": {
     "blob": 291,
     "offset": 1468,
@@ -34328,7 +37540,7 @@
    "id": "row::61284",
    "en": "appearance/level/cost",
    "ja": "見た目／強さ／値段などを",
-   "zh": "外观／强度／价格等",
+   "zh": "外观、强度、价格等",
    "meta": {
     "blob": 291,
     "offset": 2048,
