@@ -149,7 +149,8 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 # 已知问题
 
 见 `docs/KNOWN_ISSUES.md`。要点：大量"未翻译"是刻意保留；对话误译（TODO-5）仍在推进；
-敌人名未翻译；Steam 校验会还原汉化。
+图鉴敌名/Boss 名已于 Z23/Z24 上屏（仍有少量敌技名与说明短句待补）；存档自定义名会随载体码漂移；
+Steam 校验会还原汉化。未完成项汇总见 `docs/TODO.md`。
 
 ---
 
@@ -179,7 +180,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；当前发布包为 Z19（`package_names_cn_reuse_z19`）
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；当前发布包为 Z19（`package_names_cn_reuse_z19`）；Z22–Z24 为测试包，尚未并入基线（见 `docs/TODO.md` T-07）
 ```
 
 ---

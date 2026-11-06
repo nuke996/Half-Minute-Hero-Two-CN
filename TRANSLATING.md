@@ -344,7 +344,8 @@ translator-view/
 ## 17.4 容量理由已消失（2026-10-22 评估）
 
 **[已验证 · Z15 口径]** 同字复用后新格余量 551（见 `TECHNICAL.md` §4.5）。
-2026-10-30 按当前译表（含 Z18 新增字与 Z19 校对）重算为 **2300/2847，余量 547 格**。
+2026-10-30 按当前译表（含 Z18 新增字与 Z19 校对）重算为 **2300/2847，余量 547 格**；
+2026-11-06 实测为 **新字形 2299/2847（余 548）**，`cmap` 合计 2819 字（含同字复用 520）。
 按生产语料（CSV + Z11/Z13/Z14 额外行 + 多行 + 歌词 + DLC）实测：
 
 - **关闭 REPL、保留 HL**：当前显示文本只新增 **1 个**未覆盖字「窟」，只占 1 格；
@@ -370,7 +371,8 @@ python tools/build.py --game-dir work/original package_names_cn_reuse_norepl
 ```
 
 > 当前发布链是 Z19（`package_names_cn_reuse_z19`，含歌词与对话校对）；词典改动后同样要对它
-> 重建一次，否则 `dist/Z19-proofread` 与译表不一致。
+> 重建一次，否则 `dist/Z19-proofread` 与译表不一致。`dist/Z19-proofread` 尚未并入 Z22–Z24
+> 的译表与敌名放行，见 `docs/TODO.md` T-07。
 
 - 导入校对时：`汉化-导入校对.bat` = 应用词典；`汉化-导入校对-不应用词典.bat`
   = `import_review.py apply --no-repl`。两者读同一批 JSON，只切换 REPL 开关。

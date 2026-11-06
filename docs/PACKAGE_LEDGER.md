@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-04（Z21 描述 0x5F 尾字节修复测试包）
+> 最近更新：2026-11-05（Z24 地图编辑器重译 + 跨表专名统一测试包）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 
 ---
@@ -30,7 +30,7 @@
 
 ## 2. 当前包谱系
 
-| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-11-04） |
+| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-11-05） |
 |---|---|---|---|---|
 | **stable**（E3） | `package_stable_names` | `dist/stable-names-en/` | 只写 `LANG_EN`；机制名/伙伴名/称号等保持原版；其余中文；当前译表；**2026-11-01 起收尾加 `sync_e3_display_columns()`**：已放行显示列（Boss 说话人名 pos92 / 地图编辑器 UI `b715` pos112）整槽全副本同步，与机制名同名的串（Guy/Yashu/Athena/Roken/Geezer/Cozain/None/Hero/Shield/Shoes 等 12 个）整库回写原版；不含视频/歌词（`song=False`） | **稳定基准**，历次验证可玩；**2026-11-04 重建：并入描述 0x5F 尾字节修复**（载体码/原生码均规避；便携女神像/升级降级药水说明恢复中文），自检 **error 0 / warning 1**（DLC 因缺原件备份跳过校验）。sha256（含视频合入后的最终 `dist`）`LANG_EN 542e5fea790d` / `texture ae920700e118` / `cscv e5c0d323ce6a` / `DLC01 85fbbc371fcd` / `LANG_JA 924eff209d0e`（未改） |
 | **Z10b** | `package_names_cn_mech_hash` | `dist/Z10b-mech-names/` | 仅技能/装备名中文 + 操作数重算；伙伴名与其余 collide 原版；**称号已恢复原版** | 序章五项、技能、装备、商店正常（2026-10-21） |
@@ -75,7 +75,7 @@
 | 敌名/Boss 名异常 | `Z12_RELEASE_COLS` 几何；`b407 +4`、`b4…+92`；全副本终串 | 回滚 Z11；或拆包只保留 UI/音乐 |
 | 敌人/伙伴技能名仍英文 | 是否在 `b83/b394/b417/b654 +28` 参数列；是否被 token 过滤规则排除 | 用 Z13/Z14；`Disable/Enable/Utau/Title01` 等 token 不应翻译；Z14 起称号名也已中文化 |
 | 武器合成界面英文 | `b99 off16/off56`、`b25 Materials` 是否有行 | Z13 已用额外译表行补上；若回退则恢复英文 |
-| 界面/物品少量漏译 | 未放行表/未登记副本 | 记为正式版前收尾项，不是回归 |
+| 界面/物品少量漏译 | 未放行表/未登记副本 | 见 `docs/TODO.md` T-04/T-05；正式版前收尾项，不是回归 |
 | 生僻字 `?` | 字库覆盖 / `cmap` | 检查 `build_plan` 覆盖率；不要用 `?` 判断漏译 |
 | 某处文本仍是原文 | 可能受 collide/称号/Q16/键列保护 | 查 `docs/PITFALLS.md`，不要直接放行整表 |
 | **「小咕的歌」页歌词仍为英文** | `cscv[355]` 歌曲表英文行是否写入（Z 系列曾 `song=False`） | 用 Z19（2026-10-30 起含歌词）；Z18 及更早包需重建，见 `PITFALLS.md` §38 |
@@ -100,7 +100,7 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 # Z15：同字复用原版日文汉字槽位（方案 B，重画简中字形）
 python tools/build.py --game-dir work/original package_names_cn_reuse
 
-# 当前发布包 Z19（对话校对 + cscv[355] 歌词 + 4 个视频）
+# 当前发布包 Z19（对话校对 + cscv[355] 歌词 + 4 个视频；尚未并入 Z22–Z24，见 `docs/TODO.md` T-07）
 python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 ```
 
@@ -113,8 +113,9 @@ python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 
 ## 5. 已知未完成 / 暂不处理
 
-- 界面少量漏译：道具收藏中的 `Mu`/`Xi` 已在 Z18 补译（缪/克西，见 `PITFALLS.md` §34/§36）；
-  仍待收尾的只有怪物图鉴第 1 项 `Jelly`、地图编辑器 `Explanation` 栏等零散项。
+- 界面少量漏译：道具收藏 `Mu`/`Xi`（Z18）、图鉴第 1 项 `Jelly`（Z23 列表名）、
+  地图编辑器 `Explanation` 栏（Z24）均已处理；剩余零散项（`b630`/`b845`/`b1010`/`b892`、
+  敌技名与说明短句）汇总在 `docs/TODO.md` T-04/T-05。
 - 武器合成界面（`b99`，stride 308）：**Z13 起已用额外译表行补上**（此前未登记进译表，
   不是守卫/未放行问题）——
   - `b99 off16` `Wooden Sword +1`（rec0 名称）无 CSV 行；

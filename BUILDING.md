@@ -240,7 +240,7 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 > E3 / Z4 等隔离配方不受影响，通过上表各自的命令调用。
 
 结论与失败教训见 `TECHNICAL.md` §10.3 与 `docs/PITFALLS.md` §25；
-当前可用包与已知缺陷见 `docs/KNOWN_ISSUES.md` §10.1。
+当前可用包与已知缺陷见 `docs/KNOWN_ISSUES.md` §10.3；未完成项见 `docs/TODO.md`。
 
 ### 5.5.1 日语包与英语包的区别（重要）
 
