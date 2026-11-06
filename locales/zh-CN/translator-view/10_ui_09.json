@@ -13879,7 +13879,7 @@
    "id": "row::53233",
    "en": "You defeated Super Mudman!",
    "ja": "超土おとこ撃破！",
-   "zh": "你击败了超级泥人！",
+   "zh": "你击败了超级泥浆怪！",
    "meta": {
     "blob": 928,
     "offset": 61724,
@@ -13890,7 +13890,7 @@
    "id": "row::53234",
    "en": "You defeated Super Mudman King!",
    "ja": "超土おとこキング撃破！",
-   "zh": "你击败了超级泥人之王！",
+   "zh": "你击败了超级泥浆王！",
    "meta": {
     "blob": 928,
     "offset": 63768,
@@ -23042,7 +23042,7 @@
    "id": "row::54523",
    "en": "Dark Goddess",
    "ja": "黒女神",
-   "zh": "黑暗女神",
+   "zh": "黑女神",
    "meta": {
     "blob": 941,
     "offset": 78952,
@@ -32502,7 +32502,7 @@
    "id": "row::56593",
    "en": "Dark Goddess",
    "ja": "黒女神",
-   "zh": "黑暗女神",
+   "zh": "黑女神",
    "meta": {
     "blob": 974,
     "offset": 250064,

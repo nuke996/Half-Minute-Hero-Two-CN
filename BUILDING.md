@@ -222,7 +222,7 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 | `package_names_cn_reuse_z22` | `dist/Z22-ui-lowrisk/` | **Z22（测试）**：Z21 + 低风险 UI 补译批：`b25` 键值 UI 消息表值列 295 条（城堡面板/道具类型/铁匠铺/地图编辑器/在线菜单）、`b99` 合成说明首段 2 条、`b763` `Up` 1 条（合计新增 298 行）、`b642` 武器种名 12 条、`b763` 按键名整列、`b186` `Switch`。见 `docs/PITFALLS.md` §41、`docs/PACKAGE_LEDGER.md` §2 |
 | `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | **Z23（测试）**：Z22 + **图鉴敌人/Boss 列表名批次**（怪物页 `b734` +40 138 条；头目页 `b555` +40 107 条；同名副本 `b54` +40、`b105`/`b529` +92；`Hero<>` 模板槽与 `b509/908` 脚本键槽除外）+ `活动道具`→`事件道具`。敌名放行只在本配方启用（`HMH2_Z23_RELEASE=1`，子进程传递），不影响 stable/旧配方。见 `docs/PITFALLS.md` §42、`docs/PACKAGE_LEDGER.md` §2 |
-| `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | **Z24（测试）**：Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（主菜单/故事类型/事件/重要设置/教程/错误提示/魔王台词等共 206 槽）。`b291` 是 **48 字节一格、一格一行**的显示网格，必须整句理解后按原行数切回各格；`<…>` 标记不拆行。见 `docs/PITFALLS.md` §43、`docs/PACKAGE_LEDGER.md` §2 |
+| `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | **Z24（测试）**：Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（206 槽）+ **怪物/头目专有名词统一**（91 行：`オニグモン`→鬼蜘蛛、`黒女神`→黑女神、`ザントヘル`→赞特赫尔、`魔王ケルベロス`→刻耳柏洛斯、`元魔王軍`→前魔王军 等）。`b291` 是 **48 字节一格、一格一行**的显示网格，必须整句理解后按原行数切回各格；`<…>` 标记不拆行。见 `docs/PITFALLS.md` §43/§44、`docs/PROOFREAD_NAME_REPORT.md` |
 
 用法示例：
 

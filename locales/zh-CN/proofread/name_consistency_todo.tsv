@@ -1,0 +1,93 @@
+issue	priority	category	ja_name	en_name	row_id	blob	offset	slot_kind	ja	en	old_zh	new_zh	status	closer_to_original	note
+NC-04	P0	名表冲突	四天大名ゾゾラノスケ	Warlord Zozoranosuke	23452	407	223748	b407 敌名	四天大名ゾゾラノスケ<>	Warlord Zozoranosuke	战国大名佐佐拉之助	四天大名佐佐拉之助	applied	四天大名更贴原文	原文「四天大名」≠「戦国大名」
+NC-05	P0	名表冲突	四天大名タイラエモン	Warlord Tairaemon	23453	407	223984	b407 敌名	四天大名タイラエモン<>	Warlord Tairaemon	战国大名平右卫门	四天大名平右卫门	applied	四天大名更贴原文	同上
+NC-06	P0	名表冲突	四天大名ヴェトランコ	Warlord Vetranko	23456	407	224692	b407 敌名	四天大名ヴェトランコ<>	Warlord Vetranko	战国大名维特兰科	四天大名维特拉恩科	applied	四天大名更贴原文	同上
+NC-07	P0	名表冲突	超機械兵T3000	Mech Warrior T3000	22716	407	28576	b407 敌名	超機械兵T3000<>	Mech Warrior T3000	机器兵T3000	超级机器兵T3000	applied	超级更贴原文	原文有「超」
+NC-07	P0	名表冲突	超機械兵T3000	Mech Warrior T3000	40023	734	69320		超機械兵T3000<>	Mech Warrior T3000	机器兵T3000	超级机器兵T3000	applied	超级更贴原文	原文有「超」
+NC-07	P0	名表冲突	超機械兵T3000	Mech Warrior T3000	58093	1008	72000	宝箱/掉落名	超機械兵T3000<>	Mech Warrior T3000	机器兵T3000	超级机器兵T3000	applied	超级更贴原文	原文有「超」
+NC-09	P1	正文/人名词	黒女神	The Dark Goddess is very likely to invoke a	8826	166	7768		「黒女神は必ず今までの神々よりも強力な	The Dark Goddess is very likely to invoke a	「黑暗女神很可能会发动一首	「黑女神很可能会发动一首	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	14578	280	1272		黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	23268	407	175132	b407 敌名	黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	28767	502	67272		黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	28770	502	67564		黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	54523	941	78952		黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-09	P1	正文/人名词	黒女神	Dark Goddess	56593	974	250064		黒女神	Dark Goddess	黑暗女神	黑女神	applied	日文「黒」＝黑，黑女神更字面；EN Dark Goddess 可支持黑暗女神	低风险：正文 193 处已是黑女神，只改名表少量「黑暗女神」
+NC-10	P1	正文/人名词	ザントヘル	Zant Hell	23232	407	164748	b407 敌名	ザントヘル	Zant Hell	赞特地狱	赞特赫尔	applied	ザントヘル是纯音译；赞特赫尔更贴近日文读音	正文 23 处已是赞特赫尔，只改名表
+NC-10	P1	正文/人名词	ザントヘル	Zant Hell	25670	445	71532		ザントヘル	Zant Hell	赞特地狱	赞特赫尔	applied	ザントヘル是纯音译；赞特赫尔更贴近日文读音	正文 23 处已是赞特赫尔，只改名表
+NC-10	P1	正文/人名词	ザントヘル	Zant Hell	25672	445	71820		ザントヘル	Zant Hell	赞特地狱	赞特赫尔	applied	ザントヘル是纯音译；赞特赫尔更贴近日文读音	正文 23 处已是赞特赫尔，只改名表
+NC-10	P1	正文/人名词	ザントヘル	Zant Hell	45653	795	309632		ザントヘル	Zant Hell	赞特地狱	赞特赫尔	applied	ザントヘル是纯音译；赞特赫尔更贴近日文读音	正文 23 处已是赞特赫尔，只改名表
+NC-11	P1	名表冲突	モグモグ	Bothersome Nomnom	23009	407	103860	b407 敌名	めいわくモグモグ	Bothersome Nomnom	烦人的诺曼	烦人的吃吃怪	applied	モグモグ是咀嚼拟声词；吃吃怪更贴原文	
+NC-11	P1	名表冲突	モグモグ	Minion Nomnom	23065	407	121560	b407 敌名	手下モグモグ	Minion Nomnom	手下诺曼	手下吃吃怪	applied	モグモグ是咀嚼拟声词；吃吃怪更贴原文	
+NC-13	P1	正文/人名词	神パニシュエル	I am God Punishuel!	31906	586	2804		「わたしの名は神パニシュエル！」	I am God Punishuel!	「我是神帕尼舒埃尔！」	「我是神帕尼休尔！」	applied	两者皆音译	只改 2 行对话
+NC-13	P1	正文/人名词	神パニシュエル	God Punishuel appears to be holed up in this temple!	31926	586	7184		「あの神パニシュエルはこの神殿にいるようねっ！」	God Punishuel appears to be holed up in this temple!	「神帕尼舒埃尔似乎就藏在这座神殿里！」	「神帕尼休尔似乎就藏在这座神殿里！」	applied	两者皆音译	只改 2 行对话
+NC-14	P1	正文/人名词	聖のオラトゥーリオ	My name is Oratoolio of the Holy.	808	29	8124		　聖のオラトゥーリオである」	My name is Oratoolio of the Holy.	　名为神圣的奥拉图里奥。」	　名为神圣的奥拉托里奥。」	applied	音译用字差异（托/图）	
+NC-14	P1	正文/人名词	聖のオラトゥーリオ	Oratoolio of the Holy: Raita Kazama	2013	54	32428		聖のオラトゥーリオ：風間雷太	Oratoolio of the Holy: Raita Kazama	神圣奥拉图里奥：风间雷太	神圣奥拉托里奥：风间雷太	applied	音译用字差异（托/图）	
+NC-15	P1	正文/人名词	鏡のカプリティオ	I am Caprittio of the Mirrors and one of the God Nine.	58293	1013	13964		　私はゴッドナイン　鏡のカプリティオ」	I am Caprittio of the Mirrors and one of the God Nine.	　我是九神之一、镜之卡普里提奥。」	　我是九神之一、镜之卡普里蒂奥。」	applied	音译用字差异（蒂/提）	
+NC-16	P1	正文/人名词	海のレイケ	I am Leike of the Seas, one of the God Nine.	39517	730	2576		　わたしはゴッドナイン　海のレイケ」	I am Leike of the Seas, one of the God Nine.	　我是九神之一、海之莱克。」	　我是九神之一、海之雷克。」	applied	音译用字差异（雷/莱）	
+NC-17	P1	正文/人名词	ドスマンモG5	Dosmammo G5: Ittoku	1971	54	23188		ドスマンモG5：一徳	Dosmammo G5: Ittoku	多斯马默G5：一徳	多斯曼G5：一徳	applied	ドス+マンモ（猛犸）音译；多出无依据字	
+NC-17	P1	正文/人名词	ドスマンモG5	So you're the one who defeated Dosmammo G5.	29673	510	101564		　ドスマンモG5をたおしたのもおまえか」	So you're the one who defeated Dosmammo G5.	　打败多斯马魔G5的也是你吧。」	　打败多斯曼G5的也是你吧。」	applied	ドス+マンモ（猛犸）音译；多出无依据字	
+NC-18	P1	正文/人名词	ビッグマンモス	… Big Mammoth!!!	47737	813	34988		　・・・ビッグマンモスよ！！！」	… Big Mammoth!!!	　…大猛犸！！！」	　…巨猛犸！！！」	applied	Big＝巨；巨猛犸更贴英文	
+NC-18	P1	正文/人名词	ビッグマンモス	Analyzing that Big Mammoth monster…	47761	813	42224		「あのビッグマンモスというモンスター・・・」	Analyzing that Big Mammoth monster…	「那只叫大猛犸的怪物……」	「那只叫巨猛犸的怪物……」	applied	Big＝巨；巨猛犸更贴英文	
+NC-18	P1	正文/人名词	ビッグマンモス	monster that awaits you in this cave.	47774	813	44040		　ビッグマンモスをたおしてクダサイ」	monster that awaits you in this cave.	　洞穴里的大猛犸。」	　洞穴里的巨猛犸。」	applied	Big＝巨；巨猛犸更贴英文	
+NC-19	P1	正文/人名词	ゴッドキャノン	Protect us, <God Cannon>!!	57305	997	3452		　守れよ<ゴッドキャノン>！」	Protect us, <God Cannon>!!	　保护我们，<神之大炮>！！」	　保护我们，<炮神>！！」	applied	神之大炮更直译；炮神更像专有名	低风险：只改 2 行对话
+NC-19	P1	正文/人名词	ゴッドキャノン	Ah! So that must be the <God Cannon> the God mentioned…	57349	997	22660		「あー　あれが神の言ってた<ゴッドキャノン>か・・・	Ah! So that must be the <God Cannon> the God mentioned…	「啊！那肯定就是神说过的<神之大炮>…	「啊！那肯定就是神说过的<炮神>…	applied	神之大炮更直译；炮神更像专有名	低风险：只改 2 行对话
+NC-20	P1	名表冲突	うにコーン	Ultra Urchincorn	23357	407	198732	b407 敌名	超うにコーン	Ultra Urchincorn	超级尤尼肯	超级海胆兽	applied	うに＝海胆，Urchincorn＝urchin+corn	
+NC-21	P1	正文/人名词	土おとこ	Soldier: Darn! Super Mudman! And Super Mudman King!	757	24	5396		兵士「くそ！　超土おとこめ！　超土おとこキングめ！」	Soldier: Darn! Super Mudman! And Super Mudman King!	士兵「可恶！超级泥人！还有超级泥人王！」	士兵「可恶！超级泥人！还有超级泥浆王！」	applied	土おとこ＝Mudman；泥浆怪更像怪物名	
+NC-21	P1	正文/人名词	土おとこ	Soldier: Darn! Super Mudman! And Super Mudman King!	757	24	5396		兵士「くそ！　超土おとこめ！　超土おとこキングめ！」	Soldier: Darn! Super Mudman! And Super Mudman King!	士兵「可恶！超级泥人！还有超级泥浆王！」	士兵「可恶！超级泥浆怪！还有超级泥浆王！」	applied	土おとこ＝Mudman；泥浆怪更像怪物名	
+NC-21	P1	正文/人名词	土おとこ	You defeated Super Mudman!	53233	928	61724		超土おとこ撃破！	You defeated Super Mudman!	你击败了超级泥人！	你击败了超级泥浆怪！	applied	土おとこ＝Mudman；泥浆怪更像怪物名	
+NC-21	P1	正文/人名词	土おとこ	You defeated Super Mudman King!	53234	928	63768		超土おとこキング撃破！	You defeated Super Mudman King!	你击败了超级泥人之王！	你击败了超级泥浆王！	applied	土おとこ＝Mudman；泥浆怪更像怪物名	
+NC-22	P1	名表派生	ハイロウＳ	Fallen Angel Hairo S	23042	407	114480	b407 敌名	滅天使ハイロウＳ	Fallen Angel Hairo S	堕落天使海罗S	灭天使海罗S	applied	S 版改用 Fallen 的「堕落」，与日文「滅天使」脱节	
+NC-23	P1	名表派生	ハイロウＳ	Burning Angel Hairo S	23043	407	114716	b407 敌名	熱天使ハイロウＳ	Burning Angel Hairo S	燃烧天使海罗S	炎天使海罗S	applied	S 版改用「燃烧」	
+NC-24	P1	名表派生	ハイロウＳ	Lucky Angel Hairo S	23044	407	114952	b407 敌名	幸天使ハイロウＳ	Lucky Angel Hairo S	幸运天使海罗S	吉天使海罗S	applied	S 版改用「幸运」	
+NC-25	P1	名表派生	ハイロウＳ	Lost Angel Hairo S	23045	407	115188	b407 敌名	忘天使ハイロウＳ	Lost Angel Hairo S	失落天使海罗S	忘天使海罗S	applied	S 版改用「失落」	
+NC-26	P1	名表派生	ハイロウＳ	Merchant Angel Hairo S	23046	407	115424	b407 敌名	商天使ハイロウＳ	Merchant Angel Hairo S	商业天使海罗S	商天使海罗S	applied	S 版改用「商业」	
+NC-27	P1	名表派生	ハイロウＳ	Fishing Angel Hairo S	23047	407	115660	b407 敌名	釣天使ハイロウＳ	Fishing Angel Hairo S	钓鱼天使海罗S	钓天使海罗S	applied	S 版改用「钓鱼」	
+NC-28	P1	名表派生	ハイロウＳ	Insect Angel Hairo S	23048	407	115896	b407 敌名	虫天使ハイロウＳ	Insect Angel Hairo S	昆虫天使海罗S	虫天使海罗S	applied	S 版改用「昆虫」	
+NC-29	P1	名表派生	ハイロウＳ	Muscle Angel Hairo S	23049	407	116132	b407 敌名	筋天使ハイロウＳ	Muscle Angel Hairo S	肌肉天使海罗S	筋天使海罗S	applied	S 版改用「肌肉」	
+NC-30	P1	名表派生	ハイロウＳ	Flavor Angel Hairo S	23050	407	116368	b407 敌名	味天使ハイロウＳ	Flavor Angel Hairo S	香味天使海罗S	味天使海罗S	applied	S 版改用「香味」	
+NC-31	P2	名表派生	ジェリー	Grey Jelly	43975	777	38016	宝箱/掉落名	グレージェリー	Grey Jelly	灰色杰里	灰色果冻怪	applied	ジェリー＝jelly；果冻怪保留词义	杰里姆/杰里鲁/杰琳是不同名字，不要一起改
+NC-31	P2	名表派生	ジェリー	Weapon Jelly	44023	777	54772	宝箱/掉落名	ウェポンジェリー	Weapon Jelly	武器杰里	武器果冻怪	applied	ジェリー＝jelly；果冻怪保留词义	杰里姆/杰里鲁/杰琳是不同名字，不要一起改
+NC-31	P2	名表派生	ジェリー	God Jelly	44037	777	58076	宝箱/掉落名	ゴッドジェリー	God Jelly	神杰里	神果冻怪	applied	ジェリー＝jelly；果冻怪保留词义	杰里姆/杰里鲁/杰琳是不同名字，不要一起改
+NC-32	P2	名表派生	レイス	White Wraith	23246	407	169232	b407 敌名	ホワイトレイス	White Wraith	白影	白色幽灵	applied	White Wraith＝白色幽灵	
+NC-33	P2	名表派生	ウニー	Black Urchie	22699	407	24564	b407 敌名	クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-33	P2	名表派生	ウニー	Black Urchie	23129	407	136664	b407 敌名	クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-33	P2	名表派生	ウニー	Black Urchie	39978	734	59420		クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-33	P2	名表派生	ウニー	Black Urchie	39979	734	59456	图鉴名	クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-33	P2	名表派生	ウニー	Black Urchie	39980	734	59488		クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-33	P2	名表派生	ウニー	Black Urchie	58048	1008	61380	宝箱/掉落名	クロウニー	Black Urchie	黑色由奇	黑色乌尼	applied	クロウニー＝Black Urchie	
+NC-34	P2	名表派生	キラーウルフ	Killer Wolfo	44082	777	84036	宝箱/掉落名	キラーウルフォ	Killer Wolfo	杀手沃尔夫	杀人狼·沃尔夫	applied	Killer Wolfo 与 Killer Wolf 同族	
+NC-35	P2	名表派生	ジョーズ	Pervy Shark	23402	407	210532	b407 敌名	エロジョーズ	Pervy Shark	变态鲨鱼	变态大嘴怪	applied	Ero/Pervy + Chompers	
+NC-36	P2	名表派生	バレット	Sexy Barrett	700	17	58796		セクシーバレット	Sexy Barrett	性感子弹	性感巴雷特	applied	原文是 Barrett（枪名）不是 Bullet；子弹是误译	
+NC-36	P2	名表派生	バレット	Sexy Barrett 99	701	17	59372		セクシーバレット９９	Sexy Barrett 99	性感子弹99	性感巴雷特99	applied	原文是 Barrett（枪名）不是 Bullet；子弹是误译	
+NC-36	P2	名表派生	バレット	Sexy Barrett	23417	407	214544	b407 敌名	セクシーバレット	Sexy Barrett	性感子弹	性感巴雷特	applied	原文是 Barrett（枪名）不是 Bullet；子弹是误译	
+NC-36	P2	名表派生	バレット	Sexy Barrett 99	23418	407	214780	b407 敌名	セクシーバレット９９	Sexy Barrett 99	性感子弹99	性感巴雷特99	applied	原文是 Barrett（枪名）不是 Bullet；子弹是误译	
+NC-37	P2	名表派生	イエティ	Giant Divine Yetingo	23370	407	201800	b407 敌名	巨大神イエティンゴ	Giant Divine Yetingo	巨型神圣雪怪	巨型神圣雪人	applied	イエティンゴ是 Yeti 派生	
+NC-38	P2	名表派生	ゆきだるさん	Super Mr. Snowman	23349	407	196844	b407 敌名	ゆきだるさんスーパー	Super Mr. Snowman	超级雪人先生	超级雪娃娃	applied	两处用词不一致	
+NC-40	P2	正文/人名词	ハメツの運命	With a <Fate of Destruction> that transcends time...	42146	755	4500		時間をちょうえつした<ハメツの運命>が待っていた・・・	With a <Fate of Destruction> that transcends time...	伴随超越时间的<毁灭命运>……	伴随超越时间的<毁灭的命运>……	applied	仅缺「的」	
+NC-40	P2	正文/人名词	ハメツの運命	With a <Fate of Destruction> that transcends time...	49165	860	4500		時間をちょうえつした<ハメツの運命>が待っていた・・・	With a <Fate of Destruction> that transcends time...	伴随超越时间的<毁灭命运>……	伴随超越时间的<毁灭的命运>……	applied	仅缺「的」	
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	22790	407	47692	b407 敌名	オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	30967	555	15860		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	30968	555	15896	图鉴名	オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	30969	555	15928		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	56977	982	61140		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	57011	982	76616		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	60495	1056	11052		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-08	P1	正文/人名词	オニグモンG2	Onigumon G2	60500	1056	11628		オニグモンG2	Onigumon G2	欧尼鬼G2	鬼蜘蛛G2	applied	鬼蜘蛛更贴原文（オニ=鬼、クモ=蜘蛛）	2026-11-05 决策：全局改为鬼蜘蛛G2
+NC-01	P0	名表冲突	元魔王軍三等兵	Army Pvt 3rd Class	22660	407	13708	b407 敌名	元魔王軍三等兵<>	Army Pvt 3rd Class	元魔王军三等兵	前魔王军三等兵	applied	两者皆可；元更字面，前更口语	2026-11-05 决策：统一为前魔王军
+NC-02	P0	名表冲突	元魔王軍一等兵	Army Pvt 1st Class	22661	407	13944	b407 敌名	元魔王軍一等兵<>	Army Pvt 1st Class	元魔王军一等兵	前魔王军一等兵	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-03	P0	名表冲突	元魔王軍兵長	Army Corporal	22662	407	14180	b407 敌名	元魔王軍兵長<>	Army Corporal	元魔王军兵长	前魔王军兵长	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-01	P0	名表冲突	元魔王軍三等兵	Army Pvt 3rd Class	22959	407	89936	b407 敌名	元魔王軍三等兵<>	Army Pvt 3rd Class	元魔王军三等兵	前魔王军三等兵	applied	两者皆可；元更字面，前更口语	2026-11-05 决策：统一为前魔王军
+NC-01	P0	名表冲突	元魔王軍三等兵	Army Pvt 3rd Class	39861	734	33680		元魔王軍三等兵<>	Army Pvt 3rd Class	元魔王军三等兵	前魔王军三等兵	applied	两者皆可；元更字面，前更口语	2026-11-05 决策：统一为前魔王军
+NC-02	P0	名表冲突	元魔王軍一等兵	Army Pvt 1st Class	39864	734	34340		元魔王軍一等兵<>	Army Pvt 1st Class	元魔王军一等兵	前魔王军一等兵	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-03	P0	名表冲突	元魔王軍兵長	Army Corporal	39867	734	35000		元魔王軍兵長<>	Army Corporal	元魔王军兵长	前魔王军兵长	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-01	P0	名表冲突	元魔王軍三等兵	Army Pvt 3rd Class	58013	1008	53120	宝箱/掉落名	元魔王軍三等兵<>	Army Pvt 3rd Class	元魔王军三等兵	前魔王军三等兵	applied	两者皆可；元更字面，前更口语	2026-11-05 决策：统一为前魔王军
+NC-02	P0	名表冲突	元魔王軍一等兵	Army Pvt 1st Class	58014	1008	53356	宝箱/掉落名	元魔王軍一等兵<>	Army Pvt 1st Class	元魔王军一等兵	前魔王军一等兵	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-03	P0	名表冲突	元魔王軍兵長	Army Corporal	58022	1008	55244	宝箱/掉落名	元魔王軍兵長<>	Army Corporal	元魔王军兵长	前魔王军兵长	applied	同上	2026-11-05 决策：统一为前魔王军
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	1948	54	18500		魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	1949	54	18536	图鉴名	魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus: Kouichi	1950	54	18568		魔王ケルベロス：甲壱	Evil Lord Cerberus: Kouichi	魔王瑟伯勒斯：甲壱	魔王刻耳柏洛斯：甲壱	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	22769	407	42264	b407 敌名	魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	No matter. Gatekeeper Evil Lord Cerberus…	26337	466	3096		「いいですか　門番魔王ケルベロス	No matter. Gatekeeper Evil Lord Cerberus…	「无妨。看门魔王刻耳柏洛斯……	「无妨。门卫魔王刻耳柏洛斯……	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	30928	555	7280		魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	30929	555	7316	图鉴名	魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯
+NC-12	P1	正文/人名词	魔王ケルベロス	Evil Lord Cerberus	30930	555	7348		魔王ケルベロス	Evil Lord Cerberus	魔王瑟伯勒斯	魔王刻耳柏洛斯	applied	刻耳柏洛斯是 Cerberus 通用译名，更标准	2026-11-05 决策：统一为魔王刻耳柏洛斯

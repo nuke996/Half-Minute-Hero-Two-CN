@@ -3385,7 +3385,7 @@
    "id": "row::757",
    "en": "Soldier: Darn! Super Mudman! And Super Mudman King!",
    "ja": "兵士「くそ！　超土おとこめ！　超土おとこキングめ！」",
-   "zh": "士兵「可恶！超级泥人！还有超级泥人王！」",
+   "zh": "士兵「可恶！超级泥浆怪！还有超级泥浆王！」",
    "meta": {
     "blob": 24,
     "offset": 5396,
@@ -3517,7 +3517,7 @@
    "id": "row::808",
    "en": "My name is Oratoolio of the Holy.",
    "ja": "　聖のオラトゥーリオである」",
-   "zh": "　名为神圣的奥拉图里奥。」",
+   "zh": "　名为神圣的奥拉托里奥。」",
    "meta": {
     "blob": 29,
     "offset": 8124,
@@ -37177,7 +37177,7 @@
    "id": "row::8826",
    "en": "The Dark Goddess is very likely to invoke a",
    "ja": "「黒女神は必ず今までの神々よりも強力な",
-   "zh": "「黑暗女神很可能会发动一首",
+   "zh": "「黑女神很可能会发动一首",
    "meta": {
     "blob": 166,
     "offset": 7768,
