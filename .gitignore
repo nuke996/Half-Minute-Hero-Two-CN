@@ -3,6 +3,10 @@ build/
 dist/
 out/
 
+# Review import logs (written next to the import .bat, regenerated each run)
+locales/*/translator-view/导入报告.txt
+locales/*/translator-view/打包错误.txt
+
 # Temporary and working directories
 tmp/
 temp/

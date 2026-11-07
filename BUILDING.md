@@ -157,11 +157,14 @@ python tools/runner.py <脚本名> [参数]
   临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`；
   Z10b–Z14 已实测放行的显示槽（`released_row()`）即使仍被 apply_menu 保护，也导出到普通分片。
 - **导入**：`import_review.py apply` → 逐条比对 `zh` → **自检**（超长/id/非法字符）……
-  有任一错误即**中断**：不写译表、不打包，写 `build/校对/导入报告.txt` 指明问题条目；
+  有任一错误即**中断**：不写译表、不打包，报告写到与导入 bat 同目录的
+  `translator-view/导入报告.txt`，并整篇打印在命令行窗口（bat 结束会 `pause`，便于当场看原因）；
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
   → 自动跑 `tools/build.py package_names_cn_reuse_z19`（隔离模式）刷新
   `dist/Z19-proofread/`（Z18 配方 + 对话文本日文基准校对修订，含 DLC 地名汉字化、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
+  打包成功时命令行与报告都会输出本次 `dist` 目录的绝对路径；打包失败时完整构建输出写入
+  同目录的 `translator-view/打包错误.txt`，并打印末尾 25 行，退出码 1。
   不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
   （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
   对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。

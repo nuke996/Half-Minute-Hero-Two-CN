@@ -7,6 +7,7 @@
   · JSON 必须保持 UTF-8 编码（带 BOM 亦可）。
 
 自检（有任一错误即【中断】：不写译表、不打包，并输出日志指明是哪一条）：
+  · 日志写到 translator-view/导入报告.txt（与导入 .bat 同目录），同时整篇打印到命令行
   · 超长：编码字节数超过该槽位上限（装机时会被静默截断）
   · id 无法识别 / 找不到对应字段（导出后又改过译表，或 id 被改动）
   · JSON 结构损坏、非法控制字符、单行条目含换行
@@ -49,7 +50,9 @@ CSV_P = paths.data('text_v2.csv')
 MJ_P = os.path.join(WORK, 'ml_zh_fields.json')
 DLC_DIR = paths.data('dlc')
 STATE = os.path.join(RDIR, '_import_state.json')
-RPT = os.path.join(RDIR, '导入报告.txt')
+# 面向译者的日志与导入 .bat 同目录；导入记录等内部状态仍放 build/校对
+RPT = os.path.join(TV, '导入报告.txt')
+PKG_ERR = os.path.join(TV, '打包错误.txt')
 
 sys.path.insert(0, TOOLS)
 sys.path.insert(0, WORK)
@@ -70,9 +73,17 @@ def now():
     return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 
-def _flush():
-    open(RPT, 'w', encoding='utf-8').write('\n'.join(L))
-    print('OK ->', RPT)
+def _flush(exit_code=None):
+    """写日志到 translator-view（与 .bat 同目录），同时整篇打印到命令行。"""
+    text = '\n'.join(L)
+    os.makedirs(TV, exist_ok=True)
+    with open(RPT, 'w', encoding='utf-8') as f:
+        f.write(text + '\n')
+    print(text)
+    print()
+    print('导入报告: %s' % RPT)
+    if exit_code is not None:
+        sys.exit(exit_code)
 
 
 def collect_files():
@@ -110,6 +121,12 @@ def bad_chars(s, allow_nl):
 
 
 NO_REPL = False
+
+
+def dist_dir():
+    """本次导入会刷新的 dist 目录（绝对路径），便于在命令行直接看到结果位置。"""
+    name = 'Z15-reuse-kanji-norepl' if NO_REPL else 'Z19-proofread'
+    return os.path.join(paths.DIST_DIR, name)
 
 
 def run_package():
@@ -223,8 +240,7 @@ def do_apply():
         for name, why in dict_errs[:40]:
             P('  [X] %s: %s' % (name, why))
         P('  词典未写回；请修正 dict/替换词典.json 后重试。')
-        _flush()
-        return
+        _flush(1)
     if dict_backs:
         P('  替换词典：已写回 %s' % ', '.join(os.path.basename(p)
                                                for p in dict_backs))
@@ -233,7 +249,7 @@ def do_apply():
     if not files and not dict_backs:
         P('没找到校对文件（%s）。请先双击同目录的「汉化-导出校对.bat」生成，改完再导入。'
           % TV)
-        _flush(); return
+        _flush(1)
     if not files:
         P('  [说明] 未找到校对 JSON：本次只应用替换词典改动。')
 
@@ -465,7 +481,7 @@ def do_apply():
             P('    …（其余 %d 条略）' % (len(errs) - 60))
         P('')
         P('  修好后再导入。为避免误装，本次一个字节都没有写入。')
-        _flush(); return
+        _flush(1)
 
     if not edits and not dict_backs:
         P('')
@@ -573,19 +589,27 @@ def do_apply():
     if rc != 0:
         P('  [X] 打包失败（退出码 %s）。译表已写入，可运行「汉化-导入校对-回滚.bat」恢复。'
           % rc)
-        open(paths.build('_review_package_err.txt'), 'w', encoding='utf-8').write(
-            out + '\n--- STDERR ---\n' + err)
-        P('      错误详情: %s' % paths.build('_review_package_err.txt'))
+        os.makedirs(TV, exist_ok=True)
+        with open(PKG_ERR, 'w', encoding='utf-8') as f:
+            f.write(out + '\n--- STDERR ---\n' + err)
+        P('      完整构建输出: %s' % PKG_ERR)
+        P('  ---- 构建输出末尾（最后 25 行）----')
+        for ln in (out + '\n' + err).splitlines()[-25:]:
+            P('  ' + ln.rstrip())
+        P('')
+        P('  dist 目录（未刷新，仍是上一次成功打包的版本）: %s' % dist_dir())
+        _flush(1)
     else:
+        if os.path.exists(PKG_ERR):
+            os.remove(PKG_ERR)     # 成功后清掉上一次的错误日志，避免误读
         P('  ✓ 打包完成，dist/ 已刷新。')
+        P('  dist 目录: %s' % dist_dir())
         P('')
         P('五、构建自检（机制名/操作数/重名/token/DLC）')
         if stage is None:
             P('  [警告] 缺少原版文件，跳过构建自检。')
         else:
-            dist_dir = paths.dist('Z15-reuse-kanji-norepl' if NO_REPL
-                                  else 'Z19-proofread')
-            v_errs, v_warns = V.validate(dist_dir, stage)
+            v_errs, v_warns = V.validate(dist_dir(), stage)
             for w in v_warns[:8]:
                 P('  [警告] ' + w)
             if len(v_warns) > 8:
@@ -646,7 +670,20 @@ def do_revert():
         if any(k in s for k in ('已改', '打包完成', '打包中止', '空槽', '溢出')):
             P('  ' + s)
     P('  %s' % ('✓ dist 已按回滚后的译表刷新。' if rc == 0 else '[X] 打包失败（退出码 %s）' % rc))
-    _flush()
+    if rc == 0:
+        if os.path.exists(PKG_ERR):
+            os.remove(PKG_ERR)
+        P('  dist 目录: %s' % dist_dir())
+        _flush()
+    else:
+        os.makedirs(TV, exist_ok=True)
+        with open(PKG_ERR, 'w', encoding='utf-8') as f:
+            f.write(out + '\n--- STDERR ---\n' + err)
+        P('      完整构建输出: %s' % PKG_ERR)
+        P('  ---- 构建输出末尾（最后 25 行）----')
+        for ln in (out + '\n' + err).splitlines()[-25:]:
+            P('  ' + ln.rstrip())
+        _flush(1)
 
 
 if __name__ == '__main__':
