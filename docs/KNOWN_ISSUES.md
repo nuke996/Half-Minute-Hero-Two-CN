@@ -253,12 +253,12 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 | **Z15** | `dist/Z15-reuse-kanji/` | 回滚基线；龙 NPC、性感泳衣已实机恢复；DLC 船待复测 |
 | **Z17** | `dist/Z17-display-fill/` | 显示文本补全 + 4 个视频；音乐播放器购买列表闪退已修 |
 | **Z18** | `dist/Z18-dlc-place-names/` | 10-27 快照；DLC 战国地名 + 截图校对轮；**不含 cscv 歌词** |
-| **Z19** | `dist/Z19-proofread/` | **发布基线 / 默认导入目标**；对话校对 1821 单元；**含 cscv[355] 歌词**；自检 error 0 / warning 45。尚未并入 Z22–Z24 译表与敌名放行（`docs/TODO.md` T-07） |
+| **Z19** | `dist/Z19-proofread/` | 历史发布基线；曾为默认导入目标（2026-11-07 起改由 `CURRENT_REVIEW_RECIPE` 指针指向 Z24）；对话校对 1821 单元；**含 cscv[355] 歌词**；自检 error 0 / warning 45 |
 | **Z20** | `dist/Z20-desc-dodge/` | 实验：道具说明避字（验证"描述渲染器按码错位"）；构建于歌词修复前，**不含歌词**，不作发布基线 |
 | **Z21** | `dist/Z21-desc-5f-fix/` | 描述 0x5F 尾字节修复；**2026-11-04 实机通过**，修复已并入 Z19/stable |
 | **Z22** | `dist/Z22-ui-lowrisk/` | 低风险 UI 补译批（298 行）；未实机 |
 | **Z23** | `dist/Z23-ui-mediumrisk/` | 图鉴敌人/Boss 列表名放行 + 「事件道具」；未实机（中风险） |
-| **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；**最新测试包** |
+| **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；**最新测试包 / 当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z24`）；2026-11-07 已按当前译表重建 |
 
 > 完整哈希与症状定位见 `docs/PACKAGE_LEDGER.md` §2/§3；歌词问题的原因与适用范围见
 > `docs/PITFALLS.md` §38；未完成项见 `docs/TODO.md`。

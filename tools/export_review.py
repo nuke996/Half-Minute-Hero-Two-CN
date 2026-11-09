@@ -429,7 +429,10 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
   · 导入后会自动运行构建自检（名字副本、操作数、重名、token、DLC），
     有致命问题会【自动回滚】本次导入并恢复 dist，退出码 1。
   · 因为替换先于显示，JSON 里的 zh 已经是“压平后”的字面，所见即所得。
-  · 默认导入现在重建到 dist/Z19-proofread/（Z18 配方 + 对话文本日文基准校对修订，含 DLC 地名汉字化与 Z17-video 的 4 个视频）。
+  · 默认导入按 build_cn.py 的 CURRENT_REVIEW_RECIPE 指针重建（当前 z24 →
+    dist/Z24-mapeditor/，含 Z22/Z23/Z24 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、
+    DLC 地名、cscv[355] 歌词与 Z17-video 的 4 个视频）；产物目录会写 build_manifest.json，
+    导入报告会打印配方身份与输入哈希。
   · Z15 后字库余量 551 格，容量上已不需要 REPL 省字；保留它是为了术语一致。
   · 想查看“不套用 REPL”的原始措辞：双击 汉化-导入校对-不应用词典.bat，
     它会把补丁重建到 dist/Z15-reuse-kanji-norepl/（HL 仍生效）。

@@ -55,7 +55,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 53,2,2820,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 54,3,2636,256,128,21,Gospelia of the Light,光のゴスペリア,光之福音,光之戈斯佩莉亚
 55,3,2924,256,128,45,"It's been 30 seconds! Now, in blinding light…",「30秒です　まばゆい光の中で・・・,已经30秒了！现在，亮得刺眼……,「30秒。在刺眼的光芒中……
-56,3,3212,256,128,43,"all shall be purged, all shall be cleansed.",　ユメを見るように消えていきなさい」,所有都应净化，所有都应清洗。,　一切都将净化，一切都将涤清。」
+56,3,3212,256,128,43,"all shall be purged, all shall be cleansed.",　ユメを見るように消えていきなさい」,所有都应净化，所有都应清洗。,　就像做梦一样消失吧」
 57,4,972,64,32,13,Volcanosaurus,ボルカノサウルス,火山蜥蜴,火山蜥蜴
 58,4,1036,128,64,26,Whoa! Leave that sword be!,「グオー　剣には近づけさせぬ！」,哇哦！别动那剑！,「呜哦！休想靠近那把剑！」
 59,4,2700,64,32,21,Jarval the Rebellious,反逆のジャアブル,背叛者贾维尔,反叛的贾布尔
@@ -1414,7 +1414,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 1412,34,118316,64,32,13,Q70. RAGNAROK,Q70．ＲＡＧＮＡＲＯＫ,,Q70．诸神黄昏
 1413,34,119432,64,32,28,Q81. Fall of the Evil Castle,Q81．魔軍落城,,Q81．魔军陷落
 1414,34,120548,64,32,26,Q82. The Dark Ships Invade,Q82．暗黒船の襲来,,Q82．暗黑船杀到
-1415,34,121664,64,32,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,,Q83．战国王者30
+1415,34,121664,64,32,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,,Q83．战国勇者参十
 1416,34,122780,64,32,17,QXX． Impertinence,QXX．なまいきなっ,,QXX．无礼
 1417,34,123896,64,32,26,Q71. Heroes Meet in Heaven,Q71．天につどう勇者,,Q71．天界集结的勇者
 1418,34,125012,64,32,24,Q72. The One from Heaven,Q72．天から来るもの,,Q72．自天而降者
@@ -7534,7 +7534,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 7532,147,35396,32,16,11,Witch's Hat,まじょのぼうし,女巫帽子,魔女帽
 7533,147,35436,64,32,36,Official hat of _witches everywhere.,魔女っこ_オフィシャルなぼうし,世界各地的女巫们带的官方帽子。,各地魔女_官方帽子。
 7534,147,35664,32,16,16,Full Face Helmet,フルフェイス,全脸头盔,全脸盔
-7535,147,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑_机车时一定要戴。
+7535,147,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑机车时_一定要戴。
 7536,147,35932,32,16,10,Angel Ring,エンジェルリング,天使戒指,天使光环
 7537,147,35972,64,32,26,Like the ring of an angel.,天使のリングっぽい,天使之环。,就像天使的光环。
 7538,147,36200,32,16,13,Helm of Light,ひかりのかぶと,光明头盔,光之盔
@@ -8936,8 +8936,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 8934,166,52444,64,32,27,"Thanks to Coo's Timestream,",「クゥちゃんのタイムストリームのおかげで,感谢库的时间风暴，,「多亏了小咕的时之流，
 8935,166,52508,64,32,41,I've been able to figure out everything!!,　ぜ～んぶわかったんだから！！」,我已经弄清了一切！！,　我已经全都搞明白了！！」
 8936,166,53256,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-8937,166,53320,64,32,47,How could I have let myself be used like that!?,「まさか　わたしがあやつられていたなんてっ！！,我怎么可能让我自己被这样使用！？,「我怎么会被那样操控了！？
-8938,166,53384,64,32,32,I cannot let this go unanswered!,　このウラミはらさでおくべきかあ！！」,我不能置之不理！,　这仇我必报！！」
+8937,166,53320,64,32,47,How could I have let myself be used like that!?,「まさか　わたしがあやつられていたなんてっ！！,我怎么可能让我自己被这样使用！？,「没想到我竟然被人操控着！！
+8938,166,53384,64,32,32,I cannot let this go unanswered!,　このウラミはらさでおくべきかあ！！」,我不能置之不理！,　这仇怎能不报！！」
 8939,166,53548,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 8940,166,53612,64,32,10,It's time…,「このまんまじゃ終わらせないんだからっ,是时候了…,「我可不会就这么算了的
 8941,166,54716,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -9673,7 +9673,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9671,176,124048,64,32,49,But a crime is a crime. I must pay for my crimes.,　罪は罪　そして罪はつぐなわねばなりません」,但是犯罪就是犯罪。我必须为我的罪行付出代价。,　但罪便是罪，我必须赎清自己的罪。」
 9672,176,124276,64,32,54,"But before I do that, I must first hunt each and every",「しかしその前に　オレは地上に放たれた,但是在那之前，我必须先逐个,「但在那之前，我得先去猎杀每一个
 9673,176,124340,64,32,62,one of the Evil Lords that have come here from the Dark World.,　魔界の魔王どもを一匹残らず狩らねばならない」,打倒从黑暗世界过来的各个邪恶领主。,　从魔界来到此地的魔王。」
-9674,176,124568,64,32,39,I do this not because of duty or guilt…,「これは任務でも人助けでもなく,因为我罪恶的责任，我必须这么做...,「我这么做并非出于职责或愧疚…
+9674,176,124568,64,32,39,I do this not because of duty or guilt…,「これは任務でも人助けでもなく,因为我罪恶的责任，我必须这么做...,「这既不是任务，也不是为了帮谁…
 9675,176,124860,128,64,34,(… I'm doing it out of <revenge>…),（・・・・・・・・・<復讐>・・・か）,(… 我这么做是为了 <复仇>…),(…我是为了<复仇>才这么做的…)
 9676,176,125380,64,32,13,Princess Ciel,シエル王女,希尔公主,希尔公主
 9677,176,125444,128,64,17,… <YUSHA_NAME>… ?,「・・・・・・・<YUSHA_NAME>・・・？」,… <YUSHA_NAME>… ?,「…<YUSHA_NAME>…？」
@@ -9895,8 +9895,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9893,176,234296,64,32,6,Knight,ナイト,骑士,骑士
 9894,176,234360,128,64,6,… Yes.,「・・・は」,...是的。,「…是。」
 9895,176,234880,64,32,6,Knight,ナイト,骑士,骑士
-9896,176,234944,64,32,28,"… Yes, it has. ♪ Or has it!?",「・・・は～い♪　じゃないですよー！,...是的，好久了。？还是该说很久了！？,「…是啊♪ 还是说不是呢！？
-9897,176,235008,64,32,27,Where were the two of you!?,　二人とも　どこ行ってたんですかーーー！！」,你们俩都去哪了！？,　你们俩去哪了！？」
+9896,176,234944,64,32,28,"… Yes, it has. ♪ Or has it!?",「・・・は～い♪　じゃないですよー！,...是的，好久了。？还是该说很久了！？,「别『来啦～』了！
+9897,176,235008,64,32,27,Where were the two of you!?,　二人とも　どこ行ってたんですかーーー！！」,你们俩都去哪了！？,　你们俩到底去哪了——！！」
 9898,176,235172,64,32,6,Knight,ナイト,骑士,骑士
 9899,176,235236,64,32,49,Hrumph! Do you have any idea how worried we were?,「も～　自分たちが　どんだけ心配して,哼！你知道我们俩有多担心你吗？,「哼～！我们有多担心你，
 9900,176,235300,64,32,49,Do you have any idea how long we looked for you!?,　どんだけアチコチ探したと思ってるんですかー！」,你知道我们找了你多久吗！？,　你以为我们找了你多久啊—！」
@@ -14315,7 +14315,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 14313,262,1484,256,128,40,I'm tired of playing with the dolls here,「この地での人形遊びも少々あきた,我已经厌烦了这些玩偶,「我腻了在此地玩弄人偶
 14314,262,1772,256,128,44,I will incinerate them and this whole area!!,　人形もろともこの地をやきはらってやろう！！」,我要将它们和这整个区域全都烧了！！,　我要把它们连同这片土地一起烧光！！」
 14315,263,972,64,32,9,Poly Noir,ポリノワール,黑色聚合物,波利诺
-14316,263,1036,128,64,30,How? To have been captured… ?!,「ナントッ　ヨがとらえられただとっ！？」,怎么办？被抓住…？！,「什么？亚修被抓住了？！」
+14316,263,1036,128,64,30,How? To have been captured… ?!,「ナントッ　ヨがとらえられただとっ！？」,怎么办？被抓住…？！,「什么？本大爷被抓住了？！」
 14317,263,6092,64,32,5,Yashu,ヤーシュ,亚述,亚修
 14318,263,7020,64,32,5,Yashu,ヤーシュ,亚述,亚修
 14319,263,7084,64,32,38,"Hmph, everything, including the bridge",「フンッ　おとなしくハシもろとも,任何事，包括,「哼，连桥一起
@@ -19643,7 +19643,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 19641,357,35396,32,16,11,Witch's Hat,まじょのぼうし,女巫帽子,魔女帽
 19642,357,35436,64,32,36,Official hat of _witches everywhere.,魔女っこ_オフィシャルなぼうし,世界各地的女巫们带的官方帽子。,各地魔女_官方帽子。
 19643,357,35664,32,16,16,Full Face Helmet,フルフェイス,全脸头盔,全脸盔
-19644,357,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑_机车时一定要戴。
+19644,357,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑机车时_一定要戴。
 19645,357,35932,32,16,10,Angel Ring,エンジェルリング,天使戒指,天使光环
 19646,357,35972,64,32,26,Like the ring of an angel.,天使のリングっぽい,天使之环。,就像天使的光环。
 19647,357,36200,32,16,13,Helm of Light,ひかりのかぶと,光明头盔,光之盔
@@ -26335,7 +26335,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 26334,466,2740,64,32,17,Reaper Lord Lamde,死神魔王ラミデス,收割者领主拉姆德,死神魔王拉米德斯
 26335,466,2804,128,64,41,"Hehehe, so you've come, Sir <YUSHA_NAME>.",「ふふふ　来ましたね<YUSHA_NAME>どの」,嘿嘿，你来了，<YUSHA_NAME>先生、,「呵呵呵，你来了啊，<YUSHA_NAME>阁下。」
 26336,466,3032,64,32,17,Reaper Lord Lamde,死神魔王ラミデス,收割者领主拉姆德,死神魔王拉米德斯
-26337,466,3096,64,32,41,No matter. Gatekeeper Evil Lord Cerberus…,「いいですか　門番魔王ケルベロス,没问题。邪恶领主看门犬……,「无妨。门卫魔王刻耳柏洛斯……
+26337,466,3096,64,32,41,No matter. Gatekeeper Evil Lord Cerberus…,「いいですか　門番魔王ケルベロス,没问题。邪恶领主看门犬……,「听好了，门卫魔王刻耳柏洛斯，
 26338,466,3160,64,32,38,Anyone who tries to pass through here…,　ここを通ろうとする者たちは全て・・・」,任何意图通过这儿的人……,　任何想通过此处之人……」
 26339,466,3324,64,32,17,Reaper Lord Lamde,死神魔王ラミデス,收割者领主拉姆德,死神魔王拉米德斯
 26340,466,3388,128,64,37,… is to feel the wrath of your flame.,「・・・おまえの炎でやきはらってしまいなさい」,都会感受到你愤怒的火焰。,「……都要被你的火焰焚尽。」
@@ -33278,8 +33278,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33277,620,130408,64,32,46,… Princess of a land unknown. Smash the empire,「・・・いずこかの王女さまよ　帝国をつぶして,……未知土地上的公主。摧毁了帝国,「…不知何处的公主啊…打倒帝国…
 33278,620,130472,64,32,48,and save the people… The people… People like me…,　私たち・・・みたい・・・な・・・人間は・・・」,拯救了人民……人民……像我一样的人……,　像我们…这样的…人…」
 33279,620,130636,64,32,7,Scholar,学者,学者,学者
-33280,620,130700,64,32,31,… Let there be… no more people…,「・・・もう・・・さ・・・,……让所有的人民都消失……,「…愿再无…人民…
-33281,620,130764,64,32,10,… like me…,　・・・いごに・・・し・・・てく・・・れ・・・」,……包括我……,　…像我这样的人…」
+33280,620,130700,64,32,31,… Let there be… no more people…,「・・・もう・・・さ・・・,……让所有的人民都消失……,「…请…让…我…
+33281,620,130764,64,32,10,… like me…,　・・・いごに・・・し・・・てく・・・れ・・・」,……包括我……,　…就…此…了…结…吧…」
 33282,620,141440,64,32,15,Worried Old Man,心配じいじ,忧心忡忡的老人,忧心老人
 33283,620,141504,128,64,24,This old man is worried.,「じいじは心配じゃ」,这个老人很忧虑。,「老朽很是担心。」
 33284,620,141732,64,32,15,Worried Old Man,心配じいじ,忧心忡忡的老人,忧心老人
@@ -33359,9 +33359,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33358,622,2852,69,34,69,"Scholar: There's an entrance to the Big Venus, high up. <If you ride>",学者「大きなヴィーナスの　高いところに入口が見える,学者：有个通过大金星的入口，在上面。<If you ride>,学者「巨大的维纳斯高处有个入口。<若你骑上>
 33359,622,3076,160,80,12,Change Back!,元に戻す！,恢复原样！,还原！
 33360,622,3244,32,16,4,Talk,はなす,交谈,交谈
-33361,622,3276,128,64,38,???: These things are USELESS in here!,？？？「アイボウごとって　アイボウごとっておまえ！！」,???: 这里的东西都没有用！,？？？「这些东西在这儿全无用处！」
+33361,622,3276,128,64,38,???: These things are USELESS in here!,？？？「アイボウごとって　アイボウごとっておまえ！！」,???: 这里的东西都没有用！,？？？「连伙伴一起…连伙伴一起…你这家伙！！」
 33362,622,3668,32,16,4,Talk,はなす,交谈,交谈
-33363,622,3700,128,64,23,Old Man: Using my toys?,おやじ「アイボウ使ってくれてっか！！」,老人：用我的玩具？,大叔「你用了我的玩具？」
+33363,622,3700,128,64,23,Old Man: Using my toys?,おやじ「アイボウ使ってくれてっか！！」,老人：用我的玩具？,大叔「你肯用我的伙伴了啊！！」
 33364,622,5128,64,32,12,Dragon Lance,ドラゴンランス,龙之矛,龙枪
 33365,622,5196,32,16,5,Check,しらべる,检查,查看
 33366,622,5228,128,64,51,"<RGN_NAME__>: I can't just buy whatever now, can I.",<RGN_NAME__>「勝手には買えねえな」,<RGN_NAME__>：只是现在我啥也不能买。,<RGN_NAME__>「我现在可不能随便买。」
@@ -37157,7 +37157,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37157,705,67044,64,32,29,The humans are trying to wake,「ニンゲンタチガ　マボロシカラ,人类在试图,「人类正试图从
 37158,705,67108,64,32,18,from their dreams…,　サメヨウトシテイマス・・・」,从睡梦中苏醒…,　幻梦中醒来…」
 37159,705,67628,128,64,47,Huh? What's that? I don't like the looks of it…,「あん？　なんだありゃ　あやしいな・・・」,啊？怎么会那样？我不喜欢他们这样…,「啊？那是什么？看着就不妙…」
-37160,705,67920,128,64,44,Let's strike first and ask questions later!!,「とりあえず　ぶっつぶしとくか！！」,咱们先发动攻击然后再问问题！！,「先下手为强，事后再问！！」
+37160,705,67920,128,64,44,Let's strike first and ask questions later!!,「とりあえず　ぶっつぶしとくか！！」,咱们先发动攻击然后再问问题！！,「总之，先把它砸个稀烂吧！！」
 37161,705,71360,64,32,5,Child,子ども,小孩,小孩
 37162,705,71424,128,64,27,… Big brother! Big brother!,「・・・お兄ちゃん　お兄ちゃん！」,… 哥哥！哥哥！,「…哥哥！哥哥！」
 37163,705,71652,64,32,5,Child,子ども,小孩,小孩
@@ -40460,7 +40460,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 40460,736,35396,32,16,11,Witch's Hat,まじょのぼうし,女巫帽子,魔女帽
 40461,736,35436,64,32,36,Official hat of _witches everywhere.,魔女っこ_オフィシャルなぼうし,世界各地的女巫们带的官方帽子。,各地魔女_官方帽子。
 40462,736,35664,32,16,16,Full Face Helmet,フルフェイス,全脸头盔,全脸盔
-40463,736,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑_机车时一定要戴。
+40463,736,35704,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑机车时_一定要戴。
 40464,736,35932,32,16,10,Angel Ring,エンジェルリング,天使戒指,天使光环
 40465,736,35972,64,32,26,Like the ring of an angel.,天使のリングっぽい,天使之环。,就像天使的光环。
 40466,736,36200,32,16,13,Helm of Light,ひかりのかぶと,光明头盔,光之盔
@@ -41132,7 +41132,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 41132,736,152244,32,16,13,Rabbit Helmet,うさぎヘルム,兔子头盔,兔子头盔
 41133,736,152284,64,32,52,Wear these bunny ears and _your speed will increase.,つけることで_スピードがあがるうさみみ,带着这些兔耳朵，你的速度将会增加。,戴上这对兔耳，_速度会提升。
 41134,736,152512,32,16,9,Full Helm,フルヘルム,全覆式头盔,全身头盔
-41135,736,152552,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑_机车时一定要戴。
+41135,736,152552,64,32,35,Always wear when _riding your bike.,バイクにのるときは_かぶらないとねっ,骑自行车时带的。,骑机车时_一定要戴。
 41136,736,152780,32,16,11,Maid's Head,メイドヘッド,女仆的头,女仆头饰
 41137,736,152820,64,32,39,Official headband of _maids everywhere.,メイドオフィシャルな_すてきカチューシャ,各地_女仆的正式头巾。,各地女仆的_正式发箍。
 41138,736,153048,32,16,9,Magic Hat,まほうのぼうし,魔法帽,魔法帽
@@ -43248,7 +43248,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43248,759,10028,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 43249,760,2348,256,128,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
 43250,760,2636,256,128,26,Pah! The 30 seconds is up!,「ぬうっ！　<３０秒>たってしまったではないか,啪！30秒到了！,「呸！<30秒>到了！
-43251,760,2924,256,128,43,Bring the mountain as a gift for the maid!!,　めいどのみやげに　山をもっていくがいいっ！！」,将山作为给女士的礼物！！,　把那座山当女仆的礼物献上！！」
+43251,760,2924,256,128,43,Bring the mountain as a gift for the maid!!,　めいどのみやげに　山をもっていくがいいっ！！」,将山作为给女士的礼物！！,　就当是给黄泉的礼物，把这座山带走吧！！」
 43252,761,140,128,64,10,Campground,キャンプ場,营地,营地
 43253,761,700,160,80,15,Exit Campground,キャンプ場を出る,离开营地,离开营地
 43254,761,1124,32,16,4,Talk,はなす,交谈,交谈
@@ -47976,7 +47976,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 47976,814,42728,64,32,24,Warring States Continent,戦国大陸,,战国大陆
 47977,814,42940,64,32,26,Q82. The Dark Ships Invade,Q82．暗黒船の襲来,Q82. 暗船入侵,Q82．暗黑船杀到
 47978,814,43308,64,32,24,Warring States Continent,戦国大陸,,战国大陆
-47979,814,43520,64,32,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国王者30
+47979,814,43520,64,32,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国勇者参十
 47980,814,43888,64,32,24,Warring States Continent,戦国大陸,,战国大陆
 47981,814,44100,64,32,17,QXX． Impertinence,QXX．なまいきなっ,QXX． 无礼,QXX．无礼
 47982,814,44680,64,32,26,Q71. Heroes Meet in Heaven,Q71．天につどう勇者,Q71.英雄天堂相会,Q71．天界集结的勇者
@@ -50973,8 +50973,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 50973,905,13608,64,32,16,Congratulations!,「おめでとうございます！,恭喜你们！,「恭喜！
 50974,905,13672,64,32,25,You are the <true hero>!!,　あなたこそ<真の勇者>よ！！」,你是<真英雄>！！,　你就是<真勇者>！！」
 50975,905,13836,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-50976,905,13900,64,32,19,I knew you would be,「わたしは　アナタが,我就知道你会成为,「我就知道你会
-50977,905,13964,64,32,35,"the true hero, I believed in you. ▼",　真の勇者になるって　しんじていたわ▼」,真正的英雄，我看好你哦。▼,　真勇者，我坚信是你。▼」
+50976,905,13900,64,32,19,I knew you would be,「わたしは　アナタが,我就知道你会成为,「我一直相信，你
+50977,905,13964,64,32,35,"the true hero, I believed in you. ▼",　真の勇者になるって　しんじていたわ▼」,真正的英雄，我看好你哦。▼,　会成为真正的勇者▼」
 50978,905,14128,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 50979,905,14192,64,32,9,Well then,「それじゃ　,好了，那么,「那好吧
 50980,905,14256,64,32,42,let's take a look at the results screen. ♪,　リザルトがめんに　うつるわね♪」,让我们看一下结果甄选吧。？,　来看看结算画面吧。」
@@ -52867,7 +52867,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 52867,916,1124,32,16,4,Talk,はなす,交谈,交谈
 52868,916,1156,128,64,23,No. 30: … <RGN_NAME__>.,３０号「・・・<RGN_NAME__>」,No. 30: … <RGN_NAME__>.,30号「…<RGN_NAME__>。」
 52869,916,1548,32,16,4,Talk,はなす,交谈,交谈
-52870,916,1580,128,64,60,Little Girl: We get along really well with the Shore Mermen!,女の子「陸魚人さんとは仲良くやってるわ！」,小姑娘: 我们和海滨水手相处得很好!,小女孩「我们和鱼人族相处得很好！」
+52870,916,1580,128,64,60,Little Girl: We get along really well with the Shore Mermen!,女の子「陸魚人さんとは仲良くやってるわ！」,小姑娘: 我们和海滨水手相处得很好!,小女孩「我们和海岸人鱼相处得很好！」
 52871,916,1972,32,16,4,Talk,はなす,交谈,交谈
 52872,916,2004,128,64,33,Woman: Nothing good comes of war…,女の人「戦争は何も生み出さないわ・・・」,女子: 战场上没什么好消息r…,女人「战争不会带来任何好处…」
 52873,916,2228,32,16,8,War Meal,戦メシ,战争伙食,战争伙食
@@ -53067,8 +53067,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 53067,927,2852,64,32,21,There's nothing left…,もう何も無い・・・,,已经什么都没有了…
 53068,927,3120,32,16,8,○: Check,○：しらべる,仜:检查,○：查看
 53069,927,3244,64,32,21,There's nothing left…,もう何も無い・・・,,已经什么都没有了…
-53070,928,1928,64,32,31,"Who does this fool think he is,",「どんだけこのオレ様を待たせりゃ,这傻子认为他是谁，,「这傻子以为自己是谁，
-53071,928,1992,64,32,36,to make me wait so loooooooooooong!?,　気がすむんだ　このボケがぁぁぁぁぁぁ！！！！,让我等这么久,竟让我等这么久！！
+53070,928,1928,64,32,31,"Who does this fool think he is,",「どんだけこのオレ様を待たせりゃ,这傻子认为他是谁，,「要让本大爷等多久
+53071,928,1992,64,32,36,to make me wait so loooooooooooong!?,　気がすむんだ　このボケがぁぁぁぁぁぁ！！！！,让我等这么久,　你才满意啊，你这混蛋！！！
 53072,928,2156,64,32,20,Zozaurus the Enraged,憤怒（ふんぬ）のゾゾラース,暴怒的早早努斯,愤怒的佐佐劳斯
 53073,928,2220,64,32,46,Growwwl!! I am one of the Four Ultimate Kings…,「ゴラァァ！！　オレ様は四天大王が一人,哦哦哦，我是四大终极国王之一。。。,「吼！！我是四天大王之一…
 53074,928,2284,64,32,44,I am called Zozaurus the Enraged! Growwwl!!!,　憤怒（ふんぬ）のゾゾラース様だゴラァァァッ！！！」,我是zozaurus，哦哦哦,　我就是愤怒的佐佐劳斯！吼！！！」
@@ -53890,7 +53890,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 53890,931,46188,128,64,26,Q82. The Dark Ships Invade,Q82．暗黒船の襲来,Q82. 暗船入侵,Q82．暗黑船杀到
 53891,931,46316,128,64,34,[Downloadable Content Quest Title],[ダウンロードコンテンツクエストの称号],,[下载内容任务称号]
 53892,931,46444,32,16,19,Ruler of the World!,天下討ち取り！,,天下霸主！
-53893,931,46480,128,64,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国王者30
+53893,931,46480,128,64,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国勇者参十
 53894,931,46608,128,64,34,[Downloadable Content Quest Title],[ダウンロードコンテンツクエストの称号],,[下载内容任务称号]
 53895,931,46736,32,16,14,Infinite Clear,無限クリア,,无限通关
 53896,931,46900,128,64,37,Hint: Defeat 100 Evil Lords on Normal,ヒント：ふつうで百人斬り,,提示：普通难度百人斩
@@ -54775,7 +54775,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 54775,951,4516,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 54776,952,620,256,128,14,Faceless Union,フェイスレスユニオン,不知名的联盟,无面联盟
 54777,952,908,256,128,26,… the Song of Destruction…,「・・・ハメツのウタ,……毁灭之歌……,「…毁灭之歌…
-54778,952,1196,256,128,20,Loading Energy 300%%,　エネルギージュウテン　３００パーセント」,加载能量 300%%,　能量充能 300%%」
+54778,952,1196,256,128,20,Loading Energy 300%%,　エネルギージュウテン　３００パーセント」,加载能量 300%%,　能量充能 300%」
 54779,952,1484,256,128,34,"… the Song of Destruction, engage.",「・・・ハメツのウタ　ハツドウ」,……毁灭之歌，就绪。,「…毁灭之歌，启动。」
 54780,953,4492,64,32,18,Young <YUSHA_NAME>,おさない<YUSHA_NAME>,年轻的<YUSHA_NAME>,年少的<YUSHA_NAME>
 54781,953,4556,128,64,14,*huff* *huff*…,「はあっはあっ」,*呼* *呼* ...,「*呼* *呼*……」
@@ -55493,7 +55493,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 55493,964,3668,160,80,9,Exit Port,港を出る,退出港口,离开港口
 55494,965,924,256,128,28,Q81. Fall of the Evil Castle,Q81．魔軍落城,Q81.邪恶之城堡的倒塌,Q81．魔军陷落
 55495,965,2092,256,128,26,Q82. The Dark Ships Invade,Q82．暗黒船の襲来,Q82. 暗船入侵,Q82．暗黑船杀到
-55496,965,3260,256,128,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国王者30
+55496,965,3260,256,128,25,Q83. Warring Dynasties 30,Q83．戦国勇者参十,Q83.30王朝的战国策,Q83．战国勇者参十
 55497,965,4428,64,32,10,RAGNAROK 7,RAGNAROK７,,RAGNAROK 7
 55498,965,5660,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 55499,965,5724,128,64,22,Hold on just a minute!,「ちょっとちょっとちょっとーー！」,坚持以分钟！,「等一下下！」

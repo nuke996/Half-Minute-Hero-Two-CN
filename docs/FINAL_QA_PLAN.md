@@ -170,7 +170,7 @@ python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→重建 Z19）
+# 导入校对（自检→写 CSV/extra_review.json→按 CURRENT_REVIEW_RECIPE 重建，当前 Z24）
 python tools/import_review.py
 
 # 只读盘点（示例）

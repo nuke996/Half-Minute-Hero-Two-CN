@@ -21,14 +21,17 @@
 
 通过自检后：
   1) 备份译表 → 写回 text_v2.csv / ml_zh_fields.json / dlc/*.tsv / dlc/zh_07.json
-  2) 运行 tools/build.py package（隔离模式）刷新 dist/，**不改游戏目录**
-     打包结束会自动重导出 translator-view，避免旧快照再次回写译表。
+  2) 运行 tools/build.py package_current（隔离模式）刷新 dist/，**不改游戏目录**；
+     具体配方由 build_cn 的 CURRENT_REVIEW_RECIPE 指针决定，不再写死 Z 编号。
+     打包结束会自动重导出 translator-view，并写 build_manifest.json。
   3) 构建后运行 validate_build.py 自检：名字副本混合态、操作数过期、
      同类重名/哈希碰撞、占位符/token 丢失、DLC 载具名/结构/编码一致性。
      任一致命错误 → 自动回滚本次导入并恢复 dist，退出码 1。
 
 模式：apply（默认）/ revert（恢复上次导入前的译表并重新刷新 dist）。
-可选：--no-repl（只保留 HL，不套用 replace_map REPL；重建 Z15-norepl）。
+可选：--no-repl（只保留 HL，不套用 replace_map REPL；使用 CURRENT_NOREPL_RECIPE）。
+每次新增/提升打包配方时，只需更新 build_cn.py 的 RECIPES 与
+CURRENT_REVIEW_RECIPE（必要时 CURRENT_NOREPL_RECIPE），本脚本无需改动。
 """
 import ast
 import datetime
@@ -124,14 +127,15 @@ NO_REPL = False
 
 
 def dist_dir():
-    """本次导入会刷新的 dist 目录（绝对路径），便于在命令行直接看到结果位置。"""
-    name = 'Z15-reuse-kanji-norepl' if NO_REPL else 'Z19-proofread'
-    return os.path.join(paths.DIST_DIR, name)
+    """本次导入会刷新的 dist 目录（绝对路径），由 build_cn 的当前配方指针决定。"""
+    meta = B.current_recipe_meta(norepl=NO_REPL)
+    return os.path.join(paths.DIST_DIR, meta['out'])
 
 
 def run_package():
-    """刷新 dist：默认 Z19（Z18 + 对话校对修订）；--no-repl 时 Z15-norepl。"""
-    cmd = 'package_names_cn_reuse_norepl' if NO_REPL else 'package_names_cn_reuse_z19'
+    """刷新 dist：按 build_cn 的 CURRENT_REVIEW_RECIPE 指针选择配方；
+    --no-repl 时使用 CURRENT_NOREPL_RECIPE（Z15-norepl 对照）。"""
+    cmd = 'package_current_norepl' if NO_REPL else 'package_current'
     p = subprocess.run([sys.executable, os.path.join(TOOLS, 'build.py'), cmd],
                        capture_output=True)
     return (p.returncode, p.stdout.decode('utf-8', 'replace'),
@@ -604,6 +608,27 @@ def do_apply():
             os.remove(PKG_ERR)     # 成功后清掉上一次的错误日志，避免误读
         P('  ✓ 打包完成，dist/ 已刷新。')
         P('  dist 目录: %s' % dist_dir())
+        # 打印构建清单身份，避免再靠人工猜测“这次到底打的是哪个配方”
+        meta = B.current_recipe_meta(norepl=NO_REPL)
+        P('  校对配方: %s (%s)，状态=%s'
+          % (meta['id'], meta['cmd'], meta.get('status') or '?'))
+        mp = os.path.join(dist_dir(), 'build_manifest.json')
+        if os.path.exists(mp):
+            try:
+                m = json.load(open(mp, encoding='utf-8'))
+                flags = m.get('flags') or {}
+                git = m.get('git') or {}
+                tv_hash = (m.get('inputs') or {}).get('text_v2.csv') or '?'
+                P('  构建清单: 配方=%s / Z23_RELEASE=%s / git=%s%s'
+                  % (m.get('recipe_id') or '?',
+                     flags.get('HMH2_Z23_RELEASE') or '0',
+                     git.get('commit') or '?',
+                     ' (dirty)' if git.get('dirty') else ''))
+                P('  输入哈希: text_v2.csv=%s' % tv_hash[:16])
+            except Exception as e:
+                P('  [警告] 读取构建清单失败: %s' % e)
+        else:
+            P('  [警告] 未找到构建清单: %s' % mp)
         P('')
         P('五、构建自检（机制名/操作数/重名/token/DLC）')
         if stage is None:

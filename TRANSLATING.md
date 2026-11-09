@@ -370,9 +370,11 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 python tools/build.py --game-dir work/original package_names_cn_reuse_norepl
 ```
 
-> 当前发布链是 Z19（`package_names_cn_reuse_z19`，含歌词与对话校对）；词典改动后同样要对它
-> 重建一次，否则 `dist/Z19-proofread` 与译表不一致。`dist/Z19-proofread` 尚未并入 Z22–Z24
-> 的译表与敌名放行，见 `docs/TODO.md` T-07。
+> 当前校对链由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 `z24` →
+> `dist/Z24-mapeditor/`，含 Z22–Z24 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、歌词与
+> 4 个视频）。词典或译表改动后请用 `python tools/build.py package_current` 重建，
+> 不要写死 `package_names_cn_reuse_z19`。新增配方时只需更新 `RECIPES` 与指针，并同步
+> `BUILDING.md`、`AGENTS.md`、`docs/PACKAGE_LEDGER.md`。
 
 - 导入校对时：`汉化-导入校对.bat` = 应用词典；`汉化-导入校对-不应用词典.bat`
   = `import_review.py apply --no-repl`。两者读同一批 JSON，只切换 REPL 开关。

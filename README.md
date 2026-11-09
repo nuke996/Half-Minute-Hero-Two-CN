@@ -180,7 +180,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；当前发布包为 Z19（`package_names_cn_reuse_z19`）；Z22–Z24 为测试包，尚未并入基线（见 `docs/TODO.md` T-07）
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z24** → `dist/Z24-mapeditor`）；Z19 为历史基线（当时尚未并入 Z22–Z24 放行）
 ```
 
 ---

@@ -149,13 +149,42 @@ Therefore:
 
 - After any change to translation data (including bulk terminology scripts, multi-line
   fields, and DLC tables) or to localization scripts, finish with a successful package
-  build. `package` / `package_install` automatically re-export the review view after
-  writing `dist/`.
+  build. `package` / `package_install` / `package_current` automatically re-export the
+  review view after writing `dist/`.
 - If that automatic export fails, the build exits non-zero. Run
   `python tools/export_review.py` successfully before using the review-import entry
   point again.
 - Never import a review view that is older than the current translation tables.
   See `docs/PITFALLS.md` §24.
+
+## Review Target Pointer and Build Manifest (mandatory)
+
+The review-import pipeline must never hard-code a `Znn` package command. It invokes
+`python tools/build.py package_current`, which resolves the target from
+`tools/build_cn.py`:
+
+- `RECIPES[id]` registers each package recipe (`func` / `cmd` / `out` / `stage` /
+  `status` / `review`).
+- `CURRENT_REVIEW_RECIPE` is the single pointer for the current review target
+  (currently `z24` → `dist/Z24-mapeditor/`).
+- `CURRENT_NOREPL_RECIPE` is the pointer for the `--no-repl` comparison package.
+
+Therefore, when adding a new recipe or promoting an existing one:
+
+1. Register it in `RECIPES`;
+2. Update `CURRENT_REVIEW_RECIPE` (or `CURRENT_NOREPL_RECIPE`) if it becomes the
+   current review target;
+3. Update `BUILDING.md`, `AGENTS.md`, and `docs/PACKAGE_LEDGER.md` in the same change.
+
+Do not edit the package command inside `import_review.py` merely because the latest
+recipe changed.
+
+Every successful isolated package build (`package` / `package_current` / recipe wrappers)
+must also write `build_manifest.json` into the dist directory (plus
+`build/last_package.json`) recording the recipe id/command, dist and staging paths,
+git commit/dirty state, input file hashes, feature flags such as `HMH2_Z23_RELEASE`,
+and output hashes. The import report must print this identity so a reviewer can confirm
+which recipe and translation snapshot was built.
 
 ## Review Pipeline Adaptation (mandatory)
 

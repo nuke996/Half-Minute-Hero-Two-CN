@@ -762,6 +762,11 @@ PROXY_DLL_SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__f
                              'assets', 'proxydll', 'dinput8.dll')
 PROXY_FILES = ['dinput8.dll', 'hm2zh_patch.bin']
 
+# ---- 构建配方身份（供 package_current / build_manifest 使用）----
+# _ACTIVE_CMD 由 __main__ 入口设置；_ACTIVE_RECIPE 由 do_package_current 设置。
+_ACTIVE_CMD = None
+_ACTIVE_RECIPE = None
+
 
 def deploy_proxy():
     """dll 模式：生成 hm2zh_patch.bin 并把 dinput8.dll + bin 部署到游戏目录。"""
@@ -5452,6 +5457,8 @@ def _apply_z17_video(out_dir):
     print('  [视频] 已合入 Z17-video 视频：%s%s'
           % (' '.join('%s/%08x' % (k, int(specs[k]['blob'], 16)) for k in kinds),
              ' + res/MOV.s2a' if os.path.exists(src_mov) else ''))
+    # 视频合入后刷新构建清单（MOV.s2a / LANG_EN 最终哈希）
+    _write_build_manifest(out_dir, video_merged=True)
 
 
 def do_package_names_cn_reuse_z17(exe_mode=None):
@@ -5693,6 +5700,145 @@ PACKAGE_RES = ['res/LANG_JA.s2a', 'res/LANG_EN.s2a', 'res/texture.s2a', 'res/csc
 PACKAGE_DLC = ['DLC01/LANG_JA.s2a', 'DLC01/LANG_EN.s2a']
 PKG_STAGE_NAME = 'package_stage'   # 隔离打包的临时装机目录（落在 build/ 下）
 
+MANIFEST_NAME = 'build_manifest.json'
+MANIFEST_SCHEMA = 1
+
+
+def _sha256_file(path):
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, 'rb') as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def _manifest_input_files():
+    """参与本次构建的译表/词典/视频输入（存在才登记）。"""
+    names = ['text_v2.csv', 'ml_zh_fields.json', 'extra_review.json',
+             'ui_always.json', 'replace_map.py', 'hl_map.py',
+             'desc_release.json', 'slot_release.json',
+             'video/videos.json', 'dlc/dlc_unique.tsv']
+    for i in range(1, 8):
+        names.append('dlc/zh_%02d.tsv' % i)
+        names.append('dlc/zh_%02d.json' % i)
+    return names
+
+
+def _manifest_inputs():
+    out = {}
+    root = paths.DATA_DIR
+    for rel in _manifest_input_files():
+        p = os.path.join(root, *rel.split('/'))
+        if os.path.exists(p):
+            out[rel.replace('\\', '/')] = _sha256_file(p)
+    return out
+
+
+def _git_build_info():
+    import subprocess
+    info = {'commit': None, 'dirty': None}
+    try:
+        repo = paths.REPO_DIR
+        info['commit'] = subprocess.run(
+            ['git', '-C', repo, 'rev-parse', '--short', 'HEAD'],
+            capture_output=True, text=True).stdout.strip() or None
+        info['dirty'] = bool(subprocess.run(
+            ['git', '-C', repo, 'status', '--porcelain'],
+            capture_output=True, text=True).stdout.strip())
+    except Exception:
+        pass
+    return info
+
+
+def _recipe_info():
+    """当前构建对应的配方 id / 元数据。"""
+    rid = _ACTIVE_RECIPE
+    if rid is None and _ACTIVE_CMD:
+        for k, v in RECIPES.items():
+            if v.get('cmd') == _ACTIVE_CMD:
+                rid = k
+                break
+    return rid, (RECIPES.get(rid) if rid else None)
+
+
+def _manifest_outputs(out_dir):
+    rels = list(PROXY_FILES) + list(PACKAGE_RES) + list(PACKAGE_DLC) + ['res/MOV.s2a']
+    out = []
+    for rel in rels:
+        p = os.path.join(out_dir, *rel.split('/'))
+        if os.path.exists(p):
+            out.append({'path': rel.replace('\\', '/'),
+                        'bytes': os.path.getsize(p),
+                        'sha256': _sha256_file(p)})
+    return out
+
+
+def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=None):
+    """写 `build_manifest.json`（产物目录）与 `build/last_package.json`。
+
+    用于确认“这次导入/打包到底是哪个配方、带了哪些开关、基于哪份译表”。
+    """
+    import datetime
+    rid, meta = _recipe_info()
+    dst = os.path.join(out_dir, MANIFEST_NAME)
+    old = {}
+    if os.path.exists(dst):
+        try:
+            old = json.load(open(dst, encoding='utf-8'))
+        except Exception:
+            old = {}
+    old_flags = old.get('flags') or {}
+    now = datetime.datetime.now().astimezone().isoformat(timespec='seconds')
+    stage_dir = stage or old.get('stage_dir')
+    # 视频合入发生在 Z24 包装函数的 finally 之后，环境变量可能已被清除；
+    # 此时沿用首次写入的开关值，避免清单把 Z23_RELEASE 误记为 0。
+    z23 = os.environ.get('HMH2_Z23_RELEASE')
+    if video_merged and z23 is None:
+        z23 = old_flags.get('HMH2_Z23_RELEASE')
+    repl = apply_repl
+    if repl is None:
+        repl = os.environ.get('HMH2_APPLY_REPL')
+    if video_merged and repl is None:
+        repl = old_flags.get('HMH2_APPLY_REPL')
+    internal_z23 = bool(_Z23_RELEASE)
+    if video_merged and not internal_z23:
+        internal_z23 = bool(old_flags.get('internal_Z23_RELEASE'))
+    manifest = {
+        'schema': MANIFEST_SCHEMA,
+        'recipe_id': rid,
+        'recipe_command': (meta or {}).get('cmd') or _ACTIVE_CMD,
+        'recipe_status': (meta or {}).get('status'),
+        'review_target': rid in (CURRENT_REVIEW_RECIPE, CURRENT_NOREPL_RECIPE),
+        'dist_dir': os.path.abspath(out_dir),
+        'stage_dir': os.path.abspath(stage_dir) if stage_dir else None,
+        'built_at': now,
+        'translator_view_exported_at': (old.get('translator_view_exported_at')
+                                        if video_merged else now),
+        'video_merged': bool(video_merged or old.get('video_merged')),
+        'flags': {
+            'HMH2_Z23_RELEASE': z23,
+            'HMH2_APPLY_REPL': repl,
+            'HMH2_EXE_MODE': EXE_MODE,
+            'internal_Z23_RELEASE': internal_z23,
+        },
+        'git': _git_build_info(),
+        'inputs': _manifest_inputs(),
+        'outputs': _manifest_outputs(out_dir),
+    }
+    txt = json.dumps(manifest, ensure_ascii=False, indent=2) + '\n'
+    with open(dst, 'w', encoding='utf-8') as fh:
+        fh.write(txt)
+    lastp = paths.build('last_package.json')
+    with open(lastp, 'w', encoding='utf-8') as fh:
+        fh.write(txt)
+    print('构建清单: %s' % dst)
+    print('  配方: %s (%s) / HMH2_Z23_RELEASE=%s / git=%s%s'
+          % (rid or '?', (meta or {}).get('cmd') or _ACTIVE_CMD or '?',
+             manifest['flags']['HMH2_Z23_RELEASE'] or '0',
+             manifest['git'].get('commit') or '?',
+             ' (dirty)' if manifest['git'].get('dirty') else ''))
+
 
 def _sha(path, n=12):
     import hashlib
@@ -5857,6 +6003,10 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
     # ⑥ 强制刷新译者校对视图：避免 translator-view 停留在旧快照，下次导入时整体回写译表
     export_review_view(apply_repl=apply_repl)
 
+    # ⑦ 构建清单：记录本次配方/开关/输入哈希/产物哈希（视频合入后会再次刷新）
+    _write_build_manifest(out_dir, stage=stage, video_merged=False,
+                          apply_repl=('1' if apply_repl else '0'))
+
 
 def do_package_lang_en_only(exe_mode=None):
     """E1 隔离实验打包：staging 里只写 LANG_EN 装机 → 输出 dist/E1-lang-en-only/。
@@ -5945,8 +6095,80 @@ def do_package_install(exe_mode=None):
     export_review_view()
 
 
+# ---- 打包配方注册表 / 校对目标指针 ----
+# 新增配方后必须做两件事：
+#   1) 在 RECIPES 里登记 func/cmd/out/stage/status/review；
+#   2) 若它成为“当前人工校对目标”，把 CURRENT_REVIEW_RECIPE 指向它。
+# 导入校对脚本只调用 package_current，不再写死任何 Z 编号；
+# 因此维护者只需改这里，并同步 BUILDING.md / AGENTS.md / PACKAGE_LEDGER.md。
+RECIPES = {
+    'z19': {'func': do_package_names_cn_reuse_z19,
+            'cmd': 'package_names_cn_reuse_z19',
+            'out': 'Z19-proofread',
+            'stage': 'package_stage_names_cn_reuse_z19',
+            'status': 'stable', 'review': False},
+    'z20': {'func': do_package_names_cn_reuse_z20,
+            'cmd': 'package_names_cn_reuse_z20',
+            'out': 'Z20-desc-dodge',
+            'stage': 'package_stage_names_cn_reuse_z20',
+            'status': 'experimental', 'review': False},
+    'z21': {'func': do_package_names_cn_reuse_z21,
+            'cmd': 'package_names_cn_reuse_z21',
+            'out': 'Z21-desc-5f-fix',
+            'stage': 'package_stage_names_cn_reuse_z21',
+            'status': 'merged', 'review': False},
+    'z22': {'func': do_package_names_cn_reuse_z22,
+            'cmd': 'package_names_cn_reuse_z22',
+            'out': 'Z22-ui-lowrisk',
+            'stage': 'package_stage_names_cn_reuse_z22',
+            'status': 'candidate', 'review': False},
+    'z23': {'func': do_package_names_cn_reuse_z23,
+            'cmd': 'package_names_cn_reuse_z23',
+            'out': 'Z23-ui-mediumrisk',
+            'stage': 'package_stage_names_cn_reuse_z23',
+            'status': 'candidate', 'review': False},
+    'z24': {'func': do_package_names_cn_reuse_z24,
+            'cmd': 'package_names_cn_reuse_z24',
+            'out': 'Z24-mapeditor',
+            'stage': 'package_stage_names_cn_reuse_z24',
+            'status': 'candidate', 'review': True},
+    'norepl': {'func': do_package_names_cn_reuse_norepl,
+               'cmd': 'package_names_cn_reuse_norepl',
+               'out': 'Z15-reuse-kanji-norepl',
+               'stage': 'package_stage_names_cn_reuse_norepl',
+               'status': 'variant', 'review': False},
+}
+
+# ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
+CURRENT_REVIEW_RECIPE = 'z24'
+# 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
+CURRENT_NOREPL_RECIPE = 'norepl'
+
+
+def current_recipe_meta(norepl=False):
+    """返回当前校对目标的元数据（供 import_review 读取 dist 路径等）。"""
+    rid = CURRENT_NOREPL_RECIPE if norepl else CURRENT_REVIEW_RECIPE
+    meta = dict(RECIPES[rid])
+    meta['id'] = rid
+    return meta
+
+
+def do_package_current(exe_mode=None, recipe_id=None):
+    """按“当前校对目标指针”打包，并记录配方身份供构建清单使用。"""
+    global _ACTIVE_RECIPE
+    rid = recipe_id or CURRENT_REVIEW_RECIPE
+    if rid not in RECIPES:
+        raise SystemExit('未知配方: %s（请在 RECIPES 中登记）' % rid)
+    _ACTIVE_RECIPE = rid
+    try:
+        return RECIPES[rid]['func'](exe_mode=exe_mode)
+    finally:
+        _ACTIVE_RECIPE = None
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'plan'
+    _ACTIVE_CMD = cmd
     {'plan': do_plan, 'apply': do_apply, 'revert': do_revert, 'check': do_check,
      'apply_font': lambda: do_apply(text=False),
      'apply_nosync': lambda: do_apply(text=True, sync_cscv=False),
@@ -6034,6 +6256,9 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z23': do_package_names_cn_reuse_z23,
      # Z24（测试）：Z23 + 地图编辑器说明面板整句重译，输出 dist/Z24-mapeditor
      'package_names_cn_reuse_z24': do_package_names_cn_reuse_z24,
+     # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
+     'package_current': do_package_current,
+     'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),
      'apply_names_cn_skill_only2': do_apply_names_cn_skill_only2,
      'package_names_cn_skill_only2': do_package_names_cn_skill_only2,
      'package_install': do_package_install,

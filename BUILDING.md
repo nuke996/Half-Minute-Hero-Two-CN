@@ -118,6 +118,8 @@ python tools/runner.py <脚本名> [参数]
 | `python tools/build.py dlc_only` | 只按当前字库重编码 DLC01 |
 | `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的原版文件（优先 `*.bak`，缺失时退回同名当前文件，如干净原版目录 `work/original`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺原版文件时明确中止 |
 | `python tools/build.py [--game-dir "<游戏目录>"] package_install` | **就地装机版打包**：对游戏目录跑 `apply_menu`（会把目录留在已汉化态）→ 校验 → 复制到 `dist/`。`DLC01` 仅在游戏目录确实存在原件时纳入（其原件备份自动生成）。`package_exe` / `package_install_exe` 为对应的 exe 模式 |
+| `python tools/build.py package_current` | **当前校对目标打包**：按 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针调用对应配方（默认 `z24` → `dist/Z24-mapeditor/`）。导入校对 bat 只调用这个命令，不再写死 Z 编号 |
+| `python tools/build.py package_current_norepl` | 按 `CURRENT_NOREPL_RECIPE` 指针打包（默认 `Z15-reuse-kanji-norepl` 对照） |
 | `apply_font` / `apply_nosync` / `apply_nocollide` / `apply_consistent` / `apply_nomech` | 历史测试包 A/B/C/E/D |
 | `apply_noplace` / `apply_menu_safe` / `apply_menu_noml` | 变体（回退地名/保守 UI/退回单行） |
 
@@ -161,13 +163,29 @@ python tools/runner.py <脚本名> [参数]
   `translator-view/导入报告.txt`，并整篇打印在命令行窗口（bat 结束会 `pause`，便于当场看原因）；
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
-  → 自动跑 `tools/build.py package_names_cn_reuse_z19`（隔离模式）刷新
-  `dist/Z19-proofread/`（Z18 配方 + 对话文本日文基准校对修订，含 DLC 地名汉字化、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
-  打包成功时命令行与报告都会输出本次 `dist` 目录的绝对路径；打包失败时完整构建输出写入
+  → 自动跑 `tools/build.py package_current`（隔离模式）刷新**当前校对目标**；
+  目标由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前为 `z24` →
+  `dist/Z24-mapeditor/`，含 Z23/Z24 的图鉴敌人/Boss 名单放行、`b291` 地图编辑器说明、
+  DLC 地名、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），**不改游戏目录**。
+  打包成功时命令行与报告都会输出本次 `dist` 目录与配方身份；打包失败时完整构建输出写入
   同目录的 `translator-view/打包错误.txt`，并打印末尾 25 行，退出码 1。
   不应用 REPL 的对比版本：双击 `汉化-导入校对-不应用词典.bat`
-  （= `import_review.py apply --no-repl`），刷新 `dist/Z15-reuse-kanji-norepl/`。
+  （= `import_review.py apply --no-repl`），使用 `CURRENT_NOREPL_RECIPE`（默认
+  `dist/Z15-reuse-kanji-norepl/`）。
   对应装机入口：`汉化-安装.bat`（应用 REPL）/ `汉化-安装-不应用词典.bat`（仅 HL）。
+- **构建清单（硬规则）**：每次隔离打包（`package_current` / `package` / 各 `package_*`）
+  成功都会在产物目录写 `build_manifest.json`，同时刷新 `build/last_package.json`。清单记录：
+  配方 id/命令、dist/staging 路径、构建时间、git commit/是否 dirty、
+  译表/词典/视频输入哈希、`HMH2_Z23_RELEASE` 等开关、产物文件哈希。
+  导入报告会直接打印“校对配方 / Z23_RELEASE / git commit / text_v2 哈希”，
+  不再需要人工猜测导入后到底是哪一版。
+- **新增/提升配方的硬规则**：以后每新增一个打包配方，必须：
+  1) 在 `tools/build_cn.py` 的 `RECIPES` 注册表登记 `func/cmd/out/stage/status/review`；
+  2) 如果它成为当前人工校对目标，修改 `CURRENT_REVIEW_RECIPE` 指针（对照包改
+     `CURRENT_NOREPL_RECIPE`）；
+  3) 同步更新本文件、`AGENTS.md` 与 `docs/PACKAGE_LEDGER.md`。
+  **不要修改 `import_review.py` 里的配方命令**：它只调用 `package_current`，
+  配方切换应只发生在 `build_cn.py` 的注册表/指针处。
 - **替换词典（可编辑）**：`dict/替换词典.json` 的两个表（`replace_map(REPL)` / `hl_map(HL)`）
   可直接编辑。导入会先校验条目（非空、无控制字符；REPL 禁含 `% $ { } < > #`；
   HL 尖括号成对），备份并只替换 `replace_map.py` / `hl_map.py` 中的字典字面量，
@@ -182,8 +200,8 @@ python tools/runner.py <脚本名> [参数]
   基线：Z15 为 error 0 / warning 45（纯显示类重名）。详见 `docs/PITFALLS.md` §33。
 - **回滚**：`import_review.py revert` → 从 `build/校对/_import_state.json` 记录的备份还原
   译表（含 `extra_review.json`），并重新刷新 `dist/`。
-- **打包后强制导出（硬规则）**：`package` / `package_install`（含 `*_exe`）在写完 `dist/`
-  后会自动运行 `export_review.py` 刷新 `translator-view/`；导出失败则以非零码退出并提示，
+- **打包后强制导出（硬规则）**：`package` / `package_install` / `package_current`（含 `*_exe`）
+  在写完 `dist/` 后会自动运行 `export_review.py` 刷新 `translator-view/`；导出失败则以非零码退出并提示，
   在手动导出成功前**不得**运行导入校对。原因见 `docs/PITFALLS.md` §24：旧视图会把旧译文
   整体回写译表。**任何译表或汉化脚本改动，都必须以一次成功打包（即自动导出）收尾。**
 - **改脚本必须同步适配校对链（硬规则）**：当修改翻译脚本以“放行更多文本上屏”或
@@ -220,7 +238,7 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
-| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；2026-10-30 起含 `cscv[355]` 歌曲表歌词（28 个英文行）；**默认导入校对目标** |
+| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；2026-10-30 起含 `cscv[355]` 歌曲表歌词（28 个英文行）；历史导入目标（2026-11-07 起改用 `package_current`，当前指针指向 Z24） |
 | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
 | `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 | `package_names_cn_reuse_z22` | `dist/Z22-ui-lowrisk/` | **Z22（测试）**：Z21 + 低风险 UI 补译批：`b25` 键值 UI 消息表值列 295 条（城堡面板/道具类型/铁匠铺/地图编辑器/在线菜单）、`b99` 合成说明首段 2 条、`b763` `Up` 1 条（合计新增 298 行）、`b642` 武器种名 12 条、`b763` 按键名整列、`b186` `Switch`。见 `docs/PITFALLS.md` §41、`docs/PACKAGE_LEDGER.md` §2 |

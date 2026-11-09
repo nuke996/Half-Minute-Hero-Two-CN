@@ -225,7 +225,7 @@
           "y": 620,
           "ja": "俺を裏切った",
           "en": "against my betrayer,",
-          "zh": "是为了向背叛我的人复仇，"
+          "zh": "是为了向背叛了我的命运复仇，"
         },
         {
           "id": "op_03",
@@ -252,7 +252,8 @@
           "y": 620,
           "ja": "",
           "en": "I will save everyone.",
-          "zh": " "
+          "zh": " ",
+          "cover_only": true
         }
       ],
       "y": 650
