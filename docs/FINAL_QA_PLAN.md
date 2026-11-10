@@ -1,13 +1,11 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
-> 状态：**进行中**（2026-10-21 记录；2026-10-22/23/24/25/27/30、2026-11-06 更新，供新对话直接接续）
-> 2026-10-30：当前发布基线改为 **Z19**（`dist/Z19-proofread/`）——在 Z18 基础上导入日文基准
-> 校对（1821 单元 / 2842 处条目），并恢复 `cscv[355]` 歌曲表 28 个英文行的中文。
-> 校对入口：`locales/zh-CN/translator-view/`（含 `50_extra.json`）；导入后固定刷新
-> `dist/Z19-proofread/`。Z18（`dist/Z18-dlc-place-names/`）为 10-27 快照、不含歌词，仅作对照；
-> Z15 保留为回滚基线。
-> 2026-11-06：Z22–Z24 为测试包（均未实机），Z19 仍是发布基线但尚未并入 Z24 译表；
-> 除实机测试外的未完成项统一登记在 `docs/TODO.md`。
+> 状态：**进行中**（2026-10-21 记录；2026-10-22/23/24/25/27/30、11-06、11-09 更新，供新对话直接接续）
+> 2026-11-09：第二轮对话校对完成（待核对 429 → 0，427 修复 + 2 保留原译，见
+> `docs/PROOFREAD_DIALOGUE_ROUND2.md`）；cmap 固化已实施（`locales/zh-CN/cmap.json`）；
+> **发布基线 Z19 已启用 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。
+> 校对入口与导入目标仍是 `locales/zh-CN/translator-view/` → `CURRENT_REVIEW_RECIPE=z24`
+> （`dist/Z24-mapeditor/`）。Z22–Z24 均未实机；除实机测试外的未完成项见 `docs/TODO.md`。
 
 ---
 
@@ -117,22 +115,23 @@
 ## 2.4 Z19 校对轮 + 歌词恢复（2026-10-30）
 
 1. **对话校对已入库**：`proofread` 分支共 1821 单元 / 2842 处条目（2716 单行槽 +
-   86 多行整段 + 40 DLC），详见 `docs/PROOFREAD_DIALOGUE_REPORT.md`；剩余未导入 451 条
-   （其中高严重度 14 条）。
+   86 多行整段 + 40 DLC），详见 `docs/PROOFREAD_DIALOGUE_REPORT.md`；**2026-11-09 第二轮
+   把最后 429 条待核对全部清零（427 修复 + 2 保留原译，529 槽）**，逐条对照见
+   `docs/PROOFREAD_DIALOGUE_ROUND2.md`。
 2. **「小咕的歌」歌曲表恢复中文**：Z14→Z20 共用配方改 `song=True`，`cscv[355]` 的
    28 个英文行写回中文；`place`/`chap` 仍关闭（`PITFALLS.md` §38）。
    实机重点：音乐播放器「小咕的歌」页应是 日文行 + 中文行，间奏 `♪` 行不变。
 3. **Z20 实验包**（`dist/Z20-desc-dodge/`，2026-10-30 19:15）：Z19 + 道具说明避字，
    用于验证"描述渲染器按码错位"假设；**它构建于歌词修复前，不含歌词**，不作为发布基线。
 4. **注意**：歌词译文仍是代码常量 `SONG_EN_LINES`，在 `translator-view/` 里看不到、
-   也改不了；若要人工校对需另接导出/导入通道。
+   也改不了；若要人工校对需另接导出/导入通道（T-03）。
 
 ---
 
 ## 3. 排查流程（建议按顺序）
 
-1. **以 Z19 产物为基线**：`dist/Z19-proofread/res/LANG_EN.s2a`（Z20 是"道具说明避字"实验包，
-   只用于验证描述渲染器，不作漏译基线）。
+1. **以当前校对目标 `dist/Z24-mapeditor/`（与发布基线 Z19 内容一致）为基线**：
+   Z20 是"道具说明避字"实验包，只用于验证描述渲染器，不作漏译基线。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
    - 可复用/扩展 `build/_scratch/audit_untranslated.py`；
@@ -178,8 +177,9 @@ python build/_scratch/audit_untranslated_z15.py
 python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在固定重建 Z19（`dist/Z19-proofread/`）；不要再用旧的
-`package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
+注意：`import_review.py` 现在按 `CURRENT_REVIEW_RECIPE`（当前 **z24** → `dist/Z24-mapeditor/`）
+重建；不要再用旧的 `package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
+发布基线 Z19 用 `python tools/build.py package_names_cn_reuse_z19` 单独重建。
 
 ---
 
@@ -206,17 +206,17 @@ python build/_scratch/list_blocked_display.py
 
 ---
 
-## 7. 后续 TODO：载体码（cmap）固化
+## 7. 载体码（cmap）固化（已完成 2026-11-09，T-01）
 
-> 2026-10-22 记录；尚未实施。
+> 2026-10-22 记录；**2026-11-09 已实施并验证**。
 
-- 背景：`build_plan()` 按字频分配载体码，译表变化会让码整体平移；
+- 背景：`build_plan()` 原按字频分配载体码，译表变化会让码整体平移；
   存档中的自定义名字是旧 CP932 字节，换补丁后会串字（尤莎→允莎）。
 - 现状：主角默认名 `b391 rec2-4` 与 `b715` 已强制还原原文；`Yusha` 在
   `translator-view/protected/`（原因 `protagonist-default`）。
-- TODO：
-  1. 持久化某一版的「字 → 载体码」到 `locales/zh-CN/cmap.json`；
-  2. 构建时优先使用固化码；新字只从未使用的码/格追加，绝不重排旧字；
-  3. 容量不足时用同义词替换/拒绝新字（2026-11-06 实测新字形 2299/2847，余 548 格），不得挤掉旧码；
-  4. 连续构建两次验证同一汉字码不变，并用旧存档名字字节反查同字。
+- 已实施：
+  1. `locales/zh-CN/cmap.json` 持久化「字 → 载体码」（2300 字）；
+  2. 构建优先使用固化码；新字只从未使用的码追加，绝不重排旧字；
+  3. 容量不足直接报错（不挤掉旧码）；当前新字形 2300/2847，余 547 格；
+  4. 连续两次构建 `+0 新字`，LANG_EN/texture/cscv 哈希一致；2300 码唯一且均可在字符表反查。
 - 参考：`docs/PITFALLS.md` §27、`docs/KNOWN_ISSUES.md` §13、`docs/TODO.md` T-01。

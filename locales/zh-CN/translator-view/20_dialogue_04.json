@@ -415,7 +415,7 @@
    "id": "row::28626",
    "en": "Hold on juuust a second, <RGN_NAME__>.",
    "ja": "「ちょーっと待った　オレ様クン」",
-   "zh": "「且慢一下下，<RGN_NAME__>。」",
+   "zh": "「且慢一下下，本大爷君。」",
    "meta": {
     "blob": 502,
     "offset": 17112,
@@ -1416,7 +1416,7 @@
    "id": "row::28766",
    "en": "Let's have a bit of fun together!!!",
    "ja": "　ワラワを少しは楽しませるのじゃぞ！！！」",
-   "zh": "　多少让本王乐一乐！！！」",
+   "zh": "　多少让本宫乐一乐！！！」",
    "meta": {
     "blob": 502,
     "offset": 66232,
@@ -3990,7 +3990,7 @@
    "id": "row::29247",
    "en": "… A tie!? How regrettable.",
    "ja": "「・・・引き分けだと？　心外だな",
-   "zh": "「…平局！？真是遗憾，",
+   "zh": "「…平局？真叫人咽不下这口气，",
    "meta": {
     "blob": 507,
     "offset": 135956,
@@ -5299,7 +5299,7 @@
    "id": "row::29432",
    "en": "there's a Chrono Crystal buried somewhere in this snow field.",
    "ja": "　クロノクリスタルがうまってるらしいからな」",
-   "zh": "　这片雪原某处埋着时空水晶。」",
+   "zh": "　这片雪原某处埋着计时水晶。」",
    "meta": {
     "blob": 510,
     "offset": 3452,
@@ -5420,7 +5420,7 @@
    "id": "row::29450",
    "en": "It wasn't about the Chrono Crystal.",
    "ja": "　この土地にはクロノクリスタル以外にも」",
-   "zh": "　这片土地除了时空水晶…」",
+   "zh": "　这片土地除了计时水晶…」",
    "meta": {
     "blob": 510,
     "offset": 5496,
@@ -6080,7 +6080,7 @@
    "id": "row::29549",
    "en": "I need something to dig with.",
    "ja": "　なんか<ほるもの>ほしい」",
-   "zh": "　需要深挖的东西。」",
+   "zh": "　想要个能挖东西的<家伙>。」",
    "meta": {
     "blob": 510,
     "offset": 36156,
@@ -6223,7 +6223,7 @@
    "id": "row::29571",
    "en": "I need something to dig with.",
    "ja": "　なんか<ほるもの>ほしい」",
-   "zh": "　需要深挖的东西。」",
+   "zh": "　想要个能挖东西的<家伙>。」",
    "meta": {
     "blob": 510,
     "offset": 41120,
@@ -6344,7 +6344,7 @@
    "id": "row::29591",
    "en": "God will come later!",
    "ja": "「神様　あとから来い！",
-   "zh": "「神随后就到！",
+   "zh": "「神，你随后跟来！",
    "meta": {
     "blob": 510,
     "offset": 46896,
@@ -6729,7 +6729,7 @@
    "id": "row::29645",
    "en": "so rewind time if the avalanche prevents you from advancing. ★",
    "ja": "　雪崩で進めなくなったら時間巻き戻してね★」",
-   "zh": "　所以雪崩挡路就倒流时间。★」",
+   "zh": "　所以雪崩挡路就倒转时间。★」",
    "meta": {
     "blob": 510,
     "offset": 83752,
@@ -8885,7 +8885,7 @@
    "id": "row::30165",
    "en": "… Singing is my life…",
    "ja": "　わたし・・・歌うのがスキだもん・・・」",
-   "zh": "　…唱歌就是我的生命…」",
+   "zh": "　…因为我喜欢唱歌嘛…」",
    "meta": {
     "blob": 526,
     "offset": 136312,
@@ -10920,7 +10920,7 @@
    "id": "row::30597",
    "en": "The amazing gem must be",
    "ja": "「すんごい宝石があるっていうのは",
-   "zh": "「那颗惊人宝石准是",
+   "zh": "「听说有惊人宝石的地方",
    "meta": {
     "blob": 541,
     "offset": 1052,
@@ -10931,7 +10931,7 @@
    "id": "row::30598",
    "en": "in that cave, I'm sure of it. ♪",
    "ja": "　あのどうくつにちがいないですわ♪」",
-   "zh": "　就在那洞里，我肯定。」",
+   "zh": "　肯定就是那个洞♪」",
    "meta": {
     "blob": 541,
     "offset": 1116,
@@ -11217,7 +11217,7 @@
    "id": "row::30633",
    "en": "Ready…",
    "ja": "「いちについて・・・",
-   "zh": "「预备……",
+   "zh": "「各就各位……",
    "meta": {
     "blob": 541,
     "offset": 8060,
@@ -11767,7 +11767,7 @@
    "id": "row::30702",
    "en": "We must return to the academy or we'll miss the curfew.",
    "ja": "　早く学園に戻らないと　門限に間に合いませんよ」",
-   "zh": "　得快点回学院，不然赶不上关门了。」",
+   "zh": "　得快点回学院，不然赶不上门禁了。」",
    "meta": {
     "blob": 541,
     "offset": 93388,
@@ -12537,7 +12537,7 @@
    "id": "row::30847",
    "en": "Resistance is futile.",
    "ja": "　そよ風のごとき　ムダなていこうじゃったな」",
-   "zh": "　对抗是徒劳的。」",
+   "zh": "　如微风般的抵抗，真是徒劳啊」",
    "meta": {
     "blob": 550,
     "offset": 71468,
@@ -12724,7 +12724,7 @@
    "id": "row::31231",
    "en": "ends here!!",
    "ja": "　これで断ち切ろう！！」",
-   "zh": "　就在此终结！！」",
+   "zh": "　就此斩断吧！！」",
    "meta": {
     "blob": 559,
     "offset": 81548,
@@ -14517,7 +14517,7 @@
    "id": "row::31990",
    "en": "The trials of elder fighters await you there.",
    "ja": "　せんぱい戦士の試練が待っているらしい」",
-   "zh": "　那里有长者战士的试炼等着你。」",
+   "zh": "　那里有前辈战士的试炼等着你。」",
    "meta": {
     "blob": 586,
     "offset": 27688,
@@ -14594,7 +14594,7 @@
    "id": "row::32002",
    "en": "I know! I'll give you the spear I used to use.",
    "ja": "　そうじゃ！　わしが昔使ってた槍をやるぞい」",
-   "zh": "　我知道了！把老夫以前用的枪给你！」",
+   "zh": "　对了！老夫就把以前用过的枪送给你！」",
    "meta": {
     "blob": 586,
     "offset": 31484,
@@ -14660,7 +14660,7 @@
    "id": "row::32015",
    "en": "If circumstances were different,",
    "ja": "「お前さんがヤのつくアレなら",
-   "zh": "「如果状况不同，",
+   "zh": "「你要是道上混的那号人物",
    "meta": {
     "blob": 586,
     "offset": 35216,
@@ -14671,7 +14671,7 @@
    "id": "row::32016",
    "en": "that advice might very well change though. Ho-ho-ho!",
    "ja": "　話もちがってくるかもしれんがのう　ふぉっふぉ！」",
-   "zh": "　那忠告或许就该另当别论了。呵呵呵！」",
+   "zh": "　话可就不一样喽　呵呵！」",
    "meta": {
     "blob": 586,
     "offset": 35280,
@@ -14759,7 +14759,7 @@
    "id": "row::32029",
    "en": "That's why I prepared a surprise for one lucky fighter!",
    "ja": "　若い戦士にサプライズを用意しといたんだ！」",
-   "zh": "　所以我给幸运的战士准备了惊喜！」",
+   "zh": "　所以给年轻战士准备了惊喜！」",
    "meta": {
     "blob": 586,
     "offset": 39076,
@@ -16607,7 +16607,7 @@
    "id": "row::32455",
    "en": "That settles it! Let's help the three merman brothers.",
    "ja": "「よーし！　じゃあ魚人三キョウダイを助けて",
-   "zh": "「就这么定了！去帮鱼人三手足，",
+   "zh": "「就这么定了！去帮鱼人三兄弟，",
    "meta": {
     "blob": 600,
     "offset": 19448,
@@ -17289,7 +17289,7 @@
    "id": "row::32573",
    "en": "I managed to make it back to the surface! ♪",
    "ja": "　なんとか地上に出られましたわ♪」",
-   "zh": "　总算回到地面了！」",
+   "zh": "　总算回到地面了呢♪」",
    "meta": {
     "blob": 600,
     "offset": 98352,
@@ -18576,7 +18576,7 @@
    "id": "row::32916",
    "en": "I will be consumed… *slither* *slither*",
    "ja": "　しょくしゅになるぅーーっ・・・ニョロニョロ」",
-   "zh": "　我将被吞噬…*嘶溜* *嘶溜*」",
+   "zh": "　我要变成触手啦…（扭来扭去）」",
    "meta": {
     "blob": 609,
     "offset": 45740,
@@ -18653,7 +18653,7 @@
    "id": "row::32927",
    "en": "The Fierce General Gustaf cannot lose!",
    "ja": "　この猛将グスタフが負けるだとおおおお！」",
-   "zh": "　猛将古斯塔夫绝不会输！」",
+   "zh": "　我猛将古斯塔夫竟然会输——！」",
    "meta": {
     "blob": 609,
     "offset": 70796,
@@ -19115,7 +19115,7 @@
    "id": "row::33078",
    "en": "Clerk: Welcome! ♪",
    "ja": "よろず屋「いらっしゃ～い♪」",
-   "zh": "店主「欢迎光临！」",
+   "zh": "杂货商「欢迎光临～♪」",
    "meta": {
     "blob": 618,
     "offset": 5820,
@@ -19819,7 +19819,7 @@
    "id": "row::33209",
    "en": "Hey, <EVO_NAME__>!",
    "ja": "「ヤッホー　<EVO_NAME__>ちゃん",
-   "zh": "「嘿，<EVO_NAME__>，",
+   "zh": "「呀吼～<EVO_NAME__>，",
    "meta": {
     "blob": 620,
     "offset": 102960,
@@ -19830,7 +19830,7 @@
    "id": "row::33210",
    "en": "Look over there! ♪",
    "ja": "　ちょっとアレを見てみてよ～♪」",
-   "zh": "　看那边！」",
+   "zh": "　稍微看看那边嘛～♪」",
    "meta": {
     "blob": 620,
     "offset": 103024,
@@ -19885,7 +19885,7 @@
    "id": "row::33217",
    "en": "A global dungeon is a spectacular place",
    "ja": "「グローバルダンジョンは　お宝と冒険が",
-   "zh": "「世界地宫是个奇妙之地",
+   "zh": "「世界地宫可是宝藏与冒险沉眠之处，",
    "meta": {
     "blob": 620,
     "offset": 105588,
@@ -19896,7 +19896,7 @@
    "id": "row::33218",
    "en": "where both treasure and adventure await. ♪",
    "ja": "　ねむっている　そりゃもう　スペクタクルな場所よ♪」",
-   "zh": "　宝藏与冒险皆在其中。」",
+   "zh": "　是个超级壮观的地方哦♪」",
    "meta": {
     "blob": 620,
     "offset": 105652,
@@ -19907,7 +19907,7 @@
    "id": "row::33219",
    "en": "I see. Your mention of adventure",
    "ja": "「なるほど　冒険と聞いては",
-   "zh": "「我懂了。一听冒险",
+   "zh": "「原来如此，一听是冒险",
    "meta": {
     "blob": 620,
     "offset": 106172,
@@ -19918,7 +19918,7 @@
    "id": "row::33220",
    "en": "has me excited. ♪",
    "ja": "　ぜひ行ってみたいですわね～♪」",
-   "zh": "　我就兴奋不已。」",
+   "zh": "　我就特别想去看看呢～♪」",
    "meta": {
     "blob": 620,
     "offset": 106236,
@@ -20435,7 +20435,7 @@
    "id": "row::33374",
    "en": "Equipment Clerk: Expensive, eh? Save the sleep-talking",
    "ja": "装備屋「高いだと？　ねごとは装備してから言いやがれ！」",
-   "zh": "装备商「嫌贵？等你穿上装备再抱怨吧！」",
+   "zh": "「嫌贵？等穿上装备再说梦话吧！」",
    "meta": {
     "blob": 622,
     "offset": 6668,
@@ -20633,7 +20633,7 @@
    "id": "row::33429",
    "en": "Levan: Do you think I'm beautiful here in Heaven?",
    "ja": "レバン「天界にいる私も美しいと思いませんか？」",
-   "zh": "莱万「觉得在天界的我也很美吗？」",
+   "zh": "「你不觉得在天界的我也很美吗？」",
    "meta": {
     "blob": 624,
     "offset": 8788,
@@ -20666,7 +20666,7 @@
    "id": "row::33435",
    "en": "Silveria: …… Oh my! ▼",
    "ja": "シルベリア「・・・・・・ポッ▼」",
-   "zh": "希尔贝莉亚「……哎呀！▼」",
+   "zh": "希尔贝莉亚「……噗▼」",
    "meta": {
     "blob": 624,
     "offset": 10060,
@@ -20743,7 +20743,7 @@
    "id": "row::33447",
    "en": "So you're thinking what I'm thinking?",
    "ja": "「あ　<YUSHA_NAME>さんもそう思う？」",
-   "zh": "「你我也想到一块去了？」",
+   "zh": "「啊，<YUSHA_NAME>你也这么想？」",
    "meta": {
     "blob": 625,
     "offset": 6308,
@@ -21128,7 +21128,7 @@
    "id": "row::33502",
    "en": "said something about eliminating <intruders>.",
    "ja": "　<ジャマなもの>を消したって言っていたわよね」",
-   "zh": "　说过要铲除<碍事者>。」",
+   "zh": "　说过它已经把<碍事者>消除了呢。」",
    "meta": {
     "blob": 625,
     "offset": 37908,
@@ -21216,7 +21216,7 @@
    "id": "row::33516",
    "en": "If you do, I'll let you ride this horse as much as you like.",
    "ja": "「そうしたら　この馬にのせてやってもいいからさ～",
-   "zh": "「若办到，就让随便骑这匹马，",
+   "zh": "「若办到，我就让你骑这匹马，",
    "meta": {
     "blob": 625,
     "offset": 46312,
@@ -22019,7 +22019,7 @@
    "id": "row::33656",
    "en": "but I don't think that's quite the truth!",
    "ja": "　言ってたケド　な～んかある気がするのよね～」",
-   "zh": "　但我可不这么认为！」",
+   "zh": "　但我总觉得好像有呢～」",
    "meta": {
     "blob": 628,
     "offset": 9292,
@@ -22426,7 +22426,7 @@
    "id": "row::33717",
    "en": "Behold! The monsters of the Dark World!",
    "ja": "「であえ！　魔界のモンスターどもっ",
-   "zh": "「看哪！魔界的怪兽们",
+   "zh": "「上啊！魔界的怪物们",
    "meta": {
     "blob": 628,
     "offset": 31420,
@@ -23163,7 +23163,7 @@
    "id": "row::33850",
    "en": "Old Man: It's hot hot hot!!!",
    "ja": "おやじ「あつあつだぜ！！！」",
-   "zh": "大叔「好烫好烫好烫！！！」",
+   "zh": "「热腾腾的哦！！！」",
    "meta": {
     "blob": 629,
     "offset": 3276,
@@ -23284,7 +23284,7 @@
    "id": "row::33891",
    "en": "Soldier: Some guy with awesome weapons was heading south.",
    "ja": "兵士「スゲー武器もってた男が南にいたんだけどな」",
-   "zh": "士兵「有个带猛武器的家伙往南去了。」",
+   "zh": "「南边有个拿着超厉害武器的家伙。」",
    "meta": {
     "blob": 631,
     "offset": 6668,
@@ -23647,7 +23647,7 @@
    "id": "row::34018",
    "en": "Old Man: Thankfully, I can make them cheap now.",
    "ja": "おやじ「おかげで安くつくれるようになったぜ」",
-   "zh": "大叔「多亏如此，如今能划算做了。」",
+   "zh": "「多亏如此，如今能做得更便宜了。」",
    "meta": {
     "blob": 641,
     "offset": 1580,
@@ -26133,7 +26133,7 @@
    "id": "row::34480",
    "en": "Goodbye! It's been fun! ♪",
    "ja": "　さようならです　お元気で♪」",
-   "zh": "　再见！这段时光真开心！」",
+   "zh": "　再见，保重♪」",
    "meta": {
     "blob": 652,
     "offset": 134560,
@@ -26397,7 +26397,7 @@
    "id": "row::34520",
    "en": "Little Girl: WELCOME!",
    "ja": "女の子「ＳＯ！」",
-   "zh": "小女孩「欢迎！」",
+   "zh": "「ＳＯ！」",
    "meta": {
     "blob": 653,
     "offset": 1156,
@@ -26507,7 +26507,7 @@
    "id": "row::34576",
    "en": "<RGN_NAME__> moved it without paying.",
    "ja": "「タダで動かしたの",
-   "zh": "「<RGN_NAME__>没付钱就开走了，",
+   "zh": "「没付钱就把它开走，",
    "meta": {
     "blob": 655,
     "offset": 1324,
@@ -26518,7 +26518,7 @@
    "id": "row::34577",
    "en": "Am I wrong?!",
    "ja": "　<RGN_NAME__>のしわざでしょ！！」",
-   "zh": "　难道不是<RGN_NAME__>干的吗！？」",
+   "zh": "　这肯定是<RGN_NAME__>干的吧！！」",
    "meta": {
     "blob": 655,
     "offset": 1388,
@@ -26562,7 +26562,7 @@
    "id": "row::34584",
    "en": "The Dark Goddess made this",
    "ja": "「ここは黒女神さまがダダクサするためにつくった",
-   "zh": "「黑女神为我们打造了这",
+   "zh": "「这明明是黑女神大人为了跟我们撒娇",
    "meta": {
     "blob": 655,
     "offset": 3052,
@@ -26573,7 +26573,7 @@
    "id": "row::34585",
    "en": "steering wheel for us to use!",
    "ja": "　あたしたち用のそうじゅうハンドルだっていうのに」",
-   "zh": "　供我们使用的方向盘！」",
+   "zh": "　才给我们做的专用操纵杆啊」",
    "meta": {
     "blob": 655,
     "offset": 3116,
@@ -26903,7 +26903,7 @@
    "id": "row::34632",
    "en": "Yes Ma'am! Of course!",
    "ja": "「イエス　マム！　ですわ！」",
-   "zh": "「得令！当然！」",
+   "zh": "「是的，女士！　就是这样呢！」",
    "meta": {
     "blob": 656,
     "offset": 20908,
@@ -27156,7 +27156,7 @@
    "id": "row::34666",
    "en": "you will see the real Ava!",
    "ja": "　本物のアヴァ様に会えたことを光栄に思えよ」",
-   "zh": "　就能见到真正的艾娃！」",
+   "zh": "　就该为见到真正的艾娃大人而荣幸了。」",
    "meta": {
     "blob": 656,
     "offset": 32204,
@@ -27222,7 +27222,7 @@
    "id": "row::34676",
    "en": "is someone I should be afraid of! Gwuhaaggghh!",
    "ja": "　おそるべし・・・人間・・・グハッ！！」",
-   "zh": "　那便是我该畏惧之人！咕哈！」",
+   "zh": "　人类…真可怕…咕哈！！」",
    "meta": {
     "blob": 656,
     "offset": 55532,
@@ -27497,7 +27497,7 @@
    "id": "row::34761",
    "en": "Old Woman Spelunker: I love the heart-pounding thrill of caves!",
    "ja": "どうくつおばさん「どうくつのドキドキはいいわよねぇ▼」",
-   "zh": "洞穴婆婆「我就爱洞穴那怦然心动的刺激！」",
+   "zh": "洞穴婆婆「洞穴那种心跳的感觉真不错呢▼」",
    "meta": {
     "blob": 657,
     "offset": 11020,
@@ -27585,7 +27585,7 @@
    "id": "row::34812",
    "en": "That's a direct order from Zozaurus the Enraged of the",
    "ja": "「<四天大王　憤怒のゾゾラース>様のご命令だ！",
-   "zh": "「这可是四天大王·愤怒的佐佐劳斯",
+   "zh": "「这可是<四天大王　愤怒的佐佐劳斯>大人",
    "meta": {
     "blob": 658,
     "offset": 2220,
@@ -27673,7 +27673,7 @@
    "id": "row::34824",
    "en": "It's time to make up for lost time! Dahahaha!",
    "ja": "　大暴れしなきゃそんだよな！　ダハハハッ！」",
-   "zh": "　是时候补回损失了！哒哈哈哈！」",
+   "zh": "　不好好大闹一场可就亏了！哒哈哈哈！」",
    "meta": {
     "blob": 658,
     "offset": 3452,
@@ -27926,7 +27926,7 @@
    "id": "row::34867",
    "en": "It's every boy's dream toy!!",
    "ja": "　いわゆるぅーーー男のロマンじゃないの！！」",
-   "zh": "　简直是男孩的风情梦想！！」",
+   "zh": "　这不就是男人的浪漫嘛！！」",
    "meta": {
     "blob": 658,
     "offset": 24184,
@@ -28542,7 +28542,7 @@
    "id": "row::34992",
    "en": "Demon: The Ultimate King of Rage waits up ahead.",
    "ja": "魔族「この先には憤怒の四天大王様がおまちだよ」",
-   "zh": "魔族「愤怒的终极之王就在前面等着。」",
+   "zh": "「愤怒的四天大王大人就在前面等着你。」",
    "meta": {
     "blob": 663,
     "offset": 2428,
@@ -28619,7 +28619,7 @@
    "id": "row::35344",
    "en": "We're half-way there, down to the final 4 Elements! ♪",
    "ja": "　エレメンツも残り4体で半分ね♪」",
-   "zh": "　只剩最后四元素，过半了呢♪」",
+   "zh": "　元素也只剩4只，正好一半呢♪」",
    "meta": {
     "blob": 668,
     "offset": 6080,
@@ -28685,7 +28685,7 @@
    "id": "row::35354",
    "en": "I'll leave the direction we take",
    "ja": "「どっちから行くかは",
-   "zh": "「路线就交给",
+   "zh": "「先走哪边就交给",
    "meta": {
     "blob": 668,
     "offset": 7184,
@@ -28696,7 +28696,7 @@
    "id": "row::35355",
    "en": "up to you! ♪",
    "ja": "　<YUSHA_NAME>さんにおまかせしちゃう♪」",
-   "zh": "　你来决定吧！♪」",
+   "zh": "　<YUSHA_NAME>你来决定啦♪」",
    "meta": {
     "blob": 668,
     "offset": 7248,
@@ -29895,7 +29895,7 @@
    "id": "row::35531",
    "en": "Mother! Mother! Help!",
    "ja": "「お母様お母様！　タイヘン！",
-   "zh": "「妈妈！妈妈！救命！",
+   "zh": "「妈妈！妈妈！不得了啦！",
    "meta": {
     "blob": 668,
     "offset": 105588,
@@ -30643,7 +30643,7 @@
    "id": "row::35643",
    "en": "Leave <YUSHA_NAME> and his mission to me!",
    "ja": "　<YUSHA_NAME>どののことはお任せください！」",
-   "zh": "　把<YUSHA_NAME>和他的任务交给我！」",
+   "zh": "　<YUSHA_NAME>的事就交给我吧！」",
    "meta": {
     "blob": 668,
     "offset": 142736,
@@ -32359,7 +32359,7 @@
    "id": "row::35886",
    "en": "taking my needs into consideration for a change?",
    "ja": "　わたくしに気をつかってくれたんですの？」",
-   "zh": "　真的在为我想？」",
+   "zh": "　是在为我着想？」",
    "meta": {
     "blob": 668,
     "offset": 303920,
@@ -32601,7 +32601,7 @@
    "id": "row::35918",
    "en": "It would be great if we were to find both of them! FUN!",
    "ja": "　どうせなら今のウチに２体同時に来ないかしらね！」",
-   "zh": "　能同时找到两个就太棒了！好玩！」",
+   "zh": "　要是趁现在两个同时出现就好了！」",
    "meta": {
     "blob": 668,
     "offset": 322024,
@@ -32876,7 +32876,7 @@
    "id": "row::35960",
    "en": "What, you ask… ? I told you we'd meet again",
    "ja": "「なぜって・・・　森で助けていただいた後",
-   "zh": "「什么，你问……？我说过我们会再见的",
+   "zh": "「你问为什么……？在森林里救了我之后，",
    "meta": {
     "blob": 668,
     "offset": 347948,
@@ -32887,7 +32887,7 @@
    "id": "row::35961",
    "en": "after you helped me in the forest. ♪",
    "ja": "　またお会いしましょう♪　って言いましたわ★」",
-   "zh": "　在森林里救了我之后♪」",
+   "zh": "　我不是说过『还会再见吧♪』吗★」",
    "meta": {
     "blob": 668,
     "offset": 348012,
@@ -33536,7 +33536,7 @@
    "id": "row::36049",
    "en": "We were just about to see who the toughest kid here was…",
    "ja": "　ブレイブ城下町のボスを決める時が・・・」",
-   "zh": "　我们正要看看这儿谁最厉害呢……」",
+   "zh": "　正赶上决定勇者城下町老大的时候……」",
    "meta": {
     "blob": 668,
     "offset": 380424,
@@ -34405,7 +34405,7 @@
    "id": "row::36161",
    "en": "I'll… I'll do my best!!",
    "ja": "　り・・・りょーかいです！！」",
-   "zh": "　我……我会尽力！！」",
+   "zh": "　我……我了解了！！」",
    "meta": {
     "blob": 668,
     "offset": 414588,
@@ -35758,7 +35758,7 @@
    "id": "row::36418",
    "en": "They say that there are people inside…",
    "ja": "「中に人がいるわね・・・って",
-   "zh": "「听说里面有人……",
+   "zh": "「里面好像有人呢……",
    "meta": {
     "blob": 679,
     "offset": 10540,
@@ -36869,7 +36869,7 @@
    "id": "row::36665",
    "en": "Evil Lord: So! Why don't you show me a beautiful battle!",
    "ja": "マオウ「さて！美しいたたかいを見せてやろう！」",
-   "zh": "魔王「来！让我看看你漂亮的战斗！」",
+   "zh": "「好啦！就让你见识一下漂亮的战斗！」",
    "meta": {
     "blob": 688,
     "offset": 4972,
@@ -37628,7 +37628,7 @@
    "id": "row::36945",
    "en": "Ah! Your death is our one and only chance. ★",
    "ja": "「そうだ！　<YUSHA_NAME>さんがやられればいいのよ★」",
-   "zh": "「啊！你死才是我们唯一的机会★」",
+   "zh": "「对了！只要<YUSHA_NAME>被打倒就好了★」",
    "meta": {
     "blob": 696,
     "offset": 10104,

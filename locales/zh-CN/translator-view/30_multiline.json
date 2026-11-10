@@ -212,7 +212,7 @@
    "id": "ml::18",
    "en": "Clerk: I tried putting energy drink into the\njelly, so what? I don't know what, actually.",
    "ja": "店主「えいようドリンクをゼリーにしてみたんだ\n　　　だから何？って言われちゃうとこまるけどな」",
-   "zh": "店员「我把能量饮料做成果冻，\n那又怎样？其实我也不明白。」",
+   "zh": "店员「我把能量饮料做成了果冻，\n不过你要问「那又怎样」我可答不上来。」",
    "meta": {
     "blob": 49,
     "offset": 1156,
@@ -452,7 +452,7 @@
    "id": "ml::38",
    "en": "Old Man: The sea is a treasure trove of edible things!\nYou there, take good care of it too!",
    "ja": "おやじ「海は食べ物のたからばこ！おまえさんも大事にしろよな！」",
-   "zh": "老人「大海是美食的宝藏！\n那边的你，也要好好爱惜它！」",
+   "zh": "大叔「大海是食物的宝库！你也得好好珍惜啊！」",
    "meta": {
     "blob": 72,
     "offset": 2004,
@@ -1808,7 +1808,7 @@
    "id": "ml::151",
    "en": "Man? Hahaha! If you make an agreement with\nthe devil, you can get incredible power!",
    "ja": "男？「ゲッゲッゲ　悪魔と契約すれば\n　　　とてつもないパワーをさずかるというぞ！」",
-   "zh": "男人？哈哈哈！若与恶魔立约，\n就能得到惊人的力量！",
+   "zh": "男人？「咯咯咯！若与恶魔订立契约，\n据说就能获得惊人的力量！」",
    "meta": {
     "blob": 258,
     "offset": 1156,
@@ -1844,7 +1844,7 @@
    "id": "ml::154",
    "en": "Woman? If you call off your agreement\nwith the devil, you'll <lose in battle> hahahaha!",
    "ja": "女？「悪魔との契約をやめたくなったら\n　　　<バトルに負ける>ことね　んふふふふ」",
-   "zh": "女人？若你想解除契约，\n就会<战斗失败>，哈哈哈！",
+   "zh": "女人？「想解除契约的话，\n就得<在战斗中输掉>哦　嗯呵呵呵」",
    "meta": {
     "blob": 258,
     "offset": 2428,

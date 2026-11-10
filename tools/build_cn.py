@@ -43,6 +43,9 @@ from ctypes import wintypes
 
 CSV = os.path.join(WORK, 'text_v2.csv')
 EXE = os.path.join(BASE, 'HMH2.exe')
+# 字→载体码固化表（append-only）。见 docs/PITFALLS.md §27 / docs/TODO.md T-01：
+# 旧存档里的自定义名字保存的是 CP932 载体码字节，码表一旦重排就会串字。
+CMAP_FILE = os.path.join(WORK, 'cmap.json')
 
 CELL, COLS_B, COLS_A = 16, 32, 32   # 图集A 也按 32 列布局（游戏用 (x&31,y&31) 取格）
 B_HASH = 0x45781F74      # 图集B 512x512 32列 1024格
@@ -1012,6 +1015,66 @@ def carrier_pool(reserved):
     return pool, n_kanji
 
 
+# ---------------- 载体码固化（T-01） ----------------
+CMAP_SCHEMA = 1
+_CMAP_NOTE = ('字→CP932 载体码固化表（append-only）。旧字码永不改变，'
+              '新字只追加未使用的码；用于保证旧存档中的自定义名字不串字。'
+              '由 build_cn.build_plan()/rewrite_atlas_cscv() 自动维护。')
+
+
+def load_persisted_cmap():
+    """读取 locales/<locale>/cmap.json，返回 {字: 2字节载体码}（保持文件顺序）。
+
+    文件缺失 = 首次启用，返回空表；JSON 损坏则中止，避免静默重排全部旧字。
+    """
+    if not os.path.exists(CMAP_FILE):
+        return {}
+    try:
+        doc = json.load(open(CMAP_FILE, encoding='utf-8-sig'))
+    except Exception as ex:
+        raise SystemExit('!! 无法解析载体码固化表 %s：%s\n'
+                         '   请修复或删除该文件后重试（删除会导致旧存档名字重新分配）。'
+                         % (CMAP_FILE, ex))
+    codes = doc.get('codes') if isinstance(doc, dict) else None
+    if codes is None and isinstance(doc, dict):
+        codes = doc          # 兼容没有外层包装的旧格式
+    if not isinstance(codes, dict):
+        raise SystemExit('!! 载体码固化表格式错误（缺少 codes 对象）：%s' % CMAP_FILE)
+    out = {}
+    for ch, hx in codes.items():
+        if not isinstance(ch, str) or len(ch) != 1:
+            continue
+        try:
+            code = bytes.fromhex(str(hx))
+        except Exception:
+            continue
+        if len(code) == 2:
+            out[ch] = code
+    return out
+
+
+def save_persisted_cmap(assigned):
+    """把本次实际分配的 {字: bytes} 合并进 cmap.json（append-only，不删除旧字）。"""
+    old = load_persisted_cmap()
+    merged = dict(old)
+    added = 0
+    for ch, code in assigned.items():
+        if ch not in merged:
+            merged[ch] = code
+            added += 1
+    if not added and os.path.exists(CMAP_FILE):
+        return 0
+    doc = {
+        '_note': _CMAP_NOTE,
+        'schema': CMAP_SCHEMA,
+        'codes': {ch: code.hex() for ch, code in merged.items()},
+    }
+    with open(CMAP_FILE, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(doc, f, ensure_ascii=False, indent=1)
+        f.write('\n')
+    return added
+
+
 # ---------------- 频率 ----------------
 def display_text(r, field_zh=None):
     """这一行【最终真的会显示】的中文。
@@ -1115,26 +1178,51 @@ def build_plan():
         # 否则它们在道具描述里会被 0x5F 断行符劈开。
         native_chars |= set(reuse_map)
 
-    candidates = [c for c, _ in cnt.most_common() if c not in native_chars]
+    # ---- T-01：载入固化码（append-only）----
+    # 旧字保留原码并继续占格；即使当前译表暂时不再使用该字也保留，
+    # 否则旧存档中的名字字节会失去对应字形/串成别的字。
+    pool_set = set(pool)
+    persisted = collections.OrderedDict()
+    persisted_used_codes = set()
+    for ch, code in load_persisted_cmap().items():
+        if ch in native_chars:          # 原版已有码，无需载体码
+            continue
+        if code not in pool_set:        # 码不安全/已失效（如尾字节 0x5F）
+            continue
+        if code in persisted_used_codes:
+            continue                    # 重复码：保留先出现的一个
+        persisted[ch] = code
+        persisted_used_codes.add(code)
+
+    candidates = [c for c, _ in cnt.most_common()
+                  if c not in native_chars and c not in persisted]
 
     # 保底字优先入字库：左右/斩 等难以替换的核心字（方向词、技能名用字）。
     # 只挤掉频次相近的尾部字，损失极小。
     # 注意：替换表的值必须全部使用高频已装字（check_repl.py 校验），
     # 不做"值用字自动优先"，否则几百个低频字会把高频尾部字挤出字库，得不偿失。
-    force = [c for c in FORCE_CHARS if c in cnt and c not in native_chars]
+    force = [c for c in FORCE_CHARS
+             if c in cnt and c not in native_chars and c not in persisted]
     candidates = force + [c for c in candidates if c not in force]
 
     # ---- DLC01 汉化专用字：追加到末尾（不挤占既有字格，只用剩余空槽）----
-    _dlc_add = [c for c in DLC_EXTRA_CHARS if c not in candidates and c not in native_chars]
+    _dlc_add = [c for c in DLC_EXTRA_CHARS
+                if c not in candidates and c not in native_chars and c not in persisted]
     candidates = candidates + _dlc_add
     if not APPLY_REPL:
         _nr_add = [c for c in NO_REPL_EXTRA_CHARS
-                   if c not in candidates and c not in native_chars]
+                   if c not in candidates and c not in native_chars and c not in persisted]
         candidates = candidates + _nr_add
-    if len(candidates) > n_slot:
+
+    all_chosen = list(persisted) + candidates
+    if len(persisted) > n_slot:
+        raise SystemExit('!! 固化字 %d > 可用格 %d：cmap.json 已超出容量，'
+                         '拒绝构建（不得挤掉旧码）。' % (len(persisted), n_slot))
+    if len(all_chosen) > n_slot:
         print('  !! 候选字 %d > 可用格 %d —— 尾部 %d 字将被挤出（DLC 追加字在末尾，先被挤）'
-              % (len(candidates), n_slot, len(candidates) - n_slot))
-    chosen = candidates[:n_slot]
+              % (len(all_chosen), n_slot, len(all_chosen) - n_slot))
+    chosen = all_chosen[:n_slot]
+    n_new_codes = sum(1 for c in chosen if c not in persisted)
 
     # 只对**译文实际用到**的复用字建 cmap（并记录要重画的索引）。
     # 未用到的日文汉字槽位保持原样，避免无谓改动。
@@ -1143,14 +1231,26 @@ def build_plan():
     cmap = {}
     for c, ids in reuse_used.items():
         cmap[c] = ents[ids[0]].encode('cp932')
+    # 固化码优先；新字从池中顺位取第一个未使用的码。
+    used_codes = set()
     k = 0
     for idx, ch in zip(slots, chosen):
         if idx in kana_set:
             # 借用假名自己的 CP932 码当载体码（字符表条目保持原样）
             cmap[ch] = ents[idx].encode('cp932')
-        else:
-            cmap[ch] = pool[k]
+            continue
+        if ch in persisted:
+            cmap[ch] = persisted[ch]
+            used_codes.add(persisted[ch])
+            continue
+        while k < len(pool) and pool[k] in used_codes:
             k += 1
+        if k >= len(pool):
+            raise SystemExit('!! 载体码池耗尽：无法为「%s」分配新码（已用 %d 码）。'
+                             % (ch, len(used_codes)))
+        cmap[ch] = pool[k]
+        used_codes.add(pool[k])
+        k += 1
 
     covered = sum(cnt[c] for c in chosen) + sum(cnt[c] for c in cnt if c in native_chars)
     statistics = dict(rows=len(rows), total=tot, unique=len(cnt),
@@ -1162,6 +1262,7 @@ def build_plan():
                       reuse_map=reuse_used,
                       reuse_n=len(reuse_used),
                       reuse_slots=sum(len(v) for v in reuse_used.values()),
+                      persisted_n=len(persisted), persisted_new=n_new_codes,
                       coverage=covered / tot if tot else 0)
     global _LAST_BUILD_PLAN
     _LAST_BUILD_PLAN = (cmap, statistics)
@@ -2095,6 +2196,13 @@ def rewrite_atlas_cscv(slots, chosen, cmap, kana_set=frozenset()):
     cb = [bytearray(x) for x in ac.blobs]
     cb[ahm[TBL_HASH]] = bytearray(newblob)
     s2a.pack(os.path.join(BASE, 'res/cscv.s2a'), ac.entries, cb)
+
+    # ---- T-01：把本次实际分配的载体码固化（append-only）----
+    assigned = {ch: cmap[ch] for idx, ch in zip(slots, chosen) if idx not in kana_set}
+    added = save_persisted_cmap(assigned)
+    print('  载体码固化: %s (+%d 新字, 共 %d 字)'
+          % (CMAP_FILE, added, len(assigned)))
+
 
 
 def patch_exe_unlock():
@@ -5484,12 +5592,23 @@ def do_package_names_cn_reuse_z18(exe_mode=None):
 
 
 def do_package_names_cn_reuse_z19(exe_mode=None):
-    """Z19：Z18 配方 + proofread 分支的对话文本日文基准校对修订。"""
+    """Z19：Z18 配方 + proofread 对话校对；2026-11-09 起并入 Z23 敌名/Boss 列表名放行。
+
+    T-07 决策：只在发布基线 Z19 放行 Z23 的图鉴敌名/Boss 列表名；
+    stable/E3 仍保留敌名原文，作为未实机验证前的安全回滚包。
+    """
+    global _Z23_RELEASE
     out = paths.dist('Z19-proofread')
-    rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
-                    stage_name='package_stage_names_cn_reuse_z19',
-                    out_dir=out,
-                    expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z19',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
     _apply_z17_video(out)
     return rc
 
@@ -6102,6 +6221,11 @@ def do_package_install(exe_mode=None):
 # 导入校对脚本只调用 package_current，不再写死任何 Z 编号；
 # 因此维护者只需改这里，并同步 BUILDING.md / AGENTS.md / PACKAGE_LEDGER.md。
 RECIPES = {
+    'stable': {'func': do_package_stable_names,
+               'cmd': 'package_stable_names',
+               'out': 'stable-names-en',
+               'stage': 'package_stage_stable_names',
+               'status': 'stable', 'review': False},
     'z19': {'func': do_package_names_cn_reuse_z19,
             'cmd': 'package_names_cn_reuse_z19',
             'out': 'Z19-proofread',

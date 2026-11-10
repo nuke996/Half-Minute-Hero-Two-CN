@@ -360,7 +360,7 @@
    "id": "row::37588",
    "en": "All we need to do to settle the score",
    "ja": "「それに要は　あの魔皇帝も",
-   "zh": "「我们要解决这一切",
+   "zh": "「再说，只要把那个魔皇帝",
    "meta": {
     "blob": 712,
     "offset": 9228,
@@ -371,7 +371,7 @@
    "id": "row::37589",
    "en": "is defeat this Evil Emperor. ♪",
    "ja": "　やっつけちゃえばチャラだし♪」",
-   "zh": "　只需打败这魔皇帝就行。」",
+   "zh": "　也打倒就一笔勾销啦♪」",
    "meta": {
     "blob": 712,
     "offset": 9292,
@@ -1482,7 +1482,7 @@
    "id": "row::37730",
    "en": "<EVO_NAME__>! You're the one always talking about hero-this,",
    "ja": "「アナタねぇ！　ひごろから　勇者勇者言ってるんだから",
-   "zh": "「<EVO_NAME__>！平时老把勇者挂在嘴边的人",
+   "zh": "「你呀！平时张口勇者闭口勇者的，",
    "meta": {
     "blob": 712,
     "offset": 108508,
@@ -1493,7 +1493,7 @@
    "id": "row::37731",
    "en": "hero-that… No real hero would stop now!",
    "ja": "　カンタンにあきらめるんじゃないわよっ」",
-   "zh": "　就是你！真正的勇者不会在此止步！」",
+   "zh": "　哪能这么轻易就放弃啊！」",
    "meta": {
     "blob": 712,
     "offset": 108572,
@@ -1790,7 +1790,7 @@
    "id": "row::37770",
    "en": "I couldn't just let that revolting monster get to you first.",
    "ja": "　あんなみにくい者に負けられてはこまる」",
-   "zh": "　我可不能让那丑陋怪物赶早得手。」",
+   "zh": "　我可不能输给那种丑八怪。」",
    "meta": {
     "blob": 712,
     "offset": 124632,
@@ -3484,7 +3484,7 @@
    "id": "row::37978",
    "en": "What are you doing here… ?",
    "ja": "　こんなところまで来てしまって・・・」",
-   "zh": "　你们来这种地方做什么…？」",
+   "zh": "　竟然都跑到这种地方来了…」",
    "meta": {
     "blob": 712,
     "offset": 386556,
@@ -4331,7 +4331,7 @@
    "id": "row::38093",
    "en": "We can't save everyone!",
    "ja": "　このままじゃ　みんな助からないよー！」",
-   "zh": "　我们救不了所有人！」",
+   "zh": "　再这样下去，大家都会没命的！」",
    "meta": {
     "blob": 712,
     "offset": 444372,
@@ -5629,7 +5629,7 @@
    "id": "row::39540",
    "en": "You keep blathering on, so you just lost",
    "ja": "「<RGN_NAME__>がまた　よけいな口を開いたタメ",
-   "zh": "「你又啰嗦个没完，所以白白浪费了",
+   "zh": "「<RGN_NAME__>又多嘴了，剩余时间",
    "meta": {
     "blob": 730,
     "offset": 9520,
@@ -5640,7 +5640,7 @@
    "id": "row::39541",
    "en": "10 seconds. Now, you just have 30 left.",
    "ja": "　さらに<10秒減り>　残り時間が<30秒>になりまシタ」",
-   "zh": "　10秒。现在你只剩30秒了。」",
+   "zh": "　又<减少10秒>，变成<30秒>了。」",
    "meta": {
     "blob": 730,
     "offset": 9584,
@@ -5772,7 +5772,7 @@
    "id": "row::39561",
    "en": "… The problem is your breathing.",
    "ja": "「問題は・・・<RGN_NAME__>の息が",
-   "zh": "「…问题是你的呼吸，",
+   "zh": "「问题是……<RGN_NAME__>的呼吸",
    "meta": {
     "blob": 730,
     "offset": 13316,
@@ -5783,7 +5783,7 @@
    "id": "row::39562",
    "en": "You'll only be able to hold for another <30 seconds>.",
    "ja": "　<30秒>しかつづかないということデスガ」",
-   "zh": "　你只能再憋<30秒>了。」",
+   "zh": "　只能维持<30秒>这一点。」",
    "meta": {
     "blob": 730,
     "offset": 13380,
@@ -6894,7 +6894,7 @@
    "id": "row::41303",
    "en": "I haven't been home in ages. ♪",
    "ja": "「ひさしぶりの我が家ですわ♪」",
-   "zh": "「我好久没回家了。」",
+   "zh": "「好久没回自己家啦♪」",
    "meta": {
     "blob": 741,
     "offset": 18864,
@@ -8005,7 +8005,7 @@
    "id": "row::41444",
    "en": "My queen… Your mother…",
    "ja": "「王妃・・・いや　<EVO_NAME__>の母さんが",
-   "zh": "「我的王后……你的母亲……",
+   "zh": "「王后……不，<EVO_NAME__>的母亲",
    "meta": {
     "blob": 741,
     "offset": 82812,
@@ -8016,7 +8016,7 @@
    "id": "row::41445",
    "en": "Much time has passed since we lost her to illness.",
    "ja": "　病気でなくなってしばらくたっていたからか」",
-   "zh": "　自从她病逝已经过去很久了。」",
+   "zh": "　病逝后已经过了好一阵子，或许是因为这个吧」",
    "meta": {
     "blob": 741,
     "offset": 82876,
@@ -8192,7 +8192,7 @@
    "id": "row::41469",
    "en": "I've often heard of the legend of Queen Ciel.",
    "ja": "「女王シエルの話は　よく昔話として聞きましたわ",
-   "zh": "「我常听人说起希尔公主的传说，",
+   "zh": "「我常听人把希尔女王的故事当老话讲，",
    "meta": {
     "blob": 741,
     "offset": 85440,
@@ -8522,7 +8522,7 @@
    "id": "row::41511",
    "en": "He-he-he…",
    "ja": "「へっへっへ",
-   "zh": "「嘿嘿嘿…",
+   "zh": "「嘿嘿嘿……",
    "meta": {
     "blob": 741,
     "offset": 103252,
@@ -8533,7 +8533,7 @@
    "id": "row::41512",
    "en": "I just painted a picture. ♪",
    "ja": "　あっしの絵がかけやしたぜ♪」",
-   "zh": "　我刚画了幅画。」",
+   "zh": "　我刚画了幅画哦♪」",
    "meta": {
     "blob": 741,
     "offset": 103316,
@@ -9149,7 +9149,7 @@
    "id": "row::41628",
    "en": "time before you attacked Ramizas for you, <RGN_NAME__>!! ★",
    "ja": "　時間を巻き戻したわよ★　<RGN_NAME__>！」",
-   "zh": "　你攻打拉米兹之前，<RGN_NAME__>！！★」",
+   "zh": "　打倒拉米萨斯之前哦★<RGN_NAME__>！」",
    "meta": {
     "blob": 744,
     "offset": 22724,
@@ -10370,7 +10370,7 @@
    "id": "row::41815",
    "en": "Well then, let's go vanquish the next God! ♪",
    "ja": "「さあ　ネクストゴッドをたおしにいくわよーー♪」",
-   "zh": "「那好，去打倒下一位神吧！」",
+   "zh": "「那好，去打倒下一位神吧♪」",
    "meta": {
     "blob": 744,
     "offset": 167492,
@@ -10491,7 +10491,7 @@
    "id": "row::41855",
    "en": "What a shame, your time has come. ♪",
    "ja": "「でも残念です　時間となってしまったようです♪",
-   "zh": "「真遗憾，你的时间到了。",
+   "zh": "「真遗憾，好像到时间了♪」",
    "meta": {
     "blob": 747,
     "offset": 2060,
@@ -10502,7 +10502,7 @@
    "id": "row::41856",
    "en": "You can have a nice long chat with them in Hell!",
    "ja": "　お友達とは　あの世でゆっくりとお話してください」",
-   "zh": "　你可以在地狱和他们慢慢聊！」",
+   "zh": "　到那个世界再和朋友们慢慢聊吧」",
    "meta": {
     "blob": 747,
     "offset": 2348,
@@ -11899,7 +11899,7 @@
    "id": "row::42104",
    "en": "Sand Person: I took the <path with few cactuses> and",
    "ja": "すなのたみ「<サボテンの少ない方>に進んだら",
-   "zh": "沙人「我选了<仙人掌少的那条路>，",
+   "zh": "沙人「往<仙人掌较少的那边>走的话，」",
    "meta": {
     "blob": 753,
     "offset": 2428,
@@ -13494,7 +13494,7 @@
    "id": "row::42389",
    "en": "Ah, umm, geezer… Thank you",
    "ja": "「あっ　あの　おじさま・・・助けてくださって",
-   "zh": "「啊，呃，大叔……谢谢你",
+   "zh": "「啊，那个，大叔大人……谢谢你",
    "meta": {
     "blob": 757,
     "offset": 95076,
@@ -13747,7 +13747,7 @@
    "id": "row::42422",
    "en": "Someone's in trouble to the southeast of the Goddess Academy.",
    "ja": "　女神学園の南東にこまっているヒトがいるわ♪」",
-   "zh": "　女神学院东南有人遇险了。」",
+   "zh": "　女神学院东南有人遇险了♪」",
    "meta": {
     "blob": 757,
     "offset": 100980,
@@ -14176,7 +14176,7 @@
    "id": "row::42495",
    "en": "*Gasp*!!",
    "ja": "「キィ～～～",
-   "zh": "「*倒吸一口气*，",
+   "zh": "「唔唔～～",
    "meta": {
     "blob": 757,
     "offset": 187932,
@@ -16981,7 +16981,7 @@
    "id": "row::42907",
    "en": "Maybe I'll become vegetarian from now on!",
    "ja": "「これからは草食ケイになるぜ！",
-   "zh": "「或许我以后改吃素了！",
+   "zh": "「从今往后我就改吃素了！",
    "meta": {
     "blob": 757,
     "offset": 362840,
@@ -19148,7 +19148,7 @@
    "id": "row::43528",
    "en": "Engaaaaage!! Ribbit!",
    "ja": "　オーーーーンゲコ！！」",
-   "zh": "　开战！！呱！！」",
+   "zh": "　启动！！呱！！」",
    "meta": {
     "blob": 769,
     "offset": 2636,
@@ -20919,7 +20919,7 @@
    "id": "row::44177",
    "en": "～ ～ ～ ♪ ♪ ♪ …",
    "ja": "「～～～♪　♪　♪・・・」",
-   "zh": "「♪ ……」",
+   "zh": "「～～～♪　♪　♪……」",
    "meta": {
     "blob": 778,
     "offset": 10104,
@@ -24879,7 +24879,7 @@
    "id": "row::44800",
    "en": "Geezerrrrr!!",
    "ja": "　おじさまーーーーー！！」",
-   "zh": "　大叔叔叔！！」",
+   "zh": "　大叔————！！」",
    "meta": {
     "blob": 785,
     "offset": 143904,
@@ -26606,7 +26606,7 @@
    "id": "row::45042",
    "en": "Hehehe… We know where to find one!",
    "ja": "「うふふふ・・・それがあるのですわ",
-   "zh": "「嘿嘿嘿……我们可知道去哪找，",
+   "zh": "「呵呵呵……其实我们有哦，",
    "meta": {
     "blob": 787,
     "offset": 105296,
@@ -26881,7 +26881,7 @@
    "id": "row::45082",
    "en": "Right. It looks like rabbits aren't the only",
    "ja": "「そうね　うさぎちゃんと<EVO_NAME__>ちゃんは",
-   "zh": "「没错。看来兔子不是唯一",
+   "zh": "「没错，听说小兔子和小<EVO_NAME__>",
    "meta": {
     "blob": 787,
     "offset": 115224,
@@ -26892,7 +26892,7 @@
    "id": "row::45083",
    "en": "creatures that can die due to loneliness.",
    "ja": "　さびしいと死んじゃうらしいから」",
-   "zh": "　会因孤独而死的生物。」",
+   "zh": "　寂寞过头是会死的呢。」",
    "meta": {
     "blob": 787,
     "offset": 115288,
@@ -27233,7 +27233,7 @@
    "id": "row::45193",
    "en": "Too bad you can't fly!!",
    "ja": "　飛ぶこともできない自分をうらむことだ！」",
-   "zh": "　你不能飞，只能自怨自艾了！！」",
+   "zh": "　要恨就恨自己不会飞吧！」",
    "meta": {
     "blob": 793,
     "offset": 2060,
@@ -28388,7 +28388,7 @@
    "id": "row::45341",
    "en": "W-Wait up for me!",
    "ja": "　ちょ　ちょっと待ってくださーい！」",
-   "zh": "　等-等等我！」",
+   "zh": "　等、等一下——！」",
    "meta": {
     "blob": 795,
     "offset": 82292,
@@ -29026,7 +29026,7 @@
    "id": "row::45443",
    "en": "2nd Battle Coliseum Tournament!?",
    "ja": "　参加しちゃいます！？」",
-   "zh": "　第二届战斗竞技大赛吗！？」",
+   "zh": "　战斗竞技场第二届大会吗！？」",
    "meta": {
     "blob": 795,
     "offset": 144488,
@@ -30236,7 +30236,7 @@
    "id": "row::45659",
    "en": "… But Mr. <RGN_NAME__>!",
    "ja": "「・・・でも<RGN_NAME__>さん！",
-   "zh": "「……但是<RGN_NAME__>先生！",
+   "zh": "「……但是<RGN_NAME__>！",
    "meta": {
     "blob": 795,
     "offset": 313784,
@@ -33976,7 +33976,7 @@
    "id": "row::46339",
    "en": "And I even brought some trustworthy help! ♪",
    "ja": "「それに頼もしい助っ人も連れて来たのよ♪",
-   "zh": "「我还带来了可靠的帮手！~",
+   "zh": "「我还带来了可靠的帮手哦♪",
    "meta": {
     "blob": 804,
     "offset": 53320,
@@ -33987,7 +33987,7 @@
    "id": "row::46340",
    "en": "Though my methods may have been a little rough…",
    "ja": "　連れてき方が少し乱暴だったみたいだけど」",
-   "zh": "　虽然带来他们的方式有点粗鲁……」",
+   "zh": "　虽然带他们的方式有点粗暴……」",
    "meta": {
     "blob": 804,
     "offset": 53384,
@@ -36726,7 +36726,7 @@
    "id": "row::46714",
    "en": "But really, it's just saying 'Aah, stay away,' right!",
    "ja": "　結局　いやー来ないでーって言ってるだけだろ！」",
-   "zh": "　其实不就是\"啊，别过来\"吗！」",
+   "zh": "　其实不就是『啊，别过来』嘛！」",
    "meta": {
     "blob": 804,
     "offset": 247856,
@@ -39509,7 +39509,7 @@
    "id": "row::47378",
    "en": "Welcome! ♪ Don't be shy! Buy buy buy!! ♪",
    "ja": "「いらっしゃい♪　バシバシ買ってってね♪」",
-   "zh": "「欢迎！别害羞！买买买！！」",
+   "zh": "「欢迎光临♪ 尽管买买买哦♪」",
    "meta": {
     "blob": 804,
     "offset": 650752,
@@ -39861,7 +39861,7 @@
    "id": "row::47446",
    "en": "I'm not mentally prepared yet!!",
    "ja": "　まだ心の準備できてなかった！！」",
-   "zh": "　我心理还没准备好！！」",
+   "zh": "　我还没做好心理准备！！」",
    "meta": {
     "blob": 804,
     "offset": 708048,
@@ -40510,7 +40510,7 @@
    "id": "row::47607",
    "en": "Well, what do we have here～? Are you short on gold?",
    "ja": "「あらあら～？　お金が足りないわよ？",
-   "zh": "「哎呀～这是哪位？你缺金币吗？",
+   "zh": "「哎呀呀～？你的钱不够哦？",
    "meta": {
     "blob": 811,
     "offset": 1344,
@@ -40609,7 +40609,7 @@
    "id": "row::47620",
    "en": "For a start I'll help myself to all of your gold～ ▼▼▼",
    "ja": "　じゃあまず　あり金ゼンブぼっしゅう～▼▼▼」",
-   "zh": "　先吸光你所有的金币～▼▼▼」",
+   "zh": "　那就先没收你全部现钱～▼▼▼」",
    "meta": {
     "blob": 811,
     "offset": 2868,
@@ -41324,7 +41324,7 @@
    "id": "row::47743",
    "en": "Do not let <RGN_NAME__> through this",
    "ja": "「我が行くまでこのどうくつで",
-   "zh": "「在我归来前，别让<RGN_NAME__>通过这",
+   "zh": "「在我回来之前，就在这洞穴里",
    "meta": {
     "blob": 813,
     "offset": 36676,
@@ -41335,7 +41335,7 @@
    "id": "row::47744",
    "en": "cave!!… Now go!",
    "ja": "　<RGN_NAME__>を食い止めよ！・・・行けっ！」",
-   "zh": "　洞穴！！……快去！」",
+   "zh": "　挡住<RGN_NAME__>！……快去！」",
    "meta": {
     "blob": 813,
     "offset": 36740,
@@ -41687,7 +41687,7 @@
    "id": "row::47790",
    "en": "Are you telling me that one of the God Nine…",
    "ja": "　まさかゴッドナインとも　あろうお方が・・・」",
-   "zh": "　你是在说九神之一……」",
+   "zh": "　堂堂九神之一的人物，总不会……」",
    "meta": {
     "blob": 813,
     "offset": 56012,
@@ -42281,7 +42281,7 @@
    "id": "row::48096",
    "en": "Old Man: They're mole-colored!",
    "ja": "おやじ「色あいがモグラなんだぜ！」",
-   "zh": "「大叔：颜色跟鼹鼠一个样！」",
+   "zh": "「大叔「颜色跟鼹鼠一个样！」」",
    "meta": {
     "blob": 819,
     "offset": 1580,
@@ -42303,7 +42303,7 @@
    "id": "row::48110",
    "en": "Weaponsmith: In this era, bowgun swords are HOT!!",
    "ja": "武器屋「今の時代ボウガンソードがアツイ！！」",
-   "zh": "「武器商：如今这年头，弩剑可火了！！」",
+   "zh": "「武器商「如今这年头，弩剑可火了！！」」",
    "meta": {
     "blob": 819,
     "offset": 5820,
@@ -42369,7 +42369,7 @@
    "id": "row::48163",
    "en": "Old Man: Hurray! Hurray! You there! Hurray! Hurray!",
    "ja": "老人「フレーフレー！おぬし！フレーフレー！」",
-   "zh": "大叔「加油！加油！你这小子！加油！加油！」",
+   "zh": "「老人「加油！加油！这位！加油！加油！」」",
    "meta": {
     "blob": 822,
     "offset": 1580,
@@ -42589,7 +42589,7 @@
    "id": "row::48248",
    "en": "Cool Old Guy: Align the statues symmetrically…",
    "ja": "ダンディおじさん「せきひを<左右対称>に・・・」",
-   "zh": "帅老头「把石像<左右对称>摆好…」",
+   "zh": "「帅老头「把石碑<左右对称>摆好…」」",
    "meta": {
     "blob": 827,
     "offset": 240,
@@ -42941,7 +42941,7 @@
    "id": "row::48391",
    "en": "Not yet!",
    "ja": "　またですわっ！？」",
-   "zh": "　还没呢！」",
+   "zh": "　又来一次！？」",
    "meta": {
     "blob": 836,
     "offset": 5132,
@@ -43095,7 +43095,7 @@
    "id": "row::48416",
    "en": "What's this? It's so cool!!!",
    "ja": "「なんですのこれ！　かっこいーですわ♪",
-   "zh": "「这是什么？太帅了，",
+   "zh": "「这是什么呀！太帅了呢♪",
    "meta": {
     "blob": 836,
     "offset": 13996,
@@ -43106,7 +43106,7 @@
    "id": "row::48417",
    "en": "You should have brought this out earlier.",
    "ja": "　こんなのがあるならもっとはやく出してくれれば」",
-   "zh": "　你早该把这东西拿出来。」",
+   "zh": "　有这种东西就早点拿出来嘛。」",
    "meta": {
     "blob": 836,
     "offset": 14060,
@@ -43194,7 +43194,7 @@
    "id": "row::48430",
    "en": "Lord Gustaf's plan can't be stopped by the likes of you!",
    "ja": "　オマエにグスタフ様の作戦は止められない！」",
-   "zh": "　古斯塔夫王的计划岂是你能阻止的！」",
+   "zh": "　古斯塔夫大人的计划岂是你能阻止的！」",
    "meta": {
     "blob": 836,
     "offset": 18668,
@@ -43315,7 +43315,7 @@
    "id": "row::48446",
    "en": "I got him! I beat the dragon. ♪",
    "ja": "「やりましたわっ　ドラゴンに勝ちましたわ♪",
-   "zh": "「我做到了！我打败了龙，",
+   "zh": "「我做到了！打赢龙了呢♪",
    "meta": {
     "blob": 836,
     "offset": 35308,
@@ -43326,7 +43326,7 @@
    "id": "row::48447",
    "en": "My first dragon, my first victory. ♪",
    "ja": "　初ドラゴン　初勝利ですわ♪」",
-   "zh": "　初次屠龙，初次胜利。」",
+   "zh": "　第一次打龙，第一次胜利呢♪」",
    "meta": {
     "blob": 836,
     "offset": 35372,

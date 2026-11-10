@@ -148,9 +148,11 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 
 # 已知问题
 
-见 `docs/KNOWN_ISSUES.md`。要点：大量"未翻译"是刻意保留；对话误译（TODO-5）仍在推进；
-图鉴敌名/Boss 名已于 Z23/Z24 上屏（仍有少量敌技名与说明短句待补）；存档自定义名会随载体码漂移；
-Steam 校验会还原汉化。未完成项汇总见 `docs/TODO.md`。
+见 `docs/KNOWN_ISSUES.md`。要点：大量"未翻译"是刻意保留；对话误译第二轮已清零
+（`docs/PROOFREAD_DIALOGUE_ROUND2.md`）；图鉴敌名/Boss 名已在 Z19/Z23/Z24 上屏
+（stable/E3 仍保留原文，作为安全回滚包；仍有少量敌技名与说明短句待补）；
+存档自定义名已由 `cmap.json` 固化载体码，不再随译表漂移；Steam 校验会还原汉化。
+未完成项汇总见 `docs/TODO.md`（当前最高优先级：T-09 合并 `proofread` 到 `main`）。
 
 ---
 
@@ -176,11 +178,11 @@ Steam 校验会还原汉化。未完成项汇总见 `docs/TODO.md`。
 文本提取:      完成
 字形/字体:     完成（覆盖率 100%）
 UI 翻译:       基本完成（少量标签保留原文）
-对话翻译:      完成但质量待修订（TODO-5）
-名字类翻译:    分批进行中
+对话翻译:      完成（第二轮校对待核对清零；实机待抽检）
+名字类翻译:    分批进行中（敌名/Boss 名已在 Z19 发布基线放行）
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z24** → `dist/Z24-mapeditor`）；Z19 为历史基线（当时尚未并入 Z22–Z24 放行）
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z24** → `dist/Z24-mapeditor`）；**Z19 为当前发布基线**（2026-11-09 已并入 Z22–Z24，含敌名放行）；发版构建与存档兼容由 `locales/zh-CN/cmap.json` 固化载体码
 ```
 
 ---

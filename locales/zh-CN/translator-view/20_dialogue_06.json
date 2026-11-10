@@ -998,7 +998,7 @@
    "id": "row::48608",
    "en": "As I thought, that <whoooshing> statue",
    "ja": "「やっぱりあの<ひゅるるるる～ん>",
-   "zh": "「果然那个<嗖嗖声>石像",
+   "zh": "「果然那个<嗖嗖声>",
    "meta": {
     "blob": 839,
     "offset": 192020,
@@ -1009,7 +1009,7 @@
    "id": "row::48609",
    "en": "appears to have been weakened. ♪",
    "ja": " って石像が弱くなった時に出るみたいね♪」",
-   "zh": "似乎已经变弱了。」",
+   "zh": "　好像是石像变弱时才会响的呢♪」",
    "meta": {
     "blob": 839,
     "offset": 192084,
@@ -1691,7 +1691,7 @@
    "id": "row::48726",
    "en": "Clerk: Welcome～ ▼",
    "ja": "店番「いらっしゃいませ～▼」",
-   "zh": "「店员：欢迎光临～▼」",
+   "zh": "「店员「欢迎光临～▼」」",
    "meta": {
     "blob": 841,
     "offset": 4548,
@@ -2593,7 +2593,7 @@
    "id": "row::48958",
    "en": "Old Man: I wonder how long this place will last…",
    "ja": "オヤジ「ここもいつまでもつものやら・・・」",
-   "zh": "「大叔：这地方还能撑多久呢……」",
+   "zh": "「大叔「这地方还能撑多久呢……」」",
    "meta": {
     "blob": 852,
     "offset": 2004,
@@ -2615,7 +2615,7 @@
    "id": "row::48969",
    "en": "Castle Parts Vendor: Buy stuff if you're gonna fight that thing!",
    "ja": "城パーツ屋「ヤツとたたかうのなら買っていけ！」",
-   "zh": "「城堡零件商：要和那家伙打就先买装备！」",
+   "zh": "「城堡零件商「要和那家伙打就先买装备！」」",
    "meta": {
     "blob": 852,
     "offset": 4972,
@@ -3165,7 +3165,7 @@
    "id": "row::49212",
    "en": "FIERY God, <RGN_NAME__>… Yes, not furry…",
    "ja": "「怒れる神・・・です<RGN_NAME__>",
-   "zh": "「愤怒之神，<RGN_NAME__>……对，不是毛茸茸……",
+   "zh": "「他是愤怒之神……<RGN_NAME__>，",
    "meta": {
     "blob": 863,
     "offset": 6600,
@@ -3275,7 +3275,7 @@
    "id": "row::49225",
    "en": "Oh c'mon! It's not No. 30's fault! <RGN_NAME__>,",
    "ja": "「ちょっとー！　30号は悪くないでしょ",
-   "zh": "「哦别这样！不是30号的错！<RGN_NAME__>，",
+   "zh": "「喂！30号又没错吧，",
    "meta": {
     "blob": 863,
     "offset": 12440,
@@ -3286,7 +3286,7 @@
    "id": "row::49226",
    "en": "you're the one who's always causing all the problems!",
    "ja": "　<RGN_NAME__>がよけいなことしたからじゃない！」",
-   "zh": "　<RGN_NAME__>，惹出这些麻烦的总是你！」",
+   "zh": "　还不是<RGN_NAME__>你多管闲事！」",
    "meta": {
     "blob": 863,
     "offset": 12504,
@@ -3308,7 +3308,7 @@
    "id": "row::49228",
    "en": "a hero can't handle!",
    "ja": "　全然ピンチじゃねーんだよ！」",
-   "zh": "　根本不是勇者应付不了的！」",
+   "zh": "　根本不算什么危机！」",
    "meta": {
     "blob": 863,
     "offset": 13088,
@@ -5552,7 +5552,7 @@
    "id": "row::49913",
    "en": "You are the <true hero>!!",
    "ja": "　あなたこそ<真の勇者様>ね！！」",
-   "zh": "　你就是<真勇者>！！」",
+   "zh": "　你就是<真正的勇者大人>！！」",
    "meta": {
     "blob": 887,
     "offset": 30316,
@@ -5948,7 +5948,7 @@
    "id": "row::49967",
    "en": "Yours seems to be the <team of fake heroes>.",
    "ja": "　あなたたちは<ニセ勇者チーム>みたいね」",
-   "zh": "　你们像是<假勇者>的队伍。」",
+   "zh": "　你们似乎是<假勇者队伍>呢。」",
    "meta": {
     "blob": 887,
     "offset": 43456,
@@ -6641,7 +6641,7 @@
    "id": "row::50245",
    "en": "Herb Dealer: Herbs will make you regain all your strength. ♪",
    "ja": "やくそう売り「やくそうを使うと体力が全回復するわよ♪」",
-   "zh": "草药商「草药能让你体力全回复。」",
+   "zh": "草药商「用了草药，体力就会全回复哦♪」",
    "meta": {
     "blob": 898,
     "offset": 7092,
@@ -6960,7 +6960,7 @@
    "id": "row::50979",
    "en": "Well then",
    "ja": "「それじゃ　",
-   "zh": "「那好吧",
+   "zh": "「那好吧，",
    "meta": {
     "blob": 905,
     "offset": 14192,
@@ -6971,7 +6971,7 @@
    "id": "row::50980",
    "en": "let's take a look at the results screen. ♪",
    "ja": "　リザルトがめんに　うつるわね♪」",
-   "zh": "　来看看结算画面吧。」",
+   "zh": "　那就切到结算画面吧♪",
    "meta": {
     "blob": 905,
     "offset": 14256,
@@ -6993,7 +6993,7 @@
    "id": "row::50983",
    "en": "a <fake hero>.",
    "ja": "　<ニセ勇者>みたいね」",
-   "zh": "　一个<假英雄>呢。」",
+   "zh": "　一个<假勇者>呢。」",
    "meta": {
     "blob": 905,
     "offset": 16300,
@@ -7829,7 +7829,7 @@
    "id": "row::51174",
    "en": "However…",
    "ja": "「しかし女王様は　こいつなら・・・",
-   "zh": "「不过…",
+   "zh": "「不过女王陛下判断，若是这家伙…",
    "meta": {
     "blob": 906,
     "offset": 12148,
@@ -7840,7 +7840,7 @@
    "id": "row::51175",
    "en": "The queen decided that he was the man for the job.",
    "ja": "　<YUSHA_NAME>ならできると判断したんだ」",
-   "zh": "　女王认定他才胜任此职。」",
+   "zh": "　若是<YUSHA_NAME>就一定做得到。」",
    "meta": {
     "blob": 906,
     "offset": 12212,
@@ -7906,7 +7906,7 @@
    "id": "row::51184",
    "en": "I'm <Ramiz>, a Brave Kingdom soldier.",
    "ja": "　わたしはブレイブ王国兵士<ラミス>」",
-   "zh": "　我是勇者王国士兵<拉米丝>。」",
+   "zh": "　我是勇敢王国士兵<拉米丝>。」",
    "meta": {
     "blob": 906,
     "offset": 13380,
@@ -8247,7 +8247,7 @@
    "id": "row::51232",
    "en": "Above all else, I'll do my very best",
    "ja": "「<YUSHA_NAME>どのの足をひっぱらないよう",
-   "zh": "「总之我会全力以赴，",
+   "zh": "「为了不拖<YUSHA_NAME>大人的后腿，",
    "meta": {
     "blob": 906,
     "offset": 33464,
@@ -8258,7 +8258,7 @@
    "id": "row::51233",
    "en": "to stay out of your way!",
    "ja": "　気をつけますのでよろしくおねがいします！」",
-   "zh": "　绝不拖你的后腿！」",
+   "zh": "　我会多加小心，请多指教！」",
    "meta": {
     "blob": 906,
     "offset": 33528,
@@ -9083,7 +9083,7 @@
    "id": "row::51347",
    "en": "It's like a <Spell of Destruction> rip-off!!",
    "ja": "　それって<ハメツの呪文>のパクリじゃない！！」",
-   "zh": "　这根本就是<破灭之咒>的山寨货！！」",
+   "zh": "　这根本就是<毁灭之咒>的山寨货！！」",
    "meta": {
     "blob": 906,
     "offset": 96016,
@@ -9193,7 +9193,7 @@
    "id": "row::51362",
    "en": "He'll appear over there,",
    "ja": "　あちらから現れてくれたのですから」",
-   "zh": "　他会从那边现身，」",
+   "zh": "　毕竟他自己从那边现身了。」",
    "meta": {
     "blob": 906,
     "offset": 98936,
@@ -9237,7 +9237,7 @@
    "id": "row::51368",
    "en": "Let's return to the village and look for <fire>…",
    "ja": "　<火だね>となるものをさがしに村へ・・・」",
-   "zh": "　我们回村找<火>吧…」",
+   "zh": "　我们回村找能当<火种>的东西…」",
    "meta": {
     "blob": 906,
     "offset": 99520,
@@ -9853,7 +9853,7 @@
    "id": "row::51458",
    "en": "Also, you've received a",
    "ja": "「あとあと～　<YUSHA_NAME>さん",
-   "zh": "「还有，你收到了一件",
+   "zh": "「还有还有～<YUSHA_NAME>，",
    "meta": {
     "blob": 906,
     "offset": 130700,
@@ -9864,7 +9864,7 @@
    "id": "row::51459",
    "en": "<weapon with a skill>, haven't you?",
    "ja": "　<スキルがついた武器>って　もう手に入れた？」",
-   "zh": "　你已拿到<带技能的武器>了吧？」",
+   "zh": "　<带技能的武器>你已经拿到了吗？」",
    "meta": {
     "blob": 906,
     "offset": 130764,
@@ -10546,7 +10546,7 @@
    "id": "row::51552",
    "en": "This is a top secret mission. I appreciate your support,",
    "ja": "「これは極秘任務だ　協力は感謝するが",
-   "zh": "「这是极密任务。感谢你的协助，",
+   "zh": "「这是绝密任务。感谢你的协助，",
    "meta": {
     "blob": 906,
     "offset": 167492,
@@ -11481,7 +11481,7 @@
    "id": "row::51688",
    "en": "Welcome! ♪ Don't be shy! Buy buy buy!! ♪",
    "ja": "「いらっしゃい♪　バシバシ買ってってね♪」",
-   "zh": "「欢迎！别害羞！买买买！！」",
+   "zh": "「欢迎♪　尽管多买点哦♪」",
    "meta": {
     "blob": 906,
     "offset": 233192,
@@ -12570,7 +12570,7 @@
    "id": "row::51902",
    "en": "I've disgraced myself as a swordsman…",
    "ja": "「<YUSHA_NAME>どのには助けられてばかり・・・」",
-   "zh": "「我作为剑士太丢脸了…」",
+   "zh": "「总是承蒙<YUSHA_NAME>大人相救…」",
    "meta": {
     "blob": 911,
     "offset": 51276,
@@ -12900,7 +12900,7 @@
    "id": "row::51952",
    "en": "<YUSHA_NAME>!! … Come back alive, okay!?",
    "ja": "　<YUSHA_NAME>！　・・・また帰ってこいよ！」",
-   "zh": "　<YUSHA_NAME>！！…活着回来啊！？」",
+   "zh": "　<YUSHA_NAME>！…一定要回来啊！」",
    "meta": {
     "blob": 911,
     "offset": 116748,
@@ -13186,7 +13186,7 @@
    "id": "row::51996",
    "en": "Thank you so much for saving",
    "ja": "「<YUSHA_NAME>様　助けてくださって",
-   "zh": "「<YUSHA_NAME>！谢谢您救了",
+   "zh": "「<YUSHA_NAME>大人，多谢您",
    "meta": {
     "blob": 911,
     "offset": 153768,
@@ -13197,7 +13197,7 @@
    "id": "row::51997",
    "en": "my life, <YUSHA_NAME>!!",
    "ja": "　ありがとうございます！！」",
-   "zh": "　我的命，<YUSHA_NAME>！！」",
+   "zh": "　出手相救！！」",
    "meta": {
     "blob": 911,
     "offset": 153832,
@@ -13538,7 +13538,7 @@
    "id": "row::52053",
    "en": "Yes. ♪ Aha! ★ That's the correct answer.",
    "ja": "「ぴんぽ～ん♪　アハ★　正解ですわぁ",
-   "zh": "「对♪啊哈！★答对了，",
+   "zh": "「叮咚～♪　啊哈★答对啦♪",
    "meta": {
     "blob": 911,
     "offset": 234944,
@@ -13549,7 +13549,7 @@
    "id": "row::52054",
    "en": "The Ultimate Evil Lord's powers revived meee.",
    "ja": "　超大魔王様のお力でよみがえりましたのぉ」",
-   "zh": "　超级魔王的力量让我复活了。」",
+   "zh": "　人家托超级魔王大人的福复活了呢～」",
    "meta": {
     "blob": 911,
     "offset": 235008,
@@ -13571,7 +13571,7 @@
    "id": "row::52058",
    "en": "<YUSHA_NAME> would never be",
    "ja": "「し・か・も▼　かわいい女の子を",
-   "zh": "「<YUSHA_NAME>绝不可能",
+   "zh": "「而且▼　怎么可能对可爱的女孩子",
    "meta": {
     "blob": 911,
     "offset": 235528,
@@ -13582,7 +13582,7 @@
    "id": "row::52059",
    "en": "able to hit such an individual, right?",
    "ja": "　ぶっとばすワケにはいきませんわよねぇ？」",
-   "zh": "　对这样的女孩出手，对吧？」",
+   "zh": "　下得了手呢？」",
    "meta": {
     "blob": 911,
     "offset": 235592,
@@ -14352,7 +14352,7 @@
    "id": "row::52175",
    "en": "Gya-gya-gya! Don't interfere!",
    "ja": "「ギャギャギャ！　ジャマしやがったか！",
-   "zh": "「嘎嘎嘎！快让路！",
+   "zh": "「嘎嘎嘎！竟敢来碍事！",
    "meta": {
     "blob": 911,
     "offset": 313200,
@@ -14594,7 +14594,7 @@
    "id": "row::52211",
    "en": "That fight must have been like hell itself!!",
    "ja": "　それはさぞかし手強かったことでしょう！！」",
-   "zh": "　那场战斗肯定如同地狱！！」",
+   "zh": "　那肯定相当难缠吧！！」",
    "meta": {
     "blob": 911,
     "offset": 333412,
@@ -15507,7 +15507,7 @@
    "id": "row::52347",
    "en": "I know I have nothing to worry about. I know",
    "ja": "「わたしは何も心配してませんわ　<YUSHA_NAME>なら",
-   "zh": "「我知道我无需担心。我知道",
+   "zh": "「我一点都不担心，既然是<YUSHA_NAME>，",
    "meta": {
     "blob": 912,
     "offset": 37844,
@@ -15518,7 +15518,7 @@
    "id": "row::52348",
    "en": "you'd never let me down.",
    "ja": "　必ず助けてくれるに決まってますもの」",
-   "zh": "　你绝不会让我失望。」",
+   "zh": "　就一定会来救我的。」",
    "meta": {
     "blob": 912,
     "offset": 37908,
@@ -15914,7 +15914,7 @@
    "id": "row::52408",
    "en": "The truth is that I never",
    "ja": "「本当は<YUSHA_NAME>が必ず",
-   "zh": "「其实我从未",
+   "zh": "「其实我一直相信",
    "meta": {
     "blob": 912,
     "offset": 86900,
@@ -15925,7 +15925,7 @@
    "id": "row::52409",
    "en": "had a doubt in my mind that you'd come.",
    "ja": "　来てくれるって信じてましたわ」",
-   "zh": "　都没怀疑过你会来。」",
+   "zh": "　<YUSHA_NAME>你一定会来。」",
    "meta": {
     "blob": 912,
     "offset": 86964,
@@ -16365,7 +16365,7 @@
    "id": "row::52472",
    "en": "… Then I promise to actually return to the palace this",
    "ja": "「・・・今回はおとなしく王宮に帰りますわ♪」",
-   "zh": "「…那我保证这次乖乖回王宫」",
+   "zh": "「…这次我会乖乖回王宫♪」",
    "meta": {
     "blob": 912,
     "offset": 119604,
@@ -16431,7 +16431,7 @@
    "id": "row::52484",
    "en": "Take a look at this! This may be of use to us!",
    "ja": "　これを見てください！　いいモノがありましたよ！」",
-   "zh": "　看看这个！说不定有用！」",
+   "zh": "　你看这个！我发现了件好东西！」",
    "meta": {
     "blob": 912,
     "offset": 131056,
@@ -16453,7 +16453,7 @@
    "id": "row::52487",
    "en": "is a part of something called the <Timestream>.",
    "ja": "　<タイムストリーム>と呼ばれているモノです」",
-   "zh": "　是所谓<时之流>的一部分。」",
+   "zh": "　就是所谓的<时之流>。」",
    "meta": {
     "blob": 912,
     "offset": 132808,
@@ -18796,7 +18796,7 @@
    "id": "row::52877",
    "en": "Soldier: God Hunter, you're… looking great.",
    "ja": "兵士「ゴッドハンター　あんた・・・かがやいてるぜ」",
-   "zh": "士兵「神猎手，你…闪闪发光啊。」",
+   "zh": "「神猎人，你…闪闪发光啊。」",
    "meta": {
     "blob": 916,
     "offset": 2852,
@@ -18807,7 +18807,7 @@
    "id": "row::52882",
    "en": "Herbalist: It used to be a bloodbath, from here on out.",
    "ja": "やくそう屋「これより先は　シュラの世界だった」",
-   "zh": "草药师「从这儿往前曾是修罗场。」",
+   "zh": "「再往前，可就是修罗的世界了。」",
    "meta": {
     "blob": 916,
     "offset": 4548,
@@ -18818,7 +18818,7 @@
    "id": "row::52884",
    "en": "Receptionist: War～♪ Costs money. ♪",
    "ja": "受付「戦争はや～ね♪　お金がかかって♪」",
-   "zh": "接待员「战争♪花钱呢♪」",
+   "zh": "「战争真讨厌呢♪　又费钱♪」",
    "meta": {
     "blob": 916,
     "offset": 4972,
@@ -19104,7 +19104,7 @@
    "id": "row::52940",
    "en": "Scholar: Did you switch the train tracks!",
    "ja": "学者「ポイントをきりかえましたか！」",
-   "zh": "学者「你切换铁轨了吗！」",
+   "zh": "「你切换道岔了吗！」",
    "meta": {
     "blob": 918,
     "offset": 2004,
@@ -19214,7 +19214,7 @@
    "id": "row::52993",
    "en": "Miner: Go get the <stone> back from the Moles.",
    "ja": "こうふ「もぐらから<石>をとりかえしたら　あんたにやるよ」",
-   "zh": "矿工「去鼹鼠那把<石头>抢回来。」",
+   "zh": "「从鼹鼠那儿把<石头>夺回来，我就送给你。」",
    "meta": {
     "blob": 920,
     "offset": 6316,
@@ -19335,7 +19335,7 @@
    "id": "row::53039",
    "en": "Little Girl: I'm gonna be a sorcerer's apprentice one day.",
    "ja": "女の子「わたしもいつか　魔法使いにデシいりするの」",
-   "zh": "小女孩「有一天我也要当魔法师帮工。」",
+   "zh": "「总有一天我也要拜魔法师为师。」",
    "meta": {
     "blob": 926,
     "offset": 2004,
@@ -19368,7 +19368,7 @@
    "id": "row::53048",
    "en": "Owner: Thank you, thank you!",
    "ja": "主人「ドーモドーモ！」",
-   "zh": "老板「多亏多亏！」",
+   "zh": "「谢啦谢啦！」",
    "meta": {
     "blob": 926,
     "offset": 4972,
@@ -20380,7 +20380,7 @@
    "id": "row::53212",
    "en": "<Zozo-whatever will be crushed by the loss of his flame>. ♪",
    "ja": "　<怒りの炎が消えたらゾゾ何とかもガックリ>ね♪」",
-   "zh": "　<怒火熄灭后佐佐某某也会垮掉>。」",
+   "zh": "　<怒火熄灭后佐佐某某也会垮掉>♪」",
    "meta": {
     "blob": 928,
     "offset": 55136,
@@ -20633,7 +20633,7 @@
    "id": "row::53251",
    "en": "My old man will be thrilled to hear this.",
    "ja": "「これでオヤジも　うかばれるよ",
-   "zh": "「我老爹听了肯定乐开花，",
+   "zh": "「这样我老爹的在天之灵也能安息了，",
    "meta": {
     "blob": 928,
     "offset": 68212,
@@ -20677,7 +20677,7 @@
    "id": "row::53260",
    "en": "With your help, the Ultimate Kings don't stand a chance,",
    "ja": "「あなたがいれば",
-   "zh": "「有你在，那些超级魔王根本没胜算，",
+   "zh": "「有你在，对手不管是四天大王",
    "meta": {
     "blob": 928,
     "offset": 76096,
@@ -20688,7 +20688,7 @@
    "id": "row::53261",
    "en": "whether there are four of them or four thousand. ♪",
    "ja": "　相手が四天大王だろうが何天大王だろうが楽勝よ♪」",
-   "zh": "　管它是四天大王还是啥大王都不在话下。」",
+   "zh": "　还是什么大王，都轻松取胜♪」",
    "meta": {
     "blob": 928,
     "offset": 76160,
@@ -20919,7 +20919,7 @@
    "id": "row::54128",
    "en": "That smell… I know that smell…",
    "ja": "「ニオウ・・・ニオウゾ・・・",
-   "zh": "「那阵味…我认得那阵味…",
+   "zh": "「闻到了…闻到了…",
    "meta": {
     "blob": 935,
     "offset": 3680,
@@ -21700,7 +21700,7 @@
    "id": "row::54235",
    "en": "That man, Roken, ever since his sword broke,",
    "ja": "「ローケンのダンナ　刀がおれちまって",
-   "zh": "「洛肯那家伙，自从剑断了以后，",
+   "zh": "「洛肯大爷的剑断了之后，",
    "meta": {
     "blob": 935,
     "offset": 36092,
@@ -22162,7 +22162,7 @@
    "id": "row::54303",
    "en": "you're my golden egg-laying goose after all～",
    "ja": "　せっかく見つけた　金のタマゴですからね～」",
-   "zh": "　你终究是我下金蛋的鹅嘛～」",
+   "zh": "　你可是我好不容易找到的金蛋嘛～」",
    "meta": {
     "blob": 935,
     "offset": 59808,
@@ -22261,7 +22261,7 @@
    "id": "row::54316",
    "en": "From the start, my journey has been without purpose.",
    "ja": "「もとより　あてのない旅の途中",
-   "zh": "「起头，我的旅程便全无目的，",
+   "zh": "「反正我本来就是无目的的旅程，",
    "meta": {
     "blob": 935,
     "offset": 63832,
@@ -23735,7 +23735,7 @@
    "id": "row::54582",
    "en": "Minister: Princess!? You have returned to us! However,",
    "ja": "大臣「姫さま！？　お戻りになったのですね！",
-   "zh": "大臣「公主！？你回来了！但",
+   "zh": "大臣「公主！？您回来了！」",
    "meta": {
     "blob": 943,
     "offset": 3276,
@@ -25011,7 +25011,7 @@
    "id": "row::54910",
    "en": "but you Royal Commandos are really something else!",
    "ja": "　ブレイブ王国の遊撃隊とはスゴイものじゃな！」",
-   "zh": "　但你们皇家游击队真了不起！」",
+   "zh": "　但勇敢王国的游击队真了不起！」",
    "meta": {
     "blob": 953,
     "offset": 87840,
@@ -25121,7 +25121,7 @@
    "id": "row::54927",
    "en": "There are <2> Evil Lord remnants on this island!",
    "ja": "「この大陸に魔王の残党は<2体>おったんじゃ！",
-   "zh": "「这座岛上有<2>个魔王残党！",
+   "zh": "「这片大陆上有<2>个魔王残党！",
    "meta": {
     "blob": 953,
     "offset": 90988,
@@ -25374,7 +25374,7 @@
    "id": "row::54962",
    "en": "… I was told that this mission is for Sir <YUSHA_NAME>",
    "ja": "「・・・今度の任務は<YUSHA_NAME>どのだけで",
-   "zh": "「…听说此任务仅交由<YUSHA_NAME>大人",
+   "zh": "「…这次的任务只由<YUSHA_NAME>大人",
    "meta": {
     "blob": 953,
     "offset": 109092,
@@ -25385,7 +25385,7 @@
    "id": "row::54963",
    "en": "and Sir <YUSHA_NAME> alone.",
    "ja": "　いっていただきます」",
-   "zh": "　由<YUSHA_NAME>大人一人前往。」",
+   "zh": "　一人前往。」",
    "meta": {
     "blob": 953,
     "offset": 109156,
@@ -27211,7 +27211,7 @@
    "id": "row::55222",
    "en": "… Hehehe.",
    "ja": "「・・・ちっちっち",
-   "zh": "「…嘿嘿嘿嘿，",
+   "zh": "「…啧啧啧，",
    "meta": {
     "blob": 953,
     "offset": 251296,
@@ -27794,7 +27794,7 @@
    "id": "row::55441",
    "en": "Demon Home: I saw a <red demon hound> just now… in the",
    "ja": "魔族家「さっき南西で見たんだが・・・",
-   "zh": "魔族之家「我刚在西南看到<红色魔犬>，",
+   "zh": "魔族之家「我刚才在西南看到……",
    "meta": {
     "blob": 961,
     "offset": 2428,
@@ -27915,7 +27915,7 @@
    "id": "row::55470",
    "en": "Old Lady: There's nothing in this village,",
    "ja": "おばさん「何もない村だから　男の人は他の村へいってるの」",
-   "zh": "大婶「这村子啥都没有，」",
+   "zh": "「这村子啥都没有，男人都去别的村了。」",
    "meta": {
     "blob": 962,
     "offset": 2428,
@@ -29884,7 +29884,7 @@
    "id": "row::55806",
    "en": "saved <YUSHA_NAME>… Have we met before?",
    "ja": "　このしゃべるワンちゃん　どこかで」",
-   "zh": "　救过<YUSHA_NAME>…我们见过吗？」",
+   "zh": "　会说话的小狗，好像在哪儿见过？」",
    "meta": {
     "blob": 970,
     "offset": 48712,
@@ -30940,7 +30940,7 @@
    "id": "row::55961",
    "en": "for my new existence.",
    "ja": "　それにふさわしいかもしれん」",
-   "zh": "　倒挺合适俺如今的身份。」",
+   "zh": "　倒挺适合我现在的身份。」",
    "meta": {
     "blob": 970,
     "offset": 114120,
@@ -31050,7 +31050,7 @@
    "id": "row::55977",
    "en": "we again didn't have time for a conversation.",
    "ja": "　落ちついて　ゆっくり話せなかったわね」",
-   "zh": "　咱又没能从容细谈。」",
+   "zh": "　我又没能跟他好好聊聊。」",
    "meta": {
     "blob": 970,
     "offset": 122880,
@@ -32810,7 +32810,7 @@
    "id": "row::56285",
    "en": "You are the <true hero>!!",
    "ja": "　あなたこそ<真の勇者様>ね！！」",
-   "zh": "　你就是<真勇者>！！」",
+   "zh": "　你就是<真正的勇者大人>！！」",
    "meta": {
     "blob": 973,
     "offset": 33820,
@@ -33789,7 +33789,7 @@
    "id": "row::56420",
    "en": "Or I guess the villagers have all been turned into statues!?",
    "ja": "　村人が全部女神像になっちまったのか！？」",
-   "zh": "　还是说村民全变成石像了！？」",
+   "zh": "　还是说村民全变成女神像了！？」",
    "meta": {
     "blob": 974,
     "offset": 25644,
@@ -34042,7 +34042,7 @@
    "id": "row::56450",
    "en": "there are both normal statues and <abnormal statues>.",
    "ja": "　普通の女神像と<異なる女神像>がありマス」",
-   "zh": "　既有普通石像也有<其他女神像>。」",
+   "zh": "　既有普通的女神像，也有<与众不同的女神像>。」",
    "meta": {
     "blob": 974,
     "offset": 34404,
@@ -36231,7 +36231,7 @@
    "id": "row::56926",
    "en": "I didn't think a hero would be worried about being exposed…",
    "ja": "　勇者ならバレないと思ったのですが・・・」",
-   "zh": "　我以为英雄不怕被拆穿…」",
+   "zh": "　我以为勇者就不会被识破…」",
    "meta": {
     "blob": 982,
     "offset": 43164,
@@ -36605,7 +36605,7 @@
    "id": "row::56972",
    "en": "appears to have gotten his hands on a Chrono Crystal.",
    "ja": "　クロノクリスタルを手に入れたようですね」",
-   "zh": "　似乎弄到了时之水晶。」",
+   "zh": "　似乎弄到了计时水晶。」",
    "meta": {
     "blob": 982,
     "offset": 60100,
@@ -36869,7 +36869,7 @@
    "id": "row::57006",
    "en": "appears to have gotten his hands on a Chrono Crystal.",
    "ja": "　クロノクリスタルを手に入れたようですね」",
-   "zh": "　似乎弄到了时之水晶。」",
+   "zh": "　似乎弄到了计时水晶。」",
    "meta": {
     "blob": 982,
     "offset": 75576,
@@ -37034,7 +37034,7 @@
    "id": "row::57033",
    "en": "Then we'll steal all of the gems back…",
    "ja": "　そんで宝石全部うばい返して・・・」",
-   "zh": "　然后把宝石全偷回来…」",
+   "zh": "　然后把宝石全部夺回来…」",
    "meta": {
     "blob": 982,
     "offset": 94556,
@@ -37100,7 +37100,7 @@
    "id": "row::57042",
    "en": "he called the gems <Chrono Crystals>.",
    "ja": "　宝石のことをそう呼んでたような」",
-   "zh": "　他管那些宝石叫<时之水晶>。」",
+   "zh": "　他管那些宝石叫<计时水晶>。」",
    "meta": {
     "blob": 982,
     "offset": 95724,
@@ -37133,7 +37133,7 @@
    "id": "row::57047",
    "en": "Let's return to the harbor",
    "ja": "「もしバイトも済んでいたら",
-   "zh": "「如果你这的活干完了，",
+   "zh": "「如果你那边的活也干完了，",
    "meta": {
     "blob": 982,
     "offset": 96244,
@@ -39707,7 +39707,7 @@
    "id": "row::58328",
    "en": "They may have something useful to say about this world.",
    "ja": "　カレらの話は　とてもユウエキだと思われマス」",
-   "zh": "　他们的话或许很有比照价值。」",
+   "zh": "　他们的话或许很有参考价值。」",
    "meta": {
     "blob": 1013,
     "offset": 20680,
@@ -40730,7 +40730,7 @@
    "id": "row::58622",
    "en": "We are… Yuri Yaksha, the living incarnation of jewels.",
    "ja": "「私たちは・・・宝石の化身　百合夜叉」「なの」",
-   "zh": "「我们是…宝石化身，百合夜叉。」",
+   "zh": "「我们是…宝石化身，百合夜叉。」「嗯嗯！」",
    "meta": {
     "blob": 1025,
     "offset": 2804,
@@ -40928,7 +40928,7 @@
    "id": "row::58651",
    "en": "to <make it here in, like, 30 seconds>, will he?",
    "ja": "　<30秒ではここまで来れない>カンジなのね？」",
-   "zh": "　就<无法在30秒内赶到这里>了吧？」",
+   "zh": "　<无法在30秒内赶到这里>了吧？」",
    "meta": {
     "blob": 1025,
     "offset": 16592,
@@ -41126,7 +41126,7 @@
    "id": "row::58680",
    "en": "To make up for my earlier mistakes,",
    "ja": "「百合夜叉ちゃんへのおわびもかねて",
-   "zh": "「为了弥补我之前的过失，",
+   "zh": "「就当是向百合夜叉赔罪，",
    "meta": {
     "blob": 1025,
     "offset": 20908,
@@ -41137,7 +41137,7 @@
    "id": "row::58681",
    "en": "I'm going to make <RGN_NAME__>'s task even harder for him! ♪",
    "ja": "　もっと　もーっと　おジャマしてくるわね～～♪」",
-   "zh": "　我要让<RGN_NAME__>的任务更难缠♪」",
+   "zh": "　我会更加、更加地来捣乱哦～～♪」",
    "meta": {
     "blob": 1025,
     "offset": 20972,
@@ -42996,7 +42996,7 @@
    "id": "row::58988",
    "en": "Herb Dealer: Herbs will make you regain all your strength. ♪",
    "ja": "やくそう売り「やくそうを使うと体力が全回復するわよ♪」",
-   "zh": "草药商「草药能让你体力全回复。」",
+   "zh": "草药商「用了草药，体力就会全回复哦♪」",
    "meta": {
     "blob": 1028,
     "offset": 8364,

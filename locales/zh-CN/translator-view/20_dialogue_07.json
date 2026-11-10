@@ -426,7 +426,7 @@
    "id": "row::59367",
    "en": "accrue 3% interest for <each second> after the loan is given!",
    "ja": "　借りてから<１秒ごとに３％の利子>がつきまぁ～す！」",
-   "zh": "　贷款发放后<每秒>都会生出3%利息！」",
+   "zh": "　借了之后<每秒都会加3%利息>哦～！」",
    "meta": {
     "blob": 1038,
     "offset": 32360,
@@ -965,7 +965,7 @@
    "id": "row::59452",
    "en": "The monster went to the <southern swamp>!",
    "ja": "「モンスターは<南の沼>の方に行きました！",
-   "zh": "「怪兽跑向<南边泥沼>了！",
+   "zh": "「怪物们往<南边泥沼>去了！",
    "meta": {
     "blob": 1040,
     "offset": 22660,
@@ -976,7 +976,7 @@
    "id": "row::59453",
    "en": "Please! Please return that item to me!",
    "ja": "　おねがいです！　アレを取り戻してください！」",
-   "zh": "　求求你！把那件东西还给我！」",
+   "zh": "　求求你！把那件东西夺回来！」",
    "meta": {
     "blob": 1040,
     "offset": 22724,
@@ -1097,7 +1097,7 @@
    "id": "row::59473",
    "en": "… N-N-N-No!",
    "ja": "「・・・イタタタ　ヒドイ",
-   "zh": "「… 哎哟哟，好狠啊，",
+   "zh": "「……痛痛痛，好过分",
    "meta": {
     "blob": 1040,
     "offset": 44268,
@@ -1108,7 +1108,7 @@
    "id": "row::59474",
    "en": "S-Someone, a banana, at a time like this…",
    "ja": "　ダ　ダレガ　コンナトコロニ　バナナヲ・・・」",
-   "zh": "　是、是谁在这种时候扔香蕉…」",
+   "zh": "　是、是谁在这种地方扔香蕉…」",
    "meta": {
     "blob": 1040,
     "offset": 44332,
@@ -1295,7 +1295,7 @@
    "id": "row::59502",
    "en": "Up ahead, please travel on the road",
    "ja": "「うんでも　ここから先は<EVO_NAME__>ちゃんの",
-   "zh": "「前方，请走那条",
+   "zh": "「不过，从这里开始<EVO_NAME__>你",
    "meta": {
     "blob": 1040,
     "offset": 62372,
@@ -1306,7 +1306,7 @@
    "id": "row::59503",
    "en": "that you like best. ♪",
    "ja": "　好きなところから行っちゃいなさい♪」",
-   "zh": "　你最喜欢的路。♪」",
+   "zh": "　爱从哪儿走就从哪儿走吧♪」",
    "meta": {
     "blob": 1040,
     "offset": 62436,
@@ -4221,7 +4221,7 @@
    "id": "row::60021",
    "en": "I'm confident you'll be able to fly to the Grimo's roost!",
    "ja": "　きっと　グリモのところまで飛んでいけるわ！」",
-   "zh": "　我就有信心飞到格里莫巢穴！」",
+   "zh": "　就一定能飞到格里莫那儿去！」",
    "meta": {
     "blob": 1050,
     "offset": 18052,
@@ -4441,7 +4441,7 @@
    "id": "row::60050",
    "en": "He's the spitting image of Syldonix! ★",
    "ja": "　シルドニクスにそっくりね★」",
-   "zh": "　他长得和辛多尼斯一模一样！★」",
+   "zh": "　他长得和辛多尼克斯一模一样！★」",
    "meta": {
     "blob": 1050,
     "offset": 66524,
@@ -4705,7 +4705,7 @@
    "id": "row::60104",
    "en": "this land has had beasts known as the Eight Elements.",
    "ja": "　昔からエイトエレメンツという獣がおったんじゃ」",
-   "zh": "　这片土地就有种叫八元素的猛兽。」",
+   "zh": "　这片土地就有种叫八大元素的猛兽。」",
    "meta": {
     "blob": 1050,
     "offset": 116164,
@@ -5838,7 +5838,7 @@
    "id": "row::60252",
    "en": "Repayment is performed via <lab checks>.",
    "ja": "　ウチのへんさいは<研究所チェック>になってまして～」",
-   "zh": "　本店还款是通过<研究所查看>进行的～」",
+   "zh": "　本店的还款需经<研究所支票>～」",
    "meta": {
     "blob": 1050,
     "offset": 166096,
@@ -6014,7 +6014,7 @@
    "id": "row::60279",
    "en": "You imbecile! I'll turn into the Goddess to punish you!!",
    "ja": "　このオロカ者め！　女神にかわってオシオキダ！！」",
-   "zh": "　你这蠢货！我要化身女神来惩罚你！！」",
+   "zh": "　你这蠢货！我就替女神惩罚你！！」",
    "meta": {
     "blob": 1050,
     "offset": 183032,

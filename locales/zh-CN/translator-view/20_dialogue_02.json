@@ -129,7 +129,7 @@
    "id": "row::9491",
    "en": "<destroyed the seal that held the gates of the Dark World>…",
    "ja": "　<魔界の門の封印をやぶってしまった>からです・・・」",
-   "zh": "　<还破坏了暗界之门的封印>…」",
+   "zh": "　<还破坏了魔界之门的封印>…」",
    "meta": {
     "blob": 176,
     "offset": 34112,
@@ -426,7 +426,7 @@
    "id": "row::9523",
    "en": "Ahh… Ahhh…",
    "ja": "「～さーん　・・・～～さーん」",
-   "zh": "「啊…啊啊…」",
+   "zh": "「～先～生～　……～～先～生～」",
    "meta": {
     "blob": 176,
     "offset": 64124,
@@ -1097,7 +1097,7 @@
    "id": "row::9613",
    "en": "that I broke the Dark World's seal.",
    "ja": "　やぶったことはもうご存じでしょう」",
-   "zh": "　我打破暗界封印的事吧。」",
+   "zh": "　我打破魔界封印的事吧。」",
    "meta": {
     "blob": 176,
     "offset": 113828,
@@ -1240,7 +1240,7 @@
    "id": "row::9631",
    "en": "she said you were the criminal who broke the Dark World's seal.",
    "ja": "　<YUSHA_NAME>が魔界の封印をやぶった大罪人だと」",
-   "zh": "　就说你是打破暗界封印的犯人。」",
+   "zh": "　就说你是打破魔界封印的大罪人。」",
    "meta": {
     "blob": 176,
     "offset": 116456,
@@ -1702,7 +1702,7 @@
    "id": "row::9695",
    "en": "Hey! Lover boy!",
    "ja": "「よー！　色男！",
-   "zh": "「嘿！小白脸！",
+   "zh": "「嘿！帅哥！",
    "meta": {
     "blob": 176,
     "offset": 139460,
@@ -1977,7 +1977,7 @@
    "id": "row::9733",
    "en": "<Your execution> is scheduled to be held in <30 seconds>!",
    "ja": "　<30秒後　あなたの処刑>をとりおこないます！」",
-   "zh": "　<你的处刑>将在<30秒>后照办！」",
+   "zh": "　<30秒后　处刑你>！」",
    "meta": {
     "blob": 176,
     "offset": 154708,
@@ -2967,7 +2967,7 @@
    "id": "row::9871",
    "en": "when you're in trouble, I'll come show my face again!",
    "ja": "　オマエがピンチになったらかけつけてやるよ！」",
-   "zh": "　你遇险时我再来露脸！」",
+   "zh": "　你遇上危险我就赶过去！」",
    "meta": {
     "blob": 176,
     "offset": 213400,
@@ -3110,7 +3110,7 @@
    "id": "row::9892",
    "en": "Yes, it's me. ♪ Long time no see, Knight～♪",
    "ja": "「は～い♪　ナイトくん　おひさしぶり～♪」",
-   "zh": "「是♪我♪ 好久不见了，骑士♪」",
+   "zh": "「来啦～♪ 骑士，好久不见～♪」",
    "meta": {
     "blob": 176,
     "offset": 233776,
@@ -3583,7 +3583,7 @@
    "id": "row::9958",
    "en": "These will have special effects",
    "ja": "「<YUSHA_NAME>様と自分たちのバトル中の配置で",
-   "zh": "「这些会有特殊效果，",
+   "zh": "「靠你和我们在战斗中的站位，",
    "meta": {
     "blob": 176,
     "offset": 247500,
@@ -3594,7 +3594,7 @@
    "id": "row::9959",
    "en": "based on the situation in which we and <YUSHA_NAME> are in!!",
    "ja": "　スペシャルな効果がこれで期待できますよっ！！」",
-   "zh": "　取决于我和<YUSHA_NAME>所处的状况！！」",
+   "zh": "　就能期待特殊效果了！！」",
    "meta": {
     "blob": 176,
     "offset": 247564,
@@ -4210,7 +4210,7 @@
    "id": "row::10057",
    "en": "Anyway, let's talk about the castle…",
    "ja": "「話はここからなんだが",
-   "zh": "「总之，我们接着说城堡…",
+   "zh": "「重点现在才要开始——",
    "meta": {
     "blob": 176,
     "offset": 289548,
@@ -4980,7 +4980,7 @@
    "id": "row::10160",
    "en": "itself, and that it's a part of each and every person.",
    "ja": "　タイムストリームは人それぞれなのよ」",
-   "zh": "　也是每个人身上的一部分。」",
+   "zh": "　而每个人的时之流都各不相同哦。」",
    "meta": {
     "blob": 176,
     "offset": 311512,
@@ -6850,7 +6850,7 @@
    "id": "row::10421",
    "en": "Yeah you! Castle! What do you have to say for yourself!?",
    "ja": "　つったっているそこの城よっ　返事をするがいい！」",
-   "zh": "　说你呢！城堡！你有什么好说的！？」",
+   "zh": "　傻站着的那座城堡！快回答我！」",
    "meta": {
     "blob": 176,
     "offset": 414588,
@@ -8324,7 +8324,7 @@
    "id": "row::10666",
    "en": "I'll make it 350G just for you!!",
    "ja": "　大サービスで３５０ゴールドにしてあげるね！！」",
-   "zh": "　特惠给你算350G！！」",
+   "zh": "　特别优待你，算350G！！」",
    "meta": {
     "blob": 177,
     "offset": 95432,
@@ -8346,7 +8346,7 @@
    "id": "row::10670",
    "en": "Let's see… you got <%s> of them!",
    "ja": "「えーと・・・　<%s匹>だから",
-   "zh": "「让我看看……你拿了<%s只>！",
+   "zh": "「让我算算……<%s匹>的话，」",
    "meta": {
     "blob": 177,
     "offset": 96992,
@@ -9017,7 +9017,7 @@
    "id": "row::10802",
    "en": "accrue 3% interest for <each second> after the loan is given!",
    "ja": "　借りてから<１秒ごとに３％の利子>がつきまぁ～す！」",
-   "zh": "　贷款发放后<每秒>都会生出3%利息！」",
+   "zh": "　从借出后开始<每秒产生3%利息>哦～！」",
    "meta": {
     "blob": 177,
     "offset": 156168,
@@ -9765,7 +9765,7 @@
    "id": "row::11230",
    "en": "Thank you, warrior of the Time Goddess!!",
    "ja": "「感謝するぞ　女神の戦士よ",
-   "zh": "「多亏了，时之女神的战士，",
+   "zh": "「谢了，时之女神的战士，",
    "meta": {
     "blob": 196,
     "offset": 5724,
@@ -10579,7 +10579,7 @@
    "id": "row::11362",
    "en": "… Though he did call me a novice…",
    "ja": "　・・・みならい・・・って言われましたが」",
-   "zh": "　……虽然他叫我见习生……」",
+   "zh": "　……虽然他说我是见习骑士……」",
    "meta": {
     "blob": 196,
     "offset": 138356,
@@ -11481,7 +11481,7 @@
    "id": "row::11502",
    "en": "Or will you try to stop me and my Spell of Destruction?",
    "ja": "　しかし　ハメツの呪文もとめないといけないだろう？」",
-   "zh": "　还是要来阻止我的毁灭咒文？」",
+   "zh": "　不过，你也得阻止我的毁灭咒文吧？」",
    "meta": {
     "blob": 196,
     "offset": 226248,
@@ -12350,7 +12350,7 @@
    "id": "row::11745",
    "en": "I can sing as well as anyone!",
    "ja": "　歌くらいオレ様にも歌えるぜ！」",
-   "zh": "　唱歌我可不输任何人！」",
+   "zh": "　唱歌这种小事，本大爷也会啊！」",
    "meta": {
     "blob": 205,
     "offset": 14256,
@@ -14187,7 +14187,7 @@
    "id": "row::12035",
    "en": "The world might get itself destroyed if I don't.",
    "ja": "　ほっとくと　世界滅ぼされかねねーし」",
-   "zh": "　但不管它世界可能被毁。」",
+   "zh": "　但放着不管，世界说不定会被毁掉。」",
    "meta": {
     "blob": 205,
     "offset": 146240,
@@ -15265,7 +15265,7 @@
    "id": "row::12250",
    "en": "there is a dungeon somewhere on this continent. ▼",
    "ja": "　この大陸のどこかのダンジョンにあったハズよ▼」",
-   "zh": "　这片大陆某处有个地牢。▼」",
+   "zh": "　应该就在这片大陆某处的地下城里。▼」",
    "meta": {
     "blob": 212,
     "offset": 12796,
@@ -15287,7 +15287,7 @@
    "id": "row::12253",
    "en": "If you are lucky enough to find a Time Stone,",
    "ja": "「もし運良く時寄せの石を見つけられたら",
-   "zh": "「若幸运找到时之石，",
+   "zh": "「若能幸运找到时之石，",
    "meta": {
     "blob": 212,
     "offset": 13316,
@@ -15298,7 +15298,7 @@
    "id": "row::12254",
    "en": "place it on <the pedestal that's somewhere in Hero Castle>. ♪",
    "ja": "　<勇者城のどこかにある台座>におさめるのよ♪」",
-   "zh": "　<勇者城某处的台座>上。」",
+   "zh": "　就把它放到<勇者城某处的台座>上♪」",
    "meta": {
     "blob": 212,
     "offset": 13380,
@@ -16090,7 +16090,7 @@
    "id": "row::12391",
    "en": "Welcome! ♪ Don't be shy! Buy buy buy!! ♪",
    "ja": "「いらっしゃい♪　バシバシ買ってってね♪」",
-   "zh": "「欢迎！别害羞！买买买！！」",
+   "zh": "「欢迎光临♪　尽管多买点哦♪」",
    "meta": {
     "blob": 212,
     "offset": 116100,
@@ -16750,7 +16750,7 @@
    "id": "row::12507",
    "en": "that Evil Lord Weapon can be of service.",
    "ja": "　あの魔王兵器がその手段なのかも」",
-   "zh": "　那台魔王兵器或许能有了用处。」",
+   "zh": "　那台魔王兵器就是那个办法。」",
    "meta": {
     "blob": 215,
     "offset": 18636,
@@ -17245,7 +17245,7 @@
    "id": "row::12581",
    "en": "that bikes these days could fit in the palm of her hand…",
    "ja": "　って言ってたことのほうがビビったぜ」",
-   "zh": "　现在的机车能握在她手掌心里……」",
+   "zh": "　现在的机车只有手掌那么大……」",
    "meta": {
     "blob": 215,
     "offset": 40536,
@@ -21568,7 +21568,7 @@
    "id": "row::13438",
    "en": "You lost the <Chrono Crystal> to a bunch of students!!",
    "ja": "　学生に<クロノクリスタル>をとられただと！！」",
-   "zh": "　你居然把<时之水晶>输给一群学生了！！」",
+   "zh": "　你居然把<计时水晶>输给一群学生了！！」",
    "meta": {
     "blob": 237,
     "offset": 6080,
@@ -23405,7 +23405,7 @@
    "id": "row::13688",
    "en": "Your ancestors would be proud. ♪",
    "ja": "「さっすが勇者の子孫ね♪」",
-   "zh": "「你的先人定会为你骄傲。」",
+   "zh": "「不愧是勇者的子孙呢♪」",
    "meta": {
     "blob": 237,
     "offset": 84856,
@@ -26474,7 +26474,7 @@
    "id": "row::14280",
    "en": "Good thinking, <EVO_NAME__>! Then that's what we'll do! ♪",
    "ja": "「さっすが<EVO_NAME__>ちゃん　そうでなくっちゃ♪",
-   "zh": "「好主意，<EVO_NAME__>！那就这么办，",
+   "zh": "「不愧是<EVO_NAME__>，就该这样♪",
    "meta": {
     "blob": 260,
     "offset": 52736,
@@ -26485,7 +26485,7 @@
    "id": "row::14281",
    "en": "With no Evil Lord, I thought we'd have it easy here.",
    "ja": "　魔王もいなくて　はりあいないなって思ってたけど」",
-   "zh": "　本以为没了魔王，这儿能轻松些。」",
+   "zh": "　本来还想着没了魔王，打起来没劲呢」",
    "meta": {
     "blob": 260,
     "offset": 52800,
@@ -26804,7 +26804,7 @@
    "id": "row::14354",
    "en": "Fish Boy: It's really hot, ow ow. ♪",
    "ja": "サカナボーイ「とってもあついのさ　あっちっち♪」",
-   "zh": "鱼人男孩「好烫好烫，嘶嘶。」",
+   "zh": "鱼人男孩「好烫好烫♪」",
    "meta": {
     "blob": 264,
     "offset": 2428,
@@ -27211,7 +27211,7 @@
    "id": "row::14565",
    "en": "Go away, ugly people! Yup yup!",
    "ja": "　みにくい人間たちは滅びなさい」「なの！」",
-   "zh": "滚开，丑陋的人类！没错没错！",
+   "zh": "丑陋的人类都灭亡吧」「的说！」",
    "meta": {
     "blob": 278,
     "offset": 1484,
@@ -27376,7 +27376,7 @@
    "id": "row::14646",
    "en": "I might have some use for a sword… or an axe…",
    "ja": "　剣やらオノやら　使い道はありそうですけど・・・」",
-   "zh": "　剑或斧头之类，好像能有了用处…」",
+   "zh": "　剑或斧头之类，好像能派上用场…」",
    "meta": {
     "blob": 282,
     "offset": 14840,
@@ -28740,7 +28740,7 @@
    "id": "row::14830",
    "en": "So, <part-time work in the east> or <trouble in the southeast>.",
    "ja": "「さあ　<東のバイト>　<南東のこまっている人たち>",
-   "zh": "「那么，<东边的兼职>还是<东南的麻烦>，",
+   "zh": "「那么，<东边的兼职>还是<东南有困难的人>，",
    "meta": {
     "blob": 282,
     "offset": 86024,
@@ -28751,7 +28751,7 @@
    "id": "row::14831",
    "en": "Where shall we go first? ♪",
    "ja": "　どっちから先に行こうかしら♪」",
-   "zh": "　我们先去哪边？」",
+   "zh": "　先去哪边呢♪」",
    "meta": {
     "blob": 282,
     "offset": 86088,
@@ -28971,7 +28971,7 @@
    "id": "row::14866",
    "en": "How nice of him to announce it so directly. ♪",
    "ja": "「こまってるのがわかりやすくてよかったですわ♪",
-   "zh": "「他这么直白地喊出来真是省事，",
+   "zh": "「你这么直白地喊出来倒省事♪",
    "meta": {
     "blob": 282,
     "offset": 127488,
@@ -29070,7 +29070,7 @@
    "id": "row::14880",
    "en": "And of all things,",
    "ja": "「そしてあろうことか",
-   "zh": "「而且竟然",
+   "zh": "「而且更过分的是",
    "meta": {
     "blob": 282,
     "offset": 129240,
@@ -29884,7 +29884,7 @@
    "id": "row::14985",
    "en": "This ought to cost 1000000G…",
    "ja": "「本来なら代金１００００００ゴールド・・・",
-   "zh": "「这本来要花1000000G…",
+   "zh": "「这本来要花100万金币…",
    "meta": {
     "blob": 282,
     "offset": 171288,
@@ -30159,7 +30159,7 @@
    "id": "row::15044",
    "en": "Why do I have to do this?",
    "ja": "　なんであたしがやられなきゃいけないの～」",
-   "zh": "　为什么非得我来做这个啊～」",
+   "zh": "　为什么非得是我被打倒啊～」",
    "meta": {
     "blob": 283,
     "offset": 31340,
@@ -30478,7 +30478,7 @@
    "id": "row::15107",
    "en": "Receptionist: Oh my～! How are we feeling today～♪",
    "ja": "受付「あ～ら！　ごきげんいかがかしら～♪」",
-   "zh": "接待员「哎呀♪！今天心情如何呀♪」",
+   "zh": "接待员「哎呀～！今天心情如何呀♪」",
    "meta": {
     "blob": 284,
     "offset": 5396,
@@ -32623,7 +32623,7 @@
    "id": "row::15809",
    "en": "You will meet your fate when next we meet…",
    "ja": "　次に会う時はキサマらまとめて・・・」",
-   "zh": "　下次见面时，你们就会迎来命运……」",
+   "zh": "　下次见面时，就把你们一起……」",
    "meta": {
     "blob": 298,
     "offset": 57764,
@@ -35021,7 +35021,7 @@
    "id": "row::16212",
    "en": "<YUSHA_NAME>! You said",
    "ja": "「時間が無いのだろう！",
-   "zh": "「<YUSHA_NAME>！你说过",
+   "zh": "「没时间了吧！",
    "meta": {
     "blob": 304,
     "offset": 112888,
@@ -35032,7 +35032,7 @@
    "id": "row::16213",
    "en": "there's no time, right!?",
    "ja": "　オイ！　<YUSHA_NAME>とか言ったな！」",
-   "zh": "　没时间了，对吧！？」",
+   "zh": "　喂！你叫<YUSHA_NAME>是吧！」",
    "meta": {
     "blob": 304,
     "offset": 112952,
@@ -35087,7 +35087,7 @@
    "id": "row::16220",
    "en": "Alright! Then take that ignoramus",
    "ja": "「よし！　ならそのわからず屋たちをつれて",
-   "zh": "「好！那就带上那个不懂事的",
+   "zh": "「好！那就带上那帮不明事理的家伙",
    "meta": {
     "blob": 304,
     "offset": 114348,
@@ -36286,7 +36286,7 @@
    "id": "row::16385",
    "en": "I couldn't go with you to the end!",
    "ja": "　一緒に行けなくてゴメンね」",
-   "zh": "　没能伴你走到最后，抱歉！」",
+   "zh": "　没能陪你走到最后。」",
    "meta": {
     "blob": 304,
     "offset": 219532,
@@ -36517,7 +36517,7 @@
    "id": "row::16421",
    "en": "Everyone gave up their lives so that you, <YUSHA_NAME>,",
    "ja": "「みんなが命がけで運命を断ち切る力を",
-   "zh": "「众人都拼上性命，让你<YUSHA_NAME>",
+   "zh": "「大家都拼上性命，把斩断命运的力量",
    "meta": {
     "blob": 304,
     "offset": 253924,
@@ -36528,7 +36528,7 @@
    "id": "row::16422",
    "en": "would obtain the power to slay Fate.",
    "ja": "　<YUSHA_NAME>さんにたくしてくれたのね」",
-   "zh": "　获得斩除命运的力量。」",
+   "zh": "　托付给了<YUSHA_NAME>你啊」",
    "meta": {
     "blob": 304,
     "offset": 253988,
@@ -39927,7 +39927,7 @@
    "id": "row::17484",
    "en": "Ah, it appears that I am all that",
    "ja": "「あ～あ　とうとうヴィーナスセブンも",
-   "zh": "「啊——看来就剩我了",
+   "zh": "「啊——到头来七美神",
    "meta": {
     "blob": 327,
     "offset": 3680,
@@ -39938,7 +39938,7 @@
    "id": "row::17485",
    "en": "remains of the once great Venus Seven…",
    "ja": "　わたくし一人になっちゃったでありんす～」",
-   "zh": "是曾经辉煌的七美神的残余……」",
+   "zh": "　也只剩我一个了呀～」",
    "meta": {
     "blob": 327,
     "offset": 3744,
@@ -39960,7 +39960,7 @@
    "id": "row::17488",
    "en": "I'm the living incarnation of terrible sounds! ♪",
    "ja": "　人間たちを不快にさせる音の化身でありんす♪」",
-   "zh": "我是可怕声音之化身！」",
+   "zh": "　是令人间不快的音之化身♪」",
    "meta": {
     "blob": 327,
     "offset": 4036,
@@ -40004,7 +40004,7 @@
    "id": "row::17495",
    "en": "Well then, perhaps I should serenade you with one of them!",
    "ja": "「さあ～　わたくしの音楽を聞くでありんす！",
-   "zh": "「那么～就来听我的音乐吧！」",
+   "zh": "「那么～就来听我的音乐吧！",
    "meta": {
     "blob": 327,
     "offset": 4848,
@@ -40015,7 +40015,7 @@
    "id": "row::17496",
    "en": "Come and join me at my <specially erected stage>!",
    "ja": "　<特設ステージ>まで来るでありんす！」",
-   "zh": "「快来我的<特别舞台>！」",
+   "zh": "　到<特别舞台>来呀！」",
    "meta": {
     "blob": 327,
     "offset": 4912,
@@ -40092,7 +40092,7 @@
    "id": "row::17507",
    "en": "Yo, this isn't a competition…",
    "ja": "「何はりあってるんだ？",
-   "zh": "「喂，你跟谁较劲呢……」",
+   "zh": "「喂，这是跟谁较劲呢……",
    "meta": {
     "blob": 327,
     "offset": 9812,
@@ -40103,7 +40103,7 @@
    "id": "row::17508",
    "en": "It's not like this is a music contest or something.",
    "ja": "　別に　のどじまん対決じゃねーぞ」",
-   "zh": "「这又不是什么歌喉大赛。」",
+   "zh": "　又不是什么歌喉大赛。」",
    "meta": {
     "blob": 327,
     "offset": 9876,
@@ -40147,7 +40147,7 @@
    "id": "row::17514",
    "en": "… Yeah yeah, I know! I know!",
    "ja": "「・・・ああ　わかってるって！",
-   "zh": "「……行行行，知道了！知道了！」",
+   "zh": "「……啊，我知道啦！",
    "meta": {
     "blob": 327,
     "offset": 11272,
@@ -40158,7 +40158,7 @@
    "id": "row::17515",
    "en": "Well then, let's smash this Venus Seven to smithereens!",
    "ja": "　とにかくヴィーナスセブンをぶっちめるからよ！」",
-   "zh": "「总之，把七美神打个粉碎！」",
+   "zh": "　总之把七美神打个粉碎！」",
    "meta": {
     "blob": 327,
     "offset": 11336,
@@ -40620,7 +40620,7 @@
    "id": "row::17604",
    "en": "… What the!? Not even a single mistake!?",
    "ja": "「・・・ちょっ！？　ここまでノーミス！？",
-   "zh": "「……喂！？竟然零失误！？」",
+   "zh": "「……喂！？竟然零失误！？",
    "meta": {
     "blob": 327,
     "offset": 118728,
@@ -40631,7 +40631,7 @@
    "id": "row::17605",
    "en": "It looks like I made these stages just a little too easy!",
    "ja": "　ちょっとやさしくステージを作りすぎたでありんす」",
-   "zh": "「看来我把舞台做得太简单了点！」",
+   "zh": "　看来我把舞台做得太简单了点！」",
    "meta": {
     "blob": 327,
     "offset": 118792,
@@ -40642,7 +40642,7 @@
    "id": "row::17607",
    "en": "I thought this might happen! ♪ That's why I prepared",
    "ja": "「こんなコトもあろうかと♪",
-   "zh": "「这种事我早就料到了，",
+   "zh": "「这种事我早就料到了♪",
    "meta": {
     "blob": 327,
     "offset": 119020,
@@ -40653,7 +40653,7 @@
    "id": "row::17608",
    "en": "a special stage just for this occasion! ♪",
    "ja": "　スペッシャルなステージを用意してるでありんす♪」",
-   "zh": "为此准备了专属舞台！」",
+   "zh": "　所以我准备了特别舞台♪」",
    "meta": {
     "blob": 327,
     "offset": 119084,
@@ -40730,7 +40730,7 @@
    "id": "row::17620",
    "en": "You can say what you will, but I have no",
    "ja": "「そんなこと言われても～　わたくしは",
-   "zh": "「你爱怎么说都行，但我可",
+   "zh": "「就算你这么说～我只是",
    "meta": {
     "blob": 327,
     "offset": 120480,
@@ -40741,7 +40741,7 @@
    "id": "row::17621",
    "en": "intention of putting an end to my fuu-uun! ♪",
    "ja": "　楽しいから　そうしてるんでありんすぅ～♪」",
-   "zh": "没打算终止我的快乐！」",
+   "zh": "　觉得好玩才这么做的呀～♪」",
    "meta": {
     "blob": 327,
     "offset": 120544,
@@ -40862,7 +40862,7 @@
    "id": "row::17639",
    "en": "By the way, you're only allowed to challenge this stage",
    "ja": "「ちなみにこのステージにチャレンジできるのは",
-   "zh": "「对了，你只能迎战这个舞台",
+   "zh": "「另外，这个舞台只能挑战",
    "meta": {
     "blob": 327,
     "offset": 142672,
@@ -40873,7 +40873,7 @@
    "id": "row::17640",
    "en": "<three times>! ♪ Thank you for understanding! ♪",
    "ja": "　<３回>まででありんす♪　よろしくでありんすぅ♪」",
-   "zh": "<三次>！♪ 谢啦！」",
+   "zh": "　<3次>哦♪ 请多指教♪」",
    "meta": {
     "blob": 327,
     "offset": 142736,
@@ -41302,7 +41302,7 @@
    "id": "row::17728",
    "en": "Indeed! Rapidly strike the ♪'s that",
    "ja": "「ハイ　朔蘭が飛ばしてくる　♪　に",
-   "zh": "「正是！快速去撞朔兰射来的♪",
+   "zh": "「好！对着朔兰射来的♪",
    "meta": {
     "blob": 327,
     "offset": 294220,
@@ -41313,7 +41313,7 @@
    "id": "row::17729",
    "en": "Sakuran fires your way.",
    "ja": "　どんどんぶつかっていってくだサイ」",
-   "zh": "就不停遇上去吧！」",
+   "zh": "　一个接一个撞上去吧！」",
    "meta": {
     "blob": 327,
     "offset": 294284,
@@ -41489,7 +41489,7 @@
    "id": "row::17758",
    "en": "I've made good use of my time up until now…",
    "ja": "「今までうまーいこと時間をつかって・・・",
-   "zh": "「到目前为止我可把时间用得妙极了……",
+   "zh": "「我一直巧妙利用时间……",
    "meta": {
     "blob": 327,
     "offset": 307652,
@@ -41500,7 +41500,7 @@
    "id": "row::17759",
    "en": "And with it, I created the greatest special stage of all! ♪",
    "ja": "　とっておきのスペシャルステージをつくってたの♪」",
-   "zh": "并借此打造出了最棒的特殊舞台！」",
+   "zh": "　做出了压箱底的特别舞台♪」",
    "meta": {
     "blob": 327,
     "offset": 307716,
@@ -41533,7 +41533,7 @@
    "id": "row::17764",
    "en": "Okaaaay! I'll now be your party's",
    "ja": "「は～～～い　<RGN_NAME__>ご一行",
-   "zh": "「好～！我现在担任<RGN_NAME__>一行",
+   "zh": "「好～～！就由我来为<RGN_NAME__>一行",
    "meta": {
     "blob": 327,
     "offset": 308236,
@@ -41544,7 +41544,7 @@
    "id": "row::17765",
    "en": "guide, <RGN_NAME__>! ▼",
    "ja": "　ご案内～～▼」",
-   "zh": "　的带路人！<RGN_NAME__> ▼」",
+   "zh": "　带路～～▼」",
    "meta": {
     "blob": 327,
     "offset": 308300,
@@ -41588,7 +41588,7 @@
    "id": "row::17769",
    "en": "Ooooouuuch! … Ugh! Not again!!",
    "ja": "「イテテテ・・・クソー！　またかよ！！",
-   "zh": "「好疼！……可恶！又来这招！！」",
+   "zh": "「好疼……可恶！又来这招！！",
    "meta": {
     "blob": 327,
     "offset": 314368,
@@ -41599,7 +41599,7 @@
    "id": "row::17770",
    "en": "Anyone else would have died five times by now!!",
    "ja": "　オレ様じゃなかったら５回くらい死んでんぞ！！」",
-   "zh": "「要不是我，早死五回有余了！！」",
+   "zh": "　要不是我，早死五回有余了！！」",
    "meta": {
     "blob": 327,
     "offset": 314432,
@@ -41632,7 +41632,7 @@
    "id": "row::17785",
    "en": "<RGN_NAME__>: It's locked.",
    "ja": "<RGN_NAME__>「やっぱりあかねぇな！」",
-   "zh": "「<RGN_NAME__>：还是打不开呢！」",
+   "zh": "<RGN_NAME__>「还是打不开呢！」",
    "meta": {
     "blob": 328,
     "offset": 1612,

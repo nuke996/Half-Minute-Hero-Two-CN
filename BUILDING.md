@@ -221,7 +221,7 @@ python tools/runner.py <脚本名> [参数]
 | 命令 | 产物 | 配方要点 |
 |---|---|---|
 | `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文；与 `package_stable_names` 共用 `apply_lang_en_names_en`（含 2026-11-01 新增的显示列副本同步收尾） |
-| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/`。**2026-11-01 起配方收尾加 `sync_e3_display_columns()`**：Boss 说话人名/地图编辑器 UI 等已放行显示列做整槽全副本同步，与受保护机制名同名的串整库回写原版（`validate_build` 由 error 35 → **error 0**）。**2026-11-04 起共享字库逻辑并入描述 0x5F 尾字节修复**（`carrier_pool` 禁用 `0x??5F`、神/点改安全载体码）。该配方不含 4 个视频与 `cscv[355]` 歌词（`song=False`），属既定差异 |
+| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/`。**2026-11-01 起配方收尾加 `sync_e3_display_columns()`**：Boss 说话人名/地图编辑器 UI 等已放行显示列做整槽全副本同步，与受保护机制名同名的串整库回写原版（`validate_build` 由 error 35 → **error 0**）。**2026-11-04 起共享字库逻辑并入描述 0x5F 尾字节修复**（`carrier_pool` 禁用 `0x??5F`、神/点改安全载体码）。**2026-11-09 起共享 `cmap.json` 固化码并按当前译表重建**：`LANG_EN 2f7dae57bc10`，`validate_build` error 0 / warning 1；按 T-07 决策**不启用** Z23 敌名/Boss 列表名，作为安全回滚包。该配方不含 4 个视频与 `cscv[355]` 歌词（`song=False`），属既定差异 |
 | `package_lang_ja_names_ja` | `dist/E3-ja-lang-ja-names-ja/` | **E3-JA**：E3 的日语镜像 —— 只写 `LANG_JA`，机制名保持原版，其余中文（游戏语言须设为**日语**） |
 | `package_names_cn_skill_loadout` | `dist/Z4-skill-loadout/` | **Z4**：技能/装备名中文 + 章节 loadout 值同步 + 武器表副本同步；`b666 +292` 键名保持原版 |
 | `package_names_cn_skill_loadout_ja` | `dist/Z4-ja-skill-loadout/` | **Z4-JA**：Z4 的日语镜像（只写 `LANG_JA`；`+292` 保持该文件原版日文）。**实机验证：与 Z4 同样异常**，仅作对照保留 |
@@ -238,11 +238,11 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
-| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19**：Z18 + `proofread` 分支对话文本日文基准校对修订；2026-10-30 起含 `cscv[355]` 歌曲表歌词（28 个英文行）；历史导入目标（2026-11-07 起改用 `package_current`，当前指针指向 Z24） |
+| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19 · 当前发布基线**：Z18 + `proofread` 对话校对（2026-11-09 第二轮待核对清零）；含 `cscv[355]` 歌词（28 个英文行）与 4 个视频；**2026-11-09 起启用 `HMH2_Z23_RELEASE`**，并入 Z22/Z24 译文与 Z23 敌名/Boss 图鉴列表名；`LANG_EN eb4bb2263f56`（最终 dist，含视频合入），`validate_build` error 0 / warning 45。校对导入仍走 `package_current`（指针指向 Z24） |
 | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
 | `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 | `package_names_cn_reuse_z22` | `dist/Z22-ui-lowrisk/` | **Z22（测试）**：Z21 + 低风险 UI 补译批：`b25` 键值 UI 消息表值列 295 条（城堡面板/道具类型/铁匠铺/地图编辑器/在线菜单）、`b99` 合成说明首段 2 条、`b763` `Up` 1 条（合计新增 298 行）、`b642` 武器种名 12 条、`b763` 按键名整列、`b186` `Switch`。见 `docs/PITFALLS.md` §41、`docs/PACKAGE_LEDGER.md` §2 |
-| `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | **Z23（测试）**：Z22 + **图鉴敌人/Boss 列表名批次**（怪物页 `b734` +40 138 条；头目页 `b555` +40 107 条；同名副本 `b54` +40、`b105`/`b529` +92；`Hero<>` 模板槽与 `b509/908` 脚本键槽除外）+ `活动道具`→`事件道具`。敌名放行只在本配方启用（`HMH2_Z23_RELEASE=1`，子进程传递），不影响 stable/旧配方。见 `docs/PITFALLS.md` §42、`docs/PACKAGE_LEDGER.md` §2 |
+| `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | **Z23（测试）**：Z22 + **图鉴敌人/Boss 列表名批次**（怪物页 `b734` +40 138 条；头目页 `b555` +40 107 条；同名副本 `b54` +40、`b105`/`b529` +92；`Hero<>` 模板槽与 `b509/908` 脚本键槽除外）+ `活动道具`→`事件道具`。敌名放行在 `z19`/`z23`/`z24` 配方启用（`HMH2_Z23_RELEASE=1`，子进程传递），stable/E3 与旧配方不受影响。见 `docs/PITFALLS.md` §42、`docs/PACKAGE_LEDGER.md` §2 |
 | `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | **Z24（测试）**：Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（206 槽）+ **怪物/头目专有名词统一**（91 行：`オニグモン`→鬼蜘蛛、`黒女神`→黑女神、`ザントヘル`→赞特赫尔、`魔王ケルベロス`→刻耳柏洛斯、`元魔王軍`→前魔王军 等）。`b291` 是 **48 字节一格、一格一行**的显示网格，必须整句理解后按原行数切回各格；`<…>` 标记不拆行。见 `docs/PITFALLS.md` §43/§44、`docs/PROOFREAD_NAME_REPORT.md` |
 
 用法示例：
@@ -363,6 +363,7 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 | 游戏根路径 | 由 `tools/paths.py` 解析（环境变量 > `config.local.json` > 仓库相对默认） | **可复现**（已解除硬编码） |
 | 字形字体 | 默认读仓库 `assets/fonts/`（可被 `HMH2_FONT_PATH` 覆盖）；缺失静默降级 | **基本可复现**；缺失时仍缺"报错" |
 | 构建输入 | 语言数据在 `locales/<locale>/`；缓存/中间产物在 `build/` | **可复现** |
+| 载体码（cmap） | `locales/zh-CN/cmap.json` 固化「字→载体码」，append-only；新字只追加未用码 | **可复现且存档兼容**（T-01，2026-11-09） |
 | `collide_cache.json` | 缺失时现场重算（很慢） | 可重建但耗时 |
 | 输出 | 工具产物统一写入 `build/`；发布产物写入 `dist/` | 符合规范 §22 |
 | 母本校验 | `res/*.s2a` 无散列校验（仅 exe 逐条校验原字节） | **应补充** |
