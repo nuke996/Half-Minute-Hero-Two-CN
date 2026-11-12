@@ -2959,6 +2959,7 @@ def restore_q16_keys(verbose=True):
         return 0
 
     excl = q16_translate_slots()          # ★ 实验 A：刻意翻译、不要回写的槽
+    desc_rel = load_desc_release()        # ★ 说明文槽：不是键名，Q16 守卫不得回写
     cands = []
     n_excl = 0
     for r in rows:
@@ -2977,17 +2978,25 @@ def restore_q16_keys(verbose=True):
         print('  [Q16键名] 实验A：%d 槽刻意翻译（不回写原版）' % n_excl)
 
     per = collections.defaultdict(list)
-    n_same = n_doubt = 0
+    n_same = n_doubt = n_desc = 0
     for c in cands:
         name = c['file']
         if name not in Q16_KEY_LIVE or not os.path.exists(Q16_KEY_ORIG[name]):
             n_doubt += 1
             continue
         try:
-            lb = bytes(s2a.Archive(Q16_KEY_LIVE[name]).blobs[c['bi']])
+            live_arc = s2a.Archive(Q16_KEY_LIVE[name])
+            lb = bytes(live_arc.blobs[c['bi']])
             ob = bytes(s2a.Archive(Q16_KEY_ORIG[name]).blobs[c['bi']])
         except Exception:
             n_doubt += 1
+            continue
+        # ★ 2026-11-12：Q16 清单里混入了含「勇者城」的说明文（b147/357/736 pos44 等），
+        #   它们不是按名查找的键名，回写原版会把已翻译的说明重新变成英文。
+        #   候选 off 可能指向 4 字节 FF FF FF FF 前缀，因此同时检查 off..off+4。
+        if desc_rel and any(desc_release_hit(desc_rel, live_arc, c['bi'], c['off'] + k)
+                            for k in (0, 1, 2, 3, 4)):
+            n_desc += 1
             continue
         live_run = _q16_run_at(lb, c['off'])
         own_run = _q16_run_at(ob, c['off'])
@@ -3034,8 +3043,8 @@ def restore_q16_keys(verbose=True):
         if verbose:
             print('  [Q16键名] %-8s 写回该文件自己的原版字节 %d 处' % (name, len(items)))
     if verbose:
-        print('  [Q16键名] 共 %d 处（已原样 %d，存疑 %d）— 城/关卡按键名查找恢复'
-              % (done, n_same, n_doubt))
+        print('  [Q16键名] 共 %d 处（已原样 %d，存疑 %d，说明文跳过 %d）— 城/关卡按键名查找恢复'
+              % (done, n_same, n_doubt, n_desc))
     return done
 
 

@@ -18,7 +18,7 @@
 | 类型分布 | MEANING 203 / FORMAT 101 / NAME 64 / SPLIT 23 / TONE 23 / OTHER 15 |
 | 严重度分布 | medium 227 / low 202 |
 
-**构建与自检：** `validate_build` **error 0 / warning 45**；`res/LANG_EN.s2a` sha256 `eb4bb2263f56`；`DLC01/LANG_EN.s2a` sha256 `a0214cda6c09…`；新字形 **2300/2847**。
+**构建与自检：** `validate_build` **error 0 / warning 45**；`res/LANG_EN.s2a` sha256 `fbe38d771f76`（2026-11-12 Q16 说明文误伤修复后重建）；`DLC01/LANG_EN.s2a` sha256 `a0214cda6c09…`；新字形 **2300/2847**。
 
 **说明：** 表中「原译文」是校对时的译文，「现译文」是本次导入后校对视图中的实际显示文本；同一句跨多个槽位时用换行表示。
 

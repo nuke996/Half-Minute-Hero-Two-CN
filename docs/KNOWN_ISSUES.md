@@ -36,7 +36,7 @@
 **当前状态（2026-11-05，Z24）：** 技能/装备名（Z10b）、伙伴名（Z11）、敌名/Boss 名（Z12 说话人 +
 Z23 图鉴列表 + Z24 跨表专名统一）、职业/阵型/称号（Z14）、`Mu`/`Xi`（Z18）已中文化；
 仍按守卫保留原版的有 `b317` 连携技表、Q16 记录、`b931 pos36` 章节标题副本与部分敌技名
-（见 `docs/PACKAGE_LEDGER.md` §3/§7、`docs/TODO.md` T-05）。
+（见 `docs/PACKAGE_LEDGER.md` §3/§7、`docs/TODO.md` T-05b）。
 **相关文件：** `TECHNICAL.md` §8、`locales/zh-CN/name_ledger.json`、
 历史报告 `名字类全量中文化可行性评估-20260918.md`、`键值同改历史复核与本轮结论修正-20260918.md`（未随仓库分发）。
 
@@ -256,14 +256,14 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 | **Z15** | `dist/Z15-reuse-kanji/` | 回滚基线；龙 NPC、性感泳衣已实机恢复；DLC 船待复测 |
 | **Z17** | `dist/Z17-display-fill/` | 显示文本补全 + 4 个视频；音乐播放器购买列表闪退已修 |
 | **Z18** | `dist/Z18-dlc-place-names/` | 10-27 快照；DLC 战国地名 + 截图校对轮；**不含 cscv 歌词** |
-| **Z19** | `dist/Z19-proofread/` | **当前发布基线**（2026-11-09 重建）：含第二轮对话校对（待核对清零）、`cscv[355]` 歌词、4 个视频；**已并入 Z22/Z24 译文并启用 Z23 敌名/Boss 图鉴列表名**；`LANG_EN eb4bb2263f56`，自检 error 0 / warning 45 |
+| **Z19** | `dist/Z19-proofread/` | **当前发布基线**（2026-11-12 重建）：含第二轮对话校对（待核对清零）、`cscv[355]` 歌词、4 个视频；**已并入 Z22/Z24 译文并启用 Z23 敌名/Boss 图鉴列表名**；`LANG_EN fbe38d771f76`，自检 error 0 / warning 45 |
 | **Z20** | `dist/Z20-desc-dodge/` | 实验：道具说明避字（验证"描述渲染器按码错位"）；构建于歌词修复前，**不含歌词**，不作发布基线 |
 | **Z21** | `dist/Z21-desc-5f-fix/` | 描述 0x5F 尾字节修复；**2026-11-04 实机通过**，修复已并入 Z19/stable |
 | **Z22** | `dist/Z22-ui-lowrisk/` | 低风险 UI 补译批（298 行）；已随译表进入 Z19/stable；未实机 |
 | **Z23** | `dist/Z23-ui-mediumrisk/` | 图鉴敌人/Boss 列表名放行 + 「事件道具」；Z19 已启用；未实机（中风险） |
-| **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z24`）；2026-11-09 重建 `LANG_EN eb4bb2263f56`，error 0 / warning 45 |
+| **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z24`）；2026-11-12 重建 `LANG_EN fbe38d771f76`，error 0 / warning 45 |
 
-> **stable / E3（2026-11-09）：** 已按当前译表重建（`LANG_EN 2f7dae57bc10`，error 0 / warning 1），
+> **stable / E3（2026-11-12）：** 已按当前译表重建（`LANG_EN cde1b071c2fc`，error 0 / warning 1），
 > 但按 T-07 决策**继续保留敌名/Boss 图鉴列表名原文**，作为未实机验证前的安全回滚包。
 > 完整哈希与症状定位见 `docs/PACKAGE_LEDGER.md` §2/§3；歌词问题的原因与适用范围见
 > `docs/PITFALLS.md` §38；未完成项见 `docs/TODO.md`。
@@ -326,13 +326,18 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 非键名表）；`b675` 的槽位含 4 字节 `FF FF FF FF` 前缀，登记 `offset` 须指向**文字起点**（= 前缀后）。
 JA/EN 两侧写入字节一致。
 
-**剩余（需改构建器放行清单，暂未处理；跟踪：`docs/TODO.md` T-04）：**
-- `b630` off4752 `ダメージをうけた！` —— collide 命中来自 cscv `b23`（**战斗消息显示表**，
-  即 `CSCV_TWINS` 里的孪生表），属**假命中**；需仿 `SONG_OK` 加放行清单后再登记。
-- `b845` 音乐/结局曲名表 7 条 —— 其中 `イントロ`/`グランドエンディング` 命中 cscv `b814`
-  （同为 stride204/7 条的曲名显示表，假命中）；需放行后才能整表统一翻译，否则呈"半中半英"。
-- `b1010` 服装定义段（`handR=`/`foot=` 等）—— 是**装备名**且 `b984` 为 cscv 逐字节孪生，
-  属名字一致性范畴，应走名字批次（全副本同改）而非单表登记。
+**剩余（需改构建器放行清单，暂未处理；跟踪：`docs/TODO.md` T-04a/T-04b）：**
+- `b630` LANG_EN `off4732` `You took damage!`（JA `ダメージをうけた！`）—— collide 命中来自
+  cscv `b23 off7792`（**战斗消息显示表**，即 `CSCV_TWINS` 里的孪生表），属**假命中**；
+  需仿 `SONG_OK` 加放行清单后再登记。
+- `b845` 音乐/结局曲名表 7 条（`Intro` off88、`Grand Ending` off1312 等）—— 命中 cscv `b814`
+  （同为曲名显示表，假命中）；需放行后才能整表统一翻译，否则呈"半中半英"。
+- 装备名副本（2026-11-12 复核更正）：`b34` 146 `handR=`/146 `foot=`、`b1010` 4/5、
+  `b546` 1（合计 `handR=` 151 / `foot=` 151），是角色/关卡 loadout 的
+  `head=/body=/handR=/handL=/foot=` 装备名；`b1010` 对应 cscv `b984`，`b34` 对应 cscv `b28`。
+  属名字一致性范畴，应走名字批次（全副本同改 + 操作数重算）而非单表登记。
+- `b892` 是脚本数据：含 **88 个未登记**道具/装备名（`Wing Sword`/`Masamune`/`Crown of Courage`…）
+  与 34 条已登记「获得××」消息；同样必须走名字批次，不能按显示行放行。
 - 截图里的说话人名 `YuJa` 在 LANG_JA/LANG_EN/cscv/exe 全库 0 命中，是运行时/存档动态值，不可译。
 
 **2026-11-04（Z22，低风险批）：** `b25` 键值型 UI 消息表的值列已整列补译 298 条
@@ -495,7 +500,7 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 
 # 21. 显示文本漏译：Z17 第一轮排查结果
 
-**Status:** Partially fixed　**Severity:** Low（可见性）
+**Status:** Partially fixed（2026-11-12 更新）　**Severity:** Low（可见性）
 **Affected versions:** Z17-display-fill　**Affected locales:** zh-CN
 
 **已补全（纯显示，不涉机制名）：**
@@ -514,8 +519,14 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
   （Z24 再做跨表专名统一）。
 - 区域名等仍按守卫保留原文；它们参与按名哈希/发放，不能按说明文单独补译。
 
-**待后续：** 道具/技能说明中的短句（`b147/357/736/666`）、
-`1,000m/h Wind`/`10,000m/h Wind`（技能名，需整批机制名处理）；跟踪见 `docs/TODO.md` T-05。
+**待后续：**
+- **已修（2026-11-12）：** 含「勇者城」的说明文被 Q16 守卫误伤，`b147/357/736` 的
+  「勇者城也能在森林移动」、`b357` 的「陈旧/全新的勇者城零件」现已上屏。
+- **T-05a 剩余：** `b357 off122396/122664` `Large Attack`/`Heavy Attack`（待定性）、
+  `b666` 的 `Trigger Rate: 1/x` 20 种（未登记）。
+- **T-05b：** `1,000m/h Wind`/`10,000m/h Wind`（技能名）、`Catch and Release`、
+  `Beam Security`、`Thunder Storm Breath`、`Beat Crush`、`Final Defense System`、
+  `Life Drain`、`Red Eyes` 需整批机制名处理；跟踪见 `docs/TODO.md` T-05b。
 （`b34` 关卡/章节标题已于 2026-11-06 复核：222 条记录中 118 条名称已改为中文，
 Q16 rec49/142 按守卫保留，不再列入待办。）
 **相关文件：** `docs/FINAL_QA_PLAN.md` §2.2、`tools/build_cn.py`（`display_release_hit` / `DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/menu_ok.json`。

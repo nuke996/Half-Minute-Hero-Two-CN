@@ -1445,3 +1445,36 @@ Z19 重建后仍是 `LANG_EN fa529eb1cb34`、error 0 / warning 45（互不影响
 同时检查名表、图鉴、说话人、正文四类副本，并保持 `<…>`/`\n`/占位符不丢。
 逐行清单见 `locales/zh-CN/proofread/name_consistency_todo.tsv`，
 分析见 `docs/PROOFREAD_NAME_REPORT.md`。
+
+---
+
+## 45. Q16 键名守卫会误伤含「勇者城」的说明文（2026-11-12）
+
+**状态：** 已验证并修复
+**影响范围：** 道具/装备说明的显示文本
+**症状：** `b147/357/736` 的 `Allows the Hero Castle to move through forests.`、
+`b357` 的 `Old/Brand new Hero Castle parts.` 译表里已有中文，但装出来的包仍是英文。
+
+**实际原因：**
+- `t17_q16_candidates.tsv` 的生成规则把“含勇者城的串”都当成 `名字/标识`；
+  这 5 条说明文在 `pos40` 带 4 字节 `FF FF FF FF` 前缀，被误收进 Q16 键名清单。
+- `restore_q16_keys()` 用 `_q16_run_at()` 从候选 `off`（= 前缀起点）整段回写原版字节，
+  连带覆盖了 `pos44` 的说明文字，于是已翻译的说明又被还原成英文。
+- 该问题不影响真正的 Q16 键名保护；只影响说明文。
+
+**修复：**
+- `restore_q16_keys()` 增加说明文判定：候选 `off` 及其后 4 字节只要命中
+  `desc_release_hit()`（`desc_release.json` 的 stride/pos 白名单），就跳过 Q16 回写。
+- 本次跳过 **10 处**（5 条说明 × LANG_JA/LANG_EN），Q16 实际回写 92 → **87**；
+  非说明 Q16 候选 93 处逐字节核对，mismatch **0**。
+
+**验证：**
+- Z19/Z24：`b147 off105920`、`b357 off114764/117980`、`b736 off119320`
+  经 cmap 反查分别得到「勇者城也能在森林移动」「陈旧的勇者城零件」「全新的勇者城零件」。
+- Z19/Z24/stable `validate_build` 分别为 error 0 / warning 45、error 0 / warning 1。
+
+**教训：** Q16 守卫必须只作用于“按键名查找的键槽”；任何“含勇者城”的启发式都要
+排除说明文/长句/含空格英文句，否则会把已经翻译好的显示文本回写成原文。
+新增 Q16 候选时，先确认该槽不是 `desc_release.json` 放行的说明字段。
+**相关文件：** `tools/build_cn.py`（`restore_q16_keys` / `desc_release_hit`）、
+`locales/zh-CN/t17_q16_candidates.tsv`、`locales/zh-CN/desc_release.json`。
