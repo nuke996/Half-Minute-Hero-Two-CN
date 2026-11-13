@@ -152,7 +152,7 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 （`docs/PROOFREAD_DIALOGUE_ROUND2.md`）；图鉴敌名/Boss 名已在 Z19/Z23/Z24 上屏
 （stable/E3 仍保留原文，作为安全回滚包；仍有少量敌技名与说明短句待补）；
 存档自定义名已由 `cmap.json` 固化载体码，不再随译表漂移；Steam 校验会还原汉化。
-未完成项汇总见 `docs/TODO.md`（当前最高优先级：T-09 合并 `proofread` 到 `main`）。
+未完成项汇总见 `docs/TODO.md`（`proofread` 已于 2026-11-13 合并入 `main`，后续开发以 `main` 为准）。
 
 ---
 

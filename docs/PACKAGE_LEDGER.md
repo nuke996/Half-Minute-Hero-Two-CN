@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-12（Q16 守卫误伤说明文修复；Z19/Z24/stable 重建）
+> 最近更新：2026-11-13（T-09：`proofread` 快进合并入 `main`，三个包从 `main` 重建校验通过）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
@@ -139,11 +139,21 @@ python tools/build.py --game-dir work/original package_current
   禁止整列翻译。`Chaos Wing` 等已在 Z14 补译。
 - `b892` 装备视觉部件名等未登记副本暂未放行。
 - 地图编辑器机制未实测。
-- **分支滞后（T-09）：** `main` 尚未合并 `proofread` 的 2026-10/11 进度，合并前不要从 `main` 重建发布包。
+- **分支状态：** `proofread` 已于 2026-11-13 以 28 个提交快进合并入 `main`，当前从 `main` 即可重建全部发布包（T-09 已完成）。
 
 ---
 
 ## 6. 变更记录
+
+- **2026-11-13（T-09 分支合并）**：
+  1. `git merge --ff-only proofread` 把 **28 个提交**快进合并入 `main`，无冲突；当前 `main` 与
+     `proofread` 同点，后续开发以 `main` 为主分支。
+  2. 从 `main` 干净状态（`73283cb`，`dirty=false`）重建并校验：Z19 `LANG_EN fbe38d771f76`
+     （error 0 / warning 45）、stable `cde1b071c2fc`（error 0 / warning 1）、Z24 与 Z19 同哈希
+     （error 0 / warning 45）。
+  3. 核对确认 Z19 成品与本次 staging 仅差 3 个视频 blob（`1297f874`/`4229ebe4`/`a0849a33`），
+     视频合入不会覆盖新译文。
+  4. 详见 `docs/TODO.md` T-09。
 
 - **2026-11-12（Q16 守卫误伤说明文修复）**：
   1. `restore_q16_keys()` 现在跳过命中“说明文放行”规则的槽位（候选 off 及其后 4 字节都检查，

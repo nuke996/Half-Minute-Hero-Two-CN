@@ -2,7 +2,8 @@
 
 > 用途：把**除实机测试以外**的未完成项集中登记，避免散落在 `KNOWN_ISSUES.md`、
 > `PACKAGE_LEDGER.md`、`FINAL_QA_PLAN.md` 与项目记忆中。
-> 最近复核：2026-11-12（完成 Q16 说明文误伤修复；拆分 T-04/T-05 为 a/b 两组）。
+> 最近复核：2026-11-13（T-09 已完成：`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支）。
+> 上一轮 2026-11-12：完成 Q16 说明文误伤修复；拆分 T-04/T-05 为 a/b 两组。
 > 实机测试项不在此表：见 `docs/FINAL_QA_PLAN.md` §2.1 / §2.3 / §2.4 与 `docs/PACKAGE_LEDGER.md` §2。
 
 ## 1. 待办总表
@@ -19,9 +20,9 @@
 | **T-06** | 中 | 专名审计 | 补齐专名审计覆盖面：DLC01 同表、脚本内联、未登记 UI；处理 `土おとこ` 漏译 | **未覆盖**。`PROOFREAD_NAME_REPORT.md` §2.3 已注明；`b928/59516`、`b928/67400` 两行仍把 `<超土おとこ>…` 整句省略为「它们就在村子北边！」 | 用「日文名 + 英文名」全库搜引用，补 DLC01 与脚本内联；按日文原文补回两行漏译 | `PROOFREAD_NAME_REPORT.md` §2.3/§7、`PITFALLS.md` §44 |
 | **T-07** | 高 | 发布工程 | 将 Z22–Z24 的成果并入 Z19 / stable 基线，并决定敌名/Boss 名是否在基线放行 | **已完成（2026-11-09；2026-11-12 随 Q16 修复重建）**。决策：**仅 Z19 放行 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。Z19 已启用 `HMH2_Z23_RELEASE` 并重建（LANG_EN `fbe38d771f76`，error 0 / warning 45）；stable 已按当前译表重建（LANG_EN `cde1b071c2fc`，error 0 / warning 1），并登记进 `RECIPES` 以写正确清单 | 实机验证 Z19 图鉴/战斗说话人/宝箱后，再决定 stable 是否跟进放行 | `PACKAGE_LEDGER.md` §2/§5、`BUILDING.md` §5.5、`README.md` 开发状态 |
 | **T-08** | 低 | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0（新字形 2300/2847，余 547）；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频（暂不解决） | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
-| **T-09** | 高 | 分支管理 | 将 `proofread` 分支的最新进度合并回 `main` 主分支 | **未实施**。`proofread` 领先 `main` **26 个提交**、`main` 领先 0 个（可直接快进）：缺 2026-10/11 的对话校对、Z15–Z24 包谱系、T-01 的 `cmap.json` 固化、T-02 第二轮校对等 | 提交本轮工作后，在 `main` 上 `git merge --ff-only proofread`（或 PR 合并）；随后按 `tools/build.py package_current` / `package_names_cn_reuse_z19` / `package_stable_names` 重建并跑 `validate_build` | `docs/TODO.md`、`BUILDING.md` §9 |
+| **T-09** | 高 | 分支管理 | 将 `proofread` 分支的最新进度合并回 `main` 主分支 | **已完成（2026-11-13）**。`proofread` 以 **28 个提交**快进合并入 `main`（`git merge --ff-only`，无冲突）；合并后从 `main` 重建完整包与稳定包并通过校验：Z19 `LANG_EN fbe38d771f76`（error 0 / warning 45）、stable `LANG_EN cde1b071c2fc`（error 0 / warning 1）；Z24 校对目标同步重建 | 后续在 `main` 上开发；`proofread` 分支暂保留（是否删除另行决定）；发布前仍需实机回归 | `README.md`、`docs/PACKAGE_LEDGER.md` §5、`BUILDING.md` §9 |
 
-## 2. 复核证据（2026-11-12）
+## 2. 复核证据（2026-11-13）
 
 | ID | 复核方式 | 结果 |
 |---|---|---|
@@ -35,7 +36,7 @@
 | T-06 | 读报告 + 查 CSV | `b928/59516`、`b928/67400` 两行确实省略了名字 |
 | T-07 | 读新配方 + 检查 dist | Z19 `HMH2_Z23_RELEASE=1`，LANG_EN `fbe38d771f76`；stable `=0`，LANG_EN `cde1b071c2fc`；两者 validate error 0 |
 | T-08 | 2026-11-09 `verify_charset_full.py` + 构建输出 | 上屏缺字 0；新字形 2300/2847，余 547；`row1992` 显示英文原名 |
-| T-09 | `git branch` / `git log` | `proofread` 领先 `main` 26 个提交，`main` 领先 0；需合并（未执行） |
+| T-09 | `git merge --ff-only` + 重建校验 | 28 个提交快进合并成功，`main` 与 `proofread` 同点；Z19/stable/Z24 均从 `main` 重建，validate error 0 |
 
 ## 3. 不在此表的项
 
@@ -47,7 +48,12 @@
 
 ## 4. 已同步的过期文档
 
-**2026-11-12（本轮）：**
+**2026-11-13（T-09 合并）：**
+- `docs/TODO.md`：T-09 标记完成（28 提交、合并后三个包重建校验通过）。
+- `README.md`：最高优先级指针改为分支已完成合并。
+- `docs/PACKAGE_LEDGER.md`：移除「`main` 滞后」提示，补记合并与重建。
+
+**2026-11-12（上一轮）：**
 - `docs/TODO.md`：拆分 T-04a/T-04b（假命中 vs 装备名副本）、T-05a/T-05b（纯显示 vs 机制名），补入本轮精确落点。
 - `docs/PACKAGE_LEDGER.md`：Q16 修复后的 Z19/Z24/stable 新哈希与变更记录。
 - `docs/PITFALLS.md`：新增 Q16 守卫误伤说明文的陷阱记录。
