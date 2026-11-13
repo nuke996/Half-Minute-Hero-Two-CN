@@ -31433,9 +31433,9 @@
   },
   {
    "id": "row::60746",
-   "en": "Ate %s!\nPhysical Strength Fully Recovered!",
-   "ja": "%s を食べた！\n体力全快！",
-   "zh": "吃下了%s！\n生命全满！",
+   "en": "Ate %s!\r\nPhysical Strength Fully Recovered!",
+   "ja": "%s を食べた！\r\n体力全快！",
+   "zh": "吃下了%s！\r\n生命全满！",
    "meta": {
     "blob": 25,
     "offset": 3080,
