@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3475,
+ "_count": 3468,
  "entries": [
   {
    "id": "row::24640",
@@ -38032,138 +38032,6 @@
    }
   },
   {
-   "id": "row::31594",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 575,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::31595",
-   "en": "Pray",
-   "ja": "おいのり",
-   "zh": "祈祷",
-   "meta": {
-    "blob": 575,
-    "offset": 956,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::31596",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 1548,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31598",
-   "en": "Hell Ramen",
-   "ja": "ヘルラーメン",
-   "zh": "地狱拉面",
-   "meta": {
-    "blob": 575,
-    "offset": 1804,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31599",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 1972,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31601",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 2396,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31603",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 3668,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31607",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 575,
-    "offset": 4092,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::31608",
-   "en": "Borrow Gold",
-   "ja": "お金をかりる",
-   "zh": "借钱",
-   "meta": {
-    "blob": 575,
-    "offset": 4348,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31609",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 4516,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31611",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 575,
-    "offset": 4940,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::31613",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 575,
-    "offset": 5364,
-    "cap": 80
-   }
-  },
-  {
    "id": "row::60569",
    "en": "Change Clothes",
    "ja": "衣装チェンジ",
@@ -38227,6 +38095,61 @@
     "blob": 466,
     "offset": 30316,
     "cap": 5
+   }
+  },
+  {
+   "id": "row::61623",
+   "en": "Beat Crush",
+   "ja": "ビートクラッシュ",
+   "zh": "重击粉碎",
+   "meta": {
+    "blob": 444,
+    "offset": 51596,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61624",
+   "en": "Beam Security",
+   "ja": "ビームセキュリティ",
+   "zh": "光束防卫",
+   "meta": {
+    "blob": 444,
+    "offset": 91340,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61625",
+   "en": "Final Defense System",
+   "ja": "最終防衛システム",
+   "zh": "最终防御系统",
+   "meta": {
+    "blob": 444,
+    "offset": 95372,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61626",
+   "en": "Life Drain",
+   "ja": "ライフドレイン",
+   "zh": "生命吸取",
+   "meta": {
+    "blob": 444,
+    "offset": 98540,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61627",
+   "en": "Nightmare",
+   "ja": "ナイトメア",
+   "zh": "噩梦",
+   "meta": {
+    "blob": 444,
+    "offset": 104012,
+    "cap": 128
    }
   }
  ]

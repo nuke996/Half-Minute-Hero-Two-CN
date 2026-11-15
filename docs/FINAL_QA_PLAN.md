@@ -4,8 +4,8 @@
 > 2026-11-09：第二轮对话校对完成（待核对 429 → 0，427 修复 + 2 保留原译，见
 > `docs/PROOFREAD_DIALOGUE_ROUND2.md`）；cmap 固化已实施（`locales/zh-CN/cmap.json`）；
 > **发布基线 Z19 已启用 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。
-> 校对入口与导入目标仍是 `locales/zh-CN/translator-view/` → `CURRENT_REVIEW_RECIPE=z24`
-> （`dist/Z24-mapeditor/`）。Z22–Z24 均未实机；除实机测试外的未完成项见 `docs/TODO.md`。
+> 校对入口与导入目标仍是 `locales/zh-CN/translator-view/` → `CURRENT_REVIEW_RECIPE=z25`
+> （`dist/Z25-mech-names/`）。Z22–Z25 均未实机；除实机测试外的未完成项见 `docs/TODO.md`。
 
 ---
 
@@ -130,7 +130,7 @@
 
 ## 3. 排查流程（建议按顺序）
 
-1. **以当前校对目标 `dist/Z24-mapeditor/`（与发布基线 Z19 内容一致）为基线**：
+1. **以当前校对目标 `dist/Z25-mech-names/`（与发布基线 Z19 内容 + T-05b）为基线**：
    Z20 是"道具说明避字"实验包，只用于验证描述渲染器，不作漏译基线。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
@@ -169,7 +169,7 @@ python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→按 CURRENT_REVIEW_RECIPE 重建，当前 Z24）
+# 导入校对（自检→写 CSV/extra_review.json→按 CURRENT_REVIEW_RECIPE 重建，当前 Z25）
 python tools/import_review.py
 
 # 只读盘点（示例）
@@ -177,7 +177,7 @@ python build/_scratch/audit_untranslated_z15.py
 python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在按 `CURRENT_REVIEW_RECIPE`（当前 **z24** → `dist/Z24-mapeditor/`）
+注意：`import_review.py` 现在按 `CURRENT_REVIEW_RECIPE`（当前 **z25** → `dist/Z25-mech-names/`）
 重建；不要再用旧的 `package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
 发布基线 Z19 用 `python tools/build.py package_names_cn_reuse_z19` 单独重建。
 

@@ -5720,6 +5720,30 @@ def do_package_names_cn_reuse_z24(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z25(exe_mode=None):
+    """Z25（测试）：Z24 + T-05b 技能/机制名补译。
+
+    · `1,000m/h Wind` / `10,000m/h Wind`：b666 pos0+pos292 与
+      b147/357/736 pos172 五槽同改，操作数按最终字节重算；
+    · b172/b444/b750 的敌技显示名（Catch and Release / Nightmare 等），
+      单槽显示文本，无操作数、无 cscv 孪生。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z25-mech-names')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z25',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -6264,6 +6288,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z24',
             'out': 'Z24-mapeditor',
             'stage': 'package_stage_names_cn_reuse_z24',
+            'status': 'candidate', 'review': False},
+    'z25': {'func': do_package_names_cn_reuse_z25,
+            'cmd': 'package_names_cn_reuse_z25',
+            'out': 'Z25-mech-names',
+            'stage': 'package_stage_names_cn_reuse_z25',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6273,7 +6302,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z24'
+CURRENT_REVIEW_RECIPE = 'z25'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6389,6 +6418,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z23': do_package_names_cn_reuse_z23,
      # Z24（测试）：Z23 + 地图编辑器说明面板整句重译，输出 dist/Z24-mapeditor
      'package_names_cn_reuse_z24': do_package_names_cn_reuse_z24,
+     # Z25（测试）：Z24 + T-05b 技能/机制名补译，输出 dist/Z25-mech-names
+     'package_names_cn_reuse_z25': do_package_names_cn_reuse_z25,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

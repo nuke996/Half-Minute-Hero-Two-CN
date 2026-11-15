@@ -2,8 +2,140 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3266,
+ "_count": 3282,
  "entries": [
+  {
+   "id": "row::31594",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 575,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::31595",
+   "en": "Pray",
+   "ja": "おいのり",
+   "zh": "祈祷",
+   "meta": {
+    "blob": 575,
+    "offset": 956,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::31596",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 1548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31598",
+   "en": "Hell Ramen",
+   "ja": "ヘルラーメン",
+   "zh": "地狱拉面",
+   "meta": {
+    "blob": 575,
+    "offset": 1804,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31599",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 1972,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31601",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 2396,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31603",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 3668,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31607",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 575,
+    "offset": 4092,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::31608",
+   "en": "Borrow Gold",
+   "ja": "お金をかりる",
+   "zh": "借钱",
+   "meta": {
+    "blob": 575,
+    "offset": 4348,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31609",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 4516,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31611",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 575,
+    "offset": 4940,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::31613",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 575,
+    "offset": 5364,
+    "cap": 80
+   }
+  },
   {
    "id": "row::31614",
    "en": "Entered village!",
@@ -35928,6 +36060,50 @@
     "blob": 642,
     "offset": 16,
     "cap": 4
+   }
+  },
+  {
+   "id": "row::61617",
+   "en": "1,000m/h Wind",
+   "ja": "風速１０００メートル",
+   "zh": "风速1000米",
+   "meta": {
+    "blob": 666,
+    "offset": 17312,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::61618",
+   "en": "1,000m/h Wind",
+   "ja": "風速１０００メートル",
+   "zh": "风速1000米",
+   "meta": {
+    "blob": 666,
+    "offset": 17604,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::61619",
+   "en": "10,000m/h Wind",
+   "ja": "風速１００００メートル",
+   "zh": "风速10000米",
+   "meta": {
+    "blob": 666,
+    "offset": 17688,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::61620",
+   "en": "10,000m/h Wind",
+   "ja": "風速１００００メートル",
+   "zh": "风速10000米",
+   "meta": {
+    "blob": 666,
+    "offset": 17980,
+    "cap": 32
    }
   }
  ]

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3590,
+ "_count": 3592,
  "entries": [
   {
    "id": "row::6094",
@@ -39492,6 +39492,28 @@
     "blob": 147,
     "offset": 16904,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::61621",
+   "en": "Catch and Release",
+   "ja": "キャッチアンドリリース",
+   "zh": "捕捉与释放",
+   "meta": {
+    "blob": 172,
+    "offset": 52900,
+    "cap": 128
+   }
+  },
+  {
+   "id": "row::61622",
+   "en": "Catch and Release",
+   "ja": "キャッチアンドリリース",
+   "zh": "捕捉与释放",
+   "meta": {
+    "blob": 172,
+    "offset": 70712,
+    "cap": 128
    }
   }
  ]
