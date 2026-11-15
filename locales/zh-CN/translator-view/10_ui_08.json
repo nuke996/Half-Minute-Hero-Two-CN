@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3459,
+ "_count": 3466,
  "entries": [
   {
    "id": "row::43261",
@@ -38051,6 +38051,83 @@
     "blob": 763,
     "offset": 4368,
     "cap": 64
+   }
+  },
+  {
+   "id": "row::61666",
+   "en": "Dark Breath",
+   "ja": "ダークブレス",
+   "zh": "暗黑吐息",
+   "meta": {
+    "blob": 836,
+    "offset": 26252,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61667",
+   "en": "Frog Bite",
+   "ja": "フロッグバイト",
+   "zh": "青蛙咬击",
+   "meta": {
+    "blob": 836,
+    "offset": 29420,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61668",
+   "en": "Nature Breath",
+   "ja": "ネイチャーブレス",
+   "zh": "自然吐息",
+   "meta": {
+    "blob": 846,
+    "offset": 1772,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61669",
+   "en": "Horse Charge",
+   "ja": "ウマチャージ",
+   "zh": "战马冲锋",
+   "meta": {
+    "blob": 846,
+    "offset": 11852,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61670",
+   "en": "Mystic Shift",
+   "ja": "ミスティックシフト",
+   "zh": "神秘转换",
+   "meta": {
+    "blob": 884,
+    "offset": 11852,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61671",
+   "en": "Ring Shoot",
+   "ja": "リングシュート",
+   "zh": "环形射击",
+   "meta": {
+    "blob": 884,
+    "offset": 15020,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61672",
+   "en": "Hard Punch",
+   "ja": "ブチかます",
+   "zh": "狠揍",
+   "meta": {
+    "blob": 884,
+    "offset": 20492,
+    "cap": 31
    }
   }
  ]

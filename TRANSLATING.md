@@ -374,9 +374,9 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 python tools/build.py --game-dir work/original package_names_cn_reuse_norepl
 ```
 
-> 当前校对链由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 `z25` →
-> `dist/Z25-mech-names/`，含 Z22–Z25 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、
-> T-05b 技能/机制名、歌词与 4 个视频）。词典或译表改动后请用 `python tools/build.py package_current` 重建，
+> 当前校对链由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 `z26` →
+> `dist/Z26-enemy-skills/`，含 Z22–Z26 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、
+> T-05b 技能/机制名、Z26 敌技显示名、歌词与 4 个视频）。词典或译表改动后请用 `python tools/build.py package_current` 重建，
 > 不要写死 `package_names_cn_reuse_z19`。新增配方时只需更新 `RECIPES` 与指针，并同步
 > `BUILDING.md`、`AGENTS.md`、`docs/PACKAGE_LEDGER.md`。
 

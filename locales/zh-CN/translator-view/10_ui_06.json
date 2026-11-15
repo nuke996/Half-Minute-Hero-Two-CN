@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3282,
+ "_count": 3286,
  "entries": [
   {
    "id": "row::31594",
@@ -36104,6 +36104,50 @@
     "blob": 666,
     "offset": 17980,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::61649",
+   "en": "Double Thunder",
+   "ja": "ダブルサンダー",
+   "zh": "双重雷电",
+   "meta": {
+    "blob": 676,
+    "offset": 16172,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61663",
+   "en": "Venus Launcher",
+   "ja": "ヴィーナスランチャー",
+   "zh": "维纳斯发射器",
+   "meta": {
+    "blob": 655,
+    "offset": 8972,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61664",
+   "en": "Trip Force",
+   "ja": "トリップフォース",
+   "zh": "绊倒冲击",
+   "meta": {
+    "blob": 655,
+    "offset": 14156,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61665",
+   "en": "Gate to Hell",
+   "ja": "ゴートゥヘルゲート",
+   "zh": "地狱之门",
+   "meta": {
+    "blob": 676,
+    "offset": 19052,
+    "cap": 31
    }
   }
  ]

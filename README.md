@@ -182,7 +182,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中（敌名/Boss 名已在 Z19 发布基线放行）
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z25** → `dist/Z25-mech-names`）；**Z19 为当前发布基线**（2026-11-09 已并入 Z22–Z24，含敌名放行）；发版构建与存档兼容由 `locales/zh-CN/cmap.json` 固化载体码
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z26** → `dist/Z26-enemy-skills`）；**Z19 为当前发布基线**（2026-11-09 已并入 Z22–Z24，含敌名放行）；发版构建与存档兼容由 `locales/zh-CN/cmap.json` 固化载体码
 ```
 
 ---

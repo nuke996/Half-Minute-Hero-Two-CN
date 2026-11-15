@@ -262,7 +262,8 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 | **Z22** | `dist/Z22-ui-lowrisk/` | 低风险 UI 补译批（298 行）；已随译表进入 Z19/stable；未实机 |
 | **Z23** | `dist/Z23-ui-mediumrisk/` | 图鉴敌人/Boss 列表名放行 + 「事件道具」；Z19 已启用；未实机（中风险） |
 | **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；2026-11-12 重建 `LANG_EN fbe38d771f76`，error 0 / warning 45 |
-| **Z25** | `dist/Z25-mech-names/` | T-05b 技能/机制名补译（Wind 两技能 10 槽 + 敌技显示名 9 槽）；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z25`）；2026-11-15 构建 `LANG_EN 8faa23aa52fd`（最终 dist，含视频合入），操作数仅 4 处变化，error 0 / warning 45；未实机 |
+| **Z25** | `dist/Z25-mech-names/` | T-05b 技能/机制名补译（Wind 两技能 10 槽 + 敌技显示名 9 槽）；2026-11-15 构建 `LANG_EN 8faa23aa52fd`（最终 dist，含视频合入），操作数仅 4 处变化，error 0 / warning 45；未实机 |
+| **Z26** | `dist/Z26-enemy-skills/` | 敌技显示名补译（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）；全部无操作数引用，相对 Z25 操作数 0 变化；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z26`）；2026-11-15 构建 `LANG_EN dd093e4788bf`，error 0 / warning 45；未实机 |
 
 > **stable / E3（2026-11-12）：** 已按当前译表重建（`LANG_EN cde1b071c2fc`，error 0 / warning 1），
 > 但按 T-07 决策**继续保留敌名/Boss 图鉴列表名原文**，作为未实机验证前的安全回滚包。
@@ -530,6 +531,10 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
   `Catch and Release`（2 处）、`Beat Crush`、`Beam Security`、`Final Defense System`、
   `Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath` 9 个敌技显示槽已中文化；
   `validate_build` error 0 / warning 45。见 `docs/TODO.md` T-05b、`dist/Z25-mech-names/`。
+- **Z26 敌技显示名（2026-11-15）：** 又补 47 个 `stride288 pos28` 名字槽（44 个不同名字），
+  含截图中的 `Couple's World`；全部 `+4=FFFFFFFF`、无名字哈希操作数，相对 Z25 操作数 0 变化。
+  `Hellfire`（7 副本，疑似机制/受保护）、`Venus Seven`（已有译文，副本未同步）、
+  `Dogry`/`Reusable`（未定性）未纳入上屏。见 `docs/TODO.md` T-05c、`dist/Z26-enemy-skills/`。
 （`b34` 关卡/章节标题已于 2026-11-06 复核：222 条记录中 118 条名称已改为中文，
 Q16 rec49/142 按守卫保留，不再列入待办。）
 **相关文件：** `docs/FINAL_QA_PLAN.md` §2.2、`tools/build_cn.py`（`display_release_hit` / `DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/menu_ok.json`。

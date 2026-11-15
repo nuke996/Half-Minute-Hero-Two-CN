@@ -2,8 +2,140 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3592,
+ "_count": 3604,
  "entries": [
+  {
+   "id": "row::6076",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 127,
+    "offset": 700,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6077",
+   "en": "Pray",
+   "ja": "おいのり",
+   "zh": "祈祷",
+   "meta": {
+    "blob": 127,
+    "offset": 956,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6078",
+   "en": "Shrimp Croquette",
+   "ja": "えびコロッケ",
+   "zh": "炸虾饼",
+   "meta": {
+    "blob": 127,
+    "offset": 1380,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::6079",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 127,
+    "offset": 1548,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::6081",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 127,
+    "offset": 2820,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6082",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 127,
+    "offset": 3244,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::6086",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 127,
+    "offset": 3668,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6087",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 127,
+    "offset": 4092,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::6089",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 127,
+    "offset": 5788,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6090",
+   "en": "Talk",
+   "ja": "はなす",
+   "zh": "交谈",
+   "meta": {
+    "blob": 127,
+    "offset": 6212,
+    "cap": 16
+   }
+  },
+  {
+   "id": "row::6092",
+   "en": "Explanation",
+   "ja": "せつめい",
+   "zh": "说明",
+   "meta": {
+    "blob": 127,
+    "offset": 6636,
+    "cap": 80
+   }
+  },
+  {
+   "id": "row::6093",
+   "en": "Exit Village",
+   "ja": "村を出る",
+   "zh": "离开村庄",
+   "meta": {
+    "blob": 127,
+    "offset": 7060,
+    "cap": 80
+   }
+  },
   {
    "id": "row::6094",
    "en": "Skivvies",

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3178,
+ "_count": 3180,
  "entries": [
   {
    "id": "row::0",
@@ -30277,138 +30277,6 @@
    }
   },
   {
-   "id": "row::6076",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 127,
-    "offset": 700,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6077",
-   "en": "Pray",
-   "ja": "おいのり",
-   "zh": "祈祷",
-   "meta": {
-    "blob": 127,
-    "offset": 956,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6078",
-   "en": "Shrimp Croquette",
-   "ja": "えびコロッケ",
-   "zh": "炸虾饼",
-   "meta": {
-    "blob": 127,
-    "offset": 1380,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6079",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 127,
-    "offset": 1548,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6081",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 127,
-    "offset": 2820,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6082",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 127,
-    "offset": 3244,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6086",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 127,
-    "offset": 3668,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6087",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 127,
-    "offset": 4092,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6089",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 127,
-    "offset": 5788,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6090",
-   "en": "Talk",
-   "ja": "はなす",
-   "zh": "交谈",
-   "meta": {
-    "blob": 127,
-    "offset": 6212,
-    "cap": 16
-   }
-  },
-  {
-   "id": "row::6092",
-   "en": "Explanation",
-   "ja": "せつめい",
-   "zh": "说明",
-   "meta": {
-    "blob": 127,
-    "offset": 6636,
-    "cap": 80
-   }
-  },
-  {
-   "id": "row::6093",
-   "en": "Exit Village",
-   "ja": "村を出る",
-   "zh": "离开村庄",
-   "meta": {
-    "blob": 127,
-    "offset": 7060,
-    "cap": 80
-   }
-  },
-  {
    "id": "row::60626",
    "en": "Starthome Village",
    "ja": "サイショール村",
@@ -34960,6 +34828,160 @@
     "blob": 99,
     "offset": 11452,
     "cap": 35
+   }
+  },
+  {
+   "id": "row::61632",
+   "en": "Magnitude 30",
+   "ja": "マグニチュード30",
+   "zh": "震级30",
+   "meta": {
+    "blob": 59,
+    "offset": 16172,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61633",
+   "en": "Mind Blast",
+   "ja": "マインドブラスト",
+   "zh": "精神冲击",
+   "meta": {
+    "blob": 59,
+    "offset": 22796,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61634",
+   "en": "Cold Life",
+   "ja": "コールドライフ",
+   "zh": "寒冰生命",
+   "meta": {
+    "blob": 90,
+    "offset": 36044,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61635",
+   "en": "Dystopia",
+   "ja": "ディストピア",
+   "zh": "反乌托邦",
+   "meta": {
+    "blob": 90,
+    "offset": 40076,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61636",
+   "en": "Brain Hack",
+   "ja": "ブレインハック",
+   "zh": "大脑骇入",
+   "meta": {
+    "blob": 90,
+    "offset": 46700,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61637",
+   "en": "Ultimate Demon Slash",
+   "ja": "極魔斬",
+   "zh": "极魔斩",
+   "meta": {
+    "blob": 90,
+    "offset": 76940,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61638",
+   "en": "Deep Blue",
+   "ja": "ディープブルー",
+   "zh": "深蓝",
+   "meta": {
+    "blob": 105,
+    "offset": 2924,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61639",
+   "en": "True Zant Inferno",
+   "ja": "真・ザントインフェルノ",
+   "zh": "真·赞特地狱火",
+   "meta": {
+    "blob": 105,
+    "offset": 26828,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61640",
+   "en": "Tidal Wave",
+   "ja": "タイダルウェイブ",
+   "zh": "潮汐巨浪",
+   "meta": {
+    "blob": 105,
+    "offset": 36620,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61641",
+   "en": "Reverse Mirror",
+   "ja": "分身の鏡",
+   "zh": "分身之镜",
+   "meta": {
+    "blob": 105,
+    "offset": 41516,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61642",
+   "en": "300,000 Degrees",
+   "ja": "３０００００度",
+   "zh": "30万度",
+   "meta": {
+    "blob": 105,
+    "offset": 47852,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61643",
+   "en": "Indict",
+   "ja": "インディクト",
+   "zh": "定罪",
+   "meta": {
+    "blob": 10,
+    "offset": 41804,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61644",
+   "en": "Judgment",
+   "ja": "ジャッジメント",
+   "zh": "审判",
+   "meta": {
+    "blob": 10,
+    "offset": 46988,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61645",
+   "en": "Luv4U",
+   "ja": "ラブフォーユー",
+   "zh": "爱你",
+   "meta": {
+    "blob": 17,
+    "offset": 10412,
+    "cap": 31
    }
   }
  ]

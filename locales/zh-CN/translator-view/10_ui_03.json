@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3427,
+ "_count": 3435,
  "entries": [
   {
    "id": "row::12701",
@@ -37699,6 +37699,94 @@
     "blob": 280,
     "offset": 4096,
     "cap": 3
+   }
+  },
+  {
+   "id": "row::61630",
+   "en": "Couple's World",
+   "ja": "ふたりの世界",
+   "zh": "两人的世界",
+   "meta": {
+    "blob": 350,
+    "offset": 31724,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61631",
+   "en": "Introduction to Death",
+   "ja": "死へのいざない",
+   "zh": "死亡邀约",
+   "meta": {
+    "blob": 350,
+    "offset": 39500,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61646",
+   "en": "Double Thunder",
+   "ja": "ダブルサンダー",
+   "zh": "双重雷电",
+   "meta": {
+    "blob": 230,
+    "offset": 6956,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61647",
+   "en": "Double Thunder",
+   "ja": "ダブルサンダー",
+   "zh": "双重雷电",
+   "meta": {
+    "blob": 230,
+    "offset": 9836,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61648",
+   "en": "Double Thunder",
+   "ja": "ダブルサンダー",
+   "zh": "双重雷电",
+   "meta": {
+    "blob": 230,
+    "offset": 12716,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61650",
+   "en": "Tone of Fate",
+   "ja": "運命の音色",
+   "zh": "命运音色",
+   "meta": {
+    "blob": 253,
+    "offset": 8684,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61651",
+   "en": "Melody Hell",
+   "ja": "メロディヘル",
+   "zh": "旋律地狱",
+   "meta": {
+    "blob": 283,
+    "offset": 11276,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61652",
+   "en": "Live Solo!",
+   "ja": "ソロライブ！",
+   "zh": "独奏演唱会！",
+   "meta": {
+    "blob": 283,
+    "offset": 20780,
+    "cap": 31
    }
   }
  ]

@@ -5744,6 +5744,30 @@ def do_package_names_cn_reuse_z25(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z26(exe_mode=None):
+    """Z26（测试）：Z25 + 敌技显示名补译（纯显示、无操作数引用）。
+
+    覆盖 b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/
+    b489/b529/b655/b836/b846/b884/b966/b1051/b1056 的 stride288 pos28 名字槽。
+    这些槽位 `+4=FFFFFFFF`，在 b83/b394/b417/b654/b756 中无名字哈希操作数，
+    属于纯显示文本；cscv 孪生表保持原版。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z26-enemy-skills')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z26',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -6293,6 +6317,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z25',
             'out': 'Z25-mech-names',
             'stage': 'package_stage_names_cn_reuse_z25',
+            'status': 'candidate', 'review': False},
+    'z26': {'func': do_package_names_cn_reuse_z26,
+            'cmd': 'package_names_cn_reuse_z26',
+            'out': 'Z26-enemy-skills',
+            'stage': 'package_stage_names_cn_reuse_z26',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6302,7 +6331,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z25'
+CURRENT_REVIEW_RECIPE = 'z26'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6420,6 +6449,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z24': do_package_names_cn_reuse_z24,
      # Z25（测试）：Z24 + T-05b 技能/机制名补译，输出 dist/Z25-mech-names
      'package_names_cn_reuse_z25': do_package_names_cn_reuse_z25,
+     # Z26（测试）：Z25 + 敌技显示名补译，输出 dist/Z26-enemy-skills
+     'package_names_cn_reuse_z26': do_package_names_cn_reuse_z26,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

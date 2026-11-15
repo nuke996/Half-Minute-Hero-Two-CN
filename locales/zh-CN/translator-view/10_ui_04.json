@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3690,
+ "_count": 3694,
  "entries": [
   {
    "id": "row::19310",
@@ -40592,6 +40592,50 @@
     "blob": 357,
     "offset": 16904,
     "cap": 16
+   }
+  },
+  {
+   "id": "row::61653",
+   "en": "Fire Burn",
+   "ja": "ファイヤーバーン",
+   "zh": "烈焰燃烧",
+   "meta": {
+    "blob": 393,
+    "offset": 57644,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61654",
+   "en": "Weapon Rush",
+   "ja": "武器ラッシュ",
+   "zh": "武器突袭",
+   "meta": {
+    "blob": 425,
+    "offset": 13292,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61655",
+   "en": "Terror Stomp",
+   "ja": "テラスタンプ",
+   "zh": "恐惧践踏",
+   "meta": {
+    "blob": 425,
+    "offset": 19052,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61656",
+   "en": "Impact Rage",
+   "ja": "インパクトレイジ",
+   "zh": "冲击狂怒",
+   "meta": {
+    "blob": 425,
+    "offset": 40940,
+    "cap": 31
    }
   }
  ]

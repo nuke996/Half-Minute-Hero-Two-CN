@@ -18,6 +18,7 @@
 | **T-04b** | 低 | 校对视图/名字副本 | 装备名内嵌副本登记：`b34`、`b1010`、`b546`、`b892` | **游戏内显示已完成（2026-11-15 复核）**。Z24 产物中 `b34` loadout（`head/body/handR/handL/foot` 及第二套）、`b1010`、`b546`、`b892` 的 34 个道具/装备名均已由 canonical 传播写成中文（示例 `head=勇者王冠`、`Wing Sword→羽翼之剑`），`validate_build` error 0。**真正未完成的是校对视图登记**：`text_v2.csv` 没有这些内嵌副本行（`b34` 仅有章节标题行），译者看不到也改不了。两个例外保持原文：`b34 body=Villager's Clothes`（2 处，道具表无此规范名）、`b892 Hellfire`（1 处，受保护脚本键） | 在 `export_review.py` 增加内嵌副本导出；导入时写回权威道具表 `b147/357/736/998`（否则重建成 canonical 会覆盖）；两个例外放入 `protected/` 或标注跳过原因；每批重建并 `validate_build`。**不需要再改游戏字节** | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5、`PITFALLS.md` §28/§29 |
 | **T-05a** | 低 | 翻译缺口/显示 | 纯显示说明短句 | **部分完成（2026-11-12）**：Q16 守卫误伤已修（10 个含「勇者城」的说明槽不再回写），`b147/357/736` 的「勇者城也能在森林移动」、`b357` 的「陈旧/全新的勇者城零件」已上屏。剩余：`b357 off122396/122664` `Large Attack`/`Heavy Attack`（未登记，待定性）；`b666` 的 `Trigger Rate: 1/x` 20 种（未登记） | 确认 `Large/Heavy Attack` 是装备名还是纯标签；`Trigger Rate` 按 UI 文案补登记；每批重建并校验 | `KNOWN_ISSUES.md` §21、`FINAL_QA_PLAN.md` §2.2 |
 | **T-05b** | 中 | 翻译缺口/机制名 | 剩余技能/机制名 | **已完成（2026-11-15，Z25）**。Wind 两技能 10 槽（`b666 pos0+pos292`、`b147/357/736 pos172`）已中文化；相对 Z24 仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`），副本冲突 0；敌技显示名 9 槽（`Catch and Release`×2、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath`）已上屏；`validate_build` error 0 / warning 45；产物 `dist/Z25-mech-names/` | 实机验证技能栏/武器附带技能/敌技显示；无问题后并入下一基线 | `KNOWN_ISSUES.md` §21、`PACKAGE_LEDGER.md` §5、`BUILDING.md` §5.5 |
+| **T-05c** | 中 | 翻译缺口/敌技显示名 | 敌技显示名补译（含截图 `Couple's World`） | **已完成（2026-11-15，Z26）**。47 槽 / 44 个不同名字（`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056`）；全部 `+4=FFFFFFFF`、无名字哈希操作数，相对 Z25 操作数 **0 变化**；`validate_build` error 0 / warning 45；cmap +4 字（2304）；产物 `dist/Z26-enemy-skills/`。未纳入：`Hellfire`（7 副本，疑似机制/受保护）、`Venus Seven`（已有译文，副本未同步）、`Dogry`/`Reusable`（未定性） | 实机验证敌技名显示；`Hellfire`/`Venus Seven` 另开批次处理 | `KNOWN_ISSUES.md` §21、`PACKAGE_LEDGER.md` §5、`BUILDING.md` §5.5 |
 | **T-06** | 中 | 专名审计 | 补齐专名审计覆盖面：DLC01 同表、脚本内联、未登记 UI；处理 `土おとこ` 漏译 | **未覆盖**。`PROOFREAD_NAME_REPORT.md` §2.3 已注明；`b928/59516`、`b928/67400` 两行仍把 `<超土おとこ>…` 整句省略为「它们就在村子北边！」 | 用「日文名 + 英文名」全库搜引用，补 DLC01 与脚本内联；按日文原文补回两行漏译 | `PROOFREAD_NAME_REPORT.md` §2.3/§7、`PITFALLS.md` §44 |
 | **T-07** | 高 | 发布工程 | 将 Z22–Z24 的成果并入 Z19 / stable 基线，并决定敌名/Boss 名是否在基线放行 | **已完成（2026-11-09；2026-11-12 随 Q16 修复重建）**。决策：**仅 Z19 放行 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。Z19 已启用 `HMH2_Z23_RELEASE` 并重建（LANG_EN `fbe38d771f76`，error 0 / warning 45）；stable 已按当前译表重建（LANG_EN `cde1b071c2fc`，error 0 / warning 1），并登记进 `RECIPES` 以写正确清单 | 实机验证 Z19 图鉴/战斗说话人/宝箱后，再决定 stable 是否跟进放行 | `PACKAGE_LEDGER.md` §2/§5、`BUILDING.md` §5.5、`README.md` 开发状态 |
 | **T-08** | 低 | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0（新字形 2300/2847，余 547）；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频（暂不解决） | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
@@ -34,6 +35,7 @@
 | T-04b | 读 Z24 产物 `b34/b1010/b546/b892` + `_canon` | loadout 与 `b892` 的 34 个名字已中文；仅 `Villager's Clothes`×2、`Hellfire`×1 保持英文；这些内嵌副本均无 CSV 行，属校对视图缺口 |
 | T-05a | 对照译表、`t17_q16_candidates.tsv` 与 Z19/Z24 产物 | 10 个说明槽被 Q16 误伤（5 条 × JA/EN）；修复后 5 条说明全部上屏；剩 `Large/Heavy Attack`、`Trigger Rate` 未登记 |
 | T-05b | 读 Z25 产物 + 对比 Z24 操作数 | Wind 10/10 槽中文；仅 `b83 rec183/186`、`b394 rec774/787` 4 个操作数变化；敌技 9 槽中文；副本冲突 0；validate error 0 / warning 45 |
+| T-05c | 读 Z26 产物 + 对比 Z25 操作数 | 47/47 槽中文；Z25→Z26 操作数 0 变化；validate error 0 / warning 45；`Couple's World` → 两人的世界 |
 | T-06 | 读报告 + 查 CSV | `b928/59516`、`b928/67400` 两行确实省略了名字 |
 | T-07 | 读新配方 + 检查 dist | Z19 `HMH2_Z23_RELEASE=1`，LANG_EN `fbe38d771f76`；stable `=0`，LANG_EN `cde1b071c2fc`；两者 validate error 0 |
 | T-08 | 2026-11-09 `verify_charset_full.py` + 构建输出 | 上屏缺字 0；新字形 2300/2847，余 547；`row1992` 显示英文原名 |
@@ -49,10 +51,11 @@
 
 ## 4. 已同步的过期文档
 
-**2026-11-15（T-04b 状态修正 / T-05b 完成）：**
+**2026-11-15（T-04b 状态修正 / T-05b、T-05c 完成）：**
 - `docs/TODO.md`：T-04b 由“未实施”改为“游戏内显示已完成，剩余校对视图登记”；
   补充 `Villager's Clothes`×2、`Hellfire`×1 两个例外；复核证据同步更新。
 - `docs/TODO.md`：T-05b 标记完成（Z25；Wind 10 槽 + 敌技 9 槽，4 个操作数，error 0）。
+- `docs/TODO.md`：新增 T-05c 并标记完成（Z26；47 槽 / 44 个敌技显示名，0 操作数，error 0）。
 
 **2026-11-13（T-09 合并）：**
 - `docs/TODO.md`：T-09 标记完成（28 提交、合并后三个包重建校验通过）。

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2195,
+ "_count": 2198,
  "entries": [
   {
    "id": "row::56654",
@@ -24147,6 +24147,39 @@
     "blob": 998,
     "offset": 4080,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::61674",
+   "en": "Zant Inferno",
+   "ja": "ザントインフェルノ",
+   "zh": "赞特地狱火",
+   "meta": {
+    "blob": 1051,
+    "offset": 4364,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61675",
+   "en": "Zandest Inferno",
+   "ja": "ザンデストインフェルノ",
+   "zh": "赞德斯特地狱火",
+   "meta": {
+    "blob": 1051,
+    "offset": 7532,
+    "cap": 31
+   }
+  },
+  {
+   "id": "row::61676",
+   "en": "Anti-Sacrificial Missile",
+   "ja": "対イケニエ用ミサイル",
+   "zh": "反献祭导弹",
+   "meta": {
+    "blob": 1056,
+    "offset": 6380,
+    "cap": 31
    }
   }
  ]
