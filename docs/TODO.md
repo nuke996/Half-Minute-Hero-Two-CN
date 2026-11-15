@@ -2,8 +2,9 @@
 
 > 用途：把**除实机测试以外**的未完成项集中登记，避免散落在 `KNOWN_ISSUES.md`、
 > `PACKAGE_LEDGER.md`、`FINAL_QA_PLAN.md` 与项目记忆中。
-> 最近复核：2026-11-13（T-09 已完成：`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支）。
-> 上一轮 2026-11-12：完成 Q16 说明文误伤修复；拆分 T-04/T-05 为 a/b 两组。
+> 最近复核：2026-11-15（修正 T-04b：游戏内显示已完成，剩余为校对视图登记）。
+> 上一轮 2026-11-13：T-09 已完成，`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支。
+> 2026-11-12：完成 Q16 说明文误伤修复；拆分 T-04/T-05 为 a/b 两组。
 > 实机测试项不在此表：见 `docs/FINAL_QA_PLAN.md` §2.1 / §2.3 / §2.4 与 `docs/PACKAGE_LEDGER.md` §2。
 
 ## 1. 待办总表
@@ -14,7 +15,7 @@
 | **T-02** | 高 | 翻译质量 | 导入对话校对剩余 **429 条**（高严重度 0） | **已完成（2026-11-09）**：427 条已修复 + 2 条保留原译，共改动 529 处槽位（导入合计 530，另 1 处为既有人工修改）；`dialogue_issues_status.tsv` 剩余待核对 **0**；逐条原文/原译文/现译文见 `PROOFREAD_DIALOGUE_ROUND2.md`；Z24 重建 error 0 / warning 45 | 实机抽检本轮改动；后续新校对问题另开批次 | `PROOFREAD_DIALOGUE_REPORT.md`、`PROOFREAD_DIALOGUE_ROUND2.md`、`KNOWN_ISSUES.md` §2 |
 | **T-03** | 低 | 校对通道 | 歌词译文接入 `translator-view`（导出/导入） | **未接入**。`cscv[355]` 28 行为代码常量 `SONG_EN_LINES`（`tools/build_cn.py:2481`）；`export_review.py` 无歌曲表处理，校对视图看不到、改不了 | 如需要人工校对：为歌曲表增加导出/导入通道（JSON 或 TSV），并在导入后重建 | `PACKAGE_LEDGER.md` §5/2026-10-30 记录、`PITFALLS.md` §38 |
 | **T-04a** | 低 | 放行/未登记表 | 纯显示表的 collide 假命中：`b630`、`b845` | **未实施**。`b630` LANG_EN `off4732` `You took damage!`（JA `ダメージをうけた！`）与 cscv `b23 off7792` 同串；`b845` 7 条曲名（`Intro` off88、`Grand Ending` off1312 等）与 cscv `b814` 同串。两表都未登记进译表 | 仿 `SONG_OK` 增加按 (blob, offset) 的假命中放行清单，登记这些行后重建 Z19/Z24 并 `validate_build` | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5 |
-| **T-04b** | 中 | 名字一致性 | 装备名副本：`b34`、`b1010`、`b546`、`b892` | **未实施**。`b34` 146 `handR=`/146 `foot=`、`b1010` 4/5、`b546` 1，合计 `handR=` 151/`foot=` 151；`b892` 有 **88 个未登记**道具/装备名 + 34 条已登记「获得××」消息 | 以道具表 `b147/357/736/998` 为权威名，翻译后全副本同步（loadout/脚本）并重算 `b83/394/417/654` 操作数；**不能按显示行放行** | `PITFALLS.md` §28/§29、`PACKAGE_LEDGER.md` §5 |
+| **T-04b** | 低 | 校对视图/名字副本 | 装备名内嵌副本登记：`b34`、`b1010`、`b546`、`b892` | **游戏内显示已完成（2026-11-15 复核）**。Z24 产物中 `b34` loadout（`head/body/handR/handL/foot` 及第二套）、`b1010`、`b546`、`b892` 的 34 个道具/装备名均已由 canonical 传播写成中文（示例 `head=勇者王冠`、`Wing Sword→羽翼之剑`），`validate_build` error 0。**真正未完成的是校对视图登记**：`text_v2.csv` 没有这些内嵌副本行（`b34` 仅有章节标题行），译者看不到也改不了。两个例外保持原文：`b34 body=Villager's Clothes`（2 处，道具表无此规范名）、`b892 Hellfire`（1 处，受保护脚本键） | 在 `export_review.py` 增加内嵌副本导出；导入时写回权威道具表 `b147/357/736/998`（否则重建成 canonical 会覆盖）；两个例外放入 `protected/` 或标注跳过原因；每批重建并 `validate_build`。**不需要再改游戏字节** | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5、`PITFALLS.md` §28/§29 |
 | **T-05a** | 低 | 翻译缺口/显示 | 纯显示说明短句 | **部分完成（2026-11-12）**：Q16 守卫误伤已修（10 个含「勇者城」的说明槽不再回写），`b147/357/736` 的「勇者城也能在森林移动」、`b357` 的「陈旧/全新的勇者城零件」已上屏。剩余：`b357 off122396/122664` `Large Attack`/`Heavy Attack`（未登记，待定性）；`b666` 的 `Trigger Rate: 1/x` 20 种（未登记） | 确认 `Large/Heavy Attack` 是装备名还是纯标签；`Trigger Rate` 按 UI 文案补登记；每批重建并校验 | `KNOWN_ISSUES.md` §21、`FINAL_QA_PLAN.md` §2.2 |
 | **T-05b** | 中 | 翻译缺口/机制名 | 剩余技能/机制名 | **未实施**。`1,000m/h Wind`/`10,000m/h Wind`（`b666 pos0`+`pos292`，及 `b147/357/736 pos172` 引用列）、`Catch and Release`（`b172 pos32`，2 处）、`Beam Security`（`b444 pos24`）、`Thunder Storm Breath`（`b750 pos24`）；另发现 `b444` `Beat Crush`/`Final Defense System`/`Life Drain`、`b750` `Red Eyes`；`b734 off5376` `Emperor Jelly` 1 处 | 按完整名字批次处理：登记新槽 → 全副本同改 → 重算操作数 → 跳过 `b666` 键列 `pos288~375` → `validate_build`；与 T-04b 共用同步工具 | `KNOWN_ISSUES.md` §21、`PITFALLS.md` §42 |
 | **T-06** | 中 | 专名审计 | 补齐专名审计覆盖面：DLC01 同表、脚本内联、未登记 UI；处理 `土おとこ` 漏译 | **未覆盖**。`PROOFREAD_NAME_REPORT.md` §2.3 已注明；`b928/59516`、`b928/67400` 两行仍把 `<超土おとこ>…` 整句省略为「它们就在村子北边！」 | 用「日文名 + 英文名」全库搜引用，补 DLC01 与脚本内联；按日文原文补回两行漏译 | `PROOFREAD_NAME_REPORT.md` §2.3/§7、`PITFALLS.md` §44 |
@@ -30,7 +31,7 @@
 | T-02 | 读 `dialogue_issues_status.tsv` | 待核对 0；已修复 427 + 保留原译 2；`import_review` 收到 530 处修订（529 本轮 + 1 既有）；error 0 / warning 45 |
 | T-03 | 搜 `export_review.py` / `build_cn.py` | 无歌曲表导出；`SONG_EN_LINES` 仍是代码常量 |
 | T-04a | 扫母本 LANG_EN/cscv | `b630 off4732` 与 cscv `b23 off7792` 同串；`b845 off88/1312` 与 cscv `b814` 同串；两表译表行数 0 |
-| T-04b | 按 blob 计数 + 提取 b892 可打印串 | `b34` 146/146、`b1010` 4/5、`b546` 1/0；b892 未登记候选 88、已登记 34 |
+| T-04b | 读 Z24 产物 `b34/b1010/b546/b892` + `_canon` | loadout 与 `b892` 的 34 个名字已中文；仅 `Villager's Clothes`×2、`Hellfire`×1 保持英文；这些内嵌副本均无 CSV 行，属校对视图缺口 |
 | T-05a | 对照译表、`t17_q16_candidates.tsv` 与 Z19/Z24 产物 | 10 个说明槽被 Q16 误伤（5 条 × JA/EN）；修复后 5 条说明全部上屏；剩 `Large/Heavy Attack`、`Trigger Rate` 未登记 |
 | T-05b | 扫母本 LANG_EN | Wind 各 5、Catch 2、Beam 1、Thunder 1；另发现 `Beat Crush`/`Final Defense System`/`Life Drain`/`Red Eyes`；Jelly 1 |
 | T-06 | 读报告 + 查 CSV | `b928/59516`、`b928/67400` 两行确实省略了名字 |
@@ -47,6 +48,10 @@
 - **既定差异**：stable/E3 不含 4 个视频与 `cscv[355]` 歌词，是配方设计，不是缺漏。
 
 ## 4. 已同步的过期文档
+
+**2026-11-15（T-04b 状态修正）：**
+- `docs/TODO.md`：T-04b 由“未实施”改为“游戏内显示已完成，剩余校对视图登记”；
+  补充 `Villager's Clothes`×2、`Hellfire`×1 两个例外；复核证据同步更新。
 
 **2026-11-13（T-09 合并）：**
 - `docs/TODO.md`：T-09 标记完成（28 提交、合并后三个包重建校验通过）。
