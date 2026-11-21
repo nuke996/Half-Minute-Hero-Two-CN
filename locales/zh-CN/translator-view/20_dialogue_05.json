@@ -63,7 +63,7 @@
    "id": "row::37547",
    "en": "And I thought the worst when the Grimoires started to go mad!",
    "ja": "「グリモワールが暴走したときはダメかと思ったがな！」",
-   "zh": "「格瑞莫暴走时我还以为完蛋了呢！」",
+   "zh": "「魔法书暴走时我还以为完蛋了呢！」",
    "meta": {
     "blob": 712,
     "offset": 2512,
@@ -96,7 +96,7 @@
    "id": "row::37552",
    "en": "The Grimoires were always meant to be",
    "ja": "「そもそもグリモワールは",
-   "zh": "「格瑞莫本就是为了",
+   "zh": "「魔法书本就是为了",
    "meta": {
     "blob": 712,
     "offset": 3096,
@@ -118,7 +118,7 @@
    "id": "row::37555",
    "en": "The Timestream of the defeated Grimoires",
    "ja": "「たおされたグリモワールのタイムストリームは",
-   "zh": "「被击败的格瑞莫的时之流",
+   "zh": "「被击败的魔法书的时之流",
    "meta": {
     "blob": 712,
     "offset": 3388,
@@ -162,7 +162,7 @@
    "id": "row::37561",
    "en": "The true Grimoire has also been completed…",
    "ja": "「真のグリモワールも完成したのだ・・・」",
-   "zh": "「真正的格瑞莫也已完成…」",
+   "zh": "「真正的魔法书也已完成…」",
    "meta": {
     "blob": 712,
     "offset": 3972,
@@ -173,7 +173,7 @@
    "id": "row::37563",
    "en": "Absorbing the energy of the Grimoires into myself",
    "ja": "「グリモワールのエネルギーを取り込んだ",
-   "zh": "「将格瑞莫的能量吸收进体内",
+   "zh": "「将魔法书的能量吸收进体内",
    "meta": {
     "blob": 712,
     "offset": 4264,
@@ -184,7 +184,7 @@
    "id": "row::37564",
    "en": "has transformed me into the Grimoire's final form!",
    "ja": "　ワシこそがグリモワールの完成形！」",
-   "zh": "　让我化为了格瑞莫的最终形态！」",
+   "zh": "　让我化为了魔法书的最终形态！」",
    "meta": {
     "blob": 712,
     "offset": 4328,
@@ -294,7 +294,7 @@
    "id": "row::37580",
    "en": "The Grimos' Timestream…",
    "ja": "「グリモのタイムストリームって・・・",
-   "zh": "「格瑞莫的时之流…",
+   "zh": "「魔法书的时之流…",
    "meta": {
     "blob": 712,
     "offset": 8352,
@@ -305,7 +305,7 @@
    "id": "row::37581",
    "en": "Huh? So defeating the Grimo was a mistake!?",
    "ja": "　ええ～～　グリモってたおしちゃダメだったの！？」",
-   "zh": "　哈？那打败格瑞莫是错了！？」",
+   "zh": "　哈？那打败魔法书是错了！？」",
    "meta": {
     "blob": 712,
     "offset": 8416,
@@ -3539,7 +3539,7 @@
    "id": "row::37986",
    "en": "The Emperor has already become a being with powers",
    "ja": "「皇帝はもはや　グリモワールも魔王も",
-   "zh": "「皇帝已化为超越格瑞莫与魔王",
+   "zh": "「皇帝已化为超越魔法书与魔王",
    "meta": {
     "blob": 712,
     "offset": 387660,
@@ -19225,7 +19225,7 @@
    "id": "row::43541",
    "en": "It looks like we've found another Grimo!",
    "ja": "　新たなグリモが現れたみたい」",
-   "zh": "　似乎又出现了新的格里莫！」",
+   "zh": "　似乎又出现了新的魔法书！」",
    "meta": {
     "blob": 771,
     "offset": 5788,
@@ -19445,7 +19445,7 @@
    "id": "row::43571",
    "en": "Perhaps it's related to the fact that the Grimo with many eyes",
    "ja": "「もしかして　あの目だくさんなグリモに",
-   "zh": "「难道这和那只长满眼睛的格里莫",
+   "zh": "「难道这和那只长满眼睛的魔法书",
    "meta": {
     "blob": 771,
     "offset": 17696,
@@ -20270,7 +20270,7 @@
    "id": "row::43693",
    "en": "It looks like you humans were",
    "ja": "「グリモより人間のほうが",
-   "zh": "「看来你们人类比格里莫",
+   "zh": "「看来你们人类比魔法书",
    "meta": {
     "blob": 771,
     "offset": 57116,
@@ -25407,7 +25407,7 @@
    "id": "row::44868",
    "en": "This Grimo makes for a troublesome opponent.",
    "ja": "「このグリモは　ちょっとやっかいな相手かも",
-   "zh": "「这个格里莫是个棘手的对手，",
+   "zh": "「这个魔法书是个棘手的对手，",
    "meta": {
     "blob": 787,
     "offset": 17112,
@@ -25451,7 +25451,7 @@
    "id": "row::44874",
    "en": "who are not under the Grimo's control! ★",
    "ja": "　操られていない人もいるかも★」",
-   "zh": "　没被格里莫控制的！★」",
+   "zh": "　没被魔法书控制的！★」",
    "meta": {
     "blob": 787,
     "offset": 18052,
@@ -26243,7 +26243,7 @@
    "id": "row::44997",
    "en": "… A Grimo that can control people…",
    "ja": "「・・・人を操るグリモ・・・",
-   "zh": "「……能操控人心的格里莫……",
+   "zh": "「……能操控人心的魔法书……",
    "meta": {
     "blob": 787,
     "offset": 96244,
@@ -26298,7 +26298,7 @@
    "id": "row::45003",
    "en": "defeat the Grimo and save the world!",
    "ja": "　世界を救いますわ　勇者として！」",
-   "zh": "　打败格里莫，拯救世界！」",
+   "zh": "　打败魔法书，拯救世界！」",
    "meta": {
     "blob": 787,
     "offset": 98060,

@@ -16508,7 +16508,7 @@
    "id": "row::12475",
    "en": "I need to meet with the <Emperor>",
    "ja": "「暴れまわっているグリモを止めるために",
-   "zh": "「为了阻止到处肆虐的格里莫，",
+   "zh": "「为了阻止到处肆虐的魔法书，",
    "meta": {
     "blob": 215,
     "offset": 6600,
@@ -16607,7 +16607,7 @@
    "id": "row::12487",
    "en": "is help stopping the Grimo…",
    "ja": "　グリモさえ止めてもらえれば・・・」",
-   "zh": "　有人帮忙阻止格里莫就好……」",
+   "zh": "　有人帮忙阻止魔法书就好……」",
    "meta": {
     "blob": 215,
     "offset": 9292,
@@ -16772,7 +16772,7 @@
    "id": "row::12511",
    "en": "this one, too, has malfunctioned",
    "ja": "「アイツもグリモのせいで",
-   "zh": "「这家伙也是因为格里莫",
+   "zh": "「这家伙也是因为魔法书",
    "meta": {
     "blob": 215,
     "offset": 19156,
@@ -17575,7 +17575,7 @@
    "id": "row::12632",
    "en": "It looks like the Grimo aren't alone…",
    "ja": "「グリモだけじゃなくて　魔王兵器も",
-   "zh": "「不只是格里莫，",
+   "zh": "「不只是魔法书，",
    "meta": {
     "blob": 215,
     "offset": 73468,
@@ -38420,7 +38420,7 @@
    "id": "row::16840",
    "en": "that Grimoire for me!!",
    "ja": "　たおしてくれたんか！！」",
-   "zh": "　把那本魔典打倒了！！」",
+   "zh": "　把那本魔法书打倒了！！」",
    "meta": {
     "blob": 318,
     "offset": 122880,
@@ -38530,7 +38530,7 @@
    "id": "row::16855",
    "en": "You called it a Grimoire?",
    "ja": "　グリモワールってなんなの？」",
-   "zh": "　魔典又是什么玩意儿？」",
+   "zh": "　魔法书又是什么玩意儿？」",
    "meta": {
     "blob": 318,
     "offset": 126384,
@@ -38563,7 +38563,7 @@
    "id": "row::16860",
    "en": "When I investigated the Grimoire,",
    "ja": "「<グリモワール>とは　かつて地上を襲った",
-   "zh": "「所谓<魔典>，是把过去袭击大地的",
+   "zh": "「所谓<魔法书>，是把过去袭击大地的",
    "meta": {
     "blob": 318,
     "offset": 126904,
@@ -38651,7 +38651,7 @@
    "id": "row::16872",
    "en": "The Grimoires were a massive failure!!",
    "ja": "「しかし　グリモワールは大失敗じゃっ！！」",
-   "zh": "「唯独魔典是大失败！！」",
+   "zh": "「唯独魔法书是大失败！！」",
    "meta": {
     "blob": 318,
     "offset": 128656,
@@ -38695,7 +38695,7 @@
    "id": "row::16878",
    "en": "That's right. And the Grimoires all",
    "ja": "「そうじゃ　グリモワールたちは",
-   "zh": "「正是。且众魔典皆",
+   "zh": "「正是。且众魔法书皆",
    "meta": {
     "blob": 318,
     "offset": 129532,
@@ -38750,7 +38750,7 @@
    "id": "row::16884",
    "en": "Let's go after the Grimoires!!",
    "ja": "「グリモワールを追いましょうっ！！」",
-   "zh": "「去追击魔典吧！！」",
+   "zh": "「去追击魔法书吧！！」",
    "meta": {
     "blob": 318,
     "offset": 130700,
@@ -38772,7 +38772,7 @@
    "id": "row::16887",
    "en": "You've already defeated one of the Grimoires.",
    "ja": "　すでにグリモワールを１体たおしたんじゃったな」",
-   "zh": "　你已打倒过一本魔典。」",
+   "zh": "　你已打倒过一本魔法书。」",
    "meta": {
     "blob": 318,
     "offset": 131056,
@@ -38838,7 +38838,7 @@
    "id": "row::16898",
    "en": "… So we're going to fight the Grimoires?",
    "ja": "「・・・グリモワールとたたかうのね？」",
-   "zh": "「…那么要去对抗魔典？」",
+   "zh": "「…那么要去对抗魔法书？」",
    "meta": {
     "blob": 318,
     "offset": 136248,
@@ -38871,7 +38871,7 @@
    "id": "row::16903",
    "en": "embedded in the bodies of the Grimoire…",
    "ja": "　うめこまれちゃってるみたいだし・・・」",
-   "zh": "　嵌在那魔典体内…」",
+   "zh": "　嵌在那魔法书体内…」",
    "meta": {
     "blob": 318,
     "offset": 136896,
@@ -38893,7 +38893,7 @@
    "id": "row::16906",
    "en": "the Grimoires flew off to.",
    "ja": "　どこに飛んでくか見てたんだけど」",
-   "zh": "　众魔典飞向何方。」",
+   "zh": "　众魔法书飞向何方。」",
    "meta": {
     "blob": 318,
     "offset": 137188,

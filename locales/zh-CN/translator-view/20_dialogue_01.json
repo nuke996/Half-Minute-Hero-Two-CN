@@ -11547,7 +11547,7 @@
    "id": "row::2729",
    "en": "It must be the work of the Grimo!",
    "ja": "　きっとグリモがらみなんじゃないかしら」",
-   "zh": "　一定是魔典搞的鬼！」",
+   "zh": "　一定是魔法书搞的鬼！」",
    "meta": {
     "blob": 64,
     "offset": 3452,
@@ -11888,7 +11888,7 @@
    "id": "row::2781",
    "en": "You make me feel grateful for being born a Grimoire.",
    "ja": "「グリモワールに生まれてこれてよかったぜ」",
-   "zh": "「作为魔典出生，我挺感谢的。」",
+   "zh": "「作为魔法书出生，我挺感谢的。」",
    "meta": {
     "blob": 64,
     "offset": 21200,
@@ -11899,7 +11899,7 @@
    "id": "row::2783",
    "en": "A Grimo!",
    "ja": "「グリモ！」",
-   "zh": "「一本魔典！」",
+   "zh": "「一本魔法书！」",
    "meta": {
     "blob": 64,
     "offset": 21492,
@@ -11910,7 +11910,7 @@
    "id": "row::2785",
    "en": "Don't call me a Grimo!!",
    "ja": "「グリモじゃねえ！！",
-   "zh": "「别叫我魔典！！",
+   "zh": "「别叫我魔法书！！",
    "meta": {
     "blob": 64,
     "offset": 23244,
@@ -11921,7 +11921,7 @@
    "id": "row::2786",
    "en": "I am the 4th Grimoire, <Lux Deus>!!",
    "ja": "　オレは第4のグリモワール　<ルクスデウス>！」",
-   "zh": "　我是第四本魔典，<路克斯>！！」",
+   "zh": "　我是第四本魔法书，<路克斯>！！」",
    "meta": {
     "blob": 64,
     "offset": 23308,
@@ -12449,7 +12449,7 @@
    "id": "row::2866",
    "en": "But that Grimo sure was stupid.",
    "ja": "「でも　あのグリモもバカよね～",
-   "zh": "「但那魔典真蠢呢～",
+   "zh": "「但那魔法书真蠢呢～",
    "meta": {
     "blob": 64,
     "offset": 90696,
@@ -12460,7 +12460,7 @@
    "id": "row::2867",
    "en": "It was totally clueless…",
    "ja": "　わたしたちがグリモをたおすために」",
-   "zh": "　我们为了打倒魔典」",
+   "zh": "　我们为了打倒魔法书」",
    "meta": {
     "blob": 64,
     "offset": 90760,
@@ -12570,7 +12570,7 @@
    "id": "row::2880",
    "en": "To defeat a special Grimo such as this one…",
    "ja": "「こんなとくしゅなグリモをやっつけたことだし",
-   "zh": "「既然打败了这么特殊的魔典，",
+   "zh": "「既然打败了这么特殊的魔法书，",
    "meta": {
     "blob": 64,
     "offset": 93324,
@@ -38420,7 +38420,7 @@
    "id": "row::9036",
    "en": "The Grimo has merged with the Imperial Castle!",
    "ja": "「グリモが皇帝城と同化しちゃったのよ！」",
-   "zh": "「格里莫已经和皇宫融为一体了！」",
+   "zh": "「魔法书已经和皇宫融为一体了！」",
    "meta": {
     "blob": 168,
     "offset": 6308,
@@ -38442,7 +38442,7 @@
    "id": "row::9039",
    "en": "the Grimo controlling the castle head on!",
    "ja": "　グリモをちょくせつやっつけるしかないわね！」",
-   "zh": "　控制皇宫的格里莫！」",
+   "zh": "　控制皇宫的魔法书！」",
    "meta": {
     "blob": 168,
     "offset": 6664,
@@ -38541,7 +38541,7 @@
    "id": "row::9056",
    "en": "I think the Grimo is likely using the <northern entrance>…",
    "ja": "　<北の入口>からグリモに通じてると思うんだけど・・・」",
-   "zh": "　我觉得格里莫可能在用<北面入口>…」",
+   "zh": "　我觉得魔法书可能在用<北面入口>…」",
    "meta": {
     "blob": 168,
     "offset": 11920,
@@ -38596,7 +38596,7 @@
    "id": "row::9066",
    "en": "Ah! This is the Grimo that absorbed the Imperial Castle!",
    "ja": "「あ！　コイツが皇帝城と同化したグリモよ！",
-   "zh": "「啊！就是这家伙，吞了皇宫的格里莫！",
+   "zh": "「啊！就是这家伙，吞了皇宫的魔法书！",
    "meta": {
     "blob": 168,
     "offset": 19448,
@@ -38794,7 +38794,7 @@
    "id": "row::9095",
    "en": "Ah! This is the Grimo that absorbed the Imperial Castle!",
    "ja": "「あ！　コイツが皇帝城と同化したグリモよ！",
-   "zh": "「啊！就是这家伙，吞了皇宫的格里莫！",
+   "zh": "「啊！就是这家伙，吞了皇宫的魔法书！",
    "meta": {
     "blob": 168,
     "offset": 28500,
@@ -38970,7 +38970,7 @@
    "id": "row::9120",
    "en": "Ah! This is the Grimo that absorbed the Imperial Castle!",
    "ja": "「あ！　コイツが皇帝城と同化したグリモよ！",
-   "zh": "「啊！就是这家伙，吞了皇宫的格里莫！",
+   "zh": "「啊！就是这家伙，吞了皇宫的魔法书！",
    "meta": {
     "blob": 168,
     "offset": 36384,
@@ -39058,7 +39058,7 @@
    "id": "row::9133",
    "en": "Ah! This is the Grimo that absorbed the Imperial Castle!",
    "ja": "「あ！　コイツが皇帝城と同化したグリモよ！",
-   "zh": "「啊！就是这家伙，和皇帝城同化了的格里莫！",
+   "zh": "「啊！就是这家伙，和皇帝城同化了的魔法书！",
    "meta": {
     "blob": 168,
     "offset": 42224,
@@ -39157,7 +39157,7 @@
    "id": "row::9149",
    "en": "All that's left is to defeat the Grimo!",
    "ja": "「さぁ後はグリモをたおすだけよ」",
-   "zh": "「接下来只需击败格里莫了！」",
+   "zh": "「接下来只需击败魔法书了！」",
    "meta": {
     "blob": 168,
     "offset": 44852,
@@ -39168,7 +39168,7 @@
    "id": "row::9156",
    "en": "We finally defeated all the Grimos…",
    "ja": "「結局　グリモ全部たおしてしまいましたわ・・・」",
-   "zh": "「我们终于把格里莫全打败了…」",
+   "zh": "「我们终于把魔法书全打败了…」",
    "meta": {
     "blob": 168,
     "offset": 72300,
@@ -39344,7 +39344,7 @@
    "id": "row::9178",
    "en": "What did that disgusting Grimo say again?",
    "ja": "「さっきのキモいグリモが言ってたでしょ？",
-   "zh": "「那个恶心的格里莫刚说了什么来着？",
+   "zh": "「那个恶心的魔法书刚说了什么来着？",
    "meta": {
     "blob": 168,
     "offset": 98580,

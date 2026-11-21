@@ -40499,7 +40499,7 @@
    "id": "row::28409",
    "en": "That must be the next Grimoire!",
    "ja": "「あれが次のグリモワールってわけね！",
-   "zh": "「那定是下一本魔典！",
+   "zh": "「那定是下一本魔法书！",
    "meta": {
     "blob": 497,
     "offset": 16528,
@@ -40532,7 +40532,7 @@
    "id": "row::28414",
    "en": "By the way, the Grimoire is in this castle.",
    "ja": "「ちなみにグリモワールはここのお城にいるわよ」",
-   "zh": "「顺便，魔典就在这座城里。」",
+   "zh": "「顺便，魔法书就在这座城里。」",
    "meta": {
     "blob": 497,
     "offset": 17404,
@@ -40653,7 +40653,7 @@
    "id": "row::28431",
    "en": "Goddess, that reminds me. That Grimoire seemed",
    "ja": "「女神さま　そういえばさっき　グリモワールが",
-   "zh": "「女神，说起来，刚才那魔典",
+   "zh": "「女神，说起来，刚才那魔法书",
    "meta": {
     "blob": 497,
     "offset": 20616,
@@ -40719,7 +40719,7 @@
    "id": "row::28439",
    "en": "The Grimoire seemed to get stronger",
    "ja": "「タマゴをのみこんだだけで",
-   "zh": "「魔典光是吞了蛋",
+   "zh": "「魔法书光是吞了蛋",
    "meta": {
     "blob": 497,
     "offset": 21492,
@@ -40763,7 +40763,7 @@
    "id": "row::28444",
    "en": "You know, Grimoires are kinda creepy…",
    "ja": "　それにしてもグリモワール気持ち悪いわね・・・」",
-   "zh": "　话说，魔典真有点瘆人…」",
+   "zh": "　话说，魔法书真有点瘆人…」",
    "meta": {
     "blob": 497,
     "offset": 22140,
@@ -40796,7 +40796,7 @@
    "id": "row::28448",
    "en": "… <Grimo>…",
    "ja": "「・・・<グリモ>・・・",
-   "zh": "「…<格里莫>…",
+   "zh": "「…<魔法书>…",
    "meta": {
     "blob": 497,
     "offset": 22660,
@@ -41159,7 +41159,7 @@
    "id": "row::28508",
    "en": "You've now defeated two of the Grimo! ▼",
    "ja": "「グリモ2体目撃破ーー▼」",
-   "zh": "「击破第二只格里莫——▼」",
+   "zh": "「击破第二只魔法书——▼」",
    "meta": {
     "blob": 497,
     "offset": 71716,
@@ -41390,7 +41390,7 @@
    "id": "row::28537",
    "en": "I know it's disappointing, but the Grimo are our main priority.",
    "ja": "「残念ではあるけど　今はグリモが優先だし",
-   "zh": "「虽遗憾，但现在格里莫是首要，",
+   "zh": "「虽遗憾，但现在魔法书是首要，",
    "meta": {
     "blob": 497,
     "offset": 76388,

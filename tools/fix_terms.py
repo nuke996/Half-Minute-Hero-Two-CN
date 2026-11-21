@@ -4,6 +4,7 @@
   ゴッドナイン    -> 九神      （第九神 / 九天神 / 神之九人 / 神耐因 归一）
   ヴィーナスセブン -> 七美神    （维纳斯七 / 维纳斯七子 / 维纳斯七人 / 金星七 归一）
   ヒーロークロス   -> 英雄十字  （英雄布 归一）
+  グリモワール/グリモ -> 魔法书（魔典 / 格瑞莫 / 格里莫 归一）
 
 用法:
   python tools/fix_terms.py            # 预览
@@ -37,6 +38,8 @@ VENUS = (
     ("金星7", "七美神"),
 )
 
+GRIMOIRE = ("格瑞莫", "格里莫", "魔典")
+
 
 def byte_len(s):
     return sum(1 if ord(ch) < 0x80 else 2 for ch in s)
@@ -63,6 +66,11 @@ def convert(row):
     if "ヒーロークロス" in ja and "英雄布" in new:
         new = new.replace("英雄布", "英雄十字")
         hits.append("英雄布")
+    if "グリモ" in ja or "Grimo" in (row.get("en") or ""):
+        for a in GRIMOIRE:
+            if a in new:
+                new = new.replace(a, "魔法书")
+                hits.append(a)
     if new == zh:
         return None, None
     return new, "+".join(hits)

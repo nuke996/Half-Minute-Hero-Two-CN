@@ -492,7 +492,7 @@
    "id": "row::59379",
    "en": "But it doesn't look like a Grimo…",
    "ja": "　でもグリモではないような・・・」",
-   "zh": "　但它看起来不像格里莫…」",
+   "zh": "　但它看起来不像魔法书…」",
    "meta": {
     "blob": 1040,
     "offset": 1116,
@@ -525,7 +525,7 @@
    "id": "row::59384",
    "en": "it must be leftover from the creation of the Grimo.",
    "ja": "　ほら　グリモつくったときのオマケ」",
-   "zh": "　一定是制作格里莫时留下的。」",
+   "zh": "　一定是制作魔法书时留下的。」",
    "meta": {
     "blob": 1040,
     "offset": 2868,
@@ -1152,7 +1152,7 @@
    "id": "row::59483",
    "en": "It appears that the Grimo has somehow",
    "ja": "「どうやらグリモのえいきょうで",
-   "zh": "「看来格里莫不知怎的",
+   "zh": "「看来魔法书不知怎的",
    "meta": {
     "blob": 1040,
     "offset": 60036,
@@ -1185,7 +1185,7 @@
    "id": "row::59487",
    "en": "a Grimo is waiting up ahead.",
    "ja": "　グリモが待ち受けてるんじゃないかしらね」",
-   "zh": "　前方正有格里莫在等着呢。」",
+   "zh": "　前方正有魔法书在等着呢。」",
    "meta": {
     "blob": 1040,
     "offset": 60392,
@@ -3825,7 +3825,7 @@
    "id": "row::59967",
    "en": "There's a Grimo over there!!",
    "ja": "「あんな遠くにグリモがいますわ！！」",
-   "zh": "「那边远处有个格里莫！！」",
+   "zh": "「那边远处有个魔法书！！」",
    "meta": {
     "blob": 1050,
     "offset": 4848,
@@ -3836,7 +3836,7 @@
    "id": "row::59969",
    "en": "That is definitely the flying Grimo that broke",
    "ja": "「あれはたしか　帝国研究所のてんじょうを",
-   "zh": "「那绝对就是那只会飞的格里莫，",
+   "zh": "「那绝对就是那只会飞的魔法书，",
    "meta": {
     "blob": 1050,
     "offset": 6016,
@@ -3869,7 +3869,7 @@
    "id": "row::59973",
    "en": "cross the sea and scale a cliff to get to that Grimo.",
    "ja": "　海を渡り　ガケの上へ行かねばならないようです」",
-   "zh": "　渡海攀崖才能到那格里莫。」",
+   "zh": "　渡海攀崖才能到那魔法书。」",
    "meta": {
     "blob": 1050,
     "offset": 6372,
@@ -4221,7 +4221,7 @@
    "id": "row::60021",
    "en": "I'm confident you'll be able to fly to the Grimo's roost!",
    "ja": "　きっと　グリモのところまで飛んでいけるわ！」",
-   "zh": "　就一定能飞到格里莫那儿去！」",
+   "zh": "　就一定能飞到魔法书那儿去！」",
    "meta": {
     "blob": 1050,
     "offset": 18052,
@@ -4496,7 +4496,7 @@
    "id": "row::60058",
    "en": "Then fly to that Grimo and knock him into oblivion!",
    "ja": "　さあ　グリモ目指してぶっとばすのよ～」",
-   "zh": "　然后飞向那格里莫，把它揍飞！」",
+   "zh": "　然后飞向那魔法书，把它揍飞！」",
    "meta": {
     "blob": 1050,
     "offset": 67400,
