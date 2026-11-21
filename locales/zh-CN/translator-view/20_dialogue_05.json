@@ -5068,7 +5068,7 @@
    "id": "row::39347",
    "en": "Equipment Clerk: … You shall fulfill your chivalric duty.",
    "ja": "装備屋「・・・おまえの騎士道をまっとうするんだな」",
-   "zh": "装备商「……你要恪守自己的骑士道。」",
+   "zh": "装备店员「……你要恪守自己的骑士道。」",
    "meta": {
     "blob": 723,
     "offset": 5820,
@@ -5244,7 +5244,7 @@
    "id": "row::39418",
    "en": "Mother: My son used to play by the tower,",
    "ja": "ははおや「うちの子は昔からタワーで",
-   "zh": "妈妈「我儿子以前常在塔边玩，",
+   "zh": "母亲「我儿子以前常在塔边玩，",
    "meta": {
     "blob": 726,
     "offset": 5396,
@@ -5387,7 +5387,7 @@
    "id": "row::39459",
    "en": "Armorer: We're closed! I said, we're closed! Just go away.",
    "ja": "防具屋「閉店だよ！　閉店してんだ！　どっかいってくれよ」",
-   "zh": "防具商「关门了！说了关门了！快滚吧。」",
+   "zh": "防具匠「关门了！说了关门了！快滚吧。」",
    "meta": {
     "blob": 727,
     "offset": 9468,
@@ -5398,7 +5398,7 @@
    "id": "row::39462",
    "en": "Armorer: We're closed! I said, we're closed! Just go away.",
    "ja": "防具屋「閉店だよ！　閉店してんだ！　どっかいってくれよ」",
-   "zh": "防具商「关门了！说了关门了！快滚吧。」",
+   "zh": "防具匠「关门了！说了关门了！快滚吧。」",
    "meta": {
     "blob": 727,
     "offset": 10060,
@@ -5409,7 +5409,7 @@
    "id": "row::39465",
    "en": "Armorer: We're closed! I said, we're closed! Just go away.",
    "ja": "防具屋「閉店だよ！　閉店してんだ！　どっかいってくれよ」",
-   "zh": "防具商「关门了！说了关门了！快滚吧。」",
+   "zh": "防具匠「关门了！说了关门了！快滚吧。」",
    "meta": {
     "blob": 727,
     "offset": 10316,
@@ -5420,7 +5420,7 @@
    "id": "row::39471",
    "en": "Armorer: If little Rina is with you… then we're open for business.",
    "ja": "防具屋「リィナちゃんがいるなら・・・開店してやるよ」",
-   "zh": "防具商「要是小莉娜在的话…就开门营业。」",
+   "zh": "防具匠「要是小莉娜在的话…就开门营业。」",
    "meta": {
     "blob": 727,
     "offset": 11332,
@@ -6575,7 +6575,7 @@
    "id": "row::39702",
    "en": "Minion: Bro's curry is the best in the world!",
    "ja": "こぶん「アニキのカレーは世界一だぜ！」",
-   "zh": "小弟「大哥的咖喱世界第一！」",
+   "zh": "跟班「大哥的咖喱世界第一！」",
    "meta": {
     "blob": 732,
     "offset": 2428,
@@ -6597,7 +6597,7 @@
    "id": "row::41226",
    "en": "Houseman: The Sp… Sp… Spell of Destruction!?",
    "ja": "ハウスマン「は　は　は　ハメツの呪文だってーーー！？」",
-   "zh": "管家「毁……毁……毁灭之咒！？」",
+   "zh": "男仆「毁……毁……毁灭之咒！？」",
    "meta": {
     "blob": 737,
     "offset": 1580,
@@ -6685,7 +6685,7 @@
    "id": "row::41250",
    "en": "Tent: The master is out on some minor business right now.",
    "ja": "テント「マスターはいまヤボヨウでデカケテマス」",
-   "zh": "摊贩「老板现在有点小事外出了。」",
+   "zh": "帐篷「老板现在有点小事外出了。」",
    "meta": {
     "blob": 739,
     "offset": 3700,
@@ -6696,7 +6696,7 @@
    "id": "row::41252",
    "en": "Tent: Squid tastes best when well-grilled.",
    "ja": "テント「イカはヨクヤクにカギリマス」",
-   "zh": "摊贩「乌贼烤得好吃才是最棒的。」",
+   "zh": "帐篷「乌贼烤得好吃才是最棒的。」",
    "meta": {
     "blob": 739,
     "offset": 4124,
@@ -10425,7 +10425,7 @@
    "id": "row::41832",
    "en": "Demon Peddler: Don't look down on turtle power!",
    "ja": "よろず屋魔族「カメカメパワーをあなどるな！」",
-   "zh": "魔族商贩「别小看龟龟之力！」",
+   "zh": "魔族小贩「别小看龟龟之力！」",
    "meta": {
     "blob": 745,
     "offset": 3700,
@@ -10458,7 +10458,7 @@
    "id": "row::41846",
    "en": "Armorer: Armor! Buy it!",
    "ja": "防具屋「ヨロイ！買ってけ！」",
-   "zh": "防具商「铠甲！快来买！」",
+   "zh": "防具匠「铠甲！快来买！」",
    "meta": {
     "blob": 746,
     "offset": 4124,
@@ -11426,7 +11426,7 @@
    "id": "row::42000",
    "en": "Young Peddler: Buy something if you're going to the cave!",
    "ja": "よろず屋少年「どうくつ行くなら買いなよ！」",
-   "zh": "少年商贩「要去洞穴就买点东西吧！」",
+   "zh": "少年货郎「要去洞穴就买点东西吧！」",
    "meta": {
     "blob": 749,
     "offset": 4124,
@@ -11855,7 +11855,7 @@
    "id": "row::42090",
    "en": "Armorer: If the avalanche gives you trouble, come back here.",
    "ja": "防具屋「雪崩でこまったら　また来い」",
-   "zh": "防具商「要是雪崩给你添麻烦，就回来。」",
+   "zh": "防具匠「要是雪崩给你添麻烦，就回来。」",
    "meta": {
     "blob": 752,
     "offset": 7092,
@@ -11866,7 +11866,7 @@
    "id": "row::42092",
    "en": "Armorer: So you got buried in the snow…",
    "ja": "防具屋「雪崩巻き込まれたか　自家製のコート売ってやる」",
-   "zh": "防具商「被雪崩埋了？」",
+   "zh": "防具匠「被雪崩埋了？」",
    "meta": {
     "blob": 752,
     "offset": 7516,
@@ -13494,7 +13494,7 @@
    "id": "row::42389",
    "en": "Ah, umm, geezer… Thank you",
    "ja": "「あっ　あの　おじさま・・・助けてくださって",
-   "zh": "「啊，那个，大叔大人……谢谢你",
+   "zh": "「啊，那个，大叔……谢谢你",
    "meta": {
     "blob": 757,
     "offset": 95076,
@@ -18862,7 +18862,7 @@
    "id": "row::43194",
    "en": "Clerk: You should buy something here!",
    "ja": "よろず屋「まずはうちの商品を買ってけよ！」",
-   "zh": "店员「你该在这儿买点东西！」",
+   "zh": "小贩「你该在这儿买点东西！」",
    "meta": {
     "blob": 758,
     "offset": 7092,
@@ -19126,7 +19126,7 @@
    "id": "row::43520",
    "en": "Old Man: If you want to get stronger",
    "ja": "老人「自分をきたえたいなら",
-   "zh": "大叔「想变强就",
+   "zh": "老人「想变强就",
    "meta": {
     "blob": 768,
     "offset": 4124,
@@ -20666,7 +20666,7 @@
    "id": "row::43756",
    "en": "Girl: Well, do your best.",
    "ja": "女の子「じゃあ　ガンバってね」",
-   "zh": "女孩「那，加油哦。」",
+   "zh": "小女孩「那，加油哦。」",
    "meta": {
     "blob": 772,
     "offset": 5396,
@@ -20677,7 +20677,7 @@
    "id": "row::43758",
    "en": "Girl: Well, do your best.",
    "ja": "女の子「じゃあ　ガンバってね」",
-   "zh": "女孩「那，加油哦。」",
+   "zh": "小女孩「那，加油哦。」",
    "meta": {
     "blob": 772,
     "offset": 5820,
@@ -20688,7 +20688,7 @@
    "id": "row::43763",
    "en": "Beastgirl: It's the friend of God! You made it!",
    "ja": "獣人ムスメ「神様の仲間か！　よくきたな！」",
-   "zh": "兽人妹「是神之友！你终于来了！」",
+   "zh": "兽人少女「是神之友！你终于来了！」",
    "meta": {
     "blob": 773,
     "offset": 1580,
@@ -22569,7 +22569,7 @@
    "id": "row::44420",
    "en": "Tent: Squid tastes best when well-grilled.",
    "ja": "テント「イカはヨクヤクにカギリマス」",
-   "zh": "摊贩「乌贼烤得好吃才是最棒的。」",
+   "zh": "帐篷「乌贼烤得好吃才是最棒的。」",
    "meta": {
     "blob": 779,
     "offset": 2428,
@@ -22613,7 +22613,7 @@
    "id": "row::44434",
    "en": "Biker: Dude, bikes are fast!",
    "ja": "バイク屋「バイクは速いぜ！」",
-   "zh": "骑车佬「哥们，机车可快了！」",
+   "zh": "机车店主「哥们，机车可快了！」",
    "meta": {
     "blob": 780,
     "offset": 3700,
@@ -22679,7 +22679,7 @@
    "id": "row::44482",
    "en": "Woman: The Evil Lord's Castle is right in the middle.",
    "ja": "おばちゃん「まんなかに魔王城があるわよぉ",
-   "zh": "大婶「魔王城就在正中央哟。",
+   "zh": "老婆婆「魔王城就在正中央哟。",
    "meta": {
     "blob": 783,
     "offset": 2004,
@@ -24846,7 +24846,7 @@
    "id": "row::44797",
    "en": "Oh yes, what about Geezer?",
    "ja": "「そうですわっ　おじさまは？",
-   "zh": "「对了，大叔大人呢？",
+   "zh": "「对了，大叔呢？",
    "meta": {
     "blob": 785,
     "offset": 143548,
@@ -24857,7 +24857,7 @@
    "id": "row::44798",
    "en": "Which time is he going back to?",
    "ja": "　おじさまはどの時代へ帰りますの？」",
-   "zh": "　大叔大人要回到哪个时代呢？」",
+   "zh": "　大叔要回到哪个时代呢？」",
    "meta": {
     "blob": 785,
     "offset": 143612,
@@ -27112,7 +27112,7 @@
    "id": "row::45152",
    "en": "Shore Merman: Welcome?!",
    "ja": "陸魚人「ようこそー！」",
-   "zh": "陆鱼人「欢迎？！」",
+   "zh": "海岸人鱼「欢迎？！」",
    "meta": {
     "blob": 791,
     "offset": 1580,
@@ -27134,7 +27134,7 @@
    "id": "row::45157",
    "en": "Shore Merman: Darn! That vile God Nine! To just",
    "ja": "陸魚人「くそー！　ゴッドナインめ！",
-   "zh": "陆鱼人「可恶！那可恶的九神！竟",
+   "zh": "海岸人鱼「可恶！那可恶的九神！竟",
    "meta": {
     "blob": 791,
     "offset": 2428,
@@ -27145,7 +27145,7 @@
    "id": "row::45162",
    "en": "Armorer: … It's not like this armor",
    "ja": "防具屋「・・・べ　別にアンタのために",
-   "zh": "军械士「……这盔甲也不是",
+   "zh": "防具匠「……这盔甲也不是",
    "meta": {
     "blob": 791,
     "offset": 4124,
@@ -27189,7 +27189,7 @@
    "id": "row::45183",
    "en": "Armorer: I don't care about looks!",
    "ja": "防具屋「見た目なんてどうでもいいんです！",
-   "zh": "军械士「我不在乎外表！",
+   "zh": "防具匠「我不在乎外表！",
    "meta": {
     "blob": 792,
     "offset": 6668,
@@ -32920,7 +32920,7 @@
    "id": "row::46131",
    "en": "Young Owner: You come here and then there's this God stuff, love it!",
    "ja": "こども店長「いきなり来て神とか超ウケルっ！」",
-   "zh": "「小店主：冷不丁跑来还遇上神，太逗了！」",
+   "zh": "「小店长：冷不丁跑来还遇上神，太逗了！」",
    "meta": {
     "blob": 797,
     "offset": 4972,
@@ -33074,7 +33074,7 @@
    "id": "row::46196",
    "en": "Herb Girl: They seem to be doing well on the other side of the river～",
    "ja": "やくそうガール「川の向こうは景気が良さそうねぇ～」",
-   "zh": "草药小姐「河对面似乎挺景气～」",
+   "zh": "草药女孩「河对面似乎挺景气～」",
    "meta": {
     "blob": 801,
     "offset": 3276,
@@ -34295,7 +34295,7 @@
    "id": "row::46414",
    "en": "And of course… our Geezer. ▼",
    "ja": "「そして・・・おじさまも▼」",
-   "zh": "「然后……还有大叔大人▼」",
+   "zh": "「然后……还有大叔▼」",
    "meta": {
     "blob": 804,
     "offset": 107340,
@@ -36176,7 +36176,7 @@
    "id": "row::46646",
    "en": "Oh yes, what about Geezer?",
    "ja": "「そうですわっ　おじさまは？",
-   "zh": "「对了，大叔大人呢？",
+   "zh": "「对了，大叔呢？",
    "meta": {
     "blob": 804,
     "offset": 216256,
@@ -36187,7 +36187,7 @@
    "id": "row::46647",
    "en": "Which time is he going back to?",
    "ja": "　おじさまはどの時代へ帰りますの？」",
-   "zh": "　大叔大人要回哪个时代？」",
+   "zh": "　大叔要回哪个时代？」",
    "meta": {
     "blob": 804,
     "offset": 216320,
@@ -40477,7 +40477,7 @@
    "id": "row::47576",
    "en": "Man: Run in the middle to avoid monsters. It's gonna",
    "ja": "青年「ちゅうおうで走りつづけるモンスターをよけて",
-   "zh": "男人「从中间跑闪开怪物。就要",
+   "zh": "青年「从中间跑闪开怪物。就要",
    "meta": {
     "blob": 810,
     "offset": 2428,
@@ -42083,7 +42083,7 @@
    "id": "row::47999",
    "en": "Clerk: You can fish from the pier in the east!",
    "ja": "やくそう売り「東のさん橋からサカナとれる",
-   "zh": "店主「你能从东边码头钓到鱼！",
+   "zh": "药草商人「你能从东边码头钓到鱼！",
    "meta": {
     "blob": 815,
     "offset": 3700,
@@ -42303,7 +42303,7 @@
    "id": "row::48110",
    "en": "Weaponsmith: In this era, bowgun swords are HOT!!",
    "ja": "武器屋「今の時代ボウガンソードがアツイ！！」",
-   "zh": "「武器商「如今这年头，弩剑可火了！！」」",
+   "zh": "「武器匠「如今这年头，弩枪剑可火了！！」」",
    "meta": {
     "blob": 819,
     "offset": 5820,
@@ -42336,7 +42336,7 @@
    "id": "row::48148",
    "en": "Youth: At the Southern Beach, the Abyss Gator,",
    "ja": "若者「南の浜にはアビスゲーターという",
-   "zh": "青年「南边海滩有深渊鳄鱼，",
+   "zh": "年轻人「南边海滩有深渊鳄鱼，",
    "meta": {
     "blob": 821,
     "offset": 2852,
@@ -42347,7 +42347,7 @@
    "id": "row::48156",
    "en": "Armorer: This is expensive, but well worth it!",
    "ja": "防具屋「こいつは高いが物はたしかだ！」",
-   "zh": "防具屋「这货虽贵，但物有所值！」",
+   "zh": "防具匠「这货虽贵，但物有所值！」",
    "meta": {
     "blob": 821,
     "offset": 4124,
@@ -42358,7 +42358,7 @@
    "id": "row::48158",
    "en": "Armorer: The <Scale Guard> is sold out, sorry.",
    "ja": "防具屋「<うろこのたて>は売り切れちまった」",
-   "zh": "防具屋「<鳞盾>卖光了，抱歉。」",
+   "zh": "防具匠「<鳞盾>卖光了，抱歉。」",
    "meta": {
     "blob": 821,
     "offset": 4548,
@@ -42391,7 +42391,7 @@
    "id": "row::48171",
    "en": "Owner: We sell Herbs and armor!",
    "ja": "店長「やくそうとぼうぐの店です」",
-   "zh": "店主「我们卖草药和防具！」",
+   "zh": "店长「我们卖草药和防具！」",
    "meta": {
     "blob": 822,
     "offset": 4124,
@@ -42424,7 +42424,7 @@
    "id": "row::48182",
    "en": "Youth: I knew you were a good guy!",
    "ja": "若者「あんたは良いヤツだと思ったよ！」",
-   "zh": "青年「我就知道你是好人！」",
+   "zh": "年轻人「我就知道你是好人！」",
    "meta": {
     "blob": 824,
     "offset": 1580,
@@ -42457,7 +42457,7 @@
    "id": "row::48191",
    "en": "Rina's Dad: If you go all the way north, you'll find a boat!",
    "ja": "リィナの父「ずっと北に行くと船があります！　",
-   "zh": "莉娜之父「一直往北走就能找到船！",
+   "zh": "莉娜的爸爸「一直往北走就能找到船！",
    "meta": {
     "blob": 824,
     "offset": 3276,
@@ -42490,7 +42490,7 @@
    "id": "row::48197",
    "en": "Old Man: You're done here, right? Then go away!",
    "ja": "ジジ「もう用はないじゃろう　出ってくれ」",
-   "zh": "大叔「你事儿办完了吧？那就走人！」",
+   "zh": "老头「你事儿办完了吧？那就走人！」",
    "meta": {
     "blob": 824,
     "offset": 4548,
@@ -42501,7 +42501,7 @@
    "id": "row::48199",
    "en": "Old Man: Ha～? Haven't I seen you before…?",
    "ja": "ジジ「あ～？　あんた見たことあるような・・・」",
-   "zh": "大叔「哈～？我之前是不是见过你…？」",
+   "zh": "老头「哈～？我之前是不是见过你…？」",
    "meta": {
     "blob": 824,
     "offset": 4972,
@@ -42512,7 +42512,7 @@
    "id": "row::48204",
    "en": "Armorer: If little Rina is with you… then we're open for business.",
    "ja": "防具屋「リィナちゃんがいるなら・・・開店してやるよ」",
-   "zh": "防具商「要是小莉娜在的话…就开门营业。」",
+   "zh": "防具匠「要是小莉娜在的话…就开门营业。」",
    "meta": {
     "blob": 824,
     "offset": 7092,
@@ -42523,7 +42523,7 @@
    "id": "row::48206",
    "en": "Armorer: Oh it's you! Must have had a hard time out there!!",
    "ja": "防具屋「おうあんたか！　いろいろ大変だったな！！」",
-   "zh": "防具屋「哦是你啊！外面一定吃了不少苦吧！！」",
+   "zh": "防具匠「哦是你啊！外面一定吃了不少苦吧！！」",
    "meta": {
     "blob": 824,
     "offset": 7516,
@@ -42655,7 +42655,7 @@
    "id": "row::48311",
    "en": "Demon Child: It was really delicious!",
    "ja": "魔族っ子「・・・スッゴク　おいしかったよっ！」",
-   "zh": "魔族小孩「真是太好吃啦！」",
+   "zh": "魔族小子「真是太好吃啦！」",
    "meta": {
     "blob": 830,
     "offset": 436,
@@ -42787,7 +42787,7 @@
    "id": "row::48355",
    "en": "Weaponsmith: If you're gonna fight the Evil Lord, buy something!",
    "ja": "武器屋「魔王とたたかおうってんなら買ってイキナっ！」",
-   "zh": "武器店老板「要跟魔王打就买点装备吧！」",
+   "zh": "武器匠「要跟魔王打就买点装备吧！」",
    "meta": {
     "blob": 834,
     "offset": 2428,
@@ -43084,7 +43084,7 @@
    "id": "row::48412",
    "en": "My new invention, the <bowgun sword>!",
    "ja": "　あたしの新発明<ボウガンソード>よ！！」",
-   "zh": "　我新发明的<弩剑>！！」",
+   "zh": "　我新发明的<弩枪剑>！！」",
    "meta": {
     "blob": 836,
     "offset": 12620,
@@ -43436,7 +43436,7 @@
    "id": "row::61242",
    "en": "Man: If you break a pot, I'll sell you a new one.",
    "ja": "男性「ツボをわったら　新しいのをうるよ」",
-   "zh": "男性「把壶摔了的话　就卖你个新的哦」",
+   "zh": "男人「把壶摔了的话　就卖你个新的哦」",
    "meta": {
     "blob": 774,
     "offset": 4296,
@@ -43458,7 +43458,7 @@
    "id": "row::61244",
    "en": "Herbalist: Please come back after you've used that pot.",
    "ja": "やくそう屋「ツボをどうにかしてから来てください」",
-   "zh": "药草店「请先把壶的事处理了再来」",
+   "zh": "草药商「请先把壶的事处理了再来」",
    "meta": {
     "blob": 774,
     "offset": 4600,

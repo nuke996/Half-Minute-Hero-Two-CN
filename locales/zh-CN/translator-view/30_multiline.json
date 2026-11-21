@@ -32,7 +32,7 @@
    "id": "ml::3",
    "en": "Armorer: Sorry, I haven't been able to stock up on gear,\nso I only have Herbs.",
    "ja": "防具屋「すまねぇ　防具が仕入れられなくて　やくそうだけなんだ」",
-   "zh": "防具商「抱歉，防具进不到货，\n只剩草药了。」",
+   "zh": "防具匠「抱歉，防具进不到货，\n只剩草药了。」",
    "meta": {
     "blob": 0,
     "offset": 5396,
@@ -44,7 +44,7 @@
    "id": "ml::4",
    "en": "Equipment Clerk: Expensive, eh? Save the sleep-talking\nfor after you've tried it on!",
    "ja": "装備屋「高いだと？　ねごとは装備してから言いやがれ！」",
-   "zh": "装备商「嫌贵？想多嘴的话，\n等你穿上装备再说吧！」",
+   "zh": "装备店员「嫌贵？想多嘴的话，\n等你穿上装备再说吧！」",
    "meta": {
     "blob": 1,
     "offset": 4548,
@@ -404,7 +404,7 @@
    "id": "ml::34",
    "en": "Carroty Old Man: Actually, salted carrots aren't\nthat tasty, so they don't sell too well…",
    "ja": "ニンジイ「じつはしおニンジンって\n　　　　　あんまりおいしくないから売れないんじゃ・・・」",
-   "zh": "红萝卜老伯「其实腌红萝卜\n不太好吃，所以卖不动…」",
+   "zh": "红萝卜老爷「其实腌红萝卜\n不太好吃，所以卖不动…」",
    "meta": {
     "blob": 68,
     "offset": 4548,
@@ -488,7 +488,7 @@
    "id": "ml::41",
    "en": "Herbalist: The <Common Herb> restores\n100 points of health.",
    "ja": "やくそう屋「<みんなのやくそう>は\n　　　　　　体力を100回復しますの」",
-   "zh": "草药师「<大众草药>可恢复\n100点体力哦」",
+   "zh": "草药商「<大众草药>可恢复\n100点体力哦」",
    "meta": {
     "blob": 78,
     "offset": 2852,
@@ -632,7 +632,7 @@
    "id": "ml::53",
    "en": "Herbalist: Actually it was Tyranz who destroyed\nmy home. Thank you for putting an end to him.",
    "ja": "やくそう屋「じつはタイランツのせいで家をこわされたんです\n　　　　　　よくたおしてくれました」",
-   "zh": "草药师「其实是因为泰兰兹，我家才被毁的。\n谢谢你终结了他。」",
+   "zh": "草药商「其实是因为泰兰兹，我家才被毁的。\n谢谢你终结了他。」",
    "meta": {
     "blob": 94,
     "offset": 2852,
@@ -680,7 +680,7 @@
    "id": "ml::57",
    "en": "Tent: No problems with housing or\nfood here～ Life's a breeze～",
    "ja": "テント「イエにもタベモノにもこまらない～～\n　　　　人生チョー楽勝だぜ～～」",
-   "zh": "摊贩「住房和食物都不缺～\n日子过得轻松自在～」",
+   "zh": "帐篷「住房和食物都不缺～\n日子过得轻松自在～」",
    "meta": {
     "blob": 112,
     "offset": 2852,
@@ -872,7 +872,7 @@
    "id": "ml::73",
    "en": "Girl: The <Bridge> is broken, so you can't go to the Eastern\nVillage! Maybe someone could fix it for you?",
    "ja": "じょせい「<橋>がこわれて東の村にいけないわ！\n　　　　　だれか　なおしてくれないかしら？」",
-   "zh": "女孩「<桥>坏了，去不了东村！\n也许有人能帮你修好？」",
+   "zh": "小女孩「<桥>坏了，去不了东村！\n也许有人能帮你修好？」",
    "meta": {
     "blob": 130,
     "offset": 7516,
@@ -884,7 +884,7 @@
    "id": "ml::74",
    "en": "Girl: The <Bridge> is fixed! Now you\ncan go to the Eastern Village.",
    "ja": "じょせい「<橋>がなおったのね！\n　　　　　これで東の村にすぐいけるわね」",
-   "zh": "女孩「<桥>修好啦！现在你\n能去东村了。」",
+   "zh": "小女孩「<桥>修好啦！现在你\n能去东村了。」",
    "meta": {
     "blob": 130,
     "offset": 7940,
@@ -1064,7 +1064,7 @@
    "id": "ml::89",
    "en": "Girl: The <Bridge> is broken, so you can't go to the\nEastern Village! Maybe someone could fix it for you?",
    "ja": "じょせい「<橋>がこわれて東の村にいけないわ！\n　　　　　だれか　なおしてくれないかしら？」",
-   "zh": "女孩「<桥>坏了，你去不了\n东村！也许有人能帮你修好？」",
+   "zh": "小女孩「<桥>坏了，你去不了\n东村！也许有人能帮你修好？」",
    "meta": {
     "blob": 152,
     "offset": 6668,
@@ -1076,7 +1076,7 @@
    "id": "ml::90",
    "en": "Girl: The <Bridge> is fixed! Now you can\ngo to the Eastern Village!",
    "ja": "じょせい「<橋>がなおったのね！\n　　　　　これで東の村にすぐいけるわね」",
-   "zh": "女孩「<桥>修好啦！现在能\n去东村了！」",
+   "zh": "小女孩「<桥>修好啦！现在能\n去东村了！」",
    "meta": {
     "blob": 152,
     "offset": 7092,
@@ -1436,7 +1436,7 @@
    "id": "ml::120",
    "en": "Young Owner: Do you need\nHerbs… Do you need gear…?",
    "ja": "こども店長「やくそうはいらんか・・・\n　　　　　　装備はいらんか・・・」",
-   "zh": "小店主「你需要\n草药…需要装备吗…？」",
+   "zh": "小店长「你需要\n草药…需要装备吗…？」",
    "meta": {
     "blob": 189,
     "offset": 3276,
@@ -1472,7 +1472,7 @@
    "id": "ml::123",
    "en": "Student: West… the Magic Circle…\nWill the door open for anybody?",
    "ja": "学者「西・・・魔法陣・・・\n　　　だれかがふんでいれば　トビラが開くのでは？」",
-   "zh": "学者「西边……魔法阵……\n只要有人踩上去，门应该就会开吧？」",
+   "zh": "学生「西边……魔法阵……\n只要有人踩上去，门应该就会开吧？」",
    "meta": {
     "blob": 192,
     "offset": 2852,
@@ -1580,7 +1580,7 @@
    "id": "ml::132",
    "en": "Casino Gramps: … Ho ho ho! Hmm,\nwhich slot machine to play!",
    "ja": "カジノジジイ「・・・ふぉふぉふぉ！\n　　　　　　　どのスロットで遊ぼうかのう！」",
-   "zh": "赌场老爷爷「…吼吼吼！嗯，\n玩哪台老虎机好呢！」",
+   "zh": "赌场老头「…吼吼吼！嗯，\n玩哪台老虎机好呢！」",
    "meta": {
     "blob": 204,
     "offset": 2004,
@@ -1964,7 +1964,7 @@
    "id": "ml::164",
    "en": "Suspicious Woman: Beyond here is a power spot where you can\nmake a contract with an ancient demon.",
    "ja": "妖しい女「この先にイニシエの悪魔と\n　　　　　契約できるパワースポットがあるわぁ」",
-   "zh": "可疑的女人「前面有个能量点，你可以\n和远古恶魔签订契约。」",
+   "zh": "可疑女人「前面有个能量点，你可以\n和远古恶魔签订契约。」",
    "meta": {
     "blob": 292,
     "offset": 2428,
@@ -2192,7 +2192,7 @@
    "id": "ml::183",
    "en": "Girl: Clearing stages 1 and 2 perfectly will allow\nyou to attempt a really amazing stage, I hear!",
    "ja": "むすめ「１と２ステージをカンペキにクリアすると\n　　　　すごいステージにチャレンジできるようになるらしいわよ」",
-   "zh": "女孩「听说完美通关1、2关，\n就能迎战一个超厉害的场景！」",
+   "zh": "小女孩「听说完美通关1、2关，\n就能迎战一个超厉害的场景！」",
    "meta": {
     "blob": 315,
     "offset": 3700,
@@ -2792,7 +2792,7 @@
    "id": "ml::233",
    "en": "Ovalia: He just dragged it all the way to the <northern forest>. It\nlooked so heavy, somehow I felt like cheering him on～",
    "ja": "オヴァちゃん「重そうに<北の森>にひきずってたわよ～\n　　　　　　　なんだかおうえんしたくなっちゃったわよ～」",
-   "zh": "欧维利亚「他吃力地拖到了<北边的森林>。\n看着好沉，我都想给他加油了～」",
+   "zh": "奥瓦利亚「他吃力地拖到了<北边的森林>。\n看着好沉，我都想给他加油了～」",
    "meta": {
     "blob": 405,
     "offset": 2004,
@@ -3872,7 +3872,7 @@
    "id": "ml::323",
    "en": "Girl: There was a guy who was really upset that he couldn't give\nhis girlfriend a jewel. I think it was the <boy on the left>.",
    "ja": "女学生「カノジョに宝石をあげられなくて落ち込んでるヤツがいたな\n　　　　<一番左にいる男子学生>だったかな」",
-   "zh": "女孩「有个男的因为送不出宝石给女友而不开心，\n我想就是<左边的男孩>吧。」",
+   "zh": "小女孩「有个男的因为送不出宝石给女友而不开心，\n我想就是<左边的男孩>吧。」",
    "meta": {
     "blob": 567,
     "offset": 8364,
@@ -4040,7 +4040,7 @@
    "id": "ml::337",
    "en": "Girl: They say there's a strong\nmonster at the dead end.",
    "ja": "じょせい「行き止まりには　強いモンスターがいるわ」\n　　　　　",
-   "zh": "女人「听说尽头有只\n很强的怪物。」",
+   "zh": "小女孩「听说尽头有只\n很强的怪物。」",
    "meta": {
     "blob": 596,
     "offset": 2852,
@@ -4172,7 +4172,7 @@
    "id": "ml::348",
    "en": "Armorer: Sorry about the delay,\nbut please use this in your future battles.",
    "ja": "防具屋「おそくなっちまったが　これからのたたかいで使ってくれよ」",
-   "zh": "铠甲匠「抱歉来晚了，\n请在今后的战斗里用它。」",
+   "zh": "防具匠「抱歉来晚了，\n请在今后的战斗里用它。」",
    "meta": {
     "blob": 619,
     "offset": 5396,
@@ -4448,7 +4448,7 @@
    "id": "ml::371",
    "en": "Young Man: When you just gotta win! That's\nwhen you need a Power Up Meal!",
    "ja": "少年「どうしても勝ちたい時！\n　　　そんな時にはパワーアップメシ！」",
-   "zh": "少年「当你非赢不可时！\n那就需要强化餐！」",
+   "zh": "年轻人「当你非赢不可时！\n那就需要强化餐！」",
    "meta": {
     "blob": 633,
     "offset": 1156,
@@ -4532,7 +4532,7 @@
    "id": "ml::378",
    "en": "Grandma: It seems the <northern village>\nhas had a lot of earthquakes lately…",
    "ja": "バア様「<北の村>では最近じしんがひんぱつしているそうな・・・」",
-   "zh": "婆婆「<北边的村庄>近来\n地震频发…」",
+   "zh": "老婆婆「<北边的村庄>近来\n地震频发…」",
    "meta": {
     "blob": 650,
     "offset": 3276,
@@ -4544,7 +4544,7 @@
    "id": "ml::379",
    "en": "Grandma: It seems the earthquakes around the\n<northern village> have stopped…",
    "ja": "バア様「<北の村>のじしんもおさまったみたい・・・」",
-   "zh": "婆婆「<北边的村庄>附近的地震\n好像停了…」",
+   "zh": "老婆婆「<北边的村庄>附近的地震\n好像停了…」",
    "meta": {
     "blob": 650,
     "offset": 3700,
@@ -4652,7 +4652,7 @@
    "id": "ml::388",
    "en": "Clerk-Chief: You may only use the torch <5 times>!\nCome buy a new one if it goes out!",
    "ja": "店番村長「たいまつを使えるのは<５回>まで！\n　　　　　消えちゃったらまた買いに来いよ！」",
-   "zh": "村长「火把你只能用<5次>！\n灭了就来买新的！」",
+   "zh": "店长村长「火把你只能用<5次>！\n灭了就来买新的！」",
    "meta": {
     "blob": 669,
     "offset": 4972,
@@ -4976,7 +4976,7 @@
    "id": "ml::415",
    "en": "Mother: My son used to play by the tower,\nit was his thing, but…",
    "ja": "ははおや「うちの子は昔からタワーで\n　　　　　あそぶのが　しゅみなのだけれど・・・」",
-   "zh": "妈妈「我儿子以前常在塔边玩，\n那是他的爱好，可是…」",
+   "zh": "母亲「我儿子以前常在塔边玩，\n那是他的爱好，可是…」",
    "meta": {
     "blob": 726,
     "offset": 5396,
@@ -5120,7 +5120,7 @@
    "id": "ml::427",
    "en": "Armorer: So you got buried in the snow…\nHere, I'll sell you this handmade coat.",
    "ja": "防具屋「雪崩巻き込まれたか　自家製のコート売ってやる」",
-   "zh": "防具商「被雪崩埋了？\n来，这件手作外套卖给你。」",
+   "zh": "防具匠「被雪崩埋了？\n来，这件手作外套卖给你。」",
    "meta": {
     "blob": 752,
     "offset": 7516,
@@ -5252,7 +5252,7 @@
    "id": "ml::438",
    "en": "Shore Merman: Darn! That vile God Nine! To just\nattack without giving us a chance to speak!",
    "ja": "陸魚人「くそー！　ゴッドナインめ！\n　　　　問答無用で攻撃してきやがった！」",
-   "zh": "陆鱼人「可恶！那可恶的九神！竟然\n不给人开口的机会就动手！」",
+   "zh": "海岸人鱼「可恶！那可恶的九神！竟然\n不给人开口的机会就动手！」",
    "meta": {
     "blob": 791,
     "offset": 2428,
@@ -5264,7 +5264,7 @@
    "id": "ml::439",
    "en": "Armorer: … It's not like this armor\nwas prepared just for you, ok!",
    "ja": "防具屋「・・・べ　別にアンタのために\n　　　　ヨロイなんて用意して無いんだからね！」",
-   "zh": "军械士「……这盔甲又不是\n特为你准备的，懂吗！」",
+   "zh": "防具匠「……这盔甲又不是\n特为你准备的，懂吗！」",
    "meta": {
     "blob": 791,
     "offset": 4124,
@@ -5276,7 +5276,7 @@
    "id": "ml::440",
    "en": "Armorer: I don't care about looks!\nImportant folks just won't understand!!",
    "ja": "防具屋「見た目なんてどうでもいいんです！\n　　　　えらい人にはそれがわからんのです！！」",
-   "zh": "军械士「我才不管外表！\n大人物根本不会懂！！」",
+   "zh": "防具匠「我才不管外表！\n大人物根本不会懂！！」",
    "meta": {
     "blob": 792,
     "offset": 6668,
@@ -6020,7 +6020,7 @@
    "id": "ml::502",
    "en": "Nanako: Looks like the bowgun sword I invented\nis starting to spread around the world!",
    "ja": "ナナコ「あたしが発明したボウガンソードが\n　　　　世界中に流通しはじめたみたい」",
-   "zh": "奈奈子「我发明的弩剑好像\n开始在全世界流传了！」",
+   "zh": "奈奈子「我发明的弩枪剑好像\n开始在全世界流传了！」",
    "meta": {
     "blob": 950,
     "offset": 2004,
@@ -6224,7 +6224,7 @@
    "id": "ml::519",
    "en": "Ovalia: What a ruckus, did something happen, I\nwonder～ Perhaps I should go take a look～",
    "ja": "オヴァちゃん「さわがしいけど　何かあったのかしら～\n　　　　　　　ヤジウマに行こうかしら～」",
-   "zh": "奥瓦莉亚「好吵啊，是发生什么事了吗～\n要不我去看看吧～」",
+   "zh": "奥瓦利亚「好吵啊，是发生什么事了吗～\n要不我去看看吧～」",
    "meta": {
     "blob": 978,
     "offset": 2428,
@@ -6320,7 +6320,7 @@
    "id": "ml::527",
    "en": "Shorty: This place has 3 gatekeepers! Good luck,\nthe three of them are in the cave!",
    "ja": "チビッコ「ここの門番はなんと３体！\n　　　　　３体ともどうくつにいるからガンバってね！」",
-   "zh": "矮子「这地方有3个门卫！加油，\n他们三个就在洞里！」",
+   "zh": "小不点「这地方有3个门卫！加油，\n他们三个就在洞里！」",
    "meta": {
     "blob": 1000,
     "offset": 2852,
@@ -6356,7 +6356,7 @@
    "id": "ml::530",
    "en": "Young Owner: Fishing rods are all sold\nout. We'll get some new stock in a bit.",
    "ja": "こども店長「つりざお　売り切れちゃったのー\n　　　　　　もうちょっとしたら　にゅうかされるのー」",
-   "zh": "年轻店主「钓具全卖光了。\n过会儿会进新货。」",
+   "zh": "小店长「钓具全卖光了。\n过会儿会进新货。」",
    "meta": {
     "blob": 1001,
     "offset": 4972,
@@ -6368,7 +6368,7 @@
    "id": "ml::531",
    "en": "Young Owner: Fishing rods are\nin stock again. Buy one?",
    "ja": "こども店長「つりざお　にゅうかしたのー\n　　　　　　買ってなのー」",
-   "zh": "年轻店主「钓具进货啦，\n买一根吗？」",
+   "zh": "小店长「钓具进货啦，\n买一根吗？」",
    "meta": {
     "blob": 1001,
     "offset": 5396,
@@ -6380,7 +6380,7 @@
    "id": "ml::532",
    "en": "Young Owner: There's a fishing area to the southeast.\nWhen bubbles appear, that's your chance～",
    "ja": "こども店長「南東にツリ場があるの\n　　　　　　アワがでたらチャンスなの～」",
-   "zh": "年轻店主「东南边有个钓鱼点。\n冒泡泡时就是机会～」",
+   "zh": "小店长「东南边有个钓鱼点。\n冒泡泡时就是机会～」",
    "meta": {
     "blob": 1001,
     "offset": 6244,
@@ -7208,7 +7208,7 @@
    "id": "ml::601",
    "en": "Ava: Takashi Kojo\nA marionette grimoire.\nManipulates things like dolls and people.",
    "ja": "アヴァ：小城崇志\nマリオネットのグリモワール\n人や人形を意のままにあやつる",
-   "zh": "艾娃：Takashi Kojo\n操偶魔法书。\n能操控玩偶和人。",
+   "zh": "艾：Takashi Kojo\n操偶魔法书。\n能操控玩偶和人。",
    "meta": {
     "blob": 54,
     "offset": 28468,
@@ -7244,7 +7244,7 @@
    "id": "ml::604",
    "en": "Spelvia: Takashi Kojo\nGrimoire that absorbed the imperial castle,\nprotected by a powerful blood barrier.",
    "ja": "スペルヴィア：小城崇志\n皇帝城と同化したグリモワール\n強力な血のバリアで守られている",
-   "zh": "斯佩尔维亚：Takashi Kojo\n吃下了帝国城堡的魔法书，\n由强大的血之结界守护。",
+   "zh": "斯佩维：Takashi Kojo\n吃下了帝国城堡的魔法书，\n由强大的血之结界守护。",
    "meta": {
     "blob": 54,
     "offset": 30448,
@@ -7760,7 +7760,7 @@
    "id": "ml::647",
    "en": "Evil Lord Cerberus\nA playful pup, but playing with this\npooch will cause 3rd degree burns.",
    "ja": "魔王ケルベロス\n彼に気に入られじゃれつかれると\n本当にあつくて死にそうになる",
-   "zh": "魔王瑟伯勒斯\n活泼的小狗，但跟它玩耍\n会落下三度烧伤。",
+   "zh": "魔王刻耳柏洛斯\n活泼的小狗，但跟它玩耍\n会落下三度烧伤。",
    "meta": {
     "blob": 555,
     "offset": 7348,
@@ -9368,7 +9368,7 @@
    "id": "ml::781",
    "en": "Alpha\nA bowgun sword that Nanako poured her heart\ninto making for her friend.",
    "ja": "アルファ\nナナコが親友のために作ってくれた\n心のこもったボウガンソード",
-   "zh": "阿尔法\n奈奈子为朋友倾注心血\n制作的弩剑。",
+   "zh": "阿尔法\n奈奈子为朋友倾注心血\n制作的弩枪剑。",
    "meta": {
     "blob": 713,
     "offset": 25168,
@@ -9380,7 +9380,7 @@
    "id": "ml::782",
    "en": "Beta\nThe neighbor lady decided to try making\na bowgun sword on a whim.",
    "ja": "ベータ\n近所のおっさんがなんとなく\n作ってみたボウガンソード",
-   "zh": "贝塔\n邻居大婶一时兴起，\n决定试着做把弩剑。",
+   "zh": "贝塔\n邻居大婶一时兴起，\n决定试着做把弩枪剑。",
    "meta": {
     "blob": 713,
     "offset": 25828,
@@ -9392,7 +9392,7 @@
    "id": "ml::783",
    "en": "Gamma\nThe old guy at the item shop\nmade this bowgun sword in his free time.",
    "ja": "ガンマ\n道具屋のおっさんがひまつぶしに\n作ってみたボウガンソード",
-   "zh": "伽玛\n道具店的老爷子\n闲暇时做的弩剑。",
+   "zh": "伽玛\n道具店的老爷子\n闲暇时做的弩枪剑。",
    "meta": {
     "blob": 713,
     "offset": 26488,
@@ -9404,7 +9404,7 @@
    "id": "ml::784",
    "en": "Delta\nThe old guy at the weapon shop\nrecommends this iffy-looking bowgun sword.",
    "ja": "デルタ\n武器屋のおっさんおすすめの\nインチキくさいボウガンソード",
-   "zh": "德尔塔\n武器店的老爷子推荐的\n一把看着很可疑的弩剑。",
+   "zh": "德尔塔\n武器店的老爷子推荐的\n一把看着很可疑的弩枪剑。",
    "meta": {
     "blob": 713,
     "offset": 27148,
@@ -9428,7 +9428,7 @@
    "id": "ml::786",
    "en": "Zeta\nWhen it gets dull, a new blade\npops out of this bowgun sword.",
    "ja": "ゼータ\n切れ味が悪くなっても新しい刀身が\n出てくるボウガンソード",
-   "zh": "泽塔\n变钝之后，这把弩剑里\n会弹出新刃。",
+   "zh": "泽塔\n变钝之后，这把弩枪剑里\n会弹出新刃。",
    "meta": {
     "blob": 713,
     "offset": 28468,
@@ -9464,7 +9464,7 @@
    "id": "ml::789",
    "en": "Lambda\nThis bowgun sword can launch many\nineffective attacks in an instant.",
    "ja": "ラムダ\n一瞬で無数の無駄な攻撃を\nくり出すことができるボウガンソード",
-   "zh": "拉姆达\n这把弩剑能瞬间打出\n许多没用的攻击。",
+   "zh": "拉姆达\n这把弩枪剑能瞬间打出\n许多没用的攻击。",
    "meta": {
     "blob": 713,
     "offset": 30448,
@@ -9476,7 +9476,7 @@
    "id": "ml::790",
    "en": "Omicron\nA replica of the legendary bowgun sword that\ncan defeat any enemy in one shot.",
    "ja": "オミクロン\nどんな敵も一撃でたおす\n伝説のボウガンソードのレプリカ",
-   "zh": "奥米克戎\n能一击击败任何敌人的\n传说弩剑的仿制品。",
+   "zh": "奥米克戎\n能一击击败任何敌人的\n传说弩枪剑的仿制品。",
    "meta": {
     "blob": 713,
     "offset": 31768,
@@ -9488,7 +9488,7 @@
    "id": "ml::791",
    "en": "Sigma\nThey certainly had their eye on lofty goals when\nmaking this high-grade bowgun sword.",
    "ja": "シグマ\nワイルドでかなり高度な何かを\n目指したボウガンソード",
-   "zh": "西格玛\n打造这把高级弩剑时，\n他们的目标确实很宏大。",
+   "zh": "西格玛\n打造这把高级弩枪剑时，\n他们的目标确实很宏大。",
    "meta": {
     "blob": 713,
     "offset": 33088,
@@ -9500,7 +9500,7 @@
    "id": "ml::792",
    "en": "Phi\nSheathed in flame,\nthis bowgun sword seems burnt-out.",
    "ja": "ファイ\nほのおにつつまれて\n半分もえつきたボウガンソード",
-   "zh": "法伊\n裹在火焰里，\n这把弩剑看起来已经烧尽了。",
+   "zh": "法伊\n裹在火焰里，\n这把弩枪剑看起来已经烧尽了。",
    "meta": {
     "blob": 713,
     "offset": 33748,
@@ -9512,7 +9512,7 @@
    "id": "ml::793",
    "en": "Omega\nAwarded the final code number.\nThe strongest bowgun sword.",
    "ja": "オメガ\n最後のコードナンバーがあたえられた\n最強のボウガンソード",
-   "zh": "欧米伽\n被授予最后的编号。\n最强的弩剑。",
+   "zh": "欧米伽\n被授予最后的编号。\n最强的弩枪剑。",
    "meta": {
     "blob": 713,
     "offset": 34408,
@@ -9548,7 +9548,7 @@
    "id": "ml::796",
    "en": "Mage Staff\nSwindlers often carry this to pretend like\nthey know magic.",
    "ja": "メイジスタッフ\n魔法使いのふりをするために\nサギ師がよくもっている杖",
-   "zh": "法师杖\n骗子常拿它来假装\n自己懂魔法。",
+   "zh": "魔法师杖\n骗子常拿它来假装\n自己懂魔法。",
    "meta": {
     "blob": 713,
     "offset": 36388,
@@ -13688,7 +13688,7 @@
    "id": "ml::1141",
    "en": "<- Item> will give a specified item\nas a reward.\n\n<- Gold> will give a specified amount\nof gold as a reward.\n\n<- Terrain Change> sets an event,\nsuch as repairing a broken bridge\nor filling in a hole,\nthat triggers after the main event.\n\n<- Vehicle> produces a horse\nor boat at a specified location.",
    "ja": "<・アイテム>は設定したアイテムを\nもらうことができます。\n\n<・お金>は設定したお金を\nもらうことができます。\n\n<・地形変化>はイベント発生後に\nこわれた橋がなおったり\n穴がうまったりするイベントを\n配置できます。\n\n<・乗り物>は馬か船が設定した\n場所に出現します。",
-   "zh": "<-物品>会给予指定物品\n作为奖金。\n\n<-金币>会给予指定数量的\n金币作为奖金。\n\n<-地形变化>会设置一个\n在主事件之后触发的事件，\n比如修好断桥\n或填上洞。\n\n<-载具>会在指定位置\n生成马或船。",
+   "zh": "<-道具>会给予指定道具\n作为奖金。\n\n<-金币>会给予指定数量的\n金币作为奖金。\n\n<-地形变化>会设置一个\n在主事件之后触发的事件，\n比如修好断桥\n或填上洞。\n\n<-载具>会在指定位置\n生成马或船。",
    "meta": {
     "blob": 766,
     "offset": 4112,
@@ -14144,7 +14144,7 @@
    "id": "ml::1179",
    "en": "As you get more allies you'll\nwant to change up your party,\nof course. ♪\n\nDuring global time, select <Party>\nfrom the pause menu and create\nthe party of your choice. ★\n\nPut tougher allies in the front\nand magic users in the back.\nOr just have fun trying out all\nkinds of arrangements. ♪\n\n(3/4) ┿ Change page  × Back",
    "ja": "仲間が増えてくると\nやっぱりパーティをいろいろと\n変えたくなるわよね♪\n\n制限時間のないグローバル中なら\nポーズメニューの<パーティ>で\n好きなパーティにできるのよ★\n\n肉体派の仲間は前の方に置いたり\n魔法使いだったら後ろの方だったり\n配置もいろいろ工夫すると\n楽しーんじゃないかなー♪\n\n（3／4）┿ページめくり　×戻る",
-   "zh": "同伴越多，你就会\n越想换换队伍，\n这是当然。♪\n\n在全局时间里，从暂停菜单\n选择<队伍>，组出\n你喜欢的队伍。★\n皮糙肉厚的放前面，\n法师放后面。\n或者干脆享受各种\n不同的排法。♪\n\n\n(3/4) ┿翻页  ×返回",
+   "zh": "同伴越多，你就会\n越想换换队伍，\n这是当然。♪\n\n在全局时间里，从暂停菜单\n选择<队伍>，组出\n你喜欢的队伍。★\n皮糙肉厚的放前面，\n魔法师放后面。\n或者干脆享受各种\n不同的排法。♪\n\n\n(3/4) ┿翻页  ×返回",
    "meta": {
     "blob": 980,
     "offset": 1232,
@@ -14175,7 +14175,7 @@
    "id": "ml::1182",
    "en": "Mu\nA cat dragged this bowgun sword home one day.\nNow it's on sale.",
    "ja": "ミュー\nネコがくわえてひろってきたのを\n売りに出したボウガンソード　",
-   "zh": "缪\n猫有一天把这把弩剑拖回了家。\n现在拿出来出售。",
+   "zh": "缪\n猫有一天把这把弩枪剑拖回了家。\n现在拿出来出售。",
    "meta": {
     "blob": 713,
     "offset": 31108,
@@ -14187,7 +14187,7 @@
    "id": "ml::1183",
    "en": "Xi\nA bowgun sword with a dragon head that mutters quietly.\nIt's quite annoying.",
    "ja": "クシー\nドラゴンの頭がぼそぼそつぶやくのが\n気になるボウガンソード",
-   "zh": "克西\n龙头会小声嘟囔的弩剑。\n挺让人在意的。",
+   "zh": "克西\n龙头会小声嘟囔的弩枪剑。\n挺让人在意的。",
    "meta": {
     "blob": 713,
     "offset": 32428,

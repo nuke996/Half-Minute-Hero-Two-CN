@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3238,
+ "_count": 3240,
  "entries": [
   {
    "id": "row::38136",
@@ -4859,7 +4859,7 @@
    "id": "row::39012",
    "en": "Item",
    "ja": "アイテム",
-   "zh": "物品",
+   "zh": "道具",
    "meta": {
     "blob": 715,
     "offset": 104960,
@@ -5849,7 +5849,7 @@
    "id": "row::39102",
    "en": "Entrance Script",
    "ja": "登場セリフ",
-   "zh": "现身脚本",
+   "zh": "出场台词",
    "meta": {
     "blob": 715,
     "offset": 152000,
@@ -6058,7 +6058,7 @@
    "id": "row::39121",
    "en": "◆Entrance Script Settings",
    "ja": "◆魔王が登場した時のセリフ設定",
-   "zh": "◆现身脚本设置",
+   "zh": "◆现身对话设置",
    "meta": {
     "blob": 715,
     "offset": 158944,
@@ -6146,7 +6146,7 @@
    "id": "row::39129",
    "en": "◆Pre-Battle Script Settings",
    "ja": "◆魔王のバトル前のセリフ設定",
-   "zh": "◆战前脚本设置",
+   "zh": "◆战前对话设置",
    "meta": {
     "blob": 715,
     "offset": 162080,
@@ -6234,7 +6234,7 @@
    "id": "row::39137",
    "en": "◆Post-Defeat Script Settings",
    "ja": "◆魔王のやられた時のセリフ設定",
-   "zh": "◆战败脚本设置",
+   "zh": "◆战败对话设置",
    "meta": {
     "blob": 715,
     "offset": 165216,
@@ -6696,7 +6696,7 @@
    "id": "row::39179",
    "en": "Script Settings",
    "ja": "セリフ設定",
-   "zh": "脚本设置",
+   "zh": "对话设置",
    "meta": {
     "blob": 715,
     "offset": 184256,
@@ -14704,7 +14704,7 @@
    "id": "row::40258",
    "en": "Double-bladed bowgun sword. _Does it need the back blade?",
    "ja": "二枚刃のボウガンソード　_後ろの刃は意味がない？",
-   "zh": "双刃弩炮剑。_后面的刃没意思？",
+   "zh": "双刃弩枪剑。_后面的刃没意思？",
    "meta": {
     "blob": 736,
     "offset": 14264,
@@ -14770,7 +14770,7 @@
    "id": "row::40264",
    "en": "Axe-like bowgun sword, so _should it be a bowgun axe?",
    "ja": "オノっぽいボウガンソード　_じゃあボウガンアックス？",
-   "zh": "像斧的弩炮剑，_那该叫弩炮斧？",
+   "zh": "像斧的弩枪剑，_那该叫弩炮斧？",
    "meta": {
     "blob": 736,
     "offset": 14800,
@@ -14803,7 +14803,7 @@
    "id": "row::40267",
    "en": "Bowgun sword with a forked _end to eat pasta with.",
    "ja": "さきわれボウガンソード　_パスタをからめられる",
-   "zh": "分叉的弩炮剑，_能卷意大利面。",
+   "zh": "分叉的弩枪剑，_能卷意大利面。",
    "meta": {
     "blob": 736,
     "offset": 15068,
@@ -14836,7 +14836,7 @@
    "id": "row::40270",
    "en": "Bowgun sword that's not to _be wasted as a box opener.",
    "ja": "けっしてカッターナイフ_ではないボウガンソード",
-   "zh": "绝不该当美工刀_用的弩炮剑。",
+   "zh": "绝不该当美工刀_用的弩枪剑。",
    "meta": {
     "blob": 736,
     "offset": 15336,
@@ -14869,7 +14869,7 @@
    "id": "row::40273",
    "en": "A bowgun sword decorated _with cloth. Very chic.",
    "ja": "かざりぬののついた_おしゃれボウガンソード",
-   "zh": "用布装饰的_时髦弩炮剑。",
+   "zh": "用布装饰的_时髦弩枪剑。",
    "meta": {
     "blob": 736,
     "offset": 15604,
@@ -14902,7 +14902,7 @@
    "id": "row::40276",
    "en": "A spear-like bowgun sword. _Don't call it a bowgun spear.",
    "ja": "ヤリっぽいボウガンソード　_ボウガンスピアじゃないよ",
-   "zh": "像矛的弩炮剑。_别叫它弩炮矛。",
+   "zh": "像矛的弩枪剑。_别叫它弩炮矛。",
    "meta": {
     "blob": 736,
     "offset": 15872,
@@ -14957,7 +14957,7 @@
    "id": "row::40281",
    "en": "An elaborate bowgun sword. _Cute name.",
    "ja": "こった作りのボウガンソード　_名前がカワイイ",
-   "zh": "精制的弩炮剑。_名字可爱。",
+   "zh": "精制的弩枪剑。_名字可爱。",
    "meta": {
     "blob": 736,
     "offset": 16408,
@@ -14990,7 +14990,7 @@
    "id": "row::40284",
    "en": "A bowgun sword with a blade _made of energy.",
    "ja": "エネルギーのソード化に_成功したボウガンソード",
-   "zh": "刃由_能量构成的弩炮剑。",
+   "zh": "刃由_能量构成的弩枪剑。",
    "meta": {
     "blob": 736,
     "offset": 16676,
@@ -15111,7 +15111,7 @@
    "id": "row::40295",
    "en": "Its overdone decoration _is proof it's the best.",
    "ja": "ゴテゴテしてるのは_最強のボウガンソードだから",
-   "zh": "过度装饰_正说明它是最强弩炮剑。",
+   "zh": "过度装饰_正说明它是最强弩枪剑。",
    "meta": {
     "blob": 736,
     "offset": 17748,
@@ -19269,7 +19269,7 @@
    "id": "row::40673",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 736,
     "offset": 67020,
@@ -21183,7 +21183,7 @@
    "id": "row::40847",
    "en": "Gamma 2",
    "ja": "ガンマ２",
-   "zh": "伽马2",
+   "zh": "伽玛2",
    "meta": {
     "blob": 736,
     "offset": 105076,
@@ -21227,7 +21227,7 @@
    "id": "row::40851",
    "en": "A spear-like bowgun sword. _Don't call it a bowgun spear.",
    "ja": "ヤリっぽいボウガンソード　_ボウガンスピアじゃないよ",
-   "zh": "像矛的弩炮剑。_别叫它弩炮矛。",
+   "zh": "像矛的弩枪剑。_别叫它弩炮矛。",
    "meta": {
     "blob": 736,
     "offset": 105384,
@@ -21260,7 +21260,7 @@
    "id": "row::40854",
    "en": "Its overdone decoration _is proof it's the best.",
    "ja": "ゴテゴテしてるのは_最強のボウガンソードだから",
-   "zh": "过度装饰_正说明它是最强弩炮剑。",
+   "zh": "过度装饰_正说明它是最强弩枪剑。",
    "meta": {
     "blob": 736,
     "offset": 105652,
@@ -22415,7 +22415,7 @@
    "id": "row::40959",
    "en": "Musketeer",
    "ja": "銃士",
-   "zh": "射手",
+   "zh": "火枪手",
    "meta": {
     "blob": 736,
     "offset": 130804,
@@ -22558,7 +22558,7 @@
    "id": "row::40972",
    "en": "Gold Pick",
    "ja": "ゴールドピック",
-   "zh": "黄金采掘",
+   "zh": "黄金镐",
    "meta": {
     "blob": 736,
     "offset": 134288,
@@ -23218,7 +23218,7 @@
    "id": "row::41032",
    "en": "Gold Rush _+ Wing Blade +1.",
    "ja": "ゴールドラッシュ_＋ウィングブレード＋１",
-   "zh": "淘金热_+飞翼刃+1。",
+   "zh": "黄金冲击_+飞翼刃+1。",
    "meta": {
     "blob": 736,
     "offset": 142100,
@@ -23284,7 +23284,7 @@
    "id": "row::41038",
    "en": "Gamma Plus",
    "ja": "ガンマ改",
-   "zh": "伽马改",
+   "zh": "伽玛改",
    "meta": {
     "blob": 736,
     "offset": 142596,
@@ -23295,7 +23295,7 @@
    "id": "row::41039",
    "en": "Gamma _+ Silver Hammer.",
    "ja": "ガンマ_＋シルバーハンマー",
-   "zh": "伽马_+银锤。",
+   "zh": "伽玛_+银锤。",
    "meta": {
     "blob": 736,
     "offset": 142636,
@@ -23394,7 +23394,7 @@
    "id": "row::41048",
    "en": "Omicron _+ God Eater.",
    "ja": "オミクロン_＋ゴッドイーター",
-   "zh": "奥密克戎_+噬神者。",
+   "zh": "奥米克戎_+噬神者。",
    "meta": {
     "blob": 736,
     "offset": 143440,
@@ -23460,7 +23460,7 @@
    "id": "row::41054",
    "en": "Omega _+ Gold Rush +1.",
    "ja": "オメガ_＋ゴールドラッシュ＋１",
-   "zh": "欧米伽_+淘金热+1。",
+   "zh": "欧米伽_+黄金冲击+1。",
    "meta": {
     "blob": 736,
     "offset": 143976,
@@ -23570,7 +23570,7 @@
    "id": "row::41064",
    "en": "Sage's Staff _+ Gamma Plus.",
    "ja": "せんにんのつえ_＋ガンマ改",
-   "zh": "贤者之杖_+伽马改。",
+   "zh": "贤者之杖_+伽玛改。",
    "meta": {
     "blob": 736,
     "offset": 144780,
@@ -26485,7 +26485,7 @@
    "id": "row::41540",
    "en": "Formation: Boost Party!",
    "ja": "陣形：ブーストパーティ！",
-   "zh": "阵型：增益队伍！",
+   "zh": "阵型：提升队伍！",
    "meta": {
     "blob": 741,
     "offset": 134724,
@@ -31267,6 +31267,17 @@
    }
   },
   {
+   "id": "row::42618",
+   "en": "* <EVO_NAME__> got 1000 gold!",
+   "ja": "＊　<EVO_NAME__>は<１０００ゴールド>もらった！",
+   "zh": "＊<EVO_NAME__>获得了1000金币！",
+   "meta": {
+    "blob": 757,
+    "offset": 239616,
+    "cap": 64
+   }
+  },
+  {
    "id": "row::42619",
    "en": "Master",
    "ja": "マスター",
@@ -32485,6 +32496,17 @@
     "blob": 757,
     "offset": 366864,
     "cap": 32
+   }
+  },
+  {
+   "id": "row::42915",
+   "en": "* <EVO_NAME__> got 3000 gold!",
+   "ja": "＊　<EVO_NAME__>は<３０００ゴールド>もらった！",
+   "zh": "＊<EVO_NAME__>获得了3000金币！",
+   "meta": {
+    "blob": 757,
+    "offset": 367804,
+    "cap": 64
    }
   },
   {

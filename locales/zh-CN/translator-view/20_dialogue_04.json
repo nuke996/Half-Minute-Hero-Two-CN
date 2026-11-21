@@ -2857,7 +2857,7 @@
    "id": "row::29002",
    "en": "Yuja: You cannot start a fire without kindling.",
    "ja": "ユウジャ「マキが無けりゃやけんわな」",
-   "zh": "勇者「没柴火可点不着火啊。」",
+   "zh": "羽佳「没柴火可点不着火啊。」",
    "meta": {
     "blob": 503,
     "offset": 2004,
@@ -3011,7 +3011,7 @@
    "id": "row::29040",
    "en": "Kid: I'm gonna be a hero one day!",
    "ja": "ぼうや「ぼく将来　勇者になる」",
-   "zh": "小孩「将来我要成为勇者！」",
+   "zh": "男孩「将来我要成为勇者！」",
    "meta": {
     "blob": 505,
     "offset": 3276,
@@ -7367,7 +7367,7 @@
    "id": "row::29754",
    "en": "Weaponsmith: A sword!? And it's magic!? Incredible!!",
    "ja": "武器屋「剣か！？はたまた魔法か！？なんつってな！！」",
-   "zh": "武器店老板「剑！？还是魔法！？逗你玩的啦！！」",
+   "zh": "武器匠「剑！？还是魔法！？逗你玩的啦！！」",
    "meta": {
     "blob": 513,
     "offset": 4972,
@@ -7433,7 +7433,7 @@
    "id": "row::29792",
    "en": "Village Chief's daughter: Please don't work too hard.",
    "ja": "村長の娘「ムリはしないでくださいね」",
-   "zh": "村长的女儿「别太勉强自己哦。」",
+   "zh": "村长之女「别太勉强自己哦。」",
    "meta": {
     "blob": 514,
     "offset": 4972,
@@ -7609,7 +7609,7 @@
    "id": "row::29940",
    "en": "Shorty: Everyone's back!!",
    "ja": "ちびっこ「みんなもどってきたー！！」",
-   "zh": "矮个子「大家都回来啦！！」",
+   "zh": "小不点「大家都回来啦！！」",
    "meta": {
     "blob": 521,
     "offset": 5820,
@@ -7796,7 +7796,7 @@
    "id": "row::30009",
    "en": "Poly-O: <Power source> and <instruction manual>… if you're ready let's play!",
    "ja": "ポリオ「<デンゲン>と<セツメイショ>　準備ができたらさあプレー」",
-   "zh": "波利-O「<电源>和<说明书>…准备好了就开始玩！」",
+   "zh": "波利奥「<电源>和<说明书>…准备好了就开始玩！」",
    "meta": {
     "blob": 525,
     "offset": 3276,
@@ -10744,7 +10744,7 @@
    "id": "row::30521",
    "en": "Armorer: What'ya think? Can't you just feel the quality?",
    "ja": "防具屋「どうだい？　そざいの良さが出てるだろ？」",
-   "zh": "铠甲商「怎么样？看得出材质有多好吧？」",
+   "zh": "防具匠「怎么样？看得出材质有多好吧？」",
    "meta": {
     "blob": 535,
     "offset": 5396,
@@ -10788,7 +10788,7 @@
    "id": "row::30537",
    "en": "Young Man: There was a loud sound outside the village. I went",
    "ja": "少年「村の外で大きな音がしたから",
-   "zh": "年轻人「村外一声巨响。我出去",
+   "zh": "少年「村外一声巨响。我出去",
    "meta": {
     "blob": 536,
     "offset": 2004,
@@ -10799,7 +10799,7 @@
    "id": "row::30539",
    "en": "Young Man: Sir, you've recovered!",
    "ja": "少年「剣士様　元気になったんですねっ！」",
-   "zh": "年轻人「剑士大人，您康复了！」",
+   "zh": "少年「剑士大人，您康复了！」",
    "meta": {
     "blob": 536,
     "offset": 2428,
@@ -12394,7 +12394,7 @@
    "id": "row::30807",
    "en": "Shore Mersisters: Thanks～ ▼",
    "ja": "陸魚人シスターズ「アリガト～▼」",
-   "zh": "陆鱼人姐妹「谢谢～ ▼」",
+   "zh": "海岸人鱼姐妹「谢谢～ ▼」",
    "meta": {
     "blob": 547,
     "offset": 4972,
@@ -12405,7 +12405,7 @@
    "id": "row::30809",
    "en": "Shore Mersisters: Thanks～ ▼",
    "ja": "陸魚人シスターズ「アリガト～▼」",
-   "zh": "陆鱼人姐妹「谢谢～ ▼」",
+   "zh": "海岸人鱼姐妹「谢谢～ ▼」",
    "meta": {
     "blob": 547,
     "offset": 5396,
@@ -13010,7 +13010,7 @@
    "id": "row::31329",
    "en": "Enchanter: Well? You needed it, right?",
    "ja": "まじないし「な？　必要だったろ？」",
-   "zh": "咒术师「怎样？你确实需要吧？」",
+   "zh": "附魔师「怎样？你确实需要吧？」",
    "meta": {
     "blob": 563,
     "offset": 2852,
@@ -13175,7 +13175,7 @@
    "id": "row::31381",
    "en": "Girl: Jewel? I think the <kid at the store knows a lot> about that.",
    "ja": "女学生「宝石？　そういう話なら　<店番の子がくわしい>わ」",
-   "zh": "女孩「宝石？要说这个，<店里的孩子最明白>。」",
+   "zh": "女学生「宝石？要说这个，<店里的孩子最明白>。」",
    "meta": {
     "blob": 567,
     "offset": 3700,
@@ -13186,7 +13186,7 @@
    "id": "row::31383",
    "en": "Girl: Jewel? I think the <kid at the store knows a lot> about that.",
    "ja": "女学生「宝石？　そういう話なら　<店番の子がくわしい>わ」",
-   "zh": "女孩「宝石？要说这个，<店里的孩子最明白>。」",
+   "zh": "女学生「宝石？要说这个，<店里的孩子最明白>。」",
    "meta": {
     "blob": 567,
     "offset": 4124,
@@ -13241,7 +13241,7 @@
    "id": "row::31395",
    "en": "Student: The school festival! ♪ Getting ready is so much fun! ♪",
    "ja": "女学生「学園祭って　準備が楽しいのよね♪」",
-   "zh": "学生「学院祭！♪准备起来真开心！♪」",
+   "zh": "女学生「学院祭！♪准备起来真开心！♪」",
    "meta": {
     "blob": 567,
     "offset": 7940,
@@ -13252,7 +13252,7 @@
    "id": "row::31397",
    "en": "Girl: There was a guy who was really upset that he couldn't give",
    "ja": "女学生「カノジョに宝石をあげられなくて落ち込んでるヤツがいたな",
-   "zh": "女孩「有个男的因为送不出宝石给女友而不开心，",
+   "zh": "女学生「有个男的因为送不出宝石给女友而不开心，",
    "meta": {
     "blob": 567,
     "offset": 8364,
@@ -13263,7 +13263,7 @@
    "id": "row::31399",
    "en": "Girl: There was a guy who was really upset that he couldn't give",
    "ja": "女学生「カノジョに宝石をあげられなくて落ち込んでるヤツがいたな",
-   "zh": "女孩「有个男的因为送不出宝石给女友而不开心，",
+   "zh": "女学生「有个男的因为送不出宝石给女友而不开心，",
    "meta": {
     "blob": 567,
     "offset": 8788,
@@ -13857,7 +13857,7 @@
    "id": "row::31822",
    "en": "Owner: This shop sells hats and shoes!",
    "ja": "店長「ここはぼうしとくつのお店だよ！」",
-   "zh": "店主「这家店卖帽子和鞋子！」",
+   "zh": "店长「这家店卖帽子和鞋子！」",
    "meta": {
     "blob": 582,
     "offset": 4124,
@@ -14528,7 +14528,7 @@
    "id": "row::31992",
    "en": "The <cave> is the road of the <mage>.",
    "ja": "「<どうくつ>は<魔道士>の道",
-   "zh": "「<洞穴>是<法师>之路，",
+   "zh": "「<洞穴>是<魔法师>之路，",
    "meta": {
     "blob": 586,
     "offset": 27916,
@@ -14539,7 +14539,7 @@
    "id": "row::31993",
    "en": "As a mage, you can get weapons that have been sealed away.",
    "ja": "　魔道士であれば封印された武器が手に入る」",
-   "zh": "　当法师就能拿到被封印的武器。」",
+   "zh": "　当魔法师就能拿到被封印的武器。」",
    "meta": {
     "blob": 586,
     "offset": 27980,
@@ -15012,7 +15012,7 @@
    "id": "row::32065",
    "en": "I'm also a mage with magical powers! Open!",
    "ja": "　魔力もある魔道士だぞ　ほれ開け！」",
-   "zh": "　我还是个有魔力的法师！开！」",
+   "zh": "　我还是个有魔力的魔法师！开！」",
    "meta": {
     "blob": 586,
     "offset": 54552,
@@ -15045,7 +15045,7 @@
    "id": "row::32070",
    "en": "If you're a mage, however…",
    "ja": "「しかし　それでも魔道士なら・・・",
-   "zh": "「不过，如果你是法师的话……",
+   "zh": "「不过，如果你是魔法师的话……",
    "meta": {
     "blob": 586,
     "offset": 58576,
@@ -15199,7 +15199,7 @@
    "id": "row::32101",
    "en": "Owner: Even the Evil Lord comes here to eat sometimes!",
    "ja": "店長「魔王もたまに　たべにくるんだよね」",
-   "zh": "店主「连魔王偶尔也会来吃呢！」",
+   "zh": "店长「连魔王偶尔也会来吃呢！」",
    "meta": {
     "blob": 588,
     "offset": 2004,
@@ -15210,7 +15210,7 @@
    "id": "row::32104",
    "en": "Weaponsmith: This is a weapons shop!",
    "ja": "武器屋「ここは武器屋だよーん！」",
-   "zh": "武器店主「这儿是武器店！」",
+   "zh": "武器匠「这儿是武器店！」",
    "meta": {
     "blob": 588,
     "offset": 4124,
@@ -15320,7 +15320,7 @@
    "id": "row::32150",
    "en": "Peddler: Oh! It's you!",
    "ja": "よろず屋「おお！アンタか！」",
-   "zh": "商贩「噢！是你啊！」",
+   "zh": "小贩「噢！是你啊！」",
    "meta": {
     "blob": 591,
     "offset": 2852,
@@ -15364,7 +15364,7 @@
    "id": "row::32170",
    "en": "Demoness: If you're looking for the spearman, he should be in the hole.",
    "ja": "魔族の女「槍士のおじいさんなら穴にいるはずです」",
-   "zh": "魔族女子「要找枪兵老爷爷，他应该在洞里。」",
+   "zh": "女魔族「要找枪兵老爷爷，他应该在洞里。」",
    "meta": {
     "blob": 592,
     "offset": 2428,
@@ -15540,7 +15540,7 @@
    "id": "row::32245",
    "en": "Clerk: You should buy something here!",
    "ja": "よろず屋「まずはうちの商品を買ってけよ！」",
-   "zh": "店员「你该在这儿买点东西！」",
+   "zh": "小贩「你该在这儿买点东西！」",
    "meta": {
     "blob": 596,
     "offset": 5820,
@@ -16002,7 +16002,7 @@
    "id": "row::32362",
    "en": "Herb Vendor: How about some Herbs～",
    "ja": "やくそう売り「やくそうはいかが～」",
-   "zh": "草药贩子「来点草药怎么样～」",
+   "zh": "药草商人「来点草药怎么样～」",
    "meta": {
     "blob": 598,
     "offset": 3700,
@@ -17696,7 +17696,7 @@
    "id": "row::32668",
    "en": "Shorty: What weird glasses!",
    "ja": "ちびっこ「へんなメガネー！」",
-   "zh": "矮子「好怪的眼镜！」",
+   "zh": "小不点「好怪的眼镜！」",
    "meta": {
     "blob": 603,
     "offset": 6668,
@@ -19115,7 +19115,7 @@
    "id": "row::33078",
    "en": "Clerk: Welcome! ♪",
    "ja": "よろず屋「いらっしゃ～い♪」",
-   "zh": "杂货商「欢迎光临～♪」",
+   "zh": "小贩「欢迎光临～♪」",
    "meta": {
     "blob": 618,
     "offset": 5820,
@@ -19159,7 +19159,7 @@
    "id": "row::33095",
    "en": "Child: Thanks!",
    "ja": "こども「ありがとう！」",
-   "zh": "孩子「谢谢！」",
+   "zh": "小孩「谢谢！」",
    "meta": {
     "blob": 619,
     "offset": 2428,
@@ -19192,7 +19192,7 @@
    "id": "row::33104",
    "en": "Armorer: Sorry about the delay,",
    "ja": "防具屋「おそくなっちまったが　これからのたたかいで使ってくれよ」",
-   "zh": "铠甲匠「抱歉来晚了，」",
+   "zh": "防具匠「抱歉来晚了，」",
    "meta": {
     "blob": 619,
     "offset": 5396,
@@ -23339,7 +23339,7 @@
    "id": "row::33905",
    "en": "Demon Man: If you fall in a crevice, don't",
    "ja": "魔族オヤジ「地割れに落ちてもあきらめるな！",
-   "zh": "魔族老头「掉进破口也别",
+   "zh": "魔族大叔「掉进破口也别",
    "meta": {
     "blob": 632,
     "offset": 2852,
@@ -23504,7 +23504,7 @@
    "id": "row::33952",
    "en": "Owner: Thanks, this is a cake made with fruits from the grasslands.",
    "ja": "主人「ありがとうよ　草原のくだものをつかったケーキだぜ」",
-   "zh": "主人「谢啦，这蛋糕用了草原的水果。」",
+   "zh": "店主「谢啦，这蛋糕用了草原的水果。」",
    "meta": {
     "blob": 637,
     "offset": 2004,
@@ -23537,7 +23537,7 @@
    "id": "row::33961",
    "en": "Armorer: Sorry about the delay,",
    "ja": "防具屋「おそくなっちまったが　これからのたたかいで使ってくれよ」",
-   "zh": "铠甲匠「来晚了，拿去用吧」",
+   "zh": "防具匠「来晚了，拿去用吧」",
    "meta": {
     "blob": 637,
     "offset": 4972,
@@ -23581,7 +23581,7 @@
    "id": "row::33994",
    "en": "Demon Child: It seems monsters know where the cracks are.",
    "ja": "魔族の子「モンスターは地割れの場所がわかるみたい」　　　　",
-   "zh": "魔族之子「怪物好像知道地裂的位置。」",
+   "zh": "魔族小孩「怪物好像知道地裂的位置。」",
    "meta": {
     "blob": 640,
     "offset": 1580,
@@ -23603,7 +23603,7 @@
    "id": "row::33999",
    "en": "Old Man: They say there used to be an underground",
    "ja": "老人「このへんの地下には昔",
-   "zh": "大叔「听说这附近地下从前",
+   "zh": "老人「听说这附近地下从前",
    "meta": {
     "blob": 640,
     "offset": 2428,
@@ -24263,7 +24263,7 @@
    "id": "row::34148",
    "en": "Peddler: Oh! It's you!",
    "ja": "よろず屋「おお！アンタか！」",
-   "zh": "商贩「噢！是你啊！」",
+   "zh": "小贩「噢！是你啊！」",
    "meta": {
     "blob": 645,
     "offset": 2852,
@@ -25253,7 +25253,7 @@
    "id": "row::34358",
    "en": "Gramps: The <western castle> is being attacked by monsters, I hear.",
    "ja": "ジイ様「<西の城>がモンスターに攻められているらしいぞい」",
-   "zh": "爷爷「听说<西边城堡>遭怪物进攻了。」",
+   "zh": "老爷爷「听说<西边城堡>遭怪物进攻了。」",
    "meta": {
     "blob": 650,
     "offset": 2428,
@@ -25264,7 +25264,7 @@
    "id": "row::34360",
    "en": "Gramps: So the <western castle> is saved.",
    "ja": "ジイ様「<西の城>はすくわれたようじゃ」",
-   "zh": "爷爷「那<西边城堡>似乎得救了。」",
+   "zh": "老爷爷「那<西边城堡>似乎得救了。」",
    "meta": {
     "blob": 650,
     "offset": 2852,
@@ -25275,7 +25275,7 @@
    "id": "row::34362",
    "en": "Grandma: It seems the <northern village>",
    "ja": "バア様「<北の村>では最近じしんがひんぱつしているそうな・・・」",
-   "zh": "婆婆「<北边村庄>近来」",
+   "zh": "老婆婆「<北边村庄>近来」",
    "meta": {
     "blob": 650,
     "offset": 3276,
@@ -25286,7 +25286,7 @@
    "id": "row::34364",
    "en": "Grandma: It seems the earthquakes around the",
    "ja": "バア様「<北の村>のじしんもおさまったみたい・・・」",
-   "zh": "婆婆「<北边村庄>的地震」",
+   "zh": "老婆婆「<北边村庄>的地震」",
    "meta": {
     "blob": 650,
     "offset": 3700,
@@ -27156,7 +27156,7 @@
    "id": "row::34666",
    "en": "you will see the real Ava!",
    "ja": "　本物のアヴァ様に会えたことを光栄に思えよ」",
-   "zh": "　就该为见到真正的艾娃大人而荣幸了。」",
+   "zh": "　就该为见到真正的艾大人而荣幸了。」",
    "meta": {
     "blob": 656,
     "offset": 32204,
@@ -27486,7 +27486,7 @@
    "id": "row::34759",
    "en": "Old Man Spelunker: Caves are so thrilling★!",
    "ja": "どうくつおじさん「どうくつのスリルはいいやあねぇ★」",
-   "zh": "洞穴翁「洞穴的刺激真棒★！」",
+   "zh": "洞穴大叔「洞穴的刺激真棒★！」",
    "meta": {
     "blob": 657,
     "offset": 10824,
@@ -27497,7 +27497,7 @@
    "id": "row::34761",
    "en": "Old Woman Spelunker: I love the heart-pounding thrill of caves!",
    "ja": "どうくつおばさん「どうくつのドキドキはいいわよねぇ▼」",
-   "zh": "洞穴婆婆「洞穴那种心跳的感觉真不错呢▼」",
+   "zh": "洞穴大妈「洞穴那种心跳的感觉真不错呢▼」",
    "meta": {
     "blob": 657,
     "offset": 11020,
@@ -28509,7 +28509,7 @@
    "id": "row::34982",
    "en": "Owner: You've really come a long way, huh?",
    "ja": "主人「遠いところ　よくきてくれました」",
-   "zh": "主人「你大老远赶来，真不容易啊。」",
+   "zh": "店主「你大老远赶来，真不容易啊。」",
    "meta": {
     "blob": 662,
     "offset": 2852,
@@ -28531,7 +28531,7 @@
    "id": "row::34990",
    "en": "Owner: Eat as much good food as you can and give it all you've got!",
    "ja": "主人「せいぜい　うまいもんくってがんばれや」",
-   "zh": "主人「多吃点好东西，全力以赴吧！」",
+   "zh": "店主「多吃点好东西，全力以赴吧！」",
    "meta": {
     "blob": 663,
     "offset": 2004,
@@ -34977,7 +34977,7 @@
    "id": "row::36267",
    "en": "Clerk-Chief: You may only use the torch <5 times>!",
    "ja": "店番村長「たいまつを使えるのは<５回>まで！",
-   "zh": "村长「火把你只能用<5次>！",
+   "zh": "店长村长「火把你只能用<5次>！",
    "meta": {
     "blob": 669,
     "offset": 4972,
@@ -35021,7 +35021,7 @@
    "id": "row::36285",
    "en": "Weaponsmith: With our weapons, even a God will be a pushover!",
    "ja": "武器屋「うちの武器を買えば神なんてイチコロさね！」",
-   "zh": "武器商：「买了我们的武器，神也不过是小菜一碟！」",
+   "zh": "武器匠：「买了我们的武器，神也不过是小菜一碟！」",
    "meta": {
     "blob": 670,
     "offset": 3700,
@@ -38046,7 +38046,7 @@
    "id": "row::37032",
    "en": "Equipment Clerk: Nanako always helps us out",
    "ja": "装備屋「ナナコさんにはいつもお世話になってます」",
-   "zh": "装备商「奈奈子总是关照我们。」",
+   "zh": "装备店员「奈奈子总是关照我们。」",
    "meta": {
     "blob": 701,
     "offset": 3700,
@@ -39927,7 +39927,7 @@
    "id": "row::37411",
    "en": "Herbalist: Do you eat Herbs? Or rub them on?",
    "ja": "やくそう屋「やくそう食べる派？　ぬる派？」",
-   "zh": "草药师「草药你是吃法？还是涂派？」",
+   "zh": "草药商「草药你是吃法？还是涂派？」",
    "meta": {
     "blob": 708,
     "offset": 2852,
@@ -39938,7 +39938,7 @@
    "id": "row::37416",
    "en": "Old Man: You have brought peace back to this land … even",
    "ja": "老人「アンタのおかげでこの地も平和になった",
-   "zh": "大叔「你让这片土地重归和平…即便",
+   "zh": "老人「你让这片土地重归和平…即便",
    "meta": {
     "blob": 708,
     "offset": 3700,

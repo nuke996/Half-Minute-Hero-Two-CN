@@ -1944,7 +1944,7 @@
    "id": "row::18502",
    "en": "Young Owner: You come here and then there's this God stuff, love it!",
    "ja": "こども店長「いきなり来て神とか超ウケルっ！」",
-   "zh": "「小店主：冷不丁跑来还遇上神，太逗了！」",
+   "zh": "「小店长：冷不丁跑来还遇上神，太逗了！」",
    "meta": {
     "blob": 340,
     "offset": 4124,
@@ -2043,7 +2043,7 @@
    "id": "row::18556",
    "en": "Weaponsmith: In this era, bowgun swords are HOT!!",
    "ja": "武器屋「今の時代ボウガンソードがアツイ！！」",
-   "zh": "「武器商：如今这年头，弩剑可火了！！」",
+   "zh": "「武器匠：如今这年头，弩枪剑可火了！！」",
    "meta": {
     "blob": 343,
     "offset": 4972,
@@ -4463,7 +4463,7 @@
    "id": "row::18965",
    "en": "Slaw: The <southern cave>, Cole!",
    "ja": "スロー「<南のどうくつ>よ！コール！」",
-   "zh": "斯拉乌「<南之洞穴>，科尔！」",
+   "zh": "斯洛「<南之洞穴>，科尔！」",
    "meta": {
     "blob": 348,
     "offset": 168240,
@@ -4474,7 +4474,7 @@
    "id": "row::18966",
    "en": "Slaw: I hope you're reunited with your sweetheart soon.",
    "ja": "スロー「あなたも早く恋人に会えるといいわね」",
-   "zh": "斯拉乌「愿你早日与恋人重逢。」",
+   "zh": "斯洛「愿你早日与恋人重逢。」",
    "meta": {
     "blob": 348,
     "offset": 168532,
@@ -5090,7 +5090,7 @@
    "id": "row::19100",
    "en": "Armorer: Please try going to the northwest village.",
    "ja": "防具屋「北西の村に行ってみてください」",
-   "zh": "防具商「请去西北的村庄看看。」",
+   "zh": "防具匠「请去西北的村庄看看。」",
    "meta": {
     "blob": 352,
     "offset": 5820,
@@ -5101,7 +5101,7 @@
    "id": "row::19102",
    "en": "Armorer: This armor really does look good on you.",
    "ja": "防具屋「その鎧は　やっぱりあなたのような人に合いますね」",
-   "zh": "防具商「这副铠甲果然合你身。」",
+   "zh": "防具匠「这副铠甲果然合你身。」",
    "meta": {
     "blob": 352,
     "offset": 6244,
@@ -5332,7 +5332,7 @@
    "id": "row::19305",
    "en": "Herbalist: Aiyo～ Too bright～",
    "ja": "やくそう屋「うひょーーー　まぶしーーーー」",
-   "zh": "药师「哎呀～ 太亮了～」",
+   "zh": "草药商「哎呀～ 太亮了～」",
    "meta": {
     "blob": 356,
     "offset": 4972,
@@ -5684,7 +5684,7 @@
    "id": "row::20522",
    "en": "Oh yeah, Spirit Stones <can't be carried with another item>.",
    "ja": "「あ　あと精霊石は<他のアイテムと一緒に持てない>わ",
-   "zh": "「对了，精灵石<无法和其他物品一起带着>，",
+   "zh": "「对了，精灵石<无法和其他道具一起带着>，",
    "meta": {
     "blob": 361,
     "offset": 15068,
@@ -10150,7 +10150,7 @@
    "id": "row::21233",
    "en": "Zochi: Whoo! That's some good work there! Thanks!",
    "ja": "ゾウチクン「ふぅ！いい仕事ができたぜ！ありがとよ！」",
-   "zh": "佐智君「呼！干得漂亮！谢了！」",
+   "zh": "卓奇「呼！干得漂亮！谢了！」",
    "meta": {
     "blob": 370,
     "offset": 3700,
@@ -10238,7 +10238,7 @@
    "id": "row::21285",
    "en": "Peddler: We barely make a living selling Herbs and shields.",
    "ja": "よろず屋「やくそうと盾をホソボソと売っとります」",
-   "zh": "杂货店「草药和盾，我们悄悄地卖着呢。」",
+   "zh": "小贩「草药和盾，我们悄悄地卖着呢。」",
    "meta": {
     "blob": 371,
     "offset": 7516,
@@ -10315,7 +10315,7 @@
    "id": "row::21318",
    "en": "Herbalist: We're sold out of <Common Herb>.",
    "ja": "やくそう屋「<みんなのやくそう>売り切れでっす」",
-   "zh": "草药店「<大众草药>卖光了。」",
+   "zh": "草药商「<大众草药>卖光了。」",
    "meta": {
     "blob": 373,
     "offset": 4124,
@@ -12482,7 +12482,7 @@
    "id": "row::21662",
    "en": "Herbalist: We're sold out of <Common Herb>.",
    "ja": "やくそう屋「<みんなのやくそう>売り切れでっす」",
-   "zh": "草药师「<普通草药>卖光了。」",
+   "zh": "草药商「<普通草药>卖光了。」",
    "meta": {
     "blob": 375,
     "offset": 4124,
@@ -12636,7 +12636,7 @@
    "id": "row::21729",
    "en": "Village Belle: I just feel a bit lonely without a Goddess Statue.",
    "ja": "村ムスメ「女神像がないと　なんだかさびしいわね」",
-   "zh": "村姑「没了女神像总觉得好孤单呢。」",
+   "zh": "村花「没了女神像总觉得好孤单呢。」",
    "meta": {
     "blob": 377,
     "offset": 5396,
@@ -12680,7 +12680,7 @@
    "id": "row::21745",
    "en": "Boy: It's a romance of treasure",
    "ja": "少年「宝ってロマンだよな",
-   "zh": "男孩「宝藏就是风情啊",
+   "zh": "少年「宝藏就是风情啊",
    "meta": {
     "blob": 379,
     "offset": 2852,
@@ -12691,7 +12691,7 @@
    "id": "row::21753",
    "en": "Equipment Clerk: I've got lots of useful items!",
    "ja": "装備屋「てごろな装備をあつめてみました！」",
-   "zh": "装备店「我收集了一些价格合适的装备！」",
+   "zh": "装备店员「我收集了一些价格合适的装备！」",
    "meta": {
     "blob": 379,
     "offset": 5820,
@@ -15672,7 +15672,7 @@
    "id": "row::22439",
    "en": "Angel: You should eat before a battle!",
    "ja": "天使あるじ「たたかう前に食っとけ」",
-   "zh": "天使「开战前先吃点东西！」",
+   "zh": "天使老板「开战前先吃点东西！」",
    "meta": {
     "blob": 398,
     "offset": 1580,
@@ -15782,7 +15782,7 @@
    "id": "row::22476",
    "en": "Suspicious Man: Great work! The northern",
    "ja": "あやしい男「やったな！",
-   "zh": "可疑的人「干得好！北村",
+   "zh": "可疑男子「干得好！北村",
    "meta": {
     "blob": 400,
     "offset": 1156,
@@ -15793,7 +15793,7 @@
    "id": "row::22478",
    "en": "Suspicious Man: Geez, this guy's a real letdown.",
    "ja": "あやしい男「ったくコイツらはしょっぱい連中だよな",
-   "zh": "可疑的人「啧，这帮人真没劲",
+   "zh": "可疑男子「啧，这帮人真没劲",
    "meta": {
     "blob": 400,
     "offset": 1580,
@@ -15804,7 +15804,7 @@
    "id": "row::22480",
    "en": "Suspicious Man: No doubt about it, you're a real hero!",
    "ja": "あやしい男「名実ともにオメーは英雄だな！」",
-   "zh": "可疑的人「名副其实，你就是个英雄啊！」",
+   "zh": "可疑男子「名副其实，你就是个英雄啊！」",
    "meta": {
     "blob": 400,
     "offset": 2004,
@@ -16112,7 +16112,7 @@
    "id": "row::22579",
    "en": "Ovalia: He just dragged it all the way to the <northern forest>. It",
    "ja": "オヴァちゃん「重そうに<北の森>にひきずってたわよ～",
-   "zh": "欧维利亚「他吃力地拖到了<北边森林>",
+   "zh": "奥瓦利亚「他吃力地拖到了<北边森林>",
    "meta": {
     "blob": 405,
     "offset": 2004,
@@ -16222,7 +16222,7 @@
    "id": "row::22607",
    "en": "Demon Man: Thanks!",
    "ja": "魔族の男「ありがとね！」",
-   "zh": "魔族男「谢啦！」",
+   "zh": "魔族男子「谢啦！」",
    "meta": {
     "blob": 406,
     "offset": 2428,
@@ -18092,7 +18092,7 @@
    "id": "row::23781",
    "en": "Even the cool Geezer",
    "ja": "「！！　クールなおじさままで",
-   "zh": "「连那么酷的大叔大人",
+   "zh": "「连那么酷的大叔",
    "meta": {
     "blob": 408,
     "offset": 123724,
@@ -18235,7 +18235,7 @@
    "id": "row::23816",
    "en": "Clerk: All the moles are gone… I can't sell any radars.",
    "ja": "モグラ屋「モグラがいないんじゃ　レーダー売れないよ」",
-   "zh": "店员「鼹鼠都没了……雷达卖不出去啦。」",
+   "zh": "鼹鼠店员「鼹鼠都没了……雷达卖不出去啦。」",
    "meta": {
     "blob": 409,
     "offset": 4548,
@@ -18268,7 +18268,7 @@
    "id": "row::23830",
    "en": "Angel: You should eat before a battle!",
    "ja": "天使あるじ「たたかう前に食っとけ」",
-   "zh": "天使「开战前先吃点东西！」",
+   "zh": "天使老板「开战前先吃点东西！」",
    "meta": {
     "blob": 411,
     "offset": 1580,
@@ -18444,7 +18444,7 @@
    "id": "row::23862",
    "en": "Geezer too?…",
    "ja": "　しかも　おじさままで・・・」",
-   "zh": "　而且还连大叔大人也……」",
+   "zh": "　而且还连大叔也……」",
    "meta": {
     "blob": 412,
     "offset": 36740,
@@ -20831,7 +20831,7 @@
    "id": "row::24265",
    "en": "Woman in Pigtails: So the Jewel God is hard… !",
    "ja": "おさげの女「宝石神はカタイの・・・！",
-   "zh": "辫子女「宝石神很强…！",
+   "zh": "辫子女孩「宝石神很强…！",
    "meta": {
     "blob": 416,
     "offset": 2428,
@@ -20842,7 +20842,7 @@
    "id": "row::24267",
    "en": "Woman in Pigtails: Hard ones are indeed the best!",
    "ja": "おさげの女「やっぱカタイのが一番よ！」",
-   "zh": "辫子女「果然越强悍越好！」",
+   "zh": "辫子女孩「果然越强悍越好！」",
    "meta": {
     "blob": 416,
     "offset": 2852,
@@ -21502,7 +21502,7 @@
    "id": "row::24419",
    "en": "Herb Girl: How about some Herbs. ▼",
    "ja": "やくそうガール「やくそうはいかが▼」",
-   "zh": "草药小姐「来点草药如何。▼」",
+   "zh": "草药女孩「来点草药如何。▼」",
    "meta": {
     "blob": 419,
     "offset": 2852,
@@ -21711,7 +21711,7 @@
    "id": "row::24485",
    "en": "Owner: We sell weapons and helms here!",
    "ja": "店長「ここは武器とかぶとの店だぜ！」",
-   "zh": "店主「这儿卖武器和头盔！」",
+   "zh": "店长「这儿卖武器和头盔！」",
    "meta": {
     "blob": 422,
     "offset": 6668,
@@ -24186,7 +24186,7 @@
    "id": "row::24928",
    "en": "Also known as the <Warrior>! Ahaha!",
    "ja": "　その名も<ウォーリア>だ！　フハハハ！」",
-   "zh": "　别名<战士>！哈哈哈！」",
+   "zh": "　别名<勇士>！哈哈哈！」",
    "meta": {
     "blob": 427,
     "offset": 145072,
@@ -24351,7 +24351,7 @@
    "id": "row::24953",
    "en": "Advanced Musketeer class!",
    "ja": "「銃士の上級クラス！",
-   "zh": "「上级枪手职业！",
+   "zh": "「上级火枪手职业！",
    "meta": {
     "blob": 427,
     "offset": 156396,
@@ -25176,7 +25176,7 @@
    "id": "row::25136",
    "en": "Armorer: We've got really light armor that's suitable for girls too! ♪",
    "ja": "防具屋「女の子でも安心のかるーいヨロイにゅうかしたわよ♪」",
-   "zh": "防具商「连女孩子也能安心穿的轻便盔甲哦！」",
+   "zh": "防具匠「连女孩子也能安心穿的轻便盔甲哦！」",
    "meta": {
     "blob": 432,
     "offset": 3700,
@@ -25374,7 +25374,7 @@
    "id": "row::25218",
    "en": "Smiley Girl: Already finished today!",
    "ja": "ニコニコさん「今日はもうおわりー」",
-   "zh": "含笑女孩「今天已经结束啦！」",
+   "zh": "笑眯眯女人「今天已经结束啦！」",
    "meta": {
     "blob": 437,
     "offset": 9060,
@@ -25385,7 +25385,7 @@
    "id": "row::25220",
    "en": "Smiley Man: Let's at least beat one…",
    "ja": "ニコニコさん「１匹はたおそうよ・・・」",
-   "zh": "含笑男人「至少也打败一只吧……」",
+   "zh": "笑眯眯女人「至少也打败一只吧……」",
    "meta": {
     "blob": 437,
     "offset": 9452,
@@ -25440,7 +25440,7 @@
    "id": "row::25251",
    "en": "Clerk: My Herbs aren't bitter!",
    "ja": "よろず屋「うちのやくそうはニガくない！」",
-   "zh": "店员「我的草药一点都不苦！」",
+   "zh": "小贩「我的草药一点都不苦！」",
    "meta": {
     "blob": 438,
     "offset": 5396,
@@ -26991,7 +26991,7 @@
    "id": "row::25719",
    "en": "Woman: The Evil Lord is just over there. There are tough",
    "ja": "おばちゃん「ちょっと強いヤツいるけど魔王はすぐそこよっ",
-   "zh": "女人「魔王就在那边，有强敌",
+   "zh": "老婆婆「魔王就在那边，有强敌",
    "meta": {
     "blob": 447,
     "offset": 1156,
@@ -27354,7 +27354,7 @@
    "id": "row::25868",
    "en": "Peddler: Anyone need weapons or armor～?",
    "ja": "よろず屋「武器防具はいらんかね～」",
-   "zh": "商贩「有谁需要武器或护甲吗～？」",
+   "zh": "小贩「有谁需要武器或护甲吗～？」",
    "meta": {
     "blob": 454,
     "offset": 5396,
@@ -28883,7 +28883,7 @@
    "id": "row::26236",
    "en": "Female Celebrity: Oh, it's you? Were you able to get in to the casino?",
    "ja": "セレブ女「あらアナタ？　カジノにはいけたかしら？」",
-   "zh": "名流女「哎呀是你？进赌场了吗？」",
+   "zh": "名媛「哎呀是你？进赌场了吗？」",
    "meta": {
     "blob": 462,
     "offset": 1580,
@@ -28982,7 +28982,7 @@
    "id": "row::26331",
    "en": "Armorer: How about some shoes with that armor?",
    "ja": "防具屋「ヨロイといっしょにクツもいかがすかー」",
-   "zh": "防具商「盔甲配上鞋子如何？」",
+   "zh": "防具匠「盔甲配上鞋子如何？」",
    "meta": {
     "blob": 465,
     "offset": 4124,
@@ -31292,7 +31292,7 @@
    "id": "row::26684",
    "en": "Old Man: Oh! You're the one who defeated the queen, <YUSHA_NAME>!",
    "ja": "老人「お！アンタ女王をたおした<YUSHA_NAME>じゃの！」",
-   "zh": "大叔「哦！你就是击败女王的那位，<YUSHA_NAME>！」",
+   "zh": "老人「哦！你就是击败女王的那位，<YUSHA_NAME>！」",
    "meta": {
     "blob": 467,
     "offset": 1156,
@@ -31303,7 +31303,7 @@
    "id": "row::26686",
    "en": "Old Man: This is Pleeze Village. It started",
    "ja": "老人「ここはプリーズ村じゃ",
-   "zh": "大叔「这是普利兹村。起头",
+   "zh": "老人「这是普利兹村。起头",
    "meta": {
     "blob": 467,
     "offset": 1580,
@@ -31314,7 +31314,7 @@
    "id": "row::26688",
    "en": "Old Man: This is Pleeze Village. You must",
    "ja": "老人「ここはプリーズ村じゃよ",
-   "zh": "大叔「这是普利兹村。你要",
+   "zh": "老人「这是普利兹村。你要",
    "meta": {
     "blob": 467,
     "offset": 2004,
@@ -31424,7 +31424,7 @@
    "id": "row::26715",
    "en": "Peddler: Anyone need weapons or armor～?",
    "ja": "よろず屋「武器防具はいらんかね～」",
-   "zh": "商贩「有谁需要武器或护甲吗～？」",
+   "zh": "小贩「有谁需要武器或护甲吗～？」",
    "meta": {
     "blob": 467,
     "offset": 8364,
@@ -31512,7 +31512,7 @@
    "id": "row::26747",
    "en": "Soldier: Spearmen to the north! Fighters to the east! Mages to the cave!",
    "ja": "兵士「北は槍使い！東は戦士！どうくつは魔道士！」",
-   "zh": "士兵「长枪兵去北边！战士去东边！法师进洞！」",
+   "zh": "士兵「长枪兵去北边！战士去东边！魔法师进洞！」",
    "meta": {
     "blob": 469,
     "offset": 6244,
@@ -31655,7 +31655,7 @@
    "id": "row::26827",
    "en": "Herbalist: Kyaaa! It's the great songstress! Kyaaa!",
    "ja": "やくそう屋「キャー！　歌姫様よっ！　キャー！」",
-   "zh": "草药师「呀啊！是伟大的歌姬大人！呀啊！」",
+   "zh": "草药商「呀啊！是伟大的歌姬大人！呀啊！」",
    "meta": {
     "blob": 474,
     "offset": 3276,
@@ -32997,7 +32997,7 @@
    "id": "row::27099",
    "en": "You always show up and save me, Geezer…",
    "ja": "「おじさまはいつもわたくしを助けてくれて",
-   "zh": "「大叔大人总是来救我，",
+   "zh": "「大叔总是来救我，",
    "meta": {
     "blob": 478,
     "offset": 131576,
@@ -33118,7 +33118,7 @@
    "id": "row::27114",
    "en": "It seems like you don't want to reveal your name…",
    "ja": "「おじさまは名乗りたくはなさそうですし・・・",
-   "zh": "「大叔大人好像不愿报名字…",
+   "zh": "「大叔好像不愿报名字…",
    "meta": {
     "blob": 478,
     "offset": 136248,
@@ -33129,7 +33129,7 @@
    "id": "row::27115",
    "en": "So I'll just keep calling you <Geezer> for now. ♪",
    "ja": "　じゃあやっぱり　<おじさま>とお呼びしますわ♪」",
-   "zh": "　那我就还是叫你<大叔大人>吧。♪」",
+   "zh": "　那我就还是叫你<大叔>吧。♪」",
    "meta": {
     "blob": 478,
     "offset": 136312,
@@ -33217,7 +33217,7 @@
    "id": "row::27131",
    "en": "has finally joined up with us.",
    "ja": "　仲間になってもらっちゃったみたいね」",
-   "zh": "　大叔大人拉进队伍了呢。」",
+   "zh": "　大叔拉进队伍了呢。」",
    "meta": {
     "blob": 478,
     "offset": 142444,
@@ -33712,7 +33712,7 @@
    "id": "row::27203",
    "en": "Armorer: Peace has been restored, thanks to you.",
    "ja": "防具屋「おかげさまで平和になりました　ありがとうございました」",
-   "zh": "防具商「托您的福，和平恢复了，真是谢谢您。」",
+   "zh": "防具匠「托您的福，和平恢复了，真是谢谢您。」",
    "meta": {
     "blob": 481,
     "offset": 4548,
@@ -33734,7 +33734,7 @@
    "id": "row::27212",
    "en": "Owner: Um… you're just here to eat, right?",
    "ja": "主人「あの・・・食べるだけで何もしないですよね？」",
-   "zh": "主人「那个…你只管吃不做别的吧？」",
+   "zh": "店主「那个…你只管吃不做别的吧？」",
    "meta": {
     "blob": 482,
     "offset": 2004,
@@ -33756,7 +33756,7 @@
    "id": "row::27219",
    "en": "Owner: It's the new product everyone's talking about, Rubber Boots!",
    "ja": "主人「ウワサの新商品だ　ゴムゴムのブーツだぜ！」",
-   "zh": "主人「传闻的新商品，橡胶靴！」",
+   "zh": "店主「传闻的新商品，橡胶靴！」",
    "meta": {
     "blob": 482,
     "offset": 4548,
@@ -34647,7 +34647,7 @@
    "id": "row::27370",
    "en": "Mountain Man: An imperial general was just here, headed north.",
    "ja": "山男「さっき帝国の将軍が北に進んでいったぞ」",
-   "zh": "山人「方才帝国将军向北挺进了。」",
+   "zh": "山男「方才帝国将军向北挺进了。」",
    "meta": {
     "blob": 484,
     "offset": 2428,
@@ -34735,7 +34735,7 @@
    "id": "row::27398",
    "en": "Owner: We aren't overcharging!",
    "ja": "主人「ウチはぼったくりません！」",
-   "zh": "主人「我们可不宰客！」",
+   "zh": "店主「我们可不宰客！」",
    "meta": {
     "blob": 485,
     "offset": 5820,
@@ -37958,7 +37958,7 @@
    "id": "row::27925",
    "en": "Armorer: We've got really light armor that's suitable for girls too! ♪",
    "ja": "防具屋「女の子でも安心のかるーいヨロイにゅうかしたわよ♪」",
-   "zh": "防具商「连女孩子也能安心穿的轻便盔甲哦！」",
+   "zh": "防具匠「连女孩子也能安心穿的轻便盔甲哦！」",
    "meta": {
     "blob": 492,
     "offset": 3700,

@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3436,
+ "_count": 3438,
  "entries": [
   {
    "id": "row::12701",
@@ -8236,7 +8236,7 @@
    "id": "row::14371",
    "en": "Class Change",
    "ja": "クラスチェンジ",
-   "zh": "职业变更",
+   "zh": "转职",
    "meta": {
     "blob": 265,
     "offset": 3500,
@@ -10455,6 +10455,17 @@
    }
   },
   {
+   "id": "row::14687",
+   "en": "* Like Nanako, a childhood friend of <EVO_NAME__>'s.",
+   "ja": "＊　ナナコと同じく<EVO_NAME__>のおさななじみ",
+   "zh": "＊ 和奈奈子一样，是<EVO_NAME__>的青梅竹马，",
+   "meta": {
+    "blob": 282,
+    "offset": 25288,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::14688",
    "en": "Male student at the Academy, and total narcissist.",
    "ja": "　　私立女神学園のナルシストな男子学生",
@@ -10462,6 +10473,17 @@
    "meta": {
     "blob": 282,
     "offset": 25352,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::14690",
+   "en": "* His role is to keep an eye on Princess <EVO_NAME__>.",
+   "ja": "＊　王女である<EVO_NAME__>のお目付け役でもある",
+   "zh": "＊ 他的职责是监视王女<EVO_NAME__>，",
+   "meta": {
+    "blob": 282,
+    "offset": 25580,
     "cap": 32
    }
   },
@@ -11525,7 +11547,7 @@
    "id": "row::15007",
    "en": "Formation: Boost Party!",
    "ja": "陣形：ブーストパーティ！",
-   "zh": "阵型：增益队伍！",
+   "zh": "阵型：提升队伍！",
    "meta": {
     "blob": 282,
     "offset": 208016,
@@ -15507,7 +15529,7 @@
    "id": "row::15559",
    "en": "Confirm contents",
    "ja": "内容を決定して",
-   "zh": "确认内容后，",
+   "zh": "确定内容后，",
    "meta": {
     "blob": 291,
     "offset": 26216,
@@ -16970,7 +16992,7 @@
    "id": "row::15847",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 80704,
@@ -16981,7 +17003,7 @@
    "id": "row::15850",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 81288,
@@ -16992,7 +17014,7 @@
    "id": "row::15853",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 82164,
@@ -17014,7 +17036,7 @@
    "id": "row::15861",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 85376,
@@ -17025,7 +17047,7 @@
    "id": "row::15864",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 85960,
@@ -17036,7 +17058,7 @@
    "id": "row::15867",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 86836,
@@ -17047,7 +17069,7 @@
    "id": "row::15870",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 87712,
@@ -17058,7 +17080,7 @@
    "id": "row::15872",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 88004,
@@ -17102,7 +17124,7 @@
    "id": "row::15877",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 89756,
@@ -17113,7 +17135,7 @@
    "id": "row::15879",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 90048,
@@ -17157,7 +17179,7 @@
    "id": "row::15884",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 91216,
@@ -17168,7 +17190,7 @@
    "id": "row::15887",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 93260,
@@ -17190,7 +17212,7 @@
    "id": "row::15890",
    "en": "Captain",
    "ja": "船頭",
-   "zh": "船长",
+   "zh": "船夫",
    "meta": {
     "blob": 298,
     "offset": 97056,
@@ -32249,7 +32271,7 @@
    "id": "row::18452",
    "en": "Formation: Boost All",
    "ja": "陣形：ブーストオール！",
-   "zh": "阵型：全员强化！",
+   "zh": "阵型：全面提升！",
    "meta": {
     "blob": 336,
     "offset": 248020,
@@ -35395,7 +35417,7 @@
    "id": "row::19124",
    "en": "Class Change",
    "ja": "クラスチェンジ",
-   "zh": "职业变更",
+   "zh": "转职",
    "meta": {
     "blob": 353,
     "offset": 3500,
@@ -36616,7 +36638,7 @@
    "id": "row::19259",
    "en": "╂Select　　　┿Turn Page　　　○Confirm　　　×Return",
    "ja": "╂選択　　　┿ページめくり　　　○決定　　　×戻る",
-   "zh": "╂选择　　　┿翻页　　　○确认　　　×返回",
+   "zh": "╂选择　　　┿翻页　　　○确定　　　×返回",
    "meta": {
     "blob": 354,
     "offset": 70688,

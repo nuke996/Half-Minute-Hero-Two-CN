@@ -2,7 +2,7 @@
  "_kind": "protected-single-ui",
  "_note": "【受保护·当前不会上屏】UI/菜单/系统消息类单行文本。这些原文同时出现在游戏脚本/数据层、被按名/按键比对，翻译会破坏机制，故保留原文。你仍可修改：修改会写回译表保存，但暂不显示；详见上一级目录的《如何校对.txt》第三节。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 815,
+ "_count": 813,
  "entries": [
   {
    "id": "row::18",
@@ -3190,19 +3190,6 @@
    }
   },
   {
-   "id": "row::1578",
-   "en": "Infinite 1 And Grassland and Forest and Cave",
-   "ja": "無限１　草原と森とどうくつと",
-   "zh": "无限1　草原与森林与洞穴",
-   "meta": {
-    "blob": 34,
-    "offset": 227684,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
    "id": "row::1579",
    "en": "Infinite 2 Square World",
    "ja": "無限２　スクエアワールド",
@@ -3275,19 +3262,6 @@
    "meta": {
     "blob": 34,
     "offset": 234380,
-    "cap": 32,
-    "protected": "collide",
-    "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
-   }
-  },
-  {
-   "id": "row::1586",
-   "en": "Infinite 9 The Battle of the Plains Returns",
-   "ja": "無限９　大平原の戦いリターンズ",
-   "zh": "无限9　平原之战再临",
-   "meta": {
-    "blob": 34,
-    "offset": 236612,
     "cap": 32,
     "protected": "collide",
     "note": "疑似“名字键”：同一原文也出现在游戏脚本/数据层，按名比对，翻译会破坏机制，故保留原文"
@@ -7236,7 +7210,7 @@
    "id": "row::4104",
    "en": "Experi-dive",
    "ja": "エクスペリダイブ",
-   "zh": "试验潜水",
+   "zh": "经验俯冲",
    "meta": {
     "blob": 92,
     "offset": 224,
@@ -7717,7 +7691,7 @@
    "id": "row::4141",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 93,
     "offset": 5012,
@@ -8809,7 +8783,7 @@
    "id": "row::4601",
    "en": "Gamma Plus",
    "ja": "ガンマ改",
-   "zh": "伽马改",
+   "zh": "伽玛改",
    "meta": {
     "blob": 99,
     "offset": 5868,
@@ -9147,7 +9121,7 @@
    "id": "row::4645",
    "en": "Gamma Plus",
    "ja": "ガンマ改",
-   "zh": "伽马改",
+   "zh": "伽玛改",
    "meta": {
     "blob": 99,
     "offset": 8544,

@@ -1478,3 +1478,30 @@ Z19 重建后仍是 `LANG_EN fa529eb1cb34`、error 0 / warning 45（互不影响
 新增 Q16 候选时，先确认该槽不是 `desc_release.json` 放行的说明字段。
 **相关文件：** `tools/build_cn.py`（`restore_q16_keys` / `desc_release_hit`）、
 `locales/zh-CN/t17_q16_candidates.tsv`、`locales/zh-CN/desc_release.json`。
+
+---
+
+## 46. 人名长译与 EN 短槽冲突 -> 名字一致性校验 fatal（2026-11-21）
+
+**现象：** 按术语推荐把 `アヴァ→艾娃`、`スペルヴィア→斯佩尔维亚` 批量替换后，
+`validate_build` 报 18 条 `ERROR [本篇 混合态] ... 仍为英文 b'Ava'/b'Spelvia'`。
+
+**实际原因：**
+- 这两个名字的部分副本共用英文槽：`Ava` 只有 3 字节、`Spelvia` 只有 7 字节；
+  `艾娃`（4 字节）、`斯佩尔维亚`（10 字节）写不进去。
+- 构建的名字一致性逻辑要求同名副本统一；放不下的副本退回英文，于是同一名字
+  一半中文一半英文，校验直接 fatal。
+- 单纯跳过超长行还会让“长名副本”和“短名副本”不一致，所以不能只做局部例外。
+
+**修复：**
+- 按引擎容量采用短形式：`アヴァ→艾`、`スペルヴィア→斯佩维`；`艾娃` 只保留在
+  复合名「艾娃木偶」中。
+- 术语表 §13 与 `docs/PACKAGE_LEDGER.md` §5 登记容量回退；
+  `tools/fix_terms_round3.py` 中对应规则改为「容量回退」方向，避免下次审计再次改长。
+
+**教训：** 人名统一前先查该名字所有副本的最小 EN 槽；凡 EN 槽 < 中文目标字节数的，
+只能取短译或专用短音译，不能直接采用推荐表的长译名。批量替换脚本必须保留
+`slot_bytes` 检查，并在预览阶段把超长行单独列出，而不是静默跳过。
+
+**相关文件：** `tools/fix_terms_round3.py`、`tools/validate_build.py`、
+`locales/zh-CN/术语表.md` §13、`docs/PACKAGE_LEDGER.md` §5。

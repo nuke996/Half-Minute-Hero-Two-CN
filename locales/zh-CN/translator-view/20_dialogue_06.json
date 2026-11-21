@@ -2703,7 +2703,7 @@
    "id": "row::48993",
    "en": "Young Owner: Do you need",
    "ja": "こども店長「やくそうはいらんか・・・",
-   "zh": "小店主「你需要",
+   "zh": "小店长「你需要",
    "meta": {
     "blob": 853,
     "offset": 2852,
@@ -4936,7 +4936,7 @@
    "id": "row::49635",
    "en": "Owner: I want to upgrade my business to a restaurant chain!",
    "ja": "店長「オレの店　チェーンてんかい　したいんだ！」",
-   "zh": "店主「我想把店做成连锁！」",
+   "zh": "店长「我想把店做成连锁！」",
    "meta": {
     "blob": 877,
     "offset": 2004,
@@ -4947,7 +4947,7 @@
    "id": "row::49638",
    "en": "Armorer: Ho ho ho! Would you like a helm?",
    "ja": "防具屋「ふぉふぉふぉ！かぶとはいかがかの？」",
-   "zh": "防具商「呵呵呵！要顶头盔吗？」",
+   "zh": "防具匠「呵呵呵！要顶头盔吗？」",
    "meta": {
     "blob": 877,
     "offset": 4124,
@@ -6553,7 +6553,7 @@
    "id": "row::50228",
    "en": "Owner: Eat this and be healthy!",
    "ja": "あるじ「こいつを食べて元気になれ！」",
-   "zh": "店主「吃了它，养足精神！」",
+   "zh": "老板「吃了它，养足精神！」",
    "meta": {
     "blob": 898,
     "offset": 1156,
@@ -6861,7 +6861,7 @@
    "id": "row::50958",
    "en": "Little Boy: Don't bother… that guy's probably a narcissist anyway.",
    "ja": "男の子「やめとけよ・・・アイツたぶんナルシストだから」",
-   "zh": "男孩「别管了…那家伙八成是自恋狂。」",
+   "zh": "小男孩「别管了…那家伙八成是自恋狂。」",
    "meta": {
     "blob": 904,
     "offset": 2428,
@@ -11668,7 +11668,7 @@
    "id": "row::51729",
    "en": "Old man: From now on, I'm going to make clothes",
    "ja": "老人「これからは　村のための服をつくるのじゃ",
-   "zh": "大叔「今后我要为村里做衣服",
+   "zh": "老人「今后我要为村里做衣服",
    "meta": {
     "blob": 908,
     "offset": 2428,
@@ -18565,7 +18565,7 @@
    "id": "row::52809",
    "en": "Old Man: We can't stay here any longer.",
    "ja": "おじいさん「もう　この地にはいられぬのか」",
-   "zh": "大叔「我们不能再留在这了。」",
+   "zh": "老人「我们不能再留在这了。」",
    "meta": {
     "blob": 914,
     "offset": 4972,
@@ -18576,7 +18576,7 @@
    "id": "row::52811",
    "en": "Old Man: Oh, I see a light.",
    "ja": "おじいさん「おお　光がみえるぞ」",
-   "zh": "大叔「哦，我看见光了。」",
+   "zh": "老人「哦，我看见光了。」",
    "meta": {
     "blob": 914,
     "offset": 5396,
@@ -18664,7 +18664,7 @@
    "id": "row::52841",
    "en": "Owner: Um… you're just here to eat, right?",
    "ja": "主人「あの・・・食べるだけで何もしないですよね？」",
-   "zh": "主人「那个…你只管吃不做别的吧？」",
+   "zh": "店主「那个…你只管吃不做别的吧？」",
    "meta": {
     "blob": 915,
     "offset": 2428,
@@ -19137,7 +19137,7 @@
    "id": "row::52956",
    "en": "Youth: In the village up ahead, there's a <dragon's egg>",
    "ja": "青年「この先の村では　昔から",
-   "zh": "年轻人「前方村子里有<龙蛋>",
+   "zh": "青年「前方村子里有<龙蛋>",
    "meta": {
     "blob": 919,
     "offset": 1580,
@@ -19192,7 +19192,7 @@
    "id": "row::52987",
    "en": "Old Woman Spelunker: Going east? You should train a bit, first!",
    "ja": "どうくつおばさん「東に行くなら　きたえてからがいいかもよ」",
-   "zh": "洞穴老婆婆「要去东边？最好先锻炼下！」",
+   "zh": "洞穴大妈「要去东边？最好先锻炼下！」",
    "meta": {
     "blob": 920,
     "offset": 5336,
@@ -19203,7 +19203,7 @@
    "id": "row::52989",
    "en": "Old Woman Spelunker: Yeah! Go go grandpa swordsman ▼",
    "ja": "どうくつおばさん「おじいちゃん剣士　ゴーゴー▼」",
-   "zh": "洞穴婆婆「对！上吧老剑士▼」",
+   "zh": "洞穴大妈「对！上吧老剑士▼」",
    "meta": {
     "blob": 920,
     "offset": 5532,
@@ -19357,7 +19357,7 @@
    "id": "row::53043",
    "en": "Girl: The master sorcerer… is really just wonderful. ▼",
    "ja": "女の子「魔法使いの師匠って・・・やっぱりステキ▼」",
-   "zh": "女孩「魔法师师父…真的很棒▼」",
+   "zh": "小女孩「魔法师师父…真的很棒▼」",
    "meta": {
     "blob": 926,
     "offset": 2852,
@@ -20479,7 +20479,7 @@
    "id": "row::53227",
    "en": "I want you to defeat the <Super Mudman> and <Super Mudman King>",
    "ja": "「北の方にいる　巨大モンスター",
-   "zh": "「我要你打败<超级泥人>和<超级泥人之王>",
+   "zh": "「我要你打败<超级泥浆怪>和<超级泥浆王>",
    "meta": {
     "blob": 928,
     "offset": 59452,
@@ -20490,7 +20490,7 @@
    "id": "row::53228",
    "en": "that can be found to the north of here!",
    "ja": "　<超土おとこ>と<超土おとこキング>をたおしてくれ！」",
-   "zh": "　它们就在村子北边！」",
+   "zh": "　它们就在北边，去打倒吧！」",
    "meta": {
     "blob": 928,
     "offset": 59516,
@@ -20567,7 +20567,7 @@
    "id": "row::53242",
    "en": "I want you to defeat the <Super Mudman> and <Super Mudman King>",
    "ja": "「北の方にいる　巨大モンスター",
-   "zh": "「我要你打败<超级泥人>和<超级泥人之王>",
+   "zh": "「我要你打败<超级泥浆怪>和<超级泥浆王>",
    "meta": {
     "blob": 928,
     "offset": 67336,
@@ -20578,7 +20578,7 @@
    "id": "row::53243",
    "en": "that can be found to the north of here!",
    "ja": "　<超土おとこ>と<超土おとこキング>をたおしてくれ！」",
-   "zh": "　它们就在村子北边！」",
+   "zh": "　它们就在北边，去打倒吧！」",
    "meta": {
     "blob": 928,
     "offset": 67400,
@@ -23999,7 +23999,7 @@
    "id": "row::54747",
    "en": "Nanako: Looks like the bowgun sword I invented",
    "ja": "ナナコ「あたしが発明したボウガンソードが",
-   "zh": "奈奈子「我发明的弩剑好像",
+   "zh": "奈奈子「我发明的弩枪剑好像",
    "meta": {
     "blob": 950,
     "offset": 2004,
@@ -27486,7 +27486,7 @@
    "id": "row::55351",
    "en": "Castle Parts Vendor: … we'll get some new parts in just a while…",
    "ja": "城パーツ屋「・・・むぅ　もう少しで新しいパーツが・・・」",
-   "zh": "城堡部件店老板「…新部件快到了…」",
+   "zh": "城堡零件商「…新部件快到了…」",
    "meta": {
     "blob": 955,
     "offset": 2428,
@@ -27497,7 +27497,7 @@
    "id": "row::55354",
    "en": "Castle Parts Vendor: It's the result of my long years of research!",
    "ja": "城パーツ屋「オレの長年の研究の成果だ！」",
-   "zh": "城堡部件商「这是我长年研究的成果！」",
+   "zh": "城堡零件商「这是我长年研究的成果！」",
    "meta": {
     "blob": 955,
     "offset": 2852,
@@ -27508,7 +27508,7 @@
    "id": "row::55359",
    "en": "Weaponsmith: The goods haven't arrived yet!",
    "ja": "武器屋「商品がまだ来ないんだぜ！」",
-   "zh": "武器店老板「货还没到呢！」",
+   "zh": "武器匠「货还没到呢！」",
    "meta": {
     "blob": 955,
     "offset": 4548,
@@ -27585,7 +27585,7 @@
    "id": "row::55382",
    "en": "Child: The weather changes really fast here, so take care, ok?",
    "ja": "こども「このあたりの天気はかわりやすいの　気をつけてね」　　　　",
-   "zh": "孩子「这附近天气变得很快，要小心哦。」",
+   "zh": "小孩「这附近天气变得很快，要小心哦。」",
    "meta": {
     "blob": 958,
     "offset": 1580,
@@ -27926,7 +27926,7 @@
    "id": "row::55472",
    "en": "Child: Maybe I should go see grandpa some time soon.",
    "ja": "こども「そのうちおじいちゃんに会いにいこうかな」",
-   "zh": "孩子「过阵子我去见爷爷吧。」",
+   "zh": "小孩「过阵子我去见爷爷吧。」",
    "meta": {
     "blob": 962,
     "offset": 2852,
@@ -27937,7 +27937,7 @@
    "id": "row::55477",
    "en": "Demon Man: Thanks!",
    "ja": "魔族の男「ありがとね！」",
-   "zh": "魔族男「谢啦！」",
+   "zh": "魔族男子「谢啦！」",
    "meta": {
     "blob": 963,
     "offset": 1156,
@@ -29367,7 +29367,7 @@
    "id": "row::55723",
    "en": "Shore Merman: Welcome?!",
    "ja": "陸魚人「ようこそー！」",
-   "zh": "陆鱼人「欢迎——！」",
+   "zh": "海岸人鱼「欢迎——！」",
    "meta": {
     "blob": 967,
     "offset": 1580,
@@ -29400,7 +29400,7 @@
    "id": "row::55730",
    "en": "Armorer: … Our armor is all sold out!",
    "ja": "防具屋「・・・ヨ　ヨロイは売り切れよ！」",
-   "zh": "防具店老板「…铠甲已经卖光啦！」",
+   "zh": "防具匠「…铠甲已经卖光啦！」",
    "meta": {
     "blob": 967,
     "offset": 3700,
@@ -29411,7 +29411,7 @@
    "id": "row::55735",
    "en": "Woman: This is the Temple of Time.",
    "ja": "おばちゃん「ここは時の神殿よー」",
-   "zh": "女人「这里就是时之神殿哦。」",
+   "zh": "老婆婆「这里就是时之神殿哦。」",
    "meta": {
     "blob": 969,
     "offset": 1156,
@@ -29928,7 +29928,7 @@
    "id": "row::55813",
    "en": "Oh yeah, this is that stupid dog that fell asleep when",
    "ja": "「あ～　ケルベロスの時にリィナちゃんをさらったのに",
-   "zh": "「啊～瑟伯勒斯那次莉娜被拐走，",
+   "zh": "「啊～刻耳柏洛斯那次莉娜被拐走，",
    "meta": {
     "blob": 970,
     "offset": 49524,
@@ -35483,7 +35483,7 @@
    "id": "row::56725",
    "en": "Ovalia: Evil Lords, thieves, they're all so gross～",
    "ja": "オヴァちゃん「魔王だのとうぞくだのイヤよね～」",
-   "zh": "奥瓦莉亚「魔王啊盗贼啊，真恶心～」",
+   "zh": "奥瓦利亚「魔王啊盗贼啊，真恶心～」",
    "meta": {
     "blob": 978,
     "offset": 2004,
@@ -35494,7 +35494,7 @@
    "id": "row::56727",
    "en": "Ovalia: What a ruckus, did something happen, I",
    "ja": "オヴァちゃん「さわがしいけど　何かあったのかしら～",
-   "zh": "奥瓦莉亚「好吵啊，是发生什么事了吗～",
+   "zh": "奥瓦利亚「好吵啊，是发生什么事了吗～",
    "meta": {
     "blob": 978,
     "offset": 2428,
@@ -35505,7 +35505,7 @@
    "id": "row::56729",
    "en": "Ovalia: Thank Heavens the Goddess Statue is back～",
    "ja": "オヴァちゃん「女神像が戻ってよかったわ～」",
-   "zh": "奥瓦莉亚「女神像回来了真是太好了～」",
+   "zh": "奥瓦利亚「女神像回来了真是太好了～」",
    "meta": {
     "blob": 978,
     "offset": 2852,
@@ -37177,7 +37177,7 @@
    "id": "row::57077",
    "en": "Clerk: You should buy something here!",
    "ja": "よろず屋「まずはうちの商品を買ってけよ！」",
-   "zh": "店员「你该在这儿买点东西！」",
+   "zh": "小贩「你该在这儿买点东西！」",
    "meta": {
     "blob": 983,
     "offset": 8364,
@@ -37397,7 +37397,7 @@
    "id": "row::57212",
    "en": "Wandering Musician: Parum pa pum pum～♪",
    "ja": "さすらいミュージシャン「ドンドカ　パフパフ～♪」",
-   "zh": "游荡乐手「咚咚嗒 噗噗♪」",
+   "zh": "游荡乐师「咚咚嗒 噗噗♪」",
    "meta": {
     "blob": 990,
     "offset": 3700,
@@ -38948,7 +38948,7 @@
    "id": "row::57663",
    "en": "Shorty: This place has 3 gatekeepers! Good luck,",
    "ja": "チビッコ「ここの門番はなんと３体！",
-   "zh": "矮子「这地方有3个门卫！加油，",
+   "zh": "小不点「这地方有3个门卫！加油，",
    "meta": {
     "blob": 1000,
     "offset": 2852,
@@ -38959,7 +38959,7 @@
    "id": "row::57671",
    "en": "Clerk: We sell Herbs and weapons!",
    "ja": "よろず屋「やくそうと武器の店だよーん！」",
-   "zh": "店员「我们卖草药和武器哦！」",
+   "zh": "小贩「我们卖草药和武器哦！」",
    "meta": {
     "blob": 1000,
     "offset": 5396,
@@ -38970,7 +38970,7 @@
    "id": "row::57685",
    "en": "Shieldsmith: If you can use a shield, you'll",
    "ja": "盾屋「盾を制するものは世界を制す！",
-   "zh": "铸盾匠「会用盾的人，",
+   "zh": "盾匠「会用盾的人，",
    "meta": {
     "blob": 1000,
     "offset": 8788,
@@ -39014,7 +39014,7 @@
    "id": "row::57703",
    "en": "Demoness: If you're looking for the spearman, he should be in the hole.",
    "ja": "魔族の女「槍士のおじいさんなら穴にいるはずです」",
-   "zh": "魔族女子「要找枪兵老爷爷，他应该在洞里。」",
+   "zh": "女魔族「要找枪兵老爷爷，他应该在洞里。」",
    "meta": {
     "blob": 1001,
     "offset": 2852,
@@ -39036,7 +39036,7 @@
    "id": "row::57709",
    "en": "Young Owner: Fishing rods are all sold",
    "ja": "こども店長「つりざお　売り切れちゃったのー",
-   "zh": "年轻店主「钓具全卖光了，",
+   "zh": "小店长「钓具全卖光了，",
    "meta": {
     "blob": 1001,
     "offset": 4972,
@@ -39047,7 +39047,7 @@
    "id": "row::57711",
    "en": "Young Owner: Fishing rods are",
    "ja": "こども店長「つりざお　にゅうかしたのー",
-   "zh": "年轻店主「钓具进货啦，",
+   "zh": "小店长「钓具进货啦，",
    "meta": {
     "blob": 1001,
     "offset": 5396,
@@ -39058,7 +39058,7 @@
    "id": "row::57713",
    "en": "Young Owner: Fishing rods are",
    "ja": "こども店長「つりざお　にゅうかしたのー",
-   "zh": "年轻店主「钓具进货啦，",
+   "zh": "小店长「钓具进货啦，",
    "meta": {
     "blob": 1001,
     "offset": 5820,
@@ -39069,7 +39069,7 @@
    "id": "row::57715",
    "en": "Young Owner: There's a fishing area to the southeast.",
    "ja": "こども店長「南東にツリ場があるの",
-   "zh": "年轻店主「东南边有个钓鱼点。",
+   "zh": "小店长「东南边有个钓鱼点。",
    "meta": {
     "blob": 1001,
     "offset": 6244,
@@ -42886,7 +42886,7 @@
    "id": "row::58963",
    "en": "Owner: Eat this and be healthy!",
    "ja": "あるじ「こいつを食べて元気になれ！」",
-   "zh": "店主「吃了它，养足精神！」",
+   "zh": "老板「吃了它，养足精神！」",
    "meta": {
     "blob": 1028,
     "offset": 1156,
@@ -43040,7 +43040,7 @@
    "id": "row::59003",
    "en": "Girl: It's the School festival! Whoo!",
    "ja": "女学生「学園祭だ！　わっしょい！」",
-   "zh": "女孩「是学院祭！喔！」",
+   "zh": "女学生「是学院祭！喔！」",
    "meta": {
     "blob": 1029,
     "offset": 3276,
@@ -43172,7 +43172,7 @@
    "id": "row::59034",
    "en": "Student: Our class is setting up a food stall.",
    "ja": "女学生「私たちのクラスは出店をやるのよ」",
-   "zh": "学生「我们班要摆摊了。」",
+   "zh": "女学生「我们班要摆摊了。」",
    "meta": {
     "blob": 1029,
     "offset": 10484,

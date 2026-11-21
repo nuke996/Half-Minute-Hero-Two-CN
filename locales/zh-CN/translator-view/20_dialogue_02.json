@@ -9149,7 +9149,7 @@
    "id": "row::10860",
    "en": "Girl: It's dangerous, but the cave to the northwest has treasure in it.",
    "ja": "女の子「あぶないけど北西のどうくつには宝箱があるわよ」",
-   "zh": "女孩「虽然凶险，但西北方的洞穴里有宝箱哦。」",
+   "zh": "小女孩「虽然凶险，但西北方的洞穴里有宝箱哦。」",
    "meta": {
     "blob": 182,
     "offset": 2428,
@@ -9204,7 +9204,7 @@
    "id": "row::10880",
    "en": "Herbalist: Wh… what are you wearing?",
    "ja": "やくそう屋「・・・な　なんだその服？」",
-   "zh": "草药师「你……你穿的什么玩意？」",
+   "zh": "草药商「你……你穿的什么玩意？」",
    "meta": {
     "blob": 184,
     "offset": 3700,
@@ -9413,7 +9413,7 @@
    "id": "row::11128",
    "en": "Young Owner: Do you need",
    "ja": "こども店長「やくそうはいらんか・・・",
-   "zh": "小店主「你需要",
+   "zh": "小店长「你需要",
    "meta": {
     "blob": 189,
     "offset": 3276,
@@ -9523,7 +9523,7 @@
    "id": "row::11168",
    "en": "Clerk: Welcome! Welcome!",
    "ja": "よろず屋「らっしゃいらっしゃい！」",
-   "zh": "店员「欢迎光临！欢迎光临！」",
+   "zh": "小贩「欢迎光临！欢迎光临！」",
    "meta": {
     "blob": 192,
     "offset": 5820,
@@ -9589,7 +9589,7 @@
    "id": "row::11205",
    "en": "Fiery Beastman: *sizzle* It's done!",
    "ja": "火の獣人「じゅ～じゅ～　やけた！」",
-   "zh": "火兽人「*滋滋*烤好了！」",
+   "zh": "火之兽人「*滋滋*烤好了！」",
    "meta": {
     "blob": 195,
     "offset": 2004,
@@ -9622,7 +9622,7 @@
    "id": "row::11211",
    "en": "Armorer: Handmade coats are all sold out!",
    "ja": "防具屋「自家製のコートは売り切れだー」",
-   "zh": "防具商「手工外套全卖光啦！」",
+   "zh": "防具匠「手工外套全卖光啦！」",
    "meta": {
     "blob": 195,
     "offset": 4124,
@@ -11701,7 +11701,7 @@
    "id": "row::11549",
    "en": "Youth: There's a really amazing witch around",
    "ja": "青年「ここにはスゲー魔女さまがいるんだぜ！",
-   "zh": "年轻人「这有位超厉害的魔女",
+   "zh": "青年「这有位超厉害的魔女",
    "meta": {
     "blob": 199,
     "offset": 1580,
@@ -11877,7 +11877,7 @@
    "id": "row::11624",
    "en": "Man On Date: Okay! Time to show her how good I am at this!",
    "ja": "カップル男「よし！　彼女に勝負強いトコロを見せるんだ！」",
-   "zh": "约会男「好！让她看看我有多厉害！」",
+   "zh": "男友「好！让她看看我有多厉害！」",
    "meta": {
     "blob": 203,
     "offset": 1580,
@@ -11888,7 +11888,7 @@
    "id": "row::11626",
    "en": "Woman On Date: I'm with him! ▼",
    "ja": "カップル女「彼とデート中なの▼」",
-   "zh": "约会女「我在跟他约会呢！▼」",
+   "zh": "女友「我在跟他约会呢！▼」",
    "meta": {
     "blob": 203,
     "offset": 2004,
@@ -11987,7 +11987,7 @@
    "id": "row::11677",
    "en": "Casino Gramps: … Ho ho ho! Hmm,",
    "ja": "カジノジジイ「・・・ふぉふぉふぉ！",
-   "zh": "赌场老爷爷「…吼吼吼！嗯，",
+   "zh": "赌场老头「…吼吼吼！嗯，",
    "meta": {
     "blob": 204,
     "offset": 2004,
@@ -14792,7 +14792,7 @@
    "id": "row::12162",
    "en": "Peddler: Buy something, ok!",
    "ja": "よろず屋「買ってってよ！」",
-   "zh": "摊贩「买点东西吧！」",
+   "zh": "小贩「买点东西吧！」",
    "meta": {
     "blob": 209,
     "offset": 4548,
@@ -14836,7 +14836,7 @@
    "id": "row::12179",
    "en": "Clerk: How about some Herbs for your work friends?",
    "ja": "よろず屋「バイトの友にやくそうはいかが？」",
-   "zh": "店员「给同事朋友买点草药？」",
+   "zh": "小贩「给同事朋友买点草药？」",
    "meta": {
     "blob": 210,
     "offset": 3276,
@@ -16277,7 +16277,7 @@
    "id": "row::12438",
    "en": "Demon Man: Ramen! ♪ Ramen～♪",
    "ja": "魔族の男「ラーメン♪ラーメン～♪」",
-   "zh": "魔族男「拉面！拉面♪」",
+   "zh": "魔族男子「拉面！拉面♪」",
    "meta": {
     "blob": 213,
     "offset": 1580,
@@ -19984,7 +19984,7 @@
    "id": "row::13176",
    "en": "Zochi: This is my prophecy!",
    "ja": "ゾウチクン「オレは予言する！",
-   "zh": "索西「这是我的预言！",
+   "zh": "卓奇「这是我的预言！",
    "meta": {
     "blob": 227,
     "offset": 3276,
@@ -20017,7 +20017,7 @@
    "id": "row::13185",
    "en": "Kid: Oh! A robot! Cool!",
    "ja": "チビッコ「おー！　ロボットだ！　カッケー！」",
-   "zh": "男孩「哦！机器人！好帅！」",
+   "zh": "小不点「哦！机器人！好帅！」",
    "meta": {
     "blob": 228,
     "offset": 1156,
@@ -20039,7 +20039,7 @@
    "id": "row::13190",
    "en": "Kid: Robot! Yay! Robot!",
    "ja": "チビッコ「ロボー！　ワーイワーイ！　ロボー！」",
-   "zh": "男孩「机器人！哇耶！机器人！」",
+   "zh": "小不点「机器人！哇耶！机器人！」",
    "meta": {
     "blob": 228,
     "offset": 2004,
@@ -22129,7 +22129,7 @@
    "id": "row::13512",
    "en": "With this bowgun sword, that frog shall…",
    "ja": "　このボウガンソードで　あんなカエル・・・」",
-   "zh": "　用这把弩炮剑，那只青蛙…」",
+   "zh": "　用这把弩枪剑，那只青蛙…」",
    "meta": {
     "blob": 237,
     "offset": 35864,
@@ -26243,7 +26243,7 @@
    "id": "row::14251",
    "en": "My bowgun sword…",
    "ja": "「わたくしのボウガンソードにも・・・」",
-   "zh": "「我的弩炮剑也…」",
+   "zh": "「我的弩枪剑也…」",
    "meta": {
     "blob": 260,
     "offset": 46312,
@@ -26595,7 +26595,7 @@
    "id": "row::14307",
    "en": "Old Man: Treason～",
    "ja": "おんじい「はんぎゃくじゃ～」",
-   "zh": "大叔「叛国罪～」",
+   "zh": "老人「叛国罪～」",
    "meta": {
     "blob": 261,
     "offset": 2004,
@@ -27079,7 +27079,7 @@
    "id": "row::14493",
    "en": "Child: Huh? There were more mountains 30 seconds ago, right?",
    "ja": "こども「あれー？　30秒前はもう少し山あったよね？」　　　　",
-   "zh": "孩子「咦？30秒前山还更多吧？」",
+   "zh": "小孩「咦？30秒前山还更多吧？」",
    "meta": {
     "blob": 270,
     "offset": 1580,
@@ -27101,7 +27101,7 @@
    "id": "row::14498",
    "en": "Old Man: There's nothin' but an imperial lab up north.",
    "ja": "老人「北には帝国の研究所くらいしかないのう",
-   "zh": "大叔「北边除了帝国研究所什么都没有。",
+   "zh": "老人「北边除了帝国研究所什么都没有。",
    "meta": {
     "blob": 270,
     "offset": 2428,
@@ -27134,7 +27134,7 @@
    "id": "row::14515",
    "en": "Old Man: What… will happen to us.",
    "ja": "おじいさん「いったい・・・どうなってしまうんじゃ」",
-   "zh": "老爷爷「我们…究竟会怎样。」",
+   "zh": "老人「我们…究竟会怎样。」",
    "meta": {
     "blob": 272,
     "offset": 2004,
@@ -27233,7 +27233,7 @@
    "id": "row::14613",
    "en": "Demon Man: Ramen! ♪ Ramen～♪",
    "ja": "魔族の男「ラーメン♪ラーメン～♪」",
-   "zh": "魔族男「拉面！拉面♪」",
+   "zh": "魔族男子「拉面！拉面♪」",
    "meta": {
     "blob": 281,
     "offset": 1580,
@@ -28267,7 +28267,7 @@
    "id": "row::14771",
    "en": "With this bowgun sword.",
    "ja": "「このボウガンソードで",
-   "zh": "「用这把弩剑，",
+   "zh": "「用这把弩枪剑，",
    "meta": {
     "blob": 282,
     "offset": 61788,
@@ -30467,7 +30467,7 @@
    "id": "row::15102",
    "en": "Armorer: What'ya think? Can't you just feel the quality?",
    "ja": "防具屋「どうだい？　そざいの良さが出てるだろ？」",
-   "zh": "铠甲商「怎么样？能看出材质有多好吧？」",
+   "zh": "防具匠「怎么样？能看出材质有多好吧？」",
    "meta": {
     "blob": 284,
     "offset": 4548,
@@ -31347,7 +31347,7 @@
    "id": "row::15587",
    "en": "Suspicious Woman: Beyond here is a power spot where you can",
    "ja": "妖しい女「この先にイニシエの悪魔と",
-   "zh": "可疑的女人「前面有个能量点，你可以",
+   "zh": "可疑女人「前面有个能量点，你可以",
    "meta": {
     "blob": 292,
     "offset": 2428,
@@ -31435,7 +31435,7 @@
    "id": "row::15628",
    "en": "Weaponsmith: Do you need weapons…",
    "ja": "武器屋「武器はいらんか・・・」",
-   "zh": "武器商「你需要武器吗……」",
+   "zh": "武器匠「你需要武器吗……」",
    "meta": {
     "blob": 295,
     "offset": 4972,
@@ -32689,7 +32689,7 @@
    "id": "row::15818",
    "en": "Ah! Geezer! Wait up!!",
    "ja": "「あっ！　おじさま待って！！」",
-   "zh": "「啊！大叔大人！等等我！！」",
+   "zh": "「啊！大叔！等等我！！」",
    "meta": {
     "blob": 298,
     "offset": 62372,
@@ -32810,7 +32810,7 @@
    "id": "row::15834",
    "en": "… Who could that geezer be…",
    "ja": "「・・・おじさまは一体何者なんでしょう・・・」",
-   "zh": "「……那位大叔大人究竟是谁呢……」",
+   "zh": "「……那位大叔究竟是谁呢……」",
    "meta": {
     "blob": 298,
     "offset": 74052,
@@ -33272,7 +33272,7 @@
    "id": "row::15914",
    "en": "Homebody: … zzz… zzz…",
    "ja": "家の人「・・・ぐーぐー」",
-   "zh": "屋里的人「……呼噜……呼噜……」",
+   "zh": "家里人「……呼噜……呼噜……」",
    "meta": {
     "blob": 299,
     "offset": 4548,
@@ -36946,7 +36946,7 @@
    "id": "row::16515",
    "en": "Man: You might need to use a little strength,",
    "ja": "ニイちゃん「ちょいと力はいるけどココの仕事は",
-   "zh": "男人「可能得花点力气，",
+   "zh": "小哥「可能得花点力气，",
    "meta": {
     "blob": 308,
     "offset": 2004,
@@ -37155,7 +37155,7 @@
    "id": "row::16637",
    "en": "Weaponsmith: Welcome～♪",
    "ja": "武器屋「いらっしゃ～い♪」",
-   "zh": "武器商「欢迎光临～♪」",
+   "zh": "武器匠「欢迎光临～♪」",
    "meta": {
     "blob": 315,
     "offset": 2852,
@@ -39575,7 +39575,7 @@
    "id": "row::17349",
    "en": "Child: There's a strange hole in the south.",
    "ja": "こども「南にね　ヘンな穴があるよー」　　　　",
-   "zh": "孩子：「南边有个奇怪的洞哟。」",
+   "zh": "小孩：「南边有个奇怪的洞哟。」",
    "meta": {
     "blob": 322,
     "offset": 2004,
@@ -39597,7 +39597,7 @@
    "id": "row::17354",
    "en": "Old Man: If you go through the east cave, you'll",
    "ja": "老人「東にあるどうくつを通って行けば",
-   "zh": "大叔：「若穿过东边的洞穴，」",
+   "zh": "老人：「若穿过东边的洞穴，」",
    "meta": {
     "blob": 322,
     "offset": 2852,
@@ -39608,7 +39608,7 @@
    "id": "row::17356",
    "en": "Old Man: If you cross the bridge north of castle",
    "ja": "老人「城の北の橋を渡って西に行くと",
-   "zh": "大叔：「若过了城堡北边的桥，」",
+   "zh": "老人：「若过了城堡北边的桥，」",
    "meta": {
     "blob": 322,
     "offset": 3276,
@@ -39663,7 +39663,7 @@
    "id": "row::17376",
    "en": "Herbalist: An Herb in time saves, uh… nine.",
    "ja": "やくそう屋「ころばぬ先のやくそう」",
-   "zh": "草药师：「及时备好草药，能省……九分麻烦。」",
+   "zh": "草药商：「及时备好草药，能省……九分麻烦。」",
    "meta": {
     "blob": 323,
     "offset": 3276,
@@ -39916,7 +39916,7 @@
    "id": "row::17480",
    "en": "Weaponsmith: With our weapons, even a God will be a pushover!",
    "ja": "武器屋「うちの武器を買えば神なんてイチコロさね！」",
-   "zh": "武器商：「买了我们的武器，神也不过是小菜一碟！」",
+   "zh": "武器匠：「买了我们的武器，神也不过是小菜一碟！」",
    "meta": {
     "blob": 325,
     "offset": 3700,
@@ -41962,7 +41962,7 @@
    "id": "row::18051",
    "en": "Shore Mersisters: All together now! <RGN_NAME__>～ ▼ We love you～ ▼",
    "ja": "陸魚人シスターズ「せ～の！<RGN_NAME__>さま～▼きゃ～▼」",
-   "zh": "「岸鱼人姐妹：预备～！<RGN_NAME__>大人～▼好羞～▼」",
+   "zh": "「海岸人鱼姐妹：预备～！<RGN_NAME__>大人～▼好羞～▼」",
    "meta": {
     "blob": 330,
     "offset": 3276,
@@ -41973,7 +41973,7 @@
    "id": "row::18053",
    "en": "Shore Mersisters: All together now! <RGN_NAME__>～ ▼ We love you～ ▼",
    "ja": "陸魚人シスターズ「せ～の！<RGN_NAME__>さま～▼きゃ～▼」",
-   "zh": "「岸鱼人姐妹：预备～！<RGN_NAME__>大人～▼好羞～▼」",
+   "zh": "「海岸人鱼姐妹：预备～！<RGN_NAME__>大人～▼好羞～▼」",
    "meta": {
     "blob": 330,
     "offset": 3700,
@@ -41984,7 +41984,7 @@
    "id": "row::18058",
    "en": "Herbalist: Welcome.",
    "ja": "やくそう屋「いらっしゃい」",
-   "zh": "「草药师：欢迎。」",
+   "zh": "「草药商：欢迎。」",
    "meta": {
     "blob": 330,
     "offset": 5396,

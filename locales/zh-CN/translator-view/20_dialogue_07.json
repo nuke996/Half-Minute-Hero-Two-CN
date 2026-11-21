@@ -943,7 +943,7 @@
    "id": "row::59449",
    "en": "The <emergency items> for times like this",
    "ja": "「こんな時のための<ヒジョウ用アイテム>も",
-   "zh": "「这种时候用的<应急物品>",
+   "zh": "「这种时候用的<应急道具>",
    "meta": {
     "blob": 1040,
     "offset": 22368,
@@ -1328,7 +1328,7 @@
    "id": "row::59511",
    "en": "Woman: The Evil Lord's Castle is right in the middle.",
    "ja": "おばちゃん「まんなかに魔王城があるわよぉ",
-   "zh": "大婶「魔王城就在正中央哟。",
+   "zh": "老婆婆「魔王城就在正中央哟。",
    "meta": {
     "blob": 1041,
     "offset": 2004,
@@ -1889,7 +1889,7 @@
    "id": "row::59645",
    "en": "Owner: … You dunnit now!",
    "ja": "主人「・・・やっちまったか」",
-   "zh": "主人「… 你这下捅娄子了！」",
+   "zh": "店主「… 你这下捅娄子了！」",
    "meta": {
     "blob": 1044,
     "offset": 2004,
@@ -3759,7 +3759,7 @@
    "id": "row::59951",
    "en": "Herb Girl: How about Herbs taken from the",
    "ja": "やくそう少女「ぬまでとったやくそうはいかが？",
-   "zh": "草药小姐「泥沼采的草药如何",
+   "zh": "草药女孩「泥沼采的草药如何",
    "meta": {
     "blob": 1047,
     "offset": 2428,
@@ -3803,7 +3803,7 @@
    "id": "row::59961",
    "en": "Owner: If you're going to the swamps, you'll need good shoes!",
    "ja": "主人「ぬま地を行くなら良いクツが必要だぜ！」",
-   "zh": "主人「要去泥沼地，好鞋少不了！」",
+   "zh": "店主「要去泥沼地，好鞋少不了！」",
    "meta": {
     "blob": 1047,
     "offset": 5396,
@@ -6850,7 +6850,7 @@
    "id": "row::60446",
    "en": "Owner: Go to the <castle> to beat the Evil Lord.",
    "ja": "主人「魔王をたおすなら　まず<お城>をめざすといいよ」",
-   "zh": "店长「要打倒魔王，先去<城堡>吧。」",
+   "zh": "店主「要打倒魔王，先去<城堡>吧。」",
    "meta": {
     "blob": 1053,
     "offset": 2428,
@@ -6872,7 +6872,7 @@
    "id": "row::60456",
    "en": "Weaponsmith: Buy our weapons! Your trip will be more fun!",
    "ja": "武器屋「うちの武器を買えば　きっと旅が楽になるぜ！」",
-   "zh": "武器店「买我们的武器吧！旅途一定会更开心！」",
+   "zh": "武器匠「买我们的武器吧！旅途一定会更开心！」",
    "meta": {
     "blob": 1053,
     "offset": 4124,

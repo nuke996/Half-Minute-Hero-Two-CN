@@ -533,8 +533,12 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
   `validate_build` error 0 / warning 45。见 `docs/TODO.md` T-05b、`dist/Z25-mech-names/`。
 - **Z26 敌技显示名（2026-11-15）：** 又补 47 个 `stride288 pos28` 名字槽（44 个不同名字），
   含截图中的 `Couple's World`；全部 `+4=FFFFFFFF`、无名字哈希操作数，相对 Z25 操作数 0 变化。
-  `Hellfire`（7 副本，疑似机制/受保护）、`Venus Seven`（已有译文，副本未同步）、
-  `Dogry`/`Reusable`（未定性）未纳入上屏。见 `docs/TODO.md` T-05c、`dist/Z26-enemy-skills/`。
+  **2026-11-21 复核定性：** `Hellfire`（7 个二进制副本、无操作数、译表 0 命中，按受保护机制保留）、
+  `Dogry`/`Reusable`（非显示技能名/能力名，保留原文）、`Venus Seven`（显示副本均为「七美神」，
+  EN 出现处是源键与首次括注）均登记为例外，不再列入待办。见 `docs/TODO.md` T-10b、`dist/Z26-enemy-skills/`。
+- **名字容量回退（2026-11-21）：** `アヴァ`/`スペルヴィア` 的 EN 槽位只有 3/7 字节，
+  统一用「艾」「斯佩维」；写「艾娃」「斯佩尔维亚」会使部分副本无法写入并触发
+  `validate_build` 名字一致性 error。见 `docs/PACKAGE_LEDGER.md` §5、`术语表.md` §13。
 （`b34` 关卡/章节标题已于 2026-11-06 复核：222 条记录中 118 条名称已改为中文，
 Q16 rec49/142 按守卫保留，不再列入待办。）
 **相关文件：** `docs/FINAL_QA_PLAN.md` §2.2、`tools/build_cn.py`（`display_release_hit` / `DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/menu_ok.json`。

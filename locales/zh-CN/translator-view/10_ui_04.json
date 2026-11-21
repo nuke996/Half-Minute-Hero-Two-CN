@@ -1438,7 +1438,7 @@
    "id": "row::19440",
    "en": "Double-bladed bowgun sword. _Does it need the back blade?",
    "ja": "二枚刃のボウガンソード　_後ろの刃は意味がない？",
-   "zh": "双刃弩炮剑。_后面的刃没意思？",
+   "zh": "双刃弩枪剑。_后面的刃没意思？",
    "meta": {
     "blob": 357,
     "offset": 14264,
@@ -1504,7 +1504,7 @@
    "id": "row::19446",
    "en": "Axe-like bowgun sword, so _should it be a bowgun axe?",
    "ja": "オノっぽいボウガンソード　_じゃあボウガンアックス？",
-   "zh": "像斧的弩炮剑，_那该叫弩炮斧？",
+   "zh": "像斧的弩枪剑，_那该叫弩炮斧？",
    "meta": {
     "blob": 357,
     "offset": 14800,
@@ -1537,7 +1537,7 @@
    "id": "row::19449",
    "en": "Bowgun sword with a forked _end to eat pasta with.",
    "ja": "さきわれボウガンソード　_パスタをからめられる",
-   "zh": "分叉的弩炮剑，_能卷意大利面。",
+   "zh": "分叉的弩枪剑，_能卷意大利面。",
    "meta": {
     "blob": 357,
     "offset": 15068,
@@ -1570,7 +1570,7 @@
    "id": "row::19452",
    "en": "Bowgun sword that's not to _be wasted as a box opener.",
    "ja": "けっしてカッターナイフ_ではないボウガンソード",
-   "zh": "绝不该当美工刀_用的弩炮剑。",
+   "zh": "绝不该当美工刀_用的弩枪剑。",
    "meta": {
     "blob": 357,
     "offset": 15336,
@@ -1603,7 +1603,7 @@
    "id": "row::19455",
    "en": "A bowgun sword decorated _with cloth. Very chic.",
    "ja": "かざりぬののついた_おしゃれボウガンソード",
-   "zh": "用布装饰的_时髦弩炮剑。",
+   "zh": "用布装饰的_时髦弩枪剑。",
    "meta": {
     "blob": 357,
     "offset": 15604,
@@ -1636,7 +1636,7 @@
    "id": "row::19458",
    "en": "A spear-like bowgun sword. _Don't call it a bowgun spear.",
    "ja": "ヤリっぽいボウガンソード　_ボウガンスピアじゃないよ",
-   "zh": "像矛的弩炮剑。_别叫它弩炮矛。",
+   "zh": "像矛的弩枪剑。_别叫它弩炮矛。",
    "meta": {
     "blob": 357,
     "offset": 15872,
@@ -1691,7 +1691,7 @@
    "id": "row::19463",
    "en": "An elaborate bowgun sword. _Cute name.",
    "ja": "こった作りのボウガンソード　_名前がカワイイ",
-   "zh": "精制的弩炮剑。_名字可爱。",
+   "zh": "精制的弩枪剑。_名字可爱。",
    "meta": {
     "blob": 357,
     "offset": 16408,
@@ -1724,7 +1724,7 @@
    "id": "row::19466",
    "en": "A bowgun sword with a blade _made of energy.",
    "ja": "エネルギーのソード化に_成功したボウガンソード",
-   "zh": "刃由_能量构成的弩炮剑。",
+   "zh": "刃由_能量构成的弩枪剑。",
    "meta": {
     "blob": 357,
     "offset": 16676,
@@ -1845,7 +1845,7 @@
    "id": "row::19477",
    "en": "Its overdone decoration _is proof it's the best.",
    "ja": "ゴテゴテしてるのは_最強のボウガンソードだから",
-   "zh": "过度装饰_正说明它是最强弩炮剑。",
+   "zh": "过度装饰_正说明它是最强弩枪剑。",
    "meta": {
     "blob": 357,
     "offset": 17748,
@@ -6014,7 +6014,7 @@
    "id": "row::19856",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 357,
     "offset": 67020,
@@ -8302,7 +8302,7 @@
    "id": "row::20064",
    "en": "Musketeer",
    "ja": "銃士",
-   "zh": "射手",
+   "zh": "火枪手",
    "meta": {
     "blob": 357,
     "offset": 130804,
@@ -8445,7 +8445,7 @@
    "id": "row::20077",
    "en": "Gold Pick",
    "ja": "ゴールドピック",
-   "zh": "黄金采掘",
+   "zh": "黄金镐",
    "meta": {
     "blob": 357,
     "offset": 134288,
@@ -9105,7 +9105,7 @@
    "id": "row::20137",
    "en": "Gold Rush _+ Wing Blade +1.",
    "ja": "ゴールドラッシュ_＋ウィングブレード＋１",
-   "zh": "淘金热_+飞翼刃+1。",
+   "zh": "黄金冲击_+飞翼刃+1。",
    "meta": {
     "blob": 357,
     "offset": 142100,
@@ -9171,7 +9171,7 @@
    "id": "row::20143",
    "en": "Gamma Plus",
    "ja": "ガンマ改",
-   "zh": "伽马改",
+   "zh": "伽玛改",
    "meta": {
     "blob": 357,
     "offset": 142596,
@@ -9182,7 +9182,7 @@
    "id": "row::20144",
    "en": "Gamma _+ Silver Hammer.",
    "ja": "ガンマ_＋シルバーハンマー",
-   "zh": "伽马_+银锤。",
+   "zh": "伽玛_+银锤。",
    "meta": {
     "blob": 357,
     "offset": 142636,
@@ -9281,7 +9281,7 @@
    "id": "row::20153",
    "en": "Omicron _+ God Eater.",
    "ja": "オミクロン_＋ゴッドイーター",
-   "zh": "奥密克戎_+噬神者。",
+   "zh": "奥米克戎_+噬神者。",
    "meta": {
     "blob": 357,
     "offset": 143440,
@@ -9347,7 +9347,7 @@
    "id": "row::20159",
    "en": "Omega _+ Gold Rush +1.",
    "ja": "オメガ_＋ゴールドラッシュ＋１",
-   "zh": "欧米伽_+淘金热+1。",
+   "zh": "欧米伽_+黄金冲击+1。",
    "meta": {
     "blob": 357,
     "offset": 143976,
@@ -9457,7 +9457,7 @@
    "id": "row::20169",
    "en": "Sage's Staff _+ Gamma Plus.",
    "ja": "せんにんのつえ_＋ガンマ改",
-   "zh": "贤者之杖_+伽马改。",
+   "zh": "贤者之杖_+伽玛改。",
    "meta": {
     "blob": 357,
     "offset": 144780,
@@ -9853,7 +9853,7 @@
    "id": "row::20205",
    "en": "Skull Bone _+ Epsilon.",
    "ja": "スカルボーン_＋イプシロン",
-   "zh": "头骨_+伊普西隆。",
+   "zh": "头骨_+埃普西隆。",
    "meta": {
     "blob": 357,
     "offset": 147728,
@@ -11030,7 +11030,7 @@
    "id": "row::20313",
    "en": "╂Select　　　　○Confirm　　　　　×Close",
    "ja": "╂選択　　　　　○決定　　　　　×閉じる",
-   "zh": "╂选择　　　　○确认　　　　　×关上",
+   "zh": "╂选择　　　　○确定　　　　　×关上",
    "meta": {
     "blob": 358,
     "offset": 68896,
@@ -11558,7 +11558,7 @@
    "id": "row::20361",
    "en": "╋Selection　　○Confirm　　　△Remove　　　×Return",
    "ja": "╋選択　　　○決定　　　△外す　　　×戻る",
-   "zh": "╋选择　　○确认　　　△移除　　　×返回",
+   "zh": "╋选择　　○确定　　　△移除　　　×返回",
    "meta": {
     "blob": 358,
     "offset": 114816,
@@ -11624,7 +11624,7 @@
    "id": "row::20367",
    "en": "╋Selection　　　　○Confirm　　　　　×Close",
    "ja": "╋選択　　　　　○決定　　　　　×閉じる",
-   "zh": "╋选择　　　　○确认　　　　　×关上",
+   "zh": "╋选择　　　　○确定　　　　　×关上",
    "meta": {
     "blob": 358,
     "offset": 127360,
@@ -11646,7 +11646,7 @@
    "id": "row::20369",
    "en": "╋Selection　　　　○Confirm　　　　　×Close",
    "ja": "╋選択　　　　　○決定　　　　　×閉じる",
-   "zh": "╋选择　　　　○确认　　　　　×关上",
+   "zh": "╋选择　　　　○确定　　　　　×关上",
    "meta": {
     "blob": 358,
     "offset": 152448,
@@ -11701,7 +11701,7 @@
    "id": "row::20374",
    "en": "○ Confirm",
    "ja": "○　決定",
-   "zh": "○ 确认",
+   "zh": "○ 确定",
    "meta": {
     "blob": 358,
     "offset": 163648,
@@ -12031,7 +12031,7 @@
    "id": "row::20404",
    "en": "Change Class",
    "ja": "クラスチェンジ",
-   "zh": "职业变更",
+   "zh": "转职",
    "meta": {
     "blob": 358,
     "offset": 182464,
@@ -12493,7 +12493,7 @@
    "id": "row::20446",
    "en": "╋Select　　　　○Confirm　　　　　×Return",
    "ja": "╋選択　　　　　○決定　　　　　×戻る",
-   "zh": "╋选择　　　　○确认　　　　　×返回",
+   "zh": "╋选择　　　　○确定　　　　　×返回",
    "meta": {
     "blob": 358,
     "offset": 209344,
@@ -16112,7 +16112,7 @@
    "id": "row::21234",
    "en": "Class Change",
    "ja": "クラスチェンジ",
-   "zh": "职业变更",
+   "zh": "转职",
    "meta": {
     "blob": 370,
     "offset": 3924,
@@ -34251,7 +34251,7 @@
    "id": "row::23779",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 408,
     "offset": 123372,
@@ -34273,7 +34273,7 @@
    "id": "row::23784",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 408,
     "offset": 124236,
@@ -34746,7 +34746,7 @@
    "id": "row::23860",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 412,
     "offset": 34860,
@@ -38860,7 +38860,7 @@
    "id": "row::60724",
    "en": "╂Select　○Confirm　×Quit",
    "ja": "╂選択　○決定　×終了",
-   "zh": "╂选择　○确认　×结束",
+   "zh": "╂选择　○确定　×结束",
    "meta": {
     "blob": 391,
     "offset": 16688,

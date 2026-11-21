@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3615,
+ "_count": 3616,
  "entries": [
   {
    "id": "row::6076",
@@ -206,7 +206,7 @@
    "id": "row::6100",
    "en": "Musketeer",
    "ja": "銃士",
-   "zh": "射手",
+   "zh": "火枪手",
    "meta": {
     "blob": 128,
     "offset": 656,
@@ -349,7 +349,7 @@
    "id": "row::6113",
    "en": "Advanced Musketeer class.",
    "ja": "銃士の上級クラス",
-   "zh": "射手的进阶职业。",
+   "zh": "火枪手的进阶职业。",
    "meta": {
     "blob": 128,
     "offset": 2008,
@@ -2923,7 +2923,7 @@
    "id": "row::6667",
    "en": "Gold Pick",
    "ja": "ゴールドピック",
-   "zh": "黄金采掘",
+   "zh": "黄金镐",
    "meta": {
     "blob": 136,
     "offset": 1104,
@@ -7191,7 +7191,7 @@
    "id": "row::7332",
    "en": "Double-bladed bowgun sword. _Does it need the back blade?",
    "ja": "二枚刃のボウガンソード　_後ろの刃は意味がない？",
-   "zh": "双刃弩炮剑。_后面的刃没意思？",
+   "zh": "双刃弩枪剑。_后面的刃没意思？",
    "meta": {
     "blob": 147,
     "offset": 14264,
@@ -7257,7 +7257,7 @@
    "id": "row::7338",
    "en": "Axe-like bowgun sword, so _should it be a bowgun axe?",
    "ja": "オノっぽいボウガンソード　_じゃあボウガンアックス？",
-   "zh": "像斧的弩炮剑，_那该叫弩炮斧？",
+   "zh": "像斧的弩枪剑，_那该叫弩炮斧？",
    "meta": {
     "blob": 147,
     "offset": 14800,
@@ -7290,7 +7290,7 @@
    "id": "row::7341",
    "en": "Bowgun sword with a forked _end to eat pasta with.",
    "ja": "さきわれボウガンソード　_パスタをからめられる",
-   "zh": "分叉的弩炮剑，_能卷意大利面。",
+   "zh": "分叉的弩枪剑，_能卷意大利面。",
    "meta": {
     "blob": 147,
     "offset": 15068,
@@ -7323,7 +7323,7 @@
    "id": "row::7344",
    "en": "Bowgun sword that's not to _be wasted as a box opener.",
    "ja": "けっしてカッターナイフ_ではないボウガンソード",
-   "zh": "绝不该当美工刀_用的弩炮剑。",
+   "zh": "绝不该当美工刀_用的弩枪剑。",
    "meta": {
     "blob": 147,
     "offset": 15336,
@@ -7356,7 +7356,7 @@
    "id": "row::7347",
    "en": "A bowgun sword decorated _with cloth. Very chic.",
    "ja": "かざりぬののついた_おしゃれボウガンソード",
-   "zh": "用布装饰的_时髦弩炮剑。",
+   "zh": "用布装饰的_时髦弩枪剑。",
    "meta": {
     "blob": 147,
     "offset": 15604,
@@ -7389,7 +7389,7 @@
    "id": "row::7350",
    "en": "A spear-like bowgun sword. _Don't call it a bowgun spear.",
    "ja": "ヤリっぽいボウガンソード　_ボウガンスピアじゃないよ",
-   "zh": "像矛的弩炮剑。_别叫它弩炮矛。",
+   "zh": "像矛的弩枪剑。_别叫它弩炮矛。",
    "meta": {
     "blob": 147,
     "offset": 15872,
@@ -7444,7 +7444,7 @@
    "id": "row::7355",
    "en": "An elaborate bowgun sword. _Cute name.",
    "ja": "こった作りのボウガンソード　_名前がカワイイ",
-   "zh": "精制的弩炮剑。_名字可爱。",
+   "zh": "精制的弩枪剑。_名字可爱。",
    "meta": {
     "blob": 147,
     "offset": 16408,
@@ -7477,7 +7477,7 @@
    "id": "row::7358",
    "en": "A bowgun sword with a blade _made of energy.",
    "ja": "エネルギーのソード化に_成功したボウガンソード",
-   "zh": "刃由_能量构成的弩炮剑。",
+   "zh": "刃由_能量构成的弩枪剑。",
    "meta": {
     "blob": 147,
     "offset": 16676,
@@ -7598,7 +7598,7 @@
    "id": "row::7369",
    "en": "Its overdone decoration _is proof it's the best.",
    "ja": "ゴテゴテしてるのは_最強のボウガンソードだから",
-   "zh": "过度装饰_正说明它是最强弩炮剑。",
+   "zh": "过度装饰_正说明它是最强弩枪剑。",
    "meta": {
     "blob": 147,
     "offset": 17748,
@@ -11723,7 +11723,7 @@
    "id": "row::7744",
    "en": "Geezer",
    "ja": "おじさま",
-   "zh": "大叔大人",
+   "zh": "大叔",
    "meta": {
     "blob": 147,
     "offset": 67020,
@@ -13362,7 +13362,7 @@
    "id": "row::7893",
    "en": "Musketeer",
    "ja": "銃士",
-   "zh": "射手",
+   "zh": "火枪手",
    "meta": {
     "blob": 147,
     "offset": 114456,
@@ -13505,7 +13505,7 @@
    "id": "row::7906",
    "en": "Gold Pick",
    "ja": "ゴールドピック",
-   "zh": "黄金采掘",
+   "zh": "黄金镐",
    "meta": {
     "blob": 147,
     "offset": 117940,
@@ -14165,7 +14165,7 @@
    "id": "row::7966",
    "en": "Gold Rush _+ Wing Blade +1.",
    "ja": "ゴールドラッシュ_＋ウィングブレード＋１",
-   "zh": "淘金热_+飞翼刃+1。",
+   "zh": "黄金冲击_+飞翼刃+1。",
    "meta": {
     "blob": 147,
     "offset": 125752,
@@ -14231,7 +14231,7 @@
    "id": "row::7972",
    "en": "Gamma Plus",
    "ja": "ガンマ改",
-   "zh": "伽马改",
+   "zh": "伽玛改",
    "meta": {
     "blob": 147,
     "offset": 126248,
@@ -14242,7 +14242,7 @@
    "id": "row::7973",
    "en": "Gamma _+ Silver Hammer.",
    "ja": "ガンマ_＋シルバーハンマー",
-   "zh": "伽马_+银锤。",
+   "zh": "伽玛_+银锤。",
    "meta": {
     "blob": 147,
     "offset": 126288,
@@ -14341,7 +14341,7 @@
    "id": "row::7982",
    "en": "Omicron _+ God Eater.",
    "ja": "オミクロン_＋ゴッドイーター",
-   "zh": "奥密克戎_+噬神者。",
+   "zh": "奥米克戎_+噬神者。",
    "meta": {
     "blob": 147,
     "offset": 127092,
@@ -14407,7 +14407,7 @@
    "id": "row::7988",
    "en": "Omega _+ Gold Rush +1.",
    "ja": "オメガ_＋ゴールドラッシュ＋１",
-   "zh": "欧米伽_+淘金热+1。",
+   "zh": "欧米伽_+黄金冲击+1。",
    "meta": {
     "blob": 147,
     "offset": 127628,
@@ -14517,7 +14517,7 @@
    "id": "row::7998",
    "en": "Sage's Staff _+ Gamma Plus.",
    "ja": "せんにんのつえ_＋ガンマ改",
-   "zh": "贤者之杖_+伽马改。",
+   "zh": "贤者之杖_+伽玛改。",
    "meta": {
     "blob": 147,
     "offset": 128432,
@@ -14913,7 +14913,7 @@
    "id": "row::8034",
    "en": "Skull Bone _+ Epsilon.",
    "ja": "スカルボーン_＋イプシロン",
-   "zh": "头骨_+伊普西隆。",
+   "zh": "头骨_+埃普西隆。",
    "meta": {
     "blob": 147,
     "offset": 131380,
@@ -29257,7 +29257,7 @@
    "id": "row::10938",
    "en": "Cave - Sorcerer's Road",
    "ja": "どうくつ～魔道士の道",
-   "zh": "洞穴 - 巫师之路",
+   "zh": "洞穴 - 魔法师之路",
    "meta": {
     "blob": 185,
     "offset": 8668,
@@ -29774,7 +29774,7 @@
    "id": "row::10992",
    "en": "┿Selection　○Confirm　×Return",
    "ja": "┿選択　○決定　×戻る",
-   "zh": "┿选择　○确认　×返回",
+   "zh": "┿选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 11552,
@@ -29785,7 +29785,7 @@
    "id": "row::10993",
    "en": "┿Selection　○Confirm　×Return",
    "ja": "┿選択　○決定　×戻る",
-   "zh": "┿选择　○确认　×返回",
+   "zh": "┿选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 13120,
@@ -29818,7 +29818,7 @@
    "id": "row::10996",
    "en": "╂Select　　　　○Confirm　　　　　×Cancel",
    "ja": "╂選択　　　　　○決定　　　　　×キャンセル",
-   "zh": "╂选择　　　○确认　　　×取消",
+   "zh": "╂选择　　　○确定　　　×取消",
    "meta": {
     "blob": 186,
     "offset": 16480,
@@ -29870,6 +29870,17 @@
    }
   },
   {
+   "id": "row::11001",
+   "en": "This name will be used for Time Attack, rankings",
+   "ja": "この名前はタイムアタック、ランキング、",
+   "zh": "此名字将用于时间迎战与排行，",
+   "meta": {
+    "blob": 186,
+    "offset": 19616,
+    "cap": 32
+   }
+  },
+  {
    "id": "row::11002",
    "en": "Map Editor, etc.",
    "ja": "ロマンシング・ツクレールなどにつかわれます。",
@@ -29906,7 +29917,7 @@
    "id": "row::11006",
    "en": "┿Selection　○Confirm　×Return",
    "ja": "┿選択　○決定　×戻る",
-   "zh": "┿选择　○确认　×返回",
+   "zh": "┿选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 24096,
@@ -29917,7 +29928,7 @@
    "id": "row::11007",
    "en": "┿Selection　○Confirm　×Return",
    "ja": "┿選択　○決定　×戻る",
-   "zh": "┿选择　○确认　×返回",
+   "zh": "┿选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 25664,
@@ -29928,7 +29939,7 @@
    "id": "row::11018",
    "en": "╂Selection　○Confirm　×Return　□View Leaderboards",
    "ja": "╂選択　○決定　×戻る　□オンラインランキング　",
-   "zh": "╂选择　○确认　×返回　□查看排行榜",
+   "zh": "╂选择　○确定　×返回　□查看排行榜",
    "meta": {
     "blob": 186,
     "offset": 39328,
@@ -29939,7 +29950,7 @@
    "id": "row::11019",
    "en": "╂Selection　○Confirm　×Return　□View Leaderboards",
    "ja": "╂選択　○決定　×戻る　□オンラインランキング　",
-   "zh": "╂选择　○确认　×返回　□查看排行榜",
+   "zh": "╂选择　○确定　×返回　□查看排行榜",
    "meta": {
     "blob": 186,
     "offset": 41344,
@@ -29950,7 +29961,7 @@
    "id": "row::11020",
    "en": "╋Selection　○Confirm　×Return",
    "ja": "╋選択　○決定　×戻る",
-   "zh": "╋选择　○确认　×返回",
+   "zh": "╋选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 45152,
@@ -29961,7 +29972,7 @@
    "id": "row::11021",
    "en": "╋Selection　○Confirm　×Return",
    "ja": "╋選択　○決定　×戻る",
-   "zh": "╋选择　○确认　×返回",
+   "zh": "╋选择　○确定　×返回",
    "meta": {
     "blob": 186,
     "offset": 46272,
@@ -30104,7 +30115,7 @@
    "id": "row::11046",
    "en": "Confirm",
    "ja": "決定",
-   "zh": "确认",
+   "zh": "确定",
    "meta": {
     "blob": 186,
     "offset": 70016,
@@ -30126,7 +30137,7 @@
    "id": "row::11048",
    "en": "Item",
    "ja": "アイテム",
-   "zh": "物品",
+   "zh": "道具",
    "meta": {
     "blob": 186,
     "offset": 72704,
@@ -30170,7 +30181,7 @@
    "id": "row::11053",
    "en": "Confirm",
    "ja": "決定",
-   "zh": "确认",
+   "zh": "确定",
    "meta": {
     "blob": 186,
     "offset": 85024,
@@ -36935,7 +36946,7 @@
    "id": "row::12431",
    "en": "Formation: Boost Party!",
    "ja": "陣形：ブーストパーティ！",
-   "zh": "阵型：增益队伍！",
+   "zh": "阵型：提升队伍！",
    "meta": {
     "blob": 212,
     "offset": 171516,

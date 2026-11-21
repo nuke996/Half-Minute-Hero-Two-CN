@@ -19,7 +19,7 @@
    "id": "row::7",
    "en": "Old Man: Whoever beats more monsters in 30 seconds wins.",
    "ja": "老人「３０秒で数多くのモンスターをたおしたほうが勝ち",
-   "zh": "大叔「30秒里打倒更多怪物的人就赢。",
+   "zh": "老人「30秒里打倒更多怪物的人就赢。",
    "meta": {
     "blob": 0,
     "offset": 2004,
@@ -63,7 +63,7 @@
    "id": "row::17",
    "en": "Armorer: Sorry, I haven't been able to stock up on gear,",
    "ja": "防具屋「すまねぇ　防具が仕入れられなくて　やくそうだけなんだ」",
-   "zh": "防具商「抱歉，防具进不到货，只剩草药了。」",
+   "zh": "防具匠「抱歉，防具进不到货，只剩草药了。」",
    "meta": {
     "blob": 0,
     "offset": 5396,
@@ -118,7 +118,7 @@
    "id": "row::38",
    "en": "Equipment Clerk: Expensive, eh? Save the sleep-talking",
    "ja": "装備屋「高いだと？　ねごとは装備してから言いやがれ！」",
-   "zh": "装备商「嫌贵？等你穿上装备再抱怨吧！」",
+   "zh": "装备店员「嫌贵？等你穿上装备再抱怨吧！」",
    "meta": {
     "blob": 1,
     "offset": 4548,
@@ -1493,7 +1493,7 @@
    "id": "row::332",
    "en": "Clerk: Hey-ho! I've got what you need!",
    "ja": "よろず屋「ほいほ～い　買ってけ買ってけ！」",
-   "zh": "杂货商「嘿哟～嘿哟，快来买快来买！」",
+   "zh": "小贩「嘿哟～嘿哟，快来买快来买！」",
    "meta": {
     "blob": 5,
     "offset": 4972,
@@ -1526,7 +1526,7 @@
    "id": "row::349",
    "en": "Herbalist: Even after peace is restored, there's always a need for Herbs.",
    "ja": "やくそう屋「平和になっても　やっぱりやくそう」",
-   "zh": "草药师「哪怕恢复和平，草药还是少不得。」",
+   "zh": "草药商「哪怕恢复和平，草药还是少不得。」",
    "meta": {
     "blob": 6,
     "offset": 3276,
@@ -1592,7 +1592,7 @@
    "id": "row::417",
    "en": "Adventurer: I could've seen the Dark Spirit too, if I'd tried a bit harder.",
    "ja": "たんけんか「オレも　もう少しがんばれば闇の精霊にあえたのかな」",
-   "zh": "冒险家「我要再用功点，也能见到暗之精灵吧。」",
+   "zh": "冒险者「我要再用功点，也能见到暗之精灵吧。」",
    "meta": {
     "blob": 9,
     "offset": 2428,
@@ -1603,7 +1603,7 @@
    "id": "row::422",
    "en": "Equipment Clerk: … You shall fulfill your chivalric duty.",
    "ja": "装備屋「・・・おまえの騎士道をまっとうするんだな」",
-   "zh": "装备商「……你要恪守自己的骑士道。」",
+   "zh": "装备店员「……你要恪守自己的骑士道。」",
    "meta": {
     "blob": 9,
     "offset": 4548,
@@ -2021,7 +2021,7 @@
    "id": "row::517",
    "en": "Child: What about… a great earthquake… ?",
    "ja": "こども「だいじしん・・・は？」",
-   "zh": "孩子「来场……大地震……怎么样？」",
+   "zh": "小孩「来场……大地震……怎么样？」",
    "meta": {
     "blob": 14,
     "offset": 1580,
@@ -2219,7 +2219,7 @@
    "id": "row::570",
    "en": "The worst bunch of brats in the kingdom!",
    "ja": "　王国一の悪ガキ集団ね！」",
-   "zh": "　就是王国第一的坏小子团伙吧！」",
+   "zh": "　就是王国第一的小鬼团伙吧！」",
    "meta": {
     "blob": 17,
     "offset": 1100,
@@ -2956,7 +2956,7 @@
    "id": "row::666",
    "en": "Even you, Geezer!",
    "ja": "　まさか　おじさままで！？」",
-   "zh": "　连大叔大人都！？」",
+   "zh": "　连大叔都！？」",
    "meta": {
     "blob": 17,
     "offset": 44012,
@@ -3275,7 +3275,7 @@
    "id": "row::711",
    "en": "Female Celebrity: The password is… <Sea>. ▼",
    "ja": "セレブ女「合言葉はー・・・う・み▼」",
-   "zh": "名流女「暗号是……<海>。▼」",
+   "zh": "名媛「暗号是……<海>。▼」",
    "meta": {
     "blob": 18,
     "offset": 2428,
@@ -3352,7 +3352,7 @@
    "id": "row::747",
    "en": "Herbalist: Do you eat Herbs? Or rub them on?",
    "ja": "やくそう屋「やくそう食べる派？　ぬる派？」",
-   "zh": "草药师「草药你是吃法？还是涂派？」",
+   "zh": "草药商「草药你是吃法？还是涂派？」",
    "meta": {
     "blob": 24,
     "offset": 3276,
@@ -3363,7 +3363,7 @@
    "id": "row::753",
    "en": "Old Man: This village has a legend,",
    "ja": "老人「北のもように<動く城>　村の伝説じゃよ・・・」",
-   "zh": "大叔「北边<移动城堡>是村里的传说」",
+   "zh": "老人「北边<移动城堡>是村里的传说」",
    "meta": {
     "blob": 24,
     "offset": 4548,
@@ -3451,7 +3451,7 @@
    "id": "row::780",
    "en": "Henchman: Right, when you want to go left. Left, to go right.",
    "ja": "こぶん「右に行きたいなら左　左に行きたいなら右だよ」",
-   "zh": "爪牙「想往右就走左，想往左就走右。」",
+   "zh": "跟班「想往右就走左，想往左就走右。」",
    "meta": {
     "blob": 28,
     "offset": 240,
@@ -6850,7 +6850,7 @@
    "id": "row::1770",
    "en": "Clerk: Why not buy something with your hard earned money?",
    "ja": "よろず屋「かせいだお金で買っていってよ」",
-   "zh": "店员「用你辛苦赚的钱买点啥吧。」",
+   "zh": "小贩「用你辛苦赚的钱买点啥吧。」",
    "meta": {
     "blob": 50,
     "offset": 3700,
@@ -6927,7 +6927,7 @@
    "id": "row::1813",
    "en": "Land Mersisters: Aiii!",
    "ja": "陸魚人シスターズ「キャーーーー！！」",
-   "zh": "陆地鱼人姐妹「呀啊啊啊！！」",
+   "zh": "海岸人鱼姐妹「呀啊啊啊！！」",
    "meta": {
     "blob": 52,
     "offset": 2592,
@@ -6938,7 +6938,7 @@
    "id": "row::1814",
    "en": "Land Mersisters: Whew! You saved us!",
    "ja": "陸魚人シスターズ「ふぅ！助かったわ！」",
-   "zh": "陆地鱼人姐妹「呼！得救了！」",
+   "zh": "海岸人鱼姐妹「呼！得救了！」",
    "meta": {
     "blob": 52,
     "offset": 2788,
@@ -6949,7 +6949,7 @@
    "id": "row::1815",
    "en": "Land Mersisters: Aiii!",
    "ja": "陸魚人シスターズ「キャーーーー！！」",
-   "zh": "陆地鱼人姐妹「呀啊啊啊！！」",
+   "zh": "海岸人鱼姐妹「呀啊啊啊！！」",
    "meta": {
     "blob": 52,
     "offset": 2984,
@@ -6960,7 +6960,7 @@
    "id": "row::1816",
    "en": "Land Mersisters: Whew! You saved us!",
    "ja": "陸魚人シスターズ「ふぅ！助かったわ！」",
-   "zh": "陆地鱼人姐妹「呼！得救了！」",
+   "zh": "海岸人鱼姐妹「呼！得救了！」",
    "meta": {
     "blob": 52,
     "offset": 3180,
@@ -6971,7 +6971,7 @@
    "id": "row::1817",
    "en": "Land Mersisters: Aiii!",
    "ja": "陸魚人シスターズ「キャーーーー！！」",
-   "zh": "陆地鱼人姐妹「呀啊啊啊！！」",
+   "zh": "海岸人鱼姐妹「呀啊啊啊！！」",
    "meta": {
     "blob": 52,
     "offset": 3376,
@@ -6982,7 +6982,7 @@
    "id": "row::1818",
    "en": "Land Mersisters: Whew! You saved us!",
    "ja": "陸魚人シスターズ「ふぅ！助かったわ！」",
-   "zh": "陆地鱼人姐妹「呼！得救了！」",
+   "zh": "海岸人鱼姐妹「呼！得救了！」",
    "meta": {
     "blob": 52,
     "offset": 3572,
@@ -7180,7 +7180,7 @@
    "id": "row::1841",
    "en": "Land Merman: Waah! Help!",
    "ja": "陸魚人「わー！助けてー！」",
-   "zh": "陆地鱼人「哇！救命！」",
+   "zh": "海岸人鱼「哇！救命！」",
    "meta": {
     "blob": 52,
     "offset": 8080,
@@ -7191,7 +7191,7 @@
    "id": "row::1842",
    "en": "Land Merman: Our friends are still under attack! Please help!",
    "ja": "陸魚人「まだ仲間が襲われてるんだ！　助けてやってくれ！」",
-   "zh": "陆地鱼人「伙伴们还在被袭击！请你帮帮他们！」",
+   "zh": "海岸人鱼「伙伴们还在被袭击！请你帮帮他们！」",
    "meta": {
     "blob": 52,
     "offset": 8276,
@@ -7202,7 +7202,7 @@
    "id": "row::1843",
    "en": "Land Merman: Heeey!",
    "ja": "陸魚人「ひえぇぇぇ！」",
-   "zh": "陆地鱼人「咿呀啊！」",
+   "zh": "海岸人鱼「咿呀啊！」",
    "meta": {
     "blob": 52,
     "offset": 8472,
@@ -7213,7 +7213,7 @@
    "id": "row::1845",
    "en": "Land Merman: Waah! I hate lizards!",
    "ja": "陸魚人「わーー！トカゲいやーー！」",
-   "zh": "陆地鱼人「哇——！蜥蜴好讨厌——！」",
+   "zh": "海岸人鱼「哇——！蜥蜴好讨厌——！」",
    "meta": {
     "blob": 52,
     "offset": 8864,
@@ -7224,7 +7224,7 @@
    "id": "row::1847",
    "en": "Land Merman: Darn monster! Stop! Stop it!",
    "ja": "陸魚人「モンスターめ！　やめっ　やめろ！」",
-   "zh": "陆地鱼人「可恶的怪物！住手！快住手！」",
+   "zh": "海岸人鱼「可恶的怪物！住手！快住手！」",
    "meta": {
     "blob": 52,
     "offset": 9256,
@@ -7235,7 +7235,7 @@
    "id": "row::1849",
    "en": "Land Merman: No more lizards!",
    "ja": "陸魚人「トカゲとかやめてぇぇぇえ！」",
-   "zh": "陆地鱼人「别再出现蜥蜴了！」",
+   "zh": "海岸人鱼「别再出现蜥蜴了！」",
    "meta": {
     "blob": 52,
     "offset": 9648,
@@ -7246,7 +7246,7 @@
    "id": "row::1851",
    "en": "Land Merman: My armor is the second best in the wooorld!",
    "ja": "陸魚人「アタシの防具は世界ニイィィィィィ！！」",
-   "zh": "陆地鱼人「我的防具是世界第二！！」",
+   "zh": "海岸人鱼「我的防具是世界第二！！」",
    "meta": {
     "blob": 52,
     "offset": 10040,
@@ -9490,7 +9490,7 @@
    "id": "row::2392",
    "en": "His true identity is…",
    "ja": "　おじさまの正体は・・・・・・」",
-   "zh": "　大叔大人的真实身份是……」",
+   "zh": "　大叔的真实身份是……」",
    "meta": {
     "blob": 57,
     "offset": 205808,
@@ -12647,7 +12647,7 @@
    "id": "row::2903",
    "en": "Equipment Clerk: Buy our wares! They'll make your journey easier!",
    "ja": "装備屋「うちの装備を買えば旅が楽になるぜ！」",
-   "zh": "装备商人「买我们的装备吧！旅途会更轻松！」",
+   "zh": "装备店员「买我们的装备吧！旅途会更轻松！」",
    "meta": {
     "blob": 65,
     "offset": 5396,
@@ -12680,7 +12680,7 @@
    "id": "row::2970",
    "en": "Carroty Old Man: Actually, salted carrots aren't",
    "ja": "ニンジイ「じつはしおニンジンって",
-   "zh": "红萝卜老伯「其实腌红萝卜",
+   "zh": "红萝卜老爷「其实腌红萝卜",
    "meta": {
     "blob": 68,
     "offset": 4548,
@@ -13901,7 +13901,7 @@
    "id": "row::3158",
    "en": "Old Man: A long, long time ago, there was this person",
    "ja": "オヤジ「むか～しむかしはこの海を",
-   "zh": "老人「很久很久以前，有个人",
+   "zh": "大叔「很久很久以前，有个人",
    "meta": {
     "blob": 72,
     "offset": 4548,
@@ -16475,7 +16475,7 @@
    "id": "row::3576",
    "en": "Herbalist: The <Common Herb> restores",
    "ja": "やくそう屋「<みんなのやくそう>は",
-   "zh": "草药师「<普通草药>可恢复",
+   "zh": "草药商「<普通草药>可恢复",
    "meta": {
     "blob": 78,
     "offset": 2852,
@@ -16486,7 +16486,7 @@
    "id": "row::3578",
    "en": "Herbalist: We're sold out of <Common Herb>.",
    "ja": "やくそう屋「<みんなのやくそう>は売り切れだよ」",
-   "zh": "草药师「<大众草药>卖光了。」",
+   "zh": "草药商「<大众草药>卖光了。」",
    "meta": {
     "blob": 78,
     "offset": 3276,
@@ -16794,7 +16794,7 @@
    "id": "row::3725",
    "en": "Senior Warrior: Whoa! Great job!!",
    "ja": "せんぱい戦士「おお！　やるな！！」",
-   "zh": "长者战士「哦！干得漂亮！！」",
+   "zh": "前辈战士「哦！干得漂亮！！」",
    "meta": {
     "blob": 85,
     "offset": 3276,
@@ -19049,7 +19049,7 @@
    "id": "row::4092",
    "en": "Herbalist: Kyaaa! It's the great songstress! Kyaaa!",
    "ja": "やくそう屋「キャー！　歌姫様よっ！　キャー！」",
-   "zh": "草药师「呀啊！是伟大的歌姬大人！呀啊！」",
+   "zh": "草药商「呀啊！是伟大的歌姬大人！呀啊！」",
    "meta": {
     "blob": 91,
     "offset": 2852,
@@ -21568,7 +21568,7 @@
    "id": "row::4478",
    "en": "Herbalist: Actually it was Tyranz who destroyed",
    "ja": "やくそう屋「じつはタイランツのせいで家をこわされたんです",
-   "zh": "草药师「其实是因为泰兰兹，我家才被毁的",
+   "zh": "草药商「其实是因为泰兰兹，我家才被毁的",
    "meta": {
     "blob": 94,
     "offset": 2852,
@@ -21590,7 +21590,7 @@
    "id": "row::4492",
    "en": "Demon Child: Nothing beats choosing the path that you like.",
    "ja": "魔族の子「やっぱり好きな道を進むのが一番いいと思うの」",
-   "zh": "魔族之子「还是走自己喜欢的路最棒。」",
+   "zh": "魔族小孩「还是走自己喜欢的路最棒。」",
    "meta": {
     "blob": 97,
     "offset": 2004,
@@ -21656,7 +21656,7 @@
    "id": "row::4723",
    "en": "Herbalist: There are people and demons living in the caves around here.",
    "ja": "やくそう屋「このあたりのどうくつには　人や魔族がすんでるよ」",
-   "zh": "草药师「这附近的洞穴里住着人类和魔族。」",
+   "zh": "草药商「这附近的洞穴里住着人类和魔族。」",
    "meta": {
     "blob": 100,
     "offset": 3700,
@@ -21733,7 +21733,7 @@
    "id": "row::4767",
    "en": "Herbalist: … Well I'm just scraping by here.",
    "ja": "やくそう屋「・・・まあホソボソとやらせてもらってます」",
-   "zh": "草药师「…嗯，我也就是勉强过活。」",
+   "zh": "草药商「…嗯，我也就是勉强过活。」",
    "meta": {
     "blob": 103,
     "offset": 3276,
@@ -25627,7 +25627,7 @@
    "id": "row::5475",
    "en": "Tent: No problems with housing or",
    "ja": "テント「イエにもタベモノにもこまらない～～",
-   "zh": "摊贩「住房和食物都不缺",
+   "zh": "帐篷「住房和食物都不缺",
    "meta": {
     "blob": 112,
     "offset": 2852,
@@ -26804,7 +26804,7 @@
    "id": "row::5661",
    "en": "Girl: It's dangerous, but the cave to the northwest has treasure in it.",
    "ja": "女の子「あぶないけど北西のどうくつには宝箱があるわよ」",
-   "zh": "女孩「虽然凶险，但西北方的洞穴里有宝箱哦。」",
+   "zh": "小女孩「虽然凶险，但西北方的洞穴里有宝箱哦。」",
    "meta": {
     "blob": 115,
     "offset": 3276,
@@ -27464,7 +27464,7 @@
    "id": "row::5983",
    "en": "Girl: It's the School festival! Whoo!",
    "ja": "女学生「学園祭だ！　わっしょい！」",
-   "zh": "女孩「是学院祭！喔！」",
+   "zh": "女学生「是学院祭！喔！」",
    "meta": {
     "blob": 124,
     "offset": 3276,
@@ -27530,7 +27530,7 @@
    "id": "row::6002",
    "en": "Student: Our class is setting up a food stall.",
    "ja": "女学生「私たちのクラスは出店をやるのよ」",
-   "zh": "学生「我们班要摆摊了。」",
+   "zh": "女学生「我们班要摆摊了。」",
    "meta": {
     "blob": 124,
     "offset": 8788,
@@ -27563,7 +27563,7 @@
    "id": "row::6054",
    "en": "Man: If you reverse time, I bet you",
    "ja": "青年「時間を戻せれば",
-   "zh": "男人「只要倒流时间，我打赌你",
+   "zh": "青年「只要倒流时间，我打赌你",
    "meta": {
     "blob": 126,
     "offset": 2852,
@@ -27596,7 +27596,7 @@
    "id": "row::6083",
    "en": "Lightning Man: The bridge right to the west will be safe!",
    "ja": "雷オヤジ「すぐ西にある橋が安全になるぜ！」",
-   "zh": "雷电人「正西边的桥会安全的！」",
+   "zh": "闪电大叔「正西边的桥会安全的！」",
    "meta": {
     "blob": 127,
     "offset": 3276,
@@ -30775,7 +30775,7 @@
    "id": "row::6595",
    "en": "Old Man: It must be tired from throwing mountains so far,",
    "ja": "老人「あんな遠くまで山なげて疲れんのかのう",
-   "zh": "大叔「把山扔那么远它不累吗，",
+   "zh": "老人「把山扔那么远它不累吗，",
    "meta": {
     "blob": 132,
     "offset": 2428,
@@ -30819,7 +30819,7 @@
    "id": "row::6646",
    "en": "<EVO_NAME__> : Geezer looks like he's in love! ▼ Just kidding! ♪",
    "ja": "<EVO_NAME__>「おじさまラブラブですわ▼　なーんて♪」",
-   "zh": "<EVO_NAME__>「大叔大人陷入热恋啦▼骗你的♪」",
+   "zh": "<EVO_NAME__>「大叔陷入热恋啦▼骗你的♪」",
    "meta": {
     "blob": 135,
     "offset": 1580,
@@ -32546,7 +32546,7 @@
    "id": "row::6990",
    "en": "Clerk: Hey big spender! Come on in!",
    "ja": "よろず屋「かっちょよくきめろ！」",
-   "zh": "店员「帅气地决断吧！」",
+   "zh": "小贩「帅气地决断吧！」",
    "meta": {
     "blob": 138,
     "offset": 7092,
@@ -32634,7 +32634,7 @@
    "id": "row::7048",
    "en": "Armorer: How about some really cool armor!?",
    "ja": "防具屋「かっちょいーヨロイはいかが！？」",
-   "zh": "防具商「来件超帅的盔甲如何！？」",
+   "zh": "防具匠「来件超帅的盔甲如何！？」",
    "meta": {
     "blob": 142,
     "offset": 3276,
@@ -33305,7 +33305,7 @@
    "id": "row::7184",
    "en": "Peddler: Welcome to the Empire!",
    "ja": "よろず屋「帝国へようこそ！」",
-   "zh": "商人「欢迎来到帝国！」",
+   "zh": "小贩「欢迎来到帝国！」",
    "meta": {
     "blob": 145,
     "offset": 4548,
@@ -33371,7 +33371,7 @@
    "id": "row::8051",
    "en": "Owner: So Professor Seenoeevil",
    "ja": "主人「ミエザール先生は男には",
-   "zh": "主人「米埃萨尔教授",
+   "zh": "店主「米埃萨尔教授",
    "meta": {
     "blob": 149,
     "offset": 1580,
@@ -35956,7 +35956,7 @@
    "id": "row::8538",
    "en": "Tent: … Darn it! Stupid God!",
    "ja": "テント「・・・チキショウ！　神のヤロウ！」",
-   "zh": "腾「…可恶！臭神！」",
+   "zh": "帐篷「…可恶！臭神！」",
    "meta": {
     "blob": 156,
     "offset": 1156,
@@ -35967,7 +35967,7 @@
    "id": "row::8540",
    "en": "Tent: The Singers have somehow gotten their voices back.",
    "ja": "テント「歌族たち何とか声は出るようになったよ」",
-   "zh": "腾「歌族们总算又能出声了。」",
+   "zh": "帐篷「歌族们总算又能出声了。」",
    "meta": {
     "blob": 156,
     "offset": 1580,
@@ -36979,7 +36979,7 @@
    "id": "row::8766",
    "en": "Shorty: The sorcerer is in the village to the north… *sniff*",
    "ja": "ちびっこ「魔法使いのいる村は北にあるよ・・・グスン」",
-   "zh": "矮子「魔法师所在的村子在北方…*抽鼻子*」",
+   "zh": "小不点「魔法师所在的村子在北方…*抽鼻子*」",
    "meta": {
     "blob": 162,
     "offset": 8788,
@@ -36990,7 +36990,7 @@
    "id": "row::8768",
    "en": "Shorty: What weird glasses!",
    "ja": "ちびっこ「へんなメガネー！」",
-   "zh": "矮子「好怪的眼镜！」",
+   "zh": "小不点「好怪的眼镜！」",
    "meta": {
     "blob": 162,
     "offset": 9212,
@@ -40609,7 +40609,7 @@
    "id": "row::9466",
    "en": "Armorer: We sell mostly helms and shields here.",
    "ja": "防具屋「ここはかぶとと盾がメインの店だ」",
-   "zh": "防具商「本店主要卖头盔和盾。」",
+   "zh": "防具匠「本店主要卖头盔和盾。」",
    "meta": {
     "blob": 175,
     "offset": 4124,
