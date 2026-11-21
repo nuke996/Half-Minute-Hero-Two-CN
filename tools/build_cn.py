@@ -342,6 +342,18 @@ DISPLAY_RELEASE_OFFS = {
     (186, 94656),         # Normal Mode（b354 对应副本已译）
     (763, 9872),          # Best Time（b358 对应副本已译）
     (186, 86592),         # Z22：装备切换提示 Switch（切り替え，假命中）
+    # Z27：对话选项槽（collide 假命中；与 b153/off18344 的「やめる」同理，逐槽放行）
+    (57, 122232), (73, 145072), (151, 18344),
+    (177, 81352), (177, 81416), (177, 90988), (177, 103252), (177, 112368),
+    (177, 124568), (177, 133620), (177, 133684),
+    (212, 104776), (212, 106820),
+    (348, 86024),
+    (366, 129824), (366, 129888), (366, 131932),
+    (647, 59808),
+    (668, 449044), (668, 451316),
+    (795, 144780), (795, 218948), (795, 285232),
+    (804, 641408), (804, 641472),
+    (906, 223848), (1043, 39660),
 }
 
 # b804 魔人迷宫标题：30 个记录，步长 584
@@ -5768,6 +5780,30 @@ def do_package_names_cn_reuse_z26(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z27(exe_mode=None):
+    """Z27（测试）：Z26 + 对话选项放行、孤立尾行留空、副队长称号统一。
+
+    · DISPLAY_RELEASE_OFFS 新增 27 个对话选项槽（b57/b73/b151/b177/b212/b348/
+      b366/b647/b668/b795/b804/b906/b1043），让已有译文上屏；
+    · 15 个“日文单行、英文多行”尾行：11+2 置全角空格，2 组先合并再置空；
+    · 副隊長ヤーシュ → 副队长亚修（含 b147/b317/b357/b736/b1034 副本与 b954 伙伴表）。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z27-subcommander')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z27',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -6322,6 +6358,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z26',
             'out': 'Z26-enemy-skills',
             'stage': 'package_stage_names_cn_reuse_z26',
+            'status': 'candidate', 'review': False},
+    'z27': {'func': do_package_names_cn_reuse_z27,
+            'cmd': 'package_names_cn_reuse_z27',
+            'out': 'Z27-subcommander',
+            'stage': 'package_stage_names_cn_reuse_z27',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6331,7 +6372,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z26'
+CURRENT_REVIEW_RECIPE = 'z27'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 

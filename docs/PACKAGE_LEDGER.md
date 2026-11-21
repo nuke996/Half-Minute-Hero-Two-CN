@@ -2,12 +2,12 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-15（Z26 敌技显示名补译，校对指针切至 Z26）
+> 最近更新：2026-11-21（Z27 对话选项放行 + 孤立尾行留空 + 副队长称号统一，校对指针切至 Z27）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
 > `tools/build.py package_current`，目标由 `tools/build_cn.py` 的
-> `CURRENT_REVIEW_RECIPE` 决定（当前 `z26` → `dist/Z26-enemy-skills/`）。
+> `CURRENT_REVIEW_RECIPE` 决定（当前 `z27` → `dist/Z27-subcommander/`）。
 > 新配方登记到 `RECIPES` 后，若成为校对目标，必须同步修改该指针并更新本文档。
 > 每次成功打包会写出 `build_manifest.json`（含配方 id、开关、输入/产物哈希、git commit），
 > 导入报告会打印该身份信息。
@@ -56,7 +56,8 @@
 | **Z23（测试）** | `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | Z22 + **图鉴敌人/Boss 列表名批次**（`b734` 138 + `b555` 107 + `b54` 75 + `b105`/`b529` 战斗表显示列；`(54,6656)` 的 `Hero<>` 模板槽保持原版；`b509/908` 为脚本键槽不动）+ `活动道具`→**事件道具**（译表 16 行 + 多行译表 1 条）。敌名放行在 `z19`/`z23`/`z24` 配方启用（环境变量 `HMH2_Z23_RELEASE=1` 传给装机子进程），stable/E3 与旧配方不受影响 | **2026-11-04/05 构建，未实机（中风险，需验图鉴/战斗）**。最终 `dist` 散列：`LANG_EN 3a04ded87fef` / `LANG_JA 924eff209d0e` / `texture d3d6b3a30dbc` / `cscv c1947de79e81` / `MOV 53bd2e668e99` / `DLC01 8daf3998309e`(JA) `07dee8283691`(EN)；`validate_build` error 0 / warning 45；`b555` 107/107、`b105` 22/22、`b529` 14/14、`b54`/`b734` 212/213 已改写（`Hero<>` 按设计保留） |
 | **Z24（测试）** | `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（206 槽）+ **怪物/头目专有名词统一**（91 行译表）：`オニグモンG2`→鬼蜘蛛G2、`黒女神`→黑女神、`ザントヘル`→赞特赫尔、`魔王ケルベロス`→魔王刻耳柏洛斯、`元魔王軍`→前魔王军，以及 P0/P1/P2 其余批次（见 `docs/PROOFREAD_NAME_REPORT.md`、`docs/PITFALLS.md` §44） | **2026-11-05 构建，未实机。** **2026-11-12 重建（T-02 第二轮校对 + cmap 固化 + Q16 说明文误伤修复）**：`LANG_EN fbe38d771f76` / `LANG_JA 924eff209d0e` / `texture a7b0c2f52666` / `cscv 3134c630713d` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；与 Z19 内容一致；译表累计 91 行专名统一 + 429 条校对（529 槽） |
 | **Z25（测试）** | `package_names_cn_reuse_z25` | `dist/Z25-mech-names/` | Z24 + **T-05b 技能/机制名补译**：① `1,000m/h Wind`/`10,000m/h Wind` 五槽同改（`b666 pos0+pos292`、`b147/357/736 pos172`），仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`）；② `Catch and Release`×2、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath` 9 个敌技显示槽 | **2026-11-15 构建，未实机。** `LANG_EN 8faa23aa52fd`（最终 dist，含视频合入） / `LANG_JA 924eff209d0e` / `texture a7b0c2f52666` / `cscv 3134c630713d` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；副本冲突 0；相对 Z24 操作数仅 4 处变化 |
-| **Z26（测试）** | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）：`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽；全部 `+4=FFFFFFFF`、无名字哈希操作数。`Hellfire`/`Venus Seven`/`Dogry`/`Reusable` 未纳入 | **2026-11-15 构建，未实机。** `LANG_EN dd093e4788bf` / `LANG_JA 924eff209d0e` / `texture 5a290d173147` / `cscv f074004c8eb3` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；相对 Z25 操作数 **0 变化**；cmap +4 字（2304）；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z26`） |
+| **Z26（测试）** | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）：`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽；全部 `+4=FFFFFFFF`、无名字哈希操作数。`Hellfire`/`Venus Seven`/`Dogry`/`Reusable` 未纳入 | **2026-11-15 构建，未实机。** `LANG_EN dd093e4788bf` / `LANG_JA 924eff209d0e` / `texture 5a290d173147` / `cscv f074004c8eb3` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；相对 Z25 操作数 **0 变化**；cmap +4 字（2304） |
+| **Z27（测试）** | `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`：b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空；`row::46763/46764`、`60419/60420`）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` 2 条 + `ml_zh_fields.json` 1 条；b147/b317/b357/b736/b1034 名字副本同步）。选项均为纯显示 collide 假命中，逐槽放行；`validate_build` error 0 / warning 45 | **2026-11-21 构建，未实机。** 校对指针 `CURRENT_REVIEW_RECIPE=z27`；实机需验：选项中文（尤其 b668 方向、b804/b906 确认）、15 处尾行是否为空、队伍界面「副队长亚修」 | **当前导入校对目标** |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -420,7 +421,7 @@ python tools/build.py --game-dir work/original package_current
   - 导入时额外行写入 `locales/zh-CN/extra_review.json`（完整覆盖表），
     CSV 行写回 `text_v2.csv`；
   - `汉化-导入校对.bat` 自检通过后按 `CURRENT_REVIEW_RECIPE` 运行 `package_current`
-    （当前 z26 → `dist/Z26-enemy-skills/`，应用 REPL+HL）；
+    （当前 z27 → `dist/Z27-subcommander/`，应用 REPL+HL）；
   - `汉化-导入校对-不应用词典.bat` 运行 `import_review.py apply --no-repl`，
     重建 `dist/Z15-reuse-kanji-norepl/`（不套用 REPL，仅保留 HL）；
     两者读同一批 JSON，只是打包模式不同；

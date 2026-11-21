@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 3435,
+ "_count": 3436,
  "entries": [
   {
    "id": "row::12701",
@@ -7477,7 +7477,7 @@
    "id": "row::14174",
    "en": "when you least expect it!",
    "ja": "",
-   "zh": "你最意想不到时降临！",
+   "zh": "　",
    "meta": {
     "blob": 260,
     "offset": 18052,
@@ -34101,6 +34101,17 @@
    "meta": {
     "blob": 348,
     "offset": 85668,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::18796",
+   "en": "We'll fight.",
+   "ja": "やる",
+   "zh": "打。",
+   "meta": {
+    "blob": 348,
+    "offset": 86024,
     "cap": 32
    }
   },

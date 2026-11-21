@@ -166,7 +166,7 @@ The review-import pipeline must never hard-code a `Znn` package command. It invo
 - `RECIPES[id]` registers each package recipe (`func` / `cmd` / `out` / `stage` /
   `status` / `review`).
 - `CURRENT_REVIEW_RECIPE` is the single pointer for the current review target
-  (currently `z26` → `dist/Z26-enemy-skills/`).
+  (currently `z27` → `dist/Z27-subcommander/`).
 - `CURRENT_NOREPL_RECIPE` is the pointer for the `--no-repl` comparison package.
 
 Therefore, when adding a new recipe or promoting an existing one:

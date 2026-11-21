@@ -2,7 +2,7 @@
  "_kind": "single-ui",
  "_note": "UI/菜单/系统消息类单行译文。zh 为游戏当前实际显示的文本（已含替换词典压平）。",
  "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
- "_count": 2198,
+ "_count": 2199,
  "entries": [
   {
    "id": "row::56654",
@@ -13769,7 +13769,7 @@
    "id": "row::58403",
    "en": "once we do.",
    "ja": "",
-   "zh": "一起离开镜中世界。",
+   "zh": "　",
    "meta": {
     "blob": 1013,
     "offset": 76452,
@@ -19203,7 +19203,7 @@
    "id": "row::59403",
    "en": "suddenly!?",
    "ja": "",
-   "zh": "突然！？",
+   "zh": "　",
    "meta": {
     "blob": 1040,
     "offset": 5788,
@@ -20043,6 +20043,17 @@
    "meta": {
     "blob": 1043,
     "offset": 39596,
+    "cap": 32
+   }
+  },
+  {
+   "id": "row::59593",
+   "en": "Not yet",
+   "ja": "まだ　行きませんわ",
+   "zh": "现在还不行",
+   "meta": {
+    "blob": 1043,
+    "offset": 39660,
     "cap": 32
    }
   },
@@ -23163,7 +23174,7 @@
    "id": "row::60355",
    "en": "you had to come anyway.",
    "ja": "",
-   "zh": "你偏要跑来这一趟。",
+   "zh": "　",
    "meta": {
     "blob": 1051,
     "offset": 55244,
@@ -23262,7 +23273,7 @@
    "id": "row::60419",
    "en": "(The Goddess must look after her statues as if",
    "ja": "（・・・女神像を自分のように思っているようだな）",
-   "zh": "（女神似乎把石像当作自己",
+   "zh": "（女神似乎把石像当作自己一般看待。）",
    "meta": {
     "blob": 1051,
     "offset": 74188,
@@ -23273,7 +23284,7 @@
    "id": "row::60420",
    "en": "they were herself.)",
    "ja": "",
-   "zh": "一般看待。）",
+   "zh": "　",
    "meta": {
     "blob": 1051,
     "offset": 74252,

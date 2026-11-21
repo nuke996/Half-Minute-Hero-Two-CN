@@ -426,7 +426,7 @@
    "id": "row::150",
    "en": "and sub-commander of the Commandos up to?",
    "ja": "　遊撃隊の元隊長と元副隊長でナニやってんだ！」",
-   "zh": "　和前任二当家到底在搞什么名堂！」",
+   "zh": "　和前任副队长到底在搞什么名堂！」",
    "meta": {
     "blob": 4,
     "offset": 45452,
@@ -437,7 +437,7 @@
    "id": "row::152",
    "en": "… But… Sub-Commader Yashu,",
    "ja": "「・・・しっかし　ヤーシュ副隊長どのは",
-   "zh": "「……不过……亚修二当家，",
+   "zh": "「……不过……副队长亚修大人，",
    "meta": {
     "blob": 4,
     "offset": 45676,
@@ -10194,7 +10194,7 @@
    "id": "row::2479",
    "en": "Give us a warning next time, would ya!?",
    "ja": "　こんな事になるならちゃんと言っとけよなっ！」",
-   "zh": "　…我、我是担心你啦！饭桶！」",
+   "zh": "　早知会变成这样，你就提前说啊！」",
    "meta": {
     "blob": 57,
     "offset": 254572,
@@ -10205,7 +10205,7 @@
    "id": "row::2481",
    "en": "… I-I was worried! Dummy!",
    "ja": "「・・・ちょ　ちょっと心配しちゃっただろ！　バカ！」",
-   "zh": "「…我、我有点担心啦！饭桶！」",
+   "zh": "「…我、我有点担心啦！笨蛋！」",
    "meta": {
     "blob": 57,
     "offset": 254800,
@@ -16728,7 +16728,7 @@
    "id": "row::3691",
    "en": "Idiot: The coil! Wind the coil!",
    "ja": "ウスノロ「ネジヲ　マケ！　ネジヲ！」",
-   "zh": "饭桶「螺丝！拧螺丝！」",
+   "zh": "笨蛋「发条！上发条！」",
    "meta": {
     "blob": 83,
     "offset": 223244,
@@ -16739,7 +16739,7 @@
    "id": "row::3692",
    "en": "Idiot: … Huh? Is it morning? I think I slept well.",
    "ja": "ウスノロ「・・・・・・ン？　モウ　アサカ　ヨクネタナ」",
-   "zh": "饭桶「…嗯？天亮了？我睡得挺香。」",
+   "zh": "笨蛋「…嗯？天亮了？我睡得挺香。」",
    "meta": {
     "blob": 83,
     "offset": 224108,
@@ -16750,7 +16750,7 @@
    "id": "row::3693",
    "en": "Idiot: We are always with you!",
    "ja": "ウスノロ「オレタチハ　イツモ　オマエト　イッショ　ダ！」",
-   "zh": "饭桶「我们永远和你在一起！」",
+   "zh": "笨蛋「我们永远和你在一起！」",
    "meta": {
     "blob": 83,
     "offset": 224972,
@@ -16761,7 +16761,7 @@
    "id": "row::3694",
    "en": "Idiot : … did we keep you waiting?",
    "ja": "ウスノロ「・・・マタセタ　ナ」",
-   "zh": "饭桶「…让你久等了吗？」",
+   "zh": "笨蛋「…让你久等了吗？」",
    "meta": {
     "blob": 83,
     "offset": 225836,
@@ -17619,7 +17619,7 @@
    "id": "row::3857",
    "en": "Then again he was kind of an idiot, in that he",
    "ja": "「まあ　そいつはバカだったから　外じゃなく",
-   "zh": "「话说那家伙是个饭桶，因为他没往外挖，",
+   "zh": "「话说那家伙是个笨蛋，所以没往外挖，",
    "meta": {
     "blob": 87,
     "offset": 8352,
@@ -28135,7 +28135,7 @@
    "id": "row::6189",
    "en": "Do you know of the <lone dead tree>",
    "ja": "「ココから<北西の方にカレ木>が一本",
-   "zh": "「你知道<西北方有棵枯树>",
+   "zh": "「你知道<有棵枯树>",
    "meta": {
     "blob": 129,
     "offset": 29960,
@@ -28575,7 +28575,7 @@
    "id": "row::6250",
    "en": "Idiot! It's not like that at all! Finding the",
    "ja": "「バーカ　チゲーよ　スゲー武器を",
-   "zh": "「饭桶！根本不是那样！找到",
+   "zh": "「笨蛋！不是啦！超强的武器",
    "meta": {
     "blob": 129,
     "offset": 49232,
@@ -28586,7 +28586,7 @@
    "id": "row::6251",
    "en": "perfect weapon is a passion of real men. ♪",
    "ja": "　探すってのは男のロマンだろロマン♪」",
-   "zh": "　完美的武器才是真男人的风情。」",
+   "zh": "　找它才是男人的浪漫吧浪漫♪」",
    "meta": {
     "blob": 129,
     "offset": 49296,
@@ -29136,7 +29136,7 @@
    "id": "row::6333",
    "en": "Commander! Sub-commander! … It's okay, right?",
    "ja": "「隊長！　副隊長！　・・・ちょっといいか」",
-   "zh": "「队长！二当家！…能借一步说话吗？」",
+   "zh": "「队长！副队长！…能借一步说话吗？」",
    "meta": {
     "blob": 129,
     "offset": 81060,
@@ -29279,7 +29279,7 @@
    "id": "row::6352",
    "en": "I love you all! Heeeere's the Time Goddess! ♪",
    "ja": "　みんな大好き！　時の女神さまですよ～♪」",
-   "zh": "　大家最爱了！这就是时之女神！」",
+   "zh": "　最喜欢大家了！是时之女神大人哦～♪」",
    "meta": {
     "blob": 129,
     "offset": 87548,
@@ -29290,7 +29290,7 @@
    "id": "row::6353",
    "en": "Ugh, it's just you. I don't have time for your crap.",
    "ja": "「またオマエか　今キサマにつきあっているヒマはない」",
-   "zh": "「啧，又是你。我没空伴你瞎扯。」",
+   "zh": "「啧，又是你。我没空陪你这家伙瞎扯。」",
    "meta": {
     "blob": 129,
     "offset": 87776,
@@ -29323,7 +29323,7 @@
    "id": "row::6358",
    "en": "Hey! Didn't your mother teach you any manners?",
    "ja": "「オマエ！とかキサマ！　はないんじゃな～い？",
-   "zh": "「一口一个『你』『小子』，不太好吧～？",
+   "zh": "「一口一个『你』『这家伙』，不太好吧～？",
    "meta": {
     "blob": 129,
     "offset": 88944,
@@ -29796,7 +29796,7 @@
    "id": "row::6423",
    "en": "But of course, living the fast life",
    "ja": "「まあ　生き急いでいるようなものだから",
-   "zh": "「不过，这么赶着活，",
+   "zh": "「不过，生活节奏这么快的话，",
    "meta": {
     "blob": 129,
     "offset": 101792,
@@ -30016,7 +30016,7 @@
    "id": "row::6451",
    "en": "You just always have to run your mouth.",
    "ja": "　ったく　副隊長どのは相変わらずですなっ！」",
-   "zh": "　二当家的还真是一点没变啊！」",
+   "zh": "　副队长大人还真是一点没变啊！」",
    "meta": {
     "blob": 129,
     "offset": 107112,
@@ -34141,7 +34141,7 @@
    "id": "row::8176",
    "en": "Thieves! Disperse!",
    "ja": "「とうぞく団　かいさんだーーー！」",
-   "zh": "「盗贼团！散开！」",
+   "zh": "「盗贼团！解散！」",
    "meta": {
     "blob": 151,
     "offset": 50984,

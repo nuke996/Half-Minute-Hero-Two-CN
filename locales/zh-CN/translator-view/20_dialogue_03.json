@@ -10656,7 +10656,7 @@
    "id": "row::21376",
    "en": "Sir sub-commander is always impatient.",
    "ja": "　副隊長どのはセッカチなんだから」",
-   "zh": "　二当家总是性子急。」",
+   "zh": "　副队长大人总是性子急。」",
    "meta": {
     "blob": 374,
     "offset": 20680,
@@ -14814,7 +14814,7 @@
    "id": "row::22283",
    "en": "Idiot: The coil! Wind the coil!",
    "ja": "ウスノロ「ネジヲ　マケ！　ネジヲ！」",
-   "zh": "饭桶「螺丝！拧螺丝！」",
+   "zh": "笨蛋「发条！上发条！」",
    "meta": {
     "blob": 394,
     "offset": 455948,
@@ -14825,7 +14825,7 @@
    "id": "row::22284",
    "en": "Idiot: … Huh? Is it morning? I think I slept well.",
    "ja": "ウスノロ「・・・・・・ン？　モウ　アサカ　ヨクネタナ」",
-   "zh": "饭桶「…嗯？天亮了？我睡得挺香。」",
+   "zh": "笨蛋「…嗯？天亮了？我睡得挺香。」",
    "meta": {
     "blob": 394,
     "offset": 456812,
@@ -14836,7 +14836,7 @@
    "id": "row::22285",
    "en": "Idiot: We are always with you!",
    "ja": "ウスノロ「オレタチハ　イツモ　オマエト　イッショ　ダ！」",
-   "zh": "饭桶「我们永远和你在一起！」",
+   "zh": "笨蛋「我们永远和你在一起！」",
    "meta": {
     "blob": 394,
     "offset": 457676,
@@ -14847,7 +14847,7 @@
    "id": "row::22286",
    "en": "Idiot: … did we keep you waiting?",
    "ja": "ウスノロ「・・・マタセタ　ナ」",
-   "zh": "饭桶「…让你久等了？」",
+   "zh": "笨蛋「…让你久等了？」",
    "meta": {
     "blob": 394,
     "offset": 458540,
@@ -19555,7 +19555,7 @@
    "id": "row::24031",
    "en": "You idioooot, <EVO_NAME__>!!",
    "ja": "「<EVO_NAME__>のバカーーーーー！！」",
-   "zh": "「你这饭桶，<EVO_NAME__>！！」",
+   "zh": "「<EVO_NAME__>你这笨蛋————！！」",
    "meta": {
     "blob": 412,
     "offset": 113472,
@@ -26386,7 +26386,7 @@
    "id": "row::25603",
    "en": "Why can't I beat this fool? He's half playing around!",
    "ja": "　なぜ勝てないっ　こんな遊び半分なヤツに！？」",
-   "zh": "　为何赢不了这饭桶？他只出了半力！」",
+   "zh": "　为什么赢不了这种吊儿郎当的家伙！？」",
    "meta": {
     "blob": 445,
     "offset": 9452,
