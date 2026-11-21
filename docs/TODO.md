@@ -2,54 +2,117 @@
 
 > 用途：把**除实机测试以外**的未完成项集中登记，避免散落在 `KNOWN_ISSUES.md`、
 > `PACKAGE_LEDGER.md`、`FINAL_QA_PLAN.md` 与项目记忆中。
-> 最近复核：2026-11-15（修正 T-04b：游戏内显示已完成，剩余为校对视图登记）。
-> 上一轮 2026-11-13：T-09 已完成，`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支。
-> 2026-11-12：完成 Q16 说明文误伤修复；拆分 T-04/T-05 为 a/b 两组。
+> 最近复核：2026-11-21（按 P0～P3 重排；合并 T-04a/T-05a 为 T-04、T-03/T-04b 为 T-03；
+> 拆分 T-10 为 T-10a/T-10b、T-13 为 T-13a；新增 T-07b；T-12 修正为部分完成）。
+> 上一轮 2026-11-15：修正 T-04b（游戏内显示已完成，剩余校对视图登记）。
+> 2026-11-13：T-09 完成，`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支。
 > 实机测试项不在此表：见 `docs/FINAL_QA_PLAN.md` §2.1 / §2.3 / §2.4 与 `docs/PACKAGE_LEDGER.md` §2。
 
 ## 1. 待办总表
 
-| ID | 优先级 | 类别 | 待办 | 当前状态（2026-11-09 复核） | 建议下一步 | 关联文档 |
-|---|---|---|---|---|---|---|
-| **T-01** | 高 | 工程/存档兼容 | 载体码（cmap）固化：持久化「字→载体码」为 append-only，构建不再按字频重排 | **已完成（2026-11-09）**。新增 `locales/zh-CN/cmap.json`（2300 字）；`build_plan()` 优先使用固化码，新字只从池中未用码追加，旧字不重排；连续两次构建 `+0 新字`，LANG_EN/texture/cscv 哈希一致；2300 个码唯一且均可在字符表反查 | 无需手工维护；新增译字会自动追加。换补丁后用旧存档名字复测一次 | `KNOWN_ISSUES.md` §13、`PITFALLS.md` §27、`FINAL_QA_PLAN.md` §7 |
-| **T-02** | 高 | 翻译质量 | 导入对话校对剩余 **429 条**（高严重度 0） | **已完成（2026-11-09）**：427 条已修复 + 2 条保留原译，共改动 529 处槽位（导入合计 530，另 1 处为既有人工修改）；`dialogue_issues_status.tsv` 剩余待核对 **0**；逐条原文/原译文/现译文见 `PROOFREAD_DIALOGUE_ROUND2.md`；Z24 重建 error 0 / warning 45 | 实机抽检本轮改动；后续新校对问题另开批次 | `PROOFREAD_DIALOGUE_REPORT.md`、`PROOFREAD_DIALOGUE_ROUND2.md`、`KNOWN_ISSUES.md` §2 |
-| **T-03** | 低 | 校对通道 | 歌词译文接入 `translator-view`（导出/导入） | **未接入**。`cscv[355]` 28 行为代码常量 `SONG_EN_LINES`（`tools/build_cn.py:2481`）；`export_review.py` 无歌曲表处理，校对视图看不到、改不了 | 如需要人工校对：为歌曲表增加导出/导入通道（JSON 或 TSV），并在导入后重建 | `PACKAGE_LEDGER.md` §5/2026-10-30 记录、`PITFALLS.md` §38 |
-| **T-04a** | 低 | 放行/未登记表 | 纯显示表的 collide 假命中：`b630`、`b845` | **未实施**。`b630` LANG_EN `off4732` `You took damage!`（JA `ダメージをうけた！`）与 cscv `b23 off7792` 同串；`b845` 7 条曲名（`Intro` off88、`Grand Ending` off1312 等）与 cscv `b814` 同串。两表都未登记进译表 | 仿 `SONG_OK` 增加按 (blob, offset) 的假命中放行清单，登记这些行后重建 Z19/Z24 并 `validate_build` | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5 |
-| **T-04b** | 低 | 校对视图/名字副本 | 装备名内嵌副本登记：`b34`、`b1010`、`b546`、`b892` | **游戏内显示已完成（2026-11-15 复核）**。Z24 产物中 `b34` loadout（`head/body/handR/handL/foot` 及第二套）、`b1010`、`b546`、`b892` 的 34 个道具/装备名均已由 canonical 传播写成中文（示例 `head=勇者王冠`、`Wing Sword→羽翼之剑`），`validate_build` error 0。**真正未完成的是校对视图登记**：`text_v2.csv` 没有这些内嵌副本行（`b34` 仅有章节标题行），译者看不到也改不了。两个例外保持原文：`b34 body=Villager's Clothes`（2 处，道具表无此规范名）、`b892 Hellfire`（1 处，受保护脚本键） | 在 `export_review.py` 增加内嵌副本导出；导入时写回权威道具表 `b147/357/736/998`（否则重建成 canonical 会覆盖）；两个例外放入 `protected/` 或标注跳过原因；每批重建并 `validate_build`。**不需要再改游戏字节** | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5、`PITFALLS.md` §28/§29 |
-| **T-05a** | 低 | 翻译缺口/显示 | 纯显示说明短句 | **部分完成（2026-11-12）**：Q16 守卫误伤已修（10 个含「勇者城」的说明槽不再回写），`b147/357/736` 的「勇者城也能在森林移动」、`b357` 的「陈旧/全新的勇者城零件」已上屏。剩余：`b357 off122396/122664` `Large Attack`/`Heavy Attack`（未登记，待定性）；`b666` 的 `Trigger Rate: 1/x` 20 种（未登记） | 确认 `Large/Heavy Attack` 是装备名还是纯标签；`Trigger Rate` 按 UI 文案补登记；每批重建并校验 | `KNOWN_ISSUES.md` §21、`FINAL_QA_PLAN.md` §2.2 |
-| **T-05b** | 中 | 翻译缺口/机制名 | 剩余技能/机制名 | **已完成（2026-11-15，Z25）**。Wind 两技能 10 槽（`b666 pos0+pos292`、`b147/357/736 pos172`）已中文化；相对 Z24 仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`），副本冲突 0；敌技显示名 9 槽（`Catch and Release`×2、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath`）已上屏；`validate_build` error 0 / warning 45；产物 `dist/Z25-mech-names/` | 实机验证技能栏/武器附带技能/敌技显示；无问题后并入下一基线 | `KNOWN_ISSUES.md` §21、`PACKAGE_LEDGER.md` §5、`BUILDING.md` §5.5 |
-| **T-05c** | 中 | 翻译缺口/敌技显示名 | 敌技显示名补译（含截图 `Couple's World`） | **已完成（2026-11-15，Z26）**。47 槽 / 44 个不同名字（`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056`）；全部 `+4=FFFFFFFF`、无名字哈希操作数，相对 Z25 操作数 **0 变化**；`validate_build` error 0 / warning 45；cmap +4 字（2304）；产物 `dist/Z26-enemy-skills/`。未纳入：`Hellfire`（7 副本，疑似机制/受保护）、`Venus Seven`（已有译文，副本未同步）、`Dogry`/`Reusable`（未定性） | 实机验证敌技名显示；`Hellfire`/`Venus Seven` 另开批次处理 | `KNOWN_ISSUES.md` §21、`PACKAGE_LEDGER.md` §5、`BUILDING.md` §5.5 |
-| **T-06** | 中 | 专名审计 | 补齐专名审计覆盖面：DLC01 同表、脚本内联、未登记 UI；处理 `土おとこ` 漏译 | **未覆盖**。`PROOFREAD_NAME_REPORT.md` §2.3 已注明；`b928/59516`、`b928/67400` 两行仍把 `<超土おとこ>…` 整句省略为「它们就在村子北边！」 | 用「日文名 + 英文名」全库搜引用，补 DLC01 与脚本内联；按日文原文补回两行漏译 | `PROOFREAD_NAME_REPORT.md` §2.3/§7、`PITFALLS.md` §44 |
-| **T-07** | 高 | 发布工程 | 将 Z22–Z24 的成果并入 Z19 / stable 基线，并决定敌名/Boss 名是否在基线放行 | **已完成（2026-11-09；2026-11-12 随 Q16 修复重建）**。决策：**仅 Z19 放行 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。Z19 已启用 `HMH2_Z23_RELEASE` 并重建（LANG_EN `fbe38d771f76`，error 0 / warning 45）；stable 已按当前译表重建（LANG_EN `cde1b071c2fc`，error 0 / warning 1），并登记进 `RECIPES` 以写正确清单 | 实机验证 Z19 图鉴/战斗说话人/宝箱后，再决定 stable 是否跟进放行 | `PACKAGE_LEDGER.md` §2/§5、`BUILDING.md` §5.5、`README.md` 开发状态 |
-| **T-08** | 低 | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0（新字形 2300/2847，余 547）；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频（暂不解决） | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
-| **T-09** | 高 | 分支管理 | 将 `proofread` 分支的最新进度合并回 `main` 主分支 | **已完成（2026-11-13）**。`proofread` 以 **28 个提交**快进合并入 `main`（`git merge --ff-only`，无冲突）；合并后从 `main` 重建完整包与稳定包并通过校验：Z19 `LANG_EN fbe38d771f76`（error 0 / warning 45）、stable `LANG_EN cde1b071c2fc`（error 0 / warning 1）；Z24 校对目标同步重建 | 后续在 `main` 上开发；`proofread` 分支暂保留（是否删除另行决定）；发布前仍需实机回归 | `README.md`、`docs/PACKAGE_LEDGER.md` §5、`BUILDING.md` §9 |
+### 1.1 P0（先做，用户可见的内容/功能错误）
 
-## 2. 复核证据（2026-11-13）
+| ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
+|---|---|---|---|---|---|
+| **T-10a** | 数据污染/误译 | 修复 `row::4756` 被注入的汉化署名，并全表复查同类注入 | **未实施**。`text_v2.csv` row 4756 的 `zh_new` 为「修改设定。（汉化作者nobina 使用模型DeepSeekFlash）」，已进入 `translator-view/10_ui_01.json`。全表扫描 `nobina`/`DeepSeek`/`汉化作者`/`汉化组`：仅此 1 行命中；另 2 处「3DM轩辕汉化组」在 `zh_3dm` 旧列，不影响成品 | 恢复为与日文一致的设置说明；`package_current` + `validate_build`；实机确认设置菜单说明 | `locales/zh-CN/text_v2.csv`、`translator-view/10_ui_01.json` |
+
+### 1.2 P1（发布前必须处理）
+
+| ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
+|---|---|---|---|---|---|
+| **T-13a** | 术语表/方向拍板 | 术语表按推荐表定向；确认阻塞项方向 | **未实施**。术语表仍为：`おじさま→大叔大人`、`銃士→射手`、`ウォーリア→战士`、`エクスペリダイブ→试验潜水`、`登場セリフ→现身脚本`、`アイテム→物品`、`魔王ケルベロス→瑟伯勒斯`；`テント` 方向未定 | 按 [`TERM_RECOMMENDATIONS_20261121.md`](TERM_RECOMMENDATIONS_20261121.md) §5 修改 [`术语表.md`](../locales/zh-CN/术语表.md)；先由负责人拍板 `魔王ケルベロス`（刻耳柏洛斯 / 瑟伯勒斯）与 `テント`；流程固化并入 T-07b 的发布检查清单 | `TERM_RECOMMENDATIONS_20261121.md` §5、`术语表.md` §4/§12、`tools/audit_terms.py` |
+| **T-10b** | 术语/误译/漏译 | 第一批高置信误译与漏译（原 T-10 主体 + T-06 漏名 + T-05c 遗留） | **未实施**。① `船頭` 名表 13/13 行仍「船长」（仅 b607 两句对白「船夫」）；② `キャンセル` row 20447 仍「继续」；③ `extra::417::206540` 仍「新流星」；④ `row::6113` 仍「射手」、`row::10938` 仍「巫师之路」；⑤ `おじさま`「大叔大人」40 处（另 `extra::954::3560` 1、DLC 7），`火枪手` 全表 0；⑥ `b928/59516`、`b928/67400`（row 53228/53243）仍「它们就在村子北边！」；⑦ T-05c 遗留 `Hellfire`（7 副本）/`Venus Seven`（副本未同步）/`Dogry`/`Reusable`（未定性） | 按推荐表 §2.1/§6 修改 `text_v2.csv`、`extra_review.json`、`ml_zh_fields.json`、DLC 表；`キャンセル` 改前实机确认按钮语义（日文 `キャンセル` / 英文 `Continue`）；`Hellfire` 等先定性再放行或登记例外；一次构建 + `validate_build` + 实机抽查 `row::4756`、`row::6113`、`row::10938`、`extra::417::206540` | `TERM_RECOMMENDATIONS_20261121.md` §2.1/§6、`TERM_AUDIT_REPORT_20261121.md` §2/§6、`KNOWN_ISSUES.md` §21 |
+| **T-07b** | 发布工程 | 重建 Z19 / stable 发布基线，并入 Z25–Z27 与术语批次 | **未实施**。Z19/stable 产物停在 2026-11-12 重建（Z19 `LANG_EN fbe38d771f76`、stable `cde1b071c2fc`），不含 Z25–Z27、副队长统一、「魔法书」统一及后续术语批 | 在 T-10b/T-11/T-12 合并批次完成后，从 `main` 重建 Z19（`HMH2_Z23_RELEASE=1`）与 stable（`=0`），记录 `LANG_EN`/`texture`/`cscv`/`DLC01` 哈希与 `build_manifest.json`；`tools/audit_terms.py` 纳入发布检查清单 | `PACKAGE_LEDGER.md` §2/§5、`BUILDING.md` §5.5 |
+
+### 1.3 P2（发布前建议处理）
+
+| ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
+|---|---|---|---|---|---|
+| **T-11** | 术语/专名统一 | 术语表 §12 与专名批量统一 | **未实施**。译表仍并存：歌之族 23 / 歌族 51、陆地鱼人 13 / 海岸人鱼 31、斯佩维 20 / 斯佩尔维亚 1、淘金热 6 / 黄金冲击 16、瑟伯勒斯 1 / 刻耳柏洛斯 16（多行表另有 1 处瑟伯勒斯）；`艾`/`艾娃` 未统一。容量实测：相关槽 `max_cn` 16–32，改 5–6 字不溢出（`b147` 复合道具槽 7966/7988 也足够） | 先做 P1 专名（歌族、海岸人鱼、海岸人鱼姐妹、艾娃、斯佩尔维亚、黄金冲击），再做 P2/P3；`ケルベロス` 按 T-13a 决定；每批重建 + `validate_build` + 重跑 `tools/audit_terms.py` | `TERM_RECOMMENDATIONS_20261121.md` §2.1/§2.2、`术语表.md` §12、`term_review_recommendations_20261121.tsv` |
+| **T-12** | 术语/说话人标签 | 说话人标签统一（97 组） | **部分完成（2026-11-21 Z27）**。`副隊長ヤーシュ→副队长亚修` 已统一（`二当家` 全表 0，`副队长` 14）；其余 97 组未动。推荐表 94 条说话人项中，`保留差异` 15 条、`误报` 2 条，实际约 77 组需处理 | 按推荐表 §3/§4 分两批：专有人名与店铺标签 → 泛称人物；批量替换前把保留差异词加入白名单；与 T-11 同一轮构建，每批后重跑审计 | `speaker_label_variants_20261121.tsv`、`TERM_RECOMMENDATIONS_20261121.md` §3/§4 |
+
+### 1.4 P3（收尾项，不影响发布）
+
+| ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
+|---|---|---|---|---|---|
+| **T-04** | 放行/未登记表 | 纯显示串与 collide 假命中放行（原 T-04a + T-05a） | **未实施**。`b630`/`b845` 假命中未登记；`b357` `off122396`/`off122664` 的 `Large Attack`/`Heavy Attack`、`b666` 的 `Trigger Rate: 1/x` 20 种均不在译表（全部译表 0 命中） | 先定性 `Large/Heavy Attack`：若为装备名则升 P2；按 `(blob, offset)` 加放行清单；`Trigger Rate` 按 UI 文案补登记；每批重建 + `validate_build` | `KNOWN_ISSUES.md` §12/§21、`PACKAGE_LEDGER.md` §5 |
+| **T-03** | 校对视图/歌词 | 非 CSV 表接入校对视图（原 T-03 + T-04b） | **未实施**。`SONG_EN_LINES` 28 条仍为代码常量（[`build_cn.py`](../tools/build_cn.py) 第 2601 行，原文档写的 2481 已过期）；`export_review.py` 无歌曲表与内嵌副本处理；`text_v2.csv` 的 b34 共 317 行但均为章节/曲目标题，没有 `head/body/...` 装备名行 | 为歌曲表与内嵌装备名副本增加导出/导入通道；导入写回权威道具表 `b147/357/736/998`；`Villager's Clothes`×2、`Hellfire`×1 放入 `protected/` 或标注跳过原因；每批重建并导出视图 | `PACKAGE_LEDGER.md` §5、`PITFALLS.md` §38、`KNOWN_ISSUES.md` §12 |
+| **T-08** | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0；`cmap.json` 现为 **2304/2847（余 543，原文档写的 2300/547 已过期）**；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频 | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
+
+### 1.5 已完成（保留记录）
+
+| ID | 完成时间 | 结果 | 关联文档 |
+|---|---|---|---|
+| **T-01** | 2026-11-09 | 载体码（cmap）固化，`locales/zh-CN/cmap.json` 为 append-only；连续构建 `+0 新字`，哈希一致 | `KNOWN_ISSUES.md` §13、`PITFALLS.md` §27 |
+| **T-02** | 2026-11-09 | 导入对话校对 429 条清零（427 修复 + 2 保留原译，529 槽）；Z24 重建 error 0 / warning 45 | `PROOFREAD_DIALOGUE_ROUND2.md` |
+| **T-05b** | 2026-11-15（Z25） | Wind 两技能 10 槽 + 敌技显示名 9 槽中文化；仅 4 个操作数变化；validate error 0 / warning 45 | `dist/Z25-mech-names/`、`KNOWN_ISSUES.md` §21 |
+| **T-05c** | 2026-11-15（Z26） | 47 槽 / 44 个敌技显示名；操作数 0 变化；cmap +4（2304）。**遗留项已转入 T-10b**：`Hellfire`、`Venus Seven`、`Dogry`、`Reusable` | `dist/Z26-enemy-skills/` |
+| **T-07** | 2026-11-09（2026-11-12 重建） | Z22–Z24 并入 Z19/stable；仅 Z19 放行敌名/Boss 图鉴名。**发布基线后续更新见 T-07b** | `PACKAGE_LEDGER.md` §2/§5 |
+| **T-09** | 2026-11-13 | `proofread` 28 个提交快进合并入 `main`；三个包从 `main` 重建校验通过 | `PACKAGE_LEDGER.md` §6 |
+| 术语清理（无独立 ID） | 2026-11-21 | 提交 `b76af42` 统一 `グリモワール/グリモ→魔法书`，`魔典/格瑞莫/格里莫` 在 `zh_new` 已归零；Z27 完成 27 个选项放行、15 个尾行留空、副队长统一（`validate_build` error 0 / warning 45） | `docs/TEMP_REVIEW_20261121.md`、`PACKAGE_LEDGER.md` §2 |
+
+### 1.6 旧 ID 对照（供其他文档引用）
+
+| 旧 ID | 新归属 | 说明 |
+|---|---|---|
+| T-04a | **T-04** | 与 T-05a 合并为「纯显示串与假命中放行」 |
+| T-04b | **T-03** | 与旧 T-03（歌词）合并为「非 CSV 表接入校对视图」 |
+| T-05a | **T-04** | 剩余项同上 |
+| T-05c | 已完成；遗留项进 **T-10b** | `Hellfire`/`Venus Seven`/`Dogry`/`Reusable` |
+| T-06 | **T-10b**（4 行漏名）+ **T-04**（覆盖登记） | 原「补齐专名审计覆盖面」拆分 |
+| T-10 | **T-10a**（P0 数据污染）+ **T-10b**（P1 误译/漏译） | 按严重度拆分 |
+| T-13 | **T-13a**（术语表定向）+ T-07b 检查清单 | 流程固化并入发布检查 |
+
+## 2. 复核证据
+
+### 2.1 2026-11-21
 
 | ID | 复核方式 | 结果 |
 |---|---|---|
-| T-01 | 读 `cmap.json` + 连续两次 `package_current` | 2300 字；第二次 `+0 新字`；LANG_EN/texture/cscv/DLC01 哈希与第一次一致；2300 码唯一且均可反查 |
-| T-02 | 读 `dialogue_issues_status.tsv` | 待核对 0；已修复 427 + 保留原译 2；`import_review` 收到 530 处修订（529 本轮 + 1 既有）；error 0 / warning 45 |
-| T-03 | 搜 `export_review.py` / `build_cn.py` | 无歌曲表导出；`SONG_EN_LINES` 仍是代码常量 |
-| T-04a | 扫母本 LANG_EN/cscv | `b630 off4732` 与 cscv `b23 off7792` 同串；`b845 off88/1312` 与 cscv `b814` 同串；两表译表行数 0 |
-| T-04b | 读 Z24 产物 `b34/b1010/b546/b892` + `_canon` | loadout 与 `b892` 的 34 个名字已中文；仅 `Villager's Clothes`×2、`Hellfire`×1 保持英文；这些内嵌副本均无 CSV 行，属校对视图缺口 |
-| T-05a | 对照译表、`t17_q16_candidates.tsv` 与 Z19/Z24 产物 | 10 个说明槽被 Q16 误伤（5 条 × JA/EN）；修复后 5 条说明全部上屏；剩 `Large/Heavy Attack`、`Trigger Rate` 未登记 |
-| T-05b | 读 Z25 产物 + 对比 Z24 操作数 | Wind 10/10 槽中文；仅 `b83 rec183/186`、`b394 rec774/787` 4 个操作数变化；敌技 9 槽中文；副本冲突 0；validate error 0 / warning 45 |
-| T-05c | 读 Z26 产物 + 对比 Z25 操作数 | 47/47 槽中文；Z25→Z26 操作数 0 变化；validate error 0 / warning 45；`Couple's World` → 两人的世界 |
+| T-10a | 全译表搜 `nobina`/`DeepSeek`/`汉化作者`/`汉化组` | `text_v2.csv` row 4756 与 `translator-view/10_ui_01.json` 各 1 处；其余命中在 `zh_3dm` 旧列 |
+| T-13a | 读 `术语表.md` §4/§9/§10 | 6 条推荐仍未落地；`ケルベロス`/`テント` 无决议记录 |
+| T-10b | 读 `text_v2.csv`/`extra_review.json`/`ml_zh_fields.json`/DLC 表 | `船頭` 13/13 仍「船长」；`キャンセル` row 20447「继续」；`新流星` extra 1 条；`射手` 12 / `火枪手` 0；`大叔大人` 40+1+7；`土おとこ` 4 行仍省名；`Hellfire` 未定性 |
+| T-07b | 读 `dist/` 与 `PACKAGE_LEDGER.md` §2 | Z19/stable 最后重建为 2026-11-12；Z25–Z27 均为独立测试目录 |
+| T-11 | 计数 `zh_new` 字段 | 歌之族 23、陆地鱼人 13、斯佩维 20、淘金热 6、瑟伯勒斯 1（均未统一） |
+| T-12 | 计数 `zh_new` + Z27 记录 | `二当家` 0、`副队长` 14；Z27 已统一副队长，其余 97 组未动 |
+| T-04 | 搜全译表 + 读 `build_cn.py` 放行清单 | `Large/Heavy Attack`、`Trigger Rate` 0 命中；无 `b630`/`b845` 放行项 |
+| T-03 | 读 `build_cn.py` / `export_review.py` / `text_v2.csv` b34 | `SONG_EN_LINES` 28 条（第 2601 行）；导出脚本无歌曲/内嵌副本；b34 无装备名行 |
+| T-08 | 读 `cmap.json` | `codes` 2304 条；上限 2847，余 543 |
+| 术语审计 | 复跑 `python tools/audit_terms.py` | 仍为 161 条（P1 10 / P2 96 / P3 55），与 `TERM_AUDIT_REPORT_20261121.md` 一致，可复现 |
+
+### 2.2 2026-11-13（历史）
+
+| ID | 复核方式 | 结果 |
+|---|---|---|
+| T-01 | 读 `cmap.json` + 连续两次 `package_current` | 2300 字；第二次 `+0 新字`；哈希一致；2300 码唯一且均可反查 |
+| T-02 | 读 `dialogue_issues_status.tsv` | 待核对 0；已修复 427 + 保留原译 2；`import_review` 收到 530 处修订 |
+| T-05a | 对照译表、`t17_q16_candidates.tsv` 与 Z19/Z24 产物 | 10 个说明槽被 Q16 误伤；修复后 5 条说明全部上屏；剩 `Large/Heavy Attack`、`Trigger Rate` 未登记 |
+| T-05b | 读 Z25 产物 + 对比 Z24 操作数 | Wind 10/10 槽中文；4 个操作数变化；敌技 9 槽中文；validate error 0 / warning 45 |
+| T-05c | 读 Z26 产物 + 对比 Z25 操作数 | 47/47 槽中文；操作数 0 变化；validate error 0 / warning 45 |
 | T-06 | 读报告 + 查 CSV | `b928/59516`、`b928/67400` 两行确实省略了名字 |
-| T-07 | 读新配方 + 检查 dist | Z19 `HMH2_Z23_RELEASE=1`，LANG_EN `fbe38d771f76`；stable `=0`，LANG_EN `cde1b071c2fc`；两者 validate error 0 |
-| T-08 | 2026-11-09 `verify_charset_full.py` + 构建输出 | 上屏缺字 0；新字形 2300/2847，余 547；`row1992` 显示英文原名 |
-| T-09 | `git merge --ff-only` + 重建校验 | 28 个提交快进合并成功，`main` 与 `proofread` 同点；Z19/stable/Z24 均从 `main` 重建，validate error 0 |
+| T-07 | 读新配方 + 检查 dist | Z19 `HMH2_Z23_RELEASE=1`，LANG_EN `fbe38d771f76`；stable `=0`，LANG_EN `cde1b071c2fc`；validate error 0 |
+| T-08 | 2026-11-09 `verify_charset_full.py` + 构建输出 | 上屏缺字 0；`row1992` 显示英文原名 |
+| T-09 | `git merge --ff-only` + 重建校验 | 28 个提交快进合并成功；Z19/stable/Z24 均从 `main` 重建，validate error 0 |
 
 ## 3. 不在此表的项
 
-- **实机测试**：Z22/Z23/Z24 图鉴两页、战斗说话人、宝箱/掉落、DLC Q78 船、马/摩托/越野车/竹马、
-  Mu/Xi 获取等，见 `docs/FINAL_QA_PLAN.md` §2.1。
-- **明确不修**：Q16「勇者城」相关**键名槽**（`KNOWN_ISSUES.md` §4；说明文不在此列，2026-11-12 已修复误伤）、
-  `Hero<>` 模板槽、`b509/908` 脚本键槽、称号 `b931 pos36`、`b317` 连携技表。
+- **实机测试**：Z19 图鉴/战斗说话人/宝箱、Z25 技能栏、Z26 敌技名、Z27 选项与尾行与队伍界面「副队长亚修」、
+  DLC Q78 船、马/摩托/越野车/竹马、Mu/Xi 获取等，见 `docs/FINAL_QA_PLAN.md` §2.1。
+- **明确不修**：Q16「勇者城」相关**键名槽**（`KNOWN_ISSUES.md` §4）、`Hero<>` 模板槽、
+  `b509/908` 脚本键槽、称号 `b931 pos36`、`b317` 连携技表。
 - **既定差异**：stable/E3 不含 4 个视频与 `cscv[355]` 歌词，是配方设计，不是缺漏。
 
 ## 4. 已同步的过期文档
+
+**2026-11-21（TODO 重排与术语落地复核）：**
+- `docs/TODO.md`：按 P0～P3 重排；合并 T-04a+T-05a→T-04、旧 T-03+T-04b→T-03；
+  拆分 T-10→T-10a/T-10b、T-13→T-13a；新增 T-07b（发布基线重建）；
+  T-12 修正为「部分完成（Z27）」；补记 `b76af42` 魔法书统一与 Z27 三项；
+  修正过期引用（`build_cn.py` 2481→2601、cmap 2300/547→2304/543）；新增旧 ID 对照表。
+- `docs/TERM_AUDIT_REPORT_20261121.md`：161 条候选与复跑结果一致。
+- `docs/TERM_RECOMMENDATIONS_20261121.md`：145 个唯一术语的推荐译名与术语表修改建议。
+- `locales/zh-CN/proofread/term_review_recommendations_20261121.tsv`：机器可读推荐表。
+- `tools/audit_terms.py`：只读术语审计脚本；每轮打包后可复跑。
 
 **2026-11-15（T-04b 状态修正 / T-05b、T-05c 完成）：**
 - `docs/TODO.md`：T-04b 由“未实施”改为“游戏内显示已完成，剩余校对视图登记”；
