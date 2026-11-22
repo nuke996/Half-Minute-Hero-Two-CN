@@ -60,9 +60,10 @@ MD5:       867308FCD87A（前 12）
 
 1. 准备一份干净的支持版本游戏（Steam）。
 2. 下载最新的汉化发布包。
-3. 将发布包内文件覆盖到游戏目录（`HMH2.exe` 或 `dinput8.dll`+`hm2zh_patch.bin`、
-   `res/LANG_JA.s2a`、`res/LANG_EN.s2a`、`res/cscv.s2a`、`res/texture.s2a`）。
-4. 启动游戏。
+3. 将发布包内文件覆盖到游戏目录（`dinput8.dll`+`hm2zh_patch.bin`、`res/LANG_EN.s2a`、
+   `res/cscv.s2a`、`res/texture.s2a`）。
+   当前发布包**不含** `res/LANG_JA.s2a`：补丁不改动它，游戏目录里的原版文件保持不动即可。
+4. 启动游戏（游戏语言设为 English）。
 
 或参照 `BUILDING.md` 进行构建。
 
@@ -73,6 +74,8 @@ MD5:       867308FCD87A（前 12）
 
 - 成品式安装会在游戏目录中留下被覆盖/新增的文件；请事先备份原版文件，
   或用 Steam"验证游戏文件完整性"还原（会一并还原其他被改文件）。
+- 发布包不含 `LANG_JA`。若玩家目录里的 `LANG_JA` 曾被早期双写版本改过，
+  请先执行 Steam 校验或用 `汉化-还原.bat` 还原，否则切到日语会看到旧补丁的残留文本。
 - 脚本式安装可用 `汉化-还原.bat`（= `python tools/build_cn.py revert`）从 `.bak` 还原。
 
 ---

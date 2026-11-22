@@ -186,6 +186,24 @@ git commit/dirty state, input file hashes, feature flags such as `HMH2_Z23_RELEA
 and output hashes. The import report must print this identity so a reviewer can confirm
 which recipe and translation snapshot was built.
 
+## Dist Output Omission (mandatory)
+
+`do_package` must not copy a file into `dist/` when both conditions hold:
+
+1. the recipe lists it in `expect_same` (the file must stay byte-identical to the
+   original), and
+2. the staged file was verified byte-identical to its original backup.
+
+Such files (currently `res/LANG_JA.s2a` and `DLC01/LANG_JA.s2a` for `z19` / `stable` /
+`z28`) already exist unchanged in the player's game directory, so distributing them only
+wastes space. The build must also delete a stale copy of an omitted file from the
+output directory and record it in the manifest's `omitted_outputs` field.
+
+Do not implement this as a global removal from `PACKAGE_RES`: staging still needs
+`LANG_JA` as the CP932 baseline for slot offsets, name lookups, hash operands and the
+isolation assertion. Recipes that write `LANG_JA` (Japanese mirror packages such as
+`Z4-JA` / `E3-JA`, or the dual-write `apply_menu` / `package` path) must keep emitting it.
+
 ## Review Pipeline Adaptation (mandatory)
 
 Whenever localization scripts are changed to **display more text** or to **protect text

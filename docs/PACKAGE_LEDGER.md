@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-22（T-03 歌词/装备名副本接入校对视图）
+> 最近更新：2026-11-22（隔离包不再输出与母本相同的 `LANG_JA`）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
@@ -64,6 +64,12 @@
 
 > Z10b/Z11/Z12 在 2026-10-21 修复“`mirror=True` 连带关闭称号守卫”后已全部重建；
 > 修复前三个包的 `b931 pos0` 有 191/252 条被翻成中文。
+
+> **2026-11-22 起输出裁剪**：`do_package` 对 `expect_same` 中已校验为「与母本逐字节相同」
+> 的文件不再复制进 dist，并删除输出目录里的同名旧产物；清单新增 `omitted_outputs`。
+> 因此 `z19` / `stable` / `z28` 的新构建**不再包含** `res/LANG_JA.s2a` 与
+> `DLC01/LANG_JA.s2a`（表中历史哈希仍按当时产物记录）。日语镜像包（`Z4-JA` / `E3-JA`）
+> 会对称地省略未改写的 `LANG_EN` 侧；双写 `package` 路径两侧都写，不受影响。
 
 ---
 
@@ -155,6 +161,27 @@ python tools/build.py --game-dir work/original package_current
 ---
 
 ## 6. 变更记录
+
+- **2026-11-22（隔离包输出裁剪：不再分发未改动的 `LANG_JA`）**：
+  1. `tools/build_cn.py` 的 `do_package` 记录每个 `expect_same` 文件与母本的比较结果；
+     逐字节相同的文件（`res/LANG_JA.s2a`、`DLC01/LANG_JA.s2a`）不复制进 dist，
+     并删除输出目录中同名旧产物，避免重复分发约 130 MB 的原版文件。
+  2. `build_manifest.json` 新增 `omitted_outputs` 字段；`outputs` 只登记实际写入的文件。
+  3. staging 仍保留 `LANG_JA`（槽位基准/名字/操作数/隔离断言依赖它），
+     `PACKAGE_RES` 不变；日语镜像与双写配方继续输出 `LANG_JA`。
+  4. 文档同步：`BUILDING.md` §8/§14、`README.md` 安装/卸载、`AGENTS.md`
+     「Dist Output Omission」。
+  5. **重建验证（2026-11-22）**：删除 `dist/Z19-proofread`、`dist/Z28-dict-residue`、
+     `dist/stable-names-en` 后重新打包，三个目录均为 6 个文件（`dinput8.dll` /
+     `hm2zh_patch.bin` / `res/LANG_EN.s2a` / `res/texture.s2a` / `res/cscv.s2a` /
+     `DLC01/LANG_EN.s2a`），`LANG_JA` 两侧均未输出且记录在 `omitted_outputs`。
+     哈希：Z19/Z28 `LANG_EN 375f03867e98` / `DLC01 ad68d8bd92e6` / `texture fb5b79e17e37` /
+     `cscv f074004c8eb3`；stable `LANG_EN 1ed560772d5c` / `DLC01 06ac6cff45f3` /
+     `texture fb5b79e17e37` / `cscv 8f0bd9db2a40`。`validate_build`：Z19/Z28 error 0 /
+     warning 46，stable error 0 / warning 1。
+  6. **环境提示**：本次构建环境缺少 `dist/Z17-video`，`_apply_z17_video` 跳过，
+     因此 Z19/Z28 未生成 `res/MOV.s2a`、未替换 LANG_EN 内的视频 blob。这是输入缺失，
+     与本次输出裁剪无关；正式发布前应在存在 `dist/Z17-video` 的环境重建这两个包。
 
 - **2026-11-22（Z28 初版替换词典语义残留清理）**：
   1. 新增 [`tools/fix_terms_round4.py`](../tools/fix_terms_round4.py)：从 `7179354:locales/zh-CN/replace_map.py` 恢复初版 350 条有效 REPL，与当前 16 条 diff 后，按「日文触发 + 精确行」清理已烘焙进译表的语义残留。

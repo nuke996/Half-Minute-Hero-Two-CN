@@ -6051,10 +6051,12 @@ def _manifest_outputs(out_dir):
     return out
 
 
-def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=None):
+def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=None,
+                          omitted_outputs=None):
     """写 `build_manifest.json`（产物目录）与 `build/last_package.json`。
 
     用于确认“这次导入/打包到底是哪个配方、带了哪些开关、基于哪份译表”。
+    `omitted_outputs`：因与母本逐字节相同而故意未写入 dist 的文件（如 z28 的 LANG_JA）。
     """
     import datetime
     rid, meta = _recipe_info()
@@ -6081,6 +6083,8 @@ def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=No
     internal_z23 = bool(_Z23_RELEASE)
     if video_merged and not internal_z23:
         internal_z23 = bool(old_flags.get('internal_Z23_RELEASE'))
+    if omitted_outputs is None:
+        omitted_outputs = old.get('omitted_outputs') or []
     manifest = {
         'schema': MANIFEST_SCHEMA,
         'recipe_id': rid,
@@ -6102,6 +6106,7 @@ def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=No
         'git': _git_build_info(),
         'inputs': _manifest_inputs(),
         'outputs': _manifest_outputs(out_dir),
+        'omitted_outputs': list(omitted_outputs),
     }
     txt = json.dumps(manifest, ensure_ascii=False, indent=2) + '\n'
     with open(dst, 'w', encoding='utf-8') as fh:
@@ -6239,7 +6244,7 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
     manifest = (['HMH2.exe'] if em == 'exe' else list(PROXY_FILES)) + PACKAGE_RES
     if has_dlc:
         manifest += PACKAGE_DLC
-    bad, table = [], []
+    bad, table, omit = [], [], set()
     for rel in manifest:
         p = os.path.join(stage, *rel.split('/'))
         if not os.path.exists(p):
@@ -6254,6 +6259,9 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
                     bad.append('%s 应保持原版（逐字节相同）却已被改动' % rel)
                     continue
                 tag = '与原版一致(%s)' % _sha(bak)
+                # 未改动且已声明 expect_same 的文件不需要进入发布目录：
+                # 玩家目录里本就有逐字节相同的原版文件（省掉 LANG_JA 等大文件）。
+                omit.add(rel)
             else:
                 if same:
                     bad.append('%s 与原版完全相同（装机未生效）' % rel)
@@ -6266,23 +6274,38 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
             print('   - %s' % b)
         raise SystemExit(1)
 
-    # ⑤ 复制到输出目录（按相对路径建目录）
+    # ⑤ 复制到输出目录（按相对路径建目录）；expect_same 中与母本逐字节相同的
+    #    文件跳过，避免把玩家目录里本就存在的原版大文件（如 LANG_JA）重复分发。
     print('== 写入输出目录 ==')
+    written = 0
     for rel, sz, h, tag in table:
+        if rel in omit:
+            continue
         dst = os.path.join(out_dir, *rel.split('/'))
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         shutil.copy2(os.path.join(stage, *rel.split('/')), dst)
         print('  %-20s %9d B  sha256:%s  %s' % (rel, sz, h, tag))
-    print('打包完成：%d 个文件已放入 %s（未打 zip；配置游戏目录未改动）'
-          % (len(table), out_dir))
-    print('提示：staging 暂存于 %s（可删）；输出目录中不属于本次补丁的旧文件不会被删除。' % stage)
+        written += 1
+    if omit:
+        print('  跳过与原版逐字节相同的文件（不写入输出目录）：')
+        for rel in sorted(omit):
+            stale = os.path.join(out_dir, *rel.split('/'))
+            if os.path.exists(stale):
+                os.remove(stale)
+                print('   - %s（已移除旧产物）' % rel)
+            else:
+                print('   - %s' % rel)
+    print('打包完成：%d 个文件已放入 %s（跳过 %d 个与原版相同的文件；未打 zip；配置游戏目录未改动）'
+          % (written, out_dir, len(omit)))
+    print('提示：staging 暂存于 %s（可删）；除本次判定为无需分发的旧产物外，输出目录中的其他旧文件不会被删除。' % stage)
 
     # ⑥ 强制刷新译者校对视图：避免 translator-view 停留在旧快照，下次导入时整体回写译表
     export_review_view(apply_repl=apply_repl)
 
     # ⑦ 构建清单：记录本次配方/开关/输入哈希/产物哈希（视频合入后会再次刷新）
     _write_build_manifest(out_dir, stage=stage, video_merged=False,
-                          apply_repl=('1' if apply_repl else '0'))
+                          apply_repl=('1' if apply_repl else '0'),
+                          omitted_outputs=sorted(omit))
 
 
 def do_package_lang_en_only(exe_mode=None):

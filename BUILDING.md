@@ -116,7 +116,7 @@ python tools/runner.py <脚本名> [参数]
 | `python tools/build.py revert` | 从 `.bak` 还原全部文件（不含 DLC01；DLC 用 `dlc_apply.py revert`） |
 | `python tools/build.py check` | 打印各文件"原版/已修改"及 SHA-256 前 12 位 |
 | `python tools/build.py dlc_only` | 只按当前字库重编码 DLC01 |
-| `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的原版文件（优先 `*.bak`，缺失时退回同名当前文件，如干净原版目录 `work/original`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺原版文件时明确中止 |
+| `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的原版文件（优先 `*.bak`，缺失时退回同名当前文件，如干净原版目录 `work/original`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺原版文件时明确中止。配方声明为 `expect_same` 的文件若与原版逐字节相同，**不会写入 dist**（见 §8「输出裁剪」） |
 | `python tools/build.py [--game-dir "<游戏目录>"] package_install` | **就地装机版打包**：对游戏目录跑 `apply_menu`（会把目录留在已汉化态）→ 校验 → 复制到 `dist/`。`DLC01` 仅在游戏目录确实存在原件时纳入（其原件备份自动生成）。`package_exe` / `package_install_exe` 为对应的 exe 模式 |
 | `python tools/build.py package_current` | **当前校对目标打包**：按 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针调用对应配方（默认 `z28` → `dist/Z28-dict-residue/`）。导入校对 bat 只调用这个命令，不再写死 Z 编号 |
 | `python tools/build.py package_current_norepl` | 按 `CURRENT_NOREPL_RECIPE` 指针打包（默认 `Z15-reuse-kanji-norepl` 对照） |
@@ -303,6 +303,10 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
    若玩家未持有 DLC，目录保持干净（不创建文件）。
 4. 载体码 `cmap` 按**全量字频**分配，与写入哪一侧无关；因此 EN/JA 两个包的
    字体与字符表产物相同，可互相复用。
+5. **[2026-11-22] 输出裁剪同样适用于镜像包**：日语镜像包（`E3-JA` / `Z4-JA`）中
+   与母本逐字节相同的 `LANG_EN` / `DLC01/LANG_EN` 也不会写入 dist，只输出被改写的
+   `LANG_JA` 侧。`validate_build.py` 以 `LANG_EN` 为校验目标，因此不适用于 JA-only
+   产物；这类对照包仍以实机回归为准。
 
 ---
 
@@ -362,8 +366,14 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
   - 两者产物一致：可直接覆盖到游戏目录的补丁文件集（dll 模式 = `dinput8.dll` + `hm2zh_patch.bin`
     + `res/*.s2a`(4) + `DLC01/*.s2a`(2)〔后者仅在游戏目录确实存在 DLC01 母本时纳入〕；
     exe 模式 = `HMH2.exe` + 同 6 个 s2a），按相对路径写入。
-  - 注意 payload 就是整份 s2a（**约 320 MB**），命令只做复制、不压缩、不自动打 zip，
-    也不会删除 `dist/` 中不属于本次补丁的旧文件。隔离模式的 `build/package_stage/` 可随时删除。
+  - **输出裁剪（2026-11-22 起）**：配方通过 `expect_same` 声明「不得改动」的文件（如 `z19` /
+    `stable` / `z28` 的 `res/LANG_JA.s2a`、`DLC01/LANG_JA.s2a`），若在 staging 中已校验为
+    与母本逐字节相同，则**不复制进 dist**，并删除输出目录里的同名旧产物。构建清单新增
+    `omitted_outputs` 字段记录这些文件。双写配方（`apply_menu` / `package`）和日语镜像包
+    （`Z4-JA` / `E3-JA`）仍会正常输出 `LANG_JA`。
+  - 注意 payload 是整份 s2a（双写约 **320 MB**；只写 EN 的隔离包省略 `LANG_JA` 后约 **190 MB**），
+    命令只做复制、不压缩、不自动打 zip，也不会删除 `dist/` 中不属于本次补丁的其他旧文件。
+    隔离模式的 `build/package_stage/` 可随时删除。
 - 还原命令：`python tools/build.py revert`（从 `.bak` 覆盖回原文件）。
 
 ---
@@ -467,8 +477,12 @@ zig 0.13 实测两点：目标三元组为 `x86-windows-gnu`（`i686-...` 已不
 
 - **成品式（推荐，零依赖）**：
   - DLL 模式（默认）：分发 `dinput8.dll` + `hm2zh_patch.bin`（`HMH2.exe` 保持原版）+ `res/texture.s2a`、
-    `res/cscv.s2a`、`res/LANG_JA.s2a`、`res/LANG_EN.s2a`。
-  - exe 模式：分发已打补丁的 `HMH2.exe` + 4 个 `res/*.s2a`。
+    `res/cscv.s2a`、`res/LANG_EN.s2a`。`res/LANG_JA.s2a` **无需分发**：当前发布配方（`z19` /
+    `stable` / `z28` 等只写 EN 的隔离包）保持它原版，打包时也不会写入 dist。
+  - exe 模式：分发已打补丁的 `HMH2.exe` + `res/texture.s2a`、`res/cscv.s2a`、`res/LANG_EN.s2a`
+    （+ 持有 DLC 时的 `DLC01/LANG_EN.s2a`）。仅双写配方或日语镜像包才需要附带 `LANG_JA`。
+  - 分发物是**叠加补丁**：玩家目录必须已有原版 `LANG_JA`。若曾装过早期双写版本（`LANG_JA`
+    被改过），改用新版前应先用 Steam「验证游戏文件完整性」或 `revert` 还原。
   - 两者都无需玩家安装 Python/字体/`.bak`。
 - **脚本式**：需玩家自备游戏、安装依赖、改 `BASE` 路径、安装字体；仅适合开发者。
 - Steam 校验完整性会还原被改文件（exe 与资源），属预期行为。
