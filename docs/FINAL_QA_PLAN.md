@@ -1,11 +1,11 @@
 # 正式版前全量漏译排查（FINAL_QA_PLAN.md）
 
-> 状态：**进行中**（2026-10-21 记录；2026-10-22/23/24/25/27/30、11-06、11-09 更新，供新对话直接接续）
+> 状态：**进行中**（2026-10-21 记录；2026-10-22/23/24/25/27/30、11-06、11-09、11-21/22 更新，供新对话直接接续）
 > 2026-11-09：第二轮对话校对完成（待核对 429 → 0，427 修复 + 2 保留原译，见
 > `docs/PROOFREAD_DIALOGUE_ROUND2.md`）；cmap 固化已实施（`locales/zh-CN/cmap.json`）；
 > **发布基线 Z19 已启用 Z23 敌名/Boss 图鉴列表名**，stable/E3 保留原文作为安全回滚包。
-> 校对入口与导入目标仍是 `locales/zh-CN/translator-view/` → `CURRENT_REVIEW_RECIPE=z26`
-> （`dist/Z26-enemy-skills/`）。Z22–Z26 均未实机；除实机测试外的未完成项见 `docs/TODO.md`。
+> 校对入口与导入目标仍是 `locales/zh-CN/translator-view/` → `CURRENT_REVIEW_RECIPE=z27`
+> （`dist/Z27-subcommander/`）。Z22–Z27 均未实机；除实机测试外的未完成项见 `docs/TODO.md`。
 
 ---
 
@@ -86,14 +86,14 @@
 - `1,000m/h Wind` / `10,000m/h Wind`：技能名，命中 `b83/b394` 操作数，
   需走完整机制名批次，不能按说明文补。
 
-**待后续处理（纯显示但未在本轮补）：**
+**待后续处理（以下为 Z17 当时状态；T-05b/Z25、Z26 已完成，剩余见 T-04/T-10b）：**
 
 - 道具/技能说明中的能力名与发动率短句（`b147/357/736/666`）仍英文，暂未补行；
 - `Catch and Release`（`b172` 2 处）、`Beam Security`（`b444`）、`Thunder Storm Breath`（`b750`）
   等敌/技能名保持原文；
 - `1,000m/h Wind`/`10,000m/h Wind`（`b147/357/666/736`）需走整批机制名处理。
 - ~~`b34` 关卡/章节标题~~（2026-11-06 复核：222 条记录中 118 条名称已为中文，Q16 rec49/142 保留）。
-- 跟踪：`docs/TODO.md` T-05a（纯显示）/ T-05b（机制名）。
+- 跟踪：`docs/TODO.md` T-04（纯显示与假命中）/ T-10b（技能/机制名遗留）。
 
 ## 2.3 Z18 截图校对轮（2026-10-27，待实机复核）
 
@@ -131,7 +131,7 @@
 
 ## 3. 排查流程（建议按顺序）
 
-1. **以当前校对目标 `dist/Z26-enemy-skills/`（与发布基线 Z19 内容 + T-05b/Z26）为基线**：
+1. **以当前校对目标 `dist/Z27-subcommander/`（与发布基线 Z19 内容 + T-05b/Z25–Z27）为基线**：
    Z20 是"道具说明避字"实验包，只用于验证描述渲染器，不作漏译基线。
 2. **全库扫描**：逐槽比较 `work/original/res/LANG_EN.s2a` 与基线，列出
    “仍为原文、且不是二进制/压缩数据”的槽位。
@@ -170,7 +170,7 @@ python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 # 导出校对视图（含 50_extra.json）
 python tools/export_review.py
 
-# 导入校对（自检→写 CSV/extra_review.json→按 CURRENT_REVIEW_RECIPE 重建，当前 Z26）
+# 导入校对（自检→写 CSV/extra_review.json→按 CURRENT_REVIEW_RECIPE 重建，当前 Z27）
 python tools/import_review.py
 
 # 只读盘点（示例）
@@ -178,7 +178,7 @@ python build/_scratch/audit_untranslated_z15.py
 python build/_scratch/list_blocked_display.py
 ```
 
-注意：`import_review.py` 现在按 `CURRENT_REVIEW_RECIPE`（当前 **z26** → `dist/Z26-enemy-skills/`）
+注意：`import_review.py` 现在按 `CURRENT_REVIEW_RECIPE`（当前 **z27** → `dist/Z27-subcommander/`）
 重建；不要再用旧的 `package_names_cn_jobs_titles_hash` 刷新本分支的 dist。
 发布基线 Z19 用 `python tools/build.py package_names_cn_reuse_z19` 单独重建。
 
@@ -216,8 +216,8 @@ python build/_scratch/list_blocked_display.py
 - 现状：主角默认名 `b391 rec2-4` 与 `b715` 已强制还原原文；`Yusha` 在
   `translator-view/protected/`（原因 `protagonist-default`）。
 - 已实施：
-  1. `locales/zh-CN/cmap.json` 持久化「字 → 载体码」（2300 字）；
+  1. `locales/zh-CN/cmap.json` 持久化「字 → 载体码」（当前 2304 字）；
   2. 构建优先使用固化码；新字只从未使用的码追加，绝不重排旧字；
-  3. 容量不足直接报错（不挤掉旧码）；当前新字形 2300/2847，余 547 格；
-  4. 连续两次构建 `+0 新字`，LANG_EN/texture/cscv 哈希一致；2300 码唯一且均可在字符表反查。
+  3. 容量不足直接报错（不挤掉旧码）；当前新字形 2304/2847，余 543 格；
+  4. 连续两次构建 `+0 新字`，LANG_EN/texture/cscv 哈希一致；2304 码唯一且均可在字符表反查。
 - 参考：`docs/PITFALLS.md` §27、`docs/KNOWN_ISSUES.md` §13、`docs/TODO.md` T-01。

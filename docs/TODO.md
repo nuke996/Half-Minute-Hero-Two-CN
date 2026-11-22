@@ -35,7 +35,7 @@
 | ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
 |---|---|---|---|---|---|
 | **T-04** | 放行/未登记表 | 纯显示串与 collide 假命中放行（原 T-04a + T-05a） | **部分完成（2026-11-22 定性）**。已完成 11 个 collide 放行（b906 记忆检查、b34 关卡名、b186、b282、b757、b905）。剩余 4 项定性：① `b630` `You took damage!`（LANG_EN off4750，JA `ダメージをうけた！`）命中 cscv b23/596/881 战斗消息表 → **假命中**，可放行 1 槽并新增译行；② `b845` 影片/结局曲名 7 条（off 88/292/496/700/904/1108/1312）命中 cscv b814 同位置同名表 → **假命中**，须整表 7 条一起放行+翻译，否则半中半英；③ `b357 off122396/122664` `Large Attack`/`Heavy Attack` = Blade/Saber 的 `+168` 技能名列（pos172），全库仅 2 处、cscv 0 命中、无操作数 → **纯显示装备技能名，可译**；④ `b666 pos160` `Trigger Rate: 1/x` 86 槽 / 18 种，cscv 0 命中，已在“说明文放行”规则内 → **纯显示 UI 文案，可直接登记译行**（建议「发动率 1/10」）。另：`b320` 的 `Grand Ending` 2 行未受保护但仍是英文（普通漏译），可与 b845 一并处理 | 按上述定性分两批：先放行 b630/b845 并补译行（需重建 Z27/Z19）；b357/b666 只补译行。建议译文：`受到伤害！`、`序章`/`OVERTURE 片头`/`OVERTURE 片尾`/`JUDGEMENT 片尾`/`REVOLUTION 片尾`/`RAGNAROK 片尾`/`大结局`、`强力攻击`/`重攻击`、`发动率 1/x` | `KNOWN_ISSUES.md` §12、`PACKAGE_LEDGER.md` §5 |
-| **T-08** | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0；`cmap.json` 现为 **2304/2847（余 543，原文档写的 2300/547 已过期）**；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频 | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
+| **T-08** | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0；`cmap.json` 现为 **2304/2847（余 543）**；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频 | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
 
 ### 1.5 已完成（保留记录）
 
@@ -47,7 +47,7 @@
 | **T-05c** | 2026-11-15（Z26） | 47 槽 / 44 个敌技显示名；操作数 0 变化；cmap +4（2304）。**遗留项已转入 T-10b**：`Hellfire`、`Venus Seven`、`Dogry`、`Reusable` | `dist/Z26-enemy-skills/` |
 | **T-07** | 2026-11-09（2026-11-12 重建） | Z22–Z24 并入 Z19/stable；仅 Z19 放行敌名/Boss 图鉴名。**发布基线后续更新见 T-07b** | `PACKAGE_LEDGER.md` §2/§5 |
 | **T-09** | 2026-11-13 | `proofread` 28 个提交快进合并入 `main`；三个包从 `main` 重建校验通过 | `PACKAGE_LEDGER.md` §6 |
-| 术语清理（无独立 ID） | 2026-11-21 | 提交 `b76af42` 统一 `グリモワール/グリモ→魔法书`，`魔典/格瑞莫/格里莫` 在 `zh_new` 已归零；Z27 完成 27 个选项放行、15 个尾行留空、副队长统一（`validate_build` error 0 / warning 45） | `docs/TEMP_REVIEW_20261121.md`、`PACKAGE_LEDGER.md` §2 |
+| 术语清理（无独立 ID） | 2026-11-21 | 提交 `b76af42` 统一 `グリモワール/グリモ→魔法书`，`魔典/格瑞莫/格里莫` 在 `zh_new` 已归零；Z27 完成 27 个选项放行、15 个尾行留空、副队长统一（术语批次重建后 `validate_build` error 0 / warning 46） | `docs/TEMP_REVIEW_20261121.md`、`PACKAGE_LEDGER.md` §2 |
 | **T-10b/T-11/T-12/T-13a/T-07b** | 2026-11-21（Z27/Z19/stable） | `船頭/おじさま/銃士/魔道士/悪ガキ/超新流星` 等第一批误译落地；专名与说话人标签批量统一（97→40 组）；`audit_terms` 161→72（P1 0）。重建 Z19/stable/Z27：validate error 0，warning Z19/Z27 46、stable 1；哈希见 `PACKAGE_LEDGER` §2 | `docs/TERM_RECOMMENDATIONS_20261121.md`、`术语表.md`、`PACKAGE_LEDGER.md` §2 |
 | **T-03** | 2026-11-22（Z27 重建） | 非 CSV 表接入校对视图：新增 `60_songs.json`（28 条歌词）→ 导入写 `locales/zh-CN/song_en_lines.json`，`song_lines()` 覆盖内置表；装备/道具名副本（`EQUIP_BLOBS pos4` 同名、位于其他 blob）在视图标注 `meta.canonical`，导入写回权威行；无独立译表行的参数串/机制名副本导出到 `protected/prot_itemcopies.json`（150 条，含 `Villager's Clothes`×2、`Hellfire`×7 副本），导入跳过。实测歌曲 k=2 与副本改 `row::7736` 均写入 dist，回滚后 `LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` 恢复，validate error 0 / warning 46 | `PITFALLS.md` §38、`BUILDING.md` §5.4、`PACKAGE_LEDGER.md` §5/§6 |
 

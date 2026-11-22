@@ -37,7 +37,7 @@
 
 ## 2. 当前包谱系
 
-| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-11-12） |
+| 包 | 构建命令 | 产物 | 内容 | 实机状态（截至 2026-11-21） |
 |---|---|---|---|---|
 | **stable**（E3） | `package_stable_names` | `dist/stable-names-en/` | 只写 `LANG_EN`；机制名/伙伴名/称号等保持原版；其余中文；当前译表；**2026-11-01 起收尾加 `sync_e3_display_columns()`**：已放行显示列（Boss 说话人名 pos92 / 地图编辑器 UI `b715` pos112）整槽全副本同步，与机制名同名的串（Guy/Yashu/Athena/Roken/Geezer/Cozain/None/Hero/Shield/Shoes 等 12 个）整库回写原版；不含视频/歌词（`song=False`） | **稳定基准**，历次验证可玩；**2026-11-04 重建：并入描述 0x5F 尾字节修复**（载体码/原生码均规避；便携女神像/升级降级药水说明恢复中文），自检 **error 0 / warning 1**（DLC 因缺原件备份跳过校验）。sha256（含视频合入后的最终 `dist`）`LANG_EN 542e5fea790d` / `texture ae920700e118` / `cscv e5c0d323ce6a` / `DLC01 85fbbc371fcd` / `LANG_JA 924eff209d0e`（未改）。**2026-11-12 按当前译表重建**（含第二轮对话校对、Z22/Z24 译文、cmap 固化、Q16 说明文误伤修复）：`LANG_EN cde1b071c2fc` / `texture a7b0c2f52666` / `cscv 58c5c8a77158` / `DLC01 71b85bc65357` / `LANG_JA 924eff209d0e`；validate **error 0 / warning 1**；按 T-07 决策仍保留敌名/Boss 图鉴列表名原文。**2026-11-21 T-07b 重建（并入 Z25–Z27 + 术语批次）**：`LANG_EN 155e2b3784b9` / `texture fb5b79e17e37` / `cscv 8f0bd9db2a40` / `DLC01 d139508e35c0`；validate error 0 / warning 1 |
 | **Z10b** | `package_names_cn_mech_hash` | `dist/Z10b-mech-names/` | 仅技能/装备名中文 + 操作数重算；伙伴名与其余 collide 原版；**称号已恢复原版** | 序章五项、技能、装备、商店正常（2026-10-21） |
@@ -110,10 +110,11 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 # Z15：同字复用原版日文汉字槽位（方案 B，重画简中字形）
 python tools/build.py --game-dir work/original package_names_cn_reuse
 
-# 当前发布基线 Z19（第二轮对话校对 + cscv[355] 歌词 + 4 个视频 + Z23 敌名/Boss 图鉴列表名）
+# 当前发布基线 Z19（第二轮对话校对 + cscv[355] 歌词 + 4 个视频 + Z23 敌名/Boss 图鉴列表名
+# + T-05b/Z25–Z26 敌技 + Z27 选项/尾行/副队长 + 2026-11-21 术语批次）
 python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 
-# 当前校对目标 Z26（敌技显示名；导入校对走 package_current）
+# 当前校对目标 Z27（对话选项/尾行/副队长；导入校对走 package_current）
 python tools/build.py --game-dir work/original package_current
 ```
 
@@ -128,7 +129,8 @@ python tools/build.py --game-dir work/original package_current
 
 - 界面少量漏译：道具收藏 `Mu`/`Xi`（Z18）、图鉴第 1 项 `Jelly`（Z23 列表名）、
   地图编辑器 `Explanation` 栏（Z24）均已处理；剩余零散项（`b630`/`b845`/`b1010`/`b892`、
-  敌技名与说明短句）汇总在 `docs/TODO.md` T-04a/T-04b/T-05a/T-05b。
+  敌技名与说明短句）汇总在 `docs/TODO.md` T-04（纯显示与假命中）、T-10b（敌技例外）
+  与 T-03（副本登记）；`b892` 仍需走名字批次。
 - 武器合成界面（`b99`，stride 308）：**Z13 起已用额外译表行补上**（此前未登记进译表，
   不是守卫/未放行问题）——
   - `b99 off16` `Wooden Sword +1`（rec0 名称）无 CSV 行；
@@ -208,7 +210,7 @@ python tools/build.py --game-dir work/original package_current
      stable/E3 保留原文作为安全回滚包。Z19 当日重建 `LANG_EN eb4bb2263f56`（error 0 / warning 45）；
      stable 当日重建 `LANG_EN 2f7dae57bc10`（error 0 / warning 1），并登记进 `RECIPES`。
      （2026-11-12 因 Q16 修复再次重建，最新哈希见 §2 与上方 11-12 条目。）
-  4. Z19 与 Z24 当前内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 仍是校对目标。
+  4. 当时 Z19 与 Z24 内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 为当时的校对目标（现指针为 z27）。
 - **2026-11-04（Z21 实机通过 → 修复并入 Z19 / stable）**：
   0. Z21 实机确认正常（樵夫斧 / 便携女神像 / 升级·降级药水说明均正确），
      修复作为**共享字库逻辑**并入两个基线配方并重建：
@@ -387,7 +389,7 @@ python tools/build.py --game-dir work/original package_current
 
 ---
 
-## 7. 新上屏文本映射表（累计，截至 2026-10-30）
+## 7. 新上屏文本映射表（Z10b–Z14 历史映射；Z15 之后的映射见 §2 与 BUILDING.md §5.5）
 
 > 用途：实机出问题时，按“现象 → 包 → 表/位置”快速定位。
 > 除特别标注外，坐标指 `res/LANG_EN.s2a`（Z10b 起只写 EN；Z14 起同时写 `DLC01/LANG_EN`；
@@ -461,7 +463,8 @@ python tools/build.py --game-dir work/original package_current
   - 回滚会同时恢复 `extra_review.json` 与 `text_v2.csv` 的备份。
 - 已实测导出规模（2026-10-27 Z18 轮）：55,419 普通 / 5,850 受保护 / 1,183 多行 /
   1,707 DLC / **257 额外**；导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建包
-  （Z14 时期重建 Z14，Z15 起重建 Z15，2026-10-23 起重建 Z18，2026-10-29 起重建 Z19）。
+  （Z14 时期重建 Z14，Z15 起重建 Z15，2026-10-23 起重建 Z18，2026-10-29 起重建 Z19，
+  2026-11-21 起重建 Z27）。
 
 ---
 

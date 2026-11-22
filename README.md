@@ -47,7 +47,8 @@ MD5:       867308FCD87A（前 12）
 
 **刻意不包含 / 保留原文**（保护机制，见 `docs/KNOWN_ISSUES.md`）：
 - 作为运行时查找"键"的名字串（约 27,044 处 / 5,042 种）
-- 敌人名与敌人专用招式名（规划中）
+- 少数敌技名与说明短句（敌名/Boss 名/敌技显示名已分别在 Z19/Z23/Z25/Z26 上屏；
+  例外与保留项见 `docs/KNOWN_ISSUES.md` §21、`docs/TODO.md` T-04/T-10b）
 - 含"勇者城"的少量台词
 - ASCII 资源名/内部标识
 
@@ -98,7 +99,7 @@ tools/                    通用工具链（build.py、build_cn.py、s2a.py、dl
                           export_review.py、import_review.py、review_lib.py、paths.py 等）
 locales/zh-CN/            翻译数据（text_v2.csv、ml_zh_fields.json、dlc/、
                           replace_map.py、hl_map.py、各守卫/放行 JSON）
-locales/zh-CN/translator-view/  面向译者的校对文件 + 导出/导入/回滚三个 bat
+locales/zh-CN/translator-view/  面向译者的校对文件 + 导出/导入/回滚/不应用词典四个 bat
                           （导出生成，见 TRANSLATING.md §14）
 src/  tests/              源码与测试
 docs/                     技术文档（LOCALIZATION_STANDARD / PITFALLS / FILE_FORMATS 等）
@@ -108,8 +109,8 @@ build/  dist/             构建中间产物 / 发布补丁（不纳入版本控
 
 一键 `汉化-*.bat` 由 `tools/make_bats.py` 生成：**装机类**放**游戏目录**（默认
 `work/original`，或 `config.local.json` 的 `game_dir`，不入版本控制）；
-**校对类**（`汉化-导出校对.bat` / `汉化-导入校对.bat` / `汉化-导入校对-回滚.bat`）
-放 `locales/<locale>/translator-view/`，与校对 JSON 同目录、随仓库分发。
+**校对类**（`汉化-导出校对.bat` / `汉化-导入校对.bat` / `汉化-导入校对-回滚.bat` /
+`汉化-导入校对-不应用词典.bat`）放 `locales/<locale>/translator-view/`，与校对 JSON 同目录、随仓库分发。
 
 见 `AGENTS.md` 与 `docs/LOCALIZATION_STANDARD.md`。
 
@@ -149,10 +150,11 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 # 已知问题
 
 见 `docs/KNOWN_ISSUES.md`。要点：大量"未翻译"是刻意保留；对话误译第二轮已清零
-（`docs/PROOFREAD_DIALOGUE_ROUND2.md`）；图鉴敌名/Boss 名已在 Z19/Z23/Z24 上屏
-（stable/E3 仍保留原文，作为安全回滚包；仍有少量敌技名与说明短句待补）；
-存档自定义名已由 `cmap.json` 固化载体码，不再随译表漂移；Steam 校验会还原汉化。
-未完成项汇总见 `docs/TODO.md`（`proofread` 已于 2026-11-13 合并入 `main`，后续开发以 `main` 为准）。
+（`docs/PROOFREAD_DIALOGUE_ROUND2.md`）；图鉴敌名/Boss 名已在 Z19/Z23/Z24 上屏，
+敌技显示名已在 Z25/Z26 补译（stable/E3 仍保留原文，作为安全回滚包；仍有少量说明短句待补，
+见 `docs/TODO.md` T-04）；存档自定义名已由 `cmap.json` 固化载体码，不再随译表漂移；
+Steam 校验会还原汉化。未完成项汇总见 `docs/TODO.md`（`proofread` 已于 2026-11-13 合并入
+`main`，后续开发以 `main` 为准）。
 
 ---
 
@@ -182,7 +184,7 @@ UI 翻译:       基本完成（少量标签保留原文）
 名字类翻译:    分批进行中（敌名/Boss 名已在 Z19 发布基线放行）
 DLC01:         完成
 回滚/审计体系: 完成
-发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z26** → `dist/Z26-enemy-skills`）；**Z19 为当前发布基线**（2026-11-09 已并入 Z22–Z24，含敌名放行）；发版构建与存档兼容由 `locales/zh-CN/cmap.json` 固化载体码
+发布打包:      完成（`tools/build.py package` → `dist/`，默认**隔离打包、不改游戏目录**；就地装机版为 `package_install`，见 BUILDING.md §8）；导入校对目标由 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 **Z27** → `dist/Z27-subcommander`）；**Z19 为当前发布基线**（2026-11-21 已并入 Z22–Z27 与术语批次，含敌名放行）；发版构建与存档兼容由 `locales/zh-CN/cmap.json` 固化载体码
 ```
 
 ---

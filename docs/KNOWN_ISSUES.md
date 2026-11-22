@@ -132,8 +132,8 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 **Affected locales:** zh-CN
 
 **症状：** 极少数生僻字显示 `?`。
-**技术说明（2026-11-09 实测）：** 图集新字形上限 2847 格；当前 `build_plan()` 新字形 **2300 格（余 547）**，
-`cmap` 合计 **2820 字**（含同字复用 520，占原版汉字格 524）；`tools/verify_charset_full.py`
+**技术说明（2026-11-09 实测，2026-11-22 复核）：** 图集新字形上限 2847 格；当前 `build_plan()` 新字形 **2304 格（余 543）**，
+`cmap` 合计 **2824 字**（含同字复用 520，占原版汉字格 524）；`tools/verify_charset_full.py`
 口径 A（真实上屏）**缺字 0**。未覆盖字仍会回退 `?`。
 **已知个例：** 制作人员名 `row1992`（"小城崇志"）的"崇"不在 `cmap`/native，`display_text` 保留英文原名
 （`Takashi Kojo`），属已知取舍。
@@ -249,24 +249,26 @@ STAFF 区 `1024..1119` 本身未回收。版权页姓名若含这 523 个字，�
 
 ---
 
-# 10.3 当前包状态（2026-11-06）
+# 10.3 当前包状态（2026-11-22）
 
 | 包 | 产物 | 状态 |
 |---|---|---|
 | **Z15** | `dist/Z15-reuse-kanji/` | 回滚基线；龙 NPC、性感泳衣已实机恢复；DLC 船待复测 |
 | **Z17** | `dist/Z17-display-fill/` | 显示文本补全 + 4 个视频；音乐播放器购买列表闪退已修 |
 | **Z18** | `dist/Z18-dlc-place-names/` | 10-27 快照；DLC 战国地名 + 截图校对轮；**不含 cscv 歌词** |
-| **Z19** | `dist/Z19-proofread/` | **当前发布基线**（2026-11-12 重建）：含第二轮对话校对（待核对清零）、`cscv[355]` 歌词、4 个视频；**已并入 Z22/Z24 译文并启用 Z23 敌名/Boss 图鉴列表名**；`LANG_EN fbe38d771f76`，自检 error 0 / warning 45 |
+| **Z19** | `dist/Z19-proofread/` | **当前发布基线**（2026-11-21 T-07b 重建）：含第二轮对话校对（待核对清零）、`cscv[355]` 歌词、4 个视频；并入 Z22–Z27 译文与术语批次，启用 Z23 敌名/Boss 图鉴列表名；`LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` / `DLC01 bbe1e4a87b61`，自检 error 0 / warning 46 |
 | **Z20** | `dist/Z20-desc-dodge/` | 实验：道具说明避字（验证"描述渲染器按码错位"）；构建于歌词修复前，**不含歌词**，不作发布基线 |
 | **Z21** | `dist/Z21-desc-5f-fix/` | 描述 0x5F 尾字节修复；**2026-11-04 实机通过**，修复已并入 Z19/stable |
 | **Z22** | `dist/Z22-ui-lowrisk/` | 低风险 UI 补译批（298 行）；已随译表进入 Z19/stable；未实机 |
 | **Z23** | `dist/Z23-ui-mediumrisk/` | 图鉴敌人/Boss 列表名放行 + 「事件道具」；Z19 已启用；未实机（中风险） |
 | **Z24** | `dist/Z24-mapeditor/` | 地图编辑器「说明」重译 + 91 行跨表专名统一；未实机；2026-11-12 重建 `LANG_EN fbe38d771f76`，error 0 / warning 45 |
 | **Z25** | `dist/Z25-mech-names/` | T-05b 技能/机制名补译（Wind 两技能 10 槽 + 敌技显示名 9 槽）；2026-11-15 构建 `LANG_EN 8faa23aa52fd`（最终 dist，含视频合入），操作数仅 4 处变化，error 0 / warning 45；未实机 |
-| **Z26** | `dist/Z26-enemy-skills/` | 敌技显示名补译（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）；全部无操作数引用，相对 Z25 操作数 0 变化；**当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z26`）；2026-11-15 构建 `LANG_EN dd093e4788bf`，error 0 / warning 45；未实机 |
+| **Z26** | `dist/Z26-enemy-skills/` | 敌技显示名补译（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）；全部无操作数引用，相对 Z25 操作数 0 变化；2026-11-15 构建 `LANG_EN dd093e4788bf`，error 0 / warning 45；未实机 |
+| **Z27** | `dist/Z27-subcommander/` | **当前导入校对目标**（`CURRENT_REVIEW_RECIPE=z27`）：27 个对话选项放行、15 个多行尾行留空、`副队长亚修` 统一；2026-11-21/22 构建 `LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` / `DLC01 bbe1e4a87b61`，error 0 / warning 46；未实机 |
 
-> **stable / E3（2026-11-12）：** 已按当前译表重建（`LANG_EN cde1b071c2fc`，error 0 / warning 1），
-> 但按 T-07 决策**继续保留敌名/Boss 图鉴列表名原文**，作为未实机验证前的安全回滚包。
+> **stable / E3：** stable 于 2026-11-21 按当前译表重建（`LANG_EN 155e2b3784b9`，error 0 / warning 1），
+> 但按 T-07 决策**继续保留敌名/Boss 图鉴列表名原文**，作为未实机验证前的安全回滚包；
+> E3 与 stable 同配方，按需重建即可。
 > 完整哈希与症状定位见 `docs/PACKAGE_LEDGER.md` §2/§3；歌词问题的原因与适用范围见
 > `docs/PITFALLS.md` §38；未完成项见 `docs/TODO.md`。
 
@@ -378,7 +380,7 @@ JA/EN 两侧写入字节一致。
 2. 新字只从载体码池中**未使用的码**追加，旧字不重排、不因译表变化而改码；
 3. 固化字即使当前译表暂时不用也继续占格，避免旧存档名字失去字形；
 4. 容量不足直接报错（不挤掉旧码）；连续两次构建 `+0 新字`，LANG_EN/texture/cscv 哈希一致；
-   2300 个码唯一且均可在字符表反查。
+   2304 个码唯一且均可在字符表反查。
 **相关文件：** `docs/PITFALLS.md` §27、`tools/build_cn.py: build_plan()` / `load_persisted_cmap()`、
 `locales/zh-CN/cmap.json`。
 
@@ -529,8 +531,8 @@ DLC 同步 102 整槽 + 23 嵌入；DLC 审计未同步 = 0。
 **待后续：**
 - **已修（2026-11-12）：** 含「勇者城」的说明文被 Q16 守卫误伤，`b147/357/736` 的
   「勇者城也能在森林移动」、`b357` 的「陈旧/全新的勇者城零件」现已上屏。
-- **T-05a 剩余：** `b357 off122396/122664` `Large Attack`/`Heavy Attack`（待定性）、
-  `b666` 的 `Trigger Rate: 1/x` 20 种（未登记）。
+- **T-04 剩余：** `b357 off122396/122664` `Large Attack`/`Heavy Attack`（纯显示，待登记译行）、
+  `b666` 的 `Trigger Rate: 1/x` 86 槽 / 18 种（未登记）。
 - **T-05b 已完成（2026-11-15，Z25）：** `1,000m/h Wind`/`10,000m/h Wind`
   五槽同改（`b666 pos0+pos292`、`b147/357/736 pos172`），仅 4 个操作数变化；
   `Catch and Release`（2 处）、`Beat Crush`、`Beam Security`、`Final Defense System`、

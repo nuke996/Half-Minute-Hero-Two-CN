@@ -138,6 +138,7 @@ python tools/runner.py <脚本名> [参数]
 | `汉化-导出校对.bat` | `locales/<locale>/translator-view/` | `export_review.py` |
 | `汉化-导入校对.bat` | `locales/<locale>/translator-view/` | `import_review.py apply` |
 | `汉化-导入校对-回滚.bat` | `locales/<locale>/translator-view/` | `import_review.py revert` |
+| `汉化-导入校对-不应用词典.bat` | `locales/<locale>/translator-view/` | `import_review.py apply --no-repl` |
 
 两个位置的 bat 都用 `..\..` / `..\..\..` 相对路径指向 `tools/`，且都依赖
 `config.local.json` / 环境变量定位游戏目录与译表，故放在哪一层都能跑。
@@ -156,8 +157,9 @@ python tools/runner.py <脚本名> [参数]
   `protected/`（受保护、当前不上屏；含 `prot_itemcopies.json`：无独立译表行的
   `body=/handR=/foot=` 参数串与 `Hellfire` 一类二进制机制名副本，导入跳过）、
   `dict/替换词典.json`（**可编辑入口**）与 `如何校对.txt`。
-  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `50_*` / `60_*` /
-  `protected/` / `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
+  清理旧产物时只删上面这些生成物（`10_*.json` / `20_*.json` / `30_multiline.json` /
+  `40_dlc01.json` / `50_extra.json` / `60_songs.json` / `protected/` / `dict/`），
+  **保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
   受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
   临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`；
   Z10b–Z14 已实测放行的显示槽（`released_row()`）即使仍被 apply_menu 保护，也导出到普通分片。
@@ -228,7 +230,7 @@ python tools/runner.py <脚本名> [参数]
 | 命令 | 产物 | 配方要点 |
 |---|---|---|
 | `package_lang_en_names_en` | `dist/E3-lang-en-names-en/` | **E3 · 最稳定，必须保留**：只写 `LANG_EN`，机制名保持原版英文，其余中文；与 `package_stable_names` 共用 `apply_lang_en_names_en`（含 2026-11-01 新增的显示列副本同步收尾） |
-| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/`。**2026-11-01 起配方收尾加 `sync_e3_display_columns()`**：Boss 说话人名/地图编辑器 UI 等已放行显示列做整槽全副本同步，与受保护机制名同名的串整库回写原版（`validate_build` 由 error 35 → **error 0**）。**2026-11-04 起共享字库逻辑并入描述 0x5F 尾字节修复**（`carrier_pool` 禁用 `0x??5F`、神/点改安全载体码）。**2026-11-09 起共享 `cmap.json` 固化码并按当前译表重建**：`LANG_EN cde1b071c2fc`，`validate_build` error 0 / warning 1；按 T-07 决策**不启用** Z23 敌名/Boss 列表名，作为安全回滚包。该配方不含 4 个视频与 `cscv[355]` 歌词（`song=False`），属既定差异 |
+| `package_stable_names` | `dist/stable-names-en/` | **稳定版备份**：与 E3 同配方，固定输出到独立目录；用当前译表/字库构建，不会回退后续新译文。需要"随时回到可玩稳定状态"时用它，不影响默认 `dist/`。**2026-11-01 起配方收尾加 `sync_e3_display_columns()`**：Boss 说话人名/地图编辑器 UI 等已放行显示列做整槽全副本同步，与受保护机制名同名的串整库回写原版（`validate_build` 由 error 35 → **error 0**）。**2026-11-04 起共享字库逻辑并入描述 0x5F 尾字节修复**（`carrier_pool` 禁用 `0x??5F`、神/点改安全载体码）。**2026-11-09 起共享 `cmap.json` 固化码并按当前译表重建**：`LANG_EN cde1b071c2fc`（2026-11-21 T-07b 重建后为 `155e2b3784b9`），`validate_build` error 0 / warning 1；按 T-07 决策**不启用** Z23 敌名/Boss 列表名，作为安全回滚包。该配方不含 4 个视频与 `cscv[355]` 歌词（`song=False`），属既定差异 |
 | `package_lang_ja_names_ja` | `dist/E3-ja-lang-ja-names-ja/` | **E3-JA**：E3 的日语镜像 —— 只写 `LANG_JA`，机制名保持原版，其余中文（游戏语言须设为**日语**） |
 | `package_names_cn_skill_loadout` | `dist/Z4-skill-loadout/` | **Z4**：技能/装备名中文 + 章节 loadout 值同步 + 武器表副本同步；`b666 +292` 键名保持原版 |
 | `package_names_cn_skill_loadout_ja` | `dist/Z4-ja-skill-loadout/` | **Z4-JA**：Z4 的日语镜像（只写 `LANG_JA`；`+292` 保持该文件原版日文）。**实机验证：与 Z4 同样异常**，仅作对照保留 |
@@ -245,7 +247,7 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
-| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19 · 当前发布基线**：Z18 + `proofread` 对话校对（2026-11-09 第二轮待核对清零）；含 `cscv[355]` 歌词（28 个英文行）与 4 个视频；**2026-11-09 起启用 `HMH2_Z23_RELEASE`**，并入 Z22/Z24 译文与 Z23 敌名/Boss 图鉴列表名；`LANG_EN fbe38d771f76`（最终 dist，含视频合入），`validate_build` error 0 / warning 45。校对导入仍走 `package_current`（指针指向 Z27） |
+| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19 · 当前发布基线**：Z18 + `proofread` 对话校对（2026-11-09 第二轮待核对清零）；含 `cscv[355]` 歌词（28 个英文行）与 4 个视频；**2026-11-09 起启用 `HMH2_Z23_RELEASE`**，并入 Z22/Z24 译文与 Z23 敌名/Boss 图鉴列表名；**2026-11-21 T-07b 重建**并入 Z25–Z27 与术语批次：`LANG_EN 1b0109baf96a`（最终 dist，含视频合入），`validate_build` error 0 / warning 46。校对导入仍走 `package_current`（指针指向 Z27） |
 | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
 | `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 | `package_names_cn_reuse_z22` | `dist/Z22-ui-lowrisk/` | **Z22（测试）**：Z21 + 低风险 UI 补译批：`b25` 键值 UI 消息表值列 295 条（城堡面板/道具类型/铁匠铺/地图编辑器/在线菜单）、`b99` 合成说明首段 2 条、`b763` `Up` 1 条（合计新增 298 行）、`b642` 武器种名 12 条、`b763` 按键名整列、`b186` `Switch`。见 `docs/PITFALLS.md` §41、`docs/PACKAGE_LEDGER.md` §2 |
@@ -253,7 +255,7 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | **Z24（测试）**：Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（206 槽）+ **怪物/头目专有名词统一**（91 行：`オニグモン`→鬼蜘蛛、`黒女神`→黑女神、`ザントヘル`→赞特赫尔、`魔王ケルベロス`→刻耳柏洛斯、`元魔王軍`→前魔王军 等）。`b291` 是 **48 字节一格、一格一行**的显示网格，必须整句理解后按原行数切回各格；`<…>` 标记不拆行。见 `docs/PITFALLS.md` §43/§44、`docs/PROOFREAD_NAME_REPORT.md` |
 | `package_names_cn_reuse_z25` | `dist/Z25-mech-names/` | **Z25（测试）**：Z24 + **T-05b 技能/机制名补译**：① `1,000m/h Wind`/`10,000m/h Wind` 五槽同改（`b666 pos0+pos292`、`b147/357/736 pos172`），仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`）；② `b172/b444/b750` 敌技显示名（`Catch and Release`、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath`）。`validate_build` error 0 / warning 45 |
 | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | **Z26（测试）**：Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字）：`b350`（含截图中的 `Couple's World`）、`b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽。全部 `+4=FFFFFFFF`、无名字哈希操作数；相对 Z25 **0 个操作数变化**；cmap +4 字（2304）；`validate_build` error 0 / warning 45 |
-| `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | **Z27（测试·当前校对目标）**：Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`，b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复截图中的 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` b954 伙伴名 2 条 + `ml_zh_fields.json` 1 条；含 b147/b317/b357/b736/b1034 名字副本，构建重算操作数）。`validate_build` error 0 / warning 45 |
+| `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | **Z27（测试·当前校对目标）**：Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`，b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复截图中的 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` b954 伙伴名 2 条 + `ml_zh_fields.json` 1 条；含 b147/b317/b357/b736/b1034 名字副本，构建重算操作数）。`validate_build` error 0 / warning 46 |
 
 用法示例：
 
@@ -264,10 +266,11 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 
 > 各包内容、实机状态、症状定位与回滚方式见 `docs/PACKAGE_LEDGER.md`。
 
-> **默认打包行为 = HEAD（`9d8299b`）生产配方。**
+> **默认打包行为 = `apply_menu` 生产配方。**
 > `python tools/build.py --game-dir work/original package`（以及 `package_install`）
-> 仍按 HEAD 的 `apply_menu` 配方执行：双侧 `LANG` 写入 + `cscv` 同步 + place/chap/song。
-> 已实测其产物与 `dist/HEAD-package/` **8 个文件逐字节相同**。
+> 仍按该配方执行：双侧 `LANG` 写入 + `cscv` 同步 + place/chap/song。
+> 2026-10-19 曾以 `9d8299b` 的 `apply_menu` 实测，产物与当时的 `dist/HEAD-package/`
+> **8 个文件逐字节相同**（该对照目录已可删除，需要时用 `package` 重新生成）。
 > E3 / Z4 等隔离配方不受影响，通过上表各自的命令调用。
 
 结论与失败教训见 `TECHNICAL.md` §10.3 与 `docs/PITFALLS.md` §25；

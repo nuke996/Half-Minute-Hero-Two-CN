@@ -13,6 +13,7 @@ locales/zh-CN/text_v2.csv          # 主译表（build_cn.py 的直接输入）
 locales/zh-CN/replace_map.py       # 替换词典 REPL（字库容量→近义词，344 条）
 locales/zh-CN/hl_map.py            # 替换词典 HL（高亮 <...> 标记映射，201 条）
 locales/zh-CN/ml_zh_fields.json    # 多行整字段译文（约 1180 条）
+locales/zh-CN/extra_review.json    # 50_extra.json 导入后的完整覆盖表（代码内额外行）
 locales/zh-CN/ui_always.json       # UI 标签豁免清单
 locales/zh-CN/ml_fin_map.tsv       # 多行字段映射表
 locales/zh-CN/dlc/zh_01.tsv … zh_06.tsv   # DLC01 译文（zh_07 为索引表，勿加译文）
@@ -220,8 +221,11 @@ translator-view/
   20_dialogue_*.json   单行 · 对话（原文带「」）
   30_multiline.json    多行整字段（整段对话，游戏显示优先走它）
   40_dlc01.json        DLC01 文本
-  protected/           受保护、当前【不会上屏】的文本（文件名 prot_ui_NN.json，见下）
-  dict/替换词典.json    当前生效的替换词典快照（见 §17）
+  50_extra.json        代码内额外译表行（伙伴名/技能名/合成 UI 等，导入写 extra_review.json）
+  60_songs.json        「小咕的歌」歌曲表英文行（导入写 song_en_lines.json）
+  protected/           受保护、当前【不会上屏】的文本（文件名 prot_ui_NN.json 见下；
+                       另有 prot_itemcopies.json：无独立译表行的装备名副本，只登记、导入跳过）
+  dict/替换词典.json    替换词典的可编辑入口（导入会写回 replace_map.py / hl_map.py，见 §17）
   如何校对.txt          同一套说明的译者版
   汉化-导出校对.bat     重新导出（覆盖 JSON，不删同目录 bat）
   汉化-导入校对.bat     导入 zh → 自检 → 刷新 dist
@@ -316,7 +320,8 @@ translator-view/
   详见 `docs/PITFALLS.md` §40、`docs/KNOWN_ISSUES.md` §22。
 
 > `locales/zh-CN/place_map_raw.json`（cscv 村落名表）是**翻译数据**，不是替换词典，勿混。
-> `translator-view/dict/替换词典.json` 只是上面两张表的**只读快照**，改它无效。
+> `translator-view/dict/替换词典.json` 是替换词典的**可编辑入口**：导入会校验后写回
+> `locales/zh-CN/replace_map.py` / `hl_map.py`（见 §11.1、§14）。
 > `check_repl.py` 会校验"替换值必须全部被字库覆盖"，但当前仓库**尚无该脚本**（属约定工具）。
 
 ## 17.2 能否由开发者人工维护？
@@ -345,8 +350,8 @@ translator-view/
 ## 17.4 容量理由已消失（2026-10-22 评估）
 
 **[已验证 · Z15 口径]** 同字复用后新格余量 551（见 `TECHNICAL.md` §4.5）。
-2026-11-09 按当前译表（含第二轮校对与 cmap 固化）实测 **新字形 2300/2847（余 547）**，
-`cmap` 合计 2820 字（含同字复用 520）。
+2026-11-09 按当前译表（含第二轮校对与 cmap 固化）实测 **新字形 2300/2847（余 547）**；
+Z26 追加 4 字后现为 **2304/2847（余 543）**，`cmap` 合计 **2824 字**（含同字复用 520）。
 **载体码已固化：** `locales/zh-CN/cmap.json` 保存「字→载体码」，构建优先使用固化码，
 新字只追加未用码；即使某字当前不再出现也保留其码与字格，避免旧存档名字串字。
 见 `docs/KNOWN_ISSUES.md` §13、`docs/PITFALLS.md` §27、`docs/TODO.md` T-01。
@@ -374,9 +379,9 @@ python tools/build.py --game-dir work/original package_names_cn_reuse
 python tools/build.py --game-dir work/original package_names_cn_reuse_norepl
 ```
 
-> 当前校对链由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 `z26` →
-> `dist/Z26-enemy-skills/`，含 Z22–Z26 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、
-> T-05b 技能/机制名、Z26 敌技显示名、歌词与 4 个视频）。词典或译表改动后请用 `python tools/build.py package_current` 重建，
+> 当前校对链由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前 `z27` →
+> `dist/Z27-subcommander/`，含 Z22–Z27 的 UI 与图鉴敌名/Boss 名放行、地图编辑器说明、
+> T-05b 技能/机制名、Z26 敌技显示名、Z27 对话选项/尾行/副队长统一、歌词与 4 个视频）。词典或译表改动后请用 `python tools/build.py package_current` 重建，
 > 不要写死 `package_names_cn_reuse_z19`。新增配方时只需更新 `RECIPES` 与指针，并同步
 > `BUILDING.md`、`AGENTS.md`、`docs/PACKAGE_LEDGER.md`。
 
