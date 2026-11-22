@@ -6197,7 +6197,7 @@
    "id": "row::25833",
    "en": "Over time fissures appear in this land.",
    "ja": "時間がたつと地割れが起きる大陸。",
-   "zh": "随着时间，这片大地会出现破口。",
+   "zh": "随着时间，这片大地会出现裂缝。",
    "meta": {
     "blob": 452,
     "offset": 1576,
@@ -6208,7 +6208,7 @@
    "id": "row::25834",
    "en": "If you can't move past a fissure, rewind time!",
    "ja": "地割れで進めないときは、時間を巻き戻せ！",
-   "zh": "若被破口挡路，就倒回时间！",
+   "zh": "若被裂缝挡路，就倒回时间！",
    "meta": {
     "blob": 452,
     "offset": 1640,
@@ -6219,7 +6219,7 @@
    "id": "row::25835",
    "en": "Even if they appear, there should still be a way to pass!",
    "ja": "地割れがあっても進める道はあるはずだ！",
-   "zh": "即便出现破口，也必有过路！",
+   "zh": "即便出现裂缝，也必有过路！",
    "meta": {
     "blob": 452,
     "offset": 1704,
@@ -31558,7 +31558,7 @@
    "id": "row::30561",
    "en": "Obtained Cool Stripes!",
    "ja": "クールボーダーをゲット！",
-   "zh": "获得了酷格子！",
+   "zh": "获得了酷条纹！",
    "meta": {
     "blob": 537,
     "offset": 2700,

@@ -6420,7 +6420,7 @@
    "id": "row::1367",
    "en": "Q28. The Great Switcheroo",
    "ja": "Q28．身代わり大作戦",
-   "zh": "Q28．分身大作战",
+   "zh": "Q28．替身大作战",
    "meta": {
     "blob": 34,
     "offset": 68096,
@@ -6937,7 +6937,7 @@
    "id": "row::1414",
    "en": "Q82. The Dark Ships Invade",
    "ja": "Q82．暗黒船の襲来",
-   "zh": "Q82．暗黑船杀到",
+   "zh": "Q82．暗黑船袭来",
    "meta": {
     "blob": 34,
     "offset": 120548,
@@ -7564,7 +7564,7 @@
    "id": "row::1480",
    "en": "Q28. The Great Switcheroo",
    "ja": "Q28．身代わり大作戦",
-   "zh": "Q28．分身大作战",
+   "zh": "Q28．替身大作战",
    "meta": {
     "blob": 34,
     "offset": 171884,
@@ -15198,7 +15198,7 @@
    "id": "row::2927",
    "en": "Please wait a while before",
    "ja": "しばらく時間をおいてから",
-   "zh": "请且慢片刻后",
+   "zh": "请稍等片刻后",
    "meta": {
     "blob": 66,
     "offset": 3600,
@@ -21529,7 +21529,7 @@
    "id": "row::4524",
    "en": "have been extended by the Power Staff.",
    "ja": "にょいぼうによってのびた",
-   "zh": "已被王杖之力延展",
+   "zh": "已被如意棒之力延展",
    "meta": {
     "blob": 99,
     "offset": 1050,

@@ -1035,7 +1035,7 @@
    "id": "row::38373",
    "en": "Power Staff",
    "ja": "にょいぼう",
-   "zh": "王杖",
+   "zh": "如意棒",
    "meta": {
     "blob": 713,
     "offset": 53548,
@@ -1204,7 +1204,7 @@
    "id": "row::38412",
    "en": "Warm Beanie",
    "ja": "あったかニット",
-   "zh": "热乎毛线帽",
+   "zh": "保暖毛线帽",
    "meta": {
     "blob": 713,
     "offset": 62128,
@@ -5161,7 +5161,7 @@
    "id": "row::39000",
    "en": "◆Talking Event - Reward Settings",
    "ja": "◆イベント会話・お礼の設定",
-   "zh": "◆对话事件 - 奖金设置",
+   "zh": "◆对话事件 - 奖励设置",
    "meta": {
     "blob": 715,
     "offset": 100704,
@@ -5183,7 +5183,7 @@
    "id": "row::39002",
    "en": "Reward Settings",
    "ja": "お礼設定",
-   "zh": "奖金设置",
+   "zh": "奖励设置",
    "meta": {
     "blob": 715,
     "offset": 101152,
@@ -5271,7 +5271,7 @@
    "id": "row::39010",
    "en": "◆Reward Settings",
    "ja": "◆お礼の設定",
-   "zh": "◆奖金设置",
+   "zh": "◆奖励设置",
    "meta": {
     "blob": 715,
     "offset": 104512,
@@ -5381,7 +5381,7 @@
    "id": "row::39020",
    "en": "◆Gold Reward Settings",
    "ja": "◆お礼のお金の設定",
-   "zh": "◆金币奖金设置",
+   "zh": "◆金币奖励设置",
    "meta": {
     "blob": 715,
     "offset": 110336,
@@ -5469,7 +5469,7 @@
    "id": "row::39028",
    "en": "◆Reward Item Settings",
    "ja": "◆お礼アイテムの設定",
-   "zh": "◆奖金道具设置",
+   "zh": "◆奖励道具设置",
    "meta": {
     "blob": 715,
     "offset": 116832,
@@ -7361,7 +7361,7 @@
    "id": "row::39200",
    "en": "◆Overland - Reward Settings",
    "ja": "◆地上イベント・お礼の設定",
-   "zh": "◆地面 - 奖金设置",
+   "zh": "◆地面 - 奖励设置",
    "meta": {
     "blob": 715,
     "offset": 211360,
@@ -7383,7 +7383,7 @@
    "id": "row::39202",
    "en": "Reward Settings",
    "ja": "お礼設定",
-   "zh": "奖金设置",
+   "zh": "奖励设置",
    "meta": {
     "blob": 715,
     "offset": 211808,
@@ -13972,7 +13972,7 @@
    "id": "row::40148",
    "en": "Rusty sword. _Cuts poorly.",
    "ja": "サビた剣　_キレあじは悪い",
-   "zh": "锈剑。_切碎效果很差",
+   "zh": "锈剑。_锋利度很差",
    "meta": {
     "blob": 736,
     "offset": 4884,
@@ -16705,7 +16705,7 @@
    "id": "row::40383",
    "en": "Power Staff",
    "ja": "にょいぼう",
-   "zh": "王杖",
+   "zh": "如意棒",
    "meta": {
     "blob": 736,
     "offset": 25480,
@@ -17120,7 +17120,7 @@
    "id": "row::40418",
    "en": "Warm Beanie",
    "ja": "あったかニット",
-   "zh": "热乎毛线帽",
+   "zh": "保暖毛线帽",
    "meta": {
     "blob": 736,
     "offset": 29768,
@@ -17133,7 +17133,7 @@
    "id": "row::40419",
    "en": "Warms the heart.",
    "ja": "こころがホットなる",
-   "zh": "热乎内心。",
+   "zh": "温暖内心。",
    "meta": {
     "blob": 736,
     "offset": 29808,
@@ -17781,7 +17781,7 @@
    "id": "row::40473",
    "en": "The stripes are surprisingly _fashionable.",
    "ja": "シマシマが何気にオシャレ",
-   "zh": "格子意外地时髦。",
+   "zh": "条纹意外地时髦。",
    "meta": {
     "blob": 736,
     "offset": 37312,
@@ -20745,7 +20745,7 @@
    "id": "row::40715",
    "en": "Elite Fishing Rod",
    "ja": "つりざおヘブン",
-   "zh": "极品钓具",
+   "zh": "极品钓竿",
    "meta": {
     "blob": 736,
     "offset": 79080,
@@ -20771,7 +20771,7 @@
    "id": "row::40717",
    "en": "Legendary Fishing Rod",
    "ja": "伝説のつりざお",
-   "zh": "传说钓具",
+   "zh": "传说钓竿",
    "meta": {
     "blob": 736,
     "offset": 79616,
@@ -22132,7 +22132,7 @@
    "id": "row::40826",
    "en": "Executor",
    "ja": "エグゼキュート",
-   "zh": "照办者",
+   "zh": "执行者",
    "meta": {
     "blob": 736,
     "offset": 103200,
@@ -25850,7 +25850,7 @@
    "id": "row::41146",
    "en": "Cool Stripes",
    "ja": "クールボーダー",
-   "zh": "拉风格子",
+   "zh": "拉风条纹",
    "meta": {
     "blob": 736,
     "offset": 154120,
@@ -25861,7 +25861,7 @@
    "id": "row::41147",
    "en": "The stripes are surprisingly _fashionable.",
    "ja": "シマシマが何気にオシャレ",
-   "zh": "格子意外地时髦。",
+   "zh": "条纹意外地时髦。",
    "meta": {
     "blob": 736,
     "offset": 154160,
@@ -36372,7 +36372,7 @@
    "id": "row::61137",
    "en": "Whoa! This is an awesome fishing rod!",
    "ja": "ウオッ！これはいいつりざお！",
-   "zh": "哇！这是根好钓具！",
+   "zh": "哇！这是根好钓竿！",
    "meta": {
     "blob": 736,
     "offset": 79120,
@@ -36383,7 +36383,7 @@
    "id": "row::61138",
    "en": "A legendary fishing rod handed down from antiquity.",
    "ja": "いにしえよりつたわる伝説のつりざお",
-   "zh": "自古相传的传说钓具",
+   "zh": "自古相传的传说钓竿",
    "meta": {
     "blob": 736,
     "offset": 79656,

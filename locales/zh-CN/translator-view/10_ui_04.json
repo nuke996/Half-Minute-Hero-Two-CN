@@ -262,7 +262,7 @@
    "id": "row::19330",
    "en": "Rusty sword. _Cuts poorly.",
    "ja": "サビた剣　_キレあじは悪い",
-   "zh": "锈剑。_切碎效果很差",
+   "zh": "锈剑。_锋利度很差",
    "meta": {
     "blob": 357,
     "offset": 4884,
@@ -2995,7 +2995,7 @@
    "id": "row::19565",
    "en": "Power Staff",
    "ja": "にょいぼう",
-   "zh": "王杖",
+   "zh": "如意棒",
    "meta": {
     "blob": 357,
     "offset": 25480,
@@ -3408,7 +3408,7 @@
    "id": "row::19600",
    "en": "Warm Beanie",
    "ja": "あったかニット",
-   "zh": "热乎毛线帽",
+   "zh": "保暖毛线帽",
    "meta": {
     "blob": 357,
     "offset": 29768,
@@ -3421,7 +3421,7 @@
    "id": "row::19601",
    "en": "Warms the heart.",
    "ja": "こころがホットなる",
-   "zh": "热乎内心。",
+   "zh": "温暖内心。",
    "meta": {
     "blob": 357,
     "offset": 29808,
@@ -4078,7 +4078,7 @@
    "id": "row::19656",
    "en": "The stripes are surprisingly _fashionable.",
    "ja": "シマシマが何気にオシャレ",
-   "zh": "格子意外地时髦。",
+   "zh": "条纹意外地时髦。",
    "meta": {
     "blob": 357,
     "offset": 37312,
@@ -7047,7 +7047,7 @@
    "id": "row::19899",
    "en": "Elite Fishing Rod",
    "ja": "つりざおヘブン",
-   "zh": "极品钓具",
+   "zh": "极品钓竿",
    "meta": {
     "blob": 357,
     "offset": 79080,
@@ -7073,7 +7073,7 @@
    "id": "row::19901",
    "en": "Legendary Fishing Rod",
    "ja": "伝説のつりざお",
-   "zh": "传说钓具",
+   "zh": "传说钓竿",
    "meta": {
     "blob": 357,
     "offset": 79616,
@@ -40842,7 +40842,7 @@
    "id": "row::60983",
    "en": "Whoa! This is an awesome fishing rod!",
    "ja": "ウオッ！これはいいつりざお！",
-   "zh": "哇！这是根好钓具！",
+   "zh": "哇！这是根好钓竿！",
    "meta": {
     "blob": 357,
     "offset": 79120,
@@ -40853,7 +40853,7 @@
    "id": "row::60984",
    "en": "A legendary fishing rod handed down from antiquity.",
    "ja": "いにしえよりつたわる伝説のつりざお",
-   "zh": "自古相传的传说钓具",
+   "zh": "自古相传的传说钓竿",
    "meta": {
     "blob": 357,
     "offset": 79656,

@@ -4540,7 +4540,7 @@
    "id": "row::49403",
    "en": "Please wait…",
    "ja": "「待ってください・・・みなさん」",
-   "zh": "「请且慢……」",
+   "zh": "「请稍等……」",
    "meta": {
     "blob": 863,
     "offset": 130408,
@@ -6696,7 +6696,7 @@
    "id": "row::50902",
    "en": "Man: Falling into different cracks will bring",
    "ja": "男「地割れの場所がちがえば",
-   "zh": "男人「掉进不同破口会",
+   "zh": "男人「掉进不同裂缝会",
    "meta": {
     "blob": 900,
     "offset": 2852,
@@ -8478,7 +8478,7 @@
    "id": "row::51265",
    "en": "Sending you on a top secret mission…",
    "ja": "「極秘任務だなんて・・・",
-   "zh": "「竟派你照办绝密任务…",
+   "zh": "「竟派你执行绝密任务…",
    "meta": {
     "blob": 906,
     "offset": 53028,
@@ -8852,7 +8852,7 @@
    "id": "row::51315",
    "en": "… Understood. Let's get back to our mission then.",
    "ja": "「・・・わかりました　任務に戻りましょう」",
-   "zh": "「…明白了。那我们回去照办任务吧。」",
+   "zh": "「…明白了。那我们回去执行任务吧。」",
    "meta": {
     "blob": 906,
     "offset": 70548,
@@ -17223,7 +17223,7 @@
    "id": "row::52603",
    "en": "I betray all expectations and hope…",
    "ja": "「どんな期待も希望も裏切って",
-   "zh": "「我背叛一切巴望与希望…",
+   "zh": "「我背叛一切期待与希望…",
    "meta": {
     "blob": 913,
     "offset": 73176,
@@ -17234,7 +17234,7 @@
    "id": "row::52604",
    "en": "And I take away all expectations and hope… !",
    "ja": "　どんな期待も希望もうばってやるぜ！！」",
-   "zh": "　并且夺走你所有巴望与希望…！」",
+   "zh": "　并且夺走你所有期待与希望…！」",
    "meta": {
     "blob": 913,
     "offset": 73240,
@@ -17685,7 +17685,7 @@
    "id": "row::52664",
    "en": "I was expecting a bit more of a reaction…",
    "ja": "　リアクションにちょっと期待してたのに・・・」",
-   "zh": "　我还巴望你反应大一点…」",
+   "zh": "　我还期待你反应大一点…」",
    "meta": {
     "blob": 913,
     "offset": 92220,
@@ -23801,7 +23801,7 @@
    "id": "row::54597",
    "en": "Nanny: This must be the work of that Evil Lord, thought",
    "ja": "ばあや「これは滅びたはずの魔王のしわざでしょう",
-   "zh": "保姆「这一定是魔王的大作，想来",
+   "zh": "保姆「这一定是魔王的杰作，想来",
    "meta": {
     "blob": 943,
     "offset": 7092,
@@ -24384,7 +24384,7 @@
    "id": "row::54818",
    "en": "Yes, sir! Sub-Commander Yashu, sir!",
    "ja": "「りょーかいっ！　ヤーシュ副・隊・長・どの！」",
-   "zh": "「得令！亚修副队长大人！」",
+   "zh": "「收到！亚修副队长大人！」",
    "meta": {
     "blob": 953,
     "offset": 26164,
@@ -26716,7 +26716,7 @@
    "id": "row::55155",
    "en": "T-The Herbs I was selling were stolen!!",
    "ja": "「う　売り物のやくそうがぬすまれたーー！！」",
-   "zh": "「我、我卖的草药被拿走了！！」",
+   "zh": "「我、我卖的草药被偷走了！！」",
    "meta": {
     "blob": 953,
     "offset": 219468,
@@ -32040,7 +32040,7 @@
    "id": "row::56121",
    "en": "… would capture the souls of humans!",
    "ja": "　・・・と　うらないに出ておる」",
-   "zh": "　预言中早有记载…」",
+   "zh": "　占卜中早有记载…」",
    "meta": {
     "blob": 970,
     "offset": 193544,
@@ -32106,7 +32106,7 @@
    "id": "row::56133",
    "en": "It's been foretold…",
    "ja": "「あんた・・・船に乗りたいのだな",
-   "zh": "「预言曾说过…",
+   "zh": "「占卜曾说过…",
    "meta": {
     "blob": 970,
     "offset": 198736,
@@ -32205,7 +32205,7 @@
    "id": "row::56147",
    "en": "It's also been foretold that…",
    "ja": "「あんたなら犯人を見つけてくれる",
-   "zh": "「预言还说过…",
+   "zh": "「占卜还说过…",
    "meta": {
     "blob": 970,
     "offset": 200196,
@@ -34636,7 +34636,7 @@
    "id": "row::56542",
    "en": "like this is, \"All's well that ends well\"!",
    "ja": "　結果オーライというようデス」",
-   "zh": "　“收场好就万事好”这种话。」",
+   "zh": "　“结果好就万事好”这种话。」",
    "meta": {
     "blob": 974,
     "offset": 150620,
@@ -35351,7 +35351,7 @@
    "id": "row::56649",
    "en": "I look forward to our next meeting!!",
    "ja": "「次に会う時が楽しみダゼ！！",
-   "zh": "「我很巴望再次见到你！！",
+   "zh": "「我很期待再次见到你！！",
    "meta": {
     "blob": 974,
     "offset": 271736,
@@ -36352,7 +36352,7 @@
    "id": "row::56941",
    "en": "<Clothes>, <hat>, <shoes> and <staff> are the 4 items required.",
    "ja": "　<ふく>　<ぼうし>　<くつ>　<つえ>の4つあるんです」",
-   "zh": "　<衣服>、<帽子>、<鞋子>、<王杖>这四样是必需的。」",
+   "zh": "　<衣服>、<帽子>、<鞋子>、<如意棒>这四样是必需的。」",
    "meta": {
     "blob": 982,
     "offset": 44916,
@@ -38706,7 +38706,7 @@
    "id": "row::57441",
    "en": "come back here and I'll give you a reward. ▼",
    "ja": "　また来てちょうだい　いいものをあげるわ▼」",
-   "zh": "　回来找我，我就给你奖金。▼」",
+   "zh": "　回来找我，我就给你奖励。▼」",
    "meta": {
     "blob": 997,
     "offset": 87840,
@@ -38772,7 +38772,7 @@
    "id": "row::57463",
    "en": "Didn't you say something about a reward?",
    "ja": "　いいものくれるとか　言わなかったか？」",
-   "zh": "　你不是说过要给我奖金吗？」",
+   "zh": "　你不是说过要给我奖励吗？」",
    "meta": {
     "blob": 997,
     "offset": 108280,
@@ -38838,7 +38838,7 @@
    "id": "row::57472",
    "en": "I completely forgot that I'd even offered a reward.",
    "ja": "　思ってたから　ほうしゅうのこと忘れてたわ」",
-   "zh": "　所以把奖金的事全忘了」",
+   "zh": "　所以把奖励的事全忘了」",
    "meta": {
     "blob": 997,
     "offset": 109156,
@@ -39036,7 +39036,7 @@
    "id": "row::57709",
    "en": "Young Owner: Fishing rods are all sold",
    "ja": "こども店長「つりざお　売り切れちゃったのー",
-   "zh": "小店长「钓具全卖光了，",
+   "zh": "小店长「钓竿全卖光了，",
    "meta": {
     "blob": 1001,
     "offset": 4972,
@@ -39047,7 +39047,7 @@
    "id": "row::57711",
    "en": "Young Owner: Fishing rods are",
    "ja": "こども店長「つりざお　にゅうかしたのー",
-   "zh": "小店长「钓具进货啦，",
+   "zh": "小店长「钓竿进货啦，",
    "meta": {
     "blob": 1001,
     "offset": 5396,
@@ -39058,7 +39058,7 @@
    "id": "row::57713",
    "en": "Young Owner: Fishing rods are",
    "ja": "こども店長「つりざお　にゅうかしたのー",
-   "zh": "小店长「钓具进货啦，",
+   "zh": "小店长「钓竿进货啦，",
    "meta": {
     "blob": 1001,
     "offset": 5820,
@@ -39179,7 +39179,7 @@
    "id": "row::57793",
    "en": "Soothsaying Angel: You have an unfortunate future.",
    "ja": "うらない天使「あなたに悪い相がでているわ　先に進むと",
-   "zh": "预言天使「你面相不大好。",
+   "zh": "占卜天使「你面相不大好。",
    "meta": {
     "blob": 1007,
     "offset": 3276,

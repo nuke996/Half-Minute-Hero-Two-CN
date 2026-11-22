@@ -308,7 +308,7 @@
    "id": "ml::26",
    "en": "Village Chief: The Evil Lord may be gone, but there seems to be a\ncriminal loose… There's a reward for catching the bum.",
    "ja": "村長「魔王はいなくなったが　罪人がいるらしいでの\n　　　つかまえたらお金がでるとか　ぶっそうな話じゃの」",
-   "zh": "村长「魔王虽然不在了，但好像还有个\n犯人逍遥法外…抓到他就有奖金。」",
+   "zh": "村长「魔王虽然不在了，但好像还有个\n犯人逍遥法外…抓到他就有赏金。」",
    "meta": {
     "blob": 56,
     "offset": 1580,
@@ -2816,7 +2816,7 @@
    "id": "ml::235",
    "en": "Clerk: Sorry man, the thief took all the Herbs I had for sale.\nI did see him run off to the <cave in the east>, however…",
    "ja": "店番「すまねえな　とうぞくに売り物のやくそうぬすまれてしまった\n　　　とうぞくは<東のどうくつ>に逃げてくのは見たんだが・・・」",
-   "zh": "店员「抱歉，盗贼把我卖的草药全拿走了。\n不过我见他往<东边的洞穴>跑了……」",
+   "zh": "店员「抱歉，盗贼把我卖的草药全偷走了。\n不过我见他往<东边的洞穴>跑了……」",
    "meta": {
     "blob": 405,
     "offset": 5396,
@@ -3920,7 +3920,7 @@
    "id": "ml::327",
    "en": "Man: Seems they found something in the western fissure,\nwonder what it is… ?",
    "ja": "男「西のキレツで　何か見つかったらしいね　なんだろ・・・？」",
-   "zh": "男人「西边破口里好像发现了什么，\n会是什么呢……？」",
+   "zh": "男人「西边裂缝里好像发现了什么，\n会是什么呢……？」",
    "meta": {
     "blob": 577,
     "offset": 2428,
@@ -4436,7 +4436,7 @@
    "id": "ml::370",
    "en": "Demon Man: If you fall in a crevice, don't\ngive up! You just keep climbing back up!!",
    "ja": "魔族オヤジ「地割れに落ちてもあきらめるな！\n　　　　　　何度でもはいあがってこい！！」",
-   "zh": "魔族老头「掉进破口也别\n放弃！爬上来就好！！」",
+   "zh": "魔族老头「掉进裂缝也别\n放弃！爬上来就好！！」",
    "meta": {
     "blob": 632,
     "offset": 2852,
@@ -4508,7 +4508,7 @@
    "id": "ml::376",
    "en": "Man: Falling into different cracks will bring\nyou to different places, of course.",
    "ja": "男「地割れの場所がちがえば\n　　もちろん落ちる場所もちがうぜ」",
-   "zh": "男人「掉进不同破口会\n到达不同地方，当然。」",
+   "zh": "男人「掉进不同裂缝会\n到达不同地方，当然。」",
    "meta": {
     "blob": 640,
     "offset": 2852,
@@ -5888,7 +5888,7 @@
    "id": "ml::491",
    "en": "Old Lady: Ah… the criminal! I'll catch him\nfor a reward… but who am I kidding!",
    "ja": "おばさん「あ・・・大悪人！\n　　　　　つかまえればお金がもらえる・・・でもムリ！」",
-   "zh": "老婆婆「啊…那恶人！我去抓他\n换奖金…唉，我哪抓得住！」",
+   "zh": "老婆婆「啊…那恶人！我去抓他\n换赏金…唉，我哪抓得住！」",
    "meta": {
     "blob": 915,
     "offset": 7092,
@@ -5984,7 +5984,7 @@
    "id": "ml::499",
    "en": "Nanny: This must be the work of that Evil Lord, thought\nto be dead. Princess, please help save the King!",
    "ja": "ばあや「これは滅びたはずの魔王のしわざでしょう\n　　　　姫さま　どうか国王をお救いくだされ！」",
-   "zh": "保姆「这一定是那魔王的大作，本以为\n它已死了。公主，请救救国王！」",
+   "zh": "保姆「这一定是那魔王的杰作，本以为\n它已死了。公主，请救救国王！」",
    "meta": {
     "blob": 943,
     "offset": 7092,
@@ -6356,7 +6356,7 @@
    "id": "ml::530",
    "en": "Young Owner: Fishing rods are all sold\nout. We'll get some new stock in a bit.",
    "ja": "こども店長「つりざお　売り切れちゃったのー\n　　　　　　もうちょっとしたら　にゅうかされるのー」",
-   "zh": "小店长「钓具全卖光了。\n过会儿会进新货。」",
+   "zh": "小店长「钓竿全卖光了。\n过会儿会进新货。」",
    "meta": {
     "blob": 1001,
     "offset": 4972,
@@ -6368,7 +6368,7 @@
    "id": "ml::531",
    "en": "Young Owner: Fishing rods are\nin stock again. Buy one?",
    "ja": "こども店長「つりざお　にゅうかしたのー\n　　　　　　買ってなのー」",
-   "zh": "小店长「钓具进货啦，\n买一根吗？」",
+   "zh": "小店长「钓竿进货啦，\n买一根吗？」",
    "meta": {
     "blob": 1001,
     "offset": 5396,
@@ -6392,7 +6392,7 @@
    "id": "ml::533",
    "en": "Soothsaying Angel: You have an unfortunate future.\nSomething terrible will happen if you go forward!",
    "ja": "うらない天使「あなたに悪い相がでているわ　先に進むと\n　　　　　　　大変なことが起こるんじゃないかしら」",
-   "zh": "预言天使「你的未来很不幸。\n再往前走会有可怕的事发生！」",
+   "zh": "占卜天使「你的未来很不幸。\n再往前走会有可怕的事发生！」",
    "meta": {
     "blob": 1007,
     "offset": 3276,
@@ -8768,7 +8768,7 @@
    "id": "ml::731",
    "en": "Faceless Gold\nA mobile gold temple statue.\nA thief stole its head.",
    "ja": "フェイスレスゴールド\n神殿を守る動く金の像\n空き巣に頭を取られてしまった",
-   "zh": "无面金\n会移动的神殿金像。\n头被盗贼拿走了。",
+   "zh": "无面金\n会移动的神殿金像。\n头被盗贼偷走了。",
    "meta": {
     "blob": 555,
     "offset": 62788,
@@ -8816,7 +8816,7 @@
    "id": "ml::735",
    "en": "Faceless Daemon\nA mobile daemon temple statue.\nA ninja took its head.",
    "ja": "フェイスレスデーモン\n神殿を守る動くオニの像\nニンジャにくびをはねられた",
-   "zh": "无面魔\n会移动的神殿魔像。\n头被忍者拿走了。",
+   "zh": "无面魔\n会移动的神殿魔像。\n头被忍者偷走了。",
    "meta": {
     "blob": 555,
     "offset": 65428,
@@ -9860,7 +9860,7 @@
    "id": "ml::822",
    "en": "Power Staff\nIts length can be elongated at will.\nThis feature seems not to work for older men.",
    "ja": "にょいぼう\n長さを自由に変えられるぼうだが\n大人の事情で今はのびないらしい",
-   "zh": "王杖\n长度能随意志伸长。\n这功能对上了年纪的男人似乎没用。",
+   "zh": "如意棒\n长度能随意志伸长。\n这功能对上了年纪的男人似乎没用。",
    "meta": {
     "blob": 713,
     "offset": 53548,
@@ -10016,7 +10016,7 @@
    "id": "ml::835",
    "en": "Warm Beanie\nA replica of a beanie heartwarmingly knit together\nby a girl in love.",
    "ja": "あったかニット\n勇者のために少女が心をこめて\n編んでくれたニットのレプリカ",
-   "zh": "热乎毛线帽\n仿制自一位恋爱中的女孩\n暖心织出的毛线帽。",
+   "zh": "保暖毛线帽\n仿制自一位恋爱中的女孩\n暖心织出的毛线帽。",
    "meta": {
     "blob": 713,
     "offset": 62128,
@@ -13196,7 +13196,7 @@
    "id": "ml::1100",
    "en": "<Overland Event - Reward>\nLets you set Overland Events and\ntheir rewards as well.\n\nMaking the Overland Event look\ntransparent is useful when\ncreating stories about looking\nfor objects on the map\nor discovering items.",
    "ja": "<地上イベント・お礼>は\nお礼も設定できる地上イベントです。\n\n地上イベントは見た目をとうめいに\nすることでマップ上で探し物や\nアイテムを発見するお話を\nつくるのに役立ちます。",
-   "zh": "<陆地事件-奖金>\n让你也能设置陆地事件\n及其奖金。\n\n把陆地事件设为\n透明，在创作\n寻找地图上的物件\n或发现道具的故事时\n会很有用。",
+   "zh": "<陆地事件-奖励>\n让你也能设置陆地事件\n及其奖励。\n\n把陆地事件设为\n透明，在创作\n寻找地图上的物件\n或发现道具的故事时\n会很有用。",
    "meta": {
     "blob": 766,
     "offset": 5264,
@@ -13532,7 +13532,7 @@
    "id": "ml::1128",
    "en": "<Talking Event - Reward>\nJust like Talking Event,\nthe village has to be specified.\nThe difference is that\nyou can set a reward\nfor when the event triggers.\n\nRewards include the following.\n- Item\n- Gold\n- Terrain Change\n- Vehicle",
    "ja": "<イベント会話・お礼>は\nイベント会話と同じように村に\n設定する必要があります。\nイベント会話とことなる部分は\nイベントが発生したときのお礼を\n設定できることです。\n\nお礼には\n・アイテム\n・お金\n・地形変化\n・乗り物\nという種類があります。",
-   "zh": "<对话事件-奖金>\n和对话事件一样，\n必须指定村庄。\n不同之处在于\n你可以为事件触发时\n设置奖金。\n\n奖金包括以下几种。\n- 道具\n- 金币\n- 地形变化\n- 载具",
+   "zh": "<对话事件-奖励>\n和对话事件一样，\n必须指定村庄。\n不同之处在于\n你可以为事件触发时\n设置奖励。\n\n奖励包括以下几种。\n- 道具\n- 金币\n- 地形变化\n- 载具",
    "meta": {
     "blob": 766,
     "offset": 3536,
@@ -13688,7 +13688,7 @@
    "id": "ml::1141",
    "en": "<- Item> will give a specified item\nas a reward.\n\n<- Gold> will give a specified amount\nof gold as a reward.\n\n<- Terrain Change> sets an event,\nsuch as repairing a broken bridge\nor filling in a hole,\nthat triggers after the main event.\n\n<- Vehicle> produces a horse\nor boat at a specified location.",
    "ja": "<・アイテム>は設定したアイテムを\nもらうことができます。\n\n<・お金>は設定したお金を\nもらうことができます。\n\n<・地形変化>はイベント発生後に\nこわれた橋がなおったり\n穴がうまったりするイベントを\n配置できます。\n\n<・乗り物>は馬か船が設定した\n場所に出現します。",
-   "zh": "<-道具>会给予指定道具\n作为奖金。\n\n<-金币>会给予指定数量的\n金币作为奖金。\n\n<-地形变化>会设置一个\n在主事件之后触发的事件，\n比如修好断桥\n或填上洞。\n\n<-载具>会在指定位置\n生成马或船。",
+   "zh": "<-道具>会给予指定道具\n作为奖励。\n\n<-金币>会给予指定数量的\n金币作为奖励。\n\n<-地形变化>会设置一个\n在主事件之后触发的事件，\n比如修好断桥\n或填上洞。\n\n<-载具>会在指定位置\n生成马或船。",
    "meta": {
     "blob": 766,
     "offset": 4112,
@@ -13748,7 +13748,7 @@
    "id": "ml::1146",
    "en": "<Edit Items> lets you make items\nthat you can call your own.\n\nThese items can be sold\nin village shops,\ngiven as rewards by villagers,\nor placed inside monsters'\ntreasure chests as spoils.\n\nHere are the possible settings.\n<- Type>\nWeapon/Shield/Armor/Helmet/Shoes/\nHeal are the available types.",
    "ja": "<アイテムをつくる>は自分だけの\nアイテムをつくることができます。\n\nつくったアイテムは\n村のお店の商品にしたり\n村人からのお礼にしたり\nモンスターの宝箱に\n設定することができます。\n\n設定できる内容は以下です。\n<・種類>\n　ぶき／たて／よろい／ぼうし／くつ\n　／かいふく　から選択できます。",
-   "zh": "<制作道具>可以让你制作\n真正属于自己的道具。\n\n这些道具可以在\n村庄商店里出售，\n由村民作为奖金送出，\n或作为战利品放进\n怪物的宝箱里。\n\n以下是可设置的选项。\n<-类型>\n可选类型有武器/盾/护甲/头盔/鞋/\n恢复。",
+   "zh": "<制作道具>可以让你制作\n真正属于自己的道具。\n\n这些道具可以在\n村庄商店里出售，\n由村民作为奖励送出，\n或作为战利品放进\n怪物的宝箱里。\n\n以下是可设置的选项。\n<-类型>\n可选类型有武器/盾/护甲/头盔/鞋/\n恢复。",
    "meta": {
     "blob": 988,
     "offset": 80,

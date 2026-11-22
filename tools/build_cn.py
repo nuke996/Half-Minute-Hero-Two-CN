@@ -5896,6 +5896,33 @@ def do_package_names_cn_reuse_z28(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z29(exe_mode=None):
+    """Z29（测试）：Z28 + 第二批替换词典语义残留清理。
+
+    · 巴望→期待、得令→遵命/收到、且慢→稍等、大作→杰作、破口→裂缝、
+      王杖→如意棒、手足→兄弟、钓具→钓竿、格子→条纹、照办→执行、
+      切碎→锋利度、奖金→奖励/赏金、热乎→保暖/温暖、拿走了→偷走了、
+      赶不上关门→赶不上门禁、看准→判断、收场→结果；
+    · 大罪人、うらない→占卜、襲来→袭来、身代わり大作戦→替身大作战、
+      気配→有迹象显示、小娘→小丫头、足がすくんで→吓得。
+    · 同步 ml_zh_fields.json 的同一批写法。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z29-legacy-terms')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z29',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -6491,6 +6518,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z28',
             'out': 'Z28-dict-residue',
             'stage': 'package_stage_names_cn_reuse_z28',
+            'status': 'candidate', 'review': False},
+    'z29': {'func': do_package_names_cn_reuse_z29,
+            'cmd': 'package_names_cn_reuse_z29',
+            'out': 'Z29-legacy-terms',
+            'stage': 'package_stage_names_cn_reuse_z29',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6500,7 +6532,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z28'
+CURRENT_REVIEW_RECIPE = 'z29'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6624,6 +6656,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z27': do_package_names_cn_reuse_z27,
      # Z28（测试）：Z27 + 替换词典语义残留清理，输出 dist/Z28-dict-residue
      'package_names_cn_reuse_z28': do_package_names_cn_reuse_z28,
+     # Z29（测试）：Z28 + 第二批替换词典语义残留清理，输出 dist/Z29-legacy-terms
+     'package_names_cn_reuse_z29': do_package_names_cn_reuse_z29,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

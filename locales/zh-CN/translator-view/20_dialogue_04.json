@@ -415,7 +415,7 @@
    "id": "row::28626",
    "en": "Hold on juuust a second, <RGN_NAME__>.",
    "ja": "「ちょーっと待った　オレ様クン」",
-   "zh": "「且慢一下下，本大爷君。」",
+   "zh": "「稍等一下下，本大爷君。」",
    "meta": {
     "blob": 502,
     "offset": 17112,
@@ -3836,7 +3836,7 @@
    "id": "row::29226",
    "en": "However, there were indications that Yashu used",
    "ja": "「しかしヤーシュの<ツルギ>が　<RGN_NAME__>に対して",
-   "zh": "「不过，有动静显示亚修用",
+   "zh": "「不过，有迹象显示亚修用",
    "meta": {
     "blob": 507,
     "offset": 126028,
@@ -4199,7 +4199,7 @@
    "id": "row::29277",
    "en": "However, there were indications that Yashu used",
    "ja": "「しかしヤーシュの<ツルギ>が　<RGN_NAME__>に対して",
-   "zh": "「不过，有动静显示亚修用",
+   "zh": "「不过，有迹象显示亚修用",
    "meta": {
     "blob": 507,
     "offset": 145300,
@@ -4683,7 +4683,7 @@
    "id": "row::29345",
    "en": "However, there were indications that Yashu used",
    "ja": "「しかしヤーシュの<ツルギ>が　<RGN_NAME__>に対して",
-   "zh": "「不过，有动静显示亚修用",
+   "zh": "「不过，有迹象显示亚修用",
    "meta": {
     "blob": 507,
     "offset": 175960,
@@ -5046,7 +5046,7 @@
    "id": "row::29396",
    "en": "However, there were indications that Yashu used",
    "ja": "「しかしヤーシュの<ツルギ>が　<RGN_NAME__>に対して",
-   "zh": "「不过，有动静显示亚修用",
+   "zh": "「不过，有迹象显示亚修用",
    "meta": {
     "blob": 507,
     "offset": 195232,
@@ -8082,7 +8082,7 @@
    "id": "row::30050",
    "en": "Please be careful not to fall into them.",
    "ja": "　地割れ落下に気をつけてくだサイ」",
-   "zh": "　请小心别掉进破口。」",
+   "zh": "　请小心别掉进裂缝。」",
    "meta": {
     "blob": 526,
     "offset": 56888,
@@ -8742,7 +8742,7 @@
    "id": "row::30146",
    "en": "Roger that.",
    "ja": "「リョウカイしました",
-   "zh": "「得令，",
+   "zh": "「收到，",
    "meta": {
     "blob": 526,
     "offset": 131284,
@@ -11811,7 +11811,7 @@
    "id": "row::30708",
    "en": "We must return to the academy or we'll miss the curfew.",
    "ja": "　早く学園に戻らないと　門限に間に合いませんよ」",
-   "zh": "　得快点回学院，不然赶不上关门了。」",
+   "zh": "　得快点回学院，不然赶不上门禁了。」",
    "meta": {
     "blob": 541,
     "offset": 96892,
@@ -11855,7 +11855,7 @@
    "id": "row::30714",
    "en": "We must return to the academy or we'll miss the curfew.",
    "ja": "　早く学園に戻らないと　門限に間に合いませんよ」",
-   "zh": "　得快点回学院，不然赶不上关门了。」",
+   "zh": "　得快点回学院，不然赶不上门禁了。」",
    "meta": {
     "blob": 541,
     "offset": 100396,
@@ -11899,7 +11899,7 @@
    "id": "row::30720",
    "en": "We must return to the academy or we'll miss the curfew.",
    "ja": "　早く学園に戻らないと　門限に間に合いませんよ」",
-   "zh": "　得快点回学院，不然赶不上关门了。」",
+   "zh": "　得快点回学院，不然赶不上门禁了。」",
    "meta": {
     "blob": 541,
     "offset": 103900,
@@ -13659,7 +13659,7 @@
    "id": "row::31677",
    "en": "Man: Seems they found something in the western fissure,",
    "ja": "男「西のキレツで　何か見つかったらしいね　なんだろ・・・？」",
-   "zh": "男人「西边破口里好像发现了什么，会是什么呢……」",
+   "zh": "男人「西边裂缝里好像发现了什么，会是什么呢……」",
    "meta": {
     "blob": 577,
     "offset": 2428,
@@ -15386,7 +15386,7 @@
    "id": "row::32174",
    "en": "Young Owner: Fishing rods are all sold out.",
    "ja": "こども店長「つりざお　売り切れちゃったのー」",
-   "zh": "小店长「钓具全卖光啦。」",
+   "zh": "小店长「钓竿全卖光啦。」",
    "meta": {
     "blob": 592,
     "offset": 4124,
@@ -16706,7 +16706,7 @@
    "id": "row::32470",
    "en": "I am the oldest of the three!",
    "ja": "「オレは　魚人三キョウダイの長男ギョ！」",
-   "zh": "「我是三手足中的老大！」",
+   "zh": "「我是三兄弟中的老大！」",
    "meta": {
     "blob": 600,
     "offset": 26456,
@@ -16739,7 +16739,7 @@
    "id": "row::32476",
    "en": "I have other brothers as well!",
    "ja": "「他にもキョウダイがいるギョ！",
-   "zh": "「我还有别的手足呢！",
+   "zh": "「我还有别的兄弟呢！",
    "meta": {
     "blob": 600,
     "offset": 31712,
@@ -16750,7 +16750,7 @@
    "id": "row::32477",
    "en": "I am just the middle of the three!",
    "ja": "　オレは　魚人三キョウダイの次男ギョ！」",
-   "zh": "　我只是三手足中的老二！」",
+   "zh": "　我只是三兄弟中的老二！」",
    "meta": {
     "blob": 600,
     "offset": 31776,
@@ -16794,7 +16794,7 @@
    "id": "row::32484",
    "en": "I am the middle of the three!",
    "ja": "「オレは　魚人三キョウダイの次男ギョ」",
-   "zh": "「我是三手足中的老二！」",
+   "zh": "「我是三兄弟中的老二！」",
    "meta": {
     "blob": 600,
     "offset": 32588,
@@ -16827,7 +16827,7 @@
    "id": "row::32490",
    "en": "I have other brothers as well!",
    "ja": "「他にもキョウダイがいますギョ！",
-   "zh": "「我还有别的手足呢！",
+   "zh": "「我还有别的兄弟呢！",
    "meta": {
     "blob": 600,
     "offset": 37844,
@@ -16838,7 +16838,7 @@
    "id": "row::32491",
    "en": "I am just the youngest of the three!",
    "ja": "　ぼくは　魚人三キョウダイの三男ですギョ！」",
-   "zh": "　我只是三手足里最小的！」",
+   "zh": "　我只是三兄弟里最小的！」",
    "meta": {
     "blob": 600,
     "offset": 37908,
@@ -16882,7 +16882,7 @@
    "id": "row::32498",
    "en": "I am the youngest of the three!",
    "ja": "「ぼくは魚人三キョウダイの三男ですギョ」",
-   "zh": "「我是三手足里最小的！」",
+   "zh": "「我是三兄弟里最小的！」",
    "meta": {
     "blob": 600,
     "offset": 38720,
@@ -16992,7 +16992,7 @@
    "id": "row::32519",
    "en": "The three of us will keep that sunfish busy,",
    "ja": "「オレたち三キョウダイがマンボーを止めるから",
-   "zh": "「我们三手足去拖住翻车鱼，",
+   "zh": "「我们三兄弟去拖住翻车鱼，",
    "meta": {
     "blob": 600,
     "offset": 49816,
@@ -17080,7 +17080,7 @@
    "id": "row::32535",
    "en": "The three of us will keep that sunfish busy,",
    "ja": "「オレたち三キョウダイがマンボーを止めるから",
-   "zh": "「我们三手足去拖住翻车鱼，",
+   "zh": "「我们三兄弟去拖住翻车鱼，",
    "meta": {
     "blob": 600,
     "offset": 61204,
@@ -17597,7 +17597,7 @@
    "id": "row::32636",
    "en": "Beastman: Yes～! Can't wait～!",
    "ja": "獣人「ん～！楽しみだわ～！」",
-   "zh": "兽人「嗯～！好巴望～！」",
+   "zh": "兽人「嗯～！好期待～！」",
    "meta": {
     "blob": 602,
     "offset": 3276,
@@ -23339,7 +23339,7 @@
    "id": "row::33905",
    "en": "Demon Man: If you fall in a crevice, don't",
    "ja": "魔族オヤジ「地割れに落ちてもあきらめるな！",
-   "zh": "魔族大叔「掉进破口也别",
+   "zh": "魔族大叔「掉进裂缝也别",
    "meta": {
     "blob": 632,
     "offset": 2852,
@@ -23614,7 +23614,7 @@
    "id": "row::34001",
    "en": "Man: Falling into different cracks will bring",
    "ja": "男「地割れの場所がちがえば",
-   "zh": "男人「掉进不同破口会",
+   "zh": "男人「掉进不同裂缝会",
    "meta": {
     "blob": 640,
     "offset": 2852,
@@ -29092,7 +29092,7 @@
    "id": "row::35412",
    "en": "you'll come across a large fissure…",
    "ja": "　大きなキレツができていたんじゃ・・・」",
-   "zh": "　会遇到一道巨大破口……」",
+   "zh": "　会遇到一道巨大裂缝……」",
    "meta": {
     "blob": 668,
     "offset": 42580,
@@ -29180,7 +29180,7 @@
    "id": "row::35424",
    "en": "out the <western fissure>.",
    "ja": "　調べてみる価値はありそうですよ」",
-   "zh": "　那道<西边的破口>。」",
+   "zh": "　那道<西边的裂缝>。」",
    "meta": {
     "blob": 668,
     "offset": 44332,
@@ -29246,7 +29246,7 @@
    "id": "row::35434",
    "en": "Please check out the gigantic fissure to the west!",
    "ja": "　西にある巨大なキレツを調べてください！」",
-   "zh": "　请去查看西边那道巨大破口！」",
+   "zh": "　请去查看西边那道巨大裂缝！」",
    "meta": {
     "blob": 668,
     "offset": 52800,
@@ -29257,7 +29257,7 @@
    "id": "row::35435",
    "en": "So this is the fissure that recently appeared…",
    "ja": "「これが最近できたというキレツか・・・」",
-   "zh": "「这就是最近出现的破口么……」",
+   "zh": "「这就是最近出现的裂缝么……」",
    "meta": {
     "blob": 668,
     "offset": 55364,
@@ -34229,7 +34229,7 @@
    "id": "row::36139",
    "en": "I look forward to seeing how you boys grow up. ★",
    "ja": "　二人の将来が楽しみだわ★」",
-   "zh": "　我很巴望你们俩的成长★」",
+   "zh": "　我很期待你们俩的成长★」",
    "meta": {
     "blob": 668,
     "offset": 410792,
@@ -34460,7 +34460,7 @@
    "id": "row::36172",
    "en": "If the three of us worked together like the old days…",
    "ja": "「また　昔みたいに三人一緒に極秘任務に・・・」",
-   "zh": "「若能像从前那样三人一起照办机密任务……」",
+   "zh": "「若能像从前那样三人一起执行机密任务……」",
    "meta": {
     "blob": 668,
     "offset": 420948,
@@ -34658,7 +34658,7 @@
    "id": "row::36199",
    "en": "… She doesn't go out much these days. I've been away so",
    "ja": "「・・・最近はあまり外には出られず",
-   "zh": "「……她最近很少露面。我因为外出照办任务",
+   "zh": "「……她最近很少露面。我因为外出执行任务",
    "meta": {
     "blob": 668,
     "offset": 430876,
@@ -34757,7 +34757,7 @@
    "id": "row::36212",
    "en": "I'm looking forward to our next meeting～♪",
    "ja": "「また会える時を楽しみにしていますわ～♪」",
-   "zh": "「我很巴望下次见面♪」",
+   "zh": "「我很期待下次见面♪」",
    "meta": {
     "blob": 668,
     "offset": 433504,
@@ -34900,7 +34900,7 @@
    "id": "row::36231",
    "en": "… We best be getting back to our mission.",
    "ja": "「・・・そろそろ任務に戻る",
-   "zh": "「……我们还是回去照办任务吧，",
+   "zh": "「……我们还是回去执行任务吧，",
    "meta": {
     "blob": 668,
     "offset": 441972,
@@ -39784,7 +39784,7 @@
    "id": "row::37298",
    "en": "I look forward to our next meeting!!",
    "ja": "「次に会う時が楽しみダゼ！！",
-   "zh": "「我很巴望再次见到你！！",
+   "zh": "「我很期待再次见到你！！",
    "meta": {
     "blob": 705,
     "offset": 153184,

@@ -2527,7 +2527,7 @@
    "id": "row::18676",
    "en": "Yes, your Majesty…",
    "ja": "「かしこまりました・・・",
-   "zh": "「得令，陛下…",
+   "zh": "「遵命，陛下…",
    "meta": {
     "blob": 348,
     "offset": 18572,
@@ -4452,7 +4452,7 @@
    "id": "row::18964",
    "en": "… Yes your Majesty! This way!",
    "ja": "「・・・はっ！　ではこちらへ！」",
-   "zh": "「… 得令陛下！这边请！」",
+   "zh": "「… 遵命陛下！这边请！」",
    "meta": {
     "blob": 348,
     "offset": 163988,
@@ -7950,7 +7950,7 @@
    "id": "row::20870",
    "en": "… Yes, your Majesty!",
    "ja": "「・・・はっ！」",
-   "zh": "「…得令，陛下！」",
+   "zh": "「…遵命，陛下！」",
    "meta": {
     "blob": 366,
     "offset": 17696,
@@ -7983,7 +7983,7 @@
    "id": "row::20875",
    "en": "As you wish!",
    "ja": "「ぎょい！」",
-   "zh": "「得令！」",
+   "zh": "「遵命！」",
    "meta": {
     "blob": 366,
     "offset": 18572,
@@ -16167,7 +16167,7 @@
    "id": "row::22592",
    "en": "Clerk: Sorry man, the thief took all the Herbs I had for sale.",
    "ja": "店番「すまねえな　とうぞくに売り物のやくそうぬすまれてしまった",
-   "zh": "店员「抱歉，盗贼把我卖的草药全拿走了。",
+   "zh": "店员「抱歉，盗贼把我卖的草药全偷走了。",
    "meta": {
     "blob": 405,
     "offset": 5396,
@@ -16178,7 +16178,7 @@
    "id": "row::22594",
    "en": "Clerk: Sorry man, the thief took all the Herbs I had for sale.",
    "ja": "店番「すまねえな　とうぞくに売り物のやくそうぬすまれたんだ",
-   "zh": "店员「抱歉，盗贼把我卖的草药全拿走了。",
+   "zh": "店员「抱歉，盗贼把我卖的草药全偷走了。",
    "meta": {
     "blob": 405,
     "offset": 5820,
@@ -23075,7 +23075,7 @@
    "id": "row::24760",
    "en": "Roger that.",
    "ja": "「ラジャーデス",
-   "zh": "「得令，",
+   "zh": "「收到，",
    "meta": {
     "blob": 427,
     "offset": 30836,
@@ -24846,7 +24846,7 @@
    "id": "row::25030",
    "en": "I look forward to our next meeting!!",
    "ja": "「次に会う時が楽しみダゼ！！",
-   "zh": "「我很巴望再次见到你！！",
+   "zh": "「我很期待再次见到你！！",
    "meta": {
     "blob": 427,
     "offset": 190560,
@@ -25429,7 +25429,7 @@
    "id": "row::25243",
    "en": "Girl: Watch out for the cracks in the ground!",
    "ja": "ムスメ「地割れに　気を付けて！」",
-   "zh": "女孩「当心地上的破口！」",
+   "zh": "女孩「当心地上的裂缝！」",
    "meta": {
     "blob": 438,
     "offset": 2428,
@@ -26584,7 +26584,7 @@
    "id": "row::25637",
    "en": "I hope to see you on another field of battle!",
    "ja": "　また別のたたかいの舞台で会おうぞ！！」",
-   "zh": "　巴望他日另一战场相见！」",
+   "zh": "　期待他日另一战场相见！」",
    "meta": {
     "blob": 445,
     "offset": 50924,

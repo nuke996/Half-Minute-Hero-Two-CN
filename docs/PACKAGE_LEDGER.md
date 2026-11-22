@@ -7,7 +7,7 @@
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
 > `tools/build.py package_current`，目标由 `tools/build_cn.py` 的
-> `CURRENT_REVIEW_RECIPE` 决定（当前 `z28` → `dist/Z28-dict-residue/`）。
+> `CURRENT_REVIEW_RECIPE` 决定（当前 `z29` → `dist/Z29-legacy-terms/`）。
 > 新配方登记到 `RECIPES` 后，若成为校对目标，必须同步修改该指针并更新本文档。
 > 每次成功打包会写出 `build_manifest.json`（含配方 id、开关、输入/产物哈希、git commit），
 > 导入报告会打印该身份信息。
@@ -58,7 +58,8 @@
 | **Z25（测试）** | `package_names_cn_reuse_z25` | `dist/Z25-mech-names/` | Z24 + **T-05b 技能/机制名补译**：① `1,000m/h Wind`/`10,000m/h Wind` 五槽同改（`b666 pos0+pos292`、`b147/357/736 pos172`），仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`）；② `Catch and Release`×2、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath` 9 个敌技显示槽 | **2026-11-15 构建，未实机。** `LANG_EN 8faa23aa52fd`（最终 dist，含视频合入） / `LANG_JA 924eff209d0e` / `texture a7b0c2f52666` / `cscv 3134c630713d` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；副本冲突 0；相对 Z24 操作数仅 4 处变化 |
 | **Z26（测试）** | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）：`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽；全部 `+4=FFFFFFFF`、无名字哈希操作数。`Hellfire`/`Venus Seven`/`Dogry`/`Reusable` 未纳入 | **2026-11-15 构建，未实机。** `LANG_EN dd093e4788bf` / `LANG_JA 924eff209d0e` / `texture 5a290d173147` / `cscv f074004c8eb3` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；相对 Z25 操作数 **0 变化**；cmap +4 字（2304） |
 | **Z27（测试）** | `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`：b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空；`row::46763/46764`、`60419/60420`）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` 2 条 + `ml_zh_fields.json` 1 条；b147/b317/b357/b736/b1034 名字副本同步）。选项均为纯显示 collide 假命中，逐槽放行；`validate_build` error 0 / warning 45。**2026-11-21 术语批次（T-10b/T-11/T-12/T-13a）**：船頭→船夫、おじさま→大叔、銃士→火枪手、魔道士→魔法师、悪ガキ→小鬼、超新流星；歌族/海岸人鱼/黄金冲击/刻耳柏洛斯/赞特赫尔等专名归一；说话人 97→40 组。`LANG_EN 1b0109baf96a` / `texture fb5b79e17e37` / `cscv f074004c8eb3` / `DLC01 bbe1e4a87b61`；validate error 0 / warning 46 | **2026-11-21 构建，未实机。** 实机需验：选项中文（尤其 b668 方向、b804/b906 确认）、15 处尾行是否为空、队伍界面「副队长亚修」 | 历史校对目标，已由 Z28 接替 |
-| **Z28（测试）** | `package_names_cn_reuse_z28` | `dist/Z28-dict-residue/` | Z27 + **初版替换词典语义残留清理**（对照 `7179354` 的 350 条 REPL 与当前 16 条）：锯斧/独角兽/牛仔宽帽/长钉鞋/虎牙刀/钻头枪·矛·兵/锯齿/工口之书/马赫齿轮/再次点火/孵化/学徒/盐渍胡萝卜·咸胡萝卜/围裙/激热外套；孤儿院/1金币/殿下/斯洛/两倍/累了/浪漫/宝贵/前辈战士/吃派/赎罪/所谓的/挑战/震撼/吓一跳/告辞/岛屿战争；「多亏」直接道谢/语气错误的 12 行；同步 `ml_zh_fields.json` 与 DLC01 | **2026-11-22 构建，未实机。** `LANG_EN 375f03867e98` / `DLC01 ad68d8bd92e6` / `texture fb5b79e17e37` / `cscv f074004c8eb3` / `LANG_JA 924eff209d0e`；`validate_build` error 0 / warning 46。校对指针 `CURRENT_REVIEW_RECIPE=z28`；实机需验：道具/装备名（锯斧、独角兽、牛仔宽帽、长钉鞋、虎牙刀、钻头枪、工口之书、盐渍/咸胡萝卜）、队伍界面「斯洛」、选项与多行说明 | **当前导入校对目标** |
+| **Z28（测试）** | `package_names_cn_reuse_z28` | `dist/Z28-dict-residue/` | Z27 + **初版替换词典语义残留清理**（对照 `7179354` 的 350 条 REPL 与当前 16 条）：锯斧/独角兽/牛仔宽帽/长钉鞋/虎牙刀/钻头枪·矛·兵/锯齿/工口之书/马赫齿轮/再次点火/孵化/学徒/盐渍胡萝卜·咸胡萝卜/围裙/激热外套；孤儿院/1金币/殿下/斯洛/两倍/累了/浪漫/宝贵/前辈战士/吃派/赎罪/所谓的/挑战/震撼/吓一跳/告辞/岛屿战争；「多亏」直接道谢/语气错误的 12 行；同步 `ml_zh_fields.json` 与 DLC01 | **2026-11-22 构建，未实机。** `LANG_EN 375f03867e98` / `DLC01 ad68d8bd92e6` / `texture fb5b79e17e37` / `cscv f074004c8eb3` / `LANG_JA 924eff209d0e`；`validate_build` error 0 / warning 46。实机需验：道具/装备名（锯斧、独角兽、牛仔宽帽、长钉鞋、虎牙刀、钻头枪、工口之书、盐渍/咸胡萝卜）、队伍界面「斯洛」、选项与多行说明 | 历史校对目标，已由 Z29 接替 |
+| **Z29（测试）** | `package_names_cn_reuse_z29` | `dist/Z29-legacy-terms/` | Z28 + **第二批替换词典语义残留清理**：巴望→期待、得令→遵命/收到、且慢→稍等、大作→杰作、破口→裂缝、王杖→如意棒、手足→兄弟、钓具→钓竿、格子→条纹、照办→执行、切碎→锋利度、奖金→奖励/赏金、热乎→保暖/温暖、拿走了→偷走了、赶不上关门→赶不上门禁、看准→判断、收场→结果；大罪人、うらない→占卜、襲来→袭来、身代わり大作戦→替身大作战、気配→有迹象显示、小娘→小丫头、足がすくんで→吓得；同步 `ml_zh_fields.json`。**含 4 个视频**（自动烧录，`video_merged=true`） | **2026-11-22 构建，未实机。** `LANG_EN 173fd92c3ed2` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 3549a714391e` / `cscv a4fda4e3e628`；`LANG_JA` 两侧按 `expect_same` 省略；`validate_build` error 0 / warning 46。校对指针 `CURRENT_REVIEW_RECIPE=z29`；实机需验：期待/遵命/裂缝/如意棒/兄弟/钓竿/条纹/执行者/锋利度/奖励/保暖/门禁等批量改动 | **当前导入校对目标** |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -67,7 +68,7 @@
 
 > **2026-11-22 起输出裁剪**：`do_package` 对 `expect_same` 中已校验为「与母本逐字节相同」
 > 的文件不再复制进 dist，并删除输出目录里的同名旧产物；清单新增 `omitted_outputs`。
-> 因此 `z19` / `stable` / `z28` 的新构建**不再包含** `res/LANG_JA.s2a` 与
+> 因此 `z19` / `stable` / `z28` / `z29` 的新构建**不再包含** `res/LANG_JA.s2a` 与
 > `DLC01/LANG_JA.s2a`（表中历史哈希仍按当时产物记录）。日语镜像包（`Z4-JA` / `E3-JA`）
 > 会对称地省略未改写的 `LANG_EN` 侧；双写 `package` 路径两侧都写，不受影响。
 
@@ -118,10 +119,10 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 python tools/build.py --game-dir work/original package_names_cn_reuse
 
 # 当前发布基线 Z19（第二轮对话校对 + cscv[355] 歌词 + 4 个视频 + Z23 敌名/Boss 图鉴列表名
-# + T-05b/Z25–Z26 敌技 + Z27 选项/尾行/副队长 + Z28 词典残留清理 + 2026-11-21 术语批次）
+# + T-05b/Z25–Z26 敌技 + Z27 选项/尾行/副队长 + Z28/Z29 词典残留清理 + 2026-11-21 术语批次）
 python tools/build.py --game-dir work/original package_names_cn_reuse_z19
 
-# 当前校对目标 Z28（词典语义残留清理；导入校对走 package_current）
+# 当前校对目标 Z29（第二批词典语义残留清理；导入校对走 package_current）
 python tools/build.py --game-dir work/original package_current
 ```
 
@@ -192,6 +193,12 @@ python tools/build.py --game-dir work/original package_current
      四个视频 blob 均与母本不同；清单 `video_merged=true` 且 `outputs` 含 `res/MOV.s2a`；
      `validate_build` error 0 / warning 46。`build/video_cache/` 记录 4 个渲染结果。
 
+- **2026-11-22（Z29 第二批词典残留清理 + 历史词典存档）**：
+  1. 新增 [`tools/fix_terms_round5.py`](../tools/fix_terms_round5.py)：继续按「日文触发 + 精确行」清理初版 350 条 REPL 的语义残留。
+  2. 第二批：`巴望→期待`、`得令→遵命/收到`、`且慢→稍等`、`大作→杰作`、`破口→裂缝`、`王杖→如意棒`、`手足→兄弟`、`钓具→钓竿`、`格子→条纹`、`照办→执行`、`切碎→锋利度`、`奖金→奖励/赏金`、`热乎→保暖/温暖`、`拿走了→偷走了`、`赶不上关门→赶不上门禁`、`看准→判断`、`收场→结果`；`大罪人`、`うらない→占卜`、`襲来→袭来`、`身代わり大作戦→替身大作战`、`気配→有迹象显示`、`小娘→小丫头`、`足がすくんで→吓得`。
+  3. 新增历史存档 [`docs/LEGACY_REPLACE_MAP.md`](LEGACY_REPLACE_MAP.md)：完整保留初版 350 条 REPL（含原始注释），并注明这些近义词替换源于早期字库容量限制，现已不再需要且必须继续校对修正。
+  4. 构建 Z29：`LANG_EN 173fd92c3ed2` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 3549a714391e` / `cscv a4fda4e3e628`；自动烧录 4 个视频，`video_merged=true`；`validate_build` error 0 / warning 46；`CURRENT_REVIEW_RECIPE=z29`。
+
 - **2026-11-22（Z28 初版替换词典语义残留清理）**：
   1. 新增 [`tools/fix_terms_round4.py`](../tools/fix_terms_round4.py)：从 `7179354:locales/zh-CN/replace_map.py` 恢复初版 350 条有效 REPL，与当前 16 条 diff 后，按「日文触发 + 精确行」清理已烘焙进译表的语义残留。
   2. 物品/机制名：`のこぎりアクス` 铁斧→锯斧、`ユニコーン` 灵角兽→独角兽、`テンガロンハット` 草帽→牛仔宽帽、`スパイクシューズ` 爬山鞋→长钉鞋、`タイガーブレード` 尖刺刀→虎牙刀、`ドリル*` 尖头/尖枪→钻头/钻头枪、`ギザギザ` 利刃→锯齿、`ブック オブ エッチ` 反常之书→工口之书、`マッハギア` 马赫转盘→马赫齿轮、`リライト` 复起→再次点火、`ふかする` 出世→孵化、`みならい` 帮工→学徒、`しおニンジン`/`ソルトニンジン` 红萝卜→盐渍胡萝卜/咸胡萝卜、`エプロン` 饭单→围裙、`げきアツコート` 防冻→激热外套。
@@ -254,7 +261,7 @@ python tools/build.py --game-dir work/original package_current
      stable/E3 保留原文作为安全回滚包。Z19 当日重建 `LANG_EN eb4bb2263f56`（error 0 / warning 45）；
      stable 当日重建 `LANG_EN 2f7dae57bc10`（error 0 / warning 1），并登记进 `RECIPES`。
      （2026-11-12 因 Q16 修复再次重建，最新哈希见 §2 与上方 11-12 条目。）
-  4. 当时 Z19 与 Z24 内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 为当时的校对目标（现指针为 z28）。
+  4. 当时 Z19 与 Z24 内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 为当时的校对目标（现指针为 z29）。
 - **2026-11-04（Z21 实机通过 → 修复并入 Z19 / stable）**：
   0. Z21 实机确认正常（樵夫斧 / 便携女神像 / 升级·降级药水说明均正确），
      修复作为**共享字库逻辑**并入两个基线配方并重建：
@@ -499,7 +506,7 @@ python tools/build.py --game-dir work/original package_current
   - 导入时额外行写入 `locales/zh-CN/extra_review.json`（完整覆盖表），
     CSV 行写回 `text_v2.csv`；
   - `汉化-导入校对.bat` 自检通过后按 `CURRENT_REVIEW_RECIPE` 运行 `package_current`
-    （当前 z28 → `dist/Z28-dict-residue/`，应用 REPL+HL）；
+    （当前 z29 → `dist/Z29-legacy-terms/`，应用 REPL+HL）；
   - `汉化-导入校对-不应用词典.bat` 运行 `import_review.py apply --no-repl`，
     重建 `dist/Z15-reuse-kanji-norepl/`（不套用 REPL，仅保留 HL）；
     两者读同一批 JSON，只是打包模式不同；
@@ -508,7 +515,7 @@ python tools/build.py --game-dir work/original package_current
 - 已实测导出规模（2026-10-27 Z18 轮）：55,419 普通 / 5,850 受保护 / 1,183 多行 /
   1,707 DLC / **257 额外**；导入无改动时 0 修订；改 1 条额外译文（兼具→兼备）后成功写入并重建包
   （Z14 时期重建 Z14，Z15 起重建 Z15，2026-10-23 起重建 Z18，2026-10-29 起重建 Z19，
-  2026-11-21 起重建 Z27，2026-11-22 起重建 Z28）。
+  2026-11-21 起重建 Z27，2026-11-22 起重建 Z28/Z29）。
 
 ---
 

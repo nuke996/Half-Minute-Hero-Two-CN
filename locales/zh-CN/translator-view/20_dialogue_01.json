@@ -4496,7 +4496,7 @@
    "id": "row::958",
    "en": "I do not have enough information to determine",
    "ja": "「神々がなぜタイムストリームを収集するかは",
-   "zh": "「我掌握的信息不足以看准",
+   "zh": "「我掌握的信息不足以判断",
    "meta": {
     "blob": 29,
     "offset": 95660,
@@ -8841,7 +8841,7 @@
    "id": "row::2321",
    "en": "I'm so scared that I can't move…",
    "ja": "　足がすくんで動けませんの・・・」",
-   "zh": "　我怕得动弹不得…」",
+   "zh": "　我吓得动弹不得…」",
    "meta": {
     "blob": 57,
     "offset": 119084,
@@ -14253,7 +14253,7 @@
    "id": "row::3207",
    "en": "Yes sir～ ★",
    "ja": "「あいあいさ～★」",
-   "zh": "「得令～ ★」",
+   "zh": "「遵命～ ★」",
    "meta": {
     "blob": 73,
     "offset": 15944,
@@ -14484,7 +14484,7 @@
    "id": "row::3243",
    "en": "Yes sir! Right away sir!",
    "ja": "「はっ　了解であります！」",
-   "zh": "「得令！马上照办！」",
+   "zh": "「遵命！马上照办！」",
    "meta": {
     "blob": 73,
     "offset": 46896,
@@ -14539,7 +14539,7 @@
    "id": "row::3252",
    "en": "Sir <YUSHA_NAME>, we best be getting back to our mission…",
    "ja": "「<YUSHA_NAME>どの　ではそろそろ任務の方に・・・」",
-   "zh": "「阁下<YUSHA_NAME>，我们该回去照办任务了…」",
+   "zh": "「阁下<YUSHA_NAME>，我们该回去执行任务了…」",
    "meta": {
     "blob": 73,
     "offset": 63248,
@@ -14737,7 +14737,7 @@
    "id": "row::3281",
    "en": "… But we're on a mission.",
    "ja": "「・・・いや　これは任務だ",
-   "zh": "「… 可我们在照办任务，",
+   "zh": "「… 可我们在执行任务，",
    "meta": {
     "blob": 73,
     "offset": 69380,
@@ -14825,7 +14825,7 @@
    "id": "row::3294",
    "en": "… So shall we get back to the mission?",
    "ja": "「・・・で　では任務に戻りましょうか」",
-   "zh": "「… 那么回去照办任务吧？」",
+   "zh": "「… 那么回去执行任务吧？」",
    "meta": {
     "blob": 73,
     "offset": 74344,
@@ -15419,7 +15419,7 @@
    "id": "row::3383",
    "en": "… So shall we get back to the mission?",
    "ja": "「・・・で　では任務に戻りましょうか」",
-   "zh": "「… 那么回去照办任务吧？」",
+   "zh": "「… 那么回去执行任务吧？」",
    "meta": {
     "blob": 73,
     "offset": 99456,
@@ -25517,7 +25517,7 @@
    "id": "row::5396",
    "en": "Can't wait to finally hear it! ♪",
    "ja": "　楽しみにしてるぜ♪」",
-   "zh": "　我可是很巴望听到呢！」",
+   "zh": "　我可是很期待听到呢！」",
    "meta": {
     "blob": 107,
     "offset": 29732,
@@ -32590,7 +32590,7 @@
    "id": "row::7016",
    "en": "Village Chief: The fissure is to the west of the village.",
    "ja": "村長「キレツは村の西にありますぞい」",
-   "zh": "村长「破口在村子西边。」",
+   "zh": "村长「裂缝在村子西边。」",
    "meta": {
     "blob": 139,
     "offset": 3276,

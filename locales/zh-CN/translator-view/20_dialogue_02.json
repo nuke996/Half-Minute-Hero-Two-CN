@@ -767,7 +767,7 @@
    "id": "row::9569",
    "en": "My duties were few and far between,",
    "ja": "「あまり任務にも　ついていませんでしたから",
-   "zh": "「我几乎没怎么照办任务，",
+   "zh": "「我几乎没怎么执行任务，",
    "meta": {
     "blob": 176,
     "offset": 87192,
@@ -1284,7 +1284,7 @@
    "id": "row::9639",
    "en": "Soon after the official notice of your status as a traitor was",
    "ja": "「遊撃隊は・・・<YUSHA_NAME>が大罪人だという",
-   "zh": "「在认定你是大恶人的布告",
+   "zh": "「在认定你是大罪人的布告",
    "meta": {
     "blob": 176,
     "offset": 118436,
@@ -2010,7 +2010,7 @@
    "id": "row::9738",
    "en": "Yes, your Majesty! As you command!",
    "ja": "「はっ！　了解ですっ　女王陛下！」",
-   "zh": "「得令！女王陛下！」",
+   "zh": "「遵命！女王陛下！」",
    "meta": {
     "blob": 176,
     "offset": 156396,
@@ -2054,7 +2054,7 @@
    "id": "row::9745",
    "en": "Yes, your Majesty!",
    "ja": "「かしこまりました！」",
-   "zh": "「得令，女王陛下！」",
+   "zh": "「遵命，女王陛下！」",
    "meta": {
     "blob": 176,
     "offset": 157564,
@@ -7444,7 +7444,7 @@
    "id": "row::10503",
    "en": "who have bounties on their heads.",
    "ja": "　ハンティングするのが仕事だ」",
-   "zh": "　头上有奖金的罪犯。」",
+   "zh": "　头上有赏金的罪犯。」",
    "meta": {
     "blob": 176,
     "offset": 446708,
@@ -7543,7 +7543,7 @@
    "id": "row::10525",
    "en": "… Over here! It's the traitor <YUSHA_NAME>!",
    "ja": "「・・・こっちだ！　大罪人<YUSHA_NAME>だ！",
-   "zh": "「……这边！大恶人<YUSHA_NAME>在这儿！",
+   "zh": "「……这边！大罪人<YUSHA_NAME>在这儿！",
    "meta": {
     "blob": 176,
     "offset": 466500,
@@ -7576,7 +7576,7 @@
    "id": "row::10531",
    "en": "… Over here! It's the traitor <YUSHA_NAME>!",
    "ja": "「・・・こっちだ！　大罪人<YUSHA_NAME>だ！",
-   "zh": "「……这边！大恶人<YUSHA_NAME>在这儿！",
+   "zh": "「……这边！大罪人<YUSHA_NAME>在这儿！",
    "meta": {
     "blob": 176,
     "offset": 470296,
@@ -7609,7 +7609,7 @@
    "id": "row::10537",
    "en": "… Over here! It's the traitor <YUSHA_NAME>!",
    "ja": "「・・・こっちだ！　大罪人<YUSHA_NAME>だ！",
-   "zh": "「……这边！大恶人<YUSHA_NAME>在这儿！",
+   "zh": "「……这边！大罪人<YUSHA_NAME>在这儿！",
    "meta": {
     "blob": 176,
     "offset": 474092,
@@ -20435,7 +20435,7 @@
    "id": "row::13259",
    "en": "I'm going to show you a huge mountain way beyond",
    "ja": "「ちっぽけな小娘には　もったいないくらいの",
-   "zh": "「我要让你这小家伙见识",
+   "zh": "「我要让你这小丫头见识",
    "meta": {
     "blob": 233,
     "offset": 7768,
@@ -21117,7 +21117,7 @@
    "id": "row::13347",
    "en": "Whaa? She's moving too fast!",
    "ja": "「ぬあ？　小娘の動きが速いっ」",
-   "zh": "「哇？这小家伙动作好快！」",
+   "zh": "「哇？这小丫头动作好快！」",
    "meta": {
     "blob": 233,
     "offset": 102668,
@@ -21315,7 +21315,7 @@
    "id": "row::13367",
    "en": "once you'd gotten this close!? Foolish girl!",
    "ja": "　思ったのか！？　あまいわ小娘！」",
-   "zh": "　就有机会吗！？天真的小家伙！」",
+   "zh": "　就有机会吗！？天真的小丫头！」",
    "meta": {
     "blob": 233,
     "offset": 141860,
@@ -21359,7 +21359,7 @@
    "id": "row::13373",
    "en": "Huh? I can't keep up with the girl's movements!",
    "ja": "「ぬ？　小娘の動きを追い切れん！",
-   "zh": "「咦？我跟不上这小家伙的动作！",
+   "zh": "「咦？我跟不上这小丫头的动作！",
    "meta": {
     "blob": 233,
     "offset": 154060,
@@ -23438,7 +23438,7 @@
    "id": "row::13692",
    "en": "Sure. ★",
    "ja": "「はーいですわ★」",
-   "zh": "「得令。★」",
+   "zh": "「遵命。★」",
    "meta": {
     "blob": 237,
     "offset": 85440,
@@ -28025,7 +28025,7 @@
    "id": "row::14743",
    "en": "Nua ha ha ha, so, it's the girl who would be hero.",
    "ja": "「ぬあっはっはっは　勇者気取りの小娘かっ",
-   "zh": "「呶哈哈哈哈，想当勇者的小家伙吗，",
+   "zh": "「呶哈哈哈哈，想当勇者的小丫头吗，",
    "meta": {
     "blob": 282,
     "offset": 50692,
@@ -28344,7 +28344,7 @@
    "id": "row::14782",
    "en": "My gem has been stolen from my very own academy!",
    "ja": "「わたしの学園で　わたしの宝石がうばわれたんだもの！",
-   "zh": "「我的宝石竟在本学院被拿走了！",
+   "zh": "「我的宝石竟在本学院被偷走了！",
    "meta": {
     "blob": 282,
     "offset": 71716,

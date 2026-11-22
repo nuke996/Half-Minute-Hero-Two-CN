@@ -1537,3 +1537,5 @@ Z19 重建后仍是 `LANG_EN fa529eb1cb34`、error 0 / warning 45（互不影响
 
 **相关文件：** `tools/fix_terms_round4.py`、`tools/review_lib.py`、
 `tools/export_review.py`、`tools/validate_build.py`。
+初版 350 条替换的完整存档见 [`docs/LEGACY_REPLACE_MAP.md`](LEGACY_REPLACE_MAP.md)；
+后续清理见 `tools/fix_terms_round5.py` 与 Z29。
