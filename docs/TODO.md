@@ -2,7 +2,8 @@
 
 > 用途：把**除实机测试以外**的未完成项集中登记，避免散落在 `KNOWN_ISSUES.md`、
 > `PACKAGE_LEDGER.md`、`FINAL_QA_PLAN.md` 与项目记忆中。
-> 最近复核：2026-11-22（T-03 已完成：歌词/装备名副本接入校对视图并实测回滚）；
+> 最近复核：2026-11-22（T-14 名词错译审计：批次 1/2 A 组已落地并重建 Z29；
+> 批次 3/4 待做。T-03 已完成：歌词/装备名副本接入校对视图并实测回滚）；
 > 2026-11-21（T-10b/T-11/T-12/T-13a/T-07b 已落地并重建 Z27/Z19/stable；
 > 仅剩 `row 20447` 按钮语义待实机、P3 收尾项与实机测试）。
 > 上一轮 2026-11-15：修正 T-04b（游戏内显示已完成，剩余校对视图登记）。
@@ -21,6 +22,7 @@
 |---|---|---|---|---|---|
 | **T-13a** | 术语表/方向拍板 | 术语表按推荐表定向；确认阻塞项方向 | **已完成（2026-11-21）**。术语表已按推荐表定向：`おじさま→大叔`、`銃士→火枪手`、`ウォーリア→勇士`、`エクスペリダイブ→经验俯冲`、`登場セリフ→出场台词`、`アイテム→道具`、`悪ガキ→小鬼`；`魔王ケルベロス→刻耳柏洛斯`、`テント→帐篷`、`歌族`、`海岸人鱼`、`黄金冲击`、`赞特赫尔`、`辛多尼克斯`、`贝塔`、`红萝卜老爷` 均已落表。`アヴァ`/`スペルヴィア` 因 EN 槽位仅 3/7 字节回退为「艾」/「斯佩维」（§13） | 无；新增术语先按 §13 做容量评估，再进术语表 | `TERM_RECOMMENDATIONS_20261121.md` §5、`术语表.md` §3–§13、`tools/audit_terms.py` |
 | **T-10b** | 术语/误译/漏译 | 第一批高置信误译与漏译（原 T-10 主体 + T-06 漏名 + T-05c 遗留） | **已完成（2026-11-21 Z27），1 项待实机**。① `船頭` 13/13→船夫；③ `extra::417::206540`→超新流星；④ `row::6113`→火枪手、`row::10938`→魔法师之路；⑤ `おじさま` 47 处（CSV 39 + extra 1 + DLC 7）→大叔，`火枪手` 全表 7；⑥ `row::53227/53228/53242/53243` 超土おとこ 四行重排，统一为「超级泥浆怪/超级泥浆王」；⑦ `Hellfire`/`Dogry`/`Reusable` 在译表 0 命中（仅二进制副本，非显示串），`Venus Seven` 仅首次括注，登记例外。② `row 20447` 日文 `キャンセル` / 英文 `Continue`，暂保留「继续」 | 实机确认 `row 20447` 暂停菜单按钮语义；若确认为 Continue 则登记例外，否则改「取消」 | `TERM_RECOMMENDATIONS_20261121.md` §2.1/§6、`KNOWN_ISSUES.md` §21 |
+| **T-14** | 术语/名词错译 | 校对名词错译（英文多义词 + 日文片假名） | **批次 1/2 A 组已完成（2026-11-22 Z29）**：`封印の獣→封印兽`；`Demon Spawn/Chompers/Bolt/ゲニン/ジョウニン/ウニエル/Pegielle/Masosnail/Sadosnail/Erosbster/どろたぼう/Deprived Male Bird/Hornmoomoo/Fortify` 等 16 组敌名已改并同步全部副本。`validate_build` error 0 / warning 46，旧串 0 残留；产物 `LANG_EN 69946916d971`。**批次 3/4 待做**：装备名 `Hero Cloth/Bastard Sword/Fossil Away/Bent Sword/Angel's Ring/Charisma Wig/Royale·Crimson Guard`；称号/一致性 `Dragon Header/Evil Lord Medal/Sage's Staff/Angel Shell/Virtual Castle`。B 组 `Ribbit/Forbidden Gem/Sacriphys Village` 等待拍板 | 先做批次 3（`Bastard Sword` 已拍板「混种大剑」；`Hero Cloth` 与 `Hero Cross` 共用日文串，需小包验证）；再做批次 4；B 组逐项确认后并入 | `docs/NOUN_AUDIT_20261122.md`、`术语表.md` §5/§8、`PACKAGE_LEDGER.md` §6 |
 | **T-07b** | 发布工程 | 重建 Z19 / stable 发布基线，并入 Z25–Z27 与术语批次 | **已完成（2026-11-21，工作树 dirty）**。Z19 `LANG_EN 1b0109baf96a` / texture `fb5b79e17e37` / cscv `f074004c8eb3` / DLC01 `bbe1e4a87b61` / MOV `237ee86d26f6`；stable `LANG_EN 155e2b3784b9` / cscv `8f0bd9db2a40` / DLC01 `d139508e35c0`；Z27 与 Z19 内容一致。validate：Z19/Z27 error 0 / warning 46（+1 为「对话设置」同串），stable error 0 / warning 1。`build_manifest` 均为 git `a642734 (dirty)` | 提交后从干净 `main` 复跑一次以消除 manifest 的 dirty 标记；实机验证 Z19 后替换发布包 | `PACKAGE_LEDGER.md` §2/§5、`BUILDING.md` §5.5 |
 
 ### 1.3 P2（发布前建议处理）
@@ -80,6 +82,7 @@
 | T-08 | 读 `cmap.json` | `codes` 2304 条；上限 2847，余 543 |
 | 术语审计（批次前基线） | 复跑 `python tools/audit_terms.py` | 161 条（P1 10 / P2 96 / P3 55），与 `TERM_AUDIT_REPORT_20261121.md` 一致，可复现 |
 | 术语批次（T-10b/T-11/T-12） | 复跑 `audit_terms --date 20261121_r3` + `validate_build` | 161→72（P1 0 / P2 43 / P3 29）；说话人 97→40 组；Z19/Z27 error 0 / warning 46、stable error 0 / warning 1 |
+| **T-14（2026-11-22）** | 读 `text_v2.csv` / `ml_zh_fields.json` + 构建 Z29 + `validate_build` + 产物字节计数 | 批次 1/2 A 组共 16 组敌名/1 条图鉴已落地；`LANG_EN 69946916d971`，validate error 0 / warning 46；旧译序列 0 残留；字体覆盖 100.07% |
 
 ### 2.2 2026-11-13（历史）
 
@@ -104,6 +107,12 @@
 - **既定差异**：stable/E3 不含 4 个视频与 `cscv[355]` 歌词，是配方设计，不是缺漏。
 
 ## 4. 已同步的过期文档
+
+**2026-11-22（T-14 名词错译批次 1/2）：**
+- 新增 `docs/NOUN_AUDIT_20261122.md`：完整 A/B 表、批次 3/4 计划、B 组待拍板项。
+- `术语表.md` §5：补入本批 16 组敌名/`封印兽`；§8 登记 `バスタードソード→混种大剑`（待批次 3）。
+- `docs/TODO.md`：新增 T-14 并定为 **P1**（与 T-10b 同属发布前必须处理的误译；
+  P0 当前无功能阻塞项；批次 3 的装备名用户可见，故不能降为 P2/P3）。
 
 **2026-11-22（T-03 完成）：**
 - `docs/TODO.md`：T-03 从 P3 移入已完成；补实施与回滚证据。

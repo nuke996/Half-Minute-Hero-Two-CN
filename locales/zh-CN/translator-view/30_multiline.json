@@ -6992,7 +6992,7 @@
    "id": "ml::583",
    "en": "Physic Dragon: Miho Midorikawa\nQuietly supports his emo older brother.\nLevel-headed seal beast.",
    "ja": "フィジックドラゴン：緑川美帆\nネクラな兄を影で支える\nしっかり者の封印の獣",
-   "zh": "物理龙：Miho Midorikawa\n静静帮着容易感伤的哥哥。\n冷静沉着的海兽。",
+   "zh": "物理龙：Miho Midorikawa\n静静帮着容易感伤的哥哥。\n冷静沉着的封印兽。",
    "meta": {
     "blob": 54,
     "offset": 16588,
@@ -7004,7 +7004,7 @@
    "id": "ml::584",
    "en": "Magic Dragon: Miho Midorikawa\nThis seal beast secretly supports\nhis reckless little brother.",
    "ja": "マジックドラゴン：緑川美帆\n向こう見ずなおとうとをこっそり\nサポートする封印の獣",
-   "zh": "魔法龙：Miho Midorikawa\n这只海兽在暗暗帮着\n那个冒失的小家伙。",
+   "zh": "魔法龙：Miho Midorikawa\n这只封印兽在暗暗帮着\n那个冒失的小家伙。",
    "meta": {
     "blob": 54,
     "offset": 17248,
@@ -12608,7 +12608,7 @@
    "id": "ml::1051",
    "en": "Demon Spawn\nBorn when an Evil Lord went to the beach.\nYou might say that he's illegitimate.",
    "ja": "魔のオトシゴ\n魔王が海に行った時に生まれた\nある意味かくし子とも言える",
-   "zh": "恶魔卵\n一位魔王去海边玩时诞生的。\n你可以说他是私生子。",
+   "zh": "恶魔私生子\n一位魔王去海边玩时诞生的。\n你可以说他是私生子。",
    "meta": {
     "blob": 734,
     "offset": 63448,
@@ -12620,7 +12620,7 @@
    "id": "ml::1052",
    "en": "Chompers\nThis fierce shark lives in the ocean.\nLives to bother swimmers.",
    "ja": "ジョーズ\n海にすむどうもうなサメ　人々の\n海水よくを邪魔するのが生きがい",
-   "zh": "大嘴怪\n这条凶猛的鲨鱼住在海里。\n以打扰游泳者为生。",
+   "zh": "大白鲨\n这条凶猛的鲨鱼住在海里。\n以打扰游泳者为生。",
    "meta": {
     "blob": 734,
     "offset": 64108,

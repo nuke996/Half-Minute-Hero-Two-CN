@@ -163,6 +163,21 @@ python tools/build.py --game-dir work/original package_current
 
 ## 6. 变更记录
 
+- **2026-11-22（T-14 名词错译批次 1/2：封印兽 + 16 组敌名）**：
+  1. `ml_zh_fields.json`：`seal beast` 由「海兽」改为「封印兽」；`Demon Spawn`/`Chompers`
+     图鉴首行同步为「恶魔私生子」/「大白鲨」。
+  2. `text_v2.csv` 共 40 行：`Demon Spawn→恶魔私生子`、`Spawn of Nani→纳尼的私生子`、
+     `Chompers→大白鲨`、`Pervy Shark→变态鲨鱼`、`Bolt→弩箭`、`Evil Army Grunt→魔军下忍`、
+     `Evil Army Clan Master→魔军上忍`、`Urchinelle→海胆怪`、`Pegielle→佩吉怪`、
+     `Masosnail→抖M蜗牛`、`Sadosnail→抖S蜗牛`、`Erosbster→好色龙虾`、`Doro-Ta-Bo→泥田坊`、
+     `Deprived Male Bird→饥饿公鸟`、`Super Hornmoomoo→超级角哞哞`、`Fortify→筑城`。
+  3. `Bolt` 未采用「闪电」：会与既有敌人 `Lightning`（カミナリ）重名；
+     按同组「矢/箭」语境改用「弩箭」。
+  4. 重建 Z29：`LANG_EN 69946916d971` / `res/MOV.s2a 8d72c79a841a` /
+     `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`（新增字形导致字库/贴图变化）；
+     `video_merged=true`；`validate_build` error 0 / warning 46。
+  5. 产物字节复核：16 组旧译序列在 LANG_EN 中均为 0；字体覆盖 100.07%（2306/2847）。
+
 - **2026-11-22（Physic Dragon → 物理龙）**：
   1. `フィジックドラゴン` 旧译「药疗龙 / 药师龙」是 `Physic` 的误译；它与 `魔法龙` 成对，
      统一改为「物理龙」。

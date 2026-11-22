@@ -2911,7 +2911,7 @@
    "id": "row::683",
    "en": "Deprived Male Bird",
    "ja": "うえたオス鳥",
-   "zh": "缺爱公鸟",
+   "zh": "饥饿公鸟",
    "meta": {
     "blob": 17,
     "offset": 53676,
@@ -2922,7 +2922,7 @@
    "id": "row::689",
    "en": "Deprived Male Bird",
    "ja": "うえたオス鳥",
-   "zh": "缺爱公鸟",
+   "zh": "饥饿公鸟",
    "meta": {
     "blob": 17,
     "offset": 54540,
@@ -2933,7 +2933,7 @@
    "id": "row::695",
    "en": "Deprived Male Bird",
    "ja": "うえたオス鳥",
-   "zh": "缺爱公鸟",
+   "zh": "饥饿公鸟",
    "meta": {
     "blob": 17,
     "offset": 55404,
@@ -18857,7 +18857,7 @@
    "id": "row::3646",
    "en": "Bolt",
    "ja": "ボルト",
-   "zh": "螺栓",
+   "zh": "弩箭",
    "meta": {
     "blob": 83,
     "offset": 147500,
