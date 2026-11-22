@@ -2156,7 +2156,7 @@
    "id": "ml::180",
    "en": "Traveling Man: I heard a rumor that you'll get gold\nif you catch the criminal <YUSHA_NAME>!",
    "ja": "旅のおとこ「<YUSHA_NAME>って悪人をつかまえると\n　　　　　　お金がもらえるってウワサだぜ！」",
-   "zh": "旅人「听说<YUSHA_NAME>抓到坏人，\n就能拿到赏金呢！」",
+   "zh": "旅人「听说抓到坏人<YUSHA_NAME>，\n就能拿到赏金呢！」",
    "meta": {
     "blob": 311,
     "offset": 1580,
