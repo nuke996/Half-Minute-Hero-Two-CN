@@ -1176,7 +1176,7 @@ def build_plan():
     # v2.31：小咕之歌歌词的用字也计入字库频率。歌词译文有两部分不在 text_v2.csv
     # 行内可统计的范围外（cscv[355] 英文行整套不在 CSV；LANG b1025 行在 CSV 但
     # 这里统一兜底），不计入会导致歌词生僻字装机后显示"？"。
-    for _sk, _sja, _szh in SONG_EN_LINES:
+    for _sk, _sja, _szh in song_lines():
         for _ch in apply_repl(_szh):
             if ord(_ch) < 0x80 or _ch in '\n\r\t':
                 continue
@@ -2643,6 +2643,31 @@ SONG_EN_LINES = [
     (124, '遥かな空間きらめいていた', '曾在遥远的天空　闪耀光芒'),
 ]
 
+# 校对写回表：{"<k>": "中文"}。存在时覆盖 SONG_EN_LINES 对应槽的译文；
+# 日文校验行仍取内置表，防止结构变化后写错位置。
+SONG_LINES_FILE = os.path.join(WORK, 'song_en_lines.json')
+
+
+def song_lines():
+    """有效歌词表（k, 日文校验行, 中文）。"""
+    out = list(SONG_EN_LINES)
+    if not os.path.exists(SONG_LINES_FILE):
+        return out
+    try:
+        with open(SONG_LINES_FILE, encoding='utf-8') as f:
+            ov = json.load(f)
+    except Exception as ex:
+        print('  [歌词] %s 解析失败，使用内置表：%r'
+              % (os.path.basename(SONG_LINES_FILE), ex))
+        return out
+    if not isinstance(ov, dict):
+        return out
+    merged = []
+    for k, ja_ref, zh in out:
+        z = ov.get(str(k))
+        merged.append((k, ja_ref, z if isinstance(z, str) and z.strip() else zh))
+    return merged
+
 
 def apply_song_lyrics(cmap, native):
     """v2.31：把小咕之歌 28 个英文行槽写进 cscv blob355（原位定长写入，\\x00 填充）。
@@ -2657,8 +2682,9 @@ def apply_song_lyrics(cmap, native):
         print('  [歌词] cscv blob 数不足，跳过')
         return 0
     b = bytearray(a.blobs[CSCV_SONG_BLOB])
+    lines = song_lines()
     n = 0
-    for k, ja_ref, zh in SONG_EN_LINES:
+    for k, ja_ref, zh in lines:
         off = CSCV_SONG_ANCHOR + CSCV_SONG_STRIDE * k
         joff = CSCV_SONG_ANCHOR + CSCV_SONG_STRIDE * (k - 1)
         if joff + CSCV_SONG_SLOT > len(b) or off + CSCV_SONG_SLOT > len(b):
@@ -2682,7 +2708,7 @@ def apply_song_lyrics(cmap, native):
         a.blobs[CSCV_SONG_BLOB] = b
         s2a.pack(src, a.entries, a.blobs)
     print('  [歌词] cscv[%d] 英文行: 写入 %d / 共 %d (日文行/注音/间奏不动)'
-          % (CSCV_SONG_BLOB, n, len(SONG_EN_LINES)))
+          % (CSCV_SONG_BLOB, n, len(lines)))
     return n
 
 

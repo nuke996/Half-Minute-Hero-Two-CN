@@ -101,7 +101,7 @@ def collect_files():
             # 普通分片：10_*/20_*；受保护分片：prot_*（命名与外层不同，避免混用）
             if name.startswith('prot_') if prot else name[:2] in ('10', '20'):
                 out.append((os.path.join(base, name), prot))
-    for name in ('30_multiline.json', '40_dlc01.json', '50_extra.json'):
+    for name in ('30_multiline.json', '40_dlc01.json', '50_extra.json', '60_songs.json'):
         p = os.path.join(TV, name)
         if os.path.exists(p):
             out.append((p, False))
@@ -288,7 +288,7 @@ def do_apply():
     # ---- 单行 / 受保护 ----
     for path, is_prot in files:
         name = os.path.relpath(path, TV)
-        if name in ('30_multiline.json', '40_dlc01.json', '50_extra.json'):
+        if name in ('30_multiline.json', '40_dlc01.json', '50_extra.json', '60_songs.json'):
             continue
         try:
             d = json.load(open(path, encoding='utf-8-sig'))
@@ -301,6 +301,8 @@ def do_apply():
             continue
         for e in ents:
             eid = str(e.get('id') or '')
+            if eid.startswith('pcopy::'):
+                continue        # 无独立译表行的副本：只登记，不导入
             if not eid.startswith('row::'):
                 if eid:
                     errs.append((eid, '无法识别的 id（%s）' % name))
@@ -312,20 +314,32 @@ def do_apply():
                 continue
             if e.get('zh') is None:
                 continue
+            # 装备/道具名副本：改动写回权威道具表行（b147/357/736/998 pos4），
+            # 由构建同步到全部副本，避免“改了副本行却不生效”。
+            target, target_rid = tr, rid
+            meta = e.get('meta') or {}
+            cid = str(meta.get('canonical') or '')
+            if cid.startswith('row::'):
+                target_rid = cid[5:]
+                target = by_rid.get(target_rid)
+                if target is None or target.get('en') != (e.get('en') or ''):
+                    errs.append((eid, '权威道具表行无法识别或原文不符（%s），请重新导出' % cid))
+                    continue
             new = B.strip_ascii_ws(str(e['zh']))
-            cur = B.apply_repl(tr.get('zh_new') or '')
+            cur = B.apply_repl(target.get('zh_new') or '')
             if new == cur:
                 unchanged += 1
                 continue
-            desc = '单行 %s' % eid
+            desc = ('副本 %s → row::%s' % (eid, target_rid)
+                    if target is not tr else '单行 %s' % eid)
             bad = bad_chars(new, False)
             if '\n' in new and not bad:
                 bad.append('\\n')
             if bad:
                 errs.append((desc, '含不允许的字符 %s（单行条目不能换行）' % ' '.join(bad)))
                 continue
-            sb = rcaps.get(rid, (None, None))[0]
-            add('row', tr, new, desc, is_prot, cap_bytes=sb)
+            sb = rcaps.get(target_rid, (None, None))[0]
+            add('row', target, new, desc, is_prot, cap_bytes=sb)
 
     # ---- 多行整字段 ----
     mlp = os.path.join(TV, '30_multiline.json')
@@ -466,6 +480,50 @@ def do_apply():
             cap = (e.get('meta') or {}).get('cap_bytes')
             add('extra', key, new, '额外 %s' % eid, False, cap_bytes=cap)
 
+    # ---- 歌曲表（cscv[355] 英文行，写回 song_en_lines.json）----
+    song_map = {}
+    if os.path.exists(B.SONG_LINES_FILE):
+        try:
+            song_map = json.load(open(B.SONG_LINES_FILE, encoding='utf-8'))
+        except Exception:
+            song_map = {}
+    if not isinstance(song_map, dict):
+        song_map = {}
+    sp = os.path.join(TV, '60_songs.json')
+    if os.path.exists(sp):
+        try:
+            d = json.load(open(sp, encoding='utf-8-sig'))
+            ents = d.get('entries') or []
+        except Exception as ex:
+            errs.append(('60_songs.json', '无法解析：%s' % ex)); ents = []
+        base = {k: zh for k, _ja, zh in B.song_lines()}
+        cap = B.CSCV_SONG_SLOT - 2
+        for e in ents:
+            eid = str(e.get('id') or '')
+            if not eid.startswith('song::'):
+                if eid:
+                    errs.append((eid, '无法识别的歌曲条目 id'))
+                continue
+            try:
+                k = int(eid[6:])
+            except Exception:
+                errs.append((eid, '槽号非法')); continue
+            if k not in base:
+                errs.append((eid, '槽号不在歌词表（结构变化？请重新导出）')); continue
+            if e.get('zh') is None:
+                continue
+            new = B.strip_ascii_ws(str(e['zh']))
+            if new == B.apply_repl(base[k]):
+                unchanged += 1
+                continue
+            bad = bad_chars(new, False)
+            if '\n' in new and not bad:
+                bad.append('\\n')
+            if bad:
+                errs.append((eid, '含不允许的字符 %s（歌词为单行）' % ' '.join(bad)))
+                continue
+            add('song', k, new, '歌词 %s' % eid, False, cap_bytes=cap)
+
     # ---- 报告：清点 ----
     P('')
     P('一、改动清点')
@@ -512,6 +570,8 @@ def do_apply():
             touched.add(os.path.join(DLC_DIR, 'zh_07.json'))
         elif kind == 'extra':
             touched.add(B.EXTRA_REVIEW_FILE)
+        elif kind == 'song':
+            touched.add(B.SONG_LINES_FILE)
     backs = dict(dict_backs)
     for path in sorted(touched):
         if path in backs:
@@ -524,7 +584,7 @@ def do_apply():
             # 新建文件（例如首次生成 extra_review.json）：回滚时应删除
             backs[path] = None
 
-    n_row = n_ml = n_dl = n_ex = 0
+    n_row = n_ml = n_dl = n_ex = n_song = 0
     dlc_mod = {}
     for _d, kind, loc, new, _p in edits:
         if kind == 'row':
@@ -536,6 +596,9 @@ def do_apply():
         elif kind == 'extra':
             extra_map[loc] = new
             n_ex += 1
+        elif kind == 'song':
+            song_map[str(loc)] = new
+            n_song += 1
         elif kind == 'dlc_tsv':
             dlc_mod.setdefault(loc[0], {})[loc[1]] = new
             n_dl += 1
@@ -558,6 +621,10 @@ def do_apply():
         with open(B.EXTRA_REVIEW_FILE, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(extra_map, f, ensure_ascii=False, indent=1, sort_keys=True)
             f.write('\n')
+    if n_song:
+        with open(B.SONG_LINES_FILE, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(song_map, f, ensure_ascii=False, indent=1, sort_keys=True)
+            f.write('\n')
     for fn, mods in dlc_mod.items():
         if fn == 'zh_07':
             with open(os.path.join(DLC_DIR, 'zh_07.json'), 'w', encoding='utf-8', newline='\n') as f:
@@ -573,12 +640,12 @@ def do_apply():
                 f.write('\n'.join(lines) + '\n')
 
     json.dump({'ts': ts, 'backs': backs, 'n_row': n_row, 'n_ml': n_ml, 'n_dlc': n_dl,
-               'n_extra': n_ex},
+               'n_extra': n_ex, 'n_song': n_song},
               open(STATE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     P('')
     P('三、写入译表')
-    P('  单行 %d 处 / 多行 %d 处 / DLC %d 处 / 额外条目 %d 处'
-      % (n_row, n_ml, n_dl, n_ex))
+    P('  单行 %d 处 / 多行 %d 处 / DLC %d 处 / 额外条目 %d 处 / 歌词 %d 处'
+      % (n_row, n_ml, n_dl, n_ex, n_song))
     P('  备份: %s 等 %d 个文件（时间戳 %s）' % (os.path.basename(CSV_P), len(backs), ts))
 
     # ---- 刷新 dist（隔离打包，不动游戏目录）----

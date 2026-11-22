@@ -1190,8 +1190,14 @@ Ogg 页有 CRC，改动负载而不更新 CRC 会让该页校验失败（约一�
 记录头/相邻记录改动 0；cscv 差异 blob 恰为 `[355, 836]`；`LANG_EN/DLC01/texture/MOV` 哈希与
 重建前**完全相同**（`LANG_EN 19AA627CD8F3`）；`validate_build.py` error 0 / warning 45。
 
-**未做（有意）：** 这 28 条仍是代码常量 `SONG_EN_LINES`，不在 `text_v2.csv`，也不在
-`translator-view/`（校对视图看不到、改不了）；若要纳入人工校对，需要另接一条导出/导入通道。
+**校对通道（2026-11-22 已补）：** 28 条歌词现在导出为
+`translator-view/60_songs.json`（id `song::<k>`，`cap_bytes=126`）；导入校验后写回
+`locales/zh-CN/song_en_lines.json`，`song_lines()` 用它覆盖内置 `SONG_EN_LINES`，
+日文校验行仍取内置表。实测：改 k=2 → 重建后 `cscv[355]` 反解码逐字一致；
+回滚后 `cscv` 哈希恢复 `f074004c8eb3`。无独立译表行的装备名副本（`b34/b1010/b546`
+的 `body=/handR=/foot=` 参数串、`Hellfire` 一类二进制机制名）导出为
+`protected/prot_itemcopies.json` 只登记、导入跳过；其中参数串里出现的权威道具名
+（`Hero Killer`/`Hide Shoes` 等）由构建按道具表同步，`Villager's Clothes` 无权威行，保持原文。
 
 **适用范围（2026-10-30 核对 dist 结果）：**
 

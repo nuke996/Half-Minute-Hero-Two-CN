@@ -7,6 +7,8 @@
     20_dialogue_NN.json  单行 · 对话类（原文含「」引号，按 blob 分片）
     30_multiline.json    多行整字段（整段对话；显示优先走这里）
     40_dlc01.json        DLC01（时之女神宝物包）译文
+    50_extra.json        代码内额外译表行（伙伴名/技能名/合成 UI 等）
+    60_songs.json        「小咕的歌」歌曲表 cscv[355] 英文行（不在 text_v2.csv）
     protected/           当前【受保护、不会上屏】的字符串（prot_ui_NN.json，命名与外层区分）
     dict/替换词典.json    当前生效的替换词典（字库容量不足→近义词替换）
     如何校对.txt          面向译者的说明（含 protected / 替换词典 注意事项）
@@ -109,7 +111,11 @@ PROTECT_NOTE = {
     'chaptitle': '章节名/称号名保护（按字符串索引的键）',
     'protagonist-default': '主角默认名（Yusha/Yushia/Yuja）：为保证旧存档在补丁更新后不串字，构建时强制还原原文',
     'protected-display': '描述文本 0x5F 尾字节问题（旧规避）：2026-11-04 起已修复，正常情况不应再出现该原因',
+    'embedded-item': '脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文',
 }
+
+# 已定性为受保护机制名、且只存在于二进制副本的名字（见 docs/Z26_ENEMY_SKILLS.md）。
+PROTECTED_COPY_NAMES = {'Hellfire': 'mech'}
 HOW_TO_EDIT = ('只修改每条记录的 "zh" 字段（id/en/ja/meta 请勿改）。保存后运行 '
                '汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat '
                '可再次导出覆盖本文件。')
@@ -147,6 +153,11 @@ def shard_map(items):
     return idx, k
 
 
+# 装备/道具名规范行：EN 原串 -> (权威道具表 row_id, 当前译文)。
+# 同名副本在视图中标注 canonical，导入时改动写回权威行并同步全部副本。
+_ITEM_CANON = {}
+
+
 def row_entry(r, reason=None):
     eff = r.get('zh_new') or ''
     meta = {'blob': int(r['blob_index']), 'offset': int(r['offset'])}
@@ -155,8 +166,15 @@ def row_entry(r, reason=None):
     if reason:
         meta['protected'] = reason
         meta['note'] = PROTECT_NOTE.get(reason, reason)
+    canon = _ITEM_CANON.get(r.get('en') or '')
+    zh = eff
+    if canon and canon[0] != r['row_id']:
+        meta['canonical'] = 'row::%s' % canon[0]
+        meta['note'] = ('装备/道具名副本：显示值由权威道具表 row::%s 同步；'
+                        '导入时改动会写回该行并刷新全部副本。' % canon[0])
+        zh = canon[1]      # 视图与屏上实际显示保持一致（构建按权威名同步副本）
     return {'id': 'row::%s' % r['row_id'], 'en': r.get('en') or '',
-            'ja': r.get('ja') or '', 'zh': B.apply_repl(eff), 'meta': meta}
+            'ja': r.get('ja') or '', 'zh': B.apply_repl(zh), 'meta': meta}
 
 
 def write_shards(prefix, cat, items, outdir, idxmap, nshards, prot=False):
@@ -182,12 +200,97 @@ def write_shards(prefix, cat, items, outdir, idxmap, nshards, prot=False):
     return total
 
 
+def write_protected_item_copies(rows, outdir):
+    """导出「无独立译表行」的装备名副本到 protected/prot_itemcopies.json。
+
+    两类（均只登记，不改写）：
+      · embedded-item：脚本参数串（如 `body=…\\nhandR=…`）里含权威道具名，构建不写这类
+        数据层串，保留原文；
+      · mech：已定性的二进制机制名副本（PROTECTED_COPY_NAMES）。
+    """
+    import s2a
+    src = R.orig_path('res/LANG_EN.s2a')
+    if not src:
+        return 0
+    keys = set()
+    for r in rows:
+        try:
+            keys.add((int(r['blob_index']), int(r['offset'])))
+        except Exception:
+            pass
+    equip_en = {e.encode('cp932', 'replace') for e in _ITEM_CANON}
+    try:
+        arc = s2a.Archive(src)
+    except Exception:
+        return 0
+    grouped = {}
+    for bi, blob in enumerate(arc.blobs):
+        ob = bytes(blob)
+        if ob[:4] != b'CSCV':
+            continue
+        for pos, f, e in B._iter_slots(ob):
+            if (bi, f) in keys:
+                continue
+            raw = ob[f:e]
+            text = raw.lstrip(b'\xff')
+            if not text:
+                continue
+            reason = None
+            if b'\n' in text and b'=' in text:
+                names = [seg.split(b'=', 1)[1] for seg in text.split(b'\n') if b'=' in seg]
+                if any(n in equip_en for n in names):
+                    reason = 'embedded-item'
+            if reason is None:
+                try:
+                    name = text.decode('ascii')
+                except Exception:
+                    name = ''
+                reason = PROTECTED_COPY_NAMES.get(name)
+            if reason:
+                grouped.setdefault(text, []).append((bi, f, pos, reason))
+    entries = []
+    for text, locs in sorted(grouped.items(), key=lambda kv: kv[1][0][:2]):
+        bi, f, pos, reason = locs[0]
+        try:
+            t = text.decode('cp932')
+        except Exception:
+            t = text.decode('cp932', 'replace')
+        entries.append({
+            'id': 'pcopy::%d:%d' % (bi, f),
+            'en': t, 'ja': '', 'zh': t,
+            'meta': {'blob': bi, 'offset': f, 'pos': pos,
+                     'copies': [[x[0], x[1]] for x in locs],
+                     'protected': reason,
+                     'note': PROTECT_NOTE.get(reason, reason)},
+        })
+    R.write_json(os.path.join(outdir, 'prot_itemcopies.json'),
+                 doc('protected-itemcopies',
+                     '【受保护·当前不会上屏】无独立译表行的装备名/机制名副本。'
+                     '其中 `body=/handR=/foot=` 一类参数串里的装备名由构建按权威道具表同步；'
+                     '没有权威行的名字（如 Villager\'s Clothes）保持原文。'
+                     '本文件只登记，导入会跳过。', entries))
+    return len(entries)
+
+
 def main():
     # Z23 起：图鉴敌人/Boss 列表名已上屏（仅 Z23 配方启用），导出时视为可校对显示槽
     B._Z23_RELEASE = True
     rows = R.load_rows()
     md = json.load(open(os.path.join(WORK, 'ml_zh_fields.json'), encoding='utf-8'))
     stage, missing = R.ensure_stage()
+
+    # 权威道具名（EQUIP_BLOBS pos4）；副本条目据此标注 canonical，供导入重定向。
+    _ITEM_CANON.clear()
+    for r in rows:
+        try:
+            bi, off = int(r['blob_index']), int(r['offset'])
+        except Exception:
+            continue
+        if bi not in B.EQUIP_BLOBS or (off - 16) % B.EQUIP_STRIDE != 4:
+            continue
+        if not (r.get('en') or '').strip() or not (r.get('zh_new') or '').strip():
+            continue
+        _ITEM_CANON.setdefault(r['en'], (r['row_id'], r['zh_new']))
 
     classify, ml_meta, protected_ok = {}, {}, bool(stage)
     if stage:
@@ -230,7 +333,7 @@ def main():
     import shutil
     os.makedirs(OUT, exist_ok=True)
     for pat in ('10_*.json', '20_*.json', '30_multiline.json', '40_dlc01.json',
-                '50_extra.json'):
+                '50_extra.json', '60_songs.json'):
         for old in _glob.glob(os.path.join(OUT, pat)):
             os.remove(old)
     for sub in ('protected', 'dict'):
@@ -340,6 +443,25 @@ def main():
                      '改 zh 即可；导入时写入 locales/zh-CN/extra_review.json，'
                      '并由 Z14 配方重新打包。', extra_entries))
 
+    # ---- 歌曲表（cscv[355] 英文行；不在 text_v2.csv）----
+    song_entries = []
+    song_cap = B.CSCV_SONG_SLOT - 2
+    for k, ja_ref, zh in B.song_lines():
+        song_entries.append({
+            'id': 'song::%d' % k, 'en': '', 'ja': ja_ref,
+            'zh': B.apply_repl(zh),
+            'meta': {'k': k, 'cap': song_cap // 2, 'cap_bytes': song_cap,
+                     'note': '歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，'
+                             '日文行/注音行/间奏不动'},
+        })
+    R.write_json(os.path.join(OUT, '60_songs.json'),
+                 doc('songs', '「小咕的歌」歌曲表 cscv[355] 英文行译文（不在 text_v2.csv）。'
+                     '歌词为单行、容量 %d 字节；zh 为屏上实际显示值。' % song_cap,
+                     song_entries))
+
+    # ---- 无独立译表行的装备名副本（只登记，受保护）----
+    n_pcopy = write_protected_item_copies(rows, os.path.join(OUT, 'protected'))
+
     # ---- 替换词典 ----
     def load_ns(p):
         ns = {}
@@ -362,12 +484,15 @@ def main():
     with open(os.path.join(OUT, '如何校对.txt'), 'w', encoding='utf-8') as f:
         f.write(HOWTO % {'n_norm': n_norm, 'n_prot': n_prot, 'n_ml': len(ml_entries),
                          'n_dlc': len(dlc_entries), 'n_extra': len(extra_entries),
+                         'n_song': len(song_entries), 'n_pcopy': n_pcopy,
                          'n_repl': len(repl), 'n_hl': len(hl),
                          'prot_ok': ('已生成' if protected_ok else
                                      '未生成（缺原版文件，见导出日志）')})
 
-    print('done. 普通 %d 条 / 受保护 %d 条 / 多行 %d 条 / DLC %d 条 / 额外 %d 条'
-          % (n_norm, n_prot, len(ml_entries), len(dlc_entries), len(extra_entries)))
+    print('done. 普通 %d 条 / 受保护 %d 条 / 多行 %d 条 / DLC %d 条 / 额外 %d 条 / '
+          '歌词 %d 条 / 副本登记 %d 条'
+          % (n_norm, n_prot, len(ml_entries), len(dlc_entries), len(extra_entries),
+             len(song_entries), n_pcopy))
     print('out: %s' % OUT)
 
 
@@ -380,7 +505,8 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
     30_multiline.json   多行整字段（一次显示几行的对话整段，游戏显示优先走它）
     40_dlc01.json       DLC01（时之女神宝物包）文本
     50_extra.json       Z11–Z14 新上屏的伙伴名/技能名/合成 UI 等（不在 text_v2.csv）
-    protected/          受保护、当前【不会上屏】的文本（文件名 prot_ui_*.json，见第三节）
+    60_songs.json       「小咕的歌」歌曲表英文行（cscv[355]，不在 text_v2.csv）
+    protected/          受保护、当前【不会上屏】的文本（文件名 prot_ui_*.json 等，见第三节）
     dict/替换词典.json   当前生效的替换词典（见第四节）
     汉化-导出校对.bat    重新导出译文（覆盖上面的 JSON，不删本目录其它文件）
     汉化-导入校对.bat    把改好的 zh 写回译表并刷新 dist/（应用替换词典）
@@ -413,9 +539,15 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
       游戏按名字比对它们；翻译会导致技能失效、章节/关卡找不到等。
     · 机制表类（"mech"）：技能/职业/连携技等会被游戏按内容读取的表。
     · 章节名 / 称号名（"chaptitle"）：按字符串索引的键。
+    · 脚本参数串（"embedded-item"）：如 `body=Villager's Clothes` 一类数据层串，
+      无独立译表行，构建不写，保持原文。
   它们【仍可修改】：修改会被写回译表保存下来，但当前不会显示在屏幕上；
   将来若保护被解除（例如找到安全方案），这些译文即可直接生效。
   请勿为了“让它上屏”而删除 protected/ 文件，那不会改变保护规则。
+  其中 prot_itemcopies.json（id 以 pcopy:: 开头）只登记、导入会跳过。
+
+  另：10_/20_ 里同一装备名出现在非道具表的副本行，meta.canonical 会指向权威道具表
+  （b147/357/736/998）的 row::编号；改这些副本的 zh，导入会写回权威行并同步全部副本。
 
 四、替换词典（REPL / HL）
   装机时默认会在译文上再做一次“词级替换”，规则表就是 dict/替换词典.json：
@@ -445,7 +577,8 @@ HOWTO = '''【面向译者的校对文件 · 使用说明】
   · 每次导入前请先关闭游戏；导入有自检，出问题会中断并告诉你哪一条需要修。
 
 【本次导出】普通文本 %(n_norm)d 条、受保护文本 %(n_prot)d 条（%(prot_ok)s）、
-多行整字段 %(n_ml)d 条、DLC %(n_dlc)d 条、额外条目 %(n_extra)d 条；
+多行整字段 %(n_ml)d 条、DLC %(n_dlc)d 条、额外条目 %(n_extra)d 条、
+歌词 %(n_song)d 条、受保护副本登记 %(n_pcopy)d 条；
 替换词典 replace_map %(n_repl)d 条 / hl_map %(n_hl)d 条。
 '''
 

@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-21（Z27 对话选项放行 + 孤立尾行留空 + 副队长称号统一，校对指针切至 Z27）
+> 最近更新：2026-11-22（T-03 歌词/装备名副本接入校对视图）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
@@ -153,6 +153,19 @@ python tools/build.py --game-dir work/original package_current
 
 ## 6. 变更记录
 
+- **2026-11-22（T-03 歌词/装备名副本接入校对视图）**：
+  1. `export_review.py` 新增 `60_songs.json`（28 条 `song::<k>`，容量 126 字节）；
+     导入校验后写 `locales/zh-CN/song_en_lines.json`，`build_cn.song_lines()` 覆盖
+     内置 `SONG_EN_LINES`，日文校验行仍取内置表。
+  2. 装备/道具名副本：`en` 命中 `EQUIP_BLOBS pos4` 规范名的非规范行，视图 `zh`
+     显示权威译名并带 `meta.canonical`；导入把改动写回权威 `row::` 并触发全副本同步。
+  3. 无独立译表行的副本导出到 `protected/prot_itemcopies.json`（150 条：b34/b1010/b546
+     参数串 + `Hellfire`），只登记、导入跳过；`Villager's Clothes`×2 在其中，
+     `Hellfire` 7 个副本合并为 1 条。
+  4. 实测：改 `song::2` 与 `row::143`（→权威 `row::7736`）后重建，`cscv[355]`
+     反解码一致、权威行写入；回滚后 `LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` /
+     `DLC01 bbe1e4a87b61` 恢复；validate error 0 / warning 46。
+
 - **2026-11-21（T-04 补放行 11 个 collide 假命中）**：
   1. 全量复核 5427 条 protected 后，在 `DISPLAY_RELEASE_OFFS` 补放行：b906 记忆检查三个选项（`Not now`×2、`I'll check`）、b34 无限关卡名 2 条、b186 名字输入说明、b282 图鉴简介 2 条、b757 奖励消息 2 条、b905 事件台词 1 条。
   2. `Check`/`Sing`/`入る`/`こうげき` 等裸命令键确认是脚本/数据层键，保持保护；显示副本（`○：しらべる` 等）已单独翻译。
@@ -240,8 +253,9 @@ python tools/build.py --game-dir work/original package_current
      `texture 2f9ef4324ab2` / `cscv e0aa054fe161`。
      **Z18 仍是 10-27 构建，不含歌词**；需要歌词请用 Z19 或重建。
   4. 新增实验包 Z20（`dist/Z20-desc-dodge/`，道具说明避字），构建于歌词修复前 ⇒ 不含歌词。
-  5. 说明：歌词译文仍是代码常量 `SONG_EN_LINES`，不在 `text_v2.csv`/`translator-view`，
-     因此校对视图看不到、改不了（后续如需人工校对要另接导出/导入通道）。
+  5. 说明：歌词译文是代码常量 `SONG_EN_LINES`，不在 `text_v2.csv`；
+     **2026-11-22 T-03 已接入校对视图**（`60_songs.json` → `song_en_lines.json`），
+     见 §6 与 `PITFALLS.md` §38。
 - **2026-10-27（Z18 截图校对轮）**：
   1. `row 14180`（`b260/18636`）跨槽台词重复：第二行原译把上一行的
      `<地震>/<落石>` 再写一遍 → 改为 `　用这些招数来攻击你吧。」`（日文该槽只写

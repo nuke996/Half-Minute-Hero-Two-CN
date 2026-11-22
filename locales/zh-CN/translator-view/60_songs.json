@@ -1,0 +1,344 @@
+{
+ "_kind": "songs",
+ "_note": "「小咕的歌」歌曲表 cscv[355] 英文行译文（不在 text_v2.csv）。歌词为单行、容量 126 字节；zh 为屏上实际显示值。",
+ "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
+ "_count": 28,
+ "entries": [
+  {
+   "id": "song::2",
+   "en": "",
+   "ja": "おさなき日々の　あのせんりつは",
+   "zh": "唤起我年少时光的旋律",
+   "meta": {
+    "k": 2,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::6",
+   "en": "",
+   "ja": "宝石よりもまぶしくかがやいている",
+   "zh": "比宝石更闪耀夺目",
+   "meta": {
+    "k": 6,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::10",
+   "en": "",
+   "ja": "記憶の底に眠りつづけていた",
+   "zh": "一直沉睡在记忆深处的",
+   "meta": {
+    "k": 10,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::14",
+   "en": "",
+   "ja": "熱い思いがむねの奥　ほとばしるの",
+   "zh": "炽热的心意　正从胸中喷涌而出",
+   "meta": {
+    "k": 14,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::18",
+   "en": "",
+   "ja": "わずらいを消し去る　ととのえられた音色たちよ",
+   "zh": "驱散忧伤的　和谐悦耳的音色啊",
+   "meta": {
+    "k": 18,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::22",
+   "en": "",
+   "ja": "この歌　たずさえて旅に出よう",
+   "zh": "带上这首歌　踏上旅途吧",
+   "meta": {
+    "k": 22,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::26",
+   "en": "",
+   "ja": "きっとだれにも　止められない",
+   "zh": "一定谁也无法阻挡",
+   "meta": {
+    "k": 26,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::30",
+   "en": "",
+   "ja": "静かにわき起こる　情熱は",
+   "zh": "那静静涌起的　热情",
+   "meta": {
+    "k": 30,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::34",
+   "en": "",
+   "ja": "どんな場所でも私は歌う",
+   "zh": "无论身在何处　我都要歌唱",
+   "meta": {
+    "k": 34,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::38",
+   "en": "",
+   "ja": "さあ今こそ船出の時よ",
+   "zh": "来吧　现在正是启航之时",
+   "meta": {
+    "k": 38,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::42",
+   "en": "",
+   "ja": "自分の運命におびえながらも",
+   "zh": "纵然畏惧着自身的命运",
+   "meta": {
+    "k": 42,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::46",
+   "en": "",
+   "ja": "激しく鳴らす調べは希望のあかし",
+   "zh": "激越奏响的旋律　是希望的明证",
+   "meta": {
+    "k": 46,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::50",
+   "en": "",
+   "ja": "心をこめた歌声だけが",
+   "zh": "唯有倾注心意的歌声",
+   "meta": {
+    "k": 50,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::54",
+   "en": "",
+   "ja": "　　　ふるわせている　生命　の　結晶　　　",
+   "zh": "　　　正震颤着　生命　的　结晶",
+   "meta": {
+    "k": 54,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::58",
+   "en": "",
+   "ja": "迷わせる鏡に　負けない心を反射して",
+   "zh": "把不输给迷镜的心　映照回去",
+   "meta": {
+    "k": 58,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::62",
+   "en": "",
+   "ja": "恐れず選んだ　道だから",
+   "zh": "因为这是无畏而选的道路",
+   "meta": {
+    "k": 62,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::66",
+   "en": "",
+   "ja": "きっと進んで　ゆけるはずよ",
+   "zh": "一定能够　继续前行",
+   "meta": {
+    "k": 66,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::70",
+   "en": "",
+   "ja": "聖域突きぬけどこまでも",
+   "zh": "穿透圣域　直至天涯海角",
+   "meta": {
+    "k": 70,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::74",
+   "en": "",
+   "ja": "あらしの中　私は歌う",
+   "zh": "在风暴之中　我放声歌唱",
+   "meta": {
+    "k": 74,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::78",
+   "en": "",
+   "ja": "さあここから旅を始めよう",
+   "zh": "来吧　从这里开始旅程",
+   "meta": {
+    "k": 78,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::82",
+   "en": "",
+   "ja": "時をうれう　聖なる者　さずけし悲しみ受け入れ",
+   "zh": "忧叹时光的　圣洁之人　接纳被授予的悲伤",
+   "meta": {
+    "k": 82,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::86",
+   "en": "",
+   "ja": "高ぶる想い　むねにしずめ　いざ立ち向かえ",
+   "zh": "将激荡的心绪　收于胸中　挺身迎战吧",
+   "meta": {
+    "k": 86,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::104",
+   "en": "",
+   "ja": "よどみなき剣が　えがくきせきの美しさ",
+   "zh": "清澈无滞之剑　描绘出的奇迹之美",
+   "meta": {
+    "k": 104,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::108",
+   "en": "",
+   "ja": "ありったけの勇気を　ささげたい",
+   "zh": "愿献上全部的勇气",
+   "meta": {
+    "k": 108,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::112",
+   "en": "",
+   "ja": "心つらぬく　強い光",
+   "zh": "贯穿心灵的　强烈光芒",
+   "meta": {
+    "k": 112,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::116",
+   "en": "",
+   "ja": "その先にきっと未来がある",
+   "zh": "那前方一定有着未来",
+   "meta": {
+    "k": 116,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::120",
+   "en": "",
+   "ja": "過去と未来の　時をつないだ",
+   "zh": "将过去与未来的　时光相连",
+   "meta": {
+    "k": 120,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  },
+  {
+   "id": "song::124",
+   "en": "",
+   "ja": "遥かな空間きらめいていた",
+   "zh": "曾在遥远的天空　闪耀光芒",
+   "meta": {
+    "k": 124,
+    "cap": 63,
+    "cap_bytes": 126,
+    "note": "歌曲表英文行；导入写回 locales/zh-CN/song_en_lines.json，日文行/注音行/间奏不动"
+   }
+  }
+ ]
+}

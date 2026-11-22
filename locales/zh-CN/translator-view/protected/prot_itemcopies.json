@@ -1,0 +1,2894 @@
+{
+ "_kind": "protected-itemcopies",
+ "_note": "【受保护·当前不会上屏】无独立译表行的装备名/机制名副本。其中 `body=/handR=/foot=` 一类参数串里的装备名由构建按权威道具表同步；没有权威行的名字（如 Villager's Clothes）保持原文。本文件只登记，导入会跳过。",
+ "_how_to_edit": "只修改每条记录的 \"zh\" 字段（id/en/ja/meta 请勿改）。保存后运行 汉化-导入校对.bat 重新写回译表并刷新 dist；运行 汉化-导出校对.bat 可再次导出覆盖本文件。",
+ "_count": 150,
+ "entries": [
+  {
+   "id": "pcopy::34:620",
+   "en": "posX=16\nposY=16\nhead=Hero Crown\nbody=Brave Vest　\nhandR=Brave Blade　\nhandL=Brave Shield\nfoot=Destiny Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=16\nposY=16\nhead=Hero Crown\nbody=Brave Vest　\nhandR=Brave Blade　\nhandL=Brave Shield\nfoot=Destiny Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 620,
+    "pos": 620,
+    "copies": [
+     [
+      34,
+      620
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:1736",
+   "en": "posX=8\nposY=18\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=8\nposY=18\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 1736,
+    "pos": 1736,
+    "copies": [
+     [
+      34,
+      1736
+     ],
+     [
+      34,
+      38564
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:2852",
+   "en": "posX=16\nposY=67\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "ja": "",
+   "zh": "posX=16\nposY=67\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 2852,
+    "pos": 2852,
+    "copies": [
+     [
+      34,
+      2852
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:3968",
+   "en": "posX=43\nposY=71\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=43\nposY=71\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 3968,
+    "pos": 3968,
+    "copies": [
+     [
+      34,
+      3968
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:5084",
+   "en": "posX=10\nposY=15\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=175\ngold=100",
+   "ja": "",
+   "zh": "posX=10\nposY=15\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=175\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 5084,
+    "pos": 5084,
+    "copies": [
+     [
+      34,
+      5084
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:6200",
+   "en": "posX=13\nposY=83\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Iron Club\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=175\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=83\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Iron Club\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=175\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 6200,
+    "pos": 6200,
+    "copies": [
+     [
+      34,
+      6200
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:7316",
+   "en": "posX=6\nposY=51\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Lumberjack Axe\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=6\nposY=51\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Lumberjack Axe\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 7316,
+    "pos": 7316,
+    "copies": [
+     [
+      34,
+      7316
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:8432",
+   "en": "posX=9\nposY=62\nhead=Red Bandana\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=595\ngold=100",
+   "ja": "",
+   "zh": "posX=9\nposY=62\nhead=Red Bandana\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=595\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 8432,
+    "pos": 8432,
+    "copies": [
+     [
+      34,
+      8432
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:9548",
+   "en": "posX=20\nposY=80\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Snow Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=20\nposY=80\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Snow Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 9548,
+    "pos": 9548,
+    "copies": [
+     [
+      34,
+      9548
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:10664",
+   "en": "posX=24\nposY=24\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Academy Boots\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=24\nposY=24\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Academy Boots\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 10664,
+    "pos": 10664,
+    "copies": [
+     [
+      34,
+      10664
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:11780",
+   "en": "posX=15\nposY=93\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=15\nposY=93\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 11780,
+    "pos": 11780,
+    "copies": [
+     [
+      34,
+      11780
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:12896",
+   "en": "posX=7\nposY=71\nhead=Rabbit Helm\nbody=Military Uniform\nhandR=Zeta\nhandL=Rainbow Shield\nfoot=Battle Heels\nexp=1750\ngold=100",
+   "ja": "",
+   "zh": "posX=7\nposY=71\nhead=Rabbit Helm\nbody=Military Uniform\nhandR=Zeta\nhandL=Rainbow Shield\nfoot=Battle Heels\nexp=1750\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 12896,
+    "pos": 12896,
+    "copies": [
+     [
+      34,
+      12896
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:14012",
+   "en": "posX=8\nposY=86\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Lambda\nhandL=Holy Guard\nfoot=Battle Heels\nexp=2320\ngold=100",
+   "ja": "",
+   "zh": "posX=8\nposY=86\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Lambda\nhandL=Holy Guard\nfoot=Battle Heels\nexp=2320\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 14012,
+    "pos": 14012,
+    "copies": [
+     [
+      34,
+      14012
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:15128",
+   "en": "posX=28\nposY=48\nhead=Regal Crown\nbody=Regal Dress\nhandR=Omega\nhandL=Regal Guard\nfoot=Regal Shoes\nexp=3870\ngold=100",
+   "ja": "",
+   "zh": "posX=28\nposY=48\nhead=Regal Crown\nbody=Regal Dress\nhandR=Omega\nhandL=Regal Guard\nfoot=Regal Shoes\nexp=3870\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 15128,
+    "pos": 15128,
+    "copies": [
+     [
+      34,
+      15128
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:16244",
+   "en": "posX=50\nposY=64\nhead=Regal Crown\nbody=Regal Dress\nhandR=Omega\nhandL=Glass Shield\nfoot=White Horse\nexp=500\ngold=100",
+   "ja": "",
+   "zh": "posX=50\nposY=64\nhead=Regal Crown\nbody=Regal Dress\nhandR=Omega\nhandL=Glass Shield\nfoot=White Horse\nexp=500\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 16244,
+    "pos": 16244,
+    "copies": [
+     [
+      34,
+      16244
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:17360",
+   "en": "posX=17\nposY=25\nhead=Rabbit Helm\nbody=Maid's Dress\nhandR=Phi\nhandL=Parasol Shield\nfoot=Glass Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=17\nposY=25\nhead=Rabbit Helm\nbody=Maid's Dress\nhandR=Phi\nhandL=Parasol Shield\nfoot=Glass Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 17360,
+    "pos": 17360,
+    "copies": [
+     [
+      34,
+      17360
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:18476",
+   "en": "posX=35\nposY=50\nhead=Rabbit Helm\nbody=Maid's Dress\nhandR=Phi\nhandL=Parasol Shield\nfoot=Glass Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=35\nposY=50\nhead=Rabbit Helm\nbody=Maid's Dress\nhandR=Phi\nhandL=Parasol Shield\nfoot=Glass Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 18476,
+    "pos": 18476,
+    "copies": [
+     [
+      34,
+      18476
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:19592",
+   "en": "posX=12\nposY=81\nhead=Remove Helmet\nbody=Hero Cloth\nhandR=War God Staff\nhandL=Remove Shield\nfoot=Resistance Boots\nexp=4125\ngold=100",
+   "ja": "",
+   "zh": "posX=12\nposY=81\nhead=Remove Helmet\nbody=Hero Cloth\nhandR=War God Staff\nhandL=Remove Shield\nfoot=Resistance Boots\nexp=4125\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 19592,
+    "pos": 19592,
+    "copies": [
+     [
+      34,
+      19592
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:20708",
+   "en": "posX=5\nposY=36\nhead=Goggle Cap\nbody=Sailor Suit\nhandR=Bloody Axe\nhandL=Earth Guard\nfoot=Battle Boots\nexp=4125\ngold=100",
+   "ja": "",
+   "zh": "posX=5\nposY=36\nhead=Goggle Cap\nbody=Sailor Suit\nhandR=Bloody Axe\nhandL=Earth Guard\nfoot=Battle Boots\nexp=4125\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 20708,
+    "pos": 20708,
+    "copies": [
+     [
+      34,
+      20708
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:21824",
+   "en": "posX=11\nposY=67\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=11\nposY=67\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 21824,
+    "pos": 21824,
+    "copies": [
+     [
+      34,
+      21824
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:22940",
+   "en": "posX=8\nposY=35\nhead=Horned Helm\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=4510\ngold=100",
+   "ja": "",
+   "zh": "posX=8\nposY=35\nhead=Horned Helm\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=4510\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 22940,
+    "pos": 22940,
+    "copies": [
+     [
+      34,
+      22940
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:24056",
+   "en": "posX=36\nposY=71\nhead=Coleus Helm\nbody=Warrior Armor\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=4945\ngold=100",
+   "ja": "",
+   "zh": "posX=36\nposY=71\nhead=Coleus Helm\nbody=Warrior Armor\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=4945\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 24056,
+    "pos": 24056,
+    "copies": [
+     [
+      34,
+      24056
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:25172",
+   "en": "posX=11\nposY=87\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=11\nposY=87\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 25172,
+    "pos": 25172,
+    "copies": [
+     [
+      34,
+      25172
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:26288",
+   "en": "posX=37\nposY=65\nhead=Demon's Horn\nbody=Lord Mail\nhandR=Power Staff\nhandL=Spike Shield\nfoot=Silent Boots\nexp=5875\ngold=100",
+   "ja": "",
+   "zh": "posX=37\nposY=65\nhead=Demon's Horn\nbody=Lord Mail\nhandR=Power Staff\nhandL=Spike Shield\nfoot=Silent Boots\nexp=5875\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 26288,
+    "pos": 26288,
+    "copies": [
+     [
+      34,
+      26288
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:27404",
+   "en": "posX=18\nposY=24\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=18\nposY=24\nhead=Leather Hat\nbody=Leather Jacket\nhandR=Neon Saber\nhandL=Scale Shield\nfoot=Clogs\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 27404,
+    "pos": 27404,
+    "copies": [
+     [
+      34,
+      27404
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:28520",
+   "en": "posX=8\nposY=9\nhead=Ten Gallon Hat\nbody=Mithril Suit\nhandR=Neon Saber\nhandL=Palm Shield\nfoot=Speed Gear\nexp=500\ngold=100",
+   "ja": "",
+   "zh": "posX=8\nposY=9\nhead=Ten Gallon Hat\nbody=Mithril Suit\nhandR=Neon Saber\nhandL=Palm Shield\nfoot=Speed Gear\nexp=500\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 28520,
+    "pos": 28520,
+    "copies": [
+     [
+      34,
+      28520
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:29636",
+   "en": "posX=40\nposY=48\nhead=Ten Gallon Hat\nbody=Mithril Suit\nhandR=Neon Saber\nhandL=Palm Shield\nfoot=Speed Gear\nexp=500\ngold=100",
+   "ja": "",
+   "zh": "posX=40\nposY=48\nhead=Ten Gallon Hat\nbody=Mithril Suit\nhandR=Neon Saber\nhandL=Palm Shield\nfoot=Speed Gear\nexp=500\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 29636,
+    "pos": 29636,
+    "copies": [
+     [
+      34,
+      29636
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:30752",
+   "en": "posX=21\nposY=31\nhead=Remove Helmet\nbody=Angel Clothes\nhandR=Heavenly Longsword\nhandL=Angel Shield\nfoot=Angel Boots\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Remove Helmet\nbody=Angel Clothes\nhandR=Heavenly Longsword\nhandL=Angel Shield\nfoot=Angel Boots\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 30752,
+    "pos": 30752,
+    "copies": [
+     [
+      34,
+      30752
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:31868",
+   "en": "posX=21\nposY=31\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 31868,
+    "pos": 31868,
+    "copies": [
+     [
+      34,
+      31868
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:32984",
+   "en": "posX=21\nposY=31\nhead=Dragon Head\nbody=Mighty Protector\nhandR=Gungnir Spear\nhandL=Men's Shield\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Dragon Head\nbody=Mighty Protector\nhandR=Gungnir Spear\nhandL=Men's Shield\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 32984,
+    "pos": 32984,
+    "copies": [
+     [
+      34,
+      32984
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:34100",
+   "en": "posX=21\nposY=31\nhead=Dragon Head\nbody=Mighty Protector\nhandR=Destiny Sword\nhandL=Men's Shield\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Dragon Head\nbody=Mighty Protector\nhandR=Destiny Sword\nhandL=Men's Shield\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 34100,
+    "pos": 34100,
+    "copies": [
+     [
+      34,
+      34100
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:35216",
+   "en": "posX=21\nposY=31\nhead=Brave Crown\nbody=Mighty Protector\nhandR=Destiny Sword\nhandL=Brave Guard\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Brave Crown\nbody=Mighty Protector\nhandR=Destiny Sword\nhandL=Brave Guard\nfoot=Duel Greaves\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 35216,
+    "pos": 35216,
+    "copies": [
+     [
+      34,
+      35216
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:36332",
+   "en": "posX=21\nposY=31\nhead=Brave Crown\nbody=Brave Vest\nhandR=Destiny Sword\nhandL=Brave Guard\nfoot=Destiny Boots\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=31\nhead=Brave Crown\nbody=Brave Vest\nhandR=Destiny Sword\nhandL=Brave Guard\nfoot=Destiny Boots\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 36332,
+    "pos": 36332,
+    "copies": [
+     [
+      34,
+      36332
+     ],
+     [
+      34,
+      37448
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:39680",
+   "en": "posX=29\nposY=20\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=29\nposY=20\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 39680,
+    "pos": 39680,
+    "copies": [
+     [
+      34,
+      39680
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:40796",
+   "en": "posX=36\nposY=29\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=36\nposY=29\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 40796,
+    "pos": 40796,
+    "copies": [
+     [
+      34,
+      40796
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:41912",
+   "en": "posX=16\nposY=67\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "ja": "",
+   "zh": "posX=16\nposY=67\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 41912,
+    "pos": 41912,
+    "copies": [
+     [
+      34,
+      41912
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:43028",
+   "en": "posX=35\nposY=47\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Club\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "ja": "",
+   "zh": "posX=35\nposY=47\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Club\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 43028,
+    "pos": 43028,
+    "copies": [
+     [
+      34,
+      43028
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:44144",
+   "en": "posX=29\nposY=43\nhead=Leather Hat\nbody=Hide Armor\nhandR=Club\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "ja": "",
+   "zh": "posX=29\nposY=43\nhead=Leather Hat\nbody=Hide Armor\nhandR=Club\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=10\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 44144,
+    "pos": 44144,
+    "copies": [
+     [
+      34,
+      44144
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:45260",
+   "en": "posX=64\nposY=6\nhead=Mage Glasses\nbody=Hide Armor\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=25\ngold=100",
+   "ja": "",
+   "zh": "posX=64\nposY=6\nhead=Mage Glasses\nbody=Hide Armor\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=25\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 45260,
+    "pos": 45260,
+    "copies": [
+     [
+      34,
+      45260
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:46376",
+   "en": "posX=34\nposY=72\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=45\ngold=100",
+   "ja": "",
+   "zh": "posX=34\nposY=72\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=45\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 46376,
+    "pos": 46376,
+    "copies": [
+     [
+      34,
+      46376
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:47492",
+   "en": "posX=44\nposY=62\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=45\ngold=100",
+   "ja": "",
+   "zh": "posX=44\nposY=62\nhead=Leather Hat\nbody=Magic Robe\nhandR=Iron Sword\nhandL=Leather Shield\nfoot=Comfy Sandals\nexp=45\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 47492,
+    "pos": 47492,
+    "copies": [
+     [
+      34,
+      47492
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:48608",
+   "en": "posX=50\nposY=39\nhead=Barrel Head\nbody=Barrel Armor\nhandR=Zweihander\nhandL=Wooden Shield\nfoot=Hide Shoes\nexp=45\ngold=100",
+   "ja": "",
+   "zh": "posX=50\nposY=39\nhead=Barrel Head\nbody=Barrel Armor\nhandR=Zweihander\nhandL=Wooden Shield\nfoot=Hide Shoes\nexp=45\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 48608,
+    "pos": 48608,
+    "copies": [
+     [
+      34,
+      48608
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:49724",
+   "en": "posX=43\nposY=29\nhead=Barrel Head\nbody=Gorgeous Mail\nhandR=Blue Dragon Sword\nhandL=Scale Shield\nfoot=Hide Shoes\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=43\nposY=29\nhead=Barrel Head\nbody=Gorgeous Mail\nhandR=Blue Dragon Sword\nhandL=Scale Shield\nfoot=Hide Shoes\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 49724,
+    "pos": 49724,
+    "copies": [
+     [
+      34,
+      49724
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:50840",
+   "en": "posX=28\nposY=51\nhead=Red Bandana\nbody=Gorgeous Mail\nhandR=Buster Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=28\nposY=51\nhead=Red Bandana\nbody=Gorgeous Mail\nhandR=Buster Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 50840,
+    "pos": 50840,
+    "copies": [
+     [
+      34,
+      50840
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:51956",
+   "en": "posX=10\nposY=15\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=10\nposY=15\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 51956,
+    "pos": 51956,
+    "copies": [
+     [
+      34,
+      51956
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:53072",
+   "en": "posX=17\nposY=83\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Iron Club\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=17\nposY=83\nhead=Remove Helmet\nbody=Prisoner Clothes\nhandR=Iron Club\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 53072,
+    "pos": 53072,
+    "copies": [
+     [
+      34,
+      53072
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:54188",
+   "en": "posX=42\nposY=86\nhead=Red Bandana\nbody=Gorgeous Mail\nhandR=Buster Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=70\ngold=100",
+   "ja": "",
+   "zh": "posX=42\nposY=86\nhead=Red Bandana\nbody=Gorgeous Mail\nhandR=Buster Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=70\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 54188,
+    "pos": 54188,
+    "copies": [
+     [
+      34,
+      54188
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:55304",
+   "en": "posX=67\nposY=48\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Silver Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=100\ngold=100",
+   "ja": "",
+   "zh": "posX=67\nposY=48\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Silver Sword\nhandL=Scale Shield\nfoot=Clogs\nexp=100\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 55304,
+    "pos": 55304,
+    "copies": [
+     [
+      34,
+      55304
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:56420",
+   "en": "posX=75\nposY=31\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Lumberjack Axe\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=100\ngold=100",
+   "ja": "",
+   "zh": "posX=75\nposY=31\nhead=Ten Gallon Hat\nbody=Cowboy Vest\nhandR=Lumberjack Axe\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=100\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 56420,
+    "pos": 56420,
+    "copies": [
+     [
+      34,
+      56420
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:57536",
+   "en": "posX=10\nposY=50\nhead=Ten Gallon Hat\nbody=Black Belt\nhandR=Spike Mace\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=100\ngold=100",
+   "ja": "",
+   "zh": "posX=10\nposY=50\nhead=Ten Gallon Hat\nbody=Black Belt\nhandR=Spike Mace\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=100\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 57536,
+    "pos": 57536,
+    "copies": [
+     [
+      34,
+      57536
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:58652",
+   "en": "posX=66\nposY=42\nhead=Metal Helm\nbody=Scale Mail\nhandR=Ice Longsword\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=135\ngold=100",
+   "ja": "",
+   "zh": "posX=66\nposY=42\nhead=Metal Helm\nbody=Scale Mail\nhandR=Ice Longsword\nhandL=Scale Shield\nfoot=Rubber Boots\nexp=135\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 58652,
+    "pos": 58652,
+    "copies": [
+     [
+      34,
+      58652
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:59768",
+   "en": "posX=52\nposY=33\nhead=Metal Helm\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Scale Shield\nfoot=Bigfoot\nexp=135\ngold=100",
+   "ja": "",
+   "zh": "posX=52\nposY=33\nhead=Metal Helm\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Scale Shield\nfoot=Bigfoot\nexp=135\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 59768,
+    "pos": 59768,
+    "copies": [
+     [
+      34,
+      59768
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:60884",
+   "en": "posX=23\nposY=60\nhead=Metal Helm\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=175\ngold=100",
+   "ja": "",
+   "zh": "posX=23\nposY=60\nhead=Metal Helm\nbody=Scale Mail\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=175\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 60884,
+    "pos": 60884,
+    "copies": [
+     [
+      34,
+      60884
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:62000",
+   "en": "posX=28\nposY=30\nhead=Warm Beanie\nbody=Magma Plate\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=175\ngold=100",
+   "ja": "",
+   "zh": "posX=28\nposY=30\nhead=Warm Beanie\nbody=Magma Plate\nhandR=Crimson Edge\nhandL=Ice Shield\nfoot=Bigfoot\nexp=175\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 62000,
+    "pos": 62000,
+    "copies": [
+     [
+      34,
+      62000
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:63116",
+   "en": "posX=48\nposY=30\nhead=Warm Beanie\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Bigfoot\nexp=220\ngold=100",
+   "ja": "",
+   "zh": "posX=48\nposY=30\nhead=Warm Beanie\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Bigfoot\nexp=220\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 63116,
+    "pos": 63116,
+    "copies": [
+     [
+      34,
+      63116
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:64232",
+   "en": "posX=19\nposY=72\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Snow Shoes\nexp=220\ngold=100",
+   "ja": "",
+   "zh": "posX=19\nposY=72\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Flame Shield\nfoot=Snow Shoes\nexp=220\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 64232,
+    "pos": 64232,
+    "copies": [
+     [
+      34,
+      64232
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:65348",
+   "en": "posX=31\nposY=45\nhead=Captain Hat\nbody=Magma Plate\nhandR=Hero Sword\nhandL=Shield of Light\nfoot=Gale Shoes\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=31\nposY=45\nhead=Captain Hat\nbody=Magma Plate\nhandR=Hero Sword\nhandL=Shield of Light\nfoot=Gale Shoes\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 65348,
+    "pos": 65348,
+    "copies": [
+     [
+      34,
+      65348
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:66464",
+   "en": "posX=28\nposY=34\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=28\nposY=34\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Remove Weapon\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 66464,
+    "pos": 66464,
+    "copies": [
+     [
+      34,
+      66464
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:67580",
+   "en": "posX=29\nposY=34\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Alpha\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=29\nposY=34\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Alpha\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 67580,
+    "pos": 67580,
+    "copies": [
+     [
+      34,
+      67580
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:68696",
+   "en": "posX=45\nposY=39\nhead=Hairband\nbody=Uniform Dress\nhandR=Saw Axe\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=45\nposY=39\nhead=Hairband\nbody=Uniform Dress\nhandR=Saw Axe\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 68696,
+    "pos": 68696,
+    "copies": [
+     [
+      34,
+      68696
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:69812",
+   "en": "posX=53\nposY=18\nhead=Hairband\nbody=Uniform Dress\nhandR=Saw Axe\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=53\nposY=18\nhead=Hairband\nbody=Uniform Dress\nhandR=Saw Axe\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 69812,
+    "pos": 69812,
+    "copies": [
+     [
+      34,
+      69812
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:70928",
+   "en": "posX=21\nposY=25\nhead=Feather Hat\nbody=Leather Dress\nhandR=Beta\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=25\nhead=Feather Hat\nbody=Leather Dress\nhandR=Beta\nhandL=Parasol Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 70928,
+    "pos": 70928,
+    "copies": [
+     [
+      34,
+      70928
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:72044",
+   "en": "posX=23\nposY=87\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=23\nposY=87\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 72044,
+    "pos": 72044,
+    "copies": [
+     [
+      34,
+      72044
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:73160",
+   "en": "posX=55\nposY=46\nhead=Coral Crown\nbody=Flower Apron\nhandR=Gamma\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=55\nposY=46\nhead=Coral Crown\nbody=Flower Apron\nhandR=Gamma\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 73160,
+    "pos": 73160,
+    "copies": [
+     [
+      34,
+      73160
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:74276",
+   "en": "posX=77\nposY=60\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Gamma\nhandL=Glass Shield\nfoot=Roller Shoes\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=77\nposY=60\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Gamma\nhandL=Glass Shield\nfoot=Roller Shoes\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 74276,
+    "pos": 74276,
+    "copies": [
+     [
+      34,
+      74276
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:75392",
+   "en": "posX=15\nposY=45\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Gamma\nhandL=Glass Shield\nfoot=Roller Shoes\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=15\nposY=45\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Gamma\nhandL=Glass Shield\nfoot=Roller Shoes\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 75392,
+    "pos": 75392,
+    "copies": [
+     [
+      34,
+      75392
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:76508",
+   "en": "posX=21\nposY=9\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Epsilon\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=9\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Epsilon\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 76508,
+    "pos": 76508,
+    "copies": [
+     [
+      34,
+      76508
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:77624",
+   "en": "posX=10\nposY=12\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Epsilon\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=10\nposY=12\nhead=Rabbit Helm\nbody=Fur Coat\nhandR=Epsilon\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 77624,
+    "pos": 77624,
+    "copies": [
+     [
+      34,
+      77624
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:78740",
+   "en": "posX=13\nposY=21\nhead=Floral Coronet\nbody=Military Uniform\nhandR=Zeta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=450\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=21\nhead=Floral Coronet\nbody=Military Uniform\nhandR=Zeta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=450\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 78740,
+    "pos": 78740,
+    "copies": [
+     [
+      34,
+      78740
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:79856",
+   "en": "posX=11\nposY=67\nhead=Rabbit Helm\nbody=Military Uniform\nhandR=Fire Rod\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "ja": "",
+   "zh": "posX=11\nposY=67\nhead=Rabbit Helm\nbody=Military Uniform\nhandR=Fire Rod\nhandL=Glass Shield\nfoot=Battle Heels\nexp=325\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 79856,
+    "pos": 79856,
+    "copies": [
+     [
+      34,
+      79856
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:80972",
+   "en": "posX=32\nposY=44\nhead=Floral Coronet\nbody=Military Uniform\nhandR=Zeta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "ja": "",
+   "zh": "posX=32\nposY=44\nhead=Floral Coronet\nbody=Military Uniform\nhandR=Zeta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 80972,
+    "pos": 80972,
+    "copies": [
+     [
+      34,
+      80972
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:82088",
+   "en": "posX=50\nposY=26\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "ja": "",
+   "zh": "posX=50\nposY=26\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 82088,
+    "pos": 82088,
+    "copies": [
+     [
+      34,
+      82088
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:83204",
+   "en": "posX=54\nposY=34\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "ja": "",
+   "zh": "posX=54\nposY=34\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 83204,
+    "pos": 83204,
+    "copies": [
+     [
+      34,
+      83204
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:84320",
+   "en": "posX=27\nposY=17\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "ja": "",
+   "zh": "posX=27\nposY=17\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=385\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 84320,
+    "pos": 84320,
+    "copies": [
+     [
+      34,
+      84320
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:85436",
+   "en": "posX=18\nposY=86\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Theta\nhandL=Holy Guard\nfoot=Battle Heels\nexp=450\ngold=100",
+   "ja": "",
+   "zh": "posX=18\nposY=86\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Theta\nhandL=Holy Guard\nfoot=Battle Heels\nexp=450\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 85436,
+    "pos": 85436,
+    "copies": [
+     [
+      34,
+      85436
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:86552",
+   "en": "posX=35\nposY=53\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Mu\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "ja": "",
+   "zh": "posX=35\nposY=53\nhead=Witch's Hat\nbody=Rider Suit\nhandR=Mu\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 86552,
+    "pos": 86552,
+    "copies": [
+     [
+      34,
+      86552
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:87668",
+   "en": "posX=31\nposY=45\nhead=Angel Ring\nbody=Holy Dress\nhandR=Omicron\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "ja": "",
+   "zh": "posX=31\nposY=45\nhead=Angel Ring\nbody=Holy Dress\nhandR=Omicron\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 87668,
+    "pos": 87668,
+    "copies": [
+     [
+      34,
+      87668
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:88784",
+   "en": "posX=32\nposY=33\nhead=Helm of Light\nbody=Light Armor\nhandR=Xi\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "ja": "",
+   "zh": "posX=32\nposY=33\nhead=Helm of Light\nbody=Light Armor\nhandR=Xi\nhandL=Holy Guard\nfoot=Glass Shoes\nexp=450\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 88784,
+    "pos": 88784,
+    "copies": [
+     [
+      34,
+      88784
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:89900",
+   "en": "posX=50\nposY=65\nhead=Helm of Light\nbody=Regal Dress\nhandR=Sigma\nhandL=Regal Guard\nfoot=White Horse\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=50\nposY=65\nhead=Helm of Light\nbody=Regal Dress\nhandR=Sigma\nhandL=Regal Guard\nfoot=White Horse\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 89900,
+    "pos": 89900,
+    "copies": [
+     [
+      34,
+      89900
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:91016",
+   "en": "posX=39\nposY=42\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Alpha\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=39\nposY=42\nhead=Remove Helmet\nbody=Uniform Dress\nhandR=Alpha\nhandL=Remove Shield\nfoot=Academy Boots\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 91016,
+    "pos": 91016,
+    "copies": [
+     [
+      34,
+      91016
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:92132",
+   "en": "posX=42\nposY=35\nhead=Remove Helmet\nbody=Sexy Swimsuit\nhandR=Alpha\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=270\ngold=100",
+   "ja": "",
+   "zh": "posX=42\nposY=35\nhead=Remove Helmet\nbody=Sexy Swimsuit\nhandR=Alpha\nhandL=Remove Shield\nfoot=Remove Shoes\nexp=270\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 92132,
+    "pos": 92132,
+    "copies": [
+     [
+      34,
+      92132
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:93248",
+   "en": "posX=21\nposY=37\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=595\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=37\nhead=Floral Coronet\nbody=Sequined Dress\nhandR=Theta\nhandL=Glass Shield\nfoot=Battle Heels\nexp=595\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 93248,
+    "pos": 93248,
+    "copies": [
+     [
+      34,
+      93248
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:94364",
+   "en": "posX=12\nposY=81\nhead=Remove Helmet\nbody=Hero Cloth\nhandR=War God Staff\nhandL=Remove Shield\nfoot=Resistance Boots\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=12\nposY=81\nhead=Remove Helmet\nbody=Hero Cloth\nhandR=War God Staff\nhandL=Remove Shield\nfoot=Resistance Boots\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 94364,
+    "pos": 94364,
+    "copies": [
+     [
+      34,
+      94364
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:95480",
+   "en": "posX=60\nposY=38\nhead=Captain Hat\nbody=Magma Plate\nhandR=War God Staff\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=60\nposY=38\nhead=Captain Hat\nbody=Magma Plate\nhandR=War God Staff\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 95480,
+    "pos": 95480,
+    "copies": [
+     [
+      34,
+      95480
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:96596",
+   "en": "posX=113\nposY=25\nhead=Goggle Cap\nbody=Magma Plate\nhandR=War God Staff\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=113\nposY=25\nhead=Goggle Cap\nbody=Magma Plate\nhandR=War God Staff\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 96596,
+    "pos": 96596,
+    "copies": [
+     [
+      34,
+      96596
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:97712",
+   "en": "posX=14\nposY=36\nhead=Goggle Cap\nbody=Sailor Suit\nhandR=Bloody Axe\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=14\nposY=36\nhead=Goggle Cap\nbody=Sailor Suit\nhandR=Bloody Axe\nhandL=Earth Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 97712,
+    "pos": 97712,
+    "copies": [
+     [
+      34,
+      97712
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:98828",
+   "en": "posX=38\nposY=7\nhead=Goggle Cap\nbody=Leather Jacket\nhandR=Wing Blade\nhandL=Earth Guard\nfoot=Speed Gear\nexp=595\ngold=100",
+   "ja": "",
+   "zh": "posX=38\nposY=7\nhead=Goggle Cap\nbody=Leather Jacket\nhandR=Wing Blade\nhandL=Earth Guard\nfoot=Speed Gear\nexp=595\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 98828,
+    "pos": 98828,
+    "copies": [
+     [
+      34,
+      98828
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:99944",
+   "en": "posX=51\nposY=54\nhead=Goggle Cap\nbody=Leather Jacket\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=595\ngold=100",
+   "ja": "",
+   "zh": "posX=51\nposY=54\nhead=Goggle Cap\nbody=Leather Jacket\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=595\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 99944,
+    "pos": 99944,
+    "copies": [
+     [
+      34,
+      99944
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:101060",
+   "en": "posX=44\nposY=41\nhead=Bone Head\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=675\ngold=100",
+   "ja": "",
+   "zh": "posX=44\nposY=41\nhead=Bone Head\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=675\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 101060,
+    "pos": 101060,
+    "copies": [
+     [
+      34,
+      101060
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:102176",
+   "en": "posX=13\nposY=59\nhead=Afro Wig\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=675\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=59\nhead=Afro Wig\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Earth Guard\nfoot=Speed Gear\nexp=675\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 102176,
+    "pos": 102176,
+    "copies": [
+     [
+      34,
+      102176
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:103292",
+   "en": "posX=48\nposY=48\nhead=Afro Wig\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=675\ngold=100",
+   "ja": "",
+   "zh": "posX=48\nposY=48\nhead=Afro Wig\nbody=Combat Uniform\nhandR=Thunder Spear\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=675\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 103292,
+    "pos": 103292,
+    "copies": [
+     [
+      34,
+      103292
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:104408",
+   "en": "posX=45\nposY=26\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "ja": "",
+   "zh": "posX=45\nposY=26\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 104408,
+    "pos": 104408,
+    "copies": [
+     [
+      34,
+      104408
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:105524",
+   "en": "posX=13\nposY=32\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=32\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 105524,
+    "pos": 105524,
+    "copies": [
+     [
+      34,
+      105524
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:106640",
+   "en": "posX=34\nposY=62\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "ja": "",
+   "zh": "posX=34\nposY=62\nhead=Afro Wig\nbody=Silver Mail\nhandR=Silver Hammer\nhandL=Kite Shield\nfoot=Spike Shoes\nexp=760\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 106640,
+    "pos": 106640,
+    "copies": [
+     [
+      34,
+      106640
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:107756",
+   "en": "posX=50\nposY=35\nhead=Afro Wig\nbody=Silver Mail\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=50\nposY=35\nhead=Afro Wig\nbody=Silver Mail\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 107756,
+    "pos": 107756,
+    "copies": [
+     [
+      34,
+      107756
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:108872",
+   "en": "posX=36\nposY=71\nhead=Coleus Helm\nbody=Warrior Armor\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=36\nposY=71\nhead=Coleus Helm\nbody=Warrior Armor\nhandR=Knight Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 108872,
+    "pos": 108872,
+    "copies": [
+     [
+      34,
+      108872
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:109988",
+   "en": "posX=27\nposY=43\nhead=Coleus Helm\nbody=Turtle Mail\nhandR=Drill Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=27\nposY=43\nhead=Coleus Helm\nbody=Turtle Mail\nhandR=Drill Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 109988,
+    "pos": 109988,
+    "copies": [
+     [
+      34,
+      109988
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:111104",
+   "en": "posX=40\nposY=50\nhead=Coleus Helm\nbody=Turtle Mail\nhandR=Drill Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=40\nposY=50\nhead=Coleus Helm\nbody=Turtle Mail\nhandR=Drill Lance\nhandL=Palm Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 111104,
+    "pos": 111104,
+    "copies": [
+     [
+      34,
+      111104
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:112220",
+   "en": "posX=66\nposY=35\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Dragon Wand\nhandL=Shining Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "ja": "",
+   "zh": "posX=66\nposY=35\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Dragon Wand\nhandL=Shining Shield\nfoot=Spike Shoes\nexp=850\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 112220,
+    "pos": 112220,
+    "copies": [
+     [
+      34,
+      112220
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:113336",
+   "en": "posX=40\nposY=23\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Muramasa\nhandL=Shining Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "ja": "",
+   "zh": "posX=40\nposY=23\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Muramasa\nhandL=Shining Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 113336,
+    "pos": 113336,
+    "copies": [
+     [
+      34,
+      113336
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:114452",
+   "en": "posX=10\nposY=87\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Power Staff\nhandL=Shining Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "ja": "",
+   "zh": "posX=10\nposY=87\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Power Staff\nhandL=Shining Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 114452,
+    "pos": 114452,
+    "copies": [
+     [
+      34,
+      114452
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:115568",
+   "en": "posX=92\nposY=31\nhead=Circlet\nbody=Metal Protector\nhandR=Neon Saber\nhandL=Storm Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "ja": "",
+   "zh": "posX=92\nposY=31\nhead=Circlet\nbody=Metal Protector\nhandR=Neon Saber\nhandL=Storm Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 115568,
+    "pos": 115568,
+    "copies": [
+     [
+      34,
+      115568
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:116684",
+   "en": "posX=39\nposY=63\nhead=Circlet\nbody=Metal Protector\nhandR=Neon Saber\nhandL=Storm Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "ja": "",
+   "zh": "posX=39\nposY=63\nhead=Circlet\nbody=Metal Protector\nhandR=Neon Saber\nhandL=Storm Shield\nfoot=Silent Boots\nexp=945\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 116684,
+    "pos": 116684,
+    "copies": [
+     [
+      34,
+      116684
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:117800",
+   "en": "posX=42\nposY=47\nhead=Circlet\nbody=Aura Suit\nhandR=Dragon Lance\nhandL=Storm Shield\nfoot=Silent Boots\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=42\nposY=47\nhead=Circlet\nbody=Aura Suit\nhandR=Dragon Lance\nhandL=Storm Shield\nfoot=Silent Boots\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 117800,
+    "pos": 117800,
+    "copies": [
+     [
+      34,
+      117800
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:118916",
+   "en": "posX=19\nposY=24\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=19\nposY=24\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 118916,
+    "pos": 118916,
+    "copies": [
+     [
+      34,
+      118916
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:120032",
+   "en": "posX=41\nposY=45\nhead=Gaia Helm\nbody=Holy Mail\nhandR=Omega\nhandL=Holy Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "ja": "",
+   "zh": "posX=41\nposY=45\nhead=Gaia Helm\nbody=Holy Mail\nhandR=Omega\nhandL=Holy Guard\nfoot=Battle Boots\nexp=520\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 120032,
+    "pos": 120032,
+    "copies": [
+     [
+      34,
+      120032
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:121148",
+   "en": "posX=43\nposY=45\nhead=Gaia Helm\nbody=Holy Mail\nhandR=Omega\nhandL=Holy Guard\nfoot=Battle Boots\nexp=595\ngold=100",
+   "ja": "",
+   "zh": "posX=43\nposY=45\nhead=Gaia Helm\nbody=Holy Mail\nhandR=Omega\nhandL=Holy Guard\nfoot=Battle Boots\nexp=595\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 121148,
+    "pos": 121148,
+    "copies": [
+     [
+      34,
+      121148
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:122264",
+   "en": "posX=43\nposY=45\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Muramasa\nhandL=Shining Shield\nfoot=Silent Boots\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=43\nposY=45\nhead=Coleus Helm\nbody=Metal Protector\nhandR=Muramasa\nhandL=Shining Shield\nfoot=Silent Boots\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 122264,
+    "pos": 122264,
+    "copies": [
+     [
+      34,
+      122264
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:123380",
+   "en": "posX=91\nposY=69\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=7695\ngold=100",
+   "ja": "",
+   "zh": "posX=91\nposY=69\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=7695\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 123380,
+    "pos": 123380,
+    "copies": [
+     [
+      34,
+      123380
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:124496",
+   "en": "posX=11\nposY=23\nhead=Remove Helmet\nbody=Angel Clothes\nhandR=Heavenly Longsword\nhandL=Angel Shield\nfoot=Angel Boots\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=11\nposY=23\nhead=Remove Helmet\nbody=Angel Clothes\nhandR=Heavenly Longsword\nhandL=Angel Shield\nfoot=Angel Boots\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 124496,
+    "pos": 124496,
+    "copies": [
+     [
+      34,
+      124496
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:125612",
+   "en": "posX=29\nposY=20\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=29\nposY=20\nhead=Circlet\nbody=Aura Suit\nhandR=Giant's Axe\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 125612,
+    "pos": 125612,
+    "copies": [
+     [
+      34,
+      125612
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:126728",
+   "en": "posX=13\nposY=15\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=2320\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=15\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=2320\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 126728,
+    "pos": 126728,
+    "copies": [
+     [
+      34,
+      126728
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:127844",
+   "en": "posX=27\nposY=16\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=27\nposY=16\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 127844,
+    "pos": 127844,
+    "copies": [
+     [
+      34,
+      127844
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:128960",
+   "en": "posX=21\nposY=8\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=8\nhead=Circlet\nbody=Aura Suit\nhandR=Destiny Sword\nhandL=Storm Shield\nfoot=Ultimate Gear\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 128960,
+    "pos": 128960,
+    "copies": [
+     [
+      34,
+      128960
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:130076",
+   "en": "posX=30\nposY=25\nhead=Brave Crown\nbody=Brave Vest\nhandR=Hero Killer\nhandL=Duel Greaves\nfoot=Ultimate Gear\nexp=9145\ngold=100",
+   "ja": "",
+   "zh": "posX=30\nposY=25\nhead=Brave Crown\nbody=Brave Vest\nhandR=Hero Killer\nhandL=Duel Greaves\nfoot=Ultimate Gear\nexp=9145\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 130076,
+    "pos": 130076,
+    "copies": [
+     [
+      34,
+      130076
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:131192",
+   "en": "posX=15\nposY=27\nhead=Brave Crown\nbody=Brave Vest\nhandR=Hero Killer\nhandL=Brave Guard\nfoot=Ultimate Gear\nexp=24745\ngold=100",
+   "ja": "",
+   "zh": "posX=15\nposY=27\nhead=Brave Crown\nbody=Brave Vest\nhandR=Hero Killer\nhandL=Brave Guard\nfoot=Ultimate Gear\nexp=24745\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 131192,
+    "pos": 131192,
+    "copies": [
+     [
+      34,
+      131192
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:132308",
+   "en": "posX=21\nposY=10\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Shield of Light\nfoot=Gale Shoes\nexp=1045\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=10\nhead=Captain Hat\nbody=Magma Plate\nhandR=Executioner\nhandL=Shield of Light\nfoot=Gale Shoes\nexp=1045\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 132308,
+    "pos": 132308,
+    "copies": [
+     [
+      34,
+      132308
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:133424",
+   "en": "posX=76\nposY=60\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=76\nposY=60\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 133424,
+    "pos": 133424,
+    "copies": [
+     [
+      34,
+      133424
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:134540",
+   "en": "posX=15\nposY=49\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=15\nposY=49\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 134540,
+    "pos": 134540,
+    "copies": [
+     [
+      34,
+      134540
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:135656",
+   "en": "posX=22\nposY=10\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=22\nposY=10\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 135656,
+    "pos": 135656,
+    "copies": [
+     [
+      34,
+      135656
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:136772",
+   "en": "posX=16\nposY=17\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=16\nposY=17\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 136772,
+    "pos": 136772,
+    "copies": [
+     [
+      34,
+      136772
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:137888",
+   "en": "posX=13\nposY=21\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "ja": "",
+   "zh": "posX=13\nposY=21\nhead=Coral Crown\nbody=Leather Dress\nhandR=Beta\nhandL=Glass Shield\nfoot=Aero Sneakers\nexp=1375\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 137888,
+    "pos": 137888,
+    "copies": [
+     [
+      34,
+      137888
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:139004",
+   "en": "posX=5\nposY=34\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=5\nposY=34\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 139004,
+    "pos": 139004,
+    "copies": [
+     [
+      34,
+      139004
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:140120",
+   "en": "posX=23\nposY=112\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "ja": "",
+   "zh": "posX=23\nposY=112\nhead=Remove Helmet\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes\nexp=6370\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 140120,
+    "pos": 140120,
+    "copies": [
+     [
+      34,
+      140120
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:141236",
+   "en": "posX=21\nposY=17\nbody=Villager's Clothes\nhandR=Hero Killer\nfoot=Hide Shoes\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=17\nbody=Villager's Clothes\nhandR=Hero Killer\nfoot=Hide Shoes\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 141236,
+    "pos": 141236,
+    "copies": [
+     [
+      34,
+      141236
+     ],
+     [
+      34,
+      142352
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:228284",
+   "en": "Mugen=1\nposX=20\nposY=10\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=20\nposY=10\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 228284,
+    "pos": 228284,
+    "copies": [
+     [
+      34,
+      228284
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:229400",
+   "en": "Mugen=1\nposX=26\nposY=25\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=26\nposY=25\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 229400,
+    "pos": 229400,
+    "copies": [
+     [
+      34,
+      229400
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:230516",
+   "en": "Mugen=1\nposX=18\nposY=9\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=18\nposY=9\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 230516,
+    "pos": 230516,
+    "copies": [
+     [
+      34,
+      230516
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:231632",
+   "en": "Mugen=1\nposX=24\nposY=13\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=24\nposY=13\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 231632,
+    "pos": 231632,
+    "copies": [
+     [
+      34,
+      231632
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:232748",
+   "en": "Mugen=1\nposX=11\nposY=26\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=11\nposY=26\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 232748,
+    "pos": 232748,
+    "copies": [
+     [
+      34,
+      232748
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:233864",
+   "en": "Mugen=1\nposX=21\nposY=30\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=21\nposY=30\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 233864,
+    "pos": 233864,
+    "copies": [
+     [
+      34,
+      233864
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:234980",
+   "en": "Mugen=1\nposX=32\nposY=16\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=32\nposY=16\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 234980,
+    "pos": 234980,
+    "copies": [
+     [
+      34,
+      234980
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:236096",
+   "en": "Mugen=1\nposX=23\nposY=20\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=23\nposY=20\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 236096,
+    "pos": 236096,
+    "copies": [
+     [
+      34,
+      236096
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:237212",
+   "en": "Mugen=1\nposX=21\nposY=44\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=21\nposY=44\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 237212,
+    "pos": 237212,
+    "copies": [
+     [
+      34,
+      237212
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:238328",
+   "en": "Mugen=1\nposX=39\nposY=28\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "ja": "",
+   "zh": "Mugen=1\nposX=39\nposY=28\nbody=Commando Uniform\nhandR=Greatsword\nhandL=Leather Shield\nfoot=Commando Shoes",
+   "meta": {
+    "blob": 34,
+    "offset": 238328,
+    "pos": 238328,
+    "copies": [
+     [
+      34,
+      238328
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:239444",
+   "en": "posX=8\nposY=19\npos2X=7\npos2Y=20\npos3X=7\npos3Y=22\npos4X=8\npos4Y=23\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=8\nposY=19\npos2X=7\npos2Y=20\npos3X=7\npos3Y=22\npos4X=8\npos4Y=23\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 239444,
+    "pos": 239444,
+    "copies": [
+     [
+      34,
+      239444
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:240560",
+   "en": "posX=20\nposY=23\npos2X=24\npos2Y=23\npos3X=20\npos3Y=27\npos4X=24\npos4Y=27\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=20\nposY=23\npos2X=24\npos2Y=23\npos3X=20\npos3Y=27\npos4X=24\npos4Y=27\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 240560,
+    "pos": 240560,
+    "copies": [
+     [
+      34,
+      240560
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:241676",
+   "en": "posX=18\nposY=22\npos2X=19\npos2Y=23\npos3X=19\npos3Y=25\npos4X=18\npos4Y=26\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=18\nposY=22\npos2X=19\npos2Y=23\npos3X=19\npos3Y=25\npos4X=18\npos4Y=26\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 241676,
+    "pos": 241676,
+    "copies": [
+     [
+      34,
+      241676
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:242792",
+   "en": "posX=21\nposY=28\npos2X=22\npos2Y=26\npos3X=11\npos3Y=8\npos4X=14\npos4Y=8\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=21\nposY=28\npos2X=22\npos2Y=26\npos3X=11\npos3Y=8\npos4X=14\npos4Y=8\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 242792,
+    "pos": 242792,
+    "copies": [
+     [
+      34,
+      242792
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:243908",
+   "en": "posX=18\nposY=36\npos2X=22\npos2Y=36\npos3X=19\npos3Y=37\npos4X=21\npos4Y=37\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=18\nposY=36\npos2X=22\npos2Y=36\npos3X=19\npos3Y=37\npos4X=21\npos4Y=37\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 243908,
+    "pos": 243908,
+    "copies": [
+     [
+      34,
+      243908
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:245024",
+   "en": "posX=12\nposY=27\npos2X=14\npos2Y=27\npos3X=12\npos3Y=29\npos4X=14\npos4Y=29\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=12\nposY=27\npos2X=14\npos2Y=27\npos3X=12\npos3Y=29\npos4X=14\npos4Y=29\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 245024,
+    "pos": 245024,
+    "copies": [
+     [
+      34,
+      245024
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:246140",
+   "en": "posX=14\nposY=11\npos2X=14\npos2Y=32\npos3X=35\npos3Y=32\npos4X=35\npos4Y=11\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=14\nposY=11\npos2X=14\npos2Y=32\npos3X=35\npos3Y=32\npos4X=35\npos4Y=11\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=\nAcademy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=\nResistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=\nBrave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 246140,
+    "pos": 246140,
+    "copies": [
+     [
+      34,
+      246140
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::34:247256",
+   "en": "posX=5\nposY=42\npos2X=5\npos2Y=44\npos3X=10\npos3Y=42\npos4X=10\npos4Y=44\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=Academy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=Resistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=Brave Boots\nexp=0\ngold=100",
+   "ja": "",
+   "zh": "posX=5\nposY=42\npos2X=5\npos2Y=44\npos3X=10\npos3Y=42\npos4X=10\npos4Y=44\nhead=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=Academy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=Resistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=Brave Boots\nexp=0\ngold=100",
+   "meta": {
+    "blob": 34,
+    "offset": 247256,
+    "pos": 247256,
+    "copies": [
+     [
+      34,
+      247256
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::47:7532",
+   "en": "Hellfire",
+   "ja": "",
+   "zh": "Hellfire",
+   "meta": {
+    "blob": 47,
+    "offset": 7532,
+    "pos": 7528,
+    "copies": [
+     [
+      47,
+      7532
+     ],
+     [
+      148,
+      620
+     ],
+     [
+      222,
+      620
+     ],
+     [
+      294,
+      10700
+     ],
+     [
+      342,
+      39500
+     ],
+     [
+      537,
+      7244
+     ],
+     [
+      892,
+      61388
+     ]
+    ],
+    "protected": "mech",
+    "note": "机制表整表保护（技能/职业/连携技等按内容读取的表）"
+   }
+  },
+  {
+   "id": "pcopy::546:588",
+   "en": "posX=6\nposY=21\npos2X=8\npos2Y=19\npos3X=8\npos3Y=22\npos4X=7\npos4Y=23\nhead=\nbody=Commando Uniform\nhandR=Iron Sword\n",
+   "ja": "",
+   "zh": "posX=6\nposY=21\npos2X=8\npos2Y=19\npos3X=8\npos3Y=22\npos4X=7\npos4Y=23\nhead=\nbody=Commando Uniform\nhandR=Iron Sword\n",
+   "meta": {
+    "blob": 546,
+    "offset": 588,
+    "pos": 588,
+    "copies": [
+     [
+      546,
+      588
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::1010:144",
+   "en": "head=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=Academy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=Resistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=Brave Boots\nexp=0\ngold=100\n",
+   "ja": "",
+   "zh": "head=\nbody=Commando Uniform\nhandR=\nhandL=\nfoot=Commando Shoes\nhead2=\nbody2=Uniform Dress\nhandR2=\nhandL2=\nfoot2=Academy Boots\nhead3=\nbody3=Hero Cloth\nhandR3=\nhandL3=\nfoot3=Resistance Boots\nhead4=\nbody4=Brave Coat\nhandR4=\nhandL4=\nfoot4=Brave Boots\nexp=0\ngold=100\n",
+   "meta": {
+    "blob": 1010,
+    "offset": 144,
+    "pos": 144,
+    "copies": [
+     [
+      1010,
+      144
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::1010:656",
+   "en": "body=Commando Uniform\nfoot=Commando Shoes\ngold=100",
+   "ja": "",
+   "zh": "body=Commando Uniform\nfoot=Commando Shoes\ngold=100",
+   "meta": {
+    "blob": 1010,
+    "offset": 656,
+    "pos": 656,
+    "copies": [
+     [
+      1010,
+      656
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::1010:1168",
+   "en": "head=\nbody=Uniform Dress\nhandR=\nhandL=\nfoot=Academy Boots\nexp=0\ngold=100\n",
+   "ja": "",
+   "zh": "head=\nbody=Uniform Dress\nhandR=\nhandL=\nfoot=Academy Boots\nexp=0\ngold=100\n",
+   "meta": {
+    "blob": 1010,
+    "offset": 1168,
+    "pos": 1168,
+    "copies": [
+     [
+      1010,
+      1168
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::1010:1680",
+   "en": "head=\nbody=Hero Cloth\nhandR=\nhandL=\nfoot=Resistance Boots\nexp=0\ngold=100\n",
+   "ja": "",
+   "zh": "head=\nbody=Hero Cloth\nhandR=\nhandL=\nfoot=Resistance Boots\nexp=0\ngold=100\n",
+   "meta": {
+    "blob": 1010,
+    "offset": 1680,
+    "pos": 1680,
+    "copies": [
+     [
+      1010,
+      1680
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  },
+  {
+   "id": "pcopy::1010:2192",
+   "en": "head=\nbody=Brave Coat\nhandR=\nhandL=\nfoot=Brave Boots\nexp=0\ngold=100\n",
+   "ja": "",
+   "zh": "head=\nbody=Brave Coat\nhandR=\nhandL=\nfoot=Brave Boots\nexp=0\ngold=100\n",
+   "meta": {
+    "blob": 1010,
+    "offset": 2192,
+    "pos": 2192,
+    "copies": [
+     [
+      1010,
+      2192
+     ]
+    ],
+    "protected": "embedded-item",
+    "note": "脚本参数串里的装备名副本（如 body=…），无独立译表行；构建不写这类数据层串，保留原文"
+   }
+  }
+ ]
+}

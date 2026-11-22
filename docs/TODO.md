@@ -2,7 +2,8 @@
 
 > 用途：把**除实机测试以外**的未完成项集中登记，避免散落在 `KNOWN_ISSUES.md`、
 > `PACKAGE_LEDGER.md`、`FINAL_QA_PLAN.md` 与项目记忆中。
-> 最近复核：2026-11-21（T-10b/T-11/T-12/T-13a/T-07b 已落地并重建 Z27/Z19/stable；
+> 最近复核：2026-11-22（T-03 已完成：歌词/装备名副本接入校对视图并实测回滚）；
+> 2026-11-21（T-10b/T-11/T-12/T-13a/T-07b 已落地并重建 Z27/Z19/stable；
 > 仅剩 `row 20447` 按钮语义待实机、P3 收尾项与实机测试）。
 > 上一轮 2026-11-15：修正 T-04b（游戏内显示已完成，剩余校对视图登记）。
 > 2026-11-13：T-09 完成，`proofread` 快进合并入 `main`，后续开发以 `main` 为主分支。
@@ -34,7 +35,6 @@
 | ID | 类别 | 待办 | 当前状态（2026-11-21 复核） | 建议下一步 | 关联文档 |
 |---|---|---|---|---|---|
 | **T-04** | 放行/未登记表 | 纯显示串与 collide 假命中放行（原 T-04a + T-05a） | **部分完成（2026-11-21 Z27）**。复核 5427 条 protected 后，补放行 11 个 collide 假命中：b906 记忆检查三个选项、b34 无限关卡名 2 条、b186 名字输入说明、b282 图鉴简介 2 条、b757 奖励消息 2 条、b905 事件台词；均已上屏并 `validate_build` error 0。`Check`/`Sing`/`入る`/`こうげき` 等命令键确认应保持保护。仍剩 `b630`/`b845` 假命中未登记；`b357 off122396/122664` 的 `Large Attack`/`Heavy Attack`、`b666` 的 `Trigger Rate: 1/x` 20 种均不在译表（0 命中） | 定性 `Large/Heavy Attack`：若为装备名则升 P2；`Trigger Rate` 按 UI 文案补登记；继续按 `(blob, offset)` 复核剩余 protected | `KNOWN_ISSUES.md` §12/§21、`PACKAGE_LEDGER.md` §5 |
-| **T-03** | 校对视图/歌词 | 非 CSV 表接入校对视图（原 T-03 + T-04b） | **未实施**。`SONG_EN_LINES` 28 条仍为代码常量（[`build_cn.py`](../tools/build_cn.py) 第 2601 行，原文档写的 2481 已过期）；`export_review.py` 无歌曲表与内嵌副本处理；`text_v2.csv` 的 b34 共 317 行但均为章节/曲目标题，没有 `head/body/...` 装备名行 | 为歌曲表与内嵌装备名副本增加导出/导入通道；导入写回权威道具表 `b147/357/736/998`；`Villager's Clothes`×2、`Hellfire`×1 放入 `protected/` 或标注跳过原因；每批重建并导出视图 | `PACKAGE_LEDGER.md` §5、`PITFALLS.md` §38、`KNOWN_ISSUES.md` §12 |
 | **T-08** | 已知取舍/演出 | 生僻字回退与 RAGNAROK 字幕同步 | **半开放**。2026-11-09 实测上屏缺字 0；`cmap.json` 现为 **2304/2847（余 543，原文档写的 2300/547 已过期）**；制作人员 `row1992` 的「崇」回退英文名；RAGNAROK 字幕仍略早于音频 | 生僻字按需扩容或接受现状；RAGNAROK 若处理，优先评估运行时字幕叠加方案 | `KNOWN_ISSUES.md` §7/§20、`tools/verify_charset_full.py` |
 
 ### 1.5 已完成（保留记录）
@@ -49,6 +49,7 @@
 | **T-09** | 2026-11-13 | `proofread` 28 个提交快进合并入 `main`；三个包从 `main` 重建校验通过 | `PACKAGE_LEDGER.md` §6 |
 | 术语清理（无独立 ID） | 2026-11-21 | 提交 `b76af42` 统一 `グリモワール/グリモ→魔法书`，`魔典/格瑞莫/格里莫` 在 `zh_new` 已归零；Z27 完成 27 个选项放行、15 个尾行留空、副队长统一（`validate_build` error 0 / warning 45） | `docs/TEMP_REVIEW_20261121.md`、`PACKAGE_LEDGER.md` §2 |
 | **T-10b/T-11/T-12/T-13a/T-07b** | 2026-11-21（Z27/Z19/stable） | `船頭/おじさま/銃士/魔道士/悪ガキ/超新流星` 等第一批误译落地；专名与说话人标签批量统一（97→40 组）；`audit_terms` 161→72（P1 0）。重建 Z19/stable/Z27：validate error 0，warning Z19/Z27 46、stable 1；哈希见 `PACKAGE_LEDGER` §2 | `docs/TERM_RECOMMENDATIONS_20261121.md`、`术语表.md`、`PACKAGE_LEDGER.md` §2 |
+| **T-03** | 2026-11-22（Z27 重建） | 非 CSV 表接入校对视图：新增 `60_songs.json`（28 条歌词）→ 导入写 `locales/zh-CN/song_en_lines.json`，`song_lines()` 覆盖内置表；装备/道具名副本（`EQUIP_BLOBS pos4` 同名、位于其他 blob）在视图标注 `meta.canonical`，导入写回权威行；无独立译表行的参数串/机制名副本导出到 `protected/prot_itemcopies.json`（150 条，含 `Villager's Clothes`×2、`Hellfire`×7 副本），导入跳过。实测歌曲 k=2 与副本改 `row::7736` 均写入 dist，回滚后 `LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` 恢复，validate error 0 / warning 46 | `PITFALLS.md` §38、`BUILDING.md` §5.4、`PACKAGE_LEDGER.md` §5/§6 |
 
 ### 1.6 旧 ID 对照（供其他文档引用）
 
@@ -75,6 +76,7 @@
 | T-12 | 计数 `zh_new` + Z27 记录 | `二当家` 0、`副队长` 14；Z27 已统一副队长；本批次后 97→40 组（见下行） |
 | T-04 | 搜全译表 + 读 `build_cn.py` 放行清单 | `Large/Heavy Attack`、`Trigger Rate` 0 命中；无 `b630`/`b845` 放行项 |
 | T-03 | 读 `build_cn.py` / `export_review.py` / `text_v2.csv` b34 | `SONG_EN_LINES` 28 条（第 2601 行）；导出脚本无歌曲/内嵌副本；b34 无装备名行 |
+| T-03（实施后） | `export_review.py` + `import_review.py apply`/`revert` | 导出 28 条歌词、150 条副本登记、7016 条副本 `meta.canonical`；改 k=2 与 `row::7736` 后重建，`cscv[355]` 反解码一致、`row::7736` 写入权威行；回滚恢复 `LANG_EN 1b0109baf96a`/`cscv f074004c8eb3`；validate error 0 / warning 46 |
 | T-08 | 读 `cmap.json` | `codes` 2304 条；上限 2847，余 543 |
 | 术语审计（批次前基线） | 复跑 `python tools/audit_terms.py` | 161 条（P1 10 / P2 96 / P3 55），与 `TERM_AUDIT_REPORT_20261121.md` 一致，可复现 |
 | 术语批次（T-10b/T-11/T-12） | 复跑 `audit_terms --date 20261121_r3` + `validate_build` | 161→72（P1 0 / P2 43 / P3 29）；说话人 97→40 组；Z19/Z27 error 0 / warning 46、stable error 0 / warning 1 |
@@ -102,6 +104,13 @@
 - **既定差异**：stable/E3 不含 4 个视频与 `cscv[355]` 歌词，是配方设计，不是缺漏。
 
 ## 4. 已同步的过期文档
+
+**2026-11-22（T-03 完成）：**
+- `docs/TODO.md`：T-03 从 P3 移入已完成；补实施与回滚证据。
+- `BUILDING.md` §5.4：导出/导入清单加入 `60_songs.json`、`song_en_lines.json`、
+  `protected/prot_itemcopies.json` 与 `meta.canonical` 重定向说明。
+- `docs/PITFALLS.md` §38：歌词「未做（有意）」改为已接入校对通道，并记录副本登记口径。
+- `docs/PACKAGE_LEDGER.md` §5/§6：同步本轮通道与哈希。
 
 **2026-11-21（TODO 重排与术语落地复核）：**
 - `docs/TODO.md`：按 P0～P3 重排；合并 T-04a+T-05a→T-04、旧 T-03+T-04b→T-03；

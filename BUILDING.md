@@ -152,17 +152,23 @@ python tools/runner.py <脚本名> [参数]
 - **导出**：`export_review.py` → `locales/zh-CN/translator-view/`，按 blob 切分成
   `10_ui_*.json` / `20_dialogue_*.json`，外加 `30_multiline.json`、`40_dlc01.json`、
   `50_extra.json`（Z11–Z14 代码内额外行：伙伴名/技能名/合成 UI）、
-  `protected/`（受保护、当前不上屏）、`dict/替换词典.json`（**可编辑入口**）与 `如何校对.txt`。
-  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `50_*` /
+  `60_songs.json`（`cscv[355]` 歌曲表 28 个英文行，改后写回 `song_en_lines.json`）、
+  `protected/`（受保护、当前不上屏；含 `prot_itemcopies.json`：无独立译表行的
+  `body=/handR=/foot=` 参数串与 `Hellfire` 一类二进制机制名副本，导入跳过）、
+  `dict/替换词典.json`（**可编辑入口**）与 `如何校对.txt`。
+  清理旧产物时只删上面这些生成物（`10_*` / `20_*` / `30_*` / `40_*` / `50_*` / `60_*` /
   `protected/` / `dict/`），**保留同目录的 `.bat`**，所以导出 bat 与 JSON 可以长期共处一目录。
   受保护判定复用生产装机口径：脚本把原版复制到 `build/review_stage/` 作只读母本，
   临时切换 `build_cn.BASE` 后调用 `rewrite_text(..., dry_run=True, classify=...)`；
   Z10b–Z14 已实测放行的显示槽（`released_row()`）即使仍被 apply_menu 保护，也导出到普通分片。
+  装备/道具名的同名副本（`en` 命中 `b147/357/736/998 pos4` 的规范名）在 `meta.canonical`
+  标注权威 `row::` 编号，视图里的 `zh` 取权威译名；导入这类副本的改动会写回权威行。
 - **导入**：`import_review.py apply` → 逐条比对 `zh` → **自检**（超长/id/非法字符）……
   有任一错误即**中断**：不写译表、不打包，报告写到与导入 bat 同目录的
   `translator-view/导入报告.txt`，并整篇打印在命令行窗口（bat 结束会 `pause`，便于当场看原因）；
   通过后备份（`*.bak_review_<ts>`）→ 写回 `text_v2.csv` / `ml_zh_fields.json` / DLC 译表 /
-  `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）
+  `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）/
+  `locales/zh-CN/song_en_lines.json`（`60_songs.json` 的歌词覆盖表）
   → 自动跑 `tools/build.py package_current`（隔离模式）刷新**当前校对目标**；
   目标由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前为 `z27` →
   `dist/Z27-subcommander/`，含 Z23/Z24 的图鉴敌人/Boss 名单放行、`b291` 地图编辑器说明、
