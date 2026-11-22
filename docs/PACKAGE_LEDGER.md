@@ -230,6 +230,19 @@ python tools/build.py --game-dir work/original package_current
      四个视频 blob 均与母本不同；清单 `video_merged=true` 且 `outputs` 含 `res/MOV.s2a`；
      `validate_build` error 0 / warning 46。`build/video_cache/` 记录 4 个渲染结果。
 
+- **2026-11-22（Z29 修复：二进制槽误译 → 世界地图果冻怪消失）**：
+  1. 根因：`text_v2.csv` row 10494（b176 off441816）把二进制 `46 87 85`（`F㊤`）当文本写成 `F`，
+     清零 `87 85`，损坏世界地图实体 `KingJely`；row 56515（b974 off134632）同类。
+  2. 删除 7 条二进制误判行（10494/56515/36405/25391/25624/33115/56197）；
+     `build_cn.py: rewrite_text()` 增加 `binary_slot` 守卫。
+  3. 重建 Z29：`LANG_EN 7a50785f8b12` / `MOV 8d72c79a841a` / `DLC01 ad68d8bd92e6` /
+     `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；
+     `validate_build` error 0 / warning 46；translator-view 已刷新；实机确认果冻怪恢复。
+     详见 `PITFALLS.md` §48、`KNOWN_ISSUES.md` §25。
+
+- **2026-11-22（Z29 追加：`伴你→陪你`）**：
+  初版 REPL 第 224 条 `陪你→伴你` 的 8 处残留（row 4217/5081/5590/13508/24067/24086/26473/46803）统一改回 `陪你`，其余用字不动；全库无「伴我/伴他/伴她」等变体。重建 Z29：`LANG_EN e64bf595953e` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；`validate_build` error 0 / warning 46。
+
 - **2026-11-22（Z29 第二批词典残留清理 + 历史词典存档）**：
   1. 新增 [`tools/fix_terms_round5.py`](../tools/fix_terms_round5.py)：继续按「日文触发 + 精确行」清理初版 350 条 REPL 的语义残留。
   2. 第二批：`巴望→期待`、`得令→遵命/收到`、`且慢→稍等`、`大作→杰作`、`破口→裂缝`、`王杖→如意棒`、`手足→兄弟`、`钓具→钓竿`、`格子→条纹`、`照办→执行`、`切碎→锋利度`、`奖金→奖励/赏金`、`热乎→保暖/温暖`、`拿走了→偷走了`、`赶不上关门→赶不上门禁`、`看准→判断`、`收场→结果`；`大罪人`、`うらない→占卜`、`襲来→袭来`、`身代わり大作戦→替身大作战`、`気配→有迹象显示`、`小娘→小丫头`、`足がすくんで→吓得`。

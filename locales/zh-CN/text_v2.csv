@@ -4216,7 +4216,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 4214,93,58576,128,64,23,<RGN_NAME__>! Wait up!!,「<RGN_NAME__>－－っ！　待ってー！！」,<RGN_NAME__>！等等！！,「<RGN_NAME__>！等等我！！」
 4215,93,59680,64,32,11,Singer Girl,歌族の女の子,唱歌的小女孩,歌族少女
 4216,93,59744,64,32,29,… I've decided that I'm going,「・・・<RGN_NAME__>の旅に,……我决定了我要,「…我决定要
-4217,93,59808,64,32,33,to accompany you on your journey.,　わたしもついていくことにする」,陪着你一起旅行。,　伴你走上旅程。」
+4217,93,59808,64,32,33,to accompany you on your journey.,　わたしもついていくことにする」,陪着你一起旅行。,　陪你走上旅程。」
 4218,93,60620,64,32,9,Whaaaat!?,「はああぁぁ！？,什么！？,「什么——！？
 4219,93,60684,64,32,41,I have no use for some meddling weakling!,　力もねー足手まといなんざいらねーよ！」,多管闲事的病秧子对我来说可没用！,　又没力气又拖后腿的家伙我才不要！」
 4220,93,60848,64,32,11,Singer Girl,歌族の女の子,唱歌的小女孩,歌族少女
@@ -5080,7 +5080,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5078,106,57180,64,32,35,happiest times of my life! Gahahah!,　実にゆかいだったぞ　ガハハハッ」,最快乐的时光之一！嘎哈哈哈！,　真是痛快啊！嘎哈哈！」
 5079,106,57636,64,32,28,Ultimate Evil Lord Metsvolos,超大魔王メツヴォロス,终极恶魔领主迈特斯沃洛斯,超级魔王梅茨沃洛斯
 5080,106,57700,64,32,56,Hmm. I guess it would be dull if I disposed of you here.,「うむ　そうだな　こんな場所で始末してもつまらん,嗯。我想我在这里解决你一定很无趣。,「嗯，在这儿除掉你未免无趣，
-5081,106,57764,64,32,49,The Jarval wanted to play with you too after all.,　ジャアブルもオマエと遊びたがっていたしな」,而且贾维尔也想要和你玩玩。,　终究反叛的贾布尔也想伴你玩。」
+5081,106,57764,64,32,49,The Jarval wanted to play with you too after all.,　ジャアブルもオマエと遊びたがっていたしな」,而且贾维尔也想要和你玩玩。,　终究反叛的贾布尔也想陪你玩。」
 5082,106,57928,64,32,28,Ultimate Evil Lord Metsvolos,超大魔王メツヴォロス,终极恶魔领主迈特斯沃洛斯,超级魔王梅茨沃洛斯
 5083,106,57992,64,32,59,The Dark World is right over there. I'll get your tombstone,「魔界はすぐそこだ　オマエのハカを用意してやろう,黑暗世界就在那。我会为你准备好,「魔界近在眼前，你的墓碑
 5084,106,58056,64,32,47,"ready… You're not going to try to run, are you?",　・・・むろん　逃げまい？」,墓碑……你不逃跑的，是吗？,　我已备好…你总不会想逃吧？」
@@ -5589,7 +5589,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5587,114,36968,64,32,53,Don't be surprised there are suddenly more villagers…,「急に村の人が増えた！って　おどろかないでね,这要突然出现很多村民不要太惊讶…,「别因为村民突然变多而惊讶…
 5588,114,37032,64,32,60,You've just become able to see what you couldn't see before.,　見えなくされたものが見えるようになっただけだから」,你只是能够看到先前你看不到的东西而已。,　你只是现在能看见之前看不见的东西了。」
 5589,114,37196,64,32,6,Rurufi,ルルフィ,鲁鲁菲,露露菲
-5590,114,37260,128,64,34,… <YUSHA_NAME> I'll accompany you.,「・・・<YUSHA_NAME>ー　あたしもついてってあげるよ」,…<YUSHA_NAME>我会陪你左右。,「…<YUSHA_NAME>，我伴你去。」
+5590,114,37260,128,64,34,… <YUSHA_NAME> I'll accompany you.,「・・・<YUSHA_NAME>ー　あたしもついてってあげるよ」,…<YUSHA_NAME>我会陪你左右。,「…<YUSHA_NAME>，我陪你去。」
 5591,114,37488,64,32,6,Rurufi,ルルフィ,鲁鲁菲,露露菲
 5592,114,37552,64,32,62,"I'm bored… Er, um, or rather, I'm worried about the villagers!",「ヒマなの・・・じゃなくって　村人が心配なの！,我很无聊…呃，嗯，实际上，我很担心村民们！,「不是闲得慌…我是担心村民！
 5593,114,37616,64,32,46,If I do not do something in my master's stead…,　師匠のかわりとして　あたしも何かしないと」,如果我不为我的主人做点什么有用的事…,　作为师父的代理，我也得做点什么。」
@@ -10493,7 +10493,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 10491,176,427728,64,32,36,is getting livelier by the minute. ★,　どんどんにぎやかになっていくわね★」,每分钟都更加充满生机了。★,　越来越红火了。★」
 10492,176,428540,128,64,2,……,「・・・・・・」,……,「……」
 10493,176,431980,192,96,34,Evil Lord has entered Hero Castle!,勇者城にマオウが来た！,邪恶领主已经进入了英雄城堡！,魔王进入了勇者城！
-10494,176,441816,3,1,2,F㊤,F㊤,,F
 10495,176,443596,64,32,11,JUDGEMENT 2,JUDGEMENT２,,JUDGEMENT 2
 10496,176,446060,64,32,32,"You're <YUSHA_NAME>, aren't you?",「あんた<YUSHA_NAME>だな,你是<YUSHA_NAME>，对吗？,「你是<YUSHA_NAME>，对吧？
 10497,176,446124,64,32,13,I'm a hunter.,　オレはハンターだ」,我是个猎人。,　我是个猎人。」
@@ -13507,7 +13506,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13505,237,34924,64,32,52,"As I've said, the blood of heroes flows in my veins!",「わたくしは勇者の血を受けついでるのですっ,"我已经说过了,英雄的鲜血在我的血管沸腾了！",「我说过，我流着勇者的血，
 13506,237,34988,64,32,40,"I must protect my own academy, at least!",　自分の学園くらい守れなきゃダメですわ！」,我至少要保护好自己的学院！,　至少我得守住自己的学院！」
 13507,237,35152,64,32,6,Nanako,ナナコ,奈奈子,奈奈子
-13508,237,35216,128,64,45,"Well, it's decided then, I'm coming with you.",「もう　しかたないなぁ　付き合ってあげるわよ」,"就这么决定了,我来了。",「那好吧，我伴你走一趟。」
+13508,237,35216,128,64,45,"Well, it's decided then, I'm coming with you.",「もう　しかたないなぁ　付き合ってあげるわよ」,"就这么决定了,我来了。",「那好吧，我陪你走一趟。」
 13509,237,35444,64,32,5,Levan,レバン,莱万,莱万
 13510,237,35508,128,64,52,"Protecting the academy, that sounds quite beautiful.",「学園を守るというのは　なかなか美しいですねぇ」,"保护学校,听起来相当漂亮。",「守护学院，听起来挺美的。」
 13511,237,35800,64,32,31,You two… I'm really grateful. ★,「二人とも　ありがとうですわ★,你们两个真的…我真的很感激你们。★,「你们两个…我真的很感谢。★
@@ -24066,7 +24065,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 24064,412,160192,64,32,20,"The barrier is down,",「バリア結界は解けたんだから,,「结界解除了，
 24065,412,160256,64,32,35,so let's head to my father at once!,　さっさとお父様の元へ行くわよっ」,,　这就去见我父亲！」
 24066,412,161004,64,32,6,Athena,アテナ,,雅典娜
-24067,412,161068,64,32,23,"I'll be going with you,",「ワタクシがついていってあげるんだから,,「我会伴你去的，
+24067,412,161068,64,32,23,"I'll be going with you,",「ワタクシがついていってあげるんだから,,「我会陪你去的，
 24068,412,161132,64,32,29,so come on! Let's get moving!,　ほら　さっさとするっ」,,　所以快点儿，走啦！」
 24069,412,161652,128,64,26,Whatever you say Athena! ♪,「はーいですわ♪」,,「都听你的，雅典娜♪」
 24070,412,162172,64,32,6,Athena,アテナ,,雅典娜
@@ -24085,7 +24084,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 24083,412,163696,64,32,37,I can't help but think that my father,「お父様はきっと何か悪いものに,,「我总觉得父亲
 24084,412,163760,64,32,35,is now possessed by something evil.,　とりつかれてるにちがいないっ」,,　现在被什么恶物附身了。」
 24085,412,164508,64,32,6,Athena,アテナ,,雅典娜
-24086,412,164572,64,32,25,"… I'll be going with you,",「・・・アナタについていってあげる,,「……我会伴你去的，
+24086,412,164572,64,32,25,"… I'll be going with you,",「・・・アナタについていってあげる,,「……我会陪你去的，
 24087,412,164636,64,32,24,and the barrier is down.,　もうバリア結界もないし」,,　而且结界也没了。」
 24088,412,164800,64,32,6,Athena,アテナ,,雅典娜
 24089,412,164864,128,64,34,I'm not helping you for your sake.,「アナタに協力してあげるんじゃないわっ」,,「我帮你可不是为你着想。」
@@ -25389,7 +25388,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25388,440,7968,96,48,9,Title No.,称号数,曲目编号,称号数
 25389,440,8416,96,48,11,Next Reward,次のほうび,下一次奖励,下个奖励
 25390,440,12896,64,32,34,╋Selection　　　×Return　　　〔〕Turn Page,╋選択　　　×戻る　　　〔〕ページ切り替え,劥选择丂丂丂亊返回丂丂丂乲乴翻页,╋选择　　　×返回　　　〔〕翻页
-25391,440,13016,3,1,2,]＠,]＠,,]＠
 25392,440,15136,96,48,6,Select,選択,选择,选择
 25393,440,15584,96,48,3,Set,決定,设置,确定
 25394,440,16032,96,48,5,Erase,消す,清除,清除
@@ -25622,7 +25620,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25621,445,18764,64,32,28,Can't throw from the castle.,城からはなげられない,不能从城堡往外扔。,无法从城堡投掷。
 25622,445,19628,256,128,12,Broken Pot 1,われたツボ１,破壶 1,破壶1
 25623,445,20492,256,128,12,Broken Pot 2,われたツボ２,破壶 2,破壶2
-25624,445,31700,4,2,3,v`＋,v`＋,,v`＋
 25625,445,49644,64,32,15,Asura Nadeshiko,阿修羅撫子,阿修罗瞿麦,阿修罗抚子
 25626,445,49708,128,64,22,Aaaaah! I was a fool!!,「ぬう～～っ　ぬかったわ！！」,啊！我是个傻瓜！,「唔——我大意了！！」
 25627,445,49932,64,32,15,Asura Nadeshiko,阿修羅撫子,阿修罗瞿麦,阿修罗抚子
@@ -26471,7 +26468,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 26470,466,50400,128,64,3,………,「・・・・・・・・・・・」,………,「………」
 26471,466,50628,64,32,14,Childish Voice,おさない声,小孩的声音,稚嫩的声音
 26472,466,50692,64,32,27,"… Well, I guess I have time",「・・・ま　まあ　ちょっとくらいなら,……嗯，好吧，我有时间,「…好吧，我还有点时间
-26473,466,50756,64,32,42,to play with you for a little while! Rawr!,　オマエの相手をしてやってもいいガウ！」,和你玩一小会！汪汪！,　伴你玩一会儿！汪！」
+26473,466,50756,64,32,42,to play with you for a little while! Rawr!,　オマエの相手をしてやってもいいガウ！」,和你玩一小会！汪汪！,　陪你玩一会儿！汪！」
 26474,466,50920,64,32,19,Little Girl's Voice,女の子の声,小女孩的声音,小女孩的声音
 26475,466,50984,64,32,14,Really? Yay! ♪,「ホント？　やったー♪,真的吗？哇！？,「真的？太棒了！♪
 26476,466,51048,64,32,23,"Well then, let's start…",　じゃあね～　まずは～・・・」,嗯，开始玩吧……,　那开始吧…」
@@ -33113,7 +33110,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33112,620,8516,256,128,16,Q33. Long Bridge,Q33．ロングブリッジ,Q33. 长桥,Q33．长桥
 33113,620,9684,256,128,21,Q34. Flying Mountains,Q34．飛んでくる山々,Q34. 飞翔的山峦,Q34．飞来的群山
 33114,620,10852,256,128,9,Q35. QUIZ,Q35．QUIZ,Q35. 询问,Q35．问答
-33115,620,11992,3,1,2,o；,o；,,o；
 33116,620,12020,256,128,19,Q36. Grimoire Birth,Q36．グリモワール誕生,Q36. 魔法书的诞生,Q36．魔法书诞生
 33117,620,13836,192,96,29,* Head to the next continent?,＊　次の大陸へ向かいますか？,*前往下一片大陆？,*前往下一片大陆？
 33118,620,16528,128,64,19,Alright! Let's go!!,「よし！　行きましょう！！」,不错！出发吧！！,「好！出发吧！！」
@@ -36402,7 +36398,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 36402,678,2448,64,32,11,Elderly Man,老人,老者,老人
 36403,678,2512,64,32,53,Some of them had said that you're okay if you go down,「その者たちは<サボテンがある道>を進めば良いと,他们中的一些人说如果你走,「他们中有人说，只要走上<有仙人掌的路>就行，
 36404,678,2576,64,32,57,"the <road with cacti>, but I am not sure what that means.",　言っておったのう　どういうコトかのう」,"<road with cacti>, 就能成功，可具体情况我也不太清楚。",　不过那是什么意思我也不懂。」
-36405,678,3816,4,2,3,X#㎏,X#㎏,,
 36406,679,1548,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 36407,679,1612,64,32,37,Well! A dragon! Isn't that a dragon?!,「まあ！　竜じゃないの竜！,哇！龙！那是不是一条龙？！,「哇！龙！那不是龙吗？！
 36408,679,1676,64,32,37,What's it doing in a place like this…,　なんでこんなところに・・・」,它在这儿干嘛呢…,　它在这种地方做什么呢……」
@@ -46800,7 +46795,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 46800,804,288672,128,64,42,I want you to trust me… and fight with me.,「オレを・・・信じてついてきてほしい」,我希望你能相信我…同我一起战斗。,「我希望你相信我…与我并肩作战。」
 46801,804,289256,64,32,38,"Of course, there's no way I'm going to",「もちろんですわ　このまま　ハイそうですわ,当然了，我才不会让自己,「当然不！我才不要就这样
 46802,804,289320,64,32,36,let myself be erased just like that!,　となっとくして消去されるなんてゴメンですわ！」,像那样消失在世界上呢！,　点头认命、乖乖被消除呢！」
-46803,804,289548,128,64,45,"I'll fight with you to the end, <YUSHA_NAME>!",「最後まで<YUSHA_NAME>さんについていきますわ！」,我会跟随你战斗到最后一刻，<YUSHA_NAME>！,「我会伴你战斗到最后一刻，<YUSHA_NAME>！」
+46803,804,289548,128,64,45,"I'll fight with you to the end, <YUSHA_NAME>!",「最後まで<YUSHA_NAME>さんについていきますわ！」,我会跟随你战斗到最后一刻，<YUSHA_NAME>！,「我会陪你战斗到最后一刻，<YUSHA_NAME>！」
 46804,804,290132,64,32,42,I don't get anything this Fate creep says.,「運命ヤローはむずかしいことしか言わねえし,命运说的那些话我一句也没听懂。,「命运那家伙说的我一句都听不懂，
 46805,804,290196,64,32,17,It's a real pain!,　なにより楽しくねえ！」,这才让人痛苦！,　简直让人头疼！」
 46806,804,290424,64,32,54,"If I go with you, I'll get to kick Fate's butt, right?",「オマエについてけば　運命ヤローをぶんなぐれんだろ？,如果我同你一起战斗，我就能狂扁命运的屁股一通，对吧？,「跟着你，我就能揍命运一顿屁股了吧？
@@ -56194,7 +56189,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 56194,970,215024,64,32,6,Sailor,船乗り,水手,水手
 56195,970,215088,128,64,53,The criminal might have been <wearing green clothes>.,「<犯人は緑色の服をきている>やつかもしれん」,罪犯可能<穿着绿色衣服>。,「犯人可能<穿着绿色衣服>。」
 56196,970,216484,192,96,37,Look for Someone with Green Clothes!!,緑色の服の人をさがせ！！,找穿着绿色衣服的人！,去找穿绿衣服的人！！
-56197,970,218436,4,2,3,／9>,／9>,,／9>
 56198,970,219632,256,128,18,Evil Lord Medal 18,マオウメダル１８,,魔王勋章18
 56199,970,220216,256,128,18,Evil Lord Medal 19,マオウメダル１９,,魔王勋章19
 56200,970,220800,256,128,18,Evil Lord Medal 20,マオウメダル２０,,魔王勋章20
@@ -56512,7 +56506,6 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 56512,974,128884,192,96,20,Board the Big Venus!,ビッグヴィーナスにのりこめ！,到达大维纳斯！,爬上大维纳斯！
 56513,974,132388,64,32,15,Equipment Clerk,装備屋,设备职员,装备店员。
 56514,974,132452,128,64,61,I felt as if I was equipped with a Goddess Statue… Thank you!,「女神像を装備した気分だった・・・ありがとう」,我觉得我好像装备了女神像…谢谢！,「我好像装备了女神像…谢谢！」
-56515,974,134632,4,2,3,BS⇒,BS⇒,,BS
 56516,974,136476,64,32,5,Owner,主人,物主,店主
 56517,974,136540,128,64,35,Oh! I'm saved! It was hot in there!,「おう！　助かったぜ！　あつかったぜ！」,噢！我得救了！这里真热！,「噢！得救了！里面真热！」
 56518,974,140564,64,32,19,Castle Parts Vendor,城パーツ屋,城堡部件商贩,城堡零件商。

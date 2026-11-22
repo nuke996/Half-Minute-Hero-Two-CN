@@ -1809,6 +1809,26 @@ def rewrite_text(rows, cmap, native, sync_cscv=True, keep_collide=False, skip_bl
         # v2.22：字段值可能带 \uf8f3 前缀（ff ff ff ff）——碰撞/豁免判定统一用剥离后的串，
         # 否则会假命中 collide（白名单里有 3796 个 f8f3 前缀噪音串）而被误判为专有名词保留。
         ja_cmp = strip_f8f3(ja)
+        # ★ 2026-11-22（PITFALLS §48）：二进制 run 被误当文本的守卫。
+        #   若 slot 内没有 NUL 终止符，且从 off 到下一个 NUL 的 run 不是合法 CP932
+        #   （或含 0xFF），说明这是资源/二进制字段；写入译文会用 NUL 清零其字节。
+        #   典型：b176 off441816 的 `F㊤`（46 87 85 e0 ff...）→ 写 'F' 清零 87 85，
+        #   导致世界地图实体 KingJely 不生成。
+        _slot = bytes(lang_a.blobs[bi][off:off + sb])
+        if b'\x00' not in _slot:
+            _re = bytes(lang_a.blobs[bi]).find(b'\x00', off)
+            _run = bytes(lang_a.blobs[bi][off:_re]) if _re >= 0 else b''
+            _binary = b'\xff' in _run
+            if not _binary:
+                try:
+                    _run.decode('cp932')
+                except Exception:
+                    _binary = True
+            if _binary:
+                stats['binary_slot'] += 1
+                if classify is not None:
+                    classify[(bi, off)] = 'binary'
+                continue
         if consistent and ja in canonical:
             enc = canonical[ja]
             if enc is None:

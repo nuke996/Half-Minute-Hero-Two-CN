@@ -618,3 +618,135 @@ Q16 rec49/142 按守卫保留，不再列入待办。）
 `build/_scratch/audit_partial_menu_translations.py`。
 
 **相关文件：** `tools/build_cn.py`（`DISPLAY_RELEASE_OFFS`）、`locales/zh-CN/text_v2.csv`。
+
+---
+
+# 24. `dist/stable-names-en` 主界面闪退（2026-11-22，Investigating）
+
+**Status:** Investigating　**Severity:** High（无法进入游戏）
+**Affected versions:** `dist/stable-names-en/`（2026-11-22 14:57 重建）　**Affected locales:** zh-CN
+
+**症状：** 用 `dist/stable-names-en/` 覆盖安装后，开头 CG 播放正常，进入主界面时闪退；
+同一存档在 Z29 / 原版日语下可正常进入。
+
+**已核对（只读）：**
+- dist 文件与 `build_manifest.json` 的 sha256 全部一致；
+  `validate_build.py dist/stable-names-en build/package_stage_stable_names` = **error 0 / warning 1**
+  （仅 DLC 缺原件备份，跳过编码一致性校验）。
+- `dinput8.dll` / `hm2zh_patch.bin` 与 Z29 逐字节相同；cscv 字符表 4096 项，
+  texture 两张图集均为 512×1024。
+- stable 与 Z29 的字符表仅 **2 个 slot** 不同（index 3553/3554，Z29 多 2 个新字）；
+  因此“stable LANG_EN + Z29 cscv/texture”混装只影响这 2 字，理论上不足以解释整体闪退。
+
+**2026-11-22 实机补充（关键）：**
+- **English 语言下必现闪退**；**同一包切到日本語反而能正常进入**，且汉字字形可见（说明 cscv/texture 本身加载正常）。
+- 闪退发生在**进入读档页之前**，因此与存档内容/名字语言无关。
+
+⇒ 上述“语言设错”假设**排除**。问题被限定在 **`LANG_EN` 的启动期数据**：同一份 `cscv`/`texture`
+在日语 `LANG_JA` 下能跑，说明字体图集/字符表没问题；English 路径读 `LANG_EN` 时才崩。
+
+**新的首要怀疑：stable（E3 配方）与当前 Z 系列的显示放行规则不同步。**
+`apply_lang_en_names_en` 走的是 E3 的 `sync_e3_display_columns` / 旧放行集合，而当前译表已包含
+Z22–Z29 新增的 UI/菜单文本。可能出现“菜单项名已译、分组标签/同名副本仍英文”的混合态
+（与 `PITFALLS.md` §9、`KNOWN_ISSUES.md` §23 同类），在主界面构建菜单时触发空指针。
+已知的 Music Player / Craft Weapons / Gallery / Normal Mode / Best Time 五组已核对一致，
+但还需全量比对 stable 与 Z29 的 **LANG_EN 差异槽**，重点关注 `b25/b186/b280/b354/b358/b410/b534/b763`。
+
+**次要怀疑：** stable 与 Z29 的机制名/敌名语言不同（英文 vs 中文），若某个启动期表按名匹配，
+可能出现 stable 独有的混合态；需用同一份菜单/消息表对比确认。
+
+**下一步：**
+1. 生成 stable 与 Z29 的 LANG_EN 逐槽差异清单，筛出“stable 有译文、Z29 无译文（或反之）”的
+   菜单/消息槽，优先核对同名副本是否成对；
+2. 找到可疑槽后构建最小实验包（只改该组）复现；
+3. 修复方向优先让 E3/stable 复用 Z 系列的 `DISPLAY_RELEASE_OFFS` 与同名副本同步规则，
+   或在 stable 中关闭这批新增 UI 放行。
+
+**相关文件：** `dist/stable-names-en/build_manifest.json`、`tools/build_cn.py`
+（`do_apply_lang_en_names_en` / `sync_e3_display_columns`）、`tools/validate_build.py`、
+`PITFALLS.md` §9、`KNOWN_ISSUES.md` §23。
+
+---
+
+# 25. Q16 前世界地图「巨型果冻怪」不显示（2026-11-22，Fixed）
+
+**Status:** Fixed（Z29 正式重建）　**Severity:** Medium（无 softlock，仅地图演出/野怪）
+**Affected versions:** Z29 及 2026-09 以来的包　**Affected locales:** zh-CN
+
+**症状：** 勇者城（Q16）入口前的世界地图上，原版会出现的巨型果冻怪（蓝色、接触即秒杀）
+在中文补丁下不出现；进入 Q16 后该区域的「超ジェリー / Super Jelly」正常出现并可战斗
+（2026-11-22 实机截图）。原版日语正常。
+
+**已核对：**
+- Q16 的 `Hero Castle` / `Q16. Hero Castle, Engage` 键名已由 `restore_q16_keys()` 全部还原，
+  不是 Q16 章节键问题。
+- 世界地图怪物符号表 `cscv.blob802`（stride 152）rec67 = `KingJely`；该表**只存在于 cscv**，
+  `Z29` 与母本逐字节相同 ⇒ 符号实体数据未损坏。
+- `LANG_EN b407 rec7 pos4` 的 `King Jelly` 已译「果冻王」；Q16 内的 `Super Jelly`（rec830 pos4）
+  也已翻译，但 Q16 内由遭遇/队伍表按 **ID** 生成，故不受影响。
+- `LANG_EN b601`（stride 288）rec1/4/7 的 `pos28` 是 `Jelly` **脚本参数列**
+  （与文档中不可译的 `RGN_Q_IN2` 同构），Z29 已被 `fill_enemy_name_copies()` 写成中文；
+  这属于“脚本名当显示名”的高风险类别。
+- 字形图集只改 295/367 两张纯字形页，果冻怪精灵不在其中。
+
+**当前判断：** 实体表与图集都在，最可能失败在“世界地图符号 → 敌人数据/演员”的按名解析。
+
+**实验包（2026-11-22，待实机）：** `dist/EXP-jelly-names/`
+由 `tools/experiment_jelly_names.py` 以 Z29 为基座生成，只把 35 个槽位写回原版英文：
+- 全库整槽 `Jelly` / `King Jelly` 副本（b407/b734/b1008/b253，含 b734 `+72` 多行名+说明）；
+- `b601`（stride 288）rec1/4/7 的 `pos28`（Jelly）与 `pos92`（Magic Arrow）；
+- 为保持技能名集合自洽，`Magic Arrow` 的全部同名副本一并还原（b407/417/654/777/1008/1034）。
+
+`validate_build`：**error 0 / warning 46**（与 Z29 相同）。安装方式与 Z29 相同，
+游戏语言设为 English。
+
+**2026-11-22 实机结果（阴性）：** EXP 包安装后巨型果冻怪**仍未出现**。
+⇒ 已排除：`Jelly` / `King Jelly` 的全部同名副本、`b601 pos28/92`（含 `Magic Arrow`）、
+以及“世界地图符号按这两个显示名解析”的假设。
+
+**2026-11-22 语言对照（关键）：** 同一个 EXP 包切到 **日本語** 后，巨型果冻怪**正常出现**。
+⇒ `cscv` 字符表、`texture` 图集、`dinput8.dll`/exe 补丁全部排除；
+问题确定在 **`LANG_EN` 的文本内容**。
+
+**第二轮实验包：** `dist/EXP-place-names/`（566 槽）
+由 `tools/experiment_place_names.py` 生成，只还原“区域/地名/任务名”相关文本：
+- `b34`（stride 1116）`pos4` 关卡/任务名 + `pos104` 村庄/港口名；
+- `b814`（stride 580）`pos4` 章节名 + `pos372` 大陆/世界组名；
+- `stride 424` 城镇表的 `rec0 pos124` 城镇名（Village/Port/Suburbs 等）；
+- `stride 292` 中以 `Q<数字>.` 开头的 `pos32` 世界地图任务列表名（b176 等）；
+- `b358 rec818 pos112` 菜单标签 `Hero Castle`。
+`validate_build`：**error 0 / warning 46**。安装与 Z29 相同，游戏语言 English。
+预期副作用：选关/世界地图/城镇名显示英文；其余文本保持中文。
+
+**第二轮实机（阴性）：** `dist/EXP-place-names/` 安装后巨型果冻怪**仍未出现**。
+⇒ 任务名/村庄名/章节名/城镇名/Hero Castle 菜单标签也都排除。
+
+**第三轮实机（已定位）：** `EXP-b981` 阴性；`EXP-b176-msgs` **阳性**，果冻怪恢复。
+逐字节 diff 发现 b176 **rec1513 pos5/6** 被 Z29 清零（原版 `0x87 0x85`）。
+
+**根因（已验证，字节级）：** `text_v2.csv` row **10494**
+（`blob 176 / offset 441816 / slot_bytes 3`）把二进制 run
+`46 87 85 e0 ff ff ff ff 64` 的前 3 字节误当成文本 `F㊤`，译文为 `F`；
+写入 `F` + NUL 时把 `0x87 0x85` 清零，损坏 b176 rec1513 的实体参数，
+导致世界地图对象 `KingJely` 不生成。
+
+**同类第二处：** row **56515**（`blob 974 / offset 134632 / slot_bytes 4`），
+`BS⇒` → `BS`，同样清零 `0x81 0xcb`。
+
+**验证包：** `dist/FIX-jelly-binary/`，只还原两槽
+`176:441816:3` 与 `974:134632:4`；`validate_build` error 0 / warning 46。
+**2026-11-22 实机确认：巨型果冻怪恢复。**
+
+**正式修复（2026-11-22，已完成）：**
+- 全量审计 61k 行 CSV：按“slot 内无 NUL + 原 run 含 `0xFF`/CP932 解码失败 + 成品被写短”
+  判定，当前成品只有 **2 处实际损坏**（row 10494 / 56515）；
+- 另删除 5 条同类“封闭 CJK/全角符号”短槽误判行（36405/25391/25624/33115/56197）；
+- `build_cn.py: rewrite_text()` 新增 `binary_slot` 守卫，防止再次写入；
+- 重建 `dist/Z29-legacy-terms/`：`LANG_EN 7a50785f8b12` / `texture 16961db61e0b` /
+  `cscv 99c9bdecdbd5` / `DLC01 ad68d8bd92e6` / `MOV 8d72c79a841a`；
+  `validate_build` error 0 / warning 46；translator-view 已重新导出。
+详见 `PITFALLS.md` §48。
+
+**相关文件：** `tools/audit_binary_text_rows.py`（全表审计，当前 0 命中）、
+`tools/experiment_restore_blobs.py`、`tools/build_cn.py: rewrite_text()`、
+`docs/PITFALLS.md` §48、`dist/Z29-legacy-terms/`。

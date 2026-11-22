@@ -1545,3 +1545,44 @@ Z19 重建后仍是 `LANG_EN fa529eb1cb34`、error 0 / warning 45（互不影响
 `tools/export_review.py`、`tools/validate_build.py`。
 初版 350 条替换的完整存档见 [`docs/LEGACY_REPLACE_MAP.md`](LEGACY_REPLACE_MAP.md)；
 后续清理见 `tools/fix_terms_round5.py` 与 Z29。
+
+---
+
+## 48. 二进制 run 被当成文本 → 译短后清零字节 → 世界地图怪物消失（2026-11-22）
+
+**状态：** 已修复（2026-11-22，实机确认 + Z29 正式重建）
+**影响范围：** 翻译数据 / 资源写入
+**症状：** Q16 前世界地图的巨型果冻怪（实体 `KingJely`）在英文补丁下不出现；
+同一补丁切日语正常；进入 Q16 后 `Super Jelly` 战斗正常。无 softlock。
+
+**根因（已验证，字节级）：** `locales/zh-CN/text_v2.csv` row **10494**
+（`blob 176` / `offset 441816` / `slot_bytes 3`）把原版二进制 run
+`46 87 85 e0 ff ff ff ff 64` 的前 3 字节误当成文本 `F㊤`
+（`F` + CP932 `0x87 0x85`），译表 `zh_new='F'`。写入时用 `F` + NUL 覆盖 3 字节，
+把 `0x87 0x85` 清零，使 b176 rec1513 的实体参数损坏 → 该地图对象不生成。
+整表还原 b176 后怪物恢复；逐字节 diff 定位到 rec1513 pos5/6。
+
+**同类第二处：** row **56515**（`blob 974` / `offset 134632` / `slot_bytes 4`），
+`BS⇒`（`42 53 81 cb`）→ `BS`，同样把 `0x81 0xcb` 清零；本轮一并还原。
+
+**正确解法：**
+1. 删除/停用这两条 CSV 行（以及 `en` 含 `㊤/㎏/⇒` 等“封闭 CJK/全角符号”的短槽行）；
+2. 写入器对 `slot_bytes ≤ 8`、原 run 无 NUL 终止、且 `en` 含非正文符号的槽位一律跳过；
+3. 发布前扫描：同一 CSV 行若 `ja == en` 且含封闭 CJK/全角符号，必须人工确认是否二进制。
+
+**验证包：** `dist/FIX-jelly-binary/`（只还原 `176:441816:3` 与 `974:134632:4` 两槽；
+`validate_build` error 0 / warning 46）。**2026-11-22 实机确认：巨型果冻怪恢复。**
+
+**正式修复（2026-11-22，已完成）：**
+- 删除 `text_v2.csv` 中 7 条二进制误判行：10494、56515、36405、25391、25624、33115、56197；
+- `build_cn.py: rewrite_text()` 新增 `binary_slot` 守卫：slot 内无 NUL 且 run 含 `0xFF`
+  或 CP932 解码失败 ⇒ 整槽跳过；
+- 重建 `dist/Z29-legacy-terms/`：`LANG_EN 7a50785f8b12` / `texture 16961db61e0b` /
+  `cscv 99c9bdecdbd5` / `DLC01 ad68d8bd92e6` / `MOV 8d72c79a841a`；
+  `validate_build` **error 0 / warning 46**； translator-view 已重新导出。
+
+**相关文件：** `locales/zh-CN/text_v2.csv`（row 10494 / 56515）、
+`tools/build_cn.py: rewrite_text()`、`tools/experiment_restore_blobs.py`、
+`tools/audit_binary_text_rows.py`（发布前扫全表，当前 0 命中）、
+`tools/locate_text_row.py`（按 row/blob:offset 反查文件、stride/rec/pos 与前后文，
+便于实机定位）、`docs/PITFALLS.md` §13（同类：`\uf8f3` 前缀假命中）。
