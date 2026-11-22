@@ -6992,7 +6992,7 @@
    "id": "ml::583",
    "en": "Physic Dragon: Miho Midorikawa\nQuietly supports his emo older brother.\nLevel-headed seal beast.",
    "ja": "フィジックドラゴン：緑川美帆\nネクラな兄を影で支える\nしっかり者の封印の獣",
-   "zh": "药师龙：Miho Midorikawa\n静静帮着容易感伤的哥哥。\n冷静沉着的海兽。",
+   "zh": "物理龙：Miho Midorikawa\n静静帮着容易感伤的哥哥。\n冷静沉着的海兽。",
    "meta": {
     "blob": 54,
     "offset": 16588,
@@ -7724,7 +7724,7 @@
    "id": "ml::644",
    "en": "Physic Dragon\nSeal beast of the Eight Elements.\nYounger brother of Magic Dragon.",
    "ja": "フィジックドラゴン\nエイトエレメンツの封印の獣\nマジックドラゴンのおとうと",
-   "zh": "药疗龙\n八元素中的封印兽。\n魔龙之弟。",
+   "zh": "物理龙\n八元素中的封印兽。\n魔龙之弟。",
    "meta": {
     "blob": 555,
     "offset": 5368,
@@ -7736,7 +7736,7 @@
    "id": "ml::645",
    "en": "Magic Dragon\nSeal beast of the Eight Elements.\nOlder brother of Physic Dragon.",
    "ja": "マジックドラゴン\nエイトエレメンツの封印の獣\nフィジックドラゴンの兄",
-   "zh": "魔法龙\n八元素中的封印兽。\n药疗龙之兄。",
+   "zh": "魔法龙\n八元素中的封印兽。\n物理龙之兄。",
    "meta": {
     "blob": 555,
     "offset": 6028,

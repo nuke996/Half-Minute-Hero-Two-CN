@@ -163,6 +163,28 @@ python tools/build.py --game-dir work/original package_current
 
 ## 6. 变更记录
 
+- **2026-11-22（Physic Dragon → 物理龙）**：
+  1. `フィジックドラゴン` 旧译「药疗龙 / 药师龙」是 `Physic` 的误译；它与 `魔法龙` 成对，
+     统一改为「物理龙」。
+  2. `text_v2.csv` 共 30 行（b54/b407/b555/b652/b748 的 Boss 名、说话人、战斗显示副本）
+     的 `zh_new` 由「药疗龙」改为「物理龙」；`ml_zh_fields.json` 3 条简介
+     （含「物理龙：Miho Midorikawa」「魔龙之弟 / 物理龙之兄」）同步；`术语表.md` 怪物表更新。
+  3. 重建 Z29 与 Z19：`LANG_EN 0e2fb50151c2` / `res/MOV.s2a 8d72c79a841a` /
+     `DLC01 ad68d8bd92e6` / `texture 3549a714391e` / `cscv a4fda4e3e628`；
+     `video_merged=true`；`validate_build` 两包均 error 0 / warning 46。
+  4. 产物字节复核：旧名序列 30 处 → 0，新名序列 31 处（30 个名字槽 + 1 条简介首行）。
+
+- **2026-11-22（b668 方向菜单第二组放行）**：
+  1. 实机截图确认 `b668` 的「你要往哪个方向走？」第二组（`South` / `East`）仍为英文。
+     该组 `row::36239`（`b668/450148`）与 `row::36240`（`b668/450212`）的日文 `南へ`/`東へ`
+     命中 collide，Z27 只放行了另外两组，漏掉这两槽。
+  2. `tools/build_cn.py` 的 `DISPLAY_RELEASE_OFFS` 补登记这两个槽；重建后两者从
+     `translator-view/protected/` 移入 `10_ui_06.json`，显示「南」「东」。
+  3. 重建 Z29 与发布基线 Z19：两者产物一致 —— `LANG_EN 003319ee99fc` /
+     `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 3549a714391e` /
+     `cscv a4fda4e3e628`；`video_merged=true`；`validate_build` 两个包均
+     error 0 / warning 46。其余两组方向菜单的 `NW`/`W` 槽本来就不在 collide 中，无需登记。
+
 - **2026-11-22（隔离包输出裁剪：不再分发未改动的 `LANG_JA`）**：
   1. `tools/build_cn.py` 的 `do_package` 记录每个 `expect_same` 文件与母本的比较结果；
      逐字节相同的文件（`res/LANG_JA.s2a`、`DLC01/LANG_JA.s2a`）不复制进 dist，
