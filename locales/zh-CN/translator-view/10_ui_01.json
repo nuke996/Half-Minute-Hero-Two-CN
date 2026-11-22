@@ -11791,7 +11791,7 @@
    "id": "row::2095",
    "en": "Orphanage",
    "ja": "こじいん",
-   "zh": "失亲孩子院",
+   "zh": "孤儿院",
    "meta": {
     "blob": 55,
     "offset": 140,
@@ -11802,7 +11802,7 @@
    "id": "row::2096",
    "en": "Exit Orphanage",
    "ja": "こじいんを出る",
-   "zh": "离开失亲孩子院",
+   "zh": "离开孤儿院",
    "meta": {
     "blob": 55,
     "offset": 700,
@@ -12099,7 +12099,7 @@
    "id": "row::2147",
    "en": "Exit Orphanage",
    "ja": "こじいんを出る",
-   "zh": "离开失亲孩子院",
+   "zh": "离开孤儿院",
    "meta": {
     "blob": 55,
     "offset": 12148,
@@ -12495,7 +12495,7 @@
    "id": "row::2227",
    "en": "Apprentice Hairo",
    "ja": "ハイロウみならい",
-   "zh": "海罗帮工",
+   "zh": "海罗学徒",
    "meta": {
     "blob": 57,
     "offset": 40408,
@@ -15154,7 +15154,7 @@
    "id": "row::2922",
    "en": "Uploaded Romancing Starter data ID has",
    "ja": "アップロードしたロマツクデータのIDは",
-   "zh": "已上传风情初心者数据的ID为",
+   "zh": "已上传浪漫初心者数据的ID为",
    "meta": {
     "blob": 66,
     "offset": 2832,
@@ -21716,7 +21716,7 @@
    "id": "row::4568",
    "en": "Combining the sawtooth of the Saw Axe",
    "ja": "のこぎりアクスのギザギザに",
-   "zh": "融合铁斧的利刃",
+   "zh": "融合锯斧的锯齿",
    "meta": {
     "blob": 99,
     "offset": 3752,
@@ -35234,7 +35234,7 @@
    "id": "row::61614",
    "en": "The jagged edge of the Saw Axe",
    "ja": "のこぎりアクスのギザギザが",
-   "zh": "铁斧的锯齿",
+   "zh": "锯斧的锯齿",
    "meta": {
     "blob": 99,
     "offset": 4368,

@@ -1504,7 +1504,7 @@
    "id": "row::59562",
    "en": "I flew too much… And I'm a little tired.",
    "ja": "　飛びすぎて・・・つかれたよ」",
-   "zh": "　我飞得太久… 有点困了。」",
+   "zh": "　我飞得太久… 有点累了。」",
    "meta": {
     "blob": 1043,
     "offset": 6956,
@@ -3143,7 +3143,7 @@
    "id": "row::59830",
    "en": "… Human. Thank you for saving my daughters.",
    "ja": "「・・・人間　娘を助けてくれてありがとう」",
-   "zh": "「… 人类。多亏你救了我女儿。」",
+   "zh": "「… 人类。谢谢你救了我女儿。」",
    "meta": {
     "blob": 1045,
     "offset": 67920,
@@ -4056,7 +4056,7 @@
    "id": "row::59999",
    "en": "Truth be told, it takes about 200 years",
    "ja": "「本当なら竜のタマゴって生まれるまで",
-   "zh": "「说真的，龙蛋出世要两百年",
+   "zh": "「说真的，龙蛋孵化要两百年",
    "meta": {
     "blob": 1050,
     "offset": 14776,

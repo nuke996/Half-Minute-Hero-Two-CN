@@ -1185,7 +1185,7 @@
    "id": "row::48634",
    "en": "I'm all out of unicorn feed!",
    "ja": "　ユニコーンのエサを切らしちまったっ！」",
-   "zh": "　我的灵角兽饲料用光了！」",
+   "zh": "　我的独角兽饲料用光了！」",
    "meta": {
     "blob": 839,
     "offset": 201136,
@@ -1229,7 +1229,7 @@
    "id": "row::48640",
    "en": "my hand at looking after unicorns!",
    "ja": "　ユニコーンの世話をはじめてみたんだよ！」",
-   "zh": "　照料起灵角兽！」",
+   "zh": "　照料起独角兽！」",
    "meta": {
     "blob": 839,
     "offset": 201720,
@@ -1251,7 +1251,7 @@
    "id": "row::48643",
    "en": "loan you my unicorn, just for a while!!",
    "ja": "　ちょっとだけかしてやってもいいぜっ！！」",
-   "zh": "　把灵角兽借你一小会儿！！」",
+   "zh": "　把独角兽借你一小会儿！！」",
    "meta": {
     "blob": 839,
     "offset": 202012,
@@ -1306,7 +1306,7 @@
    "id": "row::48652",
    "en": "How about some famous <salty carrots>…",
    "ja": "「名物の<ソルトニンジン>はいかがかの・・・」",
-   "zh": "「名产的<盐渍红萝卜>来点如何啊……」",
+   "zh": "「名产的<咸胡萝卜>来点如何啊……」",
    "meta": {
     "blob": 839,
     "offset": 205452,
@@ -1471,7 +1471,7 @@
    "id": "row::48679",
    "en": "Ok, get on the unicorn!",
    "ja": "「じゃあユニコーンに乗ってくれ！」",
-   "zh": "「好，骑上灵角兽吧！」",
+   "zh": "「好，骑上独角兽吧！」",
    "meta": {
     "blob": 839,
     "offset": 214796,
@@ -1482,7 +1482,7 @@
    "id": "row::48681",
    "en": "Unicorns are different from normal horses.",
    "ja": "「ユニコーンは普通の馬とちがって",
-   "zh": "「灵角兽和寻常马匹不同，",
+   "zh": "「独角兽和寻常马匹不同，",
    "meta": {
     "blob": 839,
     "offset": 215088,
@@ -1515,7 +1515,7 @@
    "id": "row::48685",
    "en": "Unicorns are extremely timid.",
    "ja": "　ユニコーンはとってもおくびょうなんだ」",
-   "zh": "　灵角兽非常胆小。」",
+   "zh": "　独角兽非常胆小。」",
    "meta": {
     "blob": 839,
     "offset": 215444,
@@ -1570,7 +1570,7 @@
    "id": "row::48695",
    "en": "The unicorn returned just a while ago…",
    "ja": "　ついさっきユニコーン帰ってきたよー」",
-   "zh": "　灵角兽刚刚才回来……」",
+   "zh": "　独角兽刚刚才回来……」",
    "meta": {
     "blob": 839,
     "offset": 219240,
@@ -1636,7 +1636,7 @@
    "id": "row::48706",
    "en": "Hmm, the unicorn…",
    "ja": "「む　ユニコーンが・・・」",
-   "zh": "「嗯，灵角兽……」",
+   "zh": "「嗯，独角兽……」",
    "meta": {
     "blob": 839,
     "offset": 222972,
@@ -6806,7 +6806,7 @@
    "id": "row::50936",
    "en": "Rancher: They'll eat salted carrots, definitely.",
    "ja": "馬主「しおニンジンなら　食べるはずだ」",
-   "zh": "马主「要是盐渍红萝卜，它们应该会吃。」",
+   "zh": "马主「要是盐渍胡萝卜，它们应该会吃。」",
    "meta": {
     "blob": 903,
     "offset": 2852,
@@ -10348,7 +10348,7 @@
    "id": "row::51526",
    "en": "I guess I'm just a bit tired.",
    "ja": "　少し疲れが出ただけだ」",
-   "zh": "　大概是困了一点吧。」",
+   "zh": "　大概是累了一点吧。」",
    "meta": {
     "blob": 906,
     "offset": 161716,
@@ -19335,7 +19335,7 @@
    "id": "row::53039",
    "en": "Little Girl: I'm gonna be a sorcerer's apprentice one day.",
    "ja": "女の子「わたしもいつか　魔法使いにデシいりするの」",
-   "zh": "「总有一天我也要拜魔法师为师。」",
+   "zh": "小女孩「总有一天我也要拜魔法师为师。」",
    "meta": {
     "blob": 926,
     "offset": 2004,
@@ -19368,7 +19368,7 @@
    "id": "row::53048",
    "en": "Owner: Thank you, thank you!",
    "ja": "主人「ドーモドーモ！」",
-   "zh": "「谢啦谢啦！」",
+   "zh": "老板「谢啦谢啦！」",
    "meta": {
     "blob": 926,
     "offset": 4972,
@@ -25275,7 +25275,7 @@
    "id": "row::54947",
    "en": "Understood. Thank you for the information.",
    "ja": "「わかりました　情報ありがとうございます」",
-   "zh": "「明白了。多亏告知。」",
+   "zh": "「明白了。多谢告知。」",
    "meta": {
     "blob": 953,
     "offset": 95660,
@@ -31996,7 +31996,7 @@
    "id": "row::56113",
    "en": "… Well, in that case, it's nice to meet you. ▼",
    "ja": "「・・・ではごきげんよう　アハ▼」",
-   "zh": "「…那，有礼。▼」",
+   "zh": "「…那，告辞。▼」",
    "meta": {
     "blob": 970,
     "offset": 191144,
@@ -34328,7 +34328,7 @@
    "id": "row::56495",
    "en": "Thank you so much! Now I can reopen my shop!",
    "ja": "「ありがとーう！　これでお店ができるわ！」",
-   "zh": "「多亏！这下我的店能重开了！」",
+   "zh": "「太感谢了！这下我的店能重开了！」",
    "meta": {
     "blob": 974,
     "offset": 114640,
@@ -35439,7 +35439,7 @@
    "id": "row::56710",
    "en": "Angel Couple: The Unicorn is so fast! ▼",
    "ja": "カップル天使「ユニコーンは速いね▼」",
-   "zh": "天使夫妇「灵角兽真快！▼」",
+   "zh": "天使夫妇「独角兽真快！▼」",
    "meta": {
     "blob": 977,
     "offset": 2004,
@@ -35450,7 +35450,7 @@
    "id": "row::56712",
    "en": "Angel Couple: The Unicorn is so strong! ▼",
    "ja": "カップル天使「ユニコーンは強いわねぇ▼」",
-   "zh": "天使夫妇「灵角兽真强！▼」",
+   "zh": "天使夫妇「独角兽真强！▼」",
    "meta": {
     "blob": 977,
     "offset": 2428,

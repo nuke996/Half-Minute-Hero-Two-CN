@@ -2703,7 +2703,7 @@
    "id": "row::18702",
    "en": "Slaw!",
    "ja": "「スロー！」",
-   "zh": "「斯拉乌！」",
+   "zh": "「斯洛！」",
    "meta": {
     "blob": 348,
     "offset": 36676,
@@ -2736,7 +2736,7 @@
    "id": "row::18707",
    "en": "Slaw, forgive me for making you wait.",
    "ja": "「スロー　すまない　待たせちまったな」",
-   "zh": "「斯拉乌，抱歉让你久等了。」",
+   "zh": "「斯洛，抱歉让你久等了。」",
    "meta": {
     "blob": 348,
     "offset": 37552,
@@ -12680,7 +12680,7 @@
    "id": "row::21745",
    "en": "Boy: It's a romance of treasure",
    "ja": "少年「宝ってロマンだよな",
-   "zh": "少年「宝藏就是风情啊",
+   "zh": "少年「宝藏就是浪漫啊",
    "meta": {
     "blob": 379,
     "offset": 2852,
@@ -15705,7 +15705,7 @@
    "id": "row::22446",
    "en": "Uncle Carrot: I want to make these salty carrots into the local specialty!",
    "ja": "ニンジイ「ワシはソルトニンジンを名物にしたいんじゃっ！」",
-   "zh": "红萝卜老爷「我想把盐渍胡萝卜做成特产！」",
+   "zh": "红萝卜老爷「我想把咸胡萝卜做成特产！」",
    "meta": {
     "blob": 398,
     "offset": 4124,
@@ -16024,7 +16024,7 @@
    "id": "row::22540",
    "en": "Owner: It's double the price! But",
    "ja": "店主「値段は２倍！",
-   "zh": "店主「价钱是两份！但",
+   "zh": "店主「价钱是两倍！但",
    "meta": {
     "blob": 403,
     "offset": 1156,
@@ -28894,7 +28894,7 @@
    "id": "row::26238",
    "en": "Personal Assistant: The children of the orphanage",
    "ja": "使用人「南にいるこじいんのこどもたちは",
-   "zh": "助理「南边失亲孩子院的孩子们",
+   "zh": "助理「南边孤儿院的孩子们",
    "meta": {
     "blob": 462,
     "offset": 2004,
@@ -28905,7 +28905,7 @@
    "id": "row::26240",
    "en": "Personal Assistant: It seems someone saved the orphanage",
    "ja": "使用人「南のこじいんを救った人がいるそうだ",
-   "zh": "助理「似乎有人救了失亲孩子院",
+   "zh": "助理「似乎有人救了孤儿院",
    "meta": {
     "blob": 462,
     "offset": 2428,
@@ -31787,7 +31787,7 @@
    "id": "row::26912",
    "en": "Owner: Tired? Some sugar will perk you right up.",
    "ja": "主人「疲れたときは　あまいものがいいぜ」",
-   "zh": "店主「困了？来点甜的就精神了。」",
+   "zh": "店主「累了？来点甜的就精神了。」",
    "meta": {
     "blob": 476,
     "offset": 2004,

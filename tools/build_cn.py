@@ -5843,6 +5843,32 @@ def do_package_names_cn_reuse_z27(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z28(exe_mode=None):
+    """Z28（测试）：Z27 + 初版替换词典语义残留清理。
+
+    · 物品/机制名：锯斧、独角兽、牛仔宽帽、长钉鞋、虎牙刀、钻头枪/矛/兵、
+      锯齿、工口之书、马赫齿轮、再次点火、孵化、学徒、盐渍胡萝卜、围裙、激热外套；
+    · 对话/UI：孤儿院、1金币、殿下、斯洛、两倍、累了、浪漫、宝贵、前辈战士、
+      吃派、赎罪、所谓的、挑战、震撼、吓一跳、告辞、岛屿战争；
+    · 「多亏」直接道谢/语气错误的 12 行改为「多谢/谢谢/全因」。
+    · 同步 ml_zh_fields.json 与 DLC01 的同一批写法。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z28-dict-residue')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z28',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
 
@@ -6402,6 +6428,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z27',
             'out': 'Z27-subcommander',
             'stage': 'package_stage_names_cn_reuse_z27',
+            'status': 'candidate', 'review': False},
+    'z28': {'func': do_package_names_cn_reuse_z28,
+            'cmd': 'package_names_cn_reuse_z28',
+            'out': 'Z28-dict-residue',
+            'stage': 'package_stage_names_cn_reuse_z28',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6411,7 +6442,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z27'
+CURRENT_REVIEW_RECIPE = 'z28'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6531,6 +6562,10 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z25': do_package_names_cn_reuse_z25,
      # Z26（测试）：Z25 + 敌技显示名补译，输出 dist/Z26-enemy-skills
      'package_names_cn_reuse_z26': do_package_names_cn_reuse_z26,
+     # Z27（测试）：Z26 + 对话选项放行、孤立尾行、副队长称号，输出 dist/Z27-subcommander
+     'package_names_cn_reuse_z27': do_package_names_cn_reuse_z27,
+     # Z28（测试）：Z27 + 替换词典语义残留清理，输出 dist/Z28-dict-residue
+     'package_names_cn_reuse_z28': do_package_names_cn_reuse_z28,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

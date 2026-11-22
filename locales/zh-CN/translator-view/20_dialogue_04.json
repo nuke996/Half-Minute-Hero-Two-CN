@@ -3088,7 +3088,7 @@
    "id": "row::29061",
    "en": "<EVO_NAME__>: There's absolutely no sign of it hatching…",
    "ja": "<EVO_NAME__>「まったく生まれる気配はないですわ・・・」",
-   "zh": "<EVO_NAME__>「它完全没有要出世的动静…」",
+   "zh": "<EVO_NAME__>「它完全没有要孵化的迹象…」",
    "meta": {
     "blob": 505,
     "offset": 9212,
@@ -4188,7 +4188,7 @@
    "id": "row::29275",
    "en": "the act wouldn't earn him even a single gold piece.",
    "ja": "　１ゴールドも得しないはずデス」",
-   "zh": "　也捞不到几块金币。」",
+   "zh": "　也捞不到1金币。」",
    "meta": {
     "blob": 507,
     "offset": 145072,
@@ -4672,7 +4672,7 @@
    "id": "row::29343",
    "en": "the act wouldn't earn him even a single gold piece.",
    "ja": "　１ゴールドも得しないはずデス」",
-   "zh": "　也捞不到几块金币。」",
+   "zh": "　也捞不到1金币。」",
    "meta": {
     "blob": 507,
     "offset": 175732,
@@ -5035,7 +5035,7 @@
    "id": "row::29394",
    "en": "the act wouldn't earn him even a single gold piece.",
    "ja": "　１ゴールドも得しないはずデス」",
-   "zh": "　也捞不到几块金币。」",
+   "zh": "　也捞不到1金币。」",
    "meta": {
     "blob": 507,
     "offset": 195004,
@@ -21205,7 +21205,7 @@
    "id": "row::33514",
    "en": "go to the <southern village> and buy <salted carrots> for him.",
    "ja": "　こいつの好きな<しおニンジン>を買ってきてくれよ」",
-   "zh": "　去<南边村子>给他买<红萝卜>。」",
+   "zh": "　去<南边村子>给他买<盐渍胡萝卜>。」",
    "meta": {
     "blob": 625,
     "offset": 46084,
@@ -21238,7 +21238,7 @@
    "id": "row::33520",
    "en": "<Salted carrots> are this village's specialty.",
    "ja": "「この村の名物は　<しおニンジン>じゃ」",
-   "zh": "「<红萝卜>是本村特产。」",
+   "zh": "「<盐渍胡萝卜>是本村特产。」",
    "meta": {
     "blob": 625,
     "offset": 49232,
@@ -21249,7 +21249,7 @@
    "id": "row::33522",
    "en": "What!? So you've come to buy <salted carrots>?",
    "ja": "「なんじゃと！？　<しおニンジン>を買いに来た？",
-   "zh": "「啥！？你是来买<红萝卜>的？",
+   "zh": "「啥！？你是来买<盐渍胡萝卜>的？",
    "meta": {
     "blob": 625,
     "offset": 49524,
@@ -21326,7 +21326,7 @@
    "id": "row::33535",
    "en": "… Whoa! Are these for real!? These are <salted carrots>!",
    "ja": "「・・・うおっ　マジか！？　<しおニンジン>じゃないか！",
-   "zh": "「…哇！真的假的！？这是<红萝卜>！",
+   "zh": "「…哇！真的假的！？这是<盐渍胡萝卜>！",
    "meta": {
     "blob": 625,
     "offset": 55948,
@@ -23262,7 +23262,7 @@
    "id": "row::33886",
    "en": "Carroty Old Man: Salted carrots are 100 gold.",
    "ja": "ニンジイ「しおニンジンは１００ゴールドじゃ」",
-   "zh": "红萝卜老爷「红萝卜100金币。」",
+   "zh": "红萝卜老爷「盐渍胡萝卜100金币。」",
    "meta": {
     "blob": 631,
     "offset": 5396,
@@ -23526,7 +23526,7 @@
    "id": "row::33956",
    "en": "Woman: Thank you, dear sir!",
    "ja": "女性「ありがとうございました！」",
-   "zh": "女人「多亏您了！」",
+   "zh": "女人「谢谢您！」",
    "meta": {
     "blob": 637,
     "offset": 2852,
@@ -31600,7 +31600,7 @@
    "id": "row::35785",
    "en": "time we return to the palace, your Majesty.",
    "ja": "　王宮へ戻りましょうか　殿下」",
-   "zh": "　回王宫了，大人。」",
+   "zh": "　回王宫了，殿下。」",
    "meta": {
     "blob": 668,
     "offset": 256616,
@@ -31721,7 +31721,7 @@
    "id": "row::35802",
    "en": "… Ah! Your Majesty!",
    "ja": "「・・・あっ！　殿下！」",
-   "zh": "「…啊！大人！」",
+   "zh": "「…啊！殿下！」",
    "meta": {
     "blob": 668,
     "offset": 267064,
@@ -31974,7 +31974,7 @@
    "id": "row::35837",
    "en": "Your Majesty, top secret missions are kind of secret…",
    "ja": "「殿下　極秘任務はなにぶん極秘・・・」",
-   "zh": "「大人，绝密任务就是要保密……」",
+   "zh": "「殿下，绝密任务就是要保密……」",
    "meta": {
     "blob": 668,
     "offset": 287796,
@@ -32205,7 +32205,7 @@
    "id": "row::35865",
    "en": "… Well, your Majesty. We really should be getting back.",
    "ja": "「・・・では　殿下　今度こそ王宮へ帰りますよ」",
-   "zh": "「…那么大人，我们真该回去了。」",
+   "zh": "「…那么殿下，我们真该回去了。」",
    "meta": {
     "blob": 668,
     "offset": 293928,
@@ -36495,7 +36495,7 @@
    "id": "row::36561",
    "en": "Thank you for telling me!",
    "ja": "　ゴシンセツニ　ドウモ　アリガトウゴザイマス」",
-   "zh": "　多亏你告诉我！」",
+   "zh": "　多谢您特意告知！」",
    "meta": {
     "blob": 683,
     "offset": 214276,
@@ -38068,7 +38068,7 @@
    "id": "row::37042",
    "en": "Old Man: There's a village east of here, but thanks",
    "ja": "おじさん「東に村があるがグリモワールのせいで",
-   "zh": "大叔「东边有个村子，不过多亏了魔法书，",
+   "zh": "大叔「东边有个村子，不过都怪那本魔法书，",
    "meta": {
     "blob": 702,
     "offset": 1580,
@@ -39927,7 +39927,7 @@
    "id": "row::37411",
    "en": "Herbalist: Do you eat Herbs? Or rub them on?",
    "ja": "やくそう屋「やくそう食べる派？　ぬる派？」",
-   "zh": "草药商「草药你是吃法？还是涂派？」",
+   "zh": "草药商「草药你是吃派？还是涂派？」",
    "meta": {
     "blob": 708,
     "offset": 2852,
@@ -39993,7 +39993,7 @@
    "id": "row::37433",
    "en": "Lumberjack: The orphanage in the south… They may be poor, but the",
    "ja": "きこり「南にはこじいんがあってね　まずしいながらも",
-   "zh": "樵夫「南边有家失亲孩子院…他们或许清贫，但",
+   "zh": "樵夫「南边有家孤儿院…他们或许清贫，但",
    "meta": {
     "blob": 709,
     "offset": 5396,
@@ -40015,7 +40015,7 @@
    "id": "row::37439",
    "en": "Owner: Now, the kids from the orphanage",
    "ja": "店主「今はちょくちょくこじいんの",
-   "zh": "店主「现在失亲孩子院的孩子",
+   "zh": "店主「现在孤儿院的孩子",
    "meta": {
     "blob": 709,
     "offset": 6244,

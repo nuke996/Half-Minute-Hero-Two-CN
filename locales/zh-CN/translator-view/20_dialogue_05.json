@@ -6553,7 +6553,7 @@
    "id": "row::39697",
    "en": "Lumberjack: Thanks for the help. Well,",
    "ja": "きこり「アンタのおかげで助かったよ",
-   "zh": "樵夫「多亏相助。那么",
+   "zh": "樵夫「多谢相助。那么",
    "meta": {
     "blob": 732,
     "offset": 1580,
@@ -7972,7 +7972,7 @@
    "id": "row::41440",
    "en": "Ahh! I'm feeling much, much better! Thank you, <EVO_NAME__>!",
    "ja": "「ああ　すっかりよくなったよ　ありがとう",
-   "zh": "「啊！我好多了，多亏你，<EVO_NAME__>，",
+   "zh": "「啊！我好多了，谢谢你，<EVO_NAME__>，",
    "meta": {
     "blob": 741,
     "offset": 81936,
@@ -17036,7 +17036,7 @@
    "id": "row::42917",
    "en": "That's all the work I have. Thanks for your help.",
    "ja": "「これでうちの仕事はおしまいだ　ありがとうよ」",
-   "zh": "「我的活儿就这些了。多亏帮忙。」",
+   "zh": "「我的活儿就这些了。多谢帮忙。」",
    "meta": {
     "blob": 757,
     "offset": 368096,
@@ -18917,7 +18917,7 @@
    "id": "row::43244",
    "en": "Lumberjack: The orphanage in the south… They may be poor, but the",
    "ja": "きこり「南にはこじいんがあってね　まずしいながらも",
-   "zh": "樵夫「南边有家失亲孩子院…他们或许清贫，但",
+   "zh": "樵夫「南边有家孤儿院…他们或许清贫，但",
    "meta": {
     "blob": 759,
     "offset": 9212,
@@ -18928,7 +18928,7 @@
    "id": "row::43247",
    "en": "Owner: The kids from the orphanage haven't come by lately… I'm worried.",
    "ja": "店主「最近こじいんの子たちが来ないな・・・心配だ」",
-   "zh": "店主「失亲孩子院的孩子最近没来……我很担心。」",
+   "zh": "店主「孤儿院的孩子最近没来……我很担心。」",
    "meta": {
     "blob": 759,
     "offset": 9636,
@@ -21854,7 +21854,7 @@
    "id": "row::44313",
    "en": "but I'm too tired to look for it.",
    "ja": "　おれは　もうつかれたよ」",
-   "zh": "　但我太困了懒得找。」",
+   "zh": "　但我太累了懒得找。」",
    "meta": {
     "blob": 778,
     "offset": 55136,
@@ -22668,7 +22668,7 @@
    "id": "row::44475",
    "en": "Royal Messenger: By His Majesty's order, I travel far and",
    "ja": "王国伝言兵「殿下のご命令で　各地にとびまわり",
-   "zh": "皇家传令兵「奉大人之命，我奔走各地",
+   "zh": "皇家传令兵「奉殿下之命，我奔走各地",
    "meta": {
     "blob": 782,
     "offset": 4972,
@@ -24120,7 +24120,7 @@
    "id": "row::44712",
    "en": "Something like… a Romancing Reviver?",
    "ja": "　ロマンシング・イキカエール・・・みたいな？」",
-   "zh": "　像是…风情复活器？」",
+   "zh": "　像是…浪漫复活器？」",
    "meta": {
     "blob": 785,
     "offset": 103608,
@@ -40191,7 +40191,7 @@
    "id": "row::47507",
    "en": "Something like… a Romancing Reviver?",
    "ja": "　ロマンシング・イキカエール・・・みたいな？」",
-   "zh": "　像是…风情复活器？」",
+   "zh": "　像是…浪漫复活器？」",
    "meta": {
     "blob": 804,
     "offset": 768200,
@@ -40862,7 +40862,7 @@
    "id": "row::47675",
    "en": "Witch: Thank you～!",
    "ja": "魔女「まいどあり～！」",
-   "zh": "魔女「多亏光顾～！」",
+   "zh": "魔女「多谢惠顾～！」",
    "meta": {
     "blob": 812,
     "offset": 2852,
@@ -41016,7 +41016,7 @@
    "id": "row::47697",
    "en": "So big… Even I'm surprised at that size!!",
    "ja": "「でけぇ・・・さすがのオレ様もびっくりだっ！！」",
-   "zh": "「这么大……连本大爷都心里发毛！！」",
+   "zh": "「这么大……连本大爷都吓一跳！！」",
    "meta": {
     "blob": 813,
     "offset": 16236,
@@ -42820,7 +42820,7 @@
    "id": "row::48365",
    "en": "Royal Messenger: By His Majesty's order, I travel far and",
    "ja": "王国伝言兵「殿下のご命令で　各地にとびまわり",
-   "zh": "皇家传令兵「奉大人之命，我奔走各地",
+   "zh": "皇家传令兵「奉殿下之命，我奔走各地",
    "meta": {
     "blob": 834,
     "offset": 4972,

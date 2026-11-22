@@ -1511,3 +1511,29 @@ Z19 重建后仍是 `LANG_EN fa529eb1cb34`、error 0 / warning 45（互不影响
 
 **相关文件：** `tools/fix_terms_round3.py`、`tools/validate_build.py`、
 `locales/zh-CN/术语表.md` §13、`docs/PACKAGE_LEDGER.md` §5。
+
+---
+
+## 47. 批量改 `text_v2.csv` 时写 BOM / 同名物品合并（2026-11-22，Z28）
+
+**现象 1：** 用 `utf-8-sig` 重写 `text_v2.csv` 后，打包的 `dist/` 正常，但自动导出
+`translator-view/` 失败：`export_review.py` 报 `KeyError: 'row_id'`。
+
+**原因：** `review_lib.load_rows()` 用 `encoding='utf-8'` 读取 CSV；BOM 会让表头变成
+`\ufeffrow_id`，所有行都取不到 `row_id`。打包脚本本身用 `utf-8-sig`，所以问题只在
+导出阶段暴露。
+
+**修复：** 写回 `text_v2.csv` 时必须用 `encoding='utf-8'`（无 BOM）。读取可以继续用
+`utf-8-sig` 兼容旧文件。
+
+**现象 2：** 把 `しおニンジン`（Salted Carrot）和 `ソルトニンジン`（Salty Carrot）
+都译成「盐渍胡萝卜」后，`validate_build` 报
+`ERROR [重名] item: Salted Carrot / Salty Carrot -> 同一终串`。
+
+**原因：** 两者是不同物品，英文名不同；中文同名会触发物品重名 fatal。
+
+**修复：** 保留 `しおニンジン→盐渍胡萝卜`，另一个取 `ソルトニンジン→咸胡萝卜`。
+凡是批量统一术语，必须检查是否把两个不同源词合并成同一个中文终串。
+
+**相关文件：** `tools/fix_terms_round4.py`、`tools/review_lib.py`、
+`tools/export_review.py`、`tools/validate_build.py`。

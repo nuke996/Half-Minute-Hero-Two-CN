@@ -80,7 +80,7 @@
    "id": "ml::7",
    "en": "Little Girl: I entrust the dragon's egg to you, hero.\nIt may very well hatch in your care. ★",
    "ja": "女の子「竜のタマゴは勇者様にたくします\n　　　　あなたのもとで生まれるかもしれませんね★」",
-   "zh": "小女孩「勇者大人，这颗龙蛋就托付给您了。\n说不定会在您手里出世哦。★」",
+   "zh": "小女孩「勇者大人，这颗龙蛋就托付给您了。\n说不定会在您手里孵化哦。★」",
    "meta": {
     "blob": 13,
     "offset": 1580,
@@ -284,7 +284,7 @@
    "id": "ml::24",
    "en": "Teacher: … Ah! <RGN_NAME__>! Thanks to\nyou, the orphanage has been renewed!",
    "ja": "先生「・・・あっ！　<RGN_NAME__>様！\n　　　おかげ様でこじいんも新しくなりました！」",
-   "zh": "老师「…啊！<RGN_NAME__>大人！多亏了\n您，失亲孩子院焕然一新！」",
+   "zh": "老师「…啊！<RGN_NAME__>大人！多亏了\n您，孤儿院焕然一新！」",
    "meta": {
     "blob": 55,
     "offset": 6668,
@@ -656,7 +656,7 @@
    "id": "ml::55",
    "en": "Female Angel: In the west there's a village\nwhere you can ride the legendary unicorn!",
    "ja": "女天使「西の方に伝説の動物\n　　　　ユニコーンに乗れる村があるわよ！」",
-   "zh": "女天使「西边有座村子，\n可以骑上传说的灵角兽！」",
+   "zh": "女天使「西边有座村子，\n可以骑上传说的独角兽！」",
    "meta": {
     "blob": 108,
     "offset": 2852,
@@ -1796,7 +1796,7 @@
    "id": "ml::150",
    "en": "Scholar: Dragon eggs take a few centuries to hatch. You wanna\nspeed things up at the Temple of Time up ahead? … just kidding.",
    "ja": "学者「竜のタマゴねぇ　ふかするまでに何百年もかかるぜ？\n　　　この先にある時の神殿で時を操っちゃう？・・・ジョーダンだよ」",
-   "zh": "学者「龙蛋出世要好几百年。你想\n在前面的时之神殿催熟吗？…开玩笑的。」",
+   "zh": "学者「龙蛋孵化要好几百年。你想\n在前面的时之神殿催熟吗？…开玩笑的。」",
    "meta": {
     "blob": 255,
     "offset": 2428,
@@ -2192,7 +2192,7 @@
    "id": "ml::183",
    "en": "Girl: Clearing stages 1 and 2 perfectly will allow\nyou to attempt a really amazing stage, I hear!",
    "ja": "むすめ「１と２ステージをカンペキにクリアすると\n　　　　すごいステージにチャレンジできるようになるらしいわよ」",
-   "zh": "小女孩「听说完美通关1、2关，\n就能迎战一个超厉害的场景！」",
+   "zh": "小女孩「听说完美通关1、2关，\n就能挑战一个超厉害的场景！」",
    "meta": {
     "blob": 315,
     "offset": 3700,
@@ -3812,7 +3812,7 @@
    "id": "ml::318",
    "en": "Old Man: I tried going to nearby villages to sell my wares,\nbut that was so tiring… so I'm selling shields here.",
    "ja": "オヤジ「となり村まで売りにいこうとしたんですが　\n　　　　つかれちゃって・・・ここで盾売ってます」",
-   "zh": "大叔「我想去邻村卖货，\n但太困了……所以在这儿卖盾。」",
+   "zh": "大叔「我想去邻村卖货，\n但太累了……所以在这儿卖盾。」",
    "meta": {
     "blob": 564,
     "offset": 2428,
@@ -4796,7 +4796,7 @@
    "id": "ml::400",
    "en": "Lumberjack: The orphanage in the south… They may be poor, but the\nchildren all get along. Humans, demons… It's heartwarming.",
    "ja": "きこり「南にはこじいんがあってね　まずしいながらも\n　　　　人間も魔族も無く仲良くやっているよ　ほほえましいな」",
-   "zh": "樵夫「南边有家失亲孩子院…他们或许清贫，但\n孩子们相处很好。人类、魔族…真暖心。」",
+   "zh": "樵夫「南边有家孤儿院…他们或许清贫，但\n孩子们相处很好。人类、魔族…真暖心。」",
    "meta": {
     "blob": 709,
     "offset": 5396,
@@ -4808,7 +4808,7 @@
    "id": "ml::401",
    "en": "Owner: Now, the kids from the orphanage\nkeep coming by all the time.",
    "ja": "店主「今はちょくちょくこじいんの\n　　　こどもたちも来るようになったよ」",
-   "zh": "店主「现在失亲孩子院的孩子\n总是过来光顾。」",
+   "zh": "店主「现在孤儿院的孩子\n总是过来光顾。」",
    "meta": {
     "blob": 709,
     "offset": 6244,
@@ -5036,7 +5036,7 @@
    "id": "ml::420",
    "en": "Lumberjack: Thanks for the help. Well,\njust take it easy for now.",
    "ja": "きこり「アンタのおかげで助かったよ\n　　　　まあ　とりあえずゆっくりしていけよ」",
-   "zh": "樵夫「多亏相助。那么\n先歇口气吧。」",
+   "zh": "樵夫「多谢相助。那么\n先歇口气吧。」",
    "meta": {
     "blob": 732,
     "offset": 1580,
@@ -6848,7 +6848,7 @@
    "id": "ml::571",
    "en": "Rurufi: Takushi Ikegame\nHer immodest legs are hard to ignore.\nAn apprentice magic user.",
    "ja": "ルルフィ：池亀卓史\nあられもないふとももがまぶしい\n魔法使いみならいの女の子",
-   "zh": "露露菲：Takushi Ikegame\n她大方露出的腿让人没法不注意。\n魔法师的帮工。",
+   "zh": "露露菲：Takushi Ikegame\n她大方露出的腿让人没法不注意。\n魔法师的学徒。",
    "meta": {
     "blob": 54,
     "offset": 8668,
@@ -7592,7 +7592,7 @@
    "id": "ml::633",
    "en": "Monochrome Package Illustration: Hiroaki\nTime Attack: Proof of those\nwho have mastered Normal Mode.",
    "ja": "パッケージイラストモノクロ：ヒロアキ\nタイムアタック：ノーマルを\n制した者のあかし",
-   "zh": "单色包装插画：广明\n时间迎战：精通普通模式者的\n证明。",
+   "zh": "单色包装插画：广明\n时间挑战：精通普通模式者的\n证明。",
    "meta": {
     "blob": 54,
     "offset": 49588,
@@ -7604,7 +7604,7 @@
    "id": "ml::634",
    "en": "Color Package Illustration: Hiroaki\nTime Attack: Proof of those\nwho have mastered Hard Mode.",
    "ja": "パッケージイラストカラー：ヒロアキ\nタイムアタック：ハードを\n制した者のあかし",
-   "zh": "彩色包装插画：广明\n时间迎战：精通困难模式者的\n证明。",
+   "zh": "彩色包装插画：广明\n时间挑战：精通困难模式者的\n证明。",
    "meta": {
     "blob": 54,
     "offset": 50248,
@@ -8984,7 +8984,7 @@
    "id": "ml::749",
    "en": "Tiger Blade\nThis ain't no cat toy.\nThis blade is made from a tiger's fang.",
    "ja": "タイガーブレード\n敵を程よくあまがみするために\nトラのキバで作られた剣",
-   "zh": "尖刺刀\n这可不是猫玩具。\n这把刀是用尖刺做的。",
+   "zh": "虎牙刀\n这可不是猫玩具。\n这把刀是用虎牙做的。",
    "meta": {
     "blob": 713,
     "offset": 4048,
@@ -9236,7 +9236,7 @@
    "id": "ml::770",
    "en": "Saw Axe\nA multipurpose tool made for carpenters.\nYou can fight and build a chair at the same time.",
    "ja": "のこぎりアクス\n仕事中にも戦えるように\n大工が作った武器になる大工用具",
-   "zh": "铁斧\n为木匠打造的多用处工具。\n能一边战斗一边造椅子。",
+   "zh": "锯斧\n为木匠打造的多用处工具。\n能一边战斗一边造椅子。",
    "meta": {
     "blob": 713,
     "offset": 17908,
@@ -9764,7 +9764,7 @@
    "id": "ml::814",
    "en": "Drill Lance\nIt's long enough to also be used for\nshooting pool.",
    "ja": "ドリルランス\n長さを生かしてこれでビリヤードを\nすることもできる万能な槍",
-   "zh": "尖枪\n它够长，还能用来\n打台球。",
+   "zh": "钻头枪\n它够长，还能用来\n打台球。",
    "meta": {
     "blob": 713,
     "offset": 48268,
@@ -9992,7 +9992,7 @@
    "id": "ml::833",
    "en": "Ten Gallon Hat\nCurses the wearer with an insatiable urge\nto ride raging bulls.",
    "ja": "テンガロンハット\nむしょうにロデオがしたくなる\nという呪いがかかっている",
-   "zh": "草帽\n会让穿戴者被诅咒，无比渴望\n骑上狂暴的公牛。",
+   "zh": "牛仔宽帽\n会让穿戴者被诅咒，无比渴望\n骑上狂暴的公牛。",
    "meta": {
     "blob": 713,
     "offset": 60808,
@@ -10436,7 +10436,7 @@
    "id": "ml::870",
    "en": "Cowboy Vest\nWear this together with the Ten Gallon Hat\nand you'll be feeling as wild as the West.",
    "ja": "カウボーイベスト\nテンガロンハットとセットで着ると\nとても気分が出るベスト",
-   "zh": "牛仔背心\n和草帽一起穿，\n你就会感觉像西部片里一样狂野。",
+   "zh": "牛仔背心\n和牛仔宽帽一起穿，\n你就会感觉像西部片里一样狂野。",
    "meta": {
     "blob": 713,
     "offset": 85228,
@@ -10976,7 +10976,7 @@
    "id": "ml::915",
    "en": "Spike Shoes\nThese are modified Comfy Sandals, so they have\nspikes on the inside too.",
    "ja": "スパイクシューズ\nけんこうサンダルの改良品なので\n内がわにもスパイクがついている",
-   "zh": "爬山鞋\n这是改装过的健康凉鞋，所以\n里面也长了钉。",
+   "zh": "长钉鞋\n这是改装过的健康凉鞋，所以\n里面也长了钉。",
    "meta": {
     "blob": 713,
     "offset": 114928,
@@ -11660,7 +11660,7 @@
    "id": "ml::972",
    "en": "Sabertooth Tiger\nIts long fangs can be used\nto make Tiger Blades.",
    "ja": "サーベルタイガー\nタイガーブレードとして武器にも\n使われている長いキバをもつ",
-   "zh": "剑齿虎\n它的长牙可以\n用来做尖刺刀。",
+   "zh": "剑齿虎\n它的长牙可以\n用来做虎牙刀。",
    "meta": {
     "blob": 734,
     "offset": 11308,
@@ -12692,7 +12692,7 @@
    "id": "ml::1058",
    "en": "Drill Private E-1\nUsed to be a cleaning robot,\nbut was refitted for battle.",
    "ja": "ドリル一等兵\n元々はそうじロボットだったものを\n戦闘用に改造したもの",
-   "zh": "尖头兵E-1\n曾是清洁机器人，\n被改装用于战斗。",
+   "zh": "钻头兵E-1\n曾是清洁机器人，\n被改装用于战斗。",
    "meta": {
     "blob": 734,
     "offset": 68068,
@@ -14000,7 +14000,7 @@
    "id": "ml::1167",
    "en": "<Retry EZ Mode> is where\nyou can redo quests that\nyou've cleared before!!\n\nYou can take these quests on\nusing your current equipment and\nparty members.\nSo go get all those items and\ntitles that you missed out on! ★\n\nThis special service is brought to\nyou by our contract, ▼  so use it\nwith gratitude, okay～♪\n(4/5) ┿ Change page  × Back",
    "ja": "<強くてやりなおす>っていうのは\n一度クリアしたクエストを\nもう一度できちゃうの！！\n\n今の装備や仲間たちでできる上に\n取り逃したアイテムや称号まで\nゲットして持ち帰れるの★\n\nこれはわたしと契約した\n特別サービスよ▼\n感謝して利用してね～～♪\n\n\n（4／5）┿ページめくり　×戻る",
-   "zh": "<强化重来>是指\n可以重做以前\n通关过的任务！！\n\n你可以用现在的装备和\n队伍成员来迎战\n这些任务。\n去把错过的道具和\n称号全都拿到手吧！★\n\n这项特别服务来自\n我们的契约，▼ 所以请怀着\n感谢之情使用，好吗～♪\n(4/5) ┿翻页  ×返回",
+   "zh": "<强化重来>是指\n可以重做以前\n通关过的任务！！\n\n你可以用现在的装备和\n队伍成员来挑战\n这些任务。\n去把错过的道具和\n称号全都拿到手吧！★\n\n这项特别服务来自\n我们的契约，▼ 所以请怀着\n感谢之情使用，好吗～♪\n(4/5) ┿翻页  ×返回",
    "meta": {
     "blob": 538,
     "offset": 1808,
@@ -14012,7 +14012,7 @@
    "id": "ml::1168",
    "en": "For the hardcore folks who want\na challenge, you should try\n<Time Attack> mode from the\nMode Selection screen～ ▼\n\nIn <Time Attack> you will be fighting\nfor every last 0.01 second～♪ \nThere's also a Hard Mode where time\ndoesn't even stop in villages.\nDo note that you won't get to keep\nany items and such from this mode.\n\n\n(5/5) ┿ Change page  × Back",
    "ja": "タイムアタック命！という人は\nモードセレクトの\n<勇者タイムアタック>モードを\n楽しんでね～～▼\n\nアイテムとかは持ち帰れないけど\n100分の1秒をあらそう熱い\nタイムアタックや\n村の中でも時間ノンストップになる\nハードモードも楽しめるわよ～♪\n\n\n\n（5／5）┿ページめくり　×戻る",
-   "zh": "给想迎战极限的人\n推荐去模式选择画面\n玩<时间迎战>模式～▼\n\n在<时间迎战>里，你要为\n每一个0.01秒拼命～♪\n还有个困难模式，连在村庄里\n时间都不会停。\n请注意，这个模式里获得的\n道具之类都带不走。\n\n\n\n(5/5) ┿翻页  ×返回",
+   "zh": "给想挑战极限的人\n推荐去模式选择画面\n玩<时间挑战>模式～▼\n\n在<时间挑战>里，你要为\n每一个0.01秒拼命～♪\n还有个困难模式，连在村庄里\n时间都不会停。\n请注意，这个模式里获得的\n道具之类都带不走。\n\n\n\n(5/5) ┿翻页  ×返回",
    "meta": {
     "blob": 538,
     "offset": 2384,
@@ -14036,7 +14036,7 @@
    "id": "ml::1170",
    "en": "Then we have the awe-inspiring\nHero Castle battles! The time has\ncome for you to take on enormous\nmonsters. ★ Ride the Hero Castle\nand charge ahead at them!\n\nBut, there are things that even\nthe Hero Castle can't do, so be\ncareful. Items/Skills/Formations\ncan't be used so please take note.\n\nAlso, resetting time will restore\nthe Hero Castle's health. ▼\n(2/5) ┿ Change page  × Back",
    "ja": "そしてド迫力の勇者城バトル！\nついにでっかいモンスターとも\n渡りあえるときが来たわ★\n勇者城に乗ってアイツラに突撃よ！\n\nあーでも　さすがの勇者城にも\nできないことはあるから気をつけて\nアイテム／スキル／陣形\nここらへんは使えませんよ\nってことでヨロシク～★\n\n勇者城は時間を巻き戻すと\n回復するから大切にね▼\n（2／5）┿ページめくり　×戻る",
-   "zh": "然后是打动无比的\n勇者城战斗！该轮到你\n去迎战巨大怪物了。★\n乘坐勇者城，向它们\n冲过去！\n\n不过有些事连勇者城\n也做不到，所以小心。\n道具/技能/阵型都不能用，\n请记住这一点。\n\n另外，重置时间会恢复\n勇者城的体力。▼\n(2/5) ┿翻页  ×返回",
+   "zh": "然后是震撼无比的\n勇者城战斗！该轮到你\n去挑战巨大怪物了。★\n乘坐勇者城，向它们\n冲过去！\n\n不过有些事连勇者城\n也做不到，所以小心。\n道具/技能/阵型都不能用，\n请记住这一点。\n\n另外，重置时间会恢复\n勇者城的体力。▼\n(2/5) ┿翻页  ×返回",
    "meta": {
     "blob": 590,
     "offset": 656,

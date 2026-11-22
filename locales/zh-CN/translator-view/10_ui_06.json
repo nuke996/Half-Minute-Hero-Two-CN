@@ -3187,7 +3187,7 @@
    "id": "row::32017",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 37780,
@@ -3198,7 +3198,7 @@
    "id": "row::32019",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 38072,
@@ -3209,7 +3209,7 @@
    "id": "row::32022",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 38364,
@@ -3220,7 +3220,7 @@
    "id": "row::32024",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 38656,
@@ -3231,7 +3231,7 @@
    "id": "row::32027",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 38948,
@@ -3242,7 +3242,7 @@
    "id": "row::32030",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 39240,
@@ -3253,7 +3253,7 @@
    "id": "row::32032",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 39532,
@@ -3264,7 +3264,7 @@
    "id": "row::32035",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 39824,
@@ -3275,7 +3275,7 @@
    "id": "row::32038",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 40116,
@@ -3286,7 +3286,7 @@
    "id": "row::32041",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 40408,
@@ -3297,7 +3297,7 @@
    "id": "row::32044",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 40700,
@@ -3319,7 +3319,7 @@
    "id": "row::32047",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 42744,
@@ -3330,7 +3330,7 @@
    "id": "row::32049",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 43036,
@@ -3341,7 +3341,7 @@
    "id": "row::32052",
    "en": "Senior Warrior",
    "ja": "せんぱい戦士",
-   "zh": "长者战士",
+   "zh": "前辈战士",
    "meta": {
     "blob": 586,
     "offset": 43328,
@@ -3759,7 +3759,7 @@
    "id": "row::32136",
    "en": "Then we have the awe-inspiring",
    "ja": "そしてド迫力の勇者城バトル！",
-   "zh": "然后是打动无比的",
+   "zh": "然后是震撼无比的",
    "meta": {
     "blob": 590,
     "offset": 656,
@@ -4639,7 +4639,7 @@
    "id": "row::32259",
    "en": "Exit Orphanage",
    "ja": "こじいんを出る",
-   "zh": "离开失亲孩子院",
+   "zh": "离开孤儿院",
    "meta": {
     "blob": 597,
     "offset": 700,
@@ -5211,7 +5211,7 @@
    "id": "row::32348",
    "en": "Exit Orphanage",
    "ja": "こじいんを出る",
-   "zh": "离开失亲孩子院",
+   "zh": "离开孤儿院",
    "meta": {
     "blob": 597,
     "offset": 17660,
@@ -11698,7 +11698,7 @@
    "id": "row::33518",
    "en": "Search for Salted Carrots!",
    "ja": "しおニンジンをさがせ！",
-   "zh": "寻找红萝卜！",
+   "zh": "寻找盐渍胡萝卜！",
    "meta": {
     "blob": 625,
     "offset": 47708,
@@ -11775,7 +11775,7 @@
    "id": "row::33533",
    "en": "Obtained Salted Carrots!",
    "ja": "しおニンジンを手に入れた！",
-   "zh": "获得了红萝卜！",
+   "zh": "获得了盐渍胡萝卜！",
    "meta": {
     "blob": 625,
     "offset": 54424,
@@ -21522,7 +21522,7 @@
    "id": "row::35203",
    "en": "Relight",
    "ja": "リライト",
-   "zh": "复起",
+   "zh": "再次点火",
    "meta": {
     "blob": 666,
     "offset": 24832,
@@ -21544,7 +21544,7 @@
    "id": "row::35205",
    "en": "Relight",
    "ja": "リライト",
-   "zh": "复起",
+   "zh": "再次点火",
    "meta": {
     "blob": 666,
     "offset": 25124,

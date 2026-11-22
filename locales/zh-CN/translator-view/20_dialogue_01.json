@@ -3286,7 +3286,7 @@
    "id": "row::713",
    "en": "Personal Assistant: The children of the orphanage",
    "ja": "使用人「南にいるこじいんのこどもたちは",
-   "zh": "助理「南边失亲孩子院的孩子们",
+   "zh": "助理「南边孤儿院的孩子们",
    "meta": {
     "blob": 18,
     "offset": 2852,
@@ -3352,7 +3352,7 @@
    "id": "row::747",
    "en": "Herbalist: Do you eat Herbs? Or rub them on?",
    "ja": "やくそう屋「やくそう食べる派？　ぬる派？」",
-   "zh": "草药商「草药你是吃法？还是涂派？」",
+   "zh": "草药商「草药你是吃派？还是涂派？」",
    "meta": {
     "blob": 24,
     "offset": 3276,
@@ -5189,7 +5189,7 @@
    "id": "row::1052",
    "en": "Pay for your sins… with death!",
    "ja": "「死をもって・・・つぐなえっ！」",
-   "zh": "「以死……来消你的罪！」",
+   "zh": "「以死……来赎罪！」",
    "meta": {
     "blob": 30,
     "offset": 1036,
@@ -5310,7 +5310,7 @@
    "id": "row::1072",
    "en": "Pay for your sins… with death!",
    "ja": "「死をもって・・・つぐなえっ！」",
-   "zh": "「以死……来消你的罪！」",
+   "zh": "「以死……来赎罪！」",
    "meta": {
     "blob": 30,
     "offset": 22060,
@@ -7312,7 +7312,7 @@
    "id": "row::2099",
    "en": "No. 30: This appears to be an orphanage.",
    "ja": "３０号「ここはこじいんダソウデス」",
-   "zh": "30号「这里似乎是家失亲孩子院。」",
+   "zh": "30号「这里似乎是家孤儿院。」",
    "meta": {
     "blob": 55,
     "offset": 1156,
@@ -7565,7 +7565,7 @@
    "id": "row::2146",
    "en": "Little Boy: … I'll protect the orphanage!",
    "ja": "男の子「・・・このこじいんはオレが守る！」",
-   "zh": "小男孩「…我会守护失亲孩子院！」",
+   "zh": "小男孩「…我会守护孤儿院！」",
    "meta": {
     "blob": 55,
     "offset": 11756,
@@ -8907,7 +8907,7 @@
    "id": "row::2327",
    "en": "It will take up some precious time,",
    "ja": "「お時間をとらせてしまいますけど",
-   "zh": "「这会占用些难得时间，",
+   "zh": "「这会占用些宝贵时间，",
    "meta": {
     "blob": 57,
     "offset": 120772,
@@ -12680,7 +12680,7 @@
    "id": "row::2970",
    "en": "Carroty Old Man: Actually, salted carrots aren't",
    "ja": "ニンジイ「じつはしおニンジンって",
-   "zh": "红萝卜老爷「其实腌红萝卜",
+   "zh": "红萝卜老爷「其实盐渍胡萝卜",
    "meta": {
     "blob": 68,
     "offset": 4548,
@@ -26826,7 +26826,7 @@
    "id": "row::5671",
    "en": "Owner: Thank you, thank you!",
    "ja": "主人「ドーモドーモ！」",
-   "zh": "老板「多亏多亏！」",
+   "zh": "老板「多谢多谢！」",
    "meta": {
     "blob": 115,
     "offset": 6244,
@@ -28388,7 +28388,7 @@
    "id": "row::6222",
    "en": "… Thank you for the valuable information.",
    "ja": "「・・・きちょうな情報をありがとう",
-   "zh": "「…谢谢你提供难得情报，",
+   "zh": "「…谢谢你提供宝贵情报，",
    "meta": {
     "blob": 129,
     "offset": 36676,
@@ -36748,7 +36748,7 @@
    "id": "row::8689",
    "en": "Owner: Tired? Some sugar will perk you right up.",
    "ja": "主人「疲れたときは　あまいものがいいぜ」",
-   "zh": "店主「困了？来点甜的就精神了。」",
+   "zh": "店主「累了？来点甜的就精神了。」",
    "meta": {
     "blob": 159,
     "offset": 2004,
