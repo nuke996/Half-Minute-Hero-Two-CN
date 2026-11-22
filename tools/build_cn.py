@@ -5593,15 +5593,42 @@ def do_package_names_cn_reuse_norepl(exe_mode=None):
                       apply_repl=False)
 
 
+def _auto_build_z17_video(out_dir):
+    """缺少 dist/Z17-video 时，从当前刚打好的包自动烧录 4 个视频。"""
+    import subprocess
+    src_dir = paths.dist('Z17-video')
+    if os.path.isdir(src_dir):
+        shutil.rmtree(src_dir)
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          'package_video_test.py')
+    print('  [视频] 缺少 Z17-video，开始自动烧录（底包=%s）…' % out_dir)
+    env = os.environ.copy()
+    env['PYTHONIOENCODING'] = 'utf-8'
+    rc = subprocess.call([sys.executable, script, '--mode', 'hardsub',
+                          '--base', out_dir, '--out-dir', src_dir], env=env)
+    if rc != 0:
+        raise SystemExit(
+            '!! 自动烧录视频失败（退出码 %s）；请检查 ffmpeg/字体后重试，或手动运行：\n'
+            '   %s %s --mode hardsub --base "%s" --out-dir "%s"'
+            % (rc, sys.executable, script, out_dir, src_dir))
+    print('  [视频] 自动烧录完成: %s' % src_dir)
+
+
 def _apply_z17_video(out_dir):
-    """把 Z17-video 中已翻译的 4 个视频合入 Z17（prologue/ragnarok/overture + MOV opening）。"""
+    """把 Z17-video 中已翻译的 4 个视频合入 Z17（prologue/ragnarok/overture + MOV opening）。
+
+    中间包缺失时自动从当前输出包重新烧录；烧录失败则中止打包，绝不静默跳过。
+    """
     src_dir = paths.dist('Z17-video')
     src_lang = os.path.join(src_dir, 'res', 'LANG_EN.s2a')
     src_mov = os.path.join(src_dir, 'res', 'MOV.s2a')
     dst_lang = os.path.join(out_dir, 'res', 'LANG_EN.s2a')
-    if not (os.path.exists(src_lang) and os.path.exists(dst_lang)):
-        print('  [视频] 未找到 Z17-video 视频包或 Z17 LANG_EN，跳过视频合入')
-        return
+    if not os.path.exists(dst_lang):
+        raise SystemExit('!! 视频合入失败：目标包缺少 res/LANG_EN.s2a（%s）' % dst_lang)
+    if not (os.path.exists(src_lang) and os.path.exists(src_mov)):
+        _auto_build_z17_video(out_dir)
+        if not (os.path.exists(src_lang) and os.path.exists(src_mov)):
+            raise SystemExit('!! 自动烧录后仍缺少 Z17-video 的 LANG_EN/MOV，中止')
     import build_video
     specs = build_video.load_specs()
     src = s2a.Archive(src_lang)
@@ -6096,7 +6123,7 @@ def _write_build_manifest(out_dir, stage=None, video_merged=False, apply_repl=No
         'built_at': now,
         'translator_view_exported_at': (old.get('translator_view_exported_at')
                                         if video_merged else now),
-        'video_merged': bool(video_merged or old.get('video_merged')),
+        'video_merged': bool(video_merged),
         'flags': {
             'HMH2_Z23_RELEASE': z23,
             'HMH2_APPLY_REPL': repl,
@@ -6277,6 +6304,10 @@ def do_package(exe_mode=None, apply_cmd=None, stage_name=None, out_dir=None,
     # ⑤ 复制到输出目录（按相对路径建目录）；expect_same 中与母本逐字节相同的
     #    文件跳过，避免把玩家目录里本就存在的原版大文件（如 LANG_JA）重复分发。
     print('== 写入输出目录 ==')
+    stale_mov = os.path.join(out_dir, 'res', 'MOV.s2a')
+    if os.path.exists(stale_mov):
+        os.remove(stale_mov)
+        print('  移除旧 res/MOV.s2a（本次构建基础产物不含视频，视频配方稍后重新生成）')
     written = 0
     for rel, sz, h, tag in table:
         if rel in omit:
@@ -6383,6 +6414,10 @@ def do_package_install(exe_mode=None):
 
     # ④ 复制到 dist/（按相对路径建目录）
     print('== 写入 dist ==')
+    stale_mov = os.path.join(paths.DIST_DIR, 'res', 'MOV.s2a')
+    if os.path.exists(stale_mov):
+        os.remove(stale_mov)
+        print('  移除旧 res/MOV.s2a（本次构建基础产物不含视频）')
     for rel, sz, h, tag in table:
         dst = paths.dist(*rel.split('/'))
         os.makedirs(os.path.dirname(dst), exist_ok=True)

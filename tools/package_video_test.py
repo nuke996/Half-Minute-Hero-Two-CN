@@ -18,6 +18,8 @@ Usage:
 --base 指定文字/机制名的底包（默认 dist/Z17-display-fill）。底包重建后请用
 --base 指向新目录，避免测试到旧译文。--only 只重渲染指定视频（逗号分隔）；
 未选中的视频沿用底包里的现有版本。--out-dir 指定输出目录。
+默认复用 build/video_cache（输入未变时直接复制）；--force 清空输出目录并强制重渲染。
+缺少 dist/Z17-video 时，打包脚本会自动以当前包为底包调用本工具重新烧录。
 """
 
 from __future__ import annotations
@@ -85,9 +87,9 @@ def _transcode(src_blob, work, mode):
     return open(out, 'rb').read()
 
 
-def _render_hardsub(video, segments, src_blob, work):
+def _render_hardsub(video, segments, src_blob, work, force=False):
     out = os.path.join(work, 'out.ogv')
-    build_video.render_video(video, segments, src_blob, out, force=True, verbose=True)
+    build_video.render_video(video, segments, src_blob, out, force=force, verbose=True)
     return open(out, 'rb').read()
 
 
@@ -100,7 +102,8 @@ def main():
                     help='只处理这些视频（逗号分隔，如 overture）')
     ap.add_argument('--out-dir', default='',
                     help='输出目录（默认 dist/<底包名>-video-<mode>）')
-    ap.add_argument('--force', action='store_true')
+    ap.add_argument('--force', action='store_true',
+                    help='清空输出目录并忽略 build/video_cache（完整重渲染）')
     args = ap.parse_args()
 
     base = os.path.abspath(args.base)
@@ -145,7 +148,7 @@ def main():
         os.makedirs(work, exist_ok=True)
         if args.mode == 'hardsub':
             segs = build_video.resolve_segments(video, rows)
-            data = _render_hardsub(video, segs, src, work)
+            data = _render_hardsub(video, segs, src, work, force=args.force)
         else:
             data = _transcode(src, work, args.mode)
         replacements[h] = data
@@ -173,7 +176,7 @@ def main():
         if args.mode == 'hardsub':
             v = dict(specs['opening']); v['_kind'] = 'opening'
             segs = build_video.resolve_segments(v, rows)
-            data = _render_hardsub(v, segs, src, work)
+            data = _render_hardsub(v, segs, src, work, force=args.force)
         else:
             data = _transcode(src, work, args.mode)
         shutil.copy2(ORIG_MOV, out_mov)

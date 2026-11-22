@@ -175,13 +175,22 @@ python tools/build.py --game-dir work/original package_current
      `dist/stable-names-en` 后重新打包，三个目录均为 6 个文件（`dinput8.dll` /
      `hm2zh_patch.bin` / `res/LANG_EN.s2a` / `res/texture.s2a` / `res/cscv.s2a` /
      `DLC01/LANG_EN.s2a`），`LANG_JA` 两侧均未输出且记录在 `omitted_outputs`。
-     哈希：Z19/Z28 `LANG_EN 375f03867e98` / `DLC01 ad68d8bd92e6` / `texture fb5b79e17e37` /
-     `cscv f074004c8eb3`；stable `LANG_EN 1ed560772d5c` / `DLC01 06ac6cff45f3` /
-     `texture fb5b79e17e37` / `cscv 8f0bd9db2a40`。`validate_build`：Z19/Z28 error 0 /
-     warning 46，stable error 0 / warning 1。
-  6. **环境提示**：本次构建环境缺少 `dist/Z17-video`，`_apply_z17_video` 跳过，
-     因此 Z19/Z28 未生成 `res/MOV.s2a`、未替换 LANG_EN 内的视频 blob。这是输入缺失，
-     与本次输出裁剪无关；正式发布前应在存在 `dist/Z17-video` 的环境重建这两个包。
+     哈希：Z19/Z28 `LANG_EN 375f03867e98`（未合入视频）/ `DLC01 ad68d8bd92e6` /
+     `texture fb5b79e17e37` / `cscv f074004c8eb3`；stable `LANG_EN 1ed560772d5c` /
+     `DLC01 06ac6cff45f3` / `texture fb5b79e17e37` / `cscv 8f0bd9db2a40`。
+     `validate_build`：Z19/Z28 error 0 / warning 46，stable error 0 / warning 1。
+  6. **视频中间包缺失 → 自动烧录（2026-11-22 起）**：此前缺少 `dist/Z17-video` 时
+     `_apply_z17_video` 静默跳过，导致 Z19/Z28 自 2026-11-21 起丢失 4 个视频。
+     现改为：缺少 `Z17-video` 时以当前包为底包自动运行
+     `tools/package_video_test.py --mode hardsub`，失败即中止打包；渲染结果缓存于
+     `build/video_cache/`，只有 `--force` 才强制重渲染。`build_manifest.video_merged`
+     现在只反映本次构建；不合并视频的配方会删除输出目录中的旧 `res/MOV.s2a`。
+  7. **自动烧录验证（2026-11-22）**：删除 `dist/Z17-video` 后重建 Z28，日志出现
+     “缺少 Z17-video，开始自动烧录”并成功合入 4 个视频；随后重建 Z19 复用中间包
+     （未重渲染）。最终产物：`res/LANG_EN.s2a` 110,666,530 B `3eb3f1c110d2` /
+     `res/MOV.s2a` 159,701,057 B `8d72c79a841a`；prologue/ragnarok/overture/opening
+     四个视频 blob 均与母本不同；清单 `video_merged=true` 且 `outputs` 含 `res/MOV.s2a`；
+     `validate_build` error 0 / warning 46。`build/video_cache/` 记录 4 个渲染结果。
 
 - **2026-11-22（Z28 初版替换词典语义残留清理）**：
   1. 新增 [`tools/fix_terms_round4.py`](../tools/fix_terms_round4.py)：从 `7179354:locales/zh-CN/replace_map.py` 恢复初版 350 条有效 REPL，与当前 16 条 diff 后，按「日文触发 + 精确行」清理已烘焙进译表的语义残留。

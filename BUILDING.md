@@ -31,6 +31,7 @@
 | 操作系统 | **Windows**（构建脚本使用 `ctypes` 调用 GDI，无法在 Linux/macOS 上完成 SimSun 回退路径） |
 | Python | **3.13（64 位）**；脚本无版本断言 |
 | Pillow | `pip install pillow`（渲染字模、读写 8bpp 调色板 BMP 图集） |
+| 视频硬字幕 | `imageio-ffmpeg`（见 `requirements.txt`，自带 ffmpeg）+ Pillow + 字体；缺失时视频配方会中止打包 |
 | 字体 | `WenQuanYi Bitmap Song 13px.ttf`（文泉驿点阵宋体，GPL-2.0，仓库自带于 `assets/fonts/`） |
 | 可选工具 | `zig` 工具链（仅在需要重建 `dinput8` 代理 DLL 时用到） |
 
@@ -267,6 +268,9 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 ```
 
 > 各包内容、实机状态、症状定位与回滚方式见 `docs/PACKAGE_LEDGER.md`。
+>
+> Z17–Z28 这些会调用 `_apply_z17_video()` 的包，若 `dist/Z17-video` 缺失，
+> 现在会在打包末尾**自动烧录** 4 个视频后再合入（见 §8「视频自动烧录」）。
 
 > **默认打包行为 = `apply_menu` 生产配方。**
 > `python tools/build.py --game-dir work/original package`（以及 `package_install`）
@@ -371,9 +375,15 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
     与母本逐字节相同，则**不复制进 dist**，并删除输出目录里的同名旧产物。构建清单新增
     `omitted_outputs` 字段记录这些文件。双写配方（`apply_menu` / `package`）和日语镜像包
     （`Z4-JA` / `E3-JA`）仍会正常输出 `LANG_JA`。
-  - 注意 payload 是整份 s2a（双写约 **320 MB**；只写 EN 的隔离包省略 `LANG_JA` 后约 **190 MB**），
-    命令只做复制、不压缩、不自动打 zip，也不会删除 `dist/` 中不属于本次补丁的其他旧文件。
-    隔离模式的 `build/package_stage/` 可随时删除。
+  - **视频自动烧录（2026-11-22 起）**：调用 `_apply_z17_video()` 的配方（`z17`–`z28`）若发现
+    `dist/Z17-video` 缺失，会以当前刚打好的包为底包自动运行
+    `tools/package_video_test.py --mode hardsub`，重新烧录 4 个视频后再合入；烧录失败即中止
+    打包，不再静默跳过。渲染结果缓存在 `build/video_cache/`，`videos.json`、RAGNAROK 的
+    `text_v2.csv` 行、源视频、字体与 ffmpeg 未变时命中缓存。
+  - 注意 payload 是整份 s2a（双写约 **320 MB**；只写 EN 的隔离包省略 `LANG_JA` 后约 **190 MB**；
+    含视频的包再加 `res/MOV.s2a` 约 **160 MB**），命令只做复制、不压缩、不自动打 zip，
+    也不会删除 `dist/` 中不属于本次补丁的其他旧文件。隔离模式的 `build/package_stage/`
+    可随时删除。
 - 还原命令：`python tools/build.py revert`（从 `.bak` 覆盖回原文件）。
 
 ---

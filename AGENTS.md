@@ -204,6 +204,21 @@ Do not implement this as a global removal from `PACKAGE_RES`: staging still need
 isolation assertion. Recipes that write `LANG_JA` (Japanese mirror packages such as
 `Z4-JA` / `E3-JA`, or the dual-write `apply_menu` / `package` path) must keep emitting it.
 
+## Video Merge Integrity (mandatory)
+
+Recipes that call `_apply_z17_video()` (`z17`–`z28`) must never ship a package without
+the translated videos. The intermediate package `dist/Z17-video/` is not tracked by git,
+so when its `res/LANG_EN.s2a` or `res/MOV.s2a` is missing:
+
+- rebuild it automatically from the package currently being built via
+  `tools/package_video_test.py --mode hardsub --base <out_dir> --out-dir dist/Z17-video`;
+- abort the package build (non-zero exit) if rendering fails; never silently skip;
+- reuse `build/video_cache/` (only `--force` may bypass it).
+
+`build_manifest.json` must record `video_merged` for the current build only (never inherit
+a stale `true`), and a build that does not merge video must delete a stale `res/MOV.s2a`
+from its output directory.
+
 ## Review Pipeline Adaptation (mandatory)
 
 Whenever localization scripts are changed to **display more text** or to **protect text
