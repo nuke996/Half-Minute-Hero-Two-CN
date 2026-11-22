@@ -737,6 +737,10 @@ Z22–Z29 新增的 UI/菜单文本。可能出现“菜单项名已译、分组
 `176:441816:3` 与 `974:134632:4`；`validate_build` error 0 / warning 46。
 **2026-11-22 实机确认：巨型果冻怪恢复。**
 
+> 2026-11-22 清理：`EXP-jelly-names / EXP-place-names / EXP-b981 / EXP-b176-msgs /
+> EXP-q16-scripts` 五个临时实验包已删除（可用 `tools/experiment_*.py` 重新生成）；
+> 仅保留 `dist/FIX-jelly-binary/` 作对照。
+
 **正式修复（2026-11-22，已完成）：**
 - 全量审计 61k 行 CSV：按“slot 内无 NUL + 原 run 含 `0xFF`/CP932 解码失败 + 成品被写短”
   判定，当前成品只有 **2 处实际损坏**（row 10494 / 56515）；
