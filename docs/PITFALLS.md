@@ -1627,3 +1627,33 @@ Z29 的全局规则 `王杖→如意棒` 把它一并改成了「<如意棒>」�
 **相关文件：** `tools/fix_terms_round4.py`、`tools/fix_terms_round5.py`（其
 `ROW_PATCHES` 56941 即本次误伤的来源）、`tools/validate_build.py`、
 `docs/LEGACY_REPLACE_MAP.md`、`docs/PACKAGE_LEDGER.md` Z29 追加条目。
+
+---
+
+## 50. 术语音译不能整表替换：道具名 / 脚本标识 / 称号副本必须逐行排除（2026-11-23，Z29）
+
+**背景**：应负责人要求，把故事与 UI 中的 `グリモワール / グリモ` 由意译「魔法书」
+改为音译「格瑞莫瓦尔 / 格瑞莫」。译表里同名原文同时出现在多个不同性质的槽位，
+直接全局替换会连带改到机制层。
+
+**必须排除的槽位（已验证）**：
+
+- 武器道具「Grimoire」：权威行 `row::7402`（b147 off20656）及 20 个名称/说明副本
+  （b99/b318/b357/b713/b736），加获得提示 `row::34043`、图鉴长说明 `ml::804`；
+- `row::32917`（b609 off47564，stride288 **pos28**）：`グリモワール１` 是关卡/剧本
+  标识符，脚本按名比对，属机制名，保留「魔法书1」；
+- `row::53626 / 53629`（b931 stride292 **pos36**）：称号表章节名副本，受
+  `chaptitle` 保护，构建本身保留日文；
+- 4 条 `Intro / Battle of THE 8 GRIMOIRE`（b320 stride492 pos228）：BGM 曲名，保持英文。
+
+**做法**：新增 `tools/fix_terms_grimoire.py`，按 `row_id` 显式排除上表；故事行按日文
+原文区分全称/简称，13 条分句半句（原文半句无术语）按下表归入全称或简称。
+同时删除 `tools/fix_terms.py` 旧的「格瑞莫→魔法书」回洗规则（否则下次运行会撤销），
+并让 `tools/audit_terms.py` 的缩写检查接受「全称/简称互为前缀」。
+
+**结果**：`text_v2.csv` 仅 102 行变化；剩余含「魔法书」的 25 行全部是道具/机制名；
+`ml_zh_fields.json` 8 条变化、1 条道具图鉴保持。
+
+**相关文件：** `tools/fix_terms_grimoire.py`、`tools/fix_terms.py`、
+`tools/audit_terms.py`、`locales/zh-CN/术语表.md` §1/§8/§13.1。
+

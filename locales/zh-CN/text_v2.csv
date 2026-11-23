@@ -1374,7 +1374,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 1372,34,73676,64,32,16,Q33. Long Bridge,Q33．ロングブリッジ,,Q33．长桥
 1373,34,74792,64,32,21,Q34. Flying Mountains,Q34．飛んでくる山々,,Q34．飞来的群山
 1374,34,75908,64,32,9,Q35. QUIZ,Q35．QUIZ,,Q35．问答
-1375,34,77024,64,32,19,Q36. Grimoire Birth,Q36．グリモワール誕生,,Q36．魔法书诞生
+1375,34,77024,64,32,19,Q36. Grimoire Birth,Q36．グリモワール誕生,,Q36．格瑞莫瓦尔诞生
 1376,34,78140,64,32,18,Q37. Crimson World,Q37．クリムゾンワールド,,Q37．深红世界
 1377,34,79256,64,32,14,Q38. Cannoneer,Q38．大砲シューター,,Q38．炮手
 1378,34,80372,64,32,24,Q39. The Crazed Guardian,Q39．狂ったガーディアン,,Q39．疯狂守护者
@@ -2728,7 +2728,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2726,64,3160,64,32,32,We're trapped inside the mirror!,　鏡の中に閉じこめられてしまったわ！」,我们被困在镜子里了！,　我们被困在镜子里了！」
 2727,64,3324,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2728,64,3388,64,32,38,That something like this could happen…,「こんなことができるなんて,像这样的事情会发生……,「竟会发生这种事…
-2729,64,3452,64,32,33,It must be the work of the Grimo!,　きっとグリモがらみなんじゃないかしら」,那一定是格里莫的杰作！,　一定是魔法书搞的鬼！」
+2729,64,3452,64,32,33,It must be the work of the Grimo!,　きっとグリモがらみなんじゃないかしら」,那一定是格里莫的杰作！,　一定是格瑞莫搞的鬼！」
 2730,64,3616,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2731,64,3680,128,64,38,We need to look for a way out of here!,「なんとか脱出する手段を探さなくっちゃ！」,我们需要找到出路！,「得想办法逃出去！」
 2732,64,3972,128,64,62,(The Goddess sure doesn't know how to reflect on her actions…),（とくにハンセイとかはしないんですのね）,（女神一定不知道如何反省她的行为……）,（女神真不懂得反省自己…）
@@ -2780,12 +2780,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2778,64,20552,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2779,64,20616,128,64,46,Way to go! ♪ Looks like we've found a way out!,「やるじゃない♪　道ができたみたいよ」,一条路! ,「干得好！看来找到出路了！」
 2780,64,20908,128,64,31,… Humans are such naive beings.,「・・・人間とはずいぶんと　おめでたいものだ」,… 人类还真是天真。,「… 人类还真是天真。」
-2781,64,21200,128,64,52,You make me feel grateful for being born a Grimoire.,「グリモワールに生まれてこれてよかったぜ」,作为一本魔法书，我真是太感谢你了。,「作为魔法书出生，我挺感谢的。」
+2781,64,21200,128,64,52,You make me feel grateful for being born a Grimoire.,「グリモワールに生まれてこれてよかったぜ」,作为一本魔法书，我真是太感谢你了。,「作为格瑞莫瓦尔出生，我挺感谢的。」
 2782,64,21428,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-2783,64,21492,128,64,8,A Grimo!,「グリモ！」,一本把戏书！,「一本魔法书！」
+2783,64,21492,128,64,8,A Grimo!,「グリモ！」,一本把戏书！,「一本格瑞莫！」
 2784,64,23180,64,32,8,Lux Deus,ルクスデウス,卢克斯迪乌斯,路克斯
-2785,64,23244,64,32,23,Don't call me a Grimo!!,「グリモじゃねえ！！,不许叫我把戏书！！,「别叫我魔法书！！
-2786,64,23308,64,32,35,"I am the 4th Grimoire, <Lux Deus>!!",　オレは第4のグリモワール　<ルクスデウス>！」,我是第四魔典，<Lux Deus>!!,　我是第四本魔法书，<路克斯>！！」
+2785,64,23244,64,32,23,Don't call me a Grimo!!,「グリモじゃねえ！！,不许叫我把戏书！！,「别叫我格瑞莫！！
+2786,64,23308,64,32,35,"I am the 4th Grimoire, <Lux Deus>!!",　オレは第4のグリモワール　<ルクスデウス>！」,我是第四魔典，<Lux Deus>!!,　我是第四本格瑞莫瓦尔，<路克斯>！！」
 2787,64,23472,64,32,8,Lux Deus,ルクスデウス,卢克斯迪乌斯,路克斯
 2788,64,23536,64,32,37,"Wow, you solved <ONE> of the puzzles…",「ふんっ　しかけを<ひとつ>解いたくらいで,哇哦，你搞定了<一个>难题,「哼，不过解开<一个>机关而已，
 2789,64,23600,64,32,35,You must be so proud of yourselves.,　めでたいヤツラだ」,你一定感到很自豪,　真是天真的家伙们。」
@@ -2821,7 +2821,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2819,64,32360,64,32,30,They are not the same at all!!,　全然左右対称になってない！って」,他们完全不一样！！,　它们根本不对称！！」
 2820,64,33172,64,32,29,Uuhh… I don't really want to…,「ええ～　そんなの言いづらいですわ・・・,呃呃…我真是不想去…,「呃… 我真不想去…
 2821,64,33236,64,32,40,But this old woman might know something.,　でも何か情報を知ってるかもしれませんわね」,但是这个老太太可能知道些什么。,　但这老婆婆或许知道点什么。」
-2822,64,37488,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+2822,64,37488,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 2823,64,40180,128,64,10,Excuse me…,「あのぅ」,打扰一下…,「打扰一下…」
 2824,64,40408,64,32,19,Beautiful Old Woman,ビューティおばさん,美丽的女士,漂亮大妈
 2825,64,40472,128,64,11,What is it?,「なんだい？」,这是什么？,「什么事？」
@@ -2865,8 +2865,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2863,64,90404,64,32,55,"This is wonderful! This space is beginning to break up,",「よかったわ　この空間は壊れ始めてるから,真美妙！真个空间已经开始崩坏了，,「太好了！这空间开始破碎
 2864,64,90468,64,32,44,so I think we'll be able to escape safely! ♪,　無事に脱出できそうよ♪」,这么说我可以认为我们能安全逃生了！？,　应该能安全逃出去！」
 2865,64,90632,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-2866,64,90696,64,32,31,But that Grimo sure was stupid.,「でも　あのグリモもバカよね～,不过那魔王倒真是笨。,「但那魔法书真蠢呢～
-2867,64,90760,64,32,24,It was totally clueless…,　わたしたちがグリモをたおすために」,他什么都不知道…,　我们为了打倒魔法书」
+2866,64,90696,64,32,31,But that Grimo sure was stupid.,「でも　あのグリモもバカよね～,不过那魔王倒真是笨。,「但那格瑞莫真蠢呢～
+2867,64,90760,64,32,24,It was totally clueless…,　わたしたちがグリモをたおすために」,他什么都不知道…,　我们为了打倒格瑞莫」
 2868,64,91216,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2869,64,91280,64,32,45,It had no idea that we just pretended to fall,「わ・ざ・と　ワナにかかったフリして,他还不知道，我们只是假装被这陷阱弄倒,「它都不知道我们是<故意>假装中陷阱，
 2870,64,91344,64,32,51,for its trap in order to come here and defeat it. ♪,　この空間に入ったとも知らずに♪」,就是为了来干掉他.,　才进入这空间的♪」
@@ -2879,7 +2879,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2877,64,92512,64,32,59,so I needed you say it was an accident to fool the enemy! ★,　敵をあざむくには　まず勇者からって言うでしょ★」,所以我要你说这是欺骗敌人的一场意外！★,　要骗敌人，当然得先从勇者骗起嘛★」
 2878,64,93032,128,64,40,So the Hero needed to be fooled first? …,「勇者が先にだまされますの？・・・」,就是说，英雄必须得先被耍？…,「所以得先骗过勇者？…」
 2879,64,93260,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-2880,64,93324,64,32,43,To defeat a special Grimo such as this one…,「こんなとくしゅなグリモをやっつけたことだし,为了打败着么一个特殊的魔王，,「既然打败了这么特殊的魔法书，
+2880,64,93324,64,32,43,To defeat a special Grimo such as this one…,「こんなとくしゅなグリモをやっつけたことだし,为了打败着么一个特殊的魔王，,「既然打败了这么特殊的格瑞莫，
 2881,64,93388,64,32,60,is it not appropriate to take whatever measure is necessary?,　どこかの道を開くきっかけになってるんじゃない？」,难道就不该用些手段么？,　说不定会成为开启某条道路的契机？」
 2882,64,93552,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2883,64,93616,64,32,31,"Anyway, pull yourself together!",「さー　気を取り直して,无论如何，你要振作起来！,「总之打起精神，
@@ -9035,10 +9035,10 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9033,168,6016,64,32,61,Sorry to burst your bubble while you're befuddled by romance…,「・・・うん　そうね　セーシュン中に悪いんだけど,很抱歉在你为爱痴狂的时候打断的妄想...,「虽说打扰你的青春不太好…
 9034,168,6080,64,32,58,but never mind that! We have bigger fish to fry right now!,　そんなことよりタイヘンなことが起こってるわ！」,但是别管这个了！我们现在有更重要的事！,　但比起那个，现在出了大事！」
 9035,168,6244,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9036,168,6308,128,64,46,The Grimo has merged with the Imperial Castle!,「グリモが皇帝城と同化しちゃったのよ！」,格里莫已经占领了皇家城堡！,「魔法书已经和皇宫融为一体了！」
+9036,168,6308,128,64,46,The Grimo has merged with the Imperial Castle!,「グリモが皇帝城と同化しちゃったのよ！」,格里莫已经占领了皇家城堡！,「格瑞莫已经和皇宫融为一体了！」
 9037,168,6536,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9038,168,6600,64,32,45,We have no choice but to go inside and defeat,「もう中に入って城を操ってる,我们只能进去然后从正面打败,「我们只能进去打败
-9039,168,6664,64,32,41,the Grimo controlling the castle head on!,　グリモをちょくせつやっつけるしかないわね！」,控制皇家城堡的格里莫人了！,　控制皇宫的魔法书！」
+9039,168,6664,64,32,41,the Grimo controlling the castle head on!,　グリモをちょくせつやっつけるしかないわね！」,控制皇家城堡的格里莫人了！,　控制皇宫的格瑞莫！」
 9040,168,6828,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9041,168,6892,128,64,5,… Oh?,「・・・あら？」,...噢？,「…哦？」
 9042,168,7412,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -9055,17 +9055,17 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9053,168,11564,128,64,53,The Imperial Castle appears to have <four entrances>.,「皇帝城には<４つの入口>があるみたい」,皇家城堡似乎有<四个入口>。,「皇宫似乎有<四个入口>。」
 9054,168,11792,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9055,168,11856,64,32,44,"Maybe that area that looks like a head. Hmm,",「たぶん皇帝城の頭っぽい場所・・・,也许是那个看起来像脑袋的地方.嗯，,「也许是皇宫那个像脑袋的地方。嗯，
-9056,168,11920,64,32,58,I think the Grimo is likely using the <northern entrance>…,　<北の入口>からグリモに通じてると思うんだけど・・・」,我认为格里莫可能会使用<北面的入口>...,　我觉得魔法书可能在用<北面入口>…」
+9056,168,11920,64,32,58,I think the Grimo is likely using the <northern entrance>…,　<北の入口>からグリモに通じてると思うんだけど・・・」,我认为格里莫可能会使用<北面的入口>...,　我觉得格瑞莫可能在用<北面入口>…」
 9057,168,12084,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9058,168,12148,128,64,41,Don't let impatience get the best of you.,「でも　アセリは禁物よっ」,不要让烦躁占据你的内心,「可别让急躁占了上风。」
 9059,168,12376,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9060,168,12440,64,32,43,You need to plan ahead for both boss fights,「ボスとのたたかいと,你要提前为BOSS战,「头目战和花钱，
 9061,168,12504,64,32,22,and financial matters!,　お金の使い方はケーカク的にね！！」,和经济问题做计划!,　都要有计划性哦！！」
-9062,168,16172,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+9062,168,16172,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 9063,168,18800,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9064,168,18864,128,64,37,So this is what the interior is like…,「中はこんな風になっているのね・・・」,原来内部是这个样子...,「原来内部是这个样子…」
 9065,168,19384,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9066,168,19448,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的魔法书！
+9066,168,19448,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的格瑞莫！
 9067,168,19512,64,32,45,It looks like we can reach it from the north…,　北から行けるみたいだけど・・・」,我们应该能从北边到达那里...,　看来我们能从北边到达那里…」
 9068,168,20260,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9069,168,20324,64,32,48,It's protected by an <extremely strong barrier>!,「<超強力なバリア>に守られているわ,它被一个<极度强大的屏障>保护起来了！,「它被<极强结界>守护着，
@@ -9094,7 +9094,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9092,168,27852,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9093,168,27916,128,64,37,So this is what the interior is like…,「中はこんな風になっているのね・・・」,原来内部是这个样子...,「原来内部是这个样子…」
 9094,168,28436,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9095,168,28500,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的魔法书！
+9095,168,28500,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的格瑞莫！
 9096,168,28564,64,32,45,It looks like we can reach it from the north…,　北から行けるみたいだけど・・・」,我们应该能从北边到达那里...,　看来我们能从北边到达那里…」
 9097,168,29312,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9098,168,29376,64,32,48,It's protected by an <extremely strong barrier>!,「<超強力なバリア>に守られているわ,它被一个<极度强大的屏障>保护起来了！,「它被<极强结界>守护着，
@@ -9119,7 +9119,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9117,168,35736,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9118,168,35800,128,64,37,So this is what the interior is like…,「中はこんな風になっているのね・・・」,原来内部是这个样子...,「原来内部是这个样子…」
 9119,168,36320,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9120,168,36384,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的魔法书！
+9120,168,36384,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，吞了皇宫的格瑞莫！
 9121,168,36448,64,32,45,It looks like we can reach it from the north…,　北から行けるみたいだけど・・・」,我们应该能从北边到达那里...,　看来我们能从北边到达那里…」
 9122,168,37196,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9123,168,37260,64,32,48,It's protected by an <extremely strong barrier>!,「<超強力なバリア>に守られているわ,它被一个<极度强大的屏障>保护起来了！,「它被<极强结界>守护着，
@@ -9132,7 +9132,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9130,168,41576,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9131,168,41640,128,64,37,So this is what the interior is like…,「中はこんな風になっているのね・・・」,原来内部是这个样子...,「原来内部是这个样子…」
 9132,168,42160,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9133,168,42224,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，和皇帝城同化了的魔法书！
+9133,168,42224,64,32,56,Ah! This is the Grimo that absorbed the Imperial Castle!,「あ！　コイツが皇帝城と同化したグリモよ！,啊！这就是那个占领了皇家城堡的格里莫！,「啊！就是这家伙，和皇帝城同化了的格瑞莫！
 9134,168,42288,64,32,37,It looks like we get there from here…,　ここから行けるみたいだけど・・・」,看起来我们能从这到那去...,　看来能从这儿过去…」
 9135,168,43036,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9136,168,43100,64,32,48,It's protected by an <extremely strong barrier>!,「<超強力なバリア>に守られているわ,它被一个<极度强大的屏障>保护起来了！,「它被<极强结界>守护着，
@@ -9148,14 +9148,14 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9146,168,44496,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9147,168,44560,128,64,27,The room's barrier is gone!,「部屋のバリアが消えてるわ」,这个房间的屏障消失了！,「房间的结界消失了！」
 9148,168,44788,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9149,168,44852,128,64,39,All that's left is to defeat the Grimo!,「さぁ後はグリモをたおすだけよ」,剩下的只有解决格里莫了！,「接下来只需击败魔法书了！」
+9149,168,44852,128,64,39,All that's left is to defeat the Grimo!,「さぁ後はグリモをたおすだけよ」,剩下的只有解决格里莫了！,「接下来只需击败格瑞莫了！」
 9150,168,51796,192,96,11,HP Restored,ＨＰが回復,HP恢复,HP恢复
 9151,168,53256,192,96,11,HP Restored,ＨＰが回復,HP恢复,HP恢复
 9152,168,54716,192,96,11,HP Restored,ＨＰが回復,HP恢复,HP恢复
 9153,168,56176,192,96,11,HP Restored,ＨＰが回復,HP恢复,HP恢复
 9154,168,59096,192,96,28,The barrier has been lifted!,バリアを解除した！,屏障被移除了！,结界已解除！
 9155,168,63476,192,96,28,The barrier has been lifted!,バリアを解除した！,屏障被移除了！,结界已解除！
-9156,168,72300,128,64,35,We finally defeated all the Grimos…,「結局　グリモ全部たおしてしまいましたわ・・・」,我们终于打败了所有的格里莫...,「我们终于把魔法书全打败了…」
+9156,168,72300,128,64,35,We finally defeated all the Grimos…,「結局　グリモ全部たおしてしまいましたわ・・・」,我们终于打败了所有的格里莫...,「我们终于把格瑞莫全打败了…」
 9157,168,72592,64,32,26,… Where in the world could,「・・・皇帝は一体どこに,...邪皇到底,「…皇帝到底在
 9158,168,72656,64,32,16,the Emperor be??,　行ってしまったんですの？？」,在哪里？？,　哪里？？」
 9159,168,73468,128,64,25,!! What is this shaking!?,「！！　なんですのこのゆれ！？」,！！什么东西在抖！？,「！！这是什么在震动！？」
@@ -9177,7 +9177,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 9175,168,98288,64,32,37,Only Goddesses are supposed to float!,「浮かんでいいのは　女神さまオンリーよ！,应该只有女神才会漂浮的！,「只有女神才该漂浮！
 9176,168,98352,64,32,46,"No matter how you look at it, this is bizarre!",　どう考えても　これは異常事態なの！！」,不管你怎么看，这都太诡异了！,　不管怎么看，这都是异常情形！」
 9177,168,98516,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-9178,168,98580,64,32,41,What did that disgusting Grimo say again?,「さっきのキモいグリモが言ってたでしょ？,那个恶心的格里莫又说什么了？,「那个恶心的魔法书刚说了什么来着？
+9178,168,98580,64,32,41,What did that disgusting Grimo say again?,「さっきのキモいグリモが言ってたでしょ？,那个恶心的格里莫又说什么了？,「那个恶心的格瑞莫刚说了什么来着？
 9179,168,98644,64,32,58,Something like the Timestream is flowing into the Emperor!,　タイムストリームが皇帝の元に流れてるって」,说点类似于事件流正在流向邪皇什么的！,　说什么时之流正流向皇帝！」
 9180,168,98808,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 9181,168,98872,64,32,42,"That bothered me, so I looked around a bit",「気になったから　タイムストリームの,那让我很困扰，所以我调查了一下,「那让我在意，于是我稍微查了查
@@ -12473,7 +12473,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12472,215,5724,64,32,37,My superiority over you will be clear,「ワタクシがアナタより上だということを,在这场比赛之后，,「我比你更胜一筹这件事
 12473,215,5788,64,32,22,after this next match.,　次の勝負で明らかにしてあげるわ」,就可以清楚地表现我比你更优越了。,　下一场比试后就会明白。」
 12474,215,6308,128,64,51,I don't have time to play games with you right now!,「今はアテナと勝負してる場合じゃないんですの！」,我没有时间玩游戏现在和你在一起！,「现在可不是跟雅典娜比试的时候！」
-12475,215,6600,64,32,33,I need to meet with the <Emperor>,「暴れまわっているグリモを止めるために,我要与<皇帝>见面,「为了阻止到处肆虐的魔法书，
+12475,215,6600,64,32,33,I need to meet with the <Emperor>,「暴れまわっているグリモを止めるために,我要与<皇帝>见面,「为了阻止到处肆虐的格瑞莫，
 12476,215,6664,64,32,47,and talk about how to stop the rampaging Grimo!,　<皇帝>に会いにいかないといけませんの！」,病谈谈如何停止狂暴格里莫！,　我必须去见<皇帝>！」
 12477,215,7120,64,32,6,Athena,アテナ,雅典娜,雅典娜
 12478,215,7184,128,64,35,The Emperor… Do you mean my father?,「皇帝って・・・それってワタクシのお父様のこと？」,皇帝...你的意思是我的父亲吗？,「皇帝……你说的，是我父亲吗？」
@@ -12485,7 +12485,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12484,215,8580,64,32,6,Athena,アテナ,雅典娜,雅典娜
 12485,215,8644,128,64,58,I know! You'll declare that we're enemies in all respects.,「そう・・・名実ともにワタクシの敵になるってことね！」,我知道了！你会宣称我们在各方面都是敌人。,「我明白了！你是要名正言顺地当我敌人。」
 12486,215,9228,64,32,36,What!? Are you for real!? All I want,「ええっ　そんな！　わたくしはただ,什么！？你是认真的吗！？我只是想要,「什么！？你开玩笑吧！？我只是想
-12487,215,9292,64,32,27,is help stopping the Grimo…,　グリモさえ止めてもらえれば・・・」,帮忙阻止格里莫 ...,　有人帮忙阻止魔法书就好……」
+12487,215,9292,64,32,27,is help stopping the Grimo…,　グリモさえ止めてもらえれば・・・」,帮忙阻止格里莫 ...,　有人帮忙阻止格瑞莫就好……」
 12488,215,9748,64,32,6,Athena,アテナ,雅典娜,雅典娜
 12489,215,9812,128,64,26,Shut up! Shut up! Shut up!,「うるさいうるさいうるさい！」,闭嘴！闭嘴！闭嘴！,「住口！住口！住口！」
 12490,215,10040,64,32,6,Athena,アテナ,雅典娜,雅典娜
@@ -12509,7 +12509,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12508,215,18800,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 12509,215,18864,128,64,47,"… Though it may not seem like it at the moment,",「・・・今はそれどころじゃなさそうだけど」,...虽然它现在看起来不像那么回事，,「……不过现在看来，是顾不上那个了。」
 12510,215,19092,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-12511,215,19156,64,32,32,"this one, too, has malfunctioned",「アイツもグリモのせいで,这个，也因为与格里莫接触,「这家伙也是因为魔法书
+12511,215,19156,64,32,32,"this one, too, has malfunctioned",「アイツもグリモのせいで,这个，也因为与格里莫接触,「这家伙也是因为格瑞莫
 12512,215,19220,64,32,38,from coming in contact with the Grimo.,　バグっちゃったのかしらねぇ」,而出现了故障。,　才出故障的吧。」
 12513,215,19384,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 12514,215,19448,64,32,56,"It may be a locomotive with a scary face attached to it,",「機関車にコワイ顔をつけただけみたいに見えるけど,这也许是一辆有着可怕的脸的火车，,「它看着像只是给火车头装了张吓人面孔，
@@ -12630,7 +12630,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12629,215,73112,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 12630,215,73176,128,64,26,"Good work, <EVO_NAME__>! ▼",「おつかれさま　<EVO_NAME__>ちゃん▼」,"干得好, <EVO_NAME__>! ▼",「辛苦了，<EVO_NAME__>！▼」
 12631,215,73404,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-12632,215,73468,64,32,37,It looks like the Grimo aren't alone…,「グリモだけじゃなくて　魔王兵器も,看起来格里莫并不孤单...,「不只是魔法书，
+12632,215,73468,64,32,37,It looks like the Grimo aren't alone…,「グリモだけじゃなくて　魔王兵器も,看起来格里莫并不孤单...,「不只是格瑞莫，
 12633,215,73532,64,32,44,The Evil Lord Weapons are also running amok!,　こんなふうに各地で暴れているのねぇ」,邪恶领主武器也是杀气腾腾的！,　魔王兵器也在各处这样横行呢」
 12634,215,73696,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 12635,215,73760,128,64,37,We can't let this continue like this.,「このまんまじゃ　マズいわよね～」,我们不能让这种情况继续下去。,「这样下去可不行啊～」
@@ -13463,7 +13463,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13462,237,12732,128,64,34,"Go forth and rampage, Frogross G1!",「さあ好きに暴れてこいフログロスG１！」,上吧，尽管爆发吧，,「去肆意暴走吧，蛙怪G1！」
 13463,237,12960,64,32,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
 13464,237,13024,64,32,59,"It may take time, but even if I have to turn this continent",「めんどうだが　この大陸をさらちにしてからでも,这个可能需要时间 ，但是我要不得不把这块大陆变成不毛之地，,「虽然麻烦，但就算把这块大陆
-13465,237,13088,64,32,48,"into a wasteland, I'll find that Chrono Crystal.",　クロノクリスタルを探せば済むことだ」,我就能找到计时水晶了。,　变成荒野，我也要找出时之水晶。」
+13465,237,13088,64,32,48,"into a wasteland, I'll find that Chrono Crystal.",　クロノクリスタルを探せば済むことだ」,我就能找到计时水晶了。,　变成荒野，我也要找出计时水晶。」
 13466,237,13252,64,32,11,Frogross G1,フログロスG１,恶心青蛙G1,弗洛格G1
 13467,237,13316,128,64,20,Understood. *ribbit*,「リョ　リョウカイゲコ」,明白。*呱呱*,「明白。*呱*」
 13468,237,17696,64,32,43,The long-awaited school festival is here. ★,「待ちに待った学園祭がやって来ましたわ★,期待已久的学校音乐节开幕了。★,「期盼已久的学院祭来了。★
@@ -14754,7 +14754,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 14753,282,52444,64,32,20,An Imperial General!,「帝国の将軍がなんてことを！,一位帝国将军！,「帝国的将军竟做出这种事！
 14754,282,52508,64,32,43,What do you intend to do with the academy!?,　学園をどうするつもりですの！？」,你打算对学院做什么！？,　你到底想把学院怎么样！？」
 14755,282,52964,64,32,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
-14756,282,53028,64,32,36,"As long as I get the Chrono Crystal,",「クロノクリスタルさえ手に入れば,只要我能得到时空水晶，,「只要能拿到时空水晶，
+14756,282,53028,64,32,36,"As long as I get the Chrono Crystal,",「クロノクリスタルさえ手に入れば,只要我能得到时空水晶，,「只要能拿到计时水晶，
 14757,282,53092,64,32,41,I don't care what happens to the academy!,　こんな学園などに用などないわ！」,我才不在乎学院怎么样呢！,　这种学院怎样我才不在乎！」
 14758,282,53904,64,32,16,"Aaaaah, my gem!!",「ああああっ　わたくしの宝石！！,啊，我的宝石！！,「啊啊啊，我的宝石！！
 14759,282,53968,64,32,13,Give it back!,　返してください！」,还给我！,　还给我！」
@@ -16838,7 +16838,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16837,318,122232,128,64,57,I'll continue my research even if I turn into a tentacle!,「しょくしゅになっても　研究をつづけるんじゃ！」,即使我变成触手，我也会继续我的研究！,「就算变触手也要钻研！」
 16838,318,122752,64,32,11,Researcher?,研究員？,研究员？,研究员？
 16839,318,122816,64,32,37,… You guys actually managed to defeat,「・・・まさかあんたら　グリモワールを,……你们这些家伙真的,「……没想到你们竟然
-16840,318,122880,64,32,22,that Grimoire for me!!,　たおしてくれたんか！！」,为了我击败了那个魔典！！,　把那本魔法书打倒了！！」
+16840,318,122880,64,32,22,that Grimoire for me!!,　たおしてくれたんか！！」,为了我击败了那个魔典！！,　把那本格瑞莫瓦尔打倒了！！」
 16841,318,124212,64,32,6,Nanako,ナナコ,奈奈子,奈奈子
 16842,318,124276,128,64,9,Grandpa!!,「おじいちゃんっ！！」,爷爷！！,「爷爷！！」
 16843,318,124860,128,64,30,Eh!? This imperial researcher?,「えっ！？　この帝国の研究員が？」,哎！？这是帝国研究研究吗？,「咦！？这帝国研究员？」
@@ -16853,12 +16853,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16852,318,126092,64,32,32,And started doing research here.,　ここで研究しとったんじゃ」,于是开始在这里做研究。,　就在这儿搞研究。」
 16853,318,126256,64,32,6,Nanako,ナナコ,奈奈子,奈奈子
 16854,318,126320,64,32,35,What was that thing we just faced!?,「さっきのあれは何！？,我们面对的那个东西是什么！？,「刚才那东西是什么！？
-16855,318,126384,64,32,25,You called it a Grimoire?,　グリモワールってなんなの？」,你叫它魔典？,　魔法书又是什么玩意儿？」
+16855,318,126384,64,32,25,You called it a Grimoire?,　グリモワールってなんなの？」,你叫它魔典？,　格瑞莫瓦尔又是什么玩意儿？」
 16856,318,126548,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16857,318,126612,64,32,39,"Hmm. It's supposed to be a secret, but…",「うむぅ　これはヒミツなんじゃが・・・,嗯。我本来应该保守秘密，但是……,「唔，这原是机密，但…
 16858,318,126676,64,32,55,"With the Empire no longer here, I guess I can tell you.",　皇帝は逃げてしまいおったし　いいじゃろう」,因为帝国已经不在了，所以我想我可以告诉你。,　皇帝已逃，告诉你无妨。」
 16859,318,126840,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
-16860,318,126904,64,32,33,"When I investigated the Grimoire,",「<グリモワール>とは　かつて地上を襲った,当我调查魔典的时候，,「所谓<魔法书>，是把过去袭击大地的
+16860,318,126904,64,32,33,"When I investigated the Grimoire,",「<グリモワール>とは　かつて地上を襲った,当我调查魔典的时候，,「所谓<格瑞莫瓦尔>，是把过去袭击大地的
 16861,318,126968,64,32,40,Evil Lords that once attacked our world…,　魔王たちのことをしらべあげて・・・」,那个曾经攻击我们世界的邪恶领主是……,　那些魔王彻底调查之后……」
 16862,318,127132,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16863,318,127196,64,32,56,I learned that they were <artificial Evil Lords> made by,「人間が作りだした　<人造魔王>のことじゃ」,我了解到了他们是用人类制成的,「我方知他们是人所造的<人造魔王>」
@@ -16870,22 +16870,22 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16869,318,128364,64,32,57,The Evil Lord Weapons created during the research process,「研究過程で生みだした魔王兵器は,在研究过程中制造的邪恶领主武器,「研究途中诞生的魔王兵器
 16870,318,128428,64,32,31,were mostly a success. However…,　まあ成功だったんじゃが・・・」,大多都很成功。但是……,　大体算是成功。不过…」
 16871,318,128592,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
-16872,318,128656,128,64,38,The Grimoires were a massive failure!!,「しかし　グリモワールは大失敗じゃっ！！」,魔典是一个巨大的失败！！,「唯独魔法书是大失败！！」
+16872,318,128656,128,64,38,The Grimoires were a massive failure!!,「しかし　グリモワールは大失敗じゃっ！！」,魔典是一个巨大的失败！！,「唯独格瑞莫瓦尔是大失败！！」
 16873,318,128884,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16874,318,128948,64,32,49,"They all went on a rampage, like the one you saw,",「さっきのやつのように暴走して,他们都发狂了，正如你看到的那样，,「它们皆如方才那般暴走，
 16875,318,129012,64,32,29,and went their separate ways.,　全部逃げてしまったわい」,他们都分散逃离了。,　各自逃散了。」
 16876,318,129240,128,64,32,There are more of those things!?,「他にもいるんですのっ！？」,有很多这样的东西！？,「竟还有同类！？」
 16877,318,129468,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
-16878,318,129532,64,32,35,That's right. And the Grimoires all,「そうじゃ　グリモワールたちは,没错。而且魔典的身体里,「正是。且众魔法书皆
+16878,318,129532,64,32,35,That's right. And the Grimoires all,「そうじゃ　グリモワールたちは,没错。而且魔典的身体里,「正是。且众格瑞莫瓦尔皆
 16879,318,129596,64,32,45,have Destruction Systems inside their bodies.,　体内にハメツシステムをつんでおる」,都有着自毁系统。,　体内藏有自毁系统。」
 16880,318,129760,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16881,318,129824,128,64,55,They are too dangerous to be left to their own devices.,「放置しておくにはあまりにキケンな存在じゃ」,如果他们自己可以控制自毁设备，那就太危险了。,「放任不管实在太凶险。」
 16882,318,130408,64,32,22,"As the Hero that I am,",「勇者なわたくしとしては,我作为一名英雄，,「身为勇者的我，
 16883,318,130472,64,32,40,I will not rest until they're destroyed!,　そんなものを放置できませんわ！」,在摧毁他们之前是不会休息的！,　可不能放着它们不管！」
-16884,318,130700,128,64,30,Let's go after the Grimoires!!,「グリモワールを追いましょうっ！！」,咱们去追踪魔典吧！！,「去追击魔法书吧！！」
+16884,318,130700,128,64,30,Let's go after the Grimoires!!,「グリモワールを追いましょうっ！！」,咱们去追踪魔典吧！！,「去追击格瑞莫瓦尔吧！！」
 16885,318,130928,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16886,318,130992,64,32,29,Oh!! What a brave young lady!,「おおっ！！　ゆうかんな　おじょうさんじゃ,噢！！真是个勇敢的小女孩！,「噢！！好勇敢的少女，
-16887,318,131056,64,32,45,You've already defeated one of the Grimoires.,　すでにグリモワールを１体たおしたんじゃったな」,你已经击败了一个魔典。,　你已打倒过一本魔法书。」
+16887,318,131056,64,32,45,You've already defeated one of the Grimoires.,　すでにグリモワールを１体たおしたんじゃったな」,你已经击败了一个魔典。,　你已打倒过一本格瑞莫瓦尔。」
 16888,318,131220,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16889,318,131284,128,64,43,I hope you're able to get the rest of them.,「ぜひともがんばってくれい」,我希望你可以把它们都干掉。,「请你务必加油啊。」
 16890,318,131804,64,32,6,Nanako,ナナコ,奈奈子,奈奈子
@@ -16896,15 +16896,15 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16895,318,132680,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 16896,318,132744,128,64,24,Take care of yourselves.,「おまえも気をつけるんじゃぞ」,好好保重。,「你也要保重。」
 16897,318,136184,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-16898,318,136248,128,64,40,… So we're going to fight the Grimoires?,「・・・グリモワールとたたかうのね？」,……这么说我们要去和魔典战斗了吗？,「…那么要去对抗魔法书？」
+16898,318,136248,128,64,40,… So we're going to fight the Grimoires?,「・・・グリモワールとたたかうのね？」,……这么说我们要去和魔典战斗了吗？,「…那么要去对抗格瑞莫瓦尔？」
 16899,318,136476,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 16900,318,136540,128,64,41,"That, of course, is what a hero would do.",「勇者としてはそうなるわよね～」,当然了，这才是英雄应该做的事情。,「那自是勇者该做的。」
 16901,318,136768,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 16902,318,136832,64,32,44,It appears that the Chrono Crystals are also,「クロノクリスタルも　そのグリモワールの体内に,貌似魔典的身体中也,「似乎计时水晶亦
-16903,318,136896,64,32,39,embedded in the bodies of the Grimoire…,　うめこまれちゃってるみたいだし・・・」,植入了计时水晶……,　嵌在那魔法书体内…」
+16903,318,136896,64,32,39,embedded in the bodies of the Grimoire…,　うめこまれちゃってるみたいだし・・・」,植入了计时水晶……,　嵌在那格瑞莫瓦尔体内…」
 16904,318,137060,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 16905,318,137124,64,32,27,"Anyway, I looked into where",「一応ね　グリモワールたちが,总之，我查了查,「总之我查探了
-16906,318,137188,64,32,26,the Grimoires flew off to.,　どこに飛んでくか見てたんだけど」,魔典可能逃窜的地方。,　众魔法书飞向何方。」
+16906,318,137188,64,32,26,the Grimoires flew off to.,　どこに飛んでくか見てたんだけど」,魔典可能逃窜的地方。,　众格瑞莫瓦尔飞向何方。」
 16907,318,137352,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 16908,318,137416,64,32,47,Not a single one of them flew to the continents,「わたしたちがいままでに渡ってきた大陸の方には,他们没有一个飞去了我们,「我们至今走过的那些大陆，
 16909,318,137480,64,32,24,we've visited up to now…,　一匹も飛んで行かなかったわ・・・」,目前已经去过的大陆……,　一只都没有飞过去……」
@@ -25499,7 +25499,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25500,444,6220,64,32,28,Ha ha ha! Laugh if you will!,「グハハ　わらうがいい,哈哈哈！你笑得出来吗！,「哈哈哈！要笑尽管笑，
 25501,444,6284,64,32,40,I've been double-crossed by the Emperor!,　皇帝陛下に裏切られ！」,我被皇帝出卖了！,　我被皇帝背叛了！」
 25502,444,6444,64,32,19,Dark General Gustaf,魔将グスタフ,黑暗将军古斯塔夫,魔将古斯塔夫
-25503,444,6508,64,32,36,The Disgusting Grimoire has given me,「果ては気色悪いグリモワールに,这本恶心的魔法书给了我,「到头来被那本恶心的魔法书
+25503,444,6508,64,32,36,The Disgusting Grimoire has given me,「果ては気色悪いグリモワールに,这本恶心的魔法书给了我,「到头来被那本恶心的格瑞莫瓦尔
 25504,444,6572,64,32,28,"this regrettable appearance,",　取り込まれ　こんなスガタにされてしまったんだ」,这令人惋惜的外表，,　吞噬，变成了这副模样。」
 25505,444,6732,64,32,19,Dark General Gustaf,魔将グスタフ,黑暗将军古斯塔夫,魔将古斯塔夫
 25506,444,6796,64,32,27,but the power in this body…,「だが　この体に満ちる力は,但身体里面的力量……,「但这具身体的力量……
@@ -25523,10 +25523,10 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25524,444,10540,128,64,35,"I was a little unprepared, you see.",「少しユダンしてましたねぇ」,你看，我还没准备好。,「你瞧，我有点大意了。」
 25525,444,10764,64,32,20,Dark General Richter,魔将リヒター,黑暗将军里克特,魔将里希特
 25526,444,10828,64,32,35,The Emperor unknowingly surrendered,「まさか知らずに皇帝が城を,皇帝在不知不觉中投降了,「皇帝在不知情下把城堡
-25527,444,10892,64,32,43,"the Castle to the Grimoire, to my surprise.",　グリモワールにあけわたしていたとは」,城堡竟然属于魔法书。,　交给魔法书了，真没想到。」
+25527,444,10892,64,32,43,"the Castle to the Grimoire, to my surprise.",　グリモワールにあけわたしていたとは」,城堡竟然属于魔法书。,　交给格瑞莫瓦尔了，真没想到。」
 25528,444,11052,64,32,20,Dark General Richter,魔将リヒター,黑暗将军里克特,魔将里希特
 25529,444,11116,64,32,34,"Because of that, my beautiful body",「おかげでビューティフルな私は,就是因为这样，我美丽的身体,「害得我美丽的身躯
-25530,444,11180,64,32,29,was captured by the Grimoire!,　グリモワールに取り込まれてこんなですよ♪」,被城堡困住了！,　被魔法书吞噬成这般模样了。」
+25530,444,11180,64,32,29,was captured by the Grimoire!,　グリモワールに取り込まれてこんなですよ♪」,被城堡困住了！,　被格瑞莫瓦尔吞噬成这般模样了。」
 25531,444,11340,64,32,20,Dark General Richter,魔将リヒター,黑暗将军里克特,魔将里希特
 25532,444,11404,64,32,30,"Young lady, won't you help me?",「おじょうさん　私を助けてくれませんか？,年轻的女士，你能帮助我吗？,「小姐，能帮帮我吗？
 25533,444,11468,64,32,36,"With that beautiful, untainted body…",　そのキレイなままの体を・・・」,用你这具美丽，没有污点的身体……,　用你那纯净美好的身体……」
@@ -25568,7 +25568,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25569,444,80236,128,64,22,"Wha, what's so funny!?",「なっ　何がおかしいんですの！？」,哇，什么事这么好笑！？,「什、什么这么好笑！？」
 25570,444,80460,64,32,7,Spelvia,スペルヴィア,司陪维亚,斯佩维
 25571,444,80524,64,32,24,It's ironic that just as,「オカシイに決まっている,讽刺的是我们,「当然好笑了，
-25572,444,80588,64,32,18,we Grimoires were…,　ワタシタチ　グリモワールも」,就象是魔法书一样……,　我们魔法书也是……」
+25572,444,80588,64,32,18,we Grimoires were…,　ワタシタチ　グリモワールも」,就象是魔法书一样……,　我们格瑞莫瓦尔也是……」
 25573,444,80748,64,32,7,Spelvia,スペルヴィア,司陪维亚,斯佩维
 25574,444,80812,64,32,41,"you, too, were being used by the Emperor…",「オマエも皇帝に利用されていたことが,你，也被皇帝利用了。,「你也被皇帝利用了
 25575,444,80876,64,32,22,I understand that now.,　わかったノダカラ」,我现在理解了。,　我现在明白了。」
@@ -25580,7 +25580,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25581,444,81676,64,32,13,That's right!,「！！　そうですわっ,对啊！,「！！　对呀，
 25582,444,81740,64,32,25,"The Emperor, where is he?",　皇帝は一体どこにいますの？」,皇帝，他在哪？,　皇帝到底在哪？」
 25583,444,81964,64,32,25,"We came here to meet him,",「皇帝に会うためにここまで来ましたのに,我们就是来找他的，,「我们是为了见他才来的，
-25584,444,82028,64,32,34,but we found the Grimoire instead…,　結局いたのはグリモだなんて・・・」,结果找到了魔法书……,　结果却只找到魔法书……」
+25584,444,82028,64,32,34,but we found the Grimoire instead…,　結局いたのはグリモだなんて・・・」,结果找到了魔法书……,　结果却只找到格瑞莫……」
 25585,444,82188,64,32,7,Spelvia,スペルヴィア,司陪维亚,斯佩维
 25586,444,82252,128,64,31,You'll understand… Soon enough…,「今にワカル・・・スグワカル・・・」,很快你就会了解的……,「你会明白的……很快……」
 25587,444,82476,64,32,7,Spelvia,スペルヴィア,司陪维亚,斯佩维
@@ -26967,7 +26967,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 26969,478,19220,64,32,31,that the Empire is collecting??,　宝石の名前はなんでしょう？？」,叫什么名字？？,　宝石叫什么名字？？」
 26970,478,19384,64,32,15,Richter's Voice,リヒターの声,里克特的声音,里希特的声音
 26971,478,19448,64,32,18,1 Castle Crystals.,「1　シロノクリスタル,1 城堡水晶,「1 城堡水晶，
-26972,478,19512,64,32,18,2 Chrono Crystals.,　2　クロノクリスタル」,2 计时器水晶,　2 时之水晶。」
+26972,478,19512,64,32,18,2 Chrono Crystals.,　2　クロノクリスタル」,2 计时器水晶,　2 计时水晶。」
 26973,478,20552,64,32,15,Richter's Voice,リヒターの声,里克特的声音,里希特的声音
 26974,478,20616,128,64,37,"If you think it's 1, enter this gate.",「1だと思うならこちらのゲートを」,如果你认为答案是1，进入这个门。,「觉得是1就进这扇门。」
 26975,478,21136,64,32,15,Richter's Voice,リヒターの声,里克特的声音,里希特的声音
@@ -28404,12 +28404,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28406,497,16172,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28407,497,16236,128,64,37,"We've already found it, <EVO_NAME__>!",「さっそく見つけたわ！　<EVO_NAME__>ちゃん」,我们已经发现了它，<EVO_NAME__> ！,「已经找到了，<EVO_NAME__>！」
 28408,497,16464,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-28409,497,16528,64,32,31,That must be the next Grimoire!,「あれが次のグリモワールってわけね！,那一定是下一个魔典！,「那定是下一本魔法书！
+28409,497,16528,64,32,31,That must be the next Grimoire!,「あれが次のグリモワールってわけね！,那一定是下一个魔典！,「那定是下一本格瑞莫瓦尔！
 28410,497,16592,64,32,50,Its Destruction System has already been activated!,　しかもハメツシステムを発動させたわ」,摧毁系统已被激活！,　而且毁灭系统已启动！」
 28411,497,16756,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28412,497,16820,128,64,32,We have 30 seconds to defeat it!,「あと30秒の間にアイツをたおさないと！」,我们有30秒时间来战胜它！,「我们只有30秒击败它！」
 28413,497,17340,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-28414,497,17404,128,64,43,"By the way, the Grimoire is in this castle.",「ちなみにグリモワールはここのお城にいるわよ」,顺便说一句，魔典在这个城堡中。,「顺便，魔法书就在这座城里。」
+28414,497,17404,128,64,43,"By the way, the Grimoire is in this castle.",「ちなみにグリモワールはここのお城にいるわよ」,顺便说一句，魔典在这个城堡中。,「顺便，格瑞莫瓦尔就在这座城里。」
 28415,497,17632,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28416,497,17696,128,64,8,However…,「でもねぇ・・・」,不过...,「不过…」
 28417,497,18216,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -28426,7 +28426,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28428,497,19968,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28429,497,20032,64,32,39,<EVO_NAME__>! Let's head to the village,「<EVO_NAME__>ちゃん！　ちょっとこの村に行って,<EVO_NAME__>！让我们前往村装,「<EVO_NAME__>！去这村子
 28430,497,20096,64,32,33,and ask around about that cannon.,　大砲のコト　いろいろ聞いてみましょうよ」,并询问关于这个炮弹的事吧。,　打听下那门大炮。」
-28431,497,20616,64,32,46,"Goddess, that reminds me. That Grimoire seemed",「女神さま　そういえばさっき　グリモワールが,女神，这提醒了我。这个魔典似乎,「女神，说起来，刚才那魔法书
+28431,497,20616,64,32,46,"Goddess, that reminds me. That Grimoire seemed",「女神さま　そういえばさっき　グリモワールが,女神，这提醒了我。这个魔典似乎,「女神，说起来，刚才那格瑞莫瓦尔
 28432,497,20680,64,32,53,to be expecting something to happen near the village.,　村のところで何かのみこんでましたわ」,在期待某事在村庄附近发生。,　在村子那边吞下了什么东西呢。」
 28433,497,20908,64,32,22,"There was a large egg,",「大きなタマゴみたいでしたけれど,那有一个大蛋，,「那像是个大蛋，
 28434,497,20972,64,32,36,but I have no idea what it could be.,　あれはなんなのかしら」,但我不知道它是什么。,　但我不知那是什么。」
@@ -28434,18 +28434,18 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28436,497,21200,64,32,38,Good point. That egg was a bit too big,「そ～ねぇ　ニワトリさんのタマゴにしては,说得好。这个蛋对于鸡蛋来说,「有道理那蛋作为鸡蛋
 28437,497,21264,64,32,22,to be a chicken's egg.,　大きいわよねぇ」,实在是太大了。,　可实在太大了。」
 28438,497,21428,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-28439,497,21492,64,32,35,The Grimoire seemed to get stronger,「タマゴをのみこんだだけで,魔典似乎在变得更强大,「魔法书光是吞了蛋
+28439,497,21492,64,32,35,The Grimoire seemed to get stronger,「タマゴをのみこんだだけで,魔典似乎在变得更强大,「格瑞莫瓦尔光是吞了蛋
 28440,497,21556,64,32,25,simply by eating the egg…,　ますますパワーアップしてたみたいだし・・・」,仅仅通过吃鸡蛋...,　就变得更强了…」
 28441,497,21784,128,64,32,Amazing… Was it a dragon's egg!?,「まさか・・・竜のタマゴなんじゃ！？」,惊人...难道是龙蛋！ ？,「惊人…难道是龙蛋！？」
 28442,497,22012,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28443,497,22076,64,32,35,Let's ask the villagers about this!,「じゃあ村で　そのことも聞いてみて！,让我们来问问这个村民！,「去村里打听这事吧！
-28444,497,22140,64,32,37,"You know, Grimoires are kinda creepy…",　それにしてもグリモワール気持ち悪いわね・・・」,你知道，魔典有点让人毛骨悚然...,　话说，魔法书真有点瘆人…」
+28444,497,22140,64,32,37,"You know, Grimoires are kinda creepy…",　それにしてもグリモワール気持ち悪いわね・・・」,你知道，魔典有点让人毛骨悚然...,　话说，格瑞莫瓦尔真有点瘆人…」
 28445,497,22304,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28446,497,22368,64,32,40,Maybe we should change our name for them,「そうね　せめて呼び方だけでも,也许我们应该把他们的名字改成,「不如至少把叫法改可爱点，
-28447,497,22432,64,32,33,to something cute like <Grimo>! ★,　かわいく<グリモ>って呼びましょう★」,可爱的东西，像<格里莫> ！ ★,　就叫<小典>吧★」
-28448,497,22660,64,32,10,… <Grimo>…,「・・・<グリモ>・・・,... <格里莫> ...,「…<魔法书>…
+28447,497,22432,64,32,33,to something cute like <Grimo>! ★,　かわいく<グリモ>って呼びましょう★」,可爱的东西，像<格里莫> ！ ★,　就叫<小莫>吧★」
+28448,497,22660,64,32,10,… <Grimo>…,「・・・<グリモ>・・・,... <格里莫> ...,「…<小莫>…
 28449,497,22724,64,32,35,I kind of like the sound of that… ♪,　たしかになんだかかわいらしく聞こえますわ♪」,我喜欢那种声音...,　这么叫确实挺可爱呢…♪」
-28450,497,27560,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+28450,497,27560,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 28451,497,29604,64,32,5,Levan,レバン,莱万,莱万
 28452,497,29668,128,64,34,Large rocks are blocking the road…,「道をふさいでいる大岩ですが・・・」,大岩石堵在路上...,「大石头挡在路上…」
 28453,497,29896,64,32,5,Levan,レバン,莱万,莱万
@@ -28503,7 +28503,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28505,497,71360,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 28506,497,71424,128,64,39,<EVO_NAME__>! You did it! You did it. ♪,「やったやった♪　<EVO_NAME__>ちゃん」,<EVO_NAME__>！你做到了！你做到了。,「<EVO_NAME__>！做到了！做到了。♪」
 28507,497,71652,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-28508,497,71716,128,64,39,You've now defeated two of the Grimo! ▼,「グリモ2体目撃破ーー▼」,现在你已经打败了两个格里莫了！▼ ,「击破第二只魔法书——▼」
+28508,497,71716,128,64,39,You've now defeated two of the Grimo! ▼,「グリモ2体目撃破ーー▼」,现在你已经打败了两个格里莫了！▼ ,「击破第二只格瑞莫——▼」
 28509,497,72008,64,32,38,"To be honest, the tentacles at the lab",「正直言って　研究所のしょくしゅが,说实话，触手在实验室里是,「说实话，研究所的触手
 28510,497,72072,64,32,17,were so shocking…,　インパクトありすぎちゃって・・・」,如此令人震惊... ,　冲击力太强了…」
 28511,497,72300,128,64,41,That nothing really surprises me anymore.,「何でもこーーいなしんきょうですわ」,没有什么能让我吃惊了。 ,「没什么能再吓到我了。」
@@ -28532,7 +28532,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 28534,497,76096,64,32,41,"Well, unless some sort of miracle occurs,",「まあ　何かミラクルっぽいことでも,好吧，除非某种奇迹发生， ,「嘛，除非发生什么奇迹的话，
 28535,497,76160,64,32,40,I'd say things are looking pretty bleak.,　起こらないかぎりは無理よねぇ」,我想说事情的进展看起来相当黯淡。 ,　我看情形可不怎么妙啊。」
 28536,497,76324,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-28537,497,76388,64,32,63,"I know it's disappointing, but the Grimo are our main priority.",「残念ではあるけど　今はグリモが優先だし,我知道这很令人失望，但格里莫是我们的主要优先事项。 ,「虽遗憾，但现在魔法书是首要，
+28537,497,76388,64,32,63,"I know it's disappointing, but the Grimo are our main priority.",「残念ではあるけど　今はグリモが優先だし,我知道这很令人失望，但格里莫是我们的主要优先事项。 ,「虽遗憾，但现在格瑞莫是首要，
 28538,497,76452,64,32,42,Let's take out our disappointment on them!,　その残念な気持ちをグリモにぶつけましょー！」,将我们的失望怒火撒在他们身上吧！ ,　就把这阵不甘发泄到它们身上吧！」
 28539,498,140,128,64,12,Black Market,ブラックマーケット,黑市 ,黑市
 28540,498,700,160,80,17,Exit Black Market,ブラックマーケットを出る,退出黑市,离开黑市
@@ -30431,7 +30431,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 30433,532,7768,64,32,24,That might be a problem…,「なやみどころですわ,这可能是个问题……,「这可能是个麻烦…
 30434,532,7832,64,32,6,… But…,　・・・・・・でもっ」,……可是……,　…可是…」
 30435,532,8060,64,32,27,"Before worrying about that,",「とりあえず　この大陸でも,担心这个问题之前，,「总之，这片大陆上若也有
-30436,532,8124,64,32,59,we should stop any Grimo that might be wreaking havoc here!,　グリモが暴れてたら止めないとですわ！」,我们必须阻止格瑞莫在这儿到处肆虐！,　魔法书作乱，就得先制止！」
+30436,532,8124,64,32,59,we should stop any Grimo that might be wreaking havoc here!,　グリモが暴れてたら止めないとですわ！」,我们必须阻止格瑞莫在这儿到处肆虐！,　格瑞莫作乱，就得先制止！」
 30437,532,8808,256,128,17,Q43. Hundred Eyes,Q43．ハンドレッドアイズ,Q43. 一百双眼,Q43．百眼
 30438,532,9976,256,128,13,Q44. Time Egg,Q44．時のタマゴ,Q44. 时间蛋,Q44．时之卵
 30439,532,12148,64,32,15,Well Childonyx!,「さあ　チルドニクス！,听话的玛瑙孩子！,「好啦奇尔多尼克斯！
@@ -33110,7 +33110,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33112,620,8516,256,128,16,Q33. Long Bridge,Q33．ロングブリッジ,Q33. 长桥,Q33．长桥
 33113,620,9684,256,128,21,Q34. Flying Mountains,Q34．飛んでくる山々,Q34. 飞翔的山峦,Q34．飞来的群山
 33114,620,10852,256,128,9,Q35. QUIZ,Q35．QUIZ,Q35. 询问,Q35．问答
-33116,620,12020,256,128,19,Q36. Grimoire Birth,Q36．グリモワール誕生,Q36. 魔法书的诞生,Q36．魔法书诞生
+33116,620,12020,256,128,19,Q36. Grimoire Birth,Q36．グリモワール誕生,Q36. 魔法书的诞生,Q36．格瑞莫瓦尔诞生
 33117,620,13836,192,96,29,* Head to the next continent?,＊　次の大陸へ向かいますか？,*前往下一片大陆？,*前往下一片大陆？
 33118,620,16528,128,64,19,Alright! Let's go!!,「よし！　行きましょう！！」,不错！出发吧！！,「好！出发吧！！」
 33119,620,19904,64,32,12,REVOLUTION 3,REVOLUTION３,,REVOLUTION 3
@@ -33122,12 +33122,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33125,620,27688,64,32,31,everything is finally in order.,　これでついに完成いたします」,一切最终是为了…,　一切终于就绪。」
 33126,620,27852,64,32,10,Researcher,研究員,研究员,研究员
 33127,620,27916,64,32,38,With the <seven Chrono Crystals> we've,「世界各地より集めたる,有了我们从世界各地,「凭从世界各地收集来的
-33128,620,27980,64,32,32,collected from around the world…,　<7つのクロノクリスタル>によって」,收集到的<seven Chrono Crystals> …,　<七颗时之水晶>…」
+33128,620,27980,64,32,32,collected from around the world…,　<7つのクロノクリスタル>によって」,收集到的<seven Chrono Crystals> …,　<七颗计时水晶>…」
 33129,620,28144,64,32,10,Researcher,研究員,研究员,研究员
-33130,620,28208,64,32,27,… all seven of the Grimoire,「第1から第７までのグリモワール,…所有的七个格瑞莫,「第1到第7的魔法书，
+33130,620,28208,64,32,27,… all seven of the Grimoire,「第1から第７までのグリモワール,…所有的七个格瑞莫,「第1到第7的格瑞莫瓦尔，
 33131,620,28272,64,32,24,will finally come to be!,　7体すべての誕生です！」,最终都将实现！,　七本将全部诞生！」
 33132,620,28436,64,32,16,Emperor Golvadis,皇帝ゴルバディス,古瓦迪斯大帝,戈尔巴迪斯皇帝
-33133,620,28500,128,64,41,Now we just need to control the Grimoire…,「あとはグリモワールを操り・・・」,现在我们只需要控制格瑞莫…,「如今只需操控魔法书…」
+33133,620,28500,128,64,41,Now we just need to control the Grimoire…,「あとはグリモワールを操り・・・」,现在我们只需要控制格瑞莫…,「如今只需操控格瑞莫瓦尔…」
 33134,620,28728,64,32,16,Emperor Golvadis,皇帝ゴルバディス,古瓦迪斯大帝,戈尔巴迪斯皇帝
 33135,620,28792,128,64,60,And then my empire… No… My world will finally be realized!!!,「帝国の・・・いや　ワシの世界が誕生する！！！」,然后，我的帝国梦…不…我征服世界的梦想终会实现！,「然后我的帝国…不…我的世界终将实现！！！」
 33136,620,29312,64,32,16,Emperor Golvadis,皇帝ゴルバディス,古瓦迪斯大帝,戈尔巴迪斯皇帝
@@ -33143,13 +33143,13 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33146,620,34988,64,32,45,"The vagabond princess, headed for the empire.",　帝国にはむかう　どこぞの王女というのは」,流浪的公主，朝帝国来了！,　那个不知打哪儿来、反抗帝国的公主。」
 33147,620,35216,128,64,18,Please step aside!,「どいてくださいっ！」,请走一边！,「请让开！」
 33148,620,37780,64,32,10,Researcher,研究員,研究员,研究员
-33149,620,37844,128,64,49,"The synthetic Evil Lords, <Grimoire>, are born!!!",「人造魔王<グリモワール>の誕生です！！！」,虚伪的邪恶领主，<Grimoire>，诞生了！,「人造魔王<魔法书>，诞生了！！！」
+33149,620,37844,128,64,49,"The synthetic Evil Lords, <Grimoire>, are born!!!",「人造魔王<グリモワール>の誕生です！！！」,虚伪的邪恶领主，<Grimoire>，诞生了！,「人造魔王<格瑞莫瓦尔>，诞生了！！！」
 33150,620,44560,128,64,21,Eek! W-What is that!?,「キャアッ　な　なんですのアレは！？」,啊！那-那是什么？,「呀！那、那是什么！？」
 33151,620,45080,64,32,10,Researcher,研究員,研究员,研究员
 33152,620,45144,64,32,12,"Oh, this is…",「おおっ　これは,噢，这是…,「噢，这是…
-33153,620,45208,64,32,26,"<The 6th Grimoire, Eynvy>.",　<第6グリモワール　エインヴィー>」,,　<第六本魔法书，恩维>。」
+33153,620,45208,64,32,26,"<The 6th Grimoire, Eynvy>.",　<第6グリモワール　エインヴィー>」,,　<第六本格瑞莫瓦尔，恩维>。」
 33154,620,45372,64,32,10,Researcher,研究員,研究员,研究员
-33155,620,45436,64,32,31,This Grimoire is a flying type!,「飛行タイプのグリモワールです！,这个格瑞莫是飞行种类！,「这本魔法书是飞行型！
+33155,620,45436,64,32,31,This Grimoire is a flying type!,「飛行タイプのグリモワールです！,这个格瑞莫是飞行种类！,「这本格瑞莫瓦尔是飞行型！
 33156,620,45500,64,32,42,Not a soul alive would best it in the sky!,　空中戦でかなう者はおりませぬ！」,不仅仅是个活的灵魂，也是天空最强者！,　空中无人能敌过它！」
 33157,620,45956,64,32,16,Emperor Golvadis,皇帝ゴルバディス,古瓦迪斯大帝,戈尔巴迪斯皇帝
 33158,620,46020,64,32,34,Go forth! Monster of our creation!,「よくぞ誕生した　バケモノよ！,前进！我们的怪物！,「终于诞生了啊，怪物！
@@ -33172,7 +33172,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33175,620,77328,64,32,33,Every single one has gone crazy!!,　一匹残らず暴走しおってっ！！」,每个人都疯了！,　一个不剩全疯了！！」
 33176,620,77492,64,32,10,Researcher,研究員,研究员,研究员
 33177,620,77556,64,32,16,T-This one… Yes…,「こ　こいつは　たしか・・・,这一个…是的…,「这、这个…没错…
-33178,620,77620,64,32,29,"<The 1st Grimoire, Gravidon>.",　<第1グリモワールのグラヴィドン>」,,　<第一本魔法书，格拉维登>。」
+33178,620,77620,64,32,29,"<The 1st Grimoire, Gravidon>.",　<第1グリモワールのグラヴィドン>」,,　<第一本格瑞莫瓦尔，格拉维登>。」
 33179,620,78076,64,32,10,Researcher,研究員,研究员,研究员
 33180,620,78140,64,32,22,Gravidon's ability… !!,「グラヴィドンの能力は・・・！！,格瑞卫东的能力…！！,「格拉维登的能力…！！
 33181,620,78204,64,32,29,Is that of <multiplication>!!,　<ぞうしょく>すること！！」,那是<multiplication>！！,　是<增殖>！！」
@@ -33229,7 +33229,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 33232,620,120772,64,32,28,… It appears that the Empire,「・・・どうやら帝国は,…似乎帝国正在,「…看来帝国
 33233,620,120836,64,32,47,was conducting research on how to build worlds.,　世界そのものを造る研究もしていたようだ」,研究如何建立世界秩序。,　曾研究如何创造世界。」
 33234,620,121000,64,32,7,Scholar,学者,学者,学者
-33235,620,121064,64,32,60,"However, much of the budget was taken for Grimoire research,",「だがグリモワール研究に予算をとられて,然而，大量的经费都花在了格瑞莫研究上，,「然而预算大多投给了魔法书研究，
+33235,620,121064,64,32,60,"However, much of the budget was taken for Grimoire research,",「だがグリモワール研究に予算をとられて,然而，大量的经费都花在了格瑞莫研究上，,「然而预算大多投给了格瑞莫瓦尔研究，
 33236,620,121128,64,32,46,and the world-building research was abandoned.,　半ば放置されてしまった」,世界秩序的研究被遗弃了。,　造世研究也被搁置。」
 33237,620,121292,64,32,7,Scholar,学者,学者,学者
 33238,620,121356,64,32,52,"It is now possible to travel to the <Crimson World>,",「今なら帝国が造ったカソウ世界,现在能够前往<Crimson World>，,「如今可前往<深红世界>，
@@ -36324,7 +36324,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 36328,676,2988,64,32,6,Athena,アテナ,雅典娜,雅典娜
 36329,676,3052,128,64,23,This kid… is so strong!,「この子ッ　なんて強いの！」,这孩子… 是如此强大！,「这孩子……好强！」
 36330,676,3340,64,32,40,The Emperor has done something terrible.,「皇帝は悪いことをしたんですわ,天子已经犯下了严重的错误。,「皇帝做错了大事，
-36331,676,3404,64,32,29,And so I must stop the Grimo!,　だからグリモを止めるセキニンがありますの！」,我必须阻止格瑞莫！,　所以我必须阻止魔法书！」
+36331,676,3404,64,32,29,And so I must stop the Grimo!,　だからグリモを止めるセキニンがありますの！」,我必须阻止格瑞莫！,　所以我必须阻止格瑞莫！」
 36332,676,3628,128,64,24,"Understand this, Athena!",「だから　わかってアテナ！」,雅典娜，你必须明白！,「雅典娜，你给我听明白了！」
 36333,676,3852,64,32,6,Athena,アテナ,雅典娜,雅典娜
 36334,676,3916,128,64,11,Fa… Father!,「お　お父様ーーー！」,父… 父亲！,「父……父亲！」
@@ -36485,7 +36485,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 36490,683,1636,128,64,25,Well done! You found me!!,「よくぞヨを見つけたものダノ！！」,干得好！你找到我了！,「干得好！你找到我了！！」
 36491,683,1864,64,32,9,Poly Noir,ポリノワール,黑色聚合物,波利诺
 36492,683,1928,64,32,34,Welcome! I am the one who inhabits,「ヨこそは　このカリソメのセカイに,欢迎！我是住在这个小小世界,「我正是在这短暂的世界里
-36493,683,1992,64,32,50,this trifling little world. I am the 8th Grimoire.,　こっそりとウブゴエをあげた第８グリモワール」,的村民。我是格瑞莫的第八代子孙。,　悄悄发出初啼的第八位魔法书。」
+36493,683,1992,64,32,50,this trifling little world. I am the 8th Grimoire.,　こっそりとウブゴエをあげた第８グリモワール」,的村民。我是格瑞莫的第八代子孙。,　悄悄发出初啼的第八位格瑞莫瓦尔。」
 36494,683,2156,64,32,9,Poly Noir,ポリノワール,黑色聚合物,波利诺
 36495,683,2220,128,64,24,… My name is Poly Noir!!,「・・・そのナもポリノワール！！」,… 我叫波利努瓦尔！！,「……我的名字是波利诺！！」
 36496,683,2448,64,32,9,Poly Noir,ポリノワール,黑色聚合物,波利诺
@@ -37034,7 +37034,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37039,702,700,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
 37040,702,956,160,80,4,Pray,おいのり,祈祷,祈祷
 37041,702,1548,32,16,4,Talk,はなす,交谈,交谈
-37042,702,1580,51,25,51,"Old Man: There's a village east of here, but thanks",おじさん「東に村があるがグリモワールのせいで,老人: 这儿的东边有个村子，但是多亏有了格瑞莫，,大叔「东边有个村子，不过都怪那本魔法书，
+37042,702,1580,51,25,51,"Old Man: There's a village east of here, but thanks",おじさん「東に村があるがグリモワールのせいで,老人: 这儿的东边有个村子，但是多亏有了格瑞莫，,大叔「东边有个村子，不过都怪那本格瑞莫瓦尔，
 37043,702,1804,32,16,10,Fresh Fish,フレッシュフィッシュ,新鲜的鱼,鲜鱼
 37044,702,1972,32,16,4,Talk,はなす,交谈,交谈
 37045,702,2004,128,64,51,Owner: The lady general? She was taken to the east.,主人「女将軍なら東の方に連れていかれたな」,店主: 女将军？她被带到东边去了。,店主「女将军吗？被带去东边了。」
@@ -37539,24 +37539,24 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37544,712,2220,64,32,31,Finally! At long last! Finally!,「ついに　ついについについに,最后！终于！最终！,「终于！总算！终于，
 37545,712,2284,64,32,25,The Sky Continent rises!!,　空中大陸が浮上したぞ！！」,天空大陆升起了！,　空中大陆升起了！！」
 37546,712,2448,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
-37547,712,2512,128,64,61,And I thought the worst when the Grimoires started to go mad!,「グリモワールが暴走したときはダメかと思ったがな！」,我想最糟糕的是格瑞莫开始发疯了！,「魔法书暴走时我还以为完蛋了呢！」
+37547,712,2512,128,64,61,And I thought the worst when the Grimoires started to go mad!,「グリモワールが暴走したときはダメかと思ったがな！」,我想最糟糕的是格瑞莫开始发疯了！,「格瑞莫瓦尔暴走时我还以为完蛋了呢！」
 37548,712,2740,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
 37549,712,2804,64,32,48,This is all thanks to a pretentious young Hero's,「これも勇者気どりの小娘が失敗作を,这幸亏是由于一个狂妄的少年英雄,「这都多亏了个装模作样的年轻勇者
 37550,712,2868,64,32,49,efforts to destroy all of those failed creations!,　次々にたおしてくれたおかげだ！」,努力摧毁了所有失败的作品！,　接连打倒那些失败品的功劳！」
 37551,712,3032,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
-37552,712,3096,64,32,37,The Grimoires were always meant to be,「そもそもグリモワールは,格瑞莫总意味着,「魔法书本就是为了
+37552,712,3096,64,32,37,The Grimoires were always meant to be,「そもそもグリモワールは,格瑞莫总意味着,「格瑞莫瓦尔本就是为了
 37553,712,3160,64,32,42,a source of energy for this Sky Continent!,　この空中大陸のためのエネルギー源なのだ！」,天空大陆的力量源泉！,　成为这空中大陆的能量之源！」
 37554,712,3324,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
-37555,712,3388,64,32,40,The Timestream of the defeated Grimoires,「たおされたグリモワールのタイムストリームは,战败的格瑞莫的时间流,「被击败的魔法书的时之流
+37555,712,3388,64,32,40,The Timestream of the defeated Grimoires,「たおされたグリモワールのタイムストリームは,战败的格瑞莫的时间流,「被击败的格瑞莫瓦尔的时之流
 37556,712,3452,64,32,47,appears to have flowed into this Sky Continent.,　すべてこの空中大陸に流れ込むようになっていたのだ」,似乎流到了天空大陆。,　似乎都流向了这空中大陆。」
 37557,712,3616,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
 37558,712,3680,64,32,51,And now! The Sky Continent has successfully risen!!,「そして今！　空中大陸は完成浮上した！！,现在，天空大陆终于成功的升起了！！,「而现在！空中大陆已成功升起！！
 37559,712,3744,64,32,15,That's not all…,　それだけではない・・・」,那不是所有的…,　还不止如此…」
 37560,712,3908,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
-37561,712,3972,128,64,42,The true Grimoire has also been completed…,「真のグリモワールも完成したのだ・・・」,真正的格瑞莫也已经形成了…,「真正的魔法书也已完成…」
+37561,712,3972,128,64,42,The true Grimoire has also been completed…,「真のグリモワールも完成したのだ・・・」,真正的格瑞莫也已经形成了…,「真正的格瑞莫瓦尔也已完成…」
 37562,712,4200,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
-37563,712,4264,64,32,49,Absorbing the energy of the Grimoires into myself,「グリモワールのエネルギーを取り込んだ,吸收格瑞莫的力量,「将魔法书的能量吸收进体内
-37564,712,4328,64,32,50,has transformed me into the Grimoire's final form!,　ワシこそがグリモワールの完成形！」,最终把我自己也变成了格瑞莫！,　让我化为了魔法书的最终形态！」
+37563,712,4264,64,32,49,Absorbing the energy of the Grimoires into myself,「グリモワールのエネルギーを取り込んだ,吸收格瑞莫的力量,「将格瑞莫瓦尔的能量吸收进体内
+37564,712,4328,64,32,50,has transformed me into the Grimoire's final form!,　ワシこそがグリモワールの完成形！」,最终把我自己也变成了格瑞莫！,　让我化为了格瑞莫瓦尔的最终形态！」
 37565,712,4492,64,32,17,Emperor Golvadis?,皇帝ゴルバディス？,高瓦迪斯皇帝？,戈尔巴迪斯皇帝？
 37566,712,4556,64,32,35,I've received the Evil Lord's power,「ワシは魔王の力を手に入れた,我已经吸收了邪恶领主的力量,「我已获得魔王的力量
 37567,712,4620,64,32,29,and evolved beyond humanity!!,　人間をこえた究極の存在！！」,并且已经进化成了非人类！！,　并进化成了超越人类的存在！！」
@@ -37572,8 +37572,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37577,712,5660,64,32,12,Evil Emperor,魔皇帝,邪恶大帝,魔皇帝
 37578,712,5724,128,64,53,The ground below will be destroyed in <60 seconds>!!!,「地上のハメツまで　あと<60秒>だ！！！」,下面的大地将会在<60 seconds>内毁灭！！！,「地面将在<60秒>后被毁灭！！！」
 37579,712,8288,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-37580,712,8352,64,32,23,The Grimos' Timestream…,「グリモのタイムストリームって・・・,格瑞莫的时间流…,「魔法书的时之流…
-37581,712,8416,64,32,43,Huh? So defeating the Grimo was a mistake!?,　ええ～～　グリモってたおしちゃダメだったの！？」,哈！那么打败  是个错误！？,　哈？那打败魔法书是错了！？」
+37580,712,8352,64,32,23,The Grimos' Timestream…,「グリモのタイムストリームって・・・,格瑞莫的时间流…,「格瑞莫的时之流…
+37581,712,8416,64,32,43,Huh? So defeating the Grimo was a mistake!?,　ええ～～　グリモってたおしちゃダメだったの！？」,哈！那么打败  是个错误！？,　哈？那打败格瑞莫是错了！？」
 37582,712,8644,64,32,10,E-Even so…,「そ　そんなこといっても,即使如此…,「但、就算如此…
 37583,712,8708,64,32,36,We had no choice but to defeat them!,　たおすしか方法がありませんでしたわ！」,我们别无选择只有打败它们！,　我们别无选择只能打败它们！」
 37584,712,8872,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -37978,7 +37978,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37983,712,387076,128,64,49,But it appears that I'm powerless to do anything.,「ワシには何もできんようじゃ」,但是，似乎我没有力量做任何事情。,「但看来我无能为力。」
 37984,712,387368,128,64,37,I… I could say the same about myself!,「わたくしも・・・何もできませんでしたわ」,我…我也想这样说！,「我…我也一样什么都做不了！」
 37985,712,387596,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
-37986,712,387660,64,32,50,The Emperor has already become a being with powers,「皇帝はもはや　グリモワールも魔王も,皇上已经变成了一个怪物,「皇帝已化为超越魔法书与魔王
+37986,712,387660,64,32,50,The Emperor has already become a being with powers,「皇帝はもはや　グリモワールも魔王も,皇上已经变成了一个怪物,「皇帝已化为超越格瑞莫瓦尔与魔王
 37987,712,387724,64,32,52,far beyond those of the Grimoires or the Evil Lords.,　こえた存在になってしもうた」,他的力量超过了格瑞莫或者邪恶领主。,　的存在了。」
 37988,712,387888,64,32,16,Nanako's Grandpa,ナナコじいちゃん,菜菜子的爷爷,奈奈子的爷爷
 37989,712,387952,128,64,52,"However, that doesn't mean that he can't be stopped.",「じゃが　止める方法が無いわけでもない」,然而，那并不表示他不可阻止。,「但这不代表他无法被阻止。」
@@ -43533,7 +43533,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43538,771,3744,64,32,24,nobody CAN make it here…,　だれもここまで来ることはデキナイ・・・」,没人能到得了这里……,　谁都到不了这儿……」
 43539,771,5660,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 43540,771,5724,64,32,25,"Be careful, <EVO_NAME__>!",「<EVO_NAME__>ちゃん　気をつけて！,小心，<EVO_NAME__>!,「小心点，<EVO_NAME__>！
-43541,771,5788,64,32,40,It looks like we've found another Grimo!,　新たなグリモが現れたみたい」,貌似我们发现了另一个格里穆！,　似乎又出现了新的魔法书！」
+43541,771,5788,64,32,40,It looks like we've found another Grimo!,　新たなグリモが現れたみたい」,貌似我们发现了另一个格里穆！,　似乎又出现了新的格瑞莫！」
 43542,771,5952,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 43543,771,6016,64,32,53,Though strangely enough… It seems kind of cowardly. ★,「だけどみょうに・・・おくびょうな相手かも★,虽然很奇怪……貌似有些懦弱★,「不过说来奇怪……对方似乎有点怯懦。★
 43544,771,6080,64,32,55,It looks like it's not going to do anything from there.,　向こうからは何もしてこないみたいなの」,貌似那里不会再有进展。,　看来它从那边不会有所行动。」
@@ -43558,12 +43558,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43563,771,9876,64,32,51,Don't you get the feeling that we're being watched?,　さっきから　みょうなしせんを感じない？」,你不觉得我们被监视了么？,　你没觉得被人监视了吗？」
 43564,771,10040,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 43565,771,10104,64,32,31,"Anyway, do your best as always,",「とにかく　いつものごとくがんばってね,不管怎样，你只要自己做好就行了，,「总之，照常尽力吧，
-43566,771,14712,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+43566,771,14712,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 43567,771,16528,128,64,11,Hmm? Hmmm!?,「ん？　んん！？」,呃？唔！？,「嗯？唔嗯！？」
 43568,771,17112,128,64,48,I was sure that the rock was in the middle road!,「岩は真ん中の道にあったはずですわ！？」,我原本确定石头在路中间！,「我明明确定石头在中间那条路！？」
 43569,771,17404,64,32,41,The rock <was moved to the road I chose>…,「岩が<わたくしの通る道に移動した>,石头被<移到了我选择的那条路上>……,「石头<移到了我要走的路上>，
 43570,771,17468,64,32,13,… Or was it??,　っていうんですの？？」,……是吗？？,　你是这个意思吗？？」
-43571,771,17696,64,32,62,Perhaps it's related to the fact that the Grimo with many eyes,「もしかして　あの目だくさんなグリモに,或许与格里穆有许多眼睛,「难道这和那只长满眼睛的魔法书
+43571,771,17696,64,32,62,Perhaps it's related to the fact that the Grimo with many eyes,「もしかして　あの目だくさんなグリモに,或许与格里穆有许多眼睛,「难道这和那只长满眼睛的格瑞莫
 43572,771,17760,64,32,18,is able to see me?,　見られていることと関係が？」,监视着我？,　一直在盯着我有关？」
 43573,771,18280,64,32,16,How in the world,「一体　どうすれば,到底,「究竟该如何
 43574,771,18344,64,32,42,can I travel the road without being seen??,　見られずに通ることができるんですの？？」,我怎么能够悄无声息的穿过去呢？？,　才能不被发现地通过？？」
@@ -43685,7 +43685,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43690,771,56824,64,32,47,You were faced with an opponent who can see far,「遠くまで見ることができる相手から,你的敌人是一个目光高远的人,「你面对的是能看很远的对手
 43691,771,56888,64,32,45,and responded by making yourself invisible… !,　見えないようにすがたを消す・・・！」,还能帮你隐形……！,　而你用隐身来应对……！」
 43692,771,57052,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-43693,771,57116,64,32,29,It looks like you humans were,「グリモより人間のほうが,貌似你们人类,「看来你们人类比魔法书
+43693,771,57116,64,32,29,It looks like you humans were,「グリモより人間のほうが,貌似你们人类,「看来你们人类比格瑞莫
 43694,771,57180,64,32,38,a step ahead of the Grimo this time! ★,　一枚うわてだったようね★」,这一次比格里穆棋高一着！★,　还棋高一着呢！★」
 43695,771,57344,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 43696,771,57408,128,64,28,"Well then, let's get moving!",「じゃー　次に進みましょー！」,那么，我们就开始吧！,「那，继续前进吧！」
@@ -44840,7 +44840,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44845,787,1572,64,32,3,Ava,アヴァ,阿瓦,艾
 44846,787,1636,128,64,16,… Another human!,「・・・また人間か」,……另外一个人！,「……又来个人类！」
 44847,787,1864,64,32,3,Ava,アヴァ,阿瓦,艾
-44848,787,1928,64,32,54,"I am a Grimoire, and the humans of this land are mine!",「この地はグリモワールの私が支配した,我是一本魔法书，这片大陆上的人都是我的！,「我是魔法书，这片土地的人类都归我所有，
+44848,787,1928,64,32,54,"I am a Grimoire, and the humans of this land are mine!",「この地はグリモワールの私が支配した,我是一本魔法书，这片大陆上的人都是我的！,「我是格瑞莫瓦尔，这片土地的人类都归我所有，
 44849,787,1992,64,32,43,They are all puppets. They are my puppets!!,　人間はみな人形　私の操り人形さ」,他们都是傀儡。他们都是我的傀儡！！,　他们全是傀儡。是我的提线木偶！！」
 44850,787,2156,64,32,3,Ava,アヴァ,阿瓦,艾
 44851,787,2220,64,32,48,"Unfortunately, I'm starting to tire of all this.",「だがそれも　そろそろあきてきた,不幸的是，我开始厌烦这件事了。,「遗憾，我也渐渐玩腻了，
@@ -44860,13 +44860,13 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44865,787,16756,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 44866,787,16820,128,64,56,"It's okay, <EVO_NAME__>. Be a good girl and stop crying.",「はいはい　いい子だから泣かないのっ」,没关系的， <EVO_NAME__>。乖乖做个好姑娘，不要哭了。,「没事了，<EVO_NAME__>。乖孩子，别哭了。」
 44867,787,17048,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-44868,787,17112,64,32,44,This Grimo makes for a troublesome opponent.,「このグリモは　ちょっとやっかいな相手かも,这个格里穆给我们制造了一个麻烦的对手。,「这个魔法书是个棘手的对手，
+44868,787,17112,64,32,44,This Grimo makes for a troublesome opponent.,「このグリモは　ちょっとやっかいな相手かも,这个格里穆给我们制造了一个麻烦的对手。,「这个格瑞莫是个棘手的对手，
 44869,787,17176,64,32,57,We need to find a way to return everyone to their senses.,　どうやったら　みんなを取り返せるのかしら」,我们需要找个办法让大家恢复意识。,　我们得想办法让大家恢复神志。」
 44870,787,17340,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 44871,787,17404,128,64,37,Let's start by gathering information!,「まずは情報を集めましょう！」,现在开始收集信息吧！,「先收集情报吧！」
 44872,787,17924,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 44873,787,17988,64,32,40,There may still be people in the village,「村の中には　まだグリモに,可能村里还有人,「村里或许还有人
-44874,787,18052,64,32,40,who are not under the Grimo's control! ★,　操られていない人もいるかも★」,没有被格里穆掌控！★,　没被魔法书控制的！★」
+44874,787,18052,64,32,40,who are not under the Grimo's control! ★,　操られていない人もいるかも★」,没有被格里穆掌控！★,　没被格瑞莫控制的！★」
 44875,787,18800,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 44876,787,18864,64,32,41,"After that, it'd be nice if we could find",「あとは　だれか強力な助っ人が,在此之后，如果我们可以找到一个,「接下来，要是能有个
 44877,787,18928,64,32,51,a powerful ally… but that might be asking too much…,　来てくれるといいんだけど・・・」,强大的盟友……但是可能要被问很多……,　强大的帮手来就好了……」
@@ -44875,7 +44875,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44880,787,19220,64,32,30,so this task will not be easy.,　一人なんだから　しんちょうにね」,所以，这个任务不容易。,　千万要慎重啊。」
 44881,787,19384,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 44882,787,19448,128,64,31,"But do your best, <EVO_NAME__>!",「それじゃ　がんばって<EVO_NAME__>ちゃん」,但是，尽力去做吧，<EVO_NAME__>！,「不过要加油哦，<EVO_NAME__>！」
-44883,787,24640,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+44883,787,24640,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 44884,787,26976,64,32,7,Scholar,学者,学者,学者
 44885,787,27040,128,64,25,… What to do? What to do?,「・・・おろおろおろおろ」,……该怎么做呢？该怎么做呢？,「……怎么办？怎么办？」
 44886,787,27268,64,32,7,Scholar,学者,学者,学者
@@ -44921,7 +44921,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44926,787,46020,128,64,41,"By the way, what happened to your allies?",「ところで仲間はどうされたので？」,顺便说一句，你的伙伴们身上会发生些什么呢？,「对了，你的伙伴们怎么了？」
 44927,787,46312,128,64,31,… Glad you asked. The truth is…,「・・・うう　よくぞ聞いてくれましたわ　実は・・・」,……谢谢你问了。事实是……,「……你问得好。其实……」
 44928,787,47708,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
-44929,787,47772,128,64,49,… Hmm. So the Grimoire's taken control over them?,「・・・フム　グリモワールに操られているのですね」,……嗯。所以魔法书掌控了他们？,「……唔。所以他们是中了魔法书的操控？」
+44929,787,47772,128,64,49,… Hmm. So the Grimoire's taken control over them?,「・・・フム　グリモワールに操られているのですね」,……嗯。所以魔法书掌控了他们？,「……唔。所以他们是中了格瑞莫瓦尔的操控？」
 44930,787,48000,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 44931,787,48064,64,32,49,There is a scholar who was my former subordinate…,「それなら　自分の元部下が<学者>です・・・,有一位学者，以前是我的属下……,「我有一位从前的下属，是名学者……
 44932,787,48128,64,32,44,"Perhaps, he will be able to help us somehow.",　何か手助けできるかもしれません」,或许他能帮到我们。,　或许他能帮上什么忙。」
@@ -44936,22 +44936,22 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44941,787,55072,128,64,30,I'm sorry to have worried you.,「心配をかけたな」,不好意思啊，爸爸，让你担心了。,「对不起，让你担心了。」
 44942,787,55300,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 44943,787,55364,64,32,49,"And sorry if this seems sudden, but we need a way",「さっそくだが　グリモワールに操られている人間を,不好意思有点唐突了，但是我们需要找到一种方法,「不好意思有点唐突，但我们需要办法
-44944,787,55428,64,32,54,to help people break free from the Grimoire's control.,　正気に戻す方法を教えてくれ」,让人们从魔法书手里逃出来，重获自由。,　让人摆脱魔法书的控制。」
+44944,787,55428,64,32,54,to help people break free from the Grimoire's control.,　正気に戻す方法を教えてくれ」,让人们从魔法书手里逃出来，重获自由。,　让人摆脱格瑞莫瓦尔的控制。」
 44945,787,55884,64,32,7,Scholar,学者,学者,学者
 44946,787,55948,128,64,10,Yes ma'am!,「イエス　マム！」,是，女士！,「遵命，女士！」
 44947,787,56176,64,32,7,Scholar,学者,学者,学者
 44948,787,56240,128,64,32,Please drink this <C-Ing Drink>!,「ではこの<ミエールドリンク>をおのみください！」,喝掉<C-Ing Drink>！,「请喝下这杯<蜜尔饮料>！」
 44949,787,57052,64,32,7,Scholar,学者,学者,学者
 44950,787,57116,64,32,27,Now you will be able to see,「これで<グリモワールの分身>が,现在你能看到,「现在你能够看见
-44951,787,57180,64,32,30,the <shadows of the Grimoire>!,　見えるようになりました！」,<shadows of the Grimoire>了！,　<魔法书的影子>了！」
+44951,787,57180,64,32,30,the <shadows of the Grimoire>!,　見えるようになりました！」,<shadows of the Grimoire>了！,　<格瑞莫瓦尔的影子>了！」
 44952,787,57344,64,32,7,Scholar,学者,学者,学者
-44953,787,57408,64,32,39,Those under the control of the Grimoire,「操られた人間のそばには必ずこの,那些被魔法书所控制的人,「那些被魔法书控制的人
+44953,787,57408,64,32,39,Those under the control of the Grimoire,「操られた人間のそばには必ずこの,那些被魔法书所控制的人,「那些被格瑞莫瓦尔控制的人
 44954,787,57472,64,32,42,are sure to have this shadow next to them.,　グリモワールの分身がいるはずです」,周围都有这种阴影。,　身边一定跟着这道影子。」
 44955,787,57636,64,32,7,Scholar,学者,学者,学者
 44956,787,57700,64,32,39,"If you can defeat the shadow in battle,",「バトルで上手く分身をたおせば,如果你能在战争中战胜阴影，,「若在战斗中击败那道影子，
 44957,787,57764,64,32,53,the person under its control should return to normal.,　操られた人間は正気に戻ります」,受控制的人会变的正常。,　被控制的人就会恢复正常。」
 44958,787,57928,64,32,7,Scholar,学者,学者,学者
-44959,787,57992,64,32,63,"But those under the Grimoire's control are <nearly invincible>,",「ただし操られた人間は<ほとんど無敵>なので,但是那些被魔法书掌控的人会<nearly invincible>，,「但被魔法书控制的人<近乎无敌>，
+44959,787,57992,64,32,63,"But those under the Grimoire's control are <nearly invincible>,",「ただし操られた人間は<ほとんど無敵>なので,但是那些被魔法书掌控的人会<nearly invincible>，,「但被格瑞莫瓦尔控制的人<近乎无敌>，
 44960,787,58056,64,32,36,so avoid fighting them at all costs.,　そちらとはたたかわないようにしてください」,所以不要不惜一切代价地与他们作斗争。,　所以务必别和他们交手。」
 44961,787,58512,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 44962,787,58576,64,32,24,"Hmm, well, <EVO_NAME__>,",「うむ　では<EVO_NAME__>姫　,嗯，好吧，<EVO_NAME__>，,「嗯，好吧，<EVO_NAME__>，
@@ -44989,13 +44989,13 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44994,787,89300,64,32,41,You'll be the next to become my puppet! ♪,　今度はおまえを人形にしてやる♪」,你会成为我下一个傀儡！？,　你下一个就会变成我的傀儡！♪」
 44995,787,91216,192,96,19,A castle appeared!!,城が現れた！！,出现了一个城堡！！,城堡出现了！！
 44996,787,94720,192,96,14,Quest Cleared!,クエストクリア！,任务完成！,任务完成！
-44997,787,96244,64,32,34,… A Grimo that can control people…,「・・・人を操るグリモ・・・,……一个控制人的格里穆……,「……能操控人心的魔法书……
+44997,787,96244,64,32,34,… A Grimo that can control people…,「・・・人を操るグリモ・・・,……一个控制人的格里穆……,「……能操控人心的格瑞莫……
 44998,787,96308,64,32,35,It was a truly terrifying opponent.,　おそろしい相手でしたわ」,这真是一个可怕的对手。,　真是个可怕的对手。」
 44999,787,97348,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45000,787,97412,64,32,22,"Princess <EVO_NAME__>,",「<EVO_NAME__>姫,<EVO_NAME__>公主，,「<EVO_NAME__>公主，
 45001,787,97476,64,32,28,what do you plan to do next?,　これからどうされるおつもりですか？」,你的下一个计划是什么？,　接下来打算怎么做？」
 45002,787,97996,64,32,26,Like a hero should… I will,「暴走したグリモをたおして,向一位英雄一样……,「身为勇者……我要
-45003,787,98060,64,32,36,defeat the Grimo and save the world!,　世界を救いますわ　勇者として！」,我要打败格里穆，拯救世界！,　打败魔法书，拯救世界！」
+45003,787,98060,64,32,36,defeat the Grimo and save the world!,　世界を救いますわ　勇者として！」,我要打败格里穆，拯救世界！,　打败格瑞莫，拯救世界！」
 45004,787,98516,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45005,787,98580,128,64,38,Hehe… That's what I thought you'd say.,「フフ・・・予想通りのお答えです」,哈哈……我就知道你会这么说。,「呵呵……我就猜你会这么说。」
 45006,787,98808,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
@@ -45004,20 +45004,20 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 45009,787,99684,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45010,787,99748,128,64,35,I am no longer an imperial general.,「自分はもう帝国の将軍ではありません」,我不在是帝国的上将了。,「我已不再是帝国将军了。」
 45011,787,99976,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
-45012,787,100040,64,32,33,I have to take responsibility for,「クロノクリスタルに関しては,我必须要为,「关于时空水晶，
+45012,787,100040,64,32,33,I have to take responsibility for,「クロノクリスタルに関しては,我必须要为,「关于计时水晶，
 45013,787,100104,64,32,20,the Chrono Crystals…,　自分にもセキニンがあります・・・」,水晶计时器负责……,　我自己也负有责任……」
 45014,787,100268,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
-45015,787,100332,64,32,45,"If you are planning on fighting the Grimoire,",「グリモワールをたおすというのであれば,如果你想与魔法书作斗争，,「若你打算讨伐魔法书，
+45015,787,100332,64,32,45,"If you are planning on fighting the Grimoire,",「グリモワールをたおすというのであれば,如果你想与魔法书作斗争，,「若你打算讨伐格瑞莫瓦尔，
 45016,787,100396,64,32,36,I want you to let me help you do it!,　ぜひとも同行させていただきたい！」,我想来帮你！,　我定要助你一臂之力！」
 45017,787,100916,128,64,29,We are honored to have you. ▼,「そんなの　だいかんげいに決まってますわ▼」,你能来帮助我们，我们感到很荣幸▼,「你能来我们荣幸之至▼」
 45018,787,101144,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45019,787,101208,128,64,43,"Thank you very much, Princess <EVO_NAME__>.",「ありがとうございます　<EVO_NAME__>姫」,非常感谢你，<EVO_NAME__>公主。,「非常感谢你，<EVO_NAME__>公主。」
 45020,787,101436,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
-45021,787,101500,64,32,49,"As far as knowledge of the Grimoire is concerned,",「グリモワールに関してなのですが,据魔法书上记载，,「论及魔法书的知识，
+45021,787,101500,64,32,49,"As far as knowledge of the Grimoire is concerned,",「グリモワールに関してなのですが,据魔法书上记载，,「论及格瑞莫瓦尔的知识，
 45022,787,101564,64,32,59,nobody knows more than the Emperor in the imperial capital.,　最もよく知るのは帝国首都にいる皇帝陛下です」,没有人比帝国首都里的皇帝知道的还多了。,　无人胜过帝国首都的皇帝陛下。」
 45023,787,101728,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45024,787,101792,64,32,48,… I'm sure that Emperor Golvadis knows something,「いえ・・・皇帝ゴルバディスならグリモワールを,……我保证高瓦迪斯陛下知道,「不……戈尔巴迪斯皇帝应该知道
-45025,787,101856,64,32,39,about how to do away with the Grimoire.,　どうにかする方法を知っているはずです」,有关如何破除魔法书的事情。,　对付魔法书的办法。」
+45025,787,101856,64,32,39,about how to do away with the Grimoire.,　どうにかする方法を知っているはずです」,有关如何破除魔法书的事情。,　对付格瑞莫瓦尔的办法。」
 45026,787,102020,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 45027,787,102084,64,32,31,So perhaps the imperial capital,「なので　次の行き先を,所以帝国首都,「那么帝国首都
 45028,787,102148,64,32,31,should be our next destination.,　帝国首都にするのはどうでしょう」,应当是我们下一个目的地。,　想必就是我们的下一站。」
@@ -47896,7 +47896,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 47901,814,18580,64,32,16,Q33. Long Bridge,Q33．ロングブリッジ,Q33. 长桥,Q33．长桥
 47902,814,19160,64,32,21,Q34. Flying Mountains,Q34．飛んでくる山々,Q34. 飞翔的山峦,Q34．飞来的群山
 47903,814,19740,64,32,9,Q35. QUIZ,Q35．QUIZ,Q35. 询问,Q35．问答
-47904,814,20320,64,32,19,Q36. Grimoire Birth,Q36．グリモワール誕生,Q36. 魔法书的诞生,Q36．魔法书诞生
+47904,814,20320,64,32,19,Q36. Grimoire Birth,Q36．グリモワール誕生,Q36. 魔法书的诞生,Q36．格瑞莫瓦尔诞生
 47905,814,20900,64,32,18,Q37. Crimson World,Q37．クリムゾンワールド,Q37.魔法书的世界,Q37．深红世界
 47906,814,21480,64,32,14,Q38. Cannoneer,Q38．大砲シューター,Q38. 炮兵,Q38．炮手
 47907,814,21848,64,32,12,REVOLUTION 3,REVOLUTION３,,REVOLUTION 3
@@ -49591,9 +49591,9 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 49596,872,5620,160,80,4,Herb,やくそう,草药,草药
 49597,872,5788,160,80,11,Explanation,せつめい,解释,说明
 49598,872,6212,32,16,4,Talk,はなす,交谈,交谈
-49599,872,6244,52,26,52,Mother: It seems the Grimoire has <powerful skills>.,はは「グリモワールは<強力なスキル>を持つそうです,母亲：看上去 魔法书 有<强大的技能>. 用炮火攻击会削弱这些技能！,母亲「魔法书似乎拥有<强力技能>。
+49599,872,6244,52,26,52,Mother: It seems the Grimoire has <powerful skills>.,はは「グリモワールは<強力なスキル>を持つそうです,母亲：看上去 魔法书 有<强大的技能>. 用炮火攻击会削弱这些技能！,母亲「格瑞莫瓦尔似乎拥有<强力技能>。
 49600,872,6636,32,16,4,Talk,はなす,交谈,交谈
-49601,872,6668,52,26,52,Mother: It seems the Grimoire has <powerful skills>.,はは「グリモワールは<強力なスキル>を持つそうです,母亲：看上去 魔法书 有<强大的技能>. 用炮火攻击会削弱这些技能！,母亲「魔法书似乎拥有<强力技能>。
+49601,872,6668,52,26,52,Mother: It seems the Grimoire has <powerful skills>.,はは「グリモワールは<強力なスキル>を持つそうです,母亲：看上去 魔法书 有<强大的技能>. 用炮火攻击会削弱这些技能！,母亲「格瑞莫瓦尔似乎拥有<强力技能>。
 49602,872,7060,32,16,4,Talk,はなす,交谈,交谈
 49603,872,7092,128,64,45,Son: Waaaaah! Somebody took the dragon's egg!,子「うわーーんっ！　竜のタマゴとられちゃったー！」,儿子：哇哇哇！有人拿了龙蛋！,儿子「哇啊啊！有人偷走了龙蛋！」
 49604,872,7484,160,80,12,Exit Village,村を出る,离开村庄,离开村庄
@@ -59369,12 +59369,12 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 59376,1039,89612,256,128,40,HRUMPH! The Destruction System is a go!!,「モスッ　ハメツシステムONモスーーー！！」,好样的！毁灭系统进展顺利！！,「唔哼！毁灭系统启动！！」
 59377,1040,988,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 59378,1040,1052,64,32,37,<EVO_NAME__>… There's something here!,「<EVO_NAME__>ちゃん・・・なんかいるわ！,<EVO_NAME__>… 这儿有什么东西！,「<EVO_NAME__>… 这儿有什么东西！
-59379,1040,1116,64,32,33,But it doesn't look like a Grimo…,　でもグリモではないような・・・」,但它看起来不像格瑞莫…,　但它看起来不像魔法书…」
+59379,1040,1116,64,32,33,But it doesn't look like a Grimo…,　でもグリモではないような・・・」,但它看起来不像格瑞莫…,　但它看起来不像格瑞莫…」
 59380,1040,2448,64,32,10,Togeron G8,トゲロンG8,托格润 G8,托格龙G8
 59381,1040,2512,128,64,11,"Beep, gaga.",「ピー　ガガ」,"嘟嘟, 嘎嘎.",「哔，嘎嘎。」
 59382,1040,2740,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 59383,1040,2804,64,32,41,Ah… This is… An Evil Lord Weapon… I think,「あら・・・ああ　これ魔王兵器・・・だわ,啊… 这是… 某个魔王的武器… 我觉得,「啊… 这是… 一件魔王兵器… 我想
-59384,1040,2868,64,32,51,it must be leftover from the creation of the Grimo.,　ほら　グリモつくったときのオマケ」,一定是格瑞莫创造的时候落下了。,　一定是制作魔法书时留下的。」
+59384,1040,2868,64,32,51,it must be leftover from the creation of the Grimo.,　ほら　グリモつくったときのオマケ」,一定是格瑞莫创造的时候落下了。,　一定是制作格瑞莫时留下的。」
 59385,1040,3032,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 59386,1040,3096,64,32,41,This one appears to be an automated mecha,「こいつはたんに　この地を守ってるだけの,这个应该是自动装甲,「这玩意儿似乎是台自动机甲
 59387,1040,3160,64,32,33,that's simply guarding this land.,　自動メカみたいなものね」,仅仅是用来保护这片领土。,　只是简单在守护这片土地。」
@@ -59473,11 +59473,11 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 59480,1040,59680,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 59481,1040,59744,128,64,26,"Good work, <EVO_NAME__>! ▼",「おつかれさま　<EVO_NAME__>ちゃん▼」,"干得好, <EVO_NAME__>! ▼",「辛苦了，<EVO_NAME__>！▼」
 59482,1040,59972,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-59483,1040,60036,64,32,37,It appears that the Grimo has somehow,「どうやらグリモのえいきょうで,看样子格瑞莫不知怎么,「看来魔法书不知怎的
+59483,1040,60036,64,32,37,It appears that the Grimo has somehow,「どうやらグリモのえいきょうで,看样子格瑞莫不知怎么,「看来格瑞莫不知怎的
 59484,1040,60100,64,32,47,disrupted the control of the Evil Lord Weapons.,　魔王兵器が制御不能になってたみたい」,破坏了武器魔王的统治。,　扰乱了魔王兵器的控制。」
 59485,1040,60264,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 59486,1040,60328,64,32,27,I wonder if that means that,「ってことは～　この先に,我在想那是不是意味着,「那是不是说明
-59487,1040,60392,64,32,28,a Grimo is waiting up ahead.,　グリモが待ち受けてるんじゃないかしらね」,格瑞莫就在前面等咱们。,　前方正有魔法书在等着呢。」
+59487,1040,60392,64,32,28,a Grimo is waiting up ahead.,　グリモが待ち受けてるんじゃないかしらね」,格瑞莫就在前面等咱们。,　前方正有格瑞莫在等着呢。」
 59488,1040,60620,64,32,45,"In that case, we can safely assume that other",「それじゃあ　他にもグリモのせいで,那样的话，我们就能猜想,「那样的话，我们可以推测其他
 59489,1040,60684,64,32,46,Evil Lord Weapons may have also been affected.,　おかしくなった魔王兵器も出てくるかもですわね」,武器魔王或许也受到影响了。,　魔王兵器或许也受到了影响。」
 59490,1040,60848,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -59957,13 +59957,13 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 59964,1049,44,256,128,11,Hero Castle,勇者城,英雄城堡,勇者城
 59965,1050,404,64,32,5,Eynvy,エインヴィー,恩威,恩维
 59966,1050,468,128,64,16,Byorororooooo!!!,「ビョロロロ～～～ッ！！！」,拜罗！！！,「咻噜噜噜噜！！！」
-59967,1050,4848,128,64,28,There's a Grimo over there!!,「あんな遠くにグリモがいますわ！！」,那里有一个格里穆,「那边远处有个魔法书！！」
+59967,1050,4848,128,64,28,There's a Grimo over there!!,「あんな遠くにグリモがいますわ！！」,那里有一个格里穆,「那边远处有个格瑞莫！！」
 59968,1050,5952,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
-59969,1050,6016,64,32,46,That is definitely the flying Grimo that broke,「あれはたしか　帝国研究所のてんじょうを,绝对是飞行格里穆出事了,「那绝对就是那只会飞的魔法书，
+59969,1050,6016,64,32,46,That is definitely the flying Grimo that broke,「あれはたしか　帝国研究所のてんじょうを,绝对是飞行格里穆出事了,「那绝对就是那只会飞的格瑞莫，
 59970,1050,6080,64,32,51,through the roof of the imperial lab and flew away…,　やぶって飛んで行った飛行タイプのグリモ・・・」,通过帝国实验室的屋顶飞走了……,　它撞破帝国研究所天花板飞走了…」
 59971,1050,6244,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 59972,1050,6308,64,32,44,It looks like we're going to somehow have to,「どうやらグリモの所へ行くには,貌似我们要,「看来咱们得想办法
-59973,1050,6372,64,32,53,cross the sea and scale a cliff to get to that Grimo.,　海を渡り　ガケの上へ行かねばならないようです」,穿过海洋攀上悬崖才能到达那里。,　渡海攀崖才能到那魔法书。」
+59973,1050,6372,64,32,53,cross the sea and scale a cliff to get to that Grimo.,　海を渡り　ガケの上へ行かねばならないようです」,穿过海洋攀上悬崖才能到达那里。,　渡海攀崖才能到那格瑞莫。」
 59974,1050,7184,128,64,45,"Oh, no! How are we going to manage all that!?",「そんな！　どうやって行けばいいですの！！」,噢，不！怎么弄！？,「糟了！这可怎么去才好！？」
 59975,1050,7704,64,32,8,Silveria,シルベリア,西尔韦里亚,希尔贝莉亚
 59976,1050,7768,64,32,29,It'd be nice if we could fly…,「空を飛べればいいのですが・・・,要是我们能飞……,「要能飞就好了…
@@ -60011,11 +60011,11 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 60018,1050,17468,64,32,62,you won't be able to use the Temple of Time to visit the past!,　時の神殿で過去に行くことはできないわ！」,不然你就没办法使用时光神庙回到过去！,　就别想用时之神殿回到过去！」
 60019,1050,17924,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 60020,1050,17988,64,32,35,"If the dragon hatches from the egg,",「タマゴから竜をかえせば,如果龙孵出来了，,「只要龙从蛋里孵出来，
-60021,1050,18052,64,32,57,I'm confident you'll be able to fly to the Grimo's roost!,　きっと　グリモのところまで飛んでいけるわ！」,我相信你可以飞到格里穆那里！,　就一定能飞到魔法书那儿去！」
+60021,1050,18052,64,32,57,I'm confident you'll be able to fly to the Grimo's roost!,　きっと　グリモのところまで飛んでいけるわ！」,我相信你可以飞到格里穆那里！,　就一定能飞到格瑞莫那儿去！」
 60022,1050,18508,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 60023,1050,18572,64,32,30,"This will not be an easy task,",「大変かもしれないけど,这不是容易的事情，,「这任务绝不轻松，
 60024,1050,18636,64,32,49,"but if anyone can do it, you can, <EVO_NAME__>! ★",　がんばってね<EVO_NAME__>ちゃん★」,但是如果其他人可以，你也可以， <EVO_NAME__>! ★,　但能办到的非你莫属，<EVO_NAME__>！★」
-60025,1050,25224,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败魔法书！
+60025,1050,25224,192,96,31,Defeat the Grimo in 30 Seconds!,３０秒でグリモをたおせ！,在30秒内击败魔王！,30秒内击败格瑞莫！
 60026,1050,28728,192,96,36,The Temple of Time's seal is broken!,時の神殿の封印がとけた！,时光神庙的封印破解了！,时之神殿的封印解除了！
 60027,1050,31648,192,96,36,The Temple of Time's seal is broken!,時の神殿の封印がとけた！,时光神庙的封印破解了！,时之神殿的封印解除了！
 60028,1050,34276,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
@@ -60048,7 +60048,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 60055,1050,67108,64,32,24,GO - GO - GO DRAGON GO～♪,　ゴーゴードラゴーー♪」,去- 去- 去吧巨龙？？,　出发—出发—龙出发♪」
 60056,1050,67272,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 60057,1050,67336,64,32,31,Press △ to mount your dragon. ♪,「竜の乗りおりは△よ♪,按下 仮 骑在巨龙上面？,「按△即可骑上飞龙。♪
-60058,1050,67400,64,32,51,Then fly to that Grimo and knock him into oblivion!,　さあ　グリモ目指してぶっとばすのよ～」,然后飞向格里穆，把它打到虚空里面！,　然后飞向那魔法书，把它揍飞！」
+60058,1050,67400,64,32,51,Then fly to that Grimo and knock him into oblivion!,　さあ　グリモ目指してぶっとばすのよ～」,然后飞向格里穆，把它打到虚空里面！,　然后飞向那格瑞莫，把它揍飞！」
 60059,1050,69608,192,96,20,Fly Through the Sky!,空をこえてゆこう！,穿越穹苍！,翱翔天际！
 60060,1050,71424,128,64,23,A monster is attacking!,モンスターが襲ってきた！,有一只怪物在攻击！,有怪兽袭来！
 60061,1050,74344,128,64,23,A monster is attacking!,モンスターが襲ってきた！,有一只怪物在攻击！,有怪兽袭来！

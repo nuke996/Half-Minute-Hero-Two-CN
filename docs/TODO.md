@@ -54,6 +54,7 @@
 | 术语清理（无独立 ID） | 2026-11-21 | 提交 `b76af42` 统一 `グリモワール/グリモ→魔法书`，`魔典/格瑞莫/格里莫` 在 `zh_new` 已归零；Z27 完成 27 个选项放行、15 个尾行留空、副队长统一（术语批次重建后 `validate_build` error 0 / warning 46） | `docs/TEMP_REVIEW_20261121.md`、`PACKAGE_LEDGER.md` §2 |
 | **T-10b/T-11/T-12/T-13a/T-07b** | 2026-11-21（Z27/Z19/stable） | `船頭/おじさま/銃士/魔道士/悪ガキ/超新流星` 等第一批误译落地；专名与说话人标签批量统一（97→40 组）；`audit_terms` 161→72（P1 0）。重建 Z19/stable/Z27：validate error 0，warning Z19/Z27 46、stable 1；哈希见 `PACKAGE_LEDGER` §2 | `docs/TERM_RECOMMENDATIONS_20261121.md`、`术语表.md`、`PACKAGE_LEDGER.md` §2 |
 | **T-03** | 2026-11-22（Z27 重建） | 非 CSV 表接入校对视图：新增 `60_songs.json`（28 条歌词）→ 导入写 `locales/zh-CN/song_en_lines.json`，`song_lines()` 覆盖内置表；装备/道具名副本（`EQUIP_BLOBS pos4` 同名、位于其他 blob）在视图标注 `meta.canonical`，导入写回权威行；无独立译表行的参数串/机制名副本导出到 `protected/prot_itemcopies.json`（150 条，含 `Villager's Clothes`×2、`Hellfire`×7 副本），导入跳过。实测歌曲 k=2 与副本改 `row::7736` 均写入 dist，回滚后 `LANG_EN 1b0109baf96a` / `cscv f074004c8eb3` 恢复，validate error 0 / warning 46 | `PITFALLS.md` §38、`BUILDING.md` §5.4、`PACKAGE_LEDGER.md` §5/§6 |
+| 术语批次（Grimoire 音译） | 2026-11-23（Z29） | 故事/UI 显示文本：`グリモワール→格瑞莫瓦尔`、`グリモ→格瑞莫`（102 行 CSV + 8 条多行），昵称 `<小典>/<魔法书>→<小莫>`；武器道具 `row::7402` 及 20 个名称/说明副本、获得提示 `row::34043`、图鉴说明 `ml::804` 保持「魔法书」；机制名 `row::32917`（脚本标识）与 `row::53626/53629`（称号表章节副本）、4 条英文 BGM 曲名保留。新增 `tools/fix_terms_grimoire.py`；重建 Z29，validate 结果见 `PACKAGE_LEDGER.md` | `术语表.md` §1/§8/§13.1、`PITFALLS.md` §50、`PACKAGE_LEDGER.md` |
 
 ### 1.6 旧 ID 对照（供其他文档引用）
 

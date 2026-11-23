@@ -297,6 +297,11 @@ Where possible, validation should detect:
 - duplicate IDs
 - unexpected empty translations
 
+When evaluating or changing an existing translation, always check the source text
+(`ja`, and `en` where relevant) first. Do not infer meaning from the current Chinese
+alone — abbreviations, nicknames, homonyms, same-named items, and split lines often
+only become clear from the original.
+
 ## Font and Encoding Work
 
 Do not assume replacing a font file or texture alone is sufficient.

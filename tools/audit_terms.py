@@ -773,6 +773,11 @@ def check_alias(entries, occ, terms, auto_pair_en, auto_pairs):
             canon_short = {norm(c) for c in terms[short]['canon']} if terms[short]['canon'] else set()
             if canon_long and canon_short and canon_long & canon_short:
                 continue
+            # 已登记的全称/简称互为前缀（如 格瑞莫瓦尔 / 格瑞莫）不属于异译
+            if canon_long and canon_short and any(
+                    l.startswith(s) or s.startswith(l)
+                    for l in canon_long for s in canon_short):
+                continue
             short_top = collections.Counter(norm(entries[i]['zh']) for i in s_alone).most_common(3)
             if canon_long and all(any(c and c in z for c in canon_long) for z, _ in short_top):
                 continue

@@ -4760,7 +4760,7 @@
    "id": "ml::397",
    "en": "Old Man: There's a village east of here, but thanks\nto the Grimoire, it's completely empty now.",
    "ja": "おじさん「東に村があるがグリモワールのせいで\n　　　　　ガラーンとしちまってるんだよ」",
-   "zh": "大叔「东边有个村子，可被魔法书害得\n现在空空荡荡的」",
+   "zh": "大叔「东边有个村子，可被格瑞莫瓦尔害得\n现在空空荡荡的」",
    "meta": {
     "blob": 702,
     "offset": 1580,
@@ -5648,7 +5648,7 @@
    "id": "ml::471",
    "en": "Mother: It seems the Grimoire has <powerful skills>.\nDamaging it with cannon fire will weaken those skills!",
    "ja": "はは「グリモワールは<強力なスキル>を持つそうです\n　　　大砲で弱らせればスキルも弱くなるでしょう！」",
-   "zh": "母亲「魔法书似乎拥有<强力技能>。\n用炮火轰它就能削弱那些技能！」",
+   "zh": "母亲「格瑞莫瓦尔似乎拥有<强力技能>。\n用炮火轰它就能削弱那些技能！」",
    "meta": {
     "blob": 872,
     "offset": 6244,
@@ -7196,7 +7196,7 @@
    "id": "ml::600",
    "en": "Lux Deus: Takashi Kojo\nA grimoire brought to life using counter-mirrors.\nCreates copies from mirrors.",
    "ja": "ルクスデウス：小城崇志\n合わせ鏡によって生まれたグリモワール\n鏡から分身を作り出す",
-   "zh": "路克斯迪乌斯：Takashi Kojo\n用反镜获得生命的魔法书。\n能从镜子里制造分身。",
+   "zh": "路克斯迪乌斯：Takashi Kojo\n用反镜获得生命的格瑞莫瓦尔。\n能从镜子里制造分身。",
    "meta": {
     "blob": 54,
     "offset": 27808,
@@ -7208,7 +7208,7 @@
    "id": "ml::601",
    "en": "Ava: Takashi Kojo\nA marionette grimoire.\nManipulates things like dolls and people.",
    "ja": "アヴァ：小城崇志\nマリオネットのグリモワール\n人や人形を意のままにあやつる",
-   "zh": "艾：Takashi Kojo\n操偶魔法书。\n能操控玩偶和人。",
+   "zh": "艾：Takashi Kojo\n操偶格瑞莫瓦尔。\n能操控玩偶和人。",
    "meta": {
     "blob": 54,
     "offset": 28468,
@@ -7220,7 +7220,7 @@
    "id": "ml::602",
    "en": "Faegwot: Takashi Kojo\nA grimoire with countless eyes.\nSees all through those eyes.",
    "ja": "フェグォット：小城崇志\n無数の目をもつグリモワール\nその目で全てのものを見通す",
-   "zh": "法伊古特：Takashi Kojo\n长着无数眼的魔法书。\n用这些眼看一切。",
+   "zh": "法伊古特：Takashi Kojo\n长着无数眼的格瑞莫瓦尔。\n用这些眼看一切。",
    "meta": {
     "blob": 54,
     "offset": 29128,
@@ -7244,7 +7244,7 @@
    "id": "ml::604",
    "en": "Spelvia: Takashi Kojo\nGrimoire that absorbed the imperial castle,\nprotected by a powerful blood barrier.",
    "ja": "スペルヴィア：小城崇志\n皇帝城と同化したグリモワール\n強力な血のバリアで守られている",
-   "zh": "斯佩维：Takashi Kojo\n吃下了帝国城堡的魔法书，\n由强大的血之结界守护。",
+   "zh": "斯佩维：Takashi Kojo\n吃下了帝国城堡的格瑞莫瓦尔，\n由强大的血之结界守护。",
    "meta": {
     "blob": 54,
     "offset": 30448,
@@ -8024,7 +8024,7 @@
    "id": "ml::669",
    "en": "Poly Noir\nThis grimoire will give the world a red color and\nmake it look more three-dimensional.",
    "ja": "ポリノワール\nヨーブンをすって世界を赤く変え\n立体的に見せるグリモワール",
-   "zh": "波利诺\n这本魔法书会把世界染红，\n让它看起来更立体。",
+   "zh": "波利诺\n这本格瑞莫瓦尔会把世界染红，\n让它看起来更立体。",
    "meta": {
     "blob": 555,
     "offset": 21868,
@@ -8096,7 +8096,7 @@
    "id": "ml::675",
    "en": "Faegwot\nA grimoire with countless eyes.\nUses lots of eye-drops.",
    "ja": "フェグォット\n大量の目薬が必要なほど無数の\n目をもつグリモワール",
-   "zh": "费格特\n长着无数眼睛的魔法书。\n眼药水用得很多。",
+   "zh": "费格特\n长着无数眼睛的格瑞莫瓦尔。\n眼药水用得很多。",
    "meta": {
     "blob": 555,
     "offset": 25828,
