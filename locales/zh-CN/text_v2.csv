@@ -12602,7 +12602,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 12601,215,45792,64,32,35,located at the <spot east of here>.,　機関車のレールに行けるかもしれないぜ？」,位于<这里东部>的轨道了。,　上到火车的轨道上哦？」
 12602,215,47124,192,96,14,Obtained Bike!,バイクを手に入れた！,获得摩托车！,获得机车！
 12603,215,48584,64,32,7,Scholar,学者,学者,学者
-12604,215,48648,64,32,44,"I am the person who developed Death Rail G9,",「わたしは機関車型魔王兵器の,我就是开发了死亡铁路G9的人，,「我就是开发出机车型魔王兵器
+12604,215,48648,64,32,44,"I am the person who developed Death Rail G9,",「わたしは機関車型魔王兵器の,我就是开发了死亡铁路G9的人，,「我就是开发出火车头型魔王兵器
 12605,215,48712,64,32,37,the locomotive-type Evil Lord Weapon!,　デスレールG9を開発した者でーす！」,机车式邪恶领主武器！,　『死亡铁路G9』的人～！」
 12606,215,48876,64,32,7,Scholar,学者,学者,学者
 12607,215,48940,64,32,30,You want to put a stop to it?!,「魔王兵器を止めたいって？！,你想阻止它？!,「你想阻止魔王兵器？！
@@ -14887,7 +14887,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 14886,282,130116,64,32,15,"Urgh, so be it…",「もう　いいんです・・・,唉，就随他去吧…,「唉，随它去吧…
 14887,282,130180,64,32,24,If my life can end this…,　私一人のぎせいで済むなら・・・」,如果我的生命会这么结束…,　若只牺牲我一人就能了结…」
 14888,282,130700,64,32,27,You will do no such thing!!,「ダメに決まってますわ！！,绝不会发生这种事！！,「绝不许你这么做！！
-14889,282,130764,64,32,24,I will go in your place!,　わたくしがあなたの代わりになります！」,我将会到你那去！,　我来代你！」
+14889,282,130764,64,32,24,I will go in your place!,　わたくしがあなたの代わりになります！」,我将会到你那去！,　我替你去！」
 14890,282,131220,64,32,24,Village Chief's Daughter,村長の娘,村长的女儿,村长之女
 14891,282,131284,64,32,14,Why would you…,「ど　どうしてそんな・・・,为什么你会…,「为什么你会…
 14892,282,131348,64,32,36,This village is no concern of yours.,　あなたには関係ない村のことですよ」,这村你不用你来关心。,　这村庄不关你事。」
@@ -23830,7 +23830,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 23829,411,1548,32,16,4,Talk,はなす,交谈,交谈
 23830,411,1580,128,64,38,Angel: You should eat before a battle!,天使あるじ「たたかう前に食っとけ」,天使: 在战斗前你应该吃点东西!,天使老板「开战前先吃点东西！」
 23831,411,1972,32,16,4,Talk,はなす,交谈,交谈
-23832,411,2004,128,64,63,Old Angel: The old man in the south is selling strange carrots.,老天使「南のジジイが変なニンジン売っとった」,老天使：南方的老人在出售奇怪的胡萝卜。,老天使「南边那老爷子在卖奇怪的红萝卜。」
+23832,411,2004,128,64,63,Old Angel: The old man in the south is selling strange carrots.,老天使「南のジジイが変なニンジン売っとった」,老天使：南方的老人在出售奇怪的胡萝卜。,老天使「南边那老爷子在卖奇怪的胡萝卜。」
 23833,411,3244,32,16,4,Talk,はなす,交谈,交谈
 23834,411,3276,128,64,19,Clerk: Take a break,天使商人「ひとやすみひとやすみ」,职员：休息一下,店员「歇会儿，歇会儿。」
 23835,411,3432,64,32,11,Pricey Herb,高価なやくそう,昂贵的草药,高价草药
@@ -43738,7 +43738,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43743,772,1548,32,16,5,Check,しらべる,检查,查看
 43744,772,1580,128,64,21,It's a Goddess statue,女神像だ,这是女神像,这是女神像。
 43745,772,1804,160,80,6,Prayer,おいのり,祷告,祈祷
-43746,772,2228,32,16,11,Carrot Cake,キャロットケーキ,胡萝卜蛋糕,红萝卜蛋糕
+43746,772,2228,32,16,11,Carrot Cake,キャロットケーキ,红萝卜蛋糕,胡萝卜蛋糕
 43747,772,2396,32,16,4,Talk,はなす,交谈,交谈
 43748,772,2428,128,64,18,Old Man: Come eat!,おやじ「くってけ！」,老男人：来吃吧！,大叔「来吃啊！」
 43749,772,3668,32,16,4,Talk,はなす,交谈,交谈
@@ -48649,7 +48649,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 48654,839,205744,128,64,28,… Huh? Haven't I seen you… ?,「・・・はて？　お前さんどこかで・・・？」,……额？我没见过你……？,「……咦？我是不是在哪儿见过你……？」
 48655,839,205972,64,32,15,Carroty Old Man,ニンジイ,红发老人,红萝卜老爷
 48656,839,206036,64,32,21,… Ah! Now I remember!,「・・・あっ！　思い出したゾイ！,……啊！我记起来了！,「……啊！我想起来了！
-48657,839,206100,64,32,18,My salted carrots…,　アンタ下界でワシのしおにんじんを・・・」,我的盐焗胡萝卜！,　你在人间买了我的红萝卜……」
+48657,839,206100,64,32,18,My salted carrots…,　アンタ下界でワシのしおにんじんを・・・」,我的盐焗胡萝卜！,　你在人间买了我的盐渍胡萝卜……」
 48658,839,206264,64,32,15,Carroty Old Man,ニンジイ,红发老人,红萝卜老爷
 48659,839,206328,64,32,28,… you were my only customer.,「・・・たった一人買ってくれた,……你是我唯一的顾客。,「……你是我唯一的客人，
 48660,839,206392,64,32,41,"You kind, young man! That was you, right!",　心優しい若者じゃっ！　そうじゃそうじゃっ！」,年轻人，你太好了！就是你！,　善良的年轻人！就是你没错吧！」
@@ -56931,7 +56931,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 56938,982,44624,64,32,25,collecting information. ★,　だんだんなれてきたところですわ★」,收集信息了。 ★,　收集情报了。★」
 56939,982,44788,64,32,24,Village Chief's Daughter,村長の娘,村长的女儿,村长之女
 56940,982,44852,64,32,61,The sacrificial equipment needed <is more than just clothes>.,「いけにえの装備は<服だけじゃない>んです,献祭的装备<不仅仅需要衣服>。,「献祭装备<不止衣服>，
-56941,982,44916,64,32,63,"<Clothes>, <hat>, <shoes> and <staff> are the 4 items required.",　<ふく>　<ぼうし>　<くつ>　<つえ>の4つあるんです」,"一共需要<衣服>, <帽子>, <鞋子> 和<权杖>四样东西。",　<衣服>、<帽子>、<鞋子>、<如意棒>这四样是必需的。」
+56941,982,44916,64,32,63,"<Clothes>, <hat>, <shoes> and <staff> are the 4 items required.",　<ふく>　<ぼうし>　<くつ>　<つえ>の4つあるんです」,"一共需要<衣服>, <帽子>, <鞋子> 和<权杖>四样东西。",　<衣服>、<帽子>、<鞋子>、<手杖>这四样是必需的。」
 56942,982,45080,64,32,24,Village Chief's Daughter,村長の娘,村长的女儿,村长之女
 56943,982,45144,64,32,45,"If you want to become the Sacrificial Maiden,",「いけにえになりきるのであれば,如果你想成为献祭少女，,「想成为献祭少女，
 56944,982,45208,64,32,59,you'll need <3 or more items> of the sacrificial equipment.,　いけにえ装備を<3コ以上>集めるのがいいと思います！」,你需要<3件或以上的> 献祭装备。,　需要收集<3件或以上>献祭装备。」
@@ -60843,7 +60843,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60847,147,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
 60848,147,71884,64,32,17,The Evil Loooord.,魔王さまぁぁあああ,,魔王大人啊啊啊啊
 60849,147,72152,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
-60850,147,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味红萝卜啦
+60850,147,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
 60851,147,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
 60852,147,76708,64,32,25,You will see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
 60853,147,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
@@ -60888,7 +60888,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60892,147,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
 60893,147,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 60894,147,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
-60895,147,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味红萝卜啦
+60895,147,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
 60896,147,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
 60897,147,97344,64,32,23,A torch lit with flame.,火が点いているいるたいまつ,,点火着的火把
 60898,147,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
@@ -60973,7 +60973,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60977,357,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
 60978,357,71884,64,32,14,Evil Looooord!,魔王さまぁぁあああ,,魔王大人啊啊啊啊
 60979,357,72152,64,32,14,Tomboy Heroine,おてんば主人公,,活泼好动的主人公
-60980,357,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味红萝卜啦
+60980,357,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
 60981,357,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
 60982,357,76708,64,32,25,You will see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
 60983,357,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
@@ -61020,7 +61020,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61024,357,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
 61025,357,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 61026,357,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
-61027,357,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味红萝卜啦
+61027,357,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
 61028,357,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
 61029,357,97344,64,32,12,A lit torch.,火がついているたいまつ,,燃烧着的火把
 61030,357,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
@@ -61127,7 +61127,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61131,736,71616,64,32,14,Jester Knight.,ずっこけナイト君,,搞笑骑士君
 61132,736,71884,64,32,14,The Evil Lord.,魔王さまぁぁあああ,,魔王大人啊啊啊啊
 61133,736,72152,64,32,15,Tomboy Heroine.,おてんば主人公,,活泼好动的主人公
-61134,736,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味红萝卜啦
+61134,736,74564,64,32,28,It's a salty tasting carrot.,しお味のニンジンなのだ,,是咸味胡萝卜啦
 61135,736,75100,64,32,52,Can move quickly. _Does not consume HP when dashing.,速くいどうできる_ダッシュでHPがへらない,,能快速移动_冲刺不掉HP
 61136,736,76708,64,32,36,You will be able to see many things.,いろいろなモノが見えるようになる,,能看见各种各样的东西了
 61137,736,79120,64,32,37,Whoa! This is an awesome fishing rod!,ウオッ！これはいいつりざお！,,哇！这是根好钓竿！
@@ -61173,7 +61173,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61177,736,95468,64,32,23,Increases attack power!,攻撃力があがるぞ！,,攻击力提升！
 61178,736,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 61179,736,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
-61180,736,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味红萝卜啦
+61180,736,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
 61181,736,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
 61182,736,97344,64,32,25,A torch lit with a flame.,火が点いているいるたいまつ,,点火着的火把
 61183,736,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
