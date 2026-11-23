@@ -19863,7 +19863,7 @@
    "id": "row::33214",
    "en": "This could be a global dungeon!",
    "ja": "　グローバルダンジョンかもしれないわね～」",
-   "zh": "　世界地宫呢～」",
+   "zh": "　世界地牢呢～」",
    "meta": {
     "blob": 620,
     "offset": 103900,
@@ -19874,7 +19874,7 @@
    "id": "row::33215",
    "en": "What's a global dungeon, Time Goddess?",
    "ja": "「グローバルダンジョンって何ですの？　女神さま」",
-   "zh": "「时之女神，什么是世界地宫？」",
+   "zh": "「时之女神，什么是世界地牢？」",
    "meta": {
     "blob": 620,
     "offset": 105004,
@@ -19885,7 +19885,7 @@
    "id": "row::33217",
    "en": "A global dungeon is a spectacular place",
    "ja": "「グローバルダンジョンは　お宝と冒険が",
-   "zh": "「世界地宫可是宝藏与冒险沉眠之处，",
+   "zh": "「世界地牢可是宝藏与冒险沉眠之处，",
    "meta": {
     "blob": 620,
     "offset": 105588,
@@ -32645,7 +32645,7 @@
    "id": "row::35927",
    "en": "but have you been exploring the global dungeons?",
    "ja": "　グローバルダンジョン　タンサクしてる？」",
-   "zh": "　你有在探索全球地牢吗？」",
+   "zh": "　你有在探索世界地牢吗？」",
    "meta": {
     "blob": 668,
     "offset": 327864,
@@ -32766,7 +32766,7 @@
    "id": "row::35943",
    "en": "… That's why you should keep an eye on these gates",
    "ja": "「・・・だから今度グローバルダンジョンを",
-   "zh": "「…所以你下次探索全球地牢时",
+   "zh": "「…所以你下次探索世界地牢时",
    "meta": {
     "blob": 668,
     "offset": 336852,

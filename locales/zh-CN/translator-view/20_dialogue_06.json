@@ -11019,7 +11019,7 @@
    "id": "row::51616",
    "en": "This castle appears to be a <global dungeon>. ♪",
    "ja": "　このお城は<グローバルダンジョン>の一つみたいね♪」",
-   "zh": "　这城堡似乎是座<全球地牢>♪」",
+   "zh": "　这城堡似乎是座<世界地牢>♪」",
    "meta": {
     "blob": 906,
     "offset": 195296,
@@ -11030,7 +11030,7 @@
    "id": "row::51617",
    "en": "… Global dungeon??",
    "ja": "「・・・グローバルダンジョン？？」",
-   "zh": "「…全球地牢？？」",
+   "zh": "「…世界地牢？？」",
    "meta": {
     "blob": 906,
     "offset": 196692,
@@ -11118,7 +11118,7 @@
    "id": "row::51629",
    "en": "That said, there are things that you need to know",
    "ja": "「でねでね　グローバルダンジョンをタンサクする上で",
-   "zh": "「不过，探索全球地牢前",
+   "zh": "「不过，探索世界地牢前",
    "meta": {
     "blob": 906,
     "offset": 198152,
@@ -31138,7 +31138,7 @@
    "id": "row::55991",
    "en": "Just so you know, that castle is a global dungeon. ♪",
    "ja": "「ちなみにそのお城　グローバルダンジョンだからね♪",
-   "zh": "「顺便一提，那城堡是全局迷宫♪",
+   "zh": "「顺便一提，那城堡是世界地牢♪",
    "meta": {
     "blob": 970,
     "offset": 126320,
