@@ -4848,7 +4848,7 @@
    "id": "row::1007",
    "en": "but I don't recommend using it the rest of the time.",
    "ja": "　グローバル中は使用しないことをオススメしマス」",
-   "zh": "　但全球模式下不建议使用。」",
+   "zh": "　但在大世界地图里不建议使用。」",
    "meta": {
     "blob": 29,
     "offset": 121420,
@@ -14605,7 +14605,7 @@
    "id": "row::3262",
    "en": "Or rather… I have no memory of them.",
    "ja": "　いや・・・それ以前に記憶がないがな」",
-   "zh": "　不如说…我对他们全无记忆。」",
+   "zh": "　不如说…我对他们毫无记忆。」",
    "meta": {
     "blob": 73,
     "offset": 65940,
@@ -15133,7 +15133,7 @@
    "id": "row::3344",
    "en": "Or rather… I have no memory of them.",
    "ja": "　いやそれ以前に記憶がないがな」",
-   "zh": "　不如说…我对他们全无记忆。」",
+   "zh": "　不如说…我对他们毫无记忆。」",
    "meta": {
     "blob": 73,
     "offset": 90176,

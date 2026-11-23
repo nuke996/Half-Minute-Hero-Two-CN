@@ -1006,7 +1006,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 1004,29,121064,128,64,59,*sigh* I should have expected as much from a cursed weapon…,「さ　さすが呪われた武器のことはあるな・・・」,*叹气*我早该知道这把剑有如此大的负面效果…,「果、果然不愧是被诅咒的武器啊……」
 1005,29,121292,64,32,6,No. 30,３０号,30号,30号
 1006,29,121356,64,32,32,"It might be okay during a quest,",「クエスト中はまだいいデスガ,一两次任务中使用它也许还行，,「任务中还算可以，
-1007,29,121420,64,32,52,but I don't recommend using it the rest of the time.,　グローバル中は使用しないことをオススメしマス」,但是我不建议所有的时候都用这把剑。,　但全球模式下不建议使用。」
+1007,29,121420,64,32,52,but I don't recommend using it the rest of the time.,　グローバル中は使用しないことをオススメしマス」,但是我不建议所有的时候都用这把剑。,　但在大世界地图里不建议使用。」
 1008,29,122232,64,32,40,"Well, whatever. We got what we came for.",「まいーや　ブツは手に入れたことだし,好的，不管怎么样。我们已经达到目的了。,「算了，反正我们要的东西到手了，
 1009,29,122296,64,32,22,Let's get out of here…,　こんなしんきくせー場所から出よ・・・」,我们离开这儿吧…,　离开这鬼地方吧……」
 1010,29,123108,64,32,35,W-Whoa! Look at all these monsters!,「って　うぉー！　モンスターすげーいる！,喔！快看这些怪兽！,「哇哦！这怪兽也太多了吧！
@@ -3261,7 +3261,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 3259,73,65520,64,32,6,Knight,ナイト,骑士,骑士
 3260,73,65584,128,64,36,Perhaps he was an ancestor of yours…,「もしや　<YUSHA_NAME>様の祖先は・・・」,也许他是你的祖先…,「或许他是你的先人…」
 3261,73,65876,64,32,25,I don't have any parents.,「オレに親はいない,我没有父母。,「我没有父母，
-3262,73,65940,64,32,36,Or rather… I have no memory of them.,　いや・・・それ以前に記憶がないがな」,或者说，我没有关于他们的记忆。,　不如说…我对他们全无记忆。」
+3262,73,65940,64,32,36,Or rather… I have no memory of them.,　いや・・・それ以前に記憶がないがな」,或者说，我没有关于他们的记忆。,　不如说…我对他们毫无记忆。」
 3263,73,66396,64,32,6,Knight,ナイト,骑士,骑士
 3264,73,66460,64,32,39,F-Forgive me for asking such questions!,「あっ　ヘ　ヘンなことを聞いてしまって,噢，原谅我问这个糟糕的问题！,「啊，问、问了奇怪的问题，
 3265,73,66524,64,32,52,I hope you can find it in your heart to forgive me!!,　もうしわけありませんでした！！」,我希望你能在你的心中找到,　真是非常抱歉！！」
@@ -3343,7 +3343,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 3341,73,89756,64,32,6,Knight,ナイト,骑士,骑士
 3342,73,89820,128,64,36,Perhaps he was an ancestor of yours…,「もしかして　<YUSHA_NAME>様の祖先は・・・」,也许他是你的祖先…,「或许他是你的先人…」
 3343,73,90112,64,32,25,I don't have any parents.,「オレに親はいない,我没有父母。,「我没有父母，
-3344,73,90176,64,32,36,Or rather… I have no memory of them.,　いやそれ以前に記憶がないがな」,或者说，我没有关于他们的记忆。,　不如说…我对他们全无记忆。」
+3344,73,90176,64,32,36,Or rather… I have no memory of them.,　いやそれ以前に記憶がないがな」,或者说，我没有关于他们的记忆。,　不如说…我对他们毫无记忆。」
 3345,73,90632,64,32,6,Knight,ナイト,骑士,骑士
 3346,73,90696,64,32,39,F-Forgive me for asking such questions!,「あっ　ヘ　ヘンなことを聞いてしまって,噢，原谅我问这个糟糕的问题！,「对、对不起问了这种问题，
 3347,73,90760,64,32,52,I hope you can find it in your heart to forgive me!!,　もうしわけありませんでした！！」,我希望你能在你的心中找到,　希望您能放过我！！」
@@ -10032,7 +10032,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 10030,176,278160,128,64,13,It's… so big…,「すごく・・・大きいわ・・・」,它...很大...,「它…好大…」
 10031,176,278388,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 10032,176,278452,64,32,51,"Hmm. No matter how strong you may be, <YUSHA_NAME>,",「う～ん　いくら<YUSHA_NAME>さんが強くても,唔，不管你有多强大，<YUSHA_NAME>，,「唔，无论你多强，<YUSHA_NAME>，
-10033,176,278516,64,32,58,you don't stand a chance against something as big as that.,　あんなに　大きいんじゃ勝負にならないわよね」,在那么巨大的东西面前你没有胜算的。,　对上那么大的东西，你全无胜算。」
+10033,176,278516,64,32,58,you don't stand a chance against something as big as that.,　あんなに　大きいんじゃ勝負にならないわよね」,在那么巨大的东西面前你没有胜算的。,　对上那么大的东西，你毫无胜算。」
 10034,176,278680,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 10035,176,278744,64,32,19,"Well, <YUSHA_NAME>!",「とりあえずは<YUSHA_NAME>さん！,"好吧, <YUSHA_NAME>!",「总之，<YUSHA_NAME>！
 10036,176,278808,64,32,45,Let's head to that castle it's smashing into!,　アレがぶつかっているお城にいってみましょ！」,我们就前往被怪物破坏的城堡吧！,　我们去那座被它撞上的城堡看看吧！」
@@ -13239,7 +13239,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13238,230,20844,64,32,11,God Ramizas,神ラミサス,瑞姆扎斯神,拉米萨斯神
 13239,230,20908,128,64,13,"But, to them…",「だがそれも　あのお方たちには・・・」,但是，对他们...,「但，对他们而言……」
 13240,230,21132,64,32,11,God Ramizas,神ラミサス,瑞姆扎斯神,拉米萨斯神
-13241,230,21196,128,64,27,… Such will be of no use… !,「・・・つうじないでしょう・・・ガフッ！」,...这种意志是没有用的...！,「……全无用处吧……咕哈！」
+13241,230,21196,128,64,27,… Such will be of no use… !,「・・・つうじないでしょう・・・ガフッ！」,...这种意志是没有用的...！,「……毫无用处吧……咕哈！」
 13242,231,44,256,128,11,Hero Castle,勇者城,英雄城堡,勇者城
 13243,233,1052,128,64,6,… Hmm?,「・・・ん？」,…嗯?,「…嗯？」
 13244,233,1344,128,64,33,Huh… I wonder what that could be…,「あれ・・・なにかしら・・・」,呵呵...我好奇那可能是...,「咦……那会是什么呢……」
@@ -13458,7 +13458,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13457,237,10980,128,64,18,"Come, Frogross G1!",「来いっ　フログロスG１！」,来，恶心青蛙G1！,「上吧，弗洛格G1！」
 13458,237,12376,64,32,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
 13459,237,12440,64,32,46,<Goddess Era 800>… is when everything changes!,「<女神暦800年>・・・これから時代は変わるのだ！,<女神埃若800>…即一切都改变的时刻！,「<女神历800年>……正是时代巨变的时刻！
-13460,237,12504,64,32,54,Good terms mean nothing! The Empire only has enemies!!,　友好など無意味！　帝国以外は敵なのだ！！」,关系不错也没什么价值！帝国只有敌人！！,　友好全无意思！帝国之外皆敌人！！」
+13460,237,12504,64,32,54,Good terms mean nothing! The Empire only has enemies!!,　友好など無意味！　帝国以外は敵なのだ！！」,关系不错也没什么价值！帝国只有敌人！！,　友好毫无意思！帝国之外皆敌人！！」
 13461,237,12668,64,32,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
 13462,237,12732,128,64,34,"Go forth and rampage, Frogross G1!",「さあ好きに暴れてこいフログロスG１！」,上吧，尽管爆发吧，,「去肆意暴走吧，蛙怪G1！」
 13463,237,12960,64,32,21,Fierce General Gustaf,猛将グスタフ,猛将古斯塔夫,猛将古斯塔夫
@@ -18317,7 +18317,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 18316,336,114348,128,64,11,… Hyaaah!!!,「・・・おらっ！！！」,……哈！！！,「……哦啦！！！」
 18317,336,116620,64,32,3,Coo,クゥ,咕咕声,小咕
 18318,336,116684,128,64,42,"C'mon, <RGN_NAME__>!! Don't be so violent!",「ちょっと<RGN_NAME__>！　ランボーはダメ！」,快点，<RGN_NAME__>！！别那么暴力！,「等等，<RGN_NAME__>！！别这么暴力！」
-18319,336,117560,64,32,42,Shut up!! You ain't even seen violent yet!,「うっせー！！　これはランボーじゃねー,闭嘴！！你根本不知道什么叫暴力！,「闭嘴！！这才不是兰博，
+18319,336,117560,64,32,42,Shut up!! You ain't even seen violent yet!,「うっせー！！　これはランボーじゃねー,闭嘴！！你根本不知道什么叫暴力！,「闭嘴！！这才不是暴力，
 18320,336,117624,64,32,40,"This is just, you know… Bold… Wait, huh?",　ゴーカイっていうんだ・・・って・・・ん？？」,这只是，你知道的……大胆……等等，哈？,　这叫豪快……等等……嗯？？」
 18321,336,117852,64,32,21,"… Hey, wait a minute,",「・・・なんだコイツは,……嘿，等等，,「……这家伙是什么啊，
 18322,336,117916,64,32,38,"this thing resembles the Goddess, but…",　女神ににている気もするが・・・」,这东西很像女神，但是……,　感觉有点像女神，不过……」
@@ -18348,7 +18348,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 18347,336,132452,64,32,25,<RGN_NAME__>… Understood.,「リョウカイデス　<RGN_NAME__>,<RGN_NAME__>……明白了。,「<RGN_NAME__>……了解，
 18348,336,132516,64,32,28,My identification number is…,　ワタシのしきべつナンバーは・・・」,我的编号是……,我的识别编号是……」
 18349,336,132680,64,32,6,Robot?,ロボット？,机器人？,机器人？
-18350,336,132744,64,32,34,… Type: Time Goddess Model Android,「タイプ　トキノメガミガタ　アンドロイド,……类型：时间女神模型机器人,「……型号：时之女神型安卓
+18350,336,132744,64,32,34,… Type: Time Goddess Model Android,「タイプ　トキノメガミガタ　アンドロイド,……类型：时间女神模型机器人,「……型号：时之女神型仿生机器人
 18351,336,132808,64,32,13,MGKV-T NO-30.,　MGKV-T NO-30」,MGKV-T NO-30。,MGKV-T NO-30」
 18352,336,133036,128,64,16,… A little long.,「・・・・・・・・・なげえ」,……有点长。,「……太长了。」
 18353,336,133328,128,64,51,I don't have time to say all that. You're <No. 30>.,「うーん　めんどうだから<30号>でいいや」,我们时间细说。你是<No.30>。,「懒得说，你就是<30号>了。」
@@ -25605,7 +25605,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25606,445,9964,128,64,47,"Even when I'm playing around, I give it my all!",「オレ様はいつも遊ぶのも全力だっつーの！！」,就算我在闹着玩，我也会尽全力！,「就算玩耍本大爷也全力以赴！」
 25607,445,10188,64,32,5,Yashu,ヤーシュ,亚述,亚修
 25608,445,10252,128,64,36,Can't they take anything seriously…?,「こっ　こんなふざけたヤツなどに・・・」,他们可以认真一点吗……？,「竟……竟被这种胡闹的家伙……」
-25609,445,10540,64,32,42,You never look like you're having any fun.,「オメエはいつもそんな楽しくなさそうな,你就象从来没得到过乐趣一样。,「你总是看起来全无乐趣，
+25609,445,10540,64,32,42,You never look like you're having any fun.,「オメエはいつもそんな楽しくなさそうな,你就象从来没得到过乐趣一样。,「你总是看起来毫无乐趣，
 25610,445,10604,64,32,26,Always with the long face!,　ツラばっかしてっからいけねえんだよ！」,永远拉着个长脸！,　整天拉着一张脸！」
 25611,445,10828,64,32,26,You gotta be more like me.,「オレ様みたいに,你应该多象我一样。,「你得学学我，
 25612,445,10892,64,32,32,Having fun makes you stronger. ♪,　楽しんでるほうが強えーんだよ♪」,找点乐子会让你更强大。？,　乐在其中才会更强。」
@@ -35456,7 +35456,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 35460,668,75512,128,64,13,… Let's talk.,「・・・ああ」,… 我们谈谈。,「…嗯。」
 35461,668,83104,128,64,34,… What's up? Did something happen?,「・・・どうした？　何かあったのか？」,… 咋了？出了啥事？,「…怎么了？出什么事了？」
 35462,668,83332,64,32,3,Guy,ガイ,家伙,盖伊
-35463,668,83396,128,64,53,"Sorry, but this has nothing to do with the Commandos.",「わりー　遊撃隊のことは全然関係無い」,不好意思，但这不关突击队啥事。,「抱歉，这和游击队全无关系。」
+35463,668,83396,128,64,53,"Sorry, but this has nothing to do with the Commandos.",「わりー　遊撃隊のことは全然関係無い」,不好意思，但这不关突击队啥事。,「抱歉，这和游击队毫无关系。」
 35464,668,83980,128,64,4,… ??,「・・・？？」,……？？,「……？？」
 35465,668,84792,64,32,3,Guy,ガイ,家伙,盖伊
 35466,668,84856,64,32,55,You've been on this mission and away from Brave Kingdom,「いやー　オマエ　残党魔王の討伐からこっち,你曾是这个使命的一员，自邪恶领主的残兵被击败后，,「你从讨伐残党魔王那会儿起，
@@ -37944,7 +37944,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 37949,712,370724,64,32,25,I'll leave this to Geezer,「ここはおじさまにお任せして,我将把这个留给基泽,「这事就交给大叔
 37950,712,370788,64,32,36,and continue making my way to Yashu!,　わたくしはヤーシュのところに向かいます！」,然后继续寻找雅舒！,　我继续前往亚修处！」
 37951,712,373580,64,32,5,Yashu,ヤーシュ,亚述,亚修
-37952,712,373644,64,32,39,You're truly a fool if you think you're,「何のさくもなしに,你真是一个傻瓜如果你认为,「若以为全无计谋便能
+37952,712,373644,64,32,39,You're truly a fool if you think you're,「何のさくもなしに,你真是一个傻瓜如果你认为,「若以为毫无计谋便能
 37953,712,373708,64,32,41,going to best me with no plan whatsoever.,　オレとたたかおうとは　おろかなお姫さまだ」,你能够在毫无计划的条件下打败我的话。,　胜过于我，那你真是个蠢公主。」
 37954,712,373936,128,64,23,We'll see about that! ★,「そんなことはありませんわ★」,那就让我们拭目以待！★,「那可不一定！★」
 37955,712,374228,128,64,8,Geezer!!,「おじさまっ！！」,基泽尔！！,「大叔！！」
@@ -39538,7 +39538,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 39543,730,9812,128,64,47,"At any rate, I'll explain the situation to you.",「時間が減る一方なので状況を説明しマス」,不管怎样，听我解释嘛,「总之，由我向你说明状况。」
 39544,730,10332,64,32,6,No. 30,30号,30号,30号
 39545,730,10396,64,32,44,I detected the Timestream from our opponent.,「タイムストリームを感知した相手デス,我从对手那发现了时间流,「我从对手身上感知到了时之流，
-39546,730,10460,64,32,39,She is undoubtedly one of the God Nine.,　これがゴッドナインにまちがいありまセン」,她毫无疑问是九神之一嘛,　她全无疑问是九神之一。」
+39546,730,10460,64,32,39,She is undoubtedly one of the God Nine.,　これがゴッドナインにまちがいありまセン」,她毫无疑问是九神之一嘛,　她毫无疑问是九神之一。」
 39547,730,10624,64,32,6,No. 30,30号,30号,30号
 39548,730,10688,64,32,58,There's also an ocean current that flows to the continent.,「その背後には大陸へとつづく海流がありマス,有个海洋流向大陆,「其后还有流向大陆的洋流，
 39549,730,10752,64,32,59,"If we beat her, we should be able to escape to the surface.",　よって　たおせば海上に出られるはずデス」,如果我们打败她，我们就可以从海里逃出来,　只要打败她，就能回到海面。」
@@ -42350,7 +42350,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42355,757,87712,64,32,5,Yashu,ヤーシュ,亚述,亚修
 42356,757,87776,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 42357,757,88004,64,32,5,Yashu,ヤーシュ,亚述,亚修
-42358,757,88068,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きてきた,绝望地生活了200年……,「在全无希望中活了200年……
+42358,757,88068,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きてきた,绝望地生活了200年……,「在毫无希望中活了200年……
 42359,757,88132,64,32,53,I never imagined that the wait would finally pay off.,　まさかそれがむくわれる時が来るとはっ」,我从没想过有一天会有收获、,　从没想过等待终有回报。」
 42360,757,88880,64,32,6,Athena,アテナ,雅典娜,雅典娜
 42361,757,88944,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -42505,7 +42505,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42510,757,196628,64,32,5,Yashu,ヤーシュ,亚述,亚修
 42511,757,196692,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 42512,757,196920,64,32,5,Yashu,ヤーシュ,亚述,亚修
-42513,757,196984,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在全无希望中活了200年……
+42513,757,196984,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在毫无希望中活了200年……
 42514,757,197048,64,32,53,I never imagined that the wait would finally pay off!,　まさかそれがむくわれる時が来るとはっ」,我从未想过会有回报。,　从没想过等待终有回报。」
 42515,757,197796,64,32,6,Athena,アテナ,雅典娜,雅典娜
 42516,757,197860,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -42660,7 +42660,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42665,757,269044,64,32,5,Yashu,ヤーシュ,亚述,亚修
 42666,757,269108,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 42667,757,269336,64,32,5,Yashu,ヤーシュ,亚述,亚修
-42668,757,269400,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在全无希望中活了200年……
+42668,757,269400,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在毫无希望中活了200年……
 42669,757,269464,64,32,53,I never imagined that the wait would finally pay off!,　まさかそれがむくわれる時が来るとはっ」,我从未想过会有回报。,　从没想过等待终有回报。」
 42670,757,270212,64,32,6,Athena,アテナ,雅典娜,雅典娜
 42671,757,270276,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -42808,7 +42808,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42813,757,333284,64,32,5,Yashu,ヤーシュ,亚述,亚修
 42814,757,333348,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 42815,757,333576,64,32,5,Yashu,ヤーシュ,亚述,亚修
-42816,757,333640,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在全无希望中活了200年……
+42816,757,333640,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在毫无希望中活了200年……
 42817,757,333704,64,32,53,I never imagined that the wait would finally pay off.,　まさかそれがむくわれる時が来るとはっ」,我从没想过有一天会有收获、,　从没想过等待终有回报。」
 42818,757,334452,64,32,6,Athena,アテナ,雅典娜,雅典娜
 42819,757,334516,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -42957,7 +42957,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 42962,757,397816,64,32,5,Yashu,ヤーシュ,亚述,亚修
 42963,757,397880,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 42964,757,398108,64,32,5,Yashu,ヤーシュ,亚述,亚修
-42965,757,398172,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在全无希望中活了200年……
+42965,757,398172,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在毫无希望中活了200年……
 42966,757,398236,64,32,53,I never imagined that the wait would finally pay off.,　まさかそれがむくわれる時が来るとはっ」,我从没想过有一天会有收获、,　从没想过等待终有回报。」
 42967,757,398984,64,32,6,Athena,アテナ,雅典娜,雅典娜
 42968,757,399048,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -43079,7 +43079,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43084,757,447456,64,32,5,Yashu,ヤーシュ,亚述,亚修
 43085,757,447520,128,64,30,Ha. Haha. Hahahaha-HAHAHAHAH!!,「はっ　はは　ハハハハッハハハッハハ！！」,哈，哈哈，哈哈哈哈哈！,「哈。哈哈。哈哈哈哈哈——！！」
 43086,757,447748,64,32,5,Yashu,ヤーシュ,亚述,亚修
-43087,757,447812,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在全无希望中活了200年……
+43087,757,447812,64,32,41,Living 200 years without a shred of hope…,「何の希望もなく　この200年を生きて来た,绝望地生活了200年……,「在毫无希望中活了200年……
 43088,757,447876,64,32,53,I never imagined that the wait would finally pay off.,　まさかそれがむくわれる時が来るとはっ」,我从没想过有一天会有收获、,　从没想过等待终有回报。」
 43089,757,448624,64,32,6,Athena,アテナ,雅典娜,雅典娜
 43090,757,448688,128,64,35,"Uh, Yashu, what's gotten into you!?",「ち　ちょっとヤーシュ　どうしたのよ！？」,呃，雅舒，你怎么了！？,「呃，亚修，你怎么了！？」
@@ -43625,7 +43625,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 43630,771,32880,64,32,48,I've got it. I'll give you the <invisible cloth>,「そうじゃ　わしがつくったばかりの　,知道了，我会给你<隐形衣>,「有了，我刚做好的
 43631,771,32944,64,32,15,I just created!,　<とうめいぬの>をあげよう」,我刚刚发明的！,　<隐形布>送你吧！」
 43632,771,33172,64,32,28,Are you seriously telling me,「まさか　わたくしにとうめいの服を,你是在开玩笑么,「你该不是要让我
-43633,771,33236,64,32,29,to wear invisible clothing? …,　着ろというんですの？・・・」,穿上隐形衣？……,　穿上隐形衣？……」
+43633,771,33236,64,32,29,to wear invisible clothing? …,　着ろというんですの？・・・」,穿上隐形衣？……,　穿上看不见的衣服？……」
 43634,771,33400,64,32,20,Professor Seenoeevil,ミエザール,西诺伊佛教授,米埃萨尔教授
 43635,771,33464,64,32,53,I'll have you know that I'm not THAT much of a creep!,「わしはそこまでヘンタイではないわい！,我会让你知道我不是那样的！,「我可没那么变态啊！
 43636,771,33528,64,32,27,It's an amazing invention!!,　もっとスゴイ発明じゃ！！」,这是令人惊奇的发明！,　这可是超厉害的发明！！」
@@ -44384,7 +44384,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44389,778,104420,128,64,44,Hey! Enough with all the fancy talk already!,「おい　おめーら　なにマジメトークしてんだよ」,哎！够了！别在这里花言巧语的了！,「喂！少在那儿风花雪月了！」
 44390,778,105004,128,64,63,No. 30 couldn't understand beauty if it kicked 'em in the head.,「キレイなんてーのが　30号にわかるわけねーだろ」,No. 30可不会理解什么是美丽，除非脑袋被踢了。,「30号哪可能懂什么叫美啊。」
 44391,778,105588,64,32,43,"And you, Coo. Beauty is pretty much useless",「それにな　クゥ　キレイなんてもんは,还有你，库。美丽在这种情况下,「还有你，小咕。美这种东西
-44392,778,105652,64,32,25,in a situation like this.,　何の役にも立ちゃしねーんだよ」,可没什么用。,　在这种时候全无用处。」
+44392,778,105652,64,32,25,in a situation like this.,　何の役にも立ちゃしねーんだよ」,可没什么用。,　在这种时候毫无用处。」
 44393,778,106172,64,32,53,I am a great hero who shines brighter than any light.,「まあ　オレ様が光かがやく大勇者なんだから,我是一位伟大的英雄，比任何光都闪耀。,「反正本大爷可是光芒万丈的大勇者
 44394,778,106236,64,32,16,Discussion over.,　それでガマンしとけっ」,讨论到此结束。,　你就将就着接受吧。」
 44395,778,106984,64,32,3,Coo,クゥ,咕咕声,小咕
@@ -45695,7 +45695,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 45700,795,333576,64,32,12,Announcement,アナウンス,公告,广播
 45701,795,333640,128,64,10,… Oooooh!?,「・・・おおおお！？」,…喔？！,「……哦哦哦！？」
 45702,795,334744,64,32,6,Cozain,コザイン,柯赞恩,科赞
-45703,795,334808,128,64,24,… I've got nothing left.,「・・・もう何の力も無いでゴザル」,…我一无所有了。,「……我已全无力量了。」
+45703,795,334808,128,64,24,… I've got nothing left.,「・・・もう何の力も無いでゴザル」,…我一无所有了。,「……我已毫无力量了。」
 45704,795,335036,64,32,6,Cozain,コザイン,柯赞恩,科赞
 45705,795,335100,128,64,38,"… And yet, I'm in a good mood somehow.",「・・・でも何だか今はいい気分でゴザル」,…但是，我心情不知道为什么还不错。,「……可不知为何我现在心情不错。」
 45706,795,335328,64,32,6,Cozain,コザイン,柯赞恩,科赞
@@ -46791,7 +46791,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 46796,804,287796,64,32,35,I wonder if what Fate said is true…,「運命の言っていることは本当だろう・・・,我怀疑命运说的是否属实…,「我在想命运说的可是真话…
 46797,804,287860,64,32,47,Could it be that it's not acting out of malice…,　ただの悪というわけでもないのだろう・・・」,还是它并不是因为仇恨才行动…,　或许它并非出于恶意…」
 46798,804,288088,64,32,38,"But even if it's true, it isn't right.",「だが　本当だろうが正しいわけではないっ,但就算是真的，这也是不对的。,「但即便属实，这也并不正确，
-46799,804,288152,64,32,26,There is no justice in it!,　正義の存在でもない！」,这事哪儿有什么对和错！,　其中全无正义可言！」
+46799,804,288152,64,32,26,There is no justice in it!,　正義の存在でもない！」,这事哪儿有什么对和错！,　其中毫无正义可言！」
 46800,804,288672,128,64,42,I want you to trust me… and fight with me.,「オレを・・・信じてついてきてほしい」,我希望你能相信我…同我一起战斗。,「我希望你相信我…与我并肩作战。」
 46801,804,289256,64,32,38,"Of course, there's no way I'm going to",「もちろんですわ　このまま　ハイそうですわ,当然了，我才不会让自己,「当然不！我才不要就这样
 46802,804,289320,64,32,36,let myself be erased just like that!,　となっとくして消去されるなんてゴメンですわ！」,像那样消失在世界上呢！,　点头认命、乖乖被消除呢！」
@@ -46975,7 +46975,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 46980,804,348596,64,32,21,Parents… how amazing…,　すごいなぁ　親子って・・・,为人父母…真的很奇妙…,父母子女…真是奇妙…
 46981,804,348760,64,32,17,～ Sasha's Diary ～,～　サーシャの日記　～,？萨莎的日记？,～　萨莎的日记　～
 46982,804,348824,64,32,36,A world without <YUSHA_NAME> or Hero,　<YUSHA_NAME>もユウシャもいない世界なんて,一个没有<YUSHA_NAME>或者英雄,一个没有<YUSHA_NAME>也没有勇者的
-46983,804,348888,64,32,48,has no meaning for me… perhaps I'll go to sleep…,　意味ないよ・・・眠っちゃおうかな,的世界对我来说没有任何意义…或许我应该沉睡下去…,世界对我全无意思…或许我该沉睡了…
+46983,804,348888,64,32,48,has no meaning for me… perhaps I'll go to sleep…,　意味ないよ・・・眠っちゃおうかな,的世界对我来说没有任何意义…或许我应该沉睡下去…,世界对我毫无意思…或许我该沉睡了…
 46984,804,349052,64,32,17,～ Sasha's Diary ～,～　サーシャの日記　～,？萨莎的日记？,～　萨莎的日记　～
 46985,804,349116,64,32,49,"Oh, don't worry, I don't mean that kind of sleep.",　あ　心配しないでよ　変な意味じゃないの,别担心，我不是说那种沉睡。,噢别担心，我不是说那种沉睡，
 46986,804,349180,64,32,44,We angels can store our memories in diaries.,　天使は記憶を日記にすることができるの,天使可以把记忆保存在日记里。,我们天使能把记忆存进日记里。
@@ -52267,7 +52267,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 52272,911,366928,128,64,37,I'll go up ahead on my own from here…,「・・・ここから先はオレ一人で行く」,我独自从这儿去前面。。。,「从这儿开始我一个人往前走…」
 52273,911,367740,64,32,5,Roken,ローケン,洛肯,洛肯
 52274,911,367804,128,64,46,"Don't throw your life away, Sir <YUSHA_NAME>!!",「<YUSHA_NAME>どのとはいえ　むぼうすぎる！！」,不要堕落啦，先生<YUSHA_NAME>!!,「别白白送死啊，<YUSHA_NAME>大人！！」
-52275,911,368096,128,64,43,… Perhaps mere humans don't stand a chance.,「・・・ただの人間では命を落とす　しかし」,也许，不仅仅是人类没机会。,「…或许普通人类全无胜算。」
+52275,911,368096,128,64,43,… Perhaps mere humans don't stand a chance.,「・・・ただの人間では命を落とす　しかし」,也许，不仅仅是人类没机会。,「…或许普通人类毫无胜算。」
 52276,911,368388,64,32,30,But I have the blood of heroes,「オレには勇者と天使の血が,但是，我流淌着英雄,「但我体内好像流着勇者与天使的血
 52277,911,368452,64,32,44,and angels flowing through me… I'll be okay.,　流れているらしいからな・・・問題無い」,和天使的血液，我没事。,　所以没问题。」
 52278,911,369200,64,32,4,Cole,コール,科尔,科尔
@@ -55110,7 +55110,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 55115,953,199904,128,64,45,<YUSHA_NAME>!! We've got to go help the girl!,「<YUSHA_NAME>！　さっさと女の子助けに行くぞ！」,<YUSHA_NAME>!! 我们一要去帮帮那个女孩！,「<YUSHA_NAME>！！快去救那女孩！」
 55116,953,200716,64,32,5,Yashu,ヤーシュ,亚述,亚修
 55117,953,200780,64,32,53,What are you saying? We've looked into the situation.,「何を言っている　状況は確認できたはずだ,你说什么？我们都知道现在什么状况。,「说什么呢？状况已查明，
-55118,953,200844,64,32,42,This has nothing to do with the Evil Lord.,　魔王とは何の関係もないということがな」,我们拿恶魔领主没办法。,　这与魔王全无关系。」
+55118,953,200844,64,32,42,This has nothing to do with the Evil Lord.,　魔王とは何の関係もないということがな」,我们拿恶魔领主没办法。,　这与魔王毫无关系。」
 55119,953,201300,64,32,5,Yashu,ヤーシュ,亚述,亚修
 55120,953,201364,64,32,41,"If we have time to fool around like this,",「さあ寄り道などしてるヒマがあったら,如果我们有时间像这样瞎逛，,「若有闲心瞎晃，
 55121,953,201428,64,32,48,then we should report back to Firstshore Castle.,　サイショール城に報告に行くぞ」,那么我们应该向原始海滨城堡回报。,　就该回起始城汇报。」
@@ -57374,7 +57374,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 57381,997,46604,64,32,50,"Really? Money isn't the reason that I did it, but…",「そうか？　そんなつもりじゃなかったんだが・・・,真的？虽然我帮助你不是为了钱，但是…,「真的？我帮忙可不是图钱，只是…
 57382,997,46668,64,32,46,I'm not one to look a gift horse in the mouth!,　じゃーありがたく　もらっておくぜ」,我不是那种挑三挑四的人！,　我可不会拒绝好意！」
 57383,997,46896,128,64,20,* Obtained 500 gold!,＊　５００ゴールド手に入れた！,* 获得500金币！,*获得500金币！
-57384,997,47188,64,32,45,Wait a minute!! Why are you paying me so much,「ちょっと待てっ！！　薬とってきたくらいで,等等！为什么你仅仅因为带药,「等等！！你不过帮我拿个药
+57384,997,47188,64,32,45,Wait a minute!! Why are you paying me so much,「ちょっと待てっ！！　薬とってきたくらいで,等等！为什么你仅仅因为带药,「等等！！不过帮你拿个药
 57385,997,47252,64,32,36,just for getting you some medicine!?,　なんでこんな大金くれるんだっ！？」,这种小事就给我那么多钱！？,　凭什么给我这么多钱！？」
 57386,997,47416,64,32,10,Lumberjack,きこり,伐木工,樵夫
 57387,997,47480,64,32,37,"There's nothing wrong with it, right?",「いいじゃないですか,这也没什么不对，对吧？,「这没什么不好吧？
@@ -60496,7 +60496,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 60503,1056,15148,128,64,5,Aiee!,「キャッ」,哎！,「呀！」
 60504,1056,16012,128,64,49,Aaah! The jewel I got from the sacrificial child!,「ああ！　イケニエの子からかしてもらった宝石が！」,啊！我从献祭小孩身上得到的珠宝！,「啊！我从献祭之童那儿得来的宝石！」
 60505,1056,16236,64,32,20,Wise General Richter,知将リヒター,智将里克特,智将里希特
-60506,1056,16300,128,64,50,"Humph. ▼ No doubt, it looks like a Chrono Crystal.",「んっふー▼　たしかにクロノクリスタルのようですね」,唔，▼无疑，看起来像是水晶计时器。,「哼▼全无疑问，这看起来像计时水晶。」
+60506,1056,16300,128,64,50,"Humph. ▼ No doubt, it looks like a Chrono Crystal.",「んっふー▼　たしかにクロノクリスタルのようですね」,唔，▼无疑，看起来像是水晶计时器。,「哼▼毫无疑问，这看起来像计时水晶。」
 60507,1056,16524,64,32,20,Wise General Richter,知将リヒター,智将里克特,智将里希特
 60508,1056,16588,64,32,30,"You're very brave, young lady.",「それでは勇気あるおじょうさん,你很勇敢，年轻姑娘。,「你还真勇敢啊，小姐，
 60509,1056,16652,64,32,59,"I'm terribly sorry, but this is where we have to part ways.",　なごりおしいですが　これでお別れです★」,我很抱歉，但是我们要分开了,　很遗憾，我们就此分别吧★」
@@ -60889,7 +60889,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 60893,147,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 60894,147,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
 60895,147,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
-60896,147,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
+60896,147,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
 60897,147,97344,64,32,23,A torch lit with flame.,火が点いているいるたいまつ,,点火着的火把
 60898,147,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
 60899,147,97880,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏
@@ -61021,7 +61021,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61025,357,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 61026,357,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
 61027,357,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
-61028,357,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
+61028,357,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
 61029,357,97344,64,32,12,A lit torch.,火がついているたいまつ,,燃烧着的火把
 61030,357,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
 61031,357,97880,64,32,31,Makes you want to vandalize it.,ムショウになげたくなる,,让人想乱丢破坏
@@ -61174,7 +61174,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61178,736,95736,64,32,45,A shell instilled with the power of an angel.,天使のパワーがこめられたかいがら,,蕴含天使力量的贝壳
 61179,736,96004,64,32,39,Gets rid of even the toughest of frogs.,いやぁ～なカエルもイチコロっ,,反感的青蛙也一招搞定
 61180,736,96272,64,32,23,A salt flavored carrot.,ソルト味のニンジンなのだ,,是咸味胡萝卜啦
-61181,736,96808,64,32,16,A useless stone.,何の役にも立たない石,,全无用处的石头
+61181,736,96808,64,32,16,A useless stone.,何の役にも立たない石,,毫无用处的石头
 61182,736,97344,64,32,25,A torch lit with a flame.,火が点いているいるたいまつ,,点火着的火把
 61183,736,97612,64,32,12,Gargantuan…,超巨大・・・,,超巨大……
 61184,736,97880,64,32,31,Makes you want to vandalize it.,ムショウに投げたくなる,,让人想乱丢破坏

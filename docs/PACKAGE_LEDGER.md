@@ -240,6 +240,9 @@ python tools/build.py --game-dir work/original package_current
      `validate_build` error 0 / warning 46；translator-view 已刷新；实机确认果冻怪恢复。
      详见 `PITFALLS.md` §48、`KNOWN_ISSUES.md` §25。
 
+- **2026-11-23（Z29 追加：`全无→毫无` 恢复）**：
+  初版 REPL 第 41 条 `毫无→全无` 的残留全部恢复：CSV 26 行 + `ml_zh_fields.json` 2 条多行。`毫` 已在 `cmap.json`（`92c1`），两词均为 2 字 4 字节，字库与槽位零成本。逐行核对时发现并回退 1 处跨词边界误伤：row 35839「完全无关」内含「全无」，首轮被替换成「完毫无关」，已还原为「完全无关」。重建 Z29：`LANG_EN ae26210f8d18` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；`validate_build` error 0 / warning 46。
+
 - **2026-11-23（Z29 追加：词典合并词源头碰撞修正）**：
   逐条核查初版 350 条词典中「多个原词合并成同一中文」的 15 组，修正 3 类必改项：`機関車型魔王兵器` 机车型→火车头型（row 12605，全库 `機関車` 均为火车/火车头）；row 14889 `I will go in your place!` 我来代你→我替你去（`代替你→代你` 合并致语句残缺）；泛称胡萝卜统一（row 43746 红萝卜蛋糕→胡萝卜蛋糕、23832 奇怪的红萝卜→奇怪的胡萝卜、48657 我的红萝卜→我的盐渍胡萝卜、60850/60895 咸味红萝卜→咸味胡萝卜）。NPC 名「红萝卜老爷」保留（名字副本）。重建 Z29：`LANG_EN b651b21284d7` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；`validate_build` error 0 / warning 46。
 

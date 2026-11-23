@@ -6428,7 +6428,7 @@
    "id": "ml::536",
    "en": "Village Lumberjack: I want to help little Rina, but I can't\ndo anything, there are too many monsters.",
    "ja": "村のきこり「リィナちゃんを助けたいが\n　　　　　　モンスターがおおくてどうにもできん」",
-   "zh": "村樵夫「我想救小莉娜，却\n全无办法，怪物太多了。」",
+   "zh": "村樵夫「我想救小莉娜，却\n毫无办法，怪物太多了。」",
    "meta": {
     "blob": 1015,
     "offset": 1580,
@@ -10796,7 +10796,7 @@
    "id": "ml::900",
    "en": "Light Armor\nThis armor is light and easy to wear.\nIt also twinkles pointlessly in the dark.",
    "ja": "ライトアーマー\nかるくて動きやすい鎧で前作同様\n暗いところで光るムダな機能つき",
-   "zh": "轻甲\n这件护甲轻便好穿。\n还会在黑暗中全无意思地闪光。",
+   "zh": "轻甲\n这件护甲轻便好穿。\n还会在黑暗中毫无意思地闪光。",
    "meta": {
     "blob": 713,
     "offset": 105028,
