@@ -809,21 +809,72 @@ Z22–Z29 新增的 UI/菜单文本。可能出现“菜单项名已译、分组
 
 ---
 
-# 27. 脚本 loadout 装备名与道具表不同步（2026-11-24，Investigating）
+# 27. 脚本 loadout 装备名与道具表不同步（2026-11-24，Z32 已修复，待实机）
 
-**Severity:** Medium（潜在：初始装备/伙伴 loadout 丢失或显示错名）
+**Severity:** Medium（潜在：Ad Hoc 预设装备丢失或显示错名）
 
-**症状/位置：** `b34 off620` 的 `head=/body=/handR=/handL=/foot=` loadout：
-- `body=Brave Vest` 的终串是「勇敢背心」，道具表 `b147/357/736` 是「勇者背心」；
-- `handR=Brave Blade` 的终串是「勇者战刀」，道具表是「勇者战刃」。
+**症状/位置（2026-11-24 修正后审计，共 21 处）：**
 
-**根因：** loadout 是整段多行文本，由 `text_v2.csv` 翻译；其中的装备名没有像
-`stride152 pos24` 那样按道具表 canon 同步，导致同一装备在脚本与道具表中不同名。
-PITFALLS §25.3 早已指出“只翻装备表不翻脚本 loadout（或反之）→ 序章初始装备丢失、
-伙伴不显示”。
+`b34 rec214–220`（Ad Hoc 1–7 预设）各 3 处，仍为英文：
+- `foot2=` 的下一行 `Academy Boots`（应为「学院靴」）；
+- `foot3=` 的下一行 `Resistance Boots`（应为「抗性靴」）；
+- `foot4=` 的下一行 `Brave Boots`（应为「勇者靴」）。
 
-**范围：** 全库 741 个 loadout 字段已首轮定向扫描，**仅这 2 处**不同步。
+同内容的 `b34 rec221`（Ad Hoc 8）是同行 `foot2=Academy Boots` 形态，已正确翻译。
 
-**修复：** `sync_script_loadout_names()`：解析所有 `head=/body=/handR=/handL=/foot=`
-的 `key=value`，按 `b147/357/736/998` 的终串写回；`validate_build` 增加一致性检查；
-重建 Z31 并实机确认序章初始装备与各关伙伴 loadout。见 `docs/TODO.md` **T-19**。
+**⚠️ 已撤销的错误结论（Z31 事故）：** 早前把 `b34 rec0` 的
+`body=Brave Vest　` / `handR=Brave Blade　` 判为“与道具表终串不同步”是**误报**：
+原名末尾的全角空格（`0x81 0x40`）不是填充，而是名字的一部分——
+`Brave Vest　`（终极背心）对应「勇敢背心」/「勇者战刃」，`Brave Vest`（无空格）
+才是「勇者背心」/「勇者之刃」。Z31 把全角空格剥掉后串到了另一个道具，
+导致**序章主角丢失背心和武器**；Z32 已修正。详见 `PITFALLS.md` §54.2。
+
+**根因：** loadout 是多行文本，Ad Hoc 1–7 的 `footN=` 把值写在**下一行**，
+旧同步只解析行内 `key=value`，整组漏掉；且 loadout 值必须按**完整原名（含全角空格）**
+精确匹配道具表，不能剥空格。
+
+**范围：** 修正后审计全库 loadout 758 个值，仅上述 21 处不同步；其余 737 处一致。
+
+**修复：** `sync_script_loadout_names()`：解析所有 `key=value`，**支持值在下一行**，
+按完整原名精确匹配 `b147/357/736/998` 终串写回（不剥全角空格）；
+`validate_build` 增加一致性检查；Z32 已修复，待实机确认 Ad Hoc 预设。
+见 `docs/TODO.md` **T-19**。
+
+---
+
+# 28. DLC01 称号条件副本与主称号表不同步 → DLC 称号无法取得（2026-11-24，Z32 已修复，待实机）
+
+**Severity:** High（DLC 内 5 个称号会无法取得）
+
+**症状/位置（正式审计，5 处）：** DLC `stride292 pos32`（称号取得条件/进度副本，
+记录内 `pos28` 起为 `FF FF FF FF + 名字`）与主称号表 `b931 pos0` 译文不一致：
+
+| 称号（EN） | 主表 `b931` 终串 | DLC 条件副本 | DLC 位置 |
+|---|---|---|---|
+| `It was the Breeze` | 全翻篇了 | 掀裙全制霸 | `b7 rec131` |
+| `Nothing Dirty` | 不许搞黄 | 不许色色 | `b48 rec344` |
+| `Turn the Tables` | 反杀回去 | 反杀 | `b53 rec303` |
+| `Ruler of the World!` | 天下霸主！ | 夺取天下！ | `b73 rec390` |
+| `Construction Stopper` | 阻止筑城 | 不许筑城 | `b78 rec392` |
+
+**根因（字节级已验证）：** 原版 JA 里这 6 个 DLC 副本与主表 `b931 pos0` **逐字节相同**
+（含另 1 处一致的 `Sexy Dancer`）。构建对主 LANG 调用了
+`force_title_key_copies()`（stride292/pos32 统一为 `b931` 终串，PITFALLS §25.17），
+但 `refresh_dlc01()` 之后没有再对 `DLC01/LANG_EN` 做同样的统一，DLC 管线用自己的译表
+独立翻译，于是同名不同串 → 按名条件匹配失败 → 称号无法取得。
+
+**附带（同型，译名不统一）：** `DLC01 b7 rec323 pos96` 的敌名/说话人名副本
+`Deprived Male Bird` 译作「缺爱公鸟」，主表（`b407` / `b17 pos92`）为「饥饿公鸟」；
+JA 两侧同串，ZH 不同。敌人通常按 ID 引用，暂判为显示不一致而非断链，但应与主表统一。
+
+**修复：** 在 `refresh_dlc01()` 之后对 `DLC01/LANG_EN` 复用主表 canon：
+DLC 版 `force_title_key_copies`（stride292 pos32）+ 敌名/说话人名副本统一；
+审计接入 `validate_build` 门禁后此 6 处必须为 0。见 `docs/TODO.md` **T-20**、
+`docs/PITFALLS.md` §25.17/§54.1。
+
+**Z31 → Z32 实际处理（2026-11-24）：** 采纳“以 DLC 条件副本为准”——主表 5 个称号
+`b931 pos0` 改为 掀裙全制霸/不许色色/反杀/夺取天下！/不许筑城；随后
+`sync_dlc_name_copies()` 把 DLC 条件副本统一为主表终串（5 处已一致，0 改写），
+并把敌名副本 `Deprived Male Bird` 统一为「饥饿公鸟」（1 处改写）。
+该部分在 Z31 中已正确，Z31 的问题只在 loadout（见 §27）；Z32 保留本修复，
+审计 0 问题，待实机确认 DLC 称号可获得。

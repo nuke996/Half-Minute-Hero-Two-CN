@@ -4625,6 +4625,10 @@ def do_apply_names_cn_partner_hash(exe_mode=None):
     fill_name_copies(orig_blobs, en_path, _partner_en_names(orig_blobs))
     print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
     sync_script_name_operands(orig_blobs, en_path)
+    print('== 脚本 loadout 装备名同步（T-19）==')
+    sync_script_loadout_names(orig_blobs, en_path)
+    print('== DLC01 名字副本同步（T-20）==')
+    sync_dlc_name_copies(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -4749,6 +4753,10 @@ def do_apply_names_cn_display_hash(exe_mode=None):
     fill_name_copies(orig_blobs, en_path, names)
     print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
     sync_script_name_operands(orig_blobs, en_path)
+    print('== 脚本 loadout 装备名同步（T-19）==')
+    sync_script_loadout_names(orig_blobs, en_path)
+    print('== DLC01 名字副本同步（T-20）==')
+    sync_dlc_name_copies(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -4982,6 +4990,10 @@ def do_apply_names_cn_batch_b_hash(exe_mode=None):
     fill_name_copies(orig_blobs, en_path, names)
     print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
     sync_script_name_operands(orig_blobs, en_path)
+    print('== 脚本 loadout 装备名同步（T-19）==')
+    sync_script_loadout_names(orig_blobs, en_path)
+    print('== DLC01 名字副本同步（T-20）==')
+    sync_dlc_name_copies(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -5338,6 +5350,198 @@ def sync_script_name_operands(orig_blobs, en_path, verbose=True):
     return n_party + n_catsle
 
 
+# ================= 脚本 loadout 装备名同步（T-19，Z31） =================
+# `posX=16\nhead=Hero Crown\nbody=Brave Vest...` 这类多行 run 里，装备名是按名
+# 查找的键（PITFALLS §25.3）。旧同步只按“行内 key=value”处理，漏掉了
+# `foot2=\nAcademy Boots`（值在下一行）的形态；这里统一按道具表终串写回。
+LOADOUT_KEY_BASES = (b'head', b'body', b'handR', b'handL', b'foot')
+
+
+def _loadout_key_ok(k):
+    k = k.strip()
+    for base in LOADOUT_KEY_BASES:
+        if k == base:
+            return True
+        if k.startswith(base) and k[len(base):].isdigit():
+            return True
+    return False
+
+
+def _strip_pad_span(line, start, end):
+    """只收缩两端 ASCII 空格/制表。
+
+    ★ 不能把末尾全角空格（0x81 0x40）当填充剥掉：`Brave Vest　`（带全角空格）
+      是**另一个道具**（终极背心，b357 rec377 / b816），与 `Brave Vest`（勇者背心）
+      不同名；剥掉后会串到错误道具，导致序章装备丢失（2026-11-24 Z31 事故）。
+    """
+    while start < end and line[start] in (0x20, 0x09):
+        start += 1
+    while end > start and line[end - 1] in (0x20, 0x09):
+        end -= 1
+    return start, end
+
+
+def _iter_loadout_pairs(run):
+    """yield (key, value, start, end)；支持 `key=\\nvalue`（值在下一行）。"""
+    lines = run.split(b'\n')
+    offs = []
+    o = 0
+    for ln in lines:
+        offs.append(o)
+        o += len(ln) + 1
+    for i, line in enumerate(lines):
+        eq = line.find(b'=')
+        if eq < 0:
+            continue
+        s, e = _strip_pad_span(line, eq + 1, len(line))
+        if s == e and i + 1 < len(lines) and b'=' not in lines[i + 1]:
+            nxt = lines[i + 1]
+            s2, e2 = _strip_pad_span(nxt, 0, len(nxt))
+            if s2 < e2:
+                yield line[:eq], nxt[s2:e2], offs[i + 1] + s2, offs[i + 1] + e2
+                continue
+        if s < e:
+            yield line[:eq], line[s:e], offs[i] + s, offs[i] + e
+
+
+def sync_script_loadout_names(orig_blobs, en_path, verbose=True):
+    """把 loadout 里的装备名同步为道具表终串（含值在下一行的形态）。"""
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    canon = _equip_name_canon(orig_blobs, prod)
+    if not canon:
+        return 0
+    n = skip = 0
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod) or bytes(ob)[:4] != b'CSCV' or bi in (128, 136, 317):
+            continue
+        pb = prod[bi]
+        for _pos, f, e in _iter_slots(bytes(ob)):
+            run = bytes(ob)[f:e]
+            if b'=' not in run:
+                continue
+            edits = []
+            for key, val, s, t in _iter_loadout_pairs(run):
+                if not _loadout_key_ok(key):
+                    continue
+                fin = canon.get(val)
+                if not fin or fin == val:
+                    continue
+                edits.append((s, t, fin))
+            if not edits:
+                continue
+            new = bytearray()
+            last = 0
+            for s, t, fin in sorted(edits):
+                new += run[last:s]
+                new += fin
+                last = t
+            new += run[last:]
+            if len(new) > len(run):
+                skip += 1
+                continue
+            pb[f:f + len(new)] = new
+            for k in range(f + len(new), e):
+                pb[k] = 0
+            n += len(edits)
+    if n:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [loadout 名字] 同步 %d 处%s'
+              % (n, ('（容量不足 %d run）' % skip) if skip else ''))
+    return n
+
+
+def sync_dlc_name_copies(main_orig, main_prod_path, verbose=True):
+    """把主表 canon 写进 DLC01/LANG_EN 的同名副本（T-20，Z31）。
+
+    只处理两类已确认的按名引用：
+      · 称号：DLC `stride292 pos32` 称号取得条件副本 == 主 `b931 pos0`；
+      · 敌名/说话人名：DLC `stride292 pos92/96` 与主 `b407 +4` 同串。
+    原版 JA 两侧逐字节相同（PASS），因此译文也必须一致。
+    """
+    dlc_dir = os.path.join(BASE, 'DLC01')
+    en = os.path.join(dlc_dir, 'LANG_EN.s2a')
+    orig = en + dlc_lib.BAK_SUFFIX
+    if not os.path.exists(orig):
+        orig = en + '.bak'
+    if not (os.path.exists(en) and os.path.exists(orig) and main_orig
+            and os.path.exists(main_prod_path)):
+        return 0
+    m_prod = [bytes(x) for x in s2a.Archive(main_prod_path).blobs]
+    titles = {}
+    if 931 < len(main_orig) and 931 < len(m_prod):
+        ob = bytes(main_orig[931])
+        pb = m_prod[931]
+        for _p, f, _e in _iter_slots(ob):
+            if (f - 16) % 292 != 0:
+                continue
+            titles[ob[f:_e]] = _slot_text_at(pb, f)[0]
+    enemies = {}
+    if 407 < len(main_orig) and 407 < len(m_prod):
+        ob = bytes(main_orig[407])
+        pb = m_prod[407]
+        st = struct.unpack_from('<I', ob, 4)[0]
+        for r in range(struct.unpack_from('<I', ob, 8)[0]):
+            f = 16 + r * st + 4
+            en_b = _slot_text_at(ob, f)[0]
+            fin = _slot_text_at(pb, f)[0]
+            if en_b and fin and fin != en_b:
+                enemies[en_b] = fin
+    if not titles and not enemies:
+        return 0
+    d_o = [bytes(x) for x in s2a.Archive(orig).blobs]
+    arc = s2a.Archive(en)
+    d_p = [bytearray(x) for x in arc.blobs]
+    n_title = n_enemy = skip = 0
+    for bi, obb in enumerate(d_o):
+        if bi >= len(d_p) or obb[:4] != b'CSCV':
+            continue
+        st = struct.unpack_from('<I', obb, 4)[0]
+        if st != 292:
+            continue
+        pbb = d_p[bi]
+        for _pos, f, e in _iter_slots(obb):
+            rel = (f - 16) % 292
+            txt = obb[f:e]
+            kind = target = None
+            if rel == 32 and txt in titles:
+                kind, target = 'title', titles[txt]
+            elif rel in (92, 96) and txt in enemies:
+                kind, target = 'enemy', enemies[txt]
+            if not target:
+                continue
+            cur = _slot_text_at(pbb, f)[0]
+            if cur == target:
+                continue
+            oe = pbb.find(b'\x00', f)
+            if oe < 0:
+                continue
+            nx = oe
+            while nx < len(pbb) and pbb[nx] == 0:
+                nx += 1
+            if len(target) + 1 > nx - f:
+                skip += 1
+                continue
+            pbb[f:f + len(target)] = target
+            pbb[f + len(target)] = 0
+            for k in range(f + len(target) + 1, max(oe, f + len(target) + 1)):
+                pbb[k] = 0
+            if kind == 'title':
+                n_title += 1
+            else:
+                n_enemy += 1
+    if n_title or n_enemy:
+        s2a.pack(en, arc.entries, [bytes(x) for x in d_p])
+    if verbose:
+        print('  [DLC 名字副本] 称号条件副本 %d / 敌名副本 %d%s'
+              % (n_title, n_enemy,
+                 ('（容量不足 %d）' % skip) if skip else ''))
+    return n_title + n_enemy
+
+
 def fill_item_name_copies(orig_blobs, en_path, verbose=True, canon=None):
     """把装备/道具表（b147/357/736/998 pos4）的中文名同步到全库同名副本。
 
@@ -5663,6 +5867,10 @@ def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
     restore_protagonist_defaults(orig_blobs, en_path)
     print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
     sync_script_name_operands(orig_blobs, en_path)
+    print('== 脚本 loadout 装备名同步（T-19）==')
+    sync_script_loadout_names(orig_blobs, en_path)
+    print('== DLC01 名字副本同步（T-20）==')
+    sync_dlc_name_copies(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
     if not verify_e1_isolation(expect_skill_key=False):
@@ -6064,10 +6272,54 @@ def do_package_names_cn_reuse_z30(exe_mode=None):
     return rc
 
 
+def do_package_names_cn_reuse_z31(exe_mode=None):
+    """Z31（测试）：Z30 + loadout 装备名同步（T-19）+ DLC01 名字副本同步（T-20）。
+
+    · loadout：b34 rec0 的 `Brave Vest`/`Brave Blade` + Ad Hoc 1–7 的
+      `foot2=\\n<装备名>` 共 23 处，统一为道具表终串；
+    · DLC01：称号 `stride292 pos32` 条件副本统一为主表 `b931` 终串
+      （主表 5 个称号已按 DLC 措辞更新），敌名/说话人名副本统一为主表 `b407`。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z31-dlc-name-sync')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z31',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
+def do_package_names_cn_reuse_z32(exe_mode=None):
+    """Z32（测试）：Z30 + 已修正的 loadout 同步（T-19）+ DLC 名字副本（T-20）。
+
+    Z31 事故修正：`Brave Vest　`（带全角空格）是另一个道具（终极背心 → 勇敢背心），
+    不能把全角空格当填充剥掉。Z32 只改 Ad Hoc 1–7 的 21 处鞋名，序章 rec0 与 Z30 一致。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z32-loadout-exact')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z32',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
 def do_apply_names_cn_equip_only(exe_mode=None):
     """Z7 二分：只翻装备/道具表的【名字+说明】，技能表 b666 与武器表技能名副本保持英文。
-
-    单变量设计（对照 E3）：
       · skip 掉 b666 → 技能显示名保持英文
       · 装备表不跳过 → 名字列（+4）翻中文
       · 但用 SLOT_BLOCK 封掉装备表的技能名副本列（记录内 168..268），
@@ -6669,6 +6921,16 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z30',
             'out': 'Z30-script-names',
             'stage': 'package_stage_names_cn_reuse_z30',
+            'status': 'candidate', 'review': False},
+    'z31': {'func': do_package_names_cn_reuse_z31,
+            'cmd': 'package_names_cn_reuse_z31',
+            'out': 'Z31-dlc-name-sync',
+            'stage': 'package_stage_names_cn_reuse_z31',
+            'status': 'broken', 'review': False},
+    'z32': {'func': do_package_names_cn_reuse_z32,
+            'cmd': 'package_names_cn_reuse_z32',
+            'out': 'Z32-loadout-exact',
+            'stage': 'package_stage_names_cn_reuse_z32',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6678,7 +6940,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z30'
+CURRENT_REVIEW_RECIPE = 'z32'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6806,6 +7068,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z29': do_package_names_cn_reuse_z29,
      # Z30（测试）：Z29 + 脚本命令名字参数同步 + Q16 b358 菜单键，输出 dist/Z30-script-names
      'package_names_cn_reuse_z30': do_package_names_cn_reuse_z30,
+     'package_names_cn_reuse_z31': do_package_names_cn_reuse_z31,
+     'package_names_cn_reuse_z32': do_package_names_cn_reuse_z32,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

@@ -119,7 +119,7 @@ python tools/runner.py <脚本名> [参数]
 | `python tools/build.py dlc_only` | 只按当前字库重编码 DLC01 |
 | `python tools/build.py [--game-dir "<游戏目录>"] package` | **完整补丁打包（默认·隔离）**：只读游戏目录里的原版文件（优先 `*.bak`，缺失时退回同名当前文件，如干净原版目录 `work/original`），在 `build/package_stage/` 里装机并校验各文件"确实与原件不同"，再按相对路径把补丁文件集复制进 `dist/`（不打 zip）。**游戏目录逐字节不变（不装机）**；缺原版文件时明确中止。配方声明为 `expect_same` 的文件若与原版逐字节相同，**不会写入 dist**（见 §8「输出裁剪」） |
 | `python tools/build.py [--game-dir "<游戏目录>"] package_install` | **就地装机版打包**：对游戏目录跑 `apply_menu`（会把目录留在已汉化态）→ 校验 → 复制到 `dist/`。`DLC01` 仅在游戏目录确实存在原件时纳入（其原件备份自动生成）。`package_exe` / `package_install_exe` 为对应的 exe 模式 |
-| `python tools/build.py package_current` | **当前校对目标打包**：按 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针调用对应配方（默认 `z30` → `dist/Z30-script-names/`）。导入校对 bat 只调用这个命令，不再写死 Z 编号 |
+| `python tools/build.py package_current` | **当前校对目标打包**：按 `build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针调用对应配方（默认 `z32` → `dist/Z32-loadout-exact/`）。导入校对 bat 只调用这个命令，不再写死 Z 编号 |
 | `python tools/build.py package_current_norepl` | 按 `CURRENT_NOREPL_RECIPE` 指针打包（默认 `Z15-reuse-kanji-norepl` 对照） |
 | `apply_font` / `apply_nosync` / `apply_nocollide` / `apply_consistent` / `apply_nomech` | 历史测试包 A/B/C/E/D |
 | `apply_noplace` / `apply_menu_safe` / `apply_menu_noml` | 变体（回退地名/保守 UI/退回单行） |
@@ -173,10 +173,11 @@ python tools/runner.py <脚本名> [参数]
   `locales/zh-CN/extra_review.json`（`50_extra.json` 的完整覆盖表）/
   `locales/zh-CN/song_en_lines.json`（`60_songs.json` 的歌词覆盖表）
   → 自动跑 `tools/build.py package_current`（隔离模式）刷新**当前校对目标**；
-  目标由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前为 `z30` →
-  `dist/Z30-script-names/`，含 Z23/Z24 的图鉴敌人/Boss 名单放行、`b291` 地图编辑器说明、
+  目标由 `tools/build_cn.py` 的 `CURRENT_REVIEW_RECIPE` 指针决定（当前为 `z32` →
+  `dist/Z32-loadout-exact/`，含 Z23/Z24 的图鉴敌人/Boss 名单放行、`b291` 地图编辑器说明、
   T-05b 技能/机制名、Z26 敌技显示名、Z27 对话选项放行与「副队长」称号统一、
-  Z28/Z29 替换词典语义残留清理、DLC 地名、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），
+  Z28/Z29 替换词典语义残留清理、Z30 脚本命令名字参数、Z31/Z32 loadout 与 DLC 名字副本、
+  DLC 地名、`cscv[355]` 歌词与 Z17-video 的 4 个字幕视频），
   **不改游戏目录**。
   打包成功时命令行与报告都会输出本次 `dist` 目录与配方身份；打包失败时完整构建输出写入
   同目录的 `translator-view/打包错误.txt`，并打印末尾 25 行，退出码 1。
@@ -249,18 +250,20 @@ python tools/runner.py <脚本名> [参数]
 | `package_names_cn_reuse_norepl` | `dist/Z15-reuse-kanji-norepl/` | **Z15-norepl**：同 Z15，但**不套用 REPL**（仅保留 HL）；用于对比原始措辞，当前多占 1 格（窟） |
 | `package_names_cn_reuse_z17` | `dist/Z17-display-fill/` | **Z17**：Z15 + 显示文本补全（括号独白/选项/UI 标签、英文尾行清零），并合入 Z17-video 的 4 个字幕视频（prologue/ragnarok/overture + MOV opening） |
 | `package_names_cn_reuse_z18` | `dist/Z18-dlc-place-names/` | **Z18**：Z17 + DLC01 战国大陆地名汉字化（含新增字 坂/潟/讼/哲），并合入 Z17-video 的 4 个字幕视频 |
-| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19 · 当前发布基线**：Z18 + `proofread` 对话校对（2026-11-09 第二轮待核对清零）；含 `cscv[355]` 歌词（28 个英文行）与 4 个视频；**2026-11-09 起启用 `HMH2_Z23_RELEASE`**，并入 Z22/Z24 译文与 Z23 敌名/Boss 图鉴列表名；**2026-11-21 T-07b 重建**并入 Z25–Z27 与术语批次：`LANG_EN 1b0109baf96a`（最终 dist，含视频合入），`validate_build` error 0 / warning 46。校对导入仍走 `package_current`（指针指向 Z30） |
+| `package_names_cn_reuse_z19` | `dist/Z19-proofread/` | **Z19 · 当前发布基线**：Z18 + `proofread` 对话校对（2026-11-09 第二轮待核对清零）；含 `cscv[355]` 歌词（28 个英文行）与 4 个视频；**2026-11-09 起启用 `HMH2_Z23_RELEASE`**，并入 Z22/Z24 译文与 Z23 敌名/Boss 图鉴列表名；**2026-11-21 T-07b 重建**并入 Z25–Z27 与术语批次：`LANG_EN 1b0109baf96a`（最终 dist，含视频合入），`validate_build` error 0 / warning 46。校对导入仍走 `package_current`（指针指向 Z32） |
 | `package_names_cn_reuse_z20` | `dist/Z20-desc-dodge/` | **Z20（试验）**：Z19 + 道具说明「避字」改写（避开描述渲染器错字 神/奇/饮），仅用于验证“描述渲染器按码错位”假设；10-30 19:15 版构建于歌词修复前，不含歌词 |
 | `package_names_cn_reuse_z21` | `dist/Z21-desc-5f-fix/` | **Z21（测试）**：Z19 + 描述文本 **0x5F 尾字节**修复（载体码池禁用 `0x??5F`；原生码尾字节 0x5F 的字如 神/点 改分配安全载体码），并恢复「便携女神像」「升级/降级药水」中文说明；含 4 视频与 `cscv[355]` 歌词。见 `docs/PITFALLS.md` §40 |
 | `package_names_cn_reuse_z22` | `dist/Z22-ui-lowrisk/` | **Z22（测试）**：Z21 + 低风险 UI 补译批：`b25` 键值 UI 消息表值列 295 条（城堡面板/道具类型/铁匠铺/地图编辑器/在线菜单）、`b99` 合成说明首段 2 条、`b763` `Up` 1 条（合计新增 298 行）、`b642` 武器种名 12 条、`b763` 按键名整列、`b186` `Switch`。见 `docs/PITFALLS.md` §41、`docs/PACKAGE_LEDGER.md` §2 |
-| `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | **Z23（测试）**：Z22 + **图鉴敌人/Boss 列表名批次**（怪物页 `b734` +40 138 条；头目页 `b555` +40 107 条；同名副本 `b54` +40、`b105`/`b529` +92；`Hero<>` 模板槽与 `b509/908` 脚本键槽除外）+ `活动道具`→`事件道具`。敌名放行在 `z19`/`z23`/`z24`/`z25`/`z26`/`z27`/`z28`/`z29`/`z30` 配方启用（`HMH2_Z23_RELEASE=1`，子进程传递），stable/E3 与旧配方不受影响。见 `docs/PITFALLS.md` §42、`docs/PACKAGE_LEDGER.md` §2 |
+| `package_names_cn_reuse_z23` | `dist/Z23-ui-mediumrisk/` | **Z23（测试）**：Z22 + **图鉴敌人/Boss 列表名批次**（怪物页 `b734` +40 138 条；头目页 `b555` +40 107 条；同名副本 `b54` +40、`b105`/`b529` +92；`Hero<>` 模板槽与 `b509/908` 脚本键槽除外）+ `活动道具`→`事件道具`。敌名放行在 `z19`/`z23`/`z24`/`z25`/`z26`/`z27`/`z28`/`z29`/`z30`/`z31`/`z32` 配方启用（`HMH2_Z23_RELEASE=1`，子进程传递），stable/E3 与旧配方不受影响。见 `docs/PITFALLS.md` §42、`docs/PACKAGE_LEDGER.md` §2 |
 | `package_names_cn_reuse_z24` | `dist/Z24-mapeditor/` | **Z24（测试）**：Z23 + **地图编辑器「说明」面板（`b291`）按日文整句重译**（206 槽）+ **怪物/头目专有名词统一**（91 行：`オニグモン`→鬼蜘蛛、`黒女神`→黑女神、`ザントヘル`→赞特赫尔、`魔王ケルベロス`→刻耳柏洛斯、`元魔王軍`→前魔王军 等）。`b291` 是 **48 字节一格、一格一行**的显示网格，必须整句理解后按原行数切回各格；`<…>` 标记不拆行。见 `docs/PITFALLS.md` §43/§44、`docs/PROOFREAD_NAME_REPORT.md` |
 | `package_names_cn_reuse_z25` | `dist/Z25-mech-names/` | **Z25（测试）**：Z24 + **T-05b 技能/机制名补译**：① `1,000m/h Wind`/`10,000m/h Wind` 五槽同改（`b666 pos0+pos292`、`b147/357/736 pos172`），仅 4 个操作数变化（`b83 rec183/186`、`b394 rec774/787`）；② `b172/b444/b750` 敌技显示名（`Catch and Release`、`Beat Crush`、`Beam Security`、`Final Defense System`、`Life Drain`、`Nightmare`、`Red Eyes`、`Thunder Storm Breath`）。`validate_build` error 0 / warning 45 |
 | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | **Z26（测试）**：Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字）：`b350`（含截图中的 `Couple's World`）、`b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽。全部 `+4=FFFFFFFF`、无名字哈希操作数；相对 Z25 **0 个操作数变化**；cmap +4 字（2304）；`validate_build` error 0 / warning 45 |
 | `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | **Z27（测试）**：Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`，b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复截图中的 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` b954 伙伴名 2 条 + `ml_zh_fields.json` 1 条；含 b147/b317/b357/b736/b1034 名字副本，构建重算操作数）。`validate_build` error 0 / warning 46 |
 | `package_names_cn_reuse_z28` | `dist/Z28-dict-residue/` | **Z28（测试）**：Z27 + **初版替换词典语义残留清理**（对照 7179354 版 350 条 REPL 与当前 16 条）：物品/机制名（锯斧、独角兽、牛仔宽帽、长钉鞋、虎牙刀、钻头枪/矛/兵、锯齿、工口之书、马赫齿轮、再次点火、孵化、学徒、盐渍胡萝卜/咸胡萝卜、围裙、激热外套）、对话/UI（孤儿院、1金币、殿下、斯洛、两倍、累了、浪漫、宝贵、前辈战士、吃派、赎罪、所谓的、挑战、震撼、吓一跳、告辞、岛屿战争）及「多亏」直接道谢的 12 行；同步 `ml_zh_fields.json` 与 DLC01。`validate_build` error 0 / warning 46 |
 | `package_names_cn_reuse_z29` | `dist/Z29-legacy-terms/` | **Z29（测试·上一版校对目标）**：Z28 + **第二批替换词典语义残留清理**：巴望→期待、得令→遵命/收到、且慢→稍等、大作→杰作、破口→裂缝、王杖→如意棒、手足→兄弟、钓具→钓竿、格子→条纹、照办→执行、切碎→锋利度、奖金→奖励/赏金、热乎→保暖/温暖、拿走了→偷走了、赶不上关门→赶不上门禁、看准→判断、收场→结果；以及大罪人、うらない→占卜、襲来→袭来、身代わり大作戦→替身大作战、気配→有迹象显示、小娘→小丫头、足がすくんで→吓得。含 4 个视频（`video_merged=true`）。`validate_build` error 0 / warning 46 |
-| `package_names_cn_reuse_z30` | `dist/Z30-script-names/` | **Z30（测试·当前校对目标）**：Z29 + **脚本命令名字参数同步**（`#PARTY`：Q19 Knight / Q63 Rurufi / Q73 True Geezer；`#HERO_CATSLEPARTS1..5`：Q73 Crystal Castle）+ **Q16 `b358` 菜单键写回 `Hero Castle`**。`validate_build` error 0 / warning 46；`LANG_EN 0317ab1be137`；相对 Z29 仅 b196/b358/b486/b493 四个 blob 变化 |
+| `package_names_cn_reuse_z30` | `dist/Z30-script-names/` | **Z30（测试·上一版校对目标）**：Z29 + **脚本命令名字参数同步**（`#PARTY`：Q19 Knight / Q63 Rurufi / Q73 True Geezer；`#HERO_CATSLEPARTS1..5`：Q73 Crystal Castle）+ **Q16 `b358` 菜单键写回 `Hero Castle`**。`validate_build` error 0 / warning 46；`LANG_EN 0317ab1be137`；相对 Z29 仅 b196/b358/b486/b493 四个 blob 变化。**实机：Q73 通过，逐关未发现异常** |
+| `package_names_cn_reuse_z31` | `dist/Z31-dlc-name-sync/` | **Z31（已作废：序章装备丢失）**：Z30 + loadout 同步 + DLC 名字副本 + 称号改词。**缺陷**：loadout 解析把 `Brave Vest　` 末尾的全角空格当填充剥掉，误映射到另一个道具，序章主角丢失背心和武器。保留仅供对照，**勿分发**；修正版为 Z32 |
+| `package_names_cn_reuse_z32` | `dist/Z32-loadout-exact/` | **Z32（测试·当前校对目标）**：Z30 + ① **T-19 修正版 loadout 同步**（只改 Ad Hoc 1–7 的 21 处鞋名，按完整原名含全角空格精确匹配；序章 `rec0` 与 Z30 逐字节一致）；② **T-20 DLC01 名字副本同步**；③ 主表 5 个称号按 DLC 措辞更新。`validate_build` error 0 / warning 46；`audit_script_name_refs.py` **0 问题**；`LANG_EN 129ab4ac1030` / `DLC01 d4d3f0a6e71c`；相对 Z30 仅 `b34/b931`（主）与 DLC `b7` 变化，`b34` 差异仅 rec214–220 |
 
 用法示例：
 
@@ -271,7 +274,7 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 
 > 各包内容、实机状态、症状定位与回滚方式见 `docs/PACKAGE_LEDGER.md`。
 >
-> Z17–Z30 这些会调用 `_apply_z17_video()` 的包，若 `dist/Z17-video` 缺失，
+> Z17–Z32 这些会调用 `_apply_z17_video()` 的包，若 `dist/Z17-video` 缺失，
 > 现在会在打包末尾**自动烧录** 4 个视频后再合入（见 §8「视频自动烧录」）。
 
 > **默认打包行为 = `apply_menu` 生产配方。**
@@ -373,11 +376,11 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
     + `res/*.s2a`(4) + `DLC01/*.s2a`(2)〔后者仅在游戏目录确实存在 DLC01 母本时纳入〕；
     exe 模式 = `HMH2.exe` + 同 6 个 s2a），按相对路径写入。
   - **输出裁剪（2026-11-22 起）**：配方通过 `expect_same` 声明「不得改动」的文件（如 `z19` /
-    `stable` / `z28` / `z29` / `z30` 的 `res/LANG_JA.s2a`、`DLC01/LANG_JA.s2a`），若在 staging 中已校验为
+    `stable` / `z28` / `z29` / `z30` / `z31` / `z32` 的 `res/LANG_JA.s2a`、`DLC01/LANG_JA.s2a`），若在 staging 中已校验为
     与母本逐字节相同，则**不复制进 dist**，并删除输出目录里的同名旧产物。构建清单新增
     `omitted_outputs` 字段记录这些文件。双写配方（`apply_menu` / `package`）和日语镜像包
     （`Z4-JA` / `E3-JA`）仍会正常输出 `LANG_JA`。
-  - **视频自动烧录（2026-11-22 起）**：调用 `_apply_z17_video()` 的配方（`z17`–`z30`）若发现
+  - **视频自动烧录（2026-11-22 起）**：调用 `_apply_z17_video()` 的配方（`z17`–`z32`）若发现
     `dist/Z17-video` 缺失，会以当前刚打好的包为底包自动运行
     `tools/package_video_test.py --mode hardsub`，重新烧录 4 个视频后再合入；烧录失败即中止
     打包，不再静默跳过。渲染结果缓存在 `build/video_cache/`，`videos.json`、RAGNAROK 的
@@ -417,10 +420,15 @@ python tools/build.py --game-dir work/original package_names_cn_display_hash
 ```bash
 python tools/build.py check                   # 各文件 原版/已修改 + 散列
 python tools/t34_health.py                    # 项目体检，exit 0=全绿
+python tools/audit_script_name_refs.py        # 脚本按名查表穷举审计（T-18）
 python tools/t162_diff_audit.py <备份根> <批次id...>   # 零附带变化审计
 python tools/t152_verify_g1.py                # 功能级反解（批次示例）
 python tools/dlc_apply.py verify              # DLC01 三重验证
 ```
+
+`audit_script_name_refs.py` 默认审计当前校对目标包（主 LANG + DLC01），
+输出 `build/audit/script_name_refs.tsv`；`--dist <dir>` 可对历史包复跑，
+exit 1 表示存在 `#CMD(NAME)` / `key=NAME` / 整槽名副本等机制性不同步。
 
 ---
 
@@ -490,7 +498,7 @@ zig 0.13 实测两点：目标三元组为 `x86-windows-gnu`（`i686-...` 已不
 - **成品式（推荐，零依赖）**：
   - DLL 模式（默认）：分发 `dinput8.dll` + `hm2zh_patch.bin`（`HMH2.exe` 保持原版）+ `res/texture.s2a`、
     `res/cscv.s2a`、`res/LANG_EN.s2a`。`res/LANG_JA.s2a` **无需分发**：当前发布配方（`z19` /
-    `stable` / `z28` / `z29` / `z30` 等只写 EN 的隔离包）保持它原版，打包时也不会写入 dist。
+    `stable` / `z28` / `z29` / `z30` / `z31` / `z32` 等只写 EN 的隔离包）保持它原版，打包时也不会写入 dist。
   - exe 模式：分发已打补丁的 `HMH2.exe` + `res/texture.s2a`、`res/cscv.s2a`、`res/LANG_EN.s2a`
     （+ 持有 DLC 时的 `DLC01/LANG_EN.s2a`）。仅双写配方或日语镜像包才需要附带 `LANG_JA`。
   - 分发物是**叠加补丁**：玩家目录必须已有原版 `LANG_JA`。若曾装过早期双写版本（`LANG_JA`

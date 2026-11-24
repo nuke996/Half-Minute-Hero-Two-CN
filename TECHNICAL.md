@@ -778,13 +778,26 @@ Z10b + 伙伴名 + 复合键；`b954/b1034` 译文由 `_z11_partner_rows()` 以�
 | `#PARTY(NAME)` | `b196 rec59` / `b486 rec1` / `b493 rec1` | `b954 +4` / `b1034 +4` | Q19 骑士 / Q63 露露菲 / Q73 真・大叔不出现；Q73 后续空指针闪退 |
 | `#HERO_CATSLEPARTS1..5(NAME)` | `b493 rec119/124/129/134/139` | `b86 rec89 pos28`、`b147/357/736` | Q73 城堡战初始化/零件失败 |
 | `stride152 pos24` | 多个关卡实体表 | 道具表载具名 | 龙/船/马/摩托不出现（PITFALLS §29） |
-| `head=/body=/handR=/handL=/foot=` | `b34` 等 loadout | 装备表 | 序章初始装备丢失、伙伴不显示（PITFALLS §25.3）；2026-11-24 首轮扫描 741 个字段，发现 2 处真实不同步：`Brave Vest`、`Brave Blade`（b34 off620） |
-| `b358 rec818 pos112` | 女神菜单项 | Q16 键 | 英文侧仍写日文「勇者城」，菜单键混合态 |
+| `head=/body=/handR=/handL=/foot=` | `b34` 等 loadout | 装备表 | 序章初始装备丢失、伙伴不显示（PITFALLS §25.3）；2026-11-24 正式审计 756 个值，发现 **23 处不同步**：`Brave Vest`、`Brave Blade`（b34 rec0），以及 `b34 rec214–220`（Ad Hoc 1–7）`foot2/3/4` 的 `key=` **换行写值**形态（`foot2=\nAcademy Boots`）共 21 处 |
+| `b358 rec818 pos112` | 女神菜单项 | Q16 键 | 英文侧仍写日文「勇者城」，菜单键混合态（Z30 已写回 `Hero Castle`） |
+| DLC `stride292 pos32`（`pos28` 起 `FF FF FF FF`+名字） | DLC `b7/b48/b53/b73/b78` | 主 `b931 pos0` | DLC 称号无法取得：原版 JA 两侧逐字节相同，Z30 有 5/6 与主表终串不同（T-20 / KNOWN_ISSUES §28） |
+
+**穷举审计工具（2026-11-24）：** `tools/audit_script_name_refs.py`。它按数据形态扫描，
+不依赖已知命令/偏移清单：canon（2612 条/14 类）→ 任意 `#CMD(...)` 参数 → 任意 `key=value`
+（含值在下一行）→ 整槽/嵌入名 → `text_v2.csv`/`desc_release`/章节称号/Q16 白名单 →
+哈希操作数与 Q16 独立校验；输出 `build/audit/script_name_refs.tsv`。
+Z30/Z31/Z32 结果见 `docs/PITFALLS.md` §54.1。
+
+**loadout 匹配的硬规则（2026-11-24，Z31 事故）：** `key=value` 的值必须按**完整原名**
+精确匹配道具表，**不能把末尾的全角空格（`0x81 0x40`）当填充剥掉**：
+`Brave Vest　`（终极背心 → 勇敢背心）与 `Brave Vest`（勇者背心）是两个不同道具，
+剥空格会串错并导致序章装备丢失。见 `docs/PITFALLS.md` §54.2。
 
 **结论 / 待办：** 只要名字表被翻译，**所有**引用该名字的脚本参数必须同步为同一最终字节；
-`cscv` 孪生仍保持原版。已修复的 8 个字段只是已发现部分，必须按
-`docs/PITFALLS.md` §54.1 的四信号穷举审计（全库子串扫描 + JA/EN 语言差分 +
-显示列白名单 + exe 命令表），并接入 `validate_build`；详见 `docs/TODO.md` T-18。
+`cscv` 孪生仍保持原版。Z31/Z32（2026-11-24）已新增 `sync_script_loadout_names()`（loadout，
+含换行值）与 `sync_dlc_name_copies()`（DLC01 称号条件副本 / 敌名副本），并把主表 5 个称号
+改按 DLC 措辞；穷举审计 0 问题。仍待：把 `tools/audit_script_name_refs.py` 接入
+`validate_build` 门禁并加回归夹具；详见 `docs/TODO.md` T-18。
 
 ---
 

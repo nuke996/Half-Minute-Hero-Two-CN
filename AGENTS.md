@@ -166,7 +166,7 @@ The review-import pipeline must never hard-code a `Znn` package command. It invo
 - `RECIPES[id]` registers each package recipe (`func` / `cmd` / `out` / `stage` /
   `status` / `review`).
 - `CURRENT_REVIEW_RECIPE` is the single pointer for the current review target
-  (currently `z30` → `dist/Z30-script-names/`).
+  (currently `z32` → `dist/Z32-loadout-exact/`).
 - `CURRENT_NOREPL_RECIPE` is the pointer for the `--no-repl` comparison package.
 
 Therefore, when adding a new recipe or promoting an existing one:
@@ -195,7 +195,7 @@ which recipe and translation snapshot was built.
 2. the staged file was verified byte-identical to its original backup.
 
 Such files (currently `res/LANG_JA.s2a` and `DLC01/LANG_JA.s2a` for `z19` / `stable` /
-`z28` / `z29` / `z30`) already exist unchanged in the player's game directory, so distributing them only
+`z28` / `z29` / `z30` / `z31` / `z32`) already exist unchanged in the player's game directory, so distributing them only
 wastes space. The build must also delete a stale copy of an omitted file from the
 output directory and record it in the manifest's `omitted_outputs` field.
 
@@ -206,7 +206,7 @@ isolation assertion. Recipes that write `LANG_JA` (Japanese mirror packages such
 
 ## Video Merge Integrity (mandatory)
 
-Recipes that call `_apply_z17_video()` (`z17`–`z30`) must never ship a package without
+Recipes that call `_apply_z17_video()` (`z17`–`z32`) must never ship a package without
 the translated videos. The intermediate package `dist/Z17-video/` is not tracked by git,
 so when its `res/LANG_EN.s2a` or `res/MOV.s2a` is missing:
 

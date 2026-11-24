@@ -1824,7 +1824,7 @@ Q16/`b358` 菜单键），说明“按已知命令/已知偏移补”必然漏�
 3. **名字哈希操作数**：`u32` 哈希指向名字；由 `recompute_name_operands()` 覆盖。
 4. **Q16/资源键**：必须等于该语言自己的原版串（`Hero Castle` / `勇者城`）。
 
-**穷举审计的四个信号（建议 `tools/audit_script_name_refs.py`）：**
+**穷举审计的四个信号（已实现：`tools/audit_script_name_refs.py`）：**
 
 - **名字 canon**：从权威表建 `EN原名 -> 最终字节`（伙伴 b954/b1034、道具 b147/357/736/998、
   技能 b666、职业 b128、阵型 b136、称号 b931、敌名 b407、城堡零件 b86、载具
@@ -1861,6 +1861,54 @@ Q16/`b358` 菜单键），说明“按已知命令/已知偏移补”必然漏�
 - 裸子串扫描（不做 JA/EN 差分/显示白名单）会得到 487 个候选，绝大多数是对话/`Hero<>`
   模板/二进制巧合；说明 T-18 的工具必须做“语言差分 + 显示列白名单 + 结构字段”，
   不能只按“包含名字”报警。loadout 定向扫描之所以干净，是因为它只解析 `key=value` 结构。
+
+**正式审计工具（2026-11-24，T-18 第一步）：** `tools/audit_script_name_refs.py`
+
+```
+python tools/audit_script_name_refs.py            # 审计当前校对目标包（主 LANG + DLC01）
+python tools/audit_script_name_refs.py --dist dist/Z29-legacy-terms   # 对历史包复跑（回归）
+```
+
+- **canon**：`validate_build.NAME_SOURCES` + 城堡零件 `b86 pos28`，共 2612 条/14 类；
+- **结构信号**：任意 `#CMD(...)` 参数、任意 `key=value`（含 `foot2=` 换行后下一行写值）、
+  整槽同名副本、`stride152 pos24` 二进制嵌名；
+- **语言差分/白名单**：JA 母本同位置对照、`text_v2.csv` 显示槽白名单、
+  `desc_release` 说明文、`chap_title_guard` 章节/称号、`in_skill_key_col`、Q16 清单；
+- **独立检查**：`b83/394/417/654/756` 哈希操作数、t17 `wave=1` Q16 键；
+- 输出 `build/audit/script_name_refs.tsv`（只写非 synced/kept 行），退出码 1 表示有机制性问题。
+
+**Z30 正式审计结果（2026-11-24，已修正）：** `cmd 8/8 synced`、`slot 1352 synced`、
+`embedded 35 synced`、`loose 0 未解释`；**机制性不同步 26 处：21 处 b34 loadout（T-19）+
+5 处 DLC 称号条件副本（T-20）**（21 处全部是 `rec214–220` Ad Hoc 1–7 的 `foot2/3/4`）。
+⚠️ 早前把 `rec0` 的 `Brave Vest　`/`Brave Blade　` 也算作不同步是**误报**（见 §54.2）。
+DLC 的 `stride292 pos32` 是称号取得条件副本，原版 JA 与主表 `b931 pos0`
+逐字节相同，Z30 有 5/6 被 DLC 管线独立翻译 → DLC 称号无法取得（T-20、`KNOWN_ISSUES.md` §28）；
+另有 1 处 DLC 敌名副本译名不统一（缺爱公鸟 vs 饥饿公鸟），归入 T-20。回归验证：对 `dist/Z29-legacy-terms` 复跑能准确报出 8 条
+`#PARTY`/`HERO_CATSLEPARTS` + 1 条 `b358` Q16 键（即 Z30 已修的 9 处），证明检测链路完整。
+
+**Z31 事故 / Z32 修复（2026-11-24）：** Z31 用 `sync_script_loadout_names()` 时把 loadout
+值末尾的全角空格当填充剥掉，`Brave Vest　` 被误映射到另一个道具 `Brave Vest`（勇者背心），
+**序章主角丢失背心和武器**（Z30 正常）。修正解析后：loadout 只报 21 处，Z32 仅改
+Ad Hoc 1–7，`rec0` 与 Z30 逐字节一致；审计 **0 / 0 / 0，exit 0**；`validate_build`
+error 0 / warning 46；相对 Z30 仅主 `b34/b931` 与 DLC `b7` 变化。
+
+### 54.2 名字末尾的全角空格是名字的一部分，不是填充（2026-11-24，Z31 事故）
+
+- 同一英文名前缀可以是**两个不同道具**：`Brave Vest`（勇者背心）与
+  `Brave Vest　`（带全角空格 `0x81 0x40`，终极背心 → 勇敢背心）；
+  `Brave Blade`（勇者之刃）与 `Brave Blade　`（勇者战刃）同理。
+- 它们在 `b147/357/736/998` 的 `+4` 名字列里是两个不同记录；loadout 里的
+  `body=Brave Vest　` 精确对应后者。
+- 因此：**解析 `key=value` 时不能 `strip(b' \x81@')`**，只能去 ASCII 空格/制表；
+  查 canon、写回也必须用完整原名。
+- 该错误在审计里表现为 2 个假阳性，在构建里表现为把 2 个正确装备改成错误装备，
+  实机症状是“序章背心和武器消失”。回归夹具应覆盖：把 `Brave Vest　` 的 loadout
+  改成「勇者背心」时审计必须报错（但 Z32 的正确状态必须为 0）。
+
+**新发现的数据形态（2026-11-24）：** `b34` 的 Ad Hoc 1–7 预设把部分装备名写在
+`foot2=` 的**下一行**（`foot2=\nAcademy Boots`），而 Ad Hoc 8 是同行写值且已正确翻译。
+按行解析 `key=value` 的旧同步会把这一类整组漏掉 ⇒ 解析 loadout 必须允许“值在下一行”。
+全库共 100 处 `key=\nvalue` 形态，只有 b34 rec214–220 的值是装备名。
 
 **相关：** §25.3（脚本 loadout 与显示名必须同串）、§29（stride152 pos24 嵌入副本）、
 §48（二进制 run 误译）、`TECHNICAL.md` §10.3.6（按名查表返回空 → 空指针）、
