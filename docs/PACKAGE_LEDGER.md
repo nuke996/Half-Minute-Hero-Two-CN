@@ -2,7 +2,7 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-22（隔离包不再输出与母本相同的 `LANG_JA`）
+> 最近更新：2026-11-24（`かいどうタイガー` → 街道老虎、`公路` → 街道）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
@@ -239,6 +239,18 @@ python tools/build.py --game-dir work/original package_current
      `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；
      `validate_build` error 0 / warning 46；translator-view 已刷新；实机确认果冻怪恢复。
      详见 `PITFALLS.md` §48、`KNOWN_ISSUES.md` §25。
+
+- **2026-11-24（Z29 追加：`かいどうタイガー` → 街道老虎、`公路` → 街道）**：
+  `かいどうタイガー` 的官方英文 `Burly Tiger` 不是日文直译，旧译「壮实老虎」沿用了英文。
+  按 `ja` 的 Q01 任务 7 行 `街道のモンスター`、既有地图 UI 译名 `Street→街道`，统一为
+  「街道老虎」；2番/3番 同步为「第二只/第三只街道老虎」（原「第二个/第三只」量词一并统一）；
+  同任务链 7 行「公路」改为「街道」。共 13 行，全部等字节替换（4→4 字、2→2 字）。
+  核实：3 个英文名变体在 `b83/394/417/654/756` 五张操作数表 0 命中；`b601/b734/b54/b555`
+  无副本，DLC01 0 处；`街/道` 已在字库上屏，无新字模、无重名。
+  同时保留并导入尚未导入的人工校对 `row::28954`「…我可是他的敌人哦。」。
+  重建 Z29：`LANG_EN aff2f1e0d13b` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` /
+  `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；
+  `validate_build` error 0 / warning 46。详见 `PITFALLS.md` §51。
 
 - **2026-11-23（Z29 追加：`全无→毫无` 恢复）**：
   初版 REPL 第 41 条 `毫无→全无` 的残留全部恢复：CSV 26 行 + `ml_zh_fields.json` 2 条多行。`毫` 已在 `cmap.json`（`92c1`），两词均为 2 字 4 字节，字库与槽位零成本。逐行核对时发现并回退 1 处跨词边界误伤：row 35839「完全无关」内含「全无」，首轮被替换成「完毫无关」，已还原为「完全无关」。重建 Z29：`LANG_EN ae26210f8d18` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；`validate_build` error 0 / warning 46。

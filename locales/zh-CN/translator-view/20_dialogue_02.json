@@ -17982,7 +17982,7 @@
    "id": "row::12796",
    "en": "Bring it on!! This is my kind of contest!!",
    "ja": "「上等だあっ！！　この勝負気にいったぜっ！！",
-   "zh": "「放马过来！！这种比试老娘喜欢！！",
+   "zh": "「放马过来！！这种比试我喜欢！！",
    "meta": {
     "blob": 221,
     "offset": 8644,
@@ -18004,7 +18004,7 @@
    "id": "row::12799",
    "en": "It looks like we have another oddball here, <RGN_NAME__>!",
    "ja": "「またおかしなのが出てきマシタ　<RGN_NAME__>」",
-   "zh": "30号「这儿又冒出个怪人，<RGN_NAME__>！」",
+   "zh": "「这儿又冒出个怪人，<RGN_NAME__>！」",
    "meta": {
     "blob": 221,
     "offset": 10688,
@@ -18015,7 +18015,7 @@
    "id": "row::12801",
    "en": "This time…",
    "ja": "「今回は・・・・・・・・・・・・・」",
-   "zh": "30号「这次……」",
+   "zh": "「这次……」",
    "meta": {
     "blob": 221,
     "offset": 10980,
@@ -18026,7 +18026,7 @@
    "id": "row::12803",
    "en": "…?!?!?",
    "ja": "「・・・・・・！？！？！？」",
-   "zh": "30号「……！？！？！？」",
+   "zh": "「……！？！？！？」",
    "meta": {
     "blob": 221,
     "offset": 12732,
@@ -19060,7 +19060,7 @@
    "id": "row::12955",
    "en": "… Well, that was pretty cold blooded if you ask me…",
    "ja": "「・・・チもナミダも無いとはこのことデスネ」",
-   "zh": "30号「……这可真是冷血无情啊……」",
+   "zh": "「……这可真是冷血无情啊……」",
    "meta": {
     "blob": 221,
     "offset": 121940,
@@ -19115,7 +19115,7 @@
    "id": "row::12962",
    "en": "You're so shameless…",
    "ja": "「オトナゲもないデスネ」",
-   "zh": "30号「真是没个大人样呢……」",
+   "zh": "「真是没个大人样呢……」",
    "meta": {
     "blob": 221,
     "offset": 123108,
@@ -19203,7 +19203,7 @@
    "id": "row::12974",
    "en": "What the heck is going on here…",
    "ja": "「こういうパターンもあるのデスネ・・・」",
-   "zh": "30号「这到底算什么情形……」",
+   "zh": "「这到底算什么情形……」",
    "meta": {
     "blob": 221,
     "offset": 126904,
@@ -19324,7 +19324,7 @@
    "id": "row::12992",
    "en": "Well, I certainly didn't see that coming…",
    "ja": "「予想外な結果になりマシタガ・・・",
-   "zh": "30号「这结果我可没料到……",
+   "zh": "「这结果我可没料到……",
    "meta": {
     "blob": 221,
     "offset": 130700,
@@ -19357,7 +19357,7 @@
    "id": "row::12996",
    "en": "Are you really THAT bad at math?",
    "ja": "「そんなに計算が苦手デスカ？",
-   "zh": "30号「你数学真有那么差吗？",
+   "zh": "「你数学真有那么差吗？",
    "meta": {
     "blob": 221,
     "offset": 131576,
@@ -19379,7 +19379,7 @@
    "id": "row::12999",
    "en": "So it's time to prepare yourself…",
    "ja": "「ではカクゴをキメテ・・・」",
-   "zh": "30号「那么，做好觉悟吧……」",
+   "zh": "「那么，做好觉悟吧……」",
    "meta": {
     "blob": 221,
     "offset": 131868,
@@ -19390,7 +19390,7 @@
    "id": "row::13001",
    "en": "Our adventure is only just beginning!",
    "ja": "「マダマダ　ぼうけんはつづきマス！",
-   "zh": "30号「我们的冒险才刚要开始！",
+   "zh": "「我们的冒险才刚要开始！",
    "meta": {
     "blob": 221,
     "offset": 132160,
@@ -41808,7 +41808,7 @@
    "id": "row::17956",
    "en": "Soldier Clerk: <RGN_NAME__>! Aim high!",
    "ja": "受付兵士「<RGN_NAME__>さん！高見を目指して下さい！」",
-   "zh": "「接待士兵：<RGN_NAME__>！请瞄准高处！」",
+   "zh": "「接待士兵：<RGN_NAME__>！请更上一层楼！」",
    "meta": {
     "blob": 329,
     "offset": 21408,
