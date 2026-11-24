@@ -24406,7 +24406,7 @@
    "id": "row::13920",
    "en": "I've confirmed invocation of the <Song of Destruction>.",
    "ja": "　<ハメツの詩>の発動を確認しまシタ」",
-   "zh": "　已确认<毁灭之诗>发动。」",
+   "zh": "　已确认<毁灭之歌>发动。」",
    "meta": {
     "blob": 249,
     "offset": 17468,
@@ -36847,7 +36847,7 @@
    "id": "row::16462",
    "en": "My Song of Destruction won't start up!?",
    "ja": "　この我のハメツの詩が発動しないだとっ！？」",
-   "zh": "　我的破坏之诗居然发动不了！？」",
+   "zh": "　我的毁灭之歌居然发动不了！？」",
    "meta": {
     "blob": 304,
     "offset": 273552,

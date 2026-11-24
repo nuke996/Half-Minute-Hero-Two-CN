@@ -2,12 +2,12 @@
 
 > 目的：当实机发现“某处演出 / 技能 / 装备 / 商店 / 伙伴 / 道具异常”时，能快速判断
 > 是哪个改动引入的、该修还是该回滚。
-> 最近更新：2026-11-24（`かいどうタイガー` → 街道老虎、`公路` → 街道）
+> 最近更新：2026-11-24（`遥远→很远` 残留还原：row 2181 / 54941）
 > 相关：`TECHNICAL.md` §10.3.7–§10.3.11、`docs/PITFALLS.md` §25.9–§25.14。
 >
 > **校对目标指针（2026-11-07 起）：** `汉化-导入校对.bat` 调用
 > `tools/build.py package_current`，目标由 `tools/build_cn.py` 的
-> `CURRENT_REVIEW_RECIPE` 决定（当前 `z29` → `dist/Z29-legacy-terms/`）。
+> `CURRENT_REVIEW_RECIPE` 决定（当前 `z30` → `dist/Z30-script-names/`）。
 > 新配方登记到 `RECIPES` 后，若成为校对目标，必须同步修改该指针并更新本文档。
 > 每次成功打包会写出 `build_manifest.json`（含配方 id、开关、输入/产物哈希、git commit），
 > 导入报告会打印该身份信息。
@@ -59,7 +59,10 @@
 | **Z26（测试）** | `package_names_cn_reuse_z26` | `dist/Z26-enemy-skills/` | Z25 + **敌技显示名补译**（47 槽 / 44 个不同名字，含截图中的 `Couple's World`）：`b350/b59/b90/b105/b10/b17/b230/b676/b253/b283/b393/b425/b489/b529/b655/b836/b846/b884/b966/b1051/b1056` 的 `stride288 pos28` 名字槽；全部 `+4=FFFFFFFF`、无名字哈希操作数。`Hellfire`/`Venus Seven`/`Dogry`/`Reusable` 未纳入 | **2026-11-15 构建，未实机。** `LANG_EN dd093e4788bf` / `LANG_JA 924eff209d0e` / `texture 5a290d173147` / `cscv f074004c8eb3` / `MOV 237ee86d26f6` / `DLC01 8daf3998309e`(JA) `a0214cda6c09`(EN)；`validate_build` error 0 / warning 45；相对 Z25 操作数 **0 变化**；cmap +4 字（2304） |
 | **Z27（测试）** | `package_names_cn_reuse_z27` | `dist/Z27-subcommander/` | Z26 + ① **27 个对话选项槽放行**（`DISPLAY_RELEASE_OFFS`：b57/b73/b151/b177/b212/b348/b366/b647/b668/b795/b804/b906/b1043，修复 `Nope…` 等选项仍显示英文）；② **15 个“日文单行、英文多行”尾行留空**（11+2 置全角空格，2 组先合并再置空；`row::46763/46764`、`60419/60420`）；③ **`副隊長ヤーシュ` → `副队长亚修`**（译表 13 行 + `extra_review.json` 2 条 + `ml_zh_fields.json` 1 条；b147/b317/b357/b736/b1034 名字副本同步）。选项均为纯显示 collide 假命中，逐槽放行；`validate_build` error 0 / warning 45。**2026-11-21 术语批次（T-10b/T-11/T-12/T-13a）**：船頭→船夫、おじさま→大叔、銃士→火枪手、魔道士→魔法师、悪ガキ→小鬼、超新流星；歌族/海岸人鱼/黄金冲击/刻耳柏洛斯/赞特赫尔等专名归一；说话人 97→40 组。`LANG_EN 1b0109baf96a` / `texture fb5b79e17e37` / `cscv f074004c8eb3` / `DLC01 bbe1e4a87b61`；validate error 0 / warning 46 | **2026-11-21 构建，未实机。** 实机需验：选项中文（尤其 b668 方向、b804/b906 确认）、15 处尾行是否为空、队伍界面「副队长亚修」 | 历史校对目标，已由 Z28 接替 |
 | **Z28（测试）** | `package_names_cn_reuse_z28` | `dist/Z28-dict-residue/` | Z27 + **初版替换词典语义残留清理**（对照 `7179354` 的 350 条 REPL 与当前 16 条）：锯斧/独角兽/牛仔宽帽/长钉鞋/虎牙刀/钻头枪·矛·兵/锯齿/工口之书/马赫齿轮/再次点火/孵化/学徒/盐渍胡萝卜·咸胡萝卜/围裙/激热外套；孤儿院/1金币/殿下/斯洛/两倍/累了/浪漫/宝贵/前辈战士/吃派/赎罪/所谓的/挑战/震撼/吓一跳/告辞/岛屿战争；「多亏」直接道谢/语气错误的 12 行；同步 `ml_zh_fields.json` 与 DLC01 | **2026-11-22 构建，未实机。** `LANG_EN 375f03867e98` / `DLC01 ad68d8bd92e6` / `texture fb5b79e17e37` / `cscv f074004c8eb3` / `LANG_JA 924eff209d0e`；`validate_build` error 0 / warning 46。实机需验：道具/装备名（锯斧、独角兽、牛仔宽帽、长钉鞋、虎牙刀、钻头枪、工口之书、盐渍/咸胡萝卜）、队伍界面「斯洛」、选项与多行说明 | 历史校对目标，已由 Z29 接替 |
-| **Z29（测试）** | `package_names_cn_reuse_z29` | `dist/Z29-legacy-terms/` | Z28 + **第二批替换词典语义残留清理**：巴望→期待、得令→遵命/收到、且慢→稍等、大作→杰作、破口→裂缝、王杖→如意棒、手足→兄弟、钓具→钓竿、格子→条纹、照办→执行、切碎→锋利度、奖金→奖励/赏金、热乎→保暖/温暖、拿走了→偷走了、赶不上关门→赶不上门禁、看准→判断、收场→结果；大罪人、うらない→占卜、襲来→袭来、身代わり大作戦→替身大作战、気配→有迹象显示、小娘→小丫头、足がすくんで→吓得；同步 `ml_zh_fields.json`；**クロノクリスタル→计时水晶**（旧译「时之水晶」「时空水晶」已清理，术语表 §8 标【已统一】）。**含 4 个视频**（自动烧录，`video_merged=true`） | **2026-11-23 构建，未实机。** `LANG_EN b2de9b52f893` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`LANG_JA` 两侧按 `expect_same` 省略；`validate_build` error 0 / warning 46。校对指针 `CURRENT_REVIEW_RECIPE=z29`；实机需验：期待/遵命/裂缝/如意棒/兄弟/钓竿/条纹/执行者/锋利度/奖励/保暖/门禁等批量改动 | **当前导入校对目标** |
+| **Z29（测试）** | `package_names_cn_reuse_z29` | `dist/Z29-legacy-terms/` | Z28 + **第二批替换词典语义残留清理**：巴望→期待、得令→遵命/收到、且慢→稍等、大作→杰作、破口→裂缝、王杖→如意棒、手足→兄弟、钓具→钓竿、格子→条纹、照办→执行、切碎→锋利度、奖金→奖励/赏金、热乎→保暖/温暖、拿走了→偷走了、赶不上关门→赶不上门禁、看准→判断、收场→结果；大罪人、うらない→占卜、襲来→袭来、身代わり大作戦→替身大作战、気配→有迹象显示、小娘→小丫头、足がすくんで→吓得；同步 `ml_zh_fields.json`；**クロノクリスタル→计时水晶**（旧译「时之水晶」「时空水晶」已清理，术语表 §8 标【已统一】）。**含 4 个视频**（自动烧录，`video_merged=true`） | **2026-11-23 构建，未实机。** `LANG_EN b2de9b52f893` / `res/MOV.s2a 8d72c79a841a` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`LANG_JA` 两侧按 `expect_same` 省略；`validate_build` error 0 / warning 46。校对指针 `CURRENT_REVIEW_RECIPE=z30`；实机需验：期待/遵命/裂缝/如意棒/兄弟/钓竿/条纹/执行者/锋利度/奖励/保暖/门禁等批量改动 | **上一版校对目标** |
+| **Z30（测试）** | `package_names_cn_reuse_z30` | `dist/Z30-script-names/` | Z29 + **脚本命令名字参数同步**（`#PARTY`：Q19 Knight / Q63 Rurufi / Q73 True Geezer；`#HERO_CATSLEPARTS1..5`：Q73 Crystal Castle）+ **Q16 `b358 rec818 pos112` 菜单键写回 `Hero Castle`**。相对 Z29 仅 `b196/b358/b486/b493` 四个 blob 变化 | **2026-11-24 构建，待逐关实机。** `LANG_EN 0317ab1be137fd749b4ac9d7203949976b6d6b5a19212e1f6243b7535f3bfc5a` / `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5` / `MOV 8d72c79a841a`；`validate_build` error 0 / warning 46；`CURRENT_REVIEW_RECIPE=z30`。需测 Q19/Q63/Q73 伙伴与 Q73 城堡零件、b358 菜单 | **当前校对目标** |
+| **EXP-Q73-party（实验）** | 手工最小热修（基于 Z29） | `dist/EXP-Q73-party/` | **仅改 Q73 剧本 `b493 rec1` 的 `#PARTY(True Geezer)` 参数** → 与 `b954 rec27` 同字节（`90 5E 91 E5 89 64`，显示「真大叔」）；其余与 Z29 逐字节相同（仅 `b493` 一个 blob 变化）。`validate_build` error 0 / warning 46；`LANG_EN 58f49f94525b2ece03c23c78602389894a79ee2b95c4032a52920cbaf03417c3` | **2026-11-24 生成，已实测**：伙伴出现，但只修此一处仍闪退（证明还有第二断链）。见 `PITFALLS.md` §54、`KNOWN_ISSUES.md` §26 |
+| **EXP-Q73-party2（实验）** | 手工最小热修（基于 Z29） | `dist/EXP-Q73-party2/` | 在 `EXP-Q73-party` 基础上，把 `b493 rec119/124/129/134/139` 的 `#HERO_CATSLEPARTS1..5(Crystal Castle)` 参数同步为 `b86 rec89`/道具表终串（`90 85 8F BB 8F E9 89 73`，显示「水晶城堡」）；仅 `b493` 一个 blob 变化。`validate_build` error 0 / warning 46；`LANG_EN e1d331032413013455e08969ab088e2568666dce71b17d07915ef30a37f04324` | **2026-11-24 生成，待实机**。测试 Q73 开场对话后是否仍闪退；同时验证 `#PARTY` 修复保留。见 `PITFALLS.md` §54、`KNOWN_ISSUES.md` §26 |
 | Z10（历史） | `package_names_cn_keycol_hash` | `dist/Z10-keycol-hash/` | 键列中文 + 全部名字（含伙伴名）+ 操作数 | 序章异常；仅作对照，不推荐 |
 | Z4/Z6/Z7 等 | 见 `BUILDING.md` §5.5 | 各自目录 | 早期二分实验 | 历史结论已被 Z10b 修正，见 `PITFALLS.md` §25.11 |
 
@@ -68,7 +71,7 @@
 
 > **2026-11-22 起输出裁剪**：`do_package` 对 `expect_same` 中已校验为「与母本逐字节相同」
 > 的文件不再复制进 dist，并删除输出目录里的同名旧产物；清单新增 `omitted_outputs`。
-> 因此 `z19` / `stable` / `z28` / `z29` 的新构建**不再包含** `res/LANG_JA.s2a` 与
+> 因此 `z19` / `stable` / `z28` / `z29` / `z30` 的新构建**不再包含** `res/LANG_JA.s2a` 与
 > `DLC01/LANG_JA.s2a`（表中历史哈希仍按当时产物记录）。日语镜像包（`Z4-JA` / `E3-JA`）
 > 会对称地省略未改写的 `LANG_EN` 侧；双写 `package` 路径两侧都写，不受影响。
 
@@ -90,6 +93,10 @@
 | 称号变中文且无法获得 | `b931 pos0` 与所有 stride292/pos32 条件副本是否同串；Q16 槽头是否完好 | 用 Z14 配方（`_TITLE_RELEASE` + `force_title_key_copies`）；旧包回滚到 Z13 |
 | 职业/阵型/连携技名字部分变中文 | `b128 pos4` / `b136 pos0` / `b317 pos24/48/72` 是否被 `fill_name_copies` 写入 | 补齐必须跳过 `skip_blobs`；Z14 起职业/阵型为**有意翻译**，`b317` 仍保留原版 |
 | 伙伴名错乱/不出现 | 伙伴名全副本终串是否唯一；`b954` 名字/复合键；72 个操作数 | 用 Z11+；`fill_name_copies` 补齐；检查 `b954` 是否有空行未覆盖 |
+| **关卡内伙伴不出现 / 进入即闪退**（Q19 骑士、Q63 露露菲、Q73 真・大叔） | 剧本里的 `#PARTY(NAME)` 参数是否与同文件 `b954/b1034` 名字同串；`#HERO_CATSLEPARTS(NAME)` 是否与 `b86 rec89`/道具表同串 | 见 `PITFALLS.md` §54；临时验证包 `dist/EXP-Q73-party/` / `EXP-Q73-party2/`；正式修复需在写名收尾同步脚本命令参数 |
+| **脚本按名查表遗漏（未知命令/偏移/嵌入名）** | 是否只修了已知 `#PARTY`/`#HERO_CATSLEPARTS`；全库是否还有其他 `#CMD(NAME)`、`key=NAME`、结构字段或子串引用未同步 | **T-18**：按 `PITFALLS.md` §54.1 做穷举审计（全库子串 + JA/EN 差分 + 显示白名单 + exe 命令表），接入 `validate_build`；0 个未解释 key-like 候选才算完成 |
+| **初始装备/伙伴 loadout 丢失或错名** | `head=/body=/handR=/handL=/foot=` 的值是否等于道具表终串（`b147/357/736/998`） | **T-19**：首轮扫描 741 个字段，仅 b34 off620 的 `Brave Vest`/`Brave Blade` 不同步；需 `sync_script_loadout_names()` + validate，见 `KNOWN_ISSUES.md` §27 |
+| **Q16「Hero Castle」菜单标签显示/匹配异常** | `b358 rec818 pos112` 是否写回英文原版 `Hero Castle`；CSV row 20408 `zh_new` 不应为「勇者城」 | Q16 清单未覆盖 b358；需补入 `restore_q16_keys()` 或改 CSV 行（2026-11-24 发现） |
 | 敌名/Boss 名异常 | `Z12_RELEASE_COLS` 几何；`b407 +4`、`b4…+92`；全副本终串 | 回滚 Z11；或拆包只保留 UI/音乐 |
 | 敌人/伙伴技能名仍英文 | 是否在 `b83/b394/b417/b654 +28` 参数列；是否被 token 过滤规则排除 | 用 Z13/Z14；`Disable/Enable/Utau/Title01` 等 token 不应翻译；Z14 起称号名也已中文化 |
 | 武器合成界面英文 | `b99 off16/off56`、`b25 Materials` 是否有行 | Z13 已用额外译表行补上；若回退则恢复英文 |
@@ -239,6 +246,38 @@ python tools/build.py --game-dir work/original package_current
      `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；`video_merged=true`；
      `validate_build` error 0 / warning 46；translator-view 已刷新；实机确认果冻怪恢复。
      详见 `PITFALLS.md` §48、`KNOWN_ISSUES.md` §25。
+
+- **2026-11-24（Z29 追加：`遥远→很远` 残留还原）**：
+  初版 REPL 第 247 条 `遥远→很远` 的残留还原 2 行：`row::2181`
+  「路途可是相当很远呢！」→「路途可是相当遥远呢！」（`相当` 是程度副词，不能修饰
+  `很远`，语法反证）；`row::54941`「在<很远的东边>那片土地。」→「在<遥远的东边>那片土地。」。
+  均等字节，槽位充裕。其余含「很远」的 926/30185/43690 语义通顺保留；56715
+  「很远很东边」结构异常，但不属于本规则能产生的形态，留待人工判断。
+  打包前逐条比对 `translator-view` 与译表：未导入的人工校对 0 条。
+  重建 Z29（含 4 个视频）：`LANG_EN 6a01f185603f` / `res/MOV.s2a 8d72c79a841a` /
+  `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；
+  `video_merged=true`；`validate_build` error 0 / warning 46。
+  产物字节复核：`相当很远 0` / `相当遥远 1` / `很远的东边 0` / `遥远的东边 1`。
+
+- **2026-11-24（Z29 追加：`トリップフォース` → 三角力量；歌族「詩」统一为「歌」）**：
+  1. `トリップフォース`（`row::61664`，`b655/14156`）旧译「绊倒冲击」按字面拆解，丢失
+     `トライフォース`（Triforce）谐音梗；游戏内技能特效为三个三角形，改为「三角力量」。
+     4→4 字等字节；该批 47 条敌技均无名字哈希操作数、单副本、无重名。
+  2. 歌族语境的「詩」按 `row::44163`「<ハメツの詩>をうたおう」、`ハメツのウタ` 写法与
+     官方英文 `Song` 确认为「うた（歌）」，统一 21 行：`毁灭之诗→毁灭之歌`（9 行）、
+     `破坏之诗→毁灭之歌`（2 行）、`毁灭黑诗→毁灭黑歌`（2 行）、
+     `黑暗毁灭之歌→毁灭黑歌`（1 行）、`时之诗→时间之歌`（1 行）、
+     `歌族之诗→歌族之歌`（1 行），以及 `准备了一首诗`/`我的诗`/`这诗`/`一首诗`/`写成诗`
+     等 5 行改为「歌」。`史诗`（epic）不动。
+  3. 打包前先导入尚未写入译表的人工校对 2 处（`row::5338` 时机已至→已到、
+     `row::8838` 这是你的歌→关于你的歌；备份时间戳 `20261124_183745`），
+     避免 `export_review` 覆盖。
+  4. 重建 Z29（含 4 个视频）：`LANG_EN 92d670b07be4` / `res/MOV.s2a 8d72c79a841a` /
+     `DLC01 ad68d8bd92e6` / `texture 16961db61e0b` / `cscv 99c9bdecdbd5`；
+     `video_merged=true`；`validate_build` error 0 / warning 46。
+  5. 产物字节复核：`毁灭之诗`/`毁灭黑诗`/`时之诗`/`歌族之诗`/`破坏之诗`/`绊倒冲击`
+     均为 0；`毁灭之歌 39`、`毁灭黑歌 3`、`时间之歌 2`、`歌族之歌 2`、`三角力量 1`。
+     详见 `PITFALLS.md` §53、`术语表.md` §9.3/§9.4。
 
 - **2026-11-24（Z29 追加：`かいどうタイガー` → 街道老虎、`公路` → 街道）**：
   `かいどうタイガー` 的官方英文 `Burly Tiger` 不是日文直译，旧译「壮实老虎」沿用了英文。
@@ -584,7 +623,7 @@ python tools/build.py --game-dir work/original package_current
   - 导入时额外行写入 `locales/zh-CN/extra_review.json`（完整覆盖表），
     CSV 行写回 `text_v2.csv`；
   - `汉化-导入校对.bat` 自检通过后按 `CURRENT_REVIEW_RECIPE` 运行 `package_current`
-    （当前 z29 → `dist/Z29-legacy-terms/`，应用 REPL+HL）；
+    （当前 z30 → `dist/Z30-script-names/`，应用 REPL+HL）；
   - `汉化-导入校对-不应用词典.bat` 运行 `import_review.py apply --no-repl`，
     重建 `dist/Z15-reuse-kanji-norepl/`（不套用 REPL，仅保留 HL）；
     两者读同一批 JSON，只是打包模式不同；

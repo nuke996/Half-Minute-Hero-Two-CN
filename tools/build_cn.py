@@ -4623,6 +4623,8 @@ def do_apply_names_cn_partner_hash(exe_mode=None):
     restore_q16_keys()
     print('== 伙伴名副本补齐（含 skip 表，仅整槽名字）==')
     fill_name_copies(orig_blobs, en_path, _partner_en_names(orig_blobs))
+    print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
+    sync_script_name_operands(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -4745,6 +4747,8 @@ def do_apply_names_cn_display_hash(exe_mode=None):
     print('== 名字副本补齐（伙伴名 + 批次 A 名字，含 skip 表）==')
     names = _partner_en_names(orig_blobs) | extra_en
     fill_name_copies(orig_blobs, en_path, names)
+    print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
+    sync_script_name_operands(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -4976,6 +4980,8 @@ def do_apply_names_cn_batch_b_hash(exe_mode=None):
     restore_q16_keys()
     print('== 名字副本补齐（伙伴 + 批次 A/B 名字，跳过键表）==')
     fill_name_copies(orig_blobs, en_path, names)
+    print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
+    sync_script_name_operands(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     ja_blobs = None
     ja_path = os.path.join(BASE, 'res', 'LANG_JA.s2a')
@@ -5242,6 +5248,94 @@ def _sync_item_copies(orig_blobs, prod, canon, foreign=False):
                 pb[j] = 0
             n_emb += 1
     return n, n_emb, skip, skip_emb
+
+
+# ================= 脚本命令内的名字参数同步（Z30，2026-11-24） =================
+# 关卡脚本把伙伴/城堡零件名写进 `#PARTY(NAME)` / `#HERO_CATSLEPARTSn(NAME)`，
+# 引擎按名字查伙伴表 / 城堡零件表。只翻名字表而不同步命令参数会导致：
+#   伙伴不生成（Q19 Knight / Q63 Rurufi / Q73 True Geezer）、
+#   城堡战初始化失败（Q73 Crystal Castle）。
+# 这里在所有写名步骤之后、重算操作数之前，按“原 EN 名 -> 最终载体码终串”同步。
+def _partner_script_canon(orig_blobs, prod):
+    """EN 原伙伴名 -> 最终写入字节（b954 +4 / b1034 +4）。"""
+    canon = {}
+    for bi, stride, count in ((954, 236, 44), (1034, 104, 54)):
+        ob = bytes(orig_blobs[bi])
+        pb = prod[bi]
+        for r in range(count):
+            f = 16 + r * stride + 4
+            oe = ob.find(b'\x00', f)
+            pe = pb.find(b'\x00', f)
+            if oe < 0 or pe < 0:
+                continue
+            en = ob[f:oe]
+            fin = bytes(pb[f:pe])
+            if not en or b'<' in en or b'>' in en or not fin or fin == en:
+                continue
+            if en in canon and canon[en] != fin:
+                raise SystemExit('!! 伙伴名终串冲突：%r -> %r / %r'
+                                 % (en, canon[en], fin))
+            canon[en] = fin
+    return canon
+
+
+def script_name_canons(orig_blobs, prod):
+    """返回 (伙伴名 canon, 道具/城堡零件名 canon)，供同步与校验共用。"""
+    return _partner_script_canon(orig_blobs, prod), _equip_name_canon(orig_blobs, prod)
+
+
+def _sync_tag_name(ob, pb, tag, canon):
+    """把 ob 中所有 tag(NAME) 的 NAME 换成 canon[NAME]，保留 ) 紧跟名字。"""
+    n = 0
+    i = 0
+    while True:
+        j = bytes(ob).find(tag, i)
+        if j < 0:
+            break
+        ns = j + len(tag)
+        close = bytes(ob).find(b')', ns)
+        if close < 0:
+            raise SystemExit('!! 脚本命令缺少右括号：%r' % tag)
+        i = close + 1
+        en = bytes(ob)[ns:close]
+        if not en or b'<' in en or b'>' in en:
+            continue
+        fin = canon.get(en)
+        if not fin:
+            continue
+        if len(fin) > close - ns:
+            raise SystemExit('!! 脚本名字参数容量不足：%r %r -> %r'
+                             % (tag, en, fin))
+        # 等长切片赋值，保持 blob 长度不变；`)` 紧跟名字，其余旧字节清零。
+        pb[ns:ns + len(fin) + 1] = fin + b')'
+        for k in range(ns + len(fin) + 1, close + 1):
+            pb[k] = 0
+        n += 1
+    return n
+
+
+def sync_script_name_operands(orig_blobs, en_path, verbose=True):
+    """同步关卡脚本命令里的名字参数（Z30）。"""
+    if not orig_blobs or not os.path.exists(en_path):
+        return 0
+    arc = s2a.Archive(en_path)
+    prod = [bytearray(bytes(b)) for b in arc.blobs]
+    partner, item = script_name_canons(orig_blobs, prod)
+    n_party = n_catsle = 0
+    for bi, ob in enumerate(orig_blobs):
+        if bi >= len(prod) or bytes(ob)[:4] != b'CSCV':
+            continue
+        pb = prod[bi]
+        n_party += _sync_tag_name(ob, pb, b'#PARTY(', partner)
+        for k in range(1, 6):
+            n_catsle += _sync_tag_name(
+                ob, pb, b'#HERO_CATSLEPARTS%d(' % k, item)
+    if n_party or n_catsle:
+        s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
+    if verbose:
+        print('  [脚本名字] #PARTY 同步 %d 处 / #HERO_CATSLEPARTS 同步 %d 处'
+              % (n_party, n_catsle))
+    return n_party + n_catsle
 
 
 def fill_item_name_copies(orig_blobs, en_path, verbose=True, canon=None):
@@ -5567,6 +5661,8 @@ def do_apply_names_cn_jobs_titles_hash(exe_mode=None):
     force_title_key_copies(orig_blobs, en_path, title_rel)
     print('== 主角默认名还原（Yusha/Yushia/Yuja 保持原版）==')
     restore_protagonist_defaults(orig_blobs, en_path)
+    print('== 脚本名字操作数同步（#PARTY / #HERO_CATSLEPARTS）==')
+    sync_script_name_operands(orig_blobs, en_path)
     print('== 方案A：重算名字哈希操作数（按最终写入字节）==')
     recompute_name_operands(orig_blobs, en_path, ja_blobs=ja_blobs)
     if not verify_e1_isolation(expect_skill_key=False):
@@ -5936,6 +6032,29 @@ def do_package_names_cn_reuse_z29(exe_mode=None):
     try:
         rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
                         stage_name='package_stage_names_cn_reuse_z29',
+                        out_dir=out,
+                        expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
+    finally:
+        _Z23_RELEASE = False
+        os.environ.pop('HMH2_Z23_RELEASE', None)
+    _apply_z17_video(out)
+    return rc
+
+
+def do_package_names_cn_reuse_z30(exe_mode=None):
+    """Z30（测试）：Z29 + 脚本命令名字参数同步 + Q16 b358 菜单键修复。
+
+    · `#PARTY(NAME)`：Q19 Knight / Q63 Rurufi / Q73 True Geezer；
+    · `#HERO_CATSLEPARTS1..5(NAME)`：Q73 Crystal Castle；
+    · `b358 rec818 pos112` 的 Q16 菜单标签写回英文原版 `Hero Castle`。
+    """
+    global _Z23_RELEASE
+    out = paths.dist('Z30-script-names')
+    os.environ['HMH2_Z23_RELEASE'] = '1'
+    _Z23_RELEASE = True
+    try:
+        rc = do_package(exe_mode=exe_mode, apply_cmd='apply_names_cn_jobs_titles_hash',
+                        stage_name='package_stage_names_cn_reuse_z30',
                         out_dir=out,
                         expect_same=('res/LANG_JA.s2a', 'DLC01/LANG_JA.s2a'))
     finally:
@@ -6545,6 +6664,11 @@ RECIPES = {
             'cmd': 'package_names_cn_reuse_z29',
             'out': 'Z29-legacy-terms',
             'stage': 'package_stage_names_cn_reuse_z29',
+            'status': 'candidate', 'review': False},
+    'z30': {'func': do_package_names_cn_reuse_z30,
+            'cmd': 'package_names_cn_reuse_z30',
+            'out': 'Z30-script-names',
+            'stage': 'package_stage_names_cn_reuse_z30',
             'status': 'candidate', 'review': True},
     'norepl': {'func': do_package_names_cn_reuse_norepl,
                'cmd': 'package_names_cn_reuse_norepl',
@@ -6554,7 +6678,7 @@ RECIPES = {
 }
 
 # ★ 当前人工校对目标。每次新配方成为校对目标时，只改这一行。
-CURRENT_REVIEW_RECIPE = 'z29'
+CURRENT_REVIEW_RECIPE = 'z30'
 # 不套用 REPL 的对照目标（校对导入 --no-repl 使用）。
 CURRENT_NOREPL_RECIPE = 'norepl'
 
@@ -6680,6 +6804,8 @@ if __name__ == '__main__':
      'package_names_cn_reuse_z28': do_package_names_cn_reuse_z28,
      # Z29（测试）：Z28 + 第二批替换词典语义残留清理，输出 dist/Z29-legacy-terms
      'package_names_cn_reuse_z29': do_package_names_cn_reuse_z29,
+     # Z30（测试）：Z29 + 脚本命令名字参数同步 + Q16 b358 菜单键，输出 dist/Z30-script-names
+     'package_names_cn_reuse_z30': do_package_names_cn_reuse_z30,
      # 校对/打包统一入口：按 CURRENT_REVIEW_RECIPE 指针选择配方
      'package_current': do_package_current,
      'package_current_norepl': lambda: do_package_current(recipe_id=CURRENT_NOREPL_RECIPE),

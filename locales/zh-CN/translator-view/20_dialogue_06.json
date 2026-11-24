@@ -25231,7 +25231,7 @@
    "id": "row::54941",
    "en": "In the land <far to the east> of here.",
    "ja": "「ここから<ずっと東>に行った地じゃ」",
-   "zh": "「在<很远的东边>那片土地。」",
+   "zh": "「在<遥远的东边>那片土地。」",
    "meta": {
     "blob": 953,
     "offset": 94784,
@@ -39542,7 +39542,7 @@
    "id": "row::58304",
    "en": "I've confirmed invocation of the <Song of Destruction>.",
    "ja": "「<ハメツの詩>の発動を確認",
-   "zh": "「已确认<毁灭之诗>发动，",
+   "zh": "「已确认<毁灭之歌>发动，",
    "meta": {
     "blob": 1013,
     "offset": 16820,

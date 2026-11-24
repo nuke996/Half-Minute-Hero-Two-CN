@@ -754,3 +754,76 @@ Z22–Z29 新增的 UI/菜单文本。可能出现“菜单项名已译、分组
 **相关文件：** `tools/audit_binary_text_rows.py`（全表审计，当前 0 命中）、
 `tools/experiment_restore_blobs.py`、`tools/build_cn.py: rewrite_text()`、
 `docs/PITFALLS.md` §48、`dist/Z29-legacy-terms/`。
+
+---
+
+# 26. Q73「了结之时」真・大叔不生成 → 闪退（2026-11-24，Investigating）
+
+**Severity:** High（进入关卡后硬锁）
+
+**症状：** 进入 Q73「了结之时」后，主角下方本应跟随的蓝色伙伴「真・おじさま」不出现；
+开场女神对话结束后闪退，关卡无法通关。
+
+**根因（字节级已定位）：** Q73 剧本 `b493`（`dst/dst_urtt_03.dat`）的 `rec1` 是
+`#PARTY(True Geezer)`；Z29 已把伙伴表 `b954 rec27` / 演员表 `b1034 rec28` 译为
+「真大叔」（载体码 `90 5E 91 E5 89 64`），但脚本命令参数仍是英文，按名查找失败。
+原始 EN / JA 都满足“命令参数 == 同文件伙伴名”的不变式，Z29 破坏了这个不变式。
+
+**同型断链（待测试）：**
+- Q19「风之塔」`b196 rec59`：`#PARTY(Knight)`；`b954 rec0` 已译为「骑士」。
+- Q63「石化世界」`b486 rec1`：`#PARTY(Rurufi)`；`b954 rec1` 已译为「露露菲」。
+- Q73 后半 `b493 rec119/124/129/134/139`：
+  `#HERO_CATSLEPARTS1..5(Crystal Castle)`；道具表已译为「水晶城堡」。
+
+**验证包：** `dist/EXP-Q73-party/`（基于 Z29，仅改 `b493 rec1`；
+`LANG_EN 58f49f94525b2ece03c23c78602389894a79ee2b95c4032a52920cbaf03417c3`；
+`validate_build` error 0 / warning 46）。安装后进 Q73，确认伙伴出现且不闪退。
+
+**2026-11-24 第二轮实测：** `dist/EXP-Q73-party/`（只修 `#PARTY`）确认伙伴出现，
+但开场对话后**仍然闪退** ⇒ 伙伴不出现与闪退是两个独立断链。Q63 露露菲不出现已在实机
+观察到（不闪退），`#PARTY` 修复必须保留。剩余最可能是 `#HERO_CATSLEPARTS1..5`
+参数未同步：城堡零件表 `b86 rec89 pos28` / 道具表 `b147/357/736` 已译为「水晶城堡」，
+脚本仍为英文；Q73 开场的 `Catslechk` 会在城堡战斗初始化时读取零件。
+
+**第二版验证包：** `dist/EXP-Q73-party2/`（同时修 `#PARTY` 与 5 个
+`#HERO_CATSLEPARTS`；`LANG_EN e1d331032413013455e08969ab088e2568666dce71b17d07915ef30a37f04324`；
+`validate_build` error 0 / warning 46）。**2026-11-24 实机：Q73 开场通过，伙伴出现且不再闪退。**
+
+**Z30 正式修复（2026-11-24）：** `dist/Z30-script-names/` 将脚本名同步落地到构建
+（`#PARTY` 三处 + `#HERO_CATSLEPARTS` 五处），并补入 `b358` Q16 菜单键；
+`LANG_EN 0317ab1be137`，validate error 0 / warning 46。待逐关实测 Q19/Q63/Q73。
+
+**附带发现：** `b358 rec818 pos112` 的 Q16 菜单标签 `Hero Castle` 在 Z29 的
+`LANG_EN` 里仍是日文「勇者城」（CSV row 20408），不在 `restore_q16_keys()` 清单内；
+英文侧应写回 `Hero Castle`。这不是本轮 Q73 的直接原因，但属于菜单键混合态，需一并修。
+
+**如果修复后仍闪退：** 回退到伙伴名英文的 stable/Z10b 配方，并采集崩溃地址；
+不要继续扩大脚本改写范围。
+
+**相关文件：** `docs/PITFALLS.md` §54/§54.1、`TECHNICAL.md` §10.3.13、
+`tools/build_cn.py`（Z14 写名收尾）、`tools/validate_build.py`、
+`dist/EXP-Q73-party/`、`dist/EXP-Q73-party2/`、`dist/Z29-legacy-terms/`、`dist/Z30-script-names/`。
+
+**全库同类审计：** 见 `docs/TODO.md` **T-18**（穷举式 `#CMD(NAME)`/`key=NAME`/结构字段/
+子串扫描 + JA/EN 语言差分 + 显示列白名单 + exe 命令表 + validate 门禁）。
+
+---
+
+# 27. 脚本 loadout 装备名与道具表不同步（2026-11-24，Investigating）
+
+**Severity:** Medium（潜在：初始装备/伙伴 loadout 丢失或显示错名）
+
+**症状/位置：** `b34 off620` 的 `head=/body=/handR=/handL=/foot=` loadout：
+- `body=Brave Vest` 的终串是「勇敢背心」，道具表 `b147/357/736` 是「勇者背心」；
+- `handR=Brave Blade` 的终串是「勇者战刀」，道具表是「勇者战刃」。
+
+**根因：** loadout 是整段多行文本，由 `text_v2.csv` 翻译；其中的装备名没有像
+`stride152 pos24` 那样按道具表 canon 同步，导致同一装备在脚本与道具表中不同名。
+PITFALLS §25.3 早已指出“只翻装备表不翻脚本 loadout（或反之）→ 序章初始装备丢失、
+伙伴不显示”。
+
+**范围：** 全库 741 个 loadout 字段已首轮定向扫描，**仅这 2 处**不同步。
+
+**修复：** `sync_script_loadout_names()`：解析所有 `head=/body=/handR=/handL=/foot=`
+的 `key=value`，按 `b147/357/736/998` 的终串写回；`validate_build` 增加一致性检查；
+重建 Z31 并实机确认序章初始装备与各关伙伴 loadout。见 `docs/TODO.md` **T-19**。

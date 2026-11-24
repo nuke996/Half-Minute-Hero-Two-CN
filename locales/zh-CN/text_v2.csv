@@ -811,13 +811,13 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 809,29,8288,64,32,21,Oratoolio of the Holy,聖のオラトゥーリオ,神圣的奥兰托里奥,神圣的奥拉托里奥
 810,29,8352,128,64,47,I am so holy that no attack is able to hurt me.,「神聖なるゆえ　いかなる攻撃もきかぬぞよ」,我非常强大，没有攻击可以伤害到我。,「因我神圣，任何攻击都伤不了我。」
 811,29,8580,64,32,21,Oratoolio of the Holy,聖のオラトゥーリオ,神圣的奥兰托里奥,神圣的奥拉托里奥
-812,29,8644,128,64,53,The <Song of Destruction> and <sanctuary> protect me!,「さらに<ハメツの詩>と<聖域>が我を守る」,<毁灭之歌>和<避难所>保护着我！,「这<毁灭之诗>与<圣域>护佑着我！」
+812,29,8644,128,64,53,The <Song of Destruction> and <sanctuary> protect me!,「さらに<ハメツの詩>と<聖域>が我を守る」,<毁灭之歌>和<避难所>保护着我！,「这<毁灭之歌>与<圣域>护佑着我！」
 813,29,8872,64,32,21,Oratoolio of the Holy,聖のオラトゥーリオ,神圣的奥兰托里奥,神圣的奥拉托里奥
 814,29,8936,64,32,39,"Being holy sure is great… <RGN_NAME__>,",「聖なることは良きことかな・・・<RGN_NAME__>よ,"这种强大的感觉非常棒…<RGN_NAME__>,",「神圣可真好啊……<RGN_NAME__>，
 815,29,9000,64,32,58,you should be grateful for the honor of dying at my hands.,　この我にホロボされることをありがたく思うがよいぞ」,能够死在我的手上是你的荣幸。,　能死在我手上是你荣幸。」
 816,29,11208,64,32,6,No. 30,３０号,30号,30号
 817,29,11272,64,32,33,"I have to warn you, <RGN_NAME__>.",「<RGN_NAME__>に　けいこくしマス,我不得不告诉你，<RGN_NAME__>。,「我得提醒你，<RGN_NAME__>，
-818,29,11336,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之诗>发动。」
+818,29,11336,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之歌>发动。」
 819,29,11500,64,32,6,No. 30,３０号,30号,30号
 820,29,11564,64,32,33,The result of my sensor analysis:,「なおセンサーで分析した結果,根据我的判断：,「我的传感器分析结果是：
 821,29,11628,64,32,59,"this enemy, though indeed holy, is weak against <darkness>.",　敵は神聖なので<闇属性>に弱いと思われマス」,虽然这个敌人很强大，但却害怕<黑暗之力>。,　这敌人虽神圣，却弱于<暗属性>。」
@@ -892,7 +892,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 890,29,43912,64,32,9,Informant,情報屋,告密者,情报贩子
 891,29,43976,128,64,35,If you want one of the rarer items…,「めずらしいものがほしいんなら・・・」,如果你想要这些罕见的物品…,「想要最稀有的货……」
 892,29,44204,64,32,9,Informant,情報屋,告密者,情报贩子
-893,29,44268,64,32,35,Try using the remaining time of the,「ハメツの詩の残り時間を,你可以用毁灭之歌剩下的时间,「就用毁灭之诗的
+893,29,44268,64,32,35,Try using the remaining time of the,「ハメツの詩の残り時間を,你可以用毁灭之歌剩下的时间,「就用毁灭之歌的
 894,29,44332,64,32,32,Song of Destruction as a marker.,　目安にするのがいいさ」,作个标记。,　剩余时间当参照吧。」
 895,29,44496,64,32,9,Informant,情報屋,告密者,情报贩子
 896,29,44560,64,32,32,Try buying the rightmost product,「ハメツまでのこり時間20～15秒に,只剩15 ,「在距毁灭还剩20～15秒时，
@@ -2180,7 +2180,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 2178,57,5952,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2179,57,6016,128,64,49,We have to hurry back to the Hero Castle by then!,「それまでになんとか勇者城の元に急がないと！」,到那时我们不得不赶回英雄城堡！,「在那之前得赶回勇者城！」
 2180,57,6536,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
-2181,57,6600,128,64,20,It's a long way off!,「道のりはなかなか長いわよぉ」,是一段漫长的路程！,「路途可是相当很远呢！」
+2181,57,6600,128,64,20,It's a long way off!,「道のりはなかなか長いわよぉ」,是一段漫长的路程！,「路途可是相当遥远呢！」
 2182,57,7704,64,32,12,Time Goddess,時の女神さま,时间女神,时之女神
 2183,57,7768,64,32,53,"Ah, just now, that strong but dumb <RGN_NAME__> fell ",「あっ　ここらへんにさっき勇者城につかまってた,啊，就在刚才，我认为那个强壮但是不会说话的<RGN_NAME__> ,「啊，刚才被勇者城抓住的那个又强又笨的
 2184,57,7832,64,32,53,"from the Hero Castle and landed around here, I think.",　強いけどオバカな<RGN_NAME__>が落ちてると思うわ」,从英雄城堡摔下并在这附近着陆了。,　<RGN_NAME__>，应该就掉在这附近哦。」
@@ -4227,7 +4227,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 4225,93,61268,64,32,26,"who can actually sing, so…",　わたしだけになっちゃったから・・・」,还可以真正唱歌的歌者，所以……,　只剩我一个了，所以…」
 4226,93,61432,64,32,11,Singer Girl,歌族の女の子,唱歌的小女孩,歌族少女
 4227,93,61496,64,32,44,So I have to depart on a journey to complete,「わたしが<歌族の詩>を完成させる旅に,所以我必须要出发旅行来,「所以我必须踏上旅程，去完成
-4228,93,61560,64,32,20,the <Singers' Song>.,　出なくちゃならないの」,完成<歌者之歌>。,　那<歌族之诗>。」
+4228,93,61560,64,32,20,the <Singers' Song>.,　出なくちゃならないの」,完成<歌者之歌>。,　那<歌族之歌>。」
 4229,93,61724,64,32,11,Singer Girl,歌族の女の子,唱歌的小女孩,歌族少女
 4230,93,61788,64,32,40,Though that is my <mission as a Singer>…,「それは<歌族の使命>なんだけど・・・,尽管这是我<作为歌者的任务>……,「尽管那是我<歌族的使命>…
 4231,93,61852,64,32,46,It's a mission that nobody has ever completed!,　今まで完成させた人はいないんだって！」,这是没有人曾经完成过的任务！,　是从未有人完成过的使命！」
@@ -4351,7 +4351,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 4349,93,131284,64,32,44,Your victory over lesser Gods like Punishuel,「パニシュエルのような下級神をたおしたくらいで,我们一点都不担心你打败了,「不过打倒帕尼舒埃尔这种下级神，
 4350,93,131348,64,32,27,is of little concern to us…,　あまりいい気にならんことだ・・・」,下等神族帕尼舒尔……,　可别太得意…」
 4351,93,131512,64,32,8,God Nine,ゴットナイン,九神,九神
-4352,93,131576,64,32,35,Our <Song of Destruction> will stop,「我らのつかう<ハメツの詩>ならば,我们的<毁灭之歌>将会阻止你,「我们的<毁灭之诗>会拦住
+4352,93,131576,64,32,35,Our <Song of Destruction> will stop,「我らのつかう<ハメツの詩>ならば,我们的<毁灭之歌>将会阻止你,「我们的<毁灭之歌>会拦住
 4353,93,131640,64,32,34,you from getting anywhere near us.,　おまえは近付くことさえできぬのだからな」,接近我们。,　你，让你无法靠近。」
 4354,93,131868,128,64,32,Hey! Enough with the gibberish!!,「ハッ！　ねごと言ってんじゃねーっ！！」,嘿！不要在恬噪了！,「哈！少在这儿说梦话！！」
 4355,93,134496,128,64,20,Oh!? W-What's this!?,「うおっ！？　な　なんだこりゃーっ！？」,哦！？这——这是什么！？,「哦！？这…这是什么！？」
@@ -5337,16 +5337,16 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5335,107,4720,256,128,14,Q68. Big Venus,Q68．ビッグヴィーナス,Q68. 大美女,Q68．大维纳斯
 5336,107,5888,256,128,26,Q69. Beyond the Far Future,Q69．遥か未来のさきに,Q69. 远远的未来之后,Q69．遥望未来之先
 5337,107,7704,192,96,29,* Head to the next continent?,＊　次の大陸へ向かいますか？,*前往下一片大陆？,*前往下一片大陆？
-5338,107,10396,128,64,40,… The time has come… Here goes nothing!!,「・・・いよいよだな　いくぜオレ様っ！！」,……是时候了……这里什么也没有！！,「…时机已至…我上啦！！」
+5338,107,10396,128,64,40,… The time has come… Here goes nothing!!,「・・・いよいよだな　いくぜオレ様っ！！」,……是时候了……这里什么也没有！！,「…时机已到…我上啦！！」
 5339,107,13480,64,32,10,RAGNAROK 8,RAGNAROK８,,RAGNAROK 8
 5340,107,14192,64,32,41,Hold on… I shouldn't get ahead of myself…,「お～～～っと　あせるなオレ様・・・,等等……我不应该超过自己……,「慢着…我可不能太心急…
 5341,107,14256,64,32,40,I still haven't done my daily stretches!,　準備たいそうが　まだだったぜっ！」,我还没有完成每天的伸展运动！,　我还没做热身操呢！」
 5342,107,19676,64,32,3,Coo,クゥ,咕咕声,小咕
-5343,107,19740,128,64,43,Hey <RGN_NAME__>! My song… It's finished! ♪,「ねぇ　<RGN_NAME__>　詩・・・完成したよ♪」,嘿<RGN_NAME__>！我的歌……完成了！,「嘿<RGN_NAME__>！我的诗…写好了！」
+5343,107,19740,128,64,43,Hey <RGN_NAME__>! My song… It's finished! ♪,「ねぇ　<RGN_NAME__>　詩・・・完成したよ♪」,嘿<RGN_NAME__>！我的歌……完成了！,「嘿<RGN_NAME__>！我的歌…完成了！」
 5344,107,20032,64,32,40,Oh! If it's done then I want to hear it!,「おおっ　なんだよできてんなら言えよ,哦！是不是已经结束了！,「哦！既已写好就唱来听听，
 5345,107,20096,64,32,33,I've been waiting ages for this!!,　待ちくたびれたぜ」,我已经等了太久了！！,　我可等得不耐烦了！！」
-5346,107,21200,128,64,24,So what can the song do?,「で　なんだ　どんなことができるんだ？」,这首歌能做什么？,「那么这诗有何能耐？」
-5347,107,21492,128,64,30,Defeat Gods in a single verse?,「もう神なんかイチコロか？」,一句就能打败神？,「一首诗就碾碎神明？」
+5346,107,21200,128,64,24,So what can the song do?,「で　なんだ　どんなことができるんだ？」,这首歌能做什么？,「那么这歌有何能耐？」
+5347,107,21492,128,64,30,Defeat Gods in a single verse?,「もう神なんかイチコロか？」,一句就能打败神？,「一首歌就碾碎神明？」
 5348,107,22076,64,32,47,Or does it make the already ultimately powerful,「それとも　ただでさえ最強なオレ様を,或者能让已经终极强大,「还是能把本来就最强的我
 5349,107,22140,64,32,33,me even more ultimately ultimate?,　最強オブ最強にでもできるのか？」,的我更加强大？,　变成最强中的最强？」
 5350,107,22304,64,32,3,Coo,クゥ,咕咕声,小咕
@@ -5381,10 +5381,10 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 5379,107,27624,64,32,34,That's why the greatest of Singers,「それで　そんなエライ歌族はね,这就是为什么最棒的歌手,「所以最厉害的歌族
 5380,107,27688,64,32,25,have been busy preparing.,　準備をしていたんだ」,已经准备了很久。,　一直忙着做准备。」
 5381,107,27852,64,32,3,Coo,クゥ,咕咕声,小咕
-5382,107,27916,64,32,47,They've been preparing a song for the time when,「取り返しのつかないくらい,他们准备了一首歌，,「他们准备了一首诗，用于
+5382,107,27916,64,32,47,They've been preparing a song for the time when,「取り返しのつかないくらい,他们准备了一首歌，,「他们准备了一首歌，用于
 5383,107,27980,64,32,58,the Timestream is disrupted beyond the point of no return.,　タイムストリームが乱れてしまった時のための詩」,专为时间之河破坏到无可挽回时使用。,　时之流乱到无法挽回之时。」
 5384,107,28144,64,32,3,Coo,クゥ,咕咕声,小咕
-5385,107,28208,128,64,50,And I've finally completed it. The <Song of Time>.,「それがついに完成した<時の詩>」,而且我最终完成了它。<时间之歌>。,「而且我终于完成了它。<时之诗>。」
+5385,107,28208,128,64,50,And I've finally completed it. The <Song of Time>.,「それがついに完成した<時の詩>」,而且我最终完成了它。<时间之歌>。,「而且我终于完成了它。<时间之歌>。」
 5386,107,28436,64,32,3,Coo,クゥ,咕咕声,小咕
 5387,107,28500,64,32,22,So relax <RGN_NAME__>.,「だから安心して<RGN_NAME__>,所以放松点<RGN_NAME__>。,「所以放心吧<RGN_NAME__>，
 5388,107,28564,64,32,24,Everything'll be okay! ★,　きっと大丈夫★」,一切都会好起来的！★,　一切都会没问题的！★」
@@ -6722,7 +6722,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 6720,137,16592,64,32,21,How did you get here?,　どうやってここに来やがったんだ？」,你怎么在这里？,　你怎么跑到这儿来的？」
 6721,137,16756,64,32,7,￥ Yashu,￥　ヤーシュ,￥勇者,￥亚修
 6722,137,16820,64,32,43,"Keh-keh-keh, <RGN_NAME__>. I'm so grateful!",「クックック　<RGN_NAME__>　感謝するぞ！,咯-咯- 咯， <RGN_NAME__> 。我很感激！,「库库库，<RGN_NAME__>。我真得谢谢你！
-6723,137,16884,64,32,38,400 years had passed since my failure!,　この手でしとめそこなってから４００年」,自我的失败之后，400年已经过去了！,　自打我亲手没能杀掉你，已经过了400年」
+6723,137,16884,64,32,38,400 years had passed since my failure!,　この手でしとめそこなってから４００年」,自我的失败之后，400年已经过去了！,　自打我没能亲手杀掉他，已经过了400年」
 6724,137,17048,64,32,7,￥ Yashu,￥　ヤーシュ,￥勇者,￥亚修
 6725,137,17112,64,32,48,I could never have imagined in my wildest dreams,「まさか　<YUSHA_NAME>をしとめるチャンスが来ようとは,我想都不敢想象，,「做梦也想不到
 6726,137,17176,64,32,52,that I'd have another chance to kill <YUSHA_NAME>!!!,　夢にも思わなかったぞ！！！」,我能再次杀死<YUSHA_NAME>的机会！！！,　还能有机会杀<YUSHA_NAME>！！！」
@@ -6811,8 +6811,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 6809,137,111364,64,32,8,① No. 30,①　30号,①30号,① 30号
 6810,137,111428,128,64,25,… What a beautiful voice…,「・・・キレイな歌声デス・・・」,...多么美丽的声音...,「…多么美妙的歌声啊…」
 6811,137,111948,64,32,14,② <RGN_NAME__>,②　<RGN_NAME__>,② <RGN_NAME__>,② <RGN_NAME__>
-6812,137,112012,64,32,40,Haha. I didn't expect a robot to be able,「ハハッ　オマエもキレイなんて,哈哈。我没想到一个机器人能,「哈哈，没想到你也会说出
-6813,137,112076,64,32,32,to detect something like beauty!,　計算できない言葉を口にするんだな！」,感受到这种美丽！,　『美丽』这种算不出来的话啊！」
+6812,137,112012,64,32,40,Haha. I didn't expect a robot to be able,「ハハッ　オマエもキレイなんて,哈哈。我没想到一个机器人能,「哈哈，没想到机器人也会说出
+6813,137,112076,64,32,32,to detect something like beauty!,　計算できない言葉を口にするんだな！」,感受到这种美丽！,　『美丽』这种无法计算的话啊！」
 6814,137,112240,64,32,8,① No. 30,①　30号,①30号,① 30号
 6815,137,118956,64,32,14,② <RGN_NAME__>,②　<RGN_NAME__>,② <RGN_NAME__>,② <RGN_NAME__>
 6816,137,119020,64,32,55,"Tch! There aren't any monsters, let alone an Evil Lord!",「ちっ　魔王どころかモンスター一匹もいやしねえ！,切！什么怪物都没有，更别说一个邪恶领主了！,「切！别说魔王了，连怪物都没有！
@@ -6864,8 +6864,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 6862,137,159024,64,32,26,"(Impressive, <RGN_NAME__>.",（さすがだね<RGN_NAME__>,（令人印象深刻，<RGN_NAME__> 。,（真有你的，<RGN_NAME__>，
 6863,137,159088,64,32,45,Coming back from the edge of space and time…),　本当に時空の果てから帰ってきちゃうなんて）,从时间和空间的边缘回来... ）,（竟从时空尽头归来）
 6864,137,159252,64,32,14,② <RGN_NAME__>,②　<RGN_NAME__>,② <RGN_NAME__>,② <RGN_NAME__>
-6865,137,159316,64,32,42,Of course I did. But I'm also impressed by,「当たり前だっつうか,当然，我做到了。但我也对,「那当然。不过我也佩服
-6866,137,159380,64,32,47,your ability to sing and talk at the same time!,　歌いながら話すとは器用なやつだ」,你的能力印象深刻，同时歌和说话！,　你边唱边说的能力！」
+6865,137,159316,64,32,42,Of course I did. But I'm also impressed by,「当たり前だっつうか,当然，我做到了。但我也对,「那当然。不过你一边唱歌一边还能说话
+6866,137,159380,64,32,47,your ability to sing and talk at the same time!,　歌いながら話すとは器用なやつだ」,你的能力印象深刻，同时歌和说话！,　的能力也挺厉害的啊。」
 6867,137,159836,64,32,5,③ Coo,③　クゥ,③咕咕,③ 小咕
 6868,137,159900,128,64,50,(You're just hearing my thoughts through my song.),（これは歌に思いをのせて歌ってるんだよ）,（你只是通过我的歌听到我的想法。 ）,（你只是通过我的歌听到我的心声。）
 6869,137,160128,64,32,14,② <RGN_NAME__>,②　<RGN_NAME__>,② <RGN_NAME__>,② <RGN_NAME__>
@@ -6932,7 +6932,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 6930,137,225372,64,32,22,and flowing into me…!?,　わたしの中にとけこんでくる・・・！？」,并流入我...！？,　涌入我体内…！？」
 6931,137,225536,64,32,19,⑤ Dark Time Goddess,⑤　時の黒女神,⑤黑暗时代女神,⑤ 时之黑女神
 6932,137,225600,64,32,58,Do you think a song with everyone happily singing together,「ただなかよく歌ってるだけの歌がっ,你认为与大家一起愉快地唱的一首歌,「你以为大家和乐齐唱的歌
-6933,137,225664,64,32,51,is enough to overcome my Dark Song of Destruction?!,　わたしのハメツの黒詩に勝つっていうの！！」,足以打败我的毁灭黑暗之歌？,　能胜过我的毁灭黑诗吗！！」
+6933,137,225664,64,32,51,is enough to overcome my Dark Song of Destruction?!,　わたしのハメツの黒詩に勝つっていうの！！」,足以打败我的毁灭黑暗之歌？,　能胜过我的毁灭黑歌吗！！」
 6934,137,225828,64,32,14,② <RGN_NAME__>,②　<RGN_NAME__>,② <RGN_NAME__>,② <RGN_NAME__>
 6935,137,225892,128,64,63,"The happier the song, the more powerful it becomes, you dummy!!",「楽しいほうが強えーに決まってんだよ！！」,这首歌曲越快乐，它就越强大，你这笨蛋！,「开心的那一边当然更强啊！！」
 6936,137,226704,64,32,19,⑤ Dark Time Goddess,⑤　時の黒女神,⑤黑暗时代女神,⑤ 时之黑女神
@@ -8837,7 +8837,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 8835,166,8872,64,32,3,Coo,クゥ,咕咕声,小咕
 8836,166,8936,64,32,20,Huh? Why do you ask?,「え　何のことかな？」,哈？为什么这么问？,「诶？你指的是什么？」
 8837,166,9164,64,32,6,No. 30,30号,30号,30号
-8838,166,9228,64,32,46,It's your song. Do you understand its meaning?,「あなたの詩のことデス　わかっているのデスカ？,这是你的歌，你知道它的含义吗？,「这是你的歌。你明白它的含义吗？
+8838,166,9228,64,32,46,It's your song. Do you understand its meaning?,「あなたの詩のことデス　わかっているのデスカ？,这是你的歌，你知道它的含义吗？,「关于你的歌。你明白它的含义吗？
 8839,166,9292,64,32,46,It's not something that can be sung by humans.,　人間が歌えるシロモノではありまセン」,这不是人类能唱的歌,　这不是人类能唱的歌。」
 8840,166,9456,64,32,6,No. 30,30号,30号,30号
 8841,166,9520,64,32,37,That song adds your own Timestream to,「その詩は　あなたのタイムストリームを,你唱歌的时候，你的时间流,「那首歌会把你的时之流
@@ -8859,8 +8859,8 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 8857,166,20616,64,32,48,"Don't you think it's amazing that, like, Coo was",「クゥちゃんだけ歌を完成させちゃうなんて,她能独自完成这首歌，,「只有小咕一个人完成了那首歌，
 8858,166,20680,64,32,42,able to complete that song all on her own?,　すっごいズルイと思わな～い？」,你不觉得很惊人么？,　你不觉得很耍赖吗？」
 8859,166,20844,64,32,19,⑤ Dark Time Goddess,⑤　時の黒女神,⑤黑暗时代女神,⑤ 时之黑女神
-8860,166,20908,64,32,61,"I was so impressed, I decided to create an even more powerful",「だから　わたしもハメツの詩を超える,真是令人印象深刻，我决定创作一首更加强大的毁灭之歌：,「所以我也完成了超越毁灭之诗的
-8861,166,20972,64,32,54,Song of Destruction: the <Dark Song of Destruction>! ★,　<ハメツの黒詩>を完成させちゃった★」,毁灭的黑暗之歌！ ★,　<毁灭黑诗>★」
+8860,166,20908,64,32,61,"I was so impressed, I decided to create an even more powerful",「だから　わたしもハメツの詩を超える,真是令人印象深刻，我决定创作一首更加强大的毁灭之歌：,「所以我也完成了超越毁灭之歌的
+8861,166,20972,64,32,54,Song of Destruction: the <Dark Song of Destruction>! ★,　<ハメツの黒詩>を完成させちゃった★」,毁灭的黑暗之歌！ ★,　<毁灭黑歌>★」
 8862,166,21136,64,32,19,⑤ Dark Time Goddess,⑤　時の黒女神,⑤黑暗时代女神,⑤ 时之黑女神
 8863,166,21200,64,32,32,Time and space! Past and future!,「もう時空ごと！　過去も未来も,无论时间空间！无论过去未来！,「时空！还有过去与未来，
 8864,166,21264,64,32,50,"The Dark World, the Heavens, and everyone in them…",　魔界も天界もみんなみーーーんな・・・」,无论地狱！无论天堂！无论这其中的任何人…,　魔界、天界，还有其中的所有人…」
@@ -8893,7 +8893,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 8891,166,31776,64,32,57,it will mean the end of the world. In order to stop that…,　世界は終わりを迎えます　それを止めるには・・・」,就意味着世界的终结。为了阻止这一切…,　就意味着世界终结。为了阻止这一切…」
 8892,166,31940,64,32,5,③ Coo,③　クゥ,③咕咕,③ 小咕
 8893,166,32004,64,32,31,I should sing my song… However…,「わたしが歌えばいいんだよねっ　でも・・・,我得唱我的歌…然而…,「我应该唱我的歌…然而…
-8894,166,32068,64,32,59,the energy of the Dark Song of Destruction is unbelievable!,　ハメツの黒詩のエネルギーはとてつもないの」,毁灭的黑暗之歌的能量强的实在是难以置信,　<黑暗毁灭之歌>的能量简直难以置信！」
+8894,166,32068,64,32,59,the energy of the Dark Song of Destruction is unbelievable!,　ハメツの黒詩のエネルギーはとてつもないの」,毁灭的黑暗之歌的能量强的实在是难以置信,　<毁灭黑歌>的能量简直难以置信！」
 8895,166,32524,64,32,5,③ Coo,③　クゥ,③咕咕,③ 小咕
 8896,166,32588,64,32,43,Even my <Song of Time> might only be enough,「わたしの<時の詩>でも世界の終りを,甚至我的 <时间之歌>,「<时间之歌>也许只够
 8897,166,32652,64,32,30,to delay the end of the world…,　おくらせることしかできないかも・・・」,也只能够延缓世界终结。,　延缓世界末日…」
@@ -13918,7 +13918,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 13917,249,17112,128,64,20,I do not understand.,「意味がわかりまセン」,我不理解。,「我无法理解。」
 13918,249,17340,64,32,6,No. 30,３０号,30号,30号
 13919,249,17404,64,32,40,"Moreover, I must warn you, <RGN_NAME__>.",「それより<RGN_NAME__>に　けいこくしマス,"此外,我必须警告你,<RGN_NAME__>。",「此外，我必须提醒你，<RGN_NAME__>，
-13920,249,17468,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之诗>发动。」
+13920,249,17468,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之歌>发动。」
 13921,249,17632,64,32,6,No. 30,３０号,30号,30号
 13922,249,17696,128,64,44,The world will be destroyed in <30 seconds>.,「今より<30秒>後に世界は消滅しマス」,世界将在< 30秒>内被毁灭。,「世界将在<30秒>后毁灭。」
 13923,249,19092,64,32,3,Coo,クゥ,咕咕声,小咕
@@ -16460,7 +16460,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 16459,304,273196,128,64,9,……………… !!,「・・・・・・・・・・・・・・・・・・！！」,………………！！,「………………！！」
 16460,304,273424,64,32,5,Ryuge,リューゲ,利由基,留格
 16461,304,273488,64,32,23,… Wh-what! Ridiculous!!,「・・・そ　そんな！　バッ　バカなっ！！,……什——什么！真可笑！！,「…什、什么！岂、岂有此理！！
-16462,304,273552,64,32,39,My Song of Destruction won't start up!?,　この我のハメツの詩が発動しないだとっ！？」,我的毁灭之歌无法启动！？,　我的破坏之诗居然发动不了！？」
+16462,304,273552,64,32,39,My Song of Destruction won't start up!?,　この我のハメツの詩が発動しないだとっ！？」,我的毁灭之歌无法启动！？,　我的毁灭之歌居然发动不了！？」
 16463,304,273780,64,32,20,… That is your fate.,「・・・それがキサマたちの運命ということだ,……这就是你的命运。,「…那便是你们的命运，
 16464,304,273844,64,32,14,Your… Fate… !!,　運命・・・ということだな・・・っ！！」,你的……命运……！！,　你们的……命运……！！」
 16465,304,274008,64,32,5,Ryuge,リューゲ,利由基,留格
@@ -20406,7 +20406,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 20405,358,182688,96,48,16,Change Equipment,装備変更,改变装备,更换装备
 20406,358,182912,96,48,12,Change Party,パーティ編成,改变小队,变更队伍
 20407,358,183136,96,48,9,Formation,陣形,构造,阵型
-20408,358,183360,96,48,11,Hero Castle,勇者城,英雄城堡,勇者城
+20408,358,183360,96,48,11,Hero Castle,勇者城,英雄城堡,Hero Castle
 20409,358,184480,64,32,31,╂Select　　　　○Confirm　　　　　×Return,╂選択　　　　　○決定　　　　　×戻る,劸选择  仜确认  亊返回,╂选择　　　　○确定　　　　　×返回
 20410,358,194560,100,50,9,◆Tutorial,◆チュートリアル,◆指导,◆教程
 20411,358,196352,100,50,19,How to Make a Quest,クエストの作り方,怎样制作一个任务,任务的做法
@@ -25758,7 +25758,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 25760,449,908,256,128,15,Wahrheit Leader,ヴァールハイトリーダー,妖精帝国首领,瓦尔海特首领
 25761,449,1196,256,128,5,Ryuge,リューゲ,利由基,留格
 25762,449,1484,256,128,22,… You pathetic beings!,「・・・おろかな存在たちよ,……可悲的生物！,「……你们这些可悲的存在！
-25763,449,1772,256,128,47,Listen to my Song of Destruction as you perish!,　我がハメツの詩を聞きながら滅するがよい」,在死亡中倾听我的毁灭之歌吧！,　在灭亡中聆听我的毁灭之诗吧！」
+25763,449,1772,256,128,47,Listen to my Song of Destruction as you perish!,　我がハメツの詩を聞きながら滅するがよい」,在死亡中倾听我的毁灭之歌吧！,　在灭亡中聆听我的毁灭之歌吧！」
 25764,449,2060,256,128,41,… Did you really think that would be all?,「・・・まさかアレで終わりだとでも？,……你真的认为这就是完结了？,「……你真以为那样就结束了？
 25765,449,2348,256,128,54,You really are pathetic beings… you will be expunged!!,　本当におろかな存在だな　・・・・・消えよ」,你真是可悲的生物……你会被消灭！！,　你们真是可悲的存在……消失吧！！」
 25766,450,140,128,64,13,Porto Village,ミナート村,波尔图村庄,米纳托村
@@ -30165,7 +30165,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 30167,526,136604,64,32,55,Couldn't you at least give the song some catchy lyrics?,　ちゃんとした歌詞があったほうがよくねーか？」,你能不能至少给歌曲配上一些朗朗上口的歌词？,　有份像样的歌词不是更好吗？」
 30168,526,137060,64,32,3,Coo,クゥ,咕咕声,小咕
 30169,526,137124,64,32,21,Lyrics…? Hmm… Singers,「歌詞・・・うーん・・・歌族は,歌词...？嗯...歌手,「歌词…？嗯…歌族
-30170,526,137188,64,32,49,do write poems of their own personal experiences…,　自分の体験を詩にするんだけど・・・」,的确会根据自己的亲身经历写诗...,　会把自己的经历写成诗…」
+30170,526,137188,64,32,49,do write poems of their own personal experiences…,　自分の体験を詩にするんだけど・・・」,的确会根据自己的亲身经历写诗...,　会把自己的经历写成歌…」
 30171,526,137352,64,32,3,Coo,クゥ,咕咕声,小咕
 30172,526,137416,64,32,37,"But in doing so, it makes their songs",「そうやって歌を完成させるのは,但在这样做，这让他们歌曲的,「但这样一来，他们的歌
 30173,526,137480,64,32,33,significantly harder to complete.,　すっごいタイヘンなんだよ」,完成难度大大增加。,　完成起来难得多。」
@@ -44161,7 +44161,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 44166,778,5496,64,32,43,world will be but a memory in <30 seconds>.,　この世界と共に消えさるのだ」,整个世界将成为<30秒>中的记忆。,　和这世界都将在<30秒>内消失。」
 44167,778,7704,64,32,6,No. 30,30号,30号,30号
 44168,778,7768,64,32,31,"<RGN_NAME__>, I must warn you!!",「<RGN_NAME__>　ケイコクしマス！,"<RGN_NAME__>, 我必须警告你！！",「<RGN_NAME__>，我必须提醒你！！
-44169,778,7832,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之诗>发动。」
+44169,778,7832,64,32,55,I've confirmed invocation of the <Song of Destruction>.,　<ハメツの詩>の発動を確認しまシタ」,我已经知道了<毁灭之歌>的咒语。,　已确认<毁灭之歌>发动。」
 44170,778,8352,64,32,31,Ngh… I've seen this God before!,「ヤロウ・・・あの時のヤツだな！,呐，我见过这个神！,「可恶……这家伙就是那时那尊神！
 44171,778,8416,64,32,57,Coo! This is the God that stole singing from the Singers!,　クゥ！　歌族を歌えなくしたカタキだぞ！」,噢！这是那个偷走歌手的歌唱的神！,　小咕！就是这神夺走了歌族的歌声！」
 44172,778,8872,64,32,3,Coo,クゥ,咕咕声,小咕
@@ -45599,7 +45599,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 45604,795,271964,64,32,24,Returned Asura Nadeshiko,帰ってきた阿修羅撫子,阿修罗抚子的回归,归来的阿修罗抚子
 45605,795,272256,64,32,24,Returned Asura Nadeshiko,帰ってきた阿修羅撫子,阿修罗抚子的回归,归来的阿修罗抚子
 45606,795,272320,128,64,20,… Uh… Alrighty then.,「・・・わ・・・わかったのじゃ」,…嗯…没事。,「……呃……知道了。」
-45607,795,275468,192,96,15,Asurako joined!,アシュラコが仲間になった！,阿修罗卡加入！,阿修拉子加入了！
+45607,795,275468,192,96,15,Asurako joined!,アシュラコが仲間になった！,阿修罗卡加入！,阿修罗子加入了！
 45608,795,276052,64,32,12,Announcement,アナウンス,公告,广播
 45609,795,276344,64,32,12,Announcement,アナウンス,公告,广播
 45610,795,276408,128,64,9,… Hehehe.,「・・・・・・・・・・・・ふふふ」,。。。呵呵呵,「…嘿嘿嘿嘿。」
@@ -45813,7 +45813,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 45818,796,3680,128,64,56,"I started to rage and throw a tantrum, and now I'm back.",「んで　とにかく大暴れしてたら戻れた」,我开始变的愤怒，然后发脾气。现在又回来了。,「我发了一通脾气大闹一番，就回来了。」
 45819,796,3972,128,64,29,I'd rather not do that again.,「もう一度やれっつわれるとキビシー気がするぜ」,我下次再也不敢了。,「要我再来一次可太难受了。」
 45820,796,4200,64,32,6,No. 30,３０号,30号,30号
-45821,796,4264,64,32,48,I see… The Song of Destruction has been invoked.,「ソウデスカ・・・ハメツの詩が発動してイマス,我明白了…是毁灭之歌被唤醒了。,「我知道了……破坏之诗正在发动，
+45821,796,4264,64,32,48,I see… The Song of Destruction has been invoked.,「ソウデスカ・・・ハメツの詩が発動してイマス,我明白了…是毁灭之歌被唤醒了。,「我知道了……毁灭之歌正在发动，
 45822,796,4328,64,32,44,The world will be destroyed in <30 seconds>.,　世界のハメツまで　あと<30秒>デス」,世界将在< 30秒>内被毁灭。,　距世界毁灭还有<30秒>。」
 45823,796,4556,64,32,55,Ugh… So the plan was to take care of me and the village,「チッ・・・あの村やオレ様をたおしたから,…所以计划是照顾我和保护村子,「可恶……他们是先处理了我和村子
 45824,796,4620,64,32,33,"and then finish off the rest, eh?",　あとは　まとめて滅ぼそうってコンタンか」,然后摧毁一切剩下的，对吗？,　然后再灭掉其余的，是吧？」
@@ -54933,7 +54933,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 54938,953,93388,64,32,44,"I mean, we can finally return to the palace.",　いや　王宮に戻れるのだな」,我的意思说，我们终于能回到宫殿了。,　我是说，总算能回王宫了。」
 54939,953,93908,128,64,44,Where is the last of the Evil Lord remnants?,「最後の残党はどこにいるのです？」,最后一个邪恶领主在哪儿？,「最后那个魔王残党在何处？」
 54940,953,94720,64,32,4,King,王様,国王,国王
-54941,953,94784,128,64,38,In the land <far to the east> of here.,「ここから<ずっと東>に行った地じゃ」,在<遥远东方>。,「在<很远的东边>那片土地。」
+54941,953,94784,128,64,38,In the land <far to the east> of here.,「ここから<ずっと東>に行った地じゃ」,在<遥远东方>。,「在<遥远的东边>那片土地。」
 54942,953,95012,64,32,4,King,王様,国王,国王
 54943,953,95076,64,32,54,"In truth, I sent soldiers there ahead of your arrival,",「実は前もって　よう兵を向かわせたんじゃが,实际上，我在你到达之前就派遣了士兵，,「其实你到来前我已派兵前往，
 54944,953,95140,64,32,38,but they appear to have been defeated.,　返り討ちにあったらしくてのう」,但他们好像都被打败了。,　但他们似乎反被击败。」
@@ -58294,7 +58294,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 58301,1013,14776,64,32,39,Everything is <reversed> in this world.,「すべてが<ハンテン>した世界で,在这个世界，一切皆是<相反的>。,「在一切<颠倒>的世界里，
 58302,1013,14840,64,32,30,"Get lost in my world, and die.",　迷いながら消えてしまいなさい」,在我的世界迷失，然后死去吧。,　你就迷失着消失吧。」
 58303,1013,16756,64,32,6,No. 30,30号,30号,30号
-58304,1013,16820,64,32,55,I've confirmed invocation of the <Song of Destruction>.,「<ハメツの詩>の発動を確認,我已经知道了<毁灭之歌>的咒语。,「已确认<毁灭之诗>发动，
+58304,1013,16820,64,32,55,I've confirmed invocation of the <Song of Destruction>.,「<ハメツの詩>の発動を確認,我已经知道了<毁灭之歌>的咒语。,「已确认<毁灭之歌>发动，
 58305,1013,16884,64,32,52,This mirror world will be destroyed in <30 seconds>.,　この鏡の世界はアト<30秒>で消滅しマス」,镜子的世界将会在<30秒>以后被摧毁。,　镜中世界将在<30秒>后毁灭。」
 58306,1013,17048,64,32,6,No. 30,30号,30号,30号
 58307,1013,17112,64,32,56,It seems that the God Nine is able to invert space here.,「ゴッドナインは空間をハンテンさせるようデス,看来九神能转化这儿的空间。,「九神似乎能反转这里的空间，
@@ -61650,7 +61650,7 @@ Physical Strength Fully Recovered!","%s を食べた！
 61661,529,15596,63,31,7,War Cry,ウォークライ,,战吼
 61662,529,40076,63,31,10,War of God,ウォーオブゴッド,,神之战
 61663,655,8972,63,31,14,Venus Launcher,ヴィーナスランチャー,,维纳斯发射器
-61664,655,14156,63,31,10,Trip Force,トリップフォース,,绊倒冲击
+61664,655,14156,63,31,10,Trip Force,トリップフォース,,三角力量
 61665,676,19052,63,31,12,Gate to Hell,ゴートゥヘルゲート,,地狱之门
 61666,836,26252,63,31,11,Dark Breath,ダークブレス,,暗黑吐息
 61667,836,29420,63,31,9,Frog Bite,フロッグバイト,,青蛙咬击

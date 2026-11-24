@@ -3539,7 +3539,7 @@
    "id": "row::812",
    "en": "The <Song of Destruction> and <sanctuary> protect me!",
    "ja": "「さらに<ハメツの詩>と<聖域>が我を守る」",
-   "zh": "「这<毁灭之诗>与<圣域>护佑着我！」",
+   "zh": "「这<毁灭之歌>与<圣域>护佑着我！」",
    "meta": {
     "blob": 29,
     "offset": 8644,
@@ -3583,7 +3583,7 @@
    "id": "row::818",
    "en": "I've confirmed invocation of the <Song of Destruction>.",
    "ja": "　<ハメツの詩>の発動を確認しまシタ」",
-   "zh": "　已确认<毁灭之诗>发动。」",
+   "zh": "　已确认<毁灭之歌>发动。」",
    "meta": {
     "blob": 29,
     "offset": 11336,
@@ -4100,7 +4100,7 @@
    "id": "row::893",
    "en": "Try using the remaining time of the",
    "ja": "「ハメツの詩の残り時間を",
-   "zh": "「就用毁灭之诗的",
+   "zh": "「就用毁灭之歌的",
    "meta": {
     "blob": 29,
     "offset": 44268,
@@ -7697,7 +7697,7 @@
    "id": "row::2181",
    "en": "It's a long way off!",
    "ja": "「道のりはなかなか長いわよぉ」",
-   "zh": "「路途可是相当很远呢！」",
+   "zh": "「路途可是相当遥远呢！」",
    "meta": {
     "blob": 57,
     "offset": 6600,
@@ -19764,7 +19764,7 @@
    "id": "row::4228",
    "en": "the <Singers' Song>.",
    "ja": "　出なくちゃならないの」",
-   "zh": "　那<歌族之诗>。」",
+   "zh": "　那<歌族之歌>。」",
    "meta": {
     "blob": 93,
     "offset": 61560,
@@ -20820,7 +20820,7 @@
    "id": "row::4352",
    "en": "Our <Song of Destruction> will stop",
    "ja": "「我らのつかう<ハメツの詩>ならば",
-   "zh": "「我们的<毁灭之诗>会拦住",
+   "zh": "「我们的<毁灭之歌>会拦住",
    "meta": {
     "blob": 93,
     "offset": 131576,
@@ -25055,7 +25055,7 @@
    "id": "row::5338",
    "en": "… The time has come… Here goes nothing!!",
    "ja": "「・・・いよいよだな　いくぜオレ様っ！！」",
-   "zh": "「…时机已至…我上啦！！」",
+   "zh": "「…时机已到…我上啦！！」",
    "meta": {
     "blob": 107,
     "offset": 10396,
@@ -25088,7 +25088,7 @@
    "id": "row::5343",
    "en": "Hey <RGN_NAME__>! My song… It's finished! ♪",
    "ja": "「ねぇ　<RGN_NAME__>　詩・・・完成したよ♪」",
-   "zh": "「嘿<RGN_NAME__>！我的诗…写好了！」",
+   "zh": "「嘿<RGN_NAME__>！我的歌…完成了！」",
    "meta": {
     "blob": 107,
     "offset": 19740,
@@ -25121,7 +25121,7 @@
    "id": "row::5346",
    "en": "So what can the song do?",
    "ja": "「で　なんだ　どんなことができるんだ？」",
-   "zh": "「那么这诗有何能耐？」",
+   "zh": "「那么这歌有何能耐？」",
    "meta": {
     "blob": 107,
     "offset": 21200,
@@ -25132,7 +25132,7 @@
    "id": "row::5347",
    "en": "Defeat Gods in a single verse?",
    "ja": "「もう神なんかイチコロか？」",
-   "zh": "「一首诗就碾碎神明？」",
+   "zh": "「一首歌就碾碎神明？」",
    "meta": {
     "blob": 107,
     "offset": 21492,
@@ -25407,7 +25407,7 @@
    "id": "row::5382",
    "en": "They've been preparing a song for the time when",
    "ja": "「取り返しのつかないくらい",
-   "zh": "「他们准备了一首诗，用于",
+   "zh": "「他们准备了一首歌，用于",
    "meta": {
     "blob": 107,
     "offset": 27916,
@@ -25429,7 +25429,7 @@
    "id": "row::5385",
    "en": "And I've finally completed it. The <Song of Time>.",
    "ja": "「それがついに完成した<時の詩>」",
-   "zh": "「而且我终于完成了它。<时之诗>。」",
+   "zh": "「而且我终于完成了它。<时间之歌>。」",
    "meta": {
     "blob": 107,
     "offset": 28208,
@@ -31171,7 +31171,7 @@
    "id": "row::6723",
    "en": "400 years had passed since my failure!",
    "ja": "　この手でしとめそこなってから４００年」",
-   "zh": "　自打我亲手没能杀掉你，已经过了400年」",
+   "zh": "　自打我没能亲手杀掉他，已经过了400年」",
    "meta": {
     "blob": 137,
     "offset": 16884,
@@ -31754,7 +31754,7 @@
    "id": "row::6812",
    "en": "Haha. I didn't expect a robot to be able",
    "ja": "「ハハッ　オマエもキレイなんて",
-   "zh": "「哈哈，没想到你也会说出",
+   "zh": "「哈哈，没想到机器人也会说出",
    "meta": {
     "blob": 137,
     "offset": 112012,
@@ -31765,7 +31765,7 @@
    "id": "row::6813",
    "en": "to detect something like beauty!",
    "ja": "　計算できない言葉を口にするんだな！」",
-   "zh": "　『美丽』这种算不出来的话啊！」",
+   "zh": "　『美丽』这种无法计算的话啊！」",
    "meta": {
     "blob": 137,
     "offset": 112076,
@@ -32084,7 +32084,7 @@
    "id": "row::6865",
    "en": "Of course I did. But I'm also impressed by",
    "ja": "「当たり前だっつうか",
-   "zh": "「那当然。不过我也佩服",
+   "zh": "「那当然。不过你一边唱歌一边还能说话",
    "meta": {
     "blob": 137,
     "offset": 159316,
@@ -32095,7 +32095,7 @@
    "id": "row::6866",
    "en": "your ability to sing and talk at the same time!",
    "ja": "　歌いながら話すとは器用なやつだ」",
-   "zh": "　你边唱边说的能力！」",
+   "zh": "　的能力也挺厉害的啊。」",
    "meta": {
     "blob": 137,
     "offset": 159380,
@@ -32370,7 +32370,7 @@
    "id": "row::6933",
    "en": "is enough to overcome my Dark Song of Destruction?!",
    "ja": "　わたしのハメツの黒詩に勝つっていうの！！」",
-   "zh": "　能胜过我的毁灭黑诗吗！！」",
+   "zh": "　能胜过我的毁灭黑歌吗！！」",
    "meta": {
     "blob": 137,
     "offset": 225664,
@@ -37254,7 +37254,7 @@
    "id": "row::8838",
    "en": "It's your song. Do you understand its meaning?",
    "ja": "「あなたの詩のことデス　わかっているのデスカ？",
-   "zh": "「这是你的歌。你明白它的含义吗？",
+   "zh": "「关于你的歌。你明白它的含义吗？",
    "meta": {
     "blob": 166,
     "offset": 9228,
@@ -37397,7 +37397,7 @@
    "id": "row::8860",
    "en": "I was so impressed, I decided to create an even more powerful",
    "ja": "「だから　わたしもハメツの詩を超える",
-   "zh": "「所以我也完成了超越毁灭之诗的",
+   "zh": "「所以我也完成了超越毁灭之歌的",
    "meta": {
     "blob": 166,
     "offset": 20908,
@@ -37408,7 +37408,7 @@
    "id": "row::8861",
    "en": "Song of Destruction: the <Dark Song of Destruction>! ★",
    "ja": "　<ハメツの黒詩>を完成させちゃった★」",
-   "zh": "　<毁灭黑诗>★」",
+   "zh": "　<毁灭黑歌>★」",
    "meta": {
     "blob": 166,
     "offset": 20972,
@@ -37639,7 +37639,7 @@
    "id": "row::8894",
    "en": "the energy of the Dark Song of Destruction is unbelievable!",
    "ja": "　ハメツの黒詩のエネルギーはとてつもないの」",
-   "zh": "　<黑暗毁灭之歌>的能量简直难以置信！」",
+   "zh": "　<毁灭黑歌>的能量简直难以置信！」",
    "meta": {
     "blob": 166,
     "offset": 32068,

@@ -272,6 +272,62 @@ def _check_collisions(orig, prod, canon):
     return errs, warns
 
 
+def _check_script_operands(orig, prod):
+    """脚本命令内的名字参数必须与同文件名字表终串一致（Z30）。"""
+    errs = []
+    try:
+        partner, item = B.script_name_canons(orig, prod)
+    except Exception as e:
+        return ['[脚本名] canon 构建失败：%r' % e]
+    tags = [(b'#PARTY(', partner, 'PARTY')]
+    tags += [(b'#HERO_CATSLEPARTS%d(' % k, item,
+              'HERO_CATSLEPARTS%d' % k) for k in range(1, 6)]
+    for bi, ob in enumerate(orig):
+        if bi >= len(prod) or ob[:4] != b'CSCV':
+            continue
+        pb = prod[bi]
+        for tag, canon, label in tags:
+            i = 0
+            while True:
+                j = ob.find(tag, i)
+                if j < 0:
+                    break
+                ns = j + len(tag)
+                close = ob.find(b')', ns)
+                if close < 0:
+                    errs.append('[脚本名] b%d %s 缺少右括号' % (bi, label))
+                    break
+                i = close + 1
+                en = ob[ns:close]
+                if not en or b'<' in en or b'>' in en:
+                    continue
+                pe = pb.find(b')', ns)
+                cur = pb[ns:pe] if pe >= 0 else pb[ns:]
+                exp = canon.get(en)
+                if exp is None:
+                    if cur != en:
+                        errs.append('[脚本名] b%d %s %r -> %r，无对应终串'
+                                    % (bi, label, en, cur))
+                elif cur != exp:
+                    errs.append('[脚本名] b%d %s %r -> %r，应为 %r'
+                                % (bi, label, en, cur, exp))
+    return errs
+
+
+def _check_q16_menu_keys(orig, prod):
+    """Q16 菜单键必须写回该文件自己的原版（当前补入 b358 Hero Castle）。"""
+    errs = []
+    # b358 stride224 rec818 pos112
+    f = 16 + 818 * 224 + 112
+    if len(orig) > 358 and len(prod) > 358:
+        oe = orig[358][f:orig[358].find(b'\x00', f)]
+        pe = prod[358][f:prod[358].find(b'\x00', f)]
+        if oe != pe:
+            errs.append('[Q16] b358 rec818 pos112 %r -> %r，应为 %r'
+                        % (oe, pe, oe))
+    return errs
+
+
 def _check_tokens(orig, ja, prod, label):
     """只检查“原文（EN 或 JA）中真实存在的 token”。
 
@@ -499,6 +555,8 @@ def validate(dist_dir, stage_dir=None):
 
     errors += _check_replicas(orig, prod, canon, '本篇')
     errors += _check_operands(orig, prod, canon)
+    errors += _check_script_operands(orig, prod)
+    errors += _check_q16_menu_keys(orig, prod)
     e2, w2 = _check_collisions(orig, prod, canon)
     errors += e2
     warns += w2

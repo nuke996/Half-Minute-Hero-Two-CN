@@ -14,7 +14,11 @@
 
 ### 1.1 P0（先做，用户可见的内容/功能错误）
 
-（当前无。）
+| ID | 类别 | 待办 | 当前状态（2026-11-24） | 建议下一步 | 关联文档 |
+|---|---|---|---|---|---|
+| **T-17** | 机制/闪退 | `#PARTY` 脚本伙伴名断链：Q73 真・大叔不生成 → 闪退；Q19/Q63 同型 | **Z30 已构建，待逐关实机。** 第一轮 `EXP-Q73-party` 伙伴出现但仍闪退；第二轮 `EXP-Q73-party2`（再修 `#HERO_CATSLEPARTS`）Q73 开场通过。Z30 已把 `#PARTY` 3 处、`#HERO_CATSLEPARTS` 5 处、`b358` Q16 菜单键落地（`LANG_EN 0317ab1be137`，validate error 0 / warning 46）。待测：Q19 Knight、Q63 Rurufi、Q73 城堡零件与完整通关、b358 菜单 | ① 逐关实测 Z30；② 若某关仍异常，用 `EXP-Q73-b358/banner/text` 诊断包定位；③ 通过后 Z30 升为发布基线并更新 `PACKAGE_LEDGER` | `PITFALLS.md` §54、`KNOWN_ISSUES.md` §26、`PACKAGE_LEDGER.md` §2/§3 |
+| **T-18** | 机制/脚本键审计 | **全库“脚本按名查表”同步审计**：同类问题已出现 4 次（伙伴 `#PARTY`、城堡零件 `#HERO_CATSLEPARTS`、载具 `stride152 pos24`、Q16/`b358` 菜单键），必须做**穷举式**审计，不能靠“已知命令/已知偏移”清单 | **首轮扫描已发现新问题（2026-11-24）。** 对 741 个 `head=/body=/handR=/handL=/foot=` loadout 字段做定向比对，发现 **2 处真实不同步**（b34 off620：`Brave Vest`、`Brave Blade`，与道具表终串不同）。全库子串扫描 487 个候选，绝大多数是对话/模板假阳性，说明必须做“JA/EN 语言差分 + 显示列白名单 + 结构字段”而不是裸子串匹配。Z30 尚未修这 2 处 | ① 先做 T-19 修 loadout；② 按 `PITFALLS.md` §54.1 建 `tools/audit_script_name_refs.py`；③ 接入 `validate_build` 门禁；④ 回归夹具 | `PITFALLS.md` §54/§54.1、`TECHNICAL.md` §10.3.13、`PACKAGE_LEDGER.md` §3 |
+| **T-19** | 机制/loadout | **`head=/body=/handR=/handL=/foot=` 装备名同步**：脚本 loadout 里的装备名必须等于道具表终串（PITFALLS §25.3） | **2 处已定位（2026-11-24）**：b34 off620 的 `Brave Vest`（loadout「勇敢背心」vs 道具表「勇者背心」）与 `Brave Blade`（loadout「勇者战刀」vs 道具表「勇者战刃」）。其余 739 个 loadout 字段与道具表一致 | ① 在写名收尾新增 `sync_script_loadout_names()`（解析所有 `key=value`，按 `b147/357/736/998` canon 写回）；② `validate_build` 增加 loadout 字段一致性检查；③ 重建 Z31 并实机确认序章初始装备、各关伙伴 loadout | `PITFALLS.md` §25.3/§54.1、`TECHNICAL.md` §10.3.13、`PACKAGE_LEDGER.md` §3 |
 
 ### 1.2 P1（发布前必须处理）
 
