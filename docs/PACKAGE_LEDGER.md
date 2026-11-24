@@ -99,6 +99,7 @@
 | **脚本按名查表遗漏（未知命令/偏移/嵌入名）** | 是否只修了已知 `#PARTY`/`#HERO_CATSLEPARTS`；全库是否还有其他 `#CMD(NAME)`、`key=NAME`、结构字段或子串引用未同步 | **T-18**：`tools/audit_script_name_refs.py` 已建立；Z32 审计 **0 问题**。剩余：接入 `validate_build` 门禁 + 回归夹具，见 `PITFALLS.md` §54.1 |
 | **初始装备/伙伴 loadout 丢失或错名** | `head=/body=/handR=/handL=/foot=` 的值是否等于道具表终串（`b147/357/736/998`），**按完整原名（含末尾全角空格）精确匹配** | **T-19，Z32 已修复**：`sync_script_loadout_names()` 支持 `foot2=\n<装备名>`，21 处 Ad Hoc 鞋名全部同步；审计 loadout 758/758 一致。**Z31 曾剥掉全角空格误伤序章（作废）**，见 `KNOWN_ISSUES.md` §27 / `PITFALLS.md` §54.2 |
 | **DLC 称号无法取得** | DLC `stride292 pos32` 称号条件副本是否等于主表 `b931 pos0` 终串（原版 JA 两侧逐字节相同） | **T-20，Z31/Z32 已修复**：主表 5 个称号改用 DLC 措辞，`sync_dlc_name_copies` 统一条件副本；敌名副本统一为「饥饿公鸟」；审计 0 问题。见 `KNOWN_ISSUES.md` §28 |
+| **线上联机无法进房/不同步**（与原版玩家混联） | 联机是否校验 `LANG` 的 CRC/版本；技能名（`NETWORK_SKILLNAME_*`）与名字哈希是否跨端 | **T-21（未验证）**：PC 版走 Steam 联机；CN 包名字/哈希与原版不同。单人不受影响；见 `KNOWN_ISSUES.md` §29、`TECHNICAL.md` §10.3.13 |
 | **Q16「Hero Castle」菜单标签显示/匹配异常** | `b358 rec818 pos112` 是否写回英文原版 `Hero Castle`；CSV row 20408 `zh_new` 不应为「勇者城」 | Q16 清单未覆盖 b358；需补入 `restore_q16_keys()` 或改 CSV 行（2026-11-24 发现） |
 | 敌名/Boss 名异常 | `Z12_RELEASE_COLS` 几何；`b407 +4`、`b4…+92`；全副本终串 | 回滚 Z11；或拆包只保留 UI/音乐 |
 | 敌人/伙伴技能名仍英文 | 是否在 `b83/b394/b417/b654 +28` 参数列；是否被 token 过滤规则排除 | 用 Z13/Z14；`Disable/Enable/Utau/Title01` 等 token 不应翻译；Z14 起称号名也已中文化 |

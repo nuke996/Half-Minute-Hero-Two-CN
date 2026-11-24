@@ -793,6 +793,24 @@ Z30/Z31/Z32 结果见 `docs/PITFALLS.md` §54.1。
 `Brave Vest　`（终极背心 → 勇敢背心）与 `Brave Vest`（勇者背心）是两个不同道具，
 剥空格会串错并导致序章装备丢失。见 `docs/PITFALLS.md` §54.2。
 
+**联机/网络边界（2026-11-24，未验证）：** 名字解析默认是**本地**行为（LANG 表 +
+脚本参数 + 哈希操作数），单人不受影响；但 PC 版联机走 Steam，exe 含
+`SteamNetworking`、`Lobby*`、`P2PNetworking`、`NETWORK_SKILLNAME_1/2/3`、
+`header crc mismatch`、`incompatible version`、`synchronizing`。因此存在三类未验证风险：
+
+1. **数据校验**：联机进房若比较 `LANG_EN` 的 CRC/版本，CN 与原版可能直接不兼容；
+2. **技能名跨端**：`NETWORK_SKILLNAME_*` 暗示技能名参与网络逻辑，中文名可能导致
+   跨端匹配失败（技能无效/不同步）；
+3. **名字哈希跨端**：`#PARTY`/P2A 按名哈希在 CN 侧按中文重算，若哈希被传输，
+   对端（英文哈希）会找不到实体。
+
+**验证顺序（建议）：** ① 反汇编/交叉引用 `NETWORK_SKILLNAME_*` 与
+`header crc mismatch`，确认发送的是字符串、ID 还是哈希，以及 CRC 覆盖哪些文件；
+② 两台机器（CN + 原版）经 Steam 混联，记录失败阶段（进房/开局/放技能）；
+③ 若确认有风险，评估“名字键保持原版、只翻显示文本”的联机兼容包（可复用
+`stable`/`E3` 的 skip 名单）或运行时切换 LANG。风险登记见 `docs/KNOWN_ISSUES.md` §29、
+`docs/TODO.md` T-21。
+
 **结论 / 待办：** 只要名字表被翻译，**所有**引用该名字的脚本参数必须同步为同一最终字节；
 `cscv` 孪生仍保持原版。Z31/Z32（2026-11-24）已新增 `sync_script_loadout_names()`（loadout，
 含换行值）与 `sync_dlc_name_copies()`（DLC01 称号条件副本 / 敌名副本），并把主表 5 个称号

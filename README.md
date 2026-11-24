@@ -156,8 +156,9 @@ python tools/build.py --game-dir "D:\\Games\\Half Minute Hero Two" apply_menu
 （`docs/PROOFREAD_DIALOGUE_ROUND2.md`）；图鉴敌名/Boss 名已在 Z19/Z23/Z24 上屏，
 敌技显示名已在 Z25/Z26 补译（stable/E3 仍保留原文，作为安全回滚包；仍有少量说明短句待补，
 见 `docs/TODO.md` T-04）；存档自定义名已由 `cmap.json` 固化载体码，不再随译表漂移；
-Steam 校验会还原汉化。未完成项汇总见 `docs/TODO.md`（`proofread` 已于 2026-11-13 合并入
-`main`，后续开发以 `main` 为准）。
+**线上联机（多人战斗 / 勇者大战）未测试**：名字键、技能名与版本校验可能与原版玩家
+混联不兼容，见 `docs/KNOWN_ISSUES.md` §29；Steam 校验会还原汉化。未完成项汇总见
+`docs/TODO.md`（`proofread` 已于 2026-11-13 合并入 `main`，后续开发以 `main` 为准）。
 
 ---
 

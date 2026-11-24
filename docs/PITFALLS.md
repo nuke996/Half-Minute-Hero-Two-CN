@@ -1905,6 +1905,18 @@ error 0 / warning 46；相对 Z30 仅主 `b34/b931` 与 DLC `b7` 变化。
   实机症状是“序章背心和武器消失”。回归夹具应覆盖：把 `Brave Vest　` 的 loadout
   改成「勇者背心」时审计必须报错（但 Z32 的正确状态必须为 0）。
 
+### 54.3 名字键的“本地性”不等于“联机安全”（2026-11-24，未验证）
+
+- 单人流程里，名字只在本地 LANG 内解析：名字表与脚本参数同串即可，不会跨端比较。
+- 但 PC 版联机走 Steam，exe 含 `NETWORK_SKILLNAME_1/2/3`、`header crc mismatch`、
+  `incompatible version`、`synchronizing`、`Lobby*`/`P2PNetworking`。
+  ⇒ 技能名、版本/CRC、名字哈希**可能**跨端，中文名/中文哈希与原版不一致时，
+  可能表现为无法进房、开局不同步、技能无效或实体缺失（均未实测）。
+- `mapdata.s2a`（`ADH_01–08.s2mp`）未修改，双方地图字节一致；风险集中在
+  `LANG_EN`（含 DLC）的名字与哈希。
+- 发布说明在验证前应标注“线上联机未测试”。验证方案见 `TECHNICAL.md` §10.3.13、
+  `KNOWN_ISSUES.md` §29、`docs/TODO.md` T-21。
+
 **新发现的数据形态（2026-11-24）：** `b34` 的 Ad Hoc 1–7 预设把部分装备名写在
 `foot2=` 的**下一行**（`foot2=\nAcademy Boots`），而 Ad Hoc 8 是同行写值且已正确翻译。
 按行解析 `key=value` 的旧同步会把这一类整组漏掉 ⇒ 解析 loadout 必须允许“值在下一行”。
