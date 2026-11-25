@@ -3329,6 +3329,58 @@ E3_DISPLAY_SYNC_COLS = (
 E3_PROTECTED_NAME_BLOBS = (666, 147, 357, 736, 998, 954, 1034, 128, 136, 317)
 
 
+# E3/稳定版：图鉴与敌表里的名字属于“名字键”，必须整库保持 LANG_EN 原版。
+# 显示列同步（fill_name_copies）会把说话人名里的中文扩散到全库同串槽位，
+# 曾经导致图鉴「头目/怪物/插画」出现“Wood Dragon / 岩龙 / 魔法龙”的中英混排。
+E3_NAME_KEY_COLS = (
+    (407, 236, 4),                    # 敌/怪物数据名
+    (54, 660, 4), (54, 660, 40),      # 图集·插画
+    (555, 660, 4), (555, 660, 40),    # 图集·头目
+    (734, 660, 4), (734, 660, 40),    # 图集·怪物
+)
+
+
+def _name_key_strings(orig_blobs):
+    """收集图鉴/敌表名字列的整槽串（这些串必须整库保持原版）。"""
+    out = set()
+    for bi, st, pos in E3_NAME_KEY_COLS:
+        if bi >= len(orig_blobs):
+            continue
+        ob = bytes(orig_blobs[bi])
+        if ob[:4] != b'CSCV':
+            continue
+        n = struct.unpack_from('<I', ob, 8)[0]
+        for r in range(n):
+            f = 16 + r * st + pos
+            if f >= len(ob):
+                break
+            t = ob[f:f + 64].split(b'\x00')[0]
+            if t:
+                out.add(t)
+    return out
+
+
+def _csv_known_en():
+    """text_v2.csv（含本次额外行）里登记过的英文原文集合。
+
+    只有登记过的串才可能有译文可同步。用它过滤显示列，可以排除
+    stride=288 脚本表 pos92 里混入的操作数（'0' / '30' / '60' / 'TRUE' / '=='），
+    避免把它们当成“说话人名”参与全副本补齐。
+    """
+    known = set()
+    try:
+        with open(CSV, encoding='utf-8') as fh:
+            for r in csv.DictReader(fh):
+                if r.get('en'):
+                    known.add(r['en'])
+    except Exception:
+        pass
+    for r in (_EXTRA_ROWS or ()):
+        if r.get('en'):
+            known.add(r['en'])
+    return known
+
+
 def _display_label_names(orig_blobs):
     """收集 E3_DISPLAY_SYNC_COLS 各列在母本中的整槽串（用于全副本同步）。"""
     names = set()
@@ -3373,8 +3425,20 @@ def sync_e3_display_columns(orig_blobs, en_path, skip_blobs, verbose=True):
        稳定版必须整库保持原版 ⇒ 把这些串的所有已译副本写回母本字节。
     """
     disp = _display_label_names(orig_blobs)
-    prot = disp & _protected_name_strings(orig_blobs)
-    fill_name_copies(orig_blobs, en_path, disp - prot, skip_blobs=skip_blobs,
+    # 机制名 + 图鉴/敌表名字键：整库回写原版，且不参与显示列补齐
+    prot = (disp & _protected_name_strings(orig_blobs)) | _name_key_strings(orig_blobs)
+    # ★ 2026-11-25：pos92 等列在 stride=288 的脚本表里同时承载命令操作数
+    #   （'0'/'30'/'60'/'TRUE'…）。只同步翻译表登记过的整槽串，
+    #   否则“定长字段清零”产生的空串会被当成译文扩散到全库（stable 闪退根因）。
+    known = _csv_known_en()
+    names = set()
+    for t in (disp - prot):
+        try:
+            if t.decode('cp932') in known:
+                names.add(t)
+        except UnicodeDecodeError:
+            continue
+    fill_name_copies(orig_blobs, en_path, names, skip_blobs=skip_blobs,
                      label='显示列')
     arc = s2a.Archive(en_path)
     prod = [bytearray(bytes(b)) for b in arc.blobs]
@@ -3393,14 +3457,15 @@ def sync_e3_display_columns(orig_blobs, en_path, skip_blobs, verbose=True):
                 continue
             pb[f:f + len(t)] = t
             pb[f + len(t)] = 0
-            i = f + len(t) + 1
-            while i < len(pb) and pb[i] == 0:
-                i += 1
+            # 原译文更长时，把 NUL 之后的残留字节一并清零（旧实现是空循环）
+            nxt = pb.find(b'\x00', f + len(t) + 1)
+            for i in range(f + len(t) + 1, len(pb) if nxt < 0 else nxt):
+                pb[i] = 0
             n += 1
     if n:
         s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
     if verbose:
-        print('  [显示列] 机制名冲突串 %d 个，回写原版 %d 处' % (len(prot), n))
+        print('  [显示列] 机制名/名字键 %d 个，回写原版 %d 处' % (len(prot), n))
     return n
 
 
@@ -4545,10 +4610,17 @@ def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
             pt, _ = _slot_text_at(bytes(pb), f)
             if pt != ot:
                 cnt[ot][bytes(pt)] += 1
+    skipped_empty = 0
     for ot, ctr in cnt.items():
         if len(ctr) > 1:
             conflicts += 1
-        canon[ot] = ctr.most_common(1)[0][0]
+        val = ctr.most_common(1)[0][0]
+        if not val:
+            # 空串不是“名字译文”，通常来自定长字段清零的副产物。
+            # 一旦当作终串扩散，会把全库同字节槽位（数字/ID/脚本操作数）清空。
+            skipped_empty += 1
+            continue
+        canon[ot] = val
     n = skip = 0
     for bi, ob in enumerate(orig_blobs):
         if bi >= len(prod) or bi in skip_blobs or bytes(ob)[:4] != b'CSCV':
@@ -4579,9 +4651,10 @@ def fill_name_copies(orig_blobs, en_path, names_en, verbose=True,
     if n:
         s2a.pack(en_path, arc.entries, [bytes(x) for x in prod])
     if verbose:
-        print('  [%s] 副本补齐 %d 处%s%s'
+        print('  [%s] 副本补齐 %d 处%s%s%s'
               % (label, n, '（容量不足 %d）' % skip if skip else '',
-                 '（终串冲突 %d）' % conflicts if conflicts else ''))
+                 '（终串冲突 %d）' % conflicts if conflicts else '',
+                 '（空终串跳过 %d）' % skipped_empty if skipped_empty else ''))
     return n
 
 

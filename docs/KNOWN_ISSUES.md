@@ -625,9 +625,10 @@ Q16 rec49/142 按守卫保留，不再列入待办。）
 
 ---
 
-# 24. `dist/stable-names-en` 主界面闪退（2026-11-22，Investigating）
+# 24. `dist/stable-names-en` 主界面闪退（2026-11-25，Fixed）
 
-**Status:** Investigating　**Severity:** High（无法进入游戏）
+**Status:** Fixed（2026-11-25 根因确认并修复；stable 已重建，待实机复测）
+**Severity:** High（无法进入游戏）
 **Affected versions:** `dist/stable-names-en/`（2026-11-22 14:57 重建）　**Affected locales:** zh-CN
 
 **症状：** 用 `dist/stable-names-en/` 覆盖安装后，开头 CG 播放正常，进入主界面时闪退；
@@ -669,6 +670,19 @@ Z22–Z29 新增的 UI/菜单文本。可能出现“菜单项名已译、分组
 **相关文件：** `dist/stable-names-en/build_manifest.json`、`tools/build_cn.py`
 （`do_apply_lang_en_names_en` / `sync_e3_display_columns`）、`tools/validate_build.py`、
 `PITFALLS.md` §9、`KNOWN_ISSUES.md` §23。
+
+**2026-11-25 根因（已验证·离线复现）：**
+`sync_e3_display_columns` 使用的 `E3_DISPLAY_SYNC_COLS` 把 `stride=288` 表的 `pos92`
+整列当成说话人名，但该列混有脚本操作数（`'0'×32`、`'30'×13`、`'60'×5`、`'TRUE'`、`'=='`）。
+`_display_label_names` 未过滤，`fill_name_copies` 又把“空串”当作终串全库传播：
+`0` 被清空 **14547/14573** 槽、`30` **4401/4402**、`60` **1808/1808**，共 569 个 blob、
+20756 处，含标题/UI 表 `b186/b354/b358/b771`。Z32 不走该函数，故不受影响。
+离线复现：只跑 E3 `do_apply` 时三者仅空 3/3/2 处，再跑 `sync_e3_display_columns()`
+即变成 14547/4401/1808，与 dist 完全一致；回归由 `9ae0f8c`（2026-11-04）引入。
+
+**修复：** 显示列名字集合先与 `text_v2.csv` 的 `en` 白名单求交（排除操作数/多行残段）；
+`fill_name_copies` 禁止传播空终串；并修正回写原版后的残留清零。
+详见 `docs/PITFALLS.md` §55。
 
 ---
 
@@ -942,3 +956,30 @@ DLC 的 `LANG_EN` 同样被翻译，风险与主 LANG 相同。
 - 实机验证项见 `docs/FINAL_QA_PLAN.md` §2.6、`docs/TODO.md` T-21。
 - 存档/ID 映射的后续（槽位顺序、背包边界、技能/称号/flag、`0x4a1b00` 注册来源）见
   `TECHNICAL.md` §10.3.14 §2.4、`docs/TODO.md` **T-22**。
+
+---
+
+# 30. stable 图鉴「头目/怪物/插画」名字中英混排（2026-11-25，Fixed）
+
+**Severity:** Medium（不影响运行，但违反 stable“不上屏名字翻译”的定位）
+**Affected versions:** 含显示列同步的 `dist/stable-names-en`（`9ae0f8c` 之后）　**Affected locales:** zh-CN
+
+**症状：** 实机进入 图集 → 头目，列表为
+`3: Wood Dragon … 8: 岩龙 / 9: 物理龙 / 10: 魔法龙` 的中英混排。
+
+**根因：**
+1. `slot_release` 放行 `stride292 pos96` 的对话说话人名（`b652/b935`），
+   把这三条龙译成中文；
+2. `sync_e3_display_columns` 为消除 validate 的 `boss_speaker` 混合态，
+   把同名的整槽串在**全库**补齐，于是中文被写进图鉴 `b555/b734/b54` 的
+   `pos4/pos40` 名字槽和 `b407` 的敌名。
+
+离线复核：独立 `game_dir` 只跑 E3 装机时 `b555 rec7 pos4` 仍是 `Rock Dragon`，
+跑同步后才变中文。
+
+**修复：** `E3_NAME_KEY_COLS`（`b407 pos4`；`b54/b555/b734 pos4/40`）的整槽串
+视为“名字键”，加入 `prot`：既不参与补齐，又在全库回写原版字节。
+图鉴/敌名恢复英文，对话中的同名说话人也回到英文；地图编辑器 UI 仍中文。
+
+**验证：** 显示列同步补齐 514 → 138 处；`validate_build` **error 0 / warning 1**；
+stable 重建后待实机。详见 `docs/PITFALLS.md` §56。

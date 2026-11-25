@@ -174,6 +174,30 @@ python tools/build.py --game-dir work/original package_current
 
 ## 6. 变更记录
 
+- **2026-11-25（stable 标题画面闪退根因修复：显示列误同步脚本操作数）**：
+  1. 根因：`sync_e3_display_columns` 把 stride288 表 `pos92` 的脚本操作数
+     （`0`×32 / `30`×13 / `60`×5 / `TRUE` / `==`）当成说话人名；
+     `fill_name_copies` 又把装机时意外变空的 `0/30/60` 当作终串全库传播，
+     清空 `0` 14547/14573、`30` 4401/4402、`60` 1808/1808（569 个 blob），
+     含标题/UI 表 `b186/b354/b358/b771`。回归由 `9ae0f8c`（2026-11-04）引入。
+     详见 `docs/PITFALLS.md` §55、`docs/KNOWN_ISSUES.md` §24。
+  2. 修复：显示列名字集合先与 `text_v2.csv` 的 `en` 白名单求交（含 `_EXTRA_ROWS`）；
+     `fill_name_copies` 拒绝传播空终串；修正回写原版后的残留字节清零。
+  3. 重建 stable（2026-11-25 21:41，git `8f46f17` dirty）：`LANG_EN fba14d0aa75f` /
+     `DLC01 f2150d67cc78` / `texture e5631a627897` / `cscv afe3d1e57085`；
+     6 个文件，`LANG_JA` 仍裁剪；`validate_build` **error 0 / warning 1**。
+  4. 离线复核：stable 不再出现 `0/30/60` 全库清空；显示列同步 21262 → 514 处；
+     真实名字副本（`Yashu`/`Guy`/`Athena` 等）仍正常补齐。
+  5. **同日第二修（图鉴名字中英混排）**：`slot_release` 译出的说话人名
+     （`b652/b935 pos96`，如 `Rock Dragon`）被显示列同步扩散进图鉴
+     `b555/b734/b54 pos4/40` 与敌表 `b407 pos4`。新增 `E3_NAME_KEY_COLS`
+     作为“名字键”：不参与补齐、全库回写原版。同步补齐 514 → 138 处，
+     图鉴恢复英文，地图编辑器 UI 仍中文。详见 `docs/PITFALLS.md` §56、
+     `docs/KNOWN_ISSUES.md` §30。
+  6. 最终 stable 重建（2026-11-25 21:51）：`LANG_EN 6a21e5cf3f30` /
+     `DLC01 f2150d67cc78` / `texture e5631a627897` / `cscv afe3d1e57085`；
+     `validate_build` error 0 / warning 1。
+
 - **2026-11-22（T-14 名词错译批次 1/2：封印兽 + 16 组敌名）**：
   1. `ml_zh_fields.json`：`seal beast` 由「海兽」改为「封印兽」；`Demon Spawn`/`Chompers`
      图鉴首行同步为「恶魔私生子」/「大白鲨」。
@@ -382,7 +406,7 @@ python tools/build.py --game-dir work/original package_current
      stable/E3 保留原文作为安全回滚包。Z19 当日重建 `LANG_EN eb4bb2263f56`（error 0 / warning 45）；
      stable 当日重建 `LANG_EN 2f7dae57bc10`（error 0 / warning 1），并登记进 `RECIPES`。
      （2026-11-12 因 Q16 修复再次重建，最新哈希见 §2 与上方 11-12 条目。）
-  4. 当时 Z19 与 Z24 内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 为当时的校对目标（现指针为 z29）。
+  4. 当时 Z19 与 Z24 内容一致（Z22/Z24 译文 + Z23 敌名）——Z19 为发布基线，Z24 为当时的校对目标（现指针为 z32）。
 - **2026-11-04（Z21 实机通过 → 修复并入 Z19 / stable）**：
   0. Z21 实机确认正常（樵夫斧 / 便携女神像 / 升级·降级药水说明均正确），
      修复作为**共享字库逻辑**并入两个基线配方并重建：
