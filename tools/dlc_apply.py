@@ -72,6 +72,7 @@ def build_plan(cmap=None, native=None):
     plan = []
     planned = set()
     n_missing = 0
+    miss_chars = set()
     n_multi = 0
 
     def add_slot(bi, bja, ben, cja, cen, off, pos, s, cand):
@@ -82,6 +83,7 @@ def build_plan(cmap=None, native=None):
             if ord(ch) < 0x80 or ch in cmap or ch in native or ch in '\n\r\t':
                 continue
             n_missing += 1
+            miss_chars.add(ch)
             break
         cap1 = min(cja.get(off, 10 ** 9), cen.get(off, 10 ** 9))
         lim_ja = D.field_limit(bja, off, cap1)
@@ -114,6 +116,9 @@ def build_plan(cmap=None, native=None):
     log('待写槽位: %d（含多行补译 %d）  blob 数: %d'
         % (len(plan), n_multi, len({p['blob'] for p in plan})))
     log('编码缺字: %d' % n_missing)
+    if miss_chars:
+        log('  缺字（会显示为 ?，需补进 build_cn.DLC_EXTRA_CHARS）: %s'
+            % ' '.join('%s(U+%04X)' % (c, ord(c)) for c in sorted(miss_chars)))
     log('超容量: %d' % len(over))
     for p in over[:30]:
         log('   b%-3d off=%-7d cap_eff=%-4d len=%-4d %r -> %r'
