@@ -220,7 +220,40 @@ Type2: u8 type=2 | u8 len=0 | u8 window | u8 rsv | u32 va | u32 expect | u32 del
 
 ---
 
-# 9. 开放问题
+# 9. `.h2s` 存档（部分验证，2026-11-25）
+
+**用途：** 玩家存档/备份/自制地图。**状态：** 头部与玩家记录部分已验证；字段全集未解。
+**存放：** Steam Cloud `userdata/<steamid>/240970/remote/`；文件名
+`hmh2save_%c.h2s`（`%c` = `'a'`+槽位）、`hmh2backup_%d.h2s`、`hmh2map_%d.h2m`。
+
+**头部（已验证）：**
+
+| 偏移 | 内容 |
+|---|---|
+| 0x00 | magic `hspk` |
+| 0x04 | `00 00 01 00`（版本/标志，未解） |
+| 0x08 | u32 文件大小（0xA410 = 42000） |
+| 0x0C | u32 校验值（疑似 CRC32，算法未验证） |
+| 0x10 | 16 字节 0 |
+
+**玩家记录（已验证）：** 从 `0x20` 起，stride `0x250`，共 5 槽：
+
+- `+0x1C`：名字（CP932，实测 `YushaZ` / `Yushia` / `Yuja`）；
+- `+0x3C..+0x4C`：5 个装备槽，值为**道具表 `b147/357/736/998` 的 pos0 ID**：
+  实测 `108`=Red Bandana、`147`=Gorgeous Mail、`199`=Destiny Boots、
+  `36`=Destiny Sword、`212`=Golden Scudetto；`529`=Battle Hammer +1、
+  `552`=War God Staff +1（ID 不连续，按 pos0 查表）；
+- `+0x54` 起：道具/消耗品格（`4`=Inflation Herb、`7`=Fire Stone、
+  `5`=Goddess Porta-Statue 等）。
+
+**未解：** 技能/称号/flag 的存储形态（疑似位图/bitfield）、`0x0C` 校验算法、
+其余段的字段边界。**工具：** 暂无（本次为一次性只读分析，脚本未入库）。
+**后续验证：** 见 `TECHNICAL.md` §10.3.14 §2.4 与 `docs/TODO.md` **T-22**
+（槽位顺序、背包边界、技能/称号/flag 位图、校验算法）。
+
+---
+
+# 10. 开放问题
 
 - S2AR 条目 hash 算法未知。
 - CSCV 头 offset 0x04 在字符表 blob 中的含义未知（观测 32）。
