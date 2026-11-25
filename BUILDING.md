@@ -16,10 +16,13 @@
 | 游戏 | Half Minute Hero Two（勇者30：再次降临） |
 | 平台 | Steam PC / Windows（x86） |
 | 发行 | Steam |
-| 可执行文件 | `HMH2.exe`（1,985,536 字节，无 PE 版本资源） |
+| 可执行文件 | `HMH2.exe`（1,985,536 字节，无 `RT_VERSION` 版本资源） |
+| Steam AppID | 本体 `240970`；DLC「Time Goddess' Treasure Pack」`283750` |
+| Steam 生成版本 ID | `381930`（BuildID，本机 Steam 日志 2026-09-09～10-13 验证） |
+| 内容 Depot | 本体 `240971`（manifest `1434130485469082868`）；DLC `283750`（manifest `3882827083235074315`） |
 | 校验（原版） | SHA-256 前 16 = `1A313A50319BD5FE`，MD5 前 12 = `867308FCD87A` |
 
-原版母本散列基准见 `TECHNICAL.md` §1.1。**不同 Steam 更新/区域版本应视为不受支持**，
+原版母本散列基准见 `TECHNICAL.md` §1.1，版本标识与探测过程见 §1.2。**不同 Steam 更新/区域版本应视为不受支持**，
 补丁工具在写入前应校验字节数/散列，不匹配即中止。
 
 ---

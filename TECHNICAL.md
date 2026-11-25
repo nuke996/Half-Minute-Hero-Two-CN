@@ -42,10 +42,54 @@
 
 - **[已验证]** `HMH2.exe` 与 `HMH2.exe.bak` 的 SHA-256/MD5 完全相同，即**当前磁盘上的 exe 是原版**。
   字符表扩容补丁当前由运行时方案（`dinput8.dll` 代理 DLL，见 §7）在内存中施加，而非离线改写 exe。
-- **[已验证]** `HMH2.exe.bak` 的 PE 版本资源为空（`VersionInfo` 各字段为空），无法用版本号识别，
-  只能用字节数 + 散列识别。
+- **[已验证]** `HMH2.exe` **不含 `RT_VERSION` 版本资源**（资源段只有 ICON / GROUP_ICON / MANIFEST），
+  嵌入清单也没有 `assemblyIdentity` 版本字段，因此无法用文件版本号识别，只能用字节数 + 散列识别。
 - **[未验证假设]** 上述散列表基于当前工作目录的母本；不同 Steam 更新/区域版本可能不同，
   补丁工具应在写入前逐项校验。
+
+## 1.2 版本标识（人类可读）与探测结果
+
+### Steam 侧标识（已验证）
+
+| 项 | 值 |
+|---|---|
+| 本体 AppID | `240970`（Half Minute Hero: The Second Coming） |
+| DLC AppID / Depot | `283750`（Time Goddess' Treasure Pack） |
+| 内容 Depot | `240971`，manifest `1434130485469082868` |
+| 附加 Depot | `240980`，manifest `1910256177394167836`（随本体同时挂载；具体用途未核实） |
+| 游戏生成版本 ID（BuildID） | `381930` |
+
+- **[已验证]** 本机 Steam `content_log` 于 2026-09-09、2026-10-05 多次记录
+  `AppID 240970 finished update ... (BuildID 381930)`，2026-10-13 的完整性校验同样使用 `BuildID 381930`。
+- **[高置信]** §1.1 的母本散列取自 2026-10-05 的同机安装目录（与上述安装记录同日）。
+- Steam 客户端「属性 → 更新 → 生成版本 ID」显示的就是 `appmanifest_240970.acf` 的
+  `buildid` / `TargetBuildID`，玩家无需计算散列即可核对。
+
+### 可执行文件内嵌信息（已验证）
+
+| 项 | 值 |
+|---|---|
+| PE 时间戳（COFF `TimeDateStamp`） | `0x54153010` = 2014-09-14 06:05:04 UTC（14:05:04 UTC+8） |
+| 链接器版本 | 11.0（VS2012 工具链） |
+| PDB 路径 | `D:\dev\opus\s2s\winbin\HMH2.pdb` |
+| PDB GUID / Age | `A2E8E889-F6E8-2348-9494-F7A2FBDF741D` / 2 |
+| 版本资源 | **不存在** `RT_VERSION`；资源仅 ICON / GROUP_ICON / MANIFEST |
+| 嵌入清单 | 仅 `trustInfo`，无 `assemblyIdentity` 版本字段 |
+
+### 资源与字符串扫描结论（已验证）
+
+- `HMH2.exe` 的 ASCII/UTF-16 全文件扫描未发现游戏版本号；只有 zlib `1.2.8`（第三方库版本）
+  和 `incompatible version`（联机错误文案）。
+- `res/cscv.s2a` 中的 `<PC Version>` / `<PSP Version>` 是**按平台分支的脚本标记**，不是版本号。
+- `res/mapdata.s2a` 内嵌地图 JSON 的 `"created"` 字段是地图创建时间（形如 `11-1-22 16:21:44`），不是构建信息。
+- 所有 `.s2a` 归档头只有 `S2AR` + 条目数；`CSCV` blob 头只有 magic / stride / count / `0xFFFFFFFF`，
+  **均无版本或构建字段**（见 `docs/FILE_FORMATS.md` §1、§2）。
+- `steam_api.dll` 的文件版本 `02.08.75.99` 是 Valve Steamworks SDK 组件版本，**不能**当作游戏版本。
+
+**结论：** 游戏界面、exe 与资源归档中都不存在更直观的版本号。对外标识版本时应使用
+**Steam AppID `240970` + 生成版本 ID `381930`**，并用 §1.1 的字节数/散列做二进制级校验；
+PE 时间戳（2014-09-14）与 PDB GUID 可作为辅助指纹。若 Steam 发布新构建，BuildID 与散列都会变化，
+补丁工具仍须在写入前逐项校验并中止不匹配的版本。
 
 ---
 
