@@ -4753,7 +4753,7 @@ row_id,blob_index,offset,slot_bytes,max_cn,len_en,en,ja,zh_3dm,zh_new
 4751,102,88,64,32,32,Can you become the Hero of Time?,最速のクリアタイムを目指すタイムアタックモードです,你能成为永恒的英雄吗？,以最快通关时间为目标的速通模式！
 4752,102,156,64,32,50,Face off against an infinite amount of Evil Lords!,次々と現れる魔王をたおしていくサバイバルモードです,面对无穷无尽的邪恶领主！,迎战无穷无尽的魔王！
 4753,102,224,64,32,49,Create your own Half Minute Hero quests and maps.,自分だけの勇者３０をつくれるエディットモードです,创造你自己的半分钟英雄任务和地图。,制作自己的勇者30任务与地图。
-4754,102,292,64,32,36,Rise to the throne of the True Hero!,最大４人の対戦モードです（チーム戦　⑥⑦⑧⑨も可能）,升起真英雄的宝座吧！,最多4人同时对战，争夺真勇者宝座！
+4754,102,292,64,32,36,Rise to the throne of the True Hero!,最大４人の対戦モードです（チーム戦　⑥⑦⑧⑨も可能）,升起真英雄的宝座吧！,最多4人同时对战的模式 (不建议挂着汉化补丁联机)
 4755,102,360,64,32,50,Spend your offered money and access bonus content.,時の女神さまにささげたお金で買い物することができます,话费提供给你的钱来得到奖励内容。,用向时之女神献上的金钱购买额外内容。
 4756,102,428,64,32,58,"Change controller, graphics, sound and hero name settings.",サウンドや勇者の名前の設定を変更できます,调整手柄，图像，声音和英雄名称设定。,修改设定。（汉化作者nobina 使用模型DeepSeekFlash）
 4757,102,496,64,32,46,Check out leaderboards and get community maps.,インフラストラクチャーモード,查看排行榜并取得到社区地图。,查看排行榜、获取社区地图。
